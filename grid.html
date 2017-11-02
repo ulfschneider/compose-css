@@ -9,15 +9,14 @@
 <body>
   <div id="app">
     <div id="control" style="position:fixed; top:20px; right:20px;; background:black; padding:10px;">
-      <button v-on:click="toggleColorCode(!colorCode)">Toggle Background</button>
+      <button v-on:click="toggleColorCode">Toggle Background</button>
+      <button v-on:click="toggleHeadlines">Toggle Headlines</button>
     </div>
 
 
     <div class="grid">
       <div v-bind:style="{background: middleBackground}">
-        <h2>
-          Middle Grid Content
-        </h2>
+        <h2 v-bind:style="{display: headlines}">Middle Grid Content</h2>
         <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</p>
 
         <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat.</p>
@@ -26,7 +25,7 @@
       </div>
 
       <div class="left" v-bind:style="{background: leftBackground}">
-        <h2>Left Grid Content</h2>
+        <h2 v-bind:style="{display: headlines}">Left Grid Content</h2>
         <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</p>
 
         <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat.</p>
@@ -35,7 +34,7 @@
       </div>
 
       <div class="right" v-bind:style="{background: rightBackground}">
-        <h2>Right Grid Content</h2>
+        <h2 v-bind:style="{display: headlines}">Right Grid Content</h2>
         <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</p>
 
         <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat.</p>
@@ -44,7 +43,7 @@
       </div>
 
       <div class="breakout" v-bind:style="{background: breakoutBackground}">
-        <h2>Breakout Grid Content</h2>
+        <h2 v-bind:style="{display: headlines}">Breakout Grid Content</h2>
         <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</p>
 
         <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat.</p>
@@ -53,7 +52,7 @@
       </div>
 
       <div class="wide" v-bind:style="{background: wideBackground}">
-        <h2>Wide Grid Content</h2>
+        <h2 v-bind:style="{display: headlines}">Wide Grid Content</h2>
         <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</p>
 
         <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat.</p>
@@ -63,7 +62,27 @@
 
 
       <div class="full" v-bind:style="{background: fullBackground}">
-        <h2>Full Grid Content</h2>
+        <h2 v-bind:style="{display: headlines}">Full Grid Content</h2>
+        <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</p>
+
+        <div class="full _250" style="background-image:url(r/nathan-anderson-127350.jpg)"></div>
+
+        <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat.</p>
+
+        <p>Sie hätten noch ins Boot springen können, aber der Reisende hob ein schweres, geknotetes Tau vom Boden, drohte ihnen damit und hielt sie dadurch von dem Sprunge ab. In den letzten Jahrzehnten ist das Interesse an Hungerkünstlern sehr zurückgegangen. Aber sie überwanden sich, umdrängten den Käfig und wollten sich gar nicht fortrühren. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich</p>
+      </div>
+
+      <div class="left" v-bind:style="{background: leftBackground}">
+        <h2 v-bind:style="{display: headlines}">Left Grid Content</h2>
+        <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</p>
+
+        <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat.</p>
+
+        <p>Sie hätten noch ins Boot springen können, aber der Reisende hob ein schweres, geknotetes Tau vom Boden, drohte ihnen damit und hielt sie dadurch von dem Sprunge ab. In den letzten Jahrzehnten ist das Interesse an Hungerkünstlern sehr zurückgegangen. Aber sie überwanden sich, umdrängten den Käfig und wollten sich gar nicht fortrühren. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich</p>
+      </div>
+
+      <div class="right" v-bind:style="{background: rightBackground}">
+        <h2 v-bind:style="{display: headlines}">Right Grid Content</h2>
         <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</p>
 
         <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat.</p>
@@ -84,23 +103,15 @@ var app = new Vue({
     rightBackground: 'transparent',
     breakoutBackground: 'transparent',
     wideBackground: 'transparent',
-    fullBackground: 'transparent'
+    fullBackground: 'transparent',
+    headlines: 'block'
   },
   created: function() {
-    
+
   },
   methods: {
-    toggleColorCode: function (toggle) {
-
-      if (toggle) {
-        this.colorCode = true;
-        this.middleBackground = '#E5E8E8';
-        this.leftBackground = '#F9E79F';
-        this.rightBackground = '#A3E4D7';
-        this.breakoutBackground = '#AED6F1';
-        this.wideBackground = '#D2B4DE';
-        this.fullBackground = '#F5B7B1';
-      } else {
+    toggleColorCode: function () {
+      if (this.colorCode) {
         this.colorCode = false;
         this.middleBackground = 'transparent';
         this.leftBackground = 'transparent';
@@ -108,8 +119,22 @@ var app = new Vue({
         this.breakoutBackground = 'transparent';
         this.wideBackground = 'transparent';
         this.fullBackground = 'transparent';
+      } else {
+        this.colorCode = true;
+        this.middleBackground = '#E5E8E8';
+        this.leftBackground = '#F9E79F';
+        this.rightBackground = '#A3E4D7';
+        this.breakoutBackground = '#AED6F1';
+        this.wideBackground = '#D2B4DE';
+        this.fullBackground = '#F5B7B1';
       }
-
+    },
+    toggleHeadlines: function() {
+      if (this.headlines == 'block') {
+        this.headlines = 'none';
+      } else {
+        this.headlines = 'block';
+      }
     }
   }
 })

@@ -14,8 +14,7 @@ img {
 }
 
 p {
-  margin:0;
-  margin-bottom:1.62em;
+  margin:1.62em 0;
   padding:0;
 }
 
@@ -50,6 +49,32 @@ p {
   grid-column: 1/ span 7;
 }
 
+
+/* layout content */
+img.full {
+  width:100%;
+}
+
+.full._500 {
+  height: 500px;
+  width: 100%;
+  background-size:cover;
+  background-position: 50%;
+}
+
+.full._400 {
+  height: 400px;
+  width: 100%;
+  background-size:cover;
+  background-position: 50%;
+}
+
+.full._250 {
+  height: 250px;
+  width: 100%;
+  background-size:cover;
+  background-position: 50%;
+}
 
 /* media queries */
 @media screen and (max-width: 1000px) {
