@@ -1,15 +1,23 @@
-/* defaults */
+/* basics */
 
 * {
   line-height:1.62em;
 }
 
-body, img {
+h2 {
+  font-size:1em;
+  font-weight:bold;
+  margin-top:2.62em;
+  margin-bottom:.81em;
+}
+
+body {
   margin:0;
   padding:0;
 }
 
 img {
+  margin:1.62em;
   max-width:100%;
 }
 
