@@ -51,32 +51,6 @@ p {
 }
 
 
-/* grid color coding */
-.middle {
-  background-color: #E5E8E8;
-}
-
-.left {
-  background-color: #F9E79F;
-}
-
-.right {
-  background-color: #A3E4D7;
-}
-
-.breakout {
-  background-color: #AED6F1;
-}
-
-.wide {
-  background-color: #D2B4DE;
-}
-
-.full {
-  background-color: #F5B7B1;
-}
-
-
 /* media queries */
 @media screen and (max-width: 800px) {
   .grid .left {
