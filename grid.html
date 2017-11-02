@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="grid.css">
-  <script src="https://unpkg.com/vue"></script>
   <title>Experimenting with CSS Grids</title>
 </head>
 
@@ -74,20 +73,21 @@
     </div>
   </div>
 </body>
+<script src="https://unpkg.com/vue"></script>
 <script>
 var app = new Vue({
   el: '#app',
   data: {
-      colorCode: false,
-      middleBackground: 'transparent',
-      leftBackground: 'transparent',
-      rightBackground: 'transparent',
-      breakoutBackground: 'transparent',
-      wideBackground: 'transparent',
-      fullBackground: 'transparent'
+    colorCode: false,
+    middleBackground: 'transparent',
+    leftBackground: 'transparent',
+    rightBackground: 'transparent',
+    breakoutBackground: 'transparent',
+    wideBackground: 'transparent',
+    fullBackground: 'transparent'
   },
   created: function() {
-    this.toggleColorCode(true);
+    
   },
   methods: {
     toggleColorCode: function (toggle) {
