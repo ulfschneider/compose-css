@@ -2,19 +2,36 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="grid.css">
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <link rel="stylesheet" type="text/css" href="css/grid.css">
+  <link rel="stylesheet" type="text/css" href="css/layout.css">
   <title>Experimenting with CSS Grids</title>
 </head>
 
 <body>
   <div id="app">
-    <div id="control" style="position:fixed; top:1.62em; right:1.62em; background:black; border:1px solid white; padding:10px;">
+    <div id="control" style="position:fixed; bottom:1.62em; right:1.62em; background:black; border:1px solid white; padding:10px;">
       <button v-on:click="toggleColorCode">Toggle Background</button>
       <button v-on:click="toggleHeadlines">Toggle Headlines</button>
     </div>
 
 
     <div class="grid">
+
+      <div class="full" >
+        <img src="r/filip-gielda-94858-2.jpg" class="cover no-margin" />
+      </div>
+
+      <div class="title" v-bind:style="{background: background}">
+        <strong><h1>Der Mensch und die Berge</h1></strong>
+        <div class="meta">
+          <div class="sub-title">Pozzale di Cadore to San Vigilio</div>
+          <div class="date">November 2017</div>
+          <div class="author">Words Neil Phillips, Fotos George Marshall</div>
+          <div class="abstract">Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</div>
+        </div>
+      </div>
+
       <div v-bind:style="{background: background}">
         <h2 v-bind:style="{display: headlines}">Middle Grid Content</h2>
         <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</p>
@@ -25,15 +42,15 @@
 
       <div class="wide" v-bind:style="{background: background}">
         <div class="thirds">
-          <div class="col-1-2">
+          <figure class="col-1-2">
             <img src="r/nathan-anderson-127350.jpg" class="cover" />
             <figcaption>The Mountains</figcaption>
-          </div>
+          </figure>
           <div class="col-3" >
-            <div class="float-right max-width-two-thirds">
+            <figure class="float-right max-width-two-thirds">
               <img src="r/will-turner-392792.jpg" />
               <figcaption>The Mountains and Glaciers</figcaption>
-            </div>
+            </figure>
           </div>
         </div>
       </div>
@@ -49,9 +66,9 @@
       </div>
 
       <div class="thirds" v-bind:style="{background: background}">
-        <div class="col-1-2">
+        <figure class="col-1-2">
           <img src="r/tyler-lastovich-227920.jpg" class="cover" />
-        </div>
+        </figure>
         <div class="col-3">
           <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat.</p>
         </div>
@@ -64,8 +81,9 @@
         <p>Sie hätten noch ins Boot springen können, aber der Reisende hob ein schweres, geknotetes Tau vom Boden, drohte ihnen damit und hielt sie dadurch von dem Sprunge ab. In den letzten Jahrzehnten ist das Interesse an Hungerkünstlern sehr zurückgegangen. Aber sie überwanden sich, umdrängten den Käfig und wollten sich gar nicht fortrühren. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich</p>
       </div>
 
-      <div class="full cover height-500px" style="background-image:url(r/nathan-anderson-266223.jpg)">
-      </div>
+      <figure class="full cover height-500px" style="background-image:url(r/nathan-anderson-266223.jpg)">
+      </figure>
+
 
       <div class="right" v-bind:style="{background: background}">
         <h2 v-bind:style="{display: headlines}">Right Grid Content</h2>
@@ -95,12 +113,14 @@
       </div>
 
 
-      <div class="full" v-bind:style="{background: background}">
+      <div v-bind:style="{background: background}">
         <h2 v-bind:style="{display: headlines}">Full Grid Content</h2>
         <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</p>
+      </div>
 
-        <div class="cover height-250px" style="background-image:url(r/nathan-anderson-127350.jpg)" ></div>
+      <figure class="full cover height-250px" style="background-image:url(r/nathan-anderson-127350.jpg)" ></figure>
 
+      <div v-bind:style="{background: background}">
         <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat.</p>
 
         <p>Sie hätten noch ins Boot springen können, aber der Reisende hob ein schweres, geknotetes Tau vom Boden, drohte ihnen damit und hielt sie dadurch von dem Sprunge ab. In den letzten Jahrzehnten ist das Interesse an Hungerkünstlern sehr zurückgegangen. Aber sie überwanden sich, umdrängten den Käfig und wollten sich gar nicht fortrühren. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich</p>

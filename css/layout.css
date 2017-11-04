@@ -1,0 +1,85 @@
+/* layout */
+
+.height-500px {
+  height:500px;
+}
+
+.height-400px {
+  height:400px;
+}
+
+.height-250px {
+  height:250px;
+}
+
+.max-height-500px {
+  max-height:500px;
+}
+
+.max-height-400px {
+  max-height:400px;
+}
+
+.max-height-250px {
+  max-height:250px;
+}
+
+.max-width-one-third {
+  max-width:33%;
+}
+
+.max-width-two-thirds {
+  max-width:66%;
+}
+
+.cover {
+  width: 100%;
+  background-size:cover;
+  background-position: 50%;
+}
+
+
+.no-margin {
+  margin:0;
+}
+
+.float-left {
+  float:left;
+}
+
+.float-right {
+  float:right;
+}
+
+.align-left {
+  text-align:right;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.title {
+  margin-top:4.25em;
+  margin-bottom:1.62em;
+  text-align:center;
+}
+
+.title .sub-title {
+  text-transform: uppercase;
+}
+
+.title .date {
+
+}
+
+.title .abstract {
+  margin-top:1.62em;
+  font-style:italic;
+  text-align:left;
+}
+
+h1 strong, strong h1 {
+  font-size:1.62em;
+  margin:0;
+}

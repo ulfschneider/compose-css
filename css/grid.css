@@ -1,36 +1,3 @@
-/* basics */
-
-* {
-  line-height:1.62em;
-}
-
-h2 {
-  font-size:1em;
-  font-weight:bold;
-  margin-top:2.62em;
-  margin-bottom:.81em;
-}
-
-body {
-  margin:0;
-  padding:0;
-}
-
-img {
-  margin:1.62em 0;
-  max-width:100%;
-}
-
-figcaption {
-  margin-top:-1.62em;
-  font-style:italic;
-}
-
-p {
-  margin:1.62em 0;
-  padding:0;
-}
-
 /* grid */
 
 .grid {
@@ -93,64 +60,6 @@ p {
 }
 
 
-/* inner structure */
-
-.height-500px {
-  height:500px;
-}
-
-.height-400px {
-  height:400px;
-}
-
-.height-250px {
-  height:250px;
-}
-
-.max-height-500px {
-  max-height:500px;
-}
-
-.max-height-400px {
-  max-height:400px;
-}
-
-.max-height-250px {
-  max-height:250px;
-}
-
-.max-width-one-third {
-  max-width:33%;
-}
-
-.max-width-two-thirds {
-  max-width:66%;
-}
-
-.cover {
-  width: 100%;
-  background-size:cover;
-  background-position: 50%;
-}
-
-.float-left {
-  float:left;
-}
-
-.float-right {
-  float:right;
-}
-
-.align-left {
-  text-align:right;
-}
-
-.align-right {
-  text-align: right;
-}
-
-
-
 /* media queries */
 @media screen and (max-width: 700px) {
 
@@ -174,7 +83,7 @@ p {
   }
 
   .grid .wide {
-    grid-column: 2 / span 5;
+    grid-column: 4 / span 1;
   }
 
   .grid .full {

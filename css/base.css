@@ -1,0 +1,37 @@
+/* base */
+
+* {
+  line-height:1.62em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size:1em;
+  font-weight:bold;
+  margin-top:2.62em;
+  margin-bottom:.81em;
+  text-align:center;
+}
+
+body {
+  margin:0;
+  padding:0;
+}
+
+img {
+  margin:0;
+  max-width:100%;
+}
+
+figure {
+  margin:1.62em 0;
+}
+
+figcaption {
+  margin:0em;
+  font-style:italic;
+}
+
+p {
+  margin:1.62em 0;
+  padding:0;
+}
