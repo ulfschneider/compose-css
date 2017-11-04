@@ -1,86 +1,103 @@
-/* layout */
+/* base */
+/*spacings must be em unit */
+* {
+  line-height: 1.62em; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 2.6244em;
+  margin-bottom: 0.81em;
+  text-align: center; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 19px; }
+
+img {
+  margin: 0;
+  max-width: 100%; }
+
+figure {
+  margin: 1.62em 0; }
+
+figcaption {
+  margin: 0em;
+  margin-top: 0.81em;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 19px; }
+
+p {
+  margin: 1.62em 0;
+  padding: 0; }
+
+/* media queries */
+@media screen and (min-width: 1400px) {
+  body {
+    font-size: 20px; } }
+/* layout */
 .height-500px {
-  height:500px;
-}
+  height: 500px; }
 
 .height-400px {
-  height:400px;
-}
+  height: 400px; }
 
 .height-250px {
-  height:250px;
-}
+  height: 250px; }
 
 .max-height-500px {
-  max-height:500px;
-}
+  max-height: 500px; }
 
 .max-height-400px {
-  max-height:400px;
-}
+  max-height: 400px; }
 
 .max-height-250px {
-  max-height:250px;
-}
+  max-height: 250px; }
 
 .max-width-one-third {
-  max-width:33%;
-}
+  max-width: 33%; }
 
 .max-width-two-thirds {
-  max-width:66%;
-}
+  max-width: 66%; }
 
 .cover {
   width: 100%;
-  background-size:cover;
-  background-position: 50%;
-}
-
+  background-size: cover;
+  background-position: 50%; }
 
 .no-margin {
-  margin:0;
-}
+  margin: 0; }
 
 .float-left {
-  float:left;
-}
+  float: left; }
 
 .float-right {
-  float:right;
-}
+  float: right; }
 
 .align-left {
-  text-align:right;
-}
+  text-align: right; }
 
 .align-right {
-  text-align: right;
-}
+  text-align: right; }
 
 .title {
-  margin-top:4.25em;
-  margin-bottom:1.62em;
-  text-align:center;
-}
+  margin-top: 4.251528em;
+  margin-bottom: 1.62em;
+  text-align: center; }
 
 .title .sub-title {
-  text-transform: uppercase;
-}
-
-.title .date {
-
-}
+  text-transform: uppercase; }
 
 .title .abstract {
-  margin-top:1.62em;
-  font-style:italic;
-  text-align:left;
-}
+  margin-top: 1.62em;
+  font-style: italic;
+  text-align: left; }
 
 h1.strong {
-  font-size:1.62em;
-  font-weight:bold;
-  margin:0;
-}
+  font-size: 1.62em;
+  font-weight: bold;
+  margin: 0; }
+
+/*# sourceMappingURL=layout.css.map */

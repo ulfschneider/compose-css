@@ -1,0 +1,88 @@
+@import 'base';
+
+/* layout */
+
+.height-500px {
+  height:500px;
+}
+
+.height-400px {
+  height:400px;
+}
+
+.height-250px {
+  height:250px;
+}
+
+.max-height-500px {
+  max-height:500px;
+}
+
+.max-height-400px {
+  max-height:400px;
+}
+
+.max-height-250px {
+  max-height:250px;
+}
+
+.max-width-one-third {
+  max-width:33%;
+}
+
+.max-width-two-thirds {
+  max-width:66%;
+}
+
+.cover {
+  width: 100%;
+  background-size:cover;
+  background-position: 50%;
+}
+
+
+.no-margin {
+  margin:0;
+}
+
+.float-left {
+  float:left;
+}
+
+.float-right {
+  float:right;
+}
+
+.align-left {
+  text-align:right;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.title {
+  margin-top:$spacing-3;
+  margin-bottom:$spacing-1;
+  text-align:center;
+}
+
+.title .sub-title {
+  text-transform: uppercase;
+}
+
+.title .date {
+
+}
+
+.title .abstract {
+  margin-top:$spacing-1;
+  font-style:italic;
+  text-align:left;
+}
+
+h1.strong {
+  font-size:$spacing-1;
+  font-weight:bold;
+  margin:0;
+}
