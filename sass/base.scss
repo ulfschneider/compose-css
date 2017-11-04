@@ -1,6 +1,6 @@
 /* base */
 
-$font-size:19px;
+$font-size:18px;
 $line-height: 1.62em;
 $spacing-half: .81em;  /*spacings must be em unit */
 $spacing-1: 1.62em;
@@ -36,10 +36,9 @@ figure {
 }
 
 figcaption {
-  margin:0em;
-  margin-top:$spacing-half;
+  margin:$spacing-half 0 0 0;
   font-style:italic;
-  font-size:$font-size - 1px;
+  font-size:$font-size - 2px;
   line-height:$font-size;
 }
 

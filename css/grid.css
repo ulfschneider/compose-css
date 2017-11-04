@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
   margin: 0;
   padding: 0;
-  font-size: 19px; }
+  font-size: 18px; }
 
 img {
   margin: 0;
@@ -23,11 +23,10 @@ figure {
   margin: 1.62em 0; }
 
 figcaption {
-  margin: 0em;
-  margin-top: 0.81em;
+  margin: 0.81em 0 0 0;
   font-style: italic;
-  font-size: 18px;
-  line-height: 19px; }
+  font-size: 16px;
+  line-height: 18px; }
 
 p {
   margin: 1.62em 0;
@@ -36,7 +35,7 @@ p {
 /* media queries */
 @media screen and (min-width: 1400px) {
   body {
-    font-size: 20px; } }
+    font-size: 19px; } }
 /* grid */
 .grid {
   display: grid;
@@ -73,6 +72,9 @@ p {
     grid-column: 3 / span 1; }
 
 /* media queries */
+@media screen and (max-width: 400px) {
+  .grid {
+    grid-template-columns: 0.81em 1fr 1fr minmax(0, 700px) 1fr 1fr 0.81em; } }
 @media screen and (max-width: 700px) {
   .thirds .col-1, .thirds .col-1-2, .thirds .col-1-2-3, .thirds .col-2, .thirds .col-2-3, .thirds .col-3 {
     grid-column: 1 / span 3; } }
@@ -87,5 +89,3 @@ p {
     grid-column: 4 / span 1; }
   .grid .full {
     grid-column: 1/ span 7; } }
-
-/*# sourceMappingURL=grid.css.map */

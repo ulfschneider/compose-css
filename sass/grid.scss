@@ -55,6 +55,12 @@ $content-width: 700px;
 }
 
 /* media queries */
+@media screen and (max-width: 400px) {
+  .grid {
+    grid-template-columns: $spacing-half 1fr 1fr minmax(0, $content-width) 1fr 1fr $spacing-half;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .thirds .col-1, .thirds .col-1-2, .thirds .col-1-2-3, .thirds .col-2, .thirds .col-2-3, .thirds .col-3 {
     grid-column: 1 / span 3;
