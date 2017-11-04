@@ -16,8 +16,9 @@
     </div>
 
 
-    <div class="grid">
+    <div id="siteHeader" style="position:fixed; z-index:10; top:0; width:100%; background:black; color:white;">Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</div>
 
+    <div id="grid" class="grid">
       <div class="full" >
         <img src="r/filip-gielda-94858-2.jpg" class="cover no-margin" />
       </div>
@@ -64,7 +65,7 @@
         <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</p>
 
 
-        
+
         <div class="thirds" v-bind:style="{background: background}">
           <figure class="col-1-2">
             <img src="r/tyler-lastovich-227920.jpg" class="cover" />
@@ -148,6 +149,7 @@
   </div>
 </body>
 <script src="https://unpkg.com/vue"></script>
+<script src="r/dynamic-header.js"></script>
 <script>
 var app = new Vue({
   el: '#app',
