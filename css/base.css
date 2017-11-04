@@ -15,6 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
   margin:0;
   padding:0;
+  font-size:19px;
 }
 
 img {
@@ -34,4 +35,12 @@ figcaption {
 p {
   margin:1.62em 0;
   padding:0;
+}
+
+
+/* media queries */
+@media screen and (min-width: 1400px) {
+  body {
+    font-size:20px;
+  }
 }

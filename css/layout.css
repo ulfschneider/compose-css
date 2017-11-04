@@ -79,7 +79,8 @@
   text-align:left;
 }
 
-h1 strong, strong h1 {
+h1.strong {
   font-size:1.62em;
+  font-weight:bold;
   margin:0;
 }
