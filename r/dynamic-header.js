@@ -7,20 +7,6 @@ var DynamicHeader = (function() {
   var content;
   var trim;
 
-  function transferConfig(config) {
-    if (config) {
-      if (config.headerId) {
-        self.config.headerId = config.headerId;
-      }
-      if (config.contentId) {
-        self.config.contentId = config.contentId;
-      }
-      if (config.delta) {
-        self.config.delta = config.delta;
-      }
-    }
-  }
-
   function windowHeight() {
     return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
   }
@@ -169,16 +155,33 @@ var DynamicHeader = (function() {
     if (trim) {
       trim.remove();
     }
+    trim = null;
     header = null;
     content = null;
   }
 
+  function transferConfig(config) {
+    //clean up
+    reset();
+
+    //transfer config
+    if (config) {
+      if (config.headerId) {
+        self.config.headerId = config.headerId;
+      }
+      if (config.contentId) {
+        self.config.contentId = config.contentId;
+      }
+      if (config.delta) {
+        self.config.delta = config.delta;
+      }
+    }
+  }
+
+
   //public API
   return {
     init: function(config) {
-      //clean up
-      reset();
-
       //init
       transferConfig(config);
       window.addEventListener('load', onload);
