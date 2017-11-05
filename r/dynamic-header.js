@@ -18,7 +18,7 @@ var config = {
   lastScrollTop: 0,
   delta: 5,
   header: null,
-  adjust: null
+  content: null
 }
 
 //logic
@@ -26,33 +26,56 @@ function getHeaderHeight() {
   return config.header.clientHeight;
 }
 
+function isHeaderHidden() {
+  var top = parseInt(config.header.style.top);
+  return top < 0;
+}
+
 function selectHeader() {
   return document.getElementById('siteHeader');
 }
 
-function selectAdjust() {
+function selectContent() {
   return document.getElementById('grid');
 }
 
-function adjust() {
-  if (config.header && config.adjust) {
+function setContentMargin(margin) {
+  config.content.style.marginTop = margin;
+}
+
+function setHeaderTop(top) {
+  config.header.style.top = top;
+}
+
+function trimHeader() {
+  if (config.header) {
+    if (isHeaderHidden()) {
+      //move the header out of the way, even if resizing the window leads to different height of header
+      setHeaderTop('-1000px');
+    }
+  }
+}
+
+function trimContent() {
+  if (config.header && config.content) {
     var headerHeight = getHeaderHeight();
-    config.adjust.style.marginTop = headerHeight + 'px';
+    setContentMargin(headerHeight + 'px');
   }
 }
 
 function init() {
   config.header = selectHeader();
-  config.adjust = selectAdjust();
-  adjust();
+  config.content = selectContent();
+  trimContent();
 
   if (config.header) {
+    config.header.style.transition = 'top 0.2s ease-in-out';
     window.onscroll = function() {
       config.scrolled = true;
     }
     window.onresize = function() {
-      config.header.style.top = 0;
-      adjust();
+      trimHeader();
+      trimContent();
     }
     setInterval(function() {
       if (config.scrolled) {
@@ -64,26 +87,28 @@ function init() {
 }
 
 function moveHeader() {
+  var headerHeight = getHeaderHeight();
+  if (isHeaderHidden()) {
+    setHeaderTop(-headerHeight + 'px');
+  }
+
   var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
   if (Math.abs(config.lastScrollTop - scrollTop) <= config.delta) return;
 
-  var headerHeight = getHeaderHeight();
-
-  config.header.style.transition = 'top 0.2s ease-in-out';
   if (scrollTop > config.lastScrollTop && scrollTop > headerHeight){
     // If current position > last position AND scrolled past header
     // scroll down
-    config.header.style.top = '' + -headerHeight + 'px';
+    setHeaderTop(-headerHeight + 'px');
   } else {
     if(scrollTop + windowHeight() < documentHeight()) {
-      config.header.style.top = 0;
+      setHeaderTop(0);
     }
   }
   config.lastScrollTop = scrollTop;
 }
 
 
-//TODO make header + adjust configurable
+//TODO make header id + adjust id configurable
 
 (function dynamicHeader() {
   window.onload = function() {
