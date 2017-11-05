@@ -46,6 +46,11 @@ var DynamicHeader = (function() {
     var header = document.getElementById(config.headerId);
     if (!header) {
       console.error('Header with id=[' + config.headerId + '] could not be found in DOM');
+    } else {
+      header.style.position = 'fixed';
+      header.style.top = '0';
+      header.style.left = '0';
+      header.style.right = '0';
     }
     return header;
   }
