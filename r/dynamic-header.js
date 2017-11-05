@@ -7,20 +7,6 @@ var DynamicHeader = (function() {
   var content;
   var trim;
 
-  //helper functions
-  function windowHeight() {
-    return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-  }
-
-  function documentHeight() {
-    return Math.max(
-      document.body.scrollHeight, document.documentElement.scrollHeight,
-      document.body.offsetHeight, document.documentElement.offsetHeight,
-      document.body.clientHeight, document.documentElement.clientHeight
-    );
-  }
-
-  //logic
   function transferConfig(config) {
     if (config) {
       if (config.headerId) {
@@ -33,6 +19,18 @@ var DynamicHeader = (function() {
         self.config.delta = config.delta;
       }
     }
+  }
+
+  function windowHeight() {
+    return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+  }
+
+  function documentHeight() {
+    return Math.max(
+      document.body.scrollHeight, document.documentElement.scrollHeight,
+      document.body.offsetHeight, document.documentElement.offsetHeight,
+      document.body.clientHeight, document.documentElement.clientHeight
+    );
   }
 
   function getHeaderHeight() {
