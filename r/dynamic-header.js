@@ -18,7 +18,8 @@ var config = {
   lastScrollTop: 0,
   delta: 5,
   header: null,
-  content: null
+  content: null,
+  trim: null
 }
 
 //logic
@@ -39,12 +40,29 @@ function selectContent() {
   return document.getElementById('grid');
 }
 
-function setContentMargin(margin) {
-  config.content.style.marginTop = margin;
+function setContentTrim(margin) {
+  config.trim.style.height = margin;
 }
 
 function setHeaderTop(top) {
   config.header.style.top = top;
+}
+
+function trimContent() {
+  if (config.trim) {
+    var headerHeight = getHeaderHeight();
+    setContentTrim(headerHeight + 'px');
+  }
+}
+
+function insertTrim() {
+  if (config.header && config.content) {
+    var parent = config.content.parentElement;
+    config.trim = document.createElement("div");
+    config.trim.style.background = config.header.style.background;
+    parent.insertBefore(config.trim, config.content);
+    trimContent();
+  }
 }
 
 function trimHeader() {
@@ -56,17 +74,10 @@ function trimHeader() {
   }
 }
 
-function trimContent() {
-  if (config.header && config.content) {
-    var headerHeight = getHeaderHeight();
-    setContentMargin(headerHeight + 'px');
-  }
-}
-
 function init() {
   config.header = selectHeader();
   config.content = selectContent();
-  trimContent();
+  insertTrim();
 
   if (config.header) {
     config.header.style.transition = 'top 0.2s ease-in-out';
