@@ -182,7 +182,6 @@ var DynamicHeader = (function() {
       //init
       transferConfig(config);
       window.addEventListener('load', onload);
-
     }
   }
 })();
