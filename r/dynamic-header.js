@@ -56,10 +56,13 @@ function trimContent() {
 }
 
 function insertTrim() {
+  //it´s more unobtrusive to insert a trim div with a specific height
+  //before the content instead of setting a top-margin for the
+  //content
+
   if (config.header && config.content) {
     var parent = config.content.parentElement;
     config.trim = document.createElement("div");
-    config.trim.style.background = config.header.style.background;
     parent.insertBefore(config.trim, config.content);
     trimContent();
   }
@@ -68,7 +71,8 @@ function insertTrim() {
 function trimHeader() {
   if (config.header) {
     if (isHeaderHidden()) {
-      //move the header out of the way, even if resizing the window leads to different height of header
+      //move the header out of the way, even if resizing the window
+      //leads to different height of header
       setHeaderTop('-1000px');
     }
   }
@@ -100,6 +104,9 @@ function init() {
 function moveHeader() {
   var headerHeight = getHeaderHeight();
   if (isHeaderHidden()) {
+    //if the header has been trimmed before, it should be
+    //moved into a position from where it can be moved
+    //with proper animation speed
     setHeaderTop(-headerHeight + 'px');
   }
 
@@ -107,8 +114,8 @@ function moveHeader() {
   if (Math.abs(config.lastScrollTop - scrollTop) <= config.delta) return;
 
   if (scrollTop > config.lastScrollTop && scrollTop > headerHeight){
-    // If current position > last position AND scrolled past header
-    // scroll down
+    // if current position > last position AND scrolled past header height,
+    // move the header out of the way
     setHeaderTop(-headerHeight + 'px');
   } else {
     if(scrollTop + windowHeight() < documentHeight()) {
