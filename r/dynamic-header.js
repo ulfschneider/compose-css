@@ -137,7 +137,7 @@ var DynamicHeader = (function() {
 
     if (header) {
       insertTrim();
-      
+
       header.style.transition = 'top 0.2s ease-in-out';
       window.addEventListener('resize', onresize);
       window.addEventListener('scroll', onscroll);
