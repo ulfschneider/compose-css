@@ -29,6 +29,9 @@ var DynamicHeader = (function() {
       if (config.contentId) {
         self.config.contentId = config.contentId;
       }
+      if (config.delta) {
+        self.config.delta = config.delta;
+      }
     }
   }
 
@@ -42,12 +45,20 @@ var DynamicHeader = (function() {
   }
 
   function selectHeader() {
-    return document.getElementById(config.headerId);
+    var header = document.getElementById(config.headerId);
+    if (!header) {
+      console.error('Header with id=[' + config.headerId + '] could not be found in DOM');
+    }
+    return header;
   }
 
   function selectContent() {
     if (config.contentId) {
-      return document.getElementById(config.contentId);
+      var content = document.getElementById(config.contentId);
+      if (!content) {
+        console.error('Content with id=[' + config.contentId + '] could not be found in DOM');
+      }
+      return content;
     } else {
       return document.body.firstElementChild;
     }
