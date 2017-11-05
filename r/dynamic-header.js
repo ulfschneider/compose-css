@@ -1,17 +1,11 @@
 var DynamicHeader = (function() {
-  //config
+  //state
   var self = this;
-  var scrolled = false;
-  var lastScrollTop = 0;
+  var scrolled;
+  var lastScrollTop;
   var header;
   var content;
   var trim;
-
-  this.config = {
-    delta: 5,
-    headerId: 'header',
-    contentId: ''
-  }
 
   //helper functions
   function windowHeight() {
@@ -150,13 +144,31 @@ var DynamicHeader = (function() {
     }
   }
 
+  function reset() {
+    self.config = {
+      delta: 5,
+      headerId: 'header',
+      contentId: ''
+    }
+    lastScrollTop = 0;
+    scrolled = false;
+    if (trim) {
+      trim.remove();
+    }
+    header = null;
+    content = null;
+  }
+
   //public API
   return {
     init: function(config) {
-      if (!header && !content) {
-        transferConfig(config);
-        window.addEventListener('load', onload);
-      }
+      //clean up
+      reset();
+
+      //init
+      transferConfig(config);
+      window.addEventListener('load', onload);
+
     }
   }
 })();
