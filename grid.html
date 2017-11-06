@@ -163,9 +163,11 @@ var app = new Vue({
   },
   created: function() {
     DynamicHeader.init();
+
   },
   methods: {
     toggleColorCode: function () {
+      DynamicHeader.destroy();
       if (this.background !== 'transparent') {
         this.background = 'transparent';
       } else {

@@ -10,22 +10,22 @@ $content-width: 700px;
 }
 
 .grid  {
-  * {
+  > * {
     grid-column: 4 / span 1;
   }
-  .left {
+  > .left {
     grid-column: 3 / span 2;
   }
-  .right {
+  > .right {
     grid-column: 4 / span 2;
   }
-  .breakout {
+  > .breakout {
     grid-column: 3 / span 3;
   }
-  .wide {
+  > .wide {
     grid-column: 2 / span 5;
   }
-  .full {
+  > .full {
     grid-column: 1/ span 7;
   }
 }

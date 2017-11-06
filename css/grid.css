@@ -41,17 +41,17 @@ p {
   display: grid;
   grid-template-columns: 1.62em 1fr 1fr minmax(0, 700px) 1fr 1fr 1.62em; }
 
-.grid * {
+.grid > * {
   grid-column: 4 / span 1; }
-.grid .left {
+.grid > .left {
   grid-column: 3 / span 2; }
-.grid .right {
+.grid > .right {
   grid-column: 4 / span 2; }
-.grid .breakout {
+.grid > .breakout {
   grid-column: 3 / span 3; }
-.grid .wide {
+.grid > .wide {
   grid-column: 2 / span 5; }
-.grid .full {
+.grid > .full {
   grid-column: 1/ span 7; }
 
 .thirds {
