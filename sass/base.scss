@@ -31,8 +31,9 @@ img {
   max-width:100%;
 }
 
-figure {
+p, figure {
   margin:$spacing-1 0;
+  padding:0;
 }
 
 figcaption {
@@ -41,12 +42,6 @@ figcaption {
   font-size:$font-size - 2px;
   line-height:$font-size;
 }
-
-p {
-  margin:$spacing-1 0;
-  padding:0;
-}
-
 
 /* media queries */
 @media screen and (min-width: 1400px) {

@@ -19,18 +19,15 @@ img {
   margin: 0;
   max-width: 100%; }
 
-figure {
-  margin: 1.62em 0; }
+p, figure {
+  margin: 1.62em 0;
+  padding: 0; }
 
 figcaption {
   margin: 0.81em 0 0 0;
   font-style: italic;
   font-size: 16px;
   line-height: 18px; }
-
-p {
-  margin: 1.62em 0;
-  padding: 0; }
 
 /* media queries */
 @media screen and (min-width: 1400px) {
