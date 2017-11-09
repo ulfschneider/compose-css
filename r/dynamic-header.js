@@ -44,6 +44,7 @@ var DynamicHeader = (function() {
   }
 
   function revertHeaderStyle() {
+    //clean up any settings that have been made by DynamicHeader
     if (header && initialHeaderStyle) {
       header.style.transition = initialHeaderStyle.transition;
       header.style.position = initialHeaderStyle.position;
