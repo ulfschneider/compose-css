@@ -9,11 +9,11 @@
 <body>
   <div id="app">
     <div id="control" style="position:fixed; bottom:1.62em; right:1.62em; background:black; border:1px solid white; padding:10px;">
-      <button v-on:click="toggleTitle" style="display: block;">Toggle Title</button>
-      <button v-on:click="toggleTitleType" v-bind:style="{display: title}">Toggle Title Type</button>
-      <button v-on:click="toggleColorCode" style="display: block;">Toggle Background</button>
-      <button v-on:click="toggleHeadlines" style="display: block;">Toggle Headlines</button>
-      <button v-on:click="toggleContentList" style="display: block;">Toggle Content List</button>
+      <button v-on:click="toggleTitle" style="display: block;">Title: {{title}}</button>
+      <button v-on:click="toggleTitleType" v-bind:style="{display: title}">Strong Title: {{strongTitle}}</button>
+      <button v-on:click="toggleColorCode" style="display: block;">Background: {{background}}</button>
+      <button v-on:click="toggleHeadlines" style="display: block;">Headlines: {{headlines}}</button>
+      <button v-on:click="toggleContentList" style="display: block;">Content List: {{contentList}}</button>
     </div>
 
 
