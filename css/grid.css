@@ -29,11 +29,12 @@ img {
   max-width: 100%; }
 
 p, figure {
-  margin: 1.62em 0;
+  margin: 0 0 1.62em 0;
   padding: 0; }
 
 figure {
-  max-width: 100%; }
+  max-width: 100%;
+  overflow-x: scroll; }
 
 figcaption {
   margin: 0.81em 0 0 0;

@@ -29,11 +29,12 @@ img {
   max-width: 100%; }
 
 p, figure {
-  margin: 1.62em 0;
+  margin: 0 0 1.62em 0;
   padding: 0; }
 
 figure {
-  max-width: 100%; }
+  max-width: 100%;
+  overflow-x: scroll; }
 
 figcaption {
   margin: 0.81em 0 0 0;
@@ -76,11 +77,12 @@ img {
   max-width: 100%; }
 
 p, figure {
-  margin: 1.62em 0;
+  margin: 0 0 1.62em 0;
   padding: 0; }
 
 figure {
-  max-width: 100%; }
+  max-width: 100%;
+  overflow-x: scroll; }
 
 figcaption {
   margin: 0.81em 0 0 0;
@@ -196,10 +198,14 @@ figcaption {
   color: white;
   padding: 0.81em 0; }
 
+/* banner */
+.banner {
+  margin-bottom: 4.251528em; }
+
 /* title */
 .title {
-  margin: 4.251528em 0 0 0;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 1.62em; }
 
 .title .sub-title {
   text-transform: uppercase; }
@@ -218,7 +224,7 @@ figcaption {
 
 /* content list */
 .content-list .item {
-  margin: 1.62em 0; }
+  margin: 0 0 1.62em 0; }
   .content-list .item .title {
     margin: 0;
     text-align: left; }

@@ -47,12 +47,13 @@ img {
 }
 
 p, figure {
-  margin:$spacing-1 0;
+  margin:0 0 $spacing-1 0;
   padding:0;
 }
 
 figure {
   max-width:100%;
+  overflow-x: scroll;
 }
 
 figcaption {

@@ -9,11 +9,12 @@
 <body>
   <div id="app">
     <div id="control" style="position:fixed; bottom:1.62em; right:1.62em; background:black; border:1px solid white; padding:10px;">
+      <button v-on:click="toggleBanner" style="display: block;">Banner: {{banner}}</button>
       <button v-on:click="toggleTitle" style="display: block;">Title: {{title}}</button>
       <button v-on:click="toggleTitleType" v-bind:style="{display: title}">Strong Title: {{strongTitle}}</button>
-      <button v-on:click="toggleColorCode" style="display: block;">Background: {{background}}</button>
       <button v-on:click="toggleHeadlines" style="display: block;">Headlines: {{headlines}}</button>
       <button v-on:click="toggleContentList" style="display: block;">Content List: {{contentList}}</button>
+      <button v-on:click="toggleColorCode" style="display: block;">Background: {{background}}</button>
     </div>
 
 
@@ -24,8 +25,8 @@
     </div>
 
     <div id="grid" class="grid">
-      <div class="full" >
-        <img src="r/filip-gielda-94858-2.jpg" class="cover no-margin" />
+      <div class="full banner">
+        <img src="r/filip-gielda-94858-2.jpg" class="cover no-margin" v-bind:style="{display: banner}"/>
       </div>
 
       <div class="title" v-bind:class="{strong: strongTitle}" v-bind:style="{background: background, display: title}">
@@ -61,11 +62,6 @@
         </div>
 
       </div>
-
-
-
-
-
 
 
       <div v-bind:style="{background: background}">
@@ -140,7 +136,7 @@
         <p>Sie hätten noch ins Boot springen können, aber der Reisende hob ein schweres, geknotetes Tau vom Boden, drohte ihnen damit und hielt sie dadurch von dem Sprunge ab. In den letzten Jahrzehnten ist das Interesse an Hungerkünstlern sehr zurückgegangen. Aber sie überwanden sich, umdrängten den Käfig und wollten sich gar nicht fortrühren. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich</p>
       </div>
 
-      <div class="wide" v-bind:style="{background: background}" style="columns:3;">
+      <div class="wide" v-bind:style="{background: background}" style="columns:3; padding-bottom:1.62em;">
         <h2 v-bind:style="{display: headlines}">Wide Grid Content</h2>
         <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</p>
 
@@ -192,6 +188,7 @@ var app = new Vue({
     background: 'transparent',
     headlines: 'block',
     title: 'block',
+    banner: 'block',
     contentList: 'none',
     strongTitle: true
   },
@@ -214,6 +211,14 @@ var app = new Vue({
         this.headlines = 'none';
       }
     },
+    toggleBanner : function() {
+      if (this.banner !== 'block') {
+        this.banner = 'block';
+      } else {
+        this.banner = 'none';
+      }
+    },
+
     toggleTitle : function() {
       if (this.title !== 'block') {
         this.title = 'block';
