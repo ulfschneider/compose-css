@@ -209,10 +209,12 @@ figcaption {
   font-style: italic;
   text-align: left; }
 
-h1.strong {
-  font-size: 1.62em;
-  font-weight: bold;
+.title h1 {
   margin: 0; }
+
+.title.strong h1 {
+  font-size: 1.62em;
+  font-weight: bold; }
 
 /* content list */
 .content-list .item {

@@ -91,10 +91,17 @@
   text-align:left;
 }
 
-h1.strong {
-  font-size:$spacing-1;
-  font-weight:bold;
-  margin:0;
+.title {
+  h1 {
+    margin:0;
+  }
+}
+
+.title.strong {
+  h1 {
+    font-size:$spacing-1;
+    font-weight:bold;
+  }
 }
 
 
