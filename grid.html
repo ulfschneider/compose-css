@@ -9,11 +9,11 @@
 <body>
   <div id="app">
     <div id="control" style="position:fixed; bottom:1.62em; right:1.62em; background:black; border:1px solid white; padding:10px;">
-      <button v-on:click="toggleTitle">Toggle Title</button>
-      <button v-on:click="toggleTitleType">Toggle Title Type</button>
-      <button v-on:click="toggleColorCode">Toggle Background</button>
-      <button v-on:click="toggleHeadlines">Toggle Headlines</button>
-
+      <button v-on:click="toggleTitle" style="display: block;">Toggle Title</button>
+      <button v-on:click="toggleTitleType" v-bind:style="{display: title}">Toggle Title Type</button>
+      <button v-on:click="toggleColorCode" style="display: block;">Toggle Background</button>
+      <button v-on:click="toggleHeadlines" style="display: block;">Toggle Headlines</button>
+      <button v-on:click="toggleContentList" style="display: block;">Toggle Content List</button>
     </div>
 
 
@@ -38,7 +38,7 @@
         <div class="abstract">Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</div>
       </div>
 
-      <div class="content-list" v-bind:style="{background: background}" >
+      <div class="content-list" v-bind:style="{background: background, display: contentList}" >
 
         <div class="item">
           <div class="title">
@@ -192,6 +192,7 @@ var app = new Vue({
     background: 'transparent',
     headlines: 'block',
     title: 'block',
+    contentList: 'none',
     strongTitle: true
   },
   created: function() {
@@ -226,7 +227,15 @@ var app = new Vue({
       } else {
         this.strongTitle = true;
       }
-    }
+    },
+    toggleContentList : function() {
+      if (this.contentList !== 'block') {
+        this.contentList = 'block';
+      } else {
+        this.contentList = 'none';
+      }
+    },
+
 
 
 

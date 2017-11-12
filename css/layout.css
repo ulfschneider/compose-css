@@ -198,7 +198,7 @@ figcaption {
 
 /* title */
 .title {
-  margin: 4.251528em 0 1.62em 0;
+  margin: 4.251528em 0 0 0;
   text-align: center; }
 
 .title .sub-title {
@@ -218,7 +218,7 @@ figcaption {
 
 /* content list */
 .content-list .item {
-  margin: 2.6244em 0; }
+  margin: 1.62em 0; }
   .content-list .item .title {
     margin: 0;
     text-align: left; }
