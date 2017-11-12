@@ -129,13 +129,12 @@ figcaption {
   .thirds .col-3 {
     grid-column: 3 / span 1; }
 
+.three-columns {
+  columns: 3;
+  padding-bottom: 1.62em;
+  column-gap: 1.62em; }
+
 /* media queries */
-@media screen and (max-width: 400px) {
-  .grid {
-    grid-template-columns: 0.81em 1fr 1fr minmax(0, 700px) 1fr 1fr 0.81em; } }
-@media screen and (max-width: 700px) {
-  .thirds .col-1, .thirds .col-1-2, .thirds .col-1-2-3, .thirds .col-2, .thirds .col-2-3, .thirds .col-3 {
-    grid-column: 1 / span 3; } }
 @media screen and (max-width: 1000px) {
   .grid .left {
     grid-column: 4 / span 1; }
@@ -146,7 +145,21 @@ figcaption {
   .grid .wide {
     grid-column: 4 / span 1; }
   .grid .full {
-    grid-column: 1/ span 7; } }
+    grid-column: 1/ span 7; }
+
+  .three-columns {
+    columns: 2;
+    padding-bottom: 0; } }
+@media screen and (max-width: 700px) {
+  .thirds .col-1, .thirds .col-1-2, .thirds .col-1-2-3, .thirds .col-2, .thirds .col-2-3, .thirds .col-3 {
+    grid-column: 1 / span 3; }
+
+  .three-columns {
+    columns: 1;
+    padding-bottom: 0; } }
+@media screen and (max-width: 400px) {
+  .grid {
+    grid-template-columns: 0.81em 1fr 1fr minmax(0, 700px) 1fr 1fr 0.81em; } }
 /* layout */
 .height-500px {
   height: 500px; }
