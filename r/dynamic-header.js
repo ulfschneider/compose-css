@@ -124,6 +124,7 @@ var DynamicHeader = (function() {
     }
 
     var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+
     if (Math.abs(lastScrollTop - scrollTop) <= config.delta) return;
 
     if (scrollTop > lastScrollTop && scrollTop > headerHeight){

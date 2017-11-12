@@ -62,9 +62,18 @@
   text-align: right;
 }
 
+/* header */
+#header {
+  background:black;
+  color:white;
+  padding:$spacing-half 0;
+}
+
+
+/* title */
+
 .title {
-  margin-top:$spacing-3;
-  margin-bottom:$spacing-1;
+  margin: $spacing-3 0 $spacing-1 0;
   text-align:center;
 }
 
@@ -72,7 +81,7 @@
   text-transform: uppercase;
 }
 
-.title .date {
+.title .meta {
 
 }
 
@@ -86,4 +95,27 @@ h1.strong {
   font-size:$spacing-1;
   font-weight:bold;
   margin:0;
+}
+
+
+/* content list */
+.content-list {
+  .item {
+    margin:$spacing-2 0;
+    .title {
+      margin:0;
+      text-align:left;
+      h2 {
+        display:inline-block;
+        margin: 0 $spacing-half 0 0;
+        text-align:left;
+      }
+      .meta {
+        display:inline-block;
+      }
+    }
+    p {
+      margin:0;
+    }
+  }
 }

@@ -12,18 +12,33 @@ $spacing-4: 1.62 * 1.62 * 1.62 * 1.62em;
   line-height:$line-height;
 }
 
+body {
+  margin:0;
+  padding:0;
+  font-size: $font-size;
+  font-feature-settings: "onum" 1;
+}
+@supports (font-variant-numeric: oldstyle-nums) {
+    body {
+        font-feature-settings: normal;
+        font-variant-numeric: oldstyle-nums;
+    }
+}
+
+
 h1, h2, h3, h4, h5, h6 {
   font-size:1em;
   font-weight:bold;
   margin-top:$spacing-2;
   margin-bottom:$spacing-half;
   text-align:center;
+  font-feature-settings: "lnum" 1;
 }
 
-body {
-  margin:0;
-  padding:0;
-  font-size:$font-size;
+@supports (font-variant-numeric: lining-nums) {
+    body {
+        font-variant-numeric: lining-nums;
+    }
 }
 
 img {
@@ -34,6 +49,10 @@ img {
 p, figure {
   margin:$spacing-1 0;
   padding:0;
+}
+
+figure {
+  max-width:100%;
 }
 
 figcaption {
