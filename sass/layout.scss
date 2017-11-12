@@ -73,7 +73,7 @@
 /* title */
 
 .title {
-  margin: $spacing-3 0 $spacing-1 0;
+  margin: $spacing-3 0 0 0;
   text-align:center;
 }
 
@@ -108,7 +108,7 @@
 /* content list */
 .content-list {
   .item {
-    margin:$spacing-2 0;
+    margin:$spacing-1 0;
     .title {
       margin:0;
       text-align:left;
