@@ -81,7 +81,7 @@ figcaption {
   .thirds .col-3 {
     grid-column: 3 / span 1; }
 
-.three-columns {
+.columns {
   columns: 3;
   padding-bottom: 1.62em;
   column-gap: 1.62em; }
@@ -99,14 +99,14 @@ figcaption {
   .grid .full {
     grid-column: 1/ span 7; }
 
-  .three-columns {
+  .columns {
     columns: 2;
     padding-bottom: 0; } }
 @media screen and (max-width: 700px) {
   .thirds .col-1, .thirds .col-1-2, .thirds .col-1-2-3, .thirds .col-2, .thirds .col-2-3, .thirds .col-3 {
     grid-column: 1 / span 3; }
 
-  .three-columns {
+  .columns {
     columns: 1;
     padding-bottom: 0; } }
 @media screen and (max-width: 400px) {
