@@ -1,11 +1,9 @@
 var DynamicHeader = (function() {
   //state
   var self = this;
-  var scrolled;
-  var lastScrollTop;
-  var header;
-  var content;
-  var trim;
+  var scrolled, lastScrollTop;
+  var header, content, trim;
+  var initialHeaderStyle;
 
   function windowHeight() {
     return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
@@ -28,28 +26,52 @@ var DynamicHeader = (function() {
     return top < 0;
   }
 
+  function modifyHeaderStyle() {
+    //save header style for later clean up
+    initialHeaderStyle = {};
+    initialHeaderStyle.transition = header.style.transition;
+    initialHeaderStyle.position = header.style.position;
+    initialHeaderStyle.left = header.style.left;
+    initialHeaderStyle.top = header.style.top;
+    initialHeaderStyle.right = header.style.right;
+
+    //modify header style
+    header.style.transition = 'top 0.2s ease-in-out';
+    header.style.position = 'fixed';
+    header.style.top = '0';
+    header.style.left = '0';
+    header.style.right = '0';
+  }
+
+  function revertHeaderStyle() {
+    //clean up any settings that have been made by DynamicHeader
+    if (header && initialHeaderStyle) {
+      header.style.transition = initialHeaderStyle.transition;
+      header.style.position = initialHeaderStyle.position;
+      header.style.left = initialHeaderStyle.left;
+      header.style.top = initialHeaderStyle.top;
+      header.style.right = initialHeaderStyle.right;
+    }
+  }
+
   function selectHeader() {
-    var header = document.getElementById(config.headerId);
+    header = document.getElementById(config.headerId);
     if (!header) {
       console.error('Header with id=[' + config.headerId + '] could not be found in DOM');
     } else {
-      header.style.position = 'fixed';
-      header.style.top = '0';
-      header.style.left = '0';
-      header.style.right = '0';
+      modifyHeaderStyle();
     }
-    return header;
   }
 
   function selectContent() {
     if (config.contentId) {
-      var content = document.getElementById(config.contentId);
+       content = document.getElementById(config.contentId);
       if (!content) {
         console.error('Content with id=[' + config.contentId + '] could not be found in DOM');
       }
-      return content;
+
     } else {
-      return document.body.firstElementChild;
+      content = document.body.firstElementChild;
     }
   }
 
@@ -102,6 +124,7 @@ var DynamicHeader = (function() {
     }
 
     var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+
     if (Math.abs(lastScrollTop - scrollTop) <= config.delta) return;
 
     if (scrollTop > lastScrollTop && scrollTop > headerHeight){
@@ -126,13 +149,11 @@ var DynamicHeader = (function() {
   }
 
   function onload() {
-    header = selectHeader();
-    content = selectContent();
+    selectHeader();
+    selectContent();
 
     if (header) {
       insertTrim();
-
-      header.style.transition = 'top 0.2s ease-in-out';
       window.addEventListener('resize', onresize);
       window.addEventListener('scroll', onscroll);
       setInterval(function() {
@@ -144,7 +165,7 @@ var DynamicHeader = (function() {
     }
   }
 
-  function reset() {
+  function cleanUp() {
     self.config = {
       delta: 5,
       headerId: 'header',
@@ -152,19 +173,17 @@ var DynamicHeader = (function() {
     }
     lastScrollTop = 0;
     scrolled = false;
+    revertHeaderStyle();
     if (trim) {
       trim.remove();
     }
     trim = null;
     header = null;
     content = null;
+
   }
 
   function transferConfig(config) {
-    //clean up
-    reset();
-
-    //transfer config
     if (config) {
       if (config.headerId) {
         self.config.headerId = config.headerId;
@@ -183,8 +202,12 @@ var DynamicHeader = (function() {
   return {
     init: function(config) {
       //init
+      cleanUp();
       transferConfig(config);
       window.addEventListener('load', onload);
+    },
+    destroy: function() {
+      cleanUp();
     }
   }
 })();
