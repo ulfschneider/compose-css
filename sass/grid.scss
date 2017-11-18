@@ -1,101 +1,122 @@
 @import 'base';
-
 /* grid */
-
 $content-width: 700px;
 
 .grid {
-  display:grid;
+  display: grid;
   grid-template-columns: $spacing-1 1fr 1fr minmax(0, $content-width) 1fr 1fr $spacing-1;
 }
 
-.grid  {
+.grid {
   > * {
     grid-column: 4 / span 1;
   }
+
   > .left {
     grid-column: 3 / span 2;
   }
+
   > .right {
     grid-column: 4 / span 2;
   }
+
   > .breakout {
     grid-column: 3 / span 3;
   }
+
   > .wide {
     grid-column: 2 / span 5;
   }
+
   > .full {
     grid-column: 1/ span 7;
   }
 }
 
 .thirds {
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap:$spacing-1;
+  grid-column-gap: $spacing-1;
+
   .col-1 {
     grid-column: 1 / span 1;
   }
+
   .col-1-2 {
     grid-column: 1 / span 2;
   }
+
   .col-1-2-3 {
     grid-column: 1 / span 3;
   }
+
   .col-2 {
     grid-column: 2 / span 1;
   }
+
   .col-2-3 {
     grid-column: 2 / span 2;
   }
+
   .col-3 {
     grid-column: 3 / span 1;
   }
 }
 
 .columns {
-  columns:3;
-  padding-bottom:$spacing-1;
-  column-gap:$spacing-1;
-}
+  columns: 3;
+  padding-bottom: $spacing-1;
+  column-gap: $spacing-1;
 
+  figure,
+  p {
+    margin: 0;
+  }
+}
 /* media queries */
 @media screen and (max-width: 1000px) {
   .grid {
     .left {
       grid-column: 4 / span 1;
     }
+
     .right {
       grid-column: 4 / span 1;
     }
+
     .breakout {
       grid-column: 4 / span 1;
     }
+
     .wide {
       grid-column: 4 / span 1;
     }
+
     .full {
       grid-column: 1/ span 7;
     }
   }
+
   .columns {
-    columns:2;
-    padding-bottom:0;
+    columns: 2;
+    padding-bottom: 0;
   }
 }
-
 @media screen and (max-width: 700px) {
-  .thirds .col-1, .thirds .col-1-2, .thirds .col-1-2-3, .thirds .col-2, .thirds .col-2-3, .thirds .col-3 {
+  .thirds .col-1,
+  .thirds .col-1-2,
+  .thirds .col-1-2-3,
+  .thirds .col-2,
+  .thirds .col-2-3,
+  .thirds .col-3 {
     grid-column: 1 / span 3;
   }
+
   .columns {
-    columns:1;
-    padding-bottom:0;
+    columns: 1;
+    padding-bottom: 0;
   }
 }
-
-
 @media screen and (max-width: 400px) {
   .grid {
     grid-template-columns: $spacing-half 1fr 1fr minmax(0, $content-width) 1fr 1fr $spacing-half;
