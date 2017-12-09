@@ -20,12 +20,25 @@ $content-width: 700px;
     grid-column: 4 / span 2;
   }
 
+  .left.columns,
+  .right.columns {
+    columns: 2;
+  }
+
   > .breakout {
     grid-column: 3 / span 3;
   }
 
+  .breakout.columns {
+    columns: 3;
+  }
+
   > .wide {
     grid-column: 2 / span 5;
+  }
+
+  .wide.columns {
+    columns: 3;
   }
 
   > .full {
@@ -64,7 +77,6 @@ $content-width: 700px;
 }
 
 .columns {
-  columns: 3;
   padding-bottom: $spacing-1;
   column-gap: $spacing-1;
 
@@ -95,14 +107,31 @@ $content-width: 700px;
     .full {
       grid-column: 1/ span 7;
     }
-  }
 
-  .columns {
-    columns: 2;
-    padding-bottom: 0;
+    .breakout.columns,
+    .columns,
+    .left.columns,
+    .right.columns,
+    .wide.columns {
+      columns: 2;
+      padding-bottom: 0;
+    }
   }
 }
 @media screen and (max-width: 700px) {
+  .grid {
+    grid-template-columns: $spacing-half 1fr 1fr minmax(0, $content-width) 1fr 1fr $spacing-half;
+
+    .breakout.columns,
+    .columns,
+    .left.columns,
+    .right.columns,
+    .wide.columns {
+      columns: 1;
+      padding-bottom: 0;
+    }
+  }
+
   .thirds .col-1,
   .thirds .col-1-2,
   .thirds .col-1-2-3,
@@ -111,14 +140,5 @@ $content-width: 700px;
   .thirds .col-3 {
     grid-column: 1 / span 3;
   }
-
-  .columns {
-    columns: 1;
-    padding-bottom: 0;
-  }
 }
-@media screen and (max-width: 400px) {
-  .grid {
-    grid-template-columns: $spacing-half 1fr 1fr minmax(0, $content-width) 1fr 1fr $spacing-half;
-  }
-}
+@media screen and (max-width: 400px) {}
