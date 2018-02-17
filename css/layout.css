@@ -239,9 +239,12 @@ figcaption {
 
 /* header */
 #header {
-  background: black;
+  background: rgba(0, 0, 0, 0.8);
   color: white;
   padding: 0.81em 0; }
+
+#header:hover {
+  background: black; }
 
 /* banner */
 .banner {

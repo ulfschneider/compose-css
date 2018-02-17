@@ -60,9 +60,12 @@
 }
 /* header */
 #header {
-  background: black;
+  background: rgba(0,0,0,0.8);
   color: white;
   padding: $spacing-half 0;
+}
+#header:hover {
+    background: black;
 }
 /* banner */
 .banner {
