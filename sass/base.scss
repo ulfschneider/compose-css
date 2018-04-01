@@ -1,9 +1,13 @@
 /* base */
 $font-size: 18px;
+$font-weight: 400;
 $line-height: 1.62em;
+$text-color: #333;
+$background-color: #fff;
+
+/*spacings must be em unit */
 $spacing-half: 0.81em;
 $spacing-quart: 0.4em;
-/*spacings must be em unit */
 $spacing-1: 1.62em;
 $spacing-2: 1.62 * 1.62em;
 $spacing-3: 1.62 * 1.62 * 1.62em;
@@ -11,6 +15,7 @@ $spacing-4: 1.62 * 1.62 * 1.62 * 1.62em;
 
 * {
   line-height: $line-height;
+  font-weight: $font-weight;
 }
 
 body {
@@ -18,12 +23,28 @@ body {
   padding: 0;
   font-size: $font-size;
   font-feature-settings: "onum" 1;
+  background-color: $background-color;
 }
 @supports (font-variant-numeric: oldstyle-nums) {
   body {
     font-feature-settings: normal;
     font-variant-numeric: oldstyle-nums;
   }
+}
+
+a {
+    color:$text-color;
+    text-decoration:underline;
+}
+
+ul {
+    list-style:disc;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-position:outside;
 }
 
 h1,
@@ -68,9 +89,15 @@ figcaption {
   line-height: $font-size;
 }
 
-/* media queries */
+
 @media screen and (min-width: 1400px) {
   body {
     font-size: $font-size + 1px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  li {
+      list-style-position:inside;
   }
 }

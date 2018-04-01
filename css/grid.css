@@ -1,18 +1,32 @@
 /* base */
 /*spacings must be em unit */
 * {
-  line-height: 1.62em; }
+  line-height: 1.62em;
+  font-weight: 400; }
 
 body {
   margin: 0;
   padding: 0;
   font-size: 18px;
-  font-feature-settings: "onum" 1; }
+  font-feature-settings: "onum" 1;
+  background-color: #fff; }
 
 @supports (font-variant-numeric: oldstyle-nums) {
   body {
     font-feature-settings: normal;
     font-variant-numeric: oldstyle-nums; } }
+a {
+  color: #333;
+  text-decoration: underline; }
+
+ul {
+  list-style: disc;
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style-position: outside; }
+
 h1,
 h2,
 h3,
@@ -48,11 +62,12 @@ figcaption {
   font-size: 16px;
   line-height: 18px; }
 
-/* media queries */
 @media screen and (min-width: 1400px) {
   body {
     font-size: 19px; } }
-/* grid */
+@media screen and (max-width: 700px) {
+  li {
+    list-style-position: inside; } }
 .grid {
   display: grid;
   grid-template-columns: 1.62em 1fr 1fr minmax(0, 700px) 1fr 1fr 1.62em; }
@@ -75,7 +90,7 @@ figcaption {
 .grid .wide.columns {
   columns: 3; }
 .grid > .full {
-  grid-column: 1/ span 7; }
+  grid-column: 1 / span 7; }
 
 .thirds {
   display: grid;
@@ -101,7 +116,6 @@ figcaption {
   .columns p {
     margin: 0; }
 
-/* media queries */
 @media screen and (max-width: 1000px) {
   .grid .left {
     grid-column: 4 / span 1; }

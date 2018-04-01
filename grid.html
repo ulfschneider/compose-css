@@ -3,6 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">    
     <link rel="stylesheet" type="text/css" href="css/layout.css">
     <title>Experimenting with CSS Grids</title>
 </head>
@@ -19,12 +22,14 @@
         </div>
 
 
-        <div id="header">
+        <header>
             <div class="grid">
-                <div class="breakout">Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen
-                    erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</div>
+                <div class="breakout">
+                    <div>A CSS GRID SYSTEM TO LAYOUT A WEB PAGE</div>
+                    <div>The header will adjust to content height and is dynamically pushed out of sight when scrolling down. When scrolling up, the header is pulled in again. Please refer to <a href="https://github.com/ulfschneider/dynamic-header">dynamic-header</a> for more information. The dynamic header is not at all connected to CSS Grid, but I like it for this kind of page.</div>
+                </div>
             </div>
-        </div>
+        </header>
 
         <div id="grid" class="grid">
             <div class="full banner">
@@ -32,21 +37,29 @@
             </div>
 
             <div class="title" v-bind:class="{strong: strongTitle}" v-bind:style="{background: background, display: title}">
-                <h1>Der Mensch und die Berge</h1>
-                <div class="sub-title">Pozzale di Cadore to San Vigilio</div>
+                <h1>The Grid</h1>
+                <div class="sub-title">A system to layout</div>
                 <div class="meta">
-                    <div class="date">November 2017</div>
-                    <div class="author">Words Neil Phillips, Fotos George Marshall</div>
+                    <div class="date">April 2018</div>
+                    <div class="author">by <a href="http://ulf.codes">Ulf Schneider</a></div>
                 </div>
-                <div class="abstract">Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen
-                    erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</div>
+                <div class="abstract">This site is using the <a href="https://gridbyexample.com">CSS Grid</a> to layout everything. Though <a href="https://caniuse.com/#feat=css-grid">not supported by IE</a>, the grid system is robust, lightweight and fast. This is of advantage as well for users as for the developer. Grid is the future of page layout. This page is completely using CSS Grid to layout everything.</div>
+            </div>
+
+            <div>
+                <h2>The Features</h2>
+                <ul>
+                    <li>Middle Content</li>
+                    <li>Banner</li>
+                </ul>
             </div>
 
             <div class="content-list" v-bind:style="{background: background, display: contentList}">
+                <h2>The Features</h2>
 
                 <div class="item">
                     <div class="title">
-                        <h2>The balanced organization</h2>
+                        <h3>Middle Content</h3>
                         <span class="meta">February 26, 2017</span>
                     </div>
                     <div class="content">
