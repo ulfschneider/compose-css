@@ -1,4 +1,5 @@
 /* base */
+/*screen widths*/
 /*spacings must be em unit */
 * {
   line-height: 1.62em;
@@ -19,14 +20,6 @@ a {
   color: #333;
   text-decoration: underline; }
 
-ul {
-  list-style: disc;
-  margin: 0;
-  padding: 0; }
-
-li {
-  list-style-position: outside; }
-
 h1,
 h2,
 h3,
@@ -40,9 +33,27 @@ h6 {
   text-align: center;
   font-feature-settings: "lnum" 1; }
 
-@supports (font-variant-numeric: lining-nums) {
-  body {
-    font-variant-numeric: lining-nums; } }
+ul {
+  list-style: disc;
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style-position: outside; }
+
+li h2,
+li h3,
+li h4,
+li h5,
+li h6 {
+  display: inline-block;
+  margin: 0;
+  text-align: left;
+  font-weight: 400;
+  font-style: italic; }
+li p {
+  margin: 0; }
+
 img {
   margin: 0;
   max-width: 100%; }

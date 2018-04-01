@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">    
+    <meta http-equiv="Expires" content="0">
     <link rel="stylesheet" type="text/css" href="css/layout.css">
     <title>Experimenting with CSS Grids</title>
 </head>
@@ -26,7 +26,7 @@
             <div class="grid">
                 <div class="breakout">
                     <div>A CSS GRID SYSTEM TO LAYOUT A WEB PAGE</div>
-                    <div>The header will adjust to content height and is dynamically pushed out of sight when scrolling down. When scrolling up, the header is pulled in again. Please refer to <a href="https://github.com/ulfschneider/dynamic-header">dynamic-header</a> for more information. The dynamic header is not at all connected to CSS Grid, but I like it for this kind of page.</div>
+                    <div>This header will adjust to content height and is dynamically pushed out of sight when scrolling down. When scrolling up, the header is pulled in again. Please refer to <a href="https://github.com/ulfschneider/dynamic-header">dynamic-header</a>                        for more information. The dynamic header is not at all connected to CSS Grid, but I like it for this kind of page.</div>
                 </div>
             </div>
         </header>
@@ -43,21 +43,40 @@
                     <div class="date">April 2018</div>
                     <div class="author">by <a href="http://ulf.codes">Ulf Schneider</a></div>
                 </div>
-                <div class="abstract">This site is using the <a href="https://gridbyexample.com">CSS Grid</a> to layout everything. Though <a href="https://caniuse.com/#feat=css-grid">not supported by IE</a>, the grid system is robust, lightweight and fast. This is of advantage as well for users as for the developer. Grid is the future of page layout. This page is completely using CSS Grid to layout everything.</div>
+                <div class="abstract">This site is using the <a href="https://gridbyexample.com">CSS Grid</a> to layout everything. Though <a href="https://caniuse.com/#feat=css-grid">not supported by IE</a>, the grid system is robust, lightweight and fast. This is of advantage
+                    for users as well as for the developer. Grid is the future of page layout.</div>
             </div>
 
             <div>
                 <h2>The Features</h2>
                 <ul>
-                    <li>Middle Content</li>
-                    <li>Banner</li>
+                    <li>
+                        <h2>Middle Content:</h2>
+                    </li>
+                    <li>
+                        <h2>Left Content: </h2>
+                    </li>
+                    <li>
+                        <h2>Right Content: </h2>
+                    </li>
+                    <li>
+                        <h2>Breakout Content: </h2>
+                    </li>
+                    <li>
+                        <h2>Wide Content: </h2>
+                    </li>
+                    <li>
+                        <h2>Full Content: </h2>
+                    </li>
+
+
                 </ul>
             </div>
 
-            <div class="content-list" v-bind:style="{background: background, display: contentList}">
-                <h2>The Features</h2>
 
-                <div class="item">
+            <h2>The Features</h2>
+            <ul class="toc-list" v-bind:style="{background: background, display: contentList}">
+                <li>
                     <div class="title">
                         <h3>Middle Content</h3>
                         <span class="meta">February 26, 2017</span>
@@ -65,9 +84,9 @@
                     <div class="content">
                         <p>The agile manifesto defines a collobaration culture. But what if your current environment is not collaborative? This article describes alternatives to move into the agile direction.</p>
                     </div>
-                </div>
+                </li>
 
-                <div class="item">
+                <li>
                     <div class="title">
                         <h2>Self-organization</h2>
                         <span class="meta">March 26, 2013</span>
@@ -75,9 +94,9 @@
                     <div class="content">
                         <p>Self-organization is the determining element for agile teams and companies. To think and act accordingly requires the acceptance of evolutionary forces which are an inherent part of any social system, whether we like it or not.</p>
                     </div>
-                </div>
+                </li>
 
-            </div>
+            </ul>
 
 
             <div v-bind:style="{background: background}">
@@ -119,13 +138,14 @@
 
 
                 <div class="thirds" v-bind:style="{background: background}">
-                    <figure class="col-1-2">
-                        <img src="r/tyler-lastovich-227920.jpg" class="cover" />
-                    </figure>
-                    <div class="col-3">
+                    <div class="col-1">
                         <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu
                             dem Forschungsreisenden und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat.</p>
                     </div>
+
+                    <figure class="col-2-3">
+                        <img src="r/tyler-lastovich-227920.jpg" class="cover" />
+                    </figure>
                 </div>
             </div>
 

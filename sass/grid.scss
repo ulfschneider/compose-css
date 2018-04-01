@@ -1,146 +1,141 @@
 @import 'base';
 
-$content-width: 700px;
-
 .grid {
-  display: grid;
-  grid-template-columns: $spacing-1 1fr 1fr minmax(0, $content-width) 1fr 1fr $spacing-1;
+    display: grid;
+    grid-template-columns: $spacing-1 1fr 1fr minmax(0, $content-width) 1fr 1fr $spacing-1;
 }
 
 .grid {
-  > * {
-    grid-column: 4 / span 1;
-  }
+    > * {
+        grid-column: 4 / span 1;
+    }
 
-  > .left {
-    grid-column: 3 / span 2;
-  }
+    > .left {
+        grid-column: 3 / span 2;
+    }
 
-  > .right {
-    grid-column: 4 / span 2;
-  }
+    > .right {
+        grid-column: 4 / span 2;
+    }
 
-  .left.columns,
-  .right.columns {
-    columns: 2;
-  }
+    .left.columns,
+    .right.columns {
+        columns: 2;
+    }
 
-  > .breakout {
-    grid-column: 3 / span 3;
-  }
+    > .breakout {
+        grid-column: 3 / span 3;
+    }
 
-  .breakout.columns {
-    columns: 3;
-  }
+    .breakout.columns {
+        columns: 3;
+    }
 
-  > .wide {
-    grid-column: 2 / span 5;
-  }
+    > .wide {
+        grid-column: 2 / span 5;
+    }
 
-  .wide.columns {
-    columns: 3;
-  }
+    .wide.columns {
+        columns: 3;
+    }
 
-  > .full {
-    grid-column: 1 / span 7;
-  }
+    > .full {
+        grid-column: 1 / span 7;
+    }
 }
 
 .thirds {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: $spacing-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: $spacing-1;
 
-  .col-1 {
-    grid-column: 1 / span 1;
-  }
+    .col-1 {
+        grid-column: 1 / span 1;
+    }
 
-  .col-1-2 {
-    grid-column: 1 / span 2;
-  }
+    .col-1-2 {
+        grid-column: 1 / span 2;
+    }
 
-  .col-1-2-3 {
-    grid-column: 1 / span 3;
-  }
+    .col-1-2-3 {
+        grid-column: 1 / span 3;
+    }
 
-  .col-2 {
-    grid-column: 2 / span 1;
-  }
+    .col-2 {
+        grid-column: 2 / span 1;
+    }
 
-  .col-2-3 {
-    grid-column: 2 / span 2;
-  }
+    .col-2-3 {
+        grid-column: 2 / span 2;
+    }
 
-  .col-3 {
-    grid-column: 3 / span 1;
-  }
+    .col-3 {
+        grid-column: 3 / span 1;
+    }
 }
 
 .columns {
-  padding-bottom: $spacing-1;
-  column-gap: $spacing-1;
+    padding-bottom: $spacing-1;
+    column-gap: $spacing-1;
 
-  figure,
-  p {
-    margin: 0;
-  }
+    figure,
+    p {
+        margin: 0;
+    }
 }
-
 @media screen and (max-width: 1000px) {
-  .grid {
-    .left {
-      grid-column: 4 / span 1;
-    }
+    .grid {
+        .left {
+            grid-column: 4 / span 1;
+        }
 
-    .right {
-      grid-column: 4 / span 1;
-    }
+        .right {
+            grid-column: 4 / span 1;
+        }
 
-    .breakout {
-      grid-column: 4 / span 1;
-    }
+        .breakout {
+            grid-column: 4 / span 1;
+        }
 
-    .wide {
-      grid-column: 4 / span 1;
-    }
+        .wide {
+            grid-column: 4 / span 1;
+        }
 
-    .full {
-      grid-column: 1/ span 7;
-    }
+        .full {
+            grid-column: 1/ span 7;
+        }
 
-    .breakout.columns,
-    .columns,
-    .left.columns,
-    .right.columns,
-    .wide.columns {
-      columns: 2;
-      padding-bottom: 0;
+        .breakout.columns,
+        .columns,
+        .left.columns,
+        .right.columns,
+        .wide.columns {
+            columns: 2;
+            padding-bottom: 0;
+        }
     }
-  }
 }
+@media screen and (max-width: $content-width) {
+    .grid {
+        grid-template-columns: $spacing-half 1fr 1fr minmax(0, $content-width) 1fr 1fr $spacing-half;
 
-@media screen and (max-width: 700px) {
-  .grid {
-    grid-template-columns: $spacing-half 1fr 1fr minmax(0, $content-width) 1fr 1fr $spacing-half;
-
-    .breakout.columns,
-    .columns,
-    .left.columns,
-    .right.columns,
-    .wide.columns {
-      columns: 1;
-      padding-bottom: 0;
+        .breakout.columns,
+        .columns,
+        .left.columns,
+        .right.columns,
+        .wide.columns {
+            columns: 1;
+            padding-bottom: 0;
+        }
     }
-  }
 
-  .thirds .col-1,
-  .thirds .col-1-2,
-  .thirds .col-1-2-3,
-  .thirds .col-2,
-  .thirds .col-2-3,
-  .thirds .col-3 {
-    grid-column: 1 / span 3;
-  }
+    .thirds .col-1,
+    .thirds .col-1-2,
+    .thirds .col-1-2-3,
+    .thirds .col-2,
+    .thirds .col-2-3,
+    .thirds .col-3 {
+        grid-column: 1 / span 3;
+    }
 }
-
-@media screen and (max-width: 400px) {}
+@media screen and (max-width: $palm-width) {}

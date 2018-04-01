@@ -4,7 +4,11 @@ $font-weight: 400;
 $line-height: 1.62em;
 $text-color: #333;
 $background-color: #fff;
-
+/*screen widths*/
+$palm-width: 400px;
+$content-width: 700px;
+$mid-width: 1000px;
+$large-width: 1400px;
 /*spacings must be em unit */
 $spacing-half: 0.81em;
 $spacing-quart: 0.4em;
@@ -14,37 +18,27 @@ $spacing-3: 1.62 * 1.62 * 1.62em;
 $spacing-4: 1.62 * 1.62 * 1.62 * 1.62em;
 
 * {
-  line-height: $line-height;
-  font-weight: $font-weight;
+    line-height: $line-height;
+    font-weight: $font-weight;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-size: $font-size;
-  font-feature-settings: "onum" 1;
-  background-color: $background-color;
+    margin: 0;
+    padding: 0;
+    font-size: $font-size;
+    font-feature-settings: "onum" 1;
+    background-color: $background-color;
 }
 @supports (font-variant-numeric: oldstyle-nums) {
-  body {
-    font-feature-settings: normal;
-    font-variant-numeric: oldstyle-nums;
-  }
+    body {
+        font-feature-settings: normal;
+        font-variant-numeric: oldstyle-nums;
+    }
 }
 
 a {
-    color:$text-color;
-    text-decoration:underline;
-}
-
-ul {
-    list-style:disc;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    list-style-position:outside;
+    color: $text-color;
+    text-decoration: underline;
 }
 
 h1,
@@ -53,51 +47,71 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 1em;
-  font-weight: bold;
-  margin-top: $spacing-2;
-  margin-bottom: $spacing-half;
-  text-align: center;
-  font-feature-settings: "lnum" 1;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: $spacing-2;
+    margin-bottom: $spacing-half;
+    text-align: center;
+    font-feature-settings: "lnum" 1;
 }
-@supports (font-variant-numeric: lining-nums) {
-  body {
-    font-variant-numeric: lining-nums;
-  }
+
+ul {
+    list-style: disc;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-position: outside;
+}
+
+li {
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        display: inline-block;
+        margin: 0;
+        text-align: left;
+        font-weight: $font-weight;
+        font-style: italic;
+    }
+
+    p {
+        margin: 0;
+    }
 }
 
 img {
-  margin: 0;
-  max-width: 100%;
+    margin: 0;
+    max-width: 100%;
 }
 
 figure,
 p {
-  margin: 0 0 $spacing-1;
-  padding: 0;
+    margin: 0 0 $spacing-1;
+    padding: 0;
 }
 
 figure {
-  max-width: 100%;
-  overflow-x: scroll;
+    max-width: 100%;
+    overflow-x: scroll;
 }
 
 figcaption {
-  margin: $spacing-half 0 0;
-  font-style: italic;
-  font-size: $font-size - 2px;
-  line-height: $font-size;
+    margin: $spacing-half 0 0;
+    font-style: italic;
+    font-size: $font-size - 2px;
+    line-height: $font-size;
 }
-
-
-@media screen and (min-width: 1400px) {
-  body {
-    font-size: $font-size + 1px;
-  }
+@media screen and (min-width: $large-width) {
+    body {
+        font-size: $font-size + 1px;
+    }
 }
-
-@media screen and (max-width: 700px) {
-  li {
-      list-style-position:inside;
-  }
+@media screen and (max-width: $content-width) {
+    li {
+        list-style-position: inside;
+    }
 }
