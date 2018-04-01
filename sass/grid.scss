@@ -1,5 +1,5 @@
 @import 'base';
-/* grid */
+
 $content-width: 700px;
 
 .grid {
@@ -42,7 +42,7 @@ $content-width: 700px;
   }
 
   > .full {
-    grid-column: 1/ span 7;
+    grid-column: 1 / span 7;
   }
 }
 
@@ -85,7 +85,7 @@ $content-width: 700px;
     margin: 0;
   }
 }
-/* media queries */
+
 @media screen and (max-width: 1000px) {
   .grid {
     .left {
@@ -118,6 +118,7 @@ $content-width: 700px;
     }
   }
 }
+
 @media screen and (max-width: 700px) {
   .grid {
     grid-template-columns: $spacing-half 1fr 1fr minmax(0, $content-width) 1fr 1fr $spacing-half;
@@ -141,4 +142,5 @@ $content-width: 700px;
     grid-column: 1 / span 3;
   }
 }
+
 @media screen and (max-width: 400px) {}
