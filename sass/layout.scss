@@ -1,6 +1,18 @@
 @import 'base';
 @import 'grid';
 
+.small {
+    font-size: $small-font-size;
+}
+
+.normal {
+    font-size: $font-size;
+}
+
+.big {
+    font-size: $big-font-size;
+}
+
 .height-500px {
     height: 500px;
 }
@@ -73,20 +85,15 @@ header {
     }
 }
 
-.banner {
-    margin-bottom: $spacing-3;
-}
-
 .title {
     text-align: center;
+    margin-top: $spacing-3;
     margin-bottom: $spacing-1;
 }
 
 .title .sub-title {
     text-transform: uppercase;
 }
-
-.title .meta {}
 
 .title .abstract {
     margin-top: $spacing-1;
@@ -106,9 +113,42 @@ header {
     }
 }
 
+.toc {
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        display: inline;
+    }
+
+    li:after {
+        content: " — ";
+    }
+
+    li:last-child:after {
+        content: "";
+    }
+}
+
 .toc-list {
     .item,
     li {
         margin: 0 0 $spacing-1;
+        list-style-type: none;
+
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: bold;
+            font-style: normal;
+            margin-right: $spacing-1;
+        }
+
+        .meta {
+            font-style: italic;
+        }
     }
 }

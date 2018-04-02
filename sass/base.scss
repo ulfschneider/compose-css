@@ -1,5 +1,7 @@
 /* base */
 $font-size: 18px;
+$small-font-size: 16px;
+$big-font-size: 20px;
 $font-weight: 400;
 $line-height: 1.62em;
 $text-color: #333;
@@ -102,12 +104,12 @@ figure {
 figcaption {
     margin: $spacing-half 0 0;
     font-style: italic;
-    font-size: $font-size - 2px;
+    font-size: $small-font-size;
     line-height: $font-size;
 }
 @media screen and (min-width: $large-width) {
     body {
-        font-size: $font-size + 1px;
+        font-size: $big-font-size;
     }
 }
 @media screen and (max-width: $content-width) {

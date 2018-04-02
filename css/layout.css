@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* base */
 /*screen widths*/
 /*spacings must be em unit */
@@ -75,7 +76,7 @@ figcaption {
 
 @media screen and (min-width: 1400px) {
   body {
-    font-size: 19px; } }
+    font-size: 20px; } }
 @media screen and (max-width: 700px) {
   li {
     list-style-position: inside; } }
@@ -156,7 +157,7 @@ figcaption {
 
 @media screen and (min-width: 1400px) {
   body {
-    font-size: 19px; } }
+    font-size: 20px; } }
 @media screen and (max-width: 700px) {
   li {
     list-style-position: inside; } }
@@ -244,6 +245,15 @@ figcaption {
   .thirds .col-2-3,
   .thirds .col-3 {
     grid-column: 1 / span 3; } }
+.small {
+  font-size: 16px; }
+
+.normal {
+  font-size: 18px; }
+
+.big {
+  font-size: 20px; }
+
 .height-500px {
   height: 500px; }
 
@@ -297,11 +307,9 @@ header {
     header * a {
       color: white; }
 
-.banner {
-  margin-bottom: 4.251528em; }
-
 .title {
   text-align: center;
+  margin-top: 4.251528em;
   margin-bottom: 1.62em; }
 
 .title .sub-title {
@@ -318,6 +326,32 @@ header {
 .title.strong h1 {
   font-size: 1.62em; }
 
+.toc ul {
+  list-style-type: none; }
+.toc li {
+  display: inline; }
+.toc li:after {
+  content: " — "; }
+.toc li:last-child:after {
+  content: ""; }
+
 .toc-list .item,
 .toc-list li {
-  margin: 0 0 1.62em; }
+  margin: 0 0 1.62em;
+  list-style-type: none; }
+  .toc-list .item h2,
+  .toc-list .item h3,
+  .toc-list .item h4,
+  .toc-list .item h5,
+  .toc-list .item h6,
+  .toc-list li h2,
+  .toc-list li h3,
+  .toc-list li h4,
+  .toc-list li h5,
+  .toc-list li h6 {
+    font-weight: bold;
+    font-style: normal;
+    margin-right: 1.62em; }
+  .toc-list .item .meta,
+  .toc-list li .meta {
+    font-style: italic; }

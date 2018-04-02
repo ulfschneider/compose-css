@@ -11,310 +11,252 @@
 </head>
 
 <body>
-    <div id="app">
-        <div id="control" style="position:fixed; bottom:1.62em; right:1.62em; background:black; border:1px solid white; padding:10px;">
-            <button v-on:click="toggleBanner" style="display: block;">Banner: {{banner}}</button>
-            <button v-on:click="toggleTitle" style="display: block;">Title: {{title}}</button>
-            <button v-on:click="toggleTitleType" v-bind:style="{display: title}">Strong Title: {{strongTitle}}</button>
-            <button v-on:click="toggleHeadlines" style="display: block;">Headlines: {{headlines}}</button>
-            <button v-on:click="toggleContentList" style="display: block;">Content List: {{contentList}}</button>
-            <button v-on:click="toggleColorCode" style="display: block;">Background: {{background}}</button>
+    <header>
+        <div class="grid">
+            <div class="breakout small">
+                <div>A CSS GRID SYSTEM TO LAYOUT A WEB PAGE</div>
+                <div>This header will adjust to content height and is dynamically pushed out of sight when scrolling down. When scrolling up, the header is pulled in again. Please refer to <a href="https://github.com/ulfschneider/dynamic-header">dynamic-header</a>                    for more information. The dynamic header is not at all connected to CSS Grid, but I like it for this kind of page.</div>
+            </div>
+        </div>
+    </header>
+
+    <div id="grid" class="grid">
+
+        <!-- using palette: https://flatuicolors.com/palette/de -->
+        <div style="grid-column:1 / span 1; background:#26de81; height:150px;"> </div>
+        <div style="grid-column:2 / span 1; background:#fed330; height:150px;"></div>
+        <div style="grid-column:3 / span 1; background:#fd9644; height:150px;"></div>
+        <div style="grid-column:4 / span 1; background:#fc5c65; height:150px;"></div>
+        <div style="grid-column:5 / span 1; background:#fd9644; height:150px;"></div>
+        <div style="grid-column:6 / span 1; background:#fed330; height:150px;"></div>
+        <div style="grid-column:7 / span 1; background:#26de81; height:150px;"></div>
+
+
+        <div class="title strong">
+            <h1>The Grid</h1>
+            <div class="sub-title">A system to layout</div>
+            <div class="meta">
+                <div class="date">April 2018</div>
+                <div class="author">by <a href="http://ulf.codes">Ulf Schneider</a></div>
+            </div>
+            <div class="abstract">This site is using the <a href="https://gridbyexample.com">CSS Grid</a> to layout everything. Though <a href="https://caniuse.com/#feat=css-grid">not supported by IE</a>, the grid system is robust, lightweight and fast. This is of advantage
+                for users as well as for the developer. Grid is the future of page layout.</div>
+        </div>
+
+        <div class="toc">
+            <h2>Contents</h2>
+            <ul>
+                <li>
+                    Middle Content
+                </li>
+                <li>
+                    Left Content
+                </li>
+                <li>
+                    Right Content
+                </li>
+                <li>
+                    Breakout Content
+                </li>
+                <li>
+                    Wide Content
+                </li>
+                <li>
+                    Full Content
+                </li>
+                <li>
+                    Thirds
+                </li>
+                <li>
+                    Columns
+                </li>
+                <li>
+                    Figures and Captions
+                </li>
+                <li>
+                    Cover Images
+                </li>
+                <li>
+                    Lists
+                </li>
+            </ul>
         </div>
 
 
-        <header>
-            <div class="grid">
-                <div class="breakout">
-                    <div>A CSS GRID SYSTEM TO LAYOUT A WEB PAGE</div>
-                    <div>This header will adjust to content height and is dynamically pushed out of sight when scrolling down. When scrolling up, the header is pulled in again. Please refer to <a href="https://github.com/ulfschneider/dynamic-header">dynamic-header</a>                        for more information. The dynamic header is not at all connected to CSS Grid, but I like it for this kind of page.</div>
+        <h2>The Features</h2>
+        <ul class="toc-list" v-bind:style="{background: background, display: contentList}">
+            <li>
+                <h2>Middle Content</h3>
+                <span class="meta">February 26, 2017</span>
+
+                <div class="content">
+                    <p>The agile manifesto defines a collobaration culture. But what if your current environment is not collaborative? This article describes alternatives to move into the agile direction.</p>
                 </div>
-            </div>
-        </header>
+            </li>
 
-        <div id="grid" class="grid">
-            <div class="full banner">
-                <img src="r/filip-gielda-94858-2.jpg" class="cover no-margin" v-bind:style="{display: banner}" />
-            </div>
-
-            <div class="title" v-bind:class="{strong: strongTitle}" v-bind:style="{background: background, display: title}">
-                <h1>The Grid</h1>
-                <div class="sub-title">A system to layout</div>
-                <div class="meta">
-                    <div class="date">April 2018</div>
-                    <div class="author">by <a href="http://ulf.codes">Ulf Schneider</a></div>
+            <li>
+                <h2>Self-organization</h2>
+                <span class="meta">March 26, 2013</span>
+                <div class="content">
+                    <p>Self-organization is the determining element for agile teams and companies. To think and act accordingly requires the acceptance of evolutionary forces which are an inherent part of any social system, whether we like it or not.</p>
                 </div>
-                <div class="abstract">This site is using the <a href="https://gridbyexample.com">CSS Grid</a> to layout everything. Though <a href="https://caniuse.com/#feat=css-grid">not supported by IE</a>, the grid system is robust, lightweight and fast. This is of advantage
-                    for users as well as for the developer. Grid is the future of page layout.</div>
-            </div>
+            </li>
 
-            <div>
-                <h2>The Features</h2>
-                <ul>
-                    <li>
-                        <h2>Middle Content:</h2>
-                    </li>
-                    <li>
-                        <h2>Left Content: </h2>
-                    </li>
-                    <li>
-                        <h2>Right Content: </h2>
-                    </li>
-                    <li>
-                        <h2>Breakout Content: </h2>
-                    </li>
-                    <li>
-                        <h2>Wide Content: </h2>
-                    </li>
-                    <li>
-                        <h2>Full Content: </h2>
-                    </li>
+        </ul>
 
 
-                </ul>
-            </div>
+        <div v-bind:style="{background: background}">
+            <h2 v-bind:style="{display: headlines}">Middle Grid Content</h2>
+            <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen
+                erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</p>
+
+            <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden
+                und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat.</p>
+        </div>
 
 
-            <h2>The Features</h2>
-            <ul class="toc-list" v-bind:style="{background: background, display: contentList}">
-                <li>
-                    <div class="title">
-                        <h3>Middle Content</h3>
-                        <span class="meta">February 26, 2017</span>
-                    </div>
-                    <div class="content">
-                        <p>The agile manifesto defines a collobaration culture. But what if your current environment is not collaborative? This article describes alternatives to move into the agile direction.</p>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="title">
-                        <h2>Self-organization</h2>
-                        <span class="meta">March 26, 2013</span>
-                    </div>
-                    <div class="content">
-                        <p>Self-organization is the determining element for agile teams and companies. To think and act accordingly requires the acceptance of evolutionary forces which are an inherent part of any social system, whether we like it or not.</p>
-                    </div>
-                </li>
-
-            </ul>
-
-
-            <div v-bind:style="{background: background}">
-                <h2 v-bind:style="{display: headlines}">Middle Grid Content</h2>
-                <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen
-                    erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</p>
-
-                <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden
-                    und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat.</p>
-            </div>
-
-
-            <div class="wide" v-bind:style="{background: background}">
-                <div class="thirds">
-                    <figure class="col-1-2">
-                        <img src="r/nathan-anderson-127350.jpg" class="cover" />
-                        <figcaption>The Mountains</figcaption>
-                    </figure>
-                    <div class="col-3">
-                        <figure class="float-right max-width-two-thirds">
-                            <img src="r/will-turner-392792.jpg" />
-                            <figcaption>The Mountains and Glaciers</figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-
-            <div v-bind:style="{background: background}">
-                <p>Sie hätten noch ins Boot springen können, aber der Reisende hob ein schweres, geknotetes Tau vom Boden, drohte ihnen damit und hielt sie dadurch von dem Sprunge ab. In den letzten Jahrzehnten ist das Interesse an Hungerkünstlern sehr zurückgegangen.
-                    Aber sie überwanden sich, umdrängten den Käfig und wollten sich gar nicht fortrühren. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er,
-                    es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich</p>
-            </div>
-
-            <div class="left" v-bind:style="{background: background}">
-                <h2 v-bind:style="{display: headlines}">Left Grid Content</h2>
-                <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen
-                    erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</p>
-
-
-
-                <div class="thirds" v-bind:style="{background: background}">
-                    <div class="col-1">
-                        <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu
-                            dem Forschungsreisenden und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat.</p>
-                    </div>
-
-                    <figure class="col-2-3">
-                        <img src="r/tyler-lastovich-227920.jpg" class="cover" />
+        <div class="wide" v-bind:style="{background: background}">
+            <div class="thirds">
+                <figure class="col-1-2">
+                    <img src="r/nathan-anderson-127350.jpg" class="cover" />
+                    <figcaption>The Mountains</figcaption>
+                </figure>
+                <div class="col-3">
+                    <figure class="float-right max-width-two-thirds">
+                        <img src="r/will-turner-392792.jpg" />
+                        <figcaption>The Mountains and Glaciers</figcaption>
                     </figure>
                 </div>
             </div>
+        </div>
+
+        <div v-bind:style="{background: background}">
+            <p>Sie hätten noch ins Boot springen können, aber der Reisende hob ein schweres, geknotetes Tau vom Boden, drohte ihnen damit und hielt sie dadurch von dem Sprunge ab. In den letzten Jahrzehnten ist das Interesse an Hungerkünstlern sehr zurückgegangen.
+                Aber sie überwanden sich, umdrängten den Käfig und wollten sich gar nicht fortrühren. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war,
+                als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich</p>
+        </div>
+
+        <div class="left" v-bind:style="{background: background}">
+            <h2 v-bind:style="{display: headlines}">Left Grid Content</h2>
+            <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen
+                erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</p>
 
 
-            <div v-bind:style="{background: background}">
-                <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden
-                    und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat.</p>
 
-                <p>Sie hätten noch ins Boot springen können, aber der Reisende hob ein schweres, geknotetes Tau vom Boden, drohte ihnen damit und hielt sie dadurch von dem Sprunge ab. In den letzten Jahrzehnten ist das Interesse an Hungerkünstlern sehr zurückgegangen.
-                    Aber sie überwanden sich, umdrängten den Käfig und wollten sich gar nicht fortrühren. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er,
-                    es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich</p>
+            <div class="thirds" v-bind:style="{background: background}">
+                <div class="col-1">
+                    <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem
+                        Forschungsreisenden und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat.</p>
+                </div>
+
+                <figure class="col-2-3">
+                    <img src="r/tyler-lastovich-227920.jpg" class="cover" />
+                </figure>
             </div>
-
-            <figure class="full cover height-500px" style="background-image:url(r/nathan-anderson-266223.jpg)">
-            </figure>
+        </div>
 
 
-            <div class="right" v-bind:style="{background: background}">
-                <h2 v-bind:style="{display: headlines}">Right Grid Content</h2>
-                <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen
-                    erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</p>
+        <div v-bind:style="{background: background}">
+            <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden
+                und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat.</p>
 
-                <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden
-                    und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat.</p>
+            <p>Sie hätten noch ins Boot springen können, aber der Reisende hob ein schweres, geknotetes Tau vom Boden, drohte ihnen damit und hielt sie dadurch von dem Sprunge ab. In den letzten Jahrzehnten ist das Interesse an Hungerkünstlern sehr zurückgegangen.
+                Aber sie überwanden sich, umdrängten den Käfig und wollten sich gar nicht fortrühren. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war,
+                als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich</p>
+        </div>
 
-                <p>Sie hätten noch ins Boot springen können, aber der Reisende hob ein schweres, geknotetes Tau vom Boden, drohte ihnen damit und hielt sie dadurch von dem Sprunge ab. In den letzten Jahrzehnten ist das Interesse an Hungerkünstlern sehr zurückgegangen.
-                    Aber sie überwanden sich, umdrängten den Käfig und wollten sich gar nicht fortrühren. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er,
-                    es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich</p>
-            </div>
-
-            <div class="breakout" v-bind:style="{background: background}">
-                <h2 v-bind:style="{display: headlines}">Breakout Grid Content</h2>
-                <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen
-                    erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</p>
-
-                <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden
-                    und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat.</p>
-
-                <p>Sie hätten noch ins Boot springen können, aber der Reisende hob ein schweres, geknotetes Tau vom Boden, drohte ihnen damit und hielt sie dadurch von dem Sprunge ab. In den letzten Jahrzehnten ist das Interesse an Hungerkünstlern sehr zurückgegangen.
-                    Aber sie überwanden sich, umdrängten den Käfig und wollten sich gar nicht fortrühren. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er,
-                    es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich</p>
-            </div>
-
-            <div class="wide columns" v-bind:style="{background: background}">
-                <h2 v-bind:style="{display: headlines}">Wide Grid Content</h2>
-                <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen
-                    erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</p>
-
-                <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden
-                    und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat.</p>
-
-                <p>Sie hätten noch ins Boot springen können, aber der Reisende hob ein schweres, geknotetes Tau vom Boden, drohte ihnen damit und hielt sie dadurch von dem Sprunge ab. In den letzten Jahrzehnten ist das Interesse an Hungerkünstlern sehr zurückgegangen.
-                    Aber sie überwanden sich, umdrängten den Käfig und wollten sich gar nicht fortrühren. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er,
-                    es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich</p>
-            </div>
+        <figure class="full cover height-500px" style="background-image:url(r/nathan-anderson-266223.jpg)">
+        </figure>
 
 
-            <div v-bind:style="{background: background}">
-                <h2 v-bind:style="{display: headlines}">Full Grid Content</h2>
-                <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen
-                    erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</p>
-            </div>
+        <div class="right" v-bind:style="{background: background}">
+            <h2 v-bind:style="{display: headlines}">Right Grid Content</h2>
+            <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen
+                erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</p>
 
-            <figure class="full cover height-250px" style="background-image:url(r/nathan-anderson-127350.jpg)"></figure>
+            <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden
+                und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat.</p>
 
-            <div v-bind:style="{background: background}">
-                <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden
-                    und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat.</p>
+            <p>Sie hätten noch ins Boot springen können, aber der Reisende hob ein schweres, geknotetes Tau vom Boden, drohte ihnen damit und hielt sie dadurch von dem Sprunge ab. In den letzten Jahrzehnten ist das Interesse an Hungerkünstlern sehr zurückgegangen.
+                Aber sie überwanden sich, umdrängten den Käfig und wollten sich gar nicht fortrühren. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war,
+                als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich</p>
+        </div>
 
-                <p>Sie hätten noch ins Boot springen können, aber der Reisende hob ein schweres, geknotetes Tau vom Boden, drohte ihnen damit und hielt sie dadurch von dem Sprunge ab. In den letzten Jahrzehnten ist das Interesse an Hungerkünstlern sehr zurückgegangen.
-                    Aber sie überwanden sich, umdrängten den Käfig und wollten sich gar nicht fortrühren. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er,
-                    es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich</p>
-            </div>
+        <div class="breakout" v-bind:style="{background: background}">
+            <h2 v-bind:style="{display: headlines}">Breakout Grid Content</h2>
+            <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen
+                erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</p>
 
-            <div class="left" v-bind:style="{background: background}">
-                <h2 v-bind:style="{display: headlines}">Left Grid Content</h2>
-                <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen
-                    erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</p>
+            <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden
+                und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat.</p>
 
-                <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden
-                    und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat.</p>
+            <p>Sie hätten noch ins Boot springen können, aber der Reisende hob ein schweres, geknotetes Tau vom Boden, drohte ihnen damit und hielt sie dadurch von dem Sprunge ab. In den letzten Jahrzehnten ist das Interesse an Hungerkünstlern sehr zurückgegangen.
+                Aber sie überwanden sich, umdrängten den Käfig und wollten sich gar nicht fortrühren. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war,
+                als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich</p>
+        </div>
 
-                <p>Sie hätten noch ins Boot springen können, aber der Reisende hob ein schweres, geknotetes Tau vom Boden, drohte ihnen damit und hielt sie dadurch von dem Sprunge ab. In den letzten Jahrzehnten ist das Interesse an Hungerkünstlern sehr zurückgegangen.
-                    Aber sie überwanden sich, umdrängten den Käfig und wollten sich gar nicht fortrühren. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er,
-                    es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich</p>
-            </div>
+        <div class="wide columns" v-bind:style="{background: background}">
+            <h2 v-bind:style="{display: headlines}">Wide Grid Content</h2>
+            <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen
+                erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</p>
 
-            <div class="right" v-bind:style="{background: background}">
-                <h2 v-bind:style="{display: headlines}">Right Grid Content</h2>
-                <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen
-                    erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</p>
+            <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden
+                und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat.</p>
 
-                <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden
-                    und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat.</p>
+            <p>Sie hätten noch ins Boot springen können, aber der Reisende hob ein schweres, geknotetes Tau vom Boden, drohte ihnen damit und hielt sie dadurch von dem Sprunge ab. In den letzten Jahrzehnten ist das Interesse an Hungerkünstlern sehr zurückgegangen.
+                Aber sie überwanden sich, umdrängten den Käfig und wollten sich gar nicht fortrühren. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war,
+                als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich</p>
+        </div>
 
-                <p>Sie hätten noch ins Boot springen können, aber der Reisende hob ein schweres, geknotetes Tau vom Boden, drohte ihnen damit und hielt sie dadurch von dem Sprunge ab. In den letzten Jahrzehnten ist das Interesse an Hungerkünstlern sehr zurückgegangen.
-                    Aber sie überwanden sich, umdrängten den Käfig und wollten sich gar nicht fortrühren. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er,
-                    es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich</p>
-            </div>
+
+        <div v-bind:style="{background: background}">
+            <h2 v-bind:style="{display: headlines}">Full Grid Content</h2>
+            <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen
+                erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</p>
+        </div>
+
+        <figure class="full cover height-250px" style="background-image:url(r/nathan-anderson-127350.jpg)"></figure>
+
+        <div v-bind:style="{background: background}">
+            <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden
+                und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat.</p>
+
+            <p>Sie hätten noch ins Boot springen können, aber der Reisende hob ein schweres, geknotetes Tau vom Boden, drohte ihnen damit und hielt sie dadurch von dem Sprunge ab. In den letzten Jahrzehnten ist das Interesse an Hungerkünstlern sehr zurückgegangen.
+                Aber sie überwanden sich, umdrängten den Käfig und wollten sich gar nicht fortrühren. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war,
+                als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich</p>
+        </div>
+
+        <div class="left" v-bind:style="{background: background}">
+            <h2 v-bind:style="{display: headlines}">Left Grid Content</h2>
+            <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen
+                erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</p>
+
+            <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden
+                und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat.</p>
+
+            <p>Sie hätten noch ins Boot springen können, aber der Reisende hob ein schweres, geknotetes Tau vom Boden, drohte ihnen damit und hielt sie dadurch von dem Sprunge ab. In den letzten Jahrzehnten ist das Interesse an Hungerkünstlern sehr zurückgegangen.
+                Aber sie überwanden sich, umdrängten den Käfig und wollten sich gar nicht fortrühren. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war,
+                als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich</p>
+        </div>
+
+        <div class="right" v-bind:style="{background: background}">
+            <h2 v-bind:style="{display: headlines}">Right Grid Content</h2>
+            <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen
+                erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.</p>
+
+            <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden
+                und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat.</p>
+
+            <p>Sie hätten noch ins Boot springen können, aber der Reisende hob ein schweres, geknotetes Tau vom Boden, drohte ihnen damit und hielt sie dadurch von dem Sprunge ab. In den letzten Jahrzehnten ist das Interesse an Hungerkünstlern sehr zurückgegangen.
+                Aber sie überwanden sich, umdrängten den Käfig und wollten sich gar nicht fortrühren. Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund! « sagte er, es war,
+                als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich</p>
         </div>
     </div>
+
 </body>
-<script src="https://unpkg.com/vue"></script>
 <script src="r/dynamic-header.min.js"></script>
 <script>
-    var app = new Vue({
-        el: '#app',
-        data: {
-            background: 'transparent',
-            headlines: 'block',
-            title: 'block',
-            banner: 'block',
-            contentList: 'none',
-            strongTitle: true
-        },
-        created: function() {
-            DynamicHeader.init();
-
-        },
-        methods: {
-            toggleColorCode: function() {
-                if (this.background !== 'transparent') {
-                    this.background = 'transparent';
-                } else {
-                    this.background = '#E5E8E8';
-                }
-            },
-            toggleHeadlines: function() {
-                if (this.headlines !== 'block') {
-                    this.headlines = 'block';
-                } else {
-                    this.headlines = 'none';
-                }
-            },
-            toggleBanner: function() {
-                if (this.banner !== 'block') {
-                    this.banner = 'block';
-                } else {
-                    this.banner = 'none';
-                }
-            },
-
-            toggleTitle: function() {
-                if (this.title !== 'block') {
-                    this.title = 'block';
-                } else {
-                    this.title = 'none';
-                }
-            },
-            toggleTitleType: function() {
-                if (this.strongTitle) {
-                    this.strongTitle = false;
-                } else {
-                    this.strongTitle = true;
-                }
-            },
-            toggleContentList: function() {
-                if (this.contentList !== 'block') {
-                    this.contentList = 'block';
-                } else {
-                    this.contentList = 'none';
-                }
-            },
-
-
-
-
-        }
-    })
+    DynamicHeader.init();
 </script>
 
 </html>
