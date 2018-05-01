@@ -18,29 +18,29 @@
         grid-column: 4 / span 2;
     }
 
-    .left.columns,
-    .right.columns {
-        columns: 2;
-    }
-
     > .breakout {
         grid-column: 3 / span 3;
-    }
-
-    .breakout.columns {
-        columns: 3;
     }
 
     > .wide {
         grid-column: 2 / span 5;
     }
 
-    .wide.columns {
-        columns: 3;
-    }
-
     > .full {
         grid-column: 1 / span 7;
+    }
+
+    .columns {
+        columns: 2;
+    }
+
+    .breakout .columns,
+    .breakout.columns,
+    .full .columns,
+    .full.columns,
+    .wide .columns,
+    .wide.columns {
+        columns: 3;
     }
 }
 
@@ -75,15 +75,15 @@
 }
 
 .columns {
-    padding-bottom: $spacing-1;
     column-gap: $spacing-1;
+    margin: 0 0 $spacing-1;
 
     figure,
     p {
         margin: 0;
     }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: $mid-width) {
     .grid {
         .left {
             grid-column: 4 / span 1;
@@ -105,10 +105,12 @@
             grid-column: 1/ span 7;
         }
 
+        .breakout .columns,
         .breakout.columns,
         .columns,
-        .left.columns,
-        .right.columns,
+        .full .columns,
+        .full.columns,
+        .wide .columns,
         .wide.columns {
             columns: 2;
             padding-bottom: 0;
@@ -119,10 +121,12 @@
     .grid {
         grid-template-columns: $spacing-half 1fr 1fr minmax(0, $content-width) 1fr 1fr $spacing-half;
 
+        .breakout .columns,
         .breakout.columns,
         .columns,
-        .left.columns,
-        .right.columns,
+        .full .columns,
+        .full.columns,
+        .wide .columns,
         .wide.columns {
             columns: 1;
             padding-bottom: 0;

@@ -58,6 +58,7 @@ img {
   margin: 0;
   max-width: 100%; }
 
+.vertical-rhythm,
 figure,
 p {
   margin: 0 0 1.62em;
@@ -72,6 +73,13 @@ figcaption {
   font-style: italic;
   font-size: 16px;
   line-height: 18px; }
+
+code {
+  font-family: monospace;
+  font-size: 16px; }
+
+strong {
+  font-weight: bold; }
 
 @media screen and (min-width: 1400px) {
   body {

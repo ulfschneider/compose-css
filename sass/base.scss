@@ -90,6 +90,7 @@ img {
     max-width: 100%;
 }
 
+.vertical-rhythm,
 figure,
 p {
     margin: 0 0 $spacing-1;
@@ -106,6 +107,15 @@ figcaption {
     font-style: italic;
     font-size: $small-font-size;
     line-height: $font-size;
+}
+
+code {
+    font-family: monospace;
+    font-size: $small-font-size;
+}
+
+strong {
+    font-weight: bold;
 }
 @media screen and (min-width: $large-width) {
     body {
