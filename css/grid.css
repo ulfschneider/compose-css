@@ -1,6 +1,4 @@
 /* base */
-/*screen widths*/
-/*spacings must be em unit */
 * {
   line-height: 1.62em;
   font-weight: 400; }
@@ -65,8 +63,7 @@ p {
   padding: 0; }
 
 figure {
-  max-width: 100%;
-  overflow-x: scroll; }
+  max-width: 100%; }
 
 figcaption {
   margin: 0.81em 0 0;
