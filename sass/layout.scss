@@ -1,5 +1,6 @@
 @import 'base';
 @import 'grid';
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
 .small {
     font-size: $small-font-size;
@@ -86,29 +87,22 @@ header {
 }
 
 .title {
-    text-align: center;
     margin-top: $spacing-3;
-}
+    text-align: center;
 
-.title .sub-title {
-    text-transform: uppercase;
-}
-
-.title .abstract {
-    margin-top: $spacing-1;
-    font-style: italic;
-    text-align: left;
-}
-
-.title {
     h1 {
         margin: 0;
-    }
-}
-
-.title.strong {
-    h1 {
         font-size: $spacing-1;
+    }
+
+    .sub-title {
+        text-transform: uppercase;
+    }
+
+    .abstract {
+        margin-top: $spacing-1;
+        font-style: italic;
+        text-align: left;
     }
 }
 

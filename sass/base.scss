@@ -1,7 +1,10 @@
 /* base */
-$font-size: 18px;
-$small-font-size: 16px;
-$big-font-size: 20px;
+/* ensure to import the suitable font, in this case I´m using Input Sans */
+$font-family: 'Input Sans', Serif;
+$code-font-family: 'Source Code Pro', monospace;
+$font-size: 16px;
+$small-font-size: 14px;
+$big-font-size: 18px;
 $font-weight: 400;
 $line-height: 1.62em;
 $text-color: #333;
@@ -20,6 +23,7 @@ $spacing-4: 1.62 * 1.62 * 1.62 * 1.62em;
 * {
     line-height: $line-height;
     font-weight: $font-weight;
+    font-family: $font-family;
 }
 
 body {
@@ -88,6 +92,15 @@ img {
     max-width: 100%;
 }
 
+hr {
+    margin: $spacing-1 auto;
+    border: 0;
+}
+
+hr:after {
+    content: "***";
+}
+
 .vertical-rhythm,
 figure,
 p {
@@ -100,14 +113,13 @@ figure {
 }
 
 figcaption {
-    margin: $spacing-half 0 0;
+    margin: 0;
     font-style: italic;
     font-size: $small-font-size;
-    line-height: $font-size;
 }
 
 code {
-    font-family: monospace;
+    font-family: $code-font-family;
     font-size: $small-font-size;
 }
 
