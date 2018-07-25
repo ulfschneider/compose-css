@@ -116,7 +116,7 @@ header {
     }
 
     li:after {
-        content: " — ";
+        content: " - ";
     }
 
     li:last-child:after {
@@ -141,7 +141,7 @@ header {
         }
 
         .meta {
-            font-style: italic;
+            font-size: $small-font-size;
         }
     }
 }

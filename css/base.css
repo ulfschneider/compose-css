@@ -1,10 +1,9 @@
-@charset "UTF-8";
 /* base */
-/* ensure to import the suitable font, in this case I´m using Input Sans */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Rokkitt:700|Source+Code+Pro");
 * {
   line-height: 1.62em;
   font-weight: 400;
-  font-family: "Input Sans", Serif; }
+  font-family: "Open Sans", Sans-serif; }
 
 body {
   margin: 0;
@@ -32,7 +31,10 @@ h6 {
   margin-top: 2.6244em;
   margin-bottom: 0.81em;
   text-align: center;
-  font-feature-settings: "lnum" 1; }
+  font-feature-settings: "lnum" 1;
+  font-family: "Rokkitt";
+  letter-spacing: 1px;
+  text-transform: uppercase; }
 
 ul {
   list-style: disc;

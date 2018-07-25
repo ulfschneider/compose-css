@@ -1,6 +1,7 @@
 /* base */
-/* ensure to import the suitable font, in this case I´m using Input Sans */
-$font-family: 'Input Sans', Serif;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Rokkitt:700|Source+Code+Pro');
+$base-font-family: 'Open Sans', Sans-serif;
+$headline-font-family: 'Rokkitt';
 $code-font-family: 'Source Code Pro', monospace;
 $font-size: 16px;
 $small-font-size: 14px;
@@ -23,7 +24,7 @@ $spacing-4: 1.62 * 1.62 * 1.62 * 1.62em;
 * {
     line-height: $line-height;
     font-weight: $font-weight;
-    font-family: $font-family;
+    font-family: $base-font-family;
 }
 
 body {
@@ -57,6 +58,9 @@ h6 {
     margin-bottom: $spacing-half;
     text-align: center;
     font-feature-settings: "lnum" 1;
+    font-family: $headline-font-family;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 ul {
