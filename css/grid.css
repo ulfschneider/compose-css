@@ -3,7 +3,8 @@
 * {
   line-height: 1.62em;
   font-weight: 400;
-  font-family: "Open Sans", Sans-serif; }
+  font-family: "Open Sans", Sans-serif;
+  color: #333; }
 
 body {
   margin: 0;
@@ -17,7 +18,6 @@ body {
     font-feature-settings: normal;
     font-variant-numeric: oldstyle-nums; } }
 a {
-  color: #333;
   text-decoration: underline; }
 
 h1,

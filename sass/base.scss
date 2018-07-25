@@ -25,6 +25,7 @@ $spacing-4: 1.62 * 1.62 * 1.62 * 1.62em;
     line-height: $line-height;
     font-weight: $font-weight;
     font-family: $base-font-family;
+    color: $text-color;
 }
 
 body {
@@ -42,7 +43,6 @@ body {
 }
 
 a {
-    color: $text-color;
     text-decoration: underline;
 }
 
