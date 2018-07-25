@@ -68,7 +68,7 @@ hr {
   border: 0; }
 
 hr:after {
-  content: "***"; }
+  content: "* * *"; }
 
 .vertical-rhythm,
 figure,
@@ -164,7 +164,7 @@ hr {
   border: 0; }
 
 hr:after {
-  content: "***"; }
+  content: "* * *"; }
 
 .vertical-rhythm,
 figure,
