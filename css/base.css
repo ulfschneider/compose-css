@@ -1,97 +1,112 @@
 /* base */
+
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Rokkitt:700|Source+Code+Pro");
 * {
-  line-height: 1.62em;
-  font-weight: 400;
-  font-family: "Open Sans", Sans-serif;
-  color: #333; }
+    line-height: 1.62em;
+    font-weight: 400;
+    font-family: "Open Sans", Sans-serif;
+    color: #333;
+}
 
 body {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  font-feature-settings: "onum" 1;
-  background-color: #fff; }
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-feature-settings: "onum" 1;
+    background-color: #fff;
+}
 
 @supports (font-variant-numeric: oldstyle-nums) {
-  body {
-    font-feature-settings: normal;
-    font-variant-numeric: oldstyle-nums; } }
-a {
-  text-decoration: underline; }
+    body {
+        font-feature-settings: normal;
+        font-variant-numeric: oldstyle-nums;
+    }
+}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 1em;
-  font-weight: bold;
-  margin-top: 2.6244em;
-  margin-bottom: 0.81em;
-  text-align: center;
-  font-feature-settings: "lnum" 1;
-  font-family: "Rokkitt";
-  letter-spacing: 1px;
-  text-transform: uppercase; }
+a {
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 2.6244em;
+    margin-bottom: 0.81em;
+    text-align: center;
+    font-feature-settings: "lnum" 1;
+    font-family: "Rokkitt";
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
 
 ul {
-  list-style: disc;
-  margin: 0;
-  padding: 0; }
+    list-style: disc;
+    margin: 0;
+    padding: 0;
+}
 
 li {
-  list-style-position: outside; }
+    list-style-position: outside;
+}
 
-li h2,
-li h3,
-li h4,
-li h5,
-li h6 {
-  display: inline-block;
-  margin: 0;
-  text-align: left;
-  font-weight: 400;
-  font-style: italic; }
+li h2, li h3, li h4, li h5, li h6 {
+    display: inline-block;
+    margin: 0;
+    text-align: left;
+    font-weight: 400;
+    font-style: italic;
+}
+
 li p {
-  margin: 0; }
+    margin: 0;
+}
 
 img {
-  margin: 0;
-  max-width: 100%; }
+    margin: 0;
+    max-width: 100%;
+}
 
 hr {
-  margin: 1.62em auto;
-  border: 0; }
+    margin: 1.62em auto;
+    border: 0;
+}
 
 hr:after {
-  content: "* * *"; }
+    content: "***";
+}
 
-.vertical-rhythm,
-figure,
-p {
-  margin: 0 0 1.62em;
-  padding: 0; }
+.vertical-rhythm, figure, p {
+    margin: 0 0 1.62em;
+    padding: 0;
+}
 
 figure {
-  max-width: 100%; }
+    max-width: 100%;
+}
 
 figcaption {
-  margin: 0;
-  font-style: italic;
-  font-size: 14px; }
+    margin: 0;
+    font-style: italic;
+    font-size: 14px;
+}
 
 code {
-  font-family: "Source Code Pro", monospace;
-  font-size: 14px; }
+    font-family: "Source Code Pro", monospace;
+    font-size: 14px;
+}
 
 strong {
-  font-weight: bold; }
+    font-weight: bold;
+}
 
 @media screen and (min-width: 1400px) {
-  body {
-    font-size: 18px; } }
+    body {
+        font-size: 18px;
+    }
+}
+
 @media screen and (max-width: 700px) {
-  li {
-    list-style-position: inside; } }
+    li {
+        list-style-position: inside;
+    }
+}

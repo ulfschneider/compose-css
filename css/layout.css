@@ -367,23 +367,23 @@ header {
 .toc li:last-child:after {
   content: ""; }
 
-.toc-list .item,
-.toc-list li {
+.detail-list .item,
+.detail-list li {
   margin: 0 0 1.62em;
   list-style-type: none; }
-  .toc-list .item h2,
-  .toc-list .item h3,
-  .toc-list .item h4,
-  .toc-list .item h5,
-  .toc-list .item h6,
-  .toc-list li h2,
-  .toc-list li h3,
-  .toc-list li h4,
-  .toc-list li h5,
-  .toc-list li h6 {
+  .detail-list .item h2,
+  .detail-list .item h3,
+  .detail-list .item h4,
+  .detail-list .item h5,
+  .detail-list .item h6,
+  .detail-list li h2,
+  .detail-list li h3,
+  .detail-list li h4,
+  .detail-list li h5,
+  .detail-list li h6 {
     font-weight: bold;
     font-style: normal;
     margin-right: 1.62em; }
-  .toc-list .item .meta,
-  .toc-list li .meta {
+  .detail-list .item .meta,
+  .detail-list li .meta {
     font-size: 14px; }
