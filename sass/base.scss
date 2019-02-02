@@ -118,6 +118,16 @@ code {
 strong {
     font-weight: bold;
 }
+
+hr {
+    margin: $spacing-1 auto;
+    border: 0;
+}
+
+hr:after {
+    content: "* * *";
+}
+
 @media screen and (min-width: $large-width) {
     body {
         font-size: $big-font-size;

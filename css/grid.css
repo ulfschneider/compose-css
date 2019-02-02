@@ -79,6 +79,13 @@ code {
 strong {
   font-weight: bold; }
 
+hr {
+  margin: 1.62em auto;
+  border: 0; }
+
+hr:after {
+  content: "* * *"; }
+
 @media screen and (min-width: 1400px) {
   body {
     font-size: 20px; } }

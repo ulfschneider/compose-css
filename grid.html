@@ -31,7 +31,7 @@
         <div style="grid-column:7 / span 1; background:#26de81; height:150px;"></div>
 
 
-        <div class="title strong">
+        <div class="title">
             <h1>The Grid</h1>
             <div class="sub-title">A system to layout</div>
             <div class="meta">
@@ -120,6 +120,7 @@
         <code class="full">&lt;/div&gt;</code>
     </div>
 
+
     <div class="grid">
         <h2 class="wide">Wide Content</h2>
         <p class="wide">Wide content is pushing things further in that it extends the boundaries of breakout content. Wide content needs to have a css class named <strong>wide</strong> assigned.</p>
@@ -127,15 +128,6 @@
 
     <div class="grid" style="background:#ddd"><code class="full">&lt;div class="grid"&gt;</code>
         <div class="wide" style="background:#fed330;"><code>&lt;div class="wide"&gt;&lt;/div&gt;</code></div>
-        <code class="full">&lt;/div&gt;</code>
-    </div>
-
-    <div class="grid">
-        <h2 class="full">Full Content</h2>
-        <p class="full">Full content will use the entire width of the screen. Full content needs to have a css class named <strong>full</strong> assigned.</p>
-    </div>
-    <div class="grid" style="background:#ddd"><code class="full">&lt;div class="grid"&gt;</code>
-        <div class="full" style="background:#26de81;"><code>&lt;div class="full"&gt;&lt;/div&gt;</code></div>
         <code class="full">&lt;/div&gt;</code>
     </div>
 
@@ -148,28 +140,56 @@
 
     <div class="grid vertical-rhythm" style="background:#ddd"><code class="full">&lt;div class="grid"&gt;</code>
         <div class="wide thirds" style="background:#fed330;"><code>&lt;div class="wide thirds"&gt;</code>
-            <div class="col-1-2" style="background:#fd9644;"><code>&lt;div class="col-1-2"&gt;&lt;/div&gt;</code></div>
-            <div class="col-3" style="background:#fd9644;"><code>&lt;div class="col-3"&gt;&lt;/div&gt;</code></div>
+            <div class="col-1-2" style="border:1px solid #fed330; background:#fd9644;"><code>&lt;div class="col-1-2"&gt;&lt;/div&gt;</code></div>
+            <div class="col-3" style="border:1px solid #fed330; background:#fd9644;"><code>&lt;div class="col-3"&gt;&lt;/div&gt;</code></div>
+            <div class="col-1" style="border:1px solid #fed330; background:#fd9644;"><code>&lt;div class="col-1"&gt;&lt;/div&gt;</code></div>
+            <div class="col-2-3" style="border:1px solid #fed330; background:#fd9644;"><code>&lt;div class="col-2-3"&gt;&lt;/div&gt;</code></div>
+            <div class="col-1" style="border:1px solid #fed330; background:#fd9644;"><code>&lt;div class="col-1"&gt;&lt;/div&gt;</code></div>
+            <div class="col-2" style="border:1px solid #fed330; background:#fd9644;"><code>&lt;div class="col-2"&gt;&lt;/div&gt;</code></div>
+            <div class="col-3" style="border:1px solid #fed330; background:#fd9644;"><code>&lt;div class="col-3"&gt;&lt;/div&gt;</code></div>
+
             <code>&lt;/div&gt;</code>
         </div>
         <code class="full">&lt;/div&gt;</code>
     </div>
 
     <div class="grid">
-        <div class="wide thirds">
-            <p class="col-1-2-3">Below the concept is applied to position two images.
-                <figure class="col-1-2 ">
-                    <img src="r/nathan-anderson-127350.jpg " class="cover " />
-                    <figcaption>The Mountains</figcaption>
-                </figure>
-                <div class="col-3 ">
-                    <figure class="float-right max-width-two-thirds ">
-                        <img src="r/will-turner-392792.jpg " />
-                        <figcaption>The Mountains and Glaciers</figcaption>
-                    </figure>
-                </div>
+        <div class="wide ">
+            <p class="col-1-2-3">The wide thirds concept is applied to position two images.</p>
         </div>
     </div>
+
+    <div class="grid vertical-rhythm" style="background:#ddd"><code class="full">&lt;div class="grid"&gt;</code>
+        <div class="wide thirds" style="background:#fed330;">
+            <code>&lt;div class="wide thirds"&gt;</code>
+            <figure class="col-1-2 " style="border:1px solid #fed330; background:#fd9644;"><code>&lt;figure class="col-1-2"&gt;</code>
+                <img src="r/nathan-anderson-127350.jpg " class="cover " />
+                <figcaption><code>&lt;figcaption&gt;</code>The Mountains<code>&lt;/figcaption&gt;</code></figcaption>
+                <code>&lt;/figure"&gt;</code>
+            </figure>
+            <div class="col-3" style="border:1px solid #fed330; background:#fd9644;"><code>&lt;div class="col-3"&gt;</code>
+                <figure class="float-right max-width-two-thirds"><code>&lt;figure class="float-right max-width-two-thirds"&gt;</code>
+                    <img src="r/will-turner-392792.jpg " />
+                    <figcaption><code>&lt;figcaption&gt;</code>The Mountains and Glaciers<code>&lt;/figcaption&gt;</code></figcaption>
+                    <code>&lt;/figure"&gt;</code>
+                </figure>
+
+            </div>
+            <code>&lt;/div&gt;</code>
+        </div>
+        <code class="full">&lt;/div&gt;</code>
+    </div>
+
+    <div class="grid">
+        <h2 class="full">Full Content</h2>
+        <p class="full">Full content will use the entire width of the screen. Full content needs to have a css class named <strong>full</strong> assigned.</p>
+    </div>
+
+    <div class="grid" style="background:#ddd"><code class="full">&lt;div class="grid"&gt;</code>
+        <div class="full" style="background:#26de81;"><code>&lt;div class="full"&gt;&lt;/div&gt;</code></div>
+        <code class="full">&lt;/div&gt;</code>
+    </div>
+
 
 
     <div class="grid">
@@ -186,10 +206,10 @@
                 Sie hätten noch ins Boot springen können, aber der Reisende hob ein schweres, geknotetes Tau vom Boden, drohte ihnen damit und hielt sie dadurch von dem Sprunge ab. In den letzten Jahrzehnten ist das Interesse an Hungerkünstlern sehr zurückgegangen.</p>
         </div>
 
+        <hr>
 
 
-
-        <ul class="toc-list " v-bind:style="{background: background, display: contentList} ">
+        <ul class="detail-list " v-bind:style="{background: background, display: contentList} ">
             <li>
                 <h3>Agile Manifesto</h3>
                 <span class="meta ">February 26, 2017</span>
@@ -213,6 +233,7 @@
 </body>
 <script src="r/dynamic-header.min.js "></script>
 <script>
+    <!--Will make the <header> dynamic-->
     DynamicHeader.init();
 </script>
 
