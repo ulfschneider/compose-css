@@ -86,7 +86,7 @@ hr {
   border: 0; }
 
 hr:after {
-  content: "* * *"; }
+  content: "✴ ✴ ✴"; }
 
 @media screen and (min-width: 1400px) {
   body {
@@ -179,7 +179,7 @@ hr {
   border: 0; }
 
 hr:after {
-  content: "* * *"; }
+  content: "✴ ✴ ✴"; }
 
 @media screen and (min-width: 1400px) {
   body {

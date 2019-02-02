@@ -125,7 +125,7 @@ hr {
 }
 
 hr:after {
-    content: "* * *";
+    content: "✴ ✴ ✴";
 }
 
 @media screen and (min-width: $large-width) {
