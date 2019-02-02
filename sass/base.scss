@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400|IBM+Plex+Sans:400,400i,700');
+
 /* base */
+$font-family: 'IBM Plex Sans';
+$mono-font-family: 'IBM Plex Mono';
 $font-size: 18px;
 $small-font-size: 16px;
 $big-font-size: 20px;
@@ -25,7 +29,7 @@ $spacing-4: 1.62 * 1.62 * 1.62 * 1.62em;
 body {
     margin: 0;
     padding: 0;
-    font-size: $font-size;
+    font: $font-size $font-family, sans-serif;
     font-feature-settings: "onum" 1;
     background-color: $background-color;
 }
@@ -71,7 +75,7 @@ li {
     h4,
     h5,
     h6 {
-        display: inline-block;
+        display: inline;
         margin: 0;
         text-align: left;
         font-weight: $font-weight;
@@ -107,7 +111,7 @@ figcaption {
 }
 
 code {
-    font-family: monospace;
+    font-family: $mono-font-family;
     font-size: $small-font-size;
 }
 
