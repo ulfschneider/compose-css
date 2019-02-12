@@ -16,10 +16,16 @@ $mid-width: 1200px;
 $large-width: 1400px;
 $spacing-half: 0.81em;
 $spacing-quart: 0.4em;
-$spacing-1: 1.62em;
-$spacing-2: 1.62 * 1.62em;
-$spacing-3: 1.62 * 1.62 * 1.62em;
-$spacing-4: 1.62 * 1.62 * 1.62 * 1.62em;
+$spacing-eight: 0.2em;
+$factor-1: 1.62;
+$spacing-1: $factor-1 * 1em;
+$factor-2: 1.62 * 1.62;
+$spacing-2: $factor-2 * 1em;
+$factor-3: 1.62 * 1.62 * 1.62;
+$spacing-3: $factor-3 * 1em;
+$factor-4: 1.62 * 1.62 * 1.62 * 1.62;
+$spacing-4: $factor-4 * 1em;
+
 
 * {
     line-height: $line-height;
@@ -31,6 +37,7 @@ body {
     padding: 0;
     font: $font-size $font-family, sans-serif;
     font-feature-settings: "onum" 1;
+    color: $text-color;
     background-color: $background-color;
 }
 @supports (font-variant-numeric: oldstyle-nums) {
@@ -120,13 +127,19 @@ strong {
 }
 
 hr {
-    margin: $spacing-1 auto;
-    border: 0;
+    border:none;
+    margin:none;
+    &:after {
+        position: relative;
+        height: 3px;
+        width: (100% / $factor-4);
+        background: $text-color;
+        content: "";
+        display: block;
+        margin: 0 auto $spacing-1 auto;
+}
 }
 
-hr:after {
-    content: "✴ ✴ ✴";
-}
 
 @media screen and (min-width: $large-width) {
     body {

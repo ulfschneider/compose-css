@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400|IBM+Plex+Sans:400,400i,700");
 /* base */
 * {
@@ -10,6 +9,7 @@ body {
   padding: 0;
   font: 18px "IBM Plex Sans", sans-serif;
   font-feature-settings: "onum" 1;
+  color: #333;
   background-color: #fff; }
 
 @supports (font-variant-numeric: oldstyle-nums) {
@@ -81,11 +81,16 @@ strong {
   font-weight: bold; }
 
 hr {
-  margin: 1.62em auto;
-  border: 0; }
-
-hr:after {
-  content: "✴ ✴ ✴"; }
+  border: none;
+  margin: none; }
+  hr:after {
+    position: relative;
+    height: 3px;
+    width: 14.5191082034%;
+    background: #333;
+    content: "";
+    display: block;
+    margin: 0 auto 1.62em auto; }
 
 @media screen and (min-width: 1400px) {
   body {

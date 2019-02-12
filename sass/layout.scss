@@ -80,7 +80,7 @@ header {
         text-align: center;
 
         a {
-            color: white;
+            color: $background-color;
         }
     }
 }
@@ -128,7 +128,18 @@ header {
     li:last-child:after {
         content: "";
     }
+
+    &:after {
+        position: relative;
+        height: 3px;
+        width: (100% / $factor-4);
+        background: $text-color;
+        content: "";
+        display: block;
+        margin: $spacing-1 auto;
+    }
 }
+
 
 .detail-list {
     .item,
