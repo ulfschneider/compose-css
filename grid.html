@@ -15,15 +15,24 @@
         font-family: sans-serif;
         font-size: 18px;
         line-height: 1.62em;
+        color: #333;
     }
 
     code {
         font-size: 16px;
     }
 
-    .indicator {
-        background: #777;
+    .indicator,
+    strong {
+        background: #333;
         color: #eee;
+    }
+
+    strong {
+        padding: 2px;
+        border-radius: 2px;
+        font-weight: normal;
+        font-family: monospace;
     }
 
     .grid.indicator {
@@ -34,12 +43,12 @@
     [class^="six-"].indicator {
         background: #ccc;
         color: #444;
-        border: 1px solid #777;
+        border: 1px solid #333;
     }
 
     h1,
     h2 {
-        margin-top: 3em;
+        margin-top: 2.62em;
     }
 </style>
 
@@ -55,11 +64,14 @@
                 IE</a>,
             the grid system is robust, lightweight and fast. This is of advantage for users as well as for the developer. Grid is the future of page layout.
         </p>
+        <p>
+            If <strong>display: grid;</strong> is not supported by the web browser, everything is positioned in one column in the middle of the page.
+        </p>
     </div>
 
     <div class="grid">
         <div>
-            <h2>Middle Content</h2>
+            <h2>Content</h2>
             <p>Middle content is the default positioning of any item within the layout. Middle content doesn´t need a specific css class assignment to get positioned this way.</p>
             <p>Code example:</p>
         </div>
@@ -73,28 +85,28 @@
     </div>
 
     <div class="grid">
-        <div class="left">
-            <h2>Left Content</h2>
-            <p>Left content is pushed a little bit to the left and will give more space for the things you want to display. Left content needs to have a css class named <strong>left</strong> assigned.</p>
+        <div class="breakout-left">
+            <h2>Breakout Left Content</h2>
+            <p>Breakout left content is pushed a little bit to the left and will give more space for the things you want to display. Breakout left content needs to have a css class named <strong>breakout-left</strong> assigned.</p>
             <p>Code example:</p>
         </div>
     </div>
     <!-- Code Example -->
     <div class="grid indicator"><code class="full">&lt;div class="grid"&gt;</code>
-        <div class="left indicator"><code>&lt;div class="left"&gt;&lt;/div&gt;</code></div>
+        <div class="breakout-left indicator"><code>&lt;div class="breakout-left"&gt;&lt;/div&gt;</code></div>
         <code class="full">&lt;/div&gt;</code>
     </div>
 
     <div class="grid">
-        <div class="right">
-            <h2>Right Content</h2>
-            <p>Right content is pushed a little bit to the right and will give more space for the things you want to display. Right content needs to have a css class named <strong>right</strong> assigned.</p>
+        <div class="breakout-right">
+            <h2>Breakout Right Content</h2>
+            <p>Breakout right content is pushed a little bit to the right and will give more space for the things you want to display. Breakout right content needs to have a css class named <strong>breakout-right</strong> assigned.</p>
             <p>Code example:</p>
         </div>
     </div>
     <!-- Code Example -->
     <div class="grid indicator"><code class="full">&lt;div class="grid"&gt;</code>
-        <div class="right indicator"><code>&lt;div class="right"&gt;&lt;/div&gt;</code></div>
+        <div class="breakout-right indicator"><code>&lt;div class="breakout-right"&gt;&lt;/div&gt;</code></div>
         <code class="full">&lt;/div&gt;</code>
     </div>
 
