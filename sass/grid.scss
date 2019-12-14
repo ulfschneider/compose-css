@@ -1,6 +1,5 @@
 $spacing: 1.62rem;
 $spacing-minus-1: 1rem;
-$palm-width: 400px;
 $content-width: 700px;
 $mid-width: 1200px;
 
@@ -215,5 +214,4 @@ body {
             }
         }
     }
-    @media screen and (max-width: $palm-width) {}
 }
