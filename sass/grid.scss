@@ -1,8 +1,12 @@
-$spacing: 1.62em;
-$spacing--1: 1em;
+$spacing: 1.62rem;
+$spacing--1: 1rem;
 $palm-width: 400px;
 $content-width: 700px;
 $mid-width: 1200px;
+
+html {
+    font-size: 1rem;
+}
 
 body {
     margin: 0;
@@ -58,37 +62,97 @@ body {
     }
 }
 
-.thirds {
+.six {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-column-gap: $spacing;
 
     > * {
-        grid-column: 1 / span 3;
+        grid-column: 1 / span 6;
     }
 
-    .third-1 {
+    .six-1 {
         grid-column: 1 / span 1;
     }
 
-    .third-1-2 {
+    .six-1-to-2 {
         grid-column: 1 / span 2;
     }
 
-    .third-1-2-3 {
+    .six-1-to-3 {
         grid-column: 1 / span 3;
     }
 
-    .third-2 {
+    .six-1-to-4 {
+        grid-column: 1 / span 4;
+    }
+
+    .six-1-to-5 {
+        grid-column: 1 / span 5;
+    }
+
+    .six-1-to-6 {
+        grid-column: 1 / span 6;
+    }
+
+    .six-2 {
         grid-column: 2 / span 1;
     }
 
-    .third-2-3 {
+    .six-2-to-3 {
         grid-column: 2 / span 2;
     }
 
-    .third-3 {
+    .six-2-to-4 {
+        grid-column: 2 / span 3;
+    }
+
+    .six-2-to-5 {
+        grid-column: 2 / span 4;
+    }
+
+    .six-2-to-6 {
+        grid-column: 2 / span 5;
+    }
+
+    .six-3 {
         grid-column: 3 / span 1;
+    }
+
+    .six-3-to-4 {
+        grid-column: 3 / span 2;
+    }
+
+    .six-3-to-5 {
+        grid-column: 3 / span 3;
+    }
+
+    .six-3-to-6 {
+        grid-column: 3 / span 4;
+    }
+
+    .six-4 {
+        grid-column: 4 / span 1;
+    }
+
+    .six-4-to-5 {
+        grid-column: 4 / span 2;
+    }
+
+    .six-4-to-6 {
+        grid-column: 4 / span 3;
+    }
+
+    .six-5 {
+        grid-column: 5 / span 1;
+    }
+
+    .six-5-to-6 {
+        grid-column: 5 / span 2;
+    }
+
+    .six-6 {
+        grid-column: 6 / span 1;
     }
 }
 @media screen and (max-width: $mid-width) {
@@ -127,14 +191,9 @@ body {
         }
     }
 
-    .thirds {
-        .third-1,
-        .third-1-2,
-        .third-1-2-3,
-        .third-2,
-        .third-2-3,
-        .third-3 {
-            grid-column: 1 / span 3;
+    .six {
+        [class^="six-"] {
+            grid-column: 1 / span 6;
         }
     }
 }

@@ -11,40 +11,40 @@
 </head>
 
 <style>
+    html {
+        font-family: sans-serif;
+        font-size: 18px;
+        line-height: 1.62em;
+    }
+
+    code {
+        font-size: 16px;
+    }
+
+    .indicator {
+        background: #777;
+        color: #eee;
+    }
+
     .grid.indicator {
-        background: #ddd;
+        background: #ccc;
+        color: #444;
     }
 
-    .full.indicator {
-        background: #26de81;
+    [class^="six-"].indicator {
+        background: #ccc;
+        color: #444;
+        border: 1px solid #777;
     }
 
-    .wide.indicator {
-        background: #fed330;
-    }
-
-    .breakout.indicator,
-    .left.indicator,
-    .right.indicator {
-        background: #fd9644;
-    }
-
-    .middle.indicator {
-        background: #fc5c65;
+    h1,
+    h2 {
+        margin-top: 3em;
     }
 </style>
 
 <body>
     <div class="grid">
-
-        <!-- using palette: https://flatuicolors.com/palette/de -->
-        <div style="grid-column:1 / span 1; height:150px;" class="full indicator"> </div>
-        <div style="grid-column:2 / span 1; height:150px;" class="wide indicator"></div>
-        <div style="grid-column:3 / span 1; height:150px;" class="breakout indicator"></div>
-        <div style="grid-column:4 / span 1; height:150px;" class="middle indicator"></div>
-        <div style="grid-column:5 / span 1; height:150px;" class="breakout indicator"></div>
-        <div style="grid-column:6 / span 1; height:150px;" class="wide indicator"></div>
-        <div style="grid-column:7 / span 1; height:150px;" class="full indicator"></div>
 
         <header>
             <h1>A HORIZONTAL CSS GRID SYSTEM TO LAYOUT A WEB PAGE</h1>
@@ -142,21 +142,29 @@
 
     <div class="grid">
         <div class="wide">
-            <h2>Thirds</h2>
-            <p>Any of the before mentioned content concepts can be divided into thirds by assigning the css class named <strong>thirds</strong>.</p>
+            <h2>Sixths</h2>
+            <p>Any of the before mentioned content concepts can be divided into sixths by assigning the css class named <strong>six</strong>.</p>
             <p>Code example:</p>
         </div>
     </div>
     <!-- Code Example -->
     <div class="grid indicator"><code class="full">&lt;div class="grid"&gt;</code>
-        <div class="wide indicator thirds"><code>&lt;div class="wide thirds"&gt;</code>
-            <div class="third-1-2" style="border:1px solid #fed330; background:#fd9644;"><code>&lt;div class="third-1-2"&gt;&lt;/div&gt;</code></div>
-            <div class="third-3" style="border:1px solid #fed330; background:#fd9644;"><code>&lt;div class="third-3"&gt;&lt;/div&gt;</code></div>
-            <div class="third-1" style="border:1px solid #fed330; background:#fd9644;"><code>&lt;div class="third-1"&gt;&lt;/div&gt;</code></div>
-            <div class="third-2-3" style="border:1px solid #fed330; background:#fd9644;"><code>&lt;div class="third-2-3"&gt;&lt;/div&gt;</code></div>
-            <div class="third-1" style="border:1px solid #fed330; background:#fd9644;"><code>&lt;div class="third-1"&gt;&lt;/div&gt;</code></div>
-            <div class="third-2" style="border:1px solid #fed330; background:#fd9644;"><code>&lt;div class="third-2"&gt;&lt;/div&gt;</code></div>
-            <div class="third-3" style="border:1px solid #fed330; background:#fd9644;"><code>&lt;div class="third-3"&gt;&lt;/div&gt;</code></div>
+        <div class="wide indicator six"><code>&lt;div class="wide six"&gt;</code>
+            <div class="six-1-to-4 indicator"><code>&lt;div class="six-1-to-4"&gt;&lt;/div&gt;</code></div>
+            <div class="six-3-to-5 indicator"><code>&lt;div class="six-3-to-5"&gt;&lt;/div&gt;</code></div>
+            <div class="six-1 indicator"><code>&lt;div class="six-1"&gt;&lt;/div&gt;</code></div>
+            <div class="six-2-to-3 indicator"><code>&lt;div class="six-2-to-3"&gt;&lt;/div&gt;</code></div>
+            <div class="six-1-to-2 indicator"><code>&lt;div class="six-1-to-2"&gt;&lt;/div&gt;</code></div>
+            <div class="six-3-to-4 indicator"><code>&lt;div class="six-3-to-4"&gt;&lt;/div&gt;</code></div>
+            <div class="six-5-to-6 indicator"><code>&lt;div class="six-5-to-6"&gt;&lt;/div&gt;</code></div>
+            <div class="six-1 indicator"><code>&lt;div class="six-1"&gt;&lt;/div&gt;</code></div>
+            <div class="six-2 indicator"><code>&lt;div class="six-2"&gt;&lt;/div&gt;</code></div>
+            <div class="six-3 indicator"><code>&lt;div class="six-3"&gt;&lt;/div&gt;</code></div>
+            <div class="six-4 indicator"><code>&lt;div class="six-4"&gt;&lt;/div&gt;</code></div>
+            <div class="six-5 indicator"><code>&lt;div class="six-5"&gt;&lt;/div&gt;</code></div>
+            <div class="six-6 indicator"><code>&lt;div class="six-6"&gt;&lt;/div&gt;</code></div>
+            <div class="six-1-to-3 indicator"><code>&lt;div class="six-1-to-3"&gt;&lt;/div&gt;</code></div>
+            <div class="six-4-to-6 indicator"><code>&lt;div class="six-4-to-6"&gt;&lt;/div&gt;</code></div>
 
             <code>&lt;/div&gt;</code>
         </div>

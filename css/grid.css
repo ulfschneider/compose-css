@@ -1,14 +1,17 @@
+html {
+  font-size: 1rem; }
+
 body {
   margin: 0;
   padding: 0; }
 
 .columns {
-  column-gap: 1.62em;
-  margin: 0 0 1.62em; }
+  column-gap: 1.62rem;
+  margin: 0 0 1.62rem; }
 
 .grid {
   display: grid;
-  grid-template-columns: 1.62em 1fr 1fr minmax(0, 700px) 1fr 1fr 1.62em; }
+  grid-template-columns: 1.62rem 1fr 1fr minmax(0, 700px) 1fr 1fr 1.62rem; }
 
 .grid > * {
   grid-column: 4 / span 1; }
@@ -32,24 +35,54 @@ body {
 .grid .wide.columns {
   columns: 3; }
 
-.thirds {
+.six {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 1.62em; }
-  .thirds > * {
-    grid-column: 1 / span 3; }
-  .thirds .third-1 {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1.62rem; }
+  .six > * {
+    grid-column: 1 / span 6; }
+  .six .six-1 {
     grid-column: 1 / span 1; }
-  .thirds .third-1-2 {
+  .six .six-1-to-2 {
     grid-column: 1 / span 2; }
-  .thirds .third-1-2-3 {
+  .six .six-1-to-3 {
     grid-column: 1 / span 3; }
-  .thirds .third-2 {
+  .six .six-1-to-4 {
+    grid-column: 1 / span 4; }
+  .six .six-1-to-5 {
+    grid-column: 1 / span 5; }
+  .six .six-1-to-6 {
+    grid-column: 1 / span 6; }
+  .six .six-2 {
     grid-column: 2 / span 1; }
-  .thirds .third-2-3 {
+  .six .six-2-to-3 {
     grid-column: 2 / span 2; }
-  .thirds .third-3 {
+  .six .six-2-to-4 {
+    grid-column: 2 / span 3; }
+  .six .six-2-to-5 {
+    grid-column: 2 / span 4; }
+  .six .six-2-to-6 {
+    grid-column: 2 / span 5; }
+  .six .six-3 {
     grid-column: 3 / span 1; }
+  .six .six-3-to-4 {
+    grid-column: 3 / span 2; }
+  .six .six-3-to-5 {
+    grid-column: 3 / span 3; }
+  .six .six-3-to-6 {
+    grid-column: 3 / span 4; }
+  .six .six-4 {
+    grid-column: 4 / span 1; }
+  .six .six-4-to-5 {
+    grid-column: 4 / span 2; }
+  .six .six-4-to-6 {
+    grid-column: 4 / span 3; }
+  .six .six-5 {
+    grid-column: 5 / span 1; }
+  .six .six-5-to-6 {
+    grid-column: 5 / span 2; }
+  .six .six-6 {
+    grid-column: 6 / span 1; }
 
 @media screen and (max-width: 1200px) {
   .grid .left {
@@ -66,7 +99,7 @@ body {
     columns: 2; } }
 @media screen and (max-width: 700px) {
   .grid {
-    grid-template-columns: 1em 1fr 1fr minmax(0, 700px) 1fr 1fr 1em; }
+    grid-template-columns: 1rem 1fr 1fr minmax(0, 700px) 1fr 1fr 1rem; }
     .grid .breakout .columns,
     .grid .breakout.columns,
     .grid .columns,
@@ -76,10 +109,5 @@ body {
     .grid .wide.columns {
       columns: 1; }
 
-  .thirds .third-1,
-  .thirds .third-1-2,
-  .thirds .third-1-2-3,
-  .thirds .third-2,
-  .thirds .third-2-3,
-  .thirds .third-3 {
-    grid-column: 1 / span 3; } }
+  .six [class^="six-"] {
+    grid-column: 1 / span 6; } }
