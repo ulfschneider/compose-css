@@ -1,0 +1,39 @@
+/**
+Naming conventions
+    x=x-axis
+    y=y-axis
+    t=top
+    r=right 
+    b=bottom
+    l=left
+    0=none
+    1=default size
+    minus=reduce
+
+    g=grid gap
+    m=margin
+    p=padding
+*/
+.gx0 {
+  grid-column-gap: 0 !important; }
+
+.gy0 {
+  grid-row-gap: 0 !important; }
+
+.gxminus {
+  grid-column-gap: 0.125rem !important; }
+
+.gyminus {
+  grid-row-gap: 0.125rem !important; }
+
+.gx1 {
+  grid-column-gap: 1.62rem !important; }
+
+.gy1 {
+  grid-row-gap: 1.62rem !important; }
+
+ol,
+p,
+ul {
+  margin-top: 1.62rem;
+  margin-bottom: 1.62rem; }

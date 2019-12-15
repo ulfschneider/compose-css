@@ -6,7 +6,7 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/base-grid.css">
     <title>A HORIZONTAL CSS GRID SYSTEM TO LAYOUT A WEB PAGE</title>
 </head>
 
@@ -35,15 +35,10 @@
         font-family: monospace;
     }
 
-    .grid.indicator {
+    .x-layout.indicator,
+    .x-12.indicator {
         background: #ccc;
         color: #444;
-    }
-
-    [class^="six-"].indicator {
-        background: #ccc;
-        color: #444;
-        border: 1px solid #333;
     }
 
     h1,
@@ -53,7 +48,7 @@
 </style>
 
 <body>
-    <div class="grid">
+    <div class="x-layout">
 
         <header>
             <h1>A HORIZONTAL CSS GRID SYSTEM TO LAYOUT A WEB PAGE</h1>
@@ -70,7 +65,7 @@
         </p>
     </div>
 
-    <div class="grid">
+    <div class="x-layout">
         <div>
             <h2>Content</h2>
             <p>Middle content is the default positioning of any item within the layout. Middle content doesn´t need a specific css class assignment to get positioned this way.</p>
@@ -78,14 +73,14 @@
         </div>
     </div>
     <!-- Code Example -->
-    <div class="grid indicator">
+    <div class="x-layout indicator">
         <code class="full">
-            &lt;div class="grid"&gt;</code>
+            &lt;div class="x-layout"&gt;</code>
         <div class="middle indicator"><code>&lt;div&gt;&lt;/div&gt;</code></div>
         <code class="full">&lt;/div&gt;</code>
     </div>
 
-    <div class="grid">
+    <div class="x-layout">
         <div class="breakout-left">
             <h2>Breakout Left Content</h2>
             <p>Breakout left content is pushed a little bit to the left and will give more space for the things you want to display. Breakout left content needs to have a css class named <strong>breakout-left</strong> assigned.</p>
@@ -93,12 +88,12 @@
         </div>
     </div>
     <!-- Code Example -->
-    <div class="grid indicator"><code class="full">&lt;div class="grid"&gt;</code>
+    <div class="x-layout indicator"><code class="full">&lt;div class="x-layout"&gt;</code>
         <div class="breakout-left indicator"><code>&lt;div class="breakout-left"&gt;&lt;/div&gt;</code></div>
         <code class="full">&lt;/div&gt;</code>
     </div>
 
-    <div class="grid">
+    <div class="x-layout">
         <div class="breakout-right">
             <h2>Breakout Right Content</h2>
             <p>Breakout right content is pushed a little bit to the right and will give more space for the things you want to display. Breakout right content needs to have a css class named <strong>breakout-right</strong> assigned.</p>
@@ -106,12 +101,12 @@
         </div>
     </div>
     <!-- Code Example -->
-    <div class="grid indicator"><code class="full">&lt;div class="grid"&gt;</code>
+    <div class="x-layout indicator"><code class="full">&lt;div class="x-layout"&gt;</code>
         <div class="breakout-right indicator"><code>&lt;div class="breakout-right"&gt;&lt;/div&gt;</code></div>
         <code class="full">&lt;/div&gt;</code>
     </div>
 
-    <div class="grid">
+    <div class="x-layout">
         <div class="breakout">
             <h2>Breakout Content = Left and Right</h2>
             <p>Breakout content is the combination of left and right content. Breakout content needs to have a css class named <strong>breakout</strong> assigned.</p>
@@ -119,13 +114,13 @@
         </div>
     </div>
     <!-- Code Example -->
-    <div class="grid indicator"><code class="full">&lt;div class="grid"&gt;</code>
+    <div class="x-layout indicator"><code class="full">&lt;div class="x-layout"&gt;</code>
         <div class="breakout indicator"><code>&lt;div class="breakout"&gt;&lt;/div&gt;</code></div>
         <code class="full">&lt;/div&gt;</code>
     </div>
 
 
-    <div class="grid">
+    <div class="x-layout">
         <div class="wide">
             <h2>Wide Content</h2>
             <p>Wide content is pushing things further in that it nearly takes the full width of the screen, except of a small margin to the window border. Wide content needs to have a css class named <strong>wide</strong>
@@ -134,12 +129,12 @@
         </div>
     </div>
     <!-- Code Example-->
-    <div class="grid indicator"><code class="full">&lt;div class="grid"&gt;</code>
+    <div class="x-layout indicator"><code class="full">&lt;div class="x-layout"&gt;</code>
         <div class="wide indicator"><code>&lt;div class="wide"&gt;&lt;/div&gt;</code></div>
         <code class="full">&lt;/div&gt;</code>
     </div>
 
-    <div class="grid">
+    <div class="x-layout">
         <div class="full">
             <h2>Full Content</h2>
             <p>Full content will use the entire width of the screen. Full content needs to have a css class named <strong>full</strong> assigned.</p>
@@ -147,45 +142,57 @@
         </div>
     </div>
     <!-- Code Example -->
-    <div class="grid indicator"><code class="full">&lt;div class="grid"&gt;</code>
+    <div class="x-layout indicator"><code class="full">&lt;div class="x-layout"&gt;</code>
         <div class="full indicator"><code>&lt;div class="full"&gt;&lt;/div&gt;</code></div>
         <code class="full">&lt;/div&gt;</code>
     </div>
 
 
-    <div class="grid">
+    <div class="x-layout">
         <div class="wide">
-            <h2>Sixths</h2>
-            <p>Any of the before mentioned content concepts can be divided into sixths by assigning the css class named <strong>six</strong>.</p>
+            <h2>12 Column Grid</h2>
+            <p>Any of the before mentioned content concepts can be divided horizontally into 12ths by assigning the css class named <strong>x-12</strong>.</p>
+            <p>The sum of the cols per row have to add up to 12. Not specifiying a column size will result in taking the entire grid width into one column.</p>
             <p>Code example:</p>
+
+            <!-- Code Example -->
+            <div class="x-12 indicator gxminus gyminus"><code>&lt;div class="x-12"&gt;</code>
+                <div class="col-12 indicator"><code>&lt;div class="col-12"&gt;&lt;/div&gt;</code></div>
+                <div class="col-4 indicator"><code>&lt;div class="col-4"&gt;&lt;/div&gt;</code></div>
+                <div class="col-4 indicator"><code>&lt;div class="col-4"&gt;&lt;/div&gt;</code></div>
+                <div class="col-4 indicator"><code>&lt;div class="col-4"&gt;&lt;/div&gt;</code></div>
+                <div class="col-6 indicator"><code>&lt;div class="col-6"&gt;&lt;/div&gt;</code></div>
+                <div class="col-6 indicator"><code>&lt;div class="col-6"&gt;&lt;/div&gt;</code></div>
+                <div class="col-3 indicator"><code>&lt;div class="col-2"&gt;&lt;/div&gt;</code></div>
+                <div class="col-9 indicator"><code>&lt;div class="col-10"&gt;&lt;/div&gt;</code></div>
+                <code>&lt;/div&gt;</code>
+            </div>
+
+            <p>It is also possible to have differently sized columns based on minimum screen width. Address the different minimum screen sizes with column prefix values of <strong>lg-</strong> (for large size), <strong>md-</strong> (for at lest
+                medium size),
+                and
+                <strong>sm-</strong> (for at least small size). A column
+                class without a prefix will be used in case the alternate minimum screen size is not present.
+            </p>
+            <p>Code example:</p>
+
+            <!-- Code Example -->
+            <div class="x-12 indicator gxminus gyminus"><code>&lt;div class="x-12"&gt;</code>
+                <div class="indicator"><code>&lt;div"&gt;&lt;/div&gt;</code></div>
+                <div class="lg-col-2 md-col-4 col-6 indicator"><code>&lt;div class="lg-col-2 md-col-4 col-6"&gt;&lt;/div&gt;</code></div>
+                <div class="lg-col-2 md-col-4 col-6 indicator"><code>&lt;div class="lg-col-2 md-col-4 col-6"&gt;&lt;/div&gt;</code></div>
+                <div class="lg-col-2 md-col-4 col-12 indicator"><code>&lt;div class="lg-col-2 md-col-4 col-12&gt;&lt;/div&gt;</code></div>
+                <div class="col-6 indicator"><code>&lt;div class="col-6"&gt;&lt;/div&gt;</code></div>
+                <div class="col-6 indicator"><code>&lt;div class="col-6"&gt;&lt;/div&gt;</code></div>
+                <div class="md-col-3 indicator"><code>&lt;div class="md-col-3"&gt;&lt;/div&gt;</code></div>
+                <div class="md-col-9 indicator"><code>&lt;div class="md-col-9"&gt;&lt;/div&gt;</code></div>
+                <code>&lt;/div&gt;</code>
+            </div>
+
         </div>
     </div>
-    <!-- Code Example -->
-    <div class="grid indicator"><code class="full">&lt;div class="grid"&gt;</code>
-        <div class="wide indicator six"><code>&lt;div class="wide six"&gt;</code>
-            <div class="six-1-to-4 indicator"><code>&lt;div class="six-1-to-4"&gt;&lt;/div&gt;</code></div>
-            <div class="six-3-to-5 indicator"><code>&lt;div class="six-3-to-5"&gt;&lt;/div&gt;</code></div>
-            <div class="six-1 indicator"><code>&lt;div class="six-1"&gt;&lt;/div&gt;</code></div>
-            <div class="six-2-to-3 indicator"><code>&lt;div class="six-2-to-3"&gt;&lt;/div&gt;</code></div>
-            <div class="six-1-to-2 indicator"><code>&lt;div class="six-1-to-2"&gt;&lt;/div&gt;</code></div>
-            <div class="six-3-to-4 indicator"><code>&lt;div class="six-3-to-4"&gt;&lt;/div&gt;</code></div>
-            <div class="six-5-to-6 indicator"><code>&lt;div class="six-5-to-6"&gt;&lt;/div&gt;</code></div>
-            <div class="six-1 indicator"><code>&lt;div class="six-1"&gt;&lt;/div&gt;</code></div>
-            <div class="six-2 indicator"><code>&lt;div class="six-2"&gt;&lt;/div&gt;</code></div>
-            <div class="six-3 indicator"><code>&lt;div class="six-3"&gt;&lt;/div&gt;</code></div>
-            <div class="six-4 indicator"><code>&lt;div class="six-4"&gt;&lt;/div&gt;</code></div>
-            <div class="six-5 indicator"><code>&lt;div class="six-5"&gt;&lt;/div&gt;</code></div>
-            <div class="six-6 indicator"><code>&lt;div class="six-6"&gt;&lt;/div&gt;</code></div>
-            <div class="six-1-to-3 indicator"><code>&lt;div class="six-1-to-3"&gt;&lt;/div&gt;</code></div>
-            <div class="six-4-to-6 indicator"><code>&lt;div class="six-4-to-6"&gt;&lt;/div&gt;</code></div>
 
-            <code>&lt;/div&gt;</code>
-        </div>
-        <code class="full">&lt;/div&gt;</code>
-    </div>
-
-
-    <div class="grid">
+    <div class="x-layout">
         <div class="wide">
             <h2>Columns</h2>
             <p>Text will be displayed in columns, when a class named <strong>columns</strong> is assigned to the container surrounding the text. The number of columns depends on the available width.</p>Here is an example:</p>
