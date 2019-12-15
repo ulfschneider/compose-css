@@ -28,11 +28,11 @@
         grid-column: 4 / span 1;
     }
 
-    .breakout-left {
+    .breakout-l {
         grid-column: 3 / span 2;
     }
 
-    .breakout-right {
+    .breakout-r {
         grid-column: 4 / span 2;
     }
 
@@ -121,11 +121,11 @@
 }
 @media screen and (max-width: $mid-width) {
     .x-layout {
-        .breakout-left {
+        .breakout-l {
             grid-column: 4 / span 1;
         }
 
-        .breakout-right {
+        .breakout-r {
             grid-column: 4 / span 1;
         }
 
