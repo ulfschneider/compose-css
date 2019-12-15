@@ -1,29 +1,4 @@
-$small-width: 40rem;
-$mid-width: 52rem;
-$large-width: 64rem;
-$spacing-factor: 1.62;
-@function spacer($count: 1) {
-    $result: 1rem;
-    @if $count > 0 {
-        @for $_ from 1 through $count {
-            $result: $result * $spacing-factor;
-        }
-    }
-    @if $count < 0 {
-        @for $_ from $count through -1 {
-            $result: $result / $spacing-factor;
-        }
-    }
-    @return $result;
-}
-$spacing: spacer(1);
-$spacing-2: spacer(2);
-$spacing-3: spacer(3);
-$spacing-4: spacer(4);
-$spacing-minus-1: spacer(-1);
-$spacing-minus-2: spacer(-2);
-$spacing-minus-3: spacer(-3);
-$spacing-minus-4: spacer(-4);
+@import "base-space";
 /**
 Naming conventions
     x=x-axis
