@@ -8,6 +8,7 @@
     <meta http-equiv="Expires" content="0">
     <link rel="stylesheet" type="text/css" href="css/base-grid.css">
     <link rel="stylesheet" type="text/css" href="css/base-white-space.css">
+    <link rel="stylesheet" type="text/css" href="css/base-typography.css">
     <title>A HORIZONTAL CSS GRID SYSTEM TO LAYOUT A WEB PAGE</title>
 </head>
 
@@ -46,22 +47,24 @@
 <body>
     <div class="x-layout">
 
-        <header>
-            <h1 class="m-t-3">A HORIZONTAL CSS GRID SYSTEM TO LAYOUT A WEB PAGE</h1>
-        </header>
+        <div>
+            <header>
+                <h1 class="m-t-3">A HORIZONTAL CSS GRID SYSTEM TO LAYOUT A WEB PAGE</h1>
+            </header>
 
 
-        <p>This site is using the <a href="https://gridbyexample.com">CSS Grid</a> to provide a fully <a href="https://alistapart.com/blog/topic/responsive-design/">responsive</a> layout. Though <a href="https://caniuse.com/#feat=css-grid">not
-                supported by
-                IE</a>,
-            the grid system is robust, lightweight and fast. This is of advantage for users as well as for the developer. Grid is the future of page layout.
-        </p>
-        <p>
-            If <strong>display: grid;</strong> is not supported by the web browser, everything is positioned in one column in the middle of the page.
-        </p>
+            <p>This site is using the <a href="https://gridbyexample.com">CSS Grid</a> to provide a fully <a href="https://alistapart.com/blog/topic/responsive-design/">responsive</a> layout. Though <a href="https://caniuse.com/#feat=css-grid">not
+                    supported by
+                    IE</a>,
+                the grid system is robust, lightweight and fast. This is of advantage for users as well as for the developer. Grid is the future of page layout.
+            </p>
+            <p>
+                If <strong>display: grid;</strong> is not supported by the web browser, everything is positioned in one column in the middle of the page.
+            </p>
+        </div>
     </div>
 
-    <div class="x-layout">
+    <div class="x-layout m-tn-1">
         <div>
             <h2 class="m-t-3">Content</h2>
             <p>Middle content is the default positioning of any item within the layout. Middle content doesn´t need a specific css class assignment to get positioned this way.</p>
@@ -145,7 +148,7 @@
 
 
     <div class="x-layout">
-        <div class="wide">
+        <div class="breakout">
             <h2 class="m-t-3">12 Column Grid</h2>
             <p>Any of the before mentioned content concepts can be divided horizontally into 12ths by assigning the css class named <strong>x-12</strong>.</p>
             <p>The sum of the cols per row have to add up to 12. Not specifiying a column size will result in taking the entire grid width into one column.</p>
@@ -189,39 +192,52 @@
     </div>
 
     <div class="x-layout">
-        <div class="wide">
+        <div class="breakout-r">
             <h2 class="m-t-3">Columns</h2>
-            <p>Text will be displayed in columns, when a class named <strong>columns</strong> is assigned to the container surrounding the text. The number of columns depends on the available width.</p>Here is an example:</p>
-            <div class="columns">
-
-                <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund!« sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus
-                    unruhigen
-                    Träumen
-                    erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.
-                </p>
-                <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren
-                    jungen
-                    Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat. Sie hätten noch ins Boot springen
-                    können,
-                    aber der Reisende hob ein schweres, geknotetes Tau vom Boden, drohte ihnen damit und hielt sie dadurch von dem Sprunge ab. In den letzten Jahrzehnten ist das Interesse an Hungerkünstlern sehr zurückgegangen. Aber sie
-                    überwanden
-                    sich,
-                    umdrängten
-                    den Käfig und wollten sich gar nicht fortrühren.Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund!« sagte er, es war, als sollte die Scham ihn
-                    überleben.
-                    Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt. Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele
-                    ihrer
-                    Fahrt
-                    die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch
-                    wohlbekannten
-                    Apparat.
-                    Sie hätten noch ins Boot springen können, aber der Reisende hob ein schweres, geknotetes Tau vom Boden, drohte ihnen damit und hielt sie dadurch von dem Sprunge ab. In den letzten Jahrzehnten ist das Interesse an
-                    Hungerkünstlern
-                    sehr
-                    zurückgegangen.</p>
-            </div>
+            <p>Text will be displayed in columns, when a class named <strong>columns</strong> is assigned to the container surrounding the text. The number of columns depends on the available width.</p>
 
         </div>
+    </div>
+
+    <!-- Code Example -->
+    <div class="x-layout indicator"><code class="full">&lt;div class="x-layout"&gt;</code>
+        <div class="breakout-r columns indicator"><code>&lt;div class="breakout-r columns"&gt;&lt;/div&gt;</code></div>
+        <code class="full">&lt;/div&gt;</code>
+    </div>
+
+    <div class="x-layout">
+        <div class="breakout-r columns p-indent">
+            <h4>Here is an example:</h4>
+
+
+            <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund!« sagte er, es war, als sollte die Scham ihn überleben. Als Gregor Samsa eines Morgens aus
+                unruhigen
+                Träumen
+                erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.
+            </p>
+            <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt die Tochter als erste sich erhob und ihren
+                jungen
+                Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat. Sie hätten noch ins Boot springen
+                können,
+                aber der Reisende hob ein schweres, geknotetes Tau vom Boden, drohte ihnen damit und hielt sie dadurch von dem Sprunge ab. In den letzten Jahrzehnten ist das Interesse an Hungerkünstlern sehr zurückgegangen. Aber sie
+                überwanden
+                sich,
+                umdrängten
+                den Käfig und wollten sich gar nicht fortrühren.Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund!« sagte er, es war, als sollte die Scham ihn
+                überleben.</p>
+            <p>Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt. Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele
+                ihrer
+                Fahrt
+                die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden und überblickte mit einem gewissermaßen bewundernden Blick den ihm doch
+                wohlbekannten
+                Apparat.
+                Sie hätten noch ins Boot springen können, aber der Reisende hob ein schweres, geknotetes Tau vom Boden, drohte ihnen damit und hielt sie dadurch von dem Sprunge ab. In den letzten Jahrzehnten ist das Interesse an
+                Hungerkünstlern
+                sehr
+                zurückgegangen.</p>
+        </div>
+
+
     </div>
 </body>
 

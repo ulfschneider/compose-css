@@ -1,8 +1,146 @@
 @import "base-space";
 
+* {
+    line-height: $spacing-factor * 1em;
+}
+
+.font-family-inherit {
+    font-family: inherit;
+}
+
+.font-size-inherit {
+    font-size: inherit;
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}
+
+.bold {
+    font-weight: var(--bold-font-weight, bold);
+}
+
+.regular {
+    font-weight: normal;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.caps {
+    text-transform: uppercase;
+    letter-spacing: var(--caps-letter-spacing);
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.break-word {
+    word-wrap: break-word;
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+.truncate {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.list-reset {
+    list-style: none;
+    padding-left: 0;
+}
+//Headlines
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1em;
+    margin-top: $spacing-2;
+    margin-bottom: 1rem;
+    text-transform: unset;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: $spacing;
+    text-transform: uppercase;
+}
+
+h2,
+h3 {
+    font-size: #{$spacing - 0.4};
+}
+
+h3 {
+    font-weight: normal;
+}
+
+h4,
+h5,
+h6 {
+    margin-top: $spacing;
+    font-size: 1rem;
+}
+
 ol,
 p,
 ul {
-    margin-top: $spacing;
-    margin-bottom: $spacing;
+    margin-top: none;
+    margin-bottom: 1em;
+}
+
+ol,
+ul {
+    padding: 0;
+    list-style-position: inside;
+}
+//paragraphs
+
+.p-indent {
+    p {
+        margin: 0;
+    }
+
+    p+p {
+        text-indent: $spacing;
+    }
+}
+
+p.p-indent {
+    text-indent: $spacing;
+}
+
+.no-p-indent p,
+p.no-p-indent {
+    text-indent: none;
 }

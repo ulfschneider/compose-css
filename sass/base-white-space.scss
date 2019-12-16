@@ -7,10 +7,11 @@ Naming conventions
     r=right
     b=bottom
     l=left
+    n=negative
     0=none
     1=default size
     minus=reduce
-    auto=
+
 
     g=grid gap
     m=margin
@@ -203,6 +204,36 @@ Naming conventions
 
 .m-l-4 {
     margin-left: $spacing-4 !important;
+}
+
+.m-n-1 {
+    margin: -$spacing !important;
+}
+
+.m-xn-1 {
+    margin-left: -$spacing !important;
+    margin-right: -$spacing !important;
+}
+
+.m-yn-1 {
+    margin-top: -$spacing !important;
+    margin-bottom: -$spacing !important;
+}
+
+.m-tn-1 {
+    margin-top: -$spacing !important;
+}
+
+.m-rn-4 {
+    margin-right: -$spacing !important;
+}
+
+.m-bn-1 {
+    margin-bottom: -$spacing !important;
+}
+
+.m-ln-1 {
+    margin-left: -$spacing !important;
 }
 
 .m-minus {
