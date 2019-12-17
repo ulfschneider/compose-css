@@ -9,11 +9,14 @@
     --font-family-headlines: var(--font-family);    
     --font-family-mono: monospace;
     --base-color: #333;
-    --link-color: var(--base-color);
+    --link-color: var(--base-color);    
+    --text-decoration-color: var(--base-color);
     color: var(--base-color); 
     line-height: var(--line-height); 
     font-family: var(--font-family); 
-    font-weight: var(--font-weight-normal);    
+    font-weight: var(--font-weight-normal);   
+    text-underline-offset: 0.25em;     
+    text-decoration-thickness: 0.08em;
 }
 
 * {
@@ -45,9 +48,9 @@ h1,h2,h3,h4,h5,h6 {
     font-family: var(--font-family-headlines);
 }
 
-h1 { font-size: var(--sizing-1); text-transform: uppercase; line-height: 1em; }
+h1 { font-size: var(--sizing-1); text-transform: uppercase; line-height: 1.2em; }
 
-h2,h3 { font-size: calc(var(--sizing-1) - var(--sizing-minus-2)); line-height: 1em; } 
+h2,h3 { font-size: calc(var(--sizing-1) - var(--sizing-minus-2)); line-height: 1.2em; } 
 
 h3 { font-weight: var(--font-weight-normal); }
 
@@ -74,8 +77,9 @@ pre, code {
 
 a {
     color: var(--link-color);
-    text-decoration: underline;
-    text-underline-offset: 0.25em;    
+    text-decoration-color: var(--link-decoration-color);
+    text-decoration: underline;    
+
 }
 
 
