@@ -72,16 +72,16 @@ Naming conventions
 }
 
 .gminus {
-  grid-column-gap: var(--sizing-minus-4) !important;
-  grid-row-gap: var(--sizing-minus-4) !important;
+  grid-column-gap: 2px !important;
+  grid-row-gap: 2px !important;
 }
 
 .gxminus {
-  grid-column-gap: var(--sizing-minus-4) !important;
+  grid-column-gap: 2px !important;
 }
 
 .gyminus {
-  grid-row-gap: var(--sizing-minus-4) !important;
+  grid-row-gap: 2px !important;
 }
 
 .m-0 {

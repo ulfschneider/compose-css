@@ -13,23 +13,12 @@
 </head>
 
 <style>
-    code {
-        font-size: 16px;
-    }
+  
 
-    .indicator,
-    strong {
+    .indicator {
         background: #333;
         color: #eee;
     }
-
-    strong {
-        padding: 2px;
-        border-radius: 2px;
-        font-weight: normal;
-        font-family: monospace;
-    }
-
     .xlayout.indicator,
     .x-12.indicator {
         background: #ccc;
@@ -42,17 +31,17 @@
 
         <div>
             <header>
-                <h1 class="mt-3">A HORIZONTAL CSS GRID SYSTEM TO LAYOUT A WEB PAGE</h1>
+                <h1 class="mt-3">A <mark class="underline">HORIZONTAL</mark> CSS GRID SYSTEM TO LAYOUT A WEB PAGE</h1>
             </header>
 
 
-            <p>This site is using the <a href="https://gridbyexample.com">CSS Grid</a> to provide a fully <a href="https://alistapart.com/blog/topic/responsive-design/">responsive</a> layout. Though <a href="https://caniuse.com/#feat=css-grid">not
+            <p>This site is using the <mark><a href="https://gridbyexample.com">CSS Grid</a></mark> to provide a fully <a href="https://alistapart.com/blog/topic/responsive-design/">responsive</a> layout. Though <a href="https://caniuse.com/#feat=css-grid">not
                     supported by
                     IE</a>,
                 the grid system is robust, lightweight and fast. This is of advantage for users as well as for the developer. Grid is the future of page layout.
             </p>
             <p>
-                If <strong>display: grid;</strong> is not supported by the web browser, everything is positioned in one column in the middle of the page.
+                If <kbd>display: grid;</kbd> is not supported by the web browser, everything is positioned in one column in the middle of the page.
             </p>
         </div>
     </div>
@@ -75,7 +64,7 @@
     <div class="xlayout">
         <div class="lbreakout">
             <h2 class="mt-3">Breakout Left Content</h2>
-            <p>Breakout left content is pushed a little bit to the left and will give more space for the things you want to display. Breakout left content needs to have a css class named <strong>lbreakout</strong> assigned.</p>
+            <p>Breakout left content is pushed a little bit to the left and will give more space for the things you want to display. Breakout left content needs to have a css class named <kbd>lbreakout</kbd> assigned.</p>
             <p>Code example:</p>
         </div>
     </div>
@@ -88,7 +77,7 @@
     <div class="xlayout">
         <div class="rbreakout">
             <h2 class="mt-3">Breakout Right Content</h2>
-            <p>Breakout right content is pushed a little bit to the right and will give more space for the things you want to display. Breakout right content needs to have a css class named <strong>rbreakout</strong> assigned.</p>
+            <p>Breakout right content is pushed a little bit to the right and will give more space for the things you want to display. Breakout right content needs to have a css class named <kbd>rbreakout</kbd> assigned.</p>
             <p>Code example:</p>
         </div>
     </div>
@@ -101,7 +90,7 @@
     <div class="xlayout">
         <div class="breakout">
             <h2 class="mt-3">Breakout Content = Left and Right</h2>
-            <p>Breakout content is the combination of left and right content. Breakout content needs to have a css class named <strong>breakout</strong> assigned.</p>
+            <p>Breakout content is the combination of left and right content. Breakout content needs to have a css class named <kbd>breakout</kbd> assigned.</p>
             <p>Code example:</p>
         </div>
     </div>
@@ -115,7 +104,7 @@
     <div class="xlayout">
         <div class="wide">
             <h2 class="mt-3">Wide Content</h2>
-            <p>Wide content is pushing things further in that it nearly takes the full width of the screen, except of a small margin to the window border. Wide content needs to have a css class named <strong>wide</strong>
+            <p>Wide content is pushing things further in that it nearly takes the full width of the screen, except of a small margin to the window border. Wide content needs to have a css class named <kbd>wide</kbd>
                 assigned.</p>
             <p>Code example:</p>
         </div>
@@ -129,7 +118,7 @@
     <div class="xlayout">
         <div class="full">
             <h2 class="mt-3">Full Content</h2>
-            <p>Full content will use the entire width of the screen. Full content needs to have a css class named <strong>full</strong> assigned.</p>
+            <p>Full content will use the entire width of the screen. Full content needs to have a css class named <kbd>full</kbd> assigned.</p>
             <p>Code example:</p>
         </div>
     </div>
@@ -143,7 +132,7 @@
     <div class="xlayout">
         <div class="breakout">
             <h2 class="mt-3">12 Column Grid</h2>
-            <p>Any of the before mentioned content concepts can be divided horizontally into 12ths by assigning the css class named <strong>x-12</strong>.</p>
+            <p>Any of the before mentioned content concepts can be divided horizontally into 12ths by assigning the css class named <kbd>x-12</kbd>.</p>
             <p>The sum of the cols per row have to add up to 12. Not specifiying a column size will result in taking the entire grid width into one column.</p>
             <p>Code example:</p>
 
@@ -160,10 +149,10 @@
                 <code>&lt;/div&gt;</code>
             </div>
 
-            <p>It is also possible to have differently sized columns based on minimum screen width. Address the different minimum screen sizes with column prefix values of <strong>lg-</strong> (for large size), <strong>md-</strong> (for at lest
-                medium size),
+            <p>It is <mark>also possible to have differently sized columns based on minimum screen width. Address the different minimum screen sizes with column prefix values of <kbd>lg-</kbd> (for at least large size), <kbd>md-</kbd> (for at least
+                medium size)</mark>,
                 and
-                <strong>sm-</strong> (for at least small size). A column
+                <kbd>sm-</kbd> (for at least small size). A column
                 class without a prefix will be used in case the alternate minimum screen size is not present.
             </p>
             <p>Code example:</p>
@@ -187,7 +176,7 @@
     <div class="xlayout">
         <div class="rbreakout">
             <h2 class="mt-3">Columns</h2>
-            <p>Text will be displayed in columns, when a class named <strong>columns</strong> is assigned to the container surrounding the text. The number of columns depends on the available width.</p>
+            <p>Text will be displayed in columns, when a class named <kbd>columns</kbd> is assigned to the container surrounding the text. The number of columns depends on the available width.</p>
 
         </div>
     </div>

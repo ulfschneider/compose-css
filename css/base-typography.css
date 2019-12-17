@@ -15,21 +15,25 @@
 }
 
 :root {
-  --font-weight-bold: bold;
-  --font-weight-normal: normal;
+  --font-weight-bold: 500;
+  --font-weight-normal: 300;
   --line-height: 1.62em;
   --letter-spacing: 0.1em;
-  --font-family: sans-serif;
+  --font-family: -apple-system, sans-serif;
   --font-family-headlines: var(--font-family);
   --font-family-mono: monospace;
   --base-color: #333;
+  --mark-background: #ffe9b3;
+  --kbd-background: #ccc;
   --link-color: var(--base-color);
+  --link-text-decoration: underline;
   --text-decoration-color: var(--base-color);
+  --text-underline-offset: 0.25em;
   color: var(--base-color);
   line-height: var(--line-height);
   font-family: var(--font-family);
   font-weight: var(--font-weight-normal);
-  text-underline-offset: 0.25em;
+  text-underline-offset: var(--text-underline-offset);
   text-decoration-thickness: 0.08em;
 }
 
@@ -57,7 +61,7 @@
   font-weight: normal;
 }
 
-.italic, i {
+.italic, i, cite, em, var, address, dfn {
   font-style: italic;
 }
 
@@ -102,6 +106,38 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+s, strike, del {
+  text-decoration: line-through;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+mark {
+  background: #ffe9b3;
+  border-radius: 0.1em;
+  padding: calc(var(--text-underline-offset) / var(--sizing-factor)) 0.1em;
+}
+
+kbd {
+  background: var(--kbd-background);
+  border-radius: 0.1em;
+  padding: calc(var(--text-underline-offset) / var(--sizing-factor)) 0.1em;
+  font-family: var(--font-family-mono);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -172,7 +208,7 @@ pre, code {
 a {
   color: var(--link-color);
   text-decoration-color: var(--link-decoration-color);
-  text-decoration: underline;
+  text-decoration: var(--link-text-decoration);
 }
 
 /*# sourceMappingURL=base-typography.css.map */
