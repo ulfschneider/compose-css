@@ -1,146 +1,57 @@
 @import "base-space";
 
-* {
-    line-height: $spacing-factor * 1em;
+:root {
+    --font-weight-bold: bold;
+    --line-height: 1.62em;
+    --letter-spacing: 0.1em;
 }
 
-.font-family-inherit {
-    font-family: inherit;
-}
+* { line-height: var(--line-height);}
 
-.font-size-inherit {
-    font-size: inherit;
-}
+.font-family-inherit { font-family: inherit; }
+.font-size-inherit { font-size: inherit; }
+.text-decoration-none { text-decoration: none; }
+.bold, b { font-weight: var(--font-weight-bold, bold);}
+.regular { font-weight: normal; }
+.italic, i { font-style: italic; }
+.caps { text-transform: uppercase; }
+.underline, u { text-decoration: underline; }
+.left-align { text-align: left; }
+.center { text-align: center; }
+.right-align { text-align: right; }
+.justify { text-align: justify; }
+.nowrap { white-space: nowrap; }
+.break-word { word-wrap: break-word; }
+.truncate { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
-.text-decoration-none {
-    text-decoration: none;
-}
-
-.bold {
-    font-weight: var(--bold-font-weight, bold);
-}
-
-.regular {
-    font-weight: normal;
-}
-
-.italic {
-    font-style: italic;
-}
-
-.caps {
-    text-transform: uppercase;
-    letter-spacing: var(--caps-letter-spacing);
-}
-
-.underline {
-    text-decoration: underline;
-}
-
-.left-align {
-    text-align: left;
-}
-
-.center {
-    text-align: center;
-}
-
-.right-align {
-    text-align: right;
-}
-
-.justify {
-    text-align: justify;
-}
-
-.nowrap {
-    white-space: nowrap;
-}
-
-.break-word {
-    word-wrap: break-word;
-}
-
-.list-style-none {
-    list-style: none;
-}
-
-.truncate {
-    max-width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.list-reset {
-    list-style: none;
-    padding-left: 0;
-}
-//Headlines
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    line-height: 1em;
-    margin-top: $spacing-2;
+h1,h2,h3,h4,h5,h6 {
+    margin-top: var(--sizing-2);
     margin-bottom: 1rem;
     text-transform: unset;
     font-weight: bold;
 }
 
-h1 {
-    font-size: $spacing;
-    text-transform: uppercase;
+h1 { font-size: var(--sizing-1); text-transform: uppercase; line-height: 1em; letter-spacing: var(--letter-spacing);}
+
+h2,h3 { font-size: calc(var(--sizing-1) - var(--sizing-minus-2)); line-height: 1em; } 
+
+h3 { font-weight: normal; }
+
+h4,h5,h6 { margin-top: var(--sizing-1); font-size: var(--sizing); line-height: var(--line-height);}
+
+ol,ul { margin-top: 1em; margin-bottom: 1em; padding-left: 0; list-style-position: inside; }
+
+p { margin-top:1em; margin-bottom: 1em }
+.pindent {
+    p { margin: 0; }
+
+    p+p { text-indent: var(--sizing-1); }
 }
 
-h2,
-h3 {
-    font-size: #{$spacing - 0.4};
-}
+p.pindent { text-indent: var(--sizing-1); }
 
-h3 {
-    font-weight: normal;
-}
+.nopindent p, p.nopindent { text-indent: 0; }
 
-h4,
-h5,
-h6 {
-    margin-top: $spacing;
-    font-size: 1rem;
-}
+.list-reset { list-style: none; padding-left: 0; }
 
-ol,
-p,
-ul {
-    margin-top: none;
-    margin-bottom: 1em;
-}
 
-ol,
-ul {
-    padding: 0;
-    list-style-position: inside;
-}
-//paragraphs
-
-.p-indent {
-    p {
-        margin: 0;
-    }
-
-    p+p {
-        text-indent: $spacing;
-    }
-}
-
-p.p-indent {
-    text-indent: $spacing;
-}
-
-.no-p-indent p,
-p.no-p-indent {
-    text-indent: none;
-}

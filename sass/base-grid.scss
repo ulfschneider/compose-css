@@ -1,38 +1,39 @@
 @import "base-reset";
 @import "base-space";
 
+
 .x-12,
-.x-layout {
-    max-width: $small-width;
+.xlayout {
+    max-width: var(--small-width);
     margin: 0 auto;
 }
 @supports (display: grid) {
     .x-12,
-    .x-layout {
+    .xlayout {
         max-width: unset;
         margin: unset;
     }
 }
 
 .columns {
-    column-gap: $spacing;
+    column-gap: var(--sizing-1);
 }
 
-.x-layout {
+.xlayout {    
     display: grid;
-    grid-template-columns: $spacing 1fr 1fr minmax(0, $small-width) 1fr 1fr $spacing;
+    grid-template-columns: var(--sizing-1) 1fr 1fr minmax(0, var(--small-width)) 1fr 1fr var(--sizing-1);
 }
 
-.x-layout {
+.xlayout {
     > * {
         grid-column: 4 / span 1;
     }
 
-    .breakout-l {
+    .lbreakout {
         grid-column: 3 / span 2;
     }
 
-    .breakout-r {
+    .rbreakout {
         grid-column: 4 / span 2;
     }
 
@@ -65,7 +66,7 @@
 .x-12 {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-column-gap: $spacing;
+    grid-column-gap: var(--sizing-1);
 
     > * {
         grid-area: span 1 / span 12;
@@ -119,13 +120,13 @@
         grid-area: span 1 / span 12;
     }
 }
-@media screen and (max-width: $mid-width) {
-    .x-layout {
-        .breakout-l {
+@media (max-width: $mid-width) {
+    .xlayout {
+        .lbreakout {
             grid-column: 4 / span 1;
         }
 
-        .breakout-r {
+        .rbreakout {
             grid-column: 4 / span 1;
         }
 
@@ -140,9 +141,9 @@
         }
     }
 }
-@media screen and (max-width: $small-width) {
-    .x-layout {
-        grid-template-columns: $spacing-minus-1 1fr 1fr minmax(0, $small-width) 1fr 1fr $spacing-minus-1;
+@media (max-width: $small-width) {
+    .xlayout {
+        grid-template-columns: var(--sizing) 1fr 1fr minmax(0, var(--small-width)) 1fr 1fr var(--sizing);
 
         .breakout .columns,
         .breakout.columns,
@@ -155,7 +156,7 @@
         }
     }
 }
-@media screen and (min-width: $small-width) {
+@media  (min-width: $small-width) {
     .sm-col-1 {
         grid-area: span 1 / span 1 !important;
     }
@@ -204,7 +205,7 @@
         grid-area: span 1 / span 12 !important;
     }
 }
-@media screen and (min-width: $mid-width) {
+@media (min-width: $mid-width) {
     .md-col-1 {
         grid-area: span 1 / span 1 !important;
     }
@@ -253,7 +254,7 @@
         grid-area: span 1 / span 12 !important;
     }
 }
-@media screen and (min-width: $large-width) {
+@media (min-width: $large-width) {
     .lg-col-1 {
         grid-area: span 1 / span 1 !important;
     }

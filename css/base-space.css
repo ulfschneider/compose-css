@@ -1,0 +1,17 @@
+:root {
+  --small-width: 36rem;
+  --mid-width: 52rem;
+  --large-width: 64rem;
+  --sizing: 1rem;
+  --sizing-factor: 1.62;
+  --sizing-1: 1.62rem;
+  --sizing-2: 2.62rem;
+  --sizing-3: 4.25rem;
+  --sizing-4: 6.89rem;
+  --sizing-minus-1: 0.62rem;
+  --sizing-minus-2: 0.38rem;
+  --sizing-minus-3: 0.24rem;
+  --sizing-minus-4: 0.15rem;
+}
+
+/*# sourceMappingURL=base-space.css.map */

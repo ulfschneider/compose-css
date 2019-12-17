@@ -1,30 +1,19 @@
-$small-width: 40rem;
+$small-width: 36rem;
 $mid-width: 52rem;
 $large-width: 64rem;
-$spacing-factor: 1.62;
-@function spacer($count: 1) {
-    @if $count > 0 {
-        $result: 1;
-        @for $_ from 1 through $count {
-            $result: $result * $spacing-factor;
-        }
-        @return $result;
-    }
-    @if $count < 0 {
-        $result: $spacing-factor;
-        @for $_ from $count through 0 {
-            $result: $result / $spacing-factor;
-        }
-        @return $result;
-    }
+
+:root {
+    --small-width: 36rem;
+    --mid-width: 52rem;
+    --large-width: 64rem;
+    --sizing: 1rem;
+    --sizing-factor: 1.62;
+    --sizing-1: 1.62rem;
+    --sizing-2: 2.62rem;
+    --sizing-3: 4.25rem;
+    --sizing-4: 6.89rem;
+    --sizing-minus-1: 0.62rem;
+    --sizing-minus-2: 0.38rem;
+    --sizing-minus-3: 0.24rem;
+    --sizing-minus-4: 0.15rem;
 }
-$spacing: spacer(1) * 1rem;
-$spacing-1: spacer(1) * 1rem;
-$spacing-2: spacer(2) * 1rem;
-$spacing-3: spacer(3) * 1rem;
-$spacing-4: spacer(4) * 1rem;
-$spacing-minus: spacer(-1) * 1rem;
-$spacing-minus-1: spacer(-1) * 1rem;
-$spacing-minus-2: spacer(-2) * 1rem;
-$spacing-minus-3: spacer(-3) * 1rem;
-$spacing-minus-4: spacer(-4) * 1rem;
