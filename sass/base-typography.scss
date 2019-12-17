@@ -8,9 +8,17 @@
     --font-family: sans-serif;
     --font-family-headlines: var(--font-family);    
     --font-family-mono: monospace;
+    --base-color: #333;
+    --link-color: var(--base-color);
+    color: var(--base-color); 
+    line-height: var(--line-height); 
+    font-family: var(--font-family); 
+    font-weight: var(--font-weight-normal);    
 }
 
-* { line-height: var(--line-height); font-family: var(--font-family); font-weight: var(--font-weight-normal); }
+* {
+    outline: none;
+}
 
 .font-family-inherit { font-family: inherit; }
 .font-size-inherit { font-size: inherit; }
@@ -62,6 +70,12 @@ p.pindent { text-indent: var(--sizing-1); }
 
 pre, code {
     font-family: var(--font-family-mono);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: underline;
+    text-underline-offset: 0.25em;    
 }
 
 
