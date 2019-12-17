@@ -16,12 +16,18 @@
 
 :root {
   --font-weight-bold: bold;
+  --font-weight-normal: normal;
   --line-height: 1.62em;
   --letter-spacing: 0.1em;
+  --font-family: sans-serif;
+  --font-family-headlines: var(--font-family);
+  --font-family-mono: monospace;
 }
 
 * {
   line-height: var(--line-height);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-normal);
 }
 
 .font-family-inherit {
@@ -50,6 +56,10 @@
 
 .caps {
   text-transform: uppercase;
+}
+
+.mono {
+  font-family: var(--font-family-mono);
 }
 
 .underline, u {
@@ -91,14 +101,14 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: var(--sizing-2);
   margin-bottom: 1rem;
   text-transform: unset;
-  font-weight: bold;
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family-headlines);
 }
 
 h1 {
   font-size: var(--sizing-1);
   text-transform: uppercase;
   line-height: 1em;
-  letter-spacing: var(--letter-spacing);
 }
 
 h2, h3 {
@@ -107,7 +117,7 @@ h2, h3 {
 }
 
 h3 {
-  font-weight: normal;
+  font-weight: var(--font-weight-normal);
 }
 
 h4, h5, h6 {
@@ -146,6 +156,10 @@ p.pindent {
 .list-reset {
   list-style: none;
   padding-left: 0;
+}
+
+pre, code {
+  font-family: var(--font-family-mono);
 }
 
 /*# sourceMappingURL=base-typography.css.map */
