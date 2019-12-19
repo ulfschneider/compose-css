@@ -19,12 +19,30 @@
 
   --base-color: #333;
   --base-background: #fff;
-  --mark-background: var(--yellow);
+  --mark-background: #ffe9b3;
   --kbd-background: var(--silver);
   --code-color: var(--white);
   --code-background: #333;
   --link-color: var(--base-color);
   --text-decoration-color: var(--base-color);
+
+  color: var(--base-color);
+}
+
+.brighter {
+    filter: brightness(2);
+}
+
+.darker {
+    filter: brightness(0.5);
+}
+
+.grayscale {
+    filter: grayscale(1);
+}
+
+.no-filter {
+    filter: none;
 }
 
 .bg-navy {

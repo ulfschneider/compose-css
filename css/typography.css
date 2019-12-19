@@ -9,7 +9,6 @@
   --link-text-decoration: underline;
   --text-underline-offset: 0.25em;
   --font-variant-numeric: tabular-nums;
-  color: var(--base-color);
   line-height: var(--line-height);
   font-family: var(--font-family);
   font-weight: var(--font-weight-normal);
@@ -145,7 +144,7 @@ sup,
 
 mark,
 .mark {
-  background: #ffe9b3;
+  background: var(--mark-background);
   border-radius: var(--border-radius);
   padding: calc(var(--text-underline-offset) / var(--sizing-factor));
 }
@@ -315,7 +314,8 @@ blockquote p + p {
 figure {
   margin: var(--sizing) 0;
 }
-figure figcaption {
+
+figcaption {
   font-style: normal;
   font-size: smaller;
   font-weight: bold;
