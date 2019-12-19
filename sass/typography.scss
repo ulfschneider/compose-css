@@ -6,14 +6,9 @@
   --font-family: -apple-system, sans-serif;
   --font-family-headlines: var(--font-family);
   --font-family-mono: monospace;
-  --base-color: #333;
-  --mark-background: #ffe9b3;
-  --kbd-background: #ddd;
-  --code-color: #eee;
-  --code-background: #333;
-  --link-color: var(--base-color);
+
   --link-text-decoration: underline;
-  --text-decoration-color: var(--base-color);
+
   --text-underline-offset: 0.25em;
   --font-variant-numeric: tabular-nums;
   color: var(--base-color);
@@ -176,7 +171,9 @@ h6 {
   line-height: var(--line-height);
 }
 
-h4,h5,h6 {
+h4,
+h5,
+h6 {
   margin-top: var(--sizing-1);
 }
 
@@ -252,7 +249,7 @@ p.no-pindent {
 code,
 pre {
   font-family: var(--font-family-mono);
-
+  line-height: var(--line-height);
   padding: calc(var(--text-underline-offset) / var(--sizing-factor));
 }
 
@@ -265,9 +262,14 @@ code {
 pre {
   margin-top: var(--sizing);
   margin-bottom: var(--sizing);
-  border-top: 1px dotted var(--base-color);
-  border-bottom: 1px dotted var(--base-color);
-  line-height: var(--line-height);
+  border-top: 1px dotted var(--gray);
+  border-bottom: 1px dotted var(--gray);
+}
+
+.tag {
+  border-radius: var(--border-radius);
+  white-space: nowrap;
+  padding: calc(var(--text-underline-offset) / var(--sizing-factor));
 }
 
 a {

@@ -8,6 +8,7 @@
     <meta http-equiv="Expires" content="0">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/size.css">
+    <link rel="stylesheet" type="text/css" href="css/colors.css">
     <link rel="stylesheet" type="text/css" href="css/white-space.css">
     <link rel="stylesheet" type="text/css" href="css/layout.css">
     <link rel="stylesheet" type="text/css" href="css/grid.css">
@@ -32,9 +33,9 @@
 <body class="x">
 
 
-    <div class="pindent">
+    <div class="full x pt-2 pb-4 bg-gray">
         <header>
-            <h1 class="mt-3">Groundwork</h1>
+            <h1>Groundwork</h1>
             <p>Groundwork is a low-level CSS utility system</p>
         </header>
     </div>
@@ -43,7 +44,9 @@
     <div class="breakout-r my-3 x-12 caps small bold">
         <div class="col-4 md-col-3 "><a href="#typography" class="no-text-decoration">Typography</a></div>
         <div class="col-4 md-col-3"><a href="#white-space" class="no-text-decoration">White Space</a></div>
+        <div class="col-4 md-col-3"><a href="#colors" class="no-text-decoration">Colors</a></div>
         <div class="col-4 md-col-3"><a href="#grid" class="no-text-decoration">Grid</a></div>
+
     </div>
 
     <h2 id="typography">Typography</h2>
@@ -167,6 +170,37 @@
     <div>
         <h2 id="white-space">White space</h2>
         <p>Gaps, margin and padding.</p>
+    </div>
+
+    <div>
+        <h2 id="colors">Colors</h2>
+        <p><code>.&lt;color&gt;</code> <small>to assign text color</small></p>
+            <p><code>.bg-&lt;color&gt;</code> <small> to assign background color</small></p>
+            <p><code>.border-&lt;color&gt;</code> <small> to assign border color</small></p>
+            <p><code>.fill-&lt;color&gt;</code> <small> to assign svg fill color</small></p>
+            <p><code>.stroke-&lt;color&gt;</code> <small> to assign svg stroke color</small></p>
+            <p><code>.base-color</code> <small> is default text color</small></p>
+            <p><code>.base-background</code> <small> is default background color</small></p>
+        <div class="x-12 gminus white center small">
+            <div class="col-12 sm-col-2 bg-navy py-1">.navy</div>
+            <div class="col-12 sm-col-2 bg-blue py-1">.blue</div>
+            <div class="col-12 sm-col-2 bg-aqua py-1">.aqua</div>
+            <div class="col-12 sm-col-2 bg-teal py-1">.teal</div>
+            <div class="col-12 sm-col-2 bg-olive py-1">.olive</div>
+            <div class="col-12 sm-col-2 bg-green py-1">.green</div>
+            <div class="col-12 sm-col-2 bg-lime py-1">.lime</div>
+            <div class="col-12 sm-col-2 bg-yellow py-1">.yellow</div>
+            <div class="col-12 sm-col-2 bg-orange py-1">.orange</div>
+            <div class="col-12 sm-col-2 bg-red py-1">.red</div>
+            <div class="col-12 sm-col-2 bg-fuchsia py-1">.fuchsia</div>
+            <div class="col-12 sm-col-2 bg-purple py-1">.purple</div>
+            <div class="col-12 sm-col-2 bg-maroon py-1">.maroon</div>
+            <div class="col-12 sm-col-2 bg-black py-1">.black</div>
+            <div class="col-12 sm-col-2 bg-gray py-1">.gray</div>
+            <div class="col-12 sm-col-2 bg-silver base-color py-1">.silver</div>
+            <div class="col-12 sm-col-2 bg-white base-color py-1">.white</div>
+            <div class="col-12 sm-col-2 bg-base-color py-1">.base-color</div>
+        </div>
     </div>
 
 
