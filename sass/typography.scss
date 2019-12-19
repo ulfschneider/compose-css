@@ -288,6 +288,11 @@ blockquote {
   p + p {
     text-indent: var(--sizing-1);
   }
+  figcaption {
+    font-weight: bold;
+    font-size: unset;
+    margin-top: var(--sizing);
+  }
 }
 
 figure {
@@ -295,6 +300,5 @@ figure {
 }
 figcaption {
   font-style: normal;
-  font-size: smaller;
-  font-weight: bold;
+  font-size: smaller;  
 }

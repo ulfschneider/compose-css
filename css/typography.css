@@ -310,6 +310,11 @@ blockquote p {
 blockquote p + p {
   text-indent: var(--sizing-1);
 }
+blockquote figcaption {
+  font-weight: bold;
+  font-size: unset;
+  margin-top: var(--sizing);
+}
 
 figure {
   margin: var(--sizing) 0;
@@ -318,7 +323,6 @@ figure {
 figcaption {
   font-style: normal;
   font-size: smaller;
-  font-weight: bold;
 }
 
 /*# sourceMappingURL=typography.css.map */
