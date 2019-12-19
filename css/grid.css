@@ -28,7 +28,11 @@
     margin: unset;
   }
 }
-[class^=columns], [class^=sm-columns], [class^=rg-columns], [class^=md-columns], [class^=lg-columns] {
+[class^=columns],
+[class^=sm-columns],
+[class^=rg-columns],
+[class^=md-columns],
+[class^=lg-columns] {
   column-gap: var(--sizing-1);
 }
 
@@ -58,7 +62,8 @@
 .x .columns-1 {
   columns: 1;
 }
-.x .columns, .x .columns-2 {
+.x .columns,
+.x .columns-2 {
   columns: 2;
 }
 .x .columns-3 {
@@ -160,27 +165,27 @@
 }
 @media (min-width: 28rem) {
   .sm-columns-1 {
-    columns: 1;
+    columns: 1 !important;
   }
 
   .sm-columns-2 {
-    columns: 2;
+    columns: 2 !important;
   }
 
   .sm-columns-3 {
-    columns: 3;
+    columns: 3 !important;
   }
 
   .sm-columns-4 {
-    columns: 4;
+    columns: 4 !important;
   }
 
   .sm-columns-5 {
-    columns: 5;
+    columns: 5 !important;
   }
 
   .sm-columns-6 {
-    columns: 6;
+    columns: 6 !important;
   }
 
   .sm-col-1 {
@@ -233,27 +238,27 @@
 }
 @media (min-width: 36rem) {
   .rg-columns-1 {
-    columns: 1;
+    columns: 1 !important;
   }
 
   .rg-columns-2 {
-    columns: 2;
+    columns: 2 !important;
   }
 
   .rg-columns-3 {
-    columns: 3;
+    columns: 3 !important;
   }
 
   .rg-columns-4 {
-    columns: 4;
+    columns: 4 !important;
   }
 
   .rg-columns-5 {
-    columns: 5;
+    columns: 5 !important;
   }
 
   .rg-columns-6 {
-    columns: 6;
+    columns: 6 !important;
   }
 
   .rg-col-1 {
@@ -306,27 +311,27 @@
 }
 @media (min-width: 52rem) {
   .md-columns-1 {
-    columns: 1;
+    columns: 1 !important;
   }
 
   .md-columns-2 {
-    columns: 2;
+    columns: 2 !important;
   }
 
   .md-columns-3 {
-    columns: 3;
+    columns: 3 !important;
   }
 
   .md-columns-4 {
-    columns: 4;
+    columns: 4 !important;
   }
 
   .md-columns-5 {
-    columns: 5;
+    columns: 5 !important;
   }
 
   .md-columns-6 {
-    columns: 6;
+    columns: 6 !important;
   }
 
   .md-col-1 {
@@ -379,27 +384,27 @@
 }
 @media (min-width: 64rem) {
   .lg-columns-1 {
-    columns: 1;
+    columns: 1 !important;
   }
 
   .lg-columns-2 {
-    columns: 2;
+    columns: 2 !important;
   }
 
   .lg-columns-3 {
-    columns: 3;
+    columns: 3 !important;
   }
 
   .lg-columns-4 {
-    columns: 4;
+    columns: 4 !important;
   }
 
   .lg-columns-5 {
-    columns: 5;
+    columns: 5 !important;
   }
 
   .lg-columns-6 {
-    columns: 6;
+    columns: 6 !important;
   }
 
   .lg-col-1 {
