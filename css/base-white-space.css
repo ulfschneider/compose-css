@@ -1,11 +1,12 @@
 :root {
-  --small-width: 36rem;
+  --small-width: 28rem;
+  --regular-width: 36rem;
   --mid-width: 52rem;
   --large-width: 64rem;
   --sizing: 1rem;
   --sizing-factor: 1.62;
-  --sizing-1: 1.62rem;
-  --sizing-2: 2.62rem;
+  --sizing-1: calc(var(--sizing-factor) * 1rem);
+  --sizing-2: calc(var(--sizing-1) * var(--sizing-factor));
   --sizing-3: 4.25rem;
   --sizing-4: 6.89rem;
   --sizing-minus-1: 0.62rem;

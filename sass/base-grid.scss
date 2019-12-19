@@ -3,37 +3,37 @@
 
 
 .x-12,
-.xlayout {
-    max-width: var(--small-width);
+.x {
+    max-width: var(--regular-width);
     margin: 0 auto;
 }
 @supports (display: grid) {
     .x-12,
-    .xlayout {
+    .x {
         max-width: unset;
         margin: unset;
     }
 }
 
-.columns {
-    column-gap: var(--sizing-1);
+[class^="columns"], [class^="sm-columns"], [class^="rg-columns"], [class^="md-columns"], [class^="lg-columns"] {
+    column-gap: var(--sizing-1);        
 }
 
-.xlayout {    
+.x {    
     display: grid;
-    grid-template-columns: var(--sizing-1) 1fr 1fr minmax(0, var(--small-width)) 1fr 1fr var(--sizing-1);
+    grid-template-columns: var(--sizing-1) 1fr 1fr minmax(0, var(--regular-width)) 1fr 1fr var(--sizing-1);
 }
 
-.xlayout {
+.x {
     > * {
         grid-column: 4 / span 1;
     }
 
-    .lbreakout {
+    .breakout-l {
         grid-column: 3 / span 2;
     }
 
-    .rbreakout {
+    .breakout-r {
         grid-column: 4 / span 2;
     }
 
@@ -49,8 +49,23 @@
         grid-column: 1 / span 7;
     }
 
-    .columns {
+    .columns-1 {
+        columns: 1
+    }
+    .columns, .columns-2 {
         columns: 2;
+    }
+    .columns-3 {
+        columns: 3;
+    }
+    .columns-4 {
+        columns: 4;
+    }
+    .columns-5 {
+        columns: 5;
+    }
+    .columns-6 {
+        columns: 6;
     }
 
     .breakout .columns,
@@ -121,12 +136,12 @@
     }
 }
 @media (max-width: $mid-width) {
-    .xlayout {
-        .lbreakout {
+    .x {
+        .breakout-l {
             grid-column: 4 / span 1;
         }
 
-        .rbreakout {
+        .breakout-r {
             grid-column: 4 / span 1;
         }
 
@@ -141,9 +156,9 @@
         }
     }
 }
-@media (max-width: $small-width) {
-    .xlayout {
-        grid-template-columns: var(--sizing) 1fr 1fr minmax(0, var(--small-width)) 1fr 1fr var(--sizing);
+@media (max-width: $regular-width) {
+    .x {
+        grid-template-columns: var(--sizing) 1fr 1fr minmax(0, var(--regular-width)) 1fr 1fr var(--sizing);
 
         .breakout .columns,
         .breakout.columns,
@@ -157,6 +172,25 @@
     }
 }
 @media  (min-width: $small-width) {
+    .sm-columns-1 {
+        columns: 1;
+    }
+     .sm-columns-2 {
+        columns: 2;
+    }
+    .sm-columns-3 {
+        columns: 3;
+    }
+    .sm-columns-4 {
+        columns: 4;
+    }
+    .sm-columns-5 {
+        columns: 5;
+    }
+    .sm-columns-6 {
+        columns: 6;
+    }
+
     .sm-col-1 {
         grid-area: span 1 / span 1 !important;
     }
@@ -205,7 +239,93 @@
         grid-area: span 1 / span 12 !important;
     }
 }
+@media  (min-width: $regular-width) {
+    .rg-columns-1 {
+        columns: 1;
+    }
+    .rg-columns-2 {
+        columns: 2;
+    }
+    .rg-columns-3 {
+        columns: 3;
+    }
+    .rg-columns-4 {
+        columns: 4;
+    }
+    .rg-columns-5 {
+        columns: 5;
+    }
+    .rg-columns-6 {
+        columns: 6;
+    }
+
+    .rg-col-1 {
+        grid-area: span 1 / span 1 !important;
+    }
+
+    .rg-col-2 {
+        grid-area: span 1 / span 2 !important;
+    }
+
+    .rg-col-3 {
+        grid-area: span 1 / span 3 !important;
+    }
+
+    .rg-col-4 {
+        grid-area: span 1 / span 4 !important;
+    }
+
+    .rg-col-5 {
+        grid-area: span 1 / span 5 !important;
+    }
+
+    .rg-col-6 {
+        grid-area: span 1 / span 6 !important;
+    }
+
+    .rg-col-7 {
+        grid-area: span 1 / span 7 !important;
+    }
+
+    .rg-col-8 {
+        grid-area: span 1 / span 8 !important;
+    }
+
+    .rg-col-9 {
+        grid-area: span 1 / span 9 !important;
+    }
+
+    .rg-col-10 {
+        grid-area: span 1 / span 10 !important;
+    }
+
+    .rg-col-11 {
+        grid-area: span 1 / span 11 !important;
+    }
+
+    .rg-col-12 {
+        grid-area: span 1 / span 12 !important;
+    }
+}
 @media (min-width: $mid-width) {
+    .md-columns-1 {
+        columns: 1;
+    }
+    .md-columns-2 {
+        columns: 2;
+    }
+    .md-columns-3 {
+        columns: 3;
+    }
+    .md-columns-4 {
+        columns: 4;
+    }
+    .md-columns-5 {
+        columns: 5;
+    }
+    .md-columns-6 {
+        columns: 6;
+    }
     .md-col-1 {
         grid-area: span 1 / span 1 !important;
     }
@@ -255,6 +375,24 @@
     }
 }
 @media (min-width: $large-width) {
+    .lg-columns-1 {
+        columns: 1;
+    }
+    .lg-columns-2 {
+        columns: 2;
+    }
+    .lg-columns-3 {
+        columns: 3;
+    }
+    .lg-columns-4 {
+        columns: 4;
+    }
+    .lg-columns-5 {
+        columns: 5;
+    }
+    .lg-columns-6 {
+        columns: 6;
+    }
     .lg-col-1 {
         grid-area: span 1 / span 1 !important;
     }

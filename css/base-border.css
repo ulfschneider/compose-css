@@ -1,0 +1,48 @@
+:root {
+  --border-style: 1px solid var(--base-color);
+  --border-radius: var(--sizing-minus-4);
+}
+
+.border-radius {
+  border-radius: var(--border-radius);
+}
+
+.no-border-radius {
+  border-radius: none;
+}
+
+.no-border {
+  border: none;
+}
+
+.border {
+  border: var(--border-style);
+}
+
+.border-x {
+  border-left: var(--border-style);
+  border-right: var(--border-style);
+}
+
+.border-y {
+  border-top: var(--border-style);
+  border-bottom: var(--border-style);
+}
+
+.border-t {
+  border-top: var(--border-style);
+}
+
+.border-r {
+  border-right: var(--border-style);
+}
+
+.border-b {
+  border-bottom: var(--border-style);
+}
+
+.border-l {
+  border-left: var(--border-style);
+}
+
+/*# sourceMappingURL=base-border.css.map */
