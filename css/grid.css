@@ -1,15 +1,3 @@
-body {
-  margin: 0;
-}
-
-img {
-  max-width: 100%;
-}
-
-svg {
-  max-height: 100%;
-}
-
 :root {
   --small-width: 28rem;
   --regular-width: 36rem;
@@ -17,14 +5,14 @@ svg {
   --large-width: 64rem;
   --sizing: 1rem;
   --sizing-factor: 1.62;
-  --sizing-1: calc(var(--sizing-factor) * 1rem);
+  --sizing-1: calc(var(--sizing-factor) * var(--sizing));
   --sizing-2: calc(var(--sizing-1) * var(--sizing-factor));
-  --sizing-3: 4.25rem;
-  --sizing-4: 6.89rem;
-  --sizing-minus-1: 0.62rem;
-  --sizing-minus-2: 0.38rem;
-  --sizing-minus-3: 0.24rem;
-  --sizing-minus-4: 0.15rem;
+  --sizing-3: calc(var(--sizing-2) * var(--sizing-factor));
+  --sizing-4: calc(var(--sizing-3) * var(--sizing-factor));
+  --sizing-minus-1: calc(var(--sizing) / var(--sizing-factor));
+  --sizing-minus-2: calc(var(--sizing-minus-1) / var(--sizing-factor));
+  --sizing-minus-3: calc(var(--sizing-minus-2) / var(--sizing-factor));
+  --sizing-minus-4: calc(var(--sizing-minus-3) / var(--sizing-factor));
 }
 
 .x-12,
@@ -463,4 +451,4 @@ svg {
   }
 }
 
-/*# sourceMappingURL=base-grid.css.map */
+/*# sourceMappingURL=grid.css.map */

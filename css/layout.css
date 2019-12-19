@@ -1,0 +1,75 @@
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.table {
+  display: table;
+}
+
+.table-cell {
+  display: table-cell;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.fit {
+  max-width: 100%;
+}
+
+.sm-max-width {
+  max-width: var(--small-width);
+}
+
+.rg-max-width {
+  max-width: var(--regular-width);
+}
+
+.md-max-width {
+  max-width: var(--medium-width);
+}
+
+.lg-max-width {
+  max-width: var(--large-width);
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=layout.css.map */

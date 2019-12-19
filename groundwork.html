@@ -6,11 +6,13 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <link rel="stylesheet" type="text/css" href="css/base-layout.css">
-    <link rel="stylesheet" type="text/css" href="css/base-grid.css">
-    <link rel="stylesheet" type="text/css" href="css/base-white-space.css">
-    <link rel="stylesheet" type="text/css" href="css/base-typography.css">
-    <link rel="stylesheet" type="text/css" href="css/base-border.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/size.css">
+    <link rel="stylesheet" type="text/css" href="css/white-space.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/typography.css">
+    <link rel="stylesheet" type="text/css" href="css/border.css">
     <title>Groundwork</title>
 </head>
 
@@ -40,11 +42,11 @@
 
     <div class="breakout-r my-3 x-12 caps small bold">
         <div class="col-4 md-col-3 "><a href="#typography" class="no-text-decoration">Typography</a></div>
-        <div class="col-4 md-col-3"><label>White Space</label></div>
-        <div class="col-4 md-col-3"><label>Grid</label></div>
+        <div class="col-4 md-col-3"><a href="#white-space" class="no-text-decoration">White Space</a></div>
+        <div class="col-4 md-col-3"><a href="#grid" class="no-text-decoration">Grid</a></div>
     </div>
 
-    <h2 name="typography">Typography</h2>
+    <h2 id="typography">Typography</h2>
     <div>
         <h3>Basic styling</h3>
         <div class="rg-columns-2">
@@ -115,9 +117,8 @@
             </li>
         </ol>
 
-
         <h3>Indented paragraphs</h3>
-        <p class="mb-0"><code>.pindent  p</code> <code>p.pindent</code></p>
+        <p><code>.pindent  p</code> <code>p.pindent</code></p>
         <p><code>.no-pindent p</code> <code>p.no-pindent</code><small> to remove indentation</small></p>
         <div class="pindent">
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
@@ -134,7 +135,7 @@
 
 
         <h3>Regular paragraphs</h3>
-        <p class="mb-0"><code>p</code></p>
+        <p><code>p</code></p>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
             massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 
@@ -145,17 +146,33 @@
             pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
             tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
             dapibus in, viverra quis, feugiat a.</p>
+
+        <h3>Blockquote</h3>
+        <p><code>blockquote</code> <code>blockquote p</code> <code>figure blockquote p</code></p>
+        <figure>
+            <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                    massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+                <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                    Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                </p>
+                <figcaption>Cite</figcaption>
+            </blockquote>
+        </figure>
     </div>
 
 
 
     <div>
-        <h2 name="white-space">White space</h2>
+        <h2 id="white-space">White space</h2>
+        <p>Gaps, margin and padding.</p>
     </div>
 
 
     <div>
-        <h2 name="grid">Grid</h2>
+        <h2 id="grid">Grid</h2>
+        <p><code>.x</code></p>
     </div>
 
 

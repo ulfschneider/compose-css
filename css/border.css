@@ -1,6 +1,8 @@
 :root {
-  --border-style: 1px solid var(--base-color);
+  --border-style: var(--border-size-regular) solid var(--base-color);
   --border-radius: var(--sizing-minus-4);
+  --border-size-bold: 2px;
+  --border-size-regular: 1px;
 }
 
 .border-radius {
@@ -45,4 +47,4 @@
   border-left: var(--border-style);
 }
 
-/*# sourceMappingURL=base-border.css.map */
+/*# sourceMappingURL=border.css.map */
