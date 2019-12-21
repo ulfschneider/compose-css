@@ -5,26 +5,14 @@
 }
 
 @supports (display: grid) {
+
   .x-12,
-.x {
+  .x {
     max-width: unset;
     margin: unset;
   }
 }
-/*
- --small-width: 28rem;
-  --regular-width: 36rem;
-  --mid-width: 52rem;
-  --large-width: 64rem;
-*/
-@custom-media --breakpoint-max-sm (max-width: 28rem);
-@custom-media --breakpoint-max-rg (max-width: 36rem);
-@custom-media --breakpoint-max-md (max-width: 52rem);
-@custom-media --breakpoint-max-lg (max-width: 64rem);
-@custom-media --breakpoint-min-sm (min-width: 28rem);
-@custom-media --breakpoint-min-rg (min-width: 36rem);
-@custom-media --breakpoint-min-md (min-width: 52rem);
-@custom-media --breakpoint-min-lg (min-width: 64rem);
+
 [class^=columns],
 [class^=sm-columns],
 [class^=rg-columns],
@@ -38,7 +26,7 @@
   grid-template-columns: var(--size-1) 1fr 1fr minmax(0, var(--regular-width)) 1fr 1fr var(--size-1);
 }
 
-.x > * {
+.x>* {
   grid-column: 4/span 1;
 }
 
@@ -102,7 +90,7 @@
   grid-column-gap: var(--size-1);
 }
 
-.x-12 > * {
+.x-12>* {
   grid-area: span 1/span 12;
 }
 
@@ -164,30 +152,32 @@
   }
 
   .x .breakout .columns,
-.x .breakout.columns,
-.x .columns,
-.x .full .columns,
-.x .full.columns,
-.x .wide .columns,
-.x .wide.columns {
+  .x .breakout.columns,
+  .x .columns,
+  .x .full .columns,
+  .x .full.columns,
+  .x .wide .columns,
+  .x .wide.columns {
     columns: 2;
   }
 }
+
 @media (--breakpoint-max-rg) {
   .x {
     grid-template-columns: var(--size) 1fr 1fr minmax(0, var(--regular-width)) 1fr 1fr var(--size);
   }
 
   .x .breakout .columns,
-.x .breakout.columns,
-.x .columns,
-.x .full .columns,
-.x .full.columns,
-.x .wide .columns,
-.x .wide.columns {
+  .x .breakout.columns,
+  .x .columns,
+  .x .full .columns,
+  .x .full.columns,
+  .x .wide .columns,
+  .x .wide.columns {
     columns: 1;
   }
 }
+
 @media (--breakpoint-min-sm) {
   .sm-columns-1 {
     columns: 1 !important;
@@ -261,6 +251,7 @@
     grid-area: span 1/span 12 !important;
   }
 }
+
 @media (--breakpoint-min-rg) {
   .rg-columns-1 {
     columns: 1 !important;
@@ -334,6 +325,7 @@
     grid-area: span 1/span 12 !important;
   }
 }
+
 @media (--breakpoint-min-md) {
   .md-columns-1 {
     columns: 1 !important;
@@ -407,7 +399,8 @@
     grid-area: span 1/span 12 !important;
   }
 }
-@media (--breakpoint-min-rg) {
+
+@media (--breakpoint-min-lg) {
   .lg-columns-1 {
     columns: 1 !important;
   }

@@ -1461,8 +1461,9 @@ svg{
 }
 
 @supports (display: grid){
+
   .x-12,
-.x{
+  .x{
     max-width:unset;
     margin:unset;
   }
@@ -1487,7 +1488,7 @@ svg{
   grid-template-columns:var(--size-1) 1fr 1fr minmax(0, var(--regular-width)) 1fr 1fr var(--size-1);
 }
 
-.x > *{
+.x>*{
   grid-column:4/span 1;
 }
 
@@ -1566,7 +1567,7 @@ svg{
   grid-column-gap:var(--size-1);
 }
 
-.x-12 > *{
+.x-12>*{
   grid-area:span 1/span 12;
 }
 
@@ -1628,12 +1629,12 @@ svg{
   }
 
   .x .breakout .columns,
-.x .breakout.columns,
-.x .columns,
-.x .full .columns,
-.x .full.columns,
-.x .wide .columns,
-.x .wide.columns{
+  .x .breakout.columns,
+  .x .columns,
+  .x .full .columns,
+  .x .full.columns,
+  .x .wide .columns,
+  .x .wide.columns{
     -webkit-columns:2;
        -moz-columns:2;
             columns:2;
@@ -1647,12 +1648,12 @@ svg{
   }
 
   .x .breakout .columns,
-.x .breakout.columns,
-.x .columns,
-.x .full .columns,
-.x .full.columns,
-.x .wide .columns,
-.x .wide.columns{
+  .x .breakout.columns,
+  .x .columns,
+  .x .full .columns,
+  .x .full.columns,
+  .x .wide .columns,
+  .x .wide.columns{
     -webkit-columns:1;
        -moz-columns:1;
             columns:1;
@@ -1917,7 +1918,7 @@ svg{
   }
 }
 
-@media (min-width: 36rem){
+@media (min-width: 64rem){
   .lg-columns-1{
     -webkit-columns:1 !important;
        -moz-columns:1 !important;

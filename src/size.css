@@ -15,3 +15,19 @@
   --size--4:calc(var(--size--3) / var(--size-factor));
 }
 
+/*
+ --small-width: 28rem;
+  --regular-width: 36rem;
+  --mid-width: 52rem;
+  --large-width: 64rem;
+*/
+@custom-media --breakpoint-max-sm (max-width: 28rem);
+@custom-media --breakpoint-max-rg (max-width: 36rem);
+@custom-media --breakpoint-max-md (max-width: 52rem);
+@custom-media --breakpoint-max-lg (max-width: 64rem);
+@custom-media --breakpoint-min-sm (min-width: 28rem);
+@custom-media --breakpoint-min-rg (min-width: 36rem);
+@custom-media --breakpoint-min-md (min-width: 52rem);
+@custom-media --breakpoint-min-lg (min-width: 64rem);
+
+
