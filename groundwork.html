@@ -6,307 +6,425 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/size.css">
-    <link rel="stylesheet" type="text/css" href="css/colors.css">
-    <link rel="stylesheet" type="text/css" href="css/white-space.css">
-    <link rel="stylesheet" type="text/css" href="css/layout.css">
-    <link rel="stylesheet" type="text/css" href="css/grid.css">
-    <link rel="stylesheet" type="text/css" href="css/typography.css">
-    <link rel="stylesheet" type="text/css" href="css/border.css">
+    <link rel="stylesheet" type="text/css" href="css/groundwork.css">
     <title>Groundwork</title>
 </head>
 
 <style>
     .indicator {
-        font-family: var(--font-family-mono);
-        background: var(--kbd-background);
-        color: var(--base-color);
-    }
-
-    .indicator .indicator {
         background: var(--code-background);
         color: var(--code-color);
+        font-family: var(--font-family-mono);
+    }
+
+    :root {
+        --h2-margin-top: var(--size-4);
+        --h3-margin-top: var(--size-3);
     }
 </style>
 
 <body class="x">
 
 
-    <div class="full x pt-2 pb-4 bg-silver">
+    <div class="full x pdt-2 pdb-4"
+        style="background: linear-gradient(90deg, rgba(255,250,90,1) 17%, rgba(255,152,97,1) 65%, rgba(223,165,255,1) 100%);">
         <header>
-            <h1 class="space">Groundwork</h1>
+            <h1 class="space mrb--1">Groundwork</h1>
             <p>A low-level CSS utility system</p>
         </header>
     </div>
 
 
-    <div class="breakout-r my-3 caps small bold">
-        <div class="md-columns-4 columns-3">
+    <div class="breakout-r mry-3 caps small bold">
+        <div class="md-columns-4 sm-columns-3 columns-2 line-2">
             <div><a href="#typography" class="no-text-decoration">Typography</a></div>
-            <div><a href="#white-space" class="no-text-decoration">White Space</a></div>
+            <div><a href="#tables" class="no-text-decoration">Tables</a></div>
             <div><a href="#figures" class="no-text-decoration">Figures</a></div>
+            <div><a href="#borders" class="no-text-decoration">Borders</a></div>
+            <div><a href="#white-space" class="no-text-decoration">White Space</a></div>
             <div><a href="#colors" class="no-text-decoration">Colors</a></div>
             <div><a href="#grid" class="no-text-decoration">Grid</a></div>
         </div>
     </div>
 
-    <h2 id="typography">Typography</h2>
-    <div>
-        <h3>Basic styling</h3>
+    <div class="breakout-r">
+        <h2 id="typography">Typography</h2>
+
+        <h3>Elements</h3>
         <div class="rg-columns-2">
             <p>Regular</p>
-            <p><b class="mr">Bold</b> <code>strong</code> <code>b</code> <code>.strong</code> <code>.bold</code>
+            <p><b class="mrr">Bold</b> <code>strong</code> <code>b</code> <code>.strong</code> <code>.bold</code>
                 <code>.b</code></p>
-            <p><i class="mr">Italic</i> <code>i</code> <code>.i</code> <code>.italic</code></p>
-            <p><u class="mr">Underline</u> <code>u</code> <code>.underline</code></p>
-            <p><del class="mr">Deleted</del> <code>del</code> <code>.del</code></p>
-            <p><span class="mr caps">Caps</span> <code>.caps</code></p>
-            <p><span class="mr space">Spaced</span> <code>.space</code></p>
-            <p><mark class="mr">Highlighted</mark> <code>mark</code> <code>.mark</code></p>
-            <p><kbd class="mr">Ctrl+K</kbd> <code>kbd</code> <code>.kbd</code></p>
-            <p><span class="mr">Text <sup>superscript</sup></span> <code>sup</code> <code>.sup</code></p>
-            <p><span class="mr">Text <sub>subscript</sub></span> <code>sub</code> <code>.sup</code></p>
-            <p><cite class="mr">Cite</cite> <code>cite</code> <code>.cite</code></p>
-            <p><em class="mr">Emphasis</em> <code>em</code> <code>.em</code></p>
-            <p><s class="strike mr">Strikethrough</s> <code>s</code> <code>.s</code> <code>.strike</code></p>
-            <p><small class="mr">Small</small> <code>small</code> <code>.small</code></p>
-            <p>
-                <address class="mr inline">Address</address> <code>address</code> <code>.address</code>
-            </p>
+            <p><i class="mrr">Italic</i> <code>i</code> <code>.i</code> <code>.italic</code></p>
+            <p><u class="mrr">Underline</u> <code>u</code> <code>.underline</code></p>
+            <p><del class="mrr">Deleted</del> <code>del</code> <code>.del</code></p>
+            <p><span class="mrr caps">Caps</span> <code>.caps</code></p>
+            <p><span class="mrr space">Spaced</span> <code>.space</code></p>
+            <p><mark class="mrr">Highlighted</mark> <code>mark</code> <code>.mnark</code></p>
+            <p><kbd class="mrr">Ctrl+K</kbd> <code>kbd</code> <code>.kbd</code></p>
+            <p><span class="mrr">Text <sup>superscript</sup></span> <code>sup</code> <code>.sup</code></p>
+            <p><span class="mrr">Text <sub>subscript</sub></span> <code>sub</code> <code>.sup</code></p>
+            <p><cite class="mrr">Cite</cite> <code>cite</code> <code>.cite</code></p>
+            <p><em class="mrr">Emphasis</em> <code>em</code> <code>.em</code></p>
+            <p><s class="strike mrr">Strikethrough</s> <code>s</code> <code>.s</code> <code>.strike</code></p>
+            <p><small class="mrr">Small</small> <code>small</code> <code>.small</code></p>
         </div>
+    </div>
 
-        <h3>Lists</h3>
-        <p><code>ul</code></p>
-        <ul>
+    <div>
+
+        <h3>Unordered List</h3>
+        <p><code>ul li</code></p>
+        <ul class="sm-max-width">
             <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                massa.
             </li>
-            <li>onec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+            <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean
+                        massa.
+                    </li>
+                    <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis
+                        enim.
+                    </li>
+                </ul>
             </li>
-            <ul>
-                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                    massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                </li>
-                <li>onec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                    Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-                </li>
-            </ul>
             <li>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
-                pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
-                tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
-                dapibus in, viverra quis, feugiat a.
+                pretium. Integer tincidunt.
             </li>
         </ul>
-        <p><code>ol</code></p>
-        <ol>
+        <h3>Ordered List</h3>
+        <p><code>ol li</code></p>
+        <ol class="sm-max-width">
             <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                massa.
             </li>
-            <li>onec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+            <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                <ol>
+                    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean
+                        massa.
+                    </li>
+                    <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis
+                        enim.
+                    </li>
+                </ol>
             </li>
-            <ol>
-                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                    massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                </li>
-                <li>onec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                    Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-                </li>
-            </ol>
             <li>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
-                pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
-                tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
-                dapibus in, viverra quis, feugiat a.
+                pretium. Integer tincidunt.
             </li>
         </ol>
 
-        <h3>Indented paragraphs</h3>
+        <h3>Indented Paragraphs</h3>
         <p><code>.pindent  p</code> <code>p.pindent</code></p>
         <p><code>.no-pindent p</code> <code>p.no-pindent</code><small> to remove indentation</small></p>
-        <div class="pindent">
+        <div class="pindent sm-max-width">
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                massa. </p>
 
             <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+            </p>
 
             <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
-                pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
-                tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
-                dapibus in, viverra quis, feugiat a.</p>
+                pretium. Integer tincidunt. </p>
         </div>
 
-
-        <h3>Regular paragraphs</h3>
+        <h3>Regular Paragraphs</h3>
         <p><code>p</code></p>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-            massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <div class="sm-max-width">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                massa. </p>
 
-        <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+            <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+            </p>
 
-        <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
-            pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
-            tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
-            dapibus in, viverra quis, feugiat a.</p>
+            <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
+                pretium. Integer tincidunt. </p>
 
-        <h3>Blockquote</h3>
-        <p><code>blockquote</code> <code>blockquote p</code> <code>figure blockquote p</code></p>
-        <figure>
-            <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                    massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            <h3>Blockquote</h3>
+            <p><code>blockquote</code> <code>blockquote p</code> <code>figure blockquote p</code></p>
+            <figure>
+                <blockquote>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean
+                        massa. </p>
 
-                <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                    Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-                </p>
-                <figcaption>Cite</figcaption>
-            </blockquote>
-        </figure>
-    </div>
-
-    <div>
-        <h2 id="white-space">White space</h2>
-        <p>Gaps, margin and padding.</p>
-    </div>
-
-    <div>
-        <h2 id="figures">Figures</h2>
-        <p><code>figure figcaption</code></p>
-        <figure class="my">
-            <img src="resources/james-adams-unsplash.jpg" />
-            <figcaption>Photo by James Adams on Unsplash</figcaption>
-        </figure>
-    </div>
-    <div>
-        <h2 id="colors">Colors</h2>
-        <div class="x-12 gminus white center small">
-            <div class="col-12 sm-col-2 bg-navy py-1">.navy</div>
-            <div class="col-12 sm-col-2 bg-blue py-1">.blue</div>
-            <div class="col-12 sm-col-2 bg-aqua py-1">.aqua</div>
-            <div class="col-12 sm-col-2 bg-teal py-1">.teal</div>
-            <div class="col-12 sm-col-2 bg-olive py-1">.olive</div>
-            <div class="col-12 sm-col-2 bg-green py-1">.green</div>
-            <div class="col-12 sm-col-2 bg-lime py-1">.lime</div>
-            <div class="col-12 sm-col-2 bg-yellow py-1">.yellow</div>
-            <div class="col-12 sm-col-2 bg-orange py-1">.orange</div>
-            <div class="col-12 sm-col-2 bg-red py-1">.red</div>
-            <div class="col-12 sm-col-2 bg-fuchsia py-1">.fuchsia</div>
-            <div class="col-12 sm-col-2 bg-purple py-1">.purple</div>
-            <div class="col-12 sm-col-2 bg-maroon py-1">.maroon</div>
-            <div class="col-12 sm-col-2 bg-black py-1">.black</div>
-            <div class="col-12 sm-col-2 bg-gray py-1">.gray</div>
-            <div class="col-12 sm-col-2 bg-silver base-color py-1">.silver</div>
-            <div class="col-12 sm-col-2 bg-white base-color py-1">.white</div>
-            <div class="col-12 sm-col-2 bg-base-color py-1">.base-color</div>
+                    <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis
+                        enim.
+                    </p>
+                    <figcaption>Cite</figcaption>
+                </blockquote>
+            </figure>
         </div>
-        <p class="mt"><code>.&lt;color&gt;</code> <small>to assign text color</small></p>
-        <p><code>.bg-&lt;color&gt;</code> <small> to assign background color</small></p>
-        <p><code>.border-&lt;color&gt;</code> <small> to assign border color</small></p>
-        <p><code>.fill-&lt;color&gt;</code> <small> to assign svg fill color</small></p>
-        <p><code>.stroke-&lt;color&gt;</code> <small> to assign svg stroke color</small></p>
-        <p><code>.base-color</code> <small> is default text color</small></p>
-        <p><code>.base-background</code> <small> is default background color</small></p>
 
-        <p><code>.brighter</code> <code>.darker</code> <code>.grayscale</code>
-            <small>and</small> <code>.no-filter</code> <small>will manipulate color filters</small></p>
-    </div>
+        <div>
+            <h2 id="tables">Tables</h2>
+        </div>
 
 
-    <div>
+        <div>
+            <h2 id="figures">Figures</h2>
+            <p><code>figure figcaption</code></p>
+            <figure class="my">
+                <img src="resources/james-adams-unsplash.jpg" />
+                <figcaption>Photo by James Adams on Unsplash</figcaption>
+            </figure>
+        </div>
+
+        <div>
+            <div class="x-12 gp">
+                <div>
+                    <h2 id="borders">Borders</h2>
+                    <h3>Border</h3>
+                </div>
+                <div class="xx-4 br brw-rg pd-1 bg-silver"></div>
+                <div class="xx-8"><code>&lt;div class="br"&gt;&lt/div&gt;</code></div>
+                <div class="xx-4 bry brw-rg pd-1 bg-silver"></div>
+                <div class="xx-8"><code>&lt;div class="bry"&gt;&lt/div&gt;</code></div>
+                <div class="xx-4 brx brw-rg pd-1 bg-silver"></div>
+                <div class="xx-8"><code>&lt;div class="brx"&gt;&lt/div&gt;</code></div>
+                <div class="xx-4 brt brw-rg pd-1 bg-silver"></div>
+                <div class="xx-8"><code>&lt;div class="brt"&gt;&lt/div&gt;</code></div>
+                <div class="xx-4 brr brw-rg pd-1 bg-silver"></div>
+                <div class="xx-8"><code>&lt;div class="brr"&gt;&lt/div&gt;</code></div>
+                <div class="xx-4 brb brw-rg pd-1 bg-silver"></div>
+                <div class="xx-8"><code>&lt;div class="brb"&gt;&lt/div&gt;</code></div>
+                <div class="xx-4 brl brw-rg pd-1 bg-silver"></div>
+                <div class="xx-8"><code>&lt;div class="brl"&gt;&lt/div&gt;</code></div>
+
+                <h3>Border Style</h3>
+                <div class="xx-4 br-dashed brw-rg pd-1 bg-silver"></div>
+                <div class="xx-8"><code>&lt;div class="br-dashed"&gt;&lt/div&gt;</code></div>
+                <div class="xx-4 br-dotted brw-rg pd-1 bg-silver"></div>
+                <div class="xx-8"><code>&lt;div class="br-dotted"&gt;&lt/div&gt;</code></div>
+                <div class="xx-4 br-solid brw-rg pd-1 bg-silver"></div>
+                <div class="xx-8"><code>&lt;div class="br-solid"&gt;&lt/div&gt;</code></div>
+
+                <h3>Border Width</h3>
+                <div class="xx-4 br brw-0 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>&lt;div class="br brw-0"&gt;&lt/div&gt;</code></div>
+                <div class="xx-4 br brw-sm pd-1 bg-silver"></div>
+                <div class="xx-8"><code>&lt;div class="br brw-sm"&gt;&lt/div&gt;</code></div>
+                <div class="xx-4 br brw-rg pd-1 bg-silver"></div>
+                <div class="xx-8"><code>&lt;div class="br brw-rg"&gt;&lt/div&gt;</code></div>
+                <div class="xx-4 br brw-md pd-1 bg-silver"></div>
+                <div class="xx-8"><code>&lt;div class="br brw-md"&gt;&lt/div&gt;</code></div>
+                <div class="xx-4 br brw-lg pd-1 bg-silver"></div>
+                <div class="xx-8"><code>&lt;div class="br brw-lg"&gt;&lt/div&gt;</code></div>
+                <div class="xx-4 br brw-default pd-1 bg-silver"></div>
+                <div class="xx-8"><code>&lt;div class="br brw-default"&gt;&lt/div&gt;</code></div>
+
+                <h3>Border Radius</h3>
+                <div class="xx-4 br brw-rg br-radius-0 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>&lt;div class="br brw-0"&gt;&lt/div&gt;</code></div>
+                <div class="xx-4 br brw-rg br-radius--4 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>&lt;div class="br brw-0"&gt;&lt/div&gt;</code></div>
+                <div class="xx-4 br brw-rg br-radius--3 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>&lt;div class="br brw-0"&gt;&lt/div&gt;</code></div>
+                <div class="xx-4 br brw-rg br-radius--2 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>&lt;div class="br brw-0"&gt;&lt/div&gt;</code></div>
+                <div class="xx-4 br brw-rg br-radius--1 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>&lt;div class="br brw-0"&gt;&lt/div&gt;</code></div>
+                <div class="xx-4 br brw-rg br-radius pd-1 bg-silver"></div>
+                <div class="xx-8"><code>&lt;div class="br brw-0"&gt;&lt/div&gt;</code></div>
+                <div class="xx-4 br brw-rg br-radius-1 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>&lt;div class="br brw-0"&gt;&lt/div&gt;</code></div>
+                <div class="xx-4 br brw-rg br-radius-2 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>&lt;div class="br brw-0"&gt;&lt/div&gt;</code></div>
+                <div class="xx-4 br brw-rg br-radius-3 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>&lt;div class="br brw-0"&gt;&lt/div&gt;</code></div>
+                <div class="xx-4 br brw-rg br-radius-4 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>&lt;div class="br brw-0"&gt;&lt/div&gt;</code></div>
+
+            </div>
+
+        </div>
+
+        <div>
+            <h2 id="white-space">White Space</h2>
+            <p>Gaps, margin and padding.</p>
+        </div>
+
+        <div>
+            <h2 id="colors">Colors</h2>
+            <div class="x-12 gp-0 center">
+                <div class="xx-2 bg-navy white pdy">.bg-navy</div>
+                <div class="xx-2 navy size-1 bold">Aa</div>
+                <div class="xx-2 navy pdy">.navy</div>                
+                <div class="xx-2 br br-navy navy pdy brw-rg">.br-navy</div>
+                <div class="xx-4"></div>
+                <div class="xx-2 bg-blue"></div>
+                <div class="xx-2 blue pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+                <div class="xx-2 bg-aqua"></div>
+                <div class="xx-2 aqua pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+                <div class="xx-2 bg-teal"></div>
+                <div class="xx-2 teal pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+                <div class="xx-2 bg-olive"></div>
+                <div class="xx-2 olive pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+                <div class="xx-2 bg-green"></div>
+                <div class="xx-2 green pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+                <div class="xx-2 bg-lime"></div>
+                <div class="xx-2 lime pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+                <div class="xx-2 bg-yellow"></div>
+                <div class="xx-2 yellow pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+                <div class="xx-2 bg-orange"></div>
+                <div class="xx-2 orange pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+                <div class="xx-2 bg-red"></div>
+                <div class="xx-2 red pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+                <div class="xx-2 bg-fuchsia"></div>
+                <div class="xx-2 fuchsia pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+                <div class="xx-2 bg-purple"></div>
+                <div class="xx-2 purple pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+                <div class="xx-2 bg-maroon"></div>
+                <div class="xx-2 maroon pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+                <div class="xx-2 bg-black"></div>
+                <div class="xx-2 black pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+                <div class="xx-2 bg-gray"></div>
+                <div class="xx-2 gray pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+                <div class="xx-2 bg-silver"></div>
+                <div class="xx-2 silver pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+                <div class="xx-2 bg-white"></div>
+                <div class="xx-2 base-color pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+                <div class="xx-2 bg-base-color"></div>
+                <div class="xx-2 base-color pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+            </div>
+            <p class="mrt"><code>.&lt;color&gt;</code> <small>to assign text color</small></p>
+            <p><code>.bg-&lt;color&gt;</code> <small> to assign background color</small></p>
+            <p><code>.br-&lt;color&gt;</code> <small> to assign border color</small></p>
+            <p><code>.fl-&lt;color&gt;</code> <small> to assign svg fill color</small></p>
+            <p><code>.st-&lt;color&gt;</code> <small> to assign svg stroke color</small></p>
+            <p><code>.base-color</code> <small> is default text color</small></p>
+            <p><code>.base-background</code> <small> is default background color</small></p>
+
+            <p><code>.brighter</code> <code>.darker</code> <code>.grayscale</code>
+                <small>and</small> <code>.no-filter</code> <small>will manipulate color filters</small></p>
+        </div>
+
+
+
         <h2 id="grid">Grid</h2>
-        <p><code>.x</code></p>
+
+        <h3>Middle Content</h3>
+        <p><code>.x *</code></p>
+        <p>Middle content is the default positioning of any item within the layout. Middle content doesn´t need a
+            specific css class assignment to get positioned this way.</p>
     </div>
 
 
-    <h3>Middle content</h3>
-    <p><code>.x *</code></p>
-    <p>Middle content is the default positioning of any item within the layout. Middle content doesn´t need a
-        specific css class assignment to get positioned this way.</p>
-    <p>Code example:</p>
+
+
     <!-- Code Example -->
-    <div class="full indicator">
+    <div class="full bry br-dotted br-small br-gray mono">
         &lt;div class="x"&gt;
         <div class="x">
-            <div class="middle indicator border-radius">
+            <div class="middle indicator">
                 &lt;div&gt;&lt;/div&gt;
             </div>
         </div>
         &lt;/div&gt;
     </div>
 
-    <div class="breakout-l">
-        <h3 class="mt-3">Breakout left content</h3>
+    <div>
+        <h3>Breakout Left Content</h3>
         <p><code>.x .breakout-l</code></p>
         <p>Breakout left content is pushed a little bit to the left and will give more space for the things you want
             to display.</p>
-        <p>Code example:</p>
     </div>
 
     <!-- Code Example -->
-    <div class="full indicator">
+    <div class="full bry br-dotted br-small br-gray mono">
         &lt;div class="x"&gt;
         <div class="x">
-            <div class="breakout-l indicator border-radius">
+            <div class="breakout-l indicator">
                 &lt;div class="breakout-l"&gt;&lt;/div&gt;
             </div>
         </div>
         &lt;/div&gt;
     </div>
 
-    <div class="breakout-r">
-        <h3 class="mt-3">Breakout right content</h3>
+    <div>
+        <h3>Breakout Right Content</h3>
         <p><code>.x .breakout-r</code></p>
         <p>Breakout right content is pushed a little bit to the right and will give more space for the things you
             want to display.
         </p>
-        <p>Code example:</p>
     </div>
 
     <!-- Code Example -->
-    <div class="full indicator">
+    <div class="full bry br-dotted br-small br-gray mono">
         &lt;div class="x"&gt;
         <div class="x">
-            <div class="breakout-r indicator border-radius">
+            <div class="breakout-r indicator">
                 &lt;div class="breakout-r"&gt;&lt;/div&gt;
             </div>
         </div>
         &lt;/div&gt;
     </div>
 
-    <div class="breakout">
-        <h3 class="mt-3">Breakout content = left and right</h3>
+    <div>
+        <h3>Breakout Content = Left and Right</h3>
         <p><code>.x .breakout</code></p>
         <p>Breakout content is the combination of left and right content.</p>
-        <p>Code example:</p>
     </div>
 
     <!-- Code Example -->
-    <div class="full indicator">
+    <div class="full bry br-dotted br-small br-gray mono">
         &lt;div class="x"&gt;
         <div class="x">
-            <div class="breakout indicator border-radius">
+            <div class="breakout indicator">
                 &lt;div class="breakout"&gt;&lt;/div&gt;
             </div>
         </div>
         &lt;/div&gt;
     </div>
 
-    <div class="wide">
-        <h3 class="mt-3">Wide content</h3>
+    <div>
+        <h3>Wide content</h3>
         <p><code>.x .wide</code></p>
         <p>Wide content is pushing things further in that it nearly takes the full width of the screen, except of a
             small margin to the window border.</p>
-        <p>Code example:</p>
     </div>
 
     <!-- Code Example-->
-    <div class="full indicator">
+    <div class="full bry br-dotted br-small br-gray mono">
         &lt;div class="x"&gt;
         <div class="x">
-            <div class="wide indicator border-radius">
+            <div class="wide indicator">
                 &lt;div class="wide"&gt;&lt;/div&gt;
             </div>
         </div>
@@ -314,62 +432,57 @@
     </div>
 
 
-    <div class="full">
-        <h3 class="mt-3">Full content</h3>
+    <div>
+        <h3>Full Content</h3>
         <p><code>.x .full</code></p>
         <p>Full content will use the entire width of the screen.</p>
-        <p>Code example:</p>
     </div>
     <!-- Code Example -->
-    <div class="full indicator">
+    <div class="full bry br-dotted br-small br-gray mono">
         &lt;div class="x"&gt;
         <div class="x">
-            <div class="full indicator border-radius">
+            <div class="full indicator">
                 &lt;div class="full"&gt;&lt;/div&gt;
             </div>
         </div>
         &lt;/div&gt;
     </div>
 
-    <div class="breakout">
-        <h3 class="mt-3">12 column grid</h3>
-        <p><code>.x-12 .col-*</code></p>
+    <div class="breakout-r">
+        <h3>12 Column Grid</h3>
+        <p><code>.x-12 .xx-*</code></p>
         <p>Any of the before mentioned content concepts can be divided horizontally into 12ths.</p>
         <p>The sum of the cols per row have to add up to 12. Not specifiying a column size will result in taking the
             entire grid width into one column.</p>
-        <p>Code example:</p>
 
-        <!-- Code Example -->
-        <div class="x-12 indicator gminus">
-            <div>&lt;div class="x-12"&gt;</div>
-            <div class="col-12 indicator">
-                <div>&lt;div class="col-12"&gt;&lt;/div&gt;</div>
-            </div>
-            <div class="col-4 indicator">
-                <div>&lt;div class="col-4"&gt;&lt;/div&gt;</div>
-            </div>
-            <div class="col-4 indicator">
-                <div>&lt;div class="col-4"&gt;&lt;/div&gt;</div>
-            </div>
-            <div class="col-4 indicator">
-                <div>&lt;div class="col-4"&gt;&lt;/div&gt;</div>
-            </div>
-            <div class="col-6 indicator">
-                <div>&lt;div class="col-6"&gt;&lt;/div&gt;</div>
-            </div>
-            <div class="col-6 indicator">
-                <div>&lt;div class="col-6"&gt;&lt;/div&gt;</div>
-            </div>
-            <div class="col-3 indicator">
-                <div>&lt;div class="col-2"&gt;&lt;/div&gt;</div>
-            </div>
-            <div class="col-9 indicator">
-                <div>&lt;div class="col-10"&gt;&lt;/div&gt;</div>
-            </div>
-            <div>&lt;/div&gt;</div>
+        <div class="x-12 mry-1 gp center code">
+            <div class="xx-2 br pdy-1">.xx-2</div>
+            <div class="xx-10 br pdy-1">.xx-10</div>
+            <div class="xx-3 br pdy-1">.xx-3</div>
+            <div class="xx-9 br pdy-1">.xx-9</div>
+            <div class="xx-4 br pdy-1">.xx-4</div>
+            <div class="xx-8 br pdy-1">.xx-8</div>
+            <div class="xx-5 br pdy-1">.xx-5</div>
+            <div class="xx-7 br pdy-1">.xx-7</div>
+            <div class="xx-6 br pdy-1">.xx-6</div>
+            <div class="xx-6 br pdy-1">.xx-6</div>
+            <div class="xx-4 br pdy-1">.xx-4</div>
+            <div class="xx-4 br pdy-1">.xx-4</div>
+            <div class="xx-4 br pdy-1">.xx-4</div>
+            <div class="xx-3 br pdy-1">.xx-3</div>
+            <div class="xx-3 br pdy-1">.xx-3</div>
+            <div class="xx-3 br pdy-1">.xx-3</div>
+            <div class="xx-3 br pdy-1">.xx-3</div>
+            <div class="xx-2 br pdy-1">.xx-2</div>
+            <div class="xx-2 br pdy-1">.xx-2</div>
+            <div class="xx-2 br pdy-1">.xx-2</div>
+            <div class="xx-2 br pdy-1">.xx-2</div>
+            <div class="xx-2 br pdy-1">.xx-2</div>
+            <div class="xx-2 br pdy-1">.xx-2</div>
         </div>
 
-        <p class="mt">It is also possible to have differently sized columns based on minimum screen width. Address the
+        <p class="mrt">It is also possible to have differently sized columns based on minimum screen width. Address
+            the
             different minimum screen sizes with column prefix values of <code>lg-</code> (for at least large size),
             <code>md-</code> (for at least
             medium size),
@@ -377,52 +490,24 @@
             <code>rg-</code> (for at least regular size) and <code>sm-</code> (for at least small size). A column
             class without a prefix will be used in case the alternate minimum screen size is not present.
         </p>
-        <p>Code example:</p>
 
-        <!-- Code Example -->
-        <div class="x-12 indicator gminus">
-            <div>&lt;div class="x-12"&gt;</div>
-            <div class="indicator">
-                <div>&lt;div"&gt;&lt;/div&gt;</div>
-            </div>
-            <div class="lg-col-2 md-col-4 col-6 indicator">
-                <div>&lt;div class="lg-col-2 md-col-4 col-6"&gt;&lt;/div&gt;</div>
-            </div>
-            <div class="lg-col-2 md-col-4 col-6 indicator">
-                <div>&lt;div class="lg-col-2 md-col-4 col-6"&gt;&lt;/div&gt;</div>
-            </div>
-            <div class="lg-col-2 md-col-4 col-12 indicator">
-                <div>&lt;div class="lg-col-2 md-col-4 col-12&gt;&lt;/div&gt;</div>
-            </div>
-            <div class="col-6 indicator">
-                <div>&lt;div class="col-6"&gt;&lt;/div&gt;</div>
-            </div>
-            <div class="col-6 indicator">
-                <div>&lt;div class="col-6"&gt;&lt;/div&gt;</div>
-            </div>
-            <div class="md-col-3 indicator">
-                <div>&lt;div class="md-col-3"&gt;&lt;/div&gt;</div>
-            </div>
-            <div class="md-col-9 indicator">
-                <div>&lt;div class="md-col-9"&gt;&lt;/div&gt;</div>
-            </div>
-            <div>&lt;/div&gt;</div>
+        <div class="x-12 mry-1 gp center code">
+            <div class="xx-12 rg-xx-6 lg-xx-4 br pdy-1">.xx-12 .rg-xx-6 .lg-xx-4</div>
+            <div class="xx-12 rg-xx-6 lg-xx-8 br pdy-1">.xx-12 .rg-xx-6 .lg-xx-8</div>
         </div>
 
-    </div>
 
-    <div class="breakout-r">
-        <h3 class="mt-3">Columns</h3>
-        <p><code>.columns</code></p>
-        <p>Text will be displayed in columns. The number of columns depends on the available width.</p>
+        <h3>Columns</h3>
+        <p><code>.columns *</code></p>
+        <p>Elements will be displayed in columns. The number of columns depends on the available width.</p>
 
     </div>
 
     <!-- Code Example -->
-    <div class="full indicator mb">
+    <div class="full bry br-dotted br-small br-gray mono mb">
         &lt;div class="x"&gt;
         <div class="x">
-            <div class="breakout-r indicator border-radius">
+            <div class="breakout-r indicator">
                 &lt;div class="breakout-r columns"&gt;&lt;/div&gt;
             </div>
         </div>

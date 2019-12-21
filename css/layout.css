@@ -18,6 +18,22 @@
   display: table-cell;
 }
 
+.align-baseline {
+  vertical-align: baseline;
+}
+
+.align-top {
+  vertical-align: top;
+}
+
+.align-middle {
+  vertical-align: middle;
+}
+
+.align-bottom {
+  vertical-align: bottom;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -61,7 +77,7 @@
 }
 
 .md-max-width {
-  max-width: var(--medium-width);
+  max-width: var(--mid-width);
 }
 
 .lg-max-width {

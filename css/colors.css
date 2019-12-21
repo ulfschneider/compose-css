@@ -19,11 +19,11 @@
   --base-color: #333;
   --base-background: #fff;
   --mark-background: #ffe9b3;
-  --kbd-background: var(--silver);
-  --code-color: var(--white);
-  --code-background: #333;
-  --link-color: var(--base-color);
-  --text-decoration-color: var(--base-color);
+  --kbd-background:var(--silver);
+  --code-color:var(--base-color);
+  --code-background:var(--silver);
+  --link-color:var(--base-color);
+  --text-decoration-color:var(--base-color);
   color: var(--base-color);
 }
 
@@ -200,233 +200,233 @@
    Use with another border utility that sets border-width and style 
    i.e .border { border-width: 1px); border-style: solid); }     
 */
-.border-navy {
+.br-navy {
   border-color: var(--navy);
 }
 
-.border-blue {
+.br-blue {
   border-color: var(--blue);
 }
 
-.border-aqua {
+.br-aqua {
   border-color: var(--aqua);
 }
 
-.border-teal {
+.br-teal {
   border-color: var(--teal);
 }
 
-.border-olive {
+.br-olive {
   border-color: var(--olive);
 }
 
-.border-green {
+.br-green {
   border-color: var(--green);
 }
 
-.border-lime {
+.br-lime {
   border-color: var(--lime);
 }
 
-.border-yellow {
+.br-yellow {
   border-color: var(--yellow);
 }
 
-.border-orange {
+.br-orange {
   border-color: var(--orange);
 }
 
-.border-red {
+.br-red {
   border-color: var(--red);
 }
 
-.border-fuchsia {
+.br-fuchsia {
   border-color: var(--fuchsia);
 }
 
-.border-purple {
+.br-purple {
   border-color: var(--purple);
 }
 
-.border-maroon {
+.br-maroon {
   border-color: var(--maroon);
 }
 
-.border-white {
+.br-white {
   border-color: var(--white);
 }
 
-.border-gray {
+.br-gray {
   border-color: var(--gray);
 }
 
-.border-silver {
+.br-silver {
   border-color: var(--silver);
 }
 
-.border-black {
+.br-black {
   border-color: var(--black);
 }
 
-.border-base-color {
+.br-base-color {
   border-color: var(--base-color);
 }
 
-.border-base-background {
+.br-base-background {
   border-color: var(--base-background);
 }
 
 /* Fills for SVG */
-.fill-navy {
+.flnavy {
   fill: var(--navy);
 }
 
-.fill-blue {
+.flblue {
   fill: var(--blue);
 }
 
-.fill-aqua {
+.flaqua {
   fill: var(--aqua);
 }
 
-.fill-teal {
+.flteal {
   fill: var(--teal);
 }
 
-.fill-olive {
+.flolive {
   fill: var(--olive);
 }
 
-.fill-green {
+.flgreen {
   fill: var(--green);
 }
 
-.fill-lime {
+.fllime {
   fill: var(--lime);
 }
 
-.fill-yellow {
+.flyellow {
   fill: var(--yellow);
 }
 
-.fill-orange {
+.florange {
   fill: var(--orange);
 }
 
-.fill-red {
+.flred {
   fill: var(--red);
 }
 
-.fill-fuchsia {
+.flfuchsia {
   fill: var(--fuchsia);
 }
 
-.fill-purple {
+.flpurple {
   fill: var(--purple);
 }
 
-.fill-maroon {
+.flmaroon {
   fill: var(--maroon);
 }
 
-.fill-white {
+.flwhite {
   fill: var(--white);
 }
 
-.fill-gray {
+.flgray {
   fill: var(--gray);
 }
 
-.fill-silver {
+.flsilver {
   fill: var(--silver);
 }
 
-.fill-black {
+.flblack {
   fill: var(--black);
 }
 
-.fill-base-color {
+.flbase-color {
   fill: var(--base-color);
 }
 
-.fill-base-background {
+.flbase-background {
   fill: var(--base-background);
 }
 
 /* Strokes for SVG */
-.stroke-navy {
+.st-navy {
   stroke: #001f3f;
 }
 
-.stroke-blue {
+.st-blue {
   stroke: var(--blue);
 }
 
-.stroke-aqua {
+.st-aqua {
   stroke: var(--aqua);
 }
 
-.stroke-teal {
+.st-teal {
   stroke: var(--teal);
 }
 
-.stroke-olive {
+.st-olive {
   stroke: var(--olive);
 }
 
-.stroke-green {
+.st-green {
   stroke: var(--green);
 }
 
-.stroke-lime {
+.st-lime {
   stroke: var(--lime);
 }
 
-.stroke-yellow {
+.st-yellow {
   stroke: var(--yellow);
 }
 
-.stroke-orange {
+.st-orange {
   stroke: var(--orange);
 }
 
-.stroke-red {
+.st-red {
   stroke: var(--red);
 }
 
-.stroke-fuchsia {
+.st-fuchsia {
   stroke: var(--fuchsia);
 }
 
-.stroke-purple {
+.st-purple {
   stroke: var(--purple);
 }
 
-.stroke-maroon {
+.st-maroon {
   stroke: var(--maroon);
 }
 
-.stroke-white {
+.st-white {
   stroke: var(--white);
 }
 
-.stroke-gray {
+.st-gray {
   stroke: var(--gray);
 }
 
-.stroke-silver {
+.st-silver {
   stroke: var(--silver);
 }
 
-.stroke-black {
+.st-black {
   stroke: var(--black);
 }
 
-.stroke-base-color {
+.st-base-color {
   stroke: var(--base-color);
 }
 
-.stroke-base-background {
+.st-base-background {
   stroke: var(--base-background);
 }
 

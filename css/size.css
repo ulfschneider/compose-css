@@ -3,16 +3,15 @@
   --regular-width: 36rem;
   --mid-width: 52rem;
   --large-width: 64rem;
-  --sizing: 1rem;
-  --sizing-factor: 1.62;
-  --sizing-1: calc(var(--sizing-factor) * var(--sizing));
-  --sizing-2: calc(var(--sizing-1) * var(--sizing-factor));
-  --sizing-3: calc(var(--sizing-2) * var(--sizing-factor));
-  --sizing-4: calc(var(--sizing-3) * var(--sizing-factor));
-  --sizing-minus-1: calc(var(--sizing) / var(--sizing-factor));
-  --sizing-minus-2: calc(var(--sizing-minus-1) / var(--sizing-factor));
-  --sizing-minus-3: calc(var(--sizing-minus-2) / var(--sizing-factor));
-  --sizing-minus-4: calc(var(--sizing-minus-3) / var(--sizing-factor));
+  --size: 1rem;
+  --size-factor: 1.62;
+  --size-1:calc(var(--size-factor) * var(--size));
+  --size-2:calc(var(--size-1) * var(--size-factor));
+  --size-3:calc(var(--size-2) * var(--size-factor));
+  --size-4:calc(var(--size-3) * var(--size-factor));
+  --size--1:calc(var(--size) / var(--size-factor));
+  --size--2:calc(var(--size--1) / var(--size-factor));
+  --size--3:calc(var(--size--2) / var(--size-factor));
+  --size--4:calc(var(--size--3) / var(--size-factor));
 }
 
-/*# sourceMappingURL=size.css.map */
