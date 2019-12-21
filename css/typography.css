@@ -398,7 +398,7 @@ figcaption{
 }
 
 .font{
-  font-size:var(--size);
+  font-size:var(--size); 
 }
 
 .font-1{
@@ -467,4 +467,300 @@ figcaption{
 
 .line--4{
   line-height:var(--size--4);
+}
+
+@media (min-width: 28rem){
+  .sm-font{
+    font-size:var(--size);
+  }
+  
+  .sm-font-1{
+    font-size:var(--size-1);
+  }
+  
+  .sm-font-2{
+    font-size:var(--size-2);
+  }
+  
+  .sm-font-3{
+    font-size:var(--size-3);
+  }
+  
+  .sm-font-4{
+    font-size:var(--size-4);
+  }
+  
+  .sm-font--1{
+    font-size:var(--size--1);
+  }
+  
+  .sm-font--2{
+    font-size:var(--size--2);
+  }
+  
+  .sm-font--3{
+    font-size:var(--size--3);
+  }
+  
+  .sm-font--4{
+    font-size:var(--size--4);
+  }
+  
+  .sm-line{
+    line-height:var(--size);
+  }
+  
+  .sm-line-1{
+    line-height:var(--size-1);
+  }
+  
+  .sm-line-2{
+    line-height:var(--size-2);
+  }
+  
+  .sm-line-3{
+    line-height:var(--size-3);
+  }
+  
+  .sm-line-4{
+    line-height:var(--size-4);
+  }
+  
+  .sm-line--1{
+    line-height:var(--size--1);
+  }
+  
+  .sm-line--2{
+    line-height:var(--size--2);
+  }
+  
+  .sm-line--3{
+    line-height:var(--size--3);
+  }
+  
+  .sm-line--4{
+    line-height:var(--size--4);
+  }
+}
+
+@media (min-width: 36rem){
+  .rg-font{
+    font-size:var(--size);
+  }
+  
+  .rg-font-1{
+    font-size:var(--size-1);
+  }
+  
+  .rg-font-2{
+    font-size:var(--size-2);
+  }
+  
+  .rg-font-3{
+    font-size:var(--size-3);
+  }
+  
+  .rg-font-4{
+    font-size:var(--size-4);
+  }
+  
+  .rg-font--1{
+    font-size:var(--size--1);
+  }
+  
+  .rg-font--2{
+    font-size:var(--size--2);
+  }
+  
+  .rg-font--3{
+    font-size:var(--size--3);
+  }
+  
+  .rg-font--4{
+    font-size:var(--size--4);
+  }
+  
+  .rg-line{
+    line-height:var(--size);
+  }
+  
+  .rg-line-1{
+    line-height:var(--size-1);
+  }
+  
+  .rg-line-2{
+    line-height:var(--size-2);
+  }
+  
+  .rg-line-3{
+    line-height:var(--size-3);
+  }
+  
+  .rg-line-4{
+    line-height:var(--size-4);
+  }
+  
+  .rg-line--1{
+    line-height:var(--size--1);
+  }
+  
+  .rg-line--2{
+    line-height:var(--size--2);
+  }
+  
+  .rg-line--3{
+    line-height:var(--size--3);
+  }
+  
+  .rg-line--4{
+    line-height:var(--size--4);
+  }
+}
+
+@media (min-width: 52rem){
+  .md-font{
+    font-size:var(--size);
+  }
+  
+  .md-font-1{
+    font-size:var(--size-1);
+  }
+  
+  .md-font-2{
+    font-size:var(--size-2);
+  }
+  
+  .md-font-3{
+    font-size:var(--size-3);
+  }
+  
+  .md-font-4{
+    font-size:var(--size-4);
+  }
+  
+  .md-font--1{
+    font-size:var(--size--1);
+  }
+  
+  .md-font--2{
+    font-size:var(--size--2);
+  }
+  
+  .md-font--3{
+    font-size:var(--size--3);
+  }
+  
+  .md-font--4{
+    font-size:var(--size--4);
+  }
+  
+  .md-line{
+    line-height:var(--size);
+  }
+  
+  .md-line-1{
+    line-height:var(--size-1);
+  }
+  
+  .md-line-2{
+    line-height:var(--size-2);
+  }
+  
+  .md-line-3{
+    line-height:var(--size-3);
+  }
+  
+  .md-line-4{
+    line-height:var(--size-4);
+  }
+  
+  .md-line--1{
+    line-height:var(--size--1);
+  }
+  
+  .md-line--2{
+    line-height:var(--size--2);
+  }
+  
+  .md-line--3{
+    line-height:var(--size--3);
+  }
+  
+  .md-line--4{
+    line-height:var(--size--4);
+  }
+}
+
+@media (min-width: 64rem){
+  .lg-font{
+    font-size:var(--size);
+  }
+  
+  .lg-font-1{
+    font-size:var(--size-1);
+  }
+  
+  .lg-font-2{
+    font-size:var(--size-2);
+  }
+  
+  .lg-font-3{
+    font-size:var(--size-3);
+  }
+  
+  .lg-font-4{
+    font-size:var(--size-4);
+  }
+  
+  .lg-font--1{
+    font-size:var(--size--1);
+  }
+  
+  .lg-font--2{
+    font-size:var(--size--2);
+  }
+  
+  .lg-font--3{
+    font-size:var(--size--3);
+  }
+  
+  .lg-font--4{
+    font-size:var(--size--4);
+  }
+  
+  .lg-line{
+    line-height:var(--size);
+  }
+  
+  .lg-line-1{
+    line-height:var(--size-1);
+  }
+  
+  .lg-line-2{
+    line-height:var(--size-2);
+  }
+  
+  .lg-line-3{
+    line-height:var(--size-3);
+  }
+  
+  .lg-line-4{
+    line-height:var(--size-4);
+  }
+  
+  .lg-line--1{
+    line-height:var(--size--1);
+  }
+  
+  .lg-line--2{
+    line-height:var(--size--2);
+  }
+  
+  .lg-line--3{
+    line-height:var(--size--3);
+  }
+  
+  .lg-line--4{
+    line-height:var(--size--4);
+  }
 }

@@ -16,6 +16,7 @@
     "postcss-reporter": "^6.0.1"
   },
   "scripts": {
+    "watch": "postcss src/*.css --dir css --config postcss.config.js --watch",
     "build": "postcss src/*.css --dir css --config postcss.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

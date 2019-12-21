@@ -1,10 +1,10 @@
-@import "reset.css";
-@import "size.css";
-@import "white-space.css";
-@import "colors.css";
-@import "borders.css";
-@import "img.css";
-@import "grid.css";
-@import "layout.css";
-@import "typography.css";
+@import "reset";
+@import "size";
+@import "white-space";
+@import "colors";
+@import "borders";
+@import "img";
+@import "grid";
+@import "layout";
+@import "typography";
 
