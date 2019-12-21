@@ -1,0 +1,30 @@
+{
+  "name": "groundwork",
+  "version": "0.1.0",
+  "description": "CSS Utility",
+  "main": "src/groundwork.css",
+  "devDependencies": {
+    "autoprefixer": "^9.7.3",
+    "cssstats": "^3.4.0",
+    "postcss-calc": "^7.0.1",
+    "postcss-custom-properties": "^9.0.2",
+    "postcss-discard-comments": "^4.0.2",
+    "postcss-custom-media": "^7.0.8",
+    "postcss-import": "^12.0.1",
+    "postcss-reporter": "^6.0.1"
+  },
+  "scripts": {
+    "build": "postcss src/*.css --dir css --config postcss.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ulfschneier/groundwork.git"
+  },
+  "author": "Ulf Schneider",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ulfschneier/groundwork/issues"
+  },
+  "homepage": "https://github.com/ulfschneier/groundwork#readme"
+}

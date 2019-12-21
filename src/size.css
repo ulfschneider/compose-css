@@ -1,0 +1,17 @@
+:root {
+  --small-width: 28rem;
+  --regular-width: 36rem;
+  --mid-width: 52rem;
+  --large-width: 64rem;
+  --size: 1rem;
+  --size-factor: 1.62;
+  --size-1:calc(var(--size-factor) * var(--size));
+  --size-2:calc(var(--size-1) * var(--size-factor));
+  --size-3:calc(var(--size-2) * var(--size-factor));
+  --size-4:calc(var(--size-3) * var(--size-factor));
+  --size--1:calc(var(--size) / var(--size-factor));
+  --size--2:calc(var(--size--1) / var(--size-factor));
+  --size--3:calc(var(--size--2) / var(--size-factor));
+  --size--4:calc(var(--size--3) / var(--size-factor));
+}
+

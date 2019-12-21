@@ -1,13 +1,13 @@
-.fit {
-  max-width: 100%;
+.fit{
+  max-width:100%;
 }
 
-.fit-cover {
-  object-fit: cover;
+.fit-cover{
+  -o-object-fit:cover;
+     object-fit:cover;
 }
 
-.fit-contain {
-  object-fit: contain;
+.fit-contain{
+  -o-object-fit:contain;
+     object-fit:contain;
 }
-
-/*# sourceMappingURL=img.css.map */
