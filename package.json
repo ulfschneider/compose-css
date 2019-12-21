@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "CSS Utility",
   "main": "src/groundwork.css",
+  "style": "src/groundwork.css",
   "devDependencies": {
     "autoprefixer": "^9.7.3",
     "cssstats": "^3.4.0",
