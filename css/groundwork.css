@@ -45,8 +45,10 @@ th{
 
 th,
 td{
-    padding:0 0.38104rem;
-    padding:0 var(--size--2);
+    padding-left:0.61728rem;
+    padding-left:var(--size--1);
+    padding-right:0.61728rem;
+    padding-right:var(--size--1);
 }
 
 th:first-child,
@@ -73,8 +75,10 @@ th.pdx,
 table.pdx td,
 tr.pdx td,
 td.pdx{
-    padding:0 1rem;
-    padding:0 var(--size);
+    padding-left:1rem;
+    padding-left:var(--size);
+    padding-right:1rem;
+    padding-right:var(--size);
 }
 
 table.pdy th,
@@ -83,8 +87,10 @@ th.pdy,
 table.pdy td,
 tr.pdy td,
 td.pdy{
-    padding:1rem 0;
-    padding:var(--size) 0;
+    padding-top:1rem;
+    padding-top:var(--size);
+    padding-bottom:1rem;
+    padding-bottom:var(--size);
 }
 
 table.pdx--1 th,
@@ -93,8 +99,10 @@ th.pdx--1,
 table.pdx--1 td,
 tr.pdy--1 td,
 td.pdx--1{
-    padding:0 0.61728rem;
-    padding:0 var(--size--1);
+    padding-left:0.61728rem;
+    padding-left:var(--size--1);
+    padding-right:0.61728rem;
+    padding-right:var(--size--1);
 }
 
 table.pdy--1 th,
@@ -102,8 +110,10 @@ thead.pdy--1 th th.pdy--1,
 table.pdy--1 td,
 tr.pdy--1 td,
 td.pdy--1{
-    padding:1rem 0;
-    padding:var(--size) 0;
+    padding-top:0.61728rem;
+    padding-top:var(--size--1);
+    padding-bottom:0.61728rem;
+    padding-bottom:var(--size--1);
 }
 
 table.pdx--2 th,
@@ -112,8 +122,10 @@ th.pdx--2,
 table.pdx--2 td,
 tr.pdy--2 td,
 td.pdx--2{
-    padding:0 0.38104rem;
-    padding:0 var(--size--2);
+    padding-left:0.38104rem;
+    padding-left:var(--size--2);
+    padding-right:0.38104rem;
+    padding-right:var(--size--2);
 }
 
 table.pdy--2 th,
@@ -122,8 +134,10 @@ th.pdy--2,
 table.pdy--2 td,
 tr.pdy--2 td,
 td.pdy--2{
-    padding:0.38104rem 0;
-    padding:var(--size--2) 0;
+    padding-top:0.38104rem;
+    padding-top:var(--size--2);
+    padding-bottom:0.38104rem;
+    padding-bottom:var(--size--2);
 }
 
 table.brb th,
@@ -2185,7 +2199,7 @@ tr.brb td td.brb{
   --link-text-decoration:underline;
   --text-underline-offset:0.25em;
   --text-decoration-thickness:0.1em;
-  --font-variant-numeric:tabular-nums;
+  --font-variant-numeric:normal;
   --h1-margin-top:var(--size-1);
   --h2-margin-top:var(--size-2);
   --h3-margin-top:var(--size-2);
@@ -2210,7 +2224,8 @@ sans-serif;
   text-underline-offset:var(--text-underline-offset);
   text-decoration-thickness:0.1em;
   text-decoration-thickness:var(--text-decoration-thickness);
-  font-variant-numeric:var(--font-variant-normal);
+  font-variant-numeric:normal;
+  font-variant-numeric:var(--font-variant-numeric);
 }
 
 *{
@@ -2504,7 +2519,7 @@ p.pindent{
 .no-pindent p+p,
 p.no-pindent{
   text-indent:0;
-  margin-top:0;
+  margin-top:1em;
   margin-bottom:1em;
 }
 
@@ -2541,14 +2556,16 @@ blockquote>code{
 }
 
 pre{
-  margin-top:1rem;
-  margin-top:var(--size);
-  margin-bottom:1rem;
-  margin-bottom:var(--size);
-  border-top:var(--border-width-small) dotted #aaaaaa;
-  border-top:var(--border-width-small) dotted var(--gray);
-  border-bottom:var(--border-width-small) dotted #aaaaaa;
-  border-bottom:var(--border-width-small) dotted var(--gray);
+  margin-top:1em;
+  margin-bottom:1em;
+  padding-top:0.61728em;
+  padding-top:calc(1em/var(--size-factor));
+  padding-bottom:0.61728em;
+  padding-bottom:calc(1em/var(--size-factor));
+  border-top:1px dotted #aaaaaa;
+  border-top:var(--border-width-sm) dotted var(--gray);
+  border-bottom:1px dotted #aaaaaa;
+  border-bottom:var(--border-width-sm) dotted var(--gray);
 }
 
 .tag{
@@ -2607,7 +2624,7 @@ figcaption{
   font-size:calc(var(--size) - var(--size--4));
 }
 
-.fs{
+.fs, .fs-default{
   font-size:1rem;
   font-size:var(--size);
   line-height:1.62em;
@@ -2654,7 +2671,7 @@ figcaption{
   line-height:var(--size);
 }
 
-.lh-1{
+.lh-1, .lh-default{
   line-height:1.62rem;
   line-height:var(--size-1);
 }

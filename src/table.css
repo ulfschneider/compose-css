@@ -14,7 +14,8 @@ th {
 
 th,
 td {
-    padding: 0 var(--size--2);
+    padding-left: var(--size--1);
+    padding-right: var(--size--1);
 }
 
 th:first-child,
@@ -40,7 +41,8 @@ th.pdx,
 table.pdx td,
 tr.pdx td,
 td.pdx {
-    padding: 0 var(--size);
+    padding-left: var(--size);
+    padding-right: var(--size);
 }
 
 table.pdy th,
@@ -49,7 +51,8 @@ th.pdy,
 table.pdy td,
 tr.pdy td,
 td.pdy {
-    padding: var(--size) 0;
+    padding-top: var(--size);
+    padding-bottom: var(--size);
 }
 
 table.pdx--1 th,
@@ -58,7 +61,8 @@ th.pdx--1,
 table.pdx--1 td,
 tr.pdy--1 td,
 td.pdx--1 {
-    padding: 0 var(--size--1);
+    padding-left: var(--size--1);
+    padding-right: var(--size--1);
 }
 
 table.pdy--1 th,
@@ -66,7 +70,8 @@ thead.pdy--1 th th.pdy--1,
 table.pdy--1 td,
 tr.pdy--1 td,
 td.pdy--1 {
-    padding: var(--size) 0;
+    padding-top: var(--size--1);
+    padding-bottom: var(--size--1);
 }
 
 table.pdx--2 th,
@@ -75,7 +80,8 @@ th.pdx--2,
 table.pdx--2 td,
 tr.pdy--2 td,
 td.pdx--2 {
-    padding: 0 var(--size--2);
+    padding-left: var(--size--2);
+    padding-right: var(--size--2);
 }
 
 table.pdy--2 th,
@@ -84,7 +90,8 @@ th.pdy--2,
 table.pdy--2 td,
 tr.pdy--2 td,
 td.pdy--2 {
-    padding: var(--size--2) 0;
+    padding-top: var(--size--2);
+    padding-bottom: var(--size--2);
 }
 
 table.brb th,

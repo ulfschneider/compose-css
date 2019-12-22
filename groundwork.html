@@ -3,9 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
     <link rel="stylesheet" type="text/css" href="css/groundwork.css">
     <title>Groundwork</title>
 </head>
@@ -20,6 +17,7 @@
     :root {
         --h2-margin-top: var(--size-4);
         --h3-margin-top: var(--size-3);
+        --code-background: transparent;
     }
 </style>
 
@@ -36,6 +34,7 @@
 
     <div class="breakout-r mrt-3 caps small bold">
         <div class="md-columns-4 sm-columns-3 columns-2 lh-2">
+            <div><a href="#notation" class="no-text-decoration">Notation</a></div>
             <div><a href="#typography" class="no-text-decoration">Typography</a></div>
             <div><a href="#tables" class="no-text-decoration">Tables</a></div>
             <div><a href="#figures" class="no-text-decoration">Figures</a></div>
@@ -45,6 +44,30 @@
             <div><a href="#grid" class="no-text-decoration">Grid</a></div>
         </div>
     </div>
+
+    <h2 id="notation">Notation</h2>
+    <table class="pdy--2">
+        <tr>
+            <td><code>div /div</code></td>
+            <td>HTML tags are indicated by there name. The closing HTML tag is indicated with a prefixed slash.</td>
+        </tr>
+        <tr>
+            <td><code>.left</code></td>
+            <td>CSS classes are indicated with a prefixed dot</td>
+        </tr>
+        <tr>
+            <td><code>.left.middle</code></td>
+            <td>The assignment of multiple CSS classes to a single HTML tag is indicated with a
+                prefixed dot for each CSS class; and there is no white space between classes.</td>
+        </tr>
+        <tr>
+            <td><code class="no-break">i .i .italic</code></td>
+            <td>Multiple styling options that prodice the same result are indicated by HTML tag names or CSS class
+                names, each one seperated by white
+                space.</td>
+        </tr>
+
+    </table>
 
     <div class="breakout-r">
         <h2 id="typography">Typography</h2>
@@ -59,7 +82,7 @@
             <p><del class="mrr">Deleted</del> <code>del</code> <code>.del</code></p>
             <p><span class="mrr caps">Caps</span> <code>.caps</code></p>
             <p><span class="mrr space">Spaced</span> <code>.space</code></p>
-            <p><mark class="mrr">Highlighted</mark> <code>mark</code> <code>.mnark</code></p>
+            <p><mark class="mrr">Highlighted</mark> <code>mark</code> <code>.mark</code></p>
             <p><kbd class="mrr">Ctrl+K</kbd> <code>kbd</code> <code>.kbd</code></p>
             <p><span class="mrr">Text <sup>superscript</sup></span> <code>sup</code> <code>.sup</code></p>
             <p><span class="mrr">Text <sub>subscript</sub></span> <code>sub</code> <code>.sup</code></p>
@@ -70,11 +93,11 @@
         </div>
     </div>
 
-    <div>
+    <div class="sm-max-width">
 
         <h3>Unordered List</h3>
-        <p><code>ul li</code></p>
-        <ul class="sm-max-width">
+
+        <ul>
             <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
                 massa.
             </li>
@@ -93,9 +116,12 @@
                 pretium. Integer tincidunt.
             </li>
         </ul>
+        <pre>ul
+    li 
+    /li
+/ul</pre>
         <h3>Ordered List</h3>
-        <p><code>ol li</code></p>
-        <ol class="sm-max-width">
+        <ol>
             <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
                 massa.
             </li>
@@ -114,11 +140,12 @@
                 pretium. Integer tincidunt.
             </li>
         </ol>
-
+        <pre>ol
+    li 
+    /li
+/ol</pre>
         <h3>Indented Paragraphs</h3>
-        <p><code>.pindent  p</code> <code>p.pindent</code></p>
-        <p><code>.no-pindent p</code> <code>p.no-pindent</code><small> to remove indentation</small></p>
-        <div class="pindent sm-max-width">
+        <div class="pindent">
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
                 massa. </p>
 
@@ -128,342 +155,370 @@
             <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
                 pretium. Integer tincidunt. </p>
         </div>
+        <pre>div .pindent  
+    p
+    /p 
+    p .no-pindent //remove indentation for this p
+    /p
+/div
+
+p .pindent 
+/p</pre>
 
         <h3>Paragraphs</h3>
-        <p><code>p</code></p>
-        <div class="sm-max-width">
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                massa. </p>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+            massa. </p>
 
-            <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-            </p>
+        <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+        </p>
 
-            <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
-                pretium. Integer tincidunt. </p>
+        <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
+            pretium. Integer tincidunt. </p>
+        <pre>p 
+/p</pre>
+        <h3>Blockquote</h3>
+        <figure>
+            <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                    Aenean
+                    massa. </p>
 
-            <h3>Blockquote</h3>
-            <p><code>blockquote</code> <code>blockquote p</code> <code>figure blockquote p</code></p>
-            <figure>
-                <blockquote>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                        Aenean
-                        massa. </p>
+                <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis
+                    enim.
+                </p>
+                <figcaption>Cite</figcaption>
+            </blockquote>
+        </figure>
+        <pre>blockquote 
+/blockquote 
 
-                    <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-                        enim.
-                    </p>
-                    <figcaption>Cite</figcaption>
-                </blockquote>
-            </figure>
-        </div>
+blockquote 
+    p 
+    /p
+/blockquote
 
-        <div class="x-12">
-            <div class="xx-12 rg-xx-6">
-                <h3>Font Size</h3>
-                <table>
-                    <tr>
-                        <td class="fs--1 bottom right">Aa</td>
-                        <td class="code bottom">.fs--1</td>
-                    </tr>
-                    <tr>
-                        <td class="fs bottom right">Aa</td>
-                        <td class="code bottom no-break">.fs</td>
-                    </tr>
-                    <tr>
-                        <td class="fs-1 bottom right">Aa</td>
-                        <td class="code bottom">.fs-1</td>
-                    </tr>
-                    <tr>
-                        <td class="fs-2 bottom right">Aa</td>
-                        <td class="code bottom">.fs-2</td>
-                    </tr>
-                    <tr>
-                        <td class="fs-3 bottom right">Aa</td>
-                        <td class="code bottom">.fs-3</td>
-                    </tr>
-                    <tr>
-                        <td class="fs-4 bottom right">Aa</td>
-                        <td class="code bottom">.fs-4</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="xx-12 rg-xx-6">
-                <h3>Line Height</h3>
-                <table class="pdx--2">
-                    <tr>
-                        <td class="lh--1 bg-silver brt middle">Aa</td>
-                        <td class="code middle">.lh--1</td>
-                    </tr>
-                    <tr>
-                        <td class="lh bg-silver brt middle">Aa</td>
-                        <td class="code middle">.lh</td>
-                    </tr>
-                    <tr>
-                        <td class="lh-1 bg-silver brt middle">Aa</td>
-                        <td class="code middle no-break">.lh-1</td>
-                    </tr>
-                    <tr>
-                        <td class="lh-2 bg-silver brt  middle">Aa</td>
-                        <td class="code middle">.lh-2</td>
-                    </tr>
-                    <tr>
-                        <td class="lh-3 bg-silver brt  middle">Aa</td>
-                        <td class="code middle">.lh-3</td>
-                    </tr>
-                    <tr>
-                        <td class="lh-4 bg-silver brt middle">Aa </td>
-                        <td class="code middle">.lh-4</td>
-                    </tr>
-                </table>
-            </div>
+figure 
+    blockquote 
+        p 
+        /p
+    /blockquote
+    figcaption 
+    /figcaption 
+/figure
+</pre>
+    </div>
 
-            <h3>Numbers</h3>
-            <p>The availability of number features depends on the typeface capabilities. </p>
-            <table class="pdy--2">
-                <tr>
-                    <td class="fs-2 ft-num-normal bottom">13679.05</td>
-                    <td class="bottom"><code>.ft-num-normal</code></td>
-                </tr>
-                <tr>
-                    <td class="fs-2 ft-num-tab bottom">13679.05</td>
-                    <td class="bottom"><code>.ft-num-tab</code></td>
-                </tr>
-                <tr>
-                    <td class="fs-2 ft-num-zero bottom">13679.05</td>
-                    <td class="code bottom">.ft-num-zero</td>
-                </tr>
-                <tr>
-                    <td class="fs-2 ft-num-onum bottom">13679.05</td>
-                    <td class="code bottom">.ft-num-onum</td>
-                </tr>
-                <tr>
-                    <td class="fs-2 ft-num-lnum bottom">13679.05</td>
-                    <td class="code bottom">.ft-num-lnum</td>
-                </tr>
-
-            </table>
-        </div>
-
-        <div>
-            <h2 id="tables">Tables</h2>
+    <div class="x-12">
+        <div class="xx-12 rg-xx-6">
+            <h3>Font Size</h3>
             <table>
-                <thead>
-                    <th>
-                    <th></th>
-                    <th>
-                    <th></th>
-                </thead>
                 <tr>
-                    <td>dd</td>
-                    <td>
-                    <td></td>
+                    <td class="fs--1 bottom right">Aa</td>
+                    <td class="code bottom">.fs--1</td>
                 </tr>
                 <tr>
-                    <td>dd</td>
-                    <td>
-                    <td></td>
+                    <td class="fs bottom right">Aa</td>
+                    <td class="code bottom no-break">.fs, .fs-default</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td>
-                    <td></td>
+                    <td class="fs-1 bottom right">Aa</td>
+                    <td class="code bottom">.fs-1</td>
+                </tr>
+                <tr>
+                    <td class="fs-2 bottom right">Aa</td>
+                    <td class="code bottom">.fs-2</td>
+                </tr>
+                <tr>
+                    <td class="fs-3 bottom right">Aa</td>
+                    <td class="code bottom">.fs-3</td>
+                </tr>
+                <tr>
+                    <td class="fs-4 bottom right">Aa</td>
+                    <td class="code bottom">.fs-4</td>
+                </tr>
+            </table>
+        </div>
+        <div class="xx-12 rg-xx-6">
+            <h3>Line Height</h3>
+            <table class="pdx--2">
+                <tr>
+                    <td class="lh--1 bg-silver brt middle">Aa</td>
+                    <td class="code middle">.lh--1</td>
+                </tr>
+                <tr>
+                    <td class="lh bg-silver brt middle">Aa</td>
+                    <td class="code middle">.lh</td>
+                </tr>
+                <tr>
+                    <td class="lh-1 bg-silver brt middle">Aa</td>
+                    <td class="code middle no-break">.lh-1, .lh-default</td>
+                </tr>
+                <tr>
+                    <td class="lh-2 bg-silver brt  middle">Aa</td>
+                    <td class="code middle">.lh-2</td>
+                </tr>
+                <tr>
+                    <td class="lh-3 bg-silver brt  middle">Aa</td>
+                    <td class="code middle">.lh-3</td>
+                </tr>
+                <tr>
+                    <td class="lh-4 bg-silver brt middle">Aa </td>
+                    <td class="code middle">.lh-4</td>
                 </tr>
             </table>
         </div>
 
+        <h3>Numbers</h3>
+        <p>The availability of <code>font-variant-numeric</code> features depends on the typeface capabilities. </p>
+        <table class="pdy--2">
+            <tr>
+                <td class="fs-2 ft-num-normal bottom">13679.05</td>
+                <td class="bottom"><code>.ft-num-normal</code></td>
+            </tr>
+            <tr>
+                <td class="fs-2 ft-num-zero bottom">13679.05</td>
+                <td class="code bottom">.ft-num-zero</td>
+            </tr>
+            <tr>
+                <td class="fs-2 ft-num-onum bottom">13679.05</td>
+                <td class="code bottom">.ft-num-onum</td>
+            </tr>
+            <tr>
+                <td class="fs-2 ft-num-lnum bottom">13679.05</td>
+                <td class="code bottom">.ft-num-lnum</td>
+            </tr>
+            <tr>
+                <td class="fs-2 ft-num-tab bottom">13679.05</td>
+                <td class="bottom"><code>.ft-num-tab //default for tables</code></td>
+            </tr>
 
-        <div>
-            <h2 id="figures">Figures</h2>
-            <p><code>figure figcaption</code></p>
-            <figure class="my">
-                <img src="resources/james-adams-unsplash.jpg" />
-                <figcaption>Photo by James Adams on Unsplash</figcaption>
-            </figure>
-        </div>
+        </table>
+    </div>
 
-        <div>
-            <div class="x-12 gp">
-                <div>
-                    <h2 id="borders">Borders</h2>
-                    <h3>Border</h3>
-                </div>
-                <div class="xx-4 br brw-rg pd-1 bg-silver"></div>
-                <div class="xx-8"><code>&lt;div class="br"&gt;&lt/div&gt;</code></div>
-                <div class="xx-4 bry brw-rg pd-1 bg-silver"></div>
-                <div class="xx-8"><code>&lt;div class="bry"&gt;&lt/div&gt;</code></div>
-                <div class="xx-4 brx brw-rg pd-1 bg-silver"></div>
-                <div class="xx-8"><code>&lt;div class="brx"&gt;&lt/div&gt;</code></div>
-                <div class="xx-4 brt brw-rg pd-1 bg-silver"></div>
-                <div class="xx-8"><code>&lt;div class="brt"&gt;&lt/div&gt;</code></div>
-                <div class="xx-4 brr brw-rg pd-1 bg-silver"></div>
-                <div class="xx-8"><code>&lt;div class="brr"&gt;&lt/div&gt;</code></div>
-                <div class="xx-4 brb brw-rg pd-1 bg-silver"></div>
-                <div class="xx-8"><code>&lt;div class="brb"&gt;&lt/div&gt;</code></div>
-                <div class="xx-4 brl brw-rg pd-1 bg-silver"></div>
-                <div class="xx-8"><code>&lt;div class="brl"&gt;&lt/div&gt;</code></div>
+    <div>
+        <h2 id="tables">Tables</h2>
+        <table>
+            <thead>
+                <th>
+                <th></th>
+                <th>
+                <th></th>
+            </thead>
+            <tr>
+                <td>dd</td>
+                <td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>dd</td>
+                <td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
 
-                <h3>Border Style</h3>
-                <div class="xx-4 br-dashed brw-rg pd-1 bg-silver"></div>
-                <div class="xx-8"><code>&lt;div class="br-dashed"&gt;&lt/div&gt;</code></div>
-                <div class="xx-4 br-dotted brw-rg pd-1 bg-silver"></div>
-                <div class="xx-8"><code>&lt;div class="br-dotted"&gt;&lt/div&gt;</code></div>
-                <div class="xx-4 br-solid brw-rg pd-1 bg-silver"></div>
-                <div class="xx-8"><code>&lt;div class="br-solid"&gt;&lt/div&gt;</code></div>
 
-                <h3>Border Width</h3>
-                <div class="xx-4 br brw-0 pd-1 bg-silver"></div>
-                <div class="xx-8"><code>&lt;div class="br brw-0"&gt;&lt/div&gt;</code></div>
-                <div class="xx-4 br brw-sm pd-1 bg-silver"></div>
-                <div class="xx-8"><code>&lt;div class="br brw-sm"&gt;&lt/div&gt;</code></div>
-                <div class="xx-4 br brw-rg pd-1 bg-silver"></div>
-                <div class="xx-8"><code>&lt;div class="br brw-rg"&gt;&lt/div&gt;</code></div>
-                <div class="xx-4 br brw-md pd-1 bg-silver"></div>
-                <div class="xx-8"><code>&lt;div class="br brw-md"&gt;&lt/div&gt;</code></div>
-                <div class="xx-4 br brw-lg pd-1 bg-silver"></div>
-                <div class="xx-8"><code>&lt;div class="br brw-lg"&gt;&lt/div&gt;</code></div>
-                <div class="xx-4 br brw-default pd-1 bg-silver"></div>
-                <div class="xx-8"><code>&lt;div class="br brw-default"&gt;&lt/div&gt;</code></div>
+    <div>
+        <h2 id="figures">Figures</h2>
+        <figure class="my">
+            <img src="resources/james-adams-unsplash.jpg" />
+            <figcaption>Photo by James Adams on Unsplash</figcaption>
+        </figure>
+        <pre>figure 
+    img/
+    figcaption 
+    /figcaption 
+/figure</pre>
+    </div>
 
-                <h3>Border Radius</h3>
-                <div class="xx-4 br brw-rg br-radius-0 pd-1 bg-silver"></div>
-                <div class="xx-8"><code>&lt;div class="br br-radius-0"&gt;&lt/div&gt;</code></div>
-                <div class="xx-4 br brw-rg br-radius--4 pd-1 bg-silver"></div>
-                <div class="xx-8"><code>&lt;div class="br br-radius--4"&gt;&lt/div&gt;</code></div>
-                <div class="xx-4 br brw-rg br-radius--3 pd-1 bg-silver"></div>
-                <div class="xx-8"><code>&lt;div class="br br-radius--3"&gt;&lt/div&gt;</code></div>
-                <div class="xx-4 br brw-rg br-radius--2 pd-1 bg-silver"></div>
-                <div class="xx-8"><code>&lt;div class="br br-radius--2"&gt;&lt/div&gt;</code></div>
-                <div class="xx-4 br brw-rg br-radius--1 pd-1 bg-silver"></div>
-                <div class="xx-8"><code>&lt;div class="br br-radius--1"&gt;&lt/div&gt;</code></div>
-                <div class="xx-4 br brw-rg br-radius pd-1 bg-silver"></div>
-                <div class="xx-8"><code>&lt;div class="br br-radius"&gt;&lt/div&gt;</code></div>
-                <div class="xx-4 br brw-rg br-radius-1 pd-1 bg-silver"></div>
-                <div class="xx-8"><code>&lt;div class="br br-radius-1"&gt;&lt/div&gt;</code></div>
-                <div class="xx-4 br brw-rg br-radius-2 pd-2 bg-silver"></div>
-                <div class="xx-8"><code>&lt;div class="br br-radius-2"&gt;&lt/div&gt;</code></div>
-                <div class="xx-4 br brw-rg br-radius-3 pd-3 bg-silver"></div>
-                <div class="xx-8"><code>&lt;div class="br br-radius-3"&gt;&lt/div&gt;</code></div>
-                <div class="xx-4 br brw-rg br-radius-4 pd-4 bg-silver"></div>
-                <div class="xx-8"><code>&lt;div class="br br-radius-4"&gt;&lt/div&gt;</code></div>
-
+    <div>
+        <div class="x-12 gp">
+            <div>
+                <h2 id="borders">Borders</h2>
+                <h3>Border</h3>
             </div>
+            <div class="xx-4 br brw-rg pd-1 bg-silver"></div>
+            <div class="xx-8"><code>.br</code></div>
+            <div class="xx-4 bry brw-rg pd-1 bg-silver"></div>
+            <div class="xx-8"><code>.bry</code></div>
+            <div class="xx-4 brx brw-rg pd-1 bg-silver"></div>
+            <div class="xx-8"><code>.brx</code></div>
+            <div class="xx-4 brt brw-rg pd-1 bg-silver"></div>
+            <div class="xx-8"><code>.brt</code></div>
+            <div class="xx-4 brr brw-rg pd-1 bg-silver"></div>
+            <div class="xx-8"><code>.brr</code></div>
+            <div class="xx-4 brb brw-rg pd-1 bg-silver"></div>
+            <div class="xx-8"><code>.brb</code></div>
+            <div class="xx-4 brl brw-rg pd-1 bg-silver"></div>
+            <div class="xx-8"><code>.brl</code></div>
+
+            <h3>Border Style</h3>
+            <div class="xx-4 br-dashed brw-rg pd-1 bg-silver"></div>
+            <div class="xx-8"><code>.br-dashed</code></div>
+            <div class="xx-4 br-dotted brw-rg pd-1 bg-silver"></div>
+            <div class="xx-8"><code>.br-dotted</code></div>
+            <div class="xx-4 br-solid brw-rg pd-1 bg-silver"></div>
+            <div class="xx-8"><code>.br-solid</code></div>
+
+            <h3>Border Width</h3>
+            <div class="xx-4 br brw-0 pd-1 bg-silver"></div>
+            <div class="xx-8"><code>.brw-0</code></div>
+            <div class="xx-4 br brw-sm pd-1 bg-silver"></div>
+            <div class="xx-8"><code>.br.brw-sm</code></div>
+            <div class="xx-4 br brw-rg pd-1 bg-silver"></div>
+            <div class="xx-8"><code>.br.brw-rg</code></div>
+            <div class="xx-4 br brw-md pd-1 bg-silver"></div>
+            <div class="xx-8"><code>.br.brw-md</code></div>
+            <div class="xx-4 br brw-lg pd-1 bg-silver"></div>
+            <div class="xx-8"><code>.br.brw-lg</code></div>
+            <div class="xx-4 br brw-default pd-1 bg-silver"></div>
+            <div class="xx-8"><code>.br.brw-default</code></div>
+
+            <h3>Border Radius</h3>
+            <div class="xx-4 br brw-rg br-radius-0 pd-1 bg-silver"></div>
+            <div class="xx-8"><code>&lt;div class="br br-radius-0"&gt;&lt/div&gt;</code></div>
+            <div class="xx-4 br brw-rg br-radius--4 pd-1 bg-silver"></div>
+            <div class="xx-8"><code>&lt;div class="br br-radius--4"&gt;&lt/div&gt;</code></div>
+            <div class="xx-4 br brw-rg br-radius--3 pd-1 bg-silver"></div>
+            <div class="xx-8"><code>&lt;div class="br br-radius--3"&gt;&lt/div&gt;</code></div>
+            <div class="xx-4 br brw-rg br-radius--2 pd-1 bg-silver"></div>
+            <div class="xx-8"><code>&lt;div class="br br-radius--2"&gt;&lt/div&gt;</code></div>
+            <div class="xx-4 br brw-rg br-radius--1 pd-1 bg-silver"></div>
+            <div class="xx-8"><code>&lt;div class="br br-radius--1"&gt;&lt/div&gt;</code></div>
+            <div class="xx-4 br brw-rg br-radius pd-1 bg-silver"></div>
+            <div class="xx-8"><code>&lt;div class="br br-radius"&gt;&lt/div&gt;</code></div>
+            <div class="xx-4 br brw-rg br-radius-1 pd-1 bg-silver"></div>
+            <div class="xx-8"><code>&lt;div class="br br-radius-1"&gt;&lt/div&gt;</code></div>
+            <div class="xx-4 br brw-rg br-radius-2 pd-2 bg-silver"></div>
+            <div class="xx-8"><code>&lt;div class="br br-radius-2"&gt;&lt/div&gt;</code></div>
+            <div class="xx-4 br brw-rg br-radius-3 pd-3 bg-silver"></div>
+            <div class="xx-8"><code>&lt;div class="br br-radius-3"&gt;&lt/div&gt;</code></div>
+            <div class="xx-4 br brw-rg br-radius-4 pd-4 bg-silver"></div>
+            <div class="xx-8"><code>&lt;div class="br br-radius-4"&gt;&lt/div&gt;</code></div>
 
         </div>
 
-        <div>
-            <h2 id="white-space">White Space</h2>
-            <p>Gaps, margin and padding.</p>
+    </div>
+
+    <div>
+        <h2 id="white-space">White Space</h2>
+        <p>Gaps, margin and padding.</p>
+    </div>
+
+    <div>
+        <h2 id="colors">Colors</h2>
+        <table class="code br-separate">
+            <tr>
+                <td class="bg-navy white pd">.bg-navy</td>
+                <td class="navy pd">.navy</td>
+                <td class="br brw-rg br-navy pd">.br-navy</td>
+            </tr>
+            <tr>
+                <td class="bg-blue white pd">.bg-blue</td>
+                <td class="blue pd">.blue</td>
+                <td class="br br-blue brw-rg pd"></td>
+            </tr>
+        </table>
+        <div class="x-12 gp-0 center">
+            <div class="xx-2 bg-navy white pdy">.bg-navy</div>
+            <div class="xx-2 navy size-1 bold">Aa</div>
+            <div class="xx-2 navy pdy">.navy</div>
+            <div class="xx-2 br br-navy navy pdy brw-rg">.br-navy</div>
+            <div class="xx-4"></div>
+            <div class="xx-2 bg-blue"></div>
+            <div class="xx-2 blue pdy size-1 bold center">Aa</div>
+            <div class="xx-2"></div>
+            <div class="xx-6"></div>
+            <div class="xx-2 bg-aqua"></div>
+            <div class="xx-2 aqua pdy size-1 bold center">Aa</div>
+            <div class="xx-2"></div>
+            <div class="xx-6"></div>
+            <div class="xx-2 bg-teal"></div>
+            <div class="xx-2 teal pdy size-1 bold center">Aa</div>
+            <div class="xx-2"></div>
+            <div class="xx-6"></div>
+            <div class="xx-2 bg-olive"></div>
+            <div class="xx-2 olive pdy size-1 bold center">Aa</div>
+            <div class="xx-2"></div>
+            <div class="xx-6"></div>
+            <div class="xx-2 bg-green"></div>
+            <div class="xx-2 green pdy size-1 bold center">Aa</div>
+            <div class="xx-2"></div>
+            <div class="xx-6"></div>
+            <div class="xx-2 bg-lime"></div>
+            <div class="xx-2 lime pdy size-1 bold center">Aa</div>
+            <div class="xx-2"></div>
+            <div class="xx-6"></div>
+            <div class="xx-2 bg-yellow"></div>
+            <div class="xx-2 yellow pdy size-1 bold center">Aa</div>
+            <div class="xx-2"></div>
+            <div class="xx-6"></div>
+            <div class="xx-2 bg-orange"></div>
+            <div class="xx-2 orange pdy size-1 bold center">Aa</div>
+            <div class="xx-2"></div>
+            <div class="xx-6"></div>
+            <div class="xx-2 bg-red"></div>
+            <div class="xx-2 red pdy size-1 bold center">Aa</div>
+            <div class="xx-2"></div>
+            <div class="xx-6"></div>
+            <div class="xx-2 bg-fuchsia"></div>
+            <div class="xx-2 fuchsia pdy size-1 bold center">Aa</div>
+            <div class="xx-2"></div>
+            <div class="xx-6"></div>
+            <div class="xx-2 bg-purple"></div>
+            <div class="xx-2 purple pdy size-1 bold center">Aa</div>
+            <div class="xx-2"></div>
+            <div class="xx-6"></div>
+            <div class="xx-2 bg-maroon"></div>
+            <div class="xx-2 maroon pdy size-1 bold center">Aa</div>
+            <div class="xx-2"></div>
+            <div class="xx-6"></div>
+            <div class="xx-2 bg-black"></div>
+            <div class="xx-2 black pdy size-1 bold center">Aa</div>
+            <div class="xx-2"></div>
+            <div class="xx-6"></div>
+            <div class="xx-2 bg-gray"></div>
+            <div class="xx-2 gray pdy size-1 bold center">Aa</div>
+            <div class="xx-2"></div>
+            <div class="xx-6"></div>
+            <div class="xx-2 bg-silver"></div>
+            <div class="xx-2 silver pdy size-1 bold center">Aa</div>
+            <div class="xx-2"></div>
+            <div class="xx-6"></div>
+            <div class="xx-2 bg-white"></div>
+            <div class="xx-2 base-color pdy size-1 bold center">Aa</div>
+            <div class="xx-2"></div>
+            <div class="xx-6"></div>
+            <div class="xx-2 bg-base-color"></div>
+            <div class="xx-2 base-color pdy size-1 bold center">Aa</div>
+            <div class="xx-2"></div>
+            <div class="xx-6"></div>
         </div>
+        <p class="mrt"><code>.&lt;color&gt;</code> <small>to assign text color</small></p>
+        <p><code>.bg-&lt;color&gt;</code> <small> to assign background color</small></p>
+        <p><code>.br-&lt;color&gt;</code> <small> to assign border color</small></p>
+        <p><code>.fl-&lt;color&gt;</code> <small> to assign svg fill color</small></p>
+        <p><code>.st-&lt;color&gt;</code> <small> to assign svg stroke color</small></p>
+        <p><code>.base-color</code> <small> is default text color</small></p>
+        <p><code>.base-background</code> <small> is default background color</small></p>
 
-        <div>
-            <h2 id="colors">Colors</h2>
-            <table class="code br-separate">
-                <tr>
-                    <td class="bg-navy white pd">.bg-navy</td>
-                    <td class="navy pd">.navy</td>
-                    <td class="br brw-rg br-navy pd">.br-navy</td>
-                </tr>
-                <tr>
-                    <td class="bg-blue white pd">.bg-blue</td>
-                    <td class="blue pd">.blue</td>
-                    <td class="br br-blue brw-rg pd"></td>
-                </tr>
-            </table>
-            <div class="x-12 gp-0 center">
-                <div class="xx-2 bg-navy white pdy">.bg-navy</div>
-                <div class="xx-2 navy size-1 bold">Aa</div>
-                <div class="xx-2 navy pdy">.navy</div>
-                <div class="xx-2 br br-navy navy pdy brw-rg">.br-navy</div>
-                <div class="xx-4"></div>
-                <div class="xx-2 bg-blue"></div>
-                <div class="xx-2 blue pdy size-1 bold center">Aa</div>
-                <div class="xx-2"></div>
-                <div class="xx-6"></div>
-                <div class="xx-2 bg-aqua"></div>
-                <div class="xx-2 aqua pdy size-1 bold center">Aa</div>
-                <div class="xx-2"></div>
-                <div class="xx-6"></div>
-                <div class="xx-2 bg-teal"></div>
-                <div class="xx-2 teal pdy size-1 bold center">Aa</div>
-                <div class="xx-2"></div>
-                <div class="xx-6"></div>
-                <div class="xx-2 bg-olive"></div>
-                <div class="xx-2 olive pdy size-1 bold center">Aa</div>
-                <div class="xx-2"></div>
-                <div class="xx-6"></div>
-                <div class="xx-2 bg-green"></div>
-                <div class="xx-2 green pdy size-1 bold center">Aa</div>
-                <div class="xx-2"></div>
-                <div class="xx-6"></div>
-                <div class="xx-2 bg-lime"></div>
-                <div class="xx-2 lime pdy size-1 bold center">Aa</div>
-                <div class="xx-2"></div>
-                <div class="xx-6"></div>
-                <div class="xx-2 bg-yellow"></div>
-                <div class="xx-2 yellow pdy size-1 bold center">Aa</div>
-                <div class="xx-2"></div>
-                <div class="xx-6"></div>
-                <div class="xx-2 bg-orange"></div>
-                <div class="xx-2 orange pdy size-1 bold center">Aa</div>
-                <div class="xx-2"></div>
-                <div class="xx-6"></div>
-                <div class="xx-2 bg-red"></div>
-                <div class="xx-2 red pdy size-1 bold center">Aa</div>
-                <div class="xx-2"></div>
-                <div class="xx-6"></div>
-                <div class="xx-2 bg-fuchsia"></div>
-                <div class="xx-2 fuchsia pdy size-1 bold center">Aa</div>
-                <div class="xx-2"></div>
-                <div class="xx-6"></div>
-                <div class="xx-2 bg-purple"></div>
-                <div class="xx-2 purple pdy size-1 bold center">Aa</div>
-                <div class="xx-2"></div>
-                <div class="xx-6"></div>
-                <div class="xx-2 bg-maroon"></div>
-                <div class="xx-2 maroon pdy size-1 bold center">Aa</div>
-                <div class="xx-2"></div>
-                <div class="xx-6"></div>
-                <div class="xx-2 bg-black"></div>
-                <div class="xx-2 black pdy size-1 bold center">Aa</div>
-                <div class="xx-2"></div>
-                <div class="xx-6"></div>
-                <div class="xx-2 bg-gray"></div>
-                <div class="xx-2 gray pdy size-1 bold center">Aa</div>
-                <div class="xx-2"></div>
-                <div class="xx-6"></div>
-                <div class="xx-2 bg-silver"></div>
-                <div class="xx-2 silver pdy size-1 bold center">Aa</div>
-                <div class="xx-2"></div>
-                <div class="xx-6"></div>
-                <div class="xx-2 bg-white"></div>
-                <div class="xx-2 base-color pdy size-1 bold center">Aa</div>
-                <div class="xx-2"></div>
-                <div class="xx-6"></div>
-                <div class="xx-2 bg-base-color"></div>
-                <div class="xx-2 base-color pdy size-1 bold center">Aa</div>
-                <div class="xx-2"></div>
-                <div class="xx-6"></div>
-            </div>
-            <p class="mrt"><code>.&lt;color&gt;</code> <small>to assign text color</small></p>
-            <p><code>.bg-&lt;color&gt;</code> <small> to assign background color</small></p>
-            <p><code>.br-&lt;color&gt;</code> <small> to assign border color</small></p>
-            <p><code>.fl-&lt;color&gt;</code> <small> to assign svg fill color</small></p>
-            <p><code>.st-&lt;color&gt;</code> <small> to assign svg stroke color</small></p>
-            <p><code>.base-color</code> <small> is default text color</small></p>
-            <p><code>.base-background</code> <small> is default background color</small></p>
-
-            <p><code>.brighter</code> <code>.darker</code> <code>.grayscale</code>
-                <small>and</small> <code>.no-filter</code> <small>will manipulate color filters</small></p>
-        </div>
+        <p><code>.brighter</code> <code>.darker</code> <code>.grayscale</code>
+            <small>and</small> <code>.no-filter</code> <small>will manipulate color filters</small></p>
+    </div>
 
 
 
-        <h2 id="grid">Grid</h2>
+    <h2 id="grid">Grid</h2>
 
-        <h3>Middle Content</h3>
-        <p><code>.x *</code></p>
-        <p>Middle content is the default positioning of any item within the layout. Middle content doesn´t need a
-            specific css class assignment to get positioned this way.</p>
+    <h3>Middle Content</h3>
+    <p><code>.x *</code></p>
+    <p>Middle content is the default positioning of any item within the layout. Middle content doesn´t need a
+        specific css class assignment to get positioned this way.</p>
     </div>
 
 

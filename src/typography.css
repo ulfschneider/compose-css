@@ -9,7 +9,7 @@
   --link-text-decoration: underline;
   --text-underline-offset: 0.25em;
   --text-decoration-thickness: 0.1em;
-  --font-variant-numeric: tabular-nums;
+  --font-variant-numeric: normal;
   --h1-margin-top: var(--size-1);
   --h2-margin-top: var(--size-2);
   --h3-margin-top: var(--size-2);
@@ -27,7 +27,7 @@
   font-weight: var(--font-weight-normal);
   text-underline-offset: var(--text-underline-offset);
   text-decoration-thickness: var(--text-decoration-thickness);
-  font-variant-numeric: var(--font-variant-normal);
+  font-variant-numeric: var(--font-variant-numeric);
 }
 
 * {
@@ -287,7 +287,7 @@ p.pindent {
 .no-pindent p+p,
 p.no-pindent {
   text-indent: 0;
-  margin-top: 0;
+  margin-top: 1em;
   margin-bottom: 1em;
 }
 
@@ -319,10 +319,12 @@ blockquote>code {
 }
 
 pre {
-  margin-top: var(--size);
-  margin-bottom: var(--size);
-  border-top: var(--border-width-small) dotted var(--gray);
-  border-bottom: var(--border-width-small) dotted var(--gray);
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-top: calc(1em / var(--size-factor));
+  padding-bottom: calc(1em / var(--size-factor));
+  border-top: var(--border-width-sm) dotted var(--gray);
+  border-bottom: var(--border-width-sm) dotted var(--gray);
 }
 
 .tag {
@@ -369,7 +371,7 @@ figcaption {
   font-size: calc(var(--size) - var(--size--4));
 }
 
-.fs {
+.fs, .fs-default {
   font-size: var(--size);
   line-height: var(--line-height);
 }
@@ -403,7 +405,7 @@ figcaption {
   line-height: var(--size);
 }
 
-.lh-1 {
+.lh-1, .lh-default {
   line-height: var(--size-1);
 }
 
