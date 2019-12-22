@@ -4,16 +4,15 @@
   --border-width-md: 4px;
   --border-width-lg: 8px;
   --border-width-default:var(--border-width-sm);
+  border-color: var(--base-color);
 }
 
 .br {
-  border-color: var(--base-color);
   border-style: solid;
   border-width: var(--border-width-default);
 }
 
 .brx {
-  border-color: var(--base-color);
   border-left-style: solid;
   border-left-width: var(--border-width-default);
   border-right-style: solid;
@@ -23,7 +22,6 @@
 }
 
 .bry {
-  border-color: var(--base-color);
   border-top-style: solid;
   border-top-width: var(--border-width-default);
   border-bottom-style: solid;
@@ -33,25 +31,21 @@
 }
 
 .brt {
-  border-color: var(--base-color);
   border-top-style: solid;
   border-top-width: var(--border-width-default);
 }
 
 .brr {
-  border-color: var(--base-color);
   border-right-style: solid;
   border-right-width: var(--border-width-default);
 }
 
 .brb {
-  border-color: var(--base-color);
   border-bottom-style: solid;
   border-bottom-width: var(--border-width-default);
 }
 
 .brl {
-  border-color: var(--base-color);
   border-left-style: solid;
   border-left-width: var(--border-width-default);
 }

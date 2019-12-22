@@ -1,0 +1,97 @@
+table {
+    border-collapse: collapse;
+    font-variant-numeric: tabular-nums;
+}
+
+td {
+    vertical-align: top;
+}
+
+th {
+    vertical-align: bottom;
+    font-weight: var(--font-weight-bold);
+}
+
+th,
+td {
+    padding: 0 var(--size--2);
+}
+
+th:first-child,
+td:first-child {
+    padding-left: 0;
+}
+
+th:last-child,
+td:last-child {
+    padding-right: 0;
+}
+
+.br-separate {
+    border-collapse: separate !important;
+}
+.br-collapse {
+    border-collapse: collapse !important;
+}
+
+table.pdx th,
+thead.pdx th,
+th.pdx,
+table.pdx td,
+tr.pdx td,
+td.pdx {
+    padding: 0 var(--size);
+}
+
+table.pdy th,
+thead.pdy th,
+th.pdy,
+table.pdy td,
+tr.pdy td,
+td.pdy {
+    padding: var(--size) 0;
+}
+
+table.pdx--1 th,
+thead.pdx--1 th,
+th.pdx--1,
+table.pdx--1 td,
+tr.pdy--1 td,
+td.pdx--1 {
+    padding: 0 var(--size--1);
+}
+
+table.pdy--1 th,
+thead.pdy--1 th th.pdy--1,
+table.pdy--1 td,
+tr.pdy--1 td,
+td.pdy--1 {
+    padding: var(--size) 0;
+}
+
+table.pdx--2 th,
+thead.pdx--2 th,
+th.pdx--2,
+table.pdx--2 td,
+tr.pdy--2 td,
+td.pdx--2 {
+    padding: 0 var(--size--2);
+}
+
+table.pdy--2 th,
+thead.pdy--2 th,
+th.pdy--2,
+table.pdy--2 td,
+tr.pdy--2 td,
+td.pdy--2 {
+    padding: var(--size--2) 0;
+}
+
+table.brb th,
+thead.brb th,
+th.brb,
+table.brb td,
+tr.brb td td.brb {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}

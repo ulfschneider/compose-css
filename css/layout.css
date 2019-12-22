@@ -22,16 +22,32 @@
   vertical-align:baseline;
 }
 
-.align-top{
+.top{
   vertical-align:top;
 }
 
-.align-middle{
+.middle{
   vertical-align:middle;
 }
 
-.align-bottom{
+.bottom{
   vertical-align:bottom;
+}
+
+.left{
+  text-align:left;
+}
+
+.center{
+  text-align:center;
+}
+
+.right{
+  text-align:right;
+}
+
+.justify{
+  text-align:justify;
 }
 
 .overflow-hidden{
@@ -87,4 +103,3 @@
 .border-box{
   box-sizing:border-box;
 }
-

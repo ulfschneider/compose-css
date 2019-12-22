@@ -3,6 +3,7 @@
   --regular-width:36rem;
   --mid-width:52rem;
   --large-width:64rem;
+  
   --size:1rem;
   --size-factor:1.62;
   --size-1:calc(var(--size-factor)*var(--size));

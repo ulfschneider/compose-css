@@ -28,14 +28,14 @@
 
     <div class="full x pdy-3 bg-silver">
         <header>
-            <h1 class="font-1 bold sm-font-2 mrb--1">Groundwork</h1>
-            <p>A low-level CSS utility system</p>
+            <h1 class="fs-1 bold sm-fs-2 mrb--1">Groundwork</h1>
+            <p>A Composable CSS Toolkit</p>
         </header>
     </div>
 
 
     <div class="breakout-r mrt-3 caps small bold">
-        <div class="md-columns-4 sm-columns-3 columns-2 line-2">
+        <div class="md-columns-4 sm-columns-3 columns-2 lh-2">
             <div><a href="#typography" class="no-text-decoration">Typography</a></div>
             <div><a href="#tables" class="no-text-decoration">Tables</a></div>
             <div><a href="#figures" class="no-text-decoration">Figures</a></div>
@@ -129,7 +129,7 @@
                 pretium. Integer tincidunt. </p>
         </div>
 
-        <h3>Regular Paragraphs</h3>
+        <h3>Paragraphs</h3>
         <p><code>p</code></p>
         <div class="sm-max-width">
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
@@ -157,8 +157,118 @@
             </figure>
         </div>
 
+        <div class="x-12">
+            <div class="xx-12 rg-xx-6">
+                <h3>Font Size</h3>
+                <table>
+                    <tr>
+                        <td class="fs--1 bottom right">Aa</td>
+                        <td class="code bottom">.fs--1</td>
+                    </tr>
+                    <tr>
+                        <td class="fs bottom right">Aa</td>
+                        <td class="code bottom no-break">.fs</td>
+                    </tr>
+                    <tr>
+                        <td class="fs-1 bottom right">Aa</td>
+                        <td class="code bottom">.fs-1</td>
+                    </tr>
+                    <tr>
+                        <td class="fs-2 bottom right">Aa</td>
+                        <td class="code bottom">.fs-2</td>
+                    </tr>
+                    <tr>
+                        <td class="fs-3 bottom right">Aa</td>
+                        <td class="code bottom">.fs-3</td>
+                    </tr>
+                    <tr>
+                        <td class="fs-4 bottom right">Aa</td>
+                        <td class="code bottom">.fs-4</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="xx-12 rg-xx-6">
+                <h3>Line Height</h3>
+                <table class="pdx--2">
+                    <tr>
+                        <td class="lh--1 bg-silver brt middle">Aa</td>
+                        <td class="code middle">.lh--1</td>
+                    </tr>
+                    <tr>
+                        <td class="lh bg-silver brt middle">Aa</td>
+                        <td class="code middle">.lh</td>
+                    </tr>
+                    <tr>
+                        <td class="lh-1 bg-silver brt middle">Aa</td>
+                        <td class="code middle no-break">.lh-1</td>
+                    </tr>
+                    <tr>
+                        <td class="lh-2 bg-silver brt  middle">Aa</td>
+                        <td class="code middle">.lh-2</td>
+                    </tr>
+                    <tr>
+                        <td class="lh-3 bg-silver brt  middle">Aa</td>
+                        <td class="code middle">.lh-3</td>
+                    </tr>
+                    <tr>
+                        <td class="lh-4 bg-silver brt middle">Aa </td>
+                        <td class="code middle">.lh-4</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3>Numbers</h3>
+            <p>The availability of number features depends on the typeface capabilities. </p>
+            <table class="pdy--2">
+                <tr>
+                    <td class="fs-2 ft-num-normal bottom">13679.05</td>
+                    <td class="bottom"><code>.ft-num-normal</code></td>
+                </tr>
+                <tr>
+                    <td class="fs-2 ft-num-tab bottom">13679.05</td>
+                    <td class="bottom"><code>.ft-num-tab</code></td>
+                </tr>
+                <tr>
+                    <td class="fs-2 ft-num-zero bottom">13679.05</td>
+                    <td class="code bottom">.ft-num-zero</td>
+                </tr>
+                <tr>
+                    <td class="fs-2 ft-num-onum bottom">13679.05</td>
+                    <td class="code bottom">.ft-num-onum</td>
+                </tr>
+                <tr>
+                    <td class="fs-2 ft-num-lnum bottom">13679.05</td>
+                    <td class="code bottom">.ft-num-lnum</td>
+                </tr>
+
+            </table>
+        </div>
+
         <div>
             <h2 id="tables">Tables</h2>
+            <table>
+                <thead>
+                    <th>
+                    <th></th>
+                    <th>
+                    <th></th>
+                </thead>
+                <tr>
+                    <td>dd</td>
+                    <td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>dd</td>
+                    <td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                    <td></td>
+                </tr>
+            </table>
         </div>
 
 
@@ -247,10 +357,22 @@
 
         <div>
             <h2 id="colors">Colors</h2>
+            <table class="code br-separate">
+                <tr>
+                    <td class="bg-navy white pd">.bg-navy</td>
+                    <td class="navy pd">.navy</td>
+                    <td class="br brw-rg br-navy pd">.br-navy</td>
+                </tr>
+                <tr>
+                    <td class="bg-blue white pd">.bg-blue</td>
+                    <td class="blue pd">.blue</td>
+                    <td class="br br-blue brw-rg pd"></td>
+                </tr>
+            </table>
             <div class="x-12 gp-0 center">
                 <div class="xx-2 bg-navy white pdy">.bg-navy</div>
                 <div class="xx-2 navy size-1 bold">Aa</div>
-                <div class="xx-2 navy pdy">.navy</div>                
+                <div class="xx-2 navy pdy">.navy</div>
                 <div class="xx-2 br br-navy navy pdy brw-rg">.br-navy</div>
                 <div class="xx-4"></div>
                 <div class="xx-2 bg-blue"></div>
@@ -507,13 +629,13 @@
         &lt;div class="x"&gt;
         <div class="x">
             <div class="breakout-r indicator">
-                &lt;div class="breakout-r columns"&gt;&lt;/div&gt;
+                &lt;div class="breakout-r columns-2"&gt;&lt;/div&gt;
             </div>
         </div>
         &lt;/div&gt;
     </div>
 
-    <div class="breakout-r columns pindent">
+    <div class="breakout-r columns-1 rg-columns-2 lg-columns-3 pindent">
         <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines
             Morgens verhaftet. »Wie ein Hund!« sagte er, es war, als sollte die Scham ihn überleben. Als Gregor
             Samsa eines Morgens aus

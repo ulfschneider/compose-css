@@ -1,7 +1,7 @@
 {
   "name": "groundwork",
   "version": "0.1.0",
-  "description": "CSS Utility",
+  "description": "Composable CSS Toolkit",
   "main": "src/groundwork.css",
   "style": "src/groundwork.css",
   "devDependencies": {
