@@ -1,3 +1,7 @@
+*, *:before, *:after{
+  box-sizing:border-box;
+}
+
 body{
   margin:0;
 }
@@ -31,6 +35,10 @@ svg{
 table{
     border-collapse:collapse;
     font-variant-numeric:tabular-nums;
+    margin-top:1rem;
+    margin-top:var(--size);
+    margin-bottom:1rem;
+    margin-bottom:var(--size);
 }
 
 td{
@@ -45,10 +53,8 @@ th{
 
 th,
 td{
-    padding-left:0.61728rem;
-    padding-left:var(--size--1);
-    padding-right:0.61728rem;
-    padding-right:var(--size--1);
+    padding:0.38104rem 0.61728rem;
+    padding:var(--size--2) var(--size--1);
 }
 
 th:first-child,
@@ -59,6 +65,14 @@ td:first-child{
 th:last-child,
 td:last-child{
     padding-right:0;
+}
+
+tr:first-child{
+    padding-top:0;
+}
+
+tr:last-child{
+    padding-bottom:0;
 }
 
 .br-separate{
@@ -91,6 +105,16 @@ td.pdy{
     padding-top:var(--size);
     padding-bottom:1rem;
     padding-bottom:var(--size);
+}
+
+table.pdy-0 th,
+thead.pdy-0 th,
+th.pdy-0,
+table.pdy-0 td,
+tr.pdy-0 td,
+td.pdy-0{
+    padding-top:0;
+    padding-bottom:0;
 }
 
 table.pdx--1 th,
@@ -2191,7 +2215,7 @@ tr.brb td td.brb{
 :root{
   --font-weight-bold:600;
   --font-weight-normal:400;
-  --line-height:1.62em;
+  --line-height-default:calc(var(--size-factor)*1em);
   --letter-spacing:0.1em;
   --font-family:-apple-system, sans-serif;
   --font-family-headlines:var(--font-family);
@@ -2200,20 +2224,40 @@ tr.brb td td.brb{
   --text-underline-offset:0.25em;
   --text-decoration-thickness:0.1em;
   --font-variant-numeric:normal;
+
   --h1-margin-top:var(--size-1);
-  --h2-margin-top:var(--size-2);
-  --h3-margin-top:var(--size-2);
-  --h4-margin-top:var(--size-1);
-  --h5-margin-top:var(--size-1);
-  --h6-margin-top:var(--size-1);
+  --h1-font-size:var(--size-2);
+  --h1-line-height:1.25em;
   --h1-margin-bottom:var(--size);
+
+  --h2-margin-top:var(--size-2);
+  --h2-font-size:var(--size-1);
+  --h2-line-height:1.25em;
   --h2-margin-bottom:var(--size);
+
+  --h3-margin-top:var(--size-2);
+  --h3-font-size:1.25rem;
+  --h3-line-height:1.25em;
   --h3-margin-bottom:var(--size);
+
+  --h4-margin-top:var(--size-1);
+  --h4-font-size:1rem;
+  --h4-line-height:var(--line-height-default);
   --h4-margin-bottom:var(--size);
+
+  --h5-margin-top:var(--size-1);
+  --h5-font-size:0.875rem;
+  --h5-line-height:var(--line-height-default);
   --h5-margin-bottom:var(--size);
+
+  --h6-margin-top:var(--size-1);
+  --h6-font-size:0.75rem;
+  --h6-line-height:var(--line-height-default);
   --h6-margin-bottom:var(--size);
+
   line-height:1.62em;
-  line-height:var(--line-height);
+
+  line-height:var(--line-height-default);
   font-family:-apple-system
 ,
 sans-serif;
@@ -2364,8 +2408,8 @@ mark,
   background:#ffe9b3;
   background:var(--mark-background);
   border-radius:var(--border-radius);
-  padding:0.15432em;
-  padding:calc(var(--text-underline-offset)/var(--size-factor));
+  padding:0.25em;
+  padding:var(--text-underline-offset);
 }
 
 kbd,
@@ -2376,8 +2420,8 @@ kbd,
   border-radius:var(--size--4);
   border:1px solid #333;
   border:1px solid var(--base-color);
-  padding:0.15432em;
-  padding:calc(var(--text-underline-offset)/var(--size-factor));
+  padding:0.25em;
+  padding:var(--text-underline-offset);
   font-family:monospace;
   font-family:var(--font-family-mono);
   white-space:nowrap;
@@ -2388,7 +2432,13 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6{
   text-transform:unset;
   font-weight:600;
   font-weight:var(--font-weight-bold);
@@ -2398,49 +2448,56 @@ sans-serif;
   font-family:var(--font-family-headlines);
 }
 
-h1{
-  font-size:1.62rem;
-  font-size:var(--size-1);
-  text-transform:uppercase;
-  line-height:1.2em;
+h1,
+.h1{
+  font-size:2.6244rem;
+  font-size:var(--h1-font-size);
+  line-height:1.25em;
   margin-top:1.62rem;
   margin-top:var(--h1-margin-top);
   margin-bottom:1rem;
   margin-bottom:var(--h1-margin-bottom);
 }
 
-h2{
-  font-size:1.23896rem;
-  font-size:calc(var(--size-1) - var(--size--2));
-  line-height:1.2em;
+h2,
+.h2{
+  font-size:1.62rem;
+  font-size:var(--h2-font-size);
+  line-height:1.25em;
   margin-top:2.6244rem;
   margin-top:var(--h2-margin-top);
   margin-bottom:1rem;
   margin-bottom:var(--h2-margin-bottom);
 }
 
-h3{
+h3,
+.h3{
+  font-size:1.25rem;
+  font-size:var(--h3-font-size);
   margin-top:2.6244rem;
   margin-top:var(--h3-margin-top);
   margin-bottom:1rem;
   margin-bottom:var(--h3-margin-bottom);
 }
 
-h4{
+h4,
+.h4{
   margin-top:1.62rem;
   margin-top:var(--h4-margin-top);
   margin-bottom:1rem;
   margin-bottom:var(--h4-margin-bottom);
 }
 
-h5{
+h5,
+.h5{
   margin-top:1.62rem;
   margin-top:var(--h5-margin-top);
   margin-bottom:1rem;
   margin-bottom:var(--h5-margin-bottom);
 }
 
-h6{
+h6,
+.h6{
   margin-top:1.62rem;
   margin-top:var(--h6-margin-top);
   margin-bottom:1rem;
@@ -2450,11 +2507,15 @@ h6{
 h3,
 h4,
 h5,
-h6{
-  font-size:1rem;
-  font-size:var(--size);
+h6,
+.h3,
+.h4,
+.h5,
+.h6{
+  
   line-height:1.62em;
-  line-height:var(--line-height);
+  
+  line-height:var(--line-height-default);
 }
 
 ul,
@@ -2538,12 +2599,12 @@ pre{
   font-family:monospace;
   font-family:var(--font-family-mono);
   line-height:1.62em;
-  line-height:var(--line-height);
+  line-height:var(--line-height-default);
 }
 
 code{
-  padding:0.15432em;
-  padding:calc(var(--text-underline-offset)/var(--size-factor));
+  padding:0.25em;
+  padding:var(--text-underline-offset);
 }
 
 p>code,
@@ -2570,8 +2631,8 @@ pre{
 
 .tag{
   white-space:nowrap;
-  padding:0.15432em;
-  padding:calc(var(--text-underline-offset)/var(--size-factor));
+  padding:0.25em;
+  padding:var(--text-underline-offset);
 }
 
 a{
@@ -2592,9 +2653,10 @@ blockquote{
   padding-left:var(--size-1);
   font-style:italic;
   border-left-style:solid;
-  border-left-width:var(--border-width-mid);
-  border-color:#333;
-  border-color:var(--base-color);
+  border-left-width:8px;
+  border-left-width:var(--border-width-lg);
+  border-color:#dddddd;
+  border-color:var(--silver);
 }
 
 blockquote p{
@@ -2608,7 +2670,7 @@ blockquote p+p{
 
 blockquote figcaption{
   font-weight:bold;
-  font-size:unset;
+  font-size:small;
   margin-top:1rem;
   margin-top:var(--size);
 }
@@ -2624,46 +2686,43 @@ figcaption{
   font-size:calc(var(--size) - var(--size--4));
 }
 
-.fs, .fs-default{
+.fs,
+.fs-default{
   font-size:1rem;
   font-size:var(--size);
   line-height:1.62em;
-  line-height:var(--line-height);
+  line-height:var(--line-height-default);
 }
 
 .fs-1{
   font-size:1.62rem;
   font-size:var(--size-1);
-  line-height:1.62rem;
-  line-height:var(--size-1);
+  line-height:1.2em;
 }
 
 .fs-2{
   font-size:2.6244rem;
   font-size:var(--size-2);
-  line-height:2.6244rem;
-  line-height:var(--size-2);
+  line-height:1.2em;
 }
 
 .fs-3{
   font-size:4.25153rem;
   font-size:var(--size-3);
-  line-height:4.25153rem;
-  line-height:var(--size-3);
+  line-height:1.2em;
 }
 
 .fs-4{
   font-size:6.88748rem;
   font-size:var(--size-4);
-  line-height:6.88748rem;
-  line-height:var(--size-4);
+  line-height:1.2em;
 }
 
 .fs--1{
   font-size:0.85481rem;
   font-size:calc(var(--size) - var(--size--4));
   line-height:1.62em;
-  line-height:var(--line-height);
+  line-height:var(--line-height-default);
 }
 
 .lh{
@@ -2671,7 +2730,8 @@ figcaption{
   line-height:var(--size);
 }
 
-.lh-1, .lh-default{
+.lh-1,
+.lh-default{
   line-height:1.62rem;
   line-height:var(--size-1);
 }

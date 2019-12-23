@@ -45,29 +45,43 @@
         </div>
     </div>
 
-    <h2 id="notation">Notation</h2>
-    <table class="pdy--2">
-        <tr>
-            <td><code>div /div</code></td>
-            <td>HTML tags are indicated by there name. The closing HTML tag is indicated with a prefixed slash.</td>
-        </tr>
-        <tr>
-            <td><code>.left</code></td>
-            <td>CSS classes are indicated with a prefixed dot</td>
-        </tr>
-        <tr>
-            <td><code>.left.middle</code></td>
-            <td>The assignment of multiple CSS classes to a single HTML tag is indicated with a
-                prefixed dot for each CSS class; and there is no white space between classes.</td>
-        </tr>
-        <tr>
-            <td><code class="no-break">i .i .italic</code></td>
-            <td>Multiple styling options that prodice the same result are indicated by HTML tag names or CSS class
-                names, each one seperated by white
-                space.</td>
-        </tr>
+    <div class="mrt-3">
+        <p>Groundwork is a set of low-level CSS classes and HTML tag stylings.</p>
+        <p>CSS class composition is a defining element of Groundwork.</p>
+    </div>
 
-    </table>
+    <div>
+        <h2 id="notation">Notation</h2>
+        <p>Throughout this document the following notation is applied:</p>
+        <table>
+            <tr>
+                <td><code>div /div</code></td>
+                <td>HTML tags are indicated by their name. The closing HTML tag is indicated with a prefixed slash.</td>
+            </tr>
+            <tr>
+                <td><code>div/</code></td>
+                <td>The abbreviated form of an opening and closing HTML tag is indicated by the tag name with a trailing
+                    slash.</td>
+            </tr>
+            <tr>
+                <td><code>.left</code></td>
+                <td>CSS classes are indicated with a prefixed dot</td>
+            </tr>
+            <tr>
+                <td><code>.left.middle</code></td>
+                <td>The assignment of multiple CSS classes to a single HTML tag <i> — composing — </i> is indicated with
+                    a
+                    prefixed dot for each CSS class; and there is no white space between classes.</td>
+            </tr>
+            <tr>
+                <td><code class="no-break">i .i .italic</code></td>
+                <td>Multiple styling options that produce the same result are indicated by HTML tag names or CSS class
+                    names, each one seperated by white
+                    space.</td>
+            </tr>
+
+        </table>
+    </div>
 
     <div class="breakout-r">
         <h2 id="typography">Typography</h2>
@@ -117,8 +131,7 @@
             </li>
         </ul>
         <pre>ul
-    li 
-    /li
+    li/ 
 /ul</pre>
         <h3>Ordered List</h3>
         <ol>
@@ -141,8 +154,7 @@
             </li>
         </ol>
         <pre>ol
-    li 
-    /li
+    li/ 
 /ol</pre>
         <h3>Indented Paragraphs</h3>
         <div class="pindent">
@@ -156,14 +168,11 @@
                 pretium. Integer tincidunt. </p>
         </div>
         <pre>div .pindent  
-    p
-    /p 
-    p .no-pindent //remove indentation for this p
-    /p
+    p/
+    p/ .no-pindent //remove indentation for this p    
 /div
 
-p .pindent 
-/p</pre>
+p/ .pindent</pre>
 
         <h3>Paragraphs</h3>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
@@ -174,8 +183,7 @@ p .pindent
 
         <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
             pretium. Integer tincidunt. </p>
-        <pre>p 
-/p</pre>
+        <pre>p/</pre>
         <h3>Blockquote</h3>
         <figure>
             <blockquote>
@@ -189,21 +197,17 @@ p .pindent
                 <figcaption>Cite</figcaption>
             </blockquote>
         </figure>
-        <pre>blockquote 
-/blockquote 
+        <pre>blockquote/ 
 
 blockquote 
-    p 
-    /p
+    p/ 
 /blockquote
 
 figure 
     blockquote 
-        p 
-        /p
+        p/ 
     /blockquote
-    figcaption 
-    /figcaption 
+    figcaption/ 
 /figure
 </pre>
     </div>
@@ -211,7 +215,7 @@ figure
     <div class="x-12">
         <div class="xx-12 rg-xx-6">
             <h3>Font Size</h3>
-            <table>
+            <table class="pdy-0">
                 <tr>
                     <td class="fs--1 bottom right">Aa</td>
                     <td class="code bottom">.fs--1</td>
@@ -240,7 +244,7 @@ figure
         </div>
         <div class="xx-12 rg-xx-6">
             <h3>Line Height</h3>
-            <table class="pdx--2">
+            <table class="pdy-0 pdx--2">
                 <tr>
                     <td class="lh--1 bg-silver brt middle">Aa</td>
                     <td class="code middle">.lh--1</td>
@@ -270,7 +274,7 @@ figure
 
         <h3>Numbers</h3>
         <p>The availability of <code>font-variant-numeric</code> features depends on the typeface capabilities. </p>
-        <table class="pdy--2">
+        <table>
             <tr>
                 <td class="fs-2 ft-num-normal bottom">13679.05</td>
                 <td class="bottom"><code>.ft-num-normal</code></td>

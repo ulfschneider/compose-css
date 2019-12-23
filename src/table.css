@@ -1,6 +1,8 @@
 table {
     border-collapse: collapse;
     font-variant-numeric: tabular-nums;
+    margin-top: var(--size);
+    margin-bottom: var(--size);
 }
 
 td {
@@ -14,8 +16,7 @@ th {
 
 th,
 td {
-    padding-left: var(--size--1);
-    padding-right: var(--size--1);
+    padding: var(--size--2) var(--size--1);
 }
 
 th:first-child,
@@ -28,9 +29,18 @@ td:last-child {
     padding-right: 0;
 }
 
+tr:first-child {
+    padding-top: 0;
+}
+
+tr:last-child {
+    padding-bottom: 0;
+}
+
 .br-separate {
     border-collapse: separate !important;
 }
+
 .br-collapse {
     border-collapse: collapse !important;
 }
@@ -53,6 +63,16 @@ tr.pdy td,
 td.pdy {
     padding-top: var(--size);
     padding-bottom: var(--size);
+}
+
+table.pdy-0 th,
+thead.pdy-0 th,
+th.pdy-0,
+table.pdy-0 td,
+tr.pdy-0 td,
+td.pdy-0 {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 table.pdx--1 th,
