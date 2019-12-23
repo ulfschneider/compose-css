@@ -508,7 +508,7 @@ figcaption{
   font-size:calc(var(--size) - var(--size--4));
 }
 
-@media (min-width: 28rem){
+@media (--breakpoint-min-sm){
   .sm-fs{
     font-size:var(--size);
   }
@@ -559,7 +559,7 @@ figcaption{
   }
 }
 
-@media (min-width: 36rem){
+@media (--breakpoint-min-rg){
   .rg-fs{
     font-size:var(--size);
   }
@@ -610,7 +610,7 @@ figcaption{
   }
 }
 
-@media (min-width: 52rem){
+@media (--breakpoint-min-md){
   .md-fs{
     font-size:var(--size);
   }
@@ -662,7 +662,7 @@ figcaption{
 
 }
 
-@media (min-width: 64rem){
+@media (--breakpoint-min-lg){
   .lg-fs{
     font-size:var(--size);
   }
