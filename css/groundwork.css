@@ -1963,6 +1963,17 @@ blockquote figcaption{
   margin-top:var(--space);
 }
 
+.quote:before{
+  content:'“';
+  margin-left:-.5em;
+  position:absolute;
+}
+
+.quote:after{
+  content:'”';
+  position:absolute;
+}
+
 figure{
   margin:1.62rem 0;
   margin:var(--space-1) 0;
