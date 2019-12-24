@@ -1,11 +1,11 @@
 @import "reset";
-@import "size";
-@import "table";
 @import "white-space";
-@import "colors";
-@import "borders";
 @import "img";
+@import "table";
 @import "grid";
 @import "layout";
 @import "typography";
+@import "size";
+@import "colors";
+@import "borders";
 

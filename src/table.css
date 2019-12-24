@@ -1,8 +1,8 @@
 table {
     border-collapse: collapse;
     font-variant-numeric: tabular-nums;
-    margin-top: var(--size);
-    margin-bottom: var(--size);
+    margin-top: var(--space);
+    margin-bottom: var(--space);
     text-align: left;
 }
 
@@ -17,7 +17,7 @@ th {
 
 th,
 td {
-    padding: var(--size--2) var(--size--1);
+    padding: var(--space--2) var(--space--1);
 }
 
 th:first-child,
@@ -39,7 +39,7 @@ tr:last-child td {
 }
 
 thead+tbody+tr td {
-    padding-top: var(--size-2);
+    padding-top: var(--space-2);
 }
 
 .br-separate {
@@ -56,8 +56,8 @@ th.pdx,
 table.pdx td,
 tr.pdx td,
 td.pdx {
-    padding-left: var(--size);
-    padding-right: var(--size);
+    padding-left: var(--space);
+    padding-right: var(--space);
 }
 
 table.pdy th,
@@ -66,8 +66,8 @@ th.pdy,
 table.pdy td,
 tr.pdy td,
 td.pdy {
-    padding-top: var(--size);
-    padding-bottom: var(--size);
+    padding-top: var(--space);
+    padding-bottom: var(--space);
 }
 
 table.pdy-0 th,
@@ -86,8 +86,8 @@ th.pdx--1,
 table.pdx--1 td,
 tr.pdy--1 td,
 td.pdx--1 {
-    padding-left: var(--size--1);
-    padding-right: var(--size--1);
+    padding-left: var(--space--1);
+    padding-right: var(--space--1);
 }
 
 table.pdy--1 th,
@@ -95,8 +95,8 @@ thead.pdy--1 th th.pdy--1,
 table.pdy--1 td,
 tr.pdy--1 td,
 td.pdy--1 {
-    padding-top: var(--size--1);
-    padding-bottom: var(--size--1);
+    padding-top: var(--space--1);
+    padding-bottom: var(--space--1);
 }
 
 table.pdx--2 th,
@@ -105,8 +105,8 @@ th.pdx--2,
 table.pdx--2 td,
 tr.pdy--2 td,
 td.pdx--2 {
-    padding-left: var(--size--2);
-    padding-right: var(--size--2);
+    padding-left: var(--space--2);
+    padding-right: var(--space--2);
 }
 
 table.pdy--2 th,
@@ -115,8 +115,8 @@ th.pdy--2,
 table.pdy--2 td,
 tr.pdy--2 td,
 td.pdy--2 {
-    padding-top: var(--size--2);
-    padding-bottom: var(--size--2);
+    padding-top: var(--space--2);
+    padding-bottom: var(--space--2);
 }
 
 table.brb th,

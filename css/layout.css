@@ -84,19 +84,19 @@
   max-width:100%;
 }
 
-.sm-max-width{
+.max-width-sm{
   max-width:var(--small-width);
 }
 
-.rg-max-width{
+.max-width-rg{
   max-width:var(--regular-width);
 }
 
-.md-max-width{
+.max-width-md{
   max-width:var(--mid-width);
 }
 
-.lg-max-width{
+.max-width-lg{
   max-width:var(--large-width);
 }
 

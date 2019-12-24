@@ -21,7 +21,7 @@
   --mark-background:#ffe9b3;
   --kbd-background:var(--silver);
   --code-color:var(--base-color);
-  --code-background:var(--silver);
+  --code-background:transparent;
   --link-color:var(--base-color);
   --text-decoration-color:var(--base-color);
   color:#333;
@@ -521,4 +521,3 @@
   stroke:#fff;
   stroke:var(--base-background);
 }
-

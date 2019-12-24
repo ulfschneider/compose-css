@@ -3,7 +3,7 @@
   --border-width-rg: 2px;
   --border-width-md: 4px;
   --border-width-lg: 8px;
-  --border-width-default:var(--border-width-sm);
+  --border-width-default: var(--border-width-sm);
   border-color: var(--base-color);
 }
 
@@ -88,43 +88,11 @@
 }
 
 .brw {
-  border-width: var(--size);
-}
-
-.brw-1 {
-  border-width: var(--size-1);
-}
-
-.brw-2 {
-  border-width: var(--size-2);
-}
-
-.brw-3 {
-  border-width: var(--size-3);
-}
-
-.brw-4 {
-  border-width: var(--size-4);
-}
-
-.brw--1 {
-  border-width: var(--size--1);
-}
-
-.brw--2 {
-  border-width: var(--size--2);
-}
-
-.brw--3 {
-  border-width: var(--size--3);
-}
-
-.brw--4 {
-  border-width: var(--size--4);
+  border-width: var(--space);
 }
 
 .br-radius {
-  border-radius: var(--size);
+  border-radius: var(--space);
 }
 
 .br-radius-0 {
@@ -132,34 +100,33 @@
 }
 
 .br-radius-1 {
-  border-radius: var(--size-1);
+  border-radius: var(--space-1);
 }
 
 .br-radius-2 {
-  border-radius: var(--size-2);
+  border-radius: var(--space-2);
 }
 
 .br-radius-3 {
-  border-radius: var(--size-3);
+  border-radius: var(--space-3);
 }
 
 .br-radius-4 {
-  border-radius: var(--size-4);
+  border-radius: var(--space-4);
 }
 
 .br-radius--1 {
-  border-radius: var(--size--1);
+  border-radius: var(--space--1);
 }
 
 .br-radius--2 {
-  border-radius: var(--size--1);
+  border-radius: var(--space--1);
 }
 
 .br-radius--3 {
-  border-radius: var(--size--3);
+  border-radius: var(--space--3);
 }
 
 .br-radius--4 {
-  border-radius: var(--size--4);
+  border-radius: var(--space--4);
 }
-

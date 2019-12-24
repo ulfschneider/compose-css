@@ -18,12 +18,12 @@
 [class^=rg-columns],
 [class^=md-columns],
 [class^=lg-columns] {
-  column-gap: var(--size-1);
+  column-gap: var(--space-1);
 }
 
 .x {
   display: grid;
-  grid-template-columns: var(--size-1) 1fr 1fr minmax(0, var(--regular-width)) 1fr 1fr var(--size-1);
+  grid-template-columns: var(--space-1) 1fr 1fr minmax(0, var(--regular-width)) 1fr 1fr var(--space-1);
 }
 
 .x>* {
@@ -77,7 +77,7 @@
 .x-12 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: var(--size-1);
+  grid-column-gap: var(--space-1);
 }
 
 .x-12>* {
@@ -144,7 +144,7 @@
 
 @media (--breakpoint-max-rg) {
   .x {
-    grid-template-columns: var(--size) 1fr 1fr minmax(0, var(--regular-width)) 1fr 1fr var(--size);
+    grid-template-columns: var(--space) 1fr 1fr minmax(0, var(--regular-width)) 1fr 1fr var(--space);
   }
 }
 
