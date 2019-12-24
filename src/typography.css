@@ -1,7 +1,6 @@
 :root {
   --font-weight-bold: 600;
-  --font-weight-normal: 400;
-  --letter-spacing: 0.1em;
+  --font-weight-normal: 400;  
 
   --font-family: -apple-system, sans-serif;
   --font-family-headlines: var(--font-family);
@@ -70,9 +69,46 @@ strong,
   font-weight: var(--font-weight-bold, bold);
 }
 
-.regular {
+.normal, .fw-default {
   font-weight: normal;
 }
+
+.fw-100 {
+  font-weight: 100;
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-300 {
+  font-weight: 400;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
 
 .italic,
 i,
@@ -93,8 +129,17 @@ small,
   text-transform: uppercase;
 }
 
-.space {
-  letter-spacing: var(--letter-spacing);
+.space-1 {
+  letter-spacing: 0.05em;
+}
+.space-2, .space {
+  letter-spacing: 0.1em;
+}
+.space-3 {
+  letter-spacing: 0.15em;
+}
+.space-4 {
+  letter-spacing: 0.2em;
 }
 
 .mono {
