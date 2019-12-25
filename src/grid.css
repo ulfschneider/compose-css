@@ -1,3 +1,7 @@
+:root {
+  --grid-column-gap: var(--space-1);
+}
+
 .x-12,
 .x {
   max-width: var(--regular-width);
@@ -18,7 +22,7 @@
 [class^=rg-columns],
 [class^=md-columns],
 [class^=lg-columns] {
-  column-gap: var(--space-1);
+  column-gap: var(--grid-column-gap);
 }
 
 .x {
@@ -50,34 +54,34 @@
   grid-column: 1/span 7;
 }
 
-.x .columns-1 {
+ .columns-1 {
   columns: 1;
 }
 
-.x .columns-2 {
+ .columns-2 {
   columns: 2;
 }
 
-.x .columns-3 {
+ .columns-3 {
   columns: 3;
 }
 
-.x .columns-4 {
+ .columns-4 {
   columns: 4;
 }
 
-.x .columns-5 {
+ .columns-5 {
   columns: 5;
 }
 
-.x .columns-6 {
+ .columns-6 {
   columns: 6;
 }
 
 .x-12 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: var(--space-1);
+  column-gap: var(--grid-column-gap);
 }
 
 .x-12>* {
@@ -160,27 +164,27 @@
     grid-column: 1/span 7;
   }
   
-  .x .sm-columns-1 {
+   .sm-columns-1 {
     columns: 1 ;
   }
 
-  .x .sm-columns-2 {
+   .sm-columns-2 {
     columns: 2 ;
   }
 
-  .x .sm-columns-3 {
+   .sm-columns-3 {
     columns: 3 ;
   }
 
-  .x .sm-columns-4 {
+   .sm-columns-4 {
     columns: 4 ;
   }
 
-  .x .sm-columns-5 {
+   .sm-columns-5 {
     columns: 5 ;
   }
 
-  .x .sm-columns-6 {
+   .sm-columns-6 {
     columns: 6 ;
   }
 
@@ -254,27 +258,27 @@
     grid-column: 1/span 7;
   }
   
-  .x .rg-columns-1 {
+   .rg-columns-1 {
     columns: 1 ;
   }
 
-  .x .rg-columns-2 {
+   .rg-columns-2 {
     columns: 2 ;
   }
 
-  .x .rg-columns-3 {
+   .rg-columns-3 {
     columns: 3 ;
   }
 
-  .x .rg-columns-4 {
+   .rg-columns-4 {
     columns: 4 ;
   }
 
-  .x .rg-columns-5 {
+   .rg-columns-5 {
     columns: 5 ;
   }
 
-  .x .rg-columns-6 {
+   .rg-columns-6 {
     columns: 6 ;
   }
 
@@ -348,27 +352,27 @@
     grid-column: 1/span 7;
   }
   
-  .x .md-columns-1 {
+   .md-columns-1 {
     columns: 1 ;
   }
 
-  .x .md-columns-2 {
+   .md-columns-2 {
     columns: 2 ;
   }
 
-  .x .md-columns-3 {
+   .md-columns-3 {
     columns: 3 ;
   }
 
-  .x .md-columns-4 {
+   .md-columns-4 {
     columns: 4 ;
   }
 
-  .x .md-columns-5 {
+   .md-columns-5 {
     columns: 5 ;
   }
 
-  .x .md-columns-6 {
+   .md-columns-6 {
     columns: 6 ;
   }
 
