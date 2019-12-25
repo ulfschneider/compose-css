@@ -1641,6 +1641,10 @@ small,
   text-transform:uppercase;
 }
 
+.no-lsp, .lsp-0{
+  letter-spacing:none;
+}
+
 .lsp-1{
   letter-spacing:0.05em;
 }
