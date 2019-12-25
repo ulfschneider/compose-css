@@ -783,23 +783,30 @@ thead+tbody+tr td{
 }
 
 table.pdx th,
-thead.pdx th,
-th.pdx,
+table th.pdx,
 table.pdx td,
-tr.pdx td,
-td.pdx{
+table tr.pdx td,
+table td.pdx{
     padding-left:1rem;
     padding-left:var(--space);
     padding-right:1rem;
     padding-right:var(--space);
 }
 
+table.pdx-0 th,
+table th.pdx-0,
+table.pdx-0 td,
+table tr.pdx-0 td,
+table td.pdx-0{
+    padding-left:0;
+    padding-right:0;
+}
+
 table.pdy th,
-thead.pdy th,
-th.pdy,
+table th.pdy,
 table.pdy td,
-tr.pdy td,
-td.pdy{
+table tr.pdy td,
+table td.pdy{
     padding-top:1rem;
     padding-top:var(--space);
     padding-bottom:1rem;
@@ -807,21 +814,19 @@ td.pdy{
 }
 
 table.pdy-0 th,
-thead.pdy-0 th,
-th.pdy-0,
+table th.pdy-0,
 table.pdy-0 td,
-tr.pdy-0 td,
-td.pdy-0{
+table tr.pdy-0 td,
+table td.pdy-0{
     padding-top:0;
     padding-bottom:0;
 }
 
 table.pdx--1 th,
-thead.pdx--1 th,
-th.pdx--1,
+table th.pdx--1,
 table.pdx--1 td,
-tr.pdy--1 td,
-td.pdx--1{
+table tr.pdy--1 td,
+table td.pdx--1{
     padding-left:0.61728rem;
     padding-left:var(--space--1);
     padding-right:0.61728rem;
@@ -829,10 +834,10 @@ td.pdx--1{
 }
 
 table.pdy--1 th,
-thead.pdy--1 th th.pdy--1,
+table th.pdy--1,
 table.pdy--1 td,
-tr.pdy--1 td,
-td.pdy--1{
+table tr.pdy--1 td,
+table td.pdy--1{
     padding-top:0.61728rem;
     padding-top:var(--space--1);
     padding-bottom:0.61728rem;
@@ -840,11 +845,10 @@ td.pdy--1{
 }
 
 table.pdx--2 th,
-thead.pdx--2 th,
-th.pdx--2,
+table th.pdx--2,
 table.pdx--2 td,
-tr.pdy--2 td,
-td.pdx--2{
+table tr.pdx--2 td,
+table td.pdx--2{
     padding-left:0.38104rem;
     padding-left:var(--space--2);
     padding-right:0.38104rem;
@@ -852,11 +856,10 @@ td.pdx--2{
 }
 
 table.pdy--2 th,
-thead.pdy--2 th,
-th.pdy--2,
+table th.pdy--2,
 table.pdy--2 td,
-tr.pdy--2 td,
-td.pdy--2{
+table tr.pdy--2 td,
+table td.pdy--2{
     padding-top:0.38104rem;
     padding-top:var(--space--2);
     padding-bottom:0.38104rem;
@@ -864,10 +867,10 @@ td.pdy--2{
 }
 
 table.brb th,
-thead.brb th,
-th.brb,
+table th.brb,
 table.brb td,
-tr.brb td td.brb{
+table tr.brb,
+table td.brb{
     border-bottom-style:solid;
     border-bottom-width:1px;
 }
@@ -1513,32 +1516,32 @@ tr.brb td td.brb{
   --h1-margin-top:var(--space-1);
   --h1-font-size:var(--space-2);
   --h1-line-height:1.25em;
-  --h1-margin-bottom:var(--space);
+  --h1-margin-bottom:var(--space-1);
 
   --h2-margin-top:var(--space-2);
   --h2-font-size:var(--space-1);
   --h2-line-height:1.25em;
-  --h2-margin-bottom:var(--space);
+  --h2-margin-bottom:var(--space-1);
 
   --h3-margin-top:var(--space-2);
   --h3-font-size:1.25rem;
   --h3-line-height:1.25em;
-  --h3-margin-bottom:var(--space);
+  --h3-margin-bottom:var(--space-1);
 
   --h4-margin-top:var(--space-1);
   --h4-font-size:1rem;
   --h4-line-height:var(--line-height-default);
-  --h4-margin-bottom:var(--space);
+  --h4-margin-bottom:var(--space-1);
 
   --h5-margin-top:var(--space-1);
   --h5-font-size:0.875rem;
   --h5-line-height:var(--line-height-default);
-  --h5-margin-bottom:var(--space);
+  --h5-margin-bottom:var(--space-1);
 
   --h6-margin-top:var(--space-1);
   --h6-font-size:0.75rem;
   --h6-line-height:var(--line-height-default);
-  --h6-margin-bottom:var(--space);
+  --h6-margin-bottom:var(--space-1);
 
 
   font-family:-apple-system
@@ -1638,19 +1641,19 @@ small,
   text-transform:uppercase;
 }
 
-.space-1{
+.lsp-1{
   letter-spacing:0.05em;
 }
 
-.space-2, .space{
+.lsp-2, .lsp{
   letter-spacing:0.1em;
 }
 
-.space-3{
+.lsp-3{
   letter-spacing:0.15em;
 }
 
-.space-4{
+.lsp-4{
   letter-spacing:0.2em;
 }
 
@@ -1777,7 +1780,7 @@ h1{
   margin-top:1.62rem;
 
   margin-top:var(--h1-margin-top);
-  margin-bottom:1rem;
+  margin-bottom:1.62rem;
   margin-bottom:var(--h1-margin-bottom);
 }
 
@@ -1790,7 +1793,7 @@ h2{
   margin-top:2.6244rem;
 
   margin-top:var(--h2-margin-top);
-  margin-bottom:1rem;
+  margin-bottom:1.62rem;
   margin-bottom:var(--h2-margin-bottom);
 }
 
@@ -1803,7 +1806,7 @@ h3{
   margin-top:2.6244rem;
 
   margin-top:var(--h3-margin-top);
-  margin-bottom:1rem;
+  margin-bottom:1.62rem;
   margin-bottom:var(--h3-margin-bottom);
 }
 
@@ -1816,7 +1819,7 @@ h4{
   margin-top:1.62rem;
 
   margin-top:var(--h4-margin-top);
-  margin-bottom:1rem;
+  margin-bottom:1.62rem;
   margin-bottom:var(--h4-margin-bottom);
 }
 
@@ -1829,7 +1832,7 @@ h5{
   margin-top:1.62rem;
 
   margin-top:var(--h5-margin-top);
-  margin-bottom:1rem;
+  margin-bottom:1.62rem;
   margin-bottom:var(--h5-margin-bottom);
 }
 
@@ -1842,7 +1845,7 @@ h6{
   margin-top:1.62rem;
 
   margin-top:var(--h6-margin-top);
-  margin-bottom:1rem;
+  margin-bottom:1.62rem;
   margin-bottom:var(--h6-margin-bottom);
 }
 
@@ -2045,6 +2048,7 @@ figcaption{
   --fs-5:calc(var(--fs-4)*var(--size-factor));
   --fs-6:calc(var(--fs-5)*var(--size-factor));
 
+  --lh--4:0.9em;
   --lh--3:1em;
   --lh--2:1.1em;
   --lh--1:1.2em;
@@ -2170,6 +2174,11 @@ figcaption{
   line-height:var(--lh--1)
 }
 
+.lh--4{
+  line-height:0.9em;
+  line-height:var(--lh--4);
+}
+
 .lh--3{
   line-height:1em;
   line-height:var(--lh--3);
@@ -2209,35 +2218,35 @@ figcaption{
     line-height:1.2em;
     line-height:var(--lh-h1);
   }
-  
+
   .sm-h2{
     font-size:1.6rem;
     font-size:var(--fs-h2);
     line-height:1.2em;
     line-height:var(--lh-h2);
   }
-  
+
   .sm-h3{
     font-size:1.4rem;
     font-size:var(--fs-h3);
     line-height:1.2em;
     line-height:var(--lh-h3);
   }
-  
+
   .sm-h4{
     font-size:1.2rem;
     font-size:var(--fs-h4);
     line-height:1.2em;
     line-height:var(--lh-h4);
   }
-  
+
   .sm-h5{
     font-size:1rem;
     font-size:var(--fs-h5);
     line-height:1.62em;
     line-height:var(--lh-h5);
   }
-  
+
   .sm-h6{
     font-size:0.8rem;
     font-size:var(--fs-h6);
@@ -2302,6 +2311,11 @@ figcaption{
     line-height:var(--lh--1)
   }
 
+  .sm-lh--4{
+    line-height:0.9em;
+    line-height:var(--lh--4);
+  }
+
   .sm-lh--3{
     line-height:1em;
     line-height:var(--lh--3);
@@ -2341,35 +2355,35 @@ figcaption{
     line-height:1.2em;
     line-height:var(--lh-h1);
   }
-  
+
   .rg-h2{
     font-size:1.6rem;
     font-size:var(--fs-h2);
     line-height:1.2em;
     line-height:var(--lh-h2);
   }
-  
+
   .rg-h3{
     font-size:1.4rem;
     font-size:var(--fs-h3);
     line-height:1.2em;
     line-height:var(--lh-h3);
   }
-  
+
   .rg-h4{
     font-size:1.2rem;
     font-size:var(--fs-h4);
     line-height:1.2em;
     line-height:var(--lh-h4);
   }
-  
+
   .rg-h5{
     font-size:1rem;
     font-size:var(--fs-h5);
     line-height:1.62em;
     line-height:var(--lh-h5);
   }
-  
+
   .rg-h6{
     font-size:0.8rem;
     font-size:var(--fs-h6);
@@ -2434,6 +2448,11 @@ figcaption{
     line-height:var(--lh--1)
   }
 
+  .rg-lh--4{
+    line-height:0.9em;
+    line-height:var(--lh--4);
+  }
+
   .rg-lh--3{
     line-height:1em;
     line-height:var(--lh--3);
@@ -2473,35 +2492,35 @@ figcaption{
     line-height:1.2em;
     line-height:var(--lh-h1);
   }
-  
+
   .md-h2{
     font-size:1.6rem;
     font-size:var(--fs-h2);
     line-height:1.2em;
     line-height:var(--lh-h2);
   }
-  
+
   .md-h3{
     font-size:1.4rem;
     font-size:var(--fs-h3);
     line-height:1.2em;
     line-height:var(--lh-h3);
   }
-  
+
   .md-h4{
     font-size:1.2rem;
     font-size:var(--fs-h4);
     line-height:1.2em;
     line-height:var(--lh-h4);
   }
-  
+
   .md-h5{
     font-size:1rem;
     font-size:var(--fs-h5);
     line-height:1.62em;
     line-height:var(--lh-h5);
   }
-  
+
   .md-h6{
     font-size:0.8rem;
     font-size:var(--fs-h6);
@@ -2566,6 +2585,11 @@ figcaption{
     line-height:var(--lh--1)
   }
 
+  .md-lh--4{
+    line-height:0.9em;
+    line-height:var(--lh--4);
+  }
+
   .md-lh--3{
     line-height:1em;
     line-height:var(--lh--3);
@@ -2606,35 +2630,35 @@ figcaption{
     line-height:1.2em;
     line-height:var(--lh-h1);
   }
-  
+
   .lg-h2{
     font-size:1.6rem;
     font-size:var(--fs-h2);
     line-height:1.2em;
     line-height:var(--lh-h2);
   }
-  
+
   .lg-h3{
     font-size:1.4rem;
     font-size:var(--fs-h3);
     line-height:1.2em;
     line-height:var(--lh-h3);
   }
-  
+
   .lg-h4{
     font-size:1.2rem;
     font-size:var(--fs-h4);
     line-height:1.2em;
     line-height:var(--lh-h4);
   }
-  
+
   .lg-h5{
     font-size:1rem;
     font-size:var(--fs-h5);
     line-height:1.62em;
     line-height:var(--lh-h5);
   }
-  
+
   .lg-h6{
     font-size:0.8rem;
     font-size:var(--fs-h6);
@@ -2697,6 +2721,11 @@ figcaption{
     font-size:var(--fs-6);
     line-height:1.2em;
     line-height:var(--lh--1)
+  }
+
+  .lg-lh--4{
+    line-height:0.9em;
+    line-height:var(--lh--4);
   }
 
   .lg-lh--3{
