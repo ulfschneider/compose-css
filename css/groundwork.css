@@ -3279,7 +3279,6 @@ figcaption{
   --border-width-lg:8px;
   --border-width-default:var(--border-width-sm);
 
-  --border-radius--3:calc(var(--space)/8);
   --border-radius--2:calc(var(--space)/4);
   --border-radius--1:calc(var(--space)/2);
   --border-radius:var(--space);
@@ -3393,11 +3392,6 @@ figcaption{
   border-radius:none;
 }
 
-.br-radius--3{
-  border-radius:0.125rem;
-  border-radius:var(--border-radius--3);
-}
-
 .br-radius--2{
   border-radius:0.25rem;
   border-radius:var(--border-radius--2);
@@ -3419,5 +3413,25 @@ figcaption{
 
 .br-radius-100{
   border-radius:100%;
+}
+
+.br-radius-t{
+  border-bottom-left-radius:0;
+  border-bottom-right-radius:0;
+}
+
+.br-radius-r{
+  border-top-left-radius:0;
+  border-bottom-left-radius:0;
+}
+
+.br-radius-b{
+  border-top-left-radius:0;
+  border-top-right-radius:0;
+}
+
+.br-radius-l{
+  border-top-right-radius:0;
+  border-bottom-right-radius:0;
 }
 
