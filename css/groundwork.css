@@ -1093,51 +1093,51 @@ table td.brb{
             columns:6;
   }
 
-  .x .sm-xx-1{
+  .x-12 .sm-xx-1{
     grid-area:span 1/span 1;
   }
 
-  .x .sm-xx-2{
+  .x-12 .sm-xx-2{
     grid-area:span 1/span 2;
   }
 
-  .x .sm-xx-3{
+  .x-12 .sm-xx-3{
     grid-area:span 1/span 3;
   }
 
-  .x .sm-xx-4{
+  .x-12 .sm-xx-4{
     grid-area:span 1/span 4;
   }
 
-  .x .sm-xx-5{
+  .x-12 .sm-xx-5{
     grid-area:span 1/span 5;
   }
 
-  .x .sm-xx-6{
+  .x-12 .sm-xx-6{
     grid-area:span 1/span 6;
   }
 
-  .x .sm-xx-7{
+  .x-12 .sm-xx-7{
     grid-area:span 1/span 7;
   }
 
-  .x .sm-xx-8{
+  .x-12 .sm-xx-8{
     grid-area:span 1/span 8;
   }
 
-  .x .sm-xx-9{
+  .x-12 .sm-xx-9{
     grid-area:span 1/span 9;
   }
 
-  .x .sm-xx-10{
+  .x-12 .sm-xx-10{
     grid-area:span 1/span 10;
   }
 
-  .x .sm-xx-11{
+  .x-12 .sm-xx-11{
     grid-area:span 1/span 11;
   }
 
-  .x .sm-xx-12{
+  .x-12 .sm-xx-12{
     grid-area:span 1/span 12;
   }
 }
@@ -1199,51 +1199,51 @@ table td.brb{
             columns:6;
   }
 
-  .x .rg-xx-1{
+  .x-12 .rg-xx-1{
     grid-area:span 1/span 1;
   }
 
-  .x .rg-xx-2{
+  .x-12 .rg-xx-2{
     grid-area:span 1/span 2;
   }
 
-  .x .rg-xx-3{
+  .x-12 .rg-xx-3{
     grid-area:span 1/span 3;
   }
 
-  .x .rg-xx-4{
+  .x-12 .rg-xx-4{
     grid-area:span 1/span 4;
   }
 
-  .x .rg-xx-5{
+  .x-12 .rg-xx-5{
     grid-area:span 1/span 5;
   }
 
-  .x .rg-xx-6{
+  .x-12 .rg-xx-6{
     grid-area:span 1/span 6;
   }
 
-  .x .rg-xx-7{
+  .x-12 .rg-xx-7{
     grid-area:span 1/span 7;
   }
 
-  .x .rg-xx-8{
+  .x-12 .rg-xx-8{
     grid-area:span 1/span 8;
   }
 
-  .x .rg-xx-9{
+  .x-12 .rg-xx-9{
     grid-area:span 1/span 9;
   }
 
-  .x .rg-xx-10{
+  .x-12 .rg-xx-10{
     grid-area:span 1/span 10;
   }
 
-  .x .rg-xx-11{
+  .x-12 .rg-xx-11{
     grid-area:span 1/span 11;
   }
 
-  .x .rg-xx-12{
+  .x-12 .rg-xx-12{
     grid-area:span 1/span 12;
   }
 }
@@ -1305,51 +1305,51 @@ table td.brb{
             columns:6;
   }
 
-  .x .md-xx-1{
+  .x-12 .md-xx-1{
     grid-area:span 1/span 1;
   }
 
-  .x .md-xx-2{
+  .x-12 .md-xx-2{
     grid-area:span 1/span 2;
   }
 
-  .x .md-xx-3{
+  .x-12 .md-xx-3{
     grid-area:span 1/span 3;
   }
 
-  .x .md-xx-4{
+  .x-12 .md-xx-4{
     grid-area:span 1/span 4;
   }
 
-  .x .md-xx-5{
+  .x-12 .md-xx-5{
     grid-area:span 1/span 5;
   }
 
-  .x .md-xx-6{
+  .x-12 .md-xx-6{
     grid-area:span 1/span 6;
   }
 
-  .x .md-xx-7{
+  .x-12 .md-xx-7{
     grid-area:span 1/span 7;
   }
 
-  .x .md-xx-8{
+  .x-12 .md-xx-8{
     grid-area:span 1/span 8;
   }
 
-  .x .md-xx-9{
+  .x-12 .md-xx-9{
     grid-area:span 1/span 9;
   }
 
-  .x .md-xx-10{
+  .x-12 .md-xx-10{
     grid-area:span 1/span 10;
   }
 
-  .x .md-xx-11{
+  .x-12 .md-xx-11{
     grid-area:span 1/span 11;
   }
 
-  .x .md-xx-12{
+  .x-12 .md-xx-12{
     grid-area:span 1/span 12;
   }
 }
@@ -1411,51 +1411,51 @@ table td.brb{
             columns:6;
   }
 
-  .x .lg-xx-1{
+  .x-12 .lg-xx-1{
     grid-area:span 1/span 1;
   }
 
-  .x .lg-xx-2{
+  .x-12 .lg-xx-2{
     grid-area:span 1/span 2;
   }
 
-  .x .lg-xx-3{
+  .x-12 .lg-xx-3{
     grid-area:span 1/span 3;
   }
 
-  .x .lg-xx-4{
+  .x-12 .lg-xx-4{
     grid-area:span 1/span 4;
   }
 
-  .x .lg-xx-5{
+  .x-12 .lg-xx-5{
     grid-area:span 1/span 5;
   }
 
-  .x .lg-xx-6{
+  .x-12 .lg-xx-6{
     grid-area:span 1/span 6;
   }
 
-  .x .lg-xx-7{
+  .x-12 .lg-xx-7{
     grid-area:span 1/span 7;
   }
 
-  .x .lg-xx-8{
+  .x-12 .lg-xx-8{
     grid-area:span 1/span 8;
   }
 
-  .x .lg-xx-9{
+  .x-12 .lg-xx-9{
     grid-area:span 1/span 9;
   }
 
-  .x .lg-xx-10{
+  .x-12 .lg-xx-10{
     grid-area:span 1/span 10;
   }
 
-  .x .lg-xx-11{
+  .x-12 .lg-xx-11{
     grid-area:span 1/span 11;
   }
 
-  .x .lg-xx-12{
+  .x-12 .lg-xx-12{
     grid-area:span 1/span 12;
   }
 }
