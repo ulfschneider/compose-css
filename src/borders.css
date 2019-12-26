@@ -103,7 +103,7 @@
   border-radius: none;
 }
 
-.br-radius--2 {
+.br-radius--2, .rounded {
   border-radius: var(--border-radius--2);
 }
 

@@ -115,7 +115,7 @@
   border-radius:none;
 }
 
-.br-radius--2{
+.br-radius--2, .rounded{
   border-radius:calc(var(--space)/4);
   border-radius:var(--border-radius--2);
 }

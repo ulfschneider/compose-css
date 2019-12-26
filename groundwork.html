@@ -35,10 +35,10 @@
             <div class="md-columns-4 sm-columns-3 columns-2 lh-2">
                 <div><a href="#notation" class="no-text-decoration">Notation</a></div>
                 <div><a href="#typography" class="no-text-decoration">Typography</a></div>
+                <div><a href="#white-space" class="no-text-decoration">White Space</a></div>
                 <div><a href="#tables" class="no-text-decoration">Tables</a></div>
                 <div><a href="#figures" class="no-text-decoration">Figures</a></div>
                 <div><a href="#borders" class="no-text-decoration">Borders</a></div>
-                <div><a href="#white-space" class="no-text-decoration">White Space</a></div>
                 <div><a href="#colors" class="no-text-decoration">Colors</a></div>
                 <div><a href="#grid" class="no-text-decoration">Grid</a></div>
             </div>
@@ -102,81 +102,89 @@
         </div>
 
 
-        <div class="x-12">
-            <div class="xx-12 lg-xx-6">
-                <div class="max-width-sm">
+        <div class="max-width-sm">
 
-                    <h3>Unordered List</h3>
+            <h3>Unordered List</h3>
 
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                    Aenean
+                    massa.
+                </li>
+                <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+                    quis
+                    enim.
                     <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                            dolor.
                             Aenean
                             massa.
                         </li>
-                        <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+                        <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                            massa
                             quis
                             enim.
-                            <ul>
-                                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                    dolor.
-                                    Aenean
-                                    massa.
-                                </li>
-                                <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
-                                    massa
-                                    quis
-                                    enim.
-                                </li>
-                            </ul>
-                        </li>
-                        <li>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-                            mollis
-                            pretium. Integer tincidunt.
                         </li>
                     </ul>
-                    <pre>ul
+                </li>
+                <li>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+                    mollis
+                    pretium. Integer tincidunt.
+                </li>
+            </ul>
+            <pre>ul
     li/
 /ul</pre>
-                </div>
-            </div>
-            <div class="xx-12 lg-xx-6">
-                <div class="max-width-sm">
-                    <h3>Ordered List</h3>
+            <h3>Ordered List</h3>
+            <ol>
+                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                    Aenean
+                    massa.
+                </li>
+                <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+                    quis
+                    enim.
                     <ol>
-                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                            dolor.
                             Aenean
                             massa.
                         </li>
-                        <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+                        <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                            massa
                             quis
                             enim.
-                            <ol>
-                                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                    dolor.
-                                    Aenean
-                                    massa.
-                                </li>
-                                <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
-                                    massa
-                                    quis
-                                    enim.
-                                </li>
-                            </ol>
-                        </li>
-                        <li>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-                            mollis
-                            pretium. Integer tincidunt.
                         </li>
                     </ol>
-                    <pre>ol
+                </li>
+                <li>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+                    mollis
+                    pretium. Integer tincidunt.
+                </li>
+            </ol>
+            <pre>ol
     li/
 /ol</pre>
-                </div>
-            </div>
-        </div>
 
-        <h3>Indented Paragraphs</h3>
-        <div class="pindent">
+            <h3>Indented Paragraphs</h3>
+            <div class="pindent">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                    massa. </p>
+
+                <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                </p>
+
+                <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
+                    pretium. Integer tincidunt. </p>
+            </div>
+            <pre>div .pindent
+    p/
+    p/ .no-pindent //remove indentation for this p
+/div
+
+p/ .pindent</pre>
+
+            <h3>Paragraphs</h3>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
                 massa. </p>
 
@@ -185,38 +193,21 @@
 
             <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
                 pretium. Integer tincidunt. </p>
-        </div>
-        <pre>div .pindent
-    p/
-    p/ .no-pindent //remove indentation for this p
-/div
+            <pre>p/</pre>
+            <h3>Blockquote</h3>
+            <figure>
+                <blockquote>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean
+                        massa. </p>
 
-p/ .pindent</pre>
-
-        <h3>Paragraphs</h3>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-            massa. </p>
-
-        <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-        </p>
-
-        <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
-            pretium. Integer tincidunt. </p>
-        <pre>p/</pre>
-        <h3>Blockquote</h3>
-        <figure>
-            <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                    Aenean
-                    massa. </p>
-
-                <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-                    enim.
-                </p>
-                <figcaption>Cite</figcaption>
-            </blockquote>
-        </figure>
-        <pre>blockquote/
+                    <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis
+                        enim.
+                    </p>
+                    <figcaption>Cite</figcaption>
+                </blockquote>
+            </figure>
+            <pre>blockquote/
 
 blockquote
     p/
@@ -229,26 +220,26 @@ figure
     figcaption/
 /figure
 </pre>
-        <h3>Blockquote with Double Quotes</h3>
-        <figure>
-            <blockquote>
-                <p class="quote">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
-                    eget
-                    dolor.
-                    Aenean
-                    massa. </p>
-                <figcaption>Cite</figcaption>
-            </blockquote>
-        </figure>
-        <pre>figure
+            <h3>Blockquote with Double Quotes</h3>
+            <figure>
+                <blockquote>
+                    <p class="quote">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                        eget
+                        dolor.
+                        Aenean
+                        massa. </p>
+                    <figcaption>Cite</figcaption>
+                </blockquote>
+            </figure>
+            <pre>figure
     blockquote
         p/ .quote
     /blockquote
     figcaption/
 /figure</pre>
-    </div>
-    </div>
+        </div>
 
+    </div>
     <div class="x-12">
         <div class="xx-12 sm-xx-6">
             <h3>Headline Styling</h3>
@@ -400,58 +391,58 @@ figure
         </table>
 
         <h3>Line Height</h3>
-        <table class="pdy-0 pdx-0">
+        <table class="pdy-0">
             <tr>
-                <td class="fs-1 lh--4 bg-silver brt bottom">The quick brown fox jumps over the lazy dog</td>
+                <td class="fs-1 lh--4 bg-silver brt bottom pdx-0">The quick brown fox jumps over the lazy dog</td>
                 <td class="lh--4 code bottom pdx">.lh--4</td>
             </tr>
             <tr>
-                <td class="fs-1 lh--3 bg-silver brt bottom">The quick brown fox jumps over the lazy dog</td>
+                <td class="fs-1 lh--3 bg-silver brt bottom pdx-0">The quick brown fox jumps over the lazy dog</td>
                 <td class="lh--3 bottom pdx"><code>.lh--3</code> <small>(1em)</small></td>
             </tr>
             <tr>
-                <td class="fs-1 lh--2 bg-silver brt bottom">The quick brown fox jumps over the lazy dog </td>
+                <td class="fs-1 lh--2 bg-silver brt bottom pdx-0">The quick brown fox jumps over the lazy dog </td>
                 <td class="lh--2 code bottom pdx">.lh--2</td>
             </tr>
             <tr>
-                <td class="fs-1 lh--1 bg-silver brt bottom">The quick brown fox jumps over the lazy dog</td>
+                <td class="fs-1 lh--1 bg-silver brt bottom pdx-0">The quick brown fox jumps over the lazy dog</td>
                 <td class="lh--1 code bottom pdx">.lh--1</td>
             </tr>
             <tr>
-                <td class="fs-1 lh bg-silver brt bottom">The quick brown fox jumps over the lazy dog</td>
+                <td class="fs-1 lh bg-silver brt bottom pdx-0">The quick brown fox jumps over the lazy dog</td>
                 <td class="lh bottom no-break pdx"><code>.lh .lh-default</code></td>
             </tr>
             <tr>
-                <td class="fs-1 lh-1 bg-silver brt bottom">The quick brown fox jumps over the lazy dog</td>
+                <td class="fs-1 lh-1 bg-silver brt bottom pdx-0">The quick brown fox jumps over the lazy dog</td>
                 <td class="lh-1 code bottom pdx">.lh-1</td>
             </tr>
             <tr>
-                <td class="fs-1 lh-2 bg-silver bry bottom">The quick brown fox jumps over the lazy dog</td>
+                <td class="fs-1 lh-2 bg-silver bry bottom pdx-0">The quick brown fox jumps over the lazy dog</td>
                 <td class="lh-2 code bottom pdx">.lh-2</td>
             </tr>
         </table>
 
         <h3>Letter Spacing</h3>
-        <table class="pdx-0">
+        <table>
             <tr>
                 <td class="fs-1 lsp-0 bottom">The quick brown fox</td>
-                <td class="code bottom pdx">.lsp-0 .no-lsp</td>
+                <td class="code bottom">.lsp-0 .no-lsp</td>
             </tr>
             <tr>
                 <td class="fs-1 lsp-1 bottom">The quick brown fox</td>
-                <td class="code bottom pdx">.lsp-1</td>
+                <td class="code bottom">.lsp-1</td>
             </tr>
             <tr>
                 <td class="fs-1 lsp-2 bottom">The quick brown fox</td>
-                <td class="code bottom pdx">.lsp-2</td>
+                <td class="code bottom">.lsp-2</td>
             </tr>
             <tr>
                 <td class="fs-1 lsp-3 bottom">The quick brown fox</td>
-                <td class="code bottom pdx">.lsp-3</td>
+                <td class="code bottom">.lsp-3</td>
             </tr>
             <tr>
                 <td class="fs-1 lsp-4 bottom">The quick brown fox</td>
-                <td class="code bottom pdx">.lsp-4</td>
+                <td class="code bottom">.lsp-4</td>
             </tr>
         </table>
 
@@ -482,6 +473,182 @@ figure
             </tr>
         </table>
     </div>
+
+    <div>
+        <h2 id="white-space">White Space</h2>
+
+        <table>
+            <tr>
+                <th>Shorthand</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>gp</td>
+                <td>grid gap</td>
+            </tr>
+            <tr>
+                <td>mr</td>
+                <td>margin</td>
+            </tr>
+            <tr>
+                <td>pd</td>
+                <td>padding</td>
+            </tr>
+            <tr>
+                <td>t</td>
+                <td>top</td>
+            </tr>
+            <tr>
+                <td>r</td>
+                <td>right</td>
+            </tr>
+            <tr>
+                <td>b</td>
+                <td>bottom</td>
+            </tr>
+            <tr>
+                <td>l</td>
+                <td>left</td>
+            </tr>
+            <tr>
+                <td>n</td>
+                <td>negative</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>none</td>
+            </tr>
+            <tr>
+                <td>--</td>
+                <td>reduce from <code>1rem</code> through dividing by <code>var(--space-factor)</code></td>
+            </tr>
+            <tr>
+                <td>x</td>
+                <td>X-axis</td>
+            </tr>
+            <tr>
+                <td>y</td>
+                <td>Y-axis</td>
+            </tr>
+        </table>
+
+        <h2 id="white-space">White Space</h2>
+        <h3>Grid Gap</h3>
+        <div class="x-12 gp-2">
+            <div class="xx-12 rg-xx-6">
+                <div class="x-12 gp-0">
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                </div>
+                <code>.gp-0</code>
+            </div>
+
+            <div class="xx-12 rg-xx-6">
+                <div class="x-12 gp-sm">
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                </div>
+                <code>.gp-sm</code>
+            </div>
+
+            <div class="xx-12 rg-xx-6">
+                <div class="x-12 gpx-sm gpy-0">
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                </div>
+                <code>.gpx-sm.gpy-0</code>
+            </div>
+
+            <div class="xx-12 rg-xx-6">
+                <div class="x-12 gpy-sm gpx-0">
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                </div>
+                <code>.gpy-sm.gpx-0</code>
+            </div>
+
+            <div class="xx-12 rg-xx-6">
+                <div class="x-12 gp-rg">
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                </div>
+                <code>.gp-rg</code>
+            </div>
+
+            <div class="xx-12 rg-xx-6">
+                <div class="x-12 gpx-rg gpy-0">
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                </div>
+                <code>.gpx-rg.gpy-0</code>
+            </div>
+
+            <div class="xx-12 rg-xx-6">
+                <div class="x-12 gpy-rg gpx-0">
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                </div>
+                <code>.gpy-rg.gpx-0</code>
+            </div>
+
+            <div class="xx-12 rg-xx-6">
+                <div class="x-12 gp">
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                </div>
+                <code>.gp</code>
+            </div>
+
+            <div class="xx-12 rg-xx-6">
+                <div class="x-12 gp-1">
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                </div>
+                <code>.gp-1</code>
+            </div>
+
+            <div class="xx-12 rg-xx-6">
+                <div class="x-12 gpy-1 gpx-0">
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                </div>
+                <code>.gpy-1.gpx-0</code>
+            </div>
+
+            <div class="xx-12 rg-xx-6">
+                <div class="x-12 gpx-1">
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                    <div class="xx-6 bg-silver pd-1 br"></div>
+                </div>
+                <code>.gpx-1</code> <small>(default)</small>
+            </div>
+        </div>
+        <h3>Margin</h3>
+        <h3>Padding</h3>
+    </div>
+
 
     <div>
         <h2 id="tables">Tables</h2>
@@ -572,7 +739,7 @@ figure
             <div class="xx-8"><code>.br.br-radius-0</code></div>
 
             <div class="xx-4 br brw-rg br-radius--2 pd-1 bg-silver"></div>
-            <div class="xx-8"><code>.br.br-radius--2</code></div>
+            <div class="xx-8"><code>.br.br-radius--2 .br.rounded</code></div>
 
             <div class="xx-4 br brw-rg br-radius--1 pd-1 bg-silver"></div>
             <div class="xx-8"><code>.br.br-radius--1</code></div>
@@ -605,11 +772,6 @@ figure
     </div>
 
     <div>
-        <h2 id="white-space">White Space</h2>
-        <p>Gaps, margin and padding.</p>
-    </div>
-
-    <div>
         <h2 id="colors">Colors</h2>
         <table class="code br-separate">
             <tr>
@@ -623,6 +785,8 @@ figure
                 <td class="br br-blue brw-rg pd"></td>
             </tr>
         </table>
+
+
         <div class="x-12 gp-0 center">
             <div class="xx-2 bg-navy white pdy">.bg-navy</div>
             <div class="xx-2 navy size-1 bold">Aa</div>

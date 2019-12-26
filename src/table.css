@@ -43,11 +43,11 @@ thead+tbody+tr td {
 }
 
 .br-separate {
-    border-collapse: separate !important;
+    border-collapse: separate;
 }
 
 .br-collapse {
-    border-collapse: collapse !important;
+    border-collapse: collapse;
 }
 
 table.pdx th,

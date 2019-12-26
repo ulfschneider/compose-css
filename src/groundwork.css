@@ -1,5 +1,4 @@
 @import "reset";
-@import "white-space";
 @import "img";
 @import "table";
 @import "grid";
@@ -8,4 +7,5 @@
 @import "size";
 @import "colors";
 @import "borders";
+@import "white-space";
 
