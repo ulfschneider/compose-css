@@ -67,18 +67,6 @@ Naming conventions
   grid-row-gap: var(--border-width-sm)
 }
 
-.gp-rg {
-  grid-gap: var(--border-width-rg);
-}
-
-.gpx-rg {
-  grid-column-gap: var(--border-width-rg);
-}
-
-.gpy-rg {
-  grid-row-gap: var(--border-width-rg)
-}
-
 .gp--4 {
   grid-gap: var(--space--4);
 }
@@ -151,41 +139,6 @@ Naming conventions
   grid-row-gap: var(--space-1);
 }
 
-.gp-2 {
-  grid-gap: var(--space-2);
-}
-
-.gpx-2 {
-  grid-column-gap: var(--space-2);
-}
-
-.gpy-2 {
-  grid-row-gap: var(--space-2);
-}
-
-.gp-3 {
-  grid-gap: var(--space-3);
-}
-
-.gpx-3 {
-  grid-column-gap: var(--space-3);
-}
-
-.gpy-3 {
-  grid-row-gap: var(--space-3);
-}
-
-.gp-4 {
-  grid-gap: var(--space-4);
-}
-
-.gpx-4 {
-  grid-column-gap: var(--space-4);
-}
-
-.gpy-4 {
-  grid-row-gap: var(--space-4);
-}
 
 .mr-0 {
   margin: 0;

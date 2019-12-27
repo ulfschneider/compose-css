@@ -12,13 +12,13 @@
   --fs-5:calc(var(--fs-4)*var(--size-factor));
   --fs-6:calc(var(--fs-5)*var(--size-factor));
 
-  --lh--4:0.9em;
-  --lh--3:1em;
-  --lh--2:1.1em;
-  --lh--1:1.2em;
-  --lh:1.62em;
-  --lh-1:2em;
-  --lh-2:2.4em;
+  --lh--1:0.9em;
+  --lh:1em;
+  --lh-1:1.1em;
+  --lh-2:1.2em;
+  --lh-3:1.62em;
+  --lh-4:2em;
+
 
   --fs-h6:var(--fs--1);
   --fs-h5:var(--fs);
@@ -27,16 +27,16 @@
   --fs-h2:1.6rem;
   --fs-h1:2.4rem;
 
-  --lh-h6:var(--lh);
-  --lh-h5:var(--lh);
-  --lh-h4:var(--lh--1);
-  --lh-h3:var(--lh--1);
-  --lh-h2:var(--lh--1);
-  --lh-h1:var(--lh--1);
+  --lh-h6:var(--lh-3);
+  --lh-h5:var(--lh-3);
+  --lh-h4:var(--lh-2);
+  --lh-h3:var(--lh-2);
+  --lh-h2:var(--lh-2);
+  --lh-h1:var(--lh-2);
 
   line-height:1.62em;
 
-  line-height:var(--lh);
+  line-height:var(--lh-3);
 }
 
 .h1{
@@ -85,7 +85,7 @@
   font-size:0.8rem;
   font-size:var(--fs--1);
   line-height:1.62em;
-  line-height:var(--lh);
+  line-height:var(--lh-3);
 }
 
 .fs,
@@ -93,85 +93,80 @@
   font-size:1rem;
   font-size:var(--fs);
   line-height:1.62em;
-  line-height:var(--lh);
+  line-height:var(--lh-3);
 }
 
 .fs-1{
   font-size:1.25rem;
   font-size:var(--fs-1);
   line-height:1.2em;
-  line-height:var(--lh--1)
+  line-height:var(--lh-2)
 }
 
 .fs-2{
   font-size:1.5625rem;
   font-size:var(--fs-2);
   line-height:1.2em;
-  line-height:var(--lh--1);
+  line-height:var(--lh-2);
 }
 
 .fs-3{
   font-size:1.95313rem;
   font-size:var(--fs-3);
   line-height:1.2em;
-  line-height:var(--lh--1);
+  line-height:var(--lh-2);
 }
 
 .fs-4{
   font-size:2.44141rem;
   font-size:var(--fs-4);
   line-height:1.2em;
-  line-height:var(--lh--1)
+  line-height:var(--lh-2)
 }
 
 .fs-5{
   font-size:3.05176rem;
   font-size:var(--fs-5);
   line-height:1.2em;
-  line-height:var(--lh--1)
+  line-height:var(--lh-2)
 }
 
 .fs-6{
   font-size:3.8147rem;
   font-size:var(--fs-6);
   line-height:1.2em;
-  line-height:var(--lh--1)
-}
-
-.lh--4{
-  line-height:0.9em;
-  line-height:var(--lh--4);
-}
-
-.lh--3{
-  line-height:1em;
-  line-height:var(--lh--3);
-}
-
-.lh--2{
-  line-height:1.1em;
-  line-height:var(--lh--2);
+  line-height:var(--lh-2)
 }
 
 .lh--1{
-  line-height:1.2em;
+  line-height:0.9em;
   line-height:var(--lh--1);
 }
 
-.lh,
-.lh-default{
-  line-height:1.62em;
+.lh{
+  line-height:1em;
   line-height:var(--lh);
 }
 
 .lh-1{
-  line-height:2em;
+  line-height:1.1em;
   line-height:var(--lh-1);
 }
 
 .lh-2{
-  line-height:2.4em;
+  line-height:1.2em;
   line-height:var(--lh-2);
+}
+
+.lh-3,
+.lh-default{
+  line-height:1.62em;
+  line-height:var(--lh-3);
+}
+
+.lh-4{
+  line-height:2em;
+  line-height:var(--lh-4);
 }
 
 @media (min-width: 28rem){
@@ -222,7 +217,7 @@
     font-size:0.8rem;
     font-size:var(--fs--1);
     line-height:1.62em;
-    line-height:var(--lh);
+    line-height:var(--lh-3);
   }
 
   .sm-fs,
@@ -230,85 +225,80 @@
     font-size:1rem;
     font-size:var(--fs);
     line-height:1.62em;
-    line-height:var(--lh);
+    line-height:var(--lh-3);
   }
 
   .sm-fs-1{
     font-size:1.25rem;
     font-size:var(--fs-1);
     line-height:1.2em;
-    line-height:var(--lh--1)
+    line-height:var(--lh-2)
   }
 
   .sm-fs-2{
     font-size:1.5625rem;
     font-size:var(--fs-2);
     line-height:1.2em;
-    line-height:var(--lh--1);
+    line-height:var(--lh-2);
   }
 
   .sm-fs-3{
     font-size:1.95313rem;
     font-size:var(--fs-3);
     line-height:1.2em;
-    line-height:var(--lh--1);
+    line-height:var(--lh-2);
   }
 
   .sm-fs-4{
     font-size:2.44141rem;
     font-size:var(--fs-4);
     line-height:1.2em;
-    line-height:var(--lh--1)
+    line-height:var(--lh-2)
   }
 
   .sm-fs-5{
     font-size:3.05176rem;
     font-size:var(--fs-5);
     line-height:1.2em;
-    line-height:var(--lh--1)
+    line-height:var(--lh-2)
   }
 
   .sm-fs-6{
     font-size:3.8147rem;
     font-size:var(--fs-6);
     line-height:1.2em;
-    line-height:var(--lh--1)
-  }
-
-  .sm-lh--4{
-    line-height:0.9em;
-    line-height:var(--lh--4);
-  }
-
-  .sm-lh--3{
-    line-height:1em;
-    line-height:var(--lh--3);
-  }
-
-  .sm-lh--2{
-    line-height:1.1em;
-    line-height:var(--lh--2);
+    line-height:var(--lh-2)
   }
 
   .sm-lh--1{
-    line-height:1.2em;
+    line-height:0.9em;
     line-height:var(--lh--1);
   }
 
-  .sm-lh,
-  .sm-lh-default{
-    line-height:1.62em;
+  .sm-lh{
+    line-height:1em;
     line-height:var(--lh);
   }
 
   .sm-lh-1{
-    line-height:2em;
+    line-height:1.1em;
     line-height:var(--lh-1);
   }
 
   .sm-lh-2{
-    line-height:2.4em;
+    line-height:1.2em;
     line-height:var(--lh-2);
+  }
+
+  .sm-lh-3,
+  .sm-lh-default{
+    line-height:1.62em;
+    line-height:var(--lh-3);
+  }
+
+  .sm-lh-4{
+    line-height:2em;
+    line-height:var(--lh-4);
   }
 }
 
@@ -359,7 +349,7 @@
     font-size:0.8rem;
     font-size:var(--fs--1);
     line-height:1.62em;
-    line-height:var(--lh);
+    line-height:var(--lh-3);
   }
 
   .rg-fs,
@@ -367,85 +357,80 @@
     font-size:1rem;
     font-size:var(--fs);
     line-height:1.62em;
-    line-height:var(--lh);
+    line-height:var(--lh-3);
   }
 
   .rg-fs-1{
     font-size:1.25rem;
     font-size:var(--fs-1);
     line-height:1.2em;
-    line-height:var(--lh--1)
+    line-height:var(--lh-2)
   }
 
   .rg-fs-2{
     font-size:1.5625rem;
     font-size:var(--fs-2);
     line-height:1.2em;
-    line-height:var(--lh--1);
+    line-height:var(--lh-2);
   }
 
   .rg-fs-3{
     font-size:1.95313rem;
     font-size:var(--fs-3);
     line-height:1.2em;
-    line-height:var(--lh--1);
+    line-height:var(--lh-2);
   }
 
   .rg-fs-4{
     font-size:2.44141rem;
     font-size:var(--fs-4);
     line-height:1.2em;
-    line-height:var(--lh--1)
+    line-height:var(--lh-2)
   }
 
   .rg-fs-5{
     font-size:3.05176rem;
     font-size:var(--fs-5);
     line-height:1.2em;
-    line-height:var(--lh--1)
+    line-height:var(--lh-2)
   }
 
   .rg-fs-6{
     font-size:3.8147rem;
     font-size:var(--fs-6);
     line-height:1.2em;
-    line-height:var(--lh--1)
-  }
-
-  .rg-lh--4{
-    line-height:0.9em;
-    line-height:var(--lh--4);
-  }
-
-  .rg-lh--3{
-    line-height:1em;
-    line-height:var(--lh--3);
-  }
-
-  .rg-lh--2{
-    line-height:1.1em;
-    line-height:var(--lh--2);
+    line-height:var(--lh-2)
   }
 
   .rg-lh--1{
-    line-height:1.2em;
+    line-height:0.9em;
     line-height:var(--lh--1);
   }
 
-  .rg-lh,
-  .rg-lh-default{
-    line-height:1.62em;
+  .rg-lh{
+    line-height:1em;
     line-height:var(--lh);
   }
 
   .rg-lh-1{
-    line-height:2em;
+    line-height:1.1em;
     line-height:var(--lh-1);
   }
 
   .rg-lh-2{
-    line-height:2.4em;
+    line-height:1.2em;
     line-height:var(--lh-2);
+  }
+
+  .rg-lh-3,
+  .rg-lh-default{
+    line-height:1.62em;
+    line-height:var(--lh-3);
+  }
+
+  .rg-lh-4{
+    line-height:2em;
+    line-height:var(--lh-4);
   }
 }
 
@@ -496,7 +481,7 @@
     font-size:0.8rem;
     font-size:var(--fs--1);
     line-height:1.62em;
-    line-height:var(--lh);
+    line-height:var(--lh-3);
   }
 
   .md-fs,
@@ -504,85 +489,80 @@
     font-size:1rem;
     font-size:var(--fs);
     line-height:1.62em;
-    line-height:var(--lh);
+    line-height:var(--lh-3);
   }
 
   .md-fs-1{
     font-size:1.25rem;
     font-size:var(--fs-1);
     line-height:1.2em;
-    line-height:var(--lh--1)
+    line-height:var(--lh-2)
   }
 
   .md-fs-2{
     font-size:1.5625rem;
     font-size:var(--fs-2);
     line-height:1.2em;
-    line-height:var(--lh--1);
+    line-height:var(--lh-2);
   }
 
   .md-fs-3{
     font-size:1.95313rem;
     font-size:var(--fs-3);
     line-height:1.2em;
-    line-height:var(--lh--1);
+    line-height:var(--lh-2);
   }
 
   .md-fs-4{
     font-size:2.44141rem;
     font-size:var(--fs-4);
     line-height:1.2em;
-    line-height:var(--lh--1)
+    line-height:var(--lh-2)
   }
 
   .md-fs-5{
     font-size:3.05176rem;
     font-size:var(--fs-5);
     line-height:1.2em;
-    line-height:var(--lh--1)
+    line-height:var(--lh-2)
   }
 
   .md-fs-6{
     font-size:3.8147rem;
     font-size:var(--fs-6);
     line-height:1.2em;
-    line-height:var(--lh--1)
-  }
-
-  .md-lh--4{
-    line-height:0.9em;
-    line-height:var(--lh--4);
-  }
-
-  .md-lh--3{
-    line-height:1em;
-    line-height:var(--lh--3);
-  }
-
-  .md-lh--2{
-    line-height:1.1em;
-    line-height:var(--lh--2);
+    line-height:var(--lh-2)
   }
 
   .md-lh--1{
-    line-height:1.2em;
+    line-height:0.9em;
     line-height:var(--lh--1);
   }
 
-  .md-lh,
-  .md-lh-default{
-    line-height:1.62em;
+  .md-lh{
+    line-height:1em;
     line-height:var(--lh);
   }
 
   .md-lh-1{
-    line-height:2em;
+    line-height:1.1em;
     line-height:var(--lh-1);
   }
 
   .md-lh-2{
-    line-height:2.4em;
+    line-height:1.2em;
     line-height:var(--lh-2);
+  }
+
+  .md-lh-3,
+  .md-lh-default{
+    line-height:1.62em;
+    line-height:var(--lh-3);
+  }
+
+  .md-lh-4{
+    line-height:2em;
+    line-height:var(--lh-4);
   }
 
 }
@@ -634,7 +614,7 @@
     font-size:0.8rem;
     font-size:var(--fs--1);
     line-height:1.62em;
-    line-height:var(--lh);
+    line-height:var(--lh-3);
   }
 
   .lg-fs,
@@ -642,85 +622,79 @@
     font-size:1rem;
     font-size:var(--fs);
     line-height:1.62em;
-    line-height:var(--lh);
+    line-height:var(--lh-3);
   }
 
   .lg-fs-1{
     font-size:1.25rem;
     font-size:var(--fs-1);
     line-height:1.2em;
-    line-height:var(--lh--1)
+    line-height:var(--lh-2)
   }
 
   .lg-fs-2{
     font-size:1.5625rem;
     font-size:var(--fs-2);
     line-height:1.2em;
-    line-height:var(--lh--1);
+    line-height:var(--lh-2);
   }
 
   .lg-fs-3{
     font-size:1.95313rem;
     font-size:var(--fs-3);
     line-height:1.2em;
-    line-height:var(--lh--1);
+    line-height:var(--lh-2);
   }
 
   .lg-fs-4{
     font-size:2.44141rem;
     font-size:var(--fs-4);
     line-height:1.2em;
-    line-height:var(--lh--1)
+    line-height:var(--lh-2)
   }
 
   .lg-fs-5{
     font-size:3.05176rem;
     font-size:var(--fs-5);
     line-height:1.2em;
-    line-height:var(--lh--1)
+    line-height:var(--lh-2)
   }
 
   .lg-fs-6{
     font-size:3.8147rem;
     font-size:var(--fs-6);
     line-height:1.2em;
-    line-height:var(--lh--1)
-  }
-
-  .lg-lh--4{
-    line-height:0.9em;
-    line-height:var(--lh--4);
-  }
-
-  .lg-lh--3{
-    line-height:1em;
-    line-height:var(--lh--3);
-  }
-
-  .lg-lh--2{
-    line-height:1.1em;
-    line-height:var(--lh--2);
+    line-height:var(--lh-2)
   }
 
   .lg-lh--1{
-    line-height:1.2em;
+    line-height:0.9em;
     line-height:var(--lh--1);
   }
 
-  .lg-lh,
-  .lg-lh-default{
-    line-height:1.62em;
+  .lg-lh{
+    line-height:1em;
     line-height:var(--lh);
   }
 
   .lg-lh-1{
-    line-height:2em;
+    line-height:1.1em;
     line-height:var(--lh-1);
   }
 
   .lg-lh-2{
-    line-height:2.4em;
+    line-height:1.2em;
     line-height:var(--lh-2);
+  }
+
+  .lg-lh-3, .lg-lh-default{
+    line-height:1.62em;
+    line-height:var(--lh-3);
+  }
+
+  .lg-lh-4{
+    line-height:2em;
+    line-height:var(--lh-4);
   }
 
 }

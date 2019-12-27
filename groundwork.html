@@ -21,8 +21,6 @@
 </style>
 
 <body class="x">
-
-
     <div class="full x bg-silver">
         <header class="mry-3">
             <h1 class="mrb--1 lh--3 fw-700">Groundwork</h1>
@@ -44,6 +42,8 @@
             </div>
         </div>
     </div>
+
+
 
     <div>
         <h2 id="notation" class="h3">Notation</h2>
@@ -393,32 +393,28 @@ figure
         <h3>Line Height</h3>
         <table class="pdy-0">
             <tr>
-                <td class="fs-1 lh--4 bg-silver brt bottom pdx-0">The quick brown fox jumps over the lazy dog</td>
-                <td class="lh--4 code bottom pdx">.lh--4</td>
-            </tr>
-            <tr>
-                <td class="fs-1 lh--3 bg-silver brt bottom pdx-0">The quick brown fox jumps over the lazy dog</td>
-                <td class="lh--3 bottom pdx"><code>.lh--3</code> <small>(1em)</small></td>
-            </tr>
-            <tr>
-                <td class="fs-1 lh--2 bg-silver brt bottom pdx-0">The quick brown fox jumps over the lazy dog </td>
-                <td class="lh--2 code bottom pdx">.lh--2</td>
-            </tr>
-            <tr>
                 <td class="fs-1 lh--1 bg-silver brt bottom pdx-0">The quick brown fox jumps over the lazy dog</td>
                 <td class="lh--1 code bottom pdx">.lh--1</td>
             </tr>
             <tr>
                 <td class="fs-1 lh bg-silver brt bottom pdx-0">The quick brown fox jumps over the lazy dog</td>
-                <td class="lh bottom no-break pdx"><code>.lh .lh-default</code></td>
+                <td class="lh bottom pdx"><code>.lh</code> <small>(1em)</small></td>
             </tr>
             <tr>
-                <td class="fs-1 lh-1 bg-silver brt bottom pdx-0">The quick brown fox jumps over the lazy dog</td>
+                <td class="fs-1 lh-1 bg-silver brt bottom pdx-0">The quick brown fox jumps over the lazy dog </td>
                 <td class="lh-1 code bottom pdx">.lh-1</td>
             </tr>
             <tr>
-                <td class="fs-1 lh-2 bg-silver bry bottom pdx-0">The quick brown fox jumps over the lazy dog</td>
+                <td class="fs-1 lh-2 bg-silver brt bottom pdx-0">The quick brown fox jumps over the lazy dog</td>
                 <td class="lh-2 code bottom pdx">.lh-2</td>
+            </tr>
+            <tr>
+                <td class="fs-1 lh-3 bg-silver brt bottom pdx-0">The quick brown fox jumps over the lazy dog</td>
+                <td class="lh-3 bottom no-break pdx"><code>.lh-3 .lh-default</code></td>
+            </tr>
+            <tr>
+                <td class="fs-1 lh-4 bg-silver brt brb bottom pdx-0">The quick brown fox jumps over the lazy dog</td>
+                <td class="lh-4 code bottom pdx">.lh-4</td>
             </tr>
         </table>
 
@@ -533,350 +529,427 @@ figure
         </table>
 
         <h3>Grid Gap</h3>
-        <div class="max-width-sm">
-            <div class="x-12 gp-0">
-                <div class="xx-6 bg-silver pdy middle center">1</div>
-                <div class="xx-6 bg-silver pdy middle center">2</div>
-                <div class="xx-6 bg-silver pdy middle center">3</div>
-                <div class="xx-6 bg-silver pdy middle center">4</div>
+        <div>
+
+            <div class="x-12 gp-0 middle center">
+                <div class="xx-6 bg-silver pdy">1</div>
+                <div class="xx-6 bg-silver pdy">2</div>
+                <div class="xx-6 bg-silver pdy">3</div>
+                <div class="xx-6 bg-silver pdy">4</div>
             </div>
             <code>.gp-0</code>
 
-            <div class="x-12 gp-sm mrt-1">
-                <div class="xx-6 bg-silver pd-1 middle center">1</div>
-                <div class="xx-6 bg-silver pd-1 middle center">2</div>
-                <div class="xx-6 bg-silver pd-1 middle center">3</div>
-                <div class="xx-6 bg-silver pd-1 middle center">4</div>
+            <div class="x-12 gp-sm mrt-1 middle center">
+                <div class="xx-6 bg-silver pdy">1</div>
+                <div class="xx-6 bg-silver pdy">2</div>
+                <div class="xx-6 bg-silver pdy">3</div>
+                <div class="xx-6 bg-silver pdy">4</div>
             </div>
             <code>.gp-sm</code>
 
-
-            <div class="x-12 gpx-sm gpy-0 mrt-1">
-                <div class="xx-6 bg-silver pd-1 "></div>
-                <div class="xx-6 bg-silver pd-1 "></div>
-                <div class="xx-6 bg-silver pd-1 "></div>
-                <div class="xx-6 bg-silver pd-1 "></div>
+            <div class="x-12 gpx-sm mrt-1 middle center">
+                <div class="xx-6 bg-silver pdy">1</div>
+                <div class="xx-6 bg-silver pdy">2</div>
+                <div class="xx-6 bg-silver pdy">3</div>
+                <div class="xx-6 bg-silver pdy">4</div>
             </div>
-            <code>.gpx-sm.gpy-0</code>
+            <code>.gpx-sm</code>
 
-
-
-            <div class="x-12 gpy-sm gpx-0">
-                <div class="xx-6 bg-silver pd-1 br"></div>
-                <div class="xx-6 bg-silver pd-1 br"></div>
-                <div class="xx-6 bg-silver pd-1 br"></div>
-                <div class="xx-6 bg-silver pd-1 br"></div>
+            <div class="x-12 gpy-sm gpx-0 mrt-1 middle center">
+                <div class="xx-6 bg-silver pdy">1</div>
+                <div class="xx-6 bg-silver pdy">2</div>
+                <div class="xx-6 bg-silver pdy">3</div>
+                <div class="xx-6 bg-silver pdy">4</div>
             </div>
             <code>.gpy-sm.gpx-0</code>
 
-
-
-            <div class="x-12 gp-rg">
-                <div class="xx-6 bg-silver pd-1 br"></div>
-                <div class="xx-6 bg-silver pd-1 br"></div>
-                <div class="xx-6 bg-silver pd-1 br"></div>
-                <div class="xx-6 bg-silver pd-1 br"></div>
+            <div class="x-12 gp--4 mrt-1 middle center">
+                <div class="xx-6 bg-silver pdy">1</div>
+                <div class="xx-6 bg-silver pdy">2</div>
+                <div class="xx-6 bg-silver pdy">3</div>
+                <div class="xx-6 bg-silver pdy">4</div>
             </div>
-            <code>.gp-rg</code>
+            <code>.gp--4</code>
 
-
-
-            <div class="x-12 gpx-rg gpy-0">
-                <div class="xx-6 bg-silver pd-1 br"></div>
-                <div class="xx-6 bg-silver pd-1 br"></div>
-                <div class="xx-6 bg-silver pd-1 br"></div>
-                <div class="xx-6 bg-silver pd-1 br"></div>
+            <div class="x-12 gpx--4 mrt-1 middle center">
+                <div class="xx-6 bg-silver pdy">1</div>
+                <div class="xx-6 bg-silver pdy">2</div>
+                <div class="xx-6 bg-silver pdy">3</div>
+                <div class="xx-6 bg-silver pdy">4</div>
             </div>
-            <code>.gpx-rg.gpy-0</code>
+            <code>.gpx--4</code>
 
-
-
-            <div class="x-12 gpy-rg gpx-0 bg-yellow">
-                <div class="xx-6 bg-silver pd-1 br"></div>
-                <div class="xx-6 bg-silver pd-1 br"></div>
-                <div class="xx-6 bg-silver pd-1 br"></div>
-                <div class="xx-6 bg-silver pd-1 br"></div>
+            <div class="x-12 gpy--4 gpx-0 mrt-1 middle center">
+                <div class="xx-6 bg-silver pdy">1</div>
+                <div class="xx-6 bg-silver pdy">2</div>
+                <div class="xx-6 bg-silver pdy">3</div>
+                <div class="xx-6 bg-silver pdy">4</div>
             </div>
-            <code>.gpy-rg.gpx-0</code>
+            <code>.gpy--4.gpx-0</code>
+
+            <div class="x-12 gp--3 mrt-1 middle center">
+                <div class="xx-6 bg-silver pdy">1</div>
+                <div class="xx-6 bg-silver pdy">2</div>
+                <div class="xx-6 bg-silver pdy">3</div>
+                <div class="xx-6 bg-silver pdy">4</div>
+            </div>
+            <code>.gp--3</code>
+
+            <div class="x-12 gpx--3 mrt-1 middle center">
+                <div class="xx-6 bg-silver pdy">1</div>
+                <div class="xx-6 bg-silver pdy">2</div>
+                <div class="xx-6 bg-silver pdy">3</div>
+                <div class="xx-6 bg-silver pdy">4</div>
+            </div>
+            <code>.gpx--3</code>
+
+            <div class="x-12 gpy--3 gpx-0 mrt-1 middle center">
+                <div class="xx-6 bg-silver pdy">1</div>
+                <div class="xx-6 bg-silver pdy">2</div>
+                <div class="xx-6 bg-silver pdy">3</div>
+                <div class="xx-6 bg-silver pdy">4</div>
+            </div>
+            <code>.gpy--3.gpx-0</code>
 
 
+            <div class="x-12 gp--2 mrt-1 middle center">
+                <div class="xx-6 bg-silver pdy">1</div>
+                <div class="xx-6 bg-silver pdy">2</div>
+                <div class="xx-6 bg-silver pdy">3</div>
+                <div class="xx-6 bg-silver pdy">4</div>
+            </div>
+            <code>.gp--2</code>
 
-            <div class="x-12 gp bg-yellow">
-                <div class="xx-6 bg-silver pd-1 br"></div>
-                <div class="xx-6 bg-silver pd-1 br"></div>
-                <div class="xx-6 bg-silver pd-1 br"></div>
-                <div class="xx-6 bg-silver pd-1 br"></div>
+            <div class="x-12 gpx--2 mrt-1 middle center">
+                <div class="xx-6 bg-silver pdy">1</div>
+                <div class="xx-6 bg-silver pdy">2</div>
+                <div class="xx-6 bg-silver pdy">3</div>
+                <div class="xx-6 bg-silver pdy">4</div>
+            </div>
+            <code>.gpx--2</code>
+
+            <div class="x-12 gpy--2 gpx-0 mrt-1 middle center">
+                <div class="xx-6 bg-silver pdy">1</div>
+                <div class="xx-6 bg-silver pdy">2</div>
+                <div class="xx-6 bg-silver pdy">3</div>
+                <div class="xx-6 bg-silver pdy">4</div>
+            </div>
+            <code>.gpy--2.gpx-0</code>
+
+            <div class="x-12 gp--1 mrt-1 middle center">
+                <div class="xx-6 bg-silver pdy">1</div>
+                <div class="xx-6 bg-silver pdy">2</div>
+                <div class="xx-6 bg-silver pdy">3</div>
+                <div class="xx-6 bg-silver pdy">4</div>
+            </div>
+            <code>.gp--1</code>
+
+            <div class="x-12 gpx--1 mrt-1 middle center">
+                <div class="xx-6 bg-silver pdy">1</div>
+                <div class="xx-6 bg-silver pdy">2</div>
+                <div class="xx-6 bg-silver pdy">3</div>
+                <div class="xx-6 bg-silver pdy">4</div>
+            </div>
+            <code>.gpx--1</code>
+
+            <div class="x-12 gpy--1 gpx-0 mrt-1 middle center">
+                <div class="xx-6 bg-silver pdy">1</div>
+                <div class="xx-6 bg-silver pdy">2</div>
+                <div class="xx-6 bg-silver pdy">3</div>
+                <div class="xx-6 bg-silver pdy">4</div>
+            </div>
+            <code>.gpy--1.gpx-0</code>
+
+            <div class="x-12 gp mrt-1 middle center">
+                <div class="xx-6 bg-silver pdy">1</div>
+                <div class="xx-6 bg-silver pdy">2</div>
+                <div class="xx-6 bg-silver pdy">3</div>
+                <div class="xx-6 bg-silver pdy">4</div>
             </div>
             <code>.gp</code>
 
+            <div class="x-12 gpx mrt-1 middle center">
+                <div class="xx-6 bg-silver pdy">1</div>
+                <div class="xx-6 bg-silver pdy">2</div>
+                <div class="xx-6 bg-silver pdy">3</div>
+                <div class="xx-6 bg-silver pdy">4</div>
+            </div>
+            <code>.gpx</code>
 
+            <div class="x-12 gpy gpx-0 mrt-1 middle center">
+                <div class="xx-6 bg-silver pdy">1</div>
+                <div class="xx-6 bg-silver pdy">2</div>
+                <div class="xx-6 bg-silver pdy">3</div>
+                <div class="xx-6 bg-silver pdy">4</div>
+            </div>
+            <code>.gpy.gpx-0</code>
 
-            <div class="x-12 gp-1 bg-yellow">
-                <div class="xx-6 bg-silver pd-1 br"></div>
-                <div class="xx-6 bg-silver pd-1 br"></div>
-                <div class="xx-6 bg-silver pd-1 br"></div>
-                <div class="xx-6 bg-silver pd-1 br"></div>
+            <div class="x-12 gp-1 mrt-1 middle center">
+                <div class="xx-6 bg-silver pdy">1</div>
+                <div class="xx-6 bg-silver pdy">2</div>
+                <div class="xx-6 bg-silver pdy">3</div>
+                <div class="xx-6 bg-silver pdy">4</div>
             </div>
             <code>.gp-1</code>
 
+            <div class="x-12 gpx-1 mrt-1 middle center">
+                <div class="xx-6 bg-silver pdy">1</div>
+                <div class="xx-6 bg-silver pdy">2</div>
+                <div class="xx-6 bg-silver pdy">3</div>
+                <div class="xx-6 bg-silver pdy">4</div>
+            </div>
+            <code>.gpx-1</code>
 
-
-            <div class="x-12 gpy-1 gpx-0">
-                <div class="xx-6 bg-silver pd-1 br"></div>
-                <div class="xx-6 bg-silver pd-1 br"></div>
-                <div class="xx-6 bg-silver pd-1 br"></div>
-                <div class="xx-6 bg-silver pd-1 br"></div>
+            <div class="x-12 gpy-1 gpx-0 mrt-1 middle center">
+                <div class="xx-6 bg-silver pdy">1</div>
+                <div class="xx-6 bg-silver pdy">2</div>
+                <div class="xx-6 bg-silver pdy">3</div>
+                <div class="xx-6 bg-silver pdy">4</div>
             </div>
             <code>.gpy-1.gpx-0</code>
 
 
 
-            <div class="x-12 gpx-1  ">
-                <div class="xx-6 bg-silver pd-1 br"></div>
-                <div class="xx-6 bg-silver pd-1 br"></div>
-                <div class="xx-6 bg-silver pd-1 br"></div>
-                <div class="xx-6 bg-silver pd-1 br"></div>
-            </div>
-            <code>.gpx-1</code> <small>(default)</small>
+            <h3>Margin</h3>
+            <h3>Padding</h3>
         </div>
 
-        <h3>Margin</h3>
-        <h3>Padding</h3>
-    </div>
+
+        <div>
+            <h2 id="tables">Tables</h2>
+            <table>
+                <thead>
+                    <th>
+                    <th></th>
+                    <th>
+                    <th></th>
+                </thead>
+                <tr>
+                    <td>dd</td>
+                    <td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>dd</td>
+                    <td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
 
 
-    <div>
-        <h2 id="tables">Tables</h2>
-        <table>
-            <thead>
-                <th>
-                <th></th>
-                <th>
-                <th></th>
-            </thead>
-            <tr>
-                <td>dd</td>
-                <td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>dd</td>
-                <td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>
-                <td></td>
-            </tr>
-        </table>
-    </div>
-
-
-    <div>
-        <h2 id="figures">Figures</h2>
-        <figure class="my">
-            <img src="resources/james-adams-unsplash.jpg" />
-            <figcaption>Photo by James Adams on Unsplash</figcaption>
-        </figure>
-        <pre>figure
+        <div>
+            <h2 id="figures">Figures</h2>
+            <figure class="my">
+                <img src="resources/james-adams-unsplash.jpg" />
+                <figcaption>Photo by James Adams on Unsplash</figcaption>
+            </figure>
+            <pre>figure
     img/
     figcaption
     /figcaption
 /figure</pre>
-    </div>
+        </div>
 
-    <div>
-        <div class="x-12 gp">
-            <div>
-                <h2 id="borders">Borders</h2>
-                <h3>Border</h3>
+        <div>
+            <div class="x-12 gp">
+                <div>
+                    <h2 id="borders">Borders</h2>
+                    <h3>Border</h3>
+                </div>
+                <div class="xx-4 br brw-rg pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br</code>
+                </div>
+                <div class="xx-4 bry brw-rg pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.bry</code></div>
+                <div class="xx-4 brx brw-rg pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.brx</code></div>
+                <div class="xx-4 brt brw-rg pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.brt</code></div>
+                <div class="xx-4 brr brw-rg pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.brr</code></div>
+                <div class="xx-4 brb brw-rg pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.brb</code></div>
+                <div class="xx-4 brl brw-rg pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.brl</code></div>
+
+                <h3>Border Style</h3>
+                <div class="xx-4 br-dashed brw-rg pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br-dashed</code></div>
+                <div class="xx-4 br-dotted brw-rg pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br-dotted</code></div>
+                <div class="xx-4 br-solid brw-rg pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br-solid</code></div>
+
+                <h3>Border Width</h3>
+                <div class="xx-4 br brw-0 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.brw-0</code></div>
+                <div class="xx-4 br brw-sm pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.brw-sm br.brw-default</code></div>
+                <div class="xx-4 br brw--4 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.brw--4</code></div>
+                <div class="xx-4 br brw--3 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.brw--3</code></div>
+                <div class="xx-4 br brw--2 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.brw--2</code></div>
+                <div class="xx-4 br brw--1 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.brw--1</code></div>
+                <div class="xx-4 br brw pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.brw</code> <small>(1rem)</small></div>
+
+                <h3>Border Radius</h3>
+                <div class="xx-4 br brw--4 br-radius-0 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.br-radius-0</code></div>
+
+                <div class="xx-4 br brw--4 br-radius--2 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.br-radius--2 .br.rounded</code></div>
+
+                <div class="xx-4 br brw--4 br-radius--1 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.br-radius--1</code></div>
+
+                <div class="xx-4 br brw--4 br-radius pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.br-radius</code> <small>(1rem)</small></div>
+
+                <div class="xx-4 br brw--4 br-radius-pill pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.br-radius-pill</code></div>
+
+                <div class="xx-4">
+                    <div class="br brw--4 br-radius-100 pd-2 inline-block bg-silver"></div>
+                </div>
+                <div class="xx-8"><code>.br.br-radius-100</code></div>
+
+                <div class="xx-4 br brw--4 br-radius br-radius-t pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.br-radius.br-radius-t</code></div>
+
+                <div class="xx-4 br brw--4 br-radius br-radius-r pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.br-radius.br-radius-r</code></div>
+
+                <div class="xx-4 br brw--4 br-radius br-radius-b pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.br-radius.br-radius-b</code></div>
+
+                <div class="xx-4 br brw--4 br-radius br-radius-l pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.br-radius.br-radius-l</code></div>
+
             </div>
-            <div class="xx-4 br brw-rg pd-1 bg-silver"></div>
-            <div class="xx-8"><code>.br</code></div>
-            <div class="xx-4 bry brw-rg pd-1 bg-silver"></div>
-            <div class="xx-8"><code>.bry</code></div>
-            <div class="xx-4 brx brw-rg pd-1 bg-silver"></div>
-            <div class="xx-8"><code>.brx</code></div>
-            <div class="xx-4 brt brw-rg pd-1 bg-silver"></div>
-            <div class="xx-8"><code>.brt</code></div>
-            <div class="xx-4 brr brw-rg pd-1 bg-silver"></div>
-            <div class="xx-8"><code>.brr</code></div>
-            <div class="xx-4 brb brw-rg pd-1 bg-silver"></div>
-            <div class="xx-8"><code>.brb</code></div>
-            <div class="xx-4 brl brw-rg pd-1 bg-silver"></div>
-            <div class="xx-8"><code>.brl</code></div>
-
-            <h3>Border Style</h3>
-            <div class="xx-4 br-dashed brw-rg pd-1 bg-silver"></div>
-            <div class="xx-8"><code>.br-dashed</code></div>
-            <div class="xx-4 br-dotted brw-rg pd-1 bg-silver"></div>
-            <div class="xx-8"><code>.br-dotted</code></div>
-            <div class="xx-4 br-solid brw-rg pd-1 bg-silver"></div>
-            <div class="xx-8"><code>.br-solid</code></div>
-
-            <h3>Border Width</h3>
-            <div class="xx-4 br brw-0 pd-1 bg-silver"></div>
-            <div class="xx-8"><code>.brw-0</code></div>
-            <div class="xx-4 br brw-sm pd-1 bg-silver"></div>
-            <div class="xx-8"><code>.br.brw-sm br.brw-default</code></div>
-            <div class="xx-4 br brw-rg pd-1 bg-silver"></div>
-            <div class="xx-8"><code>.br.brw-rg</code></div>
-            <div class="xx-4 br brw-md pd-1 bg-silver"></div>
-            <div class="xx-8"><code>.br.brw-md</code></div>
-            <div class="xx-4 br brw-lg pd-1 bg-silver"></div>
-            <div class="xx-8"><code>.br.brw-lg</code></div>
-            <div class="xx-4 br brw pd-1 bg-silver"></div>
-            <div class="xx-8"><code>.br.brw</code> <small>(1rem)</small></div>
-
-            <h3>Border Radius</h3>
-            <div class="xx-4 br brw-rg br-radius-0 pd-1 bg-silver"></div>
-            <div class="xx-8"><code>.br.br-radius-0</code></div>
-
-            <div class="xx-4 br brw-rg br-radius--2 pd-1 bg-silver"></div>
-            <div class="xx-8"><code>.br.br-radius--2 .br.rounded</code></div>
-
-            <div class="xx-4 br brw-rg br-radius--1 pd-1 bg-silver"></div>
-            <div class="xx-8"><code>.br.br-radius--1</code></div>
-
-            <div class="xx-4 br brw-rg br-radius pd-1 bg-silver"></div>
-            <div class="xx-8"><code>.br.br-radius</code> <small>(1rem)</small></div>
-
-            <div class="xx-4 br brw-rg br-radius-pill pd-1 bg-silver"></div>
-            <div class="xx-8"><code>.br.br-radius-pill</code></div>
-
-            <div class="xx-4">
-                <div class="br brw-rg br-radius-100 pd-2 inline-block bg-silver"></div>
-            </div>
-            <div class="xx-8"><code>.br.br-radius-100</code></div>
-
-            <div class="xx-4 br brw-rg br-radius br-radius-t pd-1 bg-silver"></div>
-            <div class="xx-8"><code>.br.br-radius.br-radius-t</code></div>
-
-            <div class="xx-4 br brw-rg br-radius br-radius-r pd-1 bg-silver"></div>
-            <div class="xx-8"><code>.br.br-radius.br-radius-r</code></div>
-
-            <div class="xx-4 br brw-rg br-radius br-radius-b pd-1 bg-silver"></div>
-            <div class="xx-8"><code>.br.br-radius.br-radius-b</code></div>
-
-            <div class="xx-4 br brw-rg br-radius br-radius-l pd-1 bg-silver"></div>
-            <div class="xx-8"><code>.br.br-radius.br-radius-l</code></div>
 
         </div>
 
-    </div>
-
-    <div>
-        <h2 id="colors">Colors</h2>
-        <table class="code br-separate">
-            <tr>
-                <td class="bg-navy white pd">.bg-navy</td>
-                <td class="navy pd">.navy</td>
-                <td class="br brw-rg br-navy pd">.br-navy</td>
-            </tr>
-            <tr>
-                <td class="bg-blue white pd">.bg-blue</td>
-                <td class="blue pd">.blue</td>
-                <td class="br br-blue brw-rg pd"></td>
-            </tr>
-        </table>
+        <div>
+            <h2 id="colors">Colors</h2>
+            <table class="code br-separate">
+                <tr>
+                    <td class="bg-navy white pd">.bg-navy</td>
+                    <td class="navy pd">.navy</td>
+                    <td class="br brw--4 br-navy pd">.br-navy</td>
+                </tr>
+                <tr>
+                    <td class="bg-blue white pd">.bg-blue</td>
+                    <td class="blue pd">.blue</td>
+                    <td class="br br-blue brw--4 pd"></td>
+                </tr>
+            </table>
 
 
-        <div class="x-12 gp-0 center">
-            <div class="xx-2 bg-navy white pdy">.bg-navy</div>
-            <div class="xx-2 navy size-1 bold">Aa</div>
-            <div class="xx-2 navy pdy">.navy</div>
-            <div class="xx-2 br br-navy navy pdy brw-rg">.br-navy</div>
-            <div class="xx-4"></div>
-            <div class="xx-2 bg-blue"></div>
-            <div class="xx-2 blue pdy size-1 bold center">Aa</div>
-            <div class="xx-2"></div>
-            <div class="xx-6"></div>
-            <div class="xx-2 bg-aqua"></div>
-            <div class="xx-2 aqua pdy size-1 bold center">Aa</div>
-            <div class="xx-2"></div>
-            <div class="xx-6"></div>
-            <div class="xx-2 bg-teal"></div>
-            <div class="xx-2 teal pdy size-1 bold center">Aa</div>
-            <div class="xx-2"></div>
-            <div class="xx-6"></div>
-            <div class="xx-2 bg-olive"></div>
-            <div class="xx-2 olive pdy size-1 bold center">Aa</div>
-            <div class="xx-2"></div>
-            <div class="xx-6"></div>
-            <div class="xx-2 bg-green"></div>
-            <div class="xx-2 green pdy size-1 bold center">Aa</div>
-            <div class="xx-2"></div>
-            <div class="xx-6"></div>
-            <div class="xx-2 bg-lime"></div>
-            <div class="xx-2 lime pdy size-1 bold center">Aa</div>
-            <div class="xx-2"></div>
-            <div class="xx-6"></div>
-            <div class="xx-2 bg-yellow"></div>
-            <div class="xx-2 yellow pdy size-1 bold center">Aa</div>
-            <div class="xx-2"></div>
-            <div class="xx-6"></div>
-            <div class="xx-2 bg-orange"></div>
-            <div class="xx-2 orange pdy size-1 bold center">Aa</div>
-            <div class="xx-2"></div>
-            <div class="xx-6"></div>
-            <div class="xx-2 bg-red"></div>
-            <div class="xx-2 red pdy size-1 bold center">Aa</div>
-            <div class="xx-2"></div>
-            <div class="xx-6"></div>
-            <div class="xx-2 bg-fuchsia"></div>
-            <div class="xx-2 fuchsia pdy size-1 bold center">Aa</div>
-            <div class="xx-2"></div>
-            <div class="xx-6"></div>
-            <div class="xx-2 bg-purple"></div>
-            <div class="xx-2 purple pdy size-1 bold center">Aa</div>
-            <div class="xx-2"></div>
-            <div class="xx-6"></div>
-            <div class="xx-2 bg-maroon"></div>
-            <div class="xx-2 maroon pdy size-1 bold center">Aa</div>
-            <div class="xx-2"></div>
-            <div class="xx-6"></div>
-            <div class="xx-2 bg-black"></div>
-            <div class="xx-2 black pdy size-1 bold center">Aa</div>
-            <div class="xx-2"></div>
-            <div class="xx-6"></div>
-            <div class="xx-2 bg-gray"></div>
-            <div class="xx-2 gray pdy size-1 bold center">Aa</div>
-            <div class="xx-2"></div>
-            <div class="xx-6"></div>
-            <div class="xx-2 bg-silver"></div>
-            <div class="xx-2 silver pdy size-1 bold center">Aa</div>
-            <div class="xx-2"></div>
-            <div class="xx-6"></div>
-            <div class="xx-2 bg-white"></div>
-            <div class="xx-2 base-color pdy size-1 bold center">Aa</div>
-            <div class="xx-2"></div>
-            <div class="xx-6"></div>
-            <div class="xx-2 bg-base-color"></div>
-            <div class="xx-2 base-color pdy size-1 bold center">Aa</div>
-            <div class="xx-2"></div>
-            <div class="xx-6"></div>
+            <div class="x-12 gp-0 center">
+                <div class="xx-2 bg-navy white pdy">.bg-navy</div>
+                <div class="xx-2 navy size-1 bold">Aa</div>
+                <div class="xx-2 navy pdy">.navy</div>
+                <div class="xx-2 br br-navy navy pdy brw-rg">.br-navy</div>
+                <div class="xx-4"></div>
+                <div class="xx-2 bg-blue"></div>
+                <div class="xx-2 blue pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+                <div class="xx-2 bg-aqua"></div>
+                <div class="xx-2 aqua pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+                <div class="xx-2 bg-teal"></div>
+                <div class="xx-2 teal pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+                <div class="xx-2 bg-olive"></div>
+                <div class="xx-2 olive pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+                <div class="xx-2 bg-green"></div>
+                <div class="xx-2 green pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+                <div class="xx-2 bg-lime"></div>
+                <div class="xx-2 lime pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+                <div class="xx-2 bg-yellow"></div>
+                <div class="xx-2 yellow pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+                <div class="xx-2 bg-orange"></div>
+                <div class="xx-2 orange pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+                <div class="xx-2 bg-red"></div>
+                <div class="xx-2 red pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+                <div class="xx-2 bg-fuchsia"></div>
+                <div class="xx-2 fuchsia pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+                <div class="xx-2 bg-purple"></div>
+                <div class="xx-2 purple pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+                <div class="xx-2 bg-maroon"></div>
+                <div class="xx-2 maroon pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+                <div class="xx-2 bg-black"></div>
+                <div class="xx-2 black pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+                <div class="xx-2 bg-gray"></div>
+                <div class="xx-2 gray pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+                <div class="xx-2 bg-silver"></div>
+                <div class="xx-2 silver pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+                <div class="xx-2 bg-white"></div>
+                <div class="xx-2 base-color pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+                <div class="xx-2 bg-base-color"></div>
+                <div class="xx-2 base-color pdy size-1 bold center">Aa</div>
+                <div class="xx-2"></div>
+                <div class="xx-6"></div>
+            </div>
+            <p class="mrt"><code>.&lt;color&gt;</code> <small>to assign text color</small></p>
+            <p><code>.bg-&lt;color&gt;</code> <small> to assign background color</small></p>
+            <p><code>.br-&lt;color&gt;</code> <small> to assign border color</small></p>
+            <p><code>.fl-&lt;color&gt;</code> <small> to assign svg fill color</small></p>
+            <p><code>.st-&lt;color&gt;</code> <small> to assign svg stroke color</small></p>
+            <p><code>.base-color</code> <small> is default text color</small></p>
+            <p><code>.base-background</code> <small> is default background color</small></p>
+
+            <p><code>.brighter</code> <code>.darker</code> <code>.grayscale</code>
+                <small>and</small> <code>.no-filter</code> <small>will manipulate color filters</small></p>
         </div>
-        <p class="mrt"><code>.&lt;color&gt;</code> <small>to assign text color</small></p>
-        <p><code>.bg-&lt;color&gt;</code> <small> to assign background color</small></p>
-        <p><code>.br-&lt;color&gt;</code> <small> to assign border color</small></p>
-        <p><code>.fl-&lt;color&gt;</code> <small> to assign svg fill color</small></p>
-        <p><code>.st-&lt;color&gt;</code> <small> to assign svg stroke color</small></p>
-        <p><code>.base-color</code> <small> is default text color</small></p>
-        <p><code>.base-background</code> <small> is default background color</small></p>
-
-        <p><code>.brighter</code> <code>.darker</code> <code>.grayscale</code>
-            <small>and</small> <code>.no-filter</code> <small>will manipulate color filters</small></p>
-    </div>
 
 
 
-    <h2 id="grid">Grid</h2>
+        <h2 id="grid">Grid</h2>
 
-    <h3>Middle Content</h3>
-    <p><code>.x *</code></p>
-    <p>Middle content is the default positioning of any item within the layout. Middle content doesn´t need a
-        specific css class assignment to get positioned this way.</p>
+        <h3>Middle Content</h3>
+        <p><code>.x *</code></p>
+        <p>Middle content is the default positioning of any item within the layout. Middle content doesn´t need a
+            specific css class assignment to get positioned this way.</p>
     </div>
 
 

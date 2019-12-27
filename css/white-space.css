@@ -40,18 +40,6 @@
   grid-row-gap:var(--border-width-sm)
 }
 
-.gp-rg{
-  grid-gap:var(--border-width-rg);
-}
-
-.gpx-rg{
-  grid-column-gap:var(--border-width-rg);
-}
-
-.gpy-rg{
-  grid-row-gap:var(--border-width-rg)
-}
-
 .gp--4{
   grid-gap:0.14519rem;
   grid-gap:var(--space--4);
@@ -140,51 +128,6 @@
 .gpy-1{
   grid-row-gap:1.62rem;
   grid-row-gap:var(--space-1);
-}
-
-.gp-2{
-  grid-gap:2.6244rem;
-  grid-gap:var(--space-2);
-}
-
-.gpx-2{
-  grid-column-gap:2.6244rem;
-  grid-column-gap:var(--space-2);
-}
-
-.gpy-2{
-  grid-row-gap:2.6244rem;
-  grid-row-gap:var(--space-2);
-}
-
-.gp-3{
-  grid-gap:4.25153rem;
-  grid-gap:var(--space-3);
-}
-
-.gpx-3{
-  grid-column-gap:4.25153rem;
-  grid-column-gap:var(--space-3);
-}
-
-.gpy-3{
-  grid-row-gap:4.25153rem;
-  grid-row-gap:var(--space-3);
-}
-
-.gp-4{
-  grid-gap:6.88748rem;
-  grid-gap:var(--space-4);
-}
-
-.gpx-4{
-  grid-column-gap:6.88748rem;
-  grid-column-gap:var(--space-4);
-}
-
-.gpy-4{
-  grid-row-gap:6.88748rem;
-  grid-row-gap:var(--space-4);
 }
 
 .mr-0{

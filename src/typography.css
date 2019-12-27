@@ -367,7 +367,7 @@ p.no-pindent {
 code,
 pre {
   font-family: var(--font-family-mono);
-  line-height: var(--lh);
+  line-height: var(--lh-3);
   font-size: var(--fs);
 }
 

@@ -1,8 +1,5 @@
 :root {
   --border-width-sm: 1px;
-  --border-width-rg: 2px;
-  --border-width-md: 4px;
-  --border-width-lg: 8px;
   --border-width-default: var(--border-width-sm);
 
   --border-radius--2: calc(var(--space) / 4);
@@ -82,16 +79,20 @@
   border-width: var(--border-width-sm);
 }
 
-.brw-rg {
-  border-width: var(--border-width-rg);
+.brw--4 {
+  border-width: var(--space--4);
 }
 
-.brw-md {
-  border-width: var(--border-width-md);
+.brw--3 {
+  border-width: var(--space--3);
 }
 
-.brw-lg {
-  border-width: var(--border-width-lg);
+.brw--2 {
+  border-width: var(--space--2);
+}
+
+.brw--1 {
+  border-width: var(--space--1);
 }
 
 .brw {

@@ -1298,7 +1298,7 @@ pre{
   font-family:monospace;
   font-family:var(--font-family-mono);
   line-height:1.62em;
-  line-height:var(--lh);
+  line-height:var(--lh-3);
   font-size:1rem;
   font-size:var(--fs);
 }
@@ -1358,7 +1358,6 @@ blockquote{
   padding-left:var(--space-1);
   font-style:italic;
   border-left-style:solid;
-  border-left-width:8px;
   border-left-width:var(--border-width-lg);
   border-color:#dddddd;
   border-color:var(--silver);
@@ -1416,13 +1415,13 @@ figcaption{
   --fs-5:calc(var(--fs-4)*var(--size-factor));
   --fs-6:calc(var(--fs-5)*var(--size-factor));
 
-  --lh--4:0.9em;
-  --lh--3:1em;
-  --lh--2:1.1em;
-  --lh--1:1.2em;
-  --lh:1.62em;
-  --lh-1:2em;
-  --lh-2:2.4em;
+  --lh--1:0.9em;
+  --lh:1em;
+  --lh-1:1.1em;
+  --lh-2:1.2em;
+  --lh-3:1.62em;
+  --lh-4:2em;
+
 
   --fs-h6:var(--fs--1);
   --fs-h5:var(--fs);
@@ -1431,16 +1430,16 @@ figcaption{
   --fs-h2:1.6rem;
   --fs-h1:2.4rem;
 
-  --lh-h6:var(--lh);
-  --lh-h5:var(--lh);
-  --lh-h4:var(--lh--1);
-  --lh-h3:var(--lh--1);
-  --lh-h2:var(--lh--1);
-  --lh-h1:var(--lh--1);
+  --lh-h6:var(--lh-3);
+  --lh-h5:var(--lh-3);
+  --lh-h4:var(--lh-2);
+  --lh-h3:var(--lh-2);
+  --lh-h2:var(--lh-2);
+  --lh-h1:var(--lh-2);
 
   line-height:1.62em;
 
-  line-height:var(--lh);
+  line-height:var(--lh-3);
 }
 
 .h1{
@@ -1489,7 +1488,7 @@ figcaption{
   font-size:0.8rem;
   font-size:var(--fs--1);
   line-height:1.62em;
-  line-height:var(--lh);
+  line-height:var(--lh-3);
 }
 
 .fs,
@@ -1497,85 +1496,80 @@ figcaption{
   font-size:1rem;
   font-size:var(--fs);
   line-height:1.62em;
-  line-height:var(--lh);
+  line-height:var(--lh-3);
 }
 
 .fs-1{
   font-size:1.25rem;
   font-size:var(--fs-1);
   line-height:1.2em;
-  line-height:var(--lh--1)
+  line-height:var(--lh-2)
 }
 
 .fs-2{
   font-size:1.5625rem;
   font-size:var(--fs-2);
   line-height:1.2em;
-  line-height:var(--lh--1);
+  line-height:var(--lh-2);
 }
 
 .fs-3{
   font-size:1.95313rem;
   font-size:var(--fs-3);
   line-height:1.2em;
-  line-height:var(--lh--1);
+  line-height:var(--lh-2);
 }
 
 .fs-4{
   font-size:2.44141rem;
   font-size:var(--fs-4);
   line-height:1.2em;
-  line-height:var(--lh--1)
+  line-height:var(--lh-2)
 }
 
 .fs-5{
   font-size:3.05176rem;
   font-size:var(--fs-5);
   line-height:1.2em;
-  line-height:var(--lh--1)
+  line-height:var(--lh-2)
 }
 
 .fs-6{
   font-size:3.8147rem;
   font-size:var(--fs-6);
   line-height:1.2em;
-  line-height:var(--lh--1)
-}
-
-.lh--4{
-  line-height:0.9em;
-  line-height:var(--lh--4);
-}
-
-.lh--3{
-  line-height:1em;
-  line-height:var(--lh--3);
-}
-
-.lh--2{
-  line-height:1.1em;
-  line-height:var(--lh--2);
+  line-height:var(--lh-2)
 }
 
 .lh--1{
-  line-height:1.2em;
+  line-height:0.9em;
   line-height:var(--lh--1);
 }
 
-.lh,
-.lh-default{
-  line-height:1.62em;
+.lh{
+  line-height:1em;
   line-height:var(--lh);
 }
 
 .lh-1{
-  line-height:2em;
+  line-height:1.1em;
   line-height:var(--lh-1);
 }
 
 .lh-2{
-  line-height:2.4em;
+  line-height:1.2em;
   line-height:var(--lh-2);
+}
+
+.lh-3,
+.lh-default{
+  line-height:1.62em;
+  line-height:var(--lh-3);
+}
+
+.lh-4{
+  line-height:2em;
+  line-height:var(--lh-4);
 }
 
 @media (min-width: 28rem){
@@ -1626,7 +1620,7 @@ figcaption{
     font-size:0.8rem;
     font-size:var(--fs--1);
     line-height:1.62em;
-    line-height:var(--lh);
+    line-height:var(--lh-3);
   }
 
   .sm-fs,
@@ -1634,85 +1628,80 @@ figcaption{
     font-size:1rem;
     font-size:var(--fs);
     line-height:1.62em;
-    line-height:var(--lh);
+    line-height:var(--lh-3);
   }
 
   .sm-fs-1{
     font-size:1.25rem;
     font-size:var(--fs-1);
     line-height:1.2em;
-    line-height:var(--lh--1)
+    line-height:var(--lh-2)
   }
 
   .sm-fs-2{
     font-size:1.5625rem;
     font-size:var(--fs-2);
     line-height:1.2em;
-    line-height:var(--lh--1);
+    line-height:var(--lh-2);
   }
 
   .sm-fs-3{
     font-size:1.95313rem;
     font-size:var(--fs-3);
     line-height:1.2em;
-    line-height:var(--lh--1);
+    line-height:var(--lh-2);
   }
 
   .sm-fs-4{
     font-size:2.44141rem;
     font-size:var(--fs-4);
     line-height:1.2em;
-    line-height:var(--lh--1)
+    line-height:var(--lh-2)
   }
 
   .sm-fs-5{
     font-size:3.05176rem;
     font-size:var(--fs-5);
     line-height:1.2em;
-    line-height:var(--lh--1)
+    line-height:var(--lh-2)
   }
 
   .sm-fs-6{
     font-size:3.8147rem;
     font-size:var(--fs-6);
     line-height:1.2em;
-    line-height:var(--lh--1)
-  }
-
-  .sm-lh--4{
-    line-height:0.9em;
-    line-height:var(--lh--4);
-  }
-
-  .sm-lh--3{
-    line-height:1em;
-    line-height:var(--lh--3);
-  }
-
-  .sm-lh--2{
-    line-height:1.1em;
-    line-height:var(--lh--2);
+    line-height:var(--lh-2)
   }
 
   .sm-lh--1{
-    line-height:1.2em;
+    line-height:0.9em;
     line-height:var(--lh--1);
   }
 
-  .sm-lh,
-  .sm-lh-default{
-    line-height:1.62em;
+  .sm-lh{
+    line-height:1em;
     line-height:var(--lh);
   }
 
   .sm-lh-1{
-    line-height:2em;
+    line-height:1.1em;
     line-height:var(--lh-1);
   }
 
   .sm-lh-2{
-    line-height:2.4em;
+    line-height:1.2em;
     line-height:var(--lh-2);
+  }
+
+  .sm-lh-3,
+  .sm-lh-default{
+    line-height:1.62em;
+    line-height:var(--lh-3);
+  }
+
+  .sm-lh-4{
+    line-height:2em;
+    line-height:var(--lh-4);
   }
 }
 
@@ -1763,7 +1752,7 @@ figcaption{
     font-size:0.8rem;
     font-size:var(--fs--1);
     line-height:1.62em;
-    line-height:var(--lh);
+    line-height:var(--lh-3);
   }
 
   .rg-fs,
@@ -1771,85 +1760,80 @@ figcaption{
     font-size:1rem;
     font-size:var(--fs);
     line-height:1.62em;
-    line-height:var(--lh);
+    line-height:var(--lh-3);
   }
 
   .rg-fs-1{
     font-size:1.25rem;
     font-size:var(--fs-1);
     line-height:1.2em;
-    line-height:var(--lh--1)
+    line-height:var(--lh-2)
   }
 
   .rg-fs-2{
     font-size:1.5625rem;
     font-size:var(--fs-2);
     line-height:1.2em;
-    line-height:var(--lh--1);
+    line-height:var(--lh-2);
   }
 
   .rg-fs-3{
     font-size:1.95313rem;
     font-size:var(--fs-3);
     line-height:1.2em;
-    line-height:var(--lh--1);
+    line-height:var(--lh-2);
   }
 
   .rg-fs-4{
     font-size:2.44141rem;
     font-size:var(--fs-4);
     line-height:1.2em;
-    line-height:var(--lh--1)
+    line-height:var(--lh-2)
   }
 
   .rg-fs-5{
     font-size:3.05176rem;
     font-size:var(--fs-5);
     line-height:1.2em;
-    line-height:var(--lh--1)
+    line-height:var(--lh-2)
   }
 
   .rg-fs-6{
     font-size:3.8147rem;
     font-size:var(--fs-6);
     line-height:1.2em;
-    line-height:var(--lh--1)
-  }
-
-  .rg-lh--4{
-    line-height:0.9em;
-    line-height:var(--lh--4);
-  }
-
-  .rg-lh--3{
-    line-height:1em;
-    line-height:var(--lh--3);
-  }
-
-  .rg-lh--2{
-    line-height:1.1em;
-    line-height:var(--lh--2);
+    line-height:var(--lh-2)
   }
 
   .rg-lh--1{
-    line-height:1.2em;
+    line-height:0.9em;
     line-height:var(--lh--1);
   }
 
-  .rg-lh,
-  .rg-lh-default{
-    line-height:1.62em;
+  .rg-lh{
+    line-height:1em;
     line-height:var(--lh);
   }
 
   .rg-lh-1{
-    line-height:2em;
+    line-height:1.1em;
     line-height:var(--lh-1);
   }
 
   .rg-lh-2{
-    line-height:2.4em;
+    line-height:1.2em;
     line-height:var(--lh-2);
+  }
+
+  .rg-lh-3,
+  .rg-lh-default{
+    line-height:1.62em;
+    line-height:var(--lh-3);
+  }
+
+  .rg-lh-4{
+    line-height:2em;
+    line-height:var(--lh-4);
   }
 }
 
@@ -1900,7 +1884,7 @@ figcaption{
     font-size:0.8rem;
     font-size:var(--fs--1);
     line-height:1.62em;
-    line-height:var(--lh);
+    line-height:var(--lh-3);
   }
 
   .md-fs,
@@ -1908,85 +1892,80 @@ figcaption{
     font-size:1rem;
     font-size:var(--fs);
     line-height:1.62em;
-    line-height:var(--lh);
+    line-height:var(--lh-3);
   }
 
   .md-fs-1{
     font-size:1.25rem;
     font-size:var(--fs-1);
     line-height:1.2em;
-    line-height:var(--lh--1)
+    line-height:var(--lh-2)
   }
 
   .md-fs-2{
     font-size:1.5625rem;
     font-size:var(--fs-2);
     line-height:1.2em;
-    line-height:var(--lh--1);
+    line-height:var(--lh-2);
   }
 
   .md-fs-3{
     font-size:1.95313rem;
     font-size:var(--fs-3);
     line-height:1.2em;
-    line-height:var(--lh--1);
+    line-height:var(--lh-2);
   }
 
   .md-fs-4{
     font-size:2.44141rem;
     font-size:var(--fs-4);
     line-height:1.2em;
-    line-height:var(--lh--1)
+    line-height:var(--lh-2)
   }
 
   .md-fs-5{
     font-size:3.05176rem;
     font-size:var(--fs-5);
     line-height:1.2em;
-    line-height:var(--lh--1)
+    line-height:var(--lh-2)
   }
 
   .md-fs-6{
     font-size:3.8147rem;
     font-size:var(--fs-6);
     line-height:1.2em;
-    line-height:var(--lh--1)
-  }
-
-  .md-lh--4{
-    line-height:0.9em;
-    line-height:var(--lh--4);
-  }
-
-  .md-lh--3{
-    line-height:1em;
-    line-height:var(--lh--3);
-  }
-
-  .md-lh--2{
-    line-height:1.1em;
-    line-height:var(--lh--2);
+    line-height:var(--lh-2)
   }
 
   .md-lh--1{
-    line-height:1.2em;
+    line-height:0.9em;
     line-height:var(--lh--1);
   }
 
-  .md-lh,
-  .md-lh-default{
-    line-height:1.62em;
+  .md-lh{
+    line-height:1em;
     line-height:var(--lh);
   }
 
   .md-lh-1{
-    line-height:2em;
+    line-height:1.1em;
     line-height:var(--lh-1);
   }
 
   .md-lh-2{
-    line-height:2.4em;
+    line-height:1.2em;
     line-height:var(--lh-2);
+  }
+
+  .md-lh-3,
+  .md-lh-default{
+    line-height:1.62em;
+    line-height:var(--lh-3);
+  }
+
+  .md-lh-4{
+    line-height:2em;
+    line-height:var(--lh-4);
   }
 
 }
@@ -2038,7 +2017,7 @@ figcaption{
     font-size:0.8rem;
     font-size:var(--fs--1);
     line-height:1.62em;
-    line-height:var(--lh);
+    line-height:var(--lh-3);
   }
 
   .lg-fs,
@@ -2046,85 +2025,79 @@ figcaption{
     font-size:1rem;
     font-size:var(--fs);
     line-height:1.62em;
-    line-height:var(--lh);
+    line-height:var(--lh-3);
   }
 
   .lg-fs-1{
     font-size:1.25rem;
     font-size:var(--fs-1);
     line-height:1.2em;
-    line-height:var(--lh--1)
+    line-height:var(--lh-2)
   }
 
   .lg-fs-2{
     font-size:1.5625rem;
     font-size:var(--fs-2);
     line-height:1.2em;
-    line-height:var(--lh--1);
+    line-height:var(--lh-2);
   }
 
   .lg-fs-3{
     font-size:1.95313rem;
     font-size:var(--fs-3);
     line-height:1.2em;
-    line-height:var(--lh--1);
+    line-height:var(--lh-2);
   }
 
   .lg-fs-4{
     font-size:2.44141rem;
     font-size:var(--fs-4);
     line-height:1.2em;
-    line-height:var(--lh--1)
+    line-height:var(--lh-2)
   }
 
   .lg-fs-5{
     font-size:3.05176rem;
     font-size:var(--fs-5);
     line-height:1.2em;
-    line-height:var(--lh--1)
+    line-height:var(--lh-2)
   }
 
   .lg-fs-6{
     font-size:3.8147rem;
     font-size:var(--fs-6);
     line-height:1.2em;
-    line-height:var(--lh--1)
-  }
-
-  .lg-lh--4{
-    line-height:0.9em;
-    line-height:var(--lh--4);
-  }
-
-  .lg-lh--3{
-    line-height:1em;
-    line-height:var(--lh--3);
-  }
-
-  .lg-lh--2{
-    line-height:1.1em;
-    line-height:var(--lh--2);
+    line-height:var(--lh-2)
   }
 
   .lg-lh--1{
-    line-height:1.2em;
+    line-height:0.9em;
     line-height:var(--lh--1);
   }
 
-  .lg-lh,
-  .lg-lh-default{
-    line-height:1.62em;
+  .lg-lh{
+    line-height:1em;
     line-height:var(--lh);
   }
 
   .lg-lh-1{
-    line-height:2em;
+    line-height:1.1em;
     line-height:var(--lh-1);
   }
 
   .lg-lh-2{
-    line-height:2.4em;
+    line-height:1.2em;
     line-height:var(--lh-2);
+  }
+
+  .lg-lh-3, .lg-lh-default{
+    line-height:1.62em;
+    line-height:var(--lh-3);
+  }
+
+  .lg-lh-4{
+    line-height:2em;
+    line-height:var(--lh-4);
   }
 
 }
@@ -2655,9 +2628,6 @@ figcaption{
 
 :root{
   --border-width-sm:1px;
-  --border-width-rg:2px;
-  --border-width-md:4px;
-  --border-width-lg:8px;
   --border-width-default:var(--border-width-sm);
 
   --border-radius--2:calc(var(--space)/4);
@@ -2749,19 +2719,24 @@ figcaption{
   border-width:var(--border-width-sm);
 }
 
-.brw-rg{
-  border-width:2px;
-  border-width:var(--border-width-rg);
+.brw--4{
+  border-width:0.14519rem;
+  border-width:var(--space--4);
 }
 
-.brw-md{
-  border-width:4px;
-  border-width:var(--border-width-md);
+.brw--3{
+  border-width:0.23521rem;
+  border-width:var(--space--3);
 }
 
-.brw-lg{
-  border-width:8px;
-  border-width:var(--border-width-lg);
+.brw--2{
+  border-width:0.38104rem;
+  border-width:var(--space--2);
+}
+
+.brw--1{
+  border-width:0.61728rem;
+  border-width:var(--space--1);
 }
 
 .brw{
@@ -2861,21 +2836,6 @@ figcaption{
   grid-row-gap:var(--border-width-sm)
 }
 
-.gp-rg{
-  grid-gap:2px;
-  grid-gap:var(--border-width-rg);
-}
-
-.gpx-rg{
-  grid-column-gap:2px;
-  grid-column-gap:var(--border-width-rg);
-}
-
-.gpy-rg{
-  grid-row-gap:2px;
-  grid-row-gap:var(--border-width-rg)
-}
-
 .gp--4{
   grid-gap:0.14519rem;
   grid-gap:var(--space--4);
@@ -2964,51 +2924,6 @@ figcaption{
 .gpy-1{
   grid-row-gap:1.62rem;
   grid-row-gap:var(--space-1);
-}
-
-.gp-2{
-  grid-gap:2.6244rem;
-  grid-gap:var(--space-2);
-}
-
-.gpx-2{
-  grid-column-gap:2.6244rem;
-  grid-column-gap:var(--space-2);
-}
-
-.gpy-2{
-  grid-row-gap:2.6244rem;
-  grid-row-gap:var(--space-2);
-}
-
-.gp-3{
-  grid-gap:4.25153rem;
-  grid-gap:var(--space-3);
-}
-
-.gpx-3{
-  grid-column-gap:4.25153rem;
-  grid-column-gap:var(--space-3);
-}
-
-.gpy-3{
-  grid-row-gap:4.25153rem;
-  grid-row-gap:var(--space-3);
-}
-
-.gp-4{
-  grid-gap:6.88748rem;
-  grid-gap:var(--space-4);
-}
-
-.gpx-4{
-  grid-column-gap:6.88748rem;
-  grid-column-gap:var(--space-4);
-}
-
-.gpy-4{
-  grid-row-gap:6.88748rem;
-  grid-row-gap:var(--space-4);
 }
 
 .mr-0{
