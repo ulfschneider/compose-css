@@ -225,7 +225,6 @@ kbd,
   white-space: nowrap;
 }
 
-
 h1,
 h2,
 h3,
@@ -244,8 +243,6 @@ h1 {
   margin-bottom: var(--mrb-h1);
 }
 
-
-
 h2 {
   font-size: var(--fs-h2);
   line-height: var(--lh-h2);
@@ -253,7 +250,6 @@ h2 {
   margin-top: var(--mrt-h2);
   margin-bottom: var(--mrb-h2);
 }
-
 
 h3 {
   font-size: var(--fs-h3);
@@ -271,7 +267,6 @@ h4 {
   margin-bottom: var(--mrb-h4);
 }
 
-
 h5 {
   font-size: var(--fs-h5);
   line-height: var(--lh-h5);
@@ -280,8 +275,6 @@ h5 {
   margin-bottom: var(--mrb-h5);
 }
 
-
-
 h6 {
   font-size: var(--fs-h6);
   line-height: var(--lh-h6);
@@ -289,7 +282,6 @@ h6 {
   margin-top: var(--mrt-h6);
   margin-bottom: var(--mrb-h6);
 }
-
 
 ul,
 ul ul {
@@ -411,7 +403,7 @@ blockquote {
   padding-left: var(--space-1);
   font-style: italic;
   border-left-style: solid;
-  border-left-width: var(--border-width-lg);
+  border-left-width: var(--space--2);
   border-color: var(--silver);
 }
 
@@ -446,5 +438,5 @@ figure {
 
 figcaption {
   font-style: normal;
-  font-size: calc(var(--space) - var(--space--4));
+  font-size: small;
 }

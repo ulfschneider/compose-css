@@ -441,7 +441,7 @@ blockquote{
   padding-left:var(--space-1);
   font-style:italic;
   border-left-style:solid;
-  border-left-width:var(--border-width-lg);
+  border-left-width:var(--space--2);
   border-color:var(--silver);
 }
 
@@ -476,5 +476,5 @@ figure{
 
 figcaption{
   font-style:normal;
-  font-size:calc(var(--space) - var(--space--4));
+  font-size:small;
 }

@@ -1358,7 +1358,8 @@ blockquote{
   padding-left:var(--space-1);
   font-style:italic;
   border-left-style:solid;
-  border-left-width:var(--border-width-lg);
+  border-left-width:0.38104rem;
+  border-left-width:var(--space--2);
   border-color:#dddddd;
   border-color:var(--silver);
 }
@@ -1397,8 +1398,7 @@ figure{
 
 figcaption{
   font-style:normal;
-  font-size:0.85481rem;
-  font-size:calc(var(--space) - var(--space--4));
+  font-size:small;
 }
 
 :root{
@@ -2719,7 +2719,7 @@ figcaption{
   border-width:var(--border-width-sm);
 }
 
-.brw--4{
+.brw--4, .brw-default{
   border-width:0.14519rem;
   border-width:var(--space--4);
 }

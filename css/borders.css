@@ -89,7 +89,7 @@
   border-width:var(--border-width-sm);
 }
 
-.brw--4{
+.brw--4, .brw-default{
   border-width:var(--space--4);
 }
 
