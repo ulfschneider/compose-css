@@ -22,15 +22,15 @@
 
 <body class="x">
     <div class="full x bg-silver">
-        <header class="mry-3">
+        <header class="mry-3 breakout-l">
             <h1 class="mrb--1 lh--3 fw-700">Groundwork</h1>
             <p>A composable CSS Toolkit to build fast-loading, responsive web sites.</p>
         </header>
 
 
 
-        <div class="breakout-r caps small bold mrb-3">
-            <div class="md-columns-4 sm-columns-3 columns-2 lh-2">
+        <div class="breakout-l caps small bold mrb-3">
+            <div class="md-columns-4 sm-columns-3 columns-2 lh-4">
                 <div><a href="#notation" class="no-text-decoration">Notation</a></div>
                 <div><a href="#typography" class="no-text-decoration">Typography</a></div>
                 <div><a href="#white-space" class="no-text-decoration">White Space</a></div>
@@ -45,7 +45,7 @@
 
 
 
-    <div>
+    <div class="breakout-l max-width-sm">
         <h2 id="notation" class="h3">Notation</h2>
         <p>Throughout this document the following notation is applied:</p>
         <table>
@@ -78,7 +78,7 @@
         </table>
     </div>
 
-    <div class="breakout-r">
+    <div class="breakout-l">
         <h2 id="typography">Typography</h2>
 
         <h3>Elements</h3>
@@ -240,7 +240,7 @@ figure
         </div>
 
     </div>
-    <div class="x-12">
+    <div class="breakout-l x-12">
         <div class="xx-12 sm-xx-6">
             <h3>Headline Styling</h3>
             <table class="pdy-0">
@@ -313,7 +313,7 @@ figure
         </div>
     </div>
 
-    <div>
+    <div class="breakout-l">
         <h3>Font Size</h3>
         <table class="pdy-0">
             <tr>
@@ -445,7 +445,8 @@ figure
 
 
         <h3>Numbers</h3>
-        <p>The availability of <code>font-variant-numeric</code> features depends on the typeface capabilities. </p>
+        <p class="max-width-rg">The availability of <code>font-variant-numeric</code> features depends on the typeface
+            capabilities. </p>
         <table>
             <tr>
                 <td class="fs-2 ft-num-normal bottom">13679.05</td>
@@ -470,7 +471,7 @@ figure
         </table>
     </div>
 
-    <div>
+    <div class="breakout-l max-width-rg">
         <h2 id="white-space">White Space</h2>
 
         <table>
@@ -529,7 +530,7 @@ figure
         </table>
 
         <h3>Grid Gap</h3>
-        <div>
+        <div class="max-width-sm">
 
             <div class="x-12 gp-0 middle center">
                 <div class="xx-6 bg-silver pdy">1</div>
@@ -666,7 +667,7 @@ figure
                 <div class="xx-6 bg-silver pdy">3</div>
                 <div class="xx-6 bg-silver pdy">4</div>
             </div>
-            <code>.gp</code>
+            <code>.gp</code> <small>(1rem)</small>
 
             <div class="x-12 gpx mrt-1 middle center">
                 <div class="xx-6 bg-silver pdy">1</div>
@@ -674,7 +675,7 @@ figure
                 <div class="xx-6 bg-silver pdy">3</div>
                 <div class="xx-6 bg-silver pdy">4</div>
             </div>
-            <code>.gpx</code>
+            <code>.gpx</code> <small>(1rem)</small>
 
             <div class="x-12 gpy gpx-0 mrt-1 middle center">
                 <div class="xx-6 bg-silver pdy">1</div>
@@ -682,7 +683,7 @@ figure
                 <div class="xx-6 bg-silver pdy">3</div>
                 <div class="xx-6 bg-silver pdy">4</div>
             </div>
-            <code>.gpy.gpx-0</code>
+            <code>.gpy.gpx-0</code> <small>(1rem)</small>
 
             <div class="x-12 gp-1 mrt-1 middle center">
                 <div class="xx-6 bg-silver pdy">1</div>
@@ -1055,12 +1056,17 @@ figure
         &lt;/div&gt;
     </div>
 
-    <div class="breakout-r">
+    <div class="breakout-l">
         <h3>12 Column Grid</h3>
-        <p><code>.x-12 .xx-*</code></p>
         <p>Any of the before mentioned content concepts can be divided horizontally into 12ths.</p>
         <p>The sum of the cols per row have to add up to 12. Not specifiying a column size will result in taking the
             entire grid width into one column.</p>
+
+        <pre>div .x-12 
+    div/ .xx-2 
+    div/ .xx-10 //.xx-2 and .xx-10 together will fill an entire row of the grid             
+    div/ .xx-12 //will fill an entire row of the grid
+/div</pre>
 
         <div class="x-12 mry-1 gp center code">
             <div class="xx-2 br pdy-1">.xx-2</div>
