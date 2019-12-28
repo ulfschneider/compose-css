@@ -427,19 +427,6 @@ Naming conventions
   margin-left: var(--space-4);
 }
 
-.mrn {
-  margin: calc(-1 * var(--space));
-}
-
-.mrxn {
-  margin-left: calc(-1 * var(--space));
-  margin-right: calc(-1 * var(--space));
-}
-
-.mryn {
-  margin-top: calc(-1 * var(--space));
-  margin-bottom: calc(-1 * var(--space));
-}
 
 .mrtn {
   margin-top: calc(-1 * var(--space));
@@ -455,20 +442,6 @@ Naming conventions
 
 .mrln {
   margin-left: calc(-1 * var(--space));
-}
-
-.mrn-1 {
-  margin: calc(-1 * var(--space-1));
-}
-
-.mrxn-1 {
-  margin-left: calc(-1 * var(--space-1));
-  margin-right: calc(-1 * var(--space-1));
-}
-
-.mryn-1 {
-  margin-top: calc(-1 * var(--space-1));
-  margin-bottom: calc(-1 * var(--space-1));
 }
 
 .mrtn-1 {

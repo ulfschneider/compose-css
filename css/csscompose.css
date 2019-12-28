@@ -3531,25 +3531,6 @@ figcaption{
   margin-left:var(--space-4);
 }
 
-.mrn{
-  margin:-1rem;
-  margin:calc(-1*var(--space));
-}
-
-.mrxn{
-  margin-left:-1rem;
-  margin-left:calc(-1*var(--space));
-  margin-right:-1rem;
-  margin-right:calc(-1*var(--space));
-}
-
-.mryn{
-  margin-top:-1rem;
-  margin-top:calc(-1*var(--space));
-  margin-bottom:-1rem;
-  margin-bottom:calc(-1*var(--space));
-}
-
 .mrtn{
   margin-top:-1rem;
   margin-top:calc(-1*var(--space));
@@ -3568,25 +3549,6 @@ figcaption{
 .mrln{
   margin-left:-1rem;
   margin-left:calc(-1*var(--space));
-}
-
-.mrn-1{
-  margin:-1.62rem;
-  margin:calc(-1*var(--space-1));
-}
-
-.mrxn-1{
-  margin-left:-1.62rem;
-  margin-left:calc(-1*var(--space-1));
-  margin-right:-1.62rem;
-  margin-right:calc(-1*var(--space-1));
-}
-
-.mryn-1{
-  margin-top:-1.62rem;
-  margin-top:calc(-1*var(--space-1));
-  margin-bottom:-1.62rem;
-  margin-bottom:calc(-1*var(--space-1));
 }
 
 .mrtn-1{
