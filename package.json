@@ -1,5 +1,5 @@
 {
-  "name": "groundwork",
+  "name": "csscompose",
   "version": "0.1.0",
   "description": "Composable CSS Toolkit",
   "main": "src/groundwork.css",

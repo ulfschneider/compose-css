@@ -23,7 +23,7 @@
 <body class="x">
     <div class="full x bg-silver">
         <header class="mry-3 breakout-l">
-            <h1 class="mrb--1 lh--3 fw-700">Groundwork</h1>
+            <h1 class="mrb--1 lh--3 rg-fs-6 lg-fs-7 fw-700">Groundwork</h1>
             <p>A composable CSS Toolkit to build fast-loading, responsive web sites.</p>
         </header>
 
@@ -273,7 +273,7 @@ figure
                     </td>
                     <td class="code bottom">h4</td>
                 </tr>
-                <tr>
+                <tr class="bg-silver">
                     <td class="bottom right">
                         <h5 class="mr-0 pd-0">H5</h5>
                     </td>
@@ -306,7 +306,7 @@ figure
                     <td class="h4 bottom right">H4</td>
                     <td class="code bottom">.h4</td>
                 </tr>
-                <tr>
+                <tr class="bg-silver">
                     <td class="h5 bottom right">H5</td>
                     <td class="code bottom no-break">.h5 <small>(1rem)</small></td>
                 </tr>
@@ -320,12 +320,26 @@ figure
 
     <div class="breakout-l">
         <h3>Font Size</h3>
+        <p>The digit that is part of the font-size class name indicates how the font size is reduced or enlarged.</p>
+        <table class="max-width-sm mrb-2">
+            <tr>
+                <td class="no-break">--DIGIT</td>
+                <td>reduce from <code>1rem</code> by applying the formula <code
+                        class="no-break">1rem * var(--size-factor)<sup>-DIGIT</sup></code> </td>
+            </tr>
+            <tr>
+                <td class="no-break">-DIGIT</td>
+                <td>enlarge from <code>1rem</code> by applying the formula <code
+                        class="no-break">1rem * var(--size-factor)<sup>DIGIT</sup></code> </td>
+            </tr>
+        </table>
+
         <table class="pdy-0">
             <tr>
                 <td class="fs--1 bottom right">Aa</td>
                 <td class="code bottom">.fs--1</td>
             </tr>
-            <tr>
+            <tr class="bg-silver">
                 <td class="fs bottom right">Aa</td>
                 <td class="bottom no-break"><code>.fs</code>, <code>.fs-default</code> <small>(1rem)</small></td>
             </tr>
@@ -377,7 +391,7 @@ figure
                 <td class="fw-300 fs-4 bottom">Aa</td>
                 <td class="code bottom">.fw-300</td>
             </tr>
-            <tr>
+            <tr class="bg-silver">
                 <td class="fw-400 fs-4 bottom">Aa</td>
                 <td class="bottom no-break"><code>.fw-400</code>, <code>.fw-default</code>, <code>.normal</code></td>
             </tr>
@@ -406,37 +420,37 @@ figure
         <h3>Line Height</h3>
         <table class="pdy-0">
             <tr>
-                <td class="fs-1 lh--1 bg-silver brt brw-sm bottom pdx-0">The quick brown fox jumps over the lazy dog
+                <td class="fs-1 lh--1 brt brw-sm bottom pdx-0">The quick brown fox jumps over the lazy dog
                 </td>
-                <td class="lh--1 code bottom pdx">.lh--1</td>
+                <td class="lh--1 code bottom pdl">.lh--1</td>
             </tr>
             <tr>
-                <td class="fs-1 lh bg-silver brt brw-sm bottom pdx-0">The quick brown fox jumps over the lazy dog</td>
-                <td class="lh bottom pdx"><code>.lh</code> <small>(1em)</small></td>
+                <td class="fs-1 lh brt brw-sm bottom pdx-0">The quick brown fox jumps over the lazy dog</td>
+                <td class="lh bottom pdl"><code>.lh</code> <small>(1em)</small></td>
             </tr>
             <tr>
-                <td class="fs-1 lh-1 bg-silver brt brw-sm bottom pdx-0">The quick brown fox jumps over the lazy dog
+                <td class="fs-1 lh-1 brt brw-sm bottom pdx-0">The quick brown fox jumps over the lazy dog
                 </td>
-                <td class="lh-1 code bottom pdx">.lh-1</td>
+                <td class="lh-1 code bottom pdl">.lh-1</td>
             </tr>
             <tr>
-                <td class="fs-1 lh-2 bg-silver brt brw-sm bottom pdx-0">The quick brown fox jumps over the lazy dog</td>
-                <td class="lh-2 code bottom pdx">.lh-2</td>
+                <td class="fs-1 lh-2 brt brw-sm bottom pdx-0">The quick brown fox jumps over the lazy dog</td>
+                <td class="lh-2 code bottom pdl">.lh-2</td>
+            </tr>
+            <tr class="bg-silver">
+                <td class="fs-1 lh-3 brt brw-sm bottom pdx-0">The quick brown fox jumps over the lazy dog</td>
+                <td class="lh-3 bottom no-break pdl"><code>.lh-3</code>, <code>.lh-default</code></td>
             </tr>
             <tr>
-                <td class="fs-1 lh-3 bg-silver brt brw-sm bottom pdx-0">The quick brown fox jumps over the lazy dog</td>
-                <td class="lh-3 bottom no-break pdx"><code>.lh-3</code>, <code>.lh-default</code></td>
-            </tr>
-            <tr>
-                <td class="fs-1 lh-4 bg-silver brt brw-sm brb bottom pdx-0">The quick brown fox jumps over the lazy dog
+                <td class="fs-1 lh-4 brt brw-sm brb bottom pdx-0">The quick brown fox jumps over the lazy dog
                 </td>
-                <td class="lh-4 code bottom pdx">.lh-4</td>
+                <td class="lh-4 code bottom pdl">.lh-4</td>
             </tr>
         </table>
 
         <h3>Letter Spacing</h3>
         <table>
-            <tr>
+            <tr class="bg-silver">
                 <td class="fs-1 lsp-0 bottom">The quick brown fox</td>
                 <td class="bottom"><code>.lsp-0</code>, <code>.no-lsp</code></td>
             </tr>
@@ -464,7 +478,7 @@ figure
         <p class="max-width-rg">The availability of <code>font-variant-numeric</code> features depends on the typeface
             capabilities. </p>
         <table>
-            <tr>
+            <tr class="bg-silver">
                 <td class="fs-2 ft-num-normal bottom">13679.05</td>
                 <td class="bottom"><code>.ft-num-normal</code> <small>(default)</small></td>
             </tr>
@@ -480,7 +494,7 @@ figure
                 <td class="fs-2 ft-num-lnum bottom">13679.05</td>
                 <td class="code bottom">.ft-num-lnum</td>
             </tr>
-            <tr>
+            <tr class="bg-silver">
                 <td class="fs-2 ft-num-tab bottom">13679.05</td>
                 <td class="bottom"><code>.ft-num-tab</code> <small>(default for tables)</small></td>
             </tr>
@@ -533,13 +547,13 @@ figure
             </tr>
             <tr>
                 <td>--DIGIT</td>
-                <td>reduce from <code>1rem</code> through dividing DIGIT-times by <code
-                        class="no-break">var(--space-factor)</code></td>
+                <td>reduce from <code>1rem</code> by applying the formula <code
+                        class="no-break">1rem * var(--space-factor)<sup>-DIGIT</sup></code> </td>
             </tr>
             <tr>
                 <td>-DIGIT</td>
-                <td>enlarge from <code>1rem</code> through multiplying DIGIT-times by <code
-                        class="no-break">var(--space-factor)</code>
+                <td>enlarge from <code>1rem</code> by applying the formula <code
+                        class="no-break">1rem * var(--space-factor)<sup>DIGIT</sup></code> </code>
                 </td>
             </tr>
             <tr>
@@ -868,9 +882,9 @@ figure
             <h2 id="colors">Colors</h2>
             <table class="code br-separate">
                 <tr>
-                    <td class="bg-navy white pd">.bg-navy</td>
-                    <td class="navy pd">.navy</td>
-                    <td class="br  br-navy pd">.br-navy</td>
+                    <td class="bg-navy white middle center">.bg-navy</td>
+                    <td class="navy middle center">.navy</td>
+                    <td class="br br-navy middle center">.br-navy</td>
                 </tr>
                 <tr>
                     <td class="bg-blue white pd">.bg-blue</td>
@@ -1082,10 +1096,11 @@ figure
 
     <div class="breakout-l">
         <h3>12 Column Grid</h3>
-        <p>Any of the before mentioned content concepts can be divided horizontally into 12ths.</p>
-        <p>The sum of the cols per row have to add up to 12. Not specifiying a column size will result in taking the
-            entire grid width into one column.</p>
-
+        <div class="max-width-rg">
+            <p>Any of the before mentioned content concepts can be divided horizontally into 12ths.</p>
+            <p>The sum of the cols per row has to add up to 12. Not specifiying a column size will result in taking the
+                entire grid width into one column.</p>
+        </div>
         <pre>div .x-12 
     div/ .xx-2 
     div/ .xx-10 //.xx-2 and .xx-10 together will fill an entire row of the grid             
@@ -1119,7 +1134,8 @@ figure
             <div class="xx-12 br pdy-1">.xx-12</div>
         </div>
 
-        <p class="mrt">It is also possible to have differently sized columns based on minimum screen width. Address
+        <p class="mrt max-width-rg">It is possible to have differently sized columns based on minimum screen width.
+            Address
             the
             different minimum screen sizes with column prefix values of <code>lg-</code> (for at least large size),
             <code>md-</code> (for at least
