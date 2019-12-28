@@ -12,8 +12,8 @@
   --space-4:calc(var(--space-3)*var(--space-factor));
   --space-d1:calc(var(--space)/var(--space-factor));
   --space-d2:calc(var(--space-d1)/var(--space-factor));
-  --space-d3:calc(var(--space-d2)/var(--space-factor));
-  --space-d4:calc(var(--space-d3)/var(--space-factor));
+  --space-d3:4px;
+  --space-d4:2px
 }
 
 .gp-0{
@@ -41,32 +41,32 @@
 }
 
 .gp-d4{
-  grid-gap:0.14519rem;
+  grid-gap:2px;
   grid-gap:var(--space-d4);
 }
 
 .gpx-d4{
-  grid-column-gap:0.14519rem;
+  grid-column-gap:2px;
   grid-column-gap:var(--space-d4);
 }
 
 .gpy-d4{
-  grid-row-gap:0.14519rem;
+  grid-row-gap:2px;
   grid-row-gap:var(--space-d4);
 }
 
 .gp-d3{
-  grid-gap:0.23521rem;
+  grid-gap:4px;
   grid-gap:var(--space-d3);
 }
 
 .gpx-d3{
-  grid-column-gap:0.23521rem;
+  grid-column-gap:4px;
   grid-column-gap:var(--space-d3);
 }
 
 .gpy-d3{
-  grid-row-gap:0.23521rem;
+  grid-row-gap:4px;
   grid-row-gap:var(--space-d3);
 }
 
@@ -187,70 +187,70 @@
 }
 
 .mr-d4{
-  margin:0.14519rem;
+  margin:2px;
   margin:var(--space-d4);
 }
 
 .mrx-d4{
-  margin-left:0.14519rem;
+  margin-left:2px;
   margin-left:var(--space-d4);
-  margin-right:0.14519rem;
+  margin-right:2px;
   margin-right:var(--space-d4);
 }
 
 .mry-d4{
-  margin-top:0.14519rem;
+  margin-top:2px;
   margin-top:var(--space-d4);
-  margin-bottom:0.14519rem;
+  margin-bottom:2px;
   margin-bottom:var(--space-d4);
 }
 
 .mrt-d4{
-  margin-top:0.14519rem;
+  margin-top:2px;
   margin-top:var(--space-d4);
 }
 
 .mrr-d4{
-  margin-right:0.14519rem;
+  margin-right:2px;
   margin-right:var(--space-d4);
 }
 
 .mrb-d4{
-  margin-bottom:0.14519rem;
+  margin-bottom:2px;
   margin-bottom:var(--space-d4);
 }
 
 .mr-d3{
-  margin:0.23521rem;
+  margin:4px;
   margin:var(--space-d3);
 }
 
 .mrx-d3{
-  margin-left:0.23521rem;
+  margin-left:4px;
   margin-left:var(--space-d3);
-  margin-right:0.23521rem;
+  margin-right:4px;
   margin-right:var(--space-d3);
 }
 
 .mry-d3{
-  margin-top:0.23521rem;
+  margin-top:4px;
   margin-top:var(--space-d3);
-  margin-bottom:0.23521rem;
+  margin-bottom:4px;
   margin-bottom:var(--space-d3);
 }
 
 .mrt-d3{
-  margin-top:0.23521rem;
+  margin-top:4px;
   margin-top:var(--space-d3);
 }
 
 .mrr-d3{
-  margin-right:0.23521rem;
+  margin-right:4px;
   margin-right:var(--space-d3);
 }
 
 .mrb-d3{
-  margin-bottom:0.23521rem;
+  margin-bottom:4px;
   margin-bottom:var(--space-d3);
 }
 

@@ -12,8 +12,8 @@
   --space-4: calc(var(--space-3) * var(--space-factor));
   --space-d1: calc(var(--space) / var(--space-factor));
   --space-d2: calc(var(--space-d1) / var(--space-factor));
-  --space-d3: calc(var(--space-d2) / var(--space-factor));
-  --space-d4: calc(var(--space-d3) / var(--space-factor));
+  --space-d3: 4px; /*calc(var(--space-d2) / var(--space-factor));*/
+  --space-d4: 2px /*calc(var(--space-d3) / var(--space-factor));*/
 }
 
 @custom-media --breakpoint-max-sm (max-width: 28rem);
