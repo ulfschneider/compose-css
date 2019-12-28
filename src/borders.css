@@ -12,7 +12,7 @@
 }
 
 .br {
-  border- style: solid;
+  border-style: solid;
   border-width: var(--border-width-default);
 }
 

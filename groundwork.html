@@ -34,9 +34,9 @@
                 <div><a href="#notation" class="no-text-decoration">Notation</a></div>
                 <div><a href="#typography" class="no-text-decoration">Typography</a></div>
                 <div><a href="#white-space" class="no-text-decoration">White Space</a></div>
+                <div><a href="#borders" class="no-text-decoration">Borders</a></div>
                 <div><a href="#tables" class="no-text-decoration">Tables</a></div>
                 <div><a href="#figures" class="no-text-decoration">Figures</a></div>
-                <div><a href="#borders" class="no-text-decoration">Borders</a></div>
                 <div><a href="#colors" class="no-text-decoration">Colors</a></div>
                 <div><a href="#grid" class="no-text-decoration">Grid</a></div>
             </div>
@@ -69,10 +69,9 @@
                     prefixed dot for each CSS class; and there is no white space between classes.</td>
             </tr>
             <tr>
-                <td><code class="no-break">i .i .italic</code></td>
+                <td class="no-break"><code>i</code>, <code>.i</code>, <code>.italic</code></td>
                 <td>Multiple styling options that produce the same result are indicated by HTML tag names or CSS class
-                    names, each one seperated by white
-                    space.</td>
+                    names, each one seperated by comma.</td>
             </tr>
 
         </table>
@@ -84,25 +83,56 @@
         <h3>Elements</h3>
         <div class="rg-columns-2">
             <p><span class="mrr">Regular</span> <code>.normal</code></p>
-            <p><b class="mrr">Bold</b> <code>strong</code> <code>b</code> <code>.strong</code> <code>.bold</code>
+            <p><b class="mrr">Bold</b> <code>strong</code>, <code>b</code>, <code>.strong</code>, <code>.bold</code>,
                 <code>.b</code></p>
-            <p><i class="mrr">Italic</i> <code>i</code> <code>.i</code> <code>.italic</code></p>
-            <p><u class="mrr">Underline</u> <code>u</code> <code>.underline</code></p>
-            <p><del class="mrr">Deleted</del> <code>del</code> <code>.del</code></p>
+            <p><i class="mrr">Italic</i> <code>i</code>, <code>.i</code>, <code>.italic</code></p>
+            <p><u class="mrr">Underline</u> <code>u</code>, <code>.underline</code></p>
+            <p><del class="mrr">Deleted</del> <code>del</code>, <code>.del</code></p>
             <p><span class="mrr caps">Caps</span> <code>.caps</code></p>
             <p><span class="mrr lsp">Letter Spacing</span> <code>.lsp</code></p>
-            <p><mark class="mrr">Highlighted</mark> <code>mark</code> <code>.mark</code></p>
-            <p><kbd class="mrr">Ctrl+K</kbd> <code>kbd</code> <code>.kbd</code></p>
-            <p><span class="mrr">Text <sup>superscript</sup></span> <code>sup</code> <code>.sup</code></p>
-            <p><span class="mrr">Text <sub>subscript</sub></span> <code>sub</code> <code>.sup</code></p>
-            <p><cite class="mrr">Cite</cite> <code>cite</code> <code>.cite</code></p>
-            <p><em class="mrr">Emphasis</em> <code>em</code> <code>.em</code></p>
-            <p><s class="strike mrr">Strikethrough</s> <code>s</code> <code>.s</code> <code>.strike</code></p>
-            <p><small class="mrr">Small</small> <code>small</code> <code>.small</code></p>
+            <p><mark class="mrr">Highlighted</mark> <code>mark</code>, <code>.mark</code></p>
+            <p><kbd class="mrr">Ctrl+K</kbd> <code>kbd</code>, <code>.kbd</code></p>
+            <p><span class="mrr">Text <sup>superscript</sup></span> <code>sup</code>, <code>.sup</code></p>
+            <p><span class="mrr">Text <sub>subscript</sub></span> <code>sub</code>, <code>.sup</code></p>
+            <p><cite class="mrr">Cite</cite> <code>cite</code>, <code>.cite</code></p>
+            <p><em class="mrr">Emphasis</em> <code>em</code>, <code>.em</code></p>
+            <p><s class="strike mrr">Strikethrough</s> <code>s</code>, <code>.s</code>, <code>.strike</code></p>
+            <p><small class="mrr">Small</small> <code>small</code>, <code>.small</code></p>
         </div>
 
 
         <div class="max-width-sm">
+
+            <h3>Paragraph</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                massa. </p>
+
+            <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+            </p>
+
+            <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
+                pretium. Integer tincidunt. </p>
+            <pre>p/</pre>
+
+
+            <h3>Indented Paragraph</h3>
+            <div class="pindent">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                    massa. </p>
+
+                <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                </p>
+
+                <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
+                    pretium. Integer tincidunt. </p>
+            </div>
+            <pre>div .pindent
+    p/
+    p/ .no-pindent //remove indentation for this p
+/div
+
+p/ .pindent</pre>
+
 
             <h3>Unordered List</h3>
 
@@ -135,6 +165,8 @@
             <pre>ul
     li/
 /ul</pre>
+
+
             <h3>Ordered List</h3>
             <ol>
                 <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
@@ -166,34 +198,7 @@
     li/
 /ol</pre>
 
-            <h3>Indented Paragraphs</h3>
-            <div class="pindent">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                    massa. </p>
 
-                <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                </p>
-
-                <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
-                    pretium. Integer tincidunt. </p>
-            </div>
-            <pre>div .pindent
-    p/
-    p/ .no-pindent //remove indentation for this p
-/div
-
-p/ .pindent</pre>
-
-            <h3>Paragraphs</h3>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                massa. </p>
-
-            <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-            </p>
-
-            <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
-                pretium. Integer tincidunt. </p>
-            <pre>p/</pre>
             <h3>Blockquote</h3>
             <figure>
                 <blockquote>
@@ -322,7 +327,7 @@ figure
             </tr>
             <tr>
                 <td class="fs bottom right">Aa</td>
-                <td class="bottom no-break"><code>.fs .fs-default</code> <small>(1rem)</small></td>
+                <td class="bottom no-break"><code>.fs</code>, <code>.fs-default</code> <small>(1rem)</small></td>
             </tr>
             <tr>
                 <td class="fs-1 bottom right">Aa</td>
@@ -348,6 +353,14 @@ figure
                 <td class="fs-6 bottom right">Aa</td>
                 <td class="code bottom">.fs-6</td>
             </tr>
+            <tr>
+                <td class="fs-7 bottom right">Aa</td>
+                <td class="code bottom">.fs-7</td>
+            </tr>
+            <tr>
+                <td class="fs-8 bottom right">Aa</td>
+                <td class="code bottom">.fs-8</td>
+            </tr>
         </table>
 
         <h3>Font Weight</h3>
@@ -366,7 +379,7 @@ figure
             </tr>
             <tr>
                 <td class="fw-400 fs-4 bottom">Aa</td>
-                <td class="code bottom no-break">.fw-400 .fw-default .normal</td>
+                <td class="bottom no-break"><code>.fw-400</code>, <code>.fw-default</code>, <code>.normal</code></td>
             </tr>
             <tr>
                 <td class="fw-500 fs-4 bottom">Aa</td>
@@ -374,7 +387,7 @@ figure
             </tr>
             <tr>
                 <td class="fw-600 fs-4 bottom">Aa</td>
-                <td class="code bottom no-break">.fw-600 .bold bold</td>
+                <td class="bottom no-break"><code>.fw-600</code>, <code>.bold</code>, <code>bold</code></td>
             </tr>
             <tr>
                 <td class="fw-700 fs-4 bottom">Aa</td>
@@ -385,7 +398,7 @@ figure
                 <td class="code bottom">.fw-800</td>
             </tr>
             <tr>
-                <td class="fw-900 fs-4 bottom   ">Aa</td>
+                <td class="fw-900 fs-4 bottom">Aa</td>
                 <td class="code bottom">.fw-900</td>
             </tr>
         </table>
@@ -393,7 +406,8 @@ figure
         <h3>Line Height</h3>
         <table class="pdy-0">
             <tr>
-                <td class="fs-1 lh--1 bg-silver brt brw-sm bottom pdx-0">The quick brown fox jumps over the lazy dog</td>
+                <td class="fs-1 lh--1 bg-silver brt brw-sm bottom pdx-0">The quick brown fox jumps over the lazy dog
+                </td>
                 <td class="lh--1 code bottom pdx">.lh--1</td>
             </tr>
             <tr>
@@ -401,7 +415,8 @@ figure
                 <td class="lh bottom pdx"><code>.lh</code> <small>(1em)</small></td>
             </tr>
             <tr>
-                <td class="fs-1 lh-1 bg-silver brt brw-sm bottom pdx-0">The quick brown fox jumps over the lazy dog </td>
+                <td class="fs-1 lh-1 bg-silver brt brw-sm bottom pdx-0">The quick brown fox jumps over the lazy dog
+                </td>
                 <td class="lh-1 code bottom pdx">.lh-1</td>
             </tr>
             <tr>
@@ -410,10 +425,11 @@ figure
             </tr>
             <tr>
                 <td class="fs-1 lh-3 bg-silver brt brw-sm bottom pdx-0">The quick brown fox jumps over the lazy dog</td>
-                <td class="lh-3 bottom no-break pdx"><code>.lh-3 .lh-default</code></td>
+                <td class="lh-3 bottom no-break pdx"><code>.lh-3</code>, <code>.lh-default</code></td>
             </tr>
             <tr>
-                <td class="fs-1 lh-4 bg-silver brt brw-sm brb bottom pdx-0">The quick brown fox jumps over the lazy dog</td>
+                <td class="fs-1 lh-4 bg-silver brt brw-sm brb bottom pdx-0">The quick brown fox jumps over the lazy dog
+                </td>
                 <td class="lh-4 code bottom pdx">.lh-4</td>
             </tr>
         </table>
@@ -422,7 +438,7 @@ figure
         <table>
             <tr>
                 <td class="fs-1 lsp-0 bottom">The quick brown fox</td>
-                <td class="code bottom">.lsp-0 .no-lsp</td>
+                <td class="bottom"><code>.lsp-0</code>, <code>.no-lsp</code></td>
             </tr>
             <tr>
                 <td class="fs-1 lsp-1 bottom">The quick brown fox</td>
@@ -471,10 +487,10 @@ figure
         </table>
     </div>
 
-    <div class="breakout-l max-width-rg">
+    <div class="breakout-l">
         <h2 id="white-space">White Space</h2>
 
-        <table>
+        <table class="max-width-sm">
             <tr>
                 <th>Shorthand</th>
                 <th>Description</th>
@@ -516,8 +532,15 @@ figure
                 <td>none</td>
             </tr>
             <tr>
-                <td>--</td>
-                <td>reduce from <code>1rem</code> through dividing by <code>var(--space-factor)</code></td>
+                <td>--DIGIT</td>
+                <td>reduce from <code>1rem</code> through dividing DIGIT-times by <code
+                        class="no-break">var(--space-factor)</code></td>
+            </tr>
+            <tr>
+                <td>-DIGIT</td>
+                <td>enlarge from <code>1rem</code> through multiplying DIGIT-times by <code
+                        class="no-break">var(--space-factor)</code>
+                </td>
             </tr>
             <tr>
                 <td>x</td>
@@ -717,6 +740,90 @@ figure
 
 
         <div>
+            <div class="x-12 gp">
+                <div>
+                    <h2 id="borders">Borders</h2>
+                    <h3>Border</h3>
+                </div>
+                <div class="xx-4 br brw--4 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br</code>
+                </div>
+                <div class="xx-4 bry brw--4 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.bry</code></div>
+                <div class="xx-4 brx brw--4 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.brx</code></div>
+                <div class="xx-4 brt brw--4 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.brt</code></div>
+                <div class="xx-4 brr brw--4 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.brr</code></div>
+                <div class="xx-4 brb brw--4 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.brb</code></div>
+                <div class="xx-4 brl brw--4 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.brl</code></div>
+
+                <h3>Border Style</h3>
+                <div class="xx-4 br-dashed brw--4 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br-dashed</code></div>
+                <div class="xx-4 br-dotted brw--4 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br-dotted</code></div>
+                <div class="xx-4 br-solid brw--4 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br-solid</code></div>
+
+                <h3>Border Width</h3>
+                <div class="xx-4 br brw-0 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.brw-0</code></div>
+                <div class="xx-4 br brw-sm pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.brw-sm</code>, <code>br.brw-default</code></div>
+                <div class="xx-4 br brw--4 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.brw--4</code></div>
+                <div class="xx-4 br brw--3 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.brw--3</code></div>
+                <div class="xx-4 br brw--2 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.brw--2</code></div>
+                <div class="xx-4 br brw--1 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.brw--1</code></div>
+                <div class="xx-4 br brw pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.brw</code> <small>(1rem)</small></div>
+
+                <h3>Border Radius</h3>
+                <div class="xx-4 br brw--4 br-radius-0 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.br-radius-0</code></div>
+
+                <div class="xx-4 br brw--4 br-radius--2 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.br-radius--2</code>, <code>.br.rounded</code></div>
+
+                <div class="xx-4 br brw--4 br-radius--1 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.br-radius--1</code></div>
+
+                <div class="xx-4 br brw--4 br-radius pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.br-radius</code> <small>(1rem)</small></div>
+
+                <div class="xx-4 br brw--4 br-radius-pill pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.br-radius-pill</code></div>
+
+                <div class="xx-4">
+                    <div class="br brw--4 br-radius-100 pd-2 inline-block bg-silver"></div>
+                </div>
+                <div class="xx-8"><code>.br.br-radius-100</code></div>
+
+                <div class="xx-4 br brw--4 br-radius br-radius-t pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.br-radius.br-radius-t</code></div>
+
+                <div class="xx-4 br brw--4 br-radius br-radius-r pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.br-radius.br-radius-r</code></div>
+
+                <div class="xx-4 br brw--4 br-radius br-radius-b pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.br-radius.br-radius-b</code></div>
+
+                <div class="xx-4 br brw--4 br-radius br-radius-l pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.br-radius.br-radius-l</code></div>
+
+            </div>
+
+        </div>
+
+
+        <div>
             <h2 id="tables">Tables</h2>
             <table>
                 <thead>
@@ -757,88 +864,6 @@ figure
 /figure</pre>
         </div>
 
-        <div>
-            <div class="x-12 gp">
-                <div>
-                    <h2 id="borders">Borders</h2>
-                    <h3>Border</h3>
-                </div>
-                <div class="xx-4 br brw--4 pd-1 bg-silver"></div>
-                <div class="xx-8"><code>.br</code>
-                </div>
-                <div class="xx-4 bry brw--4 pd-1 bg-silver"></div>
-                <div class="xx-8"><code>.bry</code></div>
-                <div class="xx-4 brx brw--4 pd-1 bg-silver"></div>
-                <div class="xx-8"><code>.brx</code></div>
-                <div class="xx-4 brt brw--4 pd-1 bg-silver"></div>
-                <div class="xx-8"><code>.brt</code></div>
-                <div class="xx-4 brr brw--4 pd-1 bg-silver"></div>
-                <div class="xx-8"><code>.brr</code></div>
-                <div class="xx-4 brb brw--4 pd-1 bg-silver"></div>
-                <div class="xx-8"><code>.brb</code></div>
-                <div class="xx-4 brl brw--4 pd-1 bg-silver"></div>
-                <div class="xx-8"><code>.brl</code></div>
-
-                <h3>Border Style</h3>
-                <div class="xx-4 br-dashed brw--4 pd-1 bg-silver"></div>
-                <div class="xx-8"><code>.br-dashed</code></div>
-                <div class="xx-4 br-dotted brw--4 pd-1 bg-silver"></div>
-                <div class="xx-8"><code>.br-dotted</code></div>
-                <div class="xx-4 br-solid brw--4 pd-1 bg-silver"></div>
-                <div class="xx-8"><code>.br-solid</code></div>
-
-                <h3>Border Width</h3>
-                <div class="xx-4 br brw-0 pd-1 bg-silver"></div>
-                <div class="xx-8"><code>.brw-0</code></div>
-                <div class="xx-4 br brw-sm pd-1 bg-silver"></div>
-                <div class="xx-8"><code>.br.brw-sm</code></div>
-                <div class="xx-4 br brw--4 pd-1 bg-silver"></div>
-                <div class="xx-8"><code>.br.brw--4 br.brw-default</code></div>
-                <div class="xx-4 br brw--3 pd-1 bg-silver"></div>
-                <div class="xx-8"><code>.br.brw--3</code></div>
-                <div class="xx-4 br brw--2 pd-1 bg-silver"></div>
-                <div class="xx-8"><code>.br.brw--2</code></div>
-                <div class="xx-4 br brw--1 pd-1 bg-silver"></div>
-                <div class="xx-8"><code>.br.brw--1</code></div>
-                <div class="xx-4 br brw pd-1 bg-silver"></div>
-                <div class="xx-8"><code>.br.brw</code> <small>(1rem)</small></div>
-
-                <h3>Border Radius</h3>
-                <div class="xx-4 br brw--4 br-radius-0 pd-1 bg-silver"></div>
-                <div class="xx-8"><code>.br.br-radius-0</code></div>
-
-                <div class="xx-4 br brw--4 br-radius--2 pd-1 bg-silver"></div>
-                <div class="xx-8"><code>.br.br-radius--2 .br.rounded</code></div>
-
-                <div class="xx-4 br brw--4 br-radius--1 pd-1 bg-silver"></div>
-                <div class="xx-8"><code>.br.br-radius--1</code></div>
-
-                <div class="xx-4 br brw--4 br-radius pd-1 bg-silver"></div>
-                <div class="xx-8"><code>.br.br-radius</code> <small>(1rem)</small></div>
-
-                <div class="xx-4 br brw--4 br-radius-pill pd-1 bg-silver"></div>
-                <div class="xx-8"><code>.br.br-radius-pill</code></div>
-
-                <div class="xx-4">
-                    <div class="br brw--4 br-radius-100 pd-2 inline-block bg-silver"></div>
-                </div>
-                <div class="xx-8"><code>.br.br-radius-100</code></div>
-
-                <div class="xx-4 br brw--4 br-radius br-radius-t pd-1 bg-silver"></div>
-                <div class="xx-8"><code>.br.br-radius.br-radius-t</code></div>
-
-                <div class="xx-4 br brw--4 br-radius br-radius-r pd-1 bg-silver"></div>
-                <div class="xx-8"><code>.br.br-radius.br-radius-r</code></div>
-
-                <div class="xx-4 br brw--4 br-radius br-radius-b pd-1 bg-silver"></div>
-                <div class="xx-8"><code>.br.br-radius.br-radius-b</code></div>
-
-                <div class="xx-4 br brw--4 br-radius br-radius-l pd-1 bg-silver"></div>
-                <div class="xx-8"><code>.br.br-radius.br-radius-l</code></div>
-
-            </div>
-
-        </div>
 
         <div>
             <h2 id="colors">Colors</h2>
