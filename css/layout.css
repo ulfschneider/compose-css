@@ -72,6 +72,10 @@
   clear:both;
 }
 
+.clearfix{
+  *zoom:1;
+}
+
 .float-left{
   float:left;
 }

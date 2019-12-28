@@ -845,6 +845,10 @@ table td.brb{
   clear:both;
 }
 
+.clearfix{
+  *zoom:1;
+}
+
 .float-left{
   float:left;
 }
@@ -1067,6 +1071,18 @@ table td.brb{
   line-height:var(--lh-4);
 }
 
+.measure-narrow{
+  max-width:20em;
+}
+
+.measure{
+  max-width:30em;
+}
+
+.measure-wide{
+  max-width:34em;
+}
+
 @media (min-width: 28rem){
 
   .sm-h1{
@@ -1211,6 +1227,18 @@ table td.brb{
   .sm-lh-4{
     line-height:2em;
     line-height:var(--lh-4);
+  }
+
+  .sm-measure-narrow{
+    max-width:20em;
+  }
+
+  .sm-measure{
+    max-width:30em;
+  }
+
+  .sm-measure-wide{
+    max-width:34em;
   }
 }
 
@@ -1357,6 +1385,18 @@ table td.brb{
   .rg-lh-4{
     line-height:2em;
     line-height:var(--lh-4);
+  }
+
+  .rg-measure-narrow{
+    max-width:20em;
+  }
+
+  .rg-measure{
+    max-width:30em;
+  }
+
+  .rg-measure-wide{
+    max-width:34em;
   }
 }
 
@@ -1505,6 +1545,18 @@ table td.brb{
     line-height:var(--lh-4);
   }
 
+  .md-measure-narrow{
+    max-width:20em;
+  }
+
+  .md-measure{
+    max-width:30em;
+  }
+
+  .md-measure-wide{
+    max-width:34em;
+  }
+
 }
 
 @media (min-width: 64rem){
@@ -1650,6 +1702,18 @@ table td.brb{
   .lg-lh-4{
     line-height:2em;
     line-height:var(--lh-4);
+  }
+
+  .lg-measure-narrow{
+    max-width:20em;
+  }
+
+  .lg-measure{
+    max-width:30em;
+  }
+
+  .lg-measure-wide{
+    max-width:34em;
   }
 
 }
