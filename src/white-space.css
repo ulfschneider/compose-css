@@ -170,6 +170,32 @@ Naming conventions
   margin-left: 0;
 }
 
+.mr-sm {
+  margin: var(--border-width-sm);
+}
+
+.mrx-sm {
+  margin-left: var(--border-width-sm);
+  margin-right: var(--border-width-sm);
+}
+
+.mry-sm {
+  margin-top: var(--border-width-sm);
+  margin-bottom: var(--border-width-sm);
+}
+
+.mrt-sm {
+  margin-top: var(--border-width-sm);
+}
+
+.mrr-sm {
+  margin-right: var(--border-width-sm);
+}
+
+.mrb-sm {
+  margin-bottom: var(--border-width-sm);
+}
+
 .mr-d4 {
   margin: var(--space-d4);
 }
@@ -427,6 +453,21 @@ Naming conventions
   margin-left: var(--space-4);
 }
 
+.mrtn-sm {
+  margin-top: calc(-1 * var(--border-width-sm));
+}
+
+.mrrn-sm {
+  margin-right: calc(-1 * var(--border-width-sm));
+}
+
+.mrbn-sm {
+  margin-bottom: calc(-1 * var(--border-width-sm));
+}
+
+.mrln-sm {
+  margin-left: calc(-1 * var(--border-width-sm));
+}
 
 .mrtn {
   margin-top: calc(-1 * var(--space));
