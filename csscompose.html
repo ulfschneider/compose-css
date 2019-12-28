@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/groundwork.css">
-    <title>Groundwork</title>
+    <link rel="stylesheet" type="text/css" href="css/csscompose.css">
+    <title>CSSCompose</title>
 </head>
 
 <style>
@@ -23,7 +23,7 @@
 <body class="x">
     <div class="full x bg-silver">
         <header class="mry-3 breakout-l">
-            <h1 class="mrb--1 lh--3 rg-fs-6 lg-fs-7 fw-700">Groundwork</h1>
+            <h1 class="mrb-d1 lh-d3 rg-fs-6 lg-fs-7 fw-700">CSSCompose</h1>
             <p>A composable CSS Toolkit to build fast-loading, responsive web sites.</p>
         </header>
 
@@ -320,24 +320,26 @@ figure
 
     <div class="breakout-l">
         <h3>Font Size</h3>
-        <p>The digit that is part of the font-size class name indicates how the font size is reduced or enlarged.</p>
-        <table class="max-width-sm mrb-2">
-            <tr>
-                <td class="no-break">--DIGIT</td>
-                <td>reduce from <code>1rem</code> by applying the formula <code
-                        class="no-break">1rem * var(--size-factor)<sup>-DIGIT</sup></code> </td>
-            </tr>
-            <tr>
-                <td class="no-break">-DIGIT</td>
-                <td>enlarge from <code>1rem</code> by applying the formula <code
-                        class="no-break">1rem * var(--size-factor)<sup>DIGIT</sup></code> </td>
-            </tr>
-        </table>
-
+        <div class="max-width-sm">
+            <p>The digit that is part of the font-size class name indicates how the font size is decreased or increased.
+            </p>
+            <table class="mrb-2">
+                <tr>
+                    <td class="no-break">d&lt;digit&gt;</td>
+                    <td>decrease from <code>1rem</code> by applying the formula <code
+                            class="no-break">1rem * var(--size-factor)<sup>-&lt;digit&gt;</sup></code> </td>
+                </tr>
+                <tr>
+                    <td class="no-break">&lt;digit&gt;</td>
+                    <td>increase from <code>1rem</code> by applying the formula <code
+                            class="no-break">1rem * var(--size-factor)<sup>&lt;digit&gt;</sup></code> </td>
+                </tr>
+            </table>
+        </div>
         <table class="pdy-0">
             <tr>
-                <td class="fs--1 bottom right">Aa</td>
-                <td class="code bottom">.fs--1</td>
+                <td class="fs-d1 bottom right">Aa</td>
+                <td class="code bottom">.fs-d1</td>
             </tr>
             <tr class="bg-silver">
                 <td class="fs bottom right">Aa</td>
@@ -420,9 +422,9 @@ figure
         <h3>Line Height</h3>
         <table class="pdy-0">
             <tr>
-                <td class="fs-1 lh--1 brt brw-sm bottom pdx-0">The quick brown fox jumps over the lazy dog
+                <td class="fs-1 lh-d1 brt brw-sm bottom pdx-0">The quick brown fox jumps over the lazy dog
                 </td>
-                <td class="lh--1 code bottom pdl">.lh--1</td>
+                <td class="lh-d1 code bottom pdl">.lh-d1</td>
             </tr>
             <tr>
                 <td class="fs-1 lh brt brw-sm bottom pdx-0">The quick brown fox jumps over the lazy dog</td>
@@ -546,15 +548,14 @@ figure
                 <td>none</td>
             </tr>
             <tr>
-                <td>--DIGIT</td>
-                <td>reduce from <code>1rem</code> by applying the formula <code
-                        class="no-break">1rem * var(--space-factor)<sup>-DIGIT</sup></code> </td>
+                <td>d&lt;digit&gt;</td>
+                <td>decrease from <code>1rem</code> by applying the formula <code
+                        class="no-break">1rem * var(--space-factor)<sup>-&lt;digit&gt;</sup></code> </td>
             </tr>
             <tr>
-                <td>-DIGIT</td>
-                <td>enlarge from <code>1rem</code> by applying the formula <code
-                        class="no-break">1rem * var(--space-factor)<sup>DIGIT</sup></code> </code>
-                </td>
+                <td>&lt;digit&gt;</td>
+                <td>increase from <code>1rem</code> by applying the formula <code
+                        class="no-break">1rem * var(--space-factor)<sup>&lt;digit&gt;</sup></code> </td>
             </tr>
             <tr>
                 <td>x</td>
@@ -601,102 +602,102 @@ figure
             </div>
             <code>.gpy-sm.gpx-0</code>
 
-            <div class="x-12 gp--4 mrt-1 middle center">
+            <div class="x-12 gp-d4 mrt-1 middle center">
                 <div class="xx-6 bg-silver pdy">1</div>
                 <div class="xx-6 bg-silver pdy">2</div>
                 <div class="xx-6 bg-silver pdy">3</div>
                 <div class="xx-6 bg-silver pdy">4</div>
             </div>
-            <code>.gp--4</code>
+            <code>.gp-d4</code>
 
-            <div class="x-12 gpx--4 mrt-1 middle center">
+            <div class="x-12 gpx-d4 mrt-1 middle center">
                 <div class="xx-6 bg-silver pdy">1</div>
                 <div class="xx-6 bg-silver pdy">2</div>
                 <div class="xx-6 bg-silver pdy">3</div>
                 <div class="xx-6 bg-silver pdy">4</div>
             </div>
-            <code>.gpx--4</code>
+            <code>.gpx-d4</code>
 
-            <div class="x-12 gpy--4 gpx-0 mrt-1 middle center">
+            <div class="x-12 gpy-d4 gpx-0 mrt-1 middle center">
                 <div class="xx-6 bg-silver pdy">1</div>
                 <div class="xx-6 bg-silver pdy">2</div>
                 <div class="xx-6 bg-silver pdy">3</div>
                 <div class="xx-6 bg-silver pdy">4</div>
             </div>
-            <code>.gpy--4.gpx-0</code>
+            <code>.gpy-d4.gpx-0</code>
 
-            <div class="x-12 gp--3 mrt-1 middle center">
+            <div class="x-12 gp-d3 mrt-1 middle center">
                 <div class="xx-6 bg-silver pdy">1</div>
                 <div class="xx-6 bg-silver pdy">2</div>
                 <div class="xx-6 bg-silver pdy">3</div>
                 <div class="xx-6 bg-silver pdy">4</div>
             </div>
-            <code>.gp--3</code>
+            <code>.gp-d3</code>
 
-            <div class="x-12 gpx--3 mrt-1 middle center">
+            <div class="x-12 gpx-d3 mrt-1 middle center">
                 <div class="xx-6 bg-silver pdy">1</div>
                 <div class="xx-6 bg-silver pdy">2</div>
                 <div class="xx-6 bg-silver pdy">3</div>
                 <div class="xx-6 bg-silver pdy">4</div>
             </div>
-            <code>.gpx--3</code>
+            <code>.gpx-d3</code>
 
-            <div class="x-12 gpy--3 gpx-0 mrt-1 middle center">
+            <div class="x-12 gpy-d3 gpx-0 mrt-1 middle center">
                 <div class="xx-6 bg-silver pdy">1</div>
                 <div class="xx-6 bg-silver pdy">2</div>
                 <div class="xx-6 bg-silver pdy">3</div>
                 <div class="xx-6 bg-silver pdy">4</div>
             </div>
-            <code>.gpy--3.gpx-0</code>
+            <code>.gpy-d3.gpx-0</code>
 
 
-            <div class="x-12 gp--2 mrt-1 middle center">
+            <div class="x-12 gp-d2 mrt-1 middle center">
                 <div class="xx-6 bg-silver pdy">1</div>
                 <div class="xx-6 bg-silver pdy">2</div>
                 <div class="xx-6 bg-silver pdy">3</div>
                 <div class="xx-6 bg-silver pdy">4</div>
             </div>
-            <code>.gp--2</code>
+            <code>.gp-d2</code>
 
-            <div class="x-12 gpx--2 mrt-1 middle center">
+            <div class="x-12 gpx-d2 mrt-1 middle center">
                 <div class="xx-6 bg-silver pdy">1</div>
                 <div class="xx-6 bg-silver pdy">2</div>
                 <div class="xx-6 bg-silver pdy">3</div>
                 <div class="xx-6 bg-silver pdy">4</div>
             </div>
-            <code>.gpx--2</code>
+            <code>.gpx-d2</code>
 
-            <div class="x-12 gpy--2 gpx-0 mrt-1 middle center">
+            <div class="x-12 gpy-d2 gpx-0 mrt-1 middle center">
                 <div class="xx-6 bg-silver pdy">1</div>
                 <div class="xx-6 bg-silver pdy">2</div>
                 <div class="xx-6 bg-silver pdy">3</div>
                 <div class="xx-6 bg-silver pdy">4</div>
             </div>
-            <code>.gpy--2.gpx-0</code>
+            <code>.gpy-d2.gpx-0</code>
 
-            <div class="x-12 gp--1 mrt-1 middle center">
+            <div class="x-12 gp-d1 mrt-1 middle center">
                 <div class="xx-6 bg-silver pdy">1</div>
                 <div class="xx-6 bg-silver pdy">2</div>
                 <div class="xx-6 bg-silver pdy">3</div>
                 <div class="xx-6 bg-silver pdy">4</div>
             </div>
-            <code>.gp--1</code>
+            <code>.gp-d1</code>
 
-            <div class="x-12 gpx--1 mrt-1 middle center">
+            <div class="x-12 gpx-d1 mrt-1 middle center">
                 <div class="xx-6 bg-silver pdy">1</div>
                 <div class="xx-6 bg-silver pdy">2</div>
                 <div class="xx-6 bg-silver pdy">3</div>
                 <div class="xx-6 bg-silver pdy">4</div>
             </div>
-            <code>.gpx--1</code>
+            <code>.gpx-d1</code>
 
-            <div class="x-12 gpy--1 gpx-0 mrt-1 middle center">
+            <div class="x-12 gpy-d1 gpx-0 mrt-1 middle center">
                 <div class="xx-6 bg-silver pdy">1</div>
                 <div class="xx-6 bg-silver pdy">2</div>
                 <div class="xx-6 bg-silver pdy">3</div>
                 <div class="xx-6 bg-silver pdy">4</div>
             </div>
-            <code>.gpy--1.gpx-0</code>
+            <code>.gpy-d1.gpx-0</code>
 
             <div class="x-12 gp mrt-1 middle center">
                 <div class="xx-6 bg-silver pdy">1</div>
@@ -759,77 +760,111 @@ figure
                     <h2 id="borders">Borders</h2>
                     <h3>Border</h3>
                 </div>
-                <div class="xx-4 br brw--4 pd-1 bg-silver"></div>
+                <div class="xx-4 br brw-d4 pd-1 bg-silver"></div>
                 <div class="xx-8"><code>.br</code>
                 </div>
-                <div class="xx-4 bry brw--4 pd-1 bg-silver"></div>
+                <div class="xx-4 bry brw-d4 pd-1 bg-silver"></div>
                 <div class="xx-8"><code>.bry</code></div>
-                <div class="xx-4 brx brw--4 pd-1 bg-silver"></div>
+                <div class="xx-4 brx brw-d4 pd-1 bg-silver"></div>
                 <div class="xx-8"><code>.brx</code></div>
-                <div class="xx-4 brt brw--4 pd-1 bg-silver"></div>
+                <div class="xx-4 brt brw-d4 pd-1 bg-silver"></div>
                 <div class="xx-8"><code>.brt</code></div>
-                <div class="xx-4 brr brw--4 pd-1 bg-silver"></div>
+                <div class="xx-4 brr brw-d4 pd-1 bg-silver"></div>
                 <div class="xx-8"><code>.brr</code></div>
-                <div class="xx-4 brb brw--4 pd-1 bg-silver"></div>
+                <div class="xx-4 brb brw-d4 pd-1 bg-silver"></div>
                 <div class="xx-8"><code>.brb</code></div>
-                <div class="xx-4 brl brw--4 pd-1 bg-silver"></div>
+                <div class="xx-4 brl brw-d4 pd-1 bg-silver"></div>
                 <div class="xx-8"><code>.brl</code></div>
 
                 <h3>Border Style</h3>
-                <div class="xx-4 br-dashed brw--4 pd-1 bg-silver"></div>
+                <div class="xx-4 br-dashed brw-d4 pd-1 bg-silver"></div>
                 <div class="xx-8"><code>.br-dashed</code></div>
-                <div class="xx-4 br-dotted brw--4 pd-1 bg-silver"></div>
+                <div class="xx-4 br-dotted brw-d4 pd-1 bg-silver"></div>
                 <div class="xx-8"><code>.br-dotted</code></div>
-                <div class="xx-4 br-solid brw--4 pd-1 bg-silver"></div>
+                <div class="xx-4 br-solid brw-d4 pd-1 bg-silver"></div>
                 <div class="xx-8"><code>.br-solid</code></div>
 
                 <h3>Border Width</h3>
+                <div class="max-width-sm">
+                    <p>The digit that is part of the border-width class name indicates how the border width is decreased
+                        or increased.
+                    </p>
+                    <table>
+                        <tr>
+                            <td class="no-break">d&lt;digit&gt;</td>
+                            <td>decrease from <code>1rem</code> by applying the formula <code
+                                    class="no-break">1rem * var(--space-factor)<sup>-&lt;digit&gt;</sup></code> </td>
+                        </tr>
+                        <tr>
+                            <td class="no-break">&lt;digit&gt;</td>
+                            <td>increase from <code>1rem</code> by applying the formula <code
+                                    class="no-break">1rem * var(--space-factor)<sup>&lt;digit&gt;</sup></code> </td>
+                        </tr>
+                    </table>
+                </div>
                 <div class="xx-4 br brw-0 pd-1 bg-silver"></div>
                 <div class="xx-8"><code>.brw-0</code></div>
                 <div class="xx-4 br brw-sm pd-1 bg-silver"></div>
                 <div class="xx-8"><code>.br.brw-sm</code>, <code>br.brw-default</code></div>
-                <div class="xx-4 br brw--4 pd-1 bg-silver"></div>
-                <div class="xx-8"><code>.br.brw--4</code></div>
-                <div class="xx-4 br brw--3 pd-1 bg-silver"></div>
-                <div class="xx-8"><code>.br.brw--3</code></div>
-                <div class="xx-4 br brw--2 pd-1 bg-silver"></div>
-                <div class="xx-8"><code>.br.brw--2</code></div>
-                <div class="xx-4 br brw--1 pd-1 bg-silver"></div>
-                <div class="xx-8"><code>.br.brw--1</code></div>
+                <div class="xx-4 br brw-d4 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.brw-d4</code></div>
+                <div class="xx-4 br brw-d3 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.brw-d3</code></div>
+                <div class="xx-4 br brw-d2 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.brw-d2</code></div>
+                <div class="xx-4 br brw-d1 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.brw-d1</code></div>
                 <div class="xx-4 br brw pd-1 bg-silver"></div>
                 <div class="xx-8"><code>.br.brw</code> <small>(1rem)</small></div>
 
                 <h3>Border Radius</h3>
-                <div class="xx-4 br brw--4 br-radius-0 pd-1 bg-silver"></div>
+                <div class="max-width-sm">
+                    <p>The digit that is part of the radius class name indicates how the radius is decreased
+                        or increased.
+                    </p>
+                    <table>
+                        <tr>
+                            <td class="no-break">d&lt;digit&gt;</td>
+                            <td>decrease from <code>1rem</code> by applying the formula <code
+                                    class="no-break">1rem * var(--space-factor)<sup>-&lt;digit&gt;</sup></code> </td>
+                        </tr>
+                        <tr>
+                            <td class="no-break">&lt;digit&gt;</td>
+                            <td>increase from <code>1rem</code> by applying the formula <code
+                                    class="no-break">1rem * var(--space-factor)<sup>&lt;digit&gt;</sup></code> </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="xx-4 br brw-d4 br-radius-0 pd-1 bg-silver"></div>
                 <div class="xx-8"><code>.br.br-radius-0</code></div>
 
-                <div class="xx-4 br brw--4 br-radius--2 pd-1 bg-silver"></div>
-                <div class="xx-8"><code>.br.br-radius--2</code>, <code>.br.rounded</code></div>
+                <div class="xx-4 br brw-d4 br-radius-d2 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.br-radius-d2</code>, <code>.br.rounded</code></div>
 
-                <div class="xx-4 br brw--4 br-radius--1 pd-1 bg-silver"></div>
-                <div class="xx-8"><code>.br.br-radius--1</code></div>
+                <div class="xx-4 br brw-d4 br-radius-d1 pd-1 bg-silver"></div>
+                <div class="xx-8"><code>.br.br-radius-d1</code></div>
 
-                <div class="xx-4 br brw--4 br-radius pd-1 bg-silver"></div>
+                <div class="xx-4 br brw-d4 br-radius pd-1 bg-silver"></div>
                 <div class="xx-8"><code>.br.br-radius</code> <small>(1rem)</small></div>
 
-                <div class="xx-4 br brw--4 br-radius-pill pd-1 bg-silver"></div>
+                <div class="xx-4 br brw-d4 br-radius-pill pd-1 bg-silver"></div>
                 <div class="xx-8"><code>.br.br-radius-pill</code></div>
 
                 <div class="xx-4">
-                    <div class="br brw--4 br-radius-100 pd-2 inline-block bg-silver"></div>
+                    <div class="br brw-d4 br-radius-100 pd-2 inline-block bg-silver"></div>
                 </div>
                 <div class="xx-8"><code>.br.br-radius-100</code></div>
 
-                <div class="xx-4 br brw--4 br-radius br-radius-t pd-1 bg-silver"></div>
+                <div class="xx-4 br brw-d4 br-radius br-radius-t pd-1 bg-silver"></div>
                 <div class="xx-8"><code>.br.br-radius.br-radius-t</code></div>
 
-                <div class="xx-4 br brw--4 br-radius br-radius-r pd-1 bg-silver"></div>
+                <div class="xx-4 br brw-d4 br-radius br-radius-r pd-1 bg-silver"></div>
                 <div class="xx-8"><code>.br.br-radius.br-radius-r</code></div>
 
-                <div class="xx-4 br brw--4 br-radius br-radius-b pd-1 bg-silver"></div>
+                <div class="xx-4 br brw-d4 br-radius br-radius-b pd-1 bg-silver"></div>
                 <div class="xx-8"><code>.br.br-radius.br-radius-b</code></div>
 
-                <div class="xx-4 br brw--4 br-radius br-radius-l pd-1 bg-silver"></div>
+                <div class="xx-4 br brw-d4 br-radius br-radius-l pd-1 bg-silver"></div>
                 <div class="xx-8"><code>.br.br-radius.br-radius-l</code></div>
 
             </div>

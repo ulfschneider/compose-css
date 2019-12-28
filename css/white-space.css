@@ -10,10 +10,10 @@
   --space-2:calc(var(--space-1)*var(--space-factor));
   --space-3:calc(var(--space-2)*var(--space-factor));
   --space-4:calc(var(--space-3)*var(--space-factor));
-  --space--1:calc(var(--space)/var(--space-factor));
-  --space--2:calc(var(--space--1)/var(--space-factor));
-  --space--3:calc(var(--space--2)/var(--space-factor));
-  --space--4:calc(var(--space--3)/var(--space-factor));
+  --space-d1:calc(var(--space)/var(--space-factor));
+  --space-d2:calc(var(--space-d1)/var(--space-factor));
+  --space-d3:calc(var(--space-d2)/var(--space-factor));
+  --space-d4:calc(var(--space-d3)/var(--space-factor));
 }
 
 .gp-0{
@@ -40,64 +40,64 @@
   grid-row-gap:var(--border-width-sm)
 }
 
-.gp--4{
+.gp-d4{
   grid-gap:0.14519rem;
-  grid-gap:var(--space--4);
+  grid-gap:var(--space-d4);
 }
 
-.gpx--4{
+.gpx-d4{
   grid-column-gap:0.14519rem;
-  grid-column-gap:var(--space--4);
+  grid-column-gap:var(--space-d4);
 }
 
-.gpy--4{
+.gpy-d4{
   grid-row-gap:0.14519rem;
-  grid-row-gap:var(--space--4);
+  grid-row-gap:var(--space-d4);
 }
 
-.gp--3{
+.gp-d3{
   grid-gap:0.23521rem;
-  grid-gap:var(--space--3);
+  grid-gap:var(--space-d3);
 }
 
-.gpx--3{
+.gpx-d3{
   grid-column-gap:0.23521rem;
-  grid-column-gap:var(--space--3);
+  grid-column-gap:var(--space-d3);
 }
 
-.gpy--3{
+.gpy-d3{
   grid-row-gap:0.23521rem;
-  grid-row-gap:var(--space--3);
+  grid-row-gap:var(--space-d3);
 }
 
-.gp--2{
+.gp-d2{
   grid-gap:0.38104rem;
-  grid-gap:var(--space--2);
+  grid-gap:var(--space-d2);
 }
 
-.gpx--2{
+.gpx-d2{
   grid-column-gap:0.38104rem;
-  grid-column-gap:var(--space--2);
+  grid-column-gap:var(--space-d2);
 }
 
-.gpy--2{
+.gpy-d2{
   grid-row-gap:0.38104rem;
-  grid-row-gap:var(--space--2);
+  grid-row-gap:var(--space-d2);
 }
 
-.gp--1{
+.gp-d1{
   grid-gap:0.61728rem;
-  grid-gap:var(--space--1);
+  grid-gap:var(--space-d1);
 }
 
-.gpx--1{
+.gpx-d1{
   grid-column-gap:0.61728rem;
-  grid-column-gap:var(--space--1);
+  grid-column-gap:var(--space-d1);
 }
 
-.gpy--1{
+.gpy-d1{
   grid-row-gap:0.61728rem;
-  grid-row-gap:var(--space--1);
+  grid-row-gap:var(--space-d1);
 }
 
 .gp{
@@ -433,43 +433,43 @@
   margin-left:calc(-1*var(--space-1));
 }
 
-.mr--1{
+.mr-d1{
   margin:0.61728rem;
-  margin:var(--space--1);
+  margin:var(--space-d1);
 }
 
-.mrx--1{
+.mrx-d1{
   margin-left:0.61728rem;
-  margin-left:var(--space--1);
+  margin-left:var(--space-d1);
   margin-right:0.61728rem;
-  margin-right:var(--space--1);
+  margin-right:var(--space-d1);
 }
 
-.mry--1{
+.mry-d1{
   margin-top:0.61728rem;
-  margin-top:var(--space--1);
+  margin-top:var(--space-d1);
   margin-bottom:0.61728rem;
-  margin-bottom:var(--space--1);
+  margin-bottom:var(--space-d1);
 }
 
-.mrt--1{
+.mrt-d1{
   margin-top:0.61728rem;
-  margin-top:var(--space--1);
+  margin-top:var(--space-d1);
 }
 
-.mrr--1{
+.mrr-d1{
   margin-right:0.61728rem;
-  margin-right:var(--space--1);
+  margin-right:var(--space-d1);
 }
 
-.mrb--1{
+.mrb-d1{
   margin-bottom:0.61728rem;
-  margin-bottom:var(--space--1);
+  margin-bottom:var(--space-d1);
 }
 
-.mrl--1{
+.mrl-d1{
   margin-left:0.61728rem;
-  margin-left:var(--space--1);
+  margin-left:var(--space-d1);
 }
 
 .mrl-auto{
@@ -710,41 +710,41 @@
   padding-left:var(--space-4);
 }
 
-.pd--1{
+.pd-d1{
   padding:0.61728rem;
-  padding:var(--space--1);
+  padding:var(--space-d1);
 }
 
-.pdx--1{
+.pdx-d1{
   padding-left:0.61728rem;
-  padding-left:var(--space--1);
+  padding-left:var(--space-d1);
   padding-right:0.61728rem;
-  padding-right:var(--space--1);
+  padding-right:var(--space-d1);
 }
 
-.pdy--1{
+.pdy-d1{
   padding-top:0.61728rem;
-  padding-top:var(--space--1);
+  padding-top:var(--space-d1);
   padding-bottom:0.61728rem;
-  padding-bottom:var(--space--1);
+  padding-bottom:var(--space-d1);
 }
 
-.pdt--1{
+.pdt-d1{
   padding-top:0.61728rem;
-  padding-top:var(--space--1);
+  padding-top:var(--space-d1);
 }
 
-.pdr--1{
+.pdr-d1{
   padding-right:0.61728rem;
-  padding-right:var(--space--1);
+  padding-right:var(--space-d1);
 }
 
-.pdb--1{
+.pdb-d1{
   padding-bottom:0.61728rem;
-  padding-bottom:var(--space--1);
+  padding-bottom:var(--space-d1);
 }
 
-.pdl--1{
+.pdl-d1{
   padding-left:0.61728rem;
-  padding-left:var(--space--1);
+  padding-left:var(--space-d1);
 }

@@ -108,7 +108,7 @@ em,
 
 small,
 .small {
-  font-size: var(--fs--1);
+  font-size: var(--fs-d1);
 }
 
 .caps {
@@ -218,7 +218,7 @@ mark,
 kbd,
 .kbd {
   background: var(--kbd-background);
-  border-radius: var(--space--4);
+  border-radius: var(--space-d4);
   border: 1px solid var(--base-color);
   padding: 0.1em;
   font-family: var(--font-family-mono);
@@ -378,8 +378,8 @@ blockquote>code {
 pre {
   margin-top: var(--space);
   margin-bottom: var(--space);
-  padding-top: var(--space--1);
-  padding-bottom: var(--space--1);
+  padding-top: var(--space-d1);
+  padding-bottom: var(--space-d1);
   border-top: var(--border-width-sm) dotted var(--gray);
   border-bottom: var(--border-width-sm) dotted var(--gray);
   overflow: auto;
@@ -388,7 +388,7 @@ pre {
 .tag {
   white-space: nowrap;
   padding: 0.1em;
-  border-radius: var(--space--4);
+  border-radius: var(--space-d4);
 }
 
 a {
@@ -403,7 +403,7 @@ blockquote {
   padding-left: var(--space-1);
   font-style: italic;
   border-left-style: solid;
-  border-left-width: var(--space--2);
+  border-left-width: var(--space-d2);
   border-color: var(--silver);
 }
 
