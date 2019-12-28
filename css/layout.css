@@ -107,3 +107,72 @@
 .border-box{
   box-sizing:border-box;
 }
+
+.content-box{
+  box-sizing:content-box;
+}
+
+.width{
+  width:var(--space);
+}
+
+.width-1{
+  width:var(--space-1)
+}
+
+.width-2{
+  width:var(--space-2);
+}
+
+.width-3{
+  width:var(--space-3)
+}
+
+.width-4{
+  width:var(--space-4)
+}
+
+.height{
+  height:var(--space);
+}
+
+.height-1{
+  height:var(--space-1)
+}
+
+.height-2{
+  height:var(--space-2);
+}
+
+.height-3{
+  height:var(--space-3)
+}
+
+.height-4{
+  height:var(--space-4)
+}
+
+.square{
+  width:var(--sapce);
+  height:var(--space);
+}
+
+.square-1{
+  width:var(--space-1);
+  height:var(--space-1)
+}
+
+.square-2{
+  width:var(--space-2);
+  height:var(--space-2);
+}
+
+.square-3{
+  width:var(--space-3);
+  height:var(--space-3)
+}
+
+.square-4{
+  width:var(--space-4);
+  height:var(--space-4)
+}
