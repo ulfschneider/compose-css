@@ -383,22 +383,6 @@ figure
 
     <div class="breakout-l">
         <h3>Font Size</h3>
-        <div class="max-width-sm">
-            <p>The digit that is part of the font-size class name indicates how the font size is decreased or increased.
-            </p>
-            <table class="mrb-2">
-                <tr>
-                    <td class="no-break">d&lt;digit&gt;</td>
-                    <td>decrease from <code>1rem</code> by applying the formula <code
-                            class="no-break">1rem * var(--size-factor)<sup>-&lt;digit&gt;</sup></code> </td>
-                </tr>
-                <tr>
-                    <td class="no-break">&lt;digit&gt;</td>
-                    <td>increase from <code>1rem</code> by applying the formula <code
-                            class="no-break">1rem * var(--size-factor)<sup>&lt;digit&gt;</sup></code> </td>
-                </tr>
-            </table>
-        </div>
         <table class="pdy-0">
             <tr>
                 <td class="fs-d1 bottom right">Aa</td>
@@ -612,16 +596,6 @@ figure
                 <td>none</td>
             </tr>
             <tr>
-                <td>d&lt;digit&gt;</td>
-                <td>decrease from <code>1rem</code> by applying the formula <code
-                        class="no-break">1rem * var(--space-factor)<sup>-&lt;digit&gt;</sup></code> </td>
-            </tr>
-            <tr>
-                <td>&lt;digit&gt;</td>
-                <td>increase from <code>1rem</code> by applying the formula <code
-                        class="no-break">1rem * var(--space-factor)<sup>&lt;digit&gt;</sup></code> </td>
-            </tr>
-            <tr>
                 <td>x</td>
                 <td>X-axis</td>
             </tr>
@@ -632,22 +606,6 @@ figure
         </table>
 
         <h3>Margin</h3>
-        <div class="max-width-sm">
-            <p>The digit that is part of the margin class name indicates how the margin is decreased or increased.
-            </p>
-            <table class="mrb-2">
-                <tr>
-                    <td class="no-break">d&lt;digit&gt;</td>
-                    <td>decrease from <code>1rem</code> by applying the formula <code
-                            class="no-break">1rem * var(--space-factor)<sup>-&lt;digit&gt;</sup></code> </td>
-                </tr>
-                <tr>
-                    <td class="no-break">&lt;digit&gt;</td>
-                    <td>increase from <code>1rem</code> by applying the formula <code
-                            class="no-break">1rem * var(--space-factor)<sup>&lt;digit&gt;</sup></code> </td>
-                </tr>
-            </table>
-        </div>
         <div class="x-12 gp-1 max-width-rg">
             <div class="xx-12">
                 <div class="br inline-table lh-0">
@@ -961,23 +919,6 @@ figure
                 <div class="xx-8"><code>.br.br-solid</code></div>
 
                 <h3>Border Width</h3>
-                <div class="max-width-sm">
-                    <p>The digit that is part of the border-width class name indicates how the border width is decreased
-                        or increased.
-                    </p>
-                    <table>
-                        <tr>
-                            <td class="no-break">d&lt;digit&gt;</td>
-                            <td>decrease from <code>1rem</code> by applying the formula <code
-                                    class="no-break">1rem * var(--space-factor)<sup>-&lt;digit&gt;</sup></code> </td>
-                        </tr>
-                        <tr>
-                            <td class="no-break">&lt;digit&gt;</td>
-                            <td>increase from <code>1rem</code> by applying the formula <code
-                                    class="no-break">1rem * var(--space-factor)<sup>&lt;digit&gt;</sup></code> </td>
-                        </tr>
-                    </table>
-                </div>
                 <div class="xx-4 br brw-0 pd-1 bg-silver"></div>
                 <div class="xx-8"><code>.brw-0</code></div>
                 <div class="xx-4 br brw-d5 pd-1 bg-silver"></div>
@@ -994,23 +935,7 @@ figure
                 <div class="xx-8"><code>.br.brw</code> <small>(1rem)</small></div>
 
                 <h3>Border Radius</h3>
-                <div class="max-width-sm">
-                    <p>The digit that is part of the radius class name indicates how the radius is decreased
-                        or increased.
-                    </p>
-                    <table>
-                        <tr>
-                            <td class="no-break">d&lt;digit&gt;</td>
-                            <td>decrease from <code>1rem</code> by applying the formula <code
-                                    class="no-break">1rem * var(--space-factor)<sup>-&lt;digit&gt;</sup></code> </td>
-                        </tr>
-                        <tr>
-                            <td class="no-break">&lt;digit&gt;</td>
-                            <td>increase from <code>1rem</code> by applying the formula <code
-                                    class="no-break">1rem * var(--space-factor)<sup>&lt;digit&gt;</sup></code> </td>
-                        </tr>
-                    </table>
-                </div>
+                
                 <div class="xx-4 br br-radius-0 pd-1 bg-silver"></div>
                 <div class="xx-8"><code>.br.br-radius-0</code></div>
 
@@ -1320,14 +1245,15 @@ figure
     <div class="breakout-l">
         <h3>12 Column Grid</h3>
         <div class="max-width-rg">
-            <p>Any of the before mentioned content concepts can be divided horizontally into 12ths.</p>
+            <p>Any space can be divided horizontally into 12ths.</p>
             <p>The sum of the cols per row has to add up to 12. Not specifiying a column size will result in taking the
                 entire grid width into one column.</p>
         </div>
         <pre>div .x-12 
     div/ .xx-2 
-    div/ .xx-10 //.xx-2 and .xx-10 together will fill an entire            
+    div/ .xx-10 //.xx-2 and .xx-10 together will fill an entire row           
     div/ .xx-12 //will fill an entire row 
+    div/        //will also fill an entire row 
 /div</pre>
 
         <div class="x-12 mry-1 gp center code">

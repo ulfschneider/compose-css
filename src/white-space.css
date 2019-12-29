@@ -36,10 +36,9 @@ Naming conventions
     l=left
     n=negative
     0=none
-    1=default size
-    --=reduce
-
-
+    d<i>=decrease by <i>  
+    <i>=increase by <i>
+    
     gp=grid gap
     mr=margin
     pd=padding
@@ -506,6 +505,70 @@ Naming conventions
   margin-left: calc(-1 * var(--space-d5));
 }
 
+.mrtn-d4 {
+  margin-top: calc(-1 * var(--space-d4));
+}
+
+.mrrn-d4 {
+  margin-right: calc(-1 * var(--space-d4));
+}
+
+.mrbn-d4 {
+  margin-bottom: calc(-1 * var(--space-d4));
+}
+
+.mrln-d4 {
+  margin-left: calc(-1 * var(--space-d4));
+}
+
+.mrtn-d3 {
+  margin-top: calc(-1 * var(--space-d3));
+}
+
+.mrrn-d3 {
+  margin-right: calc(-1 * var(--space-d3));
+}
+
+.mrbn-d3 {
+  margin-bottom: calc(-1 * var(--space-d3));
+}
+
+.mrln-d3 {
+  margin-left: calc(-1 * var(--space-d3));
+}
+
+.mrtn-d2 {
+  margin-top: calc(-1 * var(--space-d2));
+}
+
+.mrrn-d2 {
+  margin-right: calc(-1 * var(--space-d2));
+}
+
+.mrbn-d2 {
+  margin-bottom: calc(-1 * var(--space-d2));
+}
+
+.mrln-d2 {
+  margin-left: calc(-1 * var(--space-d2));
+}
+
+.mrtn-d1 {
+  margin-top: calc(-1 * var(--space-d1));
+}
+
+.mrrn-d1 {
+  margin-right: calc(-1 * var(--space-d1));
+}
+
+.mrbn-d1 {
+  margin-bottom: calc(-1 * var(--space-d1));
+}
+
+.mrln-d1 {
+  margin-left: calc(-1 * var(--space-d1));
+}
+
 .mrtn {
   margin-top: calc(-1 * var(--space));
 }
@@ -538,8 +601,52 @@ Naming conventions
   margin-left: calc(-1 * var(--space-1));
 }
 
-.mrl-d1 {
-  margin-left: var(--space-d1);
+.mrtn-2 {
+  margin-top: calc(-1 * var(--space-2));
+}
+
+.mrrn-2 {
+  margin-right: calc(-1 * var(--space-2));
+}
+
+.mrbn-2 {
+  margin-bottom: calc(-1 * var(--space-2));
+}
+
+.mrln-2 {
+  margin-left: calc(-1 * var(--space-2));
+}
+
+.mrtn-3 {
+  margin-top: calc(-1 * var(--space-3));
+}
+
+.mrrn-3 {
+  margin-right: calc(-1 * var(--space-3));
+}
+
+.mrbn-3 {
+  margin-bottom: calc(-1 * var(--space-3));
+}
+
+.mrln-3 {
+  margin-left: calc(-1 * var(--space-3));
+}
+
+.mrtn-4 {
+  margin-top: calc(-1 * var(--space-4));
+}
+
+.mrrn-4 {
+  margin-right: calc(-1 * var(--space-4));
+}
+
+.mrbn-4 {
+  margin-bottom: calc(-1 * var(--space-4));
+}
+
+.mrln-4 {
+  margin-left: calc(-1 * var(--space-4));
 }
 
 .mrl-auto {
@@ -583,6 +690,156 @@ Naming conventions
 
 .pdl-0 {
   padding-left: 0;
+}
+
+.pd-d5 {
+  padding: var(--space-d5);
+}
+
+.pdx-d5 {
+  padding-left: var(--space-d5);
+  padding-right: var(--space-d5);
+}
+
+.pdy-d5 {
+  padding-top: var(--space-d5);
+  padding-bottom: var(--space-d5);
+}
+
+.pdt-d5 {
+  padding-top: var(--space-d5);
+}
+
+.pdr-d5 {
+  padding-right: var(--space-d5);
+}
+
+.pdb-d5 {
+  padding-bottom: var(--space-d5);
+}
+
+.pdl-d5 {
+  padding-left: var(--space-d5);
+}
+
+.pd-d4 {
+  padding: var(--space-d4);
+}
+
+.pdx-d4 {
+  padding-left: var(--space-d4);
+  padding-right: var(--space-d4);
+}
+
+.pdy-d4 {
+  padding-top: var(--space-d4);
+  padding-bottom: var(--space-d4);
+}
+
+.pdt-d4 {
+  padding-top: var(--space-d4);
+}
+
+.pdr-d4 {
+  padding-right: var(--space-d4);
+}
+
+.pdb-d4 {
+  padding-bottom: var(--space-d4);
+}
+
+.pdl-d4 {
+  padding-left: var(--space-d4);
+}
+
+.pd-d3 {
+  padding: var(--space-d3);
+}
+
+.pdx-d3 {
+  padding-left: var(--space-d3);
+  padding-right: var(--space-d3);
+}
+
+.pdy-d3 {
+  padding-top: var(--space-d3);
+  padding-bottom: var(--space-d3);
+}
+
+.pdt-d3 {
+  padding-top: var(--space-d3);
+}
+
+.pdr-d3 {
+  padding-right: var(--space-d3);
+}
+
+.pdb-d3 {
+  padding-bottom: var(--space-d3);
+}
+
+.pdl-d3 {
+  padding-left: var(--space-d3);
+}
+
+.pd-d2 {
+  padding: var(--space-d2);
+}
+
+.pdx-d2 {
+  padding-left: var(--space-d2);
+  padding-right: var(--space-d2);
+}
+
+.pdy-d2 {
+  padding-top: var(--space-d2);
+  padding-bottom: var(--space-d2);
+}
+
+.pdt-d2 {
+  padding-top: var(--space-d2);
+}
+
+.pdr-d2 {
+  padding-right: var(--space-d2);
+}
+
+.pdb-d2 {
+  padding-bottom: var(--space-d2);
+}
+
+.pdl-d2 {
+  padding-left: var(--space-d2);
+}
+
+.pd-d1 {
+  padding: var(--space-d1);
+}
+
+.pdx-d1 {
+  padding-left: var(--space-d1);
+  padding-right: var(--space-d1);
+}
+
+.pdy-d1 {
+  padding-top: var(--space-d1);
+  padding-bottom: var(--space-d1);
+}
+
+.pdt-d1 {
+  padding-top: var(--space-d1);
+}
+
+.pdr-d1 {
+  padding-right: var(--space-d1);
+}
+
+.pdb-d1 {
+  padding-bottom: var(--space-d1);
+}
+
+.pdl-d1 {
+  padding-left: var(--space-d1);
 }
 
 .pd {
@@ -733,34 +990,4 @@ Naming conventions
 
 .pdl-4 {
   padding-left: var(--space-4);
-}
-
-.pd-d1 {
-  padding: var(--space-d1);
-}
-
-.pdx-d1 {
-  padding-left: var(--space-d1);
-  padding-right: var(--space-d1);
-}
-
-.pdy-d1 {
-  padding-top: var(--space-d1);
-  padding-bottom: var(--space-d1);
-}
-
-.pdt-d1 {
-  padding-top: var(--space-d1);
-}
-
-.pdr-d1 {
-  padding-right: var(--space-d1);
-}
-
-.pdb-d1 {
-  padding-bottom: var(--space-d1);
-}
-
-.pdl-d1 {
-  padding-left: var(--space-d1);
 }
