@@ -6,12 +6,16 @@ table {
     text-align: left;
 }
 
+table.alternate-rows tr:nth-child(even) {background: var(--silver);}
+table.alternate-rows tr:nth-child(odd) {background: transparent;}
+
+
 td {
     vertical-align: top;
 }
 
 th {
-    vertical-align: bottom;
+    vertical-align: top;
     font-weight: var(--font-weight-bold);
 }
 

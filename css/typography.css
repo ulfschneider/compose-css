@@ -1,5 +1,5 @@
 :root{
-  --font-weight-bold:600;
+  --font-weight-bold:700;
   --font-weight-normal:400;
 
   --font-family:-apple-system, sans-serif;
@@ -60,7 +60,7 @@ b,
 .b,
 strong,
 .strong{
-  font-weight:600;
+  font-weight:700;
   font-weight:var(--font-weight-bold, bold);
 }
 
@@ -249,7 +249,6 @@ h5,
 h6{
   text-transform:unset;
   font-weight:600;
-  font-weight:var(--font-weight-bold);
   font-family:-apple-system
 ,
 sans-serif;
