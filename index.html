@@ -117,7 +117,7 @@
 
 
             <h3>Indented Paragraph</h3>
-            <div class="pindent">
+            <div class="indent">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
                     massa. </p>
 
@@ -127,12 +127,12 @@
                 <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
                     pretium. Integer tincidunt. </p>
             </div>
-            <pre>div .pindent
+            <pre>div .indent
     p/
-    p/ .no-pindent //remove indentation for this p
+    p/ .no-indent //remove indentation for this p
 /div
 
-p/ .pindent</pre>
+p/ .indent</pre>
 
 
             <h3>Unordered List</h3>
@@ -167,6 +167,37 @@ p/ .pindent</pre>
     li/
 /ul</pre>
 
+            <h3>Indented Unordered List</h3>
+
+            <ul class="indent">
+                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                    Aenean
+                    massa.
+                </li>
+                <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+                    quis
+                    enim.
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                            dolor.
+                            Aenean
+                            massa.
+                        </li>
+                        <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                            massa
+                            quis
+                            enim.
+                        </li>
+                    </ul>
+                </li>
+                <li>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+                    mollis
+                    pretium. Integer tincidunt.
+                </li>
+            </ul>
+            <pre>ul .indent
+    li/
+/ul</pre>
 
             <h3>Ordered List</h3>
             <ol>
@@ -196,6 +227,37 @@ p/ .pindent</pre>
                 </li>
             </ol>
             <pre>ol
+    li/
+/ol</pre>
+
+            <h3>Indented Ordered List</h3>
+            <ol class="indent">
+                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                    Aenean
+                    massa.
+                </li>
+                <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+                    quis
+                    enim.
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                            dolor.
+                            Aenean
+                            massa.
+                        </li>
+                        <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                            massa
+                            quis
+                            enim.
+                        </li>
+                    </ol>
+                </li>
+                <li>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+                    mollis
+                    pretium. Integer tincidunt.
+                </li>
+            </ol>
+            <pre>ol .indent
     li/
 /ol</pre>
 
@@ -1329,7 +1391,7 @@ figure
         &lt;/div&gt;
     </div>
 
-    <div class="breakout-r columns-1 rg-columns-2 lg-columns-3 pindent">
+    <div class="breakout-r columns-1 rg-columns-2 lg-columns-3 indent">
         <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines
             Morgens verhaftet. »Wie ein Hund!« sagte er, es war, als sollte die Scham ihn überleben. Als Gregor
             Samsa eines Morgens aus

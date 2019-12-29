@@ -283,14 +283,27 @@ h6 {
   margin-bottom: var(--mrb-h6);
 }
 
-ul,
-ul ul {
+ul {
   list-style-type: disc;
 }
 
 ol {
   list-style: none;
   counter-reset: bold-number;
+}
+
+ol, ul {
+  padding-left: var(--space-1);
+}
+
+li {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.indent li {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 ol li {
@@ -300,20 +313,27 @@ ol li {
 ol li::before {
   content: counter(bold-number) ". ";
   font-weight: bold;
+  position: absolute; 
+  margin-left: calc(var(--space-1) * -1);  
 }
 
-ol,
-ul {
+.indent li::before {
+  position: unset;
+  margin-left:unset;
+}
+
+ol.indent,
+ul.indent {
   margin-top: 1em;
   margin-bottom: 1em;
   padding-left: 0;
   list-style-position: inside;
 }
 
-ol ol,
-ul ol,
-ol ul,
-ul ul {
+ol.indent ol,
+ul.indent ol,
+ol.indent ul,
+ul.indent ul {
   margin-top: 0em;
   margin-bottom: 0em;
   padding-left: var(--space-1);
@@ -324,23 +344,23 @@ p {
   margin-bottom: 1em;
 }
 
-.pindent p {
+.indent p {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.pindent p+p {
+.indent p+p {
   text-indent: var(--space-1);
 }
 
-p.pindent {
+p.indent {
   margin: 0;
   text-indent: var(--space-1);
 }
 
-.no-pindent p,
-.no-pindent p+p,
-p.no-pindent {
+.no-indent p,
+.no-indent p+p,
+p.no-indent {
   text-indent: 0;
   margin-top: 1em;
   margin-bottom: 1em;
