@@ -415,8 +415,8 @@ pre{
   margin-bottom:var(--space);
   padding-top:var(--space-d1);
   padding-bottom:var(--space-d1);
-  border-top:var(--border-width-sm) dotted var(--gray);
-  border-bottom:var(--border-width-sm) dotted var(--gray);
+  border-top:var(--space-d5) dotted var(--gray);
+  border-bottom:var(--space-d5) dotted var(--gray);
   overflow:auto;
 }
 

@@ -1,6 +1,5 @@
-:root {
-  --border-width-sm: 1px;
-  --border-width-default: var(--border-width-sm);
+:root {  
+  --border-width-default: var(--space-d5);
 
   --border-radius-d2: calc(var(--space) / 4);
   --border-radius-d1: calc(var(--space) / 2);
@@ -75,8 +74,8 @@
   border-width: 0;
 }
 
-.brw-sm {
-  border-width: var(--border-width-sm);
+.brw-d5 {
+  border-width: var(--space-d5);
 }
 
 .brw-d4, .brw-default {
