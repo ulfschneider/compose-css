@@ -318,8 +318,7 @@ ol li {
 }
 
 ol li::before {
-  content: counter(bold-number) ". ";
-  font-weight: bold;
+  content: counter(bold-number) ". ";  
   margin-left: calc(var(--space-1) * -1);
   min-width: var(--space-1);
   display: inline-block;

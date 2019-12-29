@@ -2199,9 +2199,8 @@ ol li{
 }
 
 ol li::before{
-  content:counter(bold-number) ". ";
-  font-weight:bold;
-  margin-left:-1.62rem;
+  content:counter(bold-number) ". ";  
+  margin-left:-1.62rem;  
   margin-left:calc(var(--space-1)*-1);
   min-width:1.62rem;
   min-width:var(--space-1);
