@@ -1,6 +1,6 @@
 :root{
   --font-weight-bold:600;
-  --font-weight-normal:400;  
+  --font-weight-normal:400;
 
   --font-family:-apple-system, sans-serif;
   --font-family-headlines:var(--font-family);
@@ -15,16 +15,16 @@
 
   --mrt-h2:var(--space-2);
   --mrb-h2:var(--space-1);
-  
+
   --mrt-h3:var(--space-2);
   --mrb-h3:var(--space-1);
-  
+
   --mrt-h4:var(--space-2);
   --mrb-h4:var(--space-1);
-  
+
   --mrt-h5:var(--space-2);
   --mrb-h5:var(--space-1);
-  
+
   --mrt-h6:var(--space-2);
   --mrb-h6:var(--space-1);
 
@@ -44,7 +44,7 @@ sans-serif;
 }
 
 *{
-  outline:none; 
+  outline:none;
 }
 
 .font-family-inherit{
@@ -64,7 +64,8 @@ strong,
   font-weight:var(--font-weight-bold, bold);
 }
 
-.normal, .fw-default{
+.normal,
+.fw-default{
   font-weight:normal;
 }
 
@@ -123,7 +124,8 @@ small,
   text-transform:uppercase;
 }
 
-.no-lsp, .lsp-0{
+.no-lsp,
+.lsp-0{
   letter-spacing:none;
 }
 
@@ -131,7 +133,8 @@ small,
   letter-spacing:0.05em;
 }
 
-.lsp-2, .lsp{
+.lsp-2,
+.lsp{
   letter-spacing:0.1em;
 }
 
@@ -318,7 +321,7 @@ h6{
 }
 
 ul{
-  list-style-type:disc;
+  list-style:none;
 }
 
 ol{
@@ -326,7 +329,8 @@ ol{
   counter-reset:bold-number;
 }
 
-ol, ul{
+ol,
+ul{
   padding-left:var(--space-1);
 }
 
@@ -347,12 +351,19 @@ ol li{
 ol li::before{
   content:counter(bold-number) ". ";
   font-weight:bold;
-  position:absolute; 
-  margin-left:calc(var(--space-1)*-1);  
+  margin-left:calc(var(--space-1)*-1);
+  min-width:var(--space-1);
+  display:inline-block;
+}
+
+ul li::before{
+  content:"–";
+  margin-left:calc(var(--space-1)*-1);
+  min-width:var(--space-1);
+  display:inline-block;
 }
 
 .indent li::before{
-  position:unset;
   margin-left:unset;
 }
 
@@ -360,8 +371,7 @@ ol.indent,
 ul.indent{
   margin-top:1em;
   margin-bottom:1em;
-  padding-left:0;
-  list-style-position:inside;
+  padding-left:0;  
 }
 
 ol.indent ol,
