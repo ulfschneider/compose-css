@@ -1305,13 +1305,14 @@ figure
     <div class="breakout-l">
         <h2 id="images">Images</h2>
         <h3>Responsive</h3>
-        <p class="max-width-sm">Images are by default responsive and take the entire available horizontal space while
+        <p class="max-width-sm mrb-0">Images are by default responsive and take the entire available horizontal space
+            while
             preserving
             aspect-ratio.
         </p>
     </div>
 
-    <div class="wide x-12">
+    <div class="wide">
         <figure>
             <img loading="lazy" src="resources/swan-leroi-unsplash.jpg" />
             <figcaption>Photo by Swan Leroi on Unsplash</figcaption>
@@ -1320,14 +1321,13 @@ figure
     </div>
 
     <div class="breakout">
-
         <div class="x-12">
             <h3>Contain</h3>
             <div class="max-width-rg">
                 <p>If the image has a fixed width or fixed height, the
                     usage of <code>.fix-contain</code> will put the entire visible image inside of the given
                     dimensions while preserving aspect-ratio and without stretching the image.</p>
-                <p>Combine <code>.fit-contain</code> with fit positions <code>.fit-t</code>,
+                <p class="mrb-0">Combine <code>.fit-contain</code> with fit positions <code>.fit-t</code>,
                     <code>.fit-tl</code>,
                     <code>.fit-tr</code>,
                     <code>.fit-r</code>,
@@ -1370,7 +1370,6 @@ figure
                     </div>
                     <figcaption>Photo by Jayden Chong on Unsplash</figcaption>
                 </figure>
-
                 <pre>img/ .fit-cover</pre>
             </div>
         </div>
@@ -1379,19 +1378,19 @@ figure
     <div class="breakout-l">
         <div class="max-width-sm">
             <h3>Background Image</h3>
-            <p>Background images can also be positioned with <code>.fit-cover</code>, which is usefule for hero banners.
+            <p class="mrb-0">Background images can also be positioned with <code>.fit-cover</code>, which is usefule for hero banners.
             </p>
         </div>
     </div>
 
-    <div class="full fit-cover x mry-2"
+    <div class="full fit-cover x mry-1"
         style="height: 600px; background-image: url('resources/swan-leroi-unsplash.jpg')">
         <div class="breakout-l fs-8 bold mry-4 caps lsp">Hero</div>
     </div>
 
     <div class="breakout-l">
         <div class="inline-block">
-            <pre>div/ .fit-cover style="height: 600px; background-image: url('resources/swan-leroi-unsplash.jpg')" </pre>
+            <pre class="mrt-0">div/ .fit-cover style="height: 600px; background-image: url('resources/swan-leroi-unsplash.jpg')" </pre>
         </div>
     </div>
 
