@@ -1,3 +1,9 @@
+:root{
+    --alternate-row-color:var(--silver);
+    --alternate-col-color:var(--silver);
+    --underline-row-color:var(--silver);
+}
+
 table{
     border-collapse:collapse;
     font-variant-numeric:tabular-nums;
@@ -8,6 +14,7 @@ table{
 
 .alternate-rows tr:nth-child(even){
     background:var(--silver);
+    background:var(--alternate-row-color);
 }
 
 .alternate-rows tr:nth-child(odd){
@@ -16,6 +23,7 @@ table{
 
 .alternate-cols col:nth-child(even){
     background:var(--silver);
+    background:var(--alternate-col-color);
 }
 
 .alternate-cols col:nth-child(odd){
@@ -24,6 +32,7 @@ table{
 
 .underline-rows tr{
     border-bottom:1px solid var(--silver);
+    border-bottom:1px solid var(--underline-row-color);
 }
 
 td{
@@ -63,157 +72,157 @@ thead+tbody+tr td{
 }
 
 table.pd th,
-table th.pd,
+th.pd,
 table.pd td,
-table tr.pd td,
-table td.pd{
+tr.pd td,
+td.pd{
     padding:var(--space);
 }
 
 table.pd-0 th,
-table th.pd-0,
+th.pd-0,
 table.pd-0 td,
-table tr.pd-0 td,
-table td.pd-0{
+tr.pd-0 td,
+td.pd-0{
     padding:0;
 }
 
 table.pdx th,
-table th.pdx,
+th.pdx,
 table.pdx td,
-table tr.pdx td,
-table td.pdx{
+tr.pdx td,
+td.pdx{
     padding-left:var(--space);
     padding-right:var(--space);
 }
 
 table.pdx-0 th,
-table th.pdx-0,
+th.pdx-0,
 table.pdx-0 td,
-table tr.pdx-0 td,
-table td.pdx-0{
+tr.pdx-0 td,
+td.pdx-0{
     padding-left:0;
     padding-right:0;
 }
 
 table.pdy th,
-table th.pdy,
+th.pdy,
 table.pdy td,
-table tr.pdy td,
-table td.pdy{
+tr.pdy td,
+td.pdy{
     padding-top:var(--space);
     padding-bottom:var(--space);
 }
 
 table.pdy-0 th,
-table th.pdy-0,
+th.pdy-0,
 table.pdy-0 td,
-table tr.pdy-0 td,
-table td.pdy-0{
+tr.pdy-0 td,
+td.pdy-0{
     padding-top:0;
     padding-bottom:0;
 }
 
 table.pd-d1 th,
-table th.pd-d1,
+th.pd-d1,
 table.pd-d1 td,
-table tr.pd-d1 td,
-table td.pd-d1{
+tr.pd-d1 td,
+td.pd-d1{
     padding:var(--space-d1);
 }
 
 table.pdx-d1 th,
-table th.pdx-d1,
+th.pdx-d1,
 table.pdx-d1 td,
-table tr.pdy-d1 td,
-table td.pdx-d1{
+tr.pdy-d1 td,
+td.pdx-d1{
     padding-left:var(--space-d1);
     padding-right:var(--space-d1);
 }
 
 table.pdy-d1 th,
-table th.pdy-d1,
+th.pdy-d1,
 table.pdy-d1 td,
-table tr.pdy-d1 td,
-table td.pdy-d1{
+tr.pdy-d1 td,
+td.pdy-d1{
     padding-top:var(--space-d1);
     padding-bottom:var(--space-d1);
 }
 
 table.pd-d2 th,
-table th.pd-d2,
+th.pd-d2,
 table.pd-d2 td,
-table tr.pd-d2 td,
-table td.pd-d2{
+tr.pd-d2 td,
+td.pd-d2{
     padding:var(--space-d2);
 }
 
 table.pdx-d2 th,
-table th.pdx-d2,
+th.pdx-d2,
 table.pdx-d2 td,
-table tr.pdx-d2 td,
-table td.pdx-d2{
+tr.pdx-d2 td,
+td.pdx-d2{
     padding-left:var(--space-d2);
     padding-right:var(--space-d2);
 }
 
 table.pdy-d2 th,
-table th.pdy-d2,
+th.pdy-d2,
 table.pdy-d2 td,
-table tr.pdy-d2 td,
-table td.pdy-d2{
+tr.pdy-d2 td,
+td.pdy-d2{
     padding-top:var(--space-d2);
     padding-bottom:var(--space-d2);
 }
 
 table.pd-d3 th,
-table th.pd-d3,
+th.pd-d3,
 table.pd-d3 td,
-table tr.pd-d3 td,
-table td.pd-d3{
+tr.pd-d3 td,
+td.pd-d3{
     padding:var(--space-d3);
 }
 
 table.pdx-d3 th,
-table th.pdx-d3,
+th.pdx-d3,
 table.pdx-d3 td,
-table tr.pdx-d3 td,
-table td.pdx-d3{
+tr.pdx-d3 td,
+td.pdx-d3{
     padding-left:var(--space-d3);
     padding-right:var(--space-d3);
 }
 
 table.pdy-d4 th,
-table th.pdy-d4,
+th.pdy-d4,
 table.pdy-d4 td,
-table tr.pdy-d4 td,
-table td.pdy-d4{
+tr.pdy-d4 td,
+td.pdy-d4{
     padding-top:var(--space-d4);
     padding-bottom:var(--space-d4);
 }
 
 table.pd-d5 th,
-table th.pd-d5,
+th.pd-d5,
 table.pd-d5 td,
-table tr.pd-d5 td,
-table td.pd-d5{
+tr.pd-d5 td,
+td.pd-d5{
     padding:var(--space-d5);
 }
 
 table.pdx-d5 th,
-table th.pdx-d5,
+th.pdx-d5,
 table.pdx-d5 td,
-table tr.pdx-d5 td,
-table td.pdx-d5{
+tr.pdx-d5 td,
+td.pdx-d5{
     padding-left:var(--space-d5);
     padding-right:var(--space-d5);
 }
 
 table.pdy-d5 th,
-table th.pdy-d5,
+th.pdy-d5,
 table.pdy-d5 td,
-table tr.pdy-d5 td,
-table td.pdy-d5{
+tr.pdy-d5 td,
+td.pdy-d5{
     padding-top:var(--space-d5);
     padding-bottom:var(--space-d5);
 }
