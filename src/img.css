@@ -10,4 +10,12 @@
   object-fit: contain;
 }
 
+.bg-fit-cover {
+  background-size: cover;
+}
+
+.bg-fit-contain {
+  background-size: contain;
+}
+
 

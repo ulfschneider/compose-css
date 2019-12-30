@@ -28,6 +28,14 @@ svg{
      object-fit:contain;
 }
 
+.bg-fit-cover{
+  background-size:cover;
+}
+
+.bg-fit-contain{
+  background-size:contain;
+}
+
 :root{
     --alternate-row-color:var(--silver);
     --alternate-col-color:var(--silver);
