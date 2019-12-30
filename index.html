@@ -15,7 +15,7 @@
     }
 
     :root {
-        --mrt-h2: var(--space-4);
+        --mrt-h2: calc(var(--space-4) * var(--space-factor) *var(--space-factor));
         --mrt-h3: var(--space-4);
     }
 </style>
@@ -47,7 +47,7 @@
 
 
     <div class="breakout-l max-width-sm">
-        <h2 id="notation" class="h3">Notation</h2>
+        <h2 id="notation" class="h3 mrt-4">Notation</h2>
         <p>Throughout this document the following notation is applied:</p>
         <table>
             <tr>
@@ -1114,6 +1114,7 @@ figure
 
         <div>
             <h2 id="tables">Tables</h2>
+            <h3>Basic Table</h3>
             <table>
                 <tr>
                     <th>Company</th>
@@ -1153,7 +1154,7 @@ figure
             </table>
 
             <pre class="max-width-sm mrb-0">table/</pre>
-            <div class="mrt-2 max-width-sm">
+            <div class="mrt max-width-sm">
                 <p>Apply padding with <code>.pd</code>, <code>.pdx</code>, or <code>.pdy</code> styling
                     which can be assigned to the
                     table, rows or
@@ -1163,7 +1164,8 @@ figure
                     <code>.brt</code>, <code>.brr</code>, <code>.brb</code>, <code>.brl</code> and
                     <code>.brw</code> styling.</p>
             </div>
-            <table class="alternate-rows mrt-4 pdy-d4">
+            <h3>Alternate Table Row Background</h3>
+            <table class="alternate-rows pdy-d4">
                 <tr>
                     <th>Company</th>
                     <th>Contact</th>
@@ -1201,8 +1203,8 @@ figure
                 </tr>
             </table>
             <pre class="max-width-sm">table/ .alternate-rows.pdy-d4</pre>
-
-            <table class="alternate-cols mrt-4">
+            <h3>Alternate Table Column Background</h3>
+            <table class="alternate-cols">
                 <colgroup>
                     <col>
                     <col>
@@ -1246,8 +1248,8 @@ figure
             </table>
             <pre class="max-width-sm">table/ .alternate-cols</pre>
 
-
-            <table class="mrt-4 underline-rows">
+            <h3>Underline Table Rows</h3>
+            <table class="underline-rows">
                 <tr>
                     <th>Company</th>
                     <th>Contact</th>
@@ -1338,20 +1340,18 @@ figure
             </div>
             <div class="xx-12 rg-xx-6">
                 <figure>
-                    <div class="br">
-                        <img loading="lazy" src="resources/jayden-chong-unsplash.jpg" style="height:400px; width:100%"
-                            class="fit-contain" />
-                    </div>
+
+                    <img loading="lazy" src="resources/jayden-chong-unsplash.jpg" style="height:400px; width:100%"
+                        class="fit-contain br" />
+
                     <figcaption>Photo by Jayden Chong on Unsplash</figcaption>
                 </figure>
                 <pre>img/ .fit-contain</pre>
             </div>
             <div class="xx-12 rg-xx-6">
                 <figure>
-                    <div class="br">
-                        <img loading="lazy" src="resources/jayden-chong-unsplash.jpg" style="height:400px; width:100%"
-                            class="fit-contain fit-tl" />
-                    </div>
+                    <img loading="lazy" src="resources/jayden-chong-unsplash.jpg" style="height:400px; width:100%"
+                        class="fit-contain fit-tl br" />
                     <figcaption>Photo by Jayden Chong on Unsplash</figcaption>
                 </figure>
                 <pre>img/ .fit-contain.fit-tl</pre>
@@ -1364,10 +1364,9 @@ figure
                     while preserving aspect-ratio.</p>
                 <p>The image might be stretched to cover.</p>
                 <figure>
-                    <div class="br">
-                        <img loading="lazy" src="resources/jayden-chong-unsplash.jpg" style="height:400px; width:100%"
-                            class="fit-cover" />
-                    </div>
+                    <img loading="lazy" src="resources/jayden-chong-unsplash.jpg" style="height:400px; width:100%"
+                        class="fit-cover br" />
+
                     <figcaption>Photo by Jayden Chong on Unsplash</figcaption>
                 </figure>
                 <pre>img/ .fit-cover</pre>
@@ -1378,7 +1377,8 @@ figure
     <div class="breakout-l">
         <div class="max-width-sm">
             <h3>Background Image</h3>
-            <p class="mrb-0">Background images can also be positioned with <code>.fit-cover</code>, which is usefule for hero banners.
+            <p class="mrb-0">Background images can also be positioned with <code>.fit-cover</code>, which is usefule for
+                hero banners.
             </p>
         </div>
     </div>
@@ -1390,7 +1390,8 @@ figure
 
     <div class="breakout-l">
         <div class="inline-block">
-            <pre class="mrt-0">div/ .fit-cover style="height: 600px; background-image: url('resources/swan-leroi-unsplash.jpg')" </pre>
+            <pre
+                class="mrt-0">div/ .fit-cover style="height: 600px; background-image: url('resources/swan-leroi-unsplash.jpg')" </pre>
         </div>
     </div>
 

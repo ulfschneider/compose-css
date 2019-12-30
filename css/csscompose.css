@@ -130,6 +130,11 @@ td:first-child{
     padding-left:0;
 }
 
+tr:first-child th{
+    border-bottom:1px solid #333;
+    border-bottom:1px solid var(--base-color);
+}
+
 th:last-child,
 td:last-child{
     padding-right:0;
