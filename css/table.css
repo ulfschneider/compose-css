@@ -6,15 +6,25 @@ table{
     text-align:left;
 }
 
-.alternate-rows tr:nth-child(even){background:var(--silver);}
+.alternate-rows tr:nth-child(even){
+    background:var(--silver);
+}
 
-.alternate-rows tr:nth-child(odd){background:transparent;}
+.alternate-rows tr:nth-child(odd){
+    background:transparent;
+}
 
-.alternate-cols col:nth-child(even){background:var(--silver);}
+.alternate-cols col:nth-child(even){
+    background:var(--silver);
+}
 
-.alternate-cols col:nth-child(odd){background:transparent;}
+.alternate-cols col:nth-child(odd){
+    background:transparent;
+}
 
-.underline-rows tr{ border-bottom:1px solid var(--silver);}
+.underline-rows tr{
+    border-bottom:1px solid var(--silver);
+}
 
 td{
     vertical-align:top;
@@ -50,6 +60,22 @@ thead+tbody+tr td{
 
 .br-collapse{
     border-collapse:collapse;
+}
+
+table.pd th,
+table th.pd,
+table.pd td,
+table tr.pd td,
+table td.pd{
+    padding:var(--space);
+}
+
+table.pd-0 th,
+table th.pd-0,
+table.pd-0 td,
+table tr.pd-0 td,
+table td.pd-0{
+    padding:0;
 }
 
 table.pdx th,
@@ -88,6 +114,14 @@ table td.pdy-0{
     padding-bottom:0;
 }
 
+table.pd-d1 th,
+table th.pd-d1,
+table.pd-d1 td,
+table tr.pd-d1 td,
+table td.pd-d1{
+    padding:var(--space-d1);
+}
+
 table.pdx-d1 th,
 table th.pdx-d1,
 table.pdx-d1 td,
@@ -104,6 +138,14 @@ table tr.pdy-d1 td,
 table td.pdy-d1{
     padding-top:var(--space-d1);
     padding-bottom:var(--space-d1);
+}
+
+table.pd-d2 th,
+table th.pd-d2,
+table.pd-d2 td,
+table tr.pd-d2 td,
+table td.pd-d2{
+    padding:var(--space-d2);
 }
 
 table.pdx-d2 th,
@@ -124,6 +166,14 @@ table td.pdy-d2{
     padding-bottom:var(--space-d2);
 }
 
+table.pd-d3 th,
+table th.pd-d3,
+table.pd-d3 td,
+table tr.pd-d3 td,
+table td.pd-d3{
+    padding:var(--space-d3);
+}
+
 table.pdx-d3 th,
 table th.pdx-d3,
 table.pdx-d3 td,
@@ -142,13 +192,21 @@ table td.pdy-d4{
     padding-bottom:var(--space-d4);
 }
 
-table.pdx-d2 th,
-table th.pdx-d2,
-table.pdx-d2 td,
-table tr.pdx-d2 td,
-table td.pdx-d2{
-    padding-left:var(--space-d2);
-    padding-right:var(--space-d2);
+table.pd-d5 th,
+table th.pd-d5,
+table.pd-d5 td,
+table tr.pd-d5 td,
+table td.pd-d5{
+    padding:var(--space-d5);
+}
+
+table.pdx-d5 th,
+table th.pdx-d5,
+table.pdx-d5 td,
+table tr.pdx-d5 td,
+table td.pdx-d5{
+    padding-left:var(--space-d5);
+    padding-right:var(--space-d5);
 }
 
 table.pdy-d5 th,
@@ -159,4 +217,3 @@ table td.pdy-d5{
     padding-top:var(--space-d5);
     padding-bottom:var(--space-d5);
 }
-
