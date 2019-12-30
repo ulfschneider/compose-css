@@ -8,6 +8,7 @@
 
 .inline-block {
   display: inline-block;
+  vertical-align: top;
 }
 
 .inline-table {
