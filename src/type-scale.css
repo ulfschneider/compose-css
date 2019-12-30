@@ -149,7 +149,7 @@
 }
 
 
-@media (--breakpoint-min-sm) {
+@media (--breakpoint-sm) {
 
   .sm-h1 {
     font-size: var(--fs-h1);
@@ -263,7 +263,7 @@
 
 }
 
-@media (--breakpoint-min-rg) {
+@media (--breakpoint-rg) {
   .rg-h1 {
     font-size: var(--fs-h1);
     line-height: var(--lh-h1);
@@ -375,7 +375,7 @@
   }
 }
 
-@media (--breakpoint-min-md) {
+@media (--breakpoint-md) {
   .md-h1 {
     font-size: var(--fs-h1);
     line-height: var(--lh-h1);
@@ -488,7 +488,7 @@
 
 }
 
-@media (--breakpoint-min-lg) {
+@media (--breakpoint-lg) {
   .lg-h1 {
     font-size: var(--fs-h1);
     line-height: var(--lh-h1);

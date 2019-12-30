@@ -1,5 +1,4 @@
 :root {
-  --xsmall-width: 20rem;
   --small-width: 28rem;
   --regular-width: 36rem;
   --mid-width: 52rem;
@@ -18,16 +17,16 @@
   --space-d5: 1px;
 }
 
-@custom-media --breakpoint-max-xs (max-width: 20rem);
 @custom-media --breakpoint-max-sm (max-width: 28rem);
 @custom-media --breakpoint-max-rg (max-width: 36rem);
 @custom-media --breakpoint-max-md (max-width: 52rem);
 @custom-media --breakpoint-max-lg (max-width: 64rem);
-@custom-media --breakpoint-min-xs (min-width: 20rem);
-@custom-media --breakpoint-min-sm (min-width: 28rem);
-@custom-media --breakpoint-min-rg (min-width: 36rem);
-@custom-media --breakpoint-min-md (min-width: 52rem);
-@custom-media --breakpoint-min-lg (min-width: 64rem);
+@custom-media --breakpoint-sm (min-width: 28rem);
+@custom-media --breakpoint-rg (min-width: 36rem);
+@custom-media --breakpoint-md (min-width: 52rem);
+@custom-media --breakpoint-lg (min-width: 64rem);
+
+
 
 /**
 Naming conventions
