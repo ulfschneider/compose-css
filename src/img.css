@@ -4,18 +4,45 @@
 
 .fit-cover {
   object-fit: cover;
+  background-size: cover;
 }
 
 .fit-contain {
   object-fit: contain;
 }
 
-.bg-fit-cover {
-  background-size: cover;
+.fit-t {
+  object-position: top;
 }
 
-.bg-fit-contain {
-  background-size: contain;
+.fit-tl {
+  object-position: top left;
 }
+
+.fit-tr {
+  object-position: top right;
+}
+
+.fit-r {
+  object-position: right;
+}
+
+.fit-b {
+  object-position: bottom;
+}
+
+.fit-bl {
+  object-position: bottom left;
+}
+
+.fit-br {
+  object-position: bottom right;
+}
+
+.fit-l {
+  object-position: left;
+}
+
+
 
 
