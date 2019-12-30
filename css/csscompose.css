@@ -74,14 +74,6 @@ td:last-child{
     padding-right:0;
 }
 
-tr:first-child td, tr:first-child th{
-    padding-top:0;
-}
-
-tr:last-child td{
-    padding-bottom:0;
-}
-
 thead+tbody+tr td{
     padding-top:2.6244rem;
     padding-top:var(--space-2);
@@ -177,6 +169,50 @@ table td.pdy-d2{
     padding-top:var(--space-d2);
     padding-bottom:0.38104rem;
     padding-bottom:var(--space-d2);
+}
+
+table.pdx-d3 th,
+table th.pdx-d3,
+table.pdx-d3 td,
+table tr.pdx-d3 td,
+table td.pdx-d3{
+    padding-left:3px;
+    padding-left:var(--space-d3);
+    padding-right:3px;
+    padding-right:var(--space-d3);
+}
+
+table.pdy-d4 th,
+table th.pdy-d4,
+table.pdy-d4 td,
+table tr.pdy-d4 td,
+table td.pdy-d4{
+    padding-top:2px;
+    padding-top:var(--space-d4);
+    padding-bottom:2px;
+    padding-bottom:var(--space-d4);
+}
+
+table.pdx-d2 th,
+table th.pdx-d2,
+table.pdx-d2 td,
+table tr.pdx-d2 td,
+table td.pdx-d2{
+    padding-left:0.38104rem;
+    padding-left:var(--space-d2);
+    padding-right:0.38104rem;
+    padding-right:var(--space-d2);
+}
+
+table.pdy-d5 th,
+table th.pdy-d5,
+table.pdy-d5 td,
+table tr.pdy-d5 td,
+table td.pdy-d5{
+    padding-top:1px;
+    padding-top:var(--space-d5);
+    padding-bottom:1px;
+    padding-bottom:var(--space-d5);
 }
 
 :root{
