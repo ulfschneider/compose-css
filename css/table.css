@@ -35,31 +35,31 @@ table{
     border-bottom:1px solid var(--underline-row-color);
 }
 
-td{
+table tr td{
     vertical-align:top;
 }
 
-th{
+table tr th{
     vertical-align:top;
     font-weight:var(--font-weight-bold);
 }
 
-th,
-td{
+table tr th,
+table tr td{
     padding:var(--space-d2) var(--space-d1);
 }
 
-th:first-child,
-td:first-child{
+table tr th:first-child,
+table tr td:first-child{
     padding-left:0;
 }
 
-th:last-child,
-td:last-child{
+table tr th:last-child,
+table tr td:last-child{
     padding-right:0;
 }
 
-thead+tbody+tr td{
+table thead+tbody+tr td{
     padding-top:var(--space-2);
 }
 
@@ -71,158 +71,205 @@ thead+tbody+tr td{
     border-collapse:collapse;
 }
 
-table.pd th,
-th.pd,
-table.pd td,
-tr.pd td, tr.pd th
-td.pd{
+table.pd tr th,
+table.pd tr td,
+table tr.pd th, 
+table tr.pd td,
+table tr th.pd,
+table tr td.pd{
     padding:var(--space);
 }
 
-table.pd-0 th,
-th.pd-0,
-table.pd-0 td,
-tr.pd-0 td, tr.pd-0 th,
-td.pd-0{
+table.pd-0 tr th,
+table.pd-0 tr td,
+table tr.pd-0 th, 
+table tr.pd-0 td,
+table tr th.pd-0,
+table tr td.pd-0{
     padding:0;
 }
 
-table.pdx th,
-th.pdx,
-table.pdx td,
-tr.pdx td, tr.pdx th,
-td.pdx{
+table.pdx tr th,
+table.pdx tr td,
+table tr.pdx th, 
+table tr.pdx td,
+table tr th.pdx,
+table tr td.pdx{
     padding-left:var(--space);
     padding-right:var(--space);
 }
 
-table.pdx-0 th,
-th.pdx-0,
-table.pdx-0 td,
-tr.pdx-0 td, tr.pdx-0 th,
-td.pdx-0{
+table.pdx-0 tr th,
+table.pdx-0 tr td,
+table tr.pdx-0 th, 
+table tr.pdx-0 td,
+table tr th.pdx-0,
+table tr td.pdx-0{
     padding-left:0;
     padding-right:0;
 }
 
-table.pdy th,
-th.pdy,
-table.pdy td,
-tr.pdy td, tr.pdy th,
-td.pdy{
+table.pdy tr th,
+table.pdy tr td,
+table tr.pdy th, 
+table tr.pdy td,
+table tr th.pdy,
+table tr td.pdy{
     padding-top:var(--space);
     padding-bottom:var(--space);
 }
 
-table.pdy-0 th,
-th.pdy-0,
-table.pdy-0 td,
-tr.pdy-0 td, tr.pdy-0 th,
-td.pdy-0{
+table.pdy-0 tr th,
+table.pdy-0 tr td,
+table tr.pdy-0 th, 
+table tr.pdy-0 td,
+table tr th.pdy-0,
+table tr td.pdy-0{
     padding-top:0;
     padding-bottom:0;
 }
 
-table.pd-d1 th,
-th.pd-d1,
-table.pd-d1 td,
-tr.pd-d1 td, tr.pd-d1 th
-td.pd-d1{
+table.pd-d1 tr th,
+table.pd-d1 tr td,
+table tr.pd-d1 th, 
+table tr.pd-d1 td,
+table tr th.pd-d1,
+table tr td.pd-d1{
     padding:var(--space-d1);
 }
 
-table.pdx-d1 th,
-th.pdx-d1,
-table.pdx-d1 td,
-tr.pdy-d1 td, tr.pdy-d1 th,
-td.pdx-d1{
+table.pdx-d1 tr th,
+table.pdx-d1 tr td,
+table tr.pdx-d1 th, 
+table tr.pdx-d1 td,
+table tr th.pdx-d1,
+table tr td.pdx-d1{
     padding-left:var(--space-d1);
     padding-right:var(--space-d1);
 }
 
-table.pdy-d1 th,
-th.pdy-d1,
-table.pdy-d1 td,
-tr.pdy-d1 td, tr.pdy-d1 th,
-td.pdy-d1{
+table.pdy-d1 tr th,
+table.pdy-d1 tr td,
+table tr.pdy-d1 th, 
+table tr.pdy-d1 td,
+table tr th.pdy-d1,
+table tr td.pdy-d1{
     padding-top:var(--space-d1);
     padding-bottom:var(--space-d1);
 }
 
-table.pd-d2 th,
-th.pd-d2,
-table.pd-d2 td,
-tr.pd-d2 td, tr.pdy-d2 th,
-td.pd-d2{
+table.pd-d2 tr th,
+table.pd-d2 tr td,
+table tr.pd-d2 th, 
+table tr.pd-d2 td,
+table tr th.pd-d2,
+table tr td.pd-d2{
     padding:var(--space-d2);
 }
 
-table.pdx-d2 th,
-th.pdx-d2,
-table.pdx-d2 td,
-tr.pdx-d2 td, tr.pdy-d2 th,
-td.pdx-d2{
+table.pdx-d2 tr th,
+table.pdx-d2 tr td,
+table tr.pdx-d2 th, 
+table tr.pdx-d2 td,
+table tr th.pdx-d2,
+table tr td.pdx-d2{
     padding-left:var(--space-d2);
     padding-right:var(--space-d2);
 }
 
-table.pdy-d2 th,
-th.pdy-d2,
-table.pdy-d2 td,
-tr.pdy-d2 td, tr.pdy-d2 th,
-td.pdy-d2{
+table.pdy-d2 tr th,
+table.pdy-d2 tr td,
+table tr.pdy-d2 th, 
+table tr.pdy-d2 td,
+table tr th.pdy-d2,
+table tr td.pdy-d2{
     padding-top:var(--space-d2);
     padding-bottom:var(--space-d2);
 }
 
-table.pd-d3 th,
-th.pd-d3,
-table.pd-d3 td,
-tr.pd-d3 td, tr.pd-d3 th,
-td.pd-d3{
+table.pd-d3 tr th,
+table.pd-d3 tr td,
+table tr.pd-d3 th, 
+table tr.pd-d3 td,
+table tr th.pd-d3,
+table tr td.pd-d3{
     padding:var(--space-d3);
 }
 
-table.pdx-d3 th,
-th.pdx-d3,
-table.pdx-d3 td,
-tr.pdx-d3 td, tr.pdx-d3 th,
-td.pdx-d3{
+table.pdx-d3 tr th,
+table.pdx-d3 tr td,
+table tr.pdx-d3 th, 
+table tr.pdx-d3 td,
+table tr th.pdx-d3,
+table tr td.pdx-d3{
     padding-left:var(--space-d3);
     padding-right:var(--space-d3);
 }
 
-table.pdy-d4 th,
-th.pdy-d4,
-table.pdy-d4 td,
-tr.pdy-d4 td, tr.pdy-d4 th,
-td.pdy-d4{
+table.pdy-d3 tr th,
+table.pdy-d3 tr td,
+table tr.pdy-d3 th, 
+table tr.pdy-d3 td,
+table tr th.pdy-d3,
+table tr td.pdy-d3{
+    padding-top:var(--space-d3);
+    padding-bottom:var(--space-d3);
+}
+
+table.pd-d4 tr th,
+table.pd-d4 tr td,
+table tr.pd-d4 th, 
+table tr.pd-d4 td,
+table tr th.pd-d4,
+table tr td.pd-d4{
+    padding:var(--space-d4);
+}
+
+table.pdx-d4 tr th,
+table.pdx-d4 tr td,
+table tr.pdx-d4 th, 
+table tr.pdx-d4 td,
+table tr th.pdx-d4,
+table tr td.pdx-d4{
+    padding-left:var(--space-d4);
+    padding-right:var(--space-d4);
+}
+
+table.pdy-d4 tr th,
+table.pdy-d4 tr td,
+table tr.pdy-d4 th, 
+table tr.pdy-d4 td,
+table tr th.pdy-d4,
+table tr td.pdy-d4{
     padding-top:var(--space-d4);
     padding-bottom:var(--space-d4);
 }
 
-table.pd-d5 th,
-th.pd-d5,
-table.pd-d5 td,
-tr.pd-d5 td, tr.pd-d5 th,
-td.pd-d5{
+table.pd-d5 tr th,
+table.pd-d5 tr td,
+table tr.pd-d5 th, 
+table tr.pd-d5 td,
+table tr th.pd-d5,
+table tr td.pd-d5{
     padding:var(--space-d5);
 }
 
-table.pdx-d5 th,
-th.pdx-d5,
-table.pdx-d5 td,
-tr.pdx-d5 td, tr.pdx-d5 th,
-td.pdx-d5{
+table.pdx-d5 tr th,
+table.pdx-d5 tr td,
+table tr.pdx-d5 th, 
+table tr.pdx-d5 td,
+table tr th.pdx-d5,
+table tr td.pdx-d5{
     padding-left:var(--space-d5);
     padding-right:var(--space-d5);
 }
 
-table.pdy-d5 th,
-th.pdy-d5,
-table.pdy-d5 td,
-tr.pdy-d5 td, tr.pdy-d5 th,
-td.pdy-d5{
+table.pdy-d5 tr th,
+table.pdy-d5 tr td,
+table tr.pdy-d5 th, 
+table tr.pdy-d5 td,
+table tr th.pdy-d5,
+table tr td.pdy-d5{
     padding-top:var(--space-d5);
     padding-bottom:var(--space-d5);
 }
