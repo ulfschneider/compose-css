@@ -54,10 +54,6 @@ td:first-child{
     padding-left:0;
 }
 
-tr:first-child th{
-    border-bottom:1px solid var(--base-color);
-}
-
 th:last-child,
 td:last-child{
     padding-right:0;
@@ -78,7 +74,7 @@ thead+tbody+tr td{
 table.pd th,
 th.pd,
 table.pd td,
-tr.pd td,
+tr.pd td, tr.pd th
 td.pd{
     padding:var(--space);
 }
@@ -86,7 +82,7 @@ td.pd{
 table.pd-0 th,
 th.pd-0,
 table.pd-0 td,
-tr.pd-0 td,
+tr.pd-0 td, tr.pd-0 th,
 td.pd-0{
     padding:0;
 }
@@ -94,7 +90,7 @@ td.pd-0{
 table.pdx th,
 th.pdx,
 table.pdx td,
-tr.pdx td,
+tr.pdx td, tr.pdx th,
 td.pdx{
     padding-left:var(--space);
     padding-right:var(--space);
@@ -103,7 +99,7 @@ td.pdx{
 table.pdx-0 th,
 th.pdx-0,
 table.pdx-0 td,
-tr.pdx-0 td,
+tr.pdx-0 td, tr.pdx-0 th,
 td.pdx-0{
     padding-left:0;
     padding-right:0;
@@ -112,7 +108,7 @@ td.pdx-0{
 table.pdy th,
 th.pdy,
 table.pdy td,
-tr.pdy td,
+tr.pdy td, tr.pdy th,
 td.pdy{
     padding-top:var(--space);
     padding-bottom:var(--space);
@@ -121,7 +117,7 @@ td.pdy{
 table.pdy-0 th,
 th.pdy-0,
 table.pdy-0 td,
-tr.pdy-0 td,
+tr.pdy-0 td, tr.pdy-0 th,
 td.pdy-0{
     padding-top:0;
     padding-bottom:0;
@@ -130,7 +126,7 @@ td.pdy-0{
 table.pd-d1 th,
 th.pd-d1,
 table.pd-d1 td,
-tr.pd-d1 td,
+tr.pd-d1 td, tr.pd-d1 th
 td.pd-d1{
     padding:var(--space-d1);
 }
@@ -138,7 +134,7 @@ td.pd-d1{
 table.pdx-d1 th,
 th.pdx-d1,
 table.pdx-d1 td,
-tr.pdy-d1 td,
+tr.pdy-d1 td, tr.pdy-d1 th,
 td.pdx-d1{
     padding-left:var(--space-d1);
     padding-right:var(--space-d1);
@@ -147,7 +143,7 @@ td.pdx-d1{
 table.pdy-d1 th,
 th.pdy-d1,
 table.pdy-d1 td,
-tr.pdy-d1 td,
+tr.pdy-d1 td, tr.pdy-d1 th,
 td.pdy-d1{
     padding-top:var(--space-d1);
     padding-bottom:var(--space-d1);
@@ -156,7 +152,7 @@ td.pdy-d1{
 table.pd-d2 th,
 th.pd-d2,
 table.pd-d2 td,
-tr.pd-d2 td,
+tr.pd-d2 td, tr.pdy-d2 th,
 td.pd-d2{
     padding:var(--space-d2);
 }
@@ -164,7 +160,7 @@ td.pd-d2{
 table.pdx-d2 th,
 th.pdx-d2,
 table.pdx-d2 td,
-tr.pdx-d2 td,
+tr.pdx-d2 td, tr.pdy-d2 th,
 td.pdx-d2{
     padding-left:var(--space-d2);
     padding-right:var(--space-d2);
@@ -173,7 +169,7 @@ td.pdx-d2{
 table.pdy-d2 th,
 th.pdy-d2,
 table.pdy-d2 td,
-tr.pdy-d2 td,
+tr.pdy-d2 td, tr.pdy-d2 th,
 td.pdy-d2{
     padding-top:var(--space-d2);
     padding-bottom:var(--space-d2);
@@ -182,7 +178,7 @@ td.pdy-d2{
 table.pd-d3 th,
 th.pd-d3,
 table.pd-d3 td,
-tr.pd-d3 td,
+tr.pd-d3 td, tr.pd-d3 th,
 td.pd-d3{
     padding:var(--space-d3);
 }
@@ -190,7 +186,7 @@ td.pd-d3{
 table.pdx-d3 th,
 th.pdx-d3,
 table.pdx-d3 td,
-tr.pdx-d3 td,
+tr.pdx-d3 td, tr.pdx-d3 th,
 td.pdx-d3{
     padding-left:var(--space-d3);
     padding-right:var(--space-d3);
@@ -199,7 +195,7 @@ td.pdx-d3{
 table.pdy-d4 th,
 th.pdy-d4,
 table.pdy-d4 td,
-tr.pdy-d4 td,
+tr.pdy-d4 td, tr.pdy-d4 th,
 td.pdy-d4{
     padding-top:var(--space-d4);
     padding-bottom:var(--space-d4);
@@ -208,7 +204,7 @@ td.pdy-d4{
 table.pd-d5 th,
 th.pd-d5,
 table.pd-d5 td,
-tr.pd-d5 td,
+tr.pd-d5 td, tr.pd-d5 th,
 td.pd-d5{
     padding:var(--space-d5);
 }
@@ -216,7 +212,7 @@ td.pd-d5{
 table.pdx-d5 th,
 th.pdx-d5,
 table.pdx-d5 td,
-tr.pdx-d5 td,
+tr.pdx-d5 td, tr.pdx-d5 th,
 td.pdx-d5{
     padding-left:var(--space-d5);
     padding-right:var(--space-d5);
@@ -225,7 +221,7 @@ td.pdx-d5{
 table.pdy-d5 th,
 th.pdy-d5,
 table.pdy-d5 td,
-tr.pdy-d5 td,
+tr.pdy-d5 td, tr.pdy-d5 th,
 td.pdy-d5{
     padding-top:var(--space-d5);
     padding-bottom:var(--space-d5);

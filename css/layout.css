@@ -158,7 +158,7 @@
 }
 
 .square{
-  width:var(--sapce);
+  width:var(--space);
   height:var(--space);
 }
 

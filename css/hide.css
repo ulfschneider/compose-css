@@ -1,0 +1,23 @@
+@media (--breakpoint-max-sm){
+    .max-sm-hide{
+        display:none !important
+    }
+}
+
+@media (--breakpoint-max-rg){
+    .max-rg-hide{
+        display:none !important
+    }
+}
+
+@media (--breakpoint-max-md){
+    .max-rg-hide{
+        display:none !important
+    }
+}
+
+@media (--breakpoint-max-lg){
+    .max-lg-hide{
+        display:none !important
+    }
+}

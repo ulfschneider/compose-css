@@ -130,11 +130,6 @@ td:first-child{
     padding-left:0;
 }
 
-tr:first-child th{
-    border-bottom:1px solid #333;
-    border-bottom:1px solid var(--base-color);
-}
-
 th:last-child,
 td:last-child{
     padding-right:0;
@@ -156,7 +151,7 @@ thead+tbody+tr td{
 table.pd th,
 th.pd,
 table.pd td,
-tr.pd td,
+tr.pd td, tr.pd th
 td.pd{
     padding:1rem;
     padding:var(--space);
@@ -165,7 +160,7 @@ td.pd{
 table.pd-0 th,
 th.pd-0,
 table.pd-0 td,
-tr.pd-0 td,
+tr.pd-0 td, tr.pd-0 th,
 td.pd-0{
     padding:0;
 }
@@ -173,7 +168,7 @@ td.pd-0{
 table.pdx th,
 th.pdx,
 table.pdx td,
-tr.pdx td,
+tr.pdx td, tr.pdx th,
 td.pdx{
     padding-left:1rem;
     padding-left:var(--space);
@@ -184,7 +179,7 @@ td.pdx{
 table.pdx-0 th,
 th.pdx-0,
 table.pdx-0 td,
-tr.pdx-0 td,
+tr.pdx-0 td, tr.pdx-0 th,
 td.pdx-0{
     padding-left:0;
     padding-right:0;
@@ -193,7 +188,7 @@ td.pdx-0{
 table.pdy th,
 th.pdy,
 table.pdy td,
-tr.pdy td,
+tr.pdy td, tr.pdy th,
 td.pdy{
     padding-top:1rem;
     padding-top:var(--space);
@@ -204,7 +199,7 @@ td.pdy{
 table.pdy-0 th,
 th.pdy-0,
 table.pdy-0 td,
-tr.pdy-0 td,
+tr.pdy-0 td, tr.pdy-0 th,
 td.pdy-0{
     padding-top:0;
     padding-bottom:0;
@@ -213,7 +208,7 @@ td.pdy-0{
 table.pd-d1 th,
 th.pd-d1,
 table.pd-d1 td,
-tr.pd-d1 td,
+tr.pd-d1 td, tr.pd-d1 th
 td.pd-d1{
     padding:0.61728rem;
     padding:var(--space-d1);
@@ -222,7 +217,7 @@ td.pd-d1{
 table.pdx-d1 th,
 th.pdx-d1,
 table.pdx-d1 td,
-tr.pdy-d1 td,
+tr.pdy-d1 td, tr.pdy-d1 th,
 td.pdx-d1{
     padding-left:0.61728rem;
     padding-left:var(--space-d1);
@@ -233,7 +228,7 @@ td.pdx-d1{
 table.pdy-d1 th,
 th.pdy-d1,
 table.pdy-d1 td,
-tr.pdy-d1 td,
+tr.pdy-d1 td, tr.pdy-d1 th,
 td.pdy-d1{
     padding-top:0.61728rem;
     padding-top:var(--space-d1);
@@ -244,7 +239,7 @@ td.pdy-d1{
 table.pd-d2 th,
 th.pd-d2,
 table.pd-d2 td,
-tr.pd-d2 td,
+tr.pd-d2 td, tr.pdy-d2 th,
 td.pd-d2{
     padding:0.38104rem;
     padding:var(--space-d2);
@@ -253,7 +248,7 @@ td.pd-d2{
 table.pdx-d2 th,
 th.pdx-d2,
 table.pdx-d2 td,
-tr.pdx-d2 td,
+tr.pdx-d2 td, tr.pdy-d2 th,
 td.pdx-d2{
     padding-left:0.38104rem;
     padding-left:var(--space-d2);
@@ -264,7 +259,7 @@ td.pdx-d2{
 table.pdy-d2 th,
 th.pdy-d2,
 table.pdy-d2 td,
-tr.pdy-d2 td,
+tr.pdy-d2 td, tr.pdy-d2 th,
 td.pdy-d2{
     padding-top:0.38104rem;
     padding-top:var(--space-d2);
@@ -275,7 +270,7 @@ td.pdy-d2{
 table.pd-d3 th,
 th.pd-d3,
 table.pd-d3 td,
-tr.pd-d3 td,
+tr.pd-d3 td, tr.pd-d3 th,
 td.pd-d3{
     padding:3px;
     padding:var(--space-d3);
@@ -284,7 +279,7 @@ td.pd-d3{
 table.pdx-d3 th,
 th.pdx-d3,
 table.pdx-d3 td,
-tr.pdx-d3 td,
+tr.pdx-d3 td, tr.pdx-d3 th,
 td.pdx-d3{
     padding-left:3px;
     padding-left:var(--space-d3);
@@ -295,7 +290,7 @@ td.pdx-d3{
 table.pdy-d4 th,
 th.pdy-d4,
 table.pdy-d4 td,
-tr.pdy-d4 td,
+tr.pdy-d4 td, tr.pdy-d4 th,
 td.pdy-d4{
     padding-top:2px;
     padding-top:var(--space-d4);
@@ -306,7 +301,7 @@ td.pdy-d4{
 table.pd-d5 th,
 th.pd-d5,
 table.pd-d5 td,
-tr.pd-d5 td,
+tr.pd-d5 td, tr.pd-d5 th,
 td.pd-d5{
     padding:1px;
     padding:var(--space-d5);
@@ -315,7 +310,7 @@ td.pd-d5{
 table.pdx-d5 th,
 th.pdx-d5,
 table.pdx-d5 td,
-tr.pdx-d5 td,
+tr.pdx-d5 td, tr.pdx-d5 th,
 td.pdx-d5{
     padding-left:1px;
     padding-left:var(--space-d5);
@@ -326,7 +321,7 @@ td.pdx-d5{
 table.pdy-d5 th,
 th.pdy-d5,
 table.pdy-d5 td,
-tr.pdy-d5 td,
+tr.pdy-d5 td, tr.pdy-d5 th,
 td.pdy-d5{
     padding-top:1px;
     padding-top:var(--space-d5);
@@ -352,19 +347,6 @@ td.pdy-d5{
     max-width:100%;
     margin:unset;
   }
-}
-
-[class^=columns],
-[class^=sm-columns],
-[class^=rg-columns],
-[class^=md-columns],
-[class^=lg-columns]{
-  -webkit-column-gap:1.62rem;
-     -moz-column-gap:1.62rem;
-          column-gap:1.62rem;
-  -webkit-column-gap:var(--grid-column-gap);
-     -moz-column-gap:var(--grid-column-gap);
-          column-gap:var(--grid-column-gap);
 }
 
 .x{
@@ -1101,7 +1083,8 @@ td.pdy-d5{
 }
 
 .square{
-  width:var(--sapce);
+  width:1rem;
+  width:var(--space);
   height:1rem;
   height:var(--space);
 }
@@ -2482,6 +2465,85 @@ figcaption{
 }
 
 :root{
+  --c-step-factor:0.22;
+  --c-neutral-h:0;
+  --c-neutral-s:0%;
+  --c-neutral-l:53%;
+  --c-neutral-step:calc((100% - var(--c-neutral-l))*var(--c-step-factor));
+
+  --c-neutral-d4:hsl(var(--c-neutral-h), var(--c-neutral-s), calc(var(--c-neutral-l) - 4*var(--c-neutral-step)));
+  --c-neutral-d3:hsl(var(--c-neutral-h), var(--c-neutral-s), calc(var(--c-neutral-l) - 3*var(--c-neutral-step)));
+  --c-neutral-d2:hsl(var(--c-neutral-h), var(--c-neutral-s), calc(var(--c-neutral-l) - 2*var(--c-neutral-step)));
+  --c-neutral-d1:hsl(var(--c-neutral-h), var(--c-neutral-s), calc(var(--c-neutral-l) - var(--c-neutral-step)));
+  --c-neutral:hsl(var(--c-neutral-h), var(--c-neutral-s), var(--c-neutral-l));
+  --c-neutral-1:hsl(var(--c-neutral-h), var(--c-neutral-s), calc(var(--c-neutral-l) + var(--c-neutral-step)));
+  --c-neutral-2:hsl(var(--c-neutral-h), var(--c-neutral-s), calc(var(--c-neutral-l) + 2*var(--c-neutral-step)));
+  --c-neutral-3:hsl(var(--c-neutral-h), var(--c-neutral-s), calc(var(--c-neutral-l) + 3*var(--c-neutral-step)));
+  --c-neutral-4:hsl(var(--c-neutral-h), var(--c-neutral-s), calc(var(--c-neutral-l) + 4*var(--c-neutral-step)));
+  
+  --c-primary-h:213;
+  --c-primary-s:19%;
+  --c-primary-l:60%;
+  --c-primary-step:calc((100% - var(--c-primary-l))*var(--c-step-factor));
+
+  --c-primary-d4:hsl(var(--c-primary-h), var(--c-primary-s), calc(var(--c-primary-l) - 4*var(--c-primary-step)));
+  --c-primary-d3:hsl(var(--c-primary-h), var(--c-primary-s), calc(var(--c-primary-l) - 3*var(--c-primary-step)));
+  --c-primary-d2:hsl(var(--c-primary-h), var(--c-primary-s), calc(var(--c-primary-l) - 2*var(--c-primary-step)));
+  --c-primary-d1:hsl(var(--c-primary-h), var(--c-primary-s), calc(var(--c-primary-l) - var(--c-primary-step)));
+  --c-primary:hsl(var(--c-primary-h), var(--c-primary-s), var(--c-primary-l));
+  --c-primary-1:hsl(var(--c-primary-h), var(--c-primary-s), calc(var(--c-primary-l) + var(--c-primary-step)));
+  --c-primary-2:hsl(var(--c-primary-h), var(--c-primary-s), calc(var(--c-primary-l) + 2*var(--c-primary-step)));
+  --c-primary-3:hsl(var(--c-primary-h), var(--c-primary-s), calc(var(--c-primary-l) + 3*var(--c-primary-step)));
+  --c-primary-4:hsl(var(--c-primary-h), var(--c-primary-s), calc(var(--c-primary-l) + 4*var(--c-primary-step)));
+
+  --c-accent-one-h:67;
+  --c-accent-one-s:19%;
+  --c-accent-one-l:57%;  
+  --c-accent-one-step:calc((100% - var(--c-accent-one-l))*var(--c-step-factor));
+
+  --c-accent-one-d4:hsl(var(--c-accent-one-h), var(--c-accent-one-s), calc(var(--c-accent-one-l) - 4*var(--c-accent-one-step)));
+  --c-accent-one-d3:hsl(var(--c-accent-one-h), var(--c-accent-one-s), calc(var(--c-accent-one-l) - 3*var(--c-accent-one-step)));
+  --c-accent-one-d2:hsl(var(--c-accent-one-h), var(--c-accent-one-s), calc(var(--c-accent-one-l) - 2*var(--c-accent-one-step)));
+  --c-accent-one-d1:hsl(var(--c-accent-one-h), var(--c-accent-one-s), calc(var(--c-accent-one-l) - var(--c-accent-one-step)));
+  --c-accent-one:hsl(var(--c-accent-one-h), var(--c-accent-one-s), var(--c-accent-one-l));
+  --c-accent-one-1:hsl(var(--c-accent-one-h), var(--c-accent-one-s), calc(var(--c-accent-one-l) + var(--c-accent-one-step)));
+  --c-accent-one-2:hsl(var(--c-accent-one-h), var(--c-accent-one-s), calc(var(--c-accent-one-l) + 2*var(--c-accent-one-step)));
+  --c-accent-one-3:hsl(var(--c-accent-one-h), var(--c-accent-one-s), calc(var(--c-accent-one-l) + 3*var(--c-accent-one-step)));
+  --c-accent-one-4:hsl(var(--c-accent-one-h), var(--c-accent-one-s), calc(var(--c-accent-one-l) + 4*var(--c-accent-one-step)));
+
+
+  --c-accent-two-h:28;
+  --c-accent-two-s:71%;
+  --c-accent-two-l:50%;  
+  --c-accent-two-step:calc((100% - var(--c-accent-two-l))*var(--c-step-factor));
+
+  --c-accent-two-d4:hsl(var(--c-accent-two-h), var(--c-accent-two-s), calc(var(--c-accent-two-l) - 4*var(--c-accent-two-step)));
+  --c-accent-two-d3:hsl(var(--c-accent-two-h), var(--c-accent-two-s), calc(var(--c-accent-two-l) - 3*var(--c-accent-two-step)));
+  --c-accent-two-d2:hsl(var(--c-accent-two-h), var(--c-accent-two-s), calc(var(--c-accent-two-l) - 2*var(--c-accent-two-step)));
+  --c-accent-two-d1:hsl(var(--c-accent-two-h), var(--c-accent-two-s), calc(var(--c-accent-two-l) - var(--c-accent-two-step)));
+  --c-accent-two:hsl(var(--c-accent-two-h), var(--c-accent-two-s), var(--c-accent-two-l));
+  --c-accent-two-1:hsl(var(--c-accent-two-h), var(--c-accent-two-s), calc(var(--c-accent-two-l) + var(--c-accent-two-step)));
+  --c-accent-two-2:hsl(var(--c-accent-two-h), var(--c-accent-two-s), calc(var(--c-accent-two-l) + 2*var(--c-accent-two-step)));
+  --c-accent-two-3:hsl(var(--c-accent-two-h), var(--c-accent-two-s), calc(var(--c-accent-two-l) + 3*var(--c-accent-two-step)));
+  --c-accent-two-4:hsl(var(--c-accent-two-h), var(--c-accent-two-s), calc(var(--c-accent-two-l) + 4*var(--c-accent-two-step)));
+
+  --c-accent-three-h:56;
+  --c-accent-three-s:75%;
+  --c-accent-three-l:60%;  
+  --c-accent-three-step:calc((100% - var(--c-accent-three-l))*var(--c-step-factor));
+
+  --c-accent-three-d4:hsl(var(--c-accent-three-h), var(--c-accent-three-s), calc(var(--c-accent-three-l) - 4*var(--c-accent-three-step)));
+  --c-accent-three-d3:hsl(var(--c-accent-three-h), var(--c-accent-three-s), calc(var(--c-accent-three-l) - 3*var(--c-accent-three-step)));
+  --c-accent-three-d2:hsl(var(--c-accent-three-h), var(--c-accent-three-s), calc(var(--c-accent-three-l) - 2*var(--c-accent-three-step)));
+  --c-accent-three-d1:hsl(var(--c-accent-three-h), var(--c-accent-three-s), calc(var(--c-accent-three-l) - var(--c-accent-three-step)));
+  --c-accent-three:hsl(var(--c-accent-three-h), var(--c-accent-three-s), var(--c-accent-three-l));
+  --c-accent-three-1:hsl(var(--c-accent-three-h), var(--c-accent-three-s), calc(var(--c-accent-three-l) + var(--c-accent-three-step)));
+  --c-accent-three-2:hsl(var(--c-accent-three-h), var(--c-accent-three-s), calc(var(--c-accent-three-l) + 2*var(--c-accent-three-step)));
+  --c-accent-three-3:hsl(var(--c-accent-three-h), var(--c-accent-three-s), calc(var(--c-accent-three-l) + 3*var(--c-accent-three-step)));
+  --c-accent-three-4:hsl(var(--c-accent-three-h), var(--c-accent-three-s), calc(var(--c-accent-three-l) + 4*var(--c-accent-three-step)));
+
+
+
   --navy:#001f3f;
   --blue:#0074d9;
   --aqua:#7fdbff;
@@ -2529,6 +2591,231 @@ figcaption{
 .no-filter{
   -webkit-filter:none;
           filter:none;
+}
+
+.bg-neutral-d4{
+  background-color:hsl(0, 0%, 11.64%);
+  background-color:var(--c-neutral-d4);
+}
+
+.bg-neutral-d3{
+  background-color:hsl(0, 0%, 21.98%);
+  background-color:var(--c-neutral-d3);
+}
+
+.bg-neutral-d2{
+  background-color:hsl(0, 0%, 32.32%);
+  background-color:var(--c-neutral-d2);
+}
+
+.bg-neutral-d1{
+  background-color:hsl(0, 0%, 42.66%);
+  background-color:var(--c-neutral-d1);
+}
+
+.bg-neutral{
+  background-color:hsl(0, 0%, 53%);
+  background-color:var(--c-neutral);
+}
+
+.bg-neutral-1{
+  background-color:hsl(0, 0%, 63.34%);
+  background-color:var(--c-neutral-1);
+}
+
+.bg-neutral-2{
+  background-color:hsl(0, 0%, 73.68%);
+  background-color:var(--c-neutral-2);
+}
+
+.bg-neutral-3{
+  background-color:hsl(0, 0%, 84.02%);
+  background-color:var(--c-neutral-3);
+}
+
+.bg-neutral-4{
+  background-color:hsl(0, 0%, 94.36%);
+  background-color:var(--c-neutral-4);
+}
+
+.bg-primary-d4{
+  background-color:hsl(213, 19%, 24.8%);
+  background-color:var(--c-primary-d4);
+}
+
+.bg-primary-d3{
+  background-color:hsl(213, 19%, 33.6%);
+  background-color:var(--c-primary-d3);
+}
+
+.bg-primary-d2{
+  background-color:hsl(213, 19%, 42.4%);
+  background-color:var(--c-primary-d2);
+}
+
+.bg-primary-d1{
+  background-color:hsl(213, 19%, 51.2%);
+  background-color:var(--c-primary-d1);
+}
+
+.bg-primary{
+  background-color:hsl(213, 19%, 60%);
+  background-color:var(--c-primary);
+}
+
+.bg-primary-1{
+  background-color:hsl(213, 19%, 68.8%);
+  background-color:var(--c-primary-1);
+}
+
+.bg-primary-2{
+  background-color:hsl(213, 19%, 77.6%);
+  background-color:var(--c-primary-2);
+}
+
+.bg-primary-3{
+  background-color:hsl(213, 19%, 86.4%);
+  background-color:var(--c-primary-3);
+}
+
+.bg-primary-4{
+  background-color:hsl(213, 19%, 95.2%);
+  background-color:var(--c-primary-4);
+}
+
+.bg-accent-one-d4{
+  background-color:hsl(67, 19%, 19.16%);
+  background-color:var(--c-accent-one-d4);
+}
+
+.bg-accent-one-d3{
+  background-color:hsl(67, 19%, 28.62%);
+  background-color:var(--c-accent-one-d3);
+}
+
+.bg-accent-one-d2{
+  background-color:hsl(67, 19%, 38.08%);
+  background-color:var(--c-accent-one-d2);
+}
+
+.bg-accent-one-d1{
+  background-color:hsl(67, 19%, 47.54%);
+  background-color:var(--c-accent-one-d1);
+}
+
+.bg-accent-one{
+  background-color:hsl(67, 19%, 57%);
+  background-color:var(--c-accent-one);
+}
+
+.bg-accent-one-1{
+  background-color:hsl(67, 19%, 66.46%);
+  background-color:var(--c-accent-one-1);
+}
+
+.bg-accent-one-2{
+  background-color:hsl(67, 19%, 75.92%);
+  background-color:var(--c-accent-one-2);
+}
+
+.bg-accent-one-3{
+  background-color:hsl(67, 19%, 85.38%);
+  background-color:var(--c-accent-one-3);
+}
+
+.bg-accent-one-4{
+  background-color:hsl(67, 19%, 94.84%);
+  background-color:var(--c-accent-one-4);
+}
+
+.bg-accent-two-d4{
+  background-color:hsl(28, 71%, 6%);
+  background-color:var(--c-accent-two-d4);
+}
+
+.bg-accent-two-d3{
+  background-color:hsl(28, 71%, 17%);
+  background-color:var(--c-accent-two-d3);
+}
+
+.bg-accent-two-d2{
+  background-color:hsl(28, 71%, 28%);
+  background-color:var(--c-accent-two-d2);
+}
+
+.bg-accent-two-d1{
+  background-color:hsl(28, 71%, 39%);
+  background-color:var(--c-accent-two-d1);
+}
+
+.bg-accent-two{
+  background-color:hsl(28, 71%, 50%);
+  background-color:var(--c-accent-two);
+}
+
+.bg-accent-two-1{
+  background-color:hsl(28, 71%, 61%);
+  background-color:var(--c-accent-two-1);
+}
+
+.bg-accent-two-2{
+  background-color:hsl(28, 71%, 72%);
+  background-color:var(--c-accent-two-2);
+}
+
+.bg-accent-two-3{
+  background-color:hsl(28, 71%, 83%);
+  background-color:var(--c-accent-two-3);
+}
+
+.bg-accent-two-4{
+  background-color:hsl(28, 71%, 94%);
+  background-color:var(--c-accent-two-4);
+}
+
+.bg-accent-three-d4{
+  background-color:hsl(56, 75%, 24.8%);
+  background-color:var(--c-accent-three-d4);
+}
+
+.bg-accent-three-d3{
+  background-color:hsl(56, 75%, 33.6%);
+  background-color:var(--c-accent-three-d3);
+}
+
+.bg-accent-three-d2{
+  background-color:hsl(56, 75%, 42.4%);
+  background-color:var(--c-accent-three-d2);
+}
+
+.bg-accent-three-d1{
+  background-color:hsl(56, 75%, 51.2%);
+  background-color:var(--c-accent-three-d1);
+}
+
+.bg-accent-three{
+  background-color:hsl(56, 75%, 60%);
+  background-color:var(--c-accent-three);
+}
+
+.bg-accent-three-1{
+  background-color:hsl(56, 75%, 68.8%);
+  background-color:var(--c-accent-three-1);
+}
+
+.bg-accent-three-2{
+  background-color:hsl(56, 75%, 77.6%);
+  background-color:var(--c-accent-three-2);
+}
+
+.bg-accent-three-3{
+  background-color:hsl(56, 75%, 86.4%);
+  background-color:var(--c-accent-three-3);
+}
+
+.bg-accent-three-4{
+  background-color:hsl(56, 75%, 95.2%);
+  background-color:var(--c-accent-three-4);
 }
 
 .bg-navy{

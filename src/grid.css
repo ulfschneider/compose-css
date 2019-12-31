@@ -17,14 +17,6 @@
   }
 }
 
-[class^=columns],
-[class^=sm-columns],
-[class^=rg-columns],
-[class^=md-columns],
-[class^=lg-columns] {
-  column-gap: var(--grid-column-gap);
-}
-
 .x {
   display: grid;
   grid-template-columns: var(--space-1) 1fr 1fr minmax(0, var(--regular-width)) 1fr 1fr var(--space-1);
@@ -83,7 +75,6 @@
   grid-template-columns: repeat(12, 1fr);
   column-gap: var(--grid-column-gap);
 }
-
 
 .x-12>* {
   grid-area: span 1/span 12;
