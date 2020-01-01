@@ -3053,8 +3053,8 @@ blockquote{
   border-left-style:solid;
   border-left-width:0.38104rem;
   border-left-width:var(--space-d2);
-  border-color:hsl(0, 0%, 90.6%);
-  border-color:var(--neutral-4);
+  border-color:hsl(0, 0%, 81.2%);
+  border-color:var(--neutral-3);
 }
 
 blockquote p{

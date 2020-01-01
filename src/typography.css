@@ -455,7 +455,7 @@ blockquote {
   font-style: italic;
   border-left-style: solid;
   border-left-width: var(--space-d2);
-  border-color: var(--neutral-4);
+  border-color: var(--neutral-3);
 }
 
 blockquote p {
