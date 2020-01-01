@@ -28,7 +28,7 @@
 <body class="x">
     <div class="full brb br-neutral-3 bg-neutral-4">
         <header class="x bg-neutral-4">
-            <div class="breakout-l md-columns-4 sm-columns-3 columns-2 lh-4 pdy caps small">
+            <div class="breakout max-width-lg md-columns-4 sm-columns-3 columns-2 lh-4 pdy caps small">
                 <div><a href="#notation" class="no-text-decoration">Notation</a></div>
                 <div><a href="#typography" class="no-text-decoration">Typography</a></div>
                 <div><a href="#colors" class="no-text-decoration">Colors</a></div>
@@ -43,14 +43,14 @@
         </header>
 
         <div class="x mrt-2 mrb-3">
-            <div class="breakout-l">
+            <div class="breakout">
                 <h1 class="mrb-0 lh lg-fs-6 fw-700 caps lsp">CSS Compose</h1>
                 <p>A composable CSS Toolkit to build fast-loading, responsive web sites.</p>
             </div>
         </div>
     </div>
 
-    <div class="breakout max-width-sm">
+    <div class="breakout max-width-rg">
         <h2 id="notation" class="h5 mrt-4">Notation</h2>
         <p>Throughout this document the following notation is applied:</p>
         <table>
@@ -80,9 +80,10 @@
             </tr>
 
         </table>
+    </div>
 
+    <div class="breakout max-width-lg">
         <h2 id="typography">Typography</h2>
-
         <h3>Elements</h3>
         <div class="rg-columns-2">
             <p><span class="mrr">Regular</span> <code>.normal</code></p>
@@ -102,10 +103,23 @@
             <p><s class="strike mrr">Strikethrough</s> <code>s</code>, <code>.s</code>, <code>.strike</code></p>
             <p><small class="mrr">Small</small> <code>small</code>, <code>.small</code></p>
         </div>
+    </div>
 
+    <div class="breakout max-width-sm">
+        <h3>Paragraph</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+            massa. </p>
 
-        <div class="max-width-sm">
-            <h3>Paragraph</h3>
+        <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+        </p>
+
+        <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
+            pretium. Integer tincidunt. </p>
+        <pre>p/</pre>
+
+        <h3>Indented Paragraph</h3>
+        <div class="indent">
+            <h4>Headlines within indentation-blocks are completely indented</h4>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
                 massa. </p>
 
@@ -114,23 +128,8 @@
 
             <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
                 pretium. Integer tincidunt. </p>
-            <pre>p/</pre>
         </div>
-
-        <div class="max-width-sm">
-            <h3>Indented Paragraph</h3>
-            <div class="indent">
-                <h4>Headlines within indentation-blocks are completely indented</h4>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                    massa. </p>
-
-                <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                </p>
-
-                <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
-                    pretium. Integer tincidunt. </p>
-            </div>
-            <pre>div .indent
+        <pre>div .indent
     h4/
     p/
 /div
@@ -141,67 +140,66 @@ h4/ .no-indent //remove indentation for this headline
 p/ .indent
 p/ .no-indent //remove indentation for this p</pre>
 
+        <h3>Unordered List</h3>
 
-            <h3>Unordered List</h3>
-
-            <ul>
-                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                    Aenean
-                    massa.
-                </li>
-                <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-                    quis
-                    enim.
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                            dolor.
-                            Aenean
-                            massa.
-                        </li>
-                        <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
-                            massa
-                            quis
-                            enim.
-                        </li>
-                    </ul>
-                </li>
-                <li>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-                    mollis
-                    pretium. Integer tincidunt.
-                </li>
-            </ul>
-            <pre>ul
+        <ul>
+            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                Aenean
+                massa.
+            </li>
+            <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+                quis
+                enim.
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                        dolor.
+                        Aenean
+                        massa.
+                    </li>
+                    <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                        massa
+                        quis
+                        enim.
+                    </li>
+                </ul>
+            </li>
+            <li>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+                mollis
+                pretium. Integer tincidunt.
+            </li>
+        </ul>
+        <pre>ul
     li/
 /ul</pre>
 
-            <h3>Indented Unordered List</h3>
-            <ul class="indent">
-                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                    Aenean
-                    massa.
-                </li>
-                <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-                    quis
-                    enim.
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                            dolor.
-                            Aenean
-                            massa.
-                        </li>
-                        <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
-                            massa
-                            quis
-                            enim.
-                        </li>
-                    </ul>
-                </li>
-                <li>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-                    mollis
-                    pretium. Integer tincidunt.
-                </li>
-            </ul>
-            <pre>ul .indent
+        <h3>Indented Unordered List</h3>
+        <ul class="indent">
+            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                Aenean
+                massa.
+            </li>
+            <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+                quis
+                enim.
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                        dolor.
+                        Aenean
+                        massa.
+                    </li>
+                    <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                        massa
+                        quis
+                        enim.
+                    </li>
+                </ul>
+            </li>
+            <li>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+                mollis
+                pretium. Integer tincidunt.
+            </li>
+        </ul>
+        <pre>ul .indent
     li/
 /ul
 
@@ -209,69 +207,68 @@ div .indent
     ul
         li/
     /ul 
-/div
-</pre>
+/div</pre>
 
-            <h3>Ordered List</h3>
-            <ol>
-                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                    Aenean
-                    massa.
-                </li>
-                <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-                    quis
-                    enim.
-                    <ol>
-                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                            dolor.
-                            Aenean
-                            massa.
-                        </li>
-                        <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
-                            massa
-                            quis
-                            enim.
-                        </li>
-                    </ol>
-                </li>
-                <li>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-                    mollis
-                    pretium. Integer tincidunt.
-                </li>
-            </ol>
-            <pre>ol
+        <h3>Ordered List</h3>
+        <ol>
+            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                Aenean
+                massa.
+            </li>
+            <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+                quis
+                enim.
+                <ol>
+                    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                        dolor.
+                        Aenean
+                        massa.
+                    </li>
+                    <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                        massa
+                        quis
+                        enim.
+                    </li>
+                </ol>
+            </li>
+            <li>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+                mollis
+                pretium. Integer tincidunt.
+            </li>
+        </ol>
+        <pre>ol
     li/
 /ol</pre>
 
-            <h3>Indented Ordered List</h3>
+        <h3>Indented Ordered List</h3>
 
-            <ol class="indent">
-                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                    Aenean
-                    massa.
-                </li>
-                <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-                    quis
-                    enim.
-                    <ol>
-                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                            dolor.
-                            Aenean
-                            massa.
-                        </li>
-                        <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
-                            massa
-                            quis
-                            enim.
-                        </li>
-                    </ol>
-                </li>
-                <li>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-                    mollis
-                    pretium. Integer tincidunt.
-                </li>
-            </ol>
-            <pre>ol .indent
+        <ol class="indent">
+            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                Aenean
+                massa.
+            </li>
+            <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+                quis
+                enim.
+                <ol>
+                    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                        dolor.
+                        Aenean
+                        massa.
+                    </li>
+                    <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                        massa
+                        quis
+                        enim.
+                    </li>
+                </ol>
+            </li>
+            <li>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+                mollis
+                pretium. Integer tincidunt.
+            </li>
+        </ol>
+        <pre>ol .indent
     li/
 /ol
 
@@ -281,21 +278,20 @@ div .indent
     /ol 
 /div</pre>
 
+        <h3>Blockquote</h3>
+        <figure>
+            <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                    Aenean
+                    massa. </p>
 
-            <h3>Blockquote</h3>
-            <figure>
-                <blockquote>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                        Aenean
-                        massa. </p>
-
-                    <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-                        enim.
-                    </p>
-                    <figcaption>Cite</figcaption>
-                </blockquote>
-            </figure>
-            <pre>blockquote/
+                <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis
+                    enim.
+                </p>
+                <figcaption>Cite</figcaption>
+            </blockquote>
+        </figure>
+        <pre>blockquote/
 
 blockquote
     p/
@@ -308,27 +304,28 @@ figure
     figcaption/
 /figure
 </pre>
-            <h3>Blockquote with Double Quotes</h3>
-            <figure>
-                <blockquote>
-                    <p class="quote">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
-                        eget
-                        dolor.
-                        Aenean
-                        massa. </p>
-                    <figcaption>Cite</figcaption>
-                </blockquote>
-            </figure>
-            <pre>figure
+
+        <h3>Blockquote with Double Quotes</h3>
+        <figure>
+            <blockquote>
+                <p class="quote">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                    eget
+                    dolor.
+                    Aenean
+                    massa. </p>
+                <figcaption>Cite</figcaption>
+            </blockquote>
+        </figure>
+        <pre>figure
     blockquote
         p/ .quote
     /blockquote
     figcaption/
 /figure</pre>
-        </div>
-
     </div>
-    <div class="breakout-l x-12">
+
+
+    <div class="breakout x-12 max-width-lg">
         <div class="xx-12 sm-xx-6">
             <h3>Headline Styling</h3>
             <table class="pdy-0">
@@ -370,6 +367,7 @@ figure
                 </tr>
             </table>
         </div>
+
         <div class="xx-12 sm-xx-6">
             <h3>Headline Sizing</h3>
             <table class="pdy-0">
@@ -401,7 +399,7 @@ figure
         </div>
     </div>
 
-    <div class="breakout-l">
+    <div class="breakout">
         <h3>Font Size</h3>
         <table class="pdy-0">
             <tr>
@@ -445,7 +443,9 @@ figure
                 <td class="code bottom">.fs-8</td>
             </tr>
         </table>
+    </div>
 
+    <div class="breakout">
         <h3>Font Weight</h3>
         <table class="pdy-0">
             <tr>
@@ -485,7 +485,9 @@ figure
                 <td class="code bottom">.fw-900</td>
             </tr>
         </table>
+    </div>
 
+    <div class="breakout">
         <h3>Line Height</h3>
         <table class="pdy-0">
             <tr>
@@ -516,7 +518,9 @@ figure
                 <td class="lh-4 code bottom pdl">.lh-4</td>
             </tr>
         </table>
+    </div>
 
+    <div class="breakout">
         <h3>Letter Spacing</h3>
         <table>
             <tr>
@@ -540,9 +544,9 @@ figure
                 <td class="code bottom">.lsp-4</td>
             </tr>
         </table>
+    </div>
 
-
-
+    <div class="breakout">
         <h3>Numbers</h3>
         <table>
             <tr>
@@ -559,7 +563,7 @@ figure
     <div class="breakout">
         <h2 id="colors">Colors</h2>
         <h3>The Color System</h3>
-        <table class="code mrb-4">
+        <table class="code">
             <tr class="center">
                 <th></th>
                 <th class="normal pdx-0">d4</th>
@@ -633,8 +637,11 @@ figure
                 <td class="bg-accent-three-4"></td>
             </tr>
         </table>
+    </div>
+
+    <div class="breakout">
         <h3>Apply Colors to Text, Background, and Borders</h3>
-        <p>Set color, background-color and border-color by applying the naming conventions:</p>
+        <p class="max-width-sm">Set color, background-color and border-color by applying the naming conventions:</p>
 
         <table class="br-separate">
             <tr>
@@ -674,64 +681,68 @@ figure
                 <td class="accent-three"><code>accent-three-d4</code> … <code>accent-three-4</code></td>
             </tr>
         </table>
+    </div>
+
+    <div class="breakout max-width-sm">
         <h3>Edge Values</h3>
-        <div class="max-width-sm">
-            <p>In addition there are four colors available, which can also be used as color, background-color and
-                border-color but do not allow further refinement:</p>
-            <ul class="no-list-type">
-                <li>
-                    <div class="square bg-base-color inline-block mrln-1 mrr"></div><code>.base-color</code> (which is
-                    default text-color). <p>The color is defined through:</p>
-                    <pre>:root { --base-color = var(--neutral-color-d4); }</pre>
-                </li>
-                <li>
-                    <div class="square br br-base-color inline-block mrln-1 mrr"></div><code>.base-background</code>
-                    <p>The color is defined through:</p>
-                    <pre>:root { --base-background = #fff; }</pre>
-                </li>
-                <li>
-                    <div class="square bg-black inline-block mrln-1 mrr"></div><code>.black</code>
-                    <p>The color is defined through:</p>
-                    <pre>:root { --black = black; }</pre>
-                </li>
-                <li>
-                    <div class="square br br-base-color inline-block mrln-1 mrr"></div><code>.white</code>
-                    <p>The color is defined through:</p>
-                    <pre>:root { --white = white; }</pre>
-                </li>
-                <li>
-                    <div class="square mark inline-block mrln-1 mrr"></div><code>.mark</code>, <code>mark</code>
-                    <p>The color is defined through:</p>
-                    <pre>:root { --mark-background: var(--accent-three-2); }</pre>
-                </li>
-                <li>
-                    <div class="square kbd inline-block mrln-1 mrr"></div><code>.kbd</code>, <code>kbd</code>
-                    <p>The color is defined through:</p>
-                    <pre>:root { --kbd-background: var(--neutral-4); }</pre>
-                </li>
-            </ul>
-            <h3>Define Your Own Color System</h3>
-            <p>The color system is built around the five colors:</p>
-            <ul class="no-list-type">
-                <li>
-                    <div class="square bg-neutral inline-block mrln-1 mrr"></div>neutral
-                </li>
-                <li>
-                    <div class="square bg-primary inline-block mrln-1 mrr"></div>primary
-                </li>
-                <li>
-                    <div class="square bg-accent-one inline-block mrln-1 mrr"></div>accent one
-                </li>
-                <li>
-                    <div class="square bg-accent-two inline-block mrln-1 mrr"></div>accent two
-                </li>
-                <li>
-                    <div class="square bg-accent-three inline-block mrln-1 mrr"></div>accent three
-                </li>
-            </ul>
-            <p>To define your own color palette, change the colors by providing their hsl color code.</p>
-            <pre>
-:root {
+        <p>In addition there are four colors available, which can also be used as color, background-color and
+            border-color but do not allow further refinement:</p>
+        <ul class="no-list-type">
+            <li>
+                <div class="square bg-base-color inline-block mrln-1 mrr"></div><code>.base-color</code> (which is
+                default text-color). <p>The color is defined through:</p>
+                <pre>:root { --base-color = var(--neutral-color-d4); }</pre>
+            </li>
+            <li>
+                <div class="square br br-base-color inline-block mrln-1 mrr"></div><code>.base-background</code>
+                <p>The color is defined through:</p>
+                <pre>:root { --base-background = #fff; }</pre>
+            </li>
+            <li>
+                <div class="square bg-black inline-block mrln-1 mrr"></div><code>.black</code>
+                <p>The color is defined through:</p>
+                <pre>:root { --black = black; }</pre>
+            </li>
+            <li>
+                <div class="square br br-base-color inline-block mrln-1 mrr"></div><code>.white</code>
+                <p>The color is defined through:</p>
+                <pre>:root { --white = white; }</pre>
+            </li>
+            <li>
+                <div class="square mark inline-block mrln-1 mrr"></div><code>.mark</code>, <code>mark</code>
+                <p>The color is defined through:</p>
+                <pre>:root { --mark-background: var(--accent-three-2); }</pre>
+            </li>
+            <li>
+                <div class="square kbd inline-block mrln-1 mrr"></div><code>.kbd</code>, <code>kbd</code>
+                <p>The color is defined through:</p>
+                <pre>:root { --kbd-background: var(--neutral-4); }</pre>
+            </li>
+        </ul>
+    </div>
+
+    <div class="breakout max-width-sm">
+        <h3>Define Your Own Color System</h3>
+        <p>The color system is built around the five colors:</p>
+        <ul class="no-list-type">
+            <li>
+                <div class="square bg-neutral inline-block mrln-1 mrr"></div>neutral
+            </li>
+            <li>
+                <div class="square bg-primary inline-block mrln-1 mrr"></div>primary
+            </li>
+            <li>
+                <div class="square bg-accent-one inline-block mrln-1 mrr"></div>accent one
+            </li>
+            <li>
+                <div class="square bg-accent-two inline-block mrln-1 mrr"></div>accent two
+            </li>
+            <li>
+                <div class="square bg-accent-three inline-block mrln-1 mrr"></div>accent three
+            </li>
+        </ul>
+        <p>To define your own color palette, change the colors by providing their hsl color code.</p>
+        <pre>:root {
     --neutral-h: 0;
     --neutral-s: 0%;
     --neutral-l: 53%;              
@@ -751,17 +762,16 @@ figure
     --accent-three-h: 52;
     --accent-three-s: 100%;
     --accent-three-l: 50%;  
-}
-</pre>
-        </div>
+}</pre>
     </div>
 
-    <div class="breakout-l">
+
+    <div class="breakout">
 
         <h2 id="white-space">White Space</h2>
 
         <h3>Notation</h3>
-        <table class="max-width-sm">
+        <table>
             <tr>
                 <th>Shorthand</th>
                 <th>Description</th>
@@ -811,9 +821,12 @@ figure
                 <td>Y-axis</td>
             </tr>
         </table>
+    </div>
 
+    <div class="breakout max-width-rg">
         <h3>Margin</h3>
-        <div class="x-12 gp-1 max-width-rg">
+
+        <div class="x-12 gp-1">
             <div class="xx-12">
                 <div class="br inline-block middle">
                     <div class="square-3 bg-neutral-4 mr-0 inline-block middle"></div>
@@ -995,12 +1008,12 @@ figure
                 <div class="code">.mr-4</div>
             </div>
         </div>
+    </div>
 
 
-
+    <div class="breakout max-width-rg">
         <h3>Padding</h3>
-
-        <div class="x-12 gp-1 max-width-rg">
+        <div class="x-12 gp-1">
             <div class="xx-12">
                 <div class="bg-neutral-4 inline-block pd-0">Padding</div>
                 <div class="code">.pd-0</div>
@@ -1093,427 +1106,437 @@ figure
                 <div><code>.pd-4</code></div>
             </div>
         </div>
+    </div>
 
+    <div class="breakout max-width-sm">
         <h3>Grid Gap</h3>
-        <div class="max-width-sm">
+        <div class="x-12 gp-0 middle center">
+            <div class="xx-6 bg-neutral-4 pdy">1</div>
+            <div class="xx-6 bg-neutral-4 pdy">2</div>
+            <div class="xx-6 bg-neutral-4 pdy">3</div>
+            <div class="xx-6 bg-neutral-4 pdy">4</div>
+        </div>
+        <code>.gp-0</code>
 
-            <div class="x-12 gp-0 middle center">
-                <div class="xx-6 bg-neutral-4 pdy">1</div>
-                <div class="xx-6 bg-neutral-4 pdy">2</div>
-                <div class="xx-6 bg-neutral-4 pdy">3</div>
-                <div class="xx-6 bg-neutral-4 pdy">4</div>
-            </div>
-            <code>.gp-0</code>
+        <div class="x-12 gp mrt-1 middle center">
+            <div class="xx-6 bg-neutral-4 pdy">1</div>
+            <div class="xx-6 bg-neutral-4 pdy">2</div>
+            <div class="xx-6 bg-neutral-4 pdy">3</div>
+            <div class="xx-6 bg-neutral-4 pdy">4</div>
+        </div>
+        <code>.gp</code> <small>(1rem)</small>
 
-            <div class="x-12 gp mrt-1 middle center">
-                <div class="xx-6 bg-neutral-4 pdy">1</div>
-                <div class="xx-6 bg-neutral-4 pdy">2</div>
-                <div class="xx-6 bg-neutral-4 pdy">3</div>
-                <div class="xx-6 bg-neutral-4 pdy">4</div>
-            </div>
-            <code>.gp</code> <small>(1rem)</small>
+        <div class="x-12 gpx mrt-1 middle center">
+            <div class="xx-6 bg-neutral-4 pdy">1</div>
+            <div class="xx-6 bg-neutral-4 pdy">2</div>
+            <div class="xx-6 bg-neutral-4 pdy">3</div>
+            <div class="xx-6 bg-neutral-4 pdy">4</div>
+        </div>
+        <code>.gpx</code> <small>(1rem)</small>
 
-            <div class="x-12 gpx mrt-1 middle center">
-                <div class="xx-6 bg-neutral-4 pdy">1</div>
-                <div class="xx-6 bg-neutral-4 pdy">2</div>
-                <div class="xx-6 bg-neutral-4 pdy">3</div>
-                <div class="xx-6 bg-neutral-4 pdy">4</div>
-            </div>
-            <code>.gpx</code> <small>(1rem)</small>
+        <div class="x-12 gpy gpx-0 mrt-1 middle center">
+            <div class="xx-6 bg-neutral-4 pdy">1</div>
+            <div class="xx-6 bg-neutral-4 pdy">2</div>
+            <div class="xx-6 bg-neutral-4 pdy">3</div>
+            <div class="xx-6 bg-neutral-4 pdy">4</div>
+        </div>
+        <code>.gpy.gpx-0</code> <small>(1rem)</small>
 
-            <div class="x-12 gpy gpx-0 mrt-1 middle center">
-                <div class="xx-6 bg-neutral-4 pdy">1</div>
-                <div class="xx-6 bg-neutral-4 pdy">2</div>
-                <div class="xx-6 bg-neutral-4 pdy">3</div>
-                <div class="xx-6 bg-neutral-4 pdy">4</div>
-            </div>
-            <code>.gpy.gpx-0</code> <small>(1rem)</small>
+        <div class="mrt-1">All grid gap patterns can be applied to decreased and increased gaps.</div>
 
-            <div class="mrt-1">All grid gap patterns can be applied to decreased and increased gaps.</div>
+        <div class="x-12 gp-d5 mrt-1 middle center">
+            <div class="xx-6 bg-neutral-4 pdy">1</div>
+            <div class="xx-6 bg-neutral-4 pdy">2</div>
+            <div class="xx-6 bg-neutral-4 pdy">3</div>
+            <div class="xx-6 bg-neutral-4 pdy">4</div>
+        </div>
+        <code>.gp-d5</code> <small>(1px)</small>
 
-            <div class="x-12 gp-d5 mrt-1 middle center">
-                <div class="xx-6 bg-neutral-4 pdy">1</div>
-                <div class="xx-6 bg-neutral-4 pdy">2</div>
-                <div class="xx-6 bg-neutral-4 pdy">3</div>
-                <div class="xx-6 bg-neutral-4 pdy">4</div>
-            </div>
-            <code>.gp-d5</code> <small>(1px)</small>
-
-            <div class="x-12 gp-d4 mrt-1 middle center">
-                <div class="xx-6 bg-neutral-4 pdy">1</div>
-                <div class="xx-6 bg-neutral-4 pdy">2</div>
-                <div class="xx-6 bg-neutral-4 pdy">3</div>
-                <div class="xx-6 bg-neutral-4 pdy">4</div>
-            </div>
-            <code>.gp-d4</code> <small>(2px)</small>
+        <div class="x-12 gp-d4 mrt-1 middle center">
+            <div class="xx-6 bg-neutral-4 pdy">1</div>
+            <div class="xx-6 bg-neutral-4 pdy">2</div>
+            <div class="xx-6 bg-neutral-4 pdy">3</div>
+            <div class="xx-6 bg-neutral-4 pdy">4</div>
+        </div>
+        <code>.gp-d4</code> <small>(2px)</small>
 
 
-            <div class="x-12 gp-d3 mrt-1 middle center">
-                <div class="xx-6 bg-neutral-4 pdy">1</div>
-                <div class="xx-6 bg-neutral-4 pdy">2</div>
-                <div class="xx-6 bg-neutral-4 pdy">3</div>
-                <div class="xx-6 bg-neutral-4 pdy">4</div>
-            </div>
-            <code>.gp-d3</code> <small>(3px)</small>
+        <div class="x-12 gp-d3 mrt-1 middle center">
+            <div class="xx-6 bg-neutral-4 pdy">1</div>
+            <div class="xx-6 bg-neutral-4 pdy">2</div>
+            <div class="xx-6 bg-neutral-4 pdy">3</div>
+            <div class="xx-6 bg-neutral-4 pdy">4</div>
+        </div>
+        <code>.gp-d3</code> <small>(3px)</small>
 
-            <div class="x-12 gp-d2 mrt-1 middle center">
-                <div class="xx-6 bg-neutral-4 pdy">1</div>
-                <div class="xx-6 bg-neutral-4 pdy">2</div>
-                <div class="xx-6 bg-neutral-4 pdy">3</div>
-                <div class="xx-6 bg-neutral-4 pdy">4</div>
-            </div>
-            <code>.gp-d2</code>
+        <div class="x-12 gp-d2 mrt-1 middle center">
+            <div class="xx-6 bg-neutral-4 pdy">1</div>
+            <div class="xx-6 bg-neutral-4 pdy">2</div>
+            <div class="xx-6 bg-neutral-4 pdy">3</div>
+            <div class="xx-6 bg-neutral-4 pdy">4</div>
+        </div>
+        <code>.gp-d2</code>
 
-            <div class="x-12 gp-d1 mrt-1 middle center">
-                <div class="xx-6 bg-neutral-4 pdy">1</div>
-                <div class="xx-6 bg-neutral-4 pdy">2</div>
-                <div class="xx-6 bg-neutral-4 pdy">3</div>
-                <div class="xx-6 bg-neutral-4 pdy">4</div>
-            </div>
-            <code>.gp-d1</code>
+        <div class="x-12 gp-d1 mrt-1 middle center">
+            <div class="xx-6 bg-neutral-4 pdy">1</div>
+            <div class="xx-6 bg-neutral-4 pdy">2</div>
+            <div class="xx-6 bg-neutral-4 pdy">3</div>
+            <div class="xx-6 bg-neutral-4 pdy">4</div>
+        </div>
+        <code>.gp-d1</code>
 
-            <div class="x-12 gp mrt-1 middle center">
-                <div class="xx-6 bg-neutral-4 pdy">1</div>
-                <div class="xx-6 bg-neutral-4 pdy">2</div>
-                <div class="xx-6 bg-neutral-4 pdy">3</div>
-                <div class="xx-6 bg-neutral-4 pdy">4</div>
-            </div>
-            <code>.gp</code> <small>(1rem)</small>
+        <div class="x-12 gp mrt-1 middle center">
+            <div class="xx-6 bg-neutral-4 pdy">1</div>
+            <div class="xx-6 bg-neutral-4 pdy">2</div>
+            <div class="xx-6 bg-neutral-4 pdy">3</div>
+            <div class="xx-6 bg-neutral-4 pdy">4</div>
+        </div>
+        <code>.gp</code> <small>(1rem)</small>
 
-            <div class="x-12 gp-1 mrt-1 middle center">
-                <div class="xx-6 bg-neutral-4 pdy">1</div>
-                <div class="xx-6 bg-neutral-4 pdy">2</div>
-                <div class="xx-6 bg-neutral-4 pdy">3</div>
-                <div class="xx-6 bg-neutral-4 pdy">4</div>
-            </div>
-            <code>.gp-1</code>
+        <div class="x-12 gp-1 mrt-1 middle center">
+            <div class="xx-6 bg-neutral-4 pdy">1</div>
+            <div class="xx-6 bg-neutral-4 pdy">2</div>
+            <div class="xx-6 bg-neutral-4 pdy">3</div>
+            <div class="xx-6 bg-neutral-4 pdy">4</div>
+        </div>
+        <code>.gp-1</code>
+    </div>
+
+    <div class="breakout">
+        <h2 id="borders">Borders</h2>
+        <h3>Notation</h3>
+        <table>
+            <tr>
+                <th>Shorthand</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>br</td>
+                <td>border</td>
+            </tr>
+            <tr>
+                <td>brw</td>
+                <td>border width</td>
+            </tr>
+            <tr>
+                <td>t</td>
+                <td>top</td>
+            </tr>
+            <tr>
+                <td>r</td>
+                <td>right</td>
+            </tr>
+            <tr>
+                <td>b</td>
+                <td>bottom</td>
+            </tr>
+            <tr>
+                <td>l</td>
+                <td>left</td>
+            </tr>
+            <tr>
+                <td>0 (zero)</td>
+                <td>none</td>
+            </tr>
+            <tr>
+                <td>x</td>
+                <td>X-axis</td>
+            </tr>
+            <tr>
+                <td>y</td>
+                <td>Y-axis</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="breakout max-width-rg">
+        <h3>Border</h3>
+        <div class="x-12 gp-1">
+            <div class="xx-4 br pd-1 bg-neutral-4"></div>
+            <div class="xx-8"><code>.br</code></div>
+            <div class="xx-4 bry pd-1 bg-neutral-4"></div>
+            <div class="xx-8"><code>.bry</code></div>
+            <div class="xx-4 brx pd-1 bg-neutral-4"></div>
+            <div class="xx-8"><code>.brx</code></div>
+            <div class="xx-4 brt pd-1 bg-neutral-4"></div>
+            <div class="xx-8"><code>.brt</code></div>
+            <div class="xx-4 brr pd-1 bg-neutral-4"></div>
+            <div class="xx-8"><code>.brr</code></div>
+            <div class="xx-4 brb pd-1 bg-neutral-4"></div>
+            <div class="xx-8"><code>.brb</code></div>
+            <div class="xx-4 brl pd-1 bg-neutral-4"></div>
+            <div class="xx-8"><code>.brl</code></div>
         </div>
 
-        <div>
-            <div class="x-12 gp">
-                <div>
-                    <h2 id="borders">Borders</h2>
-                    <h3>Notation</h3>
-                    <table class="max-width-sm">
-                        <tr>
-                            <th>Shorthand</th>
-                            <th>Description</th>
-                        </tr>
-                        <tr>
-                            <td>br</td>
-                            <td>border</td>
-                        </tr>
-                        <tr>
-                            <td>brw</td>
-                            <td>border width</td>
-                        </tr>
-                        <tr>
-                            <td>t</td>
-                            <td>top</td>
-                        </tr>
-                        <tr>
-                            <td>r</td>
-                            <td>right</td>
-                        </tr>
-                        <tr>
-                            <td>b</td>
-                            <td>bottom</td>
-                        </tr>
-                        <tr>
-                            <td>l</td>
-                            <td>left</td>
-                        </tr>
-                        <tr>
-                            <td>0 (zero)</td>
-                            <td>none</td>
-                        </tr>
-                        <tr>
-                            <td>x</td>
-                            <td>X-axis</td>
-                        </tr>
-                        <tr>
-                            <td>y</td>
-                            <td>Y-axis</td>
-                        </tr>
-                    </table>
+        <h3>Border Style</h3>
+        <div class="x-12 gp-1">
+            <div class="xx-4 br br-dashed pd-1 bg-neutral-4"></div>
+            <div class="xx-8"><code>.br.br-dashed</code></div>
+            <div class="xx-4 br br-dotted pd-1 bg-neutral-4"></div>
+            <div class="xx-8"><code>.br.br-dotted</code></div>
+            <div class="xx-4 br br-solid pd-1 bg-neutral-4"></div>
+            <div class="xx-8"><code>.br.br-solid</code></div>
+        </div>
 
-                    <h3>Border</h3>
-                </div>
-                <div class="xx-4 br pd-1 bg-neutral-4"></div>
-                <div class="xx-8"><code>.br</code>
-                </div>
-                <div class="xx-4 bry pd-1 bg-neutral-4"></div>
-                <div class="xx-8"><code>.bry</code></div>
-                <div class="xx-4 brx pd-1 bg-neutral-4"></div>
-                <div class="xx-8"><code>.brx</code></div>
-                <div class="xx-4 brt pd-1 bg-neutral-4"></div>
-                <div class="xx-8"><code>.brt</code></div>
-                <div class="xx-4 brr pd-1 bg-neutral-4"></div>
-                <div class="xx-8"><code>.brr</code></div>
-                <div class="xx-4 brb pd-1 bg-neutral-4"></div>
-                <div class="xx-8"><code>.brb</code></div>
-                <div class="xx-4 brl pd-1 bg-neutral-4"></div>
-                <div class="xx-8"><code>.brl</code></div>
-
-                <h3>Border Style</h3>
-                <div class="xx-4 br br-dashed pd-1 bg-neutral-4"></div>
-                <div class="xx-8"><code>.br.br-dashed</code></div>
-                <div class="xx-4 br br-dotted pd-1 bg-neutral-4"></div>
-                <div class="xx-8"><code>.br.br-dotted</code></div>
-                <div class="xx-4 br br-solid pd-1 bg-neutral-4"></div>
-                <div class="xx-8"><code>.br.br-solid</code></div>
-
-                <h3>Border Width</h3>
-                <div class="xx-4 br brw-0 pd-1 bg-neutral-4"></div>
-                <div class="xx-8"><code>.brw-0</code></div>
-                <div class="xx-4 br brw-d5 pd-1 bg-neutral-4"></div>
-                <div class="xx-8"><code>.br.brw-d5</code>, <code>br.brw-default</code> <small>(1px)</small></div>
-                <div class="xx-4 br brw-d4 pd-1 bg-neutral-4"></div>
-                <div class="xx-8"><code>.br.brw-d4</code> <small>(2px)</small></div>
-                <div class="xx-4 br brw-d3 pd-1 bg-neutral-4"></div>
-                <div class="xx-8"><code>.br.brw-d3</code> <small>(3px)</small></div>
-                <div class="xx-4 br brw-d2 pd-1 bg-neutral-4"></div>
-                <div class="xx-8"><code>.br.brw-d2</code></div>
-                <div class="xx-4 br brw-d1 pd-1 bg-neutral-4"></div>
-                <div class="xx-8"><code>.br.brw-d1</code></div>
-                <div class="xx-4 br brw pd-1 bg-neutral-4"></div>
-                <div class="xx-8"><code>.br.brw</code> <small>(1rem)</small></div>
-
-                <h3>Border Radius</h3>
-
-                <div class="xx-4 br br-radius-0 pd-1 bg-neutral-4"></div>
-                <div class="xx-8"><code>.br.br-radius-0</code></div>
-
-                <div class="xx-4 br br-radius-d2 pd-1 bg-neutral-4"></div>
-                <div class="xx-8"><code>.br.br-radius-d2</code>, <code>.br.rounded</code></div>
-
-                <div class="xx-4 br br-radius-d1 pd-1 bg-neutral-4"></div>
-                <div class="xx-8"><code>.br.br-radius-d1</code></div>
-
-                <div class="xx-4 br br-radius pd-1 bg-neutral-4"></div>
-                <div class="xx-8"><code>.br.br-radius</code> <small>(1rem)</small></div>
-
-                <div class="xx-4 br br-radius-pill pd-1 bg-neutral-4"></div>
-                <div class="xx-8"><code>.br.br-radius-pill</code></div>
-
-                <div class="xx-4">
-                    <div class="br br-radius-100 pd-2 inline-block bg-neutral-4"></div>
-                </div>
-                <div class="xx-8"><code>.br.br-radius-100</code></div>
-
-                <div class="xx-4 br br-radius br-radius-t pd-1 bg-neutral-4"></div>
-                <div class="xx-8"><code>.br.br-radius.br-radius-t</code></div>
-
-                <div class="xx-4 br br-radius br-radius-r pd-1 bg-neutral-4"></div>
-                <div class="xx-8"><code>.br.br-radius.br-radius-r</code></div>
-
-                <div class="xx-4 br br-radius br-radius-b pd-1 bg-neutral-4"></div>
-                <div class="xx-8"><code>.br.br-radius.br-radius-b</code></div>
-
-                <div class="xx-4 br br-radius br-radius-l pd-1 bg-neutral-4"></div>
-                <div class="xx-8"><code>.br.br-radius.br-radius-l</code></div>
-
-            </div>
-
+        <h3>Border Width</h3>
+        <div class="x-12 gp-1">
+            <div class="xx-4 br brw-0 pd-1 bg-neutral-4"></div>
+            <div class="xx-8"><code>.brw-0</code></div>
+            <div class="xx-4 br brw-d5 pd-1 bg-neutral-4"></div>
+            <div class="xx-8"><code>.br.brw-d5</code>, <code>br.brw-default</code> <small>(1px)</small></div>
+            <div class="xx-4 br brw-d4 pd-1 bg-neutral-4"></div>
+            <div class="xx-8"><code>.br.brw-d4</code> <small>(2px)</small></div>
+            <div class="xx-4 br brw-d3 pd-1 bg-neutral-4"></div>
+            <div class="xx-8"><code>.br.brw-d3</code> <small>(3px)</small></div>
+            <div class="xx-4 br brw-d2 pd-1 bg-neutral-4"></div>
+            <div class="xx-8"><code>.br.brw-d2</code></div>
+            <div class="xx-4 br brw-d1 pd-1 bg-neutral-4"></div>
+            <div class="xx-8"><code>.br.brw-d1</code></div>
+            <div class="xx-4 br brw pd-1 bg-neutral-4"></div>
+            <div class="xx-8"><code>.br.brw</code> <small>(1rem)</small></div>
         </div>
 
 
-        <div>
-            <h2 id="tables">Tables</h2>
-            <h3>Basic Table</h3>
-            <table>
-                <tr>
-                    <th>Company</th>
-                    <th>Contact</th>
-                    <th>Country</th>
-                </tr>
-                <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Maria Anders</td>
-                    <td>Germany</td>
-                </tr>
-                <tr>
-                    <td>Centro comercial Moctezuma</td>
-                    <td>Francisco Chang</td>
-                    <td>Mexico</td>
-                </tr>
-                <tr>
-                    <td>Ernst Handel</td>
-                    <td>Roland Mendel</td>
-                    <td>Austria</td>
-                </tr>
-                <tr>
-                    <td>Island Trading</td>
-                    <td>Helen Bennett</td>
-                    <td>UK</td>
-                </tr>
-                <tr>
-                    <td>Laughing Bacchus Winecellars</td>
-                    <td>Yoshi Tannamuri</td>
-                    <td>Canada</td>
-                </tr>
-                <tr>
-                    <td>Magazzini Alimentari Riuniti</td>
-                    <td>Giovanni Rovelli</td>
-                    <td>Italy</td>
-                </tr>
-            </table>
+        <h3>Border Radius</h3>
+        <div class="x-12 gp-1">
+            <div class="xx-4 br br-radius-0 pd-1 bg-neutral-4"></div>
+            <div class="xx-8"><code>.br.br-radius-0</code></div>
 
-            <pre class="max-width-sm mrb-0">table/</pre>
-            <div class="mrt max-width-sm">
-                <p>Apply padding with <code>.pd</code>, <code>.pdx</code>, or <code>.pdy</code> styling
-                    which can be assigned to the
-                    table, rows or
-                    td and th elements.</p>
-                <p>Borders can be used the same with <code>.br</code>, <code>.brx</code>,
-                    <code>.bry</code>,
-                    <code>.brt</code>, <code>.brr</code>, <code>.brb</code>, <code>.brl</code> and
-                    <code>.brw</code> styling.</p>
+            <div class="xx-4 br br-radius-d2 pd-1 bg-neutral-4"></div>
+            <div class="xx-8"><code>.br.br-radius-d2</code>, <code>.br.rounded</code></div>
+
+            <div class="xx-4 br br-radius-d1 pd-1 bg-neutral-4"></div>
+            <div class="xx-8"><code>.br.br-radius-d1</code></div>
+
+            <div class="xx-4 br br-radius pd-1 bg-neutral-4"></div>
+            <div class="xx-8"><code>.br.br-radius</code> <small>(1rem)</small></div>
+
+            <div class="xx-4 br br-radius-pill pd-1 bg-neutral-4"></div>
+            <div class="xx-8"><code>.br.br-radius-pill</code></div>
+
+            <div class="xx-4">
+                <div class="br br-radius-100 pd-2 inline-block bg-neutral-4"></div>
             </div>
-            <h3>Alternate Table Row Background</h3>
-            <table class="alternate-rows pdy-d4">
-                <tr>
-                    <th>Company</th>
-                    <th>Contact</th>
-                    <th>Country</th>
-                </tr>
-                <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Maria Anders</td>
-                    <td>Germany</td>
-                </tr>
-                <tr>
-                    <td>Centro comercial Moctezuma</td>
-                    <td>Francisco Chang</td>
-                    <td>Mexico</td>
-                </tr>
-                <tr>
-                    <td>Ernst Handel</td>
-                    <td>Roland Mendel</td>
-                    <td>Austria</td>
-                </tr>
-                <tr>
-                    <td>Island Trading</td>
-                    <td>Helen Bennett</td>
-                    <td>UK</td>
-                </tr>
-                <tr>
-                    <td>Laughing Bacchus Winecellars</td>
-                    <td>Yoshi Tannamuri</td>
-                    <td>Canada</td>
-                </tr>
-                <tr>
-                    <td>Magazzini Alimentari Riuniti</td>
-                    <td>Giovanni Rovelli</td>
-                    <td>Italy</td>
-                </tr>
-            </table>
-            <pre class="max-width-sm">table/ .alternate-rows.pdy-d4</pre>
-            <h3>Alternate Table Column Background</h3>
-            <table class="alternate-cols">
-                <colgroup>
-                    <col>
-                    <col>
-                    <col>
-                </colgroup>
-                <tr>
-                    <th>Company</th>
-                    <th>Contact</th>
-                    <th>Country</th>
-                </tr>
-                <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Maria Anders</td>
-                    <td>Germany</td>
-                </tr>
-                <tr>
-                    <td>Centro comercial Moctezuma</td>
-                    <td>Francisco Chang</td>
-                    <td>Mexico</td>
-                </tr>
-                <tr>
-                    <td>Ernst Handel</td>
-                    <td>Roland Mendel</td>
-                    <td>Austria</td>
-                </tr>
-                <tr>
-                    <td>Island Trading</td>
-                    <td>Helen Bennett</td>
-                    <td>UK</td>
-                </tr>
-                <tr>
-                    <td>Laughing Bacchus Winecellars</td>
-                    <td>Yoshi Tannamuri</td>
-                    <td>Canada</td>
-                </tr>
-                <tr>
-                    <td>Magazzini Alimentari Riuniti</td>
-                    <td>Giovanni Rovelli</td>
-                    <td>Italy</td>
-                </tr>
-            </table>
-            <pre class="max-width-sm">table/ .alternate-cols</pre>
+            <div class="xx-8"><code>.br.br-radius-100</code></div>
 
-            <h3>Underline Table Rows</h3>
-            <table class="underline-rows">
-                <tr>
-                    <th>Company</th>
-                    <th>Contact</th>
-                    <th>Country</th>
-                </tr>
-                <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Maria Anders</td>
-                    <td>Germany</td>
-                </tr>
-                <tr>
-                    <td>Centro comercial Moctezuma</td>
-                    <td>Francisco Chang</td>
-                    <td>Mexico</td>
-                </tr>
-                <tr>
-                    <td>Ernst Handel</td>
-                    <td>Roland Mendel</td>
-                    <td>Austria</td>
-                </tr>
-                <tr>
-                    <td>Island Trading</td>
-                    <td>Helen Bennett</td>
-                    <td>UK</td>
-                </tr>
-                <tr>
-                    <td>Laughing Bacchus Winecellars</td>
-                    <td>Yoshi Tannamuri</td>
-                    <td>Canada</td>
-                </tr>
-                <tr>
-                    <td>Magazzini Alimentari Riuniti</td>
-                    <td>Giovanni Rovelli</td>
-                    <td>Italy</td>
-                </tr>
-            </table>
-            <pre class="max-width-sm">table/ .underline-rows</pre>
+            <div class="xx-4 br br-radius br-radius-t pd-1 bg-neutral-4"></div>
+            <div class="xx-8"><code>.br.br-radius.br-radius-t</code></div>
+
+            <div class="xx-4 br br-radius br-radius-r pd-1 bg-neutral-4"></div>
+            <div class="xx-8"><code>.br.br-radius.br-radius-r</code></div>
+
+            <div class="xx-4 br br-radius br-radius-b pd-1 bg-neutral-4"></div>
+            <div class="xx-8"><code>.br.br-radius.br-radius-b</code></div>
+
+            <div class="xx-4 br br-radius br-radius-l pd-1 bg-neutral-4"></div>
+            <div class="xx-8"><code>.br.br-radius.br-radius-l</code></div>
         </div>
+    </div>
 
+    <div class="breakout">
+        <h2 id="tables">Tables</h2>
+        <h3>Basic Table</h3>
+        <table>
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>Island Trading</td>
+                <td>Helen Bennett</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>Laughing Bacchus Winecellars</td>
+                <td>Yoshi Tannamuri</td>
+                <td>Canada</td>
+            </tr>
+            <tr>
+                <td>Magazzini Alimentari Riuniti</td>
+                <td>Giovanni Rovelli</td>
+                <td>Italy</td>
+            </tr>
+        </table>
 
         <div class="max-width-sm">
-            <h2 id="figures">Figures</h2>
-            <figure>
-                <img loading="lazy" src="resources/pierre-chatel-innocenti-unsplash.jpg" />
-                <figcaption>Photo by Pierre Chatel on Unsplash</figcaption>
-            </figure>
-            <pre>figure
+            <pre>table/</pre>
+
+            <p>Apply padding with <code>.pd</code>, <code>.pdx</code>, or <code>.pdy</code> styling
+                which can be assigned to the
+                table, rows or
+                td and th elements.</p>
+            <p>Borders can be used the same with <code>.br</code>, <code>.brx</code>,
+                <code>.bry</code>,
+                <code>.brt</code>, <code>.brr</code>, <code>.brb</code>, <code>.brl</code> and
+                <code>.brw</code> styling.</p>
+        </div>
+    </div>
+
+    <div class="breakout">
+        <h3>Alternate Table Row Background</h3>
+        <table class="alternate-rows pdy-d4">
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>Island Trading</td>
+                <td>Helen Bennett</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>Laughing Bacchus Winecellars</td>
+                <td>Yoshi Tannamuri</td>
+                <td>Canada</td>
+            </tr>
+            <tr>
+                <td>Magazzini Alimentari Riuniti</td>
+                <td>Giovanni Rovelli</td>
+                <td>Italy</td>
+            </tr>
+        </table>
+        <pre class="max-width-sm">table/ .alternate-rows.pdy-d4</pre>
+    </div>
+
+    <div class="breakout">
+        <h3>Alternate Table Column Background</h3>
+        <table class="alternate-cols">
+            <colgroup>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>Island Trading</td>
+                <td>Helen Bennett</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>Laughing Bacchus Winecellars</td>
+                <td>Yoshi Tannamuri</td>
+                <td>Canada</td>
+            </tr>
+            <tr>
+                <td>Magazzini Alimentari Riuniti</td>
+                <td>Giovanni Rovelli</td>
+                <td>Italy</td>
+            </tr>
+        </table>
+        <pre class="max-width-sm">table/ .alternate-cols</pre>
+    </div>
+
+    <div class="breakout">
+        <h3>Underline Table Rows</h3>
+        <table class="underline-rows">
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>Island Trading</td>
+                <td>Helen Bennett</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>Laughing Bacchus Winecellars</td>
+                <td>Yoshi Tannamuri</td>
+                <td>Canada</td>
+            </tr>
+            <tr>
+                <td>Magazzini Alimentari Riuniti</td>
+                <td>Giovanni Rovelli</td>
+                <td>Italy</td>
+            </tr>
+        </table>
+        <pre class="max-width-sm">table/ .underline-rows</pre>
+    </div>
+
+
+    <div class="breakout max-width-sm">
+        <h2 id="figures">Figures</h2>
+        <figure>
+            <img loading="lazy" src="resources/pierre-chatel-innocenti-unsplash.jpg" />
+            <figcaption>Photo by Pierre Chatel on Unsplash</figcaption>
+        </figure>
+        <pre>figure
     img/
     figcaption/    
 /figure</pre>
-        </div>
-
     </div>
 
-    <div class="breakout-l">
+    <div class="breakout">
         <h2 id="images">Images</h2>
         <h3>Responsive Images</h3>
-        <p class="max-width-sm mrb-0">Images are by default responsive and take the entire available horizontal space
+        <p class="max-width-sm mrb-0">Images are by default responsive and take the entire available horizontal
+            space
             while
             preserving
             aspect-ratio.
@@ -1528,62 +1551,64 @@ figure
         <pre>img/</pre>
     </div>
 
-    <div class="breakout">
-        <div class="x-12">
-            <h3>Contained Images</h3>
-            <div class="max-width-rg">
-                <p>If the image has a fixed width or fixed height, the
-                    usage of <code>.fix-contain</code> will put the entire visible image inside of the given
-                    dimensions while preserving aspect-ratio and without stretching the image.</p>
-                <p class="mrb-0">Combine <code>.fit-contain</code> with fit positions <code>.fit-t</code>,
-                    <code>.fit-tl</code>,
-                    <code>.fit-tr</code>,
-                    <code>.fit-r</code>,
-                    <code>.fit-b</code>,
-                    <code>.fit-bl</code>,
-                    <code>.fit-br</code>, and
-                    <code>.fit-l</code>.</p>
-            </div>
-            <div class="xx-12 rg-xx-6">
-                <figure>
+    <div class="breakout x-12">
+        <h3>Contained Images</h3>
+        <div class="max-width-sm">
+            <p>If the image has a fixed width or fixed height, the
+                usage of <code>.fix-contain</code> will put the entire visible image inside of the given
+                dimensions while preserving aspect-ratio and without stretching the image.</p>
+            <p class="mrb-0">Combine <code>.fit-contain</code> with fit positions <code>.fit-t</code>,
+                <code>.fit-tl</code>,
+                <code>.fit-tr</code>,
+                <code>.fit-r</code>,
+                <code>.fit-b</code>,
+                <code>.fit-bl</code>,
+                <code>.fit-br</code>, and
+                <code>.fit-l</code>.</p>
+        </div>
 
-                    <img loading="lazy" src="resources/jayden-chong-unsplash.jpg" style="height:400px; width:100%"
-                        class="fit-contain br" />
+        <div class="xx-12 rg-xx-6">
+            <figure>
 
-                    <figcaption>Photo by Jayden Chong on Unsplash</figcaption>
-                </figure>
-                <pre>img/ .fit-contain</pre>
-            </div>
-            <div class="xx-12 rg-xx-6">
-                <figure>
-                    <img loading="lazy" src="resources/jayden-chong-unsplash.jpg" style="height:400px; width:100%"
-                        class="fit-contain fit-tl br" />
-                    <figcaption>Photo by Jayden Chong on Unsplash</figcaption>
-                </figure>
-                <pre>img/ .fit-contain.fit-tl</pre>
-            </div>
+                <img loading="lazy" src="resources/jayden-chong-unsplash.jpg" style="height:400px; width:100%"
+                    class="fit-contain br" />
 
-            <div class="xx-12 rg-xx-6">
-                <h3>Cover Images</h3>
-                <p class="max-width-sm">If the image has a fixed widht or fixed height, the
-                    usage of <code>.fix-cover</code> will consume the entire available space of the given dimensions
-                    while preserving aspect-ratio.</p>
-                <p>The image might be stretched to cover.</p>
-                <figure>
-                    <img loading="lazy" src="resources/jayden-chong-unsplash.jpg" style="height:400px; width:100%"
-                        class="fit-cover br" />
+                <figcaption>Photo by Jayden Chong on Unsplash</figcaption>
+            </figure>
+            <pre>img/ .fit-contain</pre>
+        </div>
 
-                    <figcaption>Photo by Jayden Chong on Unsplash</figcaption>
-                </figure>
-                <pre>img/ .fit-cover</pre>
-            </div>
+        <div class="xx-12 rg-xx-6">
+            <figure>
+                <img loading="lazy" src="resources/jayden-chong-unsplash.jpg" style="height:400px; width:100%"
+                    class="fit-contain fit-tl br" />
+                <figcaption>Photo by Jayden Chong on Unsplash</figcaption>
+            </figure>
+            <pre>img/ .fit-contain.fit-tl</pre>
+        </div>
+
+        <div class="xx-12 rg-xx-6">
+            <h3>Cover Images</h3>
+            <p class="max-width-sm">If the image has a fixed widht or fixed height, the
+                usage of <code>.fix-cover</code> will consume the entire available space of the given dimensions
+                while preserving aspect-ratio.</p>
+            <p>The image might be stretched to cover.</p>
+            <figure>
+                <img loading="lazy" src="resources/jayden-chong-unsplash.jpg" style="height:400px; width:100%"
+                    class="fit-cover br" />
+
+                <figcaption>Photo by Jayden Chong on Unsplash</figcaption>
+            </figure>
+            <pre>img/ .fit-cover</pre>
         </div>
     </div>
 
-    <div class="breakout-l">
+
+    <div class="breakout">
         <div class="max-width-sm">
             <h3>Background Images</h3>
-            <p class="mrb-0">Background images can also be positioned with <code>.fit-cover</code>, which is usefule for
+            <p class="mrb-0">Background images can also be positioned with <code>.fit-cover</code>, which is usefule
+                for
                 hero banners.
             </p>
         </div>
@@ -1594,56 +1619,49 @@ figure
         <div class="breakout-l fs-8 bold mry-4 caps lsp">Hero</div>
     </div>
 
-    <div class="breakout-l">
-
-        <pre class="mrt-0">div/ .fit-cover style="height: 600px; background-image: url('image.jpg')" </pre>
-
+    <div class="breakout">
+        <pre>div/ .fit-cover style="height: 600px; background-image: url('image.jpg')" </pre>
     </div>
 
+    <div class="breakout max-width-sm">
+        <h2 id="grid">Grid</h2>
 
-    <h2 id="grid">Grid</h2>
-
-    <h3>Middle Content</h3>
-    <p><code>.x *</code></p>
-    <p>Middle content is the default positioning of any item within the layout. Middle content doesn´t need a
-        specific css class assignment to get positioned this way.</p>
+        <h3>Middle Content</h3>
+        <p>Middle content is the default positioning of any item within the layout. Middle content doesn´t need a
+            specific css class assignment to get positioned this way.</p>
     </div>
-
-
 
 
     <!-- Code Example -->
     <div class="full bry br-dotted br-gray mono">
-        &lt;div class="x"&gt;
+        div .x
         <div class="x">
             <div class="middle indicator">
-                &lt;div&gt;&lt;/div&gt;
+                div/
             </div>
         </div>
-        &lt;/div&gt;
+        /div
     </div>
 
-    <div>
+    <div class="breakout max-width-sm">
         <h3>Breakout Left Content</h3>
-        <p><code>.x .breakout-l</code></p>
         <p>Breakout left content is pushed a little bit to the left and will give more space for the things you want
             to display.</p>
     </div>
 
     <!-- Code Example -->
     <div class="full bry br-dotted br-small br-gray mono">
-        &lt;div class="x"&gt;
+        div .x
         <div class="x">
             <div class="breakout-l indicator">
-                &lt;div class="breakout-l"&gt;&lt;/div&gt;
+                div/ .breakout-l
             </div>
         </div>
-        &lt;/div&gt;
+        /div
     </div>
 
-    <div>
+    <div class="breakout max-width-sm">
         <h3>Breakout Right Content</h3>
-        <p><code>.x .breakout-r</code></p>
         <p>Breakout right content is pushed a little bit to the right and will give more space for the things you
             want to display.
         </p>
@@ -1651,70 +1669,68 @@ figure
 
     <!-- Code Example -->
     <div class="full bry br-dotted br-small br-gray mono">
-        &lt;div class="x"&gt;
+        div .x
         <div class="x">
             <div class="breakout-r indicator">
-                &lt;div class="breakout-r"&gt;&lt;/div&gt;
+                div/ .breakout-r
             </div>
         </div>
-        &lt;/div&gt;
+        /div
     </div>
 
-    <div>
+    <div class="breakout max-width-sm">
         <h3>Breakout Content = Left and Right</h3>
-        <p><code>.x .breakout</code></p>
         <p>Breakout content is the combination of left and right content.</p>
     </div>
 
     <!-- Code Example -->
     <div class="full bry br-dotted br-small br-gray mono">
-        &lt;div class="x"&gt;
+        div .x
         <div class="x">
             <div class="breakout indicator">
-                &lt;div class="breakout"&gt;&lt;/div&gt;
+                div/ .breakout
             </div>
         </div>
-        &lt;/div&gt;
+        /div
     </div>
 
-    <div>
+    <div class="breakout max-width-sm">
         <h3>Wide content</h3>
-        <p><code>.x .wide</code></p>
         <p>Wide content is pushing things further in that it nearly takes the full width of the screen, except of a
             small margin to the window border.</p>
     </div>
 
     <!-- Code Example-->
     <div class="full bry br-dotted br-small br-gray mono">
-        &lt;div class="x"&gt;
+        div .x
         <div class="x">
             <div class="wide indicator">
-                &lt;div class="wide"&gt;&lt;/div&gt;
+               div/ .wide
             </div>
         </div>
-        &lt;/div&gt;
+        /div
     </div>
 
 
-    <div>
+    <div class="breakout max-width-sm">
         <h3>Full Content</h3>
-        <p><code>.x .full</code></p>
         <p>Full content will use the entire width of the screen.</p>
     </div>
+
     <!-- Code Example -->
     <div class="full bry br-dotted br-small br-gray mono">
-        &lt;div class="x"&gt;
+        div .x
         <div class="x">
             <div class="full indicator">
-                &lt;div class="full"&gt;&lt;/div&gt;
+                div/ .full
             </div>
         </div>
-        &lt;/div&gt;
+        /div
     </div>
 
-    <div class="breakout-l">
+    <div class="breakout max-width-rg">
         <h3>12 Column Grid</h3>
-        <div class="max-width-rg">
+        <div class="max-width-sm">
             <p>Any space can be divided horizontally into 12ths.</p>
             <p>The sum of the cols per row has to add up to 12. Not specifiying a column size will result in taking
                 the
@@ -1727,34 +1743,35 @@ figure
     div/        //will also fill an entire row 
 /div</pre>
 
+
         <div class="x-12 mry-1 gp center code">
-            <div class="xx-2 br pdy-1">.xx-2</div>
-            <div class="xx-10 br pdy-1">.xx-10</div>
-            <div class="xx-3 br pdy-1">.xx-3</div>
-            <div class="xx-9 br pdy-1">.xx-9</div>
-            <div class="xx-4 br pdy-1">.xx-4</div>
-            <div class="xx-8 br pdy-1">.xx-8</div>
-            <div class="xx-5 br pdy-1">.xx-5</div>
-            <div class="xx-7 br pdy-1">.xx-7</div>
-            <div class="xx-6 br pdy-1">.xx-6</div>
-            <div class="xx-6 br pdy-1">.xx-6</div>
-            <div class="xx-4 br pdy-1">.xx-4</div>
-            <div class="xx-4 br pdy-1">.xx-4</div>
-            <div class="xx-4 br pdy-1">.xx-4</div>
-            <div class="xx-3 br pdy-1">.xx-3</div>
-            <div class="xx-3 br pdy-1">.xx-3</div>
-            <div class="xx-3 br pdy-1">.xx-3</div>
-            <div class="xx-3 br pdy-1">.xx-3</div>
-            <div class="xx-2 br pdy-1">.xx-2</div>
-            <div class="xx-2 br pdy-1">.xx-2</div>
-            <div class="xx-2 br pdy-1">.xx-2</div>
-            <div class="xx-2 br pdy-1">.xx-2</div>
-            <div class="xx-2 br pdy-1">.xx-2</div>
-            <div class="xx-2 br pdy-1">.xx-2</div>
-            <div class="xx-12 br pdy-1">.xx-12</div>
+            <div class="xx-2 br pdy">.xx-2</div>
+            <div class="xx-10 br pdy">.xx-10</div>
+            <div class="xx-3 br pdy">.xx-3</div>
+            <div class="xx-9 br pdy">.xx-9</div>
+            <div class="xx-4 br pdy">.xx-4</div>
+            <div class="xx-8 br pdy">.xx-8</div>
+            <div class="xx-5 br pdy">.xx-5</div>
+            <div class="xx-7 br pdy">.xx-7</div>
+            <div class="xx-6 br pdy">.xx-6</div>
+            <div class="xx-6 br pdy">.xx-6</div>
+            <div class="xx-4 br pdy">.xx-4</div>
+            <div class="xx-4 br pdy">.xx-4</div>
+            <div class="xx-4 br pdy">.xx-4</div>
+            <div class="xx-3 br pdy">.xx-3</div>
+            <div class="xx-3 br pdy">.xx-3</div>
+            <div class="xx-3 br pdy">.xx-3</div>
+            <div class="xx-3 br pdy">.xx-3</div>
+            <div class="xx-2 br pdy">.xx-2</div>
+            <div class="xx-2 br pdy">.xx-2</div>
+            <div class="xx-2 br pdy">.xx-2</div>
+            <div class="xx-2 br pdy">.xx-2</div>
+            <div class="xx-2 br pdy">.xx-2</div>
+            <div class="xx-2 br pdy">.xx-2</div>
+            <div class="xx-12 br pdy">.xx-12</div>
         </div>
 
-        <p class="mrt max-width-rg">It is possible to have differently sized columns based on minimum screen width.
+        <p class="mrt max-width-sm">It is possible to have differently sized columns based on minimum screen width.
             Address
             the
             different minimum screen sizes with column prefix values of <code>lg-</code> (for at least large size),
@@ -1766,29 +1783,28 @@ figure
         </p>
 
         <div class="x-12 mry-1 gp center code">
-            <div class="xx-12 rg-xx-6 lg-xx-4 br pdy-1">.xx-12 .rg-xx-6 .lg-xx-4</div>
-            <div class="xx-12 rg-xx-6 lg-xx-8 br pdy-1">.xx-12 .rg-xx-6 .lg-xx-8</div>
+            <div class="xx-12 rg-xx-6 lg-xx-4 br pdy">.xx-12 .rg-xx-6 .lg-xx-4</div>
+            <div class="xx-12 rg-xx-6 lg-xx-8 br pdy">.xx-12 .rg-xx-6 .lg-xx-8</div>
         </div>
+    </div>
 
-
+    <div class="breakout max-width-sm">
         <h3>Columns</h3>
-        <p><code>.columns *</code></p>
         <p>Elements will be displayed in columns. The number of columns depends on the available width.</p>
-
     </div>
 
     <!-- Code Example -->
     <div class="full bry br-dotted br-small br-gray mono mb">
-        &lt;div class="x"&gt;
+        div .x
         <div class="x">
-            <div class="breakout-r indicator">
-                &lt;div class="breakout-r columns-2"&gt;&lt;/div&gt;
+            <div class="breakout indicator">
+                div/ .breakout.columns-1.rg-columns-2.lg-columns-3
             </div>
         </div>
-        &lt;/div&gt;
+        /div
     </div>
 
-    <div class="breakout-r columns-1 rg-columns-2 lg-columns-3 indent gpx-2">
+    <div class="breakout max-width-lg columns-1 rg-columns-2 lg-columns-3 indent pdy">
         <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines
             Morgens verhaftet. »Wie ein Hund!« sagte er, es war, als sollte die Scham ihn überleben. Als Gregor
             Samsa eines Morgens aus
@@ -1830,7 +1846,6 @@ figure
             sehr
             zurückgegangen.</p>
     </div>
-
 
 
 </body>
