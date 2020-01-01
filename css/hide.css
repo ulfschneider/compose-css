@@ -1,22 +1,22 @@
-@media (--breakpoint-max-sm){
+@media (max-width: 28rem){
     .max-sm-hide{
         display:none !important
     }
 }
 
-@media (--breakpoint-max-rg){
+@media (max-width: 36rem){
     .max-rg-hide{
         display:none !important
     }
 }
 
-@media (--breakpoint-max-md){
-    .max-rg-hide{
+@media (max-width: 52rem){
+    .max-md-hide{
         display:none !important
     }
 }
 
-@media (--breakpoint-max-lg){
+@media (max-width: 64rem){
     .max-lg-hide{
         display:none !important
     }

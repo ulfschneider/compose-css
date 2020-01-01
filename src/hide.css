@@ -12,7 +12,7 @@
 
 
 @media (--breakpoint-max-md) {
-    .max-rg-hide {
+    .max-md-hide {
         display: none !important
     }
 }

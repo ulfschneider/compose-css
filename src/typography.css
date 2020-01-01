@@ -351,6 +351,25 @@ ul.indent ul {
   padding-left: var(--space-1);
 }
 
+ul.reset,
+ol.reset {
+  padding-left:0;
+}
+
+ul.reset li,
+ol.reset li {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul.reset li:before,
+ol.reset li:before {
+  content: "";
+  margin-left: unset;
+  min-width: unset;
+  display: unset;
+}
+
 p {
   margin-top: 0;
   margin-bottom: 1em;

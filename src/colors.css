@@ -63,7 +63,7 @@
 
   --accent-three-h: 56;
   --accent-three-s: 75%;
-  --accent-three-l: 60%;  
+  --accent-three-l: 45%;  
   --accent-three-step: calc((100% - var(--accent-three-l)) * var(--color-step-factor));
 
   --accent-three-d4: hsl(var(--accent-three-h), var(--accent-three-s), calc(var(--accent-three-l) - 4 * var(--accent-three-step)));
@@ -79,7 +79,7 @@
 
   --base-color: var(--neutral-d4);
   --base-background: #fff;
-  --mark-background: var(--accent-three-1);
+  --mark-background: var(--accent-three-2);
   --kbd-background: var(--neutral-4);
   --code-color: var(--base-color);
   --code-background: transparent;

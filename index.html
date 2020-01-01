@@ -33,12 +33,12 @@
             <div class="md-columns-4 sm-columns-3 columns-2 lh-4">
                 <div><a href="#notation" class="no-text-decoration">Notation</a></div>
                 <div><a href="#typography" class="no-text-decoration">Typography</a></div>
+                <div><a href="#colors" class="no-text-decoration">Colors</a></div>
                 <div><a href="#white-space" class="no-text-decoration">White Space</a></div>
                 <div><a href="#borders" class="no-text-decoration">Borders</a></div>
                 <div><a href="#tables" class="no-text-decoration">Tables</a></div>
                 <div><a href="#figures" class="no-text-decoration">Figures</a></div>
                 <div><a href="#images" class="no-text-decoration">Images</a></div>
-                <div><a href="#colors" class="no-text-decoration">Colors</a></div>
                 <div><a href="#grid" class="no-text-decoration">Grid</a></div>
             </div>
         </div>
@@ -549,7 +549,190 @@ figure
         </table>
     </div>
 
+    <div class="breakout">
+        <h2 id="colors">Colors</h2>
+
+        <table class="code mrb-3">
+            <tr class="center">
+                <th></th>
+                <th class="normal pdx-0">d4</th>
+                <th class="normal pdx-0">d3</th>
+                <th class="normal pdx-0">d2</th>
+                <th class="normal pdx-0">d1</th>
+                <th class="normal pdx-0 brx brw-d2 br-white"></th>
+                <th class="normal pdx-0">1</th>
+                <th class="normal pdx-0">2</th>
+                <th class="normal pdx-0">3</th>
+                <th class="normal pdx-0">4</th>
+            </tr>
+            <tr>
+                <th class="middle normal">.neutral </th>
+                <td class="bg-neutral-d4 square sm-square-2 md-square-3"></td>
+                <td class="bg-neutral-d3 square sm-square-2 md-square-3"></td>
+                <td class="bg-neutral-d2 square sm-square-2 md-square-3"></td>
+                <td class="bg-neutral-d1 square sm-square-2 md-square-3"></td>
+                <td class="bg-neutral square sm-square-2 md-square-3 brx brw-d2 br-white"></td>
+                <td class="bg-neutral-1 square sm-square-2 md-square-3"></td>
+                <td class="bg-neutral-2 square sm-square-2 md-square-3"></td>
+                <td class="bg-neutral-3 square sm-square-2 md-square-3"></td>
+                <td class="bg-neutral-4 square sm-square-2 md-square-3"></td>
+            </tr>
+            <tr>
+                <th class="middle normal">.primary </th>
+                <td class="bg-primary-d4 square sm-square-2 md-square-3"></td>
+                <td class="bg-primary-d3"></td>
+                <td class="bg-primary-d2"></td>
+                <td class="bg-primary-d1"></td>
+                <td class="bg-primary brx brw-d2 br-white"></td>
+                <td class="bg-primary-1"></td>
+                <td class="bg-primary-2"></td>
+                <td class="bg-primary-3"></td>
+                <td class="bg-primary-4"></td>
+            </tr>
+            <tr>
+                <th class="middle normal">.accent-one </th>
+                <td class="bg-accent-one-d4 square sm-square-2 md-square-3"></td>
+                <td class="bg-accent-one-d3"></td>
+                <td class="bg-accent-one-d2"></td>
+                <td class="bg-accent-one-d1"></td>
+                <td class="bg-accent-one brx brw-d2 br-white"></td>
+                <td class="bg-accent-one-1"></td>
+                <td class="bg-accent-one-2"></td>
+                <td class="bg-accent-one-3"></td>
+                <td class="bg-accent-one-4"></td>
+            </tr>
+            <tr>
+                <th class="middle normal">.accent-two </th>
+                <td class="bg-accent-two-d4 square sm-square-2 md-square-3"></td>
+                <td class="bg-accent-two-d3"></td>
+                <td class="bg-accent-two-d2"></td>
+                <td class="bg-accent-two-d1"></td>
+                <td class="bg-accent-two brx brw-d2 br-white"></td>
+                <td class="bg-accent-two-1"></td>
+                <td class="bg-accent-two-2"></td>
+                <td class="bg-accent-two-3"></td>
+                <td class="bg-accent-two-4"></td>
+            </tr>
+            <tr>
+                <th class="middle normal">.accent-three </th>
+                <td class="bg-accent-three-d4 square sm-square-2 md-square-3"></td>
+                <td class="bg-accent-three-d3"></td>
+                <td class="bg-accent-three-d2"></td>
+                <td class="bg-accent-three-d1"></td>
+                <td class="bg-accent-three brx brw-d2 br-white"></td>
+                <td class="bg-accent-three-1"></td>
+                <td class="bg-accent-three-2"></td>
+                <td class="bg-accent-three-3"></td>
+                <td class="bg-accent-three-4"></td>
+            </tr>
+        </table>
+        <p class="max-width-sm">Set color, background-color and border-color by applying the naming conventions:</p>
+
+        <table class="br-separate mrb-3">
+            <tr>
+                <th class="normal left">Color</th>
+                <th class="normal center">Background</th>
+                <th class="normal center">Border</th>
+                <th class="normal">Refine</th>
+            </tr>
+            <tr>
+                <td class="neutral code middle left">.neutral</td>
+                <td class="bg-neutral white code middle center">.bg-neutral</td>
+                <td class="br brw-d3 neutral br-neutral code middle center">.br-neutral</td>
+                <td class="neutral"><code>neutral-d4</code> to <code>neutral-4</code></td>
+            </tr>
+            <tr>
+                <td class="primary code middle left">.primary</td>
+                <td class="bg-primary white code middle center">.bg-primary</td>
+                <td class="primary br-primary br brw-d3 code middle center">.br-primary</td>
+                <td class="primary"><code>primary-d4</code> to <code>primary-4</code></td>
+            </tr>
+            <tr>
+                <td class="accent-one code middle left">.accent-one</td>
+                <td class="bg-accent-one white code middle center">.bg-accent-one</td>
+                <td class="accent-one br-accent-one br brw-d3 code middle center">.br-accent-one</td>
+                <td class="accent-one"><code>accent-one-d4</code> to <code>accent-one-4</code></td>
+            </tr>
+            <tr>
+                <td class="accent-two code middle left">.accent-two</td>
+                <td class="bg-accent-two white code middle center">.bg-accent-two</td>
+                <td class="accent-two br-accent-two br brw-d3 code middle center">.br-accent-two</td>
+                <td class="accent-two"><code>accent-two-d4</code> to <code>accent-two-4</code></td>
+            </tr>
+            <tr>
+                <td class="accent-three code middle left">.accent-three</td>
+                <td class="bg-accent-three white code middle center">.bg-accent-three</td>
+                <td class="accent-three br-accent-three br brw-d3 code middle center">.br-accent-three</td>
+                <td class="accent-three"><code>accent-three-d4</code> to
+                    <code>accent-three-4</code></td>
+            </tr>
+
+        </table>
+        <div class="max-width-sm">
+            <p>In addition there are four colors available, which can also be used as color, background-color and
+                border-color but do not allow further refinement:</p>
+            <ul class="reset">
+                <li>
+                    <div class="square bg-base-color inline-block mrr"></div><code>.base-color</code> (which is default text-color)
+                </li>
+                <li>
+                    <div class="square br br-base-color inline-block mrr"></div><code>.base-background</code>
+                </li>
+                <li>
+                    <div class="square bg-black inline-block mrr"></div><code>.black</code>
+                </li>
+                <li>
+                    <div class="square br br-base-color inline-block mrr"></div><code>.white</code>
+                </li>
+            </ul>
+            <p>The colorsystem is built around the five colors:</p>
+            <ul class="reset">
+                <li>
+                    <div class="square bg-neutral inline-block mrr"></div>neutral
+                </li>
+                <li>
+                    <div class="square bg-primary inline-block mrr"></div>primary
+                </li>
+                <li>
+                    <div class="square bg-accent-one inline-block mrr"></div>accent one
+                </li>
+                <li>
+                    <div class="square bg-accent-two inline-block mrr"></div>accent two
+                </li>
+                <li>
+                    <div class="square bg-accent-three inline-block mrr"></div>accent three
+                </li>
+            </ul>
+            <p>To define your own color palette, change the colors by providing their hsl color code.</p>
+            <pre class="max-width-sm">
+:root {
+    --neutral-h: 0;
+    --neutral-s: 0%;
+    --neutral-l: 53%;              
+    
+    --primary-h: 213;
+    --primary-s: 19%;
+    --primary-l: 60%;  
+    
+    --accent-one-h:67;
+    --accent-one-s:19%;
+    --accent-one-l:57%;  
+
+    --accent-two-h: 28;
+    --accent-two-s: 71%;
+    --accent-two-l: 50%;
+    
+    --accent-three-h: 56;
+    --accent-three-s: 75%;
+    --accent-three-l: 60%; 
+}
+</pre>
+        </div>
+    </div>
+    </div>>
+
     <div class="breakout-l">
+
         <h2 id="white-space">White Space</h2>
 
         <h3>Notation</h3>
@@ -607,57 +790,57 @@ figure
         <h3>Margin</h3>
         <div class="x-12 gp-1 max-width-rg">
             <div class="xx-12">
-                <div class="br inline-block">
-                    <div class="square-3 bg-neutral-4 mr-0 inline-block"></div>
+                <div class="br inline-block middle">
+                    <div class="square-3 bg-neutral-4 mr-0 inline-block middle"></div>
                 </div>
                 <div class="code">.mr-0</div>
             </div>
 
             <div class="xx-12 sm-xx-3">
-                <div class="br inline-block">
-                    <div class="square-3 bg-neutral-4 mr inline-block"></div>
+                <div class="br inline-block middle">
+                    <div class="square-3 bg-neutral-4 mr inline-block middle"></div>
                 </div>
                 <div><code>.mr</code> <small>(1rem)</small></div>
             </div>
 
             <div class="xx-12 sm-xx-3">
-                <div class="br inline-block">
-                    <div class="square-3 bg-neutral-4 mry inline-block"></div>
+                <div class="br inline-block middle">
+                    <div class="square-3 bg-neutral-4 mry inline-block middle"></div>
                 </div>
                 <div class="code">.mry</div>
             </div>
 
             <div class="xx-12 sm-xx-6">
-                <div class="br inline-block">
-                    <div class="square-3 bg-neutral-4 mrx inline-block"></div>
+                <div class="br inline-block middle">
+                    <div class="square-3 bg-neutral-4 mrx inline-block middle"></div>
                 </div>
                 <div class="code">.mrx</div>
             </div>
 
             <div class="xx-12 sm-xx-3">
-                <div class="br inline-block">
-                    <div class="square-3 bg-neutral-4 mrt inline-block"></div>
+                <div class="br inline-block middle">
+                    <div class="square-3 bg-neutral-4 mrt inline-block middle"></div>
                 </div>
                 <div class="code">.mrt</div>
             </div>
 
             <div class="xx-12 sm-xx-3">
-                <div class="br inline-block">
-                    <div class="square-3 bg-neutral-4 mrr inline-block"></div>
+                <div class="br inline-block middle">
+                    <div class="square-3 bg-neutral-4 mrr inline-block middle"></div>
                 </div>
                 <div class="code">.mrr</div>
             </div>
 
             <div class="xx-12 sm-xx-3">
-                <div class="br inline-block">
-                    <div class="square-3 bg-neutral-4 mrb inline-block"></div>
+                <div class="br inline-block middle">
+                    <div class="square-3 bg-neutral-4 mrb inline-block middle"></div>
                 </div>
                 <div class="code">.mrb</div>
             </div>
 
             <div class="xx-12 sm-xx-3">
-                <div class="br inline-block">
-                    <div class="square-3 bg-neutral-4 mrl inline-block"></div>
+                <div class="br inline-block middle">
+                    <div class="square-3 bg-neutral-4 mrl inline-block middle"></div>
                 </div>
                 <div class="code">.mrl</div>
             </div>
@@ -665,29 +848,29 @@ figure
             <div>Negative margins are supported:</div>
 
             <div class="xx-12 sm-xx-3">
-                <div class="br inline-block">
-                    <div class="square-3 bg-neutral-4 mrtn inline-block"></div>
+                <div class="br inline-block middle">
+                    <div class="square-3 bg-neutral-4 mrtn inline-block middle"></div>
                 </div>
                 <div class="code">.mrtn</div>
             </div>
 
             <div class="xx-12 sm-xx-3">
-                <div class="br inline-block">
-                    <div class="square-3 bg-neutral-4 mrrn inline-block"></div>
+                <div class="br inline-block middle">
+                    <div class="square-3 bg-neutral-4 mrrn inline-block middle"></div>
                 </div>
                 <div class="code">.mrrn</div>
             </div>
 
             <div class="xx-12 sm-xx-3">
-                <div class="br inline-block">
-                    <div class="square-3 bg-neutral-4 mrbn inline-block"></div>
+                <div class="br inline-block middle">
+                    <div class="square-3 bg-neutral-4 mrbn inline-block middle"></div>
                 </div>
                 <div class="code">.mrbn</div>
             </div>
 
             <div class="xx-12 sm-xx-3">
-                <div class="br inline-block">
-                    <div class="square-3 bg-neutral-4 mrln inline-block"></div>
+                <div class="br inline-block middle">
+                    <div class="square-3 bg-neutral-4 mrln inline-block middle"></div>
                 </div>
                 <div class="code">.mrln</div>
             </div>
@@ -718,71 +901,71 @@ figure
             <div>The margin patterns can be applied to decreased and increased margins:</div>
 
             <div>
-                <div class="br inline-block">
-                    <div class="square-3 bg-neutral-4 mr-d5 inline-block"></div>
+                <div class="br inline-block middle">
+                    <div class="square-3 bg-neutral-4 mr-d5 inline-block middle"></div>
                 </div>
                 <div><code>.mr-d5</code> <small>(1px)</small></div>
             </div>
 
             <div>
-                <div class="br inline-block">
-                    <div class="square-3 bg-neutral-4 mr-d4 inline-block"></div>
+                <div class="br inline-block middle">
+                    <div class="square-3 bg-neutral-4 mr-d4 inline-block middle"></div>
                 </div>
                 <div><code>.mr-d4</code> <small>(2px)</small></div>
             </div>
 
             <div>
-                <div class="br inline-block">
-                    <div class="square-3 bg-neutral-4 mr-d3 inline-block"></div>
+                <div class="br inline-block middle">
+                    <div class="square-3 bg-neutral-4 mr-d3 inline-block middle"></div>
                 </div>
                 <div><code>.mr-d3</code> <small>(3px)</small></div>
             </div>
 
             <div>
-                <div class="br inline-block">
-                    <div class="square-3 bg-neutral-4 mr-d2 inline-block"></div>
+                <div class="br inline-block middle">
+                    <div class="square-3 bg-neutral-4 mr-d2 inline-block middle"></div>
                 </div>
                 <div class="code">.mr-d2</div>
             </div>
 
             <div>
-                <div class="br inline-block">
-                    <div class="square-3 bg-neutral-4 mr-d1 inline-block"></div>
+                <div class="br inline-block middle">
+                    <div class="square-3 bg-neutral-4 mr-d1 inline-block middle"></div>
                 </div>
                 <div class="code">.mr-d1</div>
             </div>
 
             <div>
-                <div class="br inline-block">
-                    <div class="square-3 bg-neutral-4 mr inline-block"></div>
+                <div class="br inline-block middle">
+                    <div class="square-3 bg-neutral-4 mr inline-block middle"></div>
                 </div>
                 <div><code>.mr</code> <small>(1rem)</small></div>
             </div>
 
             <div>
-                <div class="br inline-block">
-                    <div class="square-3 bg-neutral-4 mr-1 inline-block"></div>
+                <div class="br inline-block middle">
+                    <div class="square-3 bg-neutral-4 mr-1 inline-block middle"></div>
                 </div>
                 <div class="code">.mr-1</div>
             </div>
 
             <div>
-                <div class="br inline-block">
-                    <div class="square-3 bg-neutral-4 mr-2 inline-block"></div>
+                <div class="br inline-block middle">
+                    <div class="square-3 bg-neutral-4 mr-2 inline-block middle"></div>
                 </div>
                 <div class="code">.mr-2</div>
             </div>
 
             <div>
-                <div class="br inline-block">
-                    <div class="square-3 bg-neutral-4 mr-3 inline-block"></div>
+                <div class="br inline-block middle">
+                    <div class="square-3 bg-neutral-4 mr-3 inline-block middle"></div>
                 </div>
                 <div class="code">.mr-3</div>
             </div>
 
             <div>
-                <div class="br inline-block">
-                    <div class="square-3 bg-neutral-4 mr-4 inline-block"></div>
+                <div class="br inline-block middle">
+                    <div class="square-3 bg-neutral-4 mr-4 inline-block middle"></div>
                 </div>
                 <div class="code">.mr-4</div>
             </div>
@@ -1392,327 +1575,236 @@ figure
 
     </div>
 
-    <td class="breakout-l">
-        <h2 id="colors">Colors</h2>
-        <table class="code" style="width:100%;">
-            <tr class="center pdx-0">
-                <th></th>
-                <th class="normal">d4</th>
-                <th class="normal">d3</th>
-                <th class="normal">d2</th>
-                <th class="normal">d1</th>
-                <th class="normal brx brw-d2 br-white"></th>
-                <th class="normal">1</th>
-                <th class="normal">2</th>
-                <th class="normal">3</th>
-                <th class="normal">4</th>
-            </tr>
-            <tr>
-                <th class="middle normal">.neutral </th>
-                <td class="bg-neutral-d4 pd-d2"></td>
-                <td class="bg-neutral-d3 pd-d2"></td>
-                <td class="bg-neutral-d2 pd-d2"></td>
-                <td class="bg-neutral-d1 pd-d2"></td>
-                <td class="bg-neutral pd-d2 brx brw-d2 br-white"></td>
-                <td class="bg-neutral-1 pd-d2"></td>
-                <td class="bg-neutral-2 pd-d2"></td>
-                <td class="bg-neutral-3 pd-d2"></td>
-                <td class="bg-neutral-4 pd-d2"></td>
-            </tr>
-            <tr>
-                <th class="middle normal">.primary </th>
-                <td class="bg-primary-d4"></td>
-                <td class="bg-primary-d3"></td>
-                <td class="bg-primary-d2"></td>
-                <td class="bg-primary-d1"></td>
-                <td class="bg-primary brx brw-d2 br-white"></td>
-                <td class="bg-primary-1"></td>
-                <td class="bg-primary-2"></td>
-                <td class="bg-primary-3"></td>
-                <td class="bg-primary-4"></td>
-            </tr>
-            <tr>
-                <th class="middle normal">.accent-one </th>
-                <td class="bg-accent-one-d4"></td>
-                <td class="bg-accent-one-d3"></td>
-                <td class="bg-accent-one-d2"></td>
-                <td class="bg-accent-one-d1"></td>
-                <td class="bg-accent-one brx brw-d2 br-white"></td>
-                <td class="bg-accent-one-1"></td>
-                <td class="bg-accent-one-2"></td>
-                <td class="bg-accent-one-3"></td>
-                <td class="bg-accent-one-4"></td>
-            </tr>
-            <tr>
-                <th class="middle normal">.accent-two </th>
-                <td class="bg-accent-two-d4"></td>
-                <td class="bg-accent-two-d3"></td>
-                <td class="bg-accent-two-d2"></td>
-                <td class="bg-accent-two-d1"></td>
-                <td class="bg-accent-two brx brw-d2 br-white"></td>
-                <td class="bg-accent-two-1"></td>
-                <td class="bg-accent-two-2"></td>
-                <td class="bg-accent-two-3"></td>
-                <td class="bg-accent-two-4"></td>
-            </tr>
-            <tr>
-                <th class="middle normal">.accent-three </th>
-                <td class="bg-accent-three-d4"></td>
-                <td class="bg-accent-three-d3"></td>
-                <td class="bg-accent-three-d2"></td>
-                <td class="bg-accent-three-d1"></td>
-                <td class="bg-accent-three brx brw-d2 br-white"></td>
-                <td class="bg-accent-three-1"></td>
-                <td class="bg-accent-three-2"></td>
-                <td class="bg-accent-three-3"></td>
-                <td class="bg-accent-three-4"></td>
-            </tr>
-        </table>
 
+    <h2 id="grid">Grid</h2>
 
-        <p class="mrt"><code>.&lt;color&gt;</code> <small>to assign text color</small></p>
-        <p><code>.bg-&lt;color&gt;</code> <small> to assign background color</small></p>
-        <p><code>.br-&lt;color&gt;</code> <small> to assign border color</small></p>
-        <p><code>.fl-&lt;color&gt;</code> <small> to assign svg fill color</small></p>
-        <p><code>.st-&lt;color&gt;</code> <small> to assign svg stroke color</small></p>
-        <p><code>.base-color</code> <small> is default text color</small></p>
-        <p><code>.base-background</code> <small> is default background color</small></p>
-
-        <p><code>.brighter</code> <code>.darker</code> <code>.grayscale</code>
-            <small>and</small> <code>.no-filter</code> <small>will manipulate color filters</small></p>
-        </div>
-
-
-
-        <h2 id="grid">Grid</h2>
-
-        <h3>Middle Content</h3>
-        <p><code>.x *</code></p>
-        <p>Middle content is the default positioning of any item within the layout. Middle content doesn´t need a
-            specific css class assignment to get positioned this way.</p>
-        </div>
+    <h3>Middle Content</h3>
+    <p><code>.x *</code></p>
+    <p>Middle content is the default positioning of any item within the layout. Middle content doesn´t need a
+        specific css class assignment to get positioned this way.</p>
+    </div>
 
 
 
 
-        <!-- Code Example -->
-        <div class="full bry br-dotted br-gray mono">
-            &lt;div class="x"&gt;
-            <div class="x">
-                <div class="middle indicator">
-                    &lt;div&gt;&lt;/div&gt;
-                </div>
+    <!-- Code Example -->
+    <div class="full bry br-dotted br-gray mono">
+        &lt;div class="x"&gt;
+        <div class="x">
+            <div class="middle indicator">
+                &lt;div&gt;&lt;/div&gt;
             </div>
-            &lt;/div&gt;
         </div>
+        &lt;/div&gt;
+    </div>
 
-        <div>
-            <h3>Breakout Left Content</h3>
-            <p><code>.x .breakout-l</code></p>
-            <p>Breakout left content is pushed a little bit to the left and will give more space for the things you want
-                to display.</p>
-        </div>
+    <div>
+        <h3>Breakout Left Content</h3>
+        <p><code>.x .breakout-l</code></p>
+        <p>Breakout left content is pushed a little bit to the left and will give more space for the things you want
+            to display.</p>
+    </div>
 
-        <!-- Code Example -->
-        <div class="full bry br-dotted br-small br-gray mono">
-            &lt;div class="x"&gt;
-            <div class="x">
-                <div class="breakout-l indicator">
-                    &lt;div class="breakout-l"&gt;&lt;/div&gt;
-                </div>
+    <!-- Code Example -->
+    <div class="full bry br-dotted br-small br-gray mono">
+        &lt;div class="x"&gt;
+        <div class="x">
+            <div class="breakout-l indicator">
+                &lt;div class="breakout-l"&gt;&lt;/div&gt;
             </div>
-            &lt;/div&gt;
         </div>
+        &lt;/div&gt;
+    </div>
 
-        <div>
-            <h3>Breakout Right Content</h3>
-            <p><code>.x .breakout-r</code></p>
-            <p>Breakout right content is pushed a little bit to the right and will give more space for the things you
-                want to display.
-            </p>
-        </div>
+    <div>
+        <h3>Breakout Right Content</h3>
+        <p><code>.x .breakout-r</code></p>
+        <p>Breakout right content is pushed a little bit to the right and will give more space for the things you
+            want to display.
+        </p>
+    </div>
 
-        <!-- Code Example -->
-        <div class="full bry br-dotted br-small br-gray mono">
-            &lt;div class="x"&gt;
-            <div class="x">
-                <div class="breakout-r indicator">
-                    &lt;div class="breakout-r"&gt;&lt;/div&gt;
-                </div>
+    <!-- Code Example -->
+    <div class="full bry br-dotted br-small br-gray mono">
+        &lt;div class="x"&gt;
+        <div class="x">
+            <div class="breakout-r indicator">
+                &lt;div class="breakout-r"&gt;&lt;/div&gt;
             </div>
-            &lt;/div&gt;
         </div>
+        &lt;/div&gt;
+    </div>
 
-        <div>
-            <h3>Breakout Content = Left and Right</h3>
-            <p><code>.x .breakout</code></p>
-            <p>Breakout content is the combination of left and right content.</p>
-        </div>
+    <div>
+        <h3>Breakout Content = Left and Right</h3>
+        <p><code>.x .breakout</code></p>
+        <p>Breakout content is the combination of left and right content.</p>
+    </div>
 
-        <!-- Code Example -->
-        <div class="full bry br-dotted br-small br-gray mono">
-            &lt;div class="x"&gt;
-            <div class="x">
-                <div class="breakout indicator">
-                    &lt;div class="breakout"&gt;&lt;/div&gt;
-                </div>
+    <!-- Code Example -->
+    <div class="full bry br-dotted br-small br-gray mono">
+        &lt;div class="x"&gt;
+        <div class="x">
+            <div class="breakout indicator">
+                &lt;div class="breakout"&gt;&lt;/div&gt;
             </div>
-            &lt;/div&gt;
         </div>
+        &lt;/div&gt;
+    </div>
 
-        <div>
-            <h3>Wide content</h3>
-            <p><code>.x .wide</code></p>
-            <p>Wide content is pushing things further in that it nearly takes the full width of the screen, except of a
-                small margin to the window border.</p>
-        </div>
+    <div>
+        <h3>Wide content</h3>
+        <p><code>.x .wide</code></p>
+        <p>Wide content is pushing things further in that it nearly takes the full width of the screen, except of a
+            small margin to the window border.</p>
+    </div>
 
-        <!-- Code Example-->
-        <div class="full bry br-dotted br-small br-gray mono">
-            &lt;div class="x"&gt;
-            <div class="x">
-                <div class="wide indicator">
-                    &lt;div class="wide"&gt;&lt;/div&gt;
-                </div>
+    <!-- Code Example-->
+    <div class="full bry br-dotted br-small br-gray mono">
+        &lt;div class="x"&gt;
+        <div class="x">
+            <div class="wide indicator">
+                &lt;div class="wide"&gt;&lt;/div&gt;
             </div>
-            &lt;/div&gt;
         </div>
+        &lt;/div&gt;
+    </div>
 
 
-        <div>
-            <h3>Full Content</h3>
-            <p><code>.x .full</code></p>
-            <p>Full content will use the entire width of the screen.</p>
-        </div>
-        <!-- Code Example -->
-        <div class="full bry br-dotted br-small br-gray mono">
-            &lt;div class="x"&gt;
-            <div class="x">
-                <div class="full indicator">
-                    &lt;div class="full"&gt;&lt;/div&gt;
-                </div>
+    <div>
+        <h3>Full Content</h3>
+        <p><code>.x .full</code></p>
+        <p>Full content will use the entire width of the screen.</p>
+    </div>
+    <!-- Code Example -->
+    <div class="full bry br-dotted br-small br-gray mono">
+        &lt;div class="x"&gt;
+        <div class="x">
+            <div class="full indicator">
+                &lt;div class="full"&gt;&lt;/div&gt;
             </div>
-            &lt;/div&gt;
         </div>
+        &lt;/div&gt;
+    </div>
 
-        <div class="breakout-l">
-            <h3>12 Column Grid</h3>
-            <div class="max-width-rg">
-                <p>Any space can be divided horizontally into 12ths.</p>
-                <p>The sum of the cols per row has to add up to 12. Not specifiying a column size will result in taking
-                    the
-                    entire grid width into one column.</p>
-            </div>
-            <pre>div .x-12 
+    <div class="breakout-l">
+        <h3>12 Column Grid</h3>
+        <div class="max-width-rg">
+            <p>Any space can be divided horizontally into 12ths.</p>
+            <p>The sum of the cols per row has to add up to 12. Not specifiying a column size will result in taking
+                the
+                entire grid width into one column.</p>
+        </div>
+        <pre>div .x-12 
     div/ .xx-2 
     div/ .xx-10 //.xx-2 and .xx-10 together will fill an entire row           
     div/ .xx-12 //will fill an entire row 
     div/        //will also fill an entire row 
 /div</pre>
 
-            <div class="x-12 mry-1 gp center code">
-                <div class="xx-2 br pdy-1">.xx-2</div>
-                <div class="xx-10 br pdy-1">.xx-10</div>
-                <div class="xx-3 br pdy-1">.xx-3</div>
-                <div class="xx-9 br pdy-1">.xx-9</div>
-                <div class="xx-4 br pdy-1">.xx-4</div>
-                <div class="xx-8 br pdy-1">.xx-8</div>
-                <div class="xx-5 br pdy-1">.xx-5</div>
-                <div class="xx-7 br pdy-1">.xx-7</div>
-                <div class="xx-6 br pdy-1">.xx-6</div>
-                <div class="xx-6 br pdy-1">.xx-6</div>
-                <div class="xx-4 br pdy-1">.xx-4</div>
-                <div class="xx-4 br pdy-1">.xx-4</div>
-                <div class="xx-4 br pdy-1">.xx-4</div>
-                <div class="xx-3 br pdy-1">.xx-3</div>
-                <div class="xx-3 br pdy-1">.xx-3</div>
-                <div class="xx-3 br pdy-1">.xx-3</div>
-                <div class="xx-3 br pdy-1">.xx-3</div>
-                <div class="xx-2 br pdy-1">.xx-2</div>
-                <div class="xx-2 br pdy-1">.xx-2</div>
-                <div class="xx-2 br pdy-1">.xx-2</div>
-                <div class="xx-2 br pdy-1">.xx-2</div>
-                <div class="xx-2 br pdy-1">.xx-2</div>
-                <div class="xx-2 br pdy-1">.xx-2</div>
-                <div class="xx-12 br pdy-1">.xx-12</div>
-            </div>
-
-            <p class="mrt max-width-rg">It is possible to have differently sized columns based on minimum screen width.
-                Address
-                the
-                different minimum screen sizes with column prefix values of <code>lg-</code> (for at least large size),
-                <code>md-</code> (for at least
-                medium size),
-
-                <code>rg-</code> (for at least regular size) and <code>sm-</code> (for at least small size). A column
-                class without a prefix will be used in case the alternate minimum screen size is not present.
-            </p>
-
-            <div class="x-12 mry-1 gp center code">
-                <div class="xx-12 rg-xx-6 lg-xx-4 br pdy-1">.xx-12 .rg-xx-6 .lg-xx-4</div>
-                <div class="xx-12 rg-xx-6 lg-xx-8 br pdy-1">.xx-12 .rg-xx-6 .lg-xx-8</div>
-            </div>
-
-
-            <h3>Columns</h3>
-            <p><code>.columns *</code></p>
-            <p>Elements will be displayed in columns. The number of columns depends on the available width.</p>
-
+        <div class="x-12 mry-1 gp center code">
+            <div class="xx-2 br pdy-1">.xx-2</div>
+            <div class="xx-10 br pdy-1">.xx-10</div>
+            <div class="xx-3 br pdy-1">.xx-3</div>
+            <div class="xx-9 br pdy-1">.xx-9</div>
+            <div class="xx-4 br pdy-1">.xx-4</div>
+            <div class="xx-8 br pdy-1">.xx-8</div>
+            <div class="xx-5 br pdy-1">.xx-5</div>
+            <div class="xx-7 br pdy-1">.xx-7</div>
+            <div class="xx-6 br pdy-1">.xx-6</div>
+            <div class="xx-6 br pdy-1">.xx-6</div>
+            <div class="xx-4 br pdy-1">.xx-4</div>
+            <div class="xx-4 br pdy-1">.xx-4</div>
+            <div class="xx-4 br pdy-1">.xx-4</div>
+            <div class="xx-3 br pdy-1">.xx-3</div>
+            <div class="xx-3 br pdy-1">.xx-3</div>
+            <div class="xx-3 br pdy-1">.xx-3</div>
+            <div class="xx-3 br pdy-1">.xx-3</div>
+            <div class="xx-2 br pdy-1">.xx-2</div>
+            <div class="xx-2 br pdy-1">.xx-2</div>
+            <div class="xx-2 br pdy-1">.xx-2</div>
+            <div class="xx-2 br pdy-1">.xx-2</div>
+            <div class="xx-2 br pdy-1">.xx-2</div>
+            <div class="xx-2 br pdy-1">.xx-2</div>
+            <div class="xx-12 br pdy-1">.xx-12</div>
         </div>
 
-        <!-- Code Example -->
-        <div class="full bry br-dotted br-small br-gray mono mb">
-            &lt;div class="x"&gt;
-            <div class="x">
-                <div class="breakout-r indicator">
-                    &lt;div class="breakout-r columns-2"&gt;&lt;/div&gt;
-                </div>
-            </div>
-            &lt;/div&gt;
+        <p class="mrt max-width-rg">It is possible to have differently sized columns based on minimum screen width.
+            Address
+            the
+            different minimum screen sizes with column prefix values of <code>lg-</code> (for at least large size),
+            <code>md-</code> (for at least
+            medium size),
+
+            <code>rg-</code> (for at least regular size) and <code>sm-</code> (for at least small size). A column
+            class without a prefix will be used in case the alternate minimum screen size is not present.
+        </p>
+
+        <div class="x-12 mry-1 gp center code">
+            <div class="xx-12 rg-xx-6 lg-xx-4 br pdy-1">.xx-12 .rg-xx-6 .lg-xx-4</div>
+            <div class="xx-12 rg-xx-6 lg-xx-8 br pdy-1">.xx-12 .rg-xx-6 .lg-xx-8</div>
         </div>
 
-        <div class="breakout-r columns-1 rg-columns-2 lg-columns-3 indent gpx-2">
-            <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines
-                Morgens verhaftet. »Wie ein Hund!« sagte er, es war, als sollte die Scham ihn überleben. Als Gregor
-                Samsa eines Morgens aus
-                unruhigen
-                Träumen
-                erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.
-            </p>
-            <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt
-                die Tochter als erste sich erhob und ihren
-                jungen
-                Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden und
-                überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat. Sie hätten
-                noch ins Boot springen
-                können,
-                aber der Reisende hob ein schweres, geknotetes Tau vom Boden, drohte ihnen damit und hielt sie dadurch
-                von dem Sprunge ab. In den letzten Jahrzehnten ist das Interesse an Hungerkünstlern sehr zurückgegangen.
-                Aber sie
-                überwanden
-                sich,
-                umdrängten
-                den Käfig und wollten sich gar nicht fortrühren.Jemand musste Josef K. verleumdet haben, denn ohne dass
-                er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund!« sagte er, es war, als
-                sollte die Scham ihn
-                überleben.</p>
-            <p>Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem
-                ungeheueren Ungeziefer verwandelt. Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten
-                Absichten, als am Ziele
-                ihrer
-                Fahrt
-                die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«,
-                sagte der Offizier zu dem Forschungsreisenden und überblickte mit einem gewissermaßen bewundernden Blick
-                den ihm doch
-                wohlbekannten
-                Apparat.
-                Sie hätten noch ins Boot springen können, aber der Reisende hob ein schweres, geknotetes Tau vom Boden,
-                drohte ihnen damit und hielt sie dadurch von dem Sprunge ab. In den letzten Jahrzehnten ist das
-                Interesse an
-                Hungerkünstlern
-                sehr
-                zurückgegangen.</p>
+
+        <h3>Columns</h3>
+        <p><code>.columns *</code></p>
+        <p>Elements will be displayed in columns. The number of columns depends on the available width.</p>
+
+    </div>
+
+    <!-- Code Example -->
+    <div class="full bry br-dotted br-small br-gray mono mb">
+        &lt;div class="x"&gt;
+        <div class="x">
+            <div class="breakout-r indicator">
+                &lt;div class="breakout-r columns-2"&gt;&lt;/div&gt;
+            </div>
         </div>
+        &lt;/div&gt;
+    </div>
+
+    <div class="breakout-r columns-1 rg-columns-2 lg-columns-3 indent gpx-2">
+        <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines
+            Morgens verhaftet. »Wie ein Hund!« sagte er, es war, als sollte die Scham ihn überleben. Als Gregor
+            Samsa eines Morgens aus
+            unruhigen
+            Träumen
+            erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.
+        </p>
+        <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt
+            die Tochter als erste sich erhob und ihren
+            jungen
+            Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden und
+            überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat. Sie hätten
+            noch ins Boot springen
+            können,
+            aber der Reisende hob ein schweres, geknotetes Tau vom Boden, drohte ihnen damit und hielt sie dadurch
+            von dem Sprunge ab. In den letzten Jahrzehnten ist das Interesse an Hungerkünstlern sehr zurückgegangen.
+            Aber sie
+            überwanden
+            sich,
+            umdrängten
+            den Käfig und wollten sich gar nicht fortrühren.Jemand musste Josef K. verleumdet haben, denn ohne dass
+            er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund!« sagte er, es war, als
+            sollte die Scham ihn
+            überleben.</p>
+        <p>Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem
+            ungeheueren Ungeziefer verwandelt. Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten
+            Absichten, als am Ziele
+            ihrer
+            Fahrt
+            die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«,
+            sagte der Offizier zu dem Forschungsreisenden und überblickte mit einem gewissermaßen bewundernden Blick
+            den ihm doch
+            wohlbekannten
+            Apparat.
+            Sie hätten noch ins Boot springen können, aber der Reisende hob ein schweres, geknotetes Tau vom Boden,
+            drohte ihnen damit und hielt sie dadurch von dem Sprunge ab. In den letzten Jahrzehnten ist das
+            Interesse an
+            Hungerkünstlern
+            sehr
+            zurückgegangen.</p>
+    </div>
 
 
 

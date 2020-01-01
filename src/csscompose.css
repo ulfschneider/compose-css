@@ -3,6 +3,7 @@
 @import "table";
 @import "grid";
 @import "layout";
+@import "hide";
 @import "type-scale";
 @import "typography";
 @import "colors";
