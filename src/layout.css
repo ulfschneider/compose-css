@@ -112,6 +112,10 @@
   max-width: var(--large-width);
 }
 
+.max-width-unset {
+  max-width: unset;
+}
+
 .border-box {
   box-sizing: border-box;
 }
