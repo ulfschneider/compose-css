@@ -30,9 +30,9 @@
   --primary-3: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 3 * var(--primary-step)));
   --primary-4: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 4 * var(--primary-step)));
 
-  --accent-one-h: 67;
-  --accent-one-s: 19%;
-  --accent-one-l: 57%;  
+  --accent-one-h: 3;
+  --accent-one-s: 100%;
+  --accent-one-l: 61%;  
   --accent-one-step: calc((100% - var(--accent-one-l)) * var(--color-step-factor));
 
   --accent-one-d4: hsl(var(--accent-one-h), var(--accent-one-s), calc(var(--accent-one-l) - 4 * var(--accent-one-step)));
@@ -47,8 +47,8 @@
 
 
   --accent-two-h: 28;
-  --accent-two-s: 71%;
-  --accent-two-l: 50%;  
+  --accent-two-s: 100%;
+  --accent-two-l: 55%;  
   --accent-two-step: calc((100% - var(--accent-two-l)) * var(--color-step-factor));
 
   --accent-two-d4: hsl(var(--accent-two-h), var(--accent-two-s), calc(var(--accent-two-l) - 4 * var(--accent-two-step)));
@@ -61,9 +61,9 @@
   --accent-two-3: hsl(var(--accent-two-h), var(--accent-two-s), calc(var(--accent-two-l) + 3 * var(--accent-two-step)));
   --accent-two-4: hsl(var(--accent-two-h), var(--accent-two-s), calc(var(--accent-two-l) + 4 * var(--accent-two-step)));
 
-  --accent-three-h: 56;
-  --accent-three-s: 75%;
-  --accent-three-l: 45%;  
+  --accent-three-h: 52;
+  --accent-three-s: 100%;
+  --accent-three-l: 50%;  
   --accent-three-step: calc((100% - var(--accent-three-l)) * var(--color-step-factor));
 
   --accent-three-d4: hsl(var(--accent-three-h), var(--accent-three-s), calc(var(--accent-three-l) - 4 * var(--accent-three-step)));
