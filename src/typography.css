@@ -412,8 +412,8 @@ pre {
   margin-bottom: var(--space);
   padding-top: var(--space-d1);
   padding-bottom: var(--space-d1);
-  border-top: var(--space-d5) dotted var(--gray);
-  border-bottom: var(--space-d5) dotted var(--gray);
+  border-top: var(--space-d5) dotted var(--neutral);
+  border-bottom: var(--space-d5) dotted var(--neutral);
   overflow: auto;
 }
 
@@ -436,7 +436,7 @@ blockquote {
   font-style: italic;
   border-left-style: solid;
   border-left-width: var(--space-d2);
-  border-color: var(--silver);
+  border-color: var(--neutral-4);
 }
 
 blockquote p {

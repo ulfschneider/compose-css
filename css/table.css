@@ -1,7 +1,7 @@
 :root{
-    --alternate-row-color:var(--silver);
-    --alternate-col-color:var(--silver);
-    --underline-row-color:var(--silver);
+    --alternate-row-color:var(--neutral-4);
+    --alternate-col-color:var(--neutral-4);
+    --underline-row-color:var(--neutral-4);
 }
 
 table{
@@ -13,7 +13,7 @@ table{
 }
 
 .alternate-rows tr:nth-child(even){
-    background:var(--silver);
+    background:var(--neutral-4);
     background:var(--alternate-row-color);
 }
 
@@ -22,7 +22,7 @@ table{
 }
 
 .alternate-cols col:nth-child(even){
-    background:var(--silver);
+    background:var(--neutral-4);
     background:var(--alternate-col-color);
 }
 
@@ -31,35 +31,35 @@ table{
 }
 
 .underline-rows tr{
-    border-bottom:1px solid var(--silver);
+    border-bottom:1px solid var(--neutral-4);
     border-bottom:1px solid var(--underline-row-color);
 }
 
-table tr td{
+td{
     vertical-align:top;
 }
 
-table tr th{
+th{
     vertical-align:top;
     font-weight:var(--font-weight-bold);
 }
 
-table tr th,
-table tr td{
+th,
+td{
     padding:var(--space-d2) var(--space-d1);
 }
 
-table tr th:first-child,
-table tr td:first-child{
+th:first-child,
+td:first-child{
     padding-left:0;
 }
 
-table tr th:last-child,
-table tr td:last-child{
+th:last-child,
+td:last-child{
     padding-right:0;
 }
 
-table thead+tbody+tr td{
+thead+tbody+tr td{
     padding-top:var(--space-2);
 }
 
@@ -158,21 +158,17 @@ table tr td.pdy-d1{
     padding-bottom:var(--space-d1);
 }
 
-table.pd-d2 tr th,
-table.pd-d2 tr td,
-table tr.pd-d2 th, 
-table tr.pd-d2 td,
-table tr th.pd-d2,
-table tr td.pd-d2{
+table.pd-d2 th,
+table.pd-d2 td,
+tr.pd-d2 th, 
+tr.pd-d2 td{
     padding:var(--space-d2);
 }
 
 table.pdx-d2 tr th,
 table.pdx-d2 tr td,
 table tr.pdx-d2 th, 
-table tr.pdx-d2 td,
-table tr th.pdx-d2,
-table tr td.pdx-d2{
+table tr.pdx-d2 td{
     padding-left:var(--space-d2);
     padding-right:var(--space-d2);
 }

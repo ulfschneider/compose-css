@@ -935,8 +935,8 @@
 }
 
 .pd-d2{
-  padding:0.38104rem;
-  padding:var(--space-d2);
+  padding:0.38104rem !important;
+  padding:var(--space-d2) !important;
 }
 
 .pdx-d2{
