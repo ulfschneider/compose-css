@@ -21,7 +21,7 @@ table {
 }
 
 .alternate-cols col:nth-child(even) {
-    background:  var(--alternate-col-color);
+    background: var(--alternate-col-color);
 }
 
 .alternate-cols col:nth-child(odd) {
@@ -64,5 +64,3 @@ td:last-child {
 .br-collapse {
     border-collapse: collapse;
 }
-
-

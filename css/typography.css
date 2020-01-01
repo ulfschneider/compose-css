@@ -7,7 +7,7 @@
   --font-family-mono:monospace;
   --link-text-decoration:underline;
   --text-underline-offset:0.25em;
-  --text-decoration-thickness:0.08em;
+  --text-decoration-thickness:0.05em;
   --font-variant-numeric:normal;
 
   --mrt-h1:var(--space-1);
@@ -37,7 +37,7 @@ sans-serif;
   font-weight:var(--font-weight-normal);
   text-underline-offset:0.25em;
   text-underline-offset:var(--text-underline-offset);
-  text-decoration-thickness:0.08em;
+  text-decoration-thickness:0.05em;
   text-decoration-thickness:var(--text-decoration-thickness);
   font-variant-numeric:normal;
   font-variant-numeric:var(--font-variant-numeric);
@@ -161,22 +161,27 @@ u{
 }
 
 .ft-num-ordinal{
+  font-feature-settings:ordn;
   font-variant-numeric:ordinal;
 }
 
 .ft-num-zero{
+  font-feature-settings:zero;
   font-variant-numeric:slashed-zero;
 }
 
 .ft-num-onum{
+  font-feature-settings:onum;
   font-variant-numeric:oldstyle-nums;
 }
 
 .ft-num-lnum{
+  font-feature-settings:lnum;
   font-variant-numeric:lining-nums;
 }
 
 .ft-num-tab{
+  font-feature-settings:tnum;
   font-variant-numeric:tabular-nums;
 }
 
@@ -348,7 +353,7 @@ ol li{
 }
 
 ol li::before{
-  content:counter(bold-number) ". ";  
+  content:counter(bold-number) ". ";
   margin-left:calc(var(--space-1)*-1);
   min-width:var(--space-1);
   display:inline-block;
@@ -365,16 +370,22 @@ ul li::before{
   margin-left:unset;
 }
 
+.indent ol,
 ol.indent,
+.indent ul,
 ul.indent{
   margin-top:1em;
   margin-bottom:1em;
-  padding-left:0;  
+  padding-left:0;
 }
 
+.indent ol ol,
 ol.indent ol,
+.indent ul ol,
 ul.indent ol,
+.indent ol ul,
 ol.indent ul,
+.indent ul ul,
 ul.indent ul{
   margin-top:0em;
   margin-bottom:0em;
@@ -409,19 +420,43 @@ p{
 .indent p{
   margin-top:0;
   margin-bottom:0;
-}
-
-.indent p+p{
   text-indent:var(--space-1);
 }
 
+.indent h2,
+.indent h3,
+.indent h4,
+.indent h5,
+.indent h6{
+  padding-left:var(--space-1);
+}
+
+h2.indent,
+h3.indent,
+h4.indent,
+h5.indent,
+h6.indent{
+  padding-left:var(--space-1);
+}
+
+.no-indent h2,
+.no-indent h3,
+.no-indent h4,
+.no-indent h5,
+h2.no-indent,
+h3.no-indent,
+h4.no-indent,
+h5.no-indent{
+  padding-left:0;
+}
+
 p.indent{
-  margin:0;
+  margin-top:0;
+  margin-bottom:0;
   text-indent:var(--space-1);
 }
 
 .no-indent p,
-.no-indent p+p,
 p.no-indent{
   text-indent:0;
   margin-top:1em;
@@ -475,9 +510,9 @@ pre{
 }
 
 a{
-  color:var(--link-color);
-  -webkit-text-decoration-color:var(--link-decoration-color);
-          text-decoration-color:var(--link-decoration-color);
+  color:unset;
+  -webkit-text-decoration-color:unset;
+          text-decoration-color:unset;
   text-decoration:underline;
   -webkit-text-decoration:var(--link-text-decoration);
           text-decoration:var(--link-text-decoration);
@@ -488,9 +523,6 @@ blockquote{
   margin:var(--space) 0;
   padding-left:var(--space-1);
   font-style:italic;
-  border-left-style:solid;
-  border-left-width:var(--space-d2);
-  border-color:var(--neutral-3);
 }
 
 blockquote p{

@@ -1,4 +1,4 @@
-:root{  
+:root{
   --border-width-default:var(--space-d5);
 
   --border-radius-d2:calc(var(--space)/4);
@@ -87,7 +87,8 @@
   border-width:var(--space-d5);
 }
 
-.brw-d4, .brw-default{
+.brw-d4,
+.brw-default{
   border-width:var(--space-d4);
 }
 
@@ -107,11 +108,13 @@
   border-width:var(--space);
 }
 
-.no-br-radius, .br-radius-0{
+.no-br-radius,
+.br-radius-0{
   border-radius:none;
 }
 
-.br-radius-d2, .rounded{
+.br-radius-d2,
+.rounded{
   border-radius:calc(var(--space)/4);
   border-radius:var(--border-radius-d2);
 }
@@ -153,4 +156,3 @@
   border-top-right-radius:0;
   border-bottom-right-radius:0;
 }
-

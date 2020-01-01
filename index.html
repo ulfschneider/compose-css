@@ -27,8 +27,8 @@
 
 <body class="x">
     <div class="full brb br-neutral-3 bg-neutral-4">
-        <header class="x caps small bold brb br-neutral-3 bg-neutral-4">
-            <div class="breakout-l md-columns-4 sm-columns-3 columns-2 lh-4 pdy">
+        <header class="x bg-neutral-4">
+            <div class="breakout-l md-columns-4 sm-columns-3 columns-2 lh-4 pdy caps small">
                 <div><a href="#notation" class="no-text-decoration">Notation</a></div>
                 <div><a href="#typography" class="no-text-decoration">Typography</a></div>
                 <div><a href="#colors" class="no-text-decoration">Colors</a></div>
@@ -44,7 +44,7 @@
 
         <div class="x mrt-2 mrb-3">
             <div class="breakout-l">
-                <h1 class="mrb-0 lh lg-fs-6 fw-700">CSS Compose</h1>
+                <h1 class="mrb-0 lh lg-fs-6 fw-700 caps lsp">CSS Compose</h1>
                 <p>A composable CSS Toolkit to build fast-loading, responsive web sites.</p>
             </div>
         </div>
@@ -122,6 +122,7 @@
         <div class="max-width-sm">
             <h3>Indented Paragraph</h3>
             <div class="indent">
+                <h4>Headlines within indentation-blocks are completely indented</h4>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
                     massa. </p>
 
@@ -132,11 +133,15 @@
                     pretium. Integer tincidunt. </p>
             </div>
             <pre>div .indent
+    h4/
     p/
-    p/ .no-indent //remove indentation for this p
 /div
 
-p/ .indent</pre>
+h4/ .indent 
+h4/ .no-indent //remove indentation for this headline
+
+p/ .indent
+p/ .no-indent //remove indentation for this p</pre>
 
 
             <h3>Unordered List</h3>
@@ -172,7 +177,6 @@ p/ .indent</pre>
 /ul</pre>
 
             <h3>Indented Unordered List</h3>
-
             <ul class="indent">
                 <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                     Aenean
@@ -201,7 +205,14 @@ p/ .indent</pre>
             </ul>
             <pre>ul .indent
     li/
-/ul</pre>
+/ul
+
+div .indent
+    ul
+        li/
+    /ul 
+/div
+</pre>
 
             <h3>Ordered List</h3>
             <ol>
@@ -235,6 +246,7 @@ p/ .indent</pre>
 /ol</pre>
 
             <h3>Indented Ordered List</h3>
+
             <ol class="indent">
                 <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                     Aenean
@@ -263,7 +275,13 @@ p/ .indent</pre>
             </ol>
             <pre>ol .indent
     li/
-/ol</pre>
+/ol
+
+div .indent
+    ol
+        li/
+    /ol 
+/div</pre>
 
 
             <h3>Blockquote</h3>
@@ -528,8 +546,6 @@ figure
 
 
         <h3>Numbers</h3>
-        <p class="max-width-rg">The availability of <code>font-variant-numeric</code> features depends on the typeface
-            capabilities. </p>
         <table>
             <tr>
                 <td class="fs-2 ft-num-normal bottom">13679.05</td>
@@ -538,19 +554,6 @@ figure
             <tr>
                 <td class="fs-2 ft-num-tab bottom">13679.05</td>
                 <td class="bottom"><code>.ft-num-tab</code> <small>(default for tables)</small></td>
-            </tr>
-
-            <tr>
-                <td class="fs-2 ft-num-zero bottom">13679.05</td>
-                <td class="code bottom">.ft-num-zero</td>
-            </tr>
-            <tr>
-                <td class="fs-2 ft-num-onum bottom">13679.05</td>
-                <td class="code bottom">.ft-num-onum</td>
-            </tr>
-            <tr>
-                <td class="fs-2 ft-num-lnum bottom">13679.05</td>
-                <td class="code bottom">.ft-num-lnum</td>
             </tr>
         </table>
     </div>

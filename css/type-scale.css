@@ -188,7 +188,7 @@
   line-height:var(--lh-4);
 }
 
-@media (--breakpoint-sm){
+@media (min-width: 28rem){
 
   .sm-h1{
     font-size:2.4rem;
@@ -340,7 +340,7 @@
 
 }
 
-@media (--breakpoint-rg){
+@media (min-width: 36rem){
   .rg-h1{
     font-size:2.4rem;
     font-size:var(--fs-h1);
@@ -490,7 +490,7 @@
   }
 }
 
-@media (--breakpoint-md){
+@media (min-width: 52rem){
   .md-h1{
     font-size:2.4rem;
     font-size:var(--fs-h1);
@@ -641,7 +641,7 @@
 
 }
 
-@media (--breakpoint-lg){
+@media (min-width: 64rem){
   .lg-h1{
     font-size:2.4rem;
     font-size:var(--fs-h1);

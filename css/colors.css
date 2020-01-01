@@ -14,7 +14,7 @@
   --neutral-2:hsl(var(--neutral-h), var(--neutral-s), calc(var(--neutral-l) + 2*var(--neutral-step)));
   --neutral-3:hsl(var(--neutral-h), var(--neutral-s), calc(var(--neutral-l) + 3*var(--neutral-step)));
   --neutral-4:hsl(var(--neutral-h), var(--neutral-s), calc(var(--neutral-l) + 4*var(--neutral-step)));
-  
+
   --primary-h:213;
   --primary-s:19%;
   --primary-l:60%;
@@ -32,7 +32,7 @@
 
   --accent-one-h:3;
   --accent-one-s:100%;
-  --accent-one-l:61%;  
+  --accent-one-l:61%;
   --accent-one-step:calc((100% - var(--accent-one-l))*var(--color-step-factor));
 
   --accent-one-d4:hsl(var(--accent-one-h), var(--accent-one-s), calc(var(--accent-one-l) - 4*var(--accent-one-step)));
@@ -48,7 +48,7 @@
 
   --accent-two-h:28;
   --accent-two-s:100%;
-  --accent-two-l:55%;  
+  --accent-two-l:55%;
   --accent-two-step:calc((100% - var(--accent-two-l))*var(--color-step-factor));
 
   --accent-two-d4:hsl(var(--accent-two-h), var(--accent-two-s), calc(var(--accent-two-l) - 4*var(--accent-two-step)));
@@ -63,7 +63,7 @@
 
   --accent-three-h:52;
   --accent-three-s:100%;
-  --accent-three-l:50%;  
+  --accent-three-l:50%;
   --accent-three-step:calc((100% - var(--accent-three-l))*var(--color-step-factor));
 
   --accent-three-d4:hsl(var(--accent-three-h), var(--accent-three-s), calc(var(--accent-three-l) - 4*var(--accent-three-step)));
@@ -993,4 +993,3 @@
   border-color:hsl(0, 0%, 15.4%);
   border-color:var(--base-color);
 }
-

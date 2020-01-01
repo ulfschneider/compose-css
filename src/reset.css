@@ -1,4 +1,6 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -8,11 +10,9 @@ body {
 
 img {
   max-width: 100%;
-  vertical-align:top;
+  vertical-align: top;
 }
 
 svg {
   max-height: 100%;
 }
-
-
