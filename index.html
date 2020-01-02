@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/csscompose.css">
     <title>CSS COMPOSE</title>
     <script src="resources/dynamic-header.min.js"></script>
+    <script src="resources/active-toc.js"></script>
 </head>
 
 <style>
@@ -15,20 +16,20 @@
         font-family: var(--font-family-mono);
     }
 
+    .is-active {
+        font-weight: 700;   
+    }
+    
     :root {
         --mrt-h2: calc(var(--space-4) * var(--space-factor) *var(--space-factor));
         --mrt-h3: var(--space-4);
     }
 </style>
 
-<script>
-    DynamicHeader.init();
-</script>
-
 <body class="x">
     <div class="full brb br-neutral-3 bg-neutral-4">
-        <header class="x bg-neutral-4">
-            <div class="breakout max-width-lg md-columns-4 sm-columns-3 columns-2 lh-4 pdy caps small">
+        <header id="navigation" class="x bg-neutral-4">
+            <div class="breakout max-width-lg md-columns-4 sm-columns-3 columns-2 lh-4 pdy caps small lsp">
                 <div><a href="#notation" class="no-text-decoration">Notation</a></div>
                 <div><a href="#typography" class="no-text-decoration">Typography</a></div>
                 <div><a href="#colors" class="no-text-decoration">Colors</a></div>
@@ -408,7 +409,8 @@ figure
             </tr>
             <tr>
                 <td class="fs baseline pdy-0 right">Aa</td>
-                <td class="baseline pdy-0 no-break"><code>.fs</code>, <code>.fs-default</code> <small>(1rem)</small></td>
+                <td class="baseline pdy-0 no-break"><code>.fs</code>, <code>.fs-default</code> <small>(1rem)</small>
+                </td>
             </tr>
             <tr>
                 <td class="fs-1 baseline pdy-0 right">Aa</td>
@@ -462,7 +464,8 @@ figure
             </tr>
             <tr>
                 <td class="fw-400 fs-4 baseline pdy-0">Aa</td>
-                <td class="baseline pdy-0 no-break"><code>.fw-400</code>, <code>.fw-default</code>, <code>.normal</code></td>
+                <td class="baseline pdy-0 no-break"><code>.fw-400</code>, <code>.fw-default</code>, <code>.normal</code>
+                </td>
             </tr>
             <tr>
                 <td class="fw-500 fs-4 baseline pdy-0">Aa</td>
@@ -1704,7 +1707,7 @@ figure
         div .x
         <div class="x">
             <div class="wide indicator">
-               div/ .wide
+                div/ .wide
             </div>
         </div>
         /div
@@ -1848,5 +1851,10 @@ figure
 
 
 </body>
+
+<script>
+    DynamicHeader.init();
+    activeToc('#navigation');
+</script>
 
 </html>

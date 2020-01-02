@@ -250,7 +250,7 @@
   height:var(--space-4)
 }
 
-@media (min-width: 28rem){
+@media (--breakpoint-sm){
   .sm-width-d5{
     width:var(--space-d5);
   }
@@ -383,7 +383,7 @@
   }
 }
 
-@media (min-width: 36rem){
+@media (--breakpoint-rg){
   .rg-width-d5{
     width:var(--space-d5);
   }
@@ -515,7 +515,7 @@
   }
 }
 
-@media (min-width: 52rem){
+@media (--breakpoint-md){
   .md-width-d5{
     width:var(--space-d5);
   }
@@ -647,7 +647,7 @@
   }
 }
 
-@media (min-width: 64rem){
+@media (--breakpoint-lg){
   .lg-width-d5{
     width:var(--space-d5);
   }
