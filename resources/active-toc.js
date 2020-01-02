@@ -25,25 +25,29 @@ function activeToc(tocContainer) {
                     link.classList.remove('is-visible');
                 }
 
-                this.highlightFirstActive();
+                this.highlightActive();
             });
         }
 
-        this.highlightFirstActive = () => {
-            let firstVisibleLink = tocContainer.querySelector('.is-visible')
 
+        this.highlightActive = () => {
+            let hasVisible = false;
             this.links.forEach(link => {
                 link.classList.remove('is-active');
-            })
+                if (link.classList.contains('is-visible')) {
+                    hasVisible = true;
+                }
+            });
 
-            if (firstVisibleLink) {
-                firstVisibleLink.classList.add('is-active');
-            }
-
-            if (!firstVisibleLink && this.previousSection) {
-                tocContainer.querySelector(
-                    `a[href="#${this.previousSection}"]`
-                ).classList.add('is-active');
+            if (!hasVisible) {
+                for (let i = this.headings.length - 1; i > 0; i--) {
+                    if (this.headings[i] && this.headings[i].offsetTop <= window.pageYOffset) {
+                        tocContainer.querySelector(
+                            `a[href="#${this.headings[i].id}"]`
+                        ).classList.add('is-active');
+                        break;
+                    }
+                }
             }
         }
 
@@ -52,14 +56,14 @@ function activeToc(tocContainer) {
         }
         this.links = [...tocContainer.querySelectorAll('a')];
 
-        this.headlines = this.links.map(link => {
+        this.headings = this.links.map(link => {
             let id = link.getAttribute('href');
             return document.querySelector(id);
         });
         this.observer = new IntersectionObserver(this.handleObserver, this.intersectionOptions);
-        this.headlines.forEach(headline => {
-            if (headline) {
-                this.observer.observe(headline);
+        this.headings.forEach(heading => {
+            if (heading) {
+                this.observer.observe(heading);
             }
         });
     }

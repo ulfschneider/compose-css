@@ -16,10 +16,14 @@
         font-family: var(--font-family-mono);
     }
 
-    .is-active {
+    .is-active, .is-visible {
         font-weight: 700;   
     }
-    
+
+    .is-active:after, .is-visible:after {
+        content: ' *';
+    }
+
     :root {
         --mrt-h2: calc(var(--space-4) * var(--space-factor) *var(--space-factor));
         --mrt-h3: var(--space-4);
@@ -1609,7 +1613,7 @@ figure
     <div class="breakout">
         <div class="max-width-sm">
             <h3>Background Images</h3>
-            <p class="mrb-0">Background images can also be positioned with <code>.fit-cover</code>, which is usefule
+            <p class="mrb-0">Background images can also be positioned with <code>.fit-cover</code>, which is useful
                 for
                 hero banners.
             </p>
