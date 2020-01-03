@@ -151,7 +151,7 @@ td:last-child{
 
 .x-12,
 .x{
-  max-width:36rem;
+  max-width:32rem;
   max-width:var(--regular-width);
   margin:0 auto;
 }
@@ -167,7 +167,7 @@ td:last-child{
 
 .x{
   display:grid;
-  grid-template-columns:1.62rem 1fr 1fr minmax(0, 36rem) 1fr 1fr 1.62rem;
+  grid-template-columns:1.62rem 1fr 1fr minmax(0, 32rem) 1fr 1fr 1.62rem;
   grid-template-columns:var(--space-1) 1fr 1fr minmax(0, var(--regular-width)) 1fr 1fr var(--space-1);
 }
 
@@ -296,7 +296,7 @@ td:last-child{
 
 @media (max-width: 36rem){
   .x{
-    grid-template-columns:1rem 1fr 1fr minmax(0, 36rem) 1fr 1fr 1rem;
+    grid-template-columns:1rem 1fr 1fr minmax(0, 32rem) 1fr 1fr 1rem;
     grid-template-columns:var(--space) 1fr 1fr minmax(0, var(--regular-width)) 1fr 1fr var(--space);
   }
 }
@@ -820,17 +820,17 @@ td:last-child{
 }
 
 .max-width-sm{
-  max-width:28rem;
+  max-width:24rem;
   max-width:var(--small-width);
 }
 
 .max-width-rg{
-  max-width:36rem;
+  max-width:32rem;
   max-width:var(--regular-width);
 }
 
 .max-width-md{
-  max-width:52rem;
+  max-width:42rem;
   max-width:var(--mid-width);
 }
 
@@ -3045,6 +3045,18 @@ code{
   padding-bottom:0.1em;
 }
 
+.quote{
+  font-style:italic;
+}
+
+.quote:before{
+  content:'“';
+}
+
+.quote:after{
+  content:'”';
+}
+
 p>code,
 li>code,
 blockquote>code{
@@ -3091,8 +3103,7 @@ blockquote{
   margin:1rem 0;
   margin:var(--space) 0;
   padding-left:1.62rem;
-  padding-left:var(--space-1);
-  font-style:italic;
+  padding-left:var(--space-1);  
 }
 
 blockquote p{
@@ -3104,22 +3115,10 @@ blockquote p+p{
   text-indent:var(--space-1);
 }
 
-blockquote figcaption{
-  font-weight:bold;
+blockquote figcaption{  
   font-size:small;
   margin-top:1rem;
   margin-top:var(--space);
-}
-
-.quote:before{
-  content:'“';
-  margin-left:-.5em;
-  position:absolute;
-}
-
-.quote:after{
-  content:'”';
-  position:absolute;
 }
 
 figure{
@@ -4144,9 +4143,9 @@ figcaption{
 }
 
 :root{
-  --small-width:28rem;
-  --regular-width:36rem;
-  --mid-width:52rem;
+  --small-width:24rem;
+  --regular-width:32rem;
+  --mid-width:42rem;
   --large-width:64rem;
 
   --space:1rem;

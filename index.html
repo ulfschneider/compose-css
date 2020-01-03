@@ -16,12 +16,14 @@
         font-family: var(--font-family-mono);
     }
 
-    .is-active, .is-visible {
-        font-weight: 700;   
+    .is-active,
+    .is-visible {
+        font-weight: 700;
     }
 
-    .is-active:after, .is-visible:after {
-        content: ' *';
+    .is-active::before,
+    .is-visible::before {
+        content: '– '
     }
 
     :root {
@@ -55,7 +57,7 @@
         </div>
     </div>
 
-    <div class="breakout max-width-sm neutral-d1    ">
+    <div class="breakout max-width-rg neutral-d1    ">
         <h2 id="notation" class="h5 mrt-4">Notation</h2>
         <p>Throughout this document the following notation is applied:</p>
         <table>
@@ -104,35 +106,41 @@
             <p><span class="mrr">Text <sup>superscript</sup></span> <code>sup</code>, <code>.sup</code></p>
             <p><span class="mrr">Text <sub>subscript</sub></span> <code>sub</code>, <code>.sup</code></p>
             <p><cite class="mrr">Cite</cite> <code>cite</code>, <code>.cite</code></p>
+            <p><span class="mrr quote">Quote</span> <code>.quote</code></p>
             <p><em class="mrr">Emphasis</em> <code>em</code>, <code>.em</code></p>
             <p><s class="strike mrr">Strikethrough</s> <code>s</code>, <code>.s</code>, <code>.strike</code></p>
             <p><small class="mrr">Small</small> <code>small</code>, <code>.small</code></p>
         </div>
     </div>
 
-    <div class="breakout max-width-sm">
+    <div class="breakout max-width-rg">
         <h3>Paragraph</h3>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-            massa. </p>
+        <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
+            horrible vermin.</p>
 
-        <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-        </p>
+        <p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly
+            domed and divided by arches into stiff sections.</p>
 
-        <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
-            pretium. Integer tincidunt. </p>
+        <p>The bedding was hardly able to cover it and seemed ready to slide off any moment.</p>
+
+        <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.
+            <span class="quote">What's happened to me?</span> he thought.</p>
         <pre>p/</pre>
 
         <h3>Indented Paragraph</h3>
         <div class="indent">
-            <h4>Headlines within indentation-blocks are completely indented</h4>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                massa. </p>
+            <h4>Headings within indentation-blocks are completely indented</h4>
+            <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
+                horrible vermin.</p>
 
-            <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-            </p>
+            <p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly
+                domed and divided by arches into stiff sections.</p>
 
-            <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
-                pretium. Integer tincidunt. </p>
+            <p>The bedding was hardly able to cover it and seemed ready to slide off any moment.</p>
+
+            <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he
+                looked.
+                <span class="quote">What's happened to me?</span> he thought.</p>
         </div>
         <pre>div .indent
     h4/
@@ -140,7 +148,7 @@
 /div
 
 h4/ .indent 
-h4/ .no-indent //remove indentation for this headline
+h4/ .no-indent //remove indentation for this heading
 
 p/ .indent
 p/ .no-indent //remove indentation for this p</pre>
@@ -148,29 +156,24 @@ p/ .no-indent //remove indentation for this p</pre>
         <h3>Unordered List</h3>
 
         <ul>
-            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                Aenean
-                massa.
+            <li>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
+                horrible vermin.
             </li>
-            <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-                quis
-                enim.
+            <li>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly,
+                slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and
+                seemed ready to slide off any moment.
                 <ul>
-                    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                        dolor.
-                        Aenean
-                        massa.
+                    <li>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly
+                        as he looked. <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.
                     </li>
-                    <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
-                        massa
-                        quis
-                        enim.
+                    <li>His room, a proper human room although a little too small, lay peacefully between its four
+                        familiar walls.
                     </li>
                 </ul>
             </li>
-            <li>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-                mollis
-                pretium. Integer tincidunt.
+            <li>A collection of textile samples lay spread out on the table – Samsa was a travelling salesman – and
+                above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a
+                nice, gilded frame.
             </li>
         </ul>
         <pre>ul
@@ -179,29 +182,24 @@ p/ .no-indent //remove indentation for this p</pre>
 
         <h3>Indented Unordered List</h3>
         <ul class="indent">
-            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                Aenean
-                massa.
+            <li>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
+                horrible vermin.
             </li>
-            <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-                quis
-                enim.
+            <li>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly,
+                slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and
+                seemed ready to slide off any moment.
                 <ul>
-                    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                        dolor.
-                        Aenean
-                        massa.
+                    <li>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly
+                        as he looked. <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.
                     </li>
-                    <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
-                        massa
-                        quis
-                        enim.
+                    <li>His room, a proper human room although a little too small, lay peacefully between its four
+                        familiar walls.
                     </li>
                 </ul>
             </li>
-            <li>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-                mollis
-                pretium. Integer tincidunt.
+            <li>A collection of textile samples lay spread out on the table – Samsa was a travelling salesman – and
+                above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a
+                nice, gilded frame.
             </li>
         </ul>
         <pre>ul .indent
@@ -216,29 +214,24 @@ div .indent
 
         <h3>Ordered List</h3>
         <ol>
-            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                Aenean
-                massa.
+            <li>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
+                horrible vermin.
             </li>
-            <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-                quis
-                enim.
+            <li>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly,
+                slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and
+                seemed ready to slide off any moment.
                 <ol>
-                    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                        dolor.
-                        Aenean
-                        massa.
+                    <li>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly
+                        as he looked. <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.
                     </li>
-                    <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
-                        massa
-                        quis
-                        enim.
+                    <li>His room, a proper human room although a little too small, lay peacefully between its four
+                        familiar walls.
                     </li>
                 </ol>
             </li>
-            <li>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-                mollis
-                pretium. Integer tincidunt.
+            <li>A collection of textile samples lay spread out on the table – Samsa was a travelling salesman – and
+                above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a
+                nice, gilded frame.
             </li>
         </ol>
         <pre>ol
@@ -248,29 +241,24 @@ div .indent
         <h3>Indented Ordered List</h3>
 
         <ol class="indent">
-            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                Aenean
-                massa.
+            <li>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
+                horrible vermin.
             </li>
-            <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-                quis
-                enim.
+            <li>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly,
+                slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and
+                seemed ready to slide off any moment.
                 <ol>
-                    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                        dolor.
-                        Aenean
-                        massa.
+                    <li>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly
+                        as he looked. <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.
                     </li>
-                    <li>Nnec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
-                        massa
-                        quis
-                        enim.
+                    <li>His room, a proper human room although a little too small, lay peacefully between its four
+                        familiar walls.
                     </li>
                 </ol>
             </li>
-            <li>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-                mollis
-                pretium. Integer tincidunt.
+            <li>A collection of textile samples lay spread out on the table – Samsa was a travelling salesman – and
+                above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a
+                nice, gilded frame.
             </li>
         </ol>
         <pre>ol .indent
@@ -286,14 +274,14 @@ div .indent
         <h3>Blockquote</h3>
         <figure>
             <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                    Aenean
-                    massa. </p>
+                <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed
+                    into a
+                    horrible vermin.</p>
 
-                <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-                    enim.
-                </p>
-                <figcaption>Cite</figcaption>
+                <p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly,
+                    slightly
+                    domed and divided by arches into stiff sections.</p>
+                <figcaption>Franz Kafka, <cite>The Metamorphosis</cite></figcaption>
             </blockquote>
         </figure>
         <pre>blockquote/
@@ -309,30 +297,13 @@ figure
     figcaption/
 /figure
 </pre>
-
-        <h3>Blockquote with Double Quotes</h3>
-        <figure>
-            <blockquote>
-                <p class="quote">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
-                    eget
-                    dolor.
-                    Aenean
-                    massa. </p>
-                <figcaption>Cite</figcaption>
-            </blockquote>
-        </figure>
-        <pre>figure
-    blockquote
-        p/ .quote
-    /blockquote
-    figcaption/
-/figure</pre>
     </div>
 
 
     <div class="breakout x-12 max-width-lg">
+
         <div class="xx-12 sm-xx-6">
-            <h3>Headline Styling</h3>
+            <h3>Heading Styling</h3>
             <table>
                 <tr>
                     <td class="baseline pdy-0 right">
@@ -374,7 +345,7 @@ figure
         </div>
 
         <div class="xx-12 sm-xx-6">
-            <h3>Headline Sizing</h3>
+            <h3>Heading Sizing</h3>
             <table>
                 <tr>
                     <td class="h1 baseline pdy-0 right">H1</td>
@@ -451,7 +422,63 @@ figure
         </table>
     </div>
 
-    <div class="breakout">
+    <div class="breakout max-width-rg">
+        <h3>Line Height</h3>
+        <table>
+            <tr>
+                <td class="lh-d1 brt baseline pd-0">One morning, when Gregor Samsa woke from troubled dreams, he
+                    found himself transformed in his bed into a horrible vermin.</td>
+                <td class="lh-d1 code baseline pdl pd-0">.lh-d1</td>
+            </tr>
+            <tr>
+                <td class="lh brt baseline pd-0">One morning, when Gregor Samsa woke from troubled dreams, he
+                    found himself transformed in his bed into a horrible vermin.</td>
+                <td class="lh baseline pdl pd-0"><code>.lh</code> <small>(1em)</small></td>
+            </tr>
+            <tr>
+                <td class="lh-1 brt baseline pd-0">One morning, when Gregor Samsa woke from troubled dreams, he
+                    found himself transformed in his bed into a horrible vermin.
+                </td>
+                <td class="lh-1 code baseline pdl pd-0">.lh-1</td>
+            </tr>
+            <tr>
+                <td class="lh-2 brt baseline pd-0">One morning, when Gregor Samsa woke from troubled dreams, he
+                    found himself transformed in his bed into a horrible vermin.</td>
+                <td class="lh-2 code baseline pdl pd-0">.lh-2</td>
+            </tr>
+            <tr>
+                <td class="lh-3 brt baseline pd-0">One morning, when Gregor Samsa woke from troubled dreams, he
+                    found himself transformed in his bed into a horrible vermin.</td>
+                <td class="lh-3 baseline no-break pdl pd-0"><code>.lh-3</code>, <code>.lh-default</code></td>
+            </tr>
+            <tr>
+                <td class="lh-4 brt m brb baseline pd-0">One morning, when Gregor Samsa woke from troubled dreams,
+                    he
+                    found himself transformed in his bed into a horrible vermin.
+                </td>
+                <td class="lh-4 code baseline pdl pd-0">.lh-4</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="breakout max-width-rg">
+        <h3>Screen Width and Size</h3>
+        <p>Heading size, font size, and line height can have different sizes on minimum screen width.
+            Address the different minimum screen sizes with prefix values of</p>
+        <ul class="reset">
+            <li><code>lg-</code> for at least large screen width,</li>
+            <li><code>md-</code> for at least mid screen width,</li>
+            <li><code>rg-</code> for at least regular screen width,</li>
+            <li><code>sm-</code> for at least small screen width.</li>
+        </ul>
+        <p>E.g. <code>lg-fs-1</code>, <code>md-h1</code>, or <code>.rg-lh-3</code>.</p>
+        <p class="mr-0">
+            A column class without a prefix will be used in case the
+            alternate minimum screen size is not defined.</p>
+    </div>
+
+
+    <div class="breakout max-width-rg">
         <h3>Font Weight</h3>
         <table>
             <tr>
@@ -494,39 +521,7 @@ figure
         </table>
     </div>
 
-    <div class="breakout">
-        <h3>Line Height</h3>
-        <table>
-            <tr>
-                <td class="fs-1 lh-d1 brt baseline pd-0">The quick brown fox jumps over the lazy dog</td>
-                <td class="lh-d1 code baseline pdl pd-0">.lh-d1</td>
-            </tr>
-            <tr>
-                <td class="fs-1 lh brt baseline pd-0">The quick brown fox jumps over the lazy dog</td>
-                <td class="lh baseline pdl pd-0"><code>.lh</code> <small>(1em)</small></td>
-            </tr>
-            <tr>
-                <td class="fs-1 lh-1 brt baseline pd-0">The quick brown fox jumps over the lazy dog
-                </td>
-                <td class="lh-1 code baseline pdl pd-0">.lh-1</td>
-            </tr>
-            <tr>
-                <td class="fs-1 lh-2 brt baseline pd-0">The quick brown fox jumps over the lazy dog</td>
-                <td class="lh-2 code baseline pdl pd-0">.lh-2</td>
-            </tr>
-            <tr>
-                <td class="fs-1 lh-3 brt baseline pd-0">The quick brown fox jumps over the lazy dog</td>
-                <td class="lh-3 baseline no-break pdl pd-0"><code>.lh-3</code>, <code>.lh-default</code></td>
-            </tr>
-            <tr>
-                <td class="fs-1 lh-4 brt m brb baseline pd-0">The quick brown fox jumps over the lazy dog
-                </td>
-                <td class="lh-4 code baseline pdl pd-0">.lh-4</td>
-            </tr>
-        </table>
-    </div>
-
-    <div class="breakout">
+    <div class="breakout max-width-rg">
         <h3>Letter Spacing</h3>
         <table>
             <tr>
@@ -552,7 +547,7 @@ figure
         </table>
     </div>
 
-    <div class="breakout">
+    <div class="breakout max-width-rg">
         <h3>Numbers</h3>
         <table>
             <tr>
@@ -647,7 +642,7 @@ figure
 
     <div class="breakout">
         <h3>Apply Colors to Text, Background, and Borders</h3>
-        <p class="max-width-sm">Set color, background-color and border-color by applying the naming conventions:</p>
+        <p class="max-width-rg">Set color, background-color and border-color by applying the naming conventions:</p>
 
         <table class="br-separate">
             <tr>
@@ -689,7 +684,7 @@ figure
         </table>
     </div>
 
-    <div class="breakout max-width-sm">
+    <div class="breakout max-width-rg">
         <h3>Edge Values</h3>
         <p>In addition there are four colors available, which can also be used as color, background-color and
             border-color but do not allow further refinement:</p>
@@ -727,7 +722,7 @@ figure
         </ul>
     </div>
 
-    <div class="breakout max-width-sm">
+    <div class="breakout max-width-rg">
         <h3>Define Your Own Color System</h3>
         <p>The color system is built around the five colors:</p>
         <ul class="no-list-type">
@@ -1114,7 +1109,7 @@ figure
         </div>
     </div>
 
-    <div class="breakout max-width-sm">
+    <div class="breakout max-width-rg">
         <h3>Grid Gap</h3>
         <div class="x-12 gp-0 middle center">
             <div class="xx-6 bg-neutral-4 pdy">1</div>
@@ -1380,7 +1375,7 @@ figure
             </tr>
         </table>
 
-        <div class="max-width-sm">
+        <div class="max-width-rg">
             <pre>table/</pre>
 
             <p>Apply padding with <code>.pd</code>, <code>.pdx</code>, or <code>.pdy</code> styling
@@ -1433,7 +1428,7 @@ figure
                 <td>Italy</td>
             </tr>
         </table>
-        <pre class="max-width-sm">table/ .alternate-rows</pre>
+        <pre class="max-width-rg">table/ .alternate-rows</pre>
     </div>
 
     <div class="breakout">
@@ -1480,7 +1475,7 @@ figure
                 <td>Italy</td>
             </tr>
         </table>
-        <pre class="max-width-sm">table/ .alternate-cols</pre>
+        <pre class="max-width-rg">table/ .alternate-cols</pre>
     </div>
 
     <div class="breakout">
@@ -1522,11 +1517,11 @@ figure
                 <td>Italy</td>
             </tr>
         </table>
-        <pre class="max-width-sm">table/ .underline-rows</pre>
+        <pre class="max-width-rg">table/ .underline-rows</pre>
     </div>
 
 
-    <div class="breakout max-width-sm">
+    <div class="breakout max-width-rg">
         <h2 id="figures">Figures</h2>
         <figure>
             <img loading="lazy" src="resources/pierre-chatel-innocenti-unsplash.jpg" />
@@ -1541,7 +1536,7 @@ figure
     <div class="breakout">
         <h2 id="images">Images</h2>
         <h3>Responsive Images</h3>
-        <p class="max-width-sm mrb-0">Images are by default responsive and take the entire available horizontal
+        <p class="max-width-rg mrb-0">Images are by default responsive and take the entire available horizontal
             space
             while
             preserving
@@ -1559,7 +1554,7 @@ figure
 
     <div class="breakout x-12">
         <h3>Contained Images</h3>
-        <div class="max-width-sm">
+        <div class="max-width-rg">
             <p>If the image has a fixed width or fixed height, the
                 usage of <code>.fix-contain</code> will put the entire visible image inside of the given
                 dimensions while preserving aspect-ratio and without stretching the image.</p>
@@ -1595,7 +1590,7 @@ figure
 
         <div class="xx-12 rg-xx-6">
             <h3>Cover Images</h3>
-            <p class="max-width-sm">If the image has a fixed widht or fixed height, the
+            <p class="max-width-rg">If the image has a fixed widht or fixed height, the
                 usage of <code>.fix-cover</code> will consume the entire available space of the given dimensions
                 while preserving aspect-ratio.</p>
             <p>The image might be stretched to cover.</p>
@@ -1611,7 +1606,7 @@ figure
 
 
     <div class="breakout">
-        <div class="max-width-sm">
+        <div class="max-width-rg">
             <h3>Background Images</h3>
             <p class="mrb-0">Background images can also be positioned with <code>.fit-cover</code>, which is useful
                 for
@@ -1629,7 +1624,7 @@ figure
         <pre>div/ .fit-cover style="height: 600px; background-image: url('image.jpg')" </pre>
     </div>
 
-    <div class="breakout max-width-sm">
+    <div class="breakout max-width-rg">
         <h2 id="grid">Grid</h2>
 
         <h3>Middle Content</h3>
@@ -1649,10 +1644,9 @@ figure
         /div
     </div>
 
-    <div class="breakout max-width-sm">
+    <div class="breakout max-width-rg">
         <h3>Breakout Left Content</h3>
-        <p>Breakout left content is pushed a little bit to the left and will give more space for the things you want
-            to display.</p>
+        <p>Breakout left content is enlarged to the left and will keep the right boundary with middle content.</p>
     </div>
 
     <!-- Code Example -->
@@ -1666,10 +1660,9 @@ figure
         /div
     </div>
 
-    <div class="breakout max-width-sm">
+    <div class="breakout max-width-rg">
         <h3>Breakout Right Content</h3>
-        <p>Breakout right content is pushed a little bit to the right and will give more space for the things you
-            want to display.
+        <p>Breakout right content enlarged to the right and will keep the left boundary with middle content.
         </p>
     </div>
 
@@ -1684,7 +1677,7 @@ figure
         /div
     </div>
 
-    <div class="breakout max-width-sm">
+    <div class="breakout max-width-rg">
         <h3>Breakout Content = Left and Right</h3>
         <p>Breakout content is the combination of left and right content.</p>
     </div>
@@ -1700,9 +1693,9 @@ figure
         /div
     </div>
 
-    <div class="breakout max-width-sm">
+    <div class="breakout max-width-rg">
         <h3>Wide content</h3>
-        <p>Wide content is pushing things further in that it nearly takes the full width of the screen, except of a
+        <p>Wide content nearly takes the full width of the screen, except of a
             small margin to the window border.</p>
     </div>
 
@@ -1718,7 +1711,7 @@ figure
     </div>
 
 
-    <div class="breakout max-width-sm">
+    <div class="breakout max-width-rg">
         <h3>Full Content</h3>
         <p>Full content will use the entire width of the screen.</p>
     </div>
@@ -1736,7 +1729,7 @@ figure
 
     <div class="breakout max-width-rg">
         <h3>12 Column Grid</h3>
-        <div class="max-width-sm">
+        <div>
             <p>Any space can be divided horizontally into 12ths.</p>
             <p>The sum of the cols per row has to add up to 12. Not specifiying a column size will result in taking
                 the
@@ -1777,26 +1770,29 @@ figure
             <div class="xx-12 br pdy">.xx-12</div>
         </div>
 
-        <p class="mrt max-width-sm">It is possible to have differently sized columns based on minimum screen width.
-            Address
-            the
-            different minimum screen sizes with column prefix values of <code>lg-</code> (for at least large size),
-            <code>md-</code> (for at least
-            medium size),
-
-            <code>rg-</code> (for at least regular size) and <code>sm-</code> (for at least small size). A column
-            class without a prefix will be used in case the alternate minimum screen size is not present.
+        <p>Columns can have different a width based on minimum screen width.
+            Address the different minimum screen sizes with column prefix values of</p>
+        <ul class="reset">
+            <li><code>lg-</code> for at least large screen width,</li>
+            <li><code>md-</code> for at least mid screen width,</li>
+            <li><code>rg-</code> for at least regular screen width,</li>
+            <li><code>sm-</code> for at least small screen width.</li>
+        </ul>
+        <p>
+            A column class without a prefix will be used in case the
+            alternate minimum screen size is not defined.
         </p>
 
         <div class="x-12 mry-1 gp center code">
-            <div class="xx-12 rg-xx-6 lg-xx-4 br pdy">.xx-12 .rg-xx-6 .lg-xx-4</div>
-            <div class="xx-12 rg-xx-6 lg-xx-8 br pdy">.xx-12 .rg-xx-6 .lg-xx-8</div>
+            <div class="xx-12 rg-xx-6 lg-xx-4 br pd">.xx-12 .rg-xx-6 .lg-xx-4</div>
+            <div class="xx-12 rg-xx-6 lg-xx-8 br pd">.xx-12 .rg-xx-6 .lg-xx-8</div>
         </div>
     </div>
 
-    <div class="breakout max-width-sm">
+    <div class="breakout max-width-rg">
         <h3>Columns</h3>
-        <p>Elements will be displayed in columns. The number of columns depends on the available width.</p>
+        <p>A flow of a maximum of six columns – each with the width – can be created for the <code>.x-12</code> and
+            <code>.x</code> grids.</p>
     </div>
 
     <!-- Code Example -->
@@ -1804,53 +1800,59 @@ figure
         div .x
         <div class="x">
             <div class="breakout indicator">
-                div/ .breakout.columns-1.rg-columns-2.lg-columns-3
+                div/ .breakout.columns-1.rg-columns-2.md-columns-3.lg-columns-4
             </div>
         </div>
         /div
     </div>
 
-    <div class="breakout max-width-lg columns-1 rg-columns-2 lg-columns-3 indent pdy">
-        <p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines
-            Morgens verhaftet. »Wie ein Hund!« sagte er, es war, als sollte die Scham ihn überleben. Als Gregor
-            Samsa eines Morgens aus
-            unruhigen
-            Träumen
-            erwachte, fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.
+    <div class="breakout max-width-rg">
+        <p class="mrt">Similar to the <code>.x-12</code> grid, the number of columns can vary based on available screen
+            width.
+            Address the different minimum screen sizes with column prefix values of </p>
+        <ul class="reset">
+            <li><code>lg-</code> for at least large screen width,</li>
+            <li><code>md-</code> for at least mid screen width,</li>
+            <li><code>rg-</code> for at least regular screen width,</li>
+            <li><code>sm-</code> for at least small screen width.</li>
+        </ul>
+        <p>A column class without a prefix will be used in case the
+            alternate minimum screen size is not defined.</p>
+    </div>
+
+    <div class="breakout mry-2 max-width-lg columns-1 rg-columns-2 md-columns-3 lg-columns-4 indent pdy">
+        <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
+            horrible vermin.</p>
+
+        <p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly
+            domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to
+            slide off any moment.</p>
+
+        <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.
+            "What's happened to me? " he thought. It wasn't a dream.</p>
+
+        <p>His room, a proper human room although a little too small, lay peacefully between its four familiar walls.
         </p>
-        <p>Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten Absichten, als am Ziele ihrer Fahrt
-            die Tochter als erste sich erhob und ihren
-            jungen
-            Körper dehnte. »Es ist ein eigentümlicher Apparat«, sagte der Offizier zu dem Forschungsreisenden und
-            überblickte mit einem gewissermaßen bewundernden Blick den ihm doch wohlbekannten Apparat. Sie hätten
-            noch ins Boot springen
-            können,
-            aber der Reisende hob ein schweres, geknotetes Tau vom Boden, drohte ihnen damit und hielt sie dadurch
-            von dem Sprunge ab. In den letzten Jahrzehnten ist das Interesse an Hungerkünstlern sehr zurückgegangen.
-            Aber sie
-            überwanden
-            sich,
-            umdrängten
-            den Käfig und wollten sich gar nicht fortrühren.Jemand musste Josef K. verleumdet haben, denn ohne dass
-            er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund!« sagte er, es war, als
-            sollte die Scham ihn
-            überleben.</p>
-        <p>Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, fand er sich in seinem Bett zu einem
-            ungeheueren Ungeziefer verwandelt. Und es war ihnen wie eine Bestätigung ihrer neuen Träume und guten
-            Absichten, als am Ziele
-            ihrer
-            Fahrt
-            die Tochter als erste sich erhob und ihren jungen Körper dehnte. »Es ist ein eigentümlicher Apparat«,
-            sagte der Offizier zu dem Forschungsreisenden und überblickte mit einem gewissermaßen bewundernden Blick
-            den ihm doch
-            wohlbekannten
-            Apparat.
-            Sie hätten noch ins Boot springen können, aber der Reisende hob ein schweres, geknotetes Tau vom Boden,
-            drohte ihnen damit und hielt sie dadurch von dem Sprunge ab. In den letzten Jahrzehnten ist das
-            Interesse an
-            Hungerkünstlern
-            sehr
-            zurückgegangen.</p>
+
+        <p>A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it
+            there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded
+            frame.</p>
+
+        <p>It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered
+            the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull
+            weather.</p>
+
+        <p>Drops of rain could be heard hitting the pane, which made him feel quite sad. "How about if I sleep a little
+            bit longer and forget all this nonsense", he thought, but that was something he was unable to do because he
+            was used to sleeping on his right, and in his present state couldn't get into that position.</p>
+
+        <p>However hard he threw himself onto his right, he always rolled back to where he was. He must have tried it a
+            hundred times, shut his eyes so that he wouldn't have to look at the floundering legs, and only stopped when
+            he began to feel a mild, dull pain there that he had never felt before.</p>
+
+        <figcaption class="mry">
+            Franz Kafka, <cite>The Metamorphosis</cite></p>
+        </figcaption>
     </div>
 
 

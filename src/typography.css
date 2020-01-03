@@ -455,6 +455,18 @@ code {
   padding-bottom: 0.1em;
 }
 
+.quote {
+  font-style: italic;
+}
+
+.quote:before {
+  content: '“';
+}
+
+.quote:after {
+  content: '”';
+}
+
 p>code,
 li>code,
 blockquote>code {
@@ -480,17 +492,14 @@ pre {
 
 a {
   color: unset;
-  /*var(--link-color);*/
   text-decoration-color: unset;
-  /*var(--link-decoration-color);*/
   text-decoration: var(--link-text-decoration);
   cursor: pointer;
 }
 
 blockquote {
   margin: var(--space) 0;
-  padding-left: var(--space-1);
-  font-style: italic;
+  padding-left: var(--space-1);  
 }
 
 blockquote p {
@@ -501,21 +510,9 @@ blockquote p+p {
   text-indent: var(--space-1);
 }
 
-blockquote figcaption {
-  font-weight: bold;
+blockquote figcaption {  
   font-size: small;
   margin-top: var(--space);
-}
-
-.quote:before {
-  content: '“';
-  margin-left: -.5em;
-  position: absolute;
-}
-
-.quote:after {
-  content: '”';
-  position: absolute;
 }
 
 figure {

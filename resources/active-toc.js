@@ -1,9 +1,6 @@
 /**
  * 
  * @param {*} tocContainer 
- * use 
- * credit goes to https://tj.ie/building-a-table-of-contents-with-the-intersection-observer-api/
- * with tweak improvements. No dependencies.
  */
 function activeToc(tocContainer) {
 
