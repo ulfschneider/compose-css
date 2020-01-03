@@ -81,10 +81,10 @@ svg{
 table{
     border-collapse:collapse;
     font-variant-numeric:tabular-nums;
-    margin-top:1.62rem;
-    margin-top:var(--space-1);
-    margin-bottom:1.62rem;
-    margin-bottom:var(--space-1);
+    margin-top:1rem;
+    margin-top:var(--space);
+    margin-bottom:1rem;
+    margin-bottom:var(--space);
     text-align:left;
 }
 
@@ -2541,22 +2541,22 @@ td:last-child{
   --font-variant-numeric:normal;
 
   --mrt-h1:var(--space-1);
-  --mrb-h1:var(--space-1);
+  --mrb-h1:var(--space);
 
   --mrt-h2:var(--space-2);
-  --mrb-h2:var(--space-1);
+  --mrb-h2:var(--space);
 
   --mrt-h3:var(--space-2);
-  --mrb-h3:var(--space-1);
+  --mrb-h3:var(--space);
 
   --mrt-h4:var(--space-2);
-  --mrb-h4:var(--space-1);
+  --mrb-h4:var(--space);
 
   --mrt-h5:var(--space-2);
-  --mrb-h5:var(--space-1);
+  --mrb-h5:var(--space);
 
   --mrt-h6:var(--space-2);
-  --mrb-h6:var(--space-1);
+  --mrb-h6:var(--space);
 
   font-family:-apple-system
 ,
@@ -2802,7 +2802,7 @@ h1{
   line-height:var(--lh-h1);
   margin-top:1.62rem;
   margin-top:var(--mrt-h1);
-  margin-bottom:1.62rem;
+  margin-bottom:1rem;
   margin-bottom:var(--mrb-h1);
 }
 
@@ -2815,7 +2815,7 @@ h2{
   margin-top:2.6244rem;
 
   margin-top:var(--mrt-h2);
-  margin-bottom:1.62rem;
+  margin-bottom:1rem;
   margin-bottom:var(--mrb-h2);
 }
 
@@ -2828,7 +2828,7 @@ h3{
   margin-top:2.6244rem;
 
   margin-top:var(--mrt-h3);
-  margin-bottom:1.62rem;
+  margin-bottom:1rem;
   margin-bottom:var(--mrb-h3);
 }
 
@@ -2841,7 +2841,7 @@ h4{
   margin-top:2.6244rem;
 
   margin-top:var(--mrt-h4);
-  margin-bottom:1.62rem;
+  margin-bottom:1rem;
   margin-bottom:var(--mrb-h4);
 }
 
@@ -2854,7 +2854,7 @@ h5{
   margin-top:2.6244rem;
 
   margin-top:var(--mrt-h5);
-  margin-bottom:1.62rem;
+  margin-bottom:1rem;
   margin-bottom:var(--mrb-h5);
 }
 
@@ -2867,7 +2867,7 @@ h6{
   margin-top:2.6244rem;
 
   margin-top:var(--mrt-h6);
-  margin-bottom:1.62rem;
+  margin-bottom:1rem;
   margin-bottom:var(--mrb-h6);
 }
 
@@ -2882,8 +2882,8 @@ ol{
 
 ol,
 ul{
-  padding-left:1.62rem;
-  padding-left:var(--space-1);
+  padding-left:2.6244rem;
+  padding-left:var(--space-2);
 }
 
 li{
@@ -2902,19 +2902,19 @@ ol li{
 
 ol li::before{
   content:counter(bold-number) ". ";
-  margin-left:-1.62rem;
-  margin-left:calc(var(--space-1)*-1);
-  min-width:1.62rem;
-  min-width:var(--space-1);
+  margin-left:-2.6244rem;
+  margin-left:calc(var(--space-2)*-1);
+  min-width:2.6244rem;
+  min-width:var(--space-2);
   display:inline-block;
 }
 
 ul li::before{
   content:"–";
-  margin-left:-1.62rem;
-  margin-left:calc(var(--space-1)*-1);
-  min-width:1.62rem;
-  min-width:var(--space-1);
+  margin-left:-2.6244rem;
+  margin-left:calc(var(--space-2)*-1);
+  min-width:2.6244rem;
+  min-width:var(--space-2);
   display:inline-block;
 }
 
@@ -2941,8 +2941,8 @@ ol.indent ul,
 ul.indent ul{
   margin-top:0em;
   margin-bottom:0em;
-  padding-left:1.62rem;
-  padding-left:var(--space-1);
+  padding-left:2.6244rem;
+  padding-left:var(--space-2);
 }
 
 ul.no-list-type li::before{
@@ -2973,8 +2973,8 @@ p{
 .indent p{
   margin-top:0;
   margin-bottom:0;
-  text-indent:1.62rem;
-  text-indent:var(--space-1);
+  text-indent:2.6244rem;
+  text-indent:var(--space-2);
 }
 
 .indent h2,
@@ -2982,8 +2982,8 @@ p{
 .indent h4,
 .indent h5,
 .indent h6{
-  padding-left:1.62rem;
-  padding-left:var(--space-1);
+  padding-left:2.6244rem;
+  padding-left:var(--space-2);
 }
 
 h2.indent,
@@ -2991,8 +2991,8 @@ h3.indent,
 h4.indent,
 h5.indent,
 h6.indent{
-  padding-left:1.62rem;
-  padding-left:var(--space-1);
+  padding-left:2.6244rem;
+  padding-left:var(--space-2);
 }
 
 .no-indent h2,
@@ -3009,8 +3009,8 @@ h5.no-indent{
 p.indent{
   margin-top:0;
   margin-bottom:0;
-  text-indent:1.62rem;
-  text-indent:var(--space-1);
+  text-indent:2.6244rem;
+  text-indent:var(--space-2);
 }
 
 .no-indent p,
@@ -3022,11 +3022,6 @@ p.no-indent{
 
 .no-text-decoration{
   text-decoration:none;
-}
-
-.no-list{
-  list-style:none;
-  padding-left:0;
 }
 
 .code,
@@ -3043,10 +3038,6 @@ pre{
 code{
   padding-top:0.1em;
   padding-bottom:0.1em;
-}
-
-.quote{
-  font-style:italic;
 }
 
 .quote:before{
@@ -3071,11 +3062,9 @@ pre{
   margin-top:var(--space);
   margin-bottom:1rem;
   margin-bottom:var(--space);
-  padding-top:0.61728rem;
-  padding-top:var(--space-d1);
-  padding-bottom:0.61728rem;
-  padding-bottom:var(--space-d1);
+  
   border-top:1px dotted hsl(0, 0%, 53%);
+  
   border-top:var(--space-d5) dotted var(--neutral);
   border-bottom:1px dotted hsl(0, 0%, 53%);
   border-bottom:var(--space-d5) dotted var(--neutral);
@@ -3102,8 +3091,8 @@ a{
 blockquote{
   margin:1rem 0;
   margin:var(--space) 0;
-  padding-left:1.62rem;
-  padding-left:var(--space-1);  
+  padding-left:2.6244rem;
+  padding-left:var(--space-2);
 }
 
 blockquote p{
@@ -3111,24 +3100,29 @@ blockquote p{
 }
 
 blockquote p+p{
-  text-indent:1.62rem;
-  text-indent:var(--space-1);
-}
-
-blockquote figcaption{  
-  font-size:small;
-  margin-top:1rem;
-  margin-top:var(--space);
+  text-indent:2.6244rem;
+  text-indent:var(--space-2);
 }
 
 figure{
-  margin:1.62rem 0;
-  margin:var(--space-1) 0;
+  margin:1rem 0;
+  margin:var(--space) 0;
 }
 
 figcaption{
+  margin-top:1rem;
+  margin-top:var(--space);
+  margin-bottom:1rem;
+  margin-bottom:var(--space);
   font-style:normal;
   font-size:small;
+}
+
+hr{
+  margin:1rem 2.6244rem;
+  margin:var(--space) var(--space-2);
+  border-top:1px solid hsl(0, 0%, 71.8%);
+  border-top:var(--border-width-default) solid var(--neutral-2);
 }
 
 :root{

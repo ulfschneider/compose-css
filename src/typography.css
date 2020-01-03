@@ -11,22 +11,22 @@
   --font-variant-numeric: normal;
 
   --mrt-h1: var(--space-1);
-  --mrb-h1: var(--space-1);
+  --mrb-h1: var(--space);
 
   --mrt-h2: var(--space-2);
-  --mrb-h2: var(--space-1);
+  --mrb-h2: var(--space);
 
   --mrt-h3: var(--space-2);
-  --mrb-h3: var(--space-1);
+  --mrb-h3: var(--space);
 
   --mrt-h4: var(--space-2);
-  --mrb-h4: var(--space-1);
+  --mrb-h4: var(--space);
 
   --mrt-h5: var(--space-2);
-  --mrb-h5: var(--space-1);
+  --mrb-h5: var(--space);
 
   --mrt-h6: var(--space-2);
-  --mrb-h6: var(--space-1);
+  --mrb-h6: var(--space);
 
   font-family: var(--font-family);
   font-weight: var(--font-weight-normal);
@@ -305,7 +305,7 @@ ol {
 
 ol,
 ul {
-  padding-left: var(--space-1);
+  padding-left: var(--space-2);
 }
 
 li {
@@ -324,15 +324,15 @@ ol li {
 
 ol li::before {
   content: counter(bold-number) ". ";
-  margin-left: calc(var(--space-1) * -1);
-  min-width: var(--space-1);
+  margin-left: calc(var(--space-2) * -1);
+  min-width: var(--space-2);
   display: inline-block;
 }
 
 ul li::before {
   content: "–";
-  margin-left: calc(var(--space-1) * -1);
-  min-width: var(--space-1);
+  margin-left: calc(var(--space-2) * -1);
+  min-width: var(--space-2);
   display: inline-block;
 }
 
@@ -359,7 +359,7 @@ ol.indent ul,
 ul.indent ul {
   margin-top: 0em;
   margin-bottom: 0em;
-  padding-left: var(--space-1);
+  padding-left: var(--space-2);
 }
 
 ul.no-list-type li::before {
@@ -390,7 +390,7 @@ p {
 .indent p {
   margin-top: 0;
   margin-bottom: 0;
-  text-indent: var(--space-1);
+  text-indent: var(--space-2);
 }
 
 .indent h2,
@@ -398,7 +398,7 @@ p {
 .indent h4,
 .indent h5,
 .indent h6 {
-  padding-left: var(--space-1);
+  padding-left: var(--space-2);
 }
 
 h2.indent,
@@ -406,7 +406,7 @@ h3.indent,
 h4.indent,
 h5.indent,
 h6.indent {
-  padding-left: var(--space-1);
+  padding-left: var(--space-2);
 }
 
 .no-indent h2,
@@ -423,7 +423,7 @@ h5.no-indent {
 p.indent {
   margin-top: 0;
   margin-bottom: 0;
-  text-indent: var(--space-1);
+  text-indent: var(--space-2);
 }
 
 .no-indent p,
@@ -437,11 +437,6 @@ p.no-indent {
   text-decoration: none;
 }
 
-.no-list {
-  list-style: none;
-  padding-left: 0;
-}
-
 .code,
 code,
 pre {
@@ -453,10 +448,6 @@ pre {
 code {
   padding-top: 0.1em;
   padding-bottom: 0.1em;
-}
-
-.quote {
-  font-style: italic;
 }
 
 .quote:before {
@@ -477,8 +468,7 @@ blockquote>code {
 pre {
   margin-top: var(--space);
   margin-bottom: var(--space);
-  padding-top: var(--space-d1);
-  padding-bottom: var(--space-d1);
+  
   border-top: var(--space-d5) dotted var(--neutral);
   border-bottom: var(--space-d5) dotted var(--neutral);
   overflow: auto;
@@ -499,7 +489,7 @@ a {
 
 blockquote {
   margin: var(--space) 0;
-  padding-left: var(--space-1);  
+  padding-left: var(--space-2);
 }
 
 blockquote p {
@@ -507,19 +497,21 @@ blockquote p {
 }
 
 blockquote p+p {
-  text-indent: var(--space-1);
-}
-
-blockquote figcaption {  
-  font-size: small;
-  margin-top: var(--space);
+  text-indent: var(--space-2);
 }
 
 figure {
-  margin: var(--space-1) 0;
+  margin: var(--space) 0;
 }
 
 figcaption {
+  margin-top: var(--space);
+  margin-bottom: var(--space);
   font-style: normal;
   font-size: small;
+}
+
+hr {
+  margin: var(--space) var(--space-2);
+  border-top: var(--border-width-default) solid var(--neutral-2);
 }
