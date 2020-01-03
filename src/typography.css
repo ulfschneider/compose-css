@@ -468,9 +468,10 @@ blockquote>code {
 pre {
   margin-top: var(--space);
   margin-bottom: var(--space);
-  
-  border-top: var(--space-d5) dotted var(--neutral);
-  border-bottom: var(--space-d5) dotted var(--neutral);
+  padding-top: var(--space-d2);
+  padding-bottom: var(--space-d2);
+  border-top: var(--border-width-default) dotted var(--neutral);
+  border-bottom: var(--border-width-default) dotted var(--neutral);
   overflow: auto;
 }
 

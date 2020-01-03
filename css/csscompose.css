@@ -3062,12 +3062,14 @@ pre{
   margin-top:var(--space);
   margin-bottom:1rem;
   margin-bottom:var(--space);
-  
+  padding-top:0.38104rem;
+  padding-top:var(--space-d2);
+  padding-bottom:0.38104rem;
+  padding-bottom:var(--space-d2);
   border-top:1px dotted hsl(0, 0%, 53%);
-  
-  border-top:var(--space-d5) dotted var(--neutral);
+  border-top:var(--border-width-default) dotted var(--neutral);
   border-bottom:1px dotted hsl(0, 0%, 53%);
-  border-bottom:var(--space-d5) dotted var(--neutral);
+  border-bottom:var(--border-width-default) dotted var(--neutral);
   overflow:auto;
 }
 
