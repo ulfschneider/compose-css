@@ -2942,6 +2942,8 @@ ol.indent,
 .indent ul,
 ul.indent{
   padding-left:0;
+  margin-top:0em;
+  margin-bottom:0em;
 }
 
 .indent ol ol,
@@ -2954,8 +2956,6 @@ ol.indent ul,
 ul.indent ul{
   padding-left:2.6244rem;
   padding-left:var(--space-2);
-  margin-top:0em;
-  margin-bottom:0em;
 }
 
 .indent li{
