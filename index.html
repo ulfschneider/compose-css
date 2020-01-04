@@ -34,7 +34,7 @@
 
 <body class="x">
     <div class="full brb br-neutral-3 bg-neutral-4">
-        <header id="navigation" class="x bg-neutral-4">
+        <header id="navigation" class="x bg-neutral-4" style="z-index: 1000;">
             <div class="breakout max-width-lg md-columns-4 sm-columns-3 columns-2 lh-4 pdy caps small lsp">
                 <div><a href="#notation" class="no-text-decoration">Notation</a></div>
                 <div><a href="#typography" class="no-text-decoration">Typography</a></div>
@@ -126,7 +126,7 @@
 
         <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.
             <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.</p>
-        
+
         <pre>p/</pre>
 
         <h3>Indented Paragraph</h3>
@@ -134,12 +134,14 @@
             <h4>Headings within indentation-blocks are completely indented</h4>
             <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
                 horrible vermin.</p>
-    
+
             <p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly
-                domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to
+                domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed
+                ready to
                 slide off any moment.</p>
-    
-            <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.
+
+            <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he
+                looked.
                 <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.</p>
         </div>
         <pre>div .indent
@@ -274,13 +276,13 @@ div .indent
         <h3>Blockquote</h3>
         <figure>
             <blockquote>
-                <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed
+                <span class="quote in-flow"><p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed
                     into a
                     horrible vermin.</p>
 
                 <p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly,
                     slightly
-                    domed and divided by arches into stiff sections.</p>
+                    domed and divided by arches into stiff sections.</p></span>
                 <figcaption>Franz Kafka, <cite>The Metamorphosis</cite></figcaption>
             </blockquote>
         </figure>
@@ -1860,7 +1862,7 @@ figure
 </body>
 
 <script>
-    DynamicHeader.init();
+    DynamicHeader.init({ pauseMoveDuration: 250 });
     activeToc('#navigation');
 </script>
 

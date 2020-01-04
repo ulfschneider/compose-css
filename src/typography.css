@@ -311,7 +311,7 @@ h4.indent,
 h5.indent .indent h6,
 h6.indent {
   padding-left: var(--space-2);
-  margin-bottom: var(--space-d3);
+  margin-bottom: var(--space-d2);
 }
 
 ul {
