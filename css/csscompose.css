@@ -2886,7 +2886,8 @@ h5.indent .indent h6,
 h6.indent{
   padding-left:2.6244rem;
   padding-left:var(--space-2);
-  margin-bottom:0;
+  margin-bottom:0.38104rem;
+  margin-bottom:var(--space-d2);
 }
 
 ul{

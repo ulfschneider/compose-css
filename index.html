@@ -28,7 +28,7 @@
 
 <body class="x">
     <div class="full brb br-neutral-3 bg-neutral-4">
-        <header id="navigation" class="x bg-neutral-4">
+        <header id="navigation" class="x bg-neutral-4" style="z-index: 1000;">
             <div class="breakout max-width-lg md-columns-4 sm-columns-3 columns-2 lh-4 pdy caps small lsp">
                 <div><a href="#notation" class="no-text-decoration">Notation</a></div>
                 <div><a href="#typography" class="no-text-decoration">Typography</a></div>
@@ -570,7 +570,7 @@ figure
                 <th class="normal pdx-0">d3</th>
                 <th class="normal pdx-0">d2</th>
                 <th class="normal pdx-0">d1</th>
-                <th class="normal pdx-0 brx brw-d2 br-white"></th>
+                <th class="normal pdx-0 brx brw-d4 br-white"></th>
                 <th class="normal pdx-0">1</th>
                 <th class="normal pdx-0">2</th>
                 <th class="normal pdx-0">3</th>
@@ -582,7 +582,7 @@ figure
                 <td class="bg-neutral-d3 square sm-square-2 md-square-3"></td>
                 <td class="bg-neutral-d2 square sm-square-2 md-square-3"></td>
                 <td class="bg-neutral-d1 square sm-square-2 md-square-3"></td>
-                <td class="bg-neutral square sm-square-2 md-square-3 brx brw-d2 br-white"></td>
+                <td class="bg-neutral square sm-square-2 md-square-3 brx brw-d4 br-white"></td>
                 <td class="bg-neutral-1 square sm-square-2 md-square-3"></td>
                 <td class="bg-neutral-2 square sm-square-2 md-square-3"></td>
                 <td class="bg-neutral-3 square sm-square-2 md-square-3"></td>
@@ -594,7 +594,7 @@ figure
                 <td class="bg-primary-d3"></td>
                 <td class="bg-primary-d2"></td>
                 <td class="bg-primary-d1"></td>
-                <td class="bg-primary brx brw-d2 br-white"></td>
+                <td class="bg-primary brx brw-d4 br-white"></td>
                 <td class="bg-primary-1"></td>
                 <td class="bg-primary-2"></td>
                 <td class="bg-primary-3"></td>
@@ -606,7 +606,7 @@ figure
                 <td class="bg-accent-one-d3"></td>
                 <td class="bg-accent-one-d2"></td>
                 <td class="bg-accent-one-d1"></td>
-                <td class="bg-accent-one brx brw-d2 br-white"></td>
+                <td class="bg-accent-one brx brw-d4 br-white"></td>
                 <td class="bg-accent-one-1"></td>
                 <td class="bg-accent-one-2"></td>
                 <td class="bg-accent-one-3"></td>
@@ -618,7 +618,7 @@ figure
                 <td class="bg-accent-two-d3"></td>
                 <td class="bg-accent-two-d2"></td>
                 <td class="bg-accent-two-d1"></td>
-                <td class="bg-accent-two brx brw-d2 br-white"></td>
+                <td class="bg-accent-two brx brw-d4 br-white"></td>
                 <td class="bg-accent-two-1"></td>
                 <td class="bg-accent-two-2"></td>
                 <td class="bg-accent-two-3"></td>
@@ -630,7 +630,7 @@ figure
                 <td class="bg-accent-three-d3"></td>
                 <td class="bg-accent-three-d2"></td>
                 <td class="bg-accent-three-d1"></td>
-                <td class="bg-accent-three brx brw-d2 br-white"></td>
+                <td class="bg-accent-three brx brw-d4 br-white"></td>
                 <td class="bg-accent-three-1"></td>
                 <td class="bg-accent-three-2"></td>
                 <td class="bg-accent-three-3"></td>
@@ -1859,7 +1859,7 @@ figure
 </body>
 
 <script>
-    DynamicHeader.init();
+    DynamicHeader.init({ pauseMoveDuration: 250 });
     activeToc('#navigation');
 </script>
 
