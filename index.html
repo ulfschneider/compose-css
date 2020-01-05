@@ -10,12 +10,6 @@
 </head>
 
 <style>
-    .indicator {
-        background: var(--neutral-4);
-        color: var(--code-color);
-        font-family: var(--font-family-mono);
-    }
-
     .is-active,
     .is-visible {
         font-weight: 700;
@@ -44,7 +38,8 @@
                 <div><a href="#tables" class="no-text-decoration">Tables</a></div>
                 <div><a href="#figures" class="no-text-decoration">Figures</a></div>
                 <div><a href="#images" class="no-text-decoration">Images</a></div>
-                <div><a href="#grid" class="no-text-decoration">Grid</a></div>
+                <div><a href="#layout-grid" class="no-text-decoration">Layout Grid</a></div>
+                <div><a href="#column-grid" class="no-text-decoration">12 Col Grid</a></div>
                 <div><a href="#layout" class="no-text-decoration">Layout</a></div>
                 <div><a href="#customize" class="no-text-decoration">Customize</a></div>
             </div>
@@ -126,7 +121,7 @@
 
         <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.
             <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.</p>
-        
+
         <pre>p/</pre>
 
         <h3>Indented Paragraph</h3>
@@ -134,12 +129,14 @@
             <h4>Headings within indentation-blocks are completely indented</h4>
             <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
                 horrible vermin.</p>
-    
+
             <p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly
-                domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to
+                domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed
+                ready to
                 slide off any moment.</p>
-    
-            <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.
+
+            <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he
+                looked.
                 <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.</p>
         </div>
         <pre>div .indent
@@ -471,10 +468,12 @@ figure
             <li><code>rg-</code> for at least regular screen width,</li>
             <li><code>sm-</code> for at least small screen width.</li>
         </ul>
-        <p>E.g. <code>lg-fs-1</code>, <code>md-h1</code>, or <code>.rg-lh-3</code>.</p>
-        <p class="mr-0">
-            A column class without a prefix will be used in case the
+        <p>E.g. <code>.lg-fs-1</code>, <code>.md-h1</code>, or <code>.rg-lh-3</code>.</p>
+        <p> A size class without a prefix will be used in case the
             alternate minimum screen size is not defined.</p>
+
+        <p class="fs rg-fs-1 md-fs-2 lg-fs-3">One morning, when Gregor Samsa woke from troubled dreams</p>
+        <pre>p/ .fs.rg-fs-1.md-fs-2.lg-fs-3</pre>
     </div>
 
 
@@ -1588,7 +1587,7 @@ figure
             <pre>img/ .fit-contain.fit-tl</pre>
         </div>
 
-        <div class="xx-12 rg-xx-6">
+        <div class="xx-12">
             <h3>Cover Images</h3>
             <p class="max-width-rg">If the image has a fixed widht or fixed height, the
                 usage of <code>.fix-cover</code> will consume the entire available space of the given dimensions
@@ -1624,7 +1623,7 @@ figure
     </div>
 
     <div class="breakout max-width-rg">
-        <h2 id="grid">Grid</h2>
+        <h2 id="layout-grid">Horizontal Layout Grid</h2>
 
         <h3>Middle Content</h3>
         <p>Middle content is the default positioning of any item within the layout. Middle content doesn´t need a
@@ -1636,7 +1635,7 @@ figure
     <div class="full bry br-dotted br-gray mono">
         div .x
         <div class="x">
-            <div class="middle indicator">
+            <div class="middle bg-neutral-4">
                 div/
             </div>
         </div>
@@ -1652,7 +1651,7 @@ figure
     <div class="full bry br-dotted br-small br-gray mono">
         div .x
         <div class="x">
-            <div class="breakout-l indicator">
+            <div class="breakout-l bg-neutral-4">
                 div/ .breakout-l
             </div>
         </div>
@@ -1669,7 +1668,7 @@ figure
     <div class="full bry br-dotted br-small br-gray mono">
         div .x
         <div class="x">
-            <div class="breakout-r indicator">
+            <div class="breakout-r bg-neutral-4">
                 div/ .breakout-r
             </div>
         </div>
@@ -1685,7 +1684,7 @@ figure
     <div class="full bry br-dotted br-small br-gray mono">
         div .x
         <div class="x">
-            <div class="breakout indicator">
+            <div class="breakout bg-neutral-4">
                 div/ .breakout
             </div>
         </div>
@@ -1702,7 +1701,7 @@ figure
     <div class="full bry br-dotted br-small br-gray mono">
         div .x
         <div class="x">
-            <div class="wide indicator">
+            <div class="wide bg-neutral-4">
                 div/ .wide
             </div>
         </div>
@@ -1719,28 +1718,28 @@ figure
     <div class="full bry br-dotted br-small br-gray mono">
         div .x
         <div class="x">
-            <div class="full indicator">
+            <div class="full bg-neutral-4">
                 div/ .full
             </div>
         </div>
         /div
     </div>
 
-    <div class="breakout max-width-rg">
-        <h3>12 Column Grid</h3>
-        <div>
-            <p>Any space can be divided horizontally into 12ths.</p>
+    <div class="breakout">
+        <h2 id="column-grid">12 Column Grid</h2>
+        <div class="max-width-rg">
+            <p>Any space can be divided horizontally into 12ths. E.g. nesting the column grid into the layout grid is a
+                typical case.</p>
             <p>The sum of the cols per row has to add up to 12. Not specifiying a column size will result in taking
-                the
-                entire grid width into one column.</p>
-        </div>
-        <pre>div .x-12 
+                the entire grid width into one column.</p>
+
+            <pre>div .x-12 
     div/ .xx-2 
     div/ .xx-10 //.xx-2 and .xx-10 together will fill an entire row           
     div/ .xx-12 //will fill an entire row 
     div/        //will also fill an entire row 
 /div</pre>
-
+        </div>
 
         <div class="x-12 mry-1 gp center code">
             <div class="xx-2 br pdy">.xx-2</div>
@@ -1768,16 +1767,16 @@ figure
             <div class="xx-2 br pdy">.xx-2</div>
             <div class="xx-12 br pdy">.xx-12</div>
         </div>
-
-        <p>Columns can have different a width based on minimum screen width.
+        
+        <p class="max-width-rg">Columns can have different a width based on minimum screen width.
             Address the different minimum screen sizes with column prefix values of</p>
-        <ul class="reset">
+        <ul class="reset max-width-rg">
             <li><code>lg-</code> for at least large screen width,</li>
             <li><code>md-</code> for at least mid screen width,</li>
             <li><code>rg-</code> for at least regular screen width,</li>
             <li><code>sm-</code> for at least small screen width.</li>
         </ul>
-        <p>
+        <p class="max-width-rg">
             A column class without a prefix will be used in case the
             alternate minimum screen size is not defined.
         </p>
@@ -1798,7 +1797,7 @@ figure
     <div class="full bry br-dotted br-small br-gray mono mb">
         div .x
         <div class="x">
-            <div class="breakout indicator">
+            <div class="breakout bg-neutral-4">
                 div/ .breakout.columns-1.rg-columns-2.md-columns-3.lg-columns-4
             </div>
         </div>
