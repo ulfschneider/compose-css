@@ -17,10 +17,6 @@ svg{
   max-height:100%;
 }
 
-.fit{
-  max-width:100%;
-}
-
 .fit-cover{
   -o-object-fit:cover;
      object-fit:cover;
@@ -755,14 +751,20 @@ td:last-child{
 
 .top{
   vertical-align:top;
+  -webkit-box-align:start;
+          align-items:start;
 }
 
 .middle{
   vertical-align:middle;
+  -webkit-box-align:center;
+          align-items:center;
 }
 
 .bottom{
   vertical-align:bottom;
+  -webkit-box-align:end;
+          align-items:end;
 }
 
 .left{
@@ -793,6 +795,10 @@ td:last-child{
   overflow:auto;
 }
 
+.hide{
+  display:none !important
+}
+
 .clearfix:before,
 .clearfix:after{
   content:" ";
@@ -819,27 +825,32 @@ td:last-child{
   max-width:100%;
 }
 
-.max-width-sm{
+.max-width-sm,
+.mw-sm{
   max-width:24rem;
   max-width:var(--small-width);
 }
 
-.max-width-rg{
+.max-width-rg,
+.mw-rg{
   max-width:32rem;
   max-width:var(--regular-width);
 }
 
-.max-width-md{
+.max-width-md,
+.mw-md{
   max-width:42rem;
   max-width:var(--mid-width);
 }
 
-.max-width-lg{
+.max-width-lg,
+.mw-lg{
   max-width:64rem;
   max-width:var(--large-width);
 }
 
-.max-width-unset{
+.max-width-unset,
+.mw-u{
   max-width:unset;
 }
 
@@ -1711,27 +1722,27 @@ td:last-child{
 }
 
 @media (max-width: 28rem){
-    .max-sm-hide{
-        display:none !important
-    }
+  .max-sm-hide{
+    display:none !important
+  }
 }
 
 @media (max-width: 36rem){
-    .max-rg-hide{
-        display:none !important
-    }
+  .max-rg-hide{
+    display:none !important
+  }
 }
 
 @media (max-width: 52rem){
-    .max-md-hide{
-        display:none !important
-    }
+  .max-md-hide{
+    display:none !important
+  }
 }
 
 @media (max-width: 64rem){
-    .max-lg-hide{
-        display:none !important
-    }
+  .max-lg-hide{
+    display:none !important
+  }
 }
 
 :root{
@@ -2532,7 +2543,7 @@ td:last-child{
   --font-weight-bold:600;
   --font-weight-normal:400;
 
-  --font-family:-apple-system, sans-serif;
+  --font-family:-apple-system,BlinkMacSystemFont,"San Francisco","Helvetica Neue",Helvetica,Ubuntu,Roboto,Noto,"Segoe UI",Arial,sans-serif;
   --font-family-headlines:var(--font-family);
   --font-family-mono:monospace;
   --link-text-decoration:underline;
@@ -2559,6 +2570,24 @@ td:last-child{
   --mrb-h6:var(--space);
 
   font-family:-apple-system
+,
+BlinkMacSystemFont
+,
+"San Francisco"
+,
+"Helvetica Neue"
+,
+Helvetica
+,
+Ubuntu
+,
+Roboto
+,
+Noto
+,
+"Segoe UI"
+,
+Arial
 ,
 sans-serif;
 
@@ -2790,6 +2819,24 @@ h6{
   text-transform:unset;
   font-weight:600;
   font-family:-apple-system
+,
+BlinkMacSystemFont
+,
+"San Francisco"
+,
+"Helvetica Neue"
+,
+Helvetica
+,
+Ubuntu
+,
+Roboto
+,
+Noto
+,
+"Segoe UI"
+,
+Arial
 ,
 sans-serif;
   font-family:var(--font-family-headlines);
@@ -5342,5 +5389,21 @@ hr{
 .pdl-4{
   padding-left:6.88748rem;
   padding-left:var(--space-4);
+}
+
+.debug-grid{
+    background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAFElEQVR4AWPAC97/9x0eCsAEPgwAVLshdpENIxcAAAAASUVORK5CYII=) repeat top left;
+}
+
+.debug-grid-16{
+    background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAMklEQVR4AWOgCLz/b0epAa6UGuBOqQHOQHLUgFEDnAbcBZ4UGwDOkiCnkIhdgNgNxAYAiYlD+8sEuo8AAAAASUVORK5CYII=) repeat top left;
+}
+
+.debug-grid-8-solid{
+    background:white url(data:image/gif;base64,R0lGODdhCAAIAPEAAADw/wDx/////wAAACwAAAAACAAIAAACDZQvgaeb/lxbAIKA8y0AOw==) repeat top left;
+}
+
+.debug-grid-16-solid{
+    background:white url(data:image/gif;base64,R0lGODdhEAAQAPEAAADw/wDx/xXy/////ywAAAAAEAAQAAACIZyPKckYDQFsb6ZqD85jZ2+BkwiRFKehhqQCQgDHcgwEBQA7) repeat top left;
 }
 

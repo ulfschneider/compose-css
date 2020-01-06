@@ -2,7 +2,7 @@
   --font-weight-bold:600;
   --font-weight-normal:400;
 
-  --font-family:-apple-system, sans-serif;
+  --font-family:-apple-system,BlinkMacSystemFont,"San Francisco","Helvetica Neue",Helvetica,Ubuntu,Roboto,Noto,"Segoe UI",Arial,sans-serif;
   --font-family-headlines:var(--font-family);
   --font-family-mono:monospace;
   --link-text-decoration:underline;
@@ -29,6 +29,24 @@
   --mrb-h6:var(--space);
 
   font-family:-apple-system
+,
+BlinkMacSystemFont
+,
+"San Francisco"
+,
+"Helvetica Neue"
+,
+Helvetica
+,
+Ubuntu
+,
+Roboto
+,
+Noto
+,
+"Segoe UI"
+,
+Arial
 ,
 sans-serif;
 
@@ -255,6 +273,24 @@ h6{
   text-transform:unset;
   font-weight:600;
   font-family:-apple-system
+,
+BlinkMacSystemFont
+,
+"San Francisco"
+,
+"Helvetica Neue"
+,
+Helvetica
+,
+Ubuntu
+,
+Roboto
+,
+Noto
+,
+"Segoe UI"
+,
+Arial
 ,
 sans-serif;
   font-family:var(--font-family-headlines);

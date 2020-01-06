@@ -28,14 +28,17 @@
 
 .top {
   vertical-align: top;
+  align-items: start;
 }
 
 .middle {
   vertical-align: middle;
+  align-items: center;
 }
 
 .bottom {
   vertical-align: bottom;
+  align-items: end;
 }
 
 .left {
@@ -96,23 +99,28 @@
   max-width: 100%;
 }
 
-.max-width-sm {
+.max-width-sm,
+.mw-sm {
   max-width: var(--small-width);
 }
 
-.max-width-rg {
+.max-width-rg,
+.mw-rg {
   max-width: var(--regular-width);
 }
 
-.max-width-md {
+.max-width-md,
+.mw-md {
   max-width: var(--mid-width);
 }
 
-.max-width-lg {
+.max-width-lg,
+.mw-lg {
   max-width: var(--large-width);
 }
 
-.max-width-unset {
+.max-width-unset,
+.mw-u {
   max-width: unset;
 }
 

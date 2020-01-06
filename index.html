@@ -40,7 +40,8 @@
                 <div><a href="#images" class="no-text-decoration">Images</a></div>
                 <div><a href="#layout-grid" class="no-text-decoration">Layout Grid</a></div>
                 <div><a href="#column-grid" class="no-text-decoration">12 Col Grid</a></div>
-                <div><a href="#layout" class="no-text-decoration">Layout</a></div>
+                <div><a href="#align" class="no-text-decoration">Align</a></div>
+                <div><a href="#hide" class="no-text-decoration">Hide</a></div>
                 <div><a href="#customize" class="no-text-decoration">Customize</a></div>
             </div>
         </header>
@@ -1627,7 +1628,7 @@ figure
 
         <h3>Middle Content</h3>
         <p>Middle content is the default positioning of any item within the layout. Middle content doesn´t need a
-            specific css class assignment to get positioned this way.</p>
+            specific CSS class assignment to get positioned this way.</p>
     </div>
 
 
@@ -1727,7 +1728,8 @@ figure
 
     <div class="breakout max-width-rg">
         <h3>Columns inside the Layout Grid</h3>
-        <p>A flow of a maximum of six columns – each of the same width – can be created for any space inside of the horizontal layout grid.</p>
+        <p>A flow of a maximum of six columns – each of the same width – can be created for any space inside of the
+            horizontal layout grid.</p>
     </div>
 
     <!-- Code Example -->
@@ -1848,19 +1850,170 @@ figure
         </p>
 
         <div class="x-12 mry-1 gp center code">
-            <div class="xx-12 rg-xx-6 lg-xx-4 br pd">.xx-12 .rg-xx-6 .lg-xx-4</div>
-            <div class="xx-12 rg-xx-6 lg-xx-8 br pd">.xx-12 .rg-xx-6 .lg-xx-8</div>
+            <div class="xx-12 rg-xx-6 lg-xx-4 br pd middle">.xx-12 .rg-xx-6 .lg-xx-4</div>
+            <div class="xx-12 rg-xx-6 lg-xx-8 br pd middle">.xx-12 .rg-xx-6 .lg-xx-8</div>
         </div>
     </div>
 
-  
+
+    <div class="breakout">
+        <h2 id="align" class="max-width-rg">Align</h2>
+
+        <h3>Addressing Screen Width</h3>
+        <table>
+            <tr>
+                <th>CSS Class Name</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><code>.max-width-sm, .mw-sm</code></td>
+            </tr>
+            <tr>
+                <td><code>.max-width-rg, .mw-rg</code></td>
+            </tr>
+            <tr>
+                <td><code>.max-width-md, .mw-md</code></td>
+            </tr>
+            <tr>
+                <td><code>.max-width-lg, .mw-lg</code></td>
+            </tr>
+            <tr>
+                <td><code>.max-width-unset, .mw-</code></td>
+            </tr>
+        </table>
+
+
+        <h3>CSS Helper Classes</h3>
+        <table>
+            <tr>
+                <th>CSS Class Name</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><code>.inline</code></td>
+            </tr>
+            <tr>
+                <td><code>.inline-block</code></td>
+            </tr>
+            <tr>
+                <td><code>.block</code></td>
+            </tr>
+            <tr>
+                <td><code>.inline-table</code></td>
+            </tr>
+            <tr>
+                <td><code>.table</code></td>
+            </tr>
+            <tr>
+                <td><code>.table-cell</code></td>
+            </tr>
+            <tr>
+                <td><code>.baseline</code></td>
+            </tr>
+            <tr>
+                <td><code>.top</code></td>
+            </tr>
+            <tr>
+                <td><code>.middle</code></td>
+            </tr>
+            <tr>
+                <td><code>.bottom</code></td>
+            </tr>
+            <tr>
+                <td><code>.left</code></td>
+            </tr>
+            <tr>
+                <td><code>.center</code></td>
+            </tr>
+            <tr>
+                <td><code>.right</code></td>
+            </tr>
+            <tr>
+                <td><code>.justify</code></td>
+            </tr>
+            <tr>
+                <td><code>.overflow-hidden</code></td>
+            </tr>
+            <tr>
+                <td><code>.overflow-scroll</code></td>
+            </tr>
+            <tr>
+                <td><code>.overflow-auto</code></td>
+            </tr>
+            <tr>
+                <td><code>.clearfix</code></td>
+            </tr>
+            <tr>
+                <td><code>.float-left</code></td>
+            </tr>
+            <tr>
+                <td><code>.float-right</code></td>
+            </tr>
+            <tr>
+                <td><code>.fit</code></td>
+            </tr>
+            <tr>
+                <td><code>.border-box</code></td>
+            </tr>
+            <tr>
+                <td><code>.content-box</code></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="breakout mw-rg">
+        <h2 id="hide">Hide</h2>
+        <table>
+            <tr>
+                <th>CSS Class Name</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><code>.hide</code></td>
+                <td>Hide</td>
+            </tr>
+            <tr>
+                <td><code class="no-break">.max-sm-hide</code></td>
+                <td>Hide if the screen width is not above the small screen width. Small screen width is defined as
+                    <pre>:root { --small-width: 24rem;}</pre>
+                </td>
+            </tr>
+            <tr>
+                <td><code class="no-break">.max-rg-hide</code></td>
+                <td>Hide if the screen width is not above the regular screen width. Regular screen width is defined as
+                    <pre>:root { --regular-width: 32rem;}</pre>
+                </td>
+            </tr>
+            <tr>
+                <td><code class="no-break">.max-md-hide</code></td>
+                <td>Hide if the screen width is not above the mid screen width. Mid screen width is defined as
+                    <pre>:root { --mid-width: 42rem;}</pre>
+                </td>
+            </tr>
+            <tr>
+                <td><code class="no-break">.max-lg-hide</code></td>
+                <td>Hide if the screen width is not above the large screen width. Large screen width is defined as
+                    <pre>:root { --small-width: 64rem;}</pre>
+                </td>
+            </tr>
+        </table>
+        <div class="inline-block top bg-primary white square-4 max-sm-hide pd-d1">Screen is above small width</div>
+        <div class="inline-block top bg-accent-one white square-4 max-rg-hide pd-d1">Screen is above regular width</div>
+        <div class="inline-block top bg-accent-two white square-4 max-md-hide pd-d1">Screen is above medium width</div>
+        <div class="inline-block top bg-accent-three black square-4 max-lg-hide pd-d1">Screen is above large width</div>
+
+        <pre>div/ .max-sm-hide Screen is above small width
+div/ .max-rg-hide Screen is above regular width
+div/ .max-md-hide Screen is above medium width
+div/ .max-lg-hide Screen is above large width</pre>
+    </div>
 
 
 </body>
 
 <script>
-    DynamicHeader.init({ pauseMoveDuration: 250, delta: 25});
-    ActiveToc.init({tocContainer: '#navigation'});
+    DynamicHeader.init({ pauseMoveDuration: 250, delta: 25 });
+    ActiveToc.init({ tocContainer: '#navigation' });
 </script>
 
 </html>
