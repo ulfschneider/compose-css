@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/csscompose.css">
     <title>CSS COMPOSE</title>
     <script src="resources/dynamic-header.min.js"></script>
-    <script src="resources/active-toc.js"></script>
+    <script src="resources/active-toc.min.js"></script>
 </head>
 
 <style>
@@ -44,13 +44,13 @@
                 <div><a href="#customize" class="no-text-decoration">Customize</a></div>
             </div>
         </header>
-
         <div class="x mrt-2 mrb-3">
             <div class="breakout">
                 <h1 class="mrb-0 lh lg-fs-6 fw-700 caps lsp">CSS Compose</h1>
                 <p>A composable CSS Toolkit to build fast-loading, responsive web sites.</p>
             </div>
         </div>
+
     </div>
 
     <div class="breakout max-width-rg neutral-d1    ">
@@ -1767,8 +1767,8 @@ figure
             <div class="xx-2 br pdy">.xx-2</div>
             <div class="xx-12 br pdy">.xx-12</div>
         </div>
-        
-        <p class="max-width-rg">Columns can have different a width based on minimum screen width.
+
+        <p class="max-width-rg">Columns can have a different width based on minimum screen width.
             Address the different minimum screen sizes with column prefix values of</p>
         <ul class="reset max-width-rg">
             <li><code>lg-</code> for at least large screen width,</li>
@@ -1860,7 +1860,7 @@ figure
 
 <script>
     DynamicHeader.init({ pauseMoveDuration: 250 });
-    activeToc('#navigation');
+    ActiveToc.init({ tocContainer: '#navigation' });
 </script>
 
 </html>
