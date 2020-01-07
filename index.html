@@ -1886,89 +1886,140 @@ figure
         </table>
 
 
-        <h3>CSS Helper Classes</h3>
+        <h3>Display, Align, Overflow, and Float</h3>
         <table>
             <tr>
                 <th>CSS Class</th>
-                <th>Description</th>
+                <th>Shorthand for property</th>
             </tr>
             <tr>
-                <td><code>.inline</code></td>
+                <td class="no-break"><code>.inline</code></td>
+                <td><code>display: inline;</code></td>
             </tr>
             <tr>
-                <td><code>.inline-block</code></td>
+                <td class="no-break"><code>.inline-block</code></td>
+                <td><code>display: inline-block;</code></td>
             </tr>
             <tr>
-                <td><code>.block</code></td>
+                <td class="no-break"><code>.block</code></td>
+                <td><code>display: block;</code></td>
             </tr>
             <tr>
-                <td><code>.inline-table</code></td>
+                <td class="no-break"><code>.inline-table</code></td>
+                <td><code>display: inline-table;</code></td>
             </tr>
             <tr>
-                <td><code>.table</code></td>
+                <td class="no-break"><code>.table</code></td>
+                <td><code>display: table;</code></td>
             </tr>
             <tr>
-                <td><code>.table-cell</code></td>
+                <td class="no-break"><code>.table-cell</code></td>
+                <td><code>display: table-cell;</code></td>
             </tr>
             <tr>
-                <td><code>.baseline</code></td>
+                <td class="no-break"><code>.baseline</code></td>
+                <td><code>vertical-align: baseline;</code></td>
             </tr>
             <tr>
-                <td><code>.top</code></td>
+                <td class="no-break"><code>.top</code></td>
+                <td><code> vertical-align: top;
+                    align-items: start;</code></td>
             </tr>
             <tr>
-                <td><code>.middle</code></td>
+                <td class="no-break"><code>.middle</code></td>
+                <td><code> vertical-align: middle;
+                    align-items: center;</code></td>
             </tr>
             <tr>
-                <td><code>.bottom</code></td>
+                <td class="no-break"><code>.bottom</code></td>
+                <td><code> vertical-align: bottom;
+                    align-items: end;</code></td>
             </tr>
             <tr>
-                <td><code>.left</code></td>
+                <td class="no-break"><code>.left</code></td>
+                <td><code>text-align: left;</code></td>
             </tr>
             <tr>
-                <td><code>.center</code></td>
+                <td class="no-break"><code>.center</code></td>
+                <td><code>text-align: center;</code></td>
             </tr>
             <tr>
-                <td><code>.right</code></td>
+                <td class="no-break"><code>.right</code></td>
+                <td><code>text-align: right;</code></td>
             </tr>
             <tr>
-                <td><code>.justify</code></td>
+                <td class="no-break"><code>.justify</code></td>
+                <td><code>text-align: justify;</code></td>
             </tr>
             <tr>
-                <td><code>.overflow-hidden</code></td>
+                <td class="no-break"><code>.overflow-hidden</code></td>
+                <td><code>overflow: hidden;</code></td>
             </tr>
             <tr>
-                <td><code>.overflow-scroll</code></td>
+                <td class="no-break"><code>.overflow-scroll</code></td>
+                <td><code>overflow: scroll;</code></td>
             </tr>
             <tr>
-                <td><code>.overflow-auto</code></td>
+                <td class="no-break"><code>.overflow-auto</code></td>
+                <td><code>overflow: auto;</code></td>
             </tr>
             <tr>
-                <td><code>.clearfix</code></td>
+                <td class="no-break"><code>.float-left</code></td>
+                <td><code>float: left;</code></td>
             </tr>
             <tr>
-                <td><code>.float-left</code></td>
+                <td class="no-break"><code>.float-right</code></td>
+                <td><code>float: right;</code></td>
             </tr>
             <tr>
-                <td><code>.float-right</code></td>
+                <td class="no-break"><code>.float-clear</code></td>
+                <td><code>clear: both;</code></td>
+            </tr>
+
+            <tr>
+                <td class="no-break"><code>.fit</code></td>
+                <td><code>max-width: 100%;</code></td>
             </tr>
             <tr>
-                <td><code>.fit</code></td>
+                <td class="no-break"><code>.border-box</code></td>
+                <td><code>box-sizing: border-box;</code> <small>this is default box-sizing for css-compose</small></td>
             </tr>
             <tr>
-                <td><code>.border-box</code></td>
-            </tr>
-            <tr>
-                <td><code>.content-box</code></td>
+                <td class="no-break"><code>.content-box</code></td>
+                <td><code>box-sizing: content-box;</code></td>
             </tr>
         </table>
+
+        <h3>Clearfix</h3>
+
+        <p>Using <code>float</code> without <code>.clearfix</code></p>
+        <div class="br brw-d2 br-primary">
+            <div class="float-left width-4 height-3 bg-accent-two"><code>.float-left</code></div>
+            <div class="float-right width-4 height-3 bg-accent-three"><code>.float-right</code></div>
+        </div>
+
+        <pre class="float-clear">div 
+    div/ .float-left 
+    div/ .float-right 
+/div</pre>
+
+        <p class="float-clear mrt-2">Using <code>float</code> with <code>.clearfix</code> assigned to the outer
+            container</p>
+        <div class="br brw-d2 br-primary clearfix">
+            <div class="float-left width-4 height-3 bg-accent-two"><code>.float-left</code></div>
+            <div class="float-right width-4 height-3 bg-accent-three"><code>.float-right</code></div>
+        </div>
+        <pre>div .clearfix
+    div/ .float-left 
+    div/ .float-right 
+/div</pre>
     </div>
 
     <div class="breakout">
         <h2 id="hide">Hide</h2>
     </div>
 
-    <div class="full overflow-hidden">
+    <div class="full overflow-hidden mry-2">
         <div class="top mrx-auto bg-neutral white w-sm sm-hide pd-d1 lh-1">Screen has at max small width</div>
         <div class="top mrx-auto bg-primary white w-sm max-sm-hide pd-d1 lh-1">Screen is above small width</div>
         <div class="top mrx-auto bg-accent-one white w-rg max-rg-hide pd-d1 lh-1">Screen is above regular width
@@ -1986,7 +2037,7 @@ div/ .max-sm-hide //Screen is above small width
 div/ .max-rg-hide //Screen is above regular width
 div/ .max-md-hide //Screen is above medium width
 div/ .max-lg-hide //Screen is above large width</pre>
-        <table>
+        <table class="mrt-2">
             <tr>
                 <th>CSS Class</th>
                 <th>Description</th>

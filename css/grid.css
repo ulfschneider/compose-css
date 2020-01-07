@@ -145,13 +145,13 @@
   grid-area:span 1/span 12;
 }
 
-@media (--breakpoint-max-rg){
+@media (max-width: 32rem){
   .x{
     grid-template-columns:var(--space) 1fr 1fr minmax(0, var(--regular-width)) 1fr 1fr var(--space);
   }
 }
 
-@media (--breakpoint-sm){
+@media (min-width: 24rem){
   .x>.sm-breakout-l{
     grid-column:3/span 2;
   }
@@ -257,7 +257,7 @@
   }
 }
 
-@media (--breakpoint-rg){
+@media (min-width: 32rem){
   .x>.rg-breakout-l{
     grid-column:3/span 2;
   }
@@ -363,7 +363,7 @@
   }
 }
 
-@media (--breakpoint-md){
+@media (min-width: 42rem){
   .x>.md-breakout-l{
     grid-column:3/span 2;
   }
@@ -469,7 +469,7 @@
   }
 }
 
-@media (--breakpoint-lg){
+@media (min-width: 64rem){
   .x>.lg-breakout-l{
     grid-column:3/span 2;
   }

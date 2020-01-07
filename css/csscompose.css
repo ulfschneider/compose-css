@@ -817,8 +817,20 @@ td:last-child{
   float:right;
 }
 
+.float-clear{
+  clear:both;
+}
+
 .fit{
   max-width:100%;
+}
+
+.border-box{
+  box-sizing:border-box;
+}
+
+.content-box{
+  box-sizing:content-box;
 }
 
 .max-width-sm,
@@ -872,14 +884,6 @@ td:last-child{
 .max-width-unset,
 .mw-u{
   max-width:unset;
-}
-
-.border-box{
-  box-sizing:border-box;
-}
-
-.content-box{
-  box-sizing:content-box;
 }
 
 .width-d5{
