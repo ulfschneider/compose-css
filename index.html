@@ -43,7 +43,7 @@
                 <div><a href="#images" class="no-text-decoration">Images</a></div>
                 <div><a href="#layout-grid" class="no-text-decoration">Layout Grid</a></div>
                 <div><a href="#column-grid" class="no-text-decoration">12 Col Grid</a></div>
-                <div><a href="#align" class="no-text-decoration">Align</a></div>
+                <div><a href="#layout" class="no-text-decoration">Layout</a></div>
                 <div><a href="#hide" class="no-text-decoration">Hide</a></div>
                 <div><a href="#customize" class="no-text-decoration">Customize</a></div>
             </div>
@@ -1385,7 +1385,7 @@ figure
                 which can be assigned to the
                 table, rows or
                 td and th elements.</p>
-            <p>Borders can be used the same with <code>.br</code>, <code>.brx</code>,
+            <p>Borders can be used with <code>.br</code>, <code>.brx</code>,
                 <code>.bry</code>,
                 <code>.brt</code>, <code>.brr</code>, <code>.brb</code>, <code>.brl</code> and
                 <code>.brw</code> styling.</p>
@@ -1864,7 +1864,7 @@ figure
 
 
     <div class="breakout mw-rg">
-        <h2 id="align">Align</h2>
+        <h2 id="layout">Layout</h2>
 
         <h3>Addressing Screen Width</h3>
         <table>
@@ -1997,7 +1997,7 @@ figure
         <h3>Clearfix</h3>
 
         <p>Using <code>float</code> without <code>.clearfix</code></p>
-        <div class="br brw-d2 br-primary">
+        <div class="br brw-d2 br-neutral">
             <div class="float-left width-4 height-3 bg-accent-two"><code>.float-left</code></div>
             <div class="float-right width-4 height-3 bg-accent-three"><code>.float-right</code></div>
         </div>
@@ -2009,7 +2009,7 @@ figure
 
         <p class="float-clear mrt-2">Using <code>float</code> with <code>.clearfix</code> assigned to the outer
             container</p>
-        <div class="br brw-d2 br-primary clearfix">
+        <div class="br brw-d2 br-neutral clearfix">
             <div class="float-left width-4 height-3 bg-accent-two"><code>.float-left</code></div>
             <div class="float-right width-4 height-3 bg-accent-three"><code>.float-right</code></div>
         </div>
@@ -2024,13 +2024,13 @@ figure
     </div>
 
     <div class="full overflow-hidden mry-2">
-        <div class="top mrx-auto bg-neutral white w-sm sm-hide pd-d1 lh-1">Screen has at max small width</div>
-        <div class="top mrx-auto bg-primary white w-sm max-sm-hide pd-d1 lh-1">Screen is above small width</div>
-        <div class="top mrx-auto bg-accent-one white w-rg max-rg-hide pd-d1 lh-1">Screen is above regular width
+        <div class="top mrx-auto bg-neutral-4 black w-sm sm-hide pd-d1 lh-1">Screen has at max small width</div>
+        <div class="top mrx-auto bg-neutral-3 white w-sm max-sm-hide pd-d1 lh-1">Screen is above small width</div>
+        <div class="top mrx-auto bg-neutral-2 white w-rg max-rg-hide pd-d1 lh-1">Screen is above regular width
         </div>
-        <div class="top mrx-auto bg-accent-two white w-md max-md-hide pd-d1 lh-1">Screen is above medium width
+        <div class="top mrx-auto bg-neutral-1 white w-md max-md-hide pd-d1 lh-1">Screen is above medium width
         </div>
-        <div class="top mrx-auto bg-accent-three black w-lg max-lg-hide pd-d1 lh-1">Screen is above
+        <div class="top mrx-auto bg-neutral white w-lg max-lg-hide pd-d1 lh-1">Screen is above
             large width
         </div>
     </div>
