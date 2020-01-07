@@ -1964,14 +1964,23 @@ figure
         </table>
     </div>
 
-    <div class="breakout mw-rg">
+    <div class="breakout">
         <h2 id="hide">Hide</h2>
-        <div class="inline-block top bg-neutral white square-4 sm-hide pd-d1 lh-1">Screen has at max small width</div>
-        <div class="inline-block top bg-primary white square-4 max-sm-hide pd-d1 lh-1">Screen is above small width</div>
-        <div class="inline-block top bg-accent-one white square-4 max-rg-hide pd-d1 lh-1">Screen is above regular width</div>
-        <div class="inline-block top bg-accent-two white square-4 max-md-hide pd-d1 lh-1">Screen is above medium width</div>
-        <div class="inline-block top bg-accent-three black square-4 max-lg-hide pd-d1 lh-1">Screen is above large width</div>
+    </div>
 
+    <div class="full overflow-hidden">
+        <div class="top mrx-auto bg-neutral white w-sm sm-hide pd-d1 lh-1">Screen has at max small width</div>
+        <div class="top mrx-auto bg-primary white w-sm max-sm-hide pd-d1 lh-1">Screen is above small width</div>
+        <div class="top mrx-auto bg-accent-one white w-rg max-rg-hide pd-d1 lh-1">Screen is above regular width
+        </div>
+        <div class="top mrx-auto bg-accent-two white w-md max-md-hide pd-d1 lh-1">Screen is above medium width
+        </div>
+        <div class="top mrx-auto bg-accent-three black w-lg max-lg-hide pd-d1 lh-1">Screen is above
+            large width
+        </div>
+    </div>
+
+    <div class="breakout mw-rg">
         <pre>div/ .sm-hide //Screen has at max small width
 div/ .max-sm-hide //Screen is above small width
 div/ .max-rg-hide //Screen is above regular width
@@ -2002,13 +2011,13 @@ div/ .max-lg-hide //Screen is above large width</pre>
                 </td>
             </tr>
             <tr>
-                <td><code class="no-break">.md-hide</code></td>
-                <td>Hide if the screen width is above the mid screen width.
+                <td><code class="no-break">.max-rg-hide</code></td>
+                <td>Hide if the screen width is not above the regular screen width.
                 </td>
             </tr>
             <tr>
-                <td><code class="no-break">.max-rg-hide</code></td>
-                <td>Hide if the screen width is not above the regular screen width.
+                <td><code class="no-break">.md-hide</code></td>
+                <td>Hide if the screen width is above the mid screen width.
                 </td>
             </tr>
             <tr>
@@ -2027,6 +2036,12 @@ div/ .max-lg-hide //Screen is above large width</pre>
                 </td>
             </tr>
         </table>
+    </div>
+
+    <div class="breakout mw-rg">
+        <h2 id="forms">Forms</h2>
+
+
     </div>
 
 

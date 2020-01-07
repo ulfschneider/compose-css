@@ -1,8 +1,8 @@
 :root {
-  --small-width: 24rem;
-  --regular-width: 32rem;
-  --mid-width: 42rem;
-  --large-width: 64rem;
+  --small-width: 24rem; /*keep in sync with custom media queries */
+  --regular-width: 32rem; /*keep in sync with custom media queries */
+  --mid-width: 42rem; /*keep in sync with custom media queries */
+  --large-width: 64rem; /*keep in sync with custom media queries */
 
   --space: 1rem;
   --space-factor: 1.62;
@@ -17,14 +17,14 @@
   --space-d5: 1px;
 }
 
-@custom-media --breakpoint-max-sm (max-width: 28rem);
-@custom-media --breakpoint-max-rg (max-width: 36rem);
-@custom-media --breakpoint-max-md (max-width: 52rem);
-@custom-media --breakpoint-max-lg (max-width: 64rem);
-@custom-media --breakpoint-sm (min-width: 28rem);
-@custom-media --breakpoint-rg (min-width: 36rem);
-@custom-media --breakpoint-md (min-width: 52rem);
-@custom-media --breakpoint-lg (min-width: 64rem);
+@custom-media --breakpoint-max-sm (max-width: 24rem); /* keep in sync with var(--small-width) */
+@custom-media --breakpoint-max-rg (max-width: 32rem); /* keep in sync with var(--regular-width) */
+@custom-media --breakpoint-max-md (max-width: 42rem); /* keep in sync with var(--mid-width) */
+@custom-media --breakpoint-max-lg (max-width: 64rem); /* keep in sync with var(--large-width) */
+@custom-media --breakpoint-sm (min-width: 24rem); /* keep in sync with var(--small-width) */
+@custom-media --breakpoint-rg (min-width: 32rem); /* keep in sync with var(--regular-width) */
+@custom-media --breakpoint-md (min-width: 42rem); /* keep in sync with var(--mid-width) */
+@custom-media --breakpoint-lg (min-width: 64rem); /* keep in sync with var(--large-width) */
 
 
 
@@ -45,6 +45,7 @@ Naming conventions
     mr=margin
     pd=padding
 */
+
 .gp-0 {
   grid-gap: 0;
 }

@@ -104,9 +104,19 @@
   max-width: var(--small-width);
 }
 
+.width-sm,
+.w-sm {
+  width: var(--small-width);
+}
+
 .max-width-rg,
 .mw-rg {
   max-width: var(--regular-width);
+}
+
+.width-rg,
+.w-rg {
+  width: var(--regular-width);
 }
 
 .max-width-md,
@@ -114,9 +124,19 @@
   max-width: var(--mid-width);
 }
 
+.width-md,
+.w-md {
+  width: var(--mid-width);
+}
+
 .max-width-lg,
 .mw-lg {
   max-width: var(--large-width);
+}
+
+.width-lg,
+.w-lg {
+  width: var(--large-width);
 }
 
 .max-width-unset,
