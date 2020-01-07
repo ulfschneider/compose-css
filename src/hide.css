@@ -2,6 +2,30 @@
     display: none !important
 }
 
+@media (--breakpoint-sm) {
+    .sm-hide {
+        display: none !important
+    }
+}
+
+@media (--breakpoint-rg) {
+    .rg-hide {
+        display: none !important
+    }
+}
+
+@media (--breakpoint-md) {
+    .md-hide {
+        display: none !important
+    }
+}
+
+@media (--breakpoint-lg) {
+    .lg-hide {
+        display: none !important
+    }
+}
+
 @media (--breakpoint-max-sm) {
     .max-sm-hide {
         display: none !important

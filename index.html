@@ -17,7 +17,10 @@
 
     .is-active::before,
     .is-visible::before {
-        content: '– '
+        content: '–';
+        width: 1em;
+        margin-left: -1em;
+        display: inline-block;
     }
 
     :root {
@@ -29,7 +32,7 @@
 <body class="x">
     <div class="full brb br-neutral-3 bg-neutral-4">
         <header id="navigation" class="x bg-neutral-4" style="z-index: 1000;">
-            <div class="breakout max-width-lg md-columns-4 sm-columns-3 columns-2 lh-4 pdy caps small lsp">
+            <div class="breakout mw-lg md-columns-4 sm-columns-3 columns-2 lh-4 pdy caps small lsp">
                 <div><a href="#notation" class="no-text-decoration">Notation</a></div>
                 <div><a href="#typography" class="no-text-decoration">Typography</a></div>
                 <div><a href="#colors" class="no-text-decoration">Colors</a></div>
@@ -54,7 +57,7 @@
 
     </div>
 
-    <div class="breakout max-width-rg neutral-d1    ">
+    <div class="breakout mw-rg neutral-d1    ">
         <h2 id="notation" class="h5 mrt-4">Notation</h2>
         <p>Throughout this document the following notation is applied:</p>
 
@@ -87,7 +90,7 @@
         </table>
     </div>
 
-    <div class="breakout max-width-lg">
+    <div class="breakout mw-lg">
         <h2 id="typography">Typography</h2>
         <h3>Elements</h3>
         <div class="rg-columns-2">
@@ -111,7 +114,7 @@
         </div>
     </div>
 
-    <div class="breakout max-width-rg">
+    <div class="breakout mw-rg">
         <h3>Paragraph</h3>
         <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
             horrible vermin.</p>
@@ -298,7 +301,7 @@ figure
     </div>
 
 
-    <div class="breakout x-12 max-width-lg">
+    <div class="breakout x-12 mw-lg">
 
         <div class="xx-12 sm-xx-6">
             <h3>Heading Styling</h3>
@@ -420,7 +423,7 @@ figure
         </table>
     </div>
 
-    <div class="breakout max-width-rg">
+    <div class="breakout mw-rg">
         <h3>Line Height</h3>
         <table>
             <tr>
@@ -459,7 +462,7 @@ figure
         </table>
     </div>
 
-    <div class="breakout max-width-rg">
+    <div class="breakout mw-rg">
         <h3>Screen Width and Size</h3>
         <p>Heading size, font size, and line height can have different sizes on minimum screen width.
             Address the different minimum screen sizes with prefix values of</p>
@@ -478,7 +481,7 @@ figure
     </div>
 
 
-    <div class="breakout max-width-rg">
+    <div class="breakout mw-rg">
         <h3>Font Weight</h3>
         <table>
             <tr>
@@ -521,7 +524,7 @@ figure
         </table>
     </div>
 
-    <div class="breakout max-width-rg">
+    <div class="breakout mw-rg">
         <h3>Letter Spacing</h3>
         <table>
             <tr>
@@ -547,7 +550,7 @@ figure
         </table>
     </div>
 
-    <div class="breakout max-width-rg">
+    <div class="breakout mw-rg">
         <h3>Numbers</h3>
         <table>
             <tr>
@@ -642,49 +645,49 @@ figure
 
     <div class="breakout">
         <h3>Apply Colors to Text, Background, and Borders</h3>
-        <p class="max-width-rg">Set color, background-color and border-color by applying the naming conventions:</p>
+        <p class="mw-rg">Set color, background-color and border-color by applying the naming conventions:</p>
 
         <table class="br-separate">
             <tr>
                 <th class="normal left">Color</th>
                 <th class="normal center">Background</th>
                 <th class="normal center">Border</th>
-                <th class="normal">Refine</th>
+                <th class="normal max-sm-hide">Refine</th>
             </tr>
             <tr>
                 <td class="neutral code middle left">.neutral</td>
                 <td class="bg-neutral white code middle center">.bg-neutral</td>
                 <td class="br brw-d3 neutral br-neutral code middle center">.br-neutral</td>
-                <td class="neutral"><code>neutral-d4</code> … <code>neutral-4</code></td>
+                <td class="neutral max-sm-hide"><code>neutral-d4</code> … <code>neutral-4</code></td>
             </tr>
             <tr>
                 <td class="primary code middle left">.primary</td>
                 <td class="bg-primary white code middle center">.bg-primary</td>
                 <td class="primary br-primary br brw-d3 code middle center">.br-primary</td>
-                <td class="primary"><code>primary-d4</code> … <code>primary-4</code></td>
+                <td class="primary max-sm-hide"><code>primary-d4</code> … <code>primary-4</code></td>
             </tr>
             <tr>
                 <td class="accent-one code middle left">.accent-one</td>
                 <td class="bg-accent-one white code middle center">.bg-accent-one</td>
                 <td class="accent-one br-accent-one br brw-d3 code middle center">.br-accent-one</td>
-                <td class="accent-one"><code>accent-one-d4</code> … <code>accent-one-4</code></td>
+                <td class="accent-one max-sm-hide"><code>accent-one-d4</code> … <code>accent-one-4</code></td>
             </tr>
             <tr>
                 <td class="accent-two code middle left">.accent-two</td>
                 <td class="bg-accent-two white code middle center">.bg-accent-two</td>
                 <td class="accent-two br-accent-two br brw-d3 code middle center">.br-accent-two</td>
-                <td class="accent-two"><code>accent-two-d4</code> … <code>accent-two-4</code></td>
+                <td class="accent-two max-sm-hide"><code>accent-two-d4</code> … <code>accent-two-4</code></td>
             </tr>
             <tr>
                 <td class="accent-three code middle left">.accent-three</td>
                 <td class="bg-accent-three white code middle center">.bg-accent-three</td>
                 <td class="accent-three br-accent-three br brw-d3 code middle center">.br-accent-three</td>
-                <td class="accent-three"><code>accent-three-d4</code> … <code>accent-three-4</code></td>
+                <td class="accent-three max-sm-hide"><code>accent-three-d4</code> … <code>accent-three-4</code></td>
             </tr>
         </table>
     </div>
 
-    <div class="breakout max-width-rg">
+    <div class="breakout mw-rg">
         <h3>Edge Values</h3>
         <p>In addition there are four colors available, which can also be used as color, background-color and
             border-color but do not allow further refinement:</p>
@@ -722,7 +725,7 @@ figure
         </ul>
     </div>
 
-    <div class="breakout max-width-rg">
+    <div class="breakout mw-rg">
         <h3>Define Your Own Color System</h3>
         <p>The color system is built around the five colors:</p>
         <ul class="no-list-type">
@@ -824,7 +827,7 @@ figure
         </table>
     </div>
 
-    <div class="breakout max-width-rg">
+    <div class="breakout mw-rg">
         <h3>Margin</h3>
 
         <div class="x-12 gp-1">
@@ -1012,7 +1015,7 @@ figure
     </div>
 
 
-    <div class="breakout max-width-rg">
+    <div class="breakout mw-rg">
         <h3>Padding</h3>
         <div class="x-12 gp-1">
             <div class="xx-12">
@@ -1109,7 +1112,7 @@ figure
         </div>
     </div>
 
-    <div class="breakout max-width-rg">
+    <div class="breakout mw-rg">
         <h3>Grid Gap</h3>
         <div class="x-12 gp-0 middle center">
             <div class="xx-6 bg-neutral-4 pdy">1</div>
@@ -1250,7 +1253,7 @@ figure
         </table>
     </div>
 
-    <div class="breakout max-width-rg">
+    <div class="breakout mw-rg">
         <h3>Border</h3>
         <div class="x-12 gp-1">
             <div class="xx-4 br pd-1 bg-neutral-4"></div>
@@ -1375,7 +1378,7 @@ figure
             </tr>
         </table>
 
-        <div class="max-width-rg">
+        <div class="mw-rg">
             <pre>table/</pre>
 
             <p>Apply padding with <code>.pd</code>, <code>.pdx</code>, or <code>.pdy</code> styling
@@ -1428,7 +1431,7 @@ figure
                 <td>Italy</td>
             </tr>
         </table>
-        <pre class="max-width-rg">table/ .alternate-rows</pre>
+        <pre class="mw-rg">table/ .alternate-rows</pre>
     </div>
 
     <div class="breakout">
@@ -1475,7 +1478,7 @@ figure
                 <td>Italy</td>
             </tr>
         </table>
-        <pre class="max-width-rg">table/ .alternate-cols</pre>
+        <pre class="mw-rg">table/ .alternate-cols</pre>
     </div>
 
     <div class="breakout">
@@ -1517,11 +1520,11 @@ figure
                 <td>Italy</td>
             </tr>
         </table>
-        <pre class="mrt-1 max-width-rg">table/ .underline-rows</pre>
+        <pre class="mrt-1 mw-rg">table/ .underline-rows</pre>
     </div>
 
 
-    <div class="breakout max-width-rg">
+    <div class="breakout mw-rg">
         <h2 id="figures">Figures</h2>
         <figure>
             <img loading="lazy" src="resources/pierre-chatel-innocenti-unsplash.jpg" />
@@ -1536,7 +1539,7 @@ figure
     <div class="breakout">
         <h2 id="images">Images</h2>
         <h3>Responsive Images</h3>
-        <p class="max-width-rg mrb-0">Images are by default responsive and take the entire available horizontal
+        <p class="mw-rg mrb-0">Images are by default responsive and take the entire available horizontal
             space
             while
             preserving
@@ -1554,7 +1557,7 @@ figure
 
     <div class="breakout x-12">
         <h3>Contained Images</h3>
-        <div class="max-width-rg">
+        <div class="mw-rg">
             <p>If the image has a fixed width or fixed height, the
                 usage of <code>.fix-contain</code> will put the entire visible image inside of the given
                 dimensions while preserving aspect-ratio and without stretching the image.</p>
@@ -1590,7 +1593,7 @@ figure
 
         <div class="xx-12">
             <h3>Cover Images</h3>
-            <p class="max-width-rg">If the image has a fixed widht or fixed height, the
+            <p class="mw-rg">If the image has a fixed widht or fixed height, the
                 usage of <code>.fix-cover</code> will consume the entire available space of the given dimensions
                 while preserving aspect-ratio.</p>
             <p>The image might be stretched to cover.</p>
@@ -1606,7 +1609,7 @@ figure
 
 
     <div class="breakout">
-        <div class="max-width-rg">
+        <div class="mw-rg">
             <h3>Background Images</h3>
             <p>Background images can also be positioned with <code>.fit-cover</code>, which is useful
                 for
@@ -1623,7 +1626,7 @@ figure
         <pre>div/ .fit-cover style="height: 600px; background-image: url('image.jpg')" </pre>
     </div>
 
-    <div class="breakout max-width-rg">
+    <div class="breakout mw-rg">
         <h2 id="layout-grid">Horizontal Layout Grid</h2>
 
         <h3>Middle Content</h3>
@@ -1643,7 +1646,7 @@ figure
         /div
     </div>
 
-    <div class="breakout max-width-rg">
+    <div class="breakout mw-rg">
         <h3>Breakout Left Content</h3>
         <p>Breakout left content is enlarged to the left and will keep the right boundary with middle content.</p>
     </div>
@@ -1659,7 +1662,7 @@ figure
         /div
     </div>
 
-    <div class="breakout max-width-rg">
+    <div class="breakout mw-rg">
         <h3>Breakout Right Content</h3>
         <p>Breakout right content enlarged to the right and will keep the left boundary with middle content.
         </p>
@@ -1676,7 +1679,7 @@ figure
         /div
     </div>
 
-    <div class="breakout max-width-rg">
+    <div class="breakout mw-rg">
         <h3>Breakout Content = Left and Right</h3>
         <p>Breakout content is the combination of left and right content.</p>
     </div>
@@ -1692,7 +1695,7 @@ figure
         /div
     </div>
 
-    <div class="breakout max-width-rg">
+    <div class="breakout mw-rg">
         <h3>Wide Content</h3>
         <p>Wide content nearly takes the full width of the screen, except of a
             small margin to the window border.</p>
@@ -1710,7 +1713,7 @@ figure
     </div>
 
 
-    <div class="breakout max-width-rg">
+    <div class="breakout mw-rg">
         <h3>Full Content</h3>
         <p>Full content will use the entire width of the screen.</p>
     </div>
@@ -1726,7 +1729,7 @@ figure
         /div
     </div>
 
-    <div class="breakout max-width-rg">
+    <div class="breakout mw-rg">
         <h3>Columns inside the Layout Grid</h3>
         <p>A flow of a maximum of six columns – each of the same width – can be created for any space inside of the
             horizontal layout grid.</p>
@@ -1743,7 +1746,7 @@ figure
         /div
     </div>
 
-    <div class="breakout max-width-rg">
+    <div class="breakout mw-rg">
         <p class="mrt">The number of columns can vary based on available screen width.
             Address the different minimum screen sizes with column prefix values of </p>
         <ul class="reset">
@@ -1756,7 +1759,7 @@ figure
             alternate minimum screen size is not defined.</p>
     </div>
 
-    <div class="breakout mry-2 max-width-lg columns-1 rg-columns-2 md-columns-3 lg-columns-4 indent pdy">
+    <div class="breakout mry-2 mw-lg columns-1 rg-columns-2 md-columns-3 lg-columns-4 indent pdy">
         <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
             horrible vermin.</p>
 
@@ -1795,7 +1798,7 @@ figure
 
     <div class="breakout">
         <h2 id="column-grid">12 Column Grid</h2>
-        <div class="max-width-rg">
+        <div class="mw-rg">
             <p>Any space can be divided horizontally into 12ths. E.g. nesting the column grid into the layout grid is a
                 typical case.</p>
             <p>The sum of the cols per row has to add up to 12. Not specifiying a column size will result in taking
@@ -1836,15 +1839,15 @@ figure
             <div class="xx-12 br pdy">.xx-12</div>
         </div>
 
-        <p class="max-width-rg">Columns can have a different width based on minimum screen width.
+        <p class="mw-rg">Columns can have a different width based on minimum screen width.
             Address the different minimum screen sizes with column prefix values of</p>
-        <ul class="reset max-width-rg">
+        <ul class="reset mw-rg">
             <li><code>lg-</code> for at least large screen width,</li>
             <li><code>md-</code> for at least mid screen width,</li>
             <li><code>rg-</code> for at least regular screen width,</li>
             <li><code>sm-</code> for at least small screen width.</li>
         </ul>
-        <p class="max-width-rg">
+        <p class="mw-rg">
             A column class without a prefix will be used in case the
             alternate minimum screen size is not defined.
         </p>
@@ -1856,13 +1859,13 @@ figure
     </div>
 
 
-    <div class="breakout">
-        <h2 id="align" class="max-width-rg">Align</h2>
+    <div class="breakout mw-rg">
+        <h2 id="align">Align</h2>
 
         <h3>Addressing Screen Width</h3>
         <table>
             <tr>
-                <th>CSS Class Name</th>
+                <th>CSS Class</th>
                 <th>Description</th>
             </tr>
             <tr>
@@ -1878,7 +1881,7 @@ figure
                 <td><code>.max-width-lg, .mw-lg</code></td>
             </tr>
             <tr>
-                <td><code>.max-width-unset, .mw-</code></td>
+                <td><code>.max-width-unset, .mw-u</code></td>
             </tr>
         </table>
 
@@ -1886,7 +1889,7 @@ figure
         <h3>CSS Helper Classes</h3>
         <table>
             <tr>
-                <th>CSS Class Name</th>
+                <th>CSS Class</th>
                 <th>Description</th>
             </tr>
             <tr>
@@ -1963,56 +1966,74 @@ figure
 
     <div class="breakout mw-rg">
         <h2 id="hide">Hide</h2>
-        <table>
-            <tr>
-                <th>CSS Class Name</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td><code>.hide</code></td>
-                <td>Hide</td>
-            </tr>
-            <tr>
-                <td><code class="no-break">.max-sm-hide</code></td>
-                <td>Hide if the screen width is not above the small screen width. Small screen width is defined as
-                    <pre>:root { --small-width: 24rem;}</pre>
-                </td>
-            </tr>
-            <tr>
-                <td><code class="no-break">.max-rg-hide</code></td>
-                <td>Hide if the screen width is not above the regular screen width. Regular screen width is defined as
-                    <pre>:root { --regular-width: 32rem;}</pre>
-                </td>
-            </tr>
-            <tr>
-                <td><code class="no-break">.max-md-hide</code></td>
-                <td>Hide if the screen width is not above the mid screen width. Mid screen width is defined as
-                    <pre>:root { --mid-width: 42rem;}</pre>
-                </td>
-            </tr>
-            <tr>
-                <td><code class="no-break">.max-lg-hide</code></td>
-                <td>Hide if the screen width is not above the large screen width. Large screen width is defined as
-                    <pre>:root { --small-width: 64rem;}</pre>
-                </td>
-            </tr>
-        </table>
+        <div class="inline-block top bg-neutral white square-4 sm-hide pd-d1">Screen has at max small width</div>
         <div class="inline-block top bg-primary white square-4 max-sm-hide pd-d1">Screen is above small width</div>
         <div class="inline-block top bg-accent-one white square-4 max-rg-hide pd-d1">Screen is above regular width</div>
         <div class="inline-block top bg-accent-two white square-4 max-md-hide pd-d1">Screen is above medium width</div>
         <div class="inline-block top bg-accent-three black square-4 max-lg-hide pd-d1">Screen is above large width</div>
 
-        <pre>div/ .max-sm-hide Screen is above small width
-div/ .max-rg-hide Screen is above regular width
-div/ .max-md-hide Screen is above medium width
-div/ .max-lg-hide Screen is above large width</pre>
+        <pre>div/ .sm-hide //Screen has at max small width
+div/ .max-sm-hide //Screen is above small width
+div/ .max-rg-hide //Screen is above regular width
+div/ .max-md-hide //Screen is above medium width
+div/ .max-lg-hide //Screen is above large width</pre>
+        <table>
+            <tr>
+                <th>CSS Class</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><code>.hide</code></td>
+                <td>Hide in any case</td>
+            </tr>
+            <tr>
+                <td><code class="no-break">.sm-hide</code></td>
+                <td>Hide if the screen width is above the small screen width.
+                </td>
+            </tr>
+            <tr>
+                <td><code class="no-break">.max-sm-hide</code></td>
+                <td>Hide if the screen width is not above the small screen width.
+                </td>
+            </tr>
+            <tr>
+                <td><code class="no-break">.rg-hide</code></td>
+                <td>Hide if the screen width is above the regular screen width.
+                </td>
+            </tr>
+            <tr>
+                <td><code class="no-break">.md-hide</code></td>
+                <td>Hide if the screen width is above the mid screen width.
+                </td>
+            </tr>
+            <tr>
+                <td><code class="no-break">.max-rg-hide</code></td>
+                <td>Hide if the screen width is not above the regular screen width.
+                </td>
+            </tr>
+            <tr>
+                <td><code class="no-break">.max-md-hide</code></td>
+                <td>Hide if the screen width is not above the mid screen width.
+                </td>
+            </tr>
+            <tr>
+                <td><code class="no-break">.lg-hide</code></td>
+                <td>Hide if the screen width is above the large screen width.
+                </td>
+            </tr>
+            <tr>
+                <td><code class="no-break">.max-lg-hide</code></td>
+                <td>Hide if the screen width is not above the large screen width.
+                </td>
+            </tr>
+        </table>
     </div>
 
 
 </body>
 
 <script>
-    DynamicHeader.init({ pauseMoveDuration: 250, delta: 25 });
+    DynamicHeader.init();
     ActiveToc.init({ tocContainer: '#navigation' });
 </script>
 
