@@ -2,11 +2,12 @@
   "name": "css-compose",
   "version": "0.1.0",
   "description": "Composable CSS Toolkit",
-  "main": "src/groundwork.css",
-  "style": "src/groundwork.css",
+  "main": "css/css-compose.css",
+  "style": "css/css-compose.css",
   "devDependencies": {
     "autoprefixer": "^9.7.3",
     "cssstats": "^3.4.0",
+    "minify": "^5.0.0",
     "postcss-calc": "^7.0.1",
     "postcss-cli": "^6.1.3",
     "postcss-custom-media": "^7.0.8",
@@ -17,7 +18,7 @@
   },
   "scripts": {
     "watch": "postcss src/*.css --dir css --config postcss.config.js --watch",
-    "build": "postcss src/*.css --dir css --config postcss.config.js",
+    "build": "postcss src/*.css --dir css --config postcss.config.js && minify css/css-compose.css > css/css-compose.min.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

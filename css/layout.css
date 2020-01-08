@@ -72,10 +72,6 @@
   overflow:auto;
 }
 
-.hide{
-  display:none !important
-}
-
 .clearfix:before,
 .clearfix:after{
   content:" ";
@@ -98,33 +94,12 @@
   float:right;
 }
 
+.float-clear{
+  clear:both;
+}
+
 .fit{
   max-width:100%;
-}
-
-.max-width-sm,
-.mw-sm{
-  max-width:var(--small-width);
-}
-
-.max-width-rg,
-.mw-rg{
-  max-width:var(--regular-width);
-}
-
-.max-width-md,
-.mw-md{
-  max-width:var(--mid-width);
-}
-
-.max-width-lg,
-.mw-lg{
-  max-width:var(--large-width);
-}
-
-.max-width-unset,
-.mw-u{
-  max-width:unset;
 }
 
 .border-box{
@@ -133,6 +108,51 @@
 
 .content-box{
   box-sizing:content-box;
+}
+
+.max-width-sm,
+.mw-sm{
+  max-width:var(--small-width);
+}
+
+.width-sm,
+.w-sm{
+  width:var(--small-width);
+}
+
+.max-width-rg,
+.mw-rg{
+  max-width:var(--regular-width);
+}
+
+.width-rg,
+.w-rg{
+  width:var(--regular-width);
+}
+
+.max-width-md,
+.mw-md{
+  max-width:var(--mid-width);
+}
+
+.width-md,
+.w-md{
+  width:var(--mid-width);
+}
+
+.max-width-lg,
+.mw-lg{
+  max-width:var(--large-width);
+}
+
+.width-lg,
+.w-lg{
+  width:var(--large-width);
+}
+
+.max-width-unset,
+.mw-u{
+  max-width:unset;
 }
 
 .width-d5{
@@ -265,7 +285,7 @@
   height:var(--space-4)
 }
 
-@media (min-width: 28rem){
+@media (--breakpoint-sm){
   .sm-width-d5{
     width:var(--space-d5);
   }
@@ -398,7 +418,7 @@
   }
 }
 
-@media (min-width: 36rem){
+@media (--breakpoint-rg){
   .rg-width-d5{
     width:var(--space-d5);
   }
@@ -530,7 +550,7 @@
   }
 }
 
-@media (min-width: 52rem){
+@media (--breakpoint-md){
   .md-width-d5{
     width:var(--space-d5);
   }
@@ -662,7 +682,7 @@
   }
 }
 
-@media (min-width: 64rem){
+@media (--breakpoint-lg){
   .lg-width-d5{
     width:var(--space-d5);
   }
@@ -791,29 +811,5 @@
   .lg-square-4{
     width:var(--space-4);
     height:var(--space-4)
-  }
-}
-
-@media (max-width: 28rem){
-  .max-sm-hide{
-    display:none !important
-  }
-}
-
-@media (max-width: 36rem){
-  .max-rg-hide{
-    display:none !important
-  }
-}
-
-@media (max-width: 52rem){
-  .max-md-hide{
-    display:none !important
-  }
-}
-
-@media (max-width: 64rem){
-  .max-lg-hide{
-    display:none !important
   }
 }

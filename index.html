@@ -33,19 +33,19 @@
     <div class="full brb br-neutral-3 bg-neutral-4">
         <header id="navigation" class="x bg-neutral-4" style="z-index: 1000;">
             <div class="breakout mw-lg md-columns-4 sm-columns-3 columns-2 lh-4 pdy caps small lsp">
-                <div><a href="#notation" class="no-text-decoration">Notation</a></div>
-                <div><a href="#typography" class="no-text-decoration">Typography</a></div>
-                <div><a href="#colors" class="no-text-decoration">Colors</a></div>
-                <div><a href="#white-space" class="no-text-decoration">White Space</a></div>
-                <div><a href="#borders" class="no-text-decoration">Borders</a></div>
-                <div><a href="#tables" class="no-text-decoration">Tables</a></div>
-                <div><a href="#figures" class="no-text-decoration">Figures</a></div>
-                <div><a href="#images" class="no-text-decoration">Images</a></div>
-                <div><a href="#layout-grid" class="no-text-decoration">Layout Grid</a></div>
-                <div><a href="#column-grid" class="no-text-decoration">12 Col Grid</a></div>
-                <div><a href="#layout" class="no-text-decoration">Layout</a></div>
-                <div><a href="#hide" class="no-text-decoration">Hide</a></div>
-                <div><a href="#customize" class="no-text-decoration">Customize</a></div>
+                <div><a href="#notation" class="no-deco">Notation</a></div>
+                <div><a href="#typography" class="no-deco">Typography</a></div>
+                <div><a href="#colors" class="no-deco">Colors</a></div>
+                <div><a href="#white-space" class="no-deco">White Space</a></div>
+                <div><a href="#borders" class="no-deco">Borders</a></div>
+                <div><a href="#tables" class="no-deco">Tables</a></div>
+                <div><a href="#figures" class="no-deco">Figures</a></div>
+                <div><a href="#images" class="no-deco">Images</a></div>
+                <div><a href="#layout-grid" class="no-deco">Layout Grid</a></div>
+                <div><a href="#column-grid" class="no-deco">12 Col Grid</a></div>
+                <div><a href="#layout" class="no-deco">Layout</a></div>
+                <div><a href="#hide" class="no-deco">Hide</a></div>
+                <div><a href="#customize" class="no-deco">Customize</a></div>
             </div>
         </header>
         <div class="x mrt-2 mrb-3">
@@ -95,6 +95,7 @@
         <h3>Elements</h3>
 
         <p><span class="mrr">Regular</span> <code>.normal</code></p>
+        <p><a href="#" class="mrr">Link</a> <code>a</code></p>
         <p><b class="mrr">Bold</b> <code>strong</code>, <code>b</code>, <code>.strong</code>, <code>.bold</code>,
             <code>.b</code></p>
         <p><i class="mrr">Italic</i> <code>i</code>, <code>.i</code>, <code>.italic</code></p>
@@ -450,7 +451,8 @@ figure
             <tr>
                 <td class="lh-3 brt baseline pd-0">One morning, when Gregor Samsa woke from troubled dreams, he
                     found himself transformed in his bed into a horrible vermin.</td>
-                <td class="lh-3 baseline no-break pdl pd-0"><code>.lh-3</code>, <code>.lh-default</code></td>
+                <td class="lh-3 baseline pdl pd-0"><code class="no-break">.lh-3</code>,
+                    <code class="no-break">.lh-unset</code></td>
             </tr>
             <tr>
                 <td class="lh-4 brt m brb baseline pd-0">One morning, when Gregor Samsa woke from troubled dreams,
@@ -459,6 +461,7 @@ figure
                 </td>
                 <td class="lh-4 code baseline pdl pd-0">.lh-4</td>
             </tr>
+
         </table>
     </div>
 
@@ -1863,33 +1866,10 @@ figure
     </div>
 
 
+
+    <h2 class="breakout" id="layout">Layout</h2>
+
     <div class="breakout mw-rg">
-        <h2 id="layout">Layout</h2>
-
-        <h3>Addressing Screen Width</h3>
-        <table>
-            <tr>
-                <th>CSS Class</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td><code>.max-width-sm, .mw-sm</code></td>
-            </tr>
-            <tr>
-                <td><code>.max-width-rg, .mw-rg</code></td>
-            </tr>
-            <tr>
-                <td><code>.max-width-md, .mw-md</code></td>
-            </tr>
-            <tr>
-                <td><code>.max-width-lg, .mw-lg</code></td>
-            </tr>
-            <tr>
-                <td><code>.max-width-unset, .mw-u</code></td>
-            </tr>
-        </table>
-
-
         <h3>Display, Align, Overflow, and Float</h3>
         <table>
             <tr>
@@ -1993,7 +1973,9 @@ figure
                 <td><code>box-sizing: content-box;</code></td>
             </tr>
         </table>
+    </div>
 
+    <div class="breakout mw-rg">
         <h3>Clearfix</h3>
 
         <p>Using <code>float</code> without <code>.clearfix</code></p>
@@ -2019,18 +2001,60 @@ figure
 /div</pre>
     </div>
 
-    <div class="breakout">
-        <h2 id="hide">Hide</h2>
+
+    <h3 class="breakout">Width</h3>
+
+    <div class="wide overflow-scroll mry-2">
+        <div class="top brb bg-neutral-4 w-sm pd-d1 lh-1">Small width</div>
+        <div class="top brb bg-neutral-4 w-rg pd-d1 lh-1">Regular width
+        </div>
+        <div class="top brb bg-neutral-4 w-md pd-d1 lh-1">Mid width
+        </div>
+        <div class="top brb bg-neutral-4 w-lg pd-d1 lh-1">Large width
+        </div>
     </div>
 
+    <div class="breakout mw-rg">
+
+        <table>
+            <tr>
+                <th>CSS Class</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><code>.max-width-sm, .mw-sm</code></td>
+                <td>Maximum width is small width</td>
+            </tr>
+            <tr>
+                <td><code>.max-width-rg, .mw-rg</code></td>
+                <td>Maximum width is regular width</td>
+            </tr>
+            <tr>
+                <td><code>.max-width-md, .mw-md</code></td>
+                <td>Maximum width is mid width</td>
+            </tr>
+            <tr>
+                <td><code>.max-width-lg, .mw-lg</code></td>
+                <td>Maximum width is large width</td>
+            </tr>
+            <tr>
+                <td><code>.max-width-unset, .mw-u</code></td>
+                <td>Maximum width is unset</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <h2 class="breakout" id="hide">Hide</h2>
+
     <div class="full overflow-hidden mry-2">
-        <div class="top mrx-auto bg-neutral-4 black w-sm sm-hide pd-d1 lh-1">Screen has at max small width</div>
-        <div class="top mrx-auto bg-neutral-3 white w-sm max-sm-hide pd-d1 lh-1">Screen is above small width</div>
-        <div class="top mrx-auto bg-neutral-2 white w-rg max-rg-hide pd-d1 lh-1">Screen is above regular width
+        <div class="top mrx-auto brb bg-neutral-4 w-sm sm-hide pd-d1 lh-1">Screen has at max small width</div>
+        <div class="top mrx-auto brb bg-neutral-4 w-sm max-sm-hide pd-d1 lh-1">Screen is above small width</div>
+        <div class="top mrx-auto brb bg-neutral-4 w-rg max-rg-hide pd-d1 lh-1">Screen is above regular width
         </div>
-        <div class="top mrx-auto bg-neutral-1 white w-md max-md-hide pd-d1 lh-1">Screen is above medium width
+        <div class="top mrx-auto brb bg-neutral-4 w-md max-md-hide pd-d1 lh-1">Screen is above mid width
         </div>
-        <div class="top mrx-auto bg-neutral white w-lg max-lg-hide pd-d1 lh-1">Screen is above
+        <div class="top mrx-auto brb bg-neutral-4 w-lg max-lg-hide pd-d1 lh-1">Screen is above
             large width
         </div>
     </div>
@@ -2039,7 +2063,7 @@ figure
         <pre>div/ .sm-hide //Screen has at max small width
 div/ .max-sm-hide //Screen is above small width
 div/ .max-rg-hide //Screen is above regular width
-div/ .max-md-hide //Screen is above medium width
+div/ .max-md-hide //Screen is above mid width
 div/ .max-lg-hide //Screen is above large width</pre>
         <table class="mrt-2">
             <tr>

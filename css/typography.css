@@ -207,6 +207,10 @@ u{
   white-space:nowrap;
 }
 
+.no-deco{
+  text-decoration:none;
+}
+
 .break-word{
   word-wrap:break-word;
 }
@@ -487,10 +491,6 @@ p.no-indent{
   text-indent:0;
   margin-top:var(--space);
   margin-bottom:var(--space);
-}
-
-.no-text-decoration{
-  text-decoration:none;
 }
 
 .code,

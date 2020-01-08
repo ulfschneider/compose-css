@@ -2,49 +2,49 @@
     display:none !important
 }
 
-@media (min-width: 24rem){
+@media (--breakpoint-sm){
     .sm-hide{
         display:none !important
     }
 }
 
-@media (min-width: 32rem){
+@media (--breakpoint-rg){
     .rg-hide{
         display:none !important
     }
 }
 
-@media (min-width: 42rem){
+@media (--breakpoint-md){
     .md-hide{
         display:none !important
     }
 }
 
-@media (min-width: 64rem){
+@media (--breakpoint-lg){
     .lg-hide{
         display:none !important
     }
 }
 
-@media (max-width: 24rem){
+@media (--breakpoint-max-sm){
     .max-sm-hide{
         display:none !important
     }
 }
 
-@media (max-width: 32rem){
+@media (--breakpoint-max-rg){
     .max-rg-hide{
         display:none !important
     }
 }
 
-@media (max-width: 42rem){
+@media (--breakpoint-max-md){
     .max-md-hide{
         display:none !important
     }
 }
 
-@media (max-width: 64rem){
+@media (--breakpoint-max-lg){
     .max-lg-hide{
         display:none !important
     }
