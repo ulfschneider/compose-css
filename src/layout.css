@@ -116,6 +116,10 @@
   max-width: var(--small-width);
 }
 
+.width-unset, .w-u {
+  width: unset;
+}
+
 .width-sm,
 .w-sm {
   width: var(--small-width);
@@ -287,6 +291,10 @@
 }
 
 @media (--breakpoint-sm) {
+  .sm-width-unset, .sm-w-u {
+    width: unset;
+  }
+
   .sm-width-d5 {
     width: var(--space-d5);
   }
@@ -394,7 +402,7 @@
   }
 
   .sm-square {
-    width: var(--space);
+    width: va r(--space);
     height: var(--space);
   }
 
@@ -420,6 +428,10 @@
 }
 
 @media (--breakpoint-rg) {
+  .rg-width-unset, .rg-w-u {
+    width: unset;
+  }
+
   .rg-width-d5 {
     width: var(--space-d5);
   }
@@ -552,6 +564,10 @@
 }
 
 @media (--breakpoint-md) {
+  .md-width-unset, .md-w-u {
+    width: unset;
+  }
+
   .md-width-d5 {
     width: var(--space-d5);
   }
@@ -684,6 +700,10 @@
 }
 
 @media (--breakpoint-lg) {
+  .lg-width-unset, .lg-w-u {
+    width: unset;
+  }
+
   .lg-width-d5 {
     width: var(--space-d5);
   }
