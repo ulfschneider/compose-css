@@ -474,12 +474,22 @@ figure
         <h3>Screen Width and Size</h3>
         <p>Heading size, font size, and line height can have different sizes on minimum screen width.
             Address the different minimum screen sizes with prefix values of</p>
-        <ul class="reset">
-            <li><code>lg-</code> for at least large screen width,</li>
-            <li><code>md-</code> for at least mid screen width,</li>
-            <li><code>rg-</code> for at least regular screen width,</li>
-            <li><code>sm-</code> for at least small screen width.</li>
-        </ul>
+        <dl>
+            <dt class="float-left"><code>.sm-</code></dt>
+            <dd>The size is applied only if the screen is at least of small width</dd>
+        </dl>
+        <dl>
+            <dt class="float-left"><code>.rg-</code></dt>
+            <dd>The size is applied only if the screen is at least of regular size</dd>
+        </dl>
+        <dl>
+            <dt class="float-left"><code>.md-</code></dt>
+            <dd>The size is applied only if the screen is at least of mid size</dd>
+        </dl>
+        <dl>
+            <dt class="float-left"><code>.lg-</code></dt>
+            <dd>The size is applied only if the screen is at least of large size</dd>
+        </dl>
         <p>E.g. <code>.lg-fs-1</code>, <code>.md-h1</code>, or <code>.rg-lh-3</code>.</p>
         <p> A size class without a prefix will be used in case the
             alternate minimum screen size is not defined.</p>
@@ -1783,14 +1793,24 @@ figure
     </div>
 
     <div class="breakout mxw-rg">
-        <p class="mrt">The number of columns can vary based on available screen width.
+        <p class="mrt">The column count can vary based on available screen width.
             Address the different minimum screen sizes with column prefix values of </p>
-        <ul class="reset">
-            <li><code>lg-</code> for at least large screen width,</li>
-            <li><code>md-</code> for at least mid screen width,</li>
-            <li><code>rg-</code> for at least regular screen width,</li>
-            <li><code>sm-</code> for at least small screen width.</li>
-        </ul>
+        <dl>
+            <dt class="float-left"><code>.sm-</code></dt>
+            <dd>The column count is applied only if the screen is at least of small width</dd>
+        </dl>
+        <dl>
+            <dt class="float-left"><code>.rg-</code></dt>
+            <dd>The column count is applied only if the screen is at least of regular width</dd>
+        </dl>
+        <dl>
+            <dt class="float-left"><code>.md-</code></dt>
+            <dd>The column count is applied only if the screen is at least of mid width</dd>
+        </dl>
+        <dl>
+            <dt class="float-left"><code>.lg-</code></dt>
+            <dd>The column count is applied only if the screen is at least of large width</dd>
+        </dl>
         <p>A column class without a prefix will be used in case the
             alternate minimum screen size is not defined.</p>
     </div>
@@ -1878,12 +1898,22 @@ figure
 
         <p class="mxw-rg">Columns can have a different width based on minimum screen width.
             Address the different minimum screen sizes with column prefix values of</p>
-        <ul class="reset mxw-rg">
-            <li><code>lg-</code> for at least large screen width,</li>
-            <li><code>md-</code> for at least mid screen width,</li>
-            <li><code>rg-</code> for at least regular screen width,</li>
-            <li><code>sm-</code> for at least small screen width.</li>
-        </ul>
+            <dl>
+                <dt class="float-left"><code>.sm-</code></dt>
+                <dd>The column width is applied only if the screen is at least of small width</dd>
+            </dl>
+            <dl>
+                <dt class="float-left"><code>.rg-</code></dt>
+                <dd>The column width is applied only if the screen is at least of regular width</dd>
+            </dl>
+            <dl>
+                <dt class="float-left"><code>.md-</code></dt>
+                <dd>The column width is applied only if the screen is at least of mid width</dd>
+            </dl>
+            <dl>
+                <dt class="float-left"><code>.lg-</code></dt>
+                <dd>The column width is applied only if the screen is at least of large width</dd>
+            </dl>
         <p class="mxw-rg">
             A column class without a prefix will be used in case the
             alternate minimum screen size is not defined.
@@ -2084,39 +2114,39 @@ figure
         </div>
 
         <div class="top brb bg-neutral-4 mxw-rg height-1 mrb-d2 right">
-            <code class="pdr">.width-sm</code>
+            <code class="pdr">.width-rg</code>
             <small class="rg-hide">there is more →</small>
         </div>
 
         <div class="top brb bg-neutral-4 mxw-md height-1 mrb-d2 right">
-            <code class="pdr">.width-sm</code>
+            <code class="pdr">.width-md</code>
             <small class="md-hide">there is more →</small>
         </div>
 
         <div class="top brb bg-neutral-4 mxw-lg height-1 mrb-d2 right">
-            <code class="pdr">.width-sm</code>
+            <code class="pdr">.width-lg</code>
             <small class="lg-hide">there is more →</small>
 
         </div>
     </div>
 
     <div class="breakout mxw-rg mrt-1">
-        <p>Any width class behaviour is altered by assiging any of the screen width prefixes:</p>
+        <p>Any width class behaviour is altered by assiging a screen width prefix:</p>
         <dl>
             <dt class="float-left"><code>.sm-</code></dt>
-            <dd>The width is applied only if the screen width is above small screen size</dd>
+            <dd>The width is applied only if the screen is at least of small width</dd>
         </dl>
         <dl>
             <dt class="float-left"><code>.rg-</code></dt>
-            <dd>The width is applied only if the screen width is above regular screen size</dd>
+            <dd>The width is applied only if the screen is at least of regular width</dd>
         </dl>
         <dl>
             <dt class="float-left"><code>.md-</code></dt>
-            <dd>The width is applied only if the screen width is above mid screen size</dd>
+            <dd>The width is applied only if the screen is at least of mid width</dd>
         </dl>
         <dl>
             <dt class="float-left"><code>.lg-</code></dt>
-            <dd>The width is applied only if the screen width is above large screen size</dd>
+            <dd>The width is applied only if the screen is at least of large width</dd>
         </dl>
 
     </div>
@@ -2138,18 +2168,18 @@ figure
                 at max small width</span><code>.sm-hide</code></div>
         <div class="top mrx-auto brb bg-neutral-4 width-sm below-sm-hide pdx-d1 height-1 mrb-d2"><span
                 class="mrr">Screen
-                has at min small width</span><code>.below-sm-hide</code></div>
+                has at least small width</span><code>.below-sm-hide</code></div>
         <div class="top mrx-auto brb bg-neutral-4 width-rg below-rg-hide pdx-d1 height-1 mrb-d2"><span
                 class="mrr">Screen
-                has at min regular width</span><code>.below-rg-hide</code>
+                has at least regular width</span><code>.below-rg-hide</code>
         </div>
         <div class="top mrx-auto brb bg-neutral-4 width-md below-md-hide pdx-d1 height-1 mrb-d2"><span
                 class="mrr">Screen
-                has at min mid width</span><code>.below-md-hide</code>
+                has at least mid width</span><code>.below-md-hide</code>
         </div>
         <div class="top mrx-auto brb bg-neutral-4 width-lg below-lg-hide pdx-d1 height-1 mrb-d2"><span
                 class="mrr">Screen
-                has at min large width</span><code>.below-lg-hide</code>            
+                has at least large width</span><code>.below-lg-hide</code>
         </div>
     </div>
 
@@ -2170,42 +2200,42 @@ div/ .below-lg-hide //When visible: screen is above large width</pre>
             </tr>
             <tr>
                 <td><code class="no-break">.sm-hide</code></td>
-                <td>Hide if the screen width is above or same as the small screen width.
+                <td>Hide if the screen has at least small screen width.
                 </td>
             </tr>
             <tr>
                 <td><code class="no-break">.below-sm-hide</code></td>
-                <td>Hide if the screen width is below or same as the small screen width.
+                <td>Hide if the screen at max small screen width.
                 </td>
             </tr>
             <tr>
                 <td><code class="no-break">.rg-hide</code></td>
-                <td>Hide if the screen width is above or same as the regular screen width.
+                <td>Hide if the screen has at least regular screen width.
                 </td>
             </tr>
             <tr>
                 <td><code class="no-break">.below-rg-hide</code></td>
-                <td>Hide if the screen width is below or same as the regular screen width.
+                <td>Hide if the screen has at max regular screen width.
                 </td>
             </tr>
             <tr>
                 <td><code class="no-break">.md-hide</code></td>
-                <td>Hide if the screen width is above or same as the mid screen width.
+                <td>Hide if the screen at least mid screen width.
                 </td>
             </tr>
             <tr>
                 <td><code class="no-break">.below-md-hide</code></td>
-                <td>Hide if the screen width is below or same as the mid screen width.
+                <td>Hide if the screen at max mid screen width.
                 </td>
             </tr>
             <tr>
                 <td><code class="no-break">.lg-hide</code></td>
-                <td>Hide if the screen width is above or same the large screen width.
+                <td>Hide if the screen has at least large screen width.
                 </td>
             </tr>
             <tr>
                 <td><code class="no-break">.below-lg-hide</code></td>
-                <td>Hide if the screen width is below or same as the large screen width.
+                <td>Hide if the screen has at max large screen width.
                 </td>
             </tr>
         </table>
