@@ -474,8 +474,10 @@ pre {
 
 .tag {
   white-space: nowrap;
-  padding: 0.1em;
+  padding: var(--space-d4);
   border-radius: var(--space-d4);
+  display: inline-block;
+  line-height: 1em;
 }
 
 a {

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/csscompose.css">
+    <link rel="stylesheet" type="text/css" href="css/css-compose.css">
     <title>CSS COMPOSE</title>
     <script src="resources/dynamic-header.min.js"></script>
     <script src="resources/active-toc.min.js"></script>
@@ -31,8 +31,8 @@
 
 <body class="x">
     <div class="full brb br-neutral-3 bg-neutral-4">
-        <header id="navigation" class="x bg-neutral-4" style="z-index: 1000;">
-            <div class="breakout mw-lg md-columns-4 sm-columns-3 columns-2 lh-4 pdy caps small lsp">
+        <header id="navigation" class="x bg-neutral-4 br-0" style="z-index: 1000;">
+            <div class="breakout mxw-lg md-columns-4 sm-columns-3 columns-2 lh-4 pdy caps small lsp">
                 <div><a href="#notation" class="no-deco">Notation</a></div>
                 <div><a href="#typography" class="no-deco">Typography</a></div>
                 <div><a href="#colors" class="no-deco">Colors</a></div>
@@ -44,20 +44,25 @@
                 <div><a href="#layout-grid" class="no-deco">Layout Grid</a></div>
                 <div><a href="#column-grid" class="no-deco">12 Col Grid</a></div>
                 <div><a href="#layout" class="no-deco">Layout</a></div>
+                <div><a href="#width" class="no-deco">Width</a></div>
+                <div><a href="#height" class="no-deco">Height</a></div>
+                <div><a href="#square" class="no-deco">Square</a></div>
                 <div><a href="#hide" class="no-deco">Hide</a></div>
                 <div><a href="#customize" class="no-deco">Customize</a></div>
             </div>
         </header>
         <div class="x mrt-2 mrb-3">
             <div class="breakout">
-                <h1 class="mrb-0 lh lg-fs-6 fw-700 caps lsp">CSS Compose</h1>
-                <p>A composable CSS Toolkit to build fast-loading, responsive web sites.</p>
+                <h1 class="inline-block mrb-0 lh lg-fs-6 fw-700 caps lsp">CSS Compose</h1>
+                <div class="fs-d1 lg-fs tag bg-base-color white">v0.1.0 94 KB</div>
+                <div>A composable CSS Toolkit to build fast-loading, responsive web sites.</div>
+
             </div>
         </div>
 
     </div>
 
-    <div class="breakout mw-rg neutral-d1    ">
+    <div class="breakout mxw-rg neutral-d1    ">
         <h2 id="notation" class="h5 mrt-4">Notation</h2>
         <p>Throughout this document the following notation is applied:</p>
 
@@ -90,7 +95,7 @@
         </table>
     </div>
 
-    <div class="breakout mw-rg">
+    <div class="breakout mxw-rg">
         <h2 id="typography">Typography</h2>
         <h3>Elements</h3>
 
@@ -115,7 +120,7 @@
 
     </div>
 
-    <div class="breakout mw-rg">
+    <div class="breakout mxw-rg">
         <h3>Paragraph</h3>
         <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
             horrible vermin.</p>
@@ -302,7 +307,7 @@ figure
     </div>
 
 
-    <div class="breakout x-12 mw-lg">
+    <div class="breakout x-12 mxw-lg">
 
         <div class="xx-12 sm-xx-6">
             <h3>Heading Styling</h3>
@@ -424,7 +429,7 @@ figure
         </table>
     </div>
 
-    <div class="breakout mw-rg">
+    <div class="breakout mxw-rg">
         <h3>Line Height</h3>
         <table>
             <tr>
@@ -465,7 +470,7 @@ figure
         </table>
     </div>
 
-    <div class="breakout mw-rg">
+    <div class="breakout mxw-rg">
         <h3>Screen Width and Size</h3>
         <p>Heading size, font size, and line height can have different sizes on minimum screen width.
             Address the different minimum screen sizes with prefix values of</p>
@@ -484,7 +489,7 @@ figure
     </div>
 
 
-    <div class="breakout mw-rg">
+    <div class="breakout mxw-rg">
         <h3>Font Weight</h3>
         <table>
             <tr>
@@ -527,7 +532,7 @@ figure
         </table>
     </div>
 
-    <div class="breakout mw-rg">
+    <div class="breakout mxw-rg">
         <h3>Letter Spacing</h3>
         <table>
             <tr>
@@ -553,7 +558,7 @@ figure
         </table>
     </div>
 
-    <div class="breakout mw-rg">
+    <div class="breakout mxw-rg">
         <h3>Numbers</h3>
         <table>
             <tr>
@@ -573,15 +578,15 @@ figure
         <table class="code">
             <tr class="center">
                 <th></th>
-                <th class="normal pdx-0">d4</th>
-                <th class="normal pdx-0">d3</th>
-                <th class="normal pdx-0">d2</th>
-                <th class="normal pdx-0">d1</th>
+                <th class="normal pdx-0">-d4</th>
+                <th class="normal pdx-0">-d3</th>
+                <th class="normal pdx-0">-d2</th>
+                <th class="normal pdx-0">-d1</th>
                 <th class="normal pdx-0 brx brw-d4 br-white"></th>
-                <th class="normal pdx-0">1</th>
-                <th class="normal pdx-0">2</th>
-                <th class="normal pdx-0">3</th>
-                <th class="normal pdx-0">4</th>
+                <th class="normal pdx-0">-1</th>
+                <th class="normal pdx-0">-2</th>
+                <th class="normal pdx-0">-3</th>
+                <th class="normal pdx-0">-4</th>
             </tr>
             <tr>
                 <th class="middle normal">.neutral </th>
@@ -648,7 +653,7 @@ figure
 
     <div class="breakout">
         <h3>Apply Colors to Text, Background, and Borders</h3>
-        <p class="mw-rg">Set color, background-color and border-color by applying the naming conventions:</p>
+        <p class="mxw-rg">Set color, background-color and border-color by applying the naming conventions:</p>
 
         <table class="br-separate">
             <tr>
@@ -690,7 +695,7 @@ figure
         </table>
     </div>
 
-    <div class="breakout mw-rg">
+    <div class="breakout mxw-rg">
         <h3>Edge Values</h3>
         <p>In addition there are four colors available, which can also be used as color, background-color and
             border-color but do not allow further refinement:</p>
@@ -728,7 +733,7 @@ figure
         </ul>
     </div>
 
-    <div class="breakout mw-rg">
+    <div class="breakout mxw-rg">
         <h3>Define Your Own Color System</h3>
         <p>The color system is built around the five colors:</p>
         <ul class="no-list-type">
@@ -830,7 +835,7 @@ figure
         </table>
     </div>
 
-    <div class="breakout mw-rg">
+    <div class="breakout mxw-rg">
         <h3>Margin</h3>
 
         <div class="x-12 gp-1">
@@ -1018,7 +1023,7 @@ figure
     </div>
 
 
-    <div class="breakout mw-rg">
+    <div class="breakout mxw-rg">
         <h3>Padding</h3>
         <div class="x-12 gp-1">
             <div class="xx-12">
@@ -1115,7 +1120,7 @@ figure
         </div>
     </div>
 
-    <div class="breakout mw-rg">
+    <div class="breakout mxw-rg">
         <h3>Grid Gap</h3>
         <div class="x-12 gp-0 middle center">
             <div class="xx-6 bg-neutral-4 pdy">1</div>
@@ -1256,7 +1261,7 @@ figure
         </table>
     </div>
 
-    <div class="breakout mw-rg">
+    <div class="breakout mxw-rg">
         <h3>Border</h3>
         <div class="x-12 gp-1">
             <div class="xx-4 br pd-1 bg-neutral-4"></div>
@@ -1381,7 +1386,7 @@ figure
             </tr>
         </table>
 
-        <div class="mw-rg">
+        <div class="mxw-rg">
             <pre>table/</pre>
 
             <p>Apply padding with <code>.pd</code>, <code>.pdx</code>, or <code>.pdy</code> styling
@@ -1434,7 +1439,7 @@ figure
                 <td>Italy</td>
             </tr>
         </table>
-        <pre class="mw-rg">table/ .alternate-rows</pre>
+        <pre class="mxw-rg">table/ .alternate-rows</pre>
     </div>
 
     <div class="breakout">
@@ -1481,7 +1486,7 @@ figure
                 <td>Italy</td>
             </tr>
         </table>
-        <pre class="mw-rg">table/ .alternate-cols</pre>
+        <pre class="mxw-rg">table/ .alternate-cols</pre>
     </div>
 
     <div class="breakout">
@@ -1523,11 +1528,11 @@ figure
                 <td>Italy</td>
             </tr>
         </table>
-        <pre class="mrt-1 mw-rg">table/ .underline-rows</pre>
+        <pre class="mrt-1 mxw-rg">table/ .underline-rows</pre>
     </div>
 
 
-    <div class="breakout mw-rg">
+    <div class="breakout mxw-rg">
         <h2 id="figures">Figures</h2>
         <figure>
             <img loading="lazy" src="resources/pierre-chatel-innocenti-unsplash.jpg" />
@@ -1542,7 +1547,7 @@ figure
     <div class="breakout">
         <h2 id="images">Images</h2>
         <h3>Responsive Images</h3>
-        <p class="mw-rg mrb-0">Images are by default responsive and take the entire available horizontal
+        <p class="mxw-rg mrb-0">Images are by default responsive and take the entire available horizontal
             space
             while
             preserving
@@ -1560,7 +1565,7 @@ figure
 
     <div class="breakout x-12">
         <h3>Contained Images</h3>
-        <div class="mw-rg">
+        <div class="mxw-rg">
             <p>If the image has a fixed width or fixed height, the
                 usage of <code>.fix-contain</code> will put the entire visible image inside of the given
                 dimensions while preserving aspect-ratio and without stretching the image.</p>
@@ -1599,7 +1604,7 @@ figure
 
         <div class="xx-12">
             <h3>Cover Images</h3>
-            <p class="mw-rg">If the image has a fixed widht or fixed height, the
+            <p class="mxw-rg">If the image has a fixed widht or fixed height, the
                 usage of <code>.fix-cover</code> will consume the entire available space of the given dimensions
                 while preserving aspect-ratio.</p>
             <p>The image might be stretched to cover.</p>
@@ -1615,7 +1620,7 @@ figure
 
 
     <div class="breakout">
-        <div class="mw-rg">
+        <div class="mxw-rg">
             <h3>Background Images</h3>
             <p>Background images can also be positioned with <code>.fit-cover</code>, which is useful
                 for
@@ -1632,7 +1637,7 @@ figure
         <pre>div/ .fit-cover style="height: 600px; background-image: url('image.jpg')" </pre>
     </div>
 
-    <div class="breakout mw-rg">
+    <div class="breakout mxw-rg">
         <h2 id="layout-grid">Horizontal Layout Grid</h2>
 
         <h3>Middle Content</h3>
@@ -1652,7 +1657,7 @@ figure
         /div
     </div>
 
-    <div class="breakout mw-rg">
+    <div class="breakout mxw-rg">
         <h3>Breakout Left Content</h3>
         <p>Breakout left content is enlarged to the left and will keep the right boundary with middle content.</p>
     </div>
@@ -1668,7 +1673,7 @@ figure
         /div
     </div>
 
-    <div class="breakout mw-rg">
+    <div class="breakout mxw-rg">
         <h3>Breakout Right Content</h3>
         <p>Breakout right content enlarged to the right and will keep the left boundary with middle content.
         </p>
@@ -1685,7 +1690,7 @@ figure
         /div
     </div>
 
-    <div class="breakout mw-rg">
+    <div class="breakout mxw-rg">
         <h3>Breakout Content = Left and Right</h3>
         <p>Breakout content is the combination of left and right content.</p>
     </div>
@@ -1701,7 +1706,7 @@ figure
         /div
     </div>
 
-    <div class="breakout mw-rg">
+    <div class="breakout mxw-rg">
         <h3>Wide Content</h3>
         <p>Wide content nearly takes the full width of the screen, except of a
             small margin to the window border.</p>
@@ -1719,7 +1724,7 @@ figure
     </div>
 
 
-    <div class="breakout mw-rg">
+    <div class="breakout mxw-rg">
         <h3>Full Content</h3>
         <p>Full content will use the entire width of the screen.</p>
     </div>
@@ -1735,7 +1740,7 @@ figure
         /div
     </div>
 
-    <div class="breakout mw-rg">
+    <div class="breakout mxw-rg">
         <h3>Columns inside the Layout Grid</h3>
         <p>A flow of a maximum of six columns – each of the same width – can be created for any space inside of the
             horizontal layout grid.</p>
@@ -1752,7 +1757,7 @@ figure
         /div
     </div>
 
-    <div class="breakout mw-rg">
+    <div class="breakout mxw-rg">
         <p class="mrt">The number of columns can vary based on available screen width.
             Address the different minimum screen sizes with column prefix values of </p>
         <ul class="reset">
@@ -1765,7 +1770,7 @@ figure
             alternate minimum screen size is not defined.</p>
     </div>
 
-    <div class="breakout mry-2 mw-lg columns-1 rg-columns-2 md-columns-3 lg-columns-4 indent pdy">
+    <div class="breakout mry-2 mxw-lg columns-1 rg-columns-2 md-columns-3 lg-columns-4 indent pdy">
         <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
             horrible vermin.</p>
 
@@ -1804,7 +1809,7 @@ figure
 
     <div class="breakout">
         <h2 id="column-grid">12 Column Grid</h2>
-        <div class="mw-rg">
+        <div class="mxw-rg">
             <p>Any space can be divided horizontally into 12ths. E.g. nesting the column grid into the layout grid is a
                 typical case.</p>
             <p>The sum of the cols per row has to add up to 12. Not specifiying a column size will result in taking
@@ -1846,15 +1851,15 @@ figure
             <div class="br pdy">No class assignment</div>
         </div>
 
-        <p class="mw-rg">Columns can have a different width based on minimum screen width.
+        <p class="mxw-rg">Columns can have a different width based on minimum screen width.
             Address the different minimum screen sizes with column prefix values of</p>
-        <ul class="reset mw-rg">
+        <ul class="reset mxw-rg">
             <li><code>lg-</code> for at least large screen width,</li>
             <li><code>md-</code> for at least mid screen width,</li>
             <li><code>rg-</code> for at least regular screen width,</li>
             <li><code>sm-</code> for at least small screen width.</li>
         </ul>
-        <p class="mw-rg">
+        <p class="mxw-rg">
             A column class without a prefix will be used in case the
             alternate minimum screen size is not defined.
         </p>
@@ -1869,7 +1874,7 @@ figure
 
     <h2 class="breakout" id="layout">Layout</h2>
 
-    <div class="breakout mw-rg">
+    <div class="breakout mxw-rg">
         <h3>Display, Align, Overflow, and Float</h3>
         <table>
             <tr>
@@ -1975,7 +1980,7 @@ figure
         </table>
     </div>
 
-    <div class="breakout mw-rg">
+    <div class="breakout mxw-rg">
         <h3>Clearfix</h3>
 
         <p>Using <code>float</code> without <code>.clearfix</code></p>
@@ -2002,19 +2007,24 @@ figure
     </div>
 
 
-    <h3 class="breakout">Width</h3>
+    <h2 id="width" class="breakout">Width</h2>
 
-    <div class="wide overflow-scroll mry-2">
-        <div class="top brb bg-neutral-4 w-sm pd-d1 lh-1">Small width</div>
-        <div class="top brb bg-neutral-4 w-rg pd-d1 lh-1">Regular width
+    <div class="full mry-2">
+        <div class="top brb bg-neutral-4 mw-sm pd-d1 lh-1 clearfix">Small width
+            <div class="float-right sm-hide">there is more →</div>
         </div>
-        <div class="top brb bg-neutral-4 w-md pd-d1 lh-1">Mid width
+        <div class="top brb bg-neutral-4 mw-rg pd-d1 lh-1 clearfix">Regular width
+            <div class="float-right rg-hide">there is more →</div>
         </div>
-        <div class="top brb bg-neutral-4 w-lg pd-d1 lh-1">Large width
+        <div class="top brb bg-neutral-4 mw-md pd-d1 lh-1 clearfix">Mid width
+            <div class="float-right md-hide">there is more →</div>
+        </div>
+        <div class="top brb bg-neutral-4 mw-lg pd-d1 lh-1 clearfix">Large width
+            <div class="float-right lg-hide">there is more →</div>
         </div>
     </div>
 
-    <div class="breakout mw-rg">
+    <div class="breakout mxw-rg">
 
         <table>
             <tr>
@@ -2022,45 +2032,65 @@ figure
                 <th>Description</th>
             </tr>
             <tr>
-                <td><code>.max-width-sm, .mw-sm</code></td>
+                <td><code>.max-width-sm, .mxw-sm</code></td>
                 <td>Maximum width is small width</td>
             </tr>
             <tr>
-                <td><code>.max-width-rg, .mw-rg</code></td>
+                <td><code>.max-width-rg, .mxw-rg</code></td>
                 <td>Maximum width is regular width</td>
             </tr>
             <tr>
-                <td><code>.max-width-md, .mw-md</code></td>
+                <td><code>.max-width-md, .mxw-md</code></td>
                 <td>Maximum width is mid width</td>
             </tr>
             <tr>
-                <td><code>.max-width-lg, .mw-lg</code></td>
+                <td><code>.max-width-lg, .mxw-lg</code></td>
                 <td>Maximum width is large width</td>
             </tr>
             <tr>
-                <td><code>.max-width-unset, .mw-u</code></td>
+                <td><code>.min-width-unset, .miw-u</code></td>
+                <td>Minimum width is unset</td>
+            </tr>
+            <tr>
+                <td><code>.min-width-sm, .miw-sm</code></td>
+                <td>Minimum width is small width</td>
+            </tr>
+            <tr>
+                <td><code>.min-width-rg, .miw-rg</code></td>
+                <td>Minimum width is regular width</td>
+            </tr>
+            <tr>
+                <td><code>.min-width-md, .miw-md</code></td>
+                <td>Minimim width is mid width</td>
+            </tr>
+            <tr>
+                <td><code>.min-width-lg, .miw-lg</code></td>
+                <td>Minimum width is large width</td>
+            </tr>
+            <tr>
+                <td><code>.max-width-unset, .mxw-u</code></td>
                 <td>Maximum width is unset</td>
             </tr>
             <tr>
-                <td><code>.width-sm, .w-sm</code></td>
+                <td><code>.width-sm</code></td>
                 <td>Width is small width</td>
             </tr>
             <tr>
-                <td><code>.width-rg, .w-rg</code></td>
+                <td><code>.width-rg</code></td>
                 <td>Width is regular width</td>
             </tr>
             <tr>
-                <td><code>.width-md, .w-md</code></td>
+                <td><code>.width-md</code></td>
                 <td>Width is mid width</td>
             </tr>
             <tr>
-                <td><code>.width-lg, .w-lg</code></td>
+                <td><code>.width-lg</code></td>
                 <td>Width is large width</td>
             </tr>
             <tr>
-                <td><code>.width-unset, .w-u</code></td>
+                <td><code>.width-unset</code></td>
                 <td>Width is unset</td>
-            </tr>            
+            </tr>
         </table>
     </div>
 
@@ -2079,12 +2109,12 @@ figure
         </div>
     </div>
 
-    <div class="breakout mw-rg">
+    <div class="breakout mxw-rg">
         <pre>div/ .sm-hide //Screen has at max small width
-div/ .max-sm-hide //Screen is above small width
-div/ .max-rg-hide //Screen is above regular width
-div/ .max-md-hide //Screen is above mid width
-div/ .max-lg-hide //Screen is above large width</pre>
+div/ .max-sm-hide //When visible: screen is above small width
+div/ .max-rg-hide //When visible: screen is above regular width
+div/ .max-md-hide //When visible: screen is above mid width
+div/ .max-lg-hide //When visible: screen is above large width</pre>
         <table class="mrt-2">
             <tr>
                 <th>CSS Class</th>
@@ -2137,7 +2167,7 @@ div/ .max-lg-hide //Screen is above large width</pre>
         </table>
     </div>
 
-    <div class="breakout mw-rg">
+    <div class="breakout mxw-rg">
         <h2 id="forms">Forms</h2>
 
 

@@ -8,6 +8,9 @@
 @import "typography";
 @import "colors";
 @import "borders";
-@import "white-space";
+@import "space";
+@import "width";
+@import "height";
+@import "square";
 @import "debug";
 
