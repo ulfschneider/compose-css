@@ -318,6 +318,15 @@ h6.indent {
   margin-bottom: var(--space-d2);
 }
 
+dl {
+  margin-top: var(--space);
+  margin-bottom: var(--space);
+}
+
+dd {
+  margin-left: var(--space-2);
+}
+
 ul {
   list-style: none;
 }
