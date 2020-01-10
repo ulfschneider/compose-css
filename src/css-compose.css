@@ -10,7 +10,11 @@
 @import "borders";
 @import "space";
 @import "width";
+@import "width-max";
+@import "width-min";
 @import "height";
+@import "height-max";
+@import "height-min";
 @import "square";
 @import "debug";
 

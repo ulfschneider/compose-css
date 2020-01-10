@@ -31,7 +31,7 @@
 
 <body class="x">
     <div class="full brb br-neutral-3 bg-neutral-4">
-        <header id="navigation" class="x bg-neutral-4 br-0" style="z-index: 1000;">
+        <header id="navigation" class="x bg-neutral-4" style="z-index: 1000;">
             <div class="breakout mxw-lg md-columns-4 sm-columns-3 columns-2 lh-4 pdy caps small lsp">
                 <div><a href="#notation" class="no-deco">Notation</a></div>
                 <div><a href="#typography" class="no-deco">Typography</a></div>
@@ -277,6 +277,35 @@ div .indent
         li/
     /ol 
 /div</pre>
+
+        <h3>Definition List</h3>
+
+        <dl>
+            <dt>One morning</dt>
+            <dd>when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
+                horrible vermin.</dd>
+        </dl>
+        <dl>
+            <dt>He lay on his armour-like back</dt>
+            <dd>and if he lifted his head a little he could see his brown belly,
+                slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and
+                seemed ready to slide off any moment.</dd>
+        </dl>
+        <dl>
+            <dt>His many legs</dt>
+            <dd>pitifully thin compared with the size of the rest of him, waved about helplessly
+                as he looked. <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.</dd>
+        </dl>
+        <dl>
+            <dt>His room</dt>
+            <dd>a proper human room although a little too small, lay peacefully between its four
+                familiar walls.</dd>
+        </dl>
+
+        <pre>dl
+    dt/
+    dd/
+/dl</pre>
 
         <h3>Blockquote</h3>
         <figure>
@@ -870,7 +899,7 @@ figure
         </table>
     </div>
 
-    <div class="breakout mxw-rg">
+    <div class="breakout">
         <h3>Margin</h3>
 
         <div class="x-12 gp-1">
@@ -1054,103 +1083,127 @@ figure
                 </div>
                 <div class="code">.mr-4</div>
             </div>
+
+            <div class="overflow-auto">
+                <div class="br inline-block middle">
+                    <div class="square-3 bg-neutral-4 mr-5 inline-block middle"></div>
+                </div>
+                <div class="code">.mr-5</div>
+            </div>
+
+            <div class="overflow-auto">
+                <div class="br inline-block middle">
+                    <div class="square-3 bg-neutral-4 mr-6 inline-block middle"></div>
+                </div>
+                <div class="code">.mr-6</div>
+            </div>
         </div>
     </div>
 
 
-    <div class="breakout mxw-rg">
+    <div class="breakout">
         <h3>Padding</h3>
         <div class="x-12 gp-1">
-            <div class="xx-12">
+            <div>
                 <div class="bg-neutral-4 inline-block pd-0">Padding</div>
                 <div class="code">.pd-0</div>
             </div>
 
-            <div class="xx-12 sm-xx-3">
+            <div class="sm-xx-3">
                 <div class="bg-neutral-4 pd inline-block">Padding</div>
                 <div><code>.pd</code> <small>(1rem)</small></div>
             </div>
 
-            <div class="xx-12 sm-xx-3">
+            <div class="sm-xx-3">
                 <div class="bg-neutral-4 pdy inline-block">Padding</div>
                 <div class="code">.pdy</div>
             </div>
 
-            <div class="xx-12 sm-xx-6">
+            <div class="sm-xx-6">
                 <div class="bg-neutral-4 pdx inline-block">Padding</div>
                 <div class="code">.pdx</div>
             </div>
 
-            <div class="xx-12 sm-xx-3">
+            <div class="sm-xx-3">
                 <div class="bg-neutral-4 pdt inline-block">Padding</div>
                 <div class="code">.pdt</div>
             </div>
 
-            <div class="xx-12 sm-xx-3">
+            <div class="sm-xx-3">
                 <div class="bg-neutral-4 pdr inline-block">Padding</div>
                 <div class="code">.pdr</div>
             </div>
 
-            <div class="xx-12 sm-xx-3">
+            <div class="sm-xx-3">
                 <div class="bg-neutral-4 pdb inline-block">Padding</div>
                 <div class="code">.pdb</div>
             </div>
 
-            <div class="xx-12 sm-xx-3">
+            <div class="sm-xx-3">
                 <div class="bg-neutral-4 pdl inline-block">Padding</div>
                 <div class="code">.pdl</div>
             </div>
 
             <div>The padding patterns can be applied to decreased and increased paddings:</div>
 
-            <div class="xx-12">
+            <div>
                 <div class="bg-neutral-4 pd-d5 inline-block">Padding</div>
                 <div><code>.pd-d5</code> <small>(1px)</small></div>
             </div>
 
-            <div class="xx-12">
+            <div>
                 <div class="bg-neutral-4 pd-d4 inline-block">Padding</div>
                 <div><code>.pd-d4</code> <small>(2px)</small></div>
             </div>
 
-            <div class="xx-12">
+            <div>
                 <div class="bg-neutral-4 pd-d3 inline-block">Padding</div>
                 <div><code>.pd-d3</code> <small>(3px)</small></div>
             </div>
 
-            <div class="xx-12">
+            <div>
                 <div class="bg-neutral-4 pd-d2 inline-block">Padding</div>
                 <div><code>.pd-d2</code></div>
             </div>
 
-            <div class="xx-12">
+            <div>
                 <div class="bg-neutral-4 pd-d1 inline-block">Padding</div>
                 <div><code>.pd-d1</code></div>
             </div>
 
-            <div class="xx-12">
+            <div>
                 <div class="bg-neutral-4 pd inline-block">Padding</div>
                 <div><code>.pd</code> <small>(1rem)</small></div>
             </div>
 
-            <div class="xx-12">
+            <div>
                 <div class="bg-neutral-4 pd-1 inline-block">Padding</div>
                 <div><code>.pd-1</code></div>
             </div>
 
-            <div class="xx-12">
+            <div>
                 <div class="bg-neutral-4 pd-2 inline-block">Padding</div>
                 <div><code>.pd-2</code></div>
             </div>
 
-            <div class="xx-12">
+            <div>
                 <div class="bg-neutral-4 pd-3 inline-block">Padding</div>
                 <div><code>.pd-3</code></div>
             </div>
 
-            <div class="xx-12">
+            <div>
                 <div class="bg-neutral-4 pd-4 inline-block">Padding</div>
                 <div><code>.pd-4</code></div>
+            </div>
+
+            <div class="overflow-hidden">
+                <div class="bg-neutral-4 pd-5 inline-block">Padding</div>
+                <div><code>.pd-5</code></div>
+            </div>
+
+            <div class="overflow-hidden">
+                <div class="bg-neutral-4 pd-6 inline-block">Padding</div>
+                <div><code>.pd-6</code></div>
             </div>
         </div>
     </div>
@@ -1898,22 +1951,22 @@ figure
 
         <p class="mxw-rg">Columns can have a different width based on minimum screen width.
             Address the different minimum screen sizes with column prefix values of</p>
-            <dl>
-                <dt class="float-left"><code>.sm-</code></dt>
-                <dd>The column width is applied only if the screen is at least of small width</dd>
-            </dl>
-            <dl>
-                <dt class="float-left"><code>.rg-</code></dt>
-                <dd>The column width is applied only if the screen is at least of regular width</dd>
-            </dl>
-            <dl>
-                <dt class="float-left"><code>.md-</code></dt>
-                <dd>The column width is applied only if the screen is at least of mid width</dd>
-            </dl>
-            <dl>
-                <dt class="float-left"><code>.lg-</code></dt>
-                <dd>The column width is applied only if the screen is at least of large width</dd>
-            </dl>
+        <dl>
+            <dt class="float-left"><code>.sm-</code></dt>
+            <dd>The column width is applied only if the screen is at least of small width</dd>
+        </dl>
+        <dl>
+            <dt class="float-left"><code>.rg-</code></dt>
+            <dd>The column width is applied only if the screen is at least of regular width</dd>
+        </dl>
+        <dl>
+            <dt class="float-left"><code>.md-</code></dt>
+            <dd>The column width is applied only if the screen is at least of mid width</dd>
+        </dl>
+        <dl>
+            <dt class="float-left"><code>.lg-</code></dt>
+            <dd>The column width is applied only if the screen is at least of large width</dd>
+        </dl>
         <p class="mxw-rg">
             A column class without a prefix will be used in case the
             alternate minimum screen size is not defined.
@@ -2062,7 +2115,7 @@ figure
     </div>
 
 
-    <h2 id="width" class="breakout">Width</h2>
+    <h2 id="width" class="breakout">Width, Max-Width, and Min-Width</h2>
 
     <div class="breakout mxw-rg">
         <p>Set the width by assigning any of the following shorthand CSS classes.</p>
@@ -2105,8 +2158,15 @@ figure
         <div>
             <div class="width-4 brb height-1 bg-neutral-4 inline-block mrr"> </div><code>.width-4</code>
         </div>
+        <div>
+            <div class="width-5 brb height-1 bg-neutral-4 inline-block mrr"> </div><code>.width-5</code>
+        </div>
+        <div>
+            <div class="width-6 brb height-1 bg-neutral-4 inline-block mrr"> </div><code>.width-6</code>
+        </div>
+
     </div>
-    <div class="full no-break overflow-scroll">
+    <div class="full no-break mrt-2 overflow-scroll">
 
         <div class="top brb bg-neutral-4 mxw-sm height-1 mrb-d2 right">
             <code class="pdr">.width-sm</code>
@@ -2131,7 +2191,12 @@ figure
     </div>
 
     <div class="breakout mxw-rg mrt-1">
-        <p>Any width class behaviour is altered by assiging a screen width prefix:</p>
+        <p>All <code>.width</code> variations are also available as <code>.max-width</code> and <code>.min-width</code>.
+            Use <code>.mxw</code> as a shorthand for <code>.max-width</code> and use <code>.miw</code> as a shorthand
+            for <code>.min-width</code>.
+        </p>
+        <p>In addition the <code>.width</code>, <code>.max-width</code>, and <code>.min-with</code> classes can
+            be altered by assiging a screen width prefix:</p>
         <dl>
             <dt class="float-left"><code>.sm-</code></dt>
             <dd>The width is applied only if the screen is at least of small width</dd>
@@ -2153,31 +2218,129 @@ figure
 
 
 
-    <h2 id="height" class="breakout mxw-rg">Height</h2>
+    <h2 id="height" class="breakout mxw-rg">Height, Max-Height, and Min-Height</h2>
 
-    <div class="breakout no-break pdt-4 mrt-2 mxw-rg overflow-scroll">
-        <div class="height-lg width-1 brl bg-neutral-4 inline-block top "><code style="display: inline-block; padding-left: 1rem; transform-origin: top left; transform: rotate(-90deg);">.height-lg</code></div>
-        <div class="height-md width-1 brl bg-neutral-4 inline-block top"><code style="display: inline-block; padding-left: 1rem; transform-origin: top left; transform: rotate(-90deg);">.height-md</code></div>
-        <div class="height-rg width-1 brl bg-neutral-4 inline-block top"><code style="display: inline-block; padding-left: 1rem; transform-origin: top left; transform: rotate(-90deg);">.height-rg</code></div>
-        <div class="height-sm width-1 brl bg-neutral-4 inline-block top"><code style="display: inline-block; padding-left: 1rem; transform-origin: top left; transform: rotate(-90deg);">.height-sm</code></div>
-        <div class="height-4 width-1 brl bg-neutral-4 inline-block top"><code style="display: inline-block; padding-left: 1rem; transform-origin: top left; transform: rotate(-90deg);">.height-4</code></div>
-        <div class="height-3 width-1 brl bg-neutral-4 inline-block top"><code style="display: inline-block; padding-left: 1rem; transform-origin: top left; transform: rotate(-90deg);">.height-3</code></div>
-        <div class="height-2 width-1 brl bg-neutral-4 inline-block top"><code style="display: inline-block; padding-left: 1rem; transform-origin: top left; transform: rotate(-90deg);">.height-2</code></div>
-        <div class="height-1 width-1 brl bg-neutral-4 inline-block top"><code style="display: inline-block; padding-left: 1rem; transform-origin: top left; transform: rotate(-90deg);">.height-1</code></div>
-        <div class="height width-1 brl bg-neutral-4 inline-block top"><code style="display: inline-block; padding-left: 1rem; transform-origin: top left; transform: rotate(-90deg);">.height</code></div>
-        <div class="height-d1 width-1 brl bg-neutral-4 inline-block top"><code style="display: inline-block; padding-left: 1rem; transform-origin: top left; transform: rotate(-90deg);">.height-d1</code></div>
-        <div class="height-d2 width-1 brl bg-neutral-4 inline-block top"><code style="display: inline-block; padding-left: 1rem; transform-origin: top left; transform: rotate(-90deg);">.height-d2</code></div>
-        <div class="height-d3 width-1 brl bg-neutral-4 inline-block top"><code style="display: inline-block; padding-left: 1rem; transform-origin: top left; transform: rotate(-90deg);">.height-d3</code></div>
-        <div class="height-d4 width-1 brl bg-neutral-4 inline-block top"><code style="display: inline-block; padding-left: 1rem; transform-origin: top left; transform: rotate(-90deg);">.height-d4</code></div>
-        <div class="height-d5 width-1 brl bg-neutral-4 inline-block top"><code style="display: inline-block; padding-left: 1rem; transform-origin: top left; transform: rotate(-90deg);">.height-d5</code></div>
-        <div class="height-unset width-1 brl bg-neutral-4 inline-block top"><code style="display: inline-block; padding-left: 1rem; transform-origin: top left; transform: rotate(-90deg);">.height-unset</code></div>
+    <div class="breakout no-break pdt-5 mrt-2 mxw-rg overflow-scroll">
+        <div class="height-lg width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
+                style="transform-origin: top left; transform: rotate(-90deg);">.height-lg</code></div>
+        <div class="height-md width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
+                style="transform-origin: top left; transform: rotate(-90deg);">.height-md</code>
+        </div>
+        <div class="height-rg width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
+                style="transform-origin: top left; transform: rotate(-90deg);">.height-rg</code>
+        </div>
+        <div class="height-sm width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
+                style="transform-origin: top left; transform: rotate(-90deg);">.height-sm</code>
+        </div>
+        <div class="height-6 width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
+                style="transform-origin: top left; transform: rotate(-90deg);">.height-6</code>
+        </div>
+        <div class="height-5 width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
+                style="transform-origin: top left; transform: rotate(-90deg);">.height-5</code>
+        </div>
+        <div class="height-4 width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
+                style="transform-origin: top left; transform: rotate(-90deg);">.height-4</code>
+        </div>
+        <div class="height-3 width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
+                style="transform-origin: top left; transform: rotate(-90deg);">.height-3</code>
+        </div>
+        <div class="height-2 width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
+                style="transform-origin: top left; transform: rotate(-90deg);">.height-2</code>
+        </div>
+        <div class="height-1 width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
+                style="transform-origin: top left; transform: rotate(-90deg);">.height-1</code>
+        </div>
+        <div class="height width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
+                style="transform-origin: top left; transform: rotate(-90deg);">.height</code>
+        </div>
+        <div class="height-d1 width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
+                style="transform-origin: top left; transform: rotate(-90deg);">.height-d1</code>
+        </div>
+        <div class="height-d2 width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
+                style="transform-origin: top left; transform: rotate(-90deg);">.height-d2</code>
+        </div>
+        <div class="height-d3 width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
+                style="transform-origin: top left; transform: rotate(-90deg);">.height-d3</code>
+        </div>
+        <div class="height-d4 width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
+                style="transform-origin: top left; transform: rotate(-90deg);">.height-d4</code>
+        </div>
+        <div class="height-d5 width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
+                style="transform-origin: top left; transform: rotate(-90deg);">.height-d5</code>
+        </div>
+        <div class="height-unset width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
+                style="transform-origin: top left; transform: rotate(-90deg);">.height-unset</code>
+        </div>
     </div>
 
 
+    <div class="breakout mxw-rg mrt-1">
+        <p>All <code>.height</code> variations are also available as <code>.max-height</code> and
+            <code>.min-height</code>.
+            Use <code>.mxh</code> as a shorthand for <code>.max-height</code> and use <code>.mih</code> as a shorthand
+            for <code>.min-height</code>.
+        </p>
+        <p>In addition the <code>.height</code>, <code>.max-height</code>, and <code>.min-height</code> classes can
+            be altered by assiging a screen width prefix:</p>
+        <dl>
+            <dt class="float-left"><code>.sm-</code></dt>
+            <dd>The height is applied only if the screen is at least of small width</dd>
+        </dl>
+        <dl>
+            <dt class="float-left"><code>.rg-</code></dt>
+            <dd>The height is applied only if the screen is at least of regular width</dd>
+        </dl>
+        <dl>
+            <dt class="float-left"><code>.md-</code></dt>
+            <dd>The height is applied only if the screen is at least of mid width</dd>
+        </dl>
+        <dl>
+            <dt class="float-left"><code>.lg-</code></dt>
+            <dd>The height is applied only if the screen is at least of large width</dd>
+        </dl>
+
+    </div>
 
 
+    <h2 class="breakout" id="square">Square</h2>
 
+    <div class="wide">
+        <div class="overflow-auto">
+            <div class="square-lg bg-neutral-4 br">
+                <div class="square-md bg-neutral-4 brr brb">
+                    <div class="square-rg bg-neutral-4 brr brb">
+                        <div class="square-sm bg-neutral-4 brr brb">
+                            <div class="square-6 bg-neutral-4 brr brb">
+                                <div class="square-5 bg-neutral-4 brr brb">
+                                    <div class="square-4 bg-neutral-4 brr brb">
+                                        <div class="square-3 bg-neutral-4 brr brb">
+                                            <div class="square-2 bg-neutral-4 brr brb">
+                                                <div class="square-1 bg-neutral-4 brr brb">
+                                                    <div class="square bg-neutral-4 brr brb">
+                                                        <div class="square-d1 bg-neutral-4 brr brb">
+                                                            <div class="square-d2 bg-neutral-4 brr brb">
+                                                                <div class="square-d3 bg-neutral-4 brr brb">
+                                                                    <div class="square-d4 bg-neutral-4 brr brb">
+                                                                        <div class="square-d5 bg-neutral-4 brr brb">
 
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <h2 class="breakout" id="hide">Hide</h2>
 
