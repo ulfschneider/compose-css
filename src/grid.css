@@ -3,7 +3,8 @@
 }
 
 .x-12,
-.x {
+.x,
+.xl {
   max-width: var(--regular-width);
   margin: 0 auto;
 }
@@ -11,7 +12,8 @@
 @supports (display: grid) {
 
   .x-12,
-  .x {
+  .x,
+  .xl {
     max-width: 100%;
     margin: unset;
   }
@@ -43,6 +45,35 @@
 }
 
 .x>.full {
+  grid-column: 1/span 7;
+}
+
+.xl {
+  display: grid;
+  grid-template-columns: var(--space-1) 1fr minmax(0, var(--regular-width)) 1fr 1fr 1fr var(--space-1);
+}
+
+.xl>* {
+  grid-column: 3/span 1;
+}
+
+.xl>.breakout-l {
+  grid-column: 2/span 2;
+}
+
+.xl>.breakout-r {
+  grid-column: 3/span 2;
+}
+
+.xl>.breakout {
+  grid-column: 3/span 3;
+}
+
+.xl>.wide {
+  grid-column: 2/span 5;
+}
+
+.xl>.full {
   grid-column: 1/span 7;
 }
 
@@ -132,6 +163,10 @@
 @media (--breakpoint-max-rg) {
   .x {
     grid-template-columns: var(--space) 1fr 1fr minmax(0, var(--regular-width)) 1fr 1fr var(--space);
+  }
+
+  .xl {
+    grid-template-columns: var(--space) 1fr minmax(0, var(--regular-width)) 1fr 1fr 1fr var(--space);
   }
 }
 
