@@ -450,7 +450,7 @@ p.no-indent {
 code,
 pre,
 .mono {
-  font-family: var(--font-family-mono);   
+  font-family: var(--font-family-mono);     
 }
 
 pre {

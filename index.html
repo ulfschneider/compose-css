@@ -117,7 +117,7 @@
         <p><em class="mrr">Emphasis</em> <code>em</code>, <code>.em</code></p>
         <p><s class="strike mrr">Strikethrough</s> <code>s</code>, <code>.s</code>, <code>.strike</code></p>
         <p><small class="mrr">Small</small> <code>small</code>, <code>.small</code></p>
-        <p><code class="mrr">Code</code> <code>code</code>, <code>.code</code>, <code>.mono</code></p>
+        <p><code class="mrr">Code</code> <code>code</code>, <code>.code</code></p>
     </div>
 
     <div>
@@ -1789,6 +1789,33 @@ figure
         /div
     </div>
 
+    <div>
+        <p>The layout grids can have a different horizontal structure based on minimum screen width. E.g.
+            <code>.sm-wide</code> for at least minimum screen width and <code>.rg-breakout</code> for at least regular
+            screen width.
+            Address the different minimum screen sizes with column prefix values of</p>
+        <dl>
+            <dt class="float-left"><code>.sm-</code></dt>
+            <dd>The grid structure is applied only if the screen is at least of small width</dd>
+        </dl>
+        <dl>
+            <dt class="float-left"><code>.rg-</code></dt>
+            <dd>The grid structure is applied only if the screen is at least of regular width</dd>
+        </dl>
+        <dl>
+            <dt class="float-left"><code>.md-</code></dt>
+            <dd>The grid structure is applied only if the screen is at least of mid width</dd>
+        </dl>
+        <dl>
+            <dt class="float-left"><code>.lg-</code></dt>
+            <dd>The grid structure is applied only if the screen is at least of large width</dd>
+        </dl>
+        <p>
+            A grid class without a prefix will be used in case the
+            alternate minimum screen size is not defined.
+        </p>
+    </div>
+
 
 
     <h3>Columns inside the Layout Grid</h3>
@@ -1943,7 +1970,7 @@ figure
 
     <h2 id="layout">Layout</h2>
     <div>
-        <h3>Display, Align, Overflow, and Float</h3>
+        <h3>Display, Align, Overflow, Float, Position</h3>
         <table>
             <tr>
                 <th>CSS Class</th>
@@ -2044,6 +2071,58 @@ figure
             <tr>
                 <td class="no-break"><code>.content-box</code></td>
                 <td><code>box-sizing: content-box;</code></td>
+            </tr>
+            <tr>
+                <td class="no-break"><code>.static</code></td>
+                <td><code>position: static;</code></td>
+            </tr>
+            <tr>
+                <td class="no-break"><code>.sticky</code></td>
+                <td><code>position: sticky;</code></td>
+            </tr>
+            <tr>
+                <td class="no-break"><code>.relative</code></td>
+                <td><code>position: relative;</code></td>
+            </tr>
+            <tr>
+                <td class="no-break"><code>.absolute</code></td>
+                <td><code>position: absolute;</code></td>
+            </tr>
+            <tr>
+                <td class="no-break"><code>.fixed</code></td>
+                <td><code>position: fixed;</code></td>
+            </tr>
+            <tr>
+                <td class="no-break"><code>.top-0</code></td>
+                <td><code>top: 0;</code></td>
+            </tr>
+            <tr>
+                <td class="no-break"><code>.right-0</code></td>
+                <td><code>right: 0;</code></td>
+            </tr>
+            <tr>
+                <td class="no-break"><code>.bottom-0</code></td>
+                <td><code>bottom: 0;</code></td>
+            </tr>
+            <tr>
+                <td class="no-break"><code>.left-0</code></td>
+                <td><code>left: 0;</code></td>
+            </tr>
+            <tr>
+                <td class="no-break"><code>.z-1</code></td>
+                <td><code>z-index: var(--z-1);</code></td>
+            </tr>
+            <tr>
+                <td class="no-break"><code>.z-2</code></td>
+                <td><code>z-index: var(--z-2);</code></td>
+            </tr>
+            <tr>
+                <td class="no-break"><code>.z-3</code></td>
+                <td><code>z-index: var(--z-3);</code></td>
+            </tr>
+            <tr>
+                <td class="no-break"><code>.z-4</code></td>
+                <td><code>z-index: var(--z-4);</code></td>
             </tr>
         </table>
     </div>
@@ -2363,19 +2442,15 @@ figure
         <div class="top brb bg-neutral-4 width-sm sm-hide pdx-d1 height-1 mrb-d2"><span class="mrr">Screen
                 has
                 at max small width</span><code>.sm-hide</code></div>
-        <div class="top brb bg-neutral-4 width-sm below-sm-hide pdx-d1 height-1 mrb-d2"><span
-                class="mrr">Screen
+        <div class="top brb bg-neutral-4 width-sm below-sm-hide pdx-d1 height-1 mrb-d2"><span class="mrr">Screen
                 has at least small width</span><code>.below-sm-hide</code></div>
-        <div class="top brb bg-neutral-4 width-rg below-rg-hide pdx-d1 height-1 mrb-d2"><span
-                class="mrr">Screen
+        <div class="top brb bg-neutral-4 width-rg below-rg-hide pdx-d1 height-1 mrb-d2"><span class="mrr">Screen
                 has at least regular width</span><code>.below-rg-hide</code>
         </div>
-        <div class="top brb bg-neutral-4 width-md below-md-hide pdx-d1 height-1 mrb-d2"><span
-                class="mrr">Screen
+        <div class="top brb bg-neutral-4 width-md below-md-hide pdx-d1 height-1 mrb-d2"><span class="mrr">Screen
                 has at least mid width</span><code>.below-md-hide</code>
         </div>
-        <div class="top brb bg-neutral-4 width-lg below-lg-hide pdx-d1 height-1 mrb-d2"><span
-                class="mrr">Screen
+        <div class="top brb bg-neutral-4 width-lg below-lg-hide pdx-d1 height-1 mrb-d2"><span class="mrr">Screen
                 has at least large width</span><code>.below-lg-hide</code>
         </div>
     </div>
