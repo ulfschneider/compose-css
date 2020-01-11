@@ -1729,105 +1729,36 @@ figure
     <div class="breakout mxw-rg">
         <h2 id="layout-grid">Horizontal Layout Grid</h2>
 
-        <h3>Middle Content</h3>
-        <p>Middle content is the default positioning of any item within the layout. Middle content doesn´t need a
-            specific CSS class assignment to get positioned this way.</p>
+
     </div>
 
 
     <!-- Code Example -->
-    <div class="full bry br-dotted br-gray mono">
+    <div class="full bry br-dotted br-gray mry-2 code">
         div .x
-        <div class="x">
-            <div class="middle bg-neutral-4">
-                div/
+        <div class="x gpy mry">
+            <div class="middle bg-neutral-4 br pd">
+                No class assignment
+            </div>
+            <div class="breakout-l bg-neutral-4 br pd">
+                .breakout-l
+            </div>
+            <div class="breakout-r bg-neutral-4 br pd">
+                .breakout-r
+            </div>
+            <div class="breakout bg-neutral-4 br pd">
+                .breakout
+            </div>
+            <div class="wide bg-neutral-4 br pd">
+                .wide
+            </div>
+            <div class="full bg-neutral-4 br pd">
+                .full
             </div>
         </div>
         /div
     </div>
 
-    <div class="breakout mxw-rg">
-        <h3>Breakout Left Content</h3>
-        <p>Breakout left content is enlarged to the left and will keep the right boundary with middle content.</p>
-    </div>
-
-    <!-- Code Example -->
-    <div class="full bry br-dotted br-small br-gray mono">
-        div .x
-        <div class="x">
-            <div class="breakout-l bg-neutral-4">
-                div/ .breakout-l
-            </div>
-        </div>
-        /div
-    </div>
-
-    <div class="breakout mxw-rg">
-        <h3>Breakout Right Content</h3>
-        <p>Breakout right content enlarged to the right and will keep the left boundary with middle content.
-        </p>
-    </div>
-
-    <!-- Code Example -->
-    <div class="full bry br-dotted br-small br-gray mono">
-        div .x
-        <div class="x">
-            <div class="breakout-r bg-neutral-4">
-                div/ .breakout-r
-            </div>
-        </div>
-        /div
-    </div>
-
-    <div class="breakout mxw-rg">
-        <h3>Breakout Content = Left and Right</h3>
-        <p>Breakout content is the combination of left and right content.</p>
-    </div>
-
-    <!-- Code Example -->
-    <div class="full bry br-dotted br-small br-gray mono">
-        div .x
-        <div class="x">
-            <div class="breakout bg-neutral-4">
-                div/ .breakout
-            </div>
-        </div>
-        /div
-    </div>
-
-    <div class="breakout mxw-rg">
-        <h3>Wide Content</h3>
-        <p>Wide content nearly takes the full width of the screen, except of a
-            small margin to the window border.</p>
-    </div>
-
-    <!-- Code Example-->
-    <div class="full bry br-dotted br-small br-gray mono">
-        div .x
-        <div class="x">
-            <div class="wide bg-neutral-4">
-                div/ .wide
-            </div>
-        </div>
-        /div
-    </div>
-
-
-    <div class="breakout mxw-rg">
-        <h3>Full Content</h3>
-        <p>Full content will use the entire width of the screen.</p>
-    </div>
-
-    <!-- Code Example -->
-    <div class="full bry br-dotted br-small br-gray mono">
-        div .x
-        <div class="x">
-            <div class="full bg-neutral-4">
-                div/ .full
-            </div>
-        </div>
-        /div
-    </div>
 
     <div class="breakout mxw-rg">
         <h3>Columns inside the Layout Grid</h3>
@@ -1836,11 +1767,11 @@ figure
     </div>
 
     <!-- Code Example -->
-    <div class="full bry br-dotted br-small br-gray mono mb">
+    <div class="full bry br-dotted br-small br-gray code mb">
         div .x
         <div class="x">
-            <div class="breakout bg-neutral-4">
-                div/ .breakout.columns-1.rg-columns-2.md-columns-3.lg-columns-4
+            <div class="breakout bg-neutral-4 pd br mry">
+                .breakout.columns-1.rg-columns-2.md-columns-3.lg-columns-4
             </div>
         </div>
         /div
@@ -1913,41 +1844,37 @@ figure
                 typical case.</p>
             <p>The sum of the cols per row has to add up to 12. Not specifiying a column size will result in taking
                 the entire grid width into one column.</p>
-
-            <pre>div .x-12 
-    div/ .xx-2 
-    div/ .xx-10 //.xx-2 and .xx-10 together will fill an entire row           
-    div/ .xx-12 //will fill an entire row 
-    div/        //will also fill an entire row 
-/div</pre>
         </div>
-
-        <div class="x-12 mry-1 gp center code">
-            <div class="xx-2 br pdy">.xx-2</div>
-            <div class="xx-10 br pdy">.xx-10</div>
-            <div class="xx-3 br pdy">.xx-3</div>
-            <div class="xx-9 br pdy">.xx-9</div>
-            <div class="xx-4 br pdy">.xx-4</div>
-            <div class="xx-8 br pdy">.xx-8</div>
-            <div class="xx-5 br pdy">.xx-5</div>
-            <div class="xx-7 br pdy">.xx-7</div>
-            <div class="xx-6 br pdy">.xx-6</div>
-            <div class="xx-6 br pdy">.xx-6</div>
-            <div class="xx-4 br pdy">.xx-4</div>
-            <div class="xx-4 br pdy">.xx-4</div>
-            <div class="xx-4 br pdy">.xx-4</div>
-            <div class="xx-3 br pdy">.xx-3</div>
-            <div class="xx-3 br pdy">.xx-3</div>
-            <div class="xx-3 br pdy">.xx-3</div>
-            <div class="xx-3 br pdy">.xx-3</div>
-            <div class="xx-2 br pdy">.xx-2</div>
-            <div class="xx-2 br pdy">.xx-2</div>
-            <div class="xx-2 br pdy">.xx-2</div>
-            <div class="xx-2 br pdy">.xx-2</div>
-            <div class="xx-2 br pdy">.xx-2</div>
-            <div class="xx-2 br pdy">.xx-2</div>
-            <div class="xx-12 br pdy">.xx-12</div>
-            <div class="br pdy">No class assignment</div>
+        <div class="full bry br-dotted br-small br-gray mb mry-2 code">
+            div .x-12
+            <div class="breakout x-12 mry-1 gp center mry">
+                <div class="xx-2 br pdy bg-neutral-4">.xx-2</div>
+                <div class="xx-10 br pdy bg-neutral-4">.xx-10</div>
+                <div class="xx-3 br pdy bg-neutral-4">.xx-3</div>
+                <div class="xx-9 br pdy bg-neutral-4">.xx-9</div>
+                <div class="xx-4 br pdy bg-neutral-4">.xx-4</div>
+                <div class="xx-8 br pdy bg-neutral-4">.xx-8</div>
+                <div class="xx-5 br pdy bg-neutral-4">.xx-5</div>
+                <div class="xx-7 br pdy bg-neutral-4">.xx-7</div>
+                <div class="xx-6 br pdy bg-neutral-4">.xx-6</div>
+                <div class="xx-6 br pdy bg-neutral-4">.xx-6</div>
+                <div class="xx-4 br pdy bg-neutral-4">.xx-4</div>
+                <div class="xx-4 br pdy bg-neutral-4">.xx-4</div>
+                <div class="xx-4 br pdy bg-neutral-4">.xx-4</div>
+                <div class="xx-3 br pdy bg-neutral-4">.xx-3</div>
+                <div class="xx-3 br pdy bg-neutral-4">.xx-3</div>
+                <div class="xx-3 br pdy bg-neutral-4">.xx-3</div>
+                <div class="xx-3 br pdy bg-neutral-4">.xx-3</div>
+                <div class="xx-2 br pdy bg-neutral-4">.xx-2</div>
+                <div class="xx-2 br pdy bg-neutral-4">.xx-2</div>
+                <div class="xx-2 br pdy bg-neutral-4">.xx-2</div>
+                <div class="xx-2 br pdy bg-neutral-4">.xx-2</div>
+                <div class="xx-2 br pdy bg-neutral-4">.xx-2</div>
+                <div class="xx-2 br pdy bg-neutral-4">.xx-2</div>
+                <div class="xx-12 br pdy bg-neutral-4">.xx-12</div>
+                <div class="br pdy bg-neutral-4">No class assignment</div>
+            </div>
+            /div
         </div>
 
         <p class="mxw-rg">Columns can have a different width based on minimum screen width.
@@ -1973,10 +1900,15 @@ figure
             alternate minimum screen size is not defined.
         </p>
 
-        <div class="x-12 mry-1 gp center code">
-            <div class="xx-12 rg-xx-6 lg-xx-4 br pd middle">.xx-12.rg-xx-6.lg-xx-4</div>
-            <div class="xx-12 rg-xx-6 lg-xx-8 br pd middle">.xx-12.rg-xx-6.lg-xx-8</div>
+        <div class="full bry br-dotted br-small br-gray mb mry-2 code">
+            div .x-12
+            <div class="x-12 mry-1 gp center">
+                <div class="xx-12 rg-xx-6 lg-xx-4 br pd middle bg-neutral-4">.xx-12.rg-xx-6.lg-xx-4</div>
+                <div class="xx-12 rg-xx-6 lg-xx-8 br pd middle bg-neutral-4">.xx-12.rg-xx-6.lg-xx-8</div>
+            </div>
+            /div
         </div>
+
     </div>
 
 
