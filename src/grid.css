@@ -24,7 +24,8 @@
   grid-template-columns: var(--space-1) 1fr 1fr minmax(0, var(--regular-width)) 1fr 1fr var(--space-1);
 }
 
-.x>* {
+.x>*,
+.x>.mid {
   grid-column: 4/span 1;
 }
 
@@ -171,6 +172,7 @@
 }
 
 @media (--breakpoint-sm) {
+  
   .x>.sm-breakout-l {
     grid-column: 3/span 2;
   }
@@ -419,23 +421,23 @@
   .x>.md-full {
     grid-column: 1/span 7;
   }
-   
+
   .xl>.md-breakout-l {
     grid-column: 2/span 2;
   }
-  
+
   .xl>.md-breakout-r {
     grid-column: 3/span 2;
   }
-  
+
   .xl>.md-breakout {
     grid-column: 3/span 3;
   }
-  
+
   .xl>.md-wide {
     grid-column: 2/span 5;
   }
-  
+
   .xl>.md-full {
     grid-column: 1/span 7;
   }
@@ -533,23 +535,23 @@
   .x>.lg-full {
     grid-column: 1/span 7;
   }
-   
+
   .xl>.lg-breakout-l {
     grid-column: 2/span 2;
   }
-  
+
   .xl>.lg-breakout-r {
     grid-column: 3/span 2;
   }
-  
+
   .xl>.lg-breakout {
     grid-column: 3/span 3;
   }
-  
+
   .xl>.lg-wide {
     grid-column: 2/span 5;
   }
-  
+
   .xl>.lg-full {
     grid-column: 1/span 7;
   }
