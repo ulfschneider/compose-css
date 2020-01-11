@@ -138,10 +138,6 @@ small,
   letter-spacing: 0.2em;
 }
 
-.mono {
-  font-family: var(--font-family-mono);
-}
-
 .underline,
 u {
   text-decoration: underline;
@@ -442,20 +438,6 @@ p.no-indent {
   margin-top: var(--space);
   margin-bottom: var(--space);
 }
-
-.code,
-code,
-pre {
-  font-family: var(--font-family-mono);
-  line-height: var(--lh-3);
-  font-size: var(--fs);
-}
-
-code {
-  padding-top: 0.1em;
-  padding-bottom: 0.1em;
-}
-
 .quote:before {
   content: '“';
 }
@@ -464,11 +446,11 @@ code {
   content: '”';
 }
 
-p>code,
-li>code,
-blockquote>code {
-  background: var(--code-background);
-  color: var(--code-color);
+.code,
+code,
+pre,
+.mono {
+  font-family: var(--font-family-mono);   
 }
 
 pre {
@@ -478,7 +460,7 @@ pre {
   padding-bottom: var(--space-d2);
   border-top: var(--border-width-default) dotted var(--neutral);
   border-bottom: var(--border-width-default) dotted var(--neutral);
-  overflow: auto;
+  overflow: auto;  
 }
 
 .tag {
