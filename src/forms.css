@@ -1,0 +1,3 @@
+input, button, select, option, textarea {
+    box-sizing: content-box;
+}
