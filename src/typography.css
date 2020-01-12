@@ -1,10 +1,18 @@
 :root {
+  --font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
   --font-weight-bold: 600;
   --font-weight-normal: 400;
 
-  --font-family: -apple-system,BlinkMacSystemFont,"San Francisco","Helvetica Neue",Helvetica,Ubuntu,Roboto,Noto,"Segoe UI",Arial,sans-serif;
-  --font-family-headlines: var(--font-family);
-  --font-family-mono: monospace;
+  --headline-font-family: var(--font-family);
+  --headline-font-weight: 600;
+  --headline-letter-spacing: 0.025em;
+  --headline-text-transform: uppercase;
+
+
+  --mono-font-family: monospace;
+
+  --code-font-family: monospace;
+
   --link-text-decoration: underline;
   --text-underline-offset: 0.25em;
   --text-decoration-thickness: 0.05em;
@@ -232,8 +240,12 @@ kbd,
   border-radius: var(--space-d4);
   border: 1px solid var(--base-color);
   padding: 0.1em;
-  font-family: var(--font-family-mono);
+  font-family: var(--mono-font-family);
   white-space: nowrap;
+}
+
+.mono {
+  font-family: var(--mono-font-family);
 }
 
 h1,
@@ -242,9 +254,10 @@ h3,
 h4,
 h5,
 h6 {
-  text-transform: unset;
-  font-weight: 600;
-  font-family: var(--font-family-headlines);
+  text-transform: var(--headline-text-transform);
+  letter-spacing: var(--headline-letter-spacing);
+  font-weight: var(--headline-font-weight);
+  font-family: var(--headline-font-family);
 }
 
 h1,
@@ -311,7 +324,6 @@ h4.indent,
 h5.indent .indent h6,
 h6.indent {
   padding-left: var(--space-2);
-  margin-bottom: var(--space-d2);
 }
 
 dl {
@@ -438,6 +450,7 @@ p.no-indent {
   margin-top: var(--space);
   margin-bottom: var(--space);
 }
+
 .quote:before {
   content: '“';
 }
@@ -448,9 +461,8 @@ p.no-indent {
 
 .code,
 code,
-pre,
-.mono {
-  font-family: var(--font-family-mono);     
+pre {
+  font-family: var(--code-font-family);
 }
 
 pre {
@@ -460,7 +472,7 @@ pre {
   padding-bottom: var(--space-d2);
   border-top: var(--border-width-default) dotted var(--neutral);
   border-bottom: var(--border-width-default) dotted var(--neutral);
-  overflow: auto;  
+  overflow: auto;
 }
 
 .tag {
