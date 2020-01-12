@@ -1,12 +1,5 @@
 :root {
   --border-width-default: var(--space-d5);
-
-  --border-radius-d2: calc(var(--space) / 4);
-  --border-radius-d1: calc(var(--space) / 2);
-  --border-radius: var(--space);
-
-  --border-radius-default: var(--border-radius-d2);
-
   border-color: var(--base-color);
 }
 
@@ -74,12 +67,12 @@
   border-width: 0;
 }
 
-.brw-d5 {
+.brw-d5,
+.brw-default {
   border-width: var(--space-d5);
 }
 
-.brw-d4,
-.brw-default {
+.brw-d4 {
   border-width: var(--space-d4);
 }
 
@@ -105,17 +98,21 @@
   border-radius: none;
 }
 
-.br-radius-d2,
+.br-radius-d3,
 .rounded {
-  border-radius: var(--border-radius-d2);
+  border-radius: var(--space-d3);
+}
+
+.br-radius-d2 {
+  border-radius: var(--space-d2);
 }
 
 .br-radius-d1 {
-  border-radius: var(--border-radius-d1);
+  border-radius: var(--space-d1);
 }
 
 .br-radius {
-  border-radius: var(--border-radius);
+  border-radius: var(--space);
 }
 
 .br-radius-pill {

@@ -1,3 +1,62 @@
-input, button, select, option, textarea {
+:root {
+    --form-field-font-family: var(--font-family);
+    --form-field-font-size: var(--fs);
+    --form-field-pdx: var(--space-d4);
+    --form-field-pdy: var(--space-d4);
+}
+
+input,
+button,
+.button,
+select,
+textarea,
+fieldset {
     box-sizing: content-box;
+    font-family: var(--form-field-font-family);
+    font-size: var(--form-field-font-size);
+    margin: 0;
+    padding: var(--form-field-pdy) var(--form-field-pdx);
+    border: 1px solid var(--neutral-2);
+    border-radius: var(--space-d3);
+}
+
+button, .button {
+    border: 1px solid transparent;
+    vertical-align: middle;
+}
+
+
+label {
+    vertical-align: middle;
+}
+
+input[type=text],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=time],
+input[type=url],
+input[type=week] {
+    height: var(--form-field-height);
+    vertical-align: middle;
+}
+
+select {
+    line-height: var(--lh-3);
+    padding: var(--form-field-padding-y) var(--form-field-padding-x);
+}
+
+select:not([multiple]) {
+    height: var(--form-field-height);
+    vertical-align: middle;
+}
+
+textarea {
+    line-height: var(--lh-3);
 }
