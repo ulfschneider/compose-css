@@ -2272,7 +2272,10 @@ figure
         <div class="top brb bg-neutral-4 mxw-lg height-1 mrb-d2 right">
             <code class="pdr">.width-lg</code>
             <small class="lg-hide">there is more →</small>
+        </div>
 
+        <div class="top brb bg-neutral-4 width-100 height-1 mrb-d2 right">
+            <code class="pdr">.width-100</code>
         </div>
     </div>
 
@@ -2572,8 +2575,49 @@ div/ .below-lg-hide //When visible: screen is above large width</pre>
 
     <h2 id="forms">Forms</h2>
     <div>
-        <button>My button</button>
-        <input type="text" />
+        <form class="mry-3 mxw-sm">
+            <dl>
+                <label>Email Address</label>
+                <input type="email" class="width-100 block">
+            </dl>
+            <dl>
+                <label>Password</label>
+                <input type="password" class="width-100 block">
+            </dl>
+            <dl>
+                <label>Select</label>
+                <select class="block">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                    <option>Option 4</option>
+                    <option>Option 5</option>
+                </select>
+            </dl>
+            <dl>
+                <label>Datalist</label>
+                <input class="width-100 block" type="list" list="browsers">
+                <datalist id="browsers">
+                    <option value="Internet Explorer">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+            </dl>
+
+            <dl>
+                <label class="block">
+                    <input type="checkbox" checked>
+                    Remember me
+                </label>
+            </dl>
+            <button type="submit">Sign In</button>
+            <button type="reset">Cancel</button>
+            <dl><label>Textarea</label>
+                <textarea class="block width-100"></textarea>
+            </dl>
+        </form>
     </div>
 
 
