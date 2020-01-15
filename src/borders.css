@@ -46,7 +46,7 @@
   border-left-width: var(--border-width-default);
 }
 
-.br-0 {
+.br-0, .no-br {
   border-style: none;
   border-width: 0;
 }

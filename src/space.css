@@ -48,7 +48,7 @@ Naming conventions
     pd=padding
 */
 
-.gp-0 {
+.gp-0, .no-gp {
   grid-gap: 0;
 }
 
@@ -181,7 +181,7 @@ Naming conventions
 }
 
 
-.mr-0 {
+.mr-0, .no-mr {
   margin: 0;
 }
 
@@ -759,7 +759,7 @@ Naming conventions
   margin-right: auto;
 }
 
-.pd-0 {
+.pd-0, .no-pd {
   padding: 0;
 }
 
