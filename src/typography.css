@@ -244,6 +244,7 @@ kbd,
   white-space: nowrap;
 }
 
+
 .mono {
   font-family: var(--mono-font-family);
 }
@@ -515,6 +516,12 @@ figcaption {
 }
 
 hr {
-  margin: var(--space) var(--space-2);
-  border-top: var(--border-width-default) solid var(--neutral-2);
+	border:0;
+  text-align: center;
+  margin-top: var(--space-1);
+  margin-bottom: var(--space-1);
+}
+hr:after {
+  content: "•    •    •";	  
+  white-space: pre; 
 }
