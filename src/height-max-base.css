@@ -1,0 +1,84 @@
+.max-height-unset,
+.mxh-u {
+    max-height: unset;
+}
+
+.max-height-sm,
+.mxh-sm {
+    max-height: var(--small-width);
+}
+
+.max-height-rg,
+.mxh-rg {
+    max-height: var(--regular-width);
+}
+
+.max-height-md,
+.mxh-md {
+    max-height: var(--mid-width);
+}
+
+.max-height-lg,
+.mxh-lg {
+    max-height: var(--large-width);
+}
+
+.max-height-d5,
+.mxh-d5 {
+    max-height: var(--space-d5);
+}
+
+.max-height-d4,
+.mxh-d4 {
+    max-height: var(--space-d4);
+}
+
+.max-height-d3,
+.mxh-d3 {
+    max-height: var(--space-d3);
+}
+
+.max-height-d2,
+.mxh-d2 {
+    max-height: var(--space-d2);
+}
+
+.max-height-d1,
+.mxh-d1 {
+    max-height: var(--space-d1);
+}
+
+.max-height,
+.mxh {
+    max-height: var(--space);
+}
+
+.max-height-1,
+.mxh-1 {
+    max-height: var(--space-1)
+}
+
+.max-height-2,
+.mxh-2 {
+    max-height: var(--space-2);
+}
+
+.max-height-3,
+.mxh-3 {
+    max-height: var(--space-3);
+}
+
+.max-height-4,
+.mxh-4 {
+    max-height: var(--space-4);
+}
+
+.max-height-5,
+.mxh-5 {
+    max-height: var(--space-5);
+}
+
+.max-height-6,
+.mxh-6 {
+    max-height: var(--space-6);
+}

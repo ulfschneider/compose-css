@@ -1,0 +1,84 @@
+.min-width-unset,
+.miw-u {
+    min-width: unset;
+}
+
+.min-width-sm,
+.miw-sm {
+    min-width: var(--small-width);
+}
+
+.min-width-rg,
+.miw-rg {
+    min-width: var(--regular-width);
+}
+
+.min-width-md,
+.miw-md {
+    min-width: var(--mid-width);
+}
+
+.min-width-lg,
+.miw-lg {
+    min-width: var(--large-width);
+}
+
+.min-width-d5,
+.miw-d5 {
+    min-width: var(--space-d5);
+}
+
+.min-width-d4,
+.miw-d4 {
+    min-width: var(--space-d4);
+}
+
+.min-width-d3,
+.miw-d3 {
+    min-width: var(--space-d3);
+}
+
+.min-width-d2,
+.miw-d2 {
+    min-width: var(--space-d2);
+}
+
+.min-width-d1,
+.miw-d1 {
+    min-width: var(--space-d1);
+}
+
+.min-width,
+.miw {
+    min-width: var(--space);
+}
+
+.min-width-1,
+.miw-1 {
+    min-width: var(--space-1);
+}
+
+.min-width-2,
+.miw-2 {
+    min-width: var(--space-2);
+}
+
+.min-width-3,
+.miw-3 {
+    min-width: var(--space-3);
+}
+
+.min-width-4,
+.miw-4 {
+    min-width: var(--space-4);
+}
+
+.min-width-5,
+.miw-5 {
+    min-width: var(--space-5);
+}
+
+.min-width-6,
+.miw-6 {
+    min-width: var(--space-6);
+}

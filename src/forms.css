@@ -92,13 +92,8 @@ input[list] {
     line-height: var(--lh);
 }
 
-
-
-
-
-
 textarea {
-    line-height: var(--lh-2);
+    line-height: var(--lh-2);    
     border: 1px solid var(--form-field-border-color);
     border-radius: var(--form-br-radius);
     resize: none;
