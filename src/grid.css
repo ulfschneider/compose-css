@@ -6,7 +6,8 @@
 .x,
 .xl {
   max-width: var(--regular-width);
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @supports (display: grid) {
@@ -14,8 +15,9 @@
   .x-12,
   .x,
   .xl {
-    max-width: 100%;
-    margin: unset;
+    max-width: unset;
+    margin-left: unset;
+    margin-right: unset;
   }
 }
 

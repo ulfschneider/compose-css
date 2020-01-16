@@ -15,12 +15,20 @@
         font-weight: bold;
     }
 
-    .is-active::before,
-    .is-visible::before {
-        content: '–';
-        width: 1em;
-        margin-left: -1em;
-        display: inline-block;
+    .bookmark a {
+        position:fixed;        
+        left:0;
+        bottom:0;
+        
+        background: var(--base-color);        
+        color: white;
+        padding-left: var(--space); 
+        padding-right: var(--space-d2);       
+        text-transform: uppercase;
+    }
+    .bookmark a.is-active,
+    .bookmark a.is-visible {
+        display: block !important;
     }
 
     :root {
@@ -49,7 +57,24 @@
                 <div><a href="#square" class="no-deco">Square</a></div>
                 <div><a href="#hide" class="no-deco">Hide</a></div>
                 <div><a href="#forms" class="no-deco">Forms</a></div>
-                <div><a href="#customize" class="no-deco">Customize</a></div>
+            </div>
+            <div class="bookmark small">
+                <a href="#notation" class="no-deco hide">Notation</a>
+                <a href="#typography" class="no-deco hide">Typography</a>
+                <a href="#colors" class="no-deco hide">Colors</a>
+                <a href="#white-space" class="no-deco hide">White Space</a>
+                <a href="#borders" class="no-deco hide">Borders</a>
+                <a href="#tables" class="no-deco hide">Tables</a>
+                <a href="#figures" class="no-deco hide">Figures</a>
+                <a href="#images" class="no-deco hide">Images</a>
+                <a href="#layout-grid" class="no-deco hide">Layout Grid</a>
+                <a href="#column-grid" class="no-deco hide">12 Col Grid</a>
+                <a href="#layout" class="no-deco hide">Layout</a>
+                <a href="#width" class="no-deco hide">Width</a>
+                <a href="#height" class="no-deco hide">Height</a>
+                <a href="#square" class="no-deco hide">Square</a>
+                <a href="#hide" class="no-deco hide">Hide</a>
+                <a href="#forms" class="no-deco hide">Forms</a>
             </div>
         </header>
         <div class="xl mrt-2 mrb-3">
@@ -513,24 +538,26 @@ figure
     </div>
 
     <div>
-        <h3>Screen Width and Size</h3>
-        <p>Heading size, font size, and line height can have different sizes on minimum screen width.
-            Address the different minimum screen sizes with prefix values of</p>
+        <h3>Responsive Breakpoints</h3>
+        <p>Heading size, font size, and line height can have different sizes based on minimum screen width.
+            Address the different minimum screen sizes with responsive breakpoints, wich are indicated by CSS class
+            prefix values
+            of:</p>
         <dl>
             <dt class="float-left"><code>.sm-</code></dt>
-            <dd>The size is applied only if the screen is at least of small width</dd>
+            <dd>The size is applied only if the screen is at least of small width.</dd>
         </dl>
         <dl>
             <dt class="float-left"><code>.rg-</code></dt>
-            <dd>The size is applied only if the screen is at least of regular size</dd>
+            <dd>The size is applied only if the screen is at least of regular size.</dd>
         </dl>
         <dl>
             <dt class="float-left"><code>.md-</code></dt>
-            <dd>The size is applied only if the screen is at least of mid size</dd>
+            <dd>The size is applied only if the screen is at least of mid size.</dd>
         </dl>
         <dl>
             <dt class="float-left"><code>.lg-</code></dt>
-            <dd>The size is applied only if the screen is at least of large size</dd>
+            <dd>The size is applied only if the screen is at least of large size.</dd>
         </dl>
         <p>E.g. <code>.lg-fs-1</code>, <code>.md-h1</code>, or <code>.rg-lh-3</code>.</p>
         <p> A size class without a prefix will be used in case the
@@ -1838,24 +1865,28 @@ figure
         /div
     </div>
 
+
+
     <div>
+        <h3>Responsive Breakpoints</h3>
         <p class="mrt">The column count can vary based on available screen width.
-            Address the different minimum screen sizes with column prefix values of </p>
+            Address the different minimum screen sizes with responsive breakpoints, wich are indicated by CSS class
+            prefix values values of:</p>
         <dl>
             <dt class="float-left"><code>.sm-</code></dt>
-            <dd>The column count is applied only if the screen is at least of small width</dd>
+            <dd>The column count is applied only if the screen is at least of small width.</dd>
         </dl>
         <dl>
             <dt class="float-left"><code>.rg-</code></dt>
-            <dd>The column count is applied only if the screen is at least of regular width</dd>
+            <dd>The column count is applied only if the screen is at least of regular width.</dd>
         </dl>
         <dl>
             <dt class="float-left"><code>.md-</code></dt>
-            <dd>The column count is applied only if the screen is at least of mid width</dd>
+            <dd>The column count is applied only if the screen is at least of mid width.</dd>
         </dl>
         <dl>
             <dt class="float-left"><code>.lg-</code></dt>
-            <dd>The column count is applied only if the screen is at least of large width</dd>
+            <dd>The column count is applied only if the screen is at least of large width.</dd>
         </dl>
         <p>A column class without a prefix will be used in case the
             alternate minimum screen size is not defined.</p>
@@ -1869,8 +1900,8 @@ figure
             domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed
             ready to
             slide off any moment.</p>
-  
-            <hr>
+
+        <hr>
 
         <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he
             looked.
@@ -1950,24 +1981,26 @@ figure
         /div
     </div>
 
-    <div class="mrt">
+    <div>
+        <h3>Responsive Breakpoints</h3>
         <p>Columns can have a different width based on minimum screen width.
-            Address the different minimum screen sizes with column prefix values of</p>
+            Address the different minimum screen sizes with responsive breakpoints, wich are indicated by CSS class
+            prefix values of:</p>
         <dl>
             <dt class="float-left"><code>.sm-</code></dt>
-            <dd>The column width is applied only if the screen is at least of small width</dd>
+            <dd>The column width is applied only if the screen is at least of small width.</dd>
         </dl>
         <dl>
             <dt class="float-left"><code>.rg-</code></dt>
-            <dd>The column width is applied only if the screen is at least of regular width</dd>
+            <dd>The column width is applied only if the screen is at least of regular width.</dd>
         </dl>
         <dl>
             <dt class="float-left"><code>.md-</code></dt>
-            <dd>The column width is applied only if the screen is at least of mid width</dd>
+            <dd>The column width is applied only if the screen is at least of mid width.</dd>
         </dl>
         <dl>
             <dt class="float-left"><code>.lg-</code></dt>
-            <dd>The column width is applied only if the screen is at least of large width</dd>
+            <dd>The column width is applied only if the screen is at least of large width.</dd>
         </dl>
         <p>
             A column class without a prefix will be used in case the
@@ -2291,23 +2324,25 @@ figure
             shorthand
             for <code>.min-width</code>.
         </p>
-        <p>In addition the <code>.width</code>, <code>.max-width</code>, and <code>.min-with</code> classes can
-            be altered by assiging a screen width prefix:</p>
+        <h3>Responsive Breakpoints</h3>
+        <p>In addition <code>.width</code>, <code>.max-width</code>, and <code>.min-with</code> classes can
+            be altered with responsive breakpoints, wich are indicated by CSS class
+            prefix values of:</p>
         <dl>
             <dt class="float-left"><code>.sm-</code></dt>
-            <dd>The width is applied only if the screen is at least of small width</dd>
+            <dd>The width is applied only if the screen is at least of small width.</dd>
         </dl>
         <dl>
             <dt class="float-left"><code>.rg-</code></dt>
-            <dd>The width is applied only if the screen is at least of regular width</dd>
+            <dd>The width is applied only if the screen is at least of regular width.</dd>
         </dl>
         <dl>
             <dt class="float-left"><code>.md-</code></dt>
-            <dd>The width is applied only if the screen is at least of mid width</dd>
+            <dd>The width is applied only if the screen is at least of mid width.</dd>
         </dl>
         <dl>
             <dt class="float-left"><code>.lg-</code></dt>
-            <dd>The width is applied only if the screen is at least of large width</dd>
+            <dd>The width is applied only if the screen is at least of large width.</dd>
         </dl>
 
 
@@ -2388,23 +2423,26 @@ figure
             shorthand
             for <code>.min-height</code>.
         </p>
+        <h3>Responsive Breakpoints</h3>
         <p>In addition the <code>.height</code>, <code>.max-height</code>, and <code>.min-height</code> classes can
-            be altered by assiging a screen width prefix:</p>
+            be altered with responsive breakpoints, wich are indicated by CSS class
+            prefix values
+            of:</p>
         <dl>
             <dt class="float-left"><code>.sm-</code></dt>
-            <dd>The height is applied only if the screen is at least of small width</dd>
+            <dd>The height is applied only if the screen is at least of small width.</dd>
         </dl>
         <dl>
             <dt class="float-left"><code>.rg-</code></dt>
-            <dd>The height is applied only if the screen is at least of regular width</dd>
+            <dd>The height is applied only if the screen is at least of regular width.</dd>
         </dl>
         <dl>
             <dt class="float-left"><code>.md-</code></dt>
-            <dd>The height is applied only if the screen is at least of mid width</dd>
+            <dd>The height is applied only if the screen is at least of mid width.</dd>
         </dl>
         <dl>
             <dt class="float-left"><code>.lg-</code></dt>
-            <dd>The height is applied only if the screen is at least of large width</dd>
+            <dd>The height is applied only if the screen is at least of large width.</dd>
         </dl>
 
     </div>
@@ -2480,27 +2518,30 @@ figure
         </div>
     </div>
 
-    <div class="mrt-2">
-        The <code>.square</code> classes can be altered by assiging a screen width prefix:
+    <div>
+        <h3>Responsive Breakpoints</h3>
+        The <code>.square</code> classes can be altered with responsive breakpoints, wich are indicated by CSS class
+        prefix values
+        of:
         <dl>
             <dt class="float-left"><code>.sm-</code></dt>
-            <dd>The square is applied only if the screen is at least of small width</dd>
+            <dd>The square is applied only if the screen is at least of small width.</dd>
         </dl>
         <dl>
             <dt class="float-left"><code>.rg-</code></dt>
-            <dd>The square is applied only if the screen is at least of regular width</dd>
+            <dd>The square is applied only if the screen is at least of regular width.</dd>
         </dl>
         <dl>
             <dt class="float-left"><code>.md-</code></dt>
-            <dd>The square is applied only if the screen is at least of mid width</dd>
+            <dd>The square is applied only if the screen is at least of mid width.</dd>
         </dl>
         <dl>
             <dt class="float-left"><code>.lg-</code></dt>
-            <dd>The square is applied only if the screen is at least of large width</dd>
+            <dd>The square is applied only if the screen is at least of large width.</dd>
         </dl>
     </div>
 
-    <h2 id="hide">Hide</h2>
+    <h2 id="hide">Responsive Hide</h2>
 
     <div class="full overflow-hidden mry-2">
         <div class="top brb bg-neutral-4 width-sm sm-hide pdx-d1 height-1 mrb-d2"><span class="mrr">Screen
