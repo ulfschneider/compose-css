@@ -180,7 +180,7 @@ u {
   font-variant-numeric: tabular-nums;
 }
 
-.no-break {
+.no-wrap {
   white-space: nowrap;
 }
 

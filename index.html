@@ -16,16 +16,17 @@
     }
 
     .bookmark a {
-        position:fixed;        
-        left:0;
-        bottom:0;
-        
-        background: var(--base-color);        
-        color: white;
-        padding-left: var(--space); 
-        padding-right: var(--space-d2);       
+        position: fixed;
+        left: 0;
+        bottom: 0;
+
+        background: var(--base-color);
+        color: var(--base-background);
+        padding-left: var(--space);
+        padding-right: var(--space-d2);
         text-transform: uppercase;
     }
+
     .bookmark a.is-active,
     .bookmark a.is-visible {
         display: block !important;
@@ -112,7 +113,7 @@
                     prefixed dot for each CSS class; and there is no white space between classes.</td>
             </tr>
             <tr>
-                <td class="no-break"><code>i</code>, <code>.i</code>, <code>.italic</code></td>
+                <td class="no-wrap"><code>i</code>, <code>.i</code>, <code>.italic</code></td>
                 <td>Multiple styling options that produce the same result are indicated by HTML tag names or CSS class
                     names, each one seperated by comma.</td>
             </tr>
@@ -143,6 +144,23 @@
         <p><s class="strike mrr">Strikethrough</s> <code>s</code>, <code>.s</code>, <code>.strike</code></p>
         <p><small class="mrr">Small</small> <code>small</code>, <code>.small</code></p>
         <p><code class="mrr">Code</code> <code>code</code>, <code>.code</code></p>
+    </div>
+
+    <div>
+        <h3>Special Cases</h3>
+        <p><a href="#" class="mrr no-deco">A link without text decoration</a> <code>.no-deco</code></p>
+        <p>
+            <div class="block br br-dotted width-3 height-2 no-wrap mrr">No word wrap at white space</div>
+            <code>.no-wrap</code>
+        </p>
+        <p>
+            <div class="block br br-dotted width-3 height-2 truncate mrr">No word wrap at white space</div>
+            <code>.truncate</code>
+        </p>
+        <div class="br br-dotted">
+            <hr>
+        </div>
+        <code>hr</code>
     </div>
 
     <div>
@@ -389,7 +407,7 @@ figure
                     <td class="baseline pdy-0 right">
                         <h2 class="mr-0 pd-0">H2</h2>
                     </td>
-                    <td class="code baseline pdy-0 no-break">h2</td>
+                    <td class="code baseline pdy-0 no-wrap">h2</td>
                 </tr>
                 <tr>
                     <td class="baseline pdy-0 right">
@@ -407,13 +425,13 @@ figure
                     <td class="baseline pdy-0 right">
                         <h5 class="mr-0 pd-0">H5</h5>
                     </td>
-                    <td class="code baseline pdy-0 no-break">h5 <small>(1rem)</small></td>
+                    <td class="code baseline pdy-0 no-wrap">h5 <small>(1rem)</small></td>
                 </tr>
                 <tr>
                     <td class="baseline pdy-0 right">
                         <h6 class="mr-0 pd-0">H6</h6>
                     </td>
-                    <td class="baseline pdy-0 no-break"><code>h6</code></td>
+                    <td class="baseline pdy-0 no-wrap"><code>h6</code></td>
                 </tr>
             </table>
         </div>
@@ -427,7 +445,7 @@ figure
                 </tr>
                 <tr>
                     <td class="h2 baseline pdy-0 right">H2</td>
-                    <td class="code baseline pdy-0 no-break">.h2</td>
+                    <td class="code baseline pdy-0 no-wrap">.h2</td>
                 </tr>
                 <tr>
                     <td class="h3 baseline pdy-0 right">H3</td>
@@ -439,11 +457,11 @@ figure
                 </tr>
                 <tr>
                     <td class="h5 baseline pdy-0 right">H5</td>
-                    <td class="code baseline pdy-0 no-break">.h5 <small>(1rem)</small></td>
+                    <td class="code baseline pdy-0 no-wrap">.h5 <small>(1rem)</small></td>
                 </tr>
                 <tr>
                     <td class="h6 baseline pdy-0 right">H6</td>
-                    <td class="baseline pdy-0 no-break"><code>.h6</code></td>
+                    <td class="baseline pdy-0 no-wrap"><code>.h6</code></td>
                 </tr>
             </table>
         </div>
@@ -458,7 +476,7 @@ figure
             </tr>
             <tr>
                 <td class="fs baseline pdy-0 right">Aa</td>
-                <td class="baseline pdy-0 no-break"><code>.fs</code>, <code>.fs-default</code> <small>(1rem)</small>
+                <td class="baseline pdy-0 no-wrap"><code>.fs</code>, <code>.fs-default</code> <small>(1rem)</small>
                 </td>
             </tr>
             <tr>
@@ -523,8 +541,8 @@ figure
             <tr>
                 <td class="lh-3 brt baseline pd-0">One morning, when Gregor Samsa woke from troubled dreams, he
                     found himself transformed in his bed into a horrible vermin.</td>
-                <td class="lh-3 baseline pdl pd-0"><code class="no-break">.lh-3</code>,
-                    <code class="no-break">.lh-unset</code></td>
+                <td class="lh-3 baseline pdl pd-0"><code class="no-wrap">.lh-3</code>,
+                    <code class="no-wrap">.lh-unset</code></td>
             </tr>
             <tr>
                 <td class="lh-4 brt m brb baseline pd-0">One morning, when Gregor Samsa woke from troubled dreams,
@@ -584,7 +602,7 @@ figure
             </tr>
             <tr>
                 <td class="fw-400 fs-4 baseline pdy-0">Aa</td>
-                <td class="baseline pdy-0 no-break"><code>.fw-400</code>, <code>.fw-default</code>, <code>.normal</code>
+                <td class="baseline pdy-0 no-wrap"><code>.fw-400</code>, <code>.fw-default</code>, <code>.normal</code>
                 </td>
             </tr>
             <tr>
@@ -593,7 +611,7 @@ figure
             </tr>
             <tr>
                 <td class="fw-600 fs-4 baseline pdy-0">Aa</td>
-                <td class="baseline pdy-0 no-break"><code>.fw-600</code>, <code>.bold</code>, <code>bold</code></td>
+                <td class="baseline pdy-0 no-wrap"><code>.fw-600</code>, <code>.bold</code>, <code>bold</code></td>
             </tr>
             <tr>
                 <td class="fw-700 fs-4 baseline pdy-0">Aa</td>
@@ -2027,27 +2045,27 @@ figure
                 <th>Shorthand for property</th>
             </tr>
             <tr>
-                <td class="no-break"><code>.inline</code></td>
+                <td class="no-wrap"><code>.inline</code></td>
                 <td><code>display: inline;</code></td>
             </tr>
             <tr>
-                <td class="no-break"><code>.inline-block</code></td>
+                <td class="no-wrap"><code>.inline-block</code></td>
                 <td><code>display: inline-block;</code></td>
             </tr>
             <tr>
-                <td class="no-break"><code>.block</code></td>
+                <td class="no-wrap"><code>.block</code></td>
                 <td><code>display: block;</code></td>
             </tr>
             <tr>
-                <td class="no-break"><code>.inline-table</code></td>
+                <td class="no-wrap"><code>.inline-table</code></td>
                 <td><code>display: inline-table;</code></td>
             </tr>
             <tr>
-                <td class="no-break"><code>.table</code></td>
+                <td class="no-wrap"><code>.table</code></td>
                 <td><code>display: table;</code></td>
             </tr>
             <tr>
-                <td class="no-break"><code>.table-cell</code></td>
+                <td class="no-wrap"><code>.table-cell</code></td>
                 <td><code>display: table-cell;</code></td>
             </tr>
         </table>
@@ -2059,38 +2077,38 @@ figure
                 <th>Shorthand for property</th>
             </tr>
             <tr>
-                <td class="no-break"><code>.baseline</code></td>
+                <td class="no-wrap"><code>.baseline</code></td>
                 <td><code>vertical-align: baseline;</code></td>
             </tr>
             <tr>
-                <td class="no-break"><code>.top</code></td>
+                <td class="no-wrap"><code>.top</code></td>
                 <td><code> vertical-align: top;
                     align-items: start;</code></td>
             </tr>
             <tr>
-                <td class="no-break"><code>.middle</code></td>
+                <td class="no-wrap"><code>.middle</code></td>
                 <td><code> vertical-align: middle;
                     align-items: center;</code></td>
             </tr>
             <tr>
-                <td class="no-break"><code>.bottom</code></td>
+                <td class="no-wrap"><code>.bottom</code></td>
                 <td><code> vertical-align: bottom;
                     align-items: end;</code></td>
             </tr>
             <tr>
-                <td class="no-break"><code>.left</code></td>
+                <td class="no-wrap"><code>.left</code></td>
                 <td><code>text-align: left;</code></td>
             </tr>
             <tr>
-                <td class="no-break"><code>.center</code></td>
+                <td class="no-wrap"><code>.center</code></td>
                 <td><code>text-align: center;</code></td>
             </tr>
             <tr>
-                <td class="no-break"><code>.right</code></td>
+                <td class="no-wrap"><code>.right</code></td>
                 <td><code>text-align: right;</code></td>
             </tr>
             <tr>
-                <td class="no-break"><code>.justify</code></td>
+                <td class="no-wrap"><code>.justify</code></td>
                 <td><code>text-align: justify;</code></td>
             </tr>
         </table>
@@ -2101,15 +2119,15 @@ figure
                 <th>Shorthand for property</th>
             </tr>
             <tr>
-                <td class="no-break"><code>.overflow-hidden</code></td>
+                <td class="no-wrap"><code>.overflow-hidden</code></td>
                 <td><code>overflow: hidden;</code></td>
             </tr>
             <tr>
-                <td class="no-break"><code>.overflow-scroll</code></td>
+                <td class="no-wrap"><code>.overflow-scroll</code></td>
                 <td><code>overflow: scroll;</code></td>
             </tr>
             <tr>
-                <td class="no-break"><code>.overflow-auto</code></td>
+                <td class="no-wrap"><code>.overflow-auto</code></td>
                 <td><code>overflow: auto;</code></td>
             </tr>
         </table>
@@ -2120,12 +2138,12 @@ figure
                 <th>Shorthand for property</th>
             </tr>
             <tr>
-                <td class="no-break"><code>.border-box</code></td>
+                <td class="no-wrap"><code>.border-box</code></td>
                 <td><code>box-sizing: border-box;</code> <small>this is default box-sizing for css-compose</small>
                 </td>
             </tr>
             <tr>
-                <td class="no-break"><code>.content-box</code></td>
+                <td class="no-wrap"><code>.content-box</code></td>
                 <td><code>box-sizing: content-box;</code></td>
             </tr>
         </table>
@@ -2137,55 +2155,55 @@ figure
             </tr>
 
             <tr>
-                <td class="no-break"><code>.static</code></td>
+                <td class="no-wrap"><code>.static</code></td>
                 <td><code>position: static;</code></td>
             </tr>
             <tr>
-                <td class="no-break"><code>.sticky</code></td>
+                <td class="no-wrap"><code>.sticky</code></td>
                 <td><code>position: sticky;</code></td>
             </tr>
             <tr>
-                <td class="no-break"><code>.relative</code></td>
+                <td class="no-wrap"><code>.relative</code></td>
                 <td><code>position: relative;</code></td>
             </tr>
             <tr>
-                <td class="no-break"><code>.absolute</code></td>
+                <td class="no-wrap"><code>.absolute</code></td>
                 <td><code>position: absolute;</code></td>
             </tr>
             <tr>
-                <td class="no-break"><code>.fixed</code></td>
+                <td class="no-wrap"><code>.fixed</code></td>
                 <td><code>position: fixed;</code></td>
             </tr>
             <tr>
-                <td class="no-break"><code>.top-0</code></td>
+                <td class="no-wrap"><code>.top-0</code></td>
                 <td><code>top: 0;</code></td>
             </tr>
             <tr>
-                <td class="no-break"><code>.right-0</code></td>
+                <td class="no-wrap"><code>.right-0</code></td>
                 <td><code>right: 0;</code></td>
             </tr>
             <tr>
-                <td class="no-break"><code>.bottom-0</code></td>
+                <td class="no-wrap"><code>.bottom-0</code></td>
                 <td><code>bottom: 0;</code></td>
             </tr>
             <tr>
-                <td class="no-break"><code>.left-0</code></td>
+                <td class="no-wrap"><code>.left-0</code></td>
                 <td><code>left: 0;</code></td>
             </tr>
             <tr>
-                <td class="no-break"><code>.z-1</code></td>
+                <td class="no-wrap"><code>.z-1</code></td>
                 <td><code>z-index: var(--z-1);</code></td>
             </tr>
             <tr>
-                <td class="no-break"><code>.z-2</code></td>
+                <td class="no-wrap"><code>.z-2</code></td>
                 <td><code>z-index: var(--z-2);</code></td>
             </tr>
             <tr>
-                <td class="no-break"><code>.z-3</code></td>
+                <td class="no-wrap"><code>.z-3</code></td>
                 <td><code>z-index: var(--z-3);</code></td>
             </tr>
             <tr>
-                <td class="no-break"><code>.z-4</code></td>
+                <td class="no-wrap"><code>.z-4</code></td>
                 <td><code>z-index: var(--z-4);</code></td>
             </tr>
         </table>
@@ -2200,15 +2218,15 @@ figure
             </tr>
 
             <tr>
-                <td class="no-break"><code>.float-left</code></td>
+                <td class="no-wrap"><code>.float-left</code></td>
                 <td><code>float: left;</code></td>
             </tr>
             <tr>
-                <td class="no-break"><code>.float-right</code></td>
+                <td class="no-wrap"><code>.float-right</code></td>
                 <td><code>float: right;</code></td>
             </tr>
             <tr>
-                <td class="no-break"><code>.float-clear</code></td>
+                <td class="no-wrap"><code>.float-clear</code></td>
                 <td><code>clear: both;</code></td>
             </tr>
         </table>
@@ -2245,7 +2263,7 @@ figure
     <div>
         <p>Set the width by assigning any of the following shorthand CSS classes.</p>
 
-        <div class="no-break overflow-scroll">
+        <div class="no-wrap overflow-scroll">
             <div>
                 <div class="width-unset brb height-1 bg-neutral-4 inline-block mrr"> </div><code>.width-unset</code>
             </div>
@@ -2291,7 +2309,7 @@ figure
             </div>
         </div>
     </div>
-    <div class="full no-break mrt-2 overflow-scroll">
+    <div class="full no-wrap mrt-2 overflow-scroll">
         <div class="top brb bg-neutral-4 mxw-sm height-1 mrb-d2 right">
             <code class="pdr">.width-sm</code>
             <small class="sm-hide">there is more →</small>
@@ -2354,7 +2372,7 @@ figure
                 <th>Shorthand for property</th>
             </tr>
             <tr>
-                <td class="no-break"><code>.fit</code></td>
+                <td class="no-wrap"><code>.fit</code></td>
                 <td><code>max-width: 100%;</code></td>
             </tr>
         </table>
@@ -2362,7 +2380,7 @@ figure
 
     <h2 id="height">Height, Max-Height, and Min-Height</h2>
 
-    <div class="no-break pdt-5 mrt-2 overflow-auto">
+    <div class="no-wrap pdt-5 mrt-2 breakout overflow-auto">
         <div class="height-lg width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
                 style="transform-origin: top left; transform: rotate(-90deg);">.height-lg</code></div>
         <div class="height-md width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
@@ -2576,42 +2594,42 @@ div/ .below-lg-hide //When visible: screen is above large width</pre>
             <td>Hide in any case</td>
         </tr>
         <tr>
-            <td><code class="no-break">.sm-hide</code></td>
+            <td><code class="no-wrap">.sm-hide</code></td>
             <td>Hide if the screen has at least small screen width.
             </td>
         </tr>
         <tr>
-            <td><code class="no-break">.below-sm-hide</code></td>
+            <td><code class="no-wrap">.below-sm-hide</code></td>
             <td>Hide if the screen at max small screen width.
             </td>
         </tr>
         <tr>
-            <td><code class="no-break">.rg-hide</code></td>
+            <td><code class="no-wrap">.rg-hide</code></td>
             <td>Hide if the screen has at least regular screen width.
             </td>
         </tr>
         <tr>
-            <td><code class="no-break">.below-rg-hide</code></td>
+            <td><code class="no-wrap">.below-rg-hide</code></td>
             <td>Hide if the screen has at max regular screen width.
             </td>
         </tr>
         <tr>
-            <td><code class="no-break">.md-hide</code></td>
+            <td><code class="no-wrap">.md-hide</code></td>
             <td>Hide if the screen at least mid screen width.
             </td>
         </tr>
         <tr>
-            <td><code class="no-break">.below-md-hide</code></td>
+            <td><code class="no-wrap">.below-md-hide</code></td>
             <td>Hide if the screen at max mid screen width.
             </td>
         </tr>
         <tr>
-            <td><code class="no-break">.lg-hide</code></td>
+            <td><code class="no-wrap">.lg-hide</code></td>
             <td>Hide if the screen has at least large screen width.
             </td>
         </tr>
         <tr>
-            <td><code class="no-break">.below-lg-hide</code></td>
+            <td><code class="no-wrap">.below-lg-hide</code></td>
             <td>Hide if the screen has at max large screen width.
             </td>
         </tr>
