@@ -61,8 +61,6 @@
   --accent-three-3: hsl(var(--accent-three-h), var(--accent-three-s), calc(var(--accent-three-l) + 3 * var(--accent-three-step)));
   --accent-three-4: hsl(var(--accent-three-h), var(--accent-three-s), calc(var(--accent-three-l) + 4 * var(--accent-three-step)));
 
-
-  --mark-background: var(--accent-three-2);
 }
 
 

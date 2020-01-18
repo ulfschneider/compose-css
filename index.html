@@ -3,15 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/css-compose.css">
-    <title>CSS COMPOSE</title>
+    <link rel="stylesheet" type="text/css" href="css/compose.css">
+    <title>COMPOSE</title>
     <script src="resources/dynamic-header.min.js"></script>
     <script src="resources/active-toc.min.js"></script>
 </head>
 
 <style>
-    .is-active,
-    .is-visible {
+    .is-highlight {
         font-weight: bold;
     }
 
@@ -25,11 +24,11 @@
         padding-left: var(--space);
         padding-right: var(--space-d2);
         text-transform: uppercase;
+        visibility: hidden;
     }
 
-    .bookmark a.is-active,
-    .bookmark a.is-visible {
-        display: block !important;
+    .bookmark a.is-highlight {
+        visibility: visible;
     }
 
     :root {
@@ -62,31 +61,31 @@
                 <div><a href="#forms" class="no-deco">Forms</a></div>
                 <div><a href="#customize" class="no-deco">Customize</a></div>
             </div>
-           
+
             <div class="bookmark small">
-                <a href="#start" class="no-deco hide">Quickstart</a>
-                <a href="#notation" class="no-deco hide">Notation</a>
-                <a href="#typography" class="no-deco hide">Typography</a>
-                <a href="#colors" class="no-deco hide">Colors</a>
-                <a href="#white-space" class="no-deco hide">White Space</a>
-                <a href="#borders" class="no-deco hide">Borders</a>
-                <a href="#tables" class="no-deco hide">Tables</a>
-                <a href="#figures" class="no-deco hide">Figures</a>
-                <a href="#images" class="no-deco hide">Images</a>
-                <a href="#layout-grid" class="no-deco hide">Layout Grid</a>
-                <a href="#column-grid" class="no-deco hide">12 Col Grid</a>
-                <a href="#layout" class="no-deco hide">Layout</a>
-                <a href="#width" class="no-deco hide">Width</a>
-                <a href="#height" class="no-deco hide">Height</a>
-                <a href="#square" class="no-deco hide">Square</a>
-                <a href="#hide" class="no-deco hide">Hide</a>
-                <a href="#forms" class="no-deco hide">Forms</a>
-                <a href="#customize" class="no-deco hide">Customize</a>
+                <a href="#start" class="no-deco">Quickstart</a>
+                <a href="#notation" class="no-deco">Notation</a>
+                <a href="#typography" class="no-deco">Typography</a>
+                <a href="#colors" class="no-deco">Colors</a>
+                <a href="#white-space" class="no-deco">White Space</a>
+                <a href="#borders" class="no-deco">Borders</a>
+                <a href="#tables" class="no-deco">Tables</a>
+                <a href="#figures" class="no-deco">Figures</a>
+                <a href="#images" class="no-deco">Images</a>
+                <a href="#layout-grid" class="no-deco">Layout Grid</a>
+                <a href="#column-grid" class="no-deco">12 Col Grid</a>
+                <a href="#layout" class="no-deco">Layout</a>
+                <a href="#width" class="no-deco">Width</a>
+                <a href="#height" class="no-deco">Height</a>
+                <a href="#square" class="no-deco">Square</a>
+                <a href="#hide" class="no-deco">Hide</a>
+                <a href="#forms" class="no-deco">Forms</a>
+                <a href="#customize" class="no-deco">Customize</a>
             </div>
         </header>
         <div class="xl mrt-2 mrb-4">
             <div>
-                <h1 class="mrb-0 lh lg-fs-6 fw-700 caps lsp">CSS Compose</h1>                
+                <h1 class="mrb-0 lh lg-fs-6 fw-700 caps lsp">Compose</h1>
                 <div>A composable CSS Toolkit to build fast-loading, responsive web sites.</div>
                 <div class="tag bg-base-color white ">v0.1.0</div>
             </div>
@@ -95,11 +94,32 @@
     </div>
 
     <div class="full xl">
-        <h2 id="start">Quickstart</h2>
+        <div>
+            <h2 id="start">Quickstart</h2>
+            <p>Download the <a href="/css/compose.css" download="compose.css">compose file</code></a> and put
+                it into the css folder of your web site project. </p>
+            <p>Example:</p>
+            <pre>&lt;head>
+&lt;link rel="stylesheet" type="text/css" href="/css/compose.css">
+&lt;/head></pre>
+            <p>By then you should be ready to use <span class="caps lsp">compose</span>.</p>
+
+            <p class="mrt-3">There is also a <a href="/css/base-compose.css" download="base-compose.css">base
+                    version of compose</a> available – with only half the size.</p>
+            <p>It can be used as a faster-loading alternative with a reduced feature set. Compared to the full version,
+                it has the following limitations:</p>
+            <ul>
+                <li>No complete color system, it has only the neutral colors and the color edge values;</li>
+                <li>No form styling;</li>
+                <li>No max-height and min-height classes;</li>
+                <li>No responsive breakpoints for height, max-height, min-height, width, max-width, and min-width;</li>
+                <li>No square classes.</li>
+            </ul>
+        </div>
     </div>
 
-    <div class="neutral-d1">
-        <h2 id="notation" class="h5 mrt-4">Notation</h2>
+    <div>
+        <h2 id="notation">Notation</h2>
         <p>Throughout this document the following notation is applied:</p>
 
         <table>
@@ -803,13 +823,13 @@ figure
 
     <div>
         <h3>Edge Values</h3>
-        <p>In addition there are four colors available, which can also be used as color, background-color and
-            border-color but do not allow further refinement:</p>
+        <p>In addition there are the following color classes available:</p>
 
         <dl>
             <dt class="square-1 bg-base-color float-left"></dt>
             <dd><code>.base-color</code> (which is
-                default text-color). <p>The color is defined through:</p>
+                default text-color). <p>The color can be used as text color, background color and border color. It is
+                    defined through:</p>
                 <pre>:root { --base-color = var(--neutral-color-d4); }</pre>
             </dd>
         </dl>
@@ -817,15 +837,15 @@ figure
         <dl>
             <dt class="square-1 br br-base-color float-left"></dt>
             <dd><code>.base-background</code>
-                <p>The color is defined through:</p>
-                <pre>:root { --base-background = #fff; }</pre>
+                <p>The color can be used as text color, background color and border color. It is defined through:</p>
+                <pre>:root { --base-background = white; }</pre>
             </dd>
         </dl>
 
         <dl>
             <dt class="square-1 bg-black float-left"></dt>
             <dd><code>.black</code>
-                <p>The color is defined through:</p>
+                <p>The color can be used as text color, background color and border color. It is defined through:</p>
                 <pre>:root { --black = black; }</pre>
             </dd>
         </dl>
@@ -833,7 +853,7 @@ figure
         <dl>
             <dt class="square-1 br br-base-color float-left"></dt>
             <dd><code>.white</code>
-                <p>The color is defined through:</p>
+                <p>The color can be used as text color, background color and border color. It is defined through:</p>
                 <pre>:root { --white = white; }</pre>
             </dd>
         </dl>
@@ -842,7 +862,7 @@ figure
             <dt class="square-1 mark float-left"></dt>
             <dd><code>.mark</code>, <code>mark</code>
                 <p>The color is defined through:</p>
-                <pre>:root { --mark-background: var(--accent-three-2); }</pre>
+                <pre>:root { --mark-background: yellow; }</pre>
             </dd>
         </dl>
 

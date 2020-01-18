@@ -353,8 +353,8 @@ ul {
 }
 
 li {
-  margin-top: var(--space);
-  margin-bottom: var(--space);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 ol li {
@@ -394,6 +394,8 @@ ol.indent ul,
 .indent ul ul,
 ul.indent ul {
   padding-left: var(--space-2);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .indent li {
@@ -516,12 +518,13 @@ figcaption {
 }
 
 hr {
-	border:0;
+  border: 0;
   text-align: center;
   margin-top: var(--space-1);
   margin-bottom: var(--space-1);
 }
+
 hr:after {
-  content: "•    •    •";	  
-  white-space: pre; 
+  content: "•    •    •";
+  white-space: pre;
 }

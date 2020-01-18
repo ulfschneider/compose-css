@@ -18,7 +18,7 @@
 
   --base-color: var(--neutral-d4);
   --base-background: white;
-  --mark-background: var(yellow);
+  --mark-background: yellow;
   --kbd-background: var(--neutral-4);
   --link-color: var(--base-color);
   --text-decoration-color: var(--base-color);
