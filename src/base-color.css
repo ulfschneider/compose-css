@@ -1,0 +1,192 @@
+:root {
+  --color-step-factor: 0.2;
+  --neutral-h: 0;
+  --neutral-s: 0%;
+  --neutral-l: 53%;
+  --neutral-step: calc((100% - var(--neutral-l)) * var(--color-step-factor));
+
+  --neutral-d4: hsl(var(--neutral-h), var(--neutral-s), calc(var(--neutral-l) - 4 * var(--neutral-step)));
+  --neutral-d3: hsl(var(--neutral-h), var(--neutral-s), calc(var(--neutral-l) - 3 * var(--neutral-step)));
+  --neutral-d2: hsl(var(--neutral-h), var(--neutral-s), calc(var(--neutral-l) - 2 * var(--neutral-step)));
+  --neutral-d1: hsl(var(--neutral-h), var(--neutral-s), calc(var(--neutral-l) - var(--neutral-step)));
+  --neutral: hsl(var(--neutral-h), var(--neutral-s), var(--neutral-l));
+  --neutral-1: hsl(var(--neutral-h), var(--neutral-s), calc(var(--neutral-l) + var(--neutral-step)));
+  --neutral-2: hsl(var(--neutral-h), var(--neutral-s), calc(var(--neutral-l) + 2 * var(--neutral-step)));
+  --neutral-3: hsl(var(--neutral-h), var(--neutral-s), calc(var(--neutral-l) + 3 * var(--neutral-step)));
+  --neutral-4: hsl(var(--neutral-h), var(--neutral-s), calc(var(--neutral-l) + 4 * var(--neutral-step)));
+
+
+  --base-color: var(--neutral-d4);
+  --base-background: white;
+  --mark-background: var(yellow);
+  --kbd-background: var(--neutral-4);
+  --link-color: var(--base-color);
+  --text-decoration-color: var(--base-color);
+  color: var(--base-color);
+}
+
+
+.neutral-d4 {
+  color: var(--neutral-d4);
+}
+
+.neutral-d3 {
+  color: var(--neutral-d3);
+}
+
+.neutral-d2 {
+  color: var(--neutral-d2);
+}
+
+.neutral-d1 {
+  color: var(--neutral-d1);
+}
+
+.neutral {
+  color: var(--neutral);
+}
+
+.neutral-1 {
+  color: var(--neutral-1);
+}
+
+.neutral-2 {
+  color: var(--neutral-2);
+}
+
+.neutral-3 {
+  color: var(--neutral-3);
+}
+
+.neutral-4 {
+  color: var(--neutral-4);
+}
+
+
+.white {
+  color: white;
+}
+
+.black {
+  color: black;
+}
+
+.base-background {
+  color: var(--base-background);
+}
+
+.base-color {
+  color: var(--base-color);
+}
+
+/* Background */
+
+.bg-neutral-d4 {
+  background-color: var(--neutral-d4);
+}
+
+.bg-neutral-d3 {
+  background-color: var(--neutral-d3);
+}
+
+.bg-neutral-d2 {
+  background-color: var(--neutral-d2);
+}
+
+.bg-neutral-d1 {
+  background-color: var(--neutral-d1);
+}
+
+.bg-neutral {
+  background-color: var(--neutral);
+}
+
+.bg-neutral-1 {
+  background-color: var(--neutral-1);
+}
+
+.bg-neutral-2 {
+  background-color: var(--neutral-2);
+}
+
+.bg-neutral-3 {
+  background-color: var(--neutral-3);
+}
+
+.bg-neutral-4 {
+  background-color: var(--neutral-4);
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.bg-base-background {
+  background-color: var(--base-background);
+}
+
+.bg-base-color {
+  background-color: var(--base-color);
+}
+
+/* Border Colors */
+
+.br-neutral-d4 {
+  border-color: var(--neutral-d4);
+}
+
+.br-neutral-d3 {
+  border-color: var(--neutral-d3);
+}
+
+.br-neutral-d2 {
+  border-color: var(--neutral-d2);
+}
+
+.br-neutral-d1 {
+  border-color: var(--neutral-d1);
+}
+
+.br-neutral {
+  border-color: var(--neutral);
+}
+
+.br-neutral-1 {
+  border-color: var(--neutral-1);
+}
+
+.br-neutral-2 {
+  border-color: var(--neutral-2);
+}
+
+.br-neutral-3 {
+  border-color: var(--neutral-3);
+}
+
+.br-neutral-4 {
+  border-color: var(--neutral-4);
+}
+
+.br-white {
+  border-color: white;
+}
+
+.br-black {
+  border-color: black;
+}
+
+.br-base-background {
+  border-color: var(--base-background);
+}
+
+.br-base-color {
+  border-color: var(--base-color);
+}
