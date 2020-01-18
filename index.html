@@ -39,9 +39,11 @@
 </style>
 
 <body class="xl">
-    <div class="full brb br-neutral-3 bg-neutral-4">
+    <div id="top" class="full brb br-neutral-3 bg-neutral-4">
         <header id="navigation" class="xl bg-neutral-4" style="z-index: 1000;">
             <div class="breakout md-columns-4 sm-columns-3 columns-2 lh-4 pdy caps small lsp">
+                <div><a href="#top" class="no-deco">Top</a></div>
+                <div><a href="#start" class="no-deco">Quickstart</a></div>
                 <div><a href="#notation" class="no-deco">Notation</a></div>
                 <div><a href="#typography" class="no-deco">Typography</a></div>
                 <div><a href="#colors" class="no-deco">Colors</a></div>
@@ -57,10 +59,12 @@
                 <div><a href="#height" class="no-deco">Height</a></div>
                 <div><a href="#square" class="no-deco">Square</a></div>
                 <div><a href="#hide" class="no-deco">Hide</a></div>
-                <div><a href="#forms" class="no-deco">Forms</a></div>                
+                <div><a href="#forms" class="no-deco">Forms</a></div>
+                <div><a href="#customize" class="no-deco">Customize</a></div>
             </div>
-            <div class="mrb"><a href="#customize" class="caps small lsp no-deco">Customize</a></div>
+           
             <div class="bookmark small">
+                <a href="#start" class="no-deco hide">Quickstart</a>
                 <a href="#notation" class="no-deco hide">Notation</a>
                 <a href="#typography" class="no-deco hide">Typography</a>
                 <a href="#colors" class="no-deco hide">Colors</a>
@@ -82,12 +86,16 @@
         </header>
         <div class="xl mrt-2 mrb-4">
             <div>
-                <h1 class="inline-block mrb-0 lh lg-fs-6 fw-700 caps lsp">CSS Compose</h1>
-                <div class="fs-d1 lg-fs tag bg-base-color white">v0.1.0 94 KB</div>
+                <h1 class="mrb-0 lh lg-fs-6 fw-700 caps lsp">CSS Compose</h1>                
                 <div>A composable CSS Toolkit to build fast-loading, responsive web sites.</div>
+                <div class="tag bg-base-color white ">v0.1.0</div>
             </div>
         </div>
 
+    </div>
+
+    <div class="full xl">
+        <h2 id="start">Quickstart</h2>
     </div>
 
     <div class="neutral-d1">
@@ -1699,15 +1707,11 @@ figure
     <div>
         <h3>Responsive Images</h3>
         <p class="mrb-0">Images are by default responsive and take the entire available horizontal
-            space
-            while
-            preserving
-            aspect-ratio.
-        </p>
+            space (up to the width of the image) while preserving aspect-ratio. </p>
     </div>
     <div class="wide">
         <figure>
-            <img loading="lazy" src="resources/swan-leroi-unsplash.jpg" />
+            <img loading="lazy" class="fit-cover width-100" src="resources/swan-leroi-unsplash.jpg" />
             <figcaption>Photo by Swan Leroi on Unsplash</figcaption>
         </figure>
         <pre>img/</pre>
