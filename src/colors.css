@@ -87,24 +87,6 @@
 }
 
 
-.brighter {
-  filter: brightness(2);
-}
-
-.darker {
-  filter: brightness(0.5);
-}
-
-.grayscale {
-  filter: grayscale(1);
-}
-
-.no-filter {
-  filter: none;
-}
-
-/* Color */
-
 .neutral-d4 {
   color: var(--neutral-d4);
 }
