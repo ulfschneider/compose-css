@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/compose.css">
-    <title>COMPOSE</title>
+    <title>COMPOSE CSS</title>
     <script src="resources/dynamic-header.min.js"></script>
     <script src="resources/active-toc.min.js"></script>
 </head>
@@ -39,7 +39,7 @@
 
 <body class="xl">
     <div id="top" class="full brb br-neutral-3 bg-neutral-4">
-        <header id="navigation" class="xl bg-neutral-4" style="z-index: 1000;">
+        <header id="navigation" class="brb br-white xl bg-neutral-4" style="z-index: 1000;">
             <div class="breakout md-columns-4 sm-columns-3 columns-2 lh-4 pdy caps small lsp">
                 <div><a href="#top" class="no-deco">Top</a></div>
                 <div><a href="#start" class="no-deco">Quickstart</a></div>
@@ -85,7 +85,7 @@
         </header>
         <div class="xl mrt-2 mrb-4">
             <div>
-                <h1 class="mrb-0 lh lg-fs-6 fw-700 caps lsp">Compose</h1>
+                <h1 class="mrb-0 lh lg-fs-6 fw-700 caps lsp">Compose CSS</h1>
                 <div>A composable CSS Toolkit to build fast-loading, responsive web sites.</div>
                 <div class="tag bg-base-color white ">v0.1.0</div>
             </div>
@@ -1727,14 +1727,15 @@ figure
     <div>
         <h3>Responsive Images</h3>
         <p class="mrb-0">Images are by default responsive and take the entire available horizontal
-            space (up to the width of the image) while preserving aspect-ratio. </p>
+            space (up to the width of the image) while preserving aspect-ratio.</p>
     </div>
     <div class="wide">
         <figure>
             <img loading="lazy" class="fit-cover width-100" src="resources/swan-leroi-unsplash.jpg" />
             <figcaption>Photo by Swan Leroi on Unsplash</figcaption>
         </figure>
-        <pre>img/</pre>
+        <pre>img/
+img/ .width-100 //will consume the entire available width, may enlarge the image while preserving aspect ratio</pre>
     </div>
 
 
@@ -1898,44 +1899,6 @@ figure
     <p>A flow of a maximum of six columns – each of the same width – can be created for any space inside of the
         horizontal layout grid.</p>
 
-    <!-- Code Example -->
-    <div class="full bry dotted br-small br-gray code mb">
-        div .xl
-        <div class="x">
-            <div class="breakout bg-neutral-4 pd br mry">
-                .breakout.columns-1.rg-columns-2.md-columns-3.lg-columns-4
-            </div>
-        </div>
-        /div
-    </div>
-
-
-
-    <div>
-        <h3>Responsive Breakpoints</h3>
-        <p class="mrt">The column count can vary based on available screen width.
-            Address the different minimum screen sizes with responsive breakpoints, wich are indicated by CSS class
-            prefix values values of:</p>
-        <dl>
-            <dt class="float-left"><code>.sm-</code></dt>
-            <dd>The column count is applied only if the screen is at least of small width.</dd>
-        </dl>
-        <dl>
-            <dt class="float-left"><code>.rg-</code></dt>
-            <dd>The column count is applied only if the screen is at least of regular width.</dd>
-        </dl>
-        <dl>
-            <dt class="float-left"><code>.md-</code></dt>
-            <dd>The column count is applied only if the screen is at least of mid width.</dd>
-        </dl>
-        <dl>
-            <dt class="float-left"><code>.lg-</code></dt>
-            <dd>The column count is applied only if the screen is at least of large width.</dd>
-        </dl>
-        <p>A column class without a prefix will be used in case the
-            alternate minimum screen size is not defined.</p>
-    </div>
-
     <div class="breakout mry-2 mxw-lg columns-1 rg-columns-2 md-columns-3 lg-columns-4 indent pdy">
         <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
             horrible vermin.</p>
@@ -1983,6 +1946,43 @@ figure
         <figcaption>
             Franz Kafka, <cite>The Metamorphosis</cite></p>
         </figcaption>
+    </div>
+
+
+    <!-- Code Example -->
+    <div class="full bry dotted br-small br-gray code mb">
+        div .xl
+        <div class="x">
+            <div class="breakout bg-neutral-4 pd br mry">
+                .breakout.columns-1.rg-columns-2.md-columns-3.lg-columns-4
+            </div>
+        </div>
+        /div
+    </div>
+
+    <div>
+        <h3>Responsive Breakpoints</h3>
+        <p class="mrt">The column count can vary based on available screen width.
+            Address the different minimum screen sizes with responsive breakpoints, wich are indicated by CSS class
+            prefix values values of:</p>
+        <dl>
+            <dt class="float-left"><code>.sm-</code></dt>
+            <dd>The column count is applied only if the screen is at least of small width.</dd>
+        </dl>
+        <dl>
+            <dt class="float-left"><code>.rg-</code></dt>
+            <dd>The column count is applied only if the screen is at least of regular width.</dd>
+        </dl>
+        <dl>
+            <dt class="float-left"><code>.md-</code></dt>
+            <dd>The column count is applied only if the screen is at least of mid width.</dd>
+        </dl>
+        <dl>
+            <dt class="float-left"><code>.lg-</code></dt>
+            <dd>The column count is applied only if the screen is at least of large width.</dd>
+        </dl>
+        <p>A column class without a prefix will be used in case the
+            alternate minimum screen size is not defined.</p>
     </div>
 
     <div>
