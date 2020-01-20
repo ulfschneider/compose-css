@@ -10,9 +10,23 @@
 </head>
 
 <style>
-    .is-highlight {
+    .is-active {
         font-weight: bold;
     }
+
+    .only-when-dynamic {
+        visibility: hidden;
+    }
+
+    .is-dynamic {
+        border-bottom: 1px solid white;
+    }
+
+    .is-dynamic .only-when-dynamic {
+        visibility: visible;
+        font-weight: normal;
+    }
+
 
     .bookmark a {
         position: fixed;
@@ -40,15 +54,21 @@
 <body class="xl">
     <div id="top" class="full bg-neutral-4 pdb-2">
         <div class="xl mry-3">
-            <div>
-                <h1 class="mrb-0 lh lg-fs-6 fw-700 caps lsp">Compose CSS</h1>
-                <div>A composable CSS Toolkit to build fast-loading, responsive web sites.</div>
-                <div class="tag bg-base-color white ">v0.1.0</div>
+            <div class="x-12">
+                <div class="xx-12 md-xx-9">
+                    <h1 class="mr-0 lh fw-700 caps lsp">Compose CSS</h1>
+                    <p class="mxw-sm mrt-d1">A composable CSS Toolkit to build fast, maintainable, and responsive websites.
+                    </p>
+                </div>
+                <div class="xx-12 md-xx-3">
+                    <div class="pd inline-block bg-base-color rounded white">v0.1.0</div>
+                </div>
             </div>
         </div>
         <header id="navigation" class="xl bg-neutral-4" style="z-index: 1000;">
+            <a href="#top" class="only-when-dynamic caps small lsp no-deco mrt">Top</a>
+
             <div class="breakout md-columns-4 sm-columns-3 columns-2 lh-4 pdy caps small lsp">
-                <div><a href="#top" class="no-deco">Top</a></div>
                 <div><a href="#start" class="no-deco">Quickstart</a></div>
                 <div><a href="#notation" class="no-deco">Notation</a></div>
                 <div><a href="#typography" class="no-deco">Typography</a></div>
@@ -94,15 +114,16 @@
 
     <div class="full xl">
         <div>
-            <h2 class="mrt-3" id="start">Quickstart</h2>
+            <h2 class="mrt-4" id="start">Quickstart</h2>
             <p>Download the <a href="/css/compose.css" download="compose.css" class="caps lsp bold">compose
                     CSS</code></a> file and put
-                it into the css folder of your web site project. </p>
+                it into the css folder of your website project. </p>
             <p>Reference the CSS file in your HTML:</p>
             <pre>&lt;link rel="stylesheet" type="text/css" href="/css/compose.css"></pre>
-            <p>By then you should be ready to use <span class="caps lsp bold">compose</span>.</p>
-            <hr>
-            <p>There is also a <a href="/css/base-compose.css" download="base-compose.css" class="bold caps lsp">base
+            <p>By then you are ready to use <span class="caps lsp bold">compose</span>.</p>
+
+            <p class="mrt-4">There is also a <a href="/css/base-compose.css" download="base-compose.css"
+                    class="bold caps lsp">base
                     compose CSS</a> available – with only half the size.</p>
             <p>It can be used as a faster-loading alternative with a reduced feature set. Compared to the full version,
                 it has the following limitations:</p>
@@ -117,7 +138,7 @@
     </div>
 
     <div>
-        <h2 id="notation" class="mrt-3">Notation</h2>
+        <h2 id="notation" class="mrt-4">Notation</h2>
         <p>Throughout this document the following notation is applied:</p>
 
         <table>
