@@ -38,8 +38,15 @@
 </style>
 
 <body class="xl">
-    <div id="top" class="full brb br-neutral-3 bg-neutral-4">
-        <header id="navigation" class="brb br-white xl bg-neutral-4" style="z-index: 1000;">
+    <div id="top" class="full bg-neutral-4 pdb-2">
+        <div class="xl mry-3">
+            <div>
+                <h1 class="mrb-0 lh lg-fs-6 fw-700 caps lsp">Compose CSS</h1>
+                <div>A composable CSS Toolkit to build fast-loading, responsive web sites.</div>
+                <div class="tag bg-base-color white ">v0.1.0</div>
+            </div>
+        </div>
+        <header id="navigation" class="xl bg-neutral-4" style="z-index: 1000;">
             <div class="breakout md-columns-4 sm-columns-3 columns-2 lh-4 pdy caps small lsp">
                 <div><a href="#top" class="no-deco">Top</a></div>
                 <div><a href="#start" class="no-deco">Quickstart</a></div>
@@ -83,33 +90,24 @@
                 <a href="#customize" class="no-deco">Customize</a>
             </div>
         </header>
-        <div class="xl mrt-2 mrb-4">
-            <div>
-                <h1 class="mrb-0 lh lg-fs-6 fw-700 caps lsp">Compose CSS</h1>
-                <div>A composable CSS Toolkit to build fast-loading, responsive web sites.</div>
-                <div class="tag bg-base-color white ">v0.1.0</div>
-            </div>
-        </div>
-
     </div>
 
     <div class="full xl">
         <div>
-            <h2 id="start">Quickstart</h2>
-            <p>Download the <a href="/css/compose.css" download="compose.css">compose file</code></a> and put
+            <h2 class="mrt-3" id="start">Quickstart</h2>
+            <p>Download the <a href="/css/compose.css" download="compose.css" class="caps lsp bold">compose
+                    CSS</code></a> file and put
                 it into the css folder of your web site project. </p>
-            <p>Example:</p>
-            <pre>&lt;head>
-&lt;link rel="stylesheet" type="text/css" href="/css/compose.css">
-&lt;/head></pre>
-            <p>By then you should be ready to use <span class="caps lsp">compose</span>.</p>
-
-            <p class="mrt-3">There is also a <a href="/css/base-compose.css" download="base-compose.css">base
-                    version of compose</a> available – with only half the size.</p>
+            <p>Reference the CSS file in your HTML:</p>
+            <pre>&lt;link rel="stylesheet" type="text/css" href="/css/compose.css"></pre>
+            <p>By then you should be ready to use <span class="caps lsp bold">compose</span>.</p>
+            <hr>
+            <p>There is also a <a href="/css/base-compose.css" download="base-compose.css" class="bold caps lsp">base
+                    compose CSS</a> available – with only half the size.</p>
             <p>It can be used as a faster-loading alternative with a reduced feature set. Compared to the full version,
                 it has the following limitations:</p>
             <ul>
-                <li>No complete color system, it has only the neutral colors and the color edge values;</li>
+                <li>Lightweight color system, it has only the neutral colors and the color edge values;</li>
                 <li>No form styling;</li>
                 <li>No max-height and min-height classes;</li>
                 <li>No responsive breakpoints for height, max-height, min-height, width, max-width, and min-width;</li>
@@ -119,7 +117,7 @@
     </div>
 
     <div>
-        <h2 id="notation">Notation</h2>
+        <h2 id="notation" class="mrt-3">Notation</h2>
         <p>Throughout this document the following notation is applied:</p>
 
         <table>
@@ -704,15 +702,15 @@ figure
         <table class="code">
             <tr class="center">
                 <th></th>
-                <th class="normal pdx-0">-d4</th>
-                <th class="normal pdx-0">-d3</th>
-                <th class="normal pdx-0">-d2</th>
-                <th class="normal pdx-0">-d1</th>
+                <th class="normal pdx-0">d4</th>
+                <th class="normal pdx-0">d3</th>
+                <th class="normal pdx-0">d2</th>
+                <th class="normal pdx-0">d1</th>
                 <th class="normal pdx-0 brx brw-d4 br-white"></th>
-                <th class="normal pdx-0">-1</th>
-                <th class="normal pdx-0">-2</th>
-                <th class="normal pdx-0">-3</th>
-                <th class="normal pdx-0">-4</th>
+                <th class="normal pdx-0">1</th>
+                <th class="normal pdx-0">2</th>
+                <th class="normal pdx-0">3</th>
+                <th class="normal pdx-0">4</th>
             </tr>
             <tr>
                 <th class="middle normal">.neutral </th>

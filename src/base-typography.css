@@ -525,6 +525,6 @@ hr {
 }
 
 hr:after {
-  content: "•    •    •";
+  content: "•      •      •";
   white-space: pre;
 }
