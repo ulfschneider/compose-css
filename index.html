@@ -8,7 +8,6 @@
     <script src="resources/dynamic-header.min.js"></script>
     <script src="resources/active-toc.min.js"></script>
 </head>
-
 <style>
     .is-active {
         font-weight: bold;
@@ -16,10 +15,6 @@
 
     .only-when-dynamic {
         visibility: hidden;
-    }
-
-    .is-dynamic {
-        border-bottom: 1px solid white;
     }
 
     .is-dynamic .only-when-dynamic {
@@ -57,11 +52,12 @@
             <div class="x-12">
                 <div class="xx-12 md-xx-9">
                     <h1 class="mr-0 lh fw-700 caps lsp">Compose CSS</h1>
-                    <p class="mxw-sm mrt-d1">A composable CSS Toolkit to build fast, maintainable, and responsive websites.
+                    <p class="mxw-sm mrt-d1">A composable CSS Toolkit to build fast, maintainable, and responsive
+                        websites.
                     </p>
                 </div>
                 <div class="xx-12 md-xx-3">
-                    <div class="pd inline-block bg-base-color rounded white">v0.1.0</div>
+                    <div class="pd inline-block bg-base-color rounded white"><span id="version">v0.1.0</span></div>
                 </div>
             </div>
         </div>
@@ -128,11 +124,13 @@
             <p>It can be used as a faster-loading alternative with a reduced feature set. Compared to the full version,
                 it has the following limitations:</p>
             <ul>
-                <li>Lightweight color system, it has only the neutral colors and the color edge values;</li>
-                <li>No form styling;</li>
-                <li>No max-height and min-height classes;</li>
-                <li>No responsive breakpoints for height, max-height, min-height, width, max-width, and min-width;</li>
-                <li>No square classes.</li>
+                <li>Lightweight <a href="#colors">color system</a>, it has only the neutral colors and the color edge
+                    values;</li>
+                <li>No <a href="#forms">form</a> styling;</li>
+                <li>No <a href="#height">max-height and min-height</a> classes;</li>
+                <li>No responsive breakpoints for <a href="#height">height, max-height, min-height</a>, <a
+                        href="#width">width, max-width, and min-width</a>;</li>
+                <li>No <a href="#square">square</a> classes.</li>
             </ul>
         </div>
     </div>
