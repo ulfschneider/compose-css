@@ -26,6 +26,36 @@
   grid-template-columns: var(--space-1) 1fr 1fr minmax(0, var(--regular-width)) 1fr 1fr var(--space-1);
 }
 
+.x>p,
+.x>blockquote,
+.x>figure,
+.x>figcaption,
+.x>ul,
+.x>ol,
+.x>dl,
+.x>pre,
+.x>table,
+.xl>p,
+.xl>blockquote,
+.xl>figure,
+.xl>figcaption,
+.xl>ul,
+.xl>ol,
+.xl>dl,
+.xl>pre,
+.xl>table,
+.x-12>p,
+.x-12>blockquote,
+.x-12>figure,
+.x-12>figcaption,
+.x-12>ul,
+.x-12>ol,
+.x-12>dl,
+.x-12>pre,
+.x-12>table {
+  margin-top: 0;
+}
+
 .x>*,
 .x>.mid {
   grid-column: 4/span 1;
@@ -174,7 +204,7 @@
 }
 
 @media (--breakpoint-sm) {
-  
+
   .x>.sm-breakout-l {
     grid-column: 3/span 2;
   }

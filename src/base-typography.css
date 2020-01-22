@@ -8,7 +8,6 @@
   --headline-letter-spacing: 0.025em;
   --headline-text-transform: uppercase;
 
-
   --mono-font-family: monospace;
 
   --code-font-family: monospace;
@@ -35,6 +34,22 @@
 
   --mrt-h6: var(--space-2);
   --mrb-h6: var(--space);
+
+  --mrt-blockquote: var(--space);
+  --mrb-blockquote: var(--space);
+
+  --mrt-list: var(--space);
+  --mrb-list: var(--space);
+
+  --mrt-figure: var(--space);
+  --mrb-figure: var(--space);
+  --mrt-figcaption: var(--space-d1);
+  --mrb-figcaption: 0;
+
+  --mrt-pre: var(--space);
+  --mrb-pre: var(--space);
+
+  --list-item-type: "– ";
 
   font-family: var(--font-family);
   font-weight: var(--font-weight-normal);
@@ -328,8 +343,8 @@ h6.indent {
 }
 
 dl {
-  margin-top: var(--space);
-  margin-bottom: var(--space);
+  margin-top: var(--mrt-list);
+  margin-bottom: var(--mrb-list);
 }
 
 dd {
@@ -348,14 +363,16 @@ ol {
 ol,
 ul {
   padding-left: var(--space-2);
-  margin-top: var(--space);
-  margin-bottom: var(--space);
+  margin-top: var(--mrt-list);
+  margin-bottom: var(--mrb-list);
 }
 
 li {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+
 
 ol li {
   counter-increment: styled-number;
@@ -369,20 +386,17 @@ ol li::before {
 }
 
 ul li::before {
-  content: "– ";
+  content: var(--list-item-type);
   margin-left: calc(var(--space-2) * -1);
   min-width: var(--space-2);
   display: inline-block;
 }
 
-
 .indent ol,
-ol.indent,
 .indent ul,
+ol.indent,
 ul.indent {
   padding-left: 0;
-  margin-top: 0em;
-  margin-bottom: 0em;
 }
 
 .indent ol ol,
@@ -394,13 +408,6 @@ ol.indent ul,
 .indent ul ul,
 ul.indent ul {
   padding-left: var(--space-2);
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.indent li {
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .indent li::before {
@@ -413,11 +420,6 @@ ul.no-list-type li::before {
 
 ul.reset {
   padding-left: 0;
-}
-
-ul.reset li {
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 ul.reset li:before {
@@ -433,16 +435,12 @@ p {
 }
 
 .indent p {
-  margin-top: 0;
   margin-bottom: 0;
   text-indent: var(--space-2);
 }
 
 
-
-
 p.indent {
-  margin-top: 0;
   margin-bottom: 0;
   text-indent: var(--space-2);
 }
@@ -450,7 +448,6 @@ p.indent {
 .no-indent p,
 p.no-indent {
   text-indent: 0;
-  margin-top: var(--space);
   margin-bottom: var(--space);
 }
 
@@ -469,8 +466,8 @@ pre {
 }
 
 pre {
-  margin-top: var(--space);
-  margin-bottom: var(--space);
+  margin-top: var(--mrt-pre);
+  margin-bottom: var(--mrb-pre);
   padding-top: var(--space-d2);
   padding-bottom: var(--space-d2);
   border-top: var(--border-width-default) dotted var(--neutral);
@@ -494,12 +491,14 @@ a {
 }
 
 blockquote {
-  margin: var(--space) 0;
+  margin-top: var(--mrt-blockquote);
+  margin-bottom: var(--mrb-blockquote);
   padding-left: var(--space-2);
 }
 
 blockquote p {
   margin: 0;
+  text-indent: 0;
 }
 
 blockquote p+p {
@@ -507,12 +506,15 @@ blockquote p+p {
 }
 
 figure {
-  margin: var(--space) 0;
+  margin-top: var(--mrt-figure);
+  margin-bottom: var(--mrb-figure);
+  margin-left: 0;
+  margin-right: 0;
 }
 
 figcaption {
-  margin-top: var(--space);
-  margin-bottom: var(--space);
+  margin-top: var(--mrt-figcaption);
+  margin-bottom: var(--mrb-figcaption);
   font-style: normal;
   font-size: small;
 }

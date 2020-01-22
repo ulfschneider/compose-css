@@ -106,122 +106,117 @@
         </header>
     </div>
 
-    <div class="full xl">
-        <div>
-            <h2 class="mrt-4" id="start">Quickstart</h2>
-            <p>Download the <a href="css/compose.css" class="caps lsp bold">compose
-                    CSS</code></a> file and put
-                it into the css folder of your website project. </p>
-            <p>Reference the CSS file in your HTML:</p>
-            <pre>&lt;link rel="stylesheet" type="text/css" href="/css/compose.css"></pre>
-            <p>By then you are ready to use <span class="caps lsp bold">compose</span>.</p>
 
-            <p class="mrt-4">There is also a <a href="css/base-compose.css" 
-                    class="bold caps lsp">base
-                    compose CSS</a> available – with only half the size.</p>
-            <p>It can be used as a faster-loading alternative with a reduced feature set. Compared to the full version,
-                it has the following limitations:</p>
-            <ul>
-                <li>Lightweight <a href="#colors">color system</a>, it has only the neutral colors and the color edge
-                    values;</li>
-                <li>No <a href="#forms">form</a> styling;</li>
-                <li>No <a href="#height">max-height and min-height</a> classes;</li>
-                <li>No responsive breakpoints for <a href="#height">height, max-height, min-height</a>, <a
-                        href="#width">width, max-width, and min-width</a>;</li>
-                <li>No <a href="#square">square</a> classes.</li>
-            </ul>
-        </div>
+    <h2 class="mrt-4" id="start">Quickstart</h2>
+    <p>Download the <a href="css/compose.css" class="caps lsp bold">compose
+            CSS</code></a> file and put
+        it into the css folder of your website project. </p>
+    <p>Reference the CSS file in your HTML:</p>
+    <pre>&lt;link rel="stylesheet" type="text/css" href="/css/compose.css"></pre>
+    <p>By then you are ready to use <span class="caps lsp bold">compose</span>.</p>
+    <hr>
+    <p class="mrt-4">There is also a <a href="css/base-compose.css" class="bold caps lsp">base
+            compose CSS</a> available – with only half the size.</p>
+    <p>It can be used as a faster-loading alternative with a reduced feature set. Compared to the full version,
+        it has the following limitations:</p>
+    <ul>
+        <li>Lightweight <a href="#colors">color system</a>, it has only the neutral colors and the color edge
+            values;</li>
+        <li>No <a href="#forms">form</a> styling;</li>
+        <li>No <a href="#height">max-height and min-height</a> classes;</li>
+        <li>No responsive breakpoints for <a href="#height">height, max-height, min-height</a>, <a href="#width">width,
+                max-width, and min-width</a>;</li>
+        <li>No <a href="#square">square</a> classes.</li>
+    </ul>
+
+
+
+
+    <h2 id="notation" class="mrt-4">Notation</h2>
+    <p>Throughout this document the following notation is applied:</p>
+
+    <table>
+        <tr>
+            <td><code>div /div</code></td>
+            <td>HTML tags are indicated by their name. The closing HTML tag is indicated with a prefixed slash.</td>
+        </tr>
+        <tr>
+            <td><code>div/</code></td>
+            <td>The abbreviated form of an opening and closing HTML tag is indicated by the tag name with a trailing
+                slash.</td>
+        </tr>
+        <tr>
+            <td><code>.left</code></td>
+            <td>CSS classes are indicated with a prefixed dot</td>
+        </tr>
+        <tr>
+            <td><code>.left.middle</code></td>
+            <td>The assignment of multiple CSS classes to a single HTML tag, composing, is indicated with
+                a
+                prefixed dot for each CSS class; and there is no white space between classes.</td>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>i</code>, <code>.i</code>, <code>.italic</code></td>
+            <td>Multiple styling options that produce the same result are indicated by HTML tag names or CSS class
+                names, each one seperated by comma.</td>
+        </tr>
+
+    </table>
+
+
+
+    <h2 id="typography">Typography</h2>
+    <h3>Elements</h3>
+
+    <p><span class="mrr">Regular</span> <code>.normal</code></p>
+    <p><a href="#" class="mrr">Link</a> <code>a</code></p>
+    <p><b class="mrr">Bold</b> <code>strong</code>, <code>b</code>, <code>.strong</code>, <code>.bold</code>,
+        <code>.b</code></p>
+    <p><i class="mrr">Italic</i> <code>i</code>, <code>.i</code>, <code>.italic</code></p>
+    <p><u class="mrr">Underline</u> <code>u</code>, <code>.underline</code></p>
+    <p><del class="mrr">Deleted</del> <code>del</code>, <code>.del</code></p>
+    <p><span class="mrr caps">Caps</span> <code>.caps</code></p>
+    <p><span class="mrr lsp">Letter Spacing</span> <code>.lsp</code></p>
+    <p><mark class="mrr">Highlighted</mark> <code>mark</code>, <code>.mark</code></p>
+    <p><kbd class="mrr">Ctrl+K</kbd> <code>kbd</code>, <code>.kbd</code></p>
+    <p><span class="mrr">Text <sup>superscript</sup></span> <code>sup</code>, <code>.sup</code></p>
+    <p><span class="mrr">Text <sub>subscript</sub></span> <code>sub</code>, <code>.sup</code></p>
+    <p><cite class="mrr">Cite</cite> <code>cite</code>, <code>.cite</code></p>
+    <p><span class="mrr quote">Quote</span> <code>.quote</code></p>
+    <p><em class="mrr">Emphasis</em> <code>em</code>, <code>.em</code></p>
+    <p><s class="strike mrr">Strikethrough</s> <code>s</code>, <code>.s</code>, <code>.strike</code></p>
+    <p><small class="mrr">Small</small> <code>small</code>, <code>.small</code></p>
+    <p><code class="mrr">Code</code> <code>code</code>, <code>.code</code></p>
+
+
+    <h3>Special Cases</h3>
+    <p><a href="#" class="mrr no-deco">A link without text decoration</a> <code>.no-deco</code></p>
+    <p>
+        <div class="block br width-3 height-2 no-wrap mrr">No word wrap at white space</div>
+        <code>.no-wrap</code>
+    </p>
+    <p>
+        <div class="block br width-3 height-2 truncate mrr">No word wrap at white space</div>
+        <code>.truncate</code>
+    </p>
+    <div class="br">
+        <hr>
     </div>
+    <code>hr</code>
 
-    <div>
-        <h2 id="notation" class="mrt-4">Notation</h2>
-        <p>Throughout this document the following notation is applied:</p>
+    <h3>Paragraph</h3>
+    <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
+        horrible vermin.</p>
 
-        <table>
-            <tr>
-                <td><code>div /div</code></td>
-                <td>HTML tags are indicated by their name. The closing HTML tag is indicated with a prefixed slash.</td>
-            </tr>
-            <tr>
-                <td><code>div/</code></td>
-                <td>The abbreviated form of an opening and closing HTML tag is indicated by the tag name with a trailing
-                    slash.</td>
-            </tr>
-            <tr>
-                <td><code>.left</code></td>
-                <td>CSS classes are indicated with a prefixed dot</td>
-            </tr>
-            <tr>
-                <td><code>.left.middle</code></td>
-                <td>The assignment of multiple CSS classes to a single HTML tag, composing, is indicated with
-                    a
-                    prefixed dot for each CSS class; and there is no white space between classes.</td>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>i</code>, <code>.i</code>, <code>.italic</code></td>
-                <td>Multiple styling options that produce the same result are indicated by HTML tag names or CSS class
-                    names, each one seperated by comma.</td>
-            </tr>
+    <p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly
+        domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to
+        slide off any moment.</p>
 
-        </table>
-    </div>
+    <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.
+        <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.</p>
 
-    <div>
-        <h2 id="typography">Typography</h2>
-        <h3>Elements</h3>
+    <pre>p/</pre>
 
-        <p><span class="mrr">Regular</span> <code>.normal</code></p>
-        <p><a href="#" class="mrr">Link</a> <code>a</code></p>
-        <p><b class="mrr">Bold</b> <code>strong</code>, <code>b</code>, <code>.strong</code>, <code>.bold</code>,
-            <code>.b</code></p>
-        <p><i class="mrr">Italic</i> <code>i</code>, <code>.i</code>, <code>.italic</code></p>
-        <p><u class="mrr">Underline</u> <code>u</code>, <code>.underline</code></p>
-        <p><del class="mrr">Deleted</del> <code>del</code>, <code>.del</code></p>
-        <p><span class="mrr caps">Caps</span> <code>.caps</code></p>
-        <p><span class="mrr lsp">Letter Spacing</span> <code>.lsp</code></p>
-        <p><mark class="mrr">Highlighted</mark> <code>mark</code>, <code>.mark</code></p>
-        <p><kbd class="mrr">Ctrl+K</kbd> <code>kbd</code>, <code>.kbd</code></p>
-        <p><span class="mrr">Text <sup>superscript</sup></span> <code>sup</code>, <code>.sup</code></p>
-        <p><span class="mrr">Text <sub>subscript</sub></span> <code>sub</code>, <code>.sup</code></p>
-        <p><cite class="mrr">Cite</cite> <code>cite</code>, <code>.cite</code></p>
-        <p><span class="mrr quote">Quote</span> <code>.quote</code></p>
-        <p><em class="mrr">Emphasis</em> <code>em</code>, <code>.em</code></p>
-        <p><s class="strike mrr">Strikethrough</s> <code>s</code>, <code>.s</code>, <code>.strike</code></p>
-        <p><small class="mrr">Small</small> <code>small</code>, <code>.small</code></p>
-        <p><code class="mrr">Code</code> <code>code</code>, <code>.code</code></p>
-    </div>
-
-    <div>
-        <h3>Special Cases</h3>
-        <p><a href="#" class="mrr no-deco">A link without text decoration</a> <code>.no-deco</code></p>
-        <p>
-            <div class="block br width-3 height-2 no-wrap mrr">No word wrap at white space</div>
-            <code>.no-wrap</code>
-        </p>
-        <p>
-            <div class="block br width-3 height-2 truncate mrr">No word wrap at white space</div>
-            <code>.truncate</code>
-        </p>
-        <div class="br">
-            <hr>
-        </div>
-        <code>hr</code>
-    </div>
-
-    <div>
-        <h3>Paragraph</h3>
-        <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
-            horrible vermin.</p>
-
-        <p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly
-            domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to
-            slide off any moment.</p>
-
-        <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.
-            <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.</p>
-
-        <pre>p/</pre>
-    </div>
 
     <div>
         <h3>Indented Paragraph</h3>
@@ -251,59 +246,59 @@ p/ .indent
 p/ .no-indent //remove indentation for this p</pre>
     </div>
 
-    <div>
-        <h3>Unordered List</h3>
 
-        <ul>
-            <li>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
-                horrible vermin.
-            </li>
-            <li>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly,
-                slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and
-                seemed ready to slide off any moment.
-                <ul>
-                    <li>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly
-                        as he looked. <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.
-                    </li>
-                    <li>His room, a proper human room although a little too small, lay peacefully between its four
-                        familiar walls.
-                    </li>
-                </ul>
-            </li>
-            <li>A collection of textile samples lay spread out on the table – Samsa was a travelling salesman – and
-                above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a
-                nice, gilded frame.
-            </li>
-        </ul>
-        <pre>ul
+    <h3>Unordered List</h3>
+
+    <ul>
+        <li>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
+            horrible vermin.
+        </li>
+        <li>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly,
+            slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and
+            seemed ready to slide off any moment.
+            <ul>
+                <li>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly
+                    as he looked. <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.
+                </li>
+                <li>His room, a proper human room although a little too small, lay peacefully between its four
+                    familiar walls.
+                </li>
+            </ul>
+        </li>
+        <li>A collection of textile samples lay spread out on the table – Samsa was a travelling salesman – and
+            above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a
+            nice, gilded frame.
+        </li>
+    </ul>
+    <pre>ul
     li/
 /ul</pre>
-    </div>
 
-    <div>
-        <h3>Indented Unordered List</h3>
-        <ul class="indent">
-            <li>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
-                horrible vermin.
-            </li>
-            <li>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly,
-                slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and
-                seemed ready to slide off any moment.
-                <ul>
-                    <li>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly
-                        as he looked. <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.
-                    </li>
-                    <li>His room, a proper human room although a little too small, lay peacefully between its four
-                        familiar walls.
-                    </li>
-                </ul>
-            </li>
-            <li>A collection of textile samples lay spread out on the table – Samsa was a travelling salesman – and
-                above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a
-                nice, gilded frame.
-            </li>
-        </ul>
-        <pre>ul .indent
+
+
+    <h3>Indented Unordered List</h3>
+    <ul class="indent">
+        <li>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
+            horrible vermin.
+        </li>
+        <li>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly,
+            slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and
+            seemed ready to slide off any moment.
+            <ul>
+                <li>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly
+                    as he looked. <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.
+                </li>
+                <li>His room, a proper human room although a little too small, lay peacefully between its four
+                    familiar walls.
+                </li>
+            </ul>
+        </li>
+        <li>A collection of textile samples lay spread out on the table – Samsa was a travelling salesman – and
+            above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a
+            nice, gilded frame.
+        </li>
+    </ul>
+    <pre>ul .indent
     li/
 /ul
 
@@ -312,35 +307,35 @@ div .indent
         li/
     /ul 
 /div</pre>
-    </div>
 
-    <div>
-        <h3>Ordered List</h3>
-        <ol>
-            <li>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
-                horrible vermin.
-            </li>
-            <li>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly,
-                slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and
-                seemed ready to slide off any moment.
-                <ol>
-                    <li>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly
-                        as he looked. <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.
-                    </li>
-                    <li>His room, a proper human room although a little too small, lay peacefully between its four
-                        familiar walls.
-                    </li>
-                </ol>
-            </li>
-            <li>A collection of textile samples lay spread out on the table – Samsa was a travelling salesman – and
-                above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a
-                nice, gilded frame.
-            </li>
-        </ol>
-        <pre>ol
+
+
+    <h3>Ordered List</h3>
+    <ol>
+        <li>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
+            horrible vermin.
+        </li>
+        <li>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly,
+            slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and
+            seemed ready to slide off any moment.
+            <ol>
+                <li>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly
+                    as he looked. <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.
+                </li>
+                <li>His room, a proper human room although a little too small, lay peacefully between its four
+                    familiar walls.
+                </li>
+            </ol>
+        </li>
+        <li>A collection of textile samples lay spread out on the table – Samsa was a travelling salesman – and
+            above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a
+            nice, gilded frame.
+        </li>
+    </ol>
+    <pre>ol
     li/
 /ol</pre>
-    </div>
+
 
     <div>
         <h3>Indented Ordered List</h3>
@@ -377,52 +372,52 @@ div .indent
 /div</pre>
     </div>
 
-    <div>
-        <h3>Definition List</h3>
 
-        <dl>
-            <dt>One morning</dt>
-            <dd>when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
-                horrible vermin.</dd>
-        </dl>
-        <dl>
-            <dt>He lay on his armour-like back</dt>
-            <dd>and if he lifted his head a little he could see his brown belly,
-                slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and
-                seemed ready to slide off any moment.</dd>
-        </dl>
-        <dl>
-            <dt>His many legs</dt>
-            <dd>pitifully thin compared with the size of the rest of him, waved about helplessly
-                as he looked. <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.</dd>
-        </dl>
-        <dl>
-            <dt>His room</dt>
-            <dd>a proper human room although a little too small, lay peacefully between its four
-                familiar walls.</dd>
-        </dl>
+    <h3>Definition List</h3>
 
-        <pre>dl
+    <dl>
+        <dt>One morning</dt>
+        <dd>when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
+            horrible vermin.</dd>
+    </dl>
+    <dl>
+        <dt>He lay on his armour-like back</dt>
+        <dd>and if he lifted his head a little he could see his brown belly,
+            slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and
+            seemed ready to slide off any moment.</dd>
+    </dl>
+    <dl>
+        <dt>His many legs</dt>
+        <dd>pitifully thin compared with the size of the rest of him, waved about helplessly
+            as he looked. <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.</dd>
+    </dl>
+    <dl>
+        <dt>His room</dt>
+        <dd>a proper human room although a little too small, lay peacefully between its four
+            familiar walls.</dd>
+    </dl>
+
+    <pre>dl
     dt/
     dd/
 /dl</pre>
-    </div>
 
-    <div>
-        <h3>Blockquote</h3>
-        <figure>
-            <blockquote>
-                <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed
-                    into a
-                    horrible vermin.</p>
 
-                <p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly,
-                    slightly
-                    domed and divided by arches into stiff sections.</p>
-                <figcaption>Franz Kafka, <cite>The Metamorphosis</cite></figcaption>
-            </blockquote>
-        </figure>
-        <pre>blockquote/
+
+    <h3>Blockquote</h3>
+    <figure>
+        <blockquote>
+            <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed
+                into a
+                horrible vermin.</p>
+
+            <p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly,
+                slightly
+                domed and divided by arches into stiff sections.</p>
+            <figcaption>Franz Kafka, <cite>The Metamorphosis</cite></figcaption>
+        </blockquote>
+    </figure>
+    <pre>blockquote/
 
 blockquote
     p/
@@ -435,7 +430,7 @@ figure
     figcaption/
 /figure
 </pre>
-    </div>
+
 
     <div class="breakout x-12 mxw-md">
 
@@ -512,206 +507,204 @@ figure
         </div>
     </div>
 
-    <div>
-        <h3>Font Size</h3>
-        <table>
-            <tr>
-                <td class="fs-d1 baseline pdy-0 right pdy-0">Aa</td>
-                <td class="code baseline pdy-0 pdy-0">.fs-d1</td>
-            </tr>
-            <tr>
-                <td class="fs baseline pdy-0 right">Aa</td>
-                <td class="baseline pdy-0 no-wrap"><code>.fs</code>, <code>.fs-default</code> <small>(1rem)</small>
-                </td>
-            </tr>
-            <tr>
-                <td class="fs-1 baseline pdy-0 right">Aa</td>
-                <td class="code baseline pdy-0">.fs-1</td>
-            </tr>
-            <tr>
-                <td class="fs-2 baseline pdy-0 right">Aa</td>
-                <td class="code baseline pdy-0">.fs-2</td>
-            </tr>
-            <tr>
-                <td class="fs-3 baseline pdy-0 right">Aa</td>
-                <td class="code baseline pdy-0">.fs-3</td>
-            </tr>
-            <tr>
-                <td class="fs-4 baseline pdy-0 right">Aa</td>
-                <td class="code baseline pdy-0">.fs-4</td>
-            </tr>
-            <tr>
-                <td class="fs-5 baseline pdy-0 right">Aa</td>
-                <td class="code baseline pdy-0">.fs-5</td>
-            </tr>
-            <tr>
-                <td class="fs-6 baseline pdy-0 right">Aa</td>
-                <td class="code baseline pdy-0">.fs-6</td>
-            </tr>
-            <tr>
-                <td class="fs-7 baseline pdy-0 right">Aa</td>
-                <td class="code baseline pdy-0">.fs-7</td>
-            </tr>
-            <tr>
-                <td class="fs-8 baseline pdy-0 right">Aa</td>
-                <td class="code baseline pdy-0">.fs-8</td>
-            </tr>
-        </table>
-    </div>
 
-    <div>
-        <h3>Line Height</h3>
-        <table>
-            <tr>
-                <td class="lh-d1 brt baseline pd-0">One morning, when Gregor Samsa woke from troubled dreams, he
-                    found himself transformed in his bed into a horrible vermin.</td>
-                <td class="lh-d1 code baseline pdl pd-0">.lh-d1</td>
-            </tr>
-            <tr>
-                <td class="lh brt baseline pd-0">One morning, when Gregor Samsa woke from troubled dreams, he
-                    found himself transformed in his bed into a horrible vermin.</td>
-                <td class="lh baseline pdl pd-0"><code>.lh</code> <small>(1em)</small></td>
-            </tr>
-            <tr>
-                <td class="lh-1 brt baseline pd-0">One morning, when Gregor Samsa woke from troubled dreams, he
-                    found himself transformed in his bed into a horrible vermin.
-                </td>
-                <td class="lh-1 code baseline pdl pd-0">.lh-1</td>
-            </tr>
-            <tr>
-                <td class="lh-2 brt baseline pd-0">One morning, when Gregor Samsa woke from troubled dreams, he
-                    found himself transformed in his bed into a horrible vermin.</td>
-                <td class="lh-2 code baseline pdl pd-0">.lh-2</td>
-            </tr>
-            <tr>
-                <td class="lh-3 brt baseline pd-0">One morning, when Gregor Samsa woke from troubled dreams, he
-                    found himself transformed in his bed into a horrible vermin.</td>
-                <td class="lh-3 baseline pdl pd-0"><code class="no-wrap">.lh-3</code>,
-                    <code class="no-wrap">.lh-unset</code></td>
-            </tr>
-            <tr>
-                <td class="lh-4 brt m brb baseline pd-0">One morning, when Gregor Samsa woke from troubled dreams,
-                    he
-                    found himself transformed in his bed into a horrible vermin.
-                </td>
-                <td class="lh-4 code baseline pdl pd-0">.lh-4</td>
-            </tr>
+    <h3>Font Size</h3>
+    <table>
+        <tr>
+            <td class="fs-d1 baseline pdy-0 right pdy-0">Aa</td>
+            <td class="code baseline pdy-0 pdy-0">.fs-d1</td>
+        </tr>
+        <tr>
+            <td class="fs baseline pdy-0 right">Aa</td>
+            <td class="baseline pdy-0 no-wrap"><code>.fs</code>, <code>.fs-default</code> <small>(1rem)</small>
+            </td>
+        </tr>
+        <tr>
+            <td class="fs-1 baseline pdy-0 right">Aa</td>
+            <td class="code baseline pdy-0">.fs-1</td>
+        </tr>
+        <tr>
+            <td class="fs-2 baseline pdy-0 right">Aa</td>
+            <td class="code baseline pdy-0">.fs-2</td>
+        </tr>
+        <tr>
+            <td class="fs-3 baseline pdy-0 right">Aa</td>
+            <td class="code baseline pdy-0">.fs-3</td>
+        </tr>
+        <tr>
+            <td class="fs-4 baseline pdy-0 right">Aa</td>
+            <td class="code baseline pdy-0">.fs-4</td>
+        </tr>
+        <tr>
+            <td class="fs-5 baseline pdy-0 right">Aa</td>
+            <td class="code baseline pdy-0">.fs-5</td>
+        </tr>
+        <tr>
+            <td class="fs-6 baseline pdy-0 right">Aa</td>
+            <td class="code baseline pdy-0">.fs-6</td>
+        </tr>
+        <tr>
+            <td class="fs-7 baseline pdy-0 right">Aa</td>
+            <td class="code baseline pdy-0">.fs-7</td>
+        </tr>
+        <tr>
+            <td class="fs-8 baseline pdy-0 right">Aa</td>
+            <td class="code baseline pdy-0">.fs-8</td>
+        </tr>
+    </table>
 
-        </table>
-    </div>
 
-    <div>
-        <h3>Responsive Breakpoints</h3>
-        <p>Heading size, font size, and line height can have different sizes based on minimum screen width.
-            Address the different minimum screen sizes with responsive breakpoints, wich are indicated by CSS class
-            prefix values
-            of:</p>
-        <dl>
-            <dt class="float-left"><code>.sm-</code></dt>
-            <dd>The size is applied only if the screen is at least of small width.</dd>
-        </dl>
-        <dl>
-            <dt class="float-left"><code>.rg-</code></dt>
-            <dd>The size is applied only if the screen is at least of regular size.</dd>
-        </dl>
-        <dl>
-            <dt class="float-left"><code>.md-</code></dt>
-            <dd>The size is applied only if the screen is at least of mid size.</dd>
-        </dl>
-        <dl>
-            <dt class="float-left"><code>.lg-</code></dt>
-            <dd>The size is applied only if the screen is at least of large size.</dd>
-        </dl>
-        <p>E.g. <code>.lg-fs-1</code>, <code>.md-h1</code>, or <code>.rg-lh-3</code>.</p>
-        <p> A size class without a prefix will be used in case the
-            alternate minimum screen size is not defined.</p>
 
-        <p class="fs-1 rg-fs-2 md-fs-3 lg-fs-4">One morning, when Gregor Samsa woke from troubled dreams</p>
-        <pre>p/ .fs-1.rg-fs-2.md-fs-3.lg-fs-4</pre>
-    </div>
+    <h3>Line Height</h3>
+    <table>
+        <tr>
+            <td class="lh-d1 brt baseline pd-0">One morning, when Gregor Samsa woke from troubled dreams, he
+                found himself transformed in his bed into a horrible vermin.</td>
+            <td class="lh-d1 code baseline pdl pd-0">.lh-d1</td>
+        </tr>
+        <tr>
+            <td class="lh brt baseline pd-0">One morning, when Gregor Samsa woke from troubled dreams, he
+                found himself transformed in his bed into a horrible vermin.</td>
+            <td class="lh baseline pdl pd-0"><code>.lh</code> <small>(1em)</small></td>
+        </tr>
+        <tr>
+            <td class="lh-1 brt baseline pd-0">One morning, when Gregor Samsa woke from troubled dreams, he
+                found himself transformed in his bed into a horrible vermin.
+            </td>
+            <td class="lh-1 code baseline pdl pd-0">.lh-1</td>
+        </tr>
+        <tr>
+            <td class="lh-2 brt baseline pd-0">One morning, when Gregor Samsa woke from troubled dreams, he
+                found himself transformed in his bed into a horrible vermin.</td>
+            <td class="lh-2 code baseline pdl pd-0">.lh-2</td>
+        </tr>
+        <tr>
+            <td class="lh-3 brt baseline pd-0">One morning, when Gregor Samsa woke from troubled dreams, he
+                found himself transformed in his bed into a horrible vermin.</td>
+            <td class="lh-3 baseline pdl pd-0"><code class="no-wrap">.lh-3</code>,
+                <code class="no-wrap">.lh-unset</code></td>
+        </tr>
+        <tr>
+            <td class="lh-4 brt m brb baseline pd-0">One morning, when Gregor Samsa woke from troubled dreams,
+                he
+                found himself transformed in his bed into a horrible vermin.
+            </td>
+            <td class="lh-4 code baseline pdl pd-0">.lh-4</td>
+        </tr>
 
-    <div>
-        <h3>Font Weight</h3>
-        <table>
-            <tr>
-                <td class="fw-100 fs-4 baseline pdy-0">Aa</td>
-                <td class="code baseline pdy-0">.fw-100</td>
-            </tr>
-            <tr>
-                <td class="fw-200 fs-4 baseline pdy-0">Aa</td>
-                <td class="code baseline pdy-0">.fw-200</td>
-            </tr>
-            <tr>
-                <td class="fw-300 fs-4 baseline pdy-0">Aa</td>
-                <td class="code baseline pdy-0">.fw-300</td>
-            </tr>
-            <tr>
-                <td class="fw-400 fs-4 baseline pdy-0">Aa</td>
-                <td class="baseline pdy-0 no-wrap"><code>.fw-400</code>, <code>.fw-default</code>, <code>.normal</code>
-                </td>
-            </tr>
-            <tr>
-                <td class="fw-500 fs-4 baseline pdy-0">Aa</td>
-                <td class="code baseline pdy-0">.fw-500</td>
-            </tr>
-            <tr>
-                <td class="fw-600 fs-4 baseline pdy-0">Aa</td>
-                <td class="baseline pdy-0 no-wrap"><code>.fw-600</code>, <code>.bold</code>, <code>bold</code></td>
-            </tr>
-            <tr>
-                <td class="fw-700 fs-4 baseline pdy-0">Aa</td>
-                <td class="code baseline pdy-0">.fw-700</td>
-            </tr>
-            <tr>
-                <td class="fw-800 fs-4 baseline pdy-0">Aa</td>
-                <td class="code baseline pdy-0">.fw-800</td>
-            </tr>
-            <tr>
-                <td class="fw-900 fs-4 baseline pdy-0">Aa</td>
-                <td class="code baseline pdy-0">.fw-900</td>
-            </tr>
-        </table>
-    </div>
+    </table>
 
-    <div>
-        <h3>Letter Spacing</h3>
-        <table>
-            <tr>
-                <td class="fs-1 lsp-0 baseline">The quick brown fox</td>
-                <td class="baseline"><code>.lsp-0</code>, <code>.no-lsp</code></td>
-            </tr>
-            <tr>
-                <td class="fs-1 lsp-1 baseline">The quick brown fox</td>
-                <td class="code baseline">.lsp-1</td>
-            </tr>
-            <tr>
-                <td class="fs-1 lsp-2 baseline">The quick brown fox</td>
-                <td class="code baseline">.lsp-2</td>
-            </tr>
-            <tr>
-                <td class="fs-1 lsp-3 baseline">The quick brown fox</td>
-                <td class="code baseline">.lsp-3</td>
-            </tr>
-            <tr>
-                <td class="fs-1 lsp-4 baseline">The quick brown fox</td>
-                <td class="code baseline">.lsp-4</td>
-            </tr>
-        </table>
-    </div>
 
-    <div>
-        <h3>Numbers</h3>
-        <table>
-            <tr>
-                <td class="fs-2 ft-num-normal baseline">13679.05</td>
-                <td class="baseline"><code>.ft-num-normal</code> <small>(default)</small></td>
-            </tr>
-            <tr>
-                <td class="fs-2 ft-num-tab baseline">13679.05</td>
-                <td class="baseline"><code>.ft-num-tab</code> <small>(default for tables)</small></td>
-            </tr>
-        </table>
-    </div>
+
+    <h3>Responsive Breakpoints</h3>
+    <p>Heading size, font size, and line height can have different sizes based on minimum screen width.
+        Address the different minimum screen sizes with responsive breakpoints, wich are indicated by CSS class
+        prefix values
+        of:</p>
+    <dl>
+        <dt class="float-left"><code>.sm-</code></dt>
+        <dd>The size is applied only if the screen is at least of small width.</dd>
+    </dl>
+    <dl>
+        <dt class="float-left"><code>.rg-</code></dt>
+        <dd>The size is applied only if the screen is at least of regular size.</dd>
+    </dl>
+    <dl>
+        <dt class="float-left"><code>.md-</code></dt>
+        <dd>The size is applied only if the screen is at least of mid size.</dd>
+    </dl>
+    <dl>
+        <dt class="float-left"><code>.lg-</code></dt>
+        <dd>The size is applied only if the screen is at least of large size.</dd>
+    </dl>
+    <p>E.g. <code>.lg-fs-1</code>, <code>.md-h1</code>, or <code>.rg-lh-3</code>.</p>
+    <p> A size class without a prefix will be used in case the
+        alternate minimum screen size is not defined.</p>
+
+    <p class="fs-1 rg-fs-2 md-fs-3 lg-fs-4">One morning, when Gregor Samsa woke from troubled dreams</p>
+    <pre>p/ .fs-1.rg-fs-2.md-fs-3.lg-fs-4</pre>
+
+
+
+    <h3>Font Weight</h3>
+    <table>
+        <tr>
+            <td class="fw-100 fs-4 baseline pdy-0">Aa</td>
+            <td class="code baseline pdy-0">.fw-100</td>
+        </tr>
+        <tr>
+            <td class="fw-200 fs-4 baseline pdy-0">Aa</td>
+            <td class="code baseline pdy-0">.fw-200</td>
+        </tr>
+        <tr>
+            <td class="fw-300 fs-4 baseline pdy-0">Aa</td>
+            <td class="code baseline pdy-0">.fw-300</td>
+        </tr>
+        <tr>
+            <td class="fw-400 fs-4 baseline pdy-0">Aa</td>
+            <td class="baseline pdy-0 no-wrap"><code>.fw-400</code>, <code>.fw-default</code>, <code>.normal</code>
+            </td>
+        </tr>
+        <tr>
+            <td class="fw-500 fs-4 baseline pdy-0">Aa</td>
+            <td class="code baseline pdy-0">.fw-500</td>
+        </tr>
+        <tr>
+            <td class="fw-600 fs-4 baseline pdy-0">Aa</td>
+            <td class="baseline pdy-0 no-wrap"><code>.fw-600</code>, <code>.bold</code>, <code>bold</code></td>
+        </tr>
+        <tr>
+            <td class="fw-700 fs-4 baseline pdy-0">Aa</td>
+            <td class="code baseline pdy-0">.fw-700</td>
+        </tr>
+        <tr>
+            <td class="fw-800 fs-4 baseline pdy-0">Aa</td>
+            <td class="code baseline pdy-0">.fw-800</td>
+        </tr>
+        <tr>
+            <td class="fw-900 fs-4 baseline pdy-0">Aa</td>
+            <td class="code baseline pdy-0">.fw-900</td>
+        </tr>
+    </table>
+
+
+
+    <h3>Letter Spacing</h3>
+    <table>
+        <tr>
+            <td class="fs-1 lsp-0 baseline">The quick brown fox</td>
+            <td class="baseline"><code>.lsp-0</code>, <code>.no-lsp</code></td>
+        </tr>
+        <tr>
+            <td class="fs-1 lsp-1 baseline">The quick brown fox</td>
+            <td class="code baseline">.lsp-1</td>
+        </tr>
+        <tr>
+            <td class="fs-1 lsp-2 baseline">The quick brown fox</td>
+            <td class="code baseline">.lsp-2</td>
+        </tr>
+        <tr>
+            <td class="fs-1 lsp-3 baseline">The quick brown fox</td>
+            <td class="code baseline">.lsp-3</td>
+        </tr>
+        <tr>
+            <td class="fs-1 lsp-4 baseline">The quick brown fox</td>
+            <td class="code baseline">.lsp-4</td>
+        </tr>
+    </table>
+
+    <h3>Numbers</h3>
+    <table>
+        <tr>
+            <td class="fs-2 ft-num-normal baseline">13679.05</td>
+            <td class="baseline"><code>.ft-num-normal</code> <small>(default)</small></td>
+        </tr>
+        <tr>
+            <td class="fs-2 ft-num-tab baseline">13679.05</td>
+            <td class="baseline"><code>.ft-num-tab</code> <small>(default for tables)</small></td>
+        </tr>
+    </table>
+
 
     <div class="breakout">
         <h2 id="colors">Colors</h2>
@@ -792,131 +785,129 @@ figure
         </table>
     </div>
 
-    <div>
-        <h3>Apply Colors to Text, Background, and Borders</h3>
-        <p>Set color, background-color and border-color by applying the naming conventions:</p>
 
-        <table class="br-separate">
-            <tr>
-                <th class="normal left">Color</th>
-                <th class="normal center">Background</th>
-                <th class="normal center">Border</th>
-                <th class="normal below-sm-hide">Refine</th>
-            </tr>
-            <tr>
-                <td class="neutral code middle left">.neutral</td>
-                <td class="bg-neutral white code middle center">.bg-neutral</td>
-                <td class="br brw-d3 neutral br-neutral code middle center">.br-neutral</td>
-                <td class="neutral below-sm-hide"><code>neutral-d4</code> … <code>neutral-4</code></td>
-            </tr>
-            <tr>
-                <td class="primary code middle left">.primary</td>
-                <td class="bg-primary white code middle center">.bg-primary</td>
-                <td class="primary br-primary br brw-d3 code middle center">.br-primary</td>
-                <td class="primary below-sm-hide"><code>primary-d4</code> … <code>primary-4</code></td>
-            </tr>
-            <tr>
-                <td class="accent-one code middle left">.accent-one</td>
-                <td class="bg-accent-one white code middle center">.bg-accent-one</td>
-                <td class="accent-one br-accent-one br brw-d3 code middle center">.br-accent-one</td>
-                <td class="accent-one below-sm-hide"><code>accent-one-d4</code> … <code>accent-one-4</code></td>
-            </tr>
-            <tr>
-                <td class="accent-two code middle left">.accent-two</td>
-                <td class="bg-accent-two white code middle center">.bg-accent-two</td>
-                <td class="accent-two br-accent-two br brw-d3 code middle center">.br-accent-two</td>
-                <td class="accent-two below-sm-hide"><code>accent-two-d4</code> … <code>accent-two-4</code></td>
-            </tr>
-            <tr>
-                <td class="accent-three code middle left">.accent-three</td>
-                <td class="bg-accent-three white code middle center">.bg-accent-three</td>
-                <td class="accent-three br-accent-three br brw-d3 code middle center">.br-accent-three</td>
-                <td class="accent-three below-sm-hide"><code>accent-three-d4</code> … <code>accent-three-4</code></td>
-            </tr>
-        </table>
-    </div>
+    <h3>Apply Colors to Text, Background, and Borders</h3>
+    <p>Set color, background-color and border-color by applying the naming conventions:</p>
 
-    <div>
-        <h3>Edge Values</h3>
-        <p>In addition there are the following color classes available:</p>
+    <table class="br-separate">
+        <tr>
+            <th class="normal left">Color</th>
+            <th class="normal center">Background</th>
+            <th class="normal center">Border</th>
+            <th class="normal below-sm-hide">Refine</th>
+        </tr>
+        <tr>
+            <td class="neutral code middle left">.neutral</td>
+            <td class="bg-neutral white code middle center">.bg-neutral</td>
+            <td class="br brw-d3 neutral br-neutral code middle center">.br-neutral</td>
+            <td class="neutral below-sm-hide"><code>neutral-d4</code> … <code>neutral-4</code></td>
+        </tr>
+        <tr>
+            <td class="primary code middle left">.primary</td>
+            <td class="bg-primary white code middle center">.bg-primary</td>
+            <td class="primary br-primary br brw-d3 code middle center">.br-primary</td>
+            <td class="primary below-sm-hide"><code>primary-d4</code> … <code>primary-4</code></td>
+        </tr>
+        <tr>
+            <td class="accent-one code middle left">.accent-one</td>
+            <td class="bg-accent-one white code middle center">.bg-accent-one</td>
+            <td class="accent-one br-accent-one br brw-d3 code middle center">.br-accent-one</td>
+            <td class="accent-one below-sm-hide"><code>accent-one-d4</code> … <code>accent-one-4</code></td>
+        </tr>
+        <tr>
+            <td class="accent-two code middle left">.accent-two</td>
+            <td class="bg-accent-two white code middle center">.bg-accent-two</td>
+            <td class="accent-two br-accent-two br brw-d3 code middle center">.br-accent-two</td>
+            <td class="accent-two below-sm-hide"><code>accent-two-d4</code> … <code>accent-two-4</code></td>
+        </tr>
+        <tr>
+            <td class="accent-three code middle left">.accent-three</td>
+            <td class="bg-accent-three white code middle center">.bg-accent-three</td>
+            <td class="accent-three br-accent-three br brw-d3 code middle center">.br-accent-three</td>
+            <td class="accent-three below-sm-hide"><code>accent-three-d4</code> … <code>accent-three-4</code></td>
+        </tr>
+    </table>
 
-        <dl>
-            <dt class="square-1 bg-base-color float-left"></dt>
-            <dd><code>.base-color</code> (which is
-                default text-color). <p>The color can be used as text color, background color and border color. It is
-                    defined through:</p>
-                <pre>:root { --base-color = var(--neutral-color-d4); }</pre>
-            </dd>
-        </dl>
+    <h3>Edge Values</h3>
+    <p>In addition there are the following color classes available:</p>
 
-        <dl>
-            <dt class="square-1 br br-base-color float-left"></dt>
-            <dd><code>.base-background</code>
-                <p>The color can be used as text color, background color and border color. It is defined through:</p>
-                <pre>:root { --base-background = white; }</pre>
-            </dd>
-        </dl>
+    <dl>
+        <dt class="square-1 bg-base-color float-left"></dt>
+        <dd><code>.base-color</code> (which is
+            default text-color). <p>The color can be used as text color, background color and border color. It is
+                defined through:</p>
+            <pre>:root { --base-color = var(--neutral-color-d4); }</pre>
+        </dd>
+    </dl>
 
-        <dl>
-            <dt class="square-1 bg-black float-left"></dt>
-            <dd><code>.black</code>
-                <p>The color can be used as text color, background color and border color. It is defined through:</p>
-                <pre>:root { --black = black; }</pre>
-            </dd>
-        </dl>
+    <dl>
+        <dt class="square-1 br br-base-color float-left"></dt>
+        <dd><code>.base-background</code>
+            <p>The color can be used as text color, background color and border color. It is defined through:</p>
+            <pre>:root { --base-background = white; }</pre>
+        </dd>
+    </dl>
 
-        <dl>
-            <dt class="square-1 br br-base-color float-left"></dt>
-            <dd><code>.white</code>
-                <p>The color can be used as text color, background color and border color. It is defined through:</p>
-                <pre>:root { --white = white; }</pre>
-            </dd>
-        </dl>
+    <dl>
+        <dt class="square-1 bg-black float-left"></dt>
+        <dd><code>.black</code>
+            <p>The color can be used as text color, background color and border color. It is defined through:</p>
+            <pre>:root { --black = black; }</pre>
+        </dd>
+    </dl>
 
-        <dl>
-            <dt class="square-1 mark float-left"></dt>
-            <dd><code>.mark</code>, <code>mark</code>
-                <p>The color is defined through:</p>
-                <pre>:root { --mark-background: yellow; }</pre>
-            </dd>
-        </dl>
+    <dl>
+        <dt class="square-1 br br-base-color float-left"></dt>
+        <dd><code>.white</code>
+            <p>The color can be used as text color, background color and border color. It is defined through:</p>
+            <pre>:root { --white = white; }</pre>
+        </dd>
+    </dl>
 
-        <dl>
-            <dt class="square-1 kbd float-left"></dt>
-            <dd><code>.kbd</code>, <code>kbd</code>
-                <p>The color is defined through:</p>
-                <pre>:root { --kbd-background: var(--neutral-4); }</pre>
-            </dd>
-        </dl>
-    </div>
+    <dl>
+        <dt class="square-1 mark float-left"></dt>
+        <dd><code>.mark</code>, <code>mark</code>
+            <p>The color is defined through:</p>
+            <pre>:root { --mark-background: yellow; }</pre>
+        </dd>
+    </dl>
 
-    <div>
-        <h3>Define Your Own Color System</h3>
-        <p>The color system is built around the five colors:</p>
+    <dl>
+        <dt class="square-1 kbd float-left"></dt>
+        <dd><code>.kbd</code>, <code>kbd</code>
+            <p>The color is defined through:</p>
+            <pre>:root { --kbd-background: var(--neutral-4); }</pre>
+        </dd>
+    </dl>
 
-        <dl>
-            <dt class="square-1 bg-neutral float-left"></dt>
-            <dd>neutral</dd>
-        </dl>
-        <dl>
-            <dt class="square-1 bg-primary float-left"></dt>
-            <dd>primary</dd>
-        </dl>
-        <dl>
-            <dt class="square-1 bg-accent-one float-left"></dt>
-            <dd>accent one</dd>
-        </dl>
-        <dl>
-            <dt class="square-1 bg-accent-two float-left"></dt>
-            <dd>accent two</dd>
-        </dl>
-        <dl>
-            <dt class="square-1 bg-accent-three float-left"></dt>
-            <dd>accent three</dd>
-        </dl>
 
-        <p>To define your own color palette, change the colors by providing their hsl color code.</p>
-        <pre>:root {
+
+    <h3>Define Your Own Color System</h3>
+    <p>The color system is built around the five colors:</p>
+
+    <dl>
+        <dt class="square-1 bg-neutral float-left"></dt>
+        <dd>neutral</dd>
+    </dl>
+    <dl>
+        <dt class="square-1 bg-primary float-left"></dt>
+        <dd>primary</dd>
+    </dl>
+    <dl>
+        <dt class="square-1 bg-accent-one float-left"></dt>
+        <dd>accent one</dd>
+    </dl>
+    <dl>
+        <dt class="square-1 bg-accent-two float-left"></dt>
+        <dd>accent two</dd>
+    </dl>
+    <dl>
+        <dt class="square-1 bg-accent-three float-left"></dt>
+        <dd>accent three</dd>
+    </dl>
+
+    <p>To define your own color palette, change the colors by providing their hsl color code.</p>
+    <pre>:root {
     --neutral-h: 0;
     --neutral-s: 0%;
     --neutral-l: 53%;              
@@ -938,63 +929,63 @@ figure
     --accent-three-l: 50%;  
 }</pre>
 
-    </div>
 
-    <div>
-        <h2 id="white-space">White Space</h2>
 
-        <h3>Notation</h3>
-        <table>
-            <tr>
-                <th>Shorthand</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td>gp</td>
-                <td>grid gap</td>
-            </tr>
-            <tr>
-                <td>mr</td>
-                <td>margin</td>
-            </tr>
-            <tr>
-                <td>pd</td>
-                <td>padding</td>
-            </tr>
-            <tr>
-                <td>t</td>
-                <td>top</td>
-            </tr>
-            <tr>
-                <td>r</td>
-                <td>right</td>
-            </tr>
-            <tr>
-                <td>b</td>
-                <td>bottom</td>
-            </tr>
-            <tr>
-                <td>l</td>
-                <td>left</td>
-            </tr>
-            <tr>
-                <td>n</td>
-                <td>negative</td>
-            </tr>
-            <tr>
-                <td>0 (zero)</td>
-                <td>none</td>
-            </tr>
-            <tr>
-                <td>x</td>
-                <td>X-axis</td>
-            </tr>
-            <tr>
-                <td>y</td>
-                <td>Y-axis</td>
-            </tr>
-        </table>
-    </div>
+
+    <h2 id="white-space">White Space</h2>
+
+    <h3>Notation</h3>
+    <table>
+        <tr>
+            <th>Shorthand</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>gp</td>
+            <td>grid gap</td>
+        </tr>
+        <tr>
+            <td>mr</td>
+            <td>margin</td>
+        </tr>
+        <tr>
+            <td>pd</td>
+            <td>padding</td>
+        </tr>
+        <tr>
+            <td>t</td>
+            <td>top</td>
+        </tr>
+        <tr>
+            <td>r</td>
+            <td>right</td>
+        </tr>
+        <tr>
+            <td>b</td>
+            <td>bottom</td>
+        </tr>
+        <tr>
+            <td>l</td>
+            <td>left</td>
+        </tr>
+        <tr>
+            <td>n</td>
+            <td>negative</td>
+        </tr>
+        <tr>
+            <td>0 (zero)</td>
+            <td>none</td>
+        </tr>
+        <tr>
+            <td>x</td>
+            <td>X-axis</td>
+        </tr>
+        <tr>
+            <td>y</td>
+            <td>Y-axis</td>
+        </tr>
+    </table>
+
 
     <h3>Margin</h3>
 
@@ -1397,353 +1388,345 @@ figure
 
 
     <h2 id="borders">Borders</h2>
-    <div>
-        <h3>Notation</h3>
-        <table>
-            <tr>
-                <th>Shorthand</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td>br</td>
-                <td>border</td>
-            </tr>
-            <tr>
-                <td>brw</td>
-                <td>border width</td>
-            </tr>
-            <tr>
-                <td>t</td>
-                <td>top</td>
-            </tr>
-            <tr>
-                <td>r</td>
-                <td>right</td>
-            </tr>
-            <tr>
-                <td>b</td>
-                <td>bottom</td>
-            </tr>
-            <tr>
-                <td>l</td>
-                <td>left</td>
-            </tr>
-            <tr>
-                <td>0 (zero)</td>
-                <td>none</td>
-            </tr>
-            <tr>
-                <td>x</td>
-                <td>X-axis</td>
-            </tr>
-            <tr>
-                <td>y</td>
-                <td>Y-axis</td>
-            </tr>
-        </table>
+
+    <h3>Notation</h3>
+    <table>
+        <tr>
+            <th>Shorthand</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>br</td>
+            <td>border</td>
+        </tr>
+        <tr>
+            <td>brw</td>
+            <td>border width</td>
+        </tr>
+        <tr>
+            <td>t</td>
+            <td>top</td>
+        </tr>
+        <tr>
+            <td>r</td>
+            <td>right</td>
+        </tr>
+        <tr>
+            <td>b</td>
+            <td>bottom</td>
+        </tr>
+        <tr>
+            <td>l</td>
+            <td>left</td>
+        </tr>
+        <tr>
+            <td>0 (zero)</td>
+            <td>none</td>
+        </tr>
+        <tr>
+            <td>x</td>
+            <td>X-axis</td>
+        </tr>
+        <tr>
+            <td>y</td>
+            <td>Y-axis</td>
+        </tr>
+    </table>
+
+    <h3>Border</h3>
+    <div class="x-12 gp-1">
+        <div class="xx-4 br pd-1 bg-neutral-4"></div>
+        <div class="xx-8"><code>.br</code></div>
+        <div class="xx-4 bry pd-1 bg-neutral-4"></div>
+        <div class="xx-8"><code>.bry</code></div>
+        <div class="xx-4 brx pd-1 bg-neutral-4"></div>
+        <div class="xx-8"><code>.brx</code></div>
+        <div class="xx-4 brt pd-1 bg-neutral-4"></div>
+        <div class="xx-8"><code>.brt</code></div>
+        <div class="xx-4 brr pd-1 bg-neutral-4"></div>
+        <div class="xx-8"><code>.brr</code></div>
+        <div class="xx-4 brb pd-1 bg-neutral-4"></div>
+        <div class="xx-8"><code>.brb</code></div>
+        <div class="xx-4 brl pd-1 bg-neutral-4"></div>
+        <div class="xx-8"><code>.brl</code></div>
+        <div class="xx-4 no-br pd-1 bg-neutral-4"></div>
+        <div class="xx-8"><code>.no-br</code></div>
     </div>
 
-    <div>
-        <h3>Border</h3>
-        <div class="x-12 gp-1">
-            <div class="xx-4 br pd-1 bg-neutral-4"></div>
-            <div class="xx-8"><code>.br</code></div>
-            <div class="xx-4 bry pd-1 bg-neutral-4"></div>
-            <div class="xx-8"><code>.bry</code></div>
-            <div class="xx-4 brx pd-1 bg-neutral-4"></div>
-            <div class="xx-8"><code>.brx</code></div>
-            <div class="xx-4 brt pd-1 bg-neutral-4"></div>
-            <div class="xx-8"><code>.brt</code></div>
-            <div class="xx-4 brr pd-1 bg-neutral-4"></div>
-            <div class="xx-8"><code>.brr</code></div>
-            <div class="xx-4 brb pd-1 bg-neutral-4"></div>
-            <div class="xx-8"><code>.brb</code></div>
-            <div class="xx-4 brl pd-1 bg-neutral-4"></div>
-            <div class="xx-8"><code>.brl</code></div>
-            <div class="xx-4 no-br pd-1 bg-neutral-4"></div>
-            <div class="xx-8"><code>.no-br</code></div>
 
+    <h3>Border Style</h3>
+    <div class="x-12 gp-1">
+        <div class="xx-4 br dashed pd-1 bg-neutral-4"></div>
+        <div class="xx-8"><code>.br.dashed</code></div>
+        <div class="xx-4 br dotted pd-1 bg-neutral-4"></div>
+        <div class="xx-8"><code>.br.dotted</code></div>
+        <div class="xx-4 br solid pd-1 bg-neutral-4"></div>
+        <div class="xx-8"><code>.br.solid</code></div>
+    </div>
+
+    <h3>Border Width</h3>
+    <div class="x-12 gp-1">
+        <div class="xx-4 br brw-0 pd-1 bg-neutral-4"></div>
+        <div class="xx-8"><code>.brw-0</code>, <code>.no-br</code></div>
+        <div class="xx-4 br brw-d5 pd-1 bg-neutral-4"></div>
+        <div class="xx-8"><code>.br.brw-d5</code>, <code>br.brw-default</code> <small>(1px)</small></div>
+        <div class="xx-4 br brw-d4 pd-1 bg-neutral-4"></div>
+        <div class="xx-8"><code>.br.brw-d4</code> <small>(2px)</small></div>
+        <div class="xx-4 br brw-d3 pd-1 bg-neutral-4"></div>
+        <div class="xx-8"><code>.br.brw-d3</code> <small>(3px)</small></div>
+        <div class="xx-4 br brw-d2 pd-1 bg-neutral-4"></div>
+        <div class="xx-8"><code>.br.brw-d2</code></div>
+        <div class="xx-4 br brw-d1 pd-1 bg-neutral-4"></div>
+        <div class="xx-8"><code>.br.brw-d1</code></div>
+        <div class="xx-4 br brw pd-1 bg-neutral-4"></div>
+        <div class="xx-8"><code>.br.brw</code> <small>(1rem)</small></div>
+    </div>
+
+
+
+    <h3>Border Radius</h3>
+    <div class="x-12 gp-1">
+        <div class="xx-4 br radius-0 pd-1 bg-neutral-4"></div>
+        <div class="xx-8"><code>.br.radius-0</code></div>
+
+        <div class="xx-4 br radius-d3 pd-1 bg-neutral-4"></div>
+        <div class="xx-8"><code>.br.radius-d3</code>, <code>.br.rounded</code></div>
+
+        <div class="xx-4 br radius-d2 pd-1 bg-neutral-4"></div>
+        <div class="xx-8"><code>.br.radius-d2</code></div>
+
+        <div class="xx-4 br radius-d1 pd-1 bg-neutral-4"></div>
+        <div class="xx-8"><code>.br.radius-d1</code></div>
+
+        <div class="xx-4 br radius pd-1 bg-neutral-4"></div>
+        <div class="xx-8"><code>.br.radius</code> <small>(1rem)</small></div>
+
+        <div class="xx-4 br radius-pill pd-1 bg-neutral-4"></div>
+        <div class="xx-8"><code>.br.radius-pill</code></div>
+
+        <div class="xx-4">
+            <div class="br radius-100 pd-2 inline-block bg-neutral-4"></div>
         </div>
+        <div class="xx-8"><code>.br.radius-100</code></div>
+
+        <div class="xx-4 br radius radius-t pd-1 bg-neutral-4"></div>
+        <div class="xx-8"><code>.br.radius.radius-t</code></div>
+
+        <div class="xx-4 br radius radius-r pd-1 bg-neutral-4"></div>
+        <div class="xx-8"><code>.br.radius.radius-r</code></div>
+
+        <div class="xx-4 br radius radius-b pd-1 bg-neutral-4"></div>
+        <div class="xx-8"><code>.br.radius.radius-b</code></div>
+
+        <div class="xx-4 br radius radius-l pd-1 bg-neutral-4"></div>
+        <div class="xx-8"><code>.br.radius.radius-l</code></div>
     </div>
 
-    <div>
-        <h3>Border Style</h3>
-        <div class="x-12 gp-1">
-            <div class="xx-4 br dashed pd-1 bg-neutral-4"></div>
-            <div class="xx-8"><code>.br.dashed</code></div>
-            <div class="xx-4 br dotted pd-1 bg-neutral-4"></div>
-            <div class="xx-8"><code>.br.dotted</code></div>
-            <div class="xx-4 br solid pd-1 bg-neutral-4"></div>
-            <div class="xx-8"><code>.br.solid</code></div>
-        </div>
-    </div>
-
-    <div>
-        <h3>Border Width</h3>
-        <div class="x-12 gp-1">
-            <div class="xx-4 br brw-0 pd-1 bg-neutral-4"></div>
-            <div class="xx-8"><code>.brw-0</code>, <code>.no-br</code></div>
-            <div class="xx-4 br brw-d5 pd-1 bg-neutral-4"></div>
-            <div class="xx-8"><code>.br.brw-d5</code>, <code>br.brw-default</code> <small>(1px)</small></div>
-            <div class="xx-4 br brw-d4 pd-1 bg-neutral-4"></div>
-            <div class="xx-8"><code>.br.brw-d4</code> <small>(2px)</small></div>
-            <div class="xx-4 br brw-d3 pd-1 bg-neutral-4"></div>
-            <div class="xx-8"><code>.br.brw-d3</code> <small>(3px)</small></div>
-            <div class="xx-4 br brw-d2 pd-1 bg-neutral-4"></div>
-            <div class="xx-8"><code>.br.brw-d2</code></div>
-            <div class="xx-4 br brw-d1 pd-1 bg-neutral-4"></div>
-            <div class="xx-8"><code>.br.brw-d1</code></div>
-            <div class="xx-4 br brw pd-1 bg-neutral-4"></div>
-            <div class="xx-8"><code>.br.brw</code> <small>(1rem)</small></div>
-        </div>
-    </div>
-
-    <div>
-        <h3>Border Radius</h3>
-        <div class="x-12 gp-1">
-            <div class="xx-4 br radius-0 pd-1 bg-neutral-4"></div>
-            <div class="xx-8"><code>.br.radius-0</code></div>
-
-            <div class="xx-4 br radius-d3 pd-1 bg-neutral-4"></div>
-            <div class="xx-8"><code>.br.radius-d3</code>, <code>.br.rounded</code></div>
-
-            <div class="xx-4 br radius-d2 pd-1 bg-neutral-4"></div>
-            <div class="xx-8"><code>.br.radius-d2</code></div>
-
-            <div class="xx-4 br radius-d1 pd-1 bg-neutral-4"></div>
-            <div class="xx-8"><code>.br.radius-d1</code></div>
-
-            <div class="xx-4 br radius pd-1 bg-neutral-4"></div>
-            <div class="xx-8"><code>.br.radius</code> <small>(1rem)</small></div>
-
-            <div class="xx-4 br radius-pill pd-1 bg-neutral-4"></div>
-            <div class="xx-8"><code>.br.radius-pill</code></div>
-
-            <div class="xx-4">
-                <div class="br radius-100 pd-2 inline-block bg-neutral-4"></div>
-            </div>
-            <div class="xx-8"><code>.br.radius-100</code></div>
-
-            <div class="xx-4 br radius radius-t pd-1 bg-neutral-4"></div>
-            <div class="xx-8"><code>.br.radius.radius-t</code></div>
-
-            <div class="xx-4 br radius radius-r pd-1 bg-neutral-4"></div>
-            <div class="xx-8"><code>.br.radius.radius-r</code></div>
-
-            <div class="xx-4 br radius radius-b pd-1 bg-neutral-4"></div>
-            <div class="xx-8"><code>.br.radius.radius-b</code></div>
-
-            <div class="xx-4 br radius radius-l pd-1 bg-neutral-4"></div>
-            <div class="xx-8"><code>.br.radius.radius-l</code></div>
-        </div>
-    </div>
 
 
     <h2 id="tables">Tables</h2>
-    <div>
-        <h3>Basic Table</h3>
-        <table>
-            <tr>
-                <th>Company</th>
-                <th>Contact</th>
-                <th>Country</th>
-            </tr>
-            <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
-            </tr>
-            <tr>
-                <td>Centro comercial Moctezuma</td>
-                <td>Francisco Chang</td>
-                <td>Mexico</td>
-            </tr>
-            <tr>
-                <td>Ernst Handel</td>
-                <td>Roland Mendel</td>
-                <td>Austria</td>
-            </tr>
-            <tr>
-                <td>Island Trading</td>
-                <td>Helen Bennett</td>
-                <td>UK</td>
-            </tr>
-            <tr>
-                <td>Laughing Bacchus Winecellars</td>
-                <td>Yoshi Tannamuri</td>
-                <td>Canada</td>
-            </tr>
-            <tr>
-                <td>Magazzini Alimentari Riuniti</td>
-                <td>Giovanni Rovelli</td>
-                <td>Italy</td>
-            </tr>
-        </table>
+
+    <h3>Basic Table</h3>
+    <table>
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+        </tr>
+        <tr>
+            <td>Island Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Yoshi Tannamuri</td>
+            <td>Canada</td>
+        </tr>
+        <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Giovanni Rovelli</td>
+            <td>Italy</td>
+        </tr>
+    </table>
 
 
-        <pre>table/</pre>
+    <pre>table/</pre>
 
-        <p>Apply padding with <code>.pd</code>, <code>.pdx</code>, or <code>.pdy</code> styling
-            which can be assigned to the
-            table, rows or
-            td and th elements.</p>
-        <p>Borders can be used with <code>.br</code>, <code>.brx</code>,
-            <code>.bry</code>,
-            <code>.brt</code>, <code>.brr</code>, <code>.brb</code>, <code>.brl</code> and
-            <code>.brw</code> styling.</p>
-    </div>
+    <p>Apply padding with <code>.pd</code>, <code>.pdx</code>, or <code>.pdy</code> styling
+        which can be assigned to the
+        table, rows or
+        td and th elements.</p>
+    <p>Borders can be used with <code>.br</code>, <code>.brx</code>,
+        <code>.bry</code>,
+        <code>.brt</code>, <code>.brr</code>, <code>.brb</code>, <code>.brl</code> and
+        <code>.brw</code> styling.</p>
 
-    <div>
-        <h3>Alternate Table Row Background</h3>
-        <table class="alternate-rows">
-            <tr>
-                <th>Company</th>
-                <th>Contact</th>
-                <th>Country</th>
-            </tr>
-            <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
-            </tr>
-            <tr>
-                <td>Centro comercial Moctezuma</td>
-                <td>Francisco Chang</td>
-                <td>Mexico</td>
-            </tr>
-            <tr>
-                <td>Ernst Handel</td>
-                <td>Roland Mendel</td>
-                <td>Austria</td>
-            </tr>
-            <tr>
-                <td>Island Trading</td>
-                <td>Helen Bennett</td>
-                <td>UK</td>
-            </tr>
-            <tr>
-                <td>Laughing Bacchus Winecellars</td>
-                <td>Yoshi Tannamuri</td>
-                <td>Canada</td>
-            </tr>
-            <tr>
-                <td>Magazzini Alimentari Riuniti</td>
-                <td>Giovanni Rovelli</td>
-                <td>Italy</td>
-            </tr>
-        </table>
-        <pre>table/ .alternate-rows</pre>
-    </div>
 
-    <div>
-        <h3>Alternate Table Column Background</h3>
-        <table class="alternate-cols">
-            <colgroup>
-                <col>
-                <col>
-                <col>
-            </colgroup>
-            <tr>
-                <th>Company</th>
-                <th>Contact</th>
-                <th>Country</th>
-            </tr>
-            <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
-            </tr>
-            <tr>
-                <td>Centro comercial Moctezuma</td>
-                <td>Francisco Chang</td>
-                <td>Mexico</td>
-            </tr>
-            <tr>
-                <td>Ernst Handel</td>
-                <td>Roland Mendel</td>
-                <td>Austria</td>
-            </tr>
-            <tr>
-                <td>Island Trading</td>
-                <td>Helen Bennett</td>
-                <td>UK</td>
-            </tr>
-            <tr>
-                <td>Laughing Bacchus Winecellars</td>
-                <td>Yoshi Tannamuri</td>
-                <td>Canada</td>
-            </tr>
-            <tr>
-                <td>Magazzini Alimentari Riuniti</td>
-                <td>Giovanni Rovelli</td>
-                <td>Italy</td>
-            </tr>
-        </table>
-        <pre>table/ .alternate-cols</pre>
-    </div>
 
-    <div>
-        <h3>Underline Table Rows</h3>
-        <table class="underline-rows">
-            <tr>
-                <th>Company</th>
-                <th>Contact</th>
-                <th>Country</th>
-            </tr>
-            <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
-            </tr>
-            <tr>
-                <td>Centro comercial Moctezuma</td>
-                <td>Francisco Chang</td>
-                <td>Mexico</td>
-            </tr>
-            <tr>
-                <td>Ernst Handel</td>
-                <td>Roland Mendel</td>
-                <td>Austria</td>
-            </tr>
-            <tr>
-                <td>Island Trading</td>
-                <td>Helen Bennett</td>
-                <td>UK</td>
-            </tr>
-            <tr>
-                <td>Laughing Bacchus Winecellars</td>
-                <td>Yoshi Tannamuri</td>
-                <td>Canada</td>
-            </tr>
-            <tr>
-                <td>Magazzini Alimentari Riuniti</td>
-                <td>Giovanni Rovelli</td>
-                <td>Italy</td>
-            </tr>
-        </table>
-        <pre class="mrt-1">table/ .underline-rows</pre>
-    </div>
+    <h3>Alternate Table Row Background</h3>
+    <table class="alternate-rows">
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+        </tr>
+        <tr>
+            <td>Island Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Yoshi Tannamuri</td>
+            <td>Canada</td>
+        </tr>
+        <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Giovanni Rovelli</td>
+            <td>Italy</td>
+        </tr>
+    </table>
+    <pre>table/ .alternate-rows</pre>
 
-    <div>
-        <h2 id="figures">Figures</h2>
-        <figure>
-            <img loading="lazy" src="resources/pierre-chatel-innocenti-unsplash.jpg" />
-            <figcaption>Photo by Pierre Chatel on Unsplash</figcaption>
-        </figure>
-        <pre>figure
+
+
+    <h3>Alternate Table Column Background</h3>
+    <table class="alternate-cols">
+        <colgroup>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+        </tr>
+        <tr>
+            <td>Island Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Yoshi Tannamuri</td>
+            <td>Canada</td>
+        </tr>
+        <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Giovanni Rovelli</td>
+            <td>Italy</td>
+        </tr>
+    </table>
+    <pre>table/ .alternate-cols</pre>
+
+    <h3>Underline Table Rows</h3>
+    <table class="underline-rows">
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+        </tr>
+        <tr>
+            <td>Island Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Yoshi Tannamuri</td>
+            <td>Canada</td>
+        </tr>
+        <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Giovanni Rovelli</td>
+            <td>Italy</td>
+        </tr>
+    </table>
+    <pre class="mrt-1">table/ .underline-rows</pre>
+
+
+
+    <h2 id="figures">Figures</h2>
+    <figure>
+        <img loading="lazy" src="resources/pierre-chatel-innocenti-unsplash.jpg" />
+        <figcaption>Photo by Pierre Chatel on Unsplash</figcaption>
+    </figure>
+    <pre>figure
     img/
     figcaption/    
 /figure</pre>
-    </div>
+
 
 
     <h2 id="images">Images</h2>
 
-    <div>
-        <h3>Responsive Images</h3>
-        <p class="mrb-0">Images are by default responsive and take the entire available horizontal
-            space (up to the width of the image) while preserving aspect-ratio.</p>
-    </div>
+
+    <h3>Responsive Images</h3>
+    <p class="mrb-0">Images are by default responsive and take the entire available horizontal
+        space (up to the width of the image) while preserving aspect-ratio.</p>
+
     <div class="wide">
         <figure>
             <img loading="lazy" class="fit-cover width-100" src="resources/swan-leroi-unsplash.jpg" />
@@ -1754,24 +1737,24 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
     </div>
 
 
-    <div>
-        <h3>Contained Images</h3>
 
-        <p>If the image has a fixed width or fixed height, the
-            usage of <code>.fix-contain</code> will put the entire visible image inside of the given
-            dimensions while preserving aspect-ratio and without stretching the image.</p>
-        <p class="mrb-0">Combine <code>.fit-contain</code> with fit positions </p>
-        <ul class="reset">
-            <li><code>.fit-t</code> (top),</li>
-            <li><code>.fit-tl</code> (top-left),</li>
-            <li><code>.fit-tr</code> (top-right),</li>
-            <li><code>.fit-r</code> (right),</li>
-            <li><code>.fit-b</code> (bottom),</li>
-            <li><code>.fit-bl</code> (bottom-left),</li>
-            <li><code>.fit-br</code> (bottom-right), and</li>
-            <li><code>.fit-l</code> (left).</li>
-        </ul>
-    </div>
+    <h3>Contained Images</h3>
+
+    <p>If the image has a fixed width or fixed height, the
+        usage of <code>.fix-contain</code> will put the entire visible image inside of the given
+        dimensions while preserving aspect-ratio and without stretching the image.</p>
+    <p class="mrb-0">Combine <code>.fit-contain</code> with fit positions </p>
+    <ul class="reset">
+        <li><code>.fit-t</code> (top),</li>
+        <li><code>.fit-tl</code> (top-left),</li>
+        <li><code>.fit-tr</code> (top-right),</li>
+        <li><code>.fit-r</code> (right),</li>
+        <li><code>.fit-b</code> (bottom),</li>
+        <li><code>.fit-bl</code> (bottom-left),</li>
+        <li><code>.fit-br</code> (bottom-right), and</li>
+        <li><code>.fit-l</code> (left).</li>
+    </ul>
+
 
     <div class="breakout x-12">
         <div class="xx-12 rg-xx-6">
@@ -1811,13 +1794,13 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
     </div>
 
 
-    <div>
-        <h3>Background Images</h3>
-        <p>Background images can also be positioned with <code>.fit-cover</code>, which is useful
-            for
-            hero banners.
-        </p>
-    </div>
+
+    <h3>Background Images</h3>
+    <p>Background images can also be positioned with <code>.fit-cover</code>, which is useful
+        for
+        hero banners.
+    </p>
+
     <div class="full fit-cover x" style="height: 600px; background-image: url('resources/swan-leroi-unsplash.jpg')">
         <div class="breakout-l fs-8 bold mry-4 caps lsp">Hero</div>
     </div>
@@ -1882,33 +1865,33 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
         /div
     </div>
 
-    <div>
-        <p>The <code>.x</code> and <code>.xl</code> layout grids can have a different horizontal structure based on
-            minimum screen width. E.g.
-            <code>.sm-wide</code> for at least minimum screen width and <code>.rg-breakout</code> for at least regular
-            screen width.
-            Address the different minimum screen sizes with column prefix values of</p>
-        <dl>
-            <dt class="float-left"><code>.sm-</code></dt>
-            <dd>The grid structure is applied only if the screen is at least of small width</dd>
-        </dl>
-        <dl>
-            <dt class="float-left"><code>.rg-</code></dt>
-            <dd>The grid structure is applied only if the screen is at least of regular width</dd>
-        </dl>
-        <dl>
-            <dt class="float-left"><code>.md-</code></dt>
-            <dd>The grid structure is applied only if the screen is at least of mid width</dd>
-        </dl>
-        <dl>
-            <dt class="float-left"><code>.lg-</code></dt>
-            <dd>The grid structure is applied only if the screen is at least of large width</dd>
-        </dl>
-        <p>
-            A grid class without a prefix will be used in case the
-            alternate minimum screen size is not defined.
-        </p>
-    </div>
+
+    <p>The <code>.x</code> and <code>.xl</code> layout grids can have a different horizontal structure based on
+        minimum screen width. E.g.
+        <code>.sm-wide</code> for at least minimum screen width and <code>.rg-breakout</code> for at least regular
+        screen width.
+        Address the different minimum screen sizes with column prefix values of</p>
+    <dl>
+        <dt class="float-left"><code>.sm-</code></dt>
+        <dd>The grid structure is applied only if the screen is at least of small width</dd>
+    </dl>
+    <dl>
+        <dt class="float-left"><code>.rg-</code></dt>
+        <dd>The grid structure is applied only if the screen is at least of regular width</dd>
+    </dl>
+    <dl>
+        <dt class="float-left"><code>.md-</code></dt>
+        <dd>The grid structure is applied only if the screen is at least of mid width</dd>
+    </dl>
+    <dl>
+        <dt class="float-left"><code>.lg-</code></dt>
+        <dd>The grid structure is applied only if the screen is at least of large width</dd>
+    </dl>
+    <p>
+        A grid class without a prefix will be used in case the
+        alternate minimum screen size is not defined.
+    </p>
+
 
     <h3>Columns inside the Layout Grid</h3>
     <p>A flow of a maximum of six columns – each of the same width – can be created for any space inside of the
@@ -1975,39 +1958,39 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
         /div
     </div>
 
-    <div>
-        <h3>Responsive Breakpoints</h3>
-        <p class="mrt">The column count can vary based on available screen width.
-            Address the different minimum screen sizes with responsive breakpoints, wich are indicated by CSS class
-            prefix values values of:</p>
-        <dl>
-            <dt class="float-left"><code>.sm-</code></dt>
-            <dd>The column count is applied only if the screen is at least of small width.</dd>
-        </dl>
-        <dl>
-            <dt class="float-left"><code>.rg-</code></dt>
-            <dd>The column count is applied only if the screen is at least of regular width.</dd>
-        </dl>
-        <dl>
-            <dt class="float-left"><code>.md-</code></dt>
-            <dd>The column count is applied only if the screen is at least of mid width.</dd>
-        </dl>
-        <dl>
-            <dt class="float-left"><code>.lg-</code></dt>
-            <dd>The column count is applied only if the screen is at least of large width.</dd>
-        </dl>
-        <p>A column class without a prefix will be used in case the
-            alternate minimum screen size is not defined.</p>
-    </div>
 
-    <div>
-        <h2 id="column-grid">12 Column Grid</h2>
+    <h3>Responsive Breakpoints</h3>
+    <p class="mrt">The column count can vary based on available screen width.
+        Address the different minimum screen sizes with responsive breakpoints, wich are indicated by CSS class
+        prefix values values of:</p>
+    <dl>
+        <dt class="float-left"><code>.sm-</code></dt>
+        <dd>The column count is applied only if the screen is at least of small width.</dd>
+    </dl>
+    <dl>
+        <dt class="float-left"><code>.rg-</code></dt>
+        <dd>The column count is applied only if the screen is at least of regular width.</dd>
+    </dl>
+    <dl>
+        <dt class="float-left"><code>.md-</code></dt>
+        <dd>The column count is applied only if the screen is at least of mid width.</dd>
+    </dl>
+    <dl>
+        <dt class="float-left"><code>.lg-</code></dt>
+        <dd>The column count is applied only if the screen is at least of large width.</dd>
+    </dl>
+    <p>A column class without a prefix will be used in case the
+        alternate minimum screen size is not defined.</p>
 
-        <p>Any space can be divided horizontally into 12ths. E.g. nesting the column grid into the layout grid is a
-            typical case.</p>
-        <p>The sum of the cols per row has to add up to 12. Not specifiying a column size will result in taking
-            the entire grid width into one column.</p>
-    </div>
+
+
+    <h2 id="column-grid">12 Column Grid</h2>
+
+    <p>Any space can be divided horizontally into 12ths. E.g. nesting the column grid into the layout grid is a
+        typical case.</p>
+    <p>The sum of the cols per row has to add up to 12. Not specifiying a column size will result in taking
+        the entire grid width into one column.</p>
+
     <div class="breakout bry dotted br-small br-gray mb code">
         div .x-12
         <div class="x-12 gp center mry">
@@ -2040,32 +2023,30 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
         /div
     </div>
 
-    <div>
-        <h3>Responsive Breakpoints</h3>
-        <p>Columns can have a different width based on minimum screen width.
-            Address the different minimum screen sizes with responsive breakpoints, wich are indicated by CSS class
-            prefix values of:</p>
-        <dl>
-            <dt class="float-left"><code>.sm-</code></dt>
-            <dd>The column width is applied only if the screen is at least of small width.</dd>
-        </dl>
-        <dl>
-            <dt class="float-left"><code>.rg-</code></dt>
-            <dd>The column width is applied only if the screen is at least of regular width.</dd>
-        </dl>
-        <dl>
-            <dt class="float-left"><code>.md-</code></dt>
-            <dd>The column width is applied only if the screen is at least of mid width.</dd>
-        </dl>
-        <dl>
-            <dt class="float-left"><code>.lg-</code></dt>
-            <dd>The column width is applied only if the screen is at least of large width.</dd>
-        </dl>
-        <p>
-            A column class without a prefix will be used in case the
-            alternate minimum screen size is not defined.
-        </p>
-    </div>
+    <h3>Responsive Breakpoints</h3>
+    <p>Columns can have a different width based on minimum screen width.
+        Address the different minimum screen sizes with responsive breakpoints, wich are indicated by CSS class
+        prefix values of:</p>
+    <dl>
+        <dt class="float-left"><code>.sm-</code></dt>
+        <dd>The column width is applied only if the screen is at least of small width.</dd>
+    </dl>
+    <dl>
+        <dt class="float-left"><code>.rg-</code></dt>
+        <dd>The column width is applied only if the screen is at least of regular width.</dd>
+    </dl>
+    <dl>
+        <dt class="float-left"><code>.md-</code></dt>
+        <dd>The column width is applied only if the screen is at least of mid width.</dd>
+    </dl>
+    <dl>
+        <dt class="float-left"><code>.lg-</code></dt>
+        <dd>The column width is applied only if the screen is at least of large width.</dd>
+    </dl>
+    <p>
+        A column class without a prefix will be used in case the
+        alternate minimum screen size is not defined.
+    </p>
 
     <div class="breakout bry dotted br-small br-gray mb  code">
         div .x-12
@@ -2078,278 +2059,276 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
     </div>
 
     <h2 id="layout">Layout</h2>
-    <div>
-        <h3>Display</h3>
-        <table>
-            <tr>
-                <th>CSS Class</th>
-                <th>Shorthand for property</th>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.inline</code></td>
-                <td><code>display: inline;</code></td>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.inline-block</code></td>
-                <td><code>display: inline-block;</code></td>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.block</code></td>
-                <td><code>display: block;</code></td>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.inline-table</code></td>
-                <td><code>display: inline-table;</code></td>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.table</code></td>
-                <td><code>display: table;</code></td>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.table-cell</code></td>
-                <td><code>display: table-cell;</code></td>
-            </tr>
-        </table>
 
-        <h3>Align</h3>
-        <table>
-            <tr>
-                <th>CSS Class</th>
-                <th>Shorthand for property</th>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.baseline</code></td>
-                <td><code>vertical-align: baseline;</code></td>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.top</code></td>
-                <td><code> vertical-align: top;
+    <h3>Display</h3>
+    <table>
+        <tr>
+            <th>CSS Class</th>
+            <th>Shorthand for property</th>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.inline</code></td>
+            <td><code>display: inline;</code></td>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.inline-block</code></td>
+            <td><code>display: inline-block;</code></td>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.block</code></td>
+            <td><code>display: block;</code></td>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.inline-table</code></td>
+            <td><code>display: inline-table;</code></td>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.table</code></td>
+            <td><code>display: table;</code></td>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.table-cell</code></td>
+            <td><code>display: table-cell;</code></td>
+        </tr>
+    </table>
+
+    <h3>Align</h3>
+    <table>
+        <tr>
+            <th>CSS Class</th>
+            <th>Shorthand for property</th>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.baseline</code></td>
+            <td><code>vertical-align: baseline;</code></td>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.top</code></td>
+            <td><code> vertical-align: top;
                     align-items: start;</code></td>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.middle</code></td>
-                <td><code> vertical-align: middle;
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.middle</code></td>
+            <td><code> vertical-align: middle;
                     align-items: center;</code></td>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.bottom</code></td>
-                <td><code> vertical-align: bottom;
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.bottom</code></td>
+            <td><code> vertical-align: bottom;
                     align-items: end;</code></td>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.left</code></td>
-                <td><code>text-align: left;</code></td>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.center</code></td>
-                <td><code>text-align: center;</code></td>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.right</code></td>
-                <td><code>text-align: right;</code></td>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.justify</code></td>
-                <td><code>text-align: justify;</code></td>
-            </tr>
-        </table>
-        <h3>Overflow</h3>
-        <table>
-            <tr>
-                <th>CSS Class</th>
-                <th>Shorthand for property</th>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.overflow-hidden</code></td>
-                <td><code>overflow: hidden;</code></td>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.overflow-scroll</code></td>
-                <td><code>overflow: scroll;</code></td>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.overflow-auto</code></td>
-                <td><code>overflow: auto;</code></td>
-            </tr>
-        </table>
-        <h3>Box Sizing</h3>
-        <table>
-            <tr>
-                <th>CSS Class</th>
-                <th>Shorthand for property</th>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.border-box</code></td>
-                <td><code>box-sizing: border-box;</code> <small>this is default box-sizing for css-compose</small>
-                </td>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.content-box</code></td>
-                <td><code>box-sizing: content-box;</code></td>
-            </tr>
-        </table>
-        <h3>Position</h3>
-        <table>
-            <tr>
-                <th>CSS Class</th>
-                <th>Shorthand for property</th>
-            </tr>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.left</code></td>
+            <td><code>text-align: left;</code></td>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.center</code></td>
+            <td><code>text-align: center;</code></td>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.right</code></td>
+            <td><code>text-align: right;</code></td>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.justify</code></td>
+            <td><code>text-align: justify;</code></td>
+        </tr>
+    </table>
+    <h3>Overflow</h3>
+    <table>
+        <tr>
+            <th>CSS Class</th>
+            <th>Shorthand for property</th>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.overflow-hidden</code></td>
+            <td><code>overflow: hidden;</code></td>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.overflow-scroll</code></td>
+            <td><code>overflow: scroll;</code></td>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.overflow-auto</code></td>
+            <td><code>overflow: auto;</code></td>
+        </tr>
+    </table>
+    <h3>Box Sizing</h3>
+    <table>
+        <tr>
+            <th>CSS Class</th>
+            <th>Shorthand for property</th>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.border-box</code></td>
+            <td><code>box-sizing: border-box;</code> <small>this is default box-sizing for css-compose</small>
+            </td>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.content-box</code></td>
+            <td><code>box-sizing: content-box;</code></td>
+        </tr>
+    </table>
+    <h3>Position</h3>
+    <table>
+        <tr>
+            <th>CSS Class</th>
+            <th>Shorthand for property</th>
+        </tr>
 
-            <tr>
-                <td class="no-wrap"><code>.static</code></td>
-                <td><code>position: static;</code></td>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.sticky</code></td>
-                <td><code>position: sticky;</code></td>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.relative</code></td>
-                <td><code>position: relative;</code></td>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.absolute</code></td>
-                <td><code>position: absolute;</code></td>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.fixed</code></td>
-                <td><code>position: fixed;</code></td>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.top-0</code></td>
-                <td><code>top: 0;</code></td>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.right-0</code></td>
-                <td><code>right: 0;</code></td>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.bottom-0</code></td>
-                <td><code>bottom: 0;</code></td>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.left-0</code></td>
-                <td><code>left: 0;</code></td>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.z-1</code></td>
-                <td><code>z-index: var(--z-1);</code></td>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.z-2</code></td>
-                <td><code>z-index: var(--z-2);</code></td>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.z-3</code></td>
-                <td><code>z-index: var(--z-3);</code></td>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.z-4</code></td>
-                <td><code>z-index: var(--z-4);</code></td>
-            </tr>
-        </table>
+        <tr>
+            <td class="no-wrap"><code>.static</code></td>
+            <td><code>position: static;</code></td>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.sticky</code></td>
+            <td><code>position: sticky;</code></td>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.relative</code></td>
+            <td><code>position: relative;</code></td>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.absolute</code></td>
+            <td><code>position: absolute;</code></td>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.fixed</code></td>
+            <td><code>position: fixed;</code></td>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.top-0</code></td>
+            <td><code>top: 0;</code></td>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.right-0</code></td>
+            <td><code>right: 0;</code></td>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.bottom-0</code></td>
+            <td><code>bottom: 0;</code></td>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.left-0</code></td>
+            <td><code>left: 0;</code></td>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.z-1</code></td>
+            <td><code>z-index: var(--z-1);</code></td>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.z-2</code></td>
+            <td><code>z-index: var(--z-2);</code></td>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.z-3</code></td>
+            <td><code>z-index: var(--z-3);</code></td>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.z-4</code></td>
+            <td><code>z-index: var(--z-4);</code></td>
+        </tr>
+    </table>
+
+
+
+    <h3>Float</h3>
+    <table>
+        <tr>
+            <th>CSS Class</th>
+            <th>Shorthand for property</th>
+        </tr>
+
+        <tr>
+            <td class="no-wrap"><code>.float-left</code></td>
+            <td><code>float: left;</code></td>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.float-right</code></td>
+            <td><code>float: right;</code></td>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.float-clear</code></td>
+            <td><code>clear: both;</code></td>
+        </tr>
+    </table>
+    <h3>Clearfix</h3>
+
+    <p>Using <code>float</code> without <code>.clearfix</code></p>
+
+    <div class="br brw-d2 br-neutral-3">
+        <div class="float-left width-4 height-3 bg-accent-two"><code>.float-left</code></div>
+        <div class="float-right width-4 height-3 bg-accent-three"><code>.float-right</code></div>
     </div>
 
-    <div>
-        <h3>Float</h3>
-        <table>
-            <tr>
-                <th>CSS Class</th>
-                <th>Shorthand for property</th>
-            </tr>
 
-            <tr>
-                <td class="no-wrap"><code>.float-left</code></td>
-                <td><code>float: left;</code></td>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.float-right</code></td>
-                <td><code>float: right;</code></td>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.float-clear</code></td>
-                <td><code>clear: both;</code></td>
-            </tr>
-        </table>
-        <h3>Clearfix</h3>
-
-        <p>Using <code>float</code> without <code>.clearfix</code></p>
-
-        <div class="br brw-d2 br-neutral-3">
-            <div class="float-left width-4 height-3 bg-accent-two"><code>.float-left</code></div>
-            <div class="float-right width-4 height-3 bg-accent-three"><code>.float-right</code></div>
-        </div>
-
-
-        <pre class="float-clear">div 
+    <pre class="float-clear">div 
     div/ .float-left 
     div/ .float-right 
 /div</pre>
 
-        <p class="float-clear mrt-2">Using <code>float</code> with <code>.clearfix</code> assigned to the outer
-            container</p>
-        <div class="br brw-d2 br-neutral-3 clearfix">
-            <div class="float-left width-4 height-3 bg-accent-two"><code>.float-left</code></div>
-            <div class="float-right width-4 height-3 bg-accent-three"><code>.float-right</code></div>
-        </div>
-        <pre>div .clearfix
+    <p class="float-clear mrt-2">Using <code>float</code> with <code>.clearfix</code> assigned to the outer
+        container</p>
+    <div class="br brw-d2 br-neutral-3 clearfix">
+        <div class="float-left width-4 height-3 bg-accent-two"><code>.float-left</code></div>
+        <div class="float-right width-4 height-3 bg-accent-three"><code>.float-right</code></div>
+    </div>
+    <pre>div .clearfix
     div/ .float-left 
     div/ .float-right 
 /div</pre>
-
-    </div>
 
     <h2 id="width">Width, Max-Width, and Min-Width</h2>
 
-    <div>
-        <p>Set the width by assigning any of the following shorthand CSS classes.</p>
 
-        <div class="no-wrap overflow-scroll">
-            <div>
-                <div class="width-unset brb height-1 bg-neutral-4 inline-block mrr"> </div><code>.width-unset</code>
-            </div>
+    <p>Set the width by assigning any of the following shorthand CSS classes.</p>
 
-            <div>
-                <div class="width-d5 brb height-1 bg-neutral-4 inline-block mrr"> </div><code>.width-d5</code>
-                <small>(1px)</small>
-            </div>
-            <div>
-                <div class="width-d4 brb height-1 bg-neutral-4 inline-block mrr"> </div><code>.width-d4</code>
-                <small>(2px)</small>
-            </div>
-            <div>
-                <div class="width-d3 brb height-1 bg-neutral-4 inline-block mrr"> </div><code>.width-d3</code>
-                <small>(3px)</small>
-            </div>
-            <div>
-                <div class="width-d2 brb height-1 bg-neutral-4 inline-block mrr"> </div><code>.width-d2</code>
-            </div>
-            <div>
-                <div class="width-d1 brb height-1 bg-neutral-4 inline-block mrr"> </div><code>.width-d1</code>
-            </div>
-            <div>
-                <div class="width brb height-1 bg-neutral-4 inline-block mrr"> </div><code>.width</code>
-            </div>
-            <div>
-                <div class="width-1 brb height-1 bg-neutral-4 inline-block mrr"> </div><code>.width-1</code>
-            </div>
-            <div>
-                <div class="width-2 brb height-1 bg-neutral-4 inline-block mrr"> </div><code>.width-2</code>
-            </div>
-            <div>
-                <div class="width-3 brb height-1 bg-neutral-4 inline-block mrr"> </div><code>.width-3</code>
-            </div>
-            <div>
-                <div class="width-4 brb height-1 bg-neutral-4 inline-block mrr"> </div><code>.width-4</code>
-            </div>
-            <div>
-                <div class="width-5 brb height-1 bg-neutral-4 inline-block mrr"> </div><code>.width-5</code>
-            </div>
-            <div>
-                <div class="width-6 brb height-1 bg-neutral-4 inline-block mrr"> </div><code>.width-6</code>
-            </div>
+    <div class="no-wrap overflow-scroll">
+        <div>
+            <div class="width-unset brb height-1 bg-neutral-4 inline-block mrr"> </div><code>.width-unset</code>
+        </div>
+
+        <div>
+            <div class="width-d5 brb height-1 bg-neutral-4 inline-block mrr"> </div><code>.width-d5</code>
+            <small>(1px)</small>
+        </div>
+        <div>
+            <div class="width-d4 brb height-1 bg-neutral-4 inline-block mrr"> </div><code>.width-d4</code>
+            <small>(2px)</small>
+        </div>
+        <div>
+            <div class="width-d3 brb height-1 bg-neutral-4 inline-block mrr"> </div><code>.width-d3</code>
+            <small>(3px)</small>
+        </div>
+        <div>
+            <div class="width-d2 brb height-1 bg-neutral-4 inline-block mrr"> </div><code>.width-d2</code>
+        </div>
+        <div>
+            <div class="width-d1 brb height-1 bg-neutral-4 inline-block mrr"> </div><code>.width-d1</code>
+        </div>
+        <div>
+            <div class="width brb height-1 bg-neutral-4 inline-block mrr"> </div><code>.width</code>
+        </div>
+        <div>
+            <div class="width-1 brb height-1 bg-neutral-4 inline-block mrr"> </div><code>.width-1</code>
+        </div>
+        <div>
+            <div class="width-2 brb height-1 bg-neutral-4 inline-block mrr"> </div><code>.width-2</code>
+        </div>
+        <div>
+            <div class="width-3 brb height-1 bg-neutral-4 inline-block mrr"> </div><code>.width-3</code>
+        </div>
+        <div>
+            <div class="width-4 brb height-1 bg-neutral-4 inline-block mrr"> </div><code>.width-4</code>
+        </div>
+        <div>
+            <div class="width-5 brb height-1 bg-neutral-4 inline-block mrr"> </div><code>.width-5</code>
+        </div>
+        <div>
+            <div class="width-6 brb height-1 bg-neutral-4 inline-block mrr"> </div><code>.width-6</code>
         </div>
     </div>
+
     <div class="full no-wrap mrt-2 overflow-scroll">
         <div class="top brb bg-neutral-4 mxw-sm height-1 mrb-d2 right">
             <code class="pdr">.width-sm</code>
@@ -2577,28 +2556,28 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
         </div>
     </div>
 
-    <div>
-        <h3>Responsive Breakpoints</h3>
-        The <code>.square</code> classes can be altered with responsive breakpoints, wich are indicated by CSS class
+
+    <h3>Responsive Breakpoints</h3>
+    <p>The <code>.square</code> classes can be altered with responsive breakpoints, wich are indicated by CSS class
         prefix values
-        of:
-        <dl>
-            <dt class="float-left"><code>.sm-</code></dt>
-            <dd>The square is applied only if the screen is at least of small width.</dd>
-        </dl>
-        <dl>
-            <dt class="float-left"><code>.rg-</code></dt>
-            <dd>The square is applied only if the screen is at least of regular width.</dd>
-        </dl>
-        <dl>
-            <dt class="float-left"><code>.md-</code></dt>
-            <dd>The square is applied only if the screen is at least of mid width.</dd>
-        </dl>
-        <dl>
-            <dt class="float-left"><code>.lg-</code></dt>
-            <dd>The square is applied only if the screen is at least of large width.</dd>
-        </dl>
-    </div>
+        of:</p>
+    <dl>
+        <dt class="float-left"><code>.sm-</code></dt>
+        <dd>The square is applied only if the screen is at least of small width.</dd>
+    </dl>
+    <dl>
+        <dt class="float-left"><code>.rg-</code></dt>
+        <dd>The square is applied only if the screen is at least of regular width.</dd>
+    </dl>
+    <dl>
+        <dt class="float-left"><code>.md-</code></dt>
+        <dd>The square is applied only if the screen is at least of mid width.</dd>
+    </dl>
+    <dl>
+        <dt class="float-left"><code>.lg-</code></dt>
+        <dd>The square is applied only if the screen is at least of large width.</dd>
+    </dl>
+
 
     <h2 id="hide">Responsive Hide</h2>
 
@@ -2679,51 +2658,51 @@ div/ .below-lg-hide //When visible: screen is above large width</pre>
 
 
     <h2 id="forms">Forms</h2>
-    <div>
-        <form class="mry-3 mxw-sm">
-            <dl>
-                <label>Email Address</label>
-                <input type="email" class="width-100 block">
-            </dl>
-            <dl>
-                <label>Password</label>
-                <input type="password" class="width-100 block">
-            </dl>
-            <dl>
-                <label>Select</label>
-                <select class="block">
-                    <option>Option 1</option>
-                    <option>Option 2</option>
-                    <option>Option 3</option>
-                    <option>Option 4</option>
-                    <option>Option 5</option>
-                </select>
-            </dl>
-            <dl>
-                <label>Datalist</label>
-                <input class="width-100 block" type="list" list="browsers">
-                <datalist id="browsers">
-                    <option value="Internet Explorer">
-                    <option value="Firefox">
-                    <option value="Chrome">
-                    <option value="Opera">
-                    <option value="Safari">
-                </datalist>
-            </dl>
 
-            <dl>
-                <label class="block">
-                    <input type="checkbox" checked>
-                    Remember me
-                </label>
-            </dl>
-            <button type="submit">Sign In</button>
-            <button type="reset">Cancel</button>
-            <dl><label>Textarea</label>
-                <textarea class="block width-100 height-3"></textarea>
-            </dl>
-        </form>
-    </div>
+    <form class="mry-3 mxw-sm">
+        <dl>
+            <label>Email Address</label>
+            <input type="email" class="width-100 block">
+        </dl>
+        <dl>
+            <label>Password</label>
+            <input type="password" class="width-100 block">
+        </dl>
+        <dl>
+            <label>Select</label>
+            <select class="block">
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+                <option>Option 4</option>
+                <option>Option 5</option>
+            </select>
+        </dl>
+        <dl>
+            <label>Datalist</label>
+            <input class="width-100 block" type="list" list="browsers">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+        </dl>
+
+        <dl>
+            <label class="block">
+                <input type="checkbox" checked>
+                Remember me
+            </label>
+        </dl>
+        <button type="submit">Sign In</button>
+        <button type="reset">Cancel</button>
+        <dl><label>Textarea</label>
+            <textarea class="block width-100 height-3"></textarea>
+        </dl>
+    </form>
+
 
 
 

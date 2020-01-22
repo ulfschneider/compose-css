@@ -2,13 +2,16 @@
     --alternate-row-color: var(--neutral-4);
     --alternate-col-color: var(--neutral-4);
     --underline-row-color: var(--neutral-3);
+
+    --mrt-table: var(--space);
+    --mrb-table: var(--space);
 }
 
 table {
     border-collapse: collapse;
     font-variant-numeric: tabular-nums;
-    margin-top: var(--space);
-    margin-bottom: var(--space);
+    margin-top: var(--mrt-table);
+    margin-bottom: var(--mrb-table);
     text-align: left;
 }
 
