@@ -351,6 +351,10 @@ dd {
   margin-left: var(--space-2);  
 }
 
+dd+dt {
+  margin-top: var(--mrt-list);
+}
+
 ul {
   list-style: none;
 }
