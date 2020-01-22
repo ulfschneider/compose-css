@@ -14,7 +14,7 @@
 
   --link-text-decoration: underline;
   --text-underline-offset: 0.25em;
-  --text-decoration-thickness: 0.05em;
+  --text-decoration-thickness: 0.035em;
   --font-variant-numeric: normal;
 
   --mrt-h1: var(--space-1);
@@ -372,6 +372,10 @@ li {
   margin-bottom: 0;
 }
 
+li p {
+  display: inline;
+}
+
 
 
 ol li {
@@ -496,7 +500,8 @@ blockquote {
   padding-left: var(--space-2);
 }
 
-blockquote p {
+blockquote p,
+.indent blockquote p {
   margin: 0;
   text-indent: 0;
 }
