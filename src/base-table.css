@@ -41,13 +41,20 @@ td {
 }
 
 th {
-    vertical-align: top;
+    vertical-align: bottom;
     font-weight: var(--font-weight-bold);
 }
 
-th,
-td {
+th, td {
     padding: var(--space-d2) var(--space-d1);
+}
+
+tr:first-child th {
+   padding-top: 0;
+}
+
+tr:last-child td {
+    padding-bottom: 0;
 }
 
 th:first-child,
