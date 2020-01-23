@@ -29,7 +29,6 @@
 .x>p,
 .x>blockquote,
 .x>figure,
-.x>figcaption,
 .x>ul,
 .x>ol,
 .x>dl,
@@ -38,7 +37,6 @@
 .xl>p,
 .xl>blockquote,
 .xl>figure,
-.xl>figcaption,
 .xl>ul,
 .xl>ol,
 .xl>dl,
@@ -47,13 +45,34 @@
 .x-12>p,
 .x-12>blockquote,
 .x-12>figure,
-.x-12>figcaption,
 .x-12>ul,
 .x-12>ol,
 .x-12>dl,
 .x-12>pre,
 .x-12>table {
   margin-top: 0;
+}
+
+.indent ul,
+.indent ol,
+.indent dl {
+  margin-top: var(--mrt-list);
+}
+
+.indent blockquote {
+  margin-top: var(--mrt-blockquote);
+}
+
+.indent figure {
+  margin-top: var(--mrt-figure);
+}
+
+.indent pre {
+  margin-top: var(--mrt-pre);
+}
+
+.indent table {
+  margin-top: var(--mrt-table);
 }
 
 .x>*,
