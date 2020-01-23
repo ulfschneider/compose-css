@@ -17,39 +17,43 @@
   --text-decoration-thickness: 0.035em;
   --font-variant-numeric: normal;
 
+  --vertical-rhythm: var(--space);
+
   --mrt-h1: var(--space-1);
-  --mrb-h1: var(--space);
+  --mrb-h1: var(--vertical-rhythm);
 
   --mrt-h2: var(--space-2);
-  --mrb-h2: var(--space);
+  --mrb-h2: var(--vertical-rhythm);
 
   --mrt-h3: var(--space-2);
-  --mrb-h3: var(--space);
+  --mrb-h3: var(--vertical-rhythm);
 
   --mrt-h4: var(--space-2);
-  --mrb-h4: var(--space);
+  --mrb-h4: var(--vertical-rhythm);
 
   --mrt-h5: var(--space-2);
-  --mrb-h5: var(--space);
+  --mrb-h5: var(--vertical-rhythm);
 
   --mrt-h6: var(--space-2);
-  --mrb-h6: var(--space);
+  --mrb-h6: var(--vertical-rhythm);
 
-  --mrt-blockquote: var(--space);
-  --mrb-blockquote: var(--space);
+  
 
-  --mrt-list: var(--space);
-  --mrb-list: var(--space);
+  --mrt-blockquote: var(--vertical-rhythm);
+  --mrb-blockquote: var(--vertical-rhythm);
 
-  --mrt-figure: var(--space);
-  --mrb-figure: var(--space);
+  --mrt-list: var(--vertical-rhythm);
+  --mrb-list: var(--vertical-rhythm);
+
+  --mrt-figure: var(--vertical-rhythm);
+  --mrb-figure: var(--vertical-rhythm);
   --mrt-figcaption: var(--space-d1);
   --mrb-figcaption: 0;
 
-  --mrt-pre: var(--space);
-  --mrb-pre: var(--space);
+  --mrt-pre: var(--vertical-rhythm);
+  --mrb-pre: var(--vertical-rhythm);
 
-  --list-item-type: "– ";
+  --list-item-type: "• ";
 
   font-family: var(--font-family);
   font-weight: var(--font-weight-normal);
