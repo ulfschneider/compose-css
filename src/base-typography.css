@@ -528,6 +528,11 @@ figcaption {
   font-size: small;
 }
 
+figure blockquote {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 hr {
   border: 0;
   text-align: center;
