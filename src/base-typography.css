@@ -501,6 +501,8 @@ a {
 blockquote {
   margin-top: var(--mrt-blockquote);
   margin-bottom: var(--mrb-blockquote);
+  margin-left: 0;
+  margin-right: 0;
   padding-left: var(--space-2);
 }
 
