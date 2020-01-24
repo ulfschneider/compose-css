@@ -206,6 +206,11 @@ u {
   white-space: nowrap;
 }
 
+.word-wrap {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
 .no-deco {
   text-decoration: none;
 }
