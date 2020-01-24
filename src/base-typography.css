@@ -360,7 +360,7 @@ dl {
 }
 
 dd {
-  margin-left: var(--space-2);
+  margin-left: var(--horizontal-rhythm);
 }
 
 dd+dt {
@@ -378,7 +378,7 @@ ol {
 
 ol,
 ul {
-  padding-left: var(--space-2);
+  padding-left: var(--horizontal-rhythm);
   margin-top: var(--mrt-list);
   margin-bottom: var(--mrb-list);
 }
@@ -400,15 +400,15 @@ ol li {
 
 ol li::before {
   content: counter(styled-number) ". ";
-  margin-left: calc(var(--space-2) * -1);
-  min-width: var(--space-2);
+  margin-left: calc(var(--horizontal-rhythm) * -1);
+  min-width: var(--horizontal-rhythm);
   display: inline-block;
 }
 
 ul li::before {
   content: var(--list-item-type);
-  margin-left: calc(var(--space-2) * -1);
-  min-width: var(--space-2);
+  margin-left: calc(var(--horizontal-rhythm) * -1);
+  min-width: var(--horizontal-rhythm);
   display: inline-block;
 }
 
@@ -511,7 +511,7 @@ blockquote {
   margin-bottom: var(--mrb-blockquote);
   margin-left: 0;
   margin-right: 0;
-  padding-left: var(--space-2);
+  padding-left: var(--horizontal-rhythm);
 }
 
 blockquote p,
@@ -534,8 +534,9 @@ figure {
 figcaption {
   margin-top: var(--mrt-figcaption);
   margin-bottom: var(--mrb-figcaption);
+  line-height: var(--lh-2);
   font-style: normal;
-  font-size: small;
+  font-size: var(--fs-d1);
 }
 
 figure blockquote {
