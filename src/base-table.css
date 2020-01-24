@@ -3,8 +3,8 @@
     --alternate-col-color: var(--neutral-4);
     --underline-row-color: var(--neutral-3);
 
-    --mrt-table: var(--space);
-    --mrb-table: var(--space);
+    --mrt-table: var(--vertical-rhythm);
+    --mrb-table: var(--vertical-rhythm);
 }
 
 table {

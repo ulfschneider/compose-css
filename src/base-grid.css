@@ -26,30 +26,17 @@
   grid-template-columns: var(--space-1) 1fr 1fr minmax(0, var(--regular-width)) 1fr 1fr var(--space-1);
 }
 
-.x>p,
-.x>blockquote,
-.x>figure,
-.x>ul,
-.x>ol,
-.x>dl,
-.x>pre,
-.x>table,
-.xl>p,
-.xl>blockquote,
-.xl>figure,
-.xl>ul,
-.xl>ol,
-.xl>dl,
-.xl>pre,
-.xl>table,
-.x-12>p,
-.x-12>blockquote,
-.x-12>figure,
-.x-12>ul,
-.x-12>ol,
-.x-12>dl,
-.x-12>pre,
-.x-12>table {
+
+
+[class^="x"]>p,
+[class^="x"]>blockquote,
+[class^="x"]>figure,
+[class^="x"]>ul,
+[class^="x"]>ol,
+[class^="x"]>dl,
+[class^="x"]>pre,
+[class^="x"]>table,
+[class^="x"]>hr {
   margin-top: 0;
 }
 
@@ -73,6 +60,10 @@
 
 .indent table {
   margin-top: var(--mrt-table);
+}
+
+.indent hr {
+  margin-top: var(--mrt-hr);
 }
 
 .x>*,

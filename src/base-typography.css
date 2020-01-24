@@ -18,6 +18,7 @@
   --font-variant-numeric: normal;
 
   --vertical-rhythm: var(--space);
+  --horizontal-rhythm: var(--space-2);
 
   --mrt-h1: var(--space-1);
   --mrb-h1: var(--vertical-rhythm);
@@ -37,7 +38,6 @@
   --mrt-h6: var(--space-2);
   --mrb-h6: var(--vertical-rhythm);
 
-  
 
   --mrt-blockquote: var(--vertical-rhythm);
   --mrb-blockquote: var(--vertical-rhythm);
@@ -52,6 +52,9 @@
 
   --mrt-pre: var(--vertical-rhythm);
   --mrb-pre: var(--vertical-rhythm);
+
+  --mrt-hr: var(--vertical-rhythm);
+  --mrb-hr: var(--vertical-rhythm);
 
   --list-item-type: "• ";
 
@@ -343,7 +346,7 @@ h4.indent,
 .indent h5,
 h5.indent .indent h6,
 h6.indent {
-  padding-left: var(--space-2);
+  padding-left: var(--horizontal-rhythm);
 }
 
 dl {
@@ -352,7 +355,7 @@ dl {
 }
 
 dd {
-  margin-left: var(--space-2);  
+  margin-left: var(--space-2);
 }
 
 dd+dt {
@@ -419,7 +422,7 @@ ul.indent ol,
 ol.indent ul,
 .indent ul ul,
 ul.indent ul {
-  padding-left: var(--space-2);
+  padding-left: var(--horizontal-rhythm);
 }
 
 .indent li::before {
@@ -446,16 +449,12 @@ p {
   margin-bottom: var(--space);
 }
 
-.indent p {
-  margin-bottom: 0;
-  text-indent: var(--space-2);
-}
-
-
+.indent p,
 p.indent {
   margin-bottom: 0;
-  text-indent: var(--space-2);
+  text-indent: var(--horizontal-rhythm);
 }
+
 
 .no-indent p,
 p.no-indent {
@@ -517,7 +516,7 @@ blockquote p,
 }
 
 blockquote p+p {
-  text-indent: var(--space-2);
+  text-indent: var(--horizontal-rhythm);
 }
 
 figure {
@@ -542,11 +541,11 @@ figure blockquote {
 hr {
   border: 0;
   text-align: center;
-  margin-top: var(--space-1);
-  margin-bottom: var(--space-1);
+  margin-top: var(--mrt-hr);
+  margin-bottom: var(--mrb-hr);
 }
 
 hr:after {
-  content: "–    –    –";
+  content: "•    •    •";
   white-space: pre;
 }
