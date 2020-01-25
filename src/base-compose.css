@@ -1,18 +1,12 @@
-@import "base-reset";
-@import "base-space";
-@import "base-type-scale";
-@import "base-typography";
-@import "base-img";
-@import "base-table";
-@import "base-grid";
-@import "base-layout";
-
-@import "base-borders";
-@import "base-hide";
-
+@import "reset";
+@import "space";
+@import "type-scale";
+@import "typography";
+@import "img";
+@import "table";
+@import "grid";
+@import "layout";
 @import "base-color";
-
-@import "base-width";
-@import "base-width-max";
-@import "base-width-min";
-@import "base-height";
+@import "borders";
+@import "width";
+@import "height";
