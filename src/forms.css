@@ -24,8 +24,14 @@ form dl {
     margin-bottom: var(--space-1);
 }
 
-
-input,
+input[type=text],
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=url],
+input[list],
 button,
 .button,
 select,
