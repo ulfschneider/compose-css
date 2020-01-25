@@ -20,6 +20,7 @@
   --lh-2: 1.4em;
   --lh-3: 1.62em;
   --lh-4: 2em;
+  --lh-5: 2.5em;
 
 
   --fs-h6: var(--fs-d1);
@@ -153,6 +154,9 @@
   line-height: var(--lh-4);
 }
 
+.lh-5 {
+  line-height: var(--lh-5);
+}
 
 @media (--breakpoint-sm) {
 
