@@ -1,5 +1,4 @@
 @import "reset";
-@import "space";
 @import "type-scale";
 @import "typography";
 @import "img";
@@ -10,3 +9,4 @@
 @import "borders";
 @import "width";
 @import "height";
+@import "space";

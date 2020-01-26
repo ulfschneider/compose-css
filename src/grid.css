@@ -23,7 +23,7 @@
 
 .x {
   display: grid;
-  grid-template-columns: var(--space-1) 1fr 1fr minmax(0, var(--regular-width)) 1fr 1fr var(--space-1);
+  grid-template-columns: var(--space-1) 1fr 1fr minmax(0, var(--regular-width)) 1fr 1fr var(--space-1);  
 }
 
 
