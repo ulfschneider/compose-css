@@ -40,6 +40,54 @@
   margin-top: 0;
 }
 
+[class^="x"]>h1 {
+  margin-top: calc(var(--mrt-h1) - var(--vertical-rhythm));
+}
+
+[class^="x"]>h2 {
+  margin-top: calc(var(--mrt-h2) - var(--vertical-rhythm));
+}
+
+[class^="x"]>h3 {
+  margin-top: calc(var(--mrt-h3) - var(--vertical-rhythm));
+}
+
+[class^="x"]>h4 {
+  margin-top: calc(var(--mrt-h4) - var(--vertical-rhythm));
+}
+
+[class^="x"]>h5 {
+  margin-top: calc(var(--mrt-h5) - var(--vertical-rhythm));
+}
+
+[class^="x"]>h6 {
+  margin-top: calc(var(--mrt-h6) - var(--vertical-rhythm));
+}
+
+.indent h1 {
+  margin-top: var(--mrt-h1);
+}
+
+.indent h2 {
+  margin-top: var(--mrt-h2);
+}
+
+.indent h3 {
+  margin-top: var(--mrt-h3);
+}
+
+.indent h4 {
+  margin-top: var(--mrt-h4);
+}
+
+.indent h5 {
+  margin-top: var(--mrt-h5);
+}
+
+.indent h6 {
+  margin-top: var(--mrt-h6);
+}
+
 .indent ul,
 .indent ol,
 .indent dl {
