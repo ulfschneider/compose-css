@@ -2,6 +2,7 @@
 @import "space";
 @import "type-scale";
 @import "typography";
+@import "typography-breakpoints";
 @import "img";
 @import "table";
 @import "grid";
