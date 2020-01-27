@@ -83,6 +83,7 @@
   --kbd-background: var(--neutral-4);
   --link-color: var(--base-color);
   --text-decoration-color: var(--base-color);
+  --pre-border-color: var(--neutral);
   color: var(--base-color);
 }
 

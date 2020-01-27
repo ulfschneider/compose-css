@@ -5,6 +5,7 @@
   --kbd-background: lightgray;
   --link-color: var(--base-color);
   --text-decoration-color: var(--base-color);
+  --pre-border-color: gray;
   color: var(--base-color);
 }
 
