@@ -8,7 +8,7 @@
 
     --form-button-pdx: var(--space-d2);
     --form-button-pdy: var(--space-d2);
-    --form-button-bg-color: var(--neutral-4);    
+    --form-button-bg-color: var(--neutral-4);
 }
 
 ::placeholder,
@@ -73,18 +73,17 @@ input[type=search],
 input[type=tel],
 input[type=url],
 input[list] {
-    border-top: 0;
-    border-right: 0;
-    border-left: 0;
+    border: none;
     border-bottom: 1px solid var(--form-field-border-color);
     vertical-align: middle;
     padding: 0 0 var(--space-d2) 0;
     line-height: var(--lh);
     border-radius: 0;
+    -webkit-border-radius: 0;
 }
 
 textarea {
-    line-height: var(--lh-2);    
+    line-height: var(--lh-2);
     border: 1px solid var(--form-field-border-color);
     border-radius: var(--form-radius);
     resize: none;
