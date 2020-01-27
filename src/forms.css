@@ -80,6 +80,7 @@ input[list] {
     vertical-align: middle;
     padding: 0 0 var(--space-d2) 0;
     line-height: var(--lh);
+    border-radius: 0;
 }
 
 textarea {

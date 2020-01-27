@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/compose.css">
     <title>COMPOSE CSS</title>
-    <script src="resources/dynamic-header.min.js"></script>
-    <script src="resources/active-toc.min.js"></script>
 </head>
 <style>
     .is-highlight {
@@ -80,7 +78,8 @@
                 <div><a href="#square" class="no-deco">Square</a></div>
                 <div><a href="#hide" class="no-deco">Hide</a></div>
                 <div><a href="#forms" class="no-deco">Forms</a></div>
-                <div class="only-when-dynamic pdt-1"><a href="#top" class="caps small lsp no-deco mrt">Go to top</a></div>
+                <div class="only-when-dynamic pdt-1"><a href="#top" class="caps small lsp no-deco mrt">Go to top</a>
+                </div>
             </div>
 
             <div class="bookmark small">
@@ -125,7 +124,8 @@
             values for color, background and border;</li>
         <li>No <a href="#forms">form</a> styling;</li>
         <li>No <a href="#width">max-width, min-width</a>, <a href="#height">max-height, and min-height</a> classes;</li>
-        <li>No responsive breakpoints for <a href="#typography">font size, line height</a>, <a href="#height">height, max-height, min-height</a>, <a href="#width">width,
+        <li>No responsive breakpoints for <a href="#typography">font size, line height</a>, <a href="#height">height,
+                max-height, min-height</a>, <a href="#width">width,
                 max-width, and min-width</a>;</li>
         <li>No <a href="#square">square</a> classes.</li>
     </ul>
@@ -2712,11 +2712,10 @@ div/ .below-lg-hide //When visible: screen is above large width</pre>
             <textarea class="block width-100 height-3"></textarea>
         </dl>
     </form>
-
-
-
-
 </body>
+
+<script src="resources/dynamic-header.min.js"></script>
+<script src="resources/active-toc.min.js"></script>
 
 <script>
     DynamicHeader.init();
