@@ -9,8 +9,8 @@
   --headline-text-transform: uppercase;
 
   --mono-font-family: monospace;
-
   --code-font-family: monospace;
+  --pre-border: var(--border-width-default) dotted var(--pre-border-color);
 
   --link-text-decoration: underline;
   --text-underline-offset: 0.25em;
@@ -486,8 +486,8 @@ pre {
   margin-bottom: var(--mrb-pre);
   padding-top: var(--space-d2);
   padding-bottom: var(--space-d2);
-  border-top: var(--border-width-default) dotted var(--pre-border-color);
-  border-bottom: var(--border-width-default) dotted var(--pre-border-color);
+  border-top: var(--pre-border);
+  border-bottom: var(--pre-border);
   overflow: auto;
 }
 
