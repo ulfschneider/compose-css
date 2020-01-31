@@ -1,5 +1,6 @@
 :root {
   --border-width-default: var(--space-d5);
+  --rounded: var(--space-d3);
   border-color: var(--base-color);
 }
 
@@ -100,7 +101,7 @@
 
 .radius-d3,
 .rounded {
-  border-radius: var(--space-d3);
+  border-radius: var(--rounded);
 }
 
 .radius-d2 {
@@ -128,12 +129,37 @@
   border-bottom-right-radius: 0;
 }
 
+.radius-tl {
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.radius-tr {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .radius-r {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
+
 .radius-b {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.radius-bl {
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.radius-br {
+  border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }

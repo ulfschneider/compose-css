@@ -6,6 +6,7 @@
   "style": "css/compose.css",
   "devDependencies": {
     "autoprefixer": "^9.7.3",
+    "browser-sync": "^2.26.7",
     "cssnano": "^4.1.10",
     "cssstats": "^3.4.0",
     "file-system": "^2.2.2",
