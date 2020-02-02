@@ -1,7 +1,7 @@
 @import "reset";
+@import "typography";
 @import "type-scale";
 @import "type-scale-breakpoints";
-@import "typography";
 @import "img";
 @import "table";
 @import "grid";

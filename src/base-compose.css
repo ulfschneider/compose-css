@@ -1,6 +1,6 @@
 @import "reset";
-@import "type-scale";
 @import "typography";
+@import "type-scale";
 @import "img";
 @import "table";
 @import "grid";
