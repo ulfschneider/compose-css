@@ -3,6 +3,11 @@
     max-height: unset;
 }
 
+.max-height-100,
+.mxh-100 {
+    max-height: 100%;
+}
+
 .max-height-sm,
 .mxh-sm {
     max-height: var(--small-width);
