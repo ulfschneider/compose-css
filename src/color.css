@@ -84,7 +84,7 @@
   --link-color: var(--base-color);
   --text-decoration-color: var(--base-color);
   --pre-border-color: var(--neutral);
-  --code-background: var(--base-background);
+  --code-background: transparent;
   --code-color: var(--base-color);
   color: var(--base-color);
 }

@@ -1188,14 +1188,14 @@ figure
             <div class="code">.mr-4</div>
         </div>
 
-        <div class="overflow-auto">
+        <div class="overflow-hidden">
             <div class="br inline-block middle">
                 <div class="square-3 bg-neutral-4 mr-5 inline-block middle"></div>
             </div>
             <div class="code">.mr-5</div>
         </div>
 
-        <div class="overflow-auto">
+        <div class="overflow-hidden">
             <div class="br inline-block middle">
                 <div class="square-3 bg-neutral-4 mr-6 inline-block middle"></div>
             </div>
@@ -2172,13 +2172,13 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
             <td><code>overflow: hidden;</code></td>
         </tr>
         <tr>
-            <td class="no-wrap"><code>.overflow-scroll</code></td>
-            <td><code>overflow: scroll;</code></td>
-        </tr>
-        <tr>
             <td class="no-wrap"><code>.overflow-auto</code></td>
             <td><code>overflow: auto;</code></td>
         </tr>
+        <tr>
+            <td class="no-wrap"><code>.overflow-scroll</code></td>
+            <td><code>overflow: scroll;</code></td>
+        </tr>       
     </table>
     <h3>Box Sizing</h3>
     <table>
@@ -2311,7 +2311,7 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
 
     <p>Set the width by assigning any of the following shorthand CSS classes.</p>
 
-    <div class="no-wrap overflow-scroll">
+    <div class="no-wrap overflow-hidden">
         <div>
             <div class="width-unset brb height-1 bg-neutral-4 inline-block mrr"> </div><code>.width-unset</code>
         </div>
@@ -2357,7 +2357,7 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
         </div>
     </div>
 
-    <div class="full no-wrap mrt-2 overflow-scroll">
+    <div class="full no-wrap mrt-2 overflow-hidden">
         <div class="top brb bg-neutral-4 mxw-sm height-1 mrb-d2 right">
             <code class="pdr">.width-sm</code>
             <small class="sm-hide">there is more →</small>
@@ -2410,25 +2410,31 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
             <dt class="float-left"><code>.lg-</code></dt>
             <dd>The width is applied only if the screen is at least of large width.</dd>
         </dl>
-
-
-        <h3>Fit</h3>
-        The class <code>.fit</code> will apply a maximum width of 100%.
-        <table>
-            <tr>
-                <th>CSS Class</th>
-                <th>Shorthand for property</th>
-            </tr>
-            <tr>
-                <td class="no-wrap"><code>.fit</code></td>
-                <td><code>max-width: 100%;</code></td>
-            </tr>
-        </table>
     </div>
+
+    <h3>Viewport width</h3>
+    <p>The class <code>.vw-100</code> will assign the exact width of the viewport.</p>
+    <div class="full brb bg-neutral-4 vw-100 height-1 mrb-d2 right">
+        <code class="pdr">.vw-100</code>
+    </div>
+
+    <h3>Fit</h3>
+    <p>The class <code>.fit</code> will assign a maximum width of 100%.</p>
+    <table>
+        <tr>
+            <th>CSS Class</th>
+            <th>Shorthand for property</th>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.fit</code></td>
+            <td><code>max-width: 100%;</code></td>
+        </tr>
+    </table>
+
 
     <h2 id="height">Height, Max-Height, and Min-Height</h2>
 
-    <div class="no-wrap pdt-5 mrt-2 breakout overflow-auto">
+    <div class="no-wrap pdt-5 mrt-2 breakout overflow-hidden">
         <div class="height-lg width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
                 style="transform-origin: top left; transform: rotate(-90deg);">.height-lg</code></div>
         <div class="height-md width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
@@ -2513,6 +2519,13 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
 
     </div>
 
+    <h3>Viewport height</h3>
+    <p>The class <code>.vh-100</code> will assign the exact height of the viewport.</p>
+    <div class="vh-100 brl x-12">
+        <div class="xx-4 bg-neutral-4"></div>
+        <div class="xx-8"><code>.vh-100</code></div>
+    </div>
+
 
     <h2 id="square">Square</h2>
 
@@ -2568,7 +2581,7 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
     </div>
 
     <div class="full mrt-2">
-        <div class="overflow-auto">
+        <div class="overflow-hidden">
             <div class="square-lg bg-neutral-4 brt brr brb">
                 <code class="float-right mrr">.square-lg</code>
                 <div class="square-md bg-neutral-4 brr brb">

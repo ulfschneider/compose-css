@@ -6,7 +6,7 @@
   --link-color: var(--base-color);
   --text-decoration-color: var(--base-color);
   --pre-border-color: gray;
-  --code-background: var(--base-background);
+  --code-background: transparent;
   --code-color: var(--base-color);
   color: var(--base-color);
 }
