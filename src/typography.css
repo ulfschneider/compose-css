@@ -482,6 +482,12 @@ pre {
   font-size: var(--code-font-size);
 }
 
+.code,
+code {
+  color: var(--code-color);
+  background: var(--code-background);    
+}
+
 pre {
   margin-top: var(--mrt-pre);
   margin-bottom: var(--mrb-pre);
