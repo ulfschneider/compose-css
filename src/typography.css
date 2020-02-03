@@ -1,5 +1,5 @@
 :root {
-  --font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
+  --font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   --font-weight-bold: 600;
   --font-weight-normal: 400;
 
@@ -479,6 +479,7 @@ p.no-indent {
 code,
 pre {
   font-family: var(--code-font-family);
+  font-size: var(--code-font-size);
 }
 
 pre {
