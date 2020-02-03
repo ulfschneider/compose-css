@@ -5,7 +5,7 @@
   --fs-d2: calc(var(--fs-d1) / var(--size-factor));
   --fs-d1: calc(1rem / var(--size-factor));
   --fs: 1rem;
-  --code-font-size: 0.85rem;
+  --code-font-size: 1rem;
   --fs-1: calc(var(--fs) * var(--size-factor));
   --fs-2: calc(var(--fs-1) * var(--size-factor));
   --fs-3: calc(var(--fs-2) * var(--size-factor));
