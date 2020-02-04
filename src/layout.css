@@ -35,17 +35,14 @@
 
 .top {
   vertical-align: top;
-  align-items: start;
 }
 
 .middle {
   vertical-align: middle;
-  align-items: center;
 }
 
 .bottom {
   vertical-align: bottom;
-  align-items: end;
 }
 
 .left {

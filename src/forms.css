@@ -38,7 +38,6 @@ select,
 textarea,
 fieldset {
     margin: 0;
-    box-sizing: content-box;
     font-family: var(--form-font-family);
     font-size: var(--form-font-size);
     appearance: none;

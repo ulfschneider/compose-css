@@ -63,7 +63,7 @@
                     </p>
                 </div>
                 <div class="xx-12 md-xx-3">
-                    <div class="pd inline-block bg-base-color rounded white"><span id="version">v0.2.0</span></div>
+                    <div class="pd inline-block bg-base-color rounded white"><span id="version">v0.3.0</span></div>
                 </div>
             </div>
         </div>
@@ -80,6 +80,7 @@
                 <div><a href="#images" class="no-deco">Images</a></div>
                 <div><a href="#layout-grid" class="no-deco">Layout Grid</a></div>
                 <div><a href="#column-grid" class="no-deco">12 Col Grid</a></div>
+                <div><a href="#flex-box" class="no-deco">Flex-Box</a></div>
                 <div><a href="#layout" class="no-deco">Layout</a></div>
                 <div><a href="#width" class="no-deco">Width</a></div>
                 <div><a href="#height" class="no-deco">Height</a></div>
@@ -102,6 +103,7 @@
                 <a href="#images" class="no-deco">Images</a>
                 <a href="#layout-grid" class="no-deco">Layout Grid</a>
                 <a href="#column-grid" class="no-deco">12 Col Grid</a>
+                <a href="#flex-box" class="no-deco">Flex-Box</a>
                 <a href="#layout" class="no-deco">Layout</a>
                 <a href="#width" class="no-deco">Width</a>
                 <a href="#height" class="no-deco">Height</a>
@@ -2150,6 +2152,201 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
         /div
     </div>
 
+    <h2 id="flex-box">Flex-Box</h2>
+
+    <div class="flex justify-start height-5 bg-neutral-4 white br">
+        <div class="square-3 mr bg-neutral-d4">1</div>
+        <div class="square-1 mr bg-neutral-d4">2</div>
+        <div class="square-2 mr bg-neutral-d4">3</div>
+        <div class="square-1 mr bg-neutral-d4">4</div>
+        <div class="square-3 mr bg-neutral-d4">5</div>
+    </div>
+
+    <pre class="mry">div .flex.justify-start.height-5
+    div/ .square-3 
+    div/ .square-1 
+    div/ .square-2 
+    div/ .square-1 
+    div/ .square-3
+/div</pre>
+
+    <div class="mrt-2 flex justify-center height-5 bg-neutral-4 white br">
+        <div class="square-3 mr bg-neutral-d4">1</div>
+        <div class="square-1 mr bg-neutral-d4">2</div>
+        <div class="square-2 mr bg-neutral-d4">3</div>
+        <div class="square-1 mr bg-neutral-d4">4</div>
+        <div class="square-3 mr bg-neutral-d4">5</div>
+    </div>
+
+    <pre class="mry">div .flex.justify-center.height-5
+    div/ .square-3 
+    div/ .square-1 
+    div/ .square-2 
+    div/ .square-1 
+    div/ .square-3
+/div</pre>
+
+<div class="mrt-2 flex justify-end height-5 bg-neutral-4 white br">
+    <div class="square-3 mr bg-neutral-d4">1</div>
+    <div class="square-1 mr bg-neutral-d4">2</div>
+    <div class="square-2 mr bg-neutral-d4">3</div>
+    <div class="square-1 mr bg-neutral-d4">4</div>
+    <div class="square-3 mr bg-neutral-d4">5</div>
+</div>
+
+<pre class="mry">div .flex.justify-end.height-5
+    div/ .square-3 
+    div/ .square-1 
+    div/ .square-2 
+    div/ .square-1 
+    div/ .square-3
+/div</pre>
+
+<div class="mrt-2 flex justify-space-between height-5 bg-neutral-4 white br">
+    <div class="square-3 mr bg-neutral-d4">1</div>
+    <div class="square-1 mr bg-neutral-d4">2</div>
+    <div class="square-2 mr bg-neutral-d4">3</div>
+    <div class="square-1 mr bg-neutral-d4">4</div>
+    <div class="square-3 mr bg-neutral-d4">5</div>
+</div>
+
+<pre class="mry">div .flex.justify-space-between.height-5
+    div/ .square-3 
+    div/ .square-1 
+    div/ .square-2 
+    div/ .square-1 
+    div/ .square-3
+/div</pre>
+
+<div class="mrt-2 flex justify-space-around height-5 bg-neutral-4 white br">
+    <div class="square-3 mr bg-neutral-d4">1</div>
+    <div class="square-1 mr bg-neutral-d4">2</div>
+    <div class="square-2 mr bg-neutral-d4">3</div>
+    <div class="square-1 mr bg-neutral-d4">4</div>
+    <div class="square-3 mr bg-neutral-d4">5</div>
+</div>
+
+<pre class="mry">div .flex.justify-space-around.height-5
+    div/ .square-3 
+    div/ .square-1 
+    div/ .square-2 
+    div/ .square-1 
+    div/ .square-3
+/div</pre>
+
+<div class="mrt-2 flex justify-space-evenly height-5 bg-neutral-4 white br">
+    <div class="square-3 mr bg-neutral-d4">1</div>
+    <div class="square-1 mr bg-neutral-d4">2</div>
+    <div class="square-2 mr bg-neutral-d4">3</div>
+    <div class="square-1 mr bg-neutral-d4">4</div>
+    <div class="square-3 mr bg-neutral-d4">5</div>
+</div>
+
+<pre class="mry">div .flex.justify-space-evenly.height-5
+    div/ .square-3 
+    div/ .square-1 
+    div/ .square-2 
+    div/ .square-1 
+    div/ .square-3
+/div</pre>
+
+<div class="mrt-2 flex align-start height-5 bg-neutral-4 white br">
+    <div class="square-3 mr bg-neutral-d4">1</div>
+    <div class="square-1 mr bg-neutral-d4">2</div>
+    <div class="square-2 mr bg-neutral-d4">3</div>
+    <div class="square-1 mr bg-neutral-d4">4</div>
+    <div class="square-3 mr bg-neutral-d4">5</div>
+</div>
+
+<pre class="mry">div .flex.align-start.height-5
+    div/ .square-3 
+    div/ .square-1 
+    div/ .square-2 
+    div/ .square-1 
+    div/ .square-3
+/div</pre>
+
+<div class="mrt-2 flex align-center height-5 bg-neutral-4 white br">
+    <div class="square-3 mr bg-neutral-d4">1</div>
+    <div class="square-1 mr bg-neutral-d4">2</div>
+    <div class="square-2 mr bg-neutral-d4">3</div>
+    <div class="square-1 mr bg-neutral-d4">4</div>
+    <div class="square-3 mr bg-neutral-d4">5</div>
+</div>
+
+<pre class="mry">div .flex.align-center.height-5
+    div/ .square-3 
+    div/ .square-1 
+    div/ .square-2 
+    div/ .square-1 
+    div/ .square-3
+/div</pre>
+
+<div class="mrt-2 flex align-end height-5 bg-neutral-4 white br">
+    <div class="square-3 mr bg-neutral-d4">1</div>
+    <div class="square-1 mr bg-neutral-d4">2</div>
+    <div class="square-2 mr bg-neutral-d4">3</div>
+    <div class="square-1 mr bg-neutral-d4">4</div>
+    <div class="square-3 mr bg-neutral-d4">5</div>
+</div>
+
+<pre class="mry">div .flex.align-end.height-5
+    div/ .square-3 
+    div/ .square-1 
+    div/ .square-2 
+    div/ .square-1 
+    div/ .square-3
+/div</pre>
+
+<div class="mrt-2 flex align-stretch height-5 bg-neutral-4 white br">
+    <div class="width-3 mr bg-neutral-d4">1</div>
+    <div class="width-1 mr bg-neutral-d4">2</div>
+    <div class="width-2 mr bg-neutral-d4">3</div>
+    <div class="width-1 mr bg-neutral-d4">4</div>
+    <div class="width-3 mr bg-neutral-d4">5</div>
+</div>
+
+<pre class="mry">div .flex.align-stretch.height-5
+    div/ .width-3 
+    div/ .width-1 
+    div/ .width-2 
+    div/ .width-1 
+    div/ .width-3
+/div</pre>
+
+<div class="mrt-2 flex align-baseline height-5 bg-neutral-4 white br">
+    <div class="square-3 mr bg-neutral-d4 fs-3">One Morning</div>
+    <div class="square-3 width-3 mr bg-neutral-d4 fs">Gregor Samsa</div>
+    <div class="square-2 mr bg-neutral-d4"></div>
+    <div class="square-1 mr bg-neutral-d4"></div>
+    <div class="square-3 mr bg-neutral-d4"></div>
+</div>
+
+<pre class="mry">div .flex.align-baseline.height-5
+    div/ .square-3 
+    div/ .square-3 
+    div/ .square-2 
+    div/ .square-1 
+    div/ .square-3
+
+/div</pre>
+
+<div class="mrt-2 flex-column align-stretch bg-neutral-4 white br">
+    <div class="square-3 mr bg-neutral-d4">1</div>
+    <div class="square-1 mr bg-neutral-d4">2</div>
+    <div class="square-2 mr bg-neutral-d4">3</div>
+    <div class="square-1 mr bg-neutral-d4">4</div>
+    <div class="square-3 mr bg-neutral-d4">5</div>
+</div>
+
+<pre class="mry">div .flex-column
+    div/ .square-3 
+    div/ .square-1 
+    div/ .square-2 
+    div/ .square-1 
+    div/ .square-3
+/div</pre>
+
     <h2 id="layout">Layout</h2>
 
     <h3>Display</h3>
@@ -2196,18 +2393,15 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
         </tr>
         <tr>
             <td class="no-wrap"><code>.top</code></td>
-            <td><code> vertical-align: top;
-                    align-items: start;</code></td>
+            <td><code> vertical-align: top;</code></td>
         </tr>
         <tr>
             <td class="no-wrap"><code>.middle</code></td>
-            <td><code> vertical-align: middle;
-                    align-items: center;</code></td>
+            <td><code> vertical-align: middle;</code></td>
         </tr>
         <tr>
             <td class="no-wrap"><code>.bottom</code></td>
-            <td><code> vertical-align: bottom;
-                    align-items: end;</code></td>
+            <td><code> vertical-align: bottom;</code></td>
         </tr>
         <tr>
             <td class="no-wrap"><code>.left</code></td>
