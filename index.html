@@ -1924,7 +1924,7 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
     <p>A flow of a maximum of six columns – each of the same width – can be created for any space inside of the
         horizontal layout grid.</p>
 
-    <div class="breakout mry-2 mxw-lg columns-1 rg-columns-2 md-columns-3 lg-columns-4 indent pdy">
+    <div class="breakout mry-2 mxw-lg columns-1 rg-columns-2 md-columns-3 lg-columns-4 indent pdy ">
         <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
             horrible vermin.</p>
 
@@ -1985,6 +1985,69 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
         /div
     </div>
 
+    <p class="mry-2">Alternatively, let the browser decide about the number of columns by assigning
+        <code>.columns-fluid</code>. The CSS property <code>column-width</code> with a default setting of
+        <code>var(--column-fluid-width)</code> is used to create the layout.</p>
+
+    <div class="breakout mry-2 mxw-lg columns-fluid indent pdy ">
+        <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
+            horrible vermin.</p>
+
+        <p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly
+            domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed
+            ready to
+            slide off any moment.</p>
+
+        <hr>
+
+        <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he
+            looked.
+            <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.</p>
+
+        <p>His room, a proper human room although a little too small, lay peacefully between its four familiar
+            walls.
+        </p>
+
+        <p>A collection of textile samples lay spread out on the table – Samsa was a travelling salesman – and above
+            it
+            there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice,
+            gilded
+            frame.</p>
+
+        <p>It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that
+            covered
+            the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull
+            weather.</p>
+
+        <p>Drops of rain could be heard hitting the pane, which made him feel quite sad. <span class="quote">How
+                about
+                if I sleep a little
+                bit longer and forget all this nonsense</span>, he thought, but that was something he was unable to
+            do
+            because he
+            was used to sleeping on his right, and in his present state couldn't get into that position.</p>
+
+        <p>However hard he threw himself onto his right, he always rolled back to where he was. He must have tried
+            it a
+            hundred times, shut his eyes so that he wouldn't have to look at the floundering legs, and only stopped
+            when
+            he began to feel a mild, dull pain there that he had never felt before.</p>
+
+        <figcaption>
+            Franz Kafka, <cite>The Metamorphosis</cite></p>
+        </figcaption>
+    </div>
+
+    <!-- Code Example -->
+    <div class="full bry dotted br-small br-neutral code mb">
+        div .xl
+        <div class="x">
+            <div class="breakout bg-neutral-4 pd br mry">
+                .breakout.columns-fluid
+            </div>
+        </div>
+        /div
+    </div>
 
     <h3>Responsive Breakpoints</h3>
     <p class="mrt">The column count can vary based on available screen width.
@@ -2178,7 +2241,7 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
         <tr>
             <td class="no-wrap"><code>.overflow-scroll</code></td>
             <td><code>overflow: scroll;</code></td>
-        </tr>       
+        </tr>
     </table>
     <h3>Box Sizing</h3>
     <table>
