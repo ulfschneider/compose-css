@@ -11,7 +11,7 @@
   --mono-font-family: monospace;
   --code-font-family: monospace;
   --pre-border: var(--border-width-default) dotted var(--pre-border-color);
-
+  
   --link-text-decoration: underline;
   --text-underline-offset: 0.25em;
   --text-decoration-thickness: 0.035em;
