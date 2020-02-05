@@ -52,7 +52,7 @@
     }
 </style>
 
-<body class="xl">
+<body class="xl overflow-x-hidden">
     <div id="top" class="full bg-neutral-4">
         <div class="xl mry-3">
             <div class="x-12">
@@ -63,7 +63,7 @@
                     </p>
                 </div>
                 <div class="xx-12 md-xx-3">
-                    <div class="pd inline-block bg-base-color rounded white"><span id="version">v0.3.1</span></div>
+                    <div class="pd inline-block bg-base-color rounded white"><span id="version">v0.4.0</span></div>
                 </div>
             </div>
         </div>
@@ -1194,19 +1194,19 @@ figure
             <div class="code">.mr-4</div>
         </div>
 
-        <div class="overflow-hidden">
-            <div class="br inline-block middle">
-                <div class="square-3 bg-neutral-4 mr-5 inline-block middle"></div>
-            </div>
-            <div class="code">.mr-5</div>
+        <div class="overflow-x-hidden"></div>
+        <div class="br inline-block middle">
+            <div class="square-3 bg-neutral-4 mr-5 inline-block middle"></div>
         </div>
+        <div class="code">.mr-5</div>
+    </div>
 
-        <div class="overflow-hidden">
-            <div class="br inline-block middle">
-                <div class="square-3 bg-neutral-4 mr-6 inline-block middle"></div>
-            </div>
-            <div class="code">.mr-6</div>
+    <div class="overflow-x-hidden">
+        <div class="br inline-block middle">
+            <div class="square-3 bg-neutral-4 mr-6 inline-block middle"></div>
         </div>
+        <div class="code">.mr-6</div>
+    </div>
     </div>
 
     <h3>Padding</h3>
@@ -1303,12 +1303,12 @@ figure
             <div><code>.pd-4</code></div>
         </div>
 
-        <div class="overflow-hidden">
+        <div class="overflow-x-hidden">
             <div class="bg-neutral-4 pd-5 inline-block">Padding</div>
             <div><code>.pd-5</code></div>
         </div>
 
-        <div class="overflow-hidden">
+        <div class="overflow-x-hidden">
             <div class="bg-neutral-4 pd-6 inline-block">Padding</div>
             <div><code>.pd-6</code></div>
         </div>
@@ -2188,15 +2188,15 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
     div 5 div .square-3
 /div</pre>
 
-<div class="mrt-2 flex justify-end height-5 bg-neutral-4 white br">
-    <div class="square-3 mr bg-neutral-d4">1</div>
-    <div class="square-1 mr bg-neutral-d4">2</div>
-    <div class="square-2 mr bg-neutral-d4">3</div>
-    <div class="square-1 mr bg-neutral-d4">4</div>
-    <div class="square-3 mr bg-neutral-d4">5</div>
-</div>
+    <div class="mrt-2 flex justify-end height-5 bg-neutral-4 white br">
+        <div class="square-3 mr bg-neutral-d4">1</div>
+        <div class="square-1 mr bg-neutral-d4">2</div>
+        <div class="square-2 mr bg-neutral-d4">3</div>
+        <div class="square-1 mr bg-neutral-d4">4</div>
+        <div class="square-3 mr bg-neutral-d4">5</div>
+    </div>
 
-<pre class="mry">div .flex.justify-end.height-5
+    <pre class="mry">div .flex.justify-end.height-5
     div 1 /div .square-3 
     div 2 /div .square-1 
     div 3 /div .square-2 
@@ -2204,15 +2204,15 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
     div 5 div .square-3
 /div</pre>
 
-<div class="mrt-2 flex justify-space-between height-5 bg-neutral-4 white br">
-    <div class="square-3 mr bg-neutral-d4">1</div>
-    <div class="square-1 mr bg-neutral-d4">2</div>
-    <div class="square-2 mr bg-neutral-d4">3</div>
-    <div class="square-1 mr bg-neutral-d4">4</div>
-    <div class="square-3 mr bg-neutral-d4">5</div>
-</div>
+    <div class="mrt-2 flex justify-space-between height-5 bg-neutral-4 white br">
+        <div class="square-3 mr bg-neutral-d4">1</div>
+        <div class="square-1 mr bg-neutral-d4">2</div>
+        <div class="square-2 mr bg-neutral-d4">3</div>
+        <div class="square-1 mr bg-neutral-d4">4</div>
+        <div class="square-3 mr bg-neutral-d4">5</div>
+    </div>
 
-<pre class="mry">div .flex.justify-space-between.height-5
+    <pre class="mry">div .flex.justify-space-between.height-5
     div 1 /div .square-3 
     div 2 /div .square-1 
     div 3 /div .square-2 
@@ -2220,15 +2220,15 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
     div 5 /div .square-3
 /div</pre>
 
-<div class="mrt-2 flex justify-space-around height-5 bg-neutral-4 white br">
-    <div class="square-3 mr bg-neutral-d4">1</div>
-    <div class="square-1 mr bg-neutral-d4">2</div>
-    <div class="square-2 mr bg-neutral-d4">3</div>
-    <div class="square-1 mr bg-neutral-d4">4</div>
-    <div class="square-3 mr bg-neutral-d4">5</div>
-</div>
+    <div class="mrt-2 flex justify-space-around height-5 bg-neutral-4 white br">
+        <div class="square-3 mr bg-neutral-d4">1</div>
+        <div class="square-1 mr bg-neutral-d4">2</div>
+        <div class="square-2 mr bg-neutral-d4">3</div>
+        <div class="square-1 mr bg-neutral-d4">4</div>
+        <div class="square-3 mr bg-neutral-d4">5</div>
+    </div>
 
-<pre class="mry">div .flex.justify-space-around.height-5
+    <pre class="mry">div .flex.justify-space-around.height-5
     div 1 /div .square-3 
     div 2 /div .square-1 
     div 3 /div .square-2 
@@ -2236,15 +2236,15 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
     div 5 /div .square-3
 /div</pre>
 
-<div class="mrt-2 flex justify-space-evenly height-5 bg-neutral-4 white br">
-    <div class="square-3 mr bg-neutral-d4">1</div>
-    <div class="square-1 mr bg-neutral-d4">2</div>
-    <div class="square-2 mr bg-neutral-d4">3</div>
-    <div class="square-1 mr bg-neutral-d4">4</div>
-    <div class="square-3 mr bg-neutral-d4">5</div>
-</div>
+    <div class="mrt-2 flex justify-space-evenly height-5 bg-neutral-4 white br">
+        <div class="square-3 mr bg-neutral-d4">1</div>
+        <div class="square-1 mr bg-neutral-d4">2</div>
+        <div class="square-2 mr bg-neutral-d4">3</div>
+        <div class="square-1 mr bg-neutral-d4">4</div>
+        <div class="square-3 mr bg-neutral-d4">5</div>
+    </div>
 
-<pre class="mry">div .flex.justify-space-evenly.height-5
+    <pre class="mry">div .flex.justify-space-evenly.height-5
     div 1 /div .square-3 
     div 2 /div .square-1 
     div 3 /div .square-2 
@@ -2252,15 +2252,15 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
     div 5 /div .square-3
 /div</pre>
 
-<div class="mrt-2 flex align-start height-5 bg-neutral-4 white br">
-    <div class="square-3 mr bg-neutral-d4">1</div>
-    <div class="square-1 mr bg-neutral-d4">2</div>
-    <div class="square-2 mr bg-neutral-d4">3</div>
-    <div class="square-1 mr bg-neutral-d4">4</div>
-    <div class="square-3 mr bg-neutral-d4">5</div>
-</div>
+    <div class="mrt-2 flex align-start height-5 bg-neutral-4 white br">
+        <div class="square-3 mr bg-neutral-d4">1</div>
+        <div class="square-1 mr bg-neutral-d4">2</div>
+        <div class="square-2 mr bg-neutral-d4">3</div>
+        <div class="square-1 mr bg-neutral-d4">4</div>
+        <div class="square-3 mr bg-neutral-d4">5</div>
+    </div>
 
-<pre class="mry">div .flex.align-start.height-5
+    <pre class="mry">div .flex.align-start.height-5
     div 1 /div .square-3 
     div 2 /div .square-1 
     div 3 /div .square-2 
@@ -2268,15 +2268,15 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
     div 5 /div .square-3
 /div</pre>
 
-<div class="mrt-2 flex align-center height-5 bg-neutral-4 white br">
-    <div class="square-3 mr bg-neutral-d4">1</div>
-    <div class="square-1 mr bg-neutral-d4">2</div>
-    <div class="square-2 mr bg-neutral-d4">3</div>
-    <div class="square-1 mr bg-neutral-d4">4</div>
-    <div class="square-3 mr bg-neutral-d4">5</div>
-</div>
+    <div class="mrt-2 flex align-center height-5 bg-neutral-4 white br">
+        <div class="square-3 mr bg-neutral-d4">1</div>
+        <div class="square-1 mr bg-neutral-d4">2</div>
+        <div class="square-2 mr bg-neutral-d4">3</div>
+        <div class="square-1 mr bg-neutral-d4">4</div>
+        <div class="square-3 mr bg-neutral-d4">5</div>
+    </div>
 
-<pre class="mry">div .flex.align-center.height-5
+    <pre class="mry">div .flex.align-center.height-5
     div 1 /div .square-3 
     div 2 /div .square-1 
     div 3 /div .square-2 
@@ -2284,15 +2284,15 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
     div 5 /div .square-3
 /div</pre>
 
-<div class="mrt-2 flex align-end height-5 bg-neutral-4 white br">
-    <div class="square-3 mr bg-neutral-d4">1</div>
-    <div class="square-1 mr bg-neutral-d4">2</div>
-    <div class="square-2 mr bg-neutral-d4">3</div>
-    <div class="square-1 mr bg-neutral-d4">4</div>
-    <div class="square-3 mr bg-neutral-d4">5</div>
-</div>
+    <div class="mrt-2 flex align-end height-5 bg-neutral-4 white br">
+        <div class="square-3 mr bg-neutral-d4">1</div>
+        <div class="square-1 mr bg-neutral-d4">2</div>
+        <div class="square-2 mr bg-neutral-d4">3</div>
+        <div class="square-1 mr bg-neutral-d4">4</div>
+        <div class="square-3 mr bg-neutral-d4">5</div>
+    </div>
 
-<pre class="mry">div .flex.align-end.height-5
+    <pre class="mry">div .flex.align-end.height-5
     div 1 /div .square-3 
     div 2 /div .square-1 
     div 3 /div .square-2 
@@ -2300,15 +2300,15 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
     div 5 /div .square-3
 /div</pre>
 
-<div class="mrt-2 flex align-stretch height-5 bg-neutral-4 white br">
-    <div class="width-3 mr bg-neutral-d4">1</div>
-    <div class="width-1 mr bg-neutral-d4">2</div>
-    <div class="width-2 mr bg-neutral-d4">3</div>
-    <div class="width-1 mr bg-neutral-d4">4</div>
-    <div class="width-3 mr bg-neutral-d4">5</div>
-</div>
+    <div class="mrt-2 flex align-stretch height-5 bg-neutral-4 white br">
+        <div class="width-3 mr bg-neutral-d4">1</div>
+        <div class="width-1 mr bg-neutral-d4">2</div>
+        <div class="width-2 mr bg-neutral-d4">3</div>
+        <div class="width-1 mr bg-neutral-d4">4</div>
+        <div class="width-3 mr bg-neutral-d4">5</div>
+    </div>
 
-<pre class="mry">div .flex.align-stretch.height-5
+    <pre class="mry">div .flex.align-stretch.height-5
     div 1 /div .width-3 
     div 2 /div .width-1 
     div 3 /div .width-2 
@@ -2316,15 +2316,15 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
     div 5 /div .width-3
 /div</pre>
 
-<div class="mrt-2 flex align-baseline height-5 bg-neutral-4 white br">
-    <div class="square-3 mr bg-neutral-d4 fs-3">One Morning</div>
-    <div class="square-3 mr bg-neutral-d4 fs">Gregor Samsa</div>
-    <div class="square-2 mr bg-neutral-d4"></div>
-    <div class="square-1 mr bg-neutral-d4"></div>
-    <div class="square-3 mr bg-neutral-d4"></div>
-</div>
+    <div class="mrt-2 flex align-baseline height-5 bg-neutral-4 white br">
+        <div class="square-3 mr bg-neutral-d4 fs-3">One Morning</div>
+        <div class="square-3 mr bg-neutral-d4 fs">Gregor Samsa</div>
+        <div class="square-2 mr bg-neutral-d4"></div>
+        <div class="square-1 mr bg-neutral-d4"></div>
+        <div class="square-3 mr bg-neutral-d4"></div>
+    </div>
 
-<pre class="mry">div .flex.align-baseline.height-5
+    <pre class="mry">div .flex.align-baseline.height-5
     div 1 /div .square-3 
     div 2 /div .square-3 
     div 3 /div .square-2 
@@ -2332,19 +2332,19 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
     div 5 /div .square-3
 /div</pre>
 
-<div class="mrt-2 flex-wrap bg-neutral-4 white br">
-    <div class="square-3 mr bg-neutral-d4">1</div>
-    <div class="square-3 mr bg-neutral-d4">2</div>
-    <div class="square-2 mr bg-neutral-d4">3</div>
-    <div class="square-1 mr bg-neutral-d4">4</div>
-    <div class="square-3 mr bg-neutral-d4">5</div>
-    <div class="square-3 mr bg-neutral-d4">6</div>
-    <div class="square-2 mr bg-neutral-d4">7</div>
-    <div class="square-1 mr bg-neutral-d4">8</div>
-    <div class="square-3 mr bg-neutral-d4">9</div>    
-</div>
+    <div class="mrt-2 flex-wrap bg-neutral-4 white br">
+        <div class="square-3 mr bg-neutral-d4">1</div>
+        <div class="square-3 mr bg-neutral-d4">2</div>
+        <div class="square-2 mr bg-neutral-d4">3</div>
+        <div class="square-1 mr bg-neutral-d4">4</div>
+        <div class="square-3 mr bg-neutral-d4">5</div>
+        <div class="square-3 mr bg-neutral-d4">6</div>
+        <div class="square-2 mr bg-neutral-d4">7</div>
+        <div class="square-1 mr bg-neutral-d4">8</div>
+        <div class="square-3 mr bg-neutral-d4">9</div>
+    </div>
 
-<pre class="mry">div .flex-wrap
+    <pre class="mry">div .flex-wrap
     div 1 /div .square-3 
     div 2 /div .square-3 
     div 3 /div .square-2 
@@ -2356,15 +2356,15 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
     div 9 /div .square-3
 /div</pre>
 
-<div class="mrt-2 flex-column align-stretch bg-neutral-4 white br">
-    <div class="square-3 mr bg-neutral-d4">1</div>
-    <div class="square-1 mr bg-neutral-d4">2</div>
-    <div class="square-2 mr bg-neutral-d4">3</div>
-    <div class="square-1 mr bg-neutral-d4">4</div>
-    <div class="square-3 mr bg-neutral-d4">5</div>
-</div>
+    <div class="mrt-2 flex-column align-stretch bg-neutral-4 white br">
+        <div class="square-3 mr bg-neutral-d4">1</div>
+        <div class="square-1 mr bg-neutral-d4">2</div>
+        <div class="square-2 mr bg-neutral-d4">3</div>
+        <div class="square-1 mr bg-neutral-d4">4</div>
+        <div class="square-3 mr bg-neutral-d4">5</div>
+    </div>
 
-<pre class="mry">div .flex-column
+    <pre class="mry">div .flex-column
     div 1 /div .square-3 
     div 2 /div .square-1 
     div 3 /div .square-2 
@@ -2372,19 +2372,19 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
     div 5 /div .square-3
 /div</pre>
 
-<div class="mrt-2 flex-column flex-wrap height-6 bg-neutral-4 white br">
-    <div class="square-3 mr bg-neutral-d4">1</div>
-    <div class="square-3 mr bg-neutral-d4">2</div>
-    <div class="square-2 mr bg-neutral-d4">3</div>
-    <div class="square-1 mr bg-neutral-d4">4</div>
-    <div class="square-3 mr bg-neutral-d4">5</div>
-    <div class="square-3 mr bg-neutral-d4">6</div>
-    <div class="square-2 mr bg-neutral-d4">7</div>
-    <div class="square-1 mr bg-neutral-d4">8</div>
-    <div class="square-3 mr bg-neutral-d4">9</div>    
-</div>
+    <div class="mrt-2 flex-column flex-wrap height-6 bg-neutral-4 white br">
+        <div class="square-3 mr bg-neutral-d4">1</div>
+        <div class="square-3 mr bg-neutral-d4">2</div>
+        <div class="square-2 mr bg-neutral-d4">3</div>
+        <div class="square-1 mr bg-neutral-d4">4</div>
+        <div class="square-3 mr bg-neutral-d4">5</div>
+        <div class="square-3 mr bg-neutral-d4">6</div>
+        <div class="square-2 mr bg-neutral-d4">7</div>
+        <div class="square-1 mr bg-neutral-d4">8</div>
+        <div class="square-3 mr bg-neutral-d4">9</div>
+    </div>
 
-<pre class="mry">div .flex-column.flex-wrap.height-6
+    <pre class="mry">div .flex-column.flex-wrap.height-6
     div 1 /div .square-3 
     div 2 /div .square-3 
     div 3 /div .square-2 
@@ -2481,13 +2481,38 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
             <td><code>overflow: hidden;</code></td>
         </tr>
         <tr>
+            <td class="no-wrap"><code>.overflow-x-hidden</code></td>
+            <td><code>overflow-x: hidden;</code></td>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.overflow-y-hidden</code></td>
+            <td><code>overflow-y: hidden;</code></td>
+        </tr>
+        <tr>
             <td class="no-wrap"><code>.overflow-auto</code></td>
             <td><code>overflow: auto;</code></td>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.overflow-x-auto</code></td>
+            <td><code>overflow-x: auto;</code></td>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.overflow-y-auto</code></td>
+            <td><code>overflow-y: auto;</code></td>
         </tr>
         <tr>
             <td class="no-wrap"><code>.overflow-scroll</code></td>
             <td><code>overflow: scroll;</code></td>
         </tr>
+        <tr>
+            <td class="no-wrap"><code>.overflow-x-scroll</code></td>
+            <td><code>overflow-x: scroll;</code></td>
+        </tr>
+        <tr>
+            <td class="no-wrap"><code>.overflow-y-scroll</code></td>
+            <td><code>overflow-y: scroll;</code></td>
+        </tr>
+
     </table>
     <h3>Box Sizing</h3>
     <table>
@@ -2620,7 +2645,7 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
 
     <p>Set the width by assigning any of the following shorthand CSS classes.</p>
 
-    <div class="no-wrap overflow-hidden">
+    <div class="no-wrap overflow-x-hidden">
         <div>
             <div class="width-unset brb height-1 bg-neutral-4 inline-block mrr"> </div><code>.width-unset</code>
         </div>
@@ -2666,7 +2691,7 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
         </div>
     </div>
 
-    <div class="full no-wrap mrt-2 overflow-hidden">
+    <div class="full no-wrap mrt-2 overflow-x-hidden">
         <div class="top brb bg-neutral-4 mxw-sm height-1 mrb-d2 right">
             <code class="pdr">.width-sm</code>
             <small class="sm-hide">there is more →</small>
@@ -2743,7 +2768,7 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
 
     <h2 id="height">Height, Max-Height, and Min-Height</h2>
 
-    <div class="no-wrap pdt-5 mrt-2 breakout overflow-hidden">
+    <div class="no-wrap pdt-5 mrt-2 breakout overflow-x-hidden">
         <div class="height-lg width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
                 style="transform-origin: top left; transform: rotate(-90deg);">.height-lg</code></div>
         <div class="height-md width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
@@ -2889,17 +2914,15 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
         </div>
     </div>
 
-    <div class="full mrt-2">
-        <div class="overflow-hidden">
-            <div class="square-lg bg-neutral-4 brt brr brb">
-                <code class="float-right mrr">.square-lg</code>
-                <div class="square-md bg-neutral-4 brr brb">
-                    <code class="float-right mrr">.square-md</code>
-                    <div class="square-rg bg-neutral-4 brr brb">
-                        <code class="float-right mrr">.square-rg</code>
-                        <div class="square-sm bg-neutral-4 brr brb">
-                            <code class="float-right mrr">.square-sm</code>
-                        </div>
+    <div class="full mrt-2 overflow-x-hidden">
+        <div class="square-lg bg-neutral-4 brt brr brb">
+            <code class="float-right mrr">.square-lg</code>
+            <div class="square-md bg-neutral-4 brr brb">
+                <code class="float-right mrr">.square-md</code>
+                <div class="square-rg bg-neutral-4 brr brb">
+                    <code class="float-right mrr">.square-rg</code>
+                    <div class="square-sm bg-neutral-4 brr brb">
+                        <code class="float-right mrr">.square-sm</code>
                     </div>
                 </div>
             </div>
@@ -2931,7 +2954,7 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
 
     <h2 id="hide">Responsive Hide</h2>
 
-    <div class="full overflow-hidden mry-2">
+    <div class="full overflow-x-hidden mry-2">
         <div class="top brb bg-neutral-4 width-sm sm-hide pdx-d1 height-1 mrb-d2"><span class="mrr">Screen
                 has
                 at max small width</span><code>.sm-hide</code></div>
