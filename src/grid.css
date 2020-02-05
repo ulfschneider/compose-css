@@ -116,7 +116,7 @@
 }
 
 .x>*,
-.x>.mid {
+.x>.default {
   grid-column: 4/span 1;
 }
 

@@ -11,7 +11,7 @@
   --mono-font-family: monospace;
   --code-font-family: monospace;
   --pre-border: var(--border-width-default) dotted var(--pre-border-color);
-  
+
   --link-text-decoration: underline;
   --text-underline-offset: 0.25em;
   --text-decoration-thickness: 0.035em;
@@ -477,25 +477,28 @@ p.no-indent {
 
 .code,
 code,
-pre {
+pre,
+.pre {
   font-family: var(--code-font-family);
-  font-size: var(--code-font-size);
+  font-size: var(--code-font-size);  
 }
 
 .code,
 code {
   color: var(--code-color);
-  background: var(--code-background);    
+  background: var(--code-background);
 }
 
-pre {
+pre,
+.pre {
   margin-top: var(--mrt-pre);
   margin-bottom: var(--mrb-pre);
   padding-top: var(--space-d2);
   padding-bottom: var(--space-d2);
   border-top: var(--pre-border);
   border-bottom: var(--pre-border);
-  overflow: auto;
+  overflow: auto;   
+  white-space: pre; 
 }
 
 .tag {
