@@ -63,7 +63,7 @@
                     </p>
                 </div>
                 <div class="xx-12 md-xx-3">
-                    <div class="pd inline-block bg-base-color rounded white"><span id="version">v0.3.0</span></div>
+                    <div class="pd inline-block bg-base-color rounded white"><span id="version">v0.3.1</span></div>
                 </div>
             </div>
         </div>
@@ -87,8 +87,10 @@
                 <div><a href="#square" class="no-deco">Square</a></div>
                 <div><a href="#hide" class="no-deco">Hide</a></div>
                 <div><a href="#forms" class="no-deco">Forms</a></div>
+                <!--replace breakpoint start-->
                 <div class="only-when-dynamic pdt-1"><a href="#top" class="caps small lsp no-deco mrt">Go to top</a>
                 </div>
+                <!--replace breakpoint end-->
             </div>
 
             <div class="bookmark small">
@@ -115,7 +117,7 @@
     </div>
 
 
-    <h2 class="pdt-2 mrt-0" id="start">Quickstart</h2>
+    <h2 class="pdt-3 mrt-0" id="start">Quickstart</h2>
     <p>Compose CSS is on <a href="https://github.com/ulfschneider/compose-css">GitHub</a>.</p>
     <p>Download the <a href="https://raw.githubusercontent.com/ulfschneider/compose-css/master/css/compose.css"
             class="caps lsp bold">compose
@@ -1741,7 +1743,7 @@ figure
 
     <h2 id="figures">Figures</h2>
     <figure>
-        <img loading="lazy" src="resources/pierre-chatel-innocenti-unsplash.jpg" />
+        <img loading="lazy" src="images/pierre-chatel-innocenti-unsplash.jpg" />
         <figcaption>Photo by Pierre Chatel on Unsplash</figcaption>
     </figure>
     <pre>figure
@@ -1760,7 +1762,7 @@ figure
 
     <div class="wide">
         <figure>
-            <img loading="lazy" class="fit-cover width-100" src="resources/swan-leroi-unsplash.jpg" />
+            <img loading="lazy" class="fit-cover width-100" src="images/swan-leroi-unsplash.jpg" />
             <figcaption>Photo by Swan Leroi on Unsplash</figcaption>
         </figure>
         <pre>img/
@@ -1791,7 +1793,7 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
         <div class="xx-12 rg-xx-6">
             <figure>
 
-                <img loading="lazy" src="resources/jayden-chong-unsplash.jpg" style="height:400px; width:100%"
+                <img loading="lazy" src="images/jayden-chong-unsplash.jpg" style="height:400px; width:100%"
                     class="fit-contain br" />
 
                 <figcaption>Photo by Jayden Chong on Unsplash</figcaption>
@@ -1801,7 +1803,7 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
 
         <div class="xx-12 rg-xx-6">
             <figure>
-                <img loading="lazy" src="resources/jayden-chong-unsplash.jpg" style="height:400px; width:100%"
+                <img loading="lazy" src="images/jayden-chong-unsplash.jpg" style="height:400px; width:100%"
                     class="fit-contain fit-tl br" />
                 <figcaption>Photo by Jayden Chong on Unsplash</figcaption>
             </figure>
@@ -1815,7 +1817,7 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
                 while preserving aspect-ratio.</p>
             <p>The image might be stretched to cover.</p>
             <figure>
-                <img loading="lazy" src="resources/jayden-chong-unsplash.jpg" style="height:400px; width:100%"
+                <img loading="lazy" src="images/jayden-chong-unsplash.jpg" style="height:400px; width:100%"
                     class="fit-cover br" />
 
                 <figcaption>Photo by Jayden Chong on Unsplash</figcaption>
@@ -2163,11 +2165,11 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
     </div>
 
     <pre class="mry">div .flex.justify-start.height-5
-    div/ .square-3 
-    div/ .square-1 
-    div/ .square-2 
-    div/ .square-1 
-    div/ .square-3
+    div 1 /div .square-3 
+    div 2 /div .square-1 
+    div 3 /div .square-2 
+    div 4 /div .square-1 
+    div 5 /div .square-3
 /div</pre>
 
     <div class="mrt-2 flex justify-center height-5 bg-neutral-4 white br">
@@ -2179,11 +2181,11 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
     </div>
 
     <pre class="mry">div .flex.justify-center.height-5
-    div/ .square-3 
-    div/ .square-1 
-    div/ .square-2 
-    div/ .square-1 
-    div/ .square-3
+    div 1 /div .square-3 
+    div 2 /div .square-1 
+    div 3 /div .square-2 
+    div 4 /div .square-1 
+    div 5 div .square-3
 /div</pre>
 
 <div class="mrt-2 flex justify-end height-5 bg-neutral-4 white br">
@@ -2195,11 +2197,11 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
 </div>
 
 <pre class="mry">div .flex.justify-end.height-5
-    div/ .square-3 
-    div/ .square-1 
-    div/ .square-2 
-    div/ .square-1 
-    div/ .square-3
+    div 1 /div .square-3 
+    div 2 /div .square-1 
+    div 3 /div .square-2 
+    div 4 /div .square-1 
+    div 5 div .square-3
 /div</pre>
 
 <div class="mrt-2 flex justify-space-between height-5 bg-neutral-4 white br">
@@ -2211,11 +2213,11 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
 </div>
 
 <pre class="mry">div .flex.justify-space-between.height-5
-    div/ .square-3 
-    div/ .square-1 
-    div/ .square-2 
-    div/ .square-1 
-    div/ .square-3
+    div 1 /div .square-3 
+    div 2 /div .square-1 
+    div 3 /div .square-2 
+    div 4 /div .square-1 
+    div 5 /div .square-3
 /div</pre>
 
 <div class="mrt-2 flex justify-space-around height-5 bg-neutral-4 white br">
@@ -2227,11 +2229,11 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
 </div>
 
 <pre class="mry">div .flex.justify-space-around.height-5
-    div/ .square-3 
-    div/ .square-1 
-    div/ .square-2 
-    div/ .square-1 
-    div/ .square-3
+    div 1 /div .square-3 
+    div 2 /div .square-1 
+    div 3 /div .square-2 
+    div 4 /div .square-1 
+    div 5 /div .square-3
 /div</pre>
 
 <div class="mrt-2 flex justify-space-evenly height-5 bg-neutral-4 white br">
@@ -2243,11 +2245,11 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
 </div>
 
 <pre class="mry">div .flex.justify-space-evenly.height-5
-    div/ .square-3 
-    div/ .square-1 
-    div/ .square-2 
-    div/ .square-1 
-    div/ .square-3
+    div 1 /div .square-3 
+    div 2 /div .square-1 
+    div 3 /div .square-2 
+    div 4 /div .square-1 
+    div 5 /div .square-3
 /div</pre>
 
 <div class="mrt-2 flex align-start height-5 bg-neutral-4 white br">
@@ -2259,11 +2261,11 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
 </div>
 
 <pre class="mry">div .flex.align-start.height-5
-    div/ .square-3 
-    div/ .square-1 
-    div/ .square-2 
-    div/ .square-1 
-    div/ .square-3
+    div 1 /div .square-3 
+    div 2 /div .square-1 
+    div 3 /div .square-2 
+    div 4 /div .square-1 
+    div 5 /div .square-3
 /div</pre>
 
 <div class="mrt-2 flex align-center height-5 bg-neutral-4 white br">
@@ -2275,11 +2277,11 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
 </div>
 
 <pre class="mry">div .flex.align-center.height-5
-    div/ .square-3 
-    div/ .square-1 
-    div/ .square-2 
-    div/ .square-1 
-    div/ .square-3
+    div 1 /div .square-3 
+    div 2 /div .square-1 
+    div 3 /div .square-2 
+    div 4 /div .square-1 
+    div 5 /div .square-3
 /div</pre>
 
 <div class="mrt-2 flex align-end height-5 bg-neutral-4 white br">
@@ -2291,11 +2293,11 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
 </div>
 
 <pre class="mry">div .flex.align-end.height-5
-    div/ .square-3 
-    div/ .square-1 
-    div/ .square-2 
-    div/ .square-1 
-    div/ .square-3
+    div 1 /div .square-3 
+    div 2 /div .square-1 
+    div 3 /div .square-2 
+    div 4 /div .square-1 
+    div 5 /div .square-3
 /div</pre>
 
 <div class="mrt-2 flex align-stretch height-5 bg-neutral-4 white br">
@@ -2307,11 +2309,11 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
 </div>
 
 <pre class="mry">div .flex.align-stretch.height-5
-    div/ .width-3 
-    div/ .width-1 
-    div/ .width-2 
-    div/ .width-1 
-    div/ .width-3
+    div 1 /div .width-3 
+    div 2 /div .width-1 
+    div 3 /div .width-2 
+    div 4 /div .width-1 
+    div 5 /div .width-3
 /div</pre>
 
 <div class="mrt-2 flex align-baseline height-5 bg-neutral-4 white br">
@@ -2323,15 +2325,14 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
 </div>
 
 <pre class="mry">div .flex.align-baseline.height-5
-    div/ .square-3 
-    div/ .square-3 
-    div/ .square-2 
-    div/ .square-1 
-    div/ .square-3
-
+    div 1 /div .square-3 
+    div 2 /div .square-3 
+    div 3 /div .square-2 
+    div 4 /div .square-1 
+    div 5 /div .square-3
 /div</pre>
 
-<div class="mrt-2 flex flex-wrap bg-neutral-4 white br">
+<div class="mrt-2 flex-wrap bg-neutral-4 white br">
     <div class="square-3 mr bg-neutral-d4">1</div>
     <div class="square-3 mr bg-neutral-d4">2</div>
     <div class="square-2 mr bg-neutral-d4">3</div>
@@ -2344,15 +2345,15 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
 </div>
 
 <pre class="mry">div .flex-wrap
-    div/ .square-3 
-    div/ .square-3 
-    div/ .square-2 
-    div/ .square-1 
-    div/ .square-3
-    div/ .square-3 
-    div/ .square-2 
-    div/ .square-1 
-    div/ .square-3
+    div 1 /div .square-3 
+    div 2 /div .square-3 
+    div 3 /div .square-2 
+    div 4 /div .square-1 
+    div 5 /div .square-3
+    div 6 /div .square-3 
+    div 7 /div .square-2 
+    div 8 /div .square-1 
+    div 9 /div .square-3
 /div</pre>
 
 <div class="mrt-2 flex-column align-stretch bg-neutral-4 white br">
@@ -2364,13 +2365,36 @@ img/ .width-100 //will consume the entire available width, may enlarge the image
 </div>
 
 <pre class="mry">div .flex-column
-    div/ .square-3 
-    div/ .square-1 
-    div/ .square-2 
-    div/ .square-1 
-    div/ .square-3
+    div 1 /div .square-3 
+    div 2 /div .square-1 
+    div 3 /div .square-2 
+    div 4 /div .square-1 
+    div 5 /div .square-3
 /div</pre>
 
+<div class="mrt-2 flex-column flex-wrap height-6 bg-neutral-4 white br">
+    <div class="square-3 mr bg-neutral-d4">1</div>
+    <div class="square-3 mr bg-neutral-d4">2</div>
+    <div class="square-2 mr bg-neutral-d4">3</div>
+    <div class="square-1 mr bg-neutral-d4">4</div>
+    <div class="square-3 mr bg-neutral-d4">5</div>
+    <div class="square-3 mr bg-neutral-d4">6</div>
+    <div class="square-2 mr bg-neutral-d4">7</div>
+    <div class="square-1 mr bg-neutral-d4">8</div>
+    <div class="square-3 mr bg-neutral-d4">9</div>    
+</div>
+
+<pre class="mry">div .flex-column.flex-wrap.height-6
+    div 1 /div .square-3 
+    div 2 /div .square-3 
+    div 3 /div .square-2 
+    div 4 /div .square-1 
+    div 5 /div .square-3
+    div 6 /div .square-3 
+    div 7 /div .square-2 
+    div 8 /div .square-1 
+    div 9 /div .square-3
+/div</pre>
 
 
     <h2 id="layout">Layout</h2>
