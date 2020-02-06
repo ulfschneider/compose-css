@@ -1,6 +1,6 @@
 :root {
   --grid-column-gap: var(--space-1);
-  --column-fluid-width: 250px;
+  --column-fluid-width: 16rem;
 }
 
 .x-12,

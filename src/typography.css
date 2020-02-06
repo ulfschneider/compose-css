@@ -480,7 +480,7 @@ code,
 pre,
 .pre {
   font-family: var(--code-font-family);
-  font-size: var(--code-font-size);
+  font-size: var(--mono-fs);
 }
 
 .code,
