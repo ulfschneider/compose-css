@@ -63,7 +63,7 @@
                     </p>
                 </div>
                 <div class="xx-12 md-xx-3">
-                    <div class="pd inline-block bg-base-color rounded white"><span id="version">v0.4.4</span></div>
+                    <div class="pd inline-block bg-base-color rounded white"><span id="version">v0.5.0</span></div>
                 </div>
             </div>
         </div>
@@ -218,7 +218,7 @@
         <div class="block br width-3 height-2 truncate mrr">No word wrap at white space</div>
         <code>.truncate</code>
     </p>
-    <div class="br">
+    <div class="br pdt">
         <hr>
     </div>
     <code>hr</code>
@@ -255,7 +255,7 @@
                 looked.
                 <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.</p>
         </div>
-        <pre class="mid">div .indent
+        <pre class="mid mrt">div .indent
     h4/
     p/
 /div
@@ -428,8 +428,6 @@ div .indent
     dd/
 /dl</pre>
 
-
-
     <h3>Blockquote</h3>
     <figure>
         <blockquote>
@@ -457,9 +455,53 @@ figure
 /figure</pre>
 
 
-    <div class="breakout x-12 mxw-md">
+    <h3>Writing Mode</h3>
 
+    <div class="x-12 gpy-2">
         <div class="xx-12 sm-xx-6">
+            <div class="square-4 horizontal-tb bg-neutral-4">
+                He lay on his armour-like back
+            </div>
+            <code>.horizontal-tb</code>
+        </div>
+        <div class="xx-12 sm-xx-6">
+            <div class="square-4 writing-mode-unset bg-neutral-4">
+                He lay on his armour-like back
+            </div>
+            <code>.writing-mode-unset</code>
+        </div>
+        <div class="xx-12 sm-xx-6">
+            <div class="square-4 vertical-lr bg-neutral-4">
+                He lay on his armour-like back
+            </div>
+            <code>.vertical-lr</code>
+        </div>
+        <div class="xx-12 sm-xx-6">
+            <div class="square-4 vertical-rl bg-neutral-4">
+                He lay on his armour-like back
+            </div>
+            <code>.vertical-rl</code>
+        </div>
+        <div class="xx-12 sm-xx-6">
+            <div class="square-4 sideways-lr bg-neutral-4">
+                He lay on his armour-like back
+            </div>
+            <code>.sideways-lr</code>
+        </div>
+        <div class="xx-12 sm-xx-6">
+            <div class="square-4 sideways-rl bg-neutral-4">
+                He lay on his armour-like back
+            </div>
+            <code>.sideways-rl</code>
+        </div>
+    </div>
+
+
+
+
+    <div class="x-12">
+
+        <div class="xx-12 rg-xx-6">
             <h3>Heading Styling</h3>
 
             <table>
@@ -502,7 +544,7 @@ figure
             </table>
         </div>
 
-        <div class="xx-12 sm-xx-6">
+        <div class="xx-12 rg-xx-6">
             <h3>Heading Sizing</h3>
             <table>
                 <tr>
@@ -1792,7 +1834,7 @@ figure
 
 
     <h3>Responsive Images</h3>
-    <p class="mrb-0">Images are by default responsive and take the entire available horizontal
+    <p>Images are by default responsive and take the entire available horizontal
         space (up to the width of the image) while preserving aspect-ratio.</p>
 
     <div class="wide">
@@ -1873,8 +1915,6 @@ figure
     </div>
 
     <pre class="breakout mrt">div/ .fit-cover.height-rg style="background-image: url('image.jpg')" </pre>
-
-
 
     <h2 id="layout-grid">Horizontal Layout Grid</h2>
 
@@ -2811,56 +2851,80 @@ figure
 
     <h2 id="height">Height, Max-Height, and Min-Height</h2>
 
-    <div class="no-wrap pdt-5 mrt-2 breakout overflow-x-hidden">
-        <div class="height-lg width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
-                style="transform-origin: top left; transform: rotate(-90deg);">.height-lg</code></div>
-        <div class="height-md width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
-                style="transform-origin: top left; transform: rotate(-90deg);">.height-md</code>
-        </div>
-        <div class="height-rg width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
-                style="transform-origin: top left; transform: rotate(-90deg);">.height-rg</code>
-        </div>
-        <div class="height-sm width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
-                style="transform-origin: top left; transform: rotate(-90deg);">.height-sm</code>
-        </div>
-        <div class="height-6 width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
-                style="transform-origin: top left; transform: rotate(-90deg);">.height-6</code>
-        </div>
-        <div class="height-5 width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
-                style="transform-origin: top left; transform: rotate(-90deg);">.height-5</code>
-        </div>
-        <div class="height-4 width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
-                style="transform-origin: top left; transform: rotate(-90deg);">.height-4</code>
-        </div>
-        <div class="height-3 width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
-                style="transform-origin: top left; transform: rotate(-90deg);">.height-3</code>
-        </div>
-        <div class="height-2 width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
-                style="transform-origin: top left; transform: rotate(-90deg);">.height-2</code>
-        </div>
-        <div class="height-1 width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
-                style="transform-origin: top left; transform: rotate(-90deg);">.height-1</code>
-        </div>
-        <div class="height width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
-                style="transform-origin: top left; transform: rotate(-90deg);">.height</code>
-        </div>
-        <div class="height-d1 width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
-                style="transform-origin: top left; transform: rotate(-90deg);">.height-d1</code>
-        </div>
-        <div class="height-d2 width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
-                style="transform-origin: top left; transform: rotate(-90deg);">.height-d2</code>
-        </div>
-        <div class="height-d3 width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
-                style="transform-origin: top left; transform: rotate(-90deg);">.height-d3</code>
-        </div>
-        <div class="height-d4 width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
-                style="transform-origin: top left; transform: rotate(-90deg);">.height-d4</code>
-        </div>
-        <div class="height-d5 width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
-                style="transform-origin: top left; transform: rotate(-90deg);">.height-d5</code>
-        </div>
-        <div class="height-unset width-1 brl bg-neutral-4 inline-block top"><code class="inline-block pdl"
-                style="transform-origin: top left; transform: rotate(-90deg);">.height-unset</code>
+    <div class="no-wrap breakout overflow-x-auto">
+        <div>
+            <div class="inline-block top">
+                <div class="height-lg width-1 brl bg-neutral-4">
+                    <code class="vertical-rl">.height-lg</code></div>
+            </div>
+            <div class="inline-block top">
+                <div class="height-md width-1 brl bg-neutral-4">
+                    <code class="vertical-rl">.height-md</code>
+                </div>
+            </div>
+            <div class="inline-block top">
+                <div class="height-rg width-1 brl bg-neutral-4">
+                    <code class="vertical-rl">.height-rg</code>
+                </div>
+            </div>
+            <div class="inline-block top">
+                <div class="height-sm width-1 brl bg-neutral-4">
+                    <code class="vertical-rl">.height-sm</code>
+                </div>
+            </div>
+            <div class="inline-block top">
+                <div class="height-6 width-1 brl bg-neutral-4"></div>
+                <code class="vertical-rl block">.height-6</code>
+            </div>
+            <div class="inline-block top">
+                <div class="height-5 width-1 brl bg-neutral-4"></div>
+                <code class="vertical-rl block">.height-5</code>
+            </div>
+            <div class="inline-block top">
+                <div class="height-4 width-1 brl bg-neutral-4"></div>
+                <code class="vertical-rl block">.height-4</code>
+            </div>
+            <div class="inline-block top">
+                <div class="height-3 width-1 brl bg-neutral-4"></div>
+                <code class="vertical-rl block">.height-3</code>
+            </div>
+            <div class="inline-block top">
+                <div class="height-2 width-1 brl bg-neutral-4"></div>
+                <code class="vertical-rl block">.height-2</code>
+            </div>
+            <div class="inline-block top">
+                <div class="height-1 width-1 brl bg-neutral-4"></div>
+                <code class="vertical-rl block">.height-1</code>
+            </div>
+            <div class="inline-block top">
+                <div class="height width-1 brl bg-neutral-4"></div>
+                <code class="vertical-rl block">.height</code>
+            </div>
+            <div class="inline-block top">
+                <div class="height-d1 width-1 brl bg-neutral-4"></div>
+                <code class="vertical-rl block">.height-d1</code>
+            </div>
+            <div class="inline-block top">
+                <div class="height-d2 width-1 brl bg-neutral-4"></div>
+                <code class="vertical-rl block">.height-d2</code>
+            </div>
+            <div class="inline-block top">
+                <div class="height-d3 width-1 brl bg-neutral-4"></div>
+                <code class="vertical-rl block">.height-d3</code>
+            </div>
+            <div class="inline-block top">
+                <div class="height-d4 width-1 brl bg-neutral-4"></div>
+                <code class="vertical-rl block">.height-d4</code>
+            </div>
+            <div class="inline-block top">
+                <div class="height-d5 width-1 brl bg-neutral-4"></div>
+                <code class="vertical-rl block">.height-d5</code>
+            </div>
+            <div class="inline-block">
+                <div class="height-unset width-1 brl bg-neutral-4 block">
+                </div>
+                <code class="block width-1 vertical-rl">.height-unset</code>
+            </div>
         </div>
     </div>
 
