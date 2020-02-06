@@ -20,8 +20,8 @@
     "postcss-reporter": "^6.0.1"
   },
   "scripts": {
-    "start" : "run-p \"watch:*\"",
-    "serve" : "run-p \"watch:*\"",
+    "start": "run-p \"watch:*\"",
+    "serve": "run-p \"watch:*\"",
     "watch:build": "postcss src/*.css --dir css --config postcss.config.js --watch",
     "watch:serve": "browser-sync start --server --files 'css/compose.css' 'index.html'",
     "build": "node build.js && postcss src/*.css --dir css --config postcss.config.js",
