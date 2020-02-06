@@ -24,44 +24,59 @@
 
 .x {
   display: grid;
-  grid-template-columns: var(--space-1) 1fr 1fr minmax(0, var(--regular-width)) 1fr 1fr var(--space-1);  
+  grid-template-columns: var(--space-1) 1fr 1fr minmax(0, var(--regular-width)) 1fr 1fr var(--space-1);
 }
 
 
 
 [class^="x"]>p,
+[class^="x"]>div>p,
 [class^="x"]>blockquote,
+[class^="x"]>div>blockquote,
 [class^="x"]>figure,
+[class^="x"]>div>figure,
 [class^="x"]>ul,
+[class^="x"]>div>ul,
 [class^="x"]>ol,
+[class^="x"]>div>ol,
 [class^="x"]>dl,
+[class^="x"]>div>dl,
 [class^="x"]>pre,
+[class^="x"]>div>pre,
 [class^="x"]>table,
-[class^="x"]>hr {
+[class^="x"]>div>table,
+[class^="x"]>hr,
+[class^="x"]>div>hr {
   margin-top: 0;
 }
 
-[class^="x"]>h1 {
+[class^="x"]>h1,
+[class^="x"]>div>h1 {
   margin-top: calc(var(--mrt-h1) - var(--vertical-rhythm));
 }
 
-[class^="x"]>h2 {
+[class^="x"]>h2,
+[class^="x"]>div>h2 {
   margin-top: calc(var(--mrt-h2) - var(--vertical-rhythm));
 }
 
-[class^="x"]>h3 {
+[class^="x"]>h3,
+[class^="x"]>div>h3 {
   margin-top: calc(var(--mrt-h3) - var(--vertical-rhythm));
 }
 
-[class^="x"]>h4 {
+[class^="x"]>h4,
+[class^="x"]>div>h4 {
   margin-top: calc(var(--mrt-h4) - var(--vertical-rhythm));
 }
 
-[class^="x"]>h5 {
+[class^="x"]>h5,
+[class^="x"]>div>h5 {
   margin-top: calc(var(--mrt-h5) - var(--vertical-rhythm));
 }
 
-[class^="x"]>h6 {
+[class^="x"]>h6,
+[class^="x"]>div>h6 {
   margin-top: calc(var(--mrt-h6) - var(--vertical-rhythm));
 }
 
