@@ -1,13 +1,4 @@
 :root {
-  --small-width: 24rem;
-  /*keep in sync with custom media queries */
-  --regular-width: 32rem;
-  /*keep in sync with custom media queries */
-  --mid-width: 42rem;
-  /*keep in sync with custom media queries */
-  --large-width: 64rem;
-  /*keep in sync with custom media queries */
-
   --space: 1rem;
   --space-factor: 1.62;
   --space-1: calc(var(--space-factor) * var(--space));
@@ -22,24 +13,6 @@
   --space-d4: 2px;
   --space-d5: 1px;
 }
-
-@custom-media --breakpoint-max-sm (max-width: 24rem);
-/* keep in sync with var(--small-width) */
-@custom-media --breakpoint-max-rg (max-width: 32rem);
-/* keep in sync with var(--regular-width) */
-@custom-media --breakpoint-max-md (max-width: 42rem);
-/* keep in sync with var(--mid-width) */
-@custom-media --breakpoint-max-lg (max-width: 64rem);
-/* keep in sync with var(--large-width) */
-@custom-media --breakpoint-sm (min-width: 24rem);
-/* keep in sync with var(--small-width) */
-@custom-media --breakpoint-rg (min-width: 32rem);
-/* keep in sync with var(--regular-width) */
-@custom-media --breakpoint-md (min-width: 42rem);
-/* keep in sync with var(--mid-width) */
-@custom-media --breakpoint-lg (min-width: 64rem);
-/* keep in sync with var(--large-width) */
-
 
 
 /**
