@@ -1,6 +1,7 @@
 :root {
   --grid-column-gap: var(--space-1);
   --column-fluid-width: 16rem;
+  --column-rule: 1px solid var(--neutral-2);
 }
 
 .x-12,
@@ -236,6 +237,10 @@
 
 .columns-fluid {
   column-width: var(--column-fluid-width);
+}
+
+.column-rule {
+  column-rule: var(--column-rule);
 }
 
 .x-12 {

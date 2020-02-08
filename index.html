@@ -63,7 +63,7 @@
                     </p>
                 </div>
                 <div class="xx-12 md-xx-3">
-                    <div class="pd inline-block bg-base-color rounded white"><span id="version">v0.6.3</span></div>
+                    <div class="pd inline-block bg-base-color rounded white"><span id="version">v0.7.0</span></div>
                 </div>
             </div>
         </div>
@@ -1447,7 +1447,7 @@ figure
             <div class="xx-6 bg-neutral-4 pdy">3</div>
             <div class="xx-6 bg-neutral-4 pdy">4</div>
         </div>
-        <code>.gp</code> <small>(1rem)</small>       
+        <code>.gp</code> <small>(1rem)</small>
     </div>
 
 
@@ -2041,8 +2041,11 @@ figure
     <p class="mry-2">Alternatively, let the browser decide about the number of columns by assigning
         <code>.columns-fluid</code>. The CSS property <code>column-width</code> with a default setting of
         <code>var(--column-fluid-width)</code> is used to create the layout.</p>
+    <p>Use <code>.column-rule</code> to assign a rule between columns. Customize the rule with
+        <code>var(--column-rule)</code>.
+    </p>
 
-    <div class="breakout mry-2 mxw-lg columns-fluid indent pdy ">
+    <div class="breakout mry-2 mxw-lg columns-fluid column-rule indent pdy ">
         <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
             horrible vermin.</p>
 
@@ -2096,7 +2099,7 @@ figure
         div .xl
         <div class="x">
             <div class="breakout bg-neutral-4 pd br mry">
-                .breakout.columns-fluid
+                .breakout.columns-fluid.column-rule
             </div>
         </div>
         /div
@@ -3037,7 +3040,8 @@ figure
     <h2 id="hide">Responsive Hide</h2>
 
     <div class="full mry-2">
-        <div class="top brb bg-neutral-4 max-width-sm sm-hide pdx-d1 height-1 mrb-d2 overflow-hidden"><span class="mrr">Screen
+        <div class="top brb bg-neutral-4 max-width-sm sm-hide pdx-d1 height-1 mrb-d2 overflow-hidden"><span
+                class="mrr">Screen
                 has
                 at max small width</span><code>.sm-hide</code></div>
         <div class="top brb bg-neutral-4 max-width-sm below-sm-hide pdx-d1 height-1 mrb-d2"><span class="mrr">Screen
