@@ -1,6 +1,6 @@
 {
   "name": "compose-css",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "Composable CSS Toolkit",
   "main": "src/compose.css",
   "style": "css/compose.css",
@@ -34,7 +34,7 @@
   "author": "Ulf Schneider",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ulfschneier/groundwork/issues"
+    "url": "https://github.com/ulfschneier/compose-css/issues"
   },
-  "homepage": "https://github.com/ulfschneier/groundwork#readme"
+  "homepage": "https://github.com/ulfschneier/compose-css#readme"
 }
