@@ -5,8 +5,8 @@
   --fs-d2: calc(var(--fs-d1) / var(--size-factor));
   --fs-d1: calc(1rem / var(--size-factor));
 
-  --fs: calc(1rem + 0.2vw);
-  --fs-mono: .9rem;
+  --fs: calc(16px + 0.2vw);
+  --fs-mono: .85rem;
   --fs-1: calc(var(--fs) * var(--size-factor));
   --fs-2: calc(var(--fs-1) * var(--size-factor));
   --fs-3: calc(var(--fs-2) * var(--size-factor));
