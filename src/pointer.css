@@ -1,0 +1,13 @@
+a {
+    cursor: pointer;
+}
+
+a:active {
+    color: var(--link-active-color);
+}
+
+@media (hover: hover) {
+    a:hover {
+        color: var(--link-hover-color);
+    }
+}

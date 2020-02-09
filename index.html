@@ -63,7 +63,7 @@
                     </p>
                 </div>
                 <div class="xx-12 md-xx-3">
-                    <div class="pd inline-block bg-base-color rounded white"><span id="version">v0.7.2</span></div>
+                    <div class="pd inline-block bg-base-color rounded white"><span id="version">v0.8.0</span></div>
                 </div>
             </div>
         </div>
@@ -127,7 +127,7 @@
     <p>By then you are ready to use Compose CSS.</p>
     <p class="mrt-2">Another way to use Compose CSS is by adding the <a
             href="https://www.npmjs.com/package/compose-css">compose-css</a>
-            npm package to your node project. Install with</p>
+        npm package to your node project. Install with</p>
     <pre>npm i compose-css</pre>
     <p class="mrt-2">There is also a <a
             href="https://raw.githubusercontent.com/ulfschneider/compose-css/master/css/base-compose.css">Base
@@ -909,7 +909,7 @@ figure
         <dd><code>.base-color</code> (which is
             default text-color). <p>The color can be used as text color, background color and border color. It is
                 defined through:</p>
-            <pre>:root { --base-color = var(--neutral-color-d4); }</pre>
+            <pre>:root { --base-color: var(--neutral-color-d4); }</pre>
         </dd>
     </dl>
 
@@ -917,7 +917,20 @@ figure
         <dt class="square-1 br br-base-color float-left"></dt>
         <dd><code>.base-background</code>
             <p>The color can be used as text color, background color and border color. It is defined through:</p>
-            <pre>:root { --base-background = white; }</pre>
+            <pre>:root { --base-background: white; }</pre>
+        </dd>
+    </dl>
+
+    <dl>
+        <dt class="square-1 float-left" style="background: var(--link-hover-color);"></dt>
+        <dd>
+            <p>For the color of links no CSS class is available. Configuration is only possible by assigning values to
+                the CSS variables:</p>
+            <pre>:root { 
+    --link-color: var(--base-color); 
+    --link-active-color: var(--primary);
+    --link-hover-color: var(--primary); 
+}</pre>
         </dd>
     </dl>
 
@@ -925,7 +938,7 @@ figure
         <dt class="square-1 bg-black float-left"></dt>
         <dd><code>.black</code>
             <p>The color can be used as text color, background color and border color. It is defined through:</p>
-            <pre>:root { --black = black; }</pre>
+            <pre>:root { --black: black; }</pre>
         </dd>
     </dl>
 
@@ -933,7 +946,7 @@ figure
         <dt class="square-1 br br-base-color float-left"></dt>
         <dd><code>.white</code>
             <p>The color can be used as text color, background color and border color. It is defined through:</p>
-            <pre>:root { --white = white; }</pre>
+            <pre>:root { --white: white; }</pre>
         </dd>
     </dl>
 

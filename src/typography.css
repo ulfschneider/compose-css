@@ -510,10 +510,9 @@ pre,
 }
 
 a {
-  color: unset;
-  text-decoration-color: unset;
+  color: var(--link-color);
+  text-decoration-color: var(--text-decoration-color);
   text-decoration: var(--link-text-decoration);
-  cursor: pointer;
 }
 
 blockquote {

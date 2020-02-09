@@ -1,5 +1,6 @@
 @import "reset";
 @import "typography";
+@import "pointer";
 @import "type-scale";
 @import "breakpoints";
 @import "img";
