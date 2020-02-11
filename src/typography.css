@@ -524,6 +524,11 @@ blockquote {
   margin-left: 0;
   margin-right: 0;
   padding-left: var(--horizontal-rhythm);
+  font-style: italic;
+}
+
+blockquote figcaption {
+  font-weight: bold;
 }
 
 blockquote p,
