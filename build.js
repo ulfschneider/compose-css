@@ -8,7 +8,7 @@ const SERVE_ULF_CODES_PATH = 'compose.html'
 const SERVE_HEADER = '---\ntitle: Compose CSS\npermalink: /compose\ncategories: tools\nabstract: A composable CSS Toolkit to build fast, maintainable, and responsive websites.\n---\n';
 const SERVE_REPLACE_BREAKPOINT_START = '<!--replace breakpoint start-->';
 const SERVE_REPLACE_BREAKPOINT_END = '<!--replace breakpoint end-->';
-const SERVE_REPLACE_BREAKPOINT = '<div><a href="/tools" class="no-deco">– ulf.codes</a></div><div class="only-when-dynamic"><a href="#top" class="no-deco">– Go to top</a></div>';
+const SERVE_REPLACE_BREAKPOINT = '<div><a href="/tools" class="no-deco">↰ ulf.codes</a></div><div class="only-when-dynamic"><a href="#top" class="no-deco">↑ Go to top</a></div>';
 
 var index = fs.readFileSync(INDEX_PATH, 'utf8');
 var package = fs.readFileSync(PACKAGE_PATH, 'utf8');

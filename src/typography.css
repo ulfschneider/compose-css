@@ -18,7 +18,7 @@
   --font-variant-numeric: normal;
 
   --vertical-rhythm: var(--space);
-  --horizontal-rhythm: var(--space-2);
+  --horizontal-rhythm: var(--space-1);
 
   --mrt-h1: var(--space-1);
   --mrb-h1: var(--vertical-rhythm);
@@ -56,7 +56,8 @@
   --mrt-hr: var(--vertical-rhythm);
   --mrb-hr: var(--vertical-rhythm);
 
-  --list-item-type: "• ";
+  --list-item-type: "▪ ";
+  --hr-content: "▪      ▪      ▪";
 
   font-family: var(--font-family);
   font-weight: var(--font-weight-normal);
@@ -561,7 +562,7 @@ hr {
 }
 
 hr::after {
-  content: "•    •    •";
+  content: var(--hr-content);
   white-space: pre;
 }
 
