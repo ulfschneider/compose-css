@@ -56,8 +56,8 @@
   --mrt-hr: var(--vertical-rhythm);
   --mrb-hr: var(--vertical-rhythm);
 
-  --list-item-type: "▪ ";
-  --hr-content: "▪      ▪      ▪";
+  --list-item-type: "▬ ";
+  --hr-content: "◊      ◊      ◊";
 
   font-family: var(--font-family);
   font-weight: var(--font-weight-normal);
@@ -403,6 +403,7 @@ ol li::before {
   content: counter(styled-number) ". ";
   margin-left: calc(var(--horizontal-rhythm) * -1);
   min-width: var(--horizontal-rhythm);
+  text-align: left;
   display: inline-block;
 }
 
@@ -410,6 +411,7 @@ ul li::before {
   content: var(--list-item-type);
   margin-left: calc(var(--horizontal-rhythm) * -1);
   min-width: var(--horizontal-rhythm);
+  text-align: left;
   display: inline-block;
 }
 
