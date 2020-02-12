@@ -28,25 +28,9 @@
   grid-template-columns: var(--space-1) 1fr 1fr minmax(0, var(--regular-width)) 1fr 1fr var(--space-1);
 }
 
-
-
 [class^="x"]>p,
-[class^="x"]>div>p,
-[class^="x"]>blockquote,
-[class^="x"]>div>blockquote,
-[class^="x"]>ul,
-[class^="x"]>div>ul,
-[class^="x"]>ol,
-[class^="x"]>div>ol,
-[class^="x"]>dl,
-[class^="x"]>div>dl,
-[class^="x"]>pre,
-[class^="x"]>div>pre,
-[class^="x"]>table,
-[class^="x"]>div>table,
-[class^="x"]>hr,
-[class^="x"]>div>hr {
-  margin-top: 0;
+[class^="x"]>div>p {
+  margin-top: calc(var(--mrt-paragraph) - var(--vertical-rhythm));
 }
 
 [class^="x"]>h1,
@@ -79,11 +63,39 @@
   margin-top: calc(var(--mrt-h6) - var(--vertical-rhythm));
 }
 
+[class^="x"]>ul,
+[class^="x"]>div>ul,
+[class^="x"]>ol,
+[class^="x"]>div>ol,
+[class^="x"]>dl,
+[class^="x"]>div>dl {
+  margin-top: calc(var(--mrt-list) - var(--vertical-rhythm));
+}
+
 [class^="x"]>figure,
 [class^="x"]>div>figure {
   margin-top: calc(var(--mrt-figure) - var(--vertical-rhythm));
 }
 
+[class^="x"]>blockquote,
+[class^="x"]>div>blockquote {
+  margin-top: calc(var(--mrt-blockquote) - var(--vertical-rhythm));
+}
+
+[class^="x"]>pre,
+[class^="x"]>div>pre {
+  margin-top: calc(var(--mrt-pre) - var(--vertical-rhythm));
+}
+
+[class^="x"]>table,
+[class^="x"]>div>table {
+  margin-top: calc(var(--mrt-table) - var(--vertical-rhythm));
+}
+
+[class^="x"]>hr,
+[class^="x"]>div>hr {
+  margin-top: calc(var(--mrt-hr) - var(--vertical-rhythm));
+}
 
 .indent h1,
 [class^="x"] .indent h1,
@@ -119,12 +131,6 @@
 [class^="x"] .indent h6,
 [class^="x"].indent h6 {
   margin-top: var(--mrt-h6);
-}
-
-.indent figure,
-[class^="x"] .indent figure,
-[class^="x"].indent figure {
-  margin-top: var(--mrt-figure);
 }
 
 .indent ul,

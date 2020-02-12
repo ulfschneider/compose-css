@@ -20,6 +20,9 @@
   --vertical-rhythm: var(--space);
   --horizontal-rhythm: var(--space-1);
 
+  --mrt-paragraph: var(--vertical-rhythm);
+  --mrb-paragraph: var(--vertical-rhythm);
+
   --mrt-h1: var(--space-1);
   --mrb-h1: var(--vertical-rhythm);
 
@@ -39,8 +42,8 @@
   --mrb-h6: var(--vertical-rhythm);
 
 
-  --mrt-blockquote: var(--vertical-rhythm);
-  --mrb-blockquote: var(--vertical-rhythm);
+  --mrt-blockquote: var(--space-2);
+  --mrb-blockquote: var(--space-2);
 
   --mrt-list: var(--vertical-rhythm);
   --mrb-list: var(--vertical-rhythm);
