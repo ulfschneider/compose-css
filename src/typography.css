@@ -61,6 +61,8 @@
 
   --list-item-type: "– ";
   --hr-content: "◊      ◊      ◊";
+  --quotes: "«""»""‹""›";
+  --quotes-de: '»''«'"›""‹";
 
   font-family: var(--font-family);
   font-weight: var(--font-weight-normal);
@@ -534,7 +536,7 @@ blockquote figcaption {
   font-weight: var(--font-weight-bold);
 }
 
-blockquote p, 
+blockquote p,
 .indent blockquote p {
   margin: 0;
   text-indent: 0;
@@ -546,9 +548,18 @@ blockquote p+p {
 
 q,
 .q,
+.quote,
 blockquote {
-  quotes: '“''”';
+  quotes: var(--quotes);
 }
+
+html[lang="de-DE"] q,
+html[lang="de-DE"] .q,
+html[lang="de-DE"] .quote,
+html[lang="de-DE"] blockquote {
+  quotes: var(--quotes-de);
+}
+
 
 figure {
   margin-top: var(--mrt-figure);
