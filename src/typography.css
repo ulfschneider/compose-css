@@ -528,7 +528,14 @@ blockquote {
 blockquote::before {
   content: "";
   display: block;
-  width: var(--space-3);
+  width: var(--horizontal-rhythm);  
+  border-top: var(--space-d2) solid var(--base-color);
+}
+
+blockquote::after {
+  content: "";
+  display: block;
+  width: var(--horizontal-rhythm);  
   border-top: var(--space-d2) solid var(--base-color);
 }
 
