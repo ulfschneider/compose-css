@@ -18,7 +18,6 @@ if (index && package) {
     index = index.replace(VERSION_PATTERN, '<span id="version">v' + npmConfig.version + '</span>');
     fs.writeFileSync(INDEX_PATH, index, 'utf8');
 
-
     var serve = SERVE_HEADER + index;
     serve = serve.replace(/resources\//g, '/r/');
     serve = serve.replace(/images\//g, '/i/compose/');

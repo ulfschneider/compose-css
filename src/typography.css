@@ -78,12 +78,14 @@
   font-size: inherit;
 }
 
+
+
 .bold,
 b,
 .b,
 strong,
 .strong {
-  font-weight: var(--font-weight-bold, bold);
+  font-weight: var(--font-weight-bold);
 }
 
 .normal,
@@ -470,14 +472,6 @@ p.no-indent {
   margin-bottom: var(--space);
 }
 
-.quote::before {
-  content: '“';
-}
-
-.quote::after {
-  content: '”';
-}
-
 .code,
 code,
 pre,
@@ -524,14 +518,20 @@ blockquote {
   margin-left: 0;
   margin-right: 0;
   padding-left: var(--horizontal-rhythm);
-  font-style: italic;
+}
+
+blockquote::before {
+  content: "";
+  display: block;
+  width: var(--space-3);
+  border-top: var(--space-d2) solid var(--base-color);
 }
 
 blockquote figcaption {
-  font-weight: bold;
+  font-weight: var(--font-weight-bold);
 }
 
-blockquote p,
+blockquote p, 
 .indent blockquote p {
   margin: 0;
   text-indent: 0;
@@ -539,6 +539,12 @@ blockquote p,
 
 blockquote p+p {
   text-indent: var(--horizontal-rhythm);
+}
+
+q,
+.q,
+blockquote {
+  quotes: '“''”';
 }
 
 figure {
@@ -552,7 +558,7 @@ figcaption {
   margin-top: var(--mrt-figcaption);
   margin-bottom: var(--mrb-figcaption);
   line-height: var(--lh-2);
-  font-style: normal;  
+  font-style: normal;
   font-size: var(--fs-d1);
 }
 
