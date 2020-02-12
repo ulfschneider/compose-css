@@ -45,8 +45,8 @@
   --mrt-list: var(--vertical-rhythm);
   --mrb-list: var(--vertical-rhythm);
 
-  --mrt-figure: var(--vertical-rhythm);
-  --mrb-figure: var(--vertical-rhythm);
+  --mrt-figure: var(--space-2);
+  --mrb-figure: var(--space-2);
   --mrt-figcaption: var(--space-d1);
   --mrb-figcaption: 0;
 
