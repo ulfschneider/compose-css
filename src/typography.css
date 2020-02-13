@@ -527,17 +527,16 @@ blockquote {
 
 blockquote::before {
   content: "";
-  display: block;
+  display: block;  
+  position: relative;
+  left: calc(0px - var(--space-d1));
+  top: calc(0px + var(--space-d1));
   width: var(--horizontal-rhythm);  
-  border-top: var(--space-d2) solid var(--base-color);
+  height: var(--space);
+  border-top: var(--space-d3) solid var(--base-color);
+  border-left: var(--space-d3) solid var(--base-color);
 }
 
-blockquote::after {
-  content: "";
-  display: block;
-  width: var(--horizontal-rhythm);  
-  border-top: var(--space-d2) solid var(--base-color);
-}
 
 blockquote figcaption {
   font-weight: var(--font-weight-bold);
