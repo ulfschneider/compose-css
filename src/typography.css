@@ -386,9 +386,16 @@ ol {
 
 ol,
 ul {
-  padding-left: var(--horizontal-rhythm);
+  padding-left: 0;
   margin-top: var(--mrt-list);
   margin-bottom: var(--mrb-list);
+}
+
+ol ol,
+ol ul,
+ul ul,
+ul ol {
+  padding-left: var(--horizontal-rhythm);
 }
 
 li {
@@ -407,9 +414,11 @@ ol li {
 }
 
 ol li::before {
-  content: counter(styled-number) ". ";
+  content: counter(styled-number) ".";
   margin-left: calc(var(--horizontal-rhythm) * -1);
   min-width: var(--horizontal-rhythm);
+  padding-right: var(--space-d1);
+  padding-left: var(--space-d3);
   text-align: left;
   display: inline-block;
 }
@@ -418,8 +427,23 @@ ul li::before {
   content: var(--list-item-type);
   margin-left: calc(var(--horizontal-rhythm) * -1);
   min-width: var(--horizontal-rhythm);
+  padding-right: var(--space-d1);
+  padding-left: var(--space-d3);
   text-align: left;
   display: inline-block;
+}
+
+ol ol li::before,
+ol ul li::before,
+ul ul li::before,
+ul ol li::before {
+  margin-left: calc(var(--horizontal-rhythm) * -1);
+  min-width: var(--horizontal-rhythm);
+  padding-left: 0;
+}
+
+.indent li::before {
+  padding-left: 0;
 }
 
 .indent ol,
@@ -428,6 +452,7 @@ ol.indent,
 ul.indent {
   padding-left: 0;
 }
+
 
 .indent ol ol,
 ol.indent ol,
@@ -527,11 +552,11 @@ blockquote {
 
 blockquote::before {
   content: "";
-  display: block;  
+  display: block;
   position: relative;
   left: calc(0px - var(--space-d1));
   top: calc(0px + var(--space-d1));
-  width: var(--horizontal-rhythm);  
+  width: var(--horizontal-rhythm);
   height: var(--space);
   border-top: var(--space-d3) solid var(--base-color);
   border-left: var(--space-d3) solid var(--base-color);

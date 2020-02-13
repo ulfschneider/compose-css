@@ -25,7 +25,7 @@
 
 .x {
   display: grid;
-  grid-template-columns: var(--space-1) 1fr 1fr minmax(0, var(--regular-width)) 1fr 1fr var(--space-1);
+  grid-template-columns: var(--horizontal-rhythm) 1fr 1fr minmax(0, var(--regular-width)) 1fr 1fr var(--horizontal-rhythm);
 }
 
 [class^="x"]>p,
@@ -200,7 +200,7 @@
 
 .xl {
   display: grid;
-  grid-template-columns: var(--space-1) 1fr minmax(0, var(--regular-width)) 1fr 1fr 1fr var(--space-1);
+  grid-template-columns: var(--horizontal-rhythm) 1fr minmax(0, var(--regular-width)) 1fr 1fr 1fr var(--horizontal-rhythm);
 }
 
 .xl>* {
@@ -317,7 +317,7 @@
   grid-area: span 1/span 12;
 }
 
-
+/*
 @media (--breakpoint-max-rg) {
   .x {
     grid-template-columns: var(--space) 1fr 1fr minmax(0, var(--regular-width)) 1fr 1fr var(--space);
@@ -327,6 +327,7 @@
     grid-template-columns: var(--space) 1fr minmax(0, var(--regular-width)) 1fr 1fr 1fr var(--space);
   }
 }
+*/
 
 @media (--breakpoint-sm) {
 
