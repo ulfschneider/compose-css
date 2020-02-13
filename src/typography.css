@@ -428,7 +428,7 @@ ul li::before {
   margin-left: calc(var(--horizontal-rhythm) * -1);
   min-width: var(--horizontal-rhythm);
   padding-right: var(--space-d1);
-  padding-left: var(--space-d3);
+  padding-left: var(--space-d2);
   text-align: left;
   display: inline-block;
 }
@@ -438,6 +438,11 @@ ul li::before {
   ul,
   ol {
     padding-left: var(--horizontal-rhythm);
+  }
+
+  ul li::before,
+  ol li::before {
+    padding-left: 0;
   }
 }
 
@@ -449,6 +454,8 @@ ul ol li::before {
   min-width: var(--horizontal-rhythm);
   padding-left: 0;
 }
+
+
 
 .indent li::before {
   padding-left: 0;
