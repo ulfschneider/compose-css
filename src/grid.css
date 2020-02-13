@@ -317,7 +317,7 @@
   grid-area: span 1/span 12;
 }
 
-/*
+
 @media (--breakpoint-max-rg) {
   .x {
     grid-template-columns: var(--space) 1fr 1fr minmax(0, var(--regular-width)) 1fr 1fr var(--space);
@@ -327,7 +327,7 @@
     grid-template-columns: var(--space) 1fr minmax(0, var(--regular-width)) 1fr 1fr 1fr var(--space);
   }
 }
-*/
+
 
 @media (--breakpoint-sm) {
 

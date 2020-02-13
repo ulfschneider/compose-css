@@ -433,6 +433,14 @@ ul li::before {
   display: inline-block;
 }
 
+@media (--breakpoint-max-rg) {
+  /* grid white space border changes at this breakpoint */
+  ul,
+  ol {
+    padding-left: var(--horizontal-rhythm);
+  }
+}
+
 ol ol li::before,
 ol ul li::before,
 ul ul li::before,
