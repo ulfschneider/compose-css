@@ -59,7 +59,7 @@
   --mrt-hr: var(--vertical-rhythm);
   --mrb-hr: var(--vertical-rhythm);
 
-  --list-item-type: "▪";
+  --list-item-type: "–";
   --hr-content: "◊      ◊      ◊";
   --quotes: "«""»""‹""›";
   --quotes-de: '»''«'"›""‹";
