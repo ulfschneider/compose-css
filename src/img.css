@@ -38,3 +38,7 @@
 .fit-l {
   object-position: left;
 }
+
+.bg-fixed {
+  background-attachment: fixed;
+}
