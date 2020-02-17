@@ -924,12 +924,24 @@ figure
     <dl>
         <dt class="square-1 float-left" style="background: var(--link-hover-color);"></dt>
         <dd class="mrl-2">
-            <p>Link colors are not set with dedicated CSS classes. The configuration is only possible by assigning values to
+            <p>Link colors are not set with dedicated CSS classes. The configuration is only possible by assigning
+                values to
                 the following CSS variables:</p>
             <pre>:root { 
     --link-color: var(--base-color); 
     --link-active-color: var(--primary);
     --link-hover-color: var(--primary); 
+}</pre>
+        </dd>
+    </dl>
+
+    <dl>
+        <dt class="square-1 float-left" style="background: var(--selection-color);"></dt>
+        <dd class="mrl-2">
+            <p>The color to indicate selected text. The configuration is only possible by assigning values to
+                the following CSS variable:</p>
+            <pre>:root { 
+    --selection-color: var(--primary-3); 
 }</pre>
         </dd>
     </dl>
@@ -1184,6 +1196,36 @@ figure
                 <div class="square-3 bg-neutral-4 mrl-auto"></div>
             </div>
             <div class="code">.mrl-auto</div>
+        </div>
+
+        <div>In combination with <a href="#flexbox">flexbox</a>, vertical auto margins are possible.</div>
+
+        <div class="sm-xx-6">
+            <div class="square-4 flex br">
+                <div class="square-3 bg-neutral-4 mrt-auto mrx-auto"></div>
+            </div>
+            <div class="code">.mrt-auto.mrx-auto</div>
+        </div>
+
+        <div class="sm-xx-6">
+            <div class="square-4 flex br">
+                <div class="square-3 bg-neutral-4 mrb-auto mrx-auto"></div>
+            </div>
+            <div class="code">.mrb-auto.mrx-auto</div>
+        </div>
+
+        <div class="sm-xx-6">
+            <div class="square-4 flex br">
+                <div class="square-3 bg-neutral-4 mry-auto"></div>
+            </div>
+            <div class="code">.mry-auto</div>
+        </div>
+
+        <div class="sm-xx-6">
+            <div class="square-4 flex br">
+                <div class="square-3 bg-neutral-4 mr-auto"></div>
+            </div>
+            <div class="code">.mr-auto</div>
         </div>
 
         <div>The margin patterns can be applied to decreased and increased margins:</div>
@@ -1896,15 +1938,15 @@ figure
 
     <h3>Background Images</h3>
     <p>Background images can also be positioned with <code>.fit-cover</code>, which is useful
-        for
-        hero banners.
+        for hero banners. In addition, <code>.bg-fixed</code> makes an interesting effect when scrolling over a
+        background image.
     </p>
 
-    <div class="full fit-cover x height-rg" style='background-image: url("images/swan-leroi-unsplash.jpg")'>
+    <div class="full fit-cover x height-rg bg-fixed" style='background-image: url("images/swan-leroi-unsplash.jpg")'>
         <div class="breakout-l fs-8 bold mry-4 caps lsp overflow-hidden">Hero</div>
     </div>
 
-    <pre class="breakout mrt">div/ .fit-cover.height-rg style="background-image: url('image.jpg')" </pre>
+    <pre class="breakout mrt">div/ .fit-cover.bg-fixed.height-rg style="background-image: url('image.jpg')" </pre>
 
     <h2 id="layout-grid">Horizontal Layout Grid</h2>
 

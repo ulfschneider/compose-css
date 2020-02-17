@@ -92,7 +92,13 @@
   --link-hover-color: var(--primary);
   --link-active-color: var(--primary);
 
+  --selection-color: var(--primary-3);
+
   color: var(--base-color);
+}
+
+::selection {
+  background: var(--selection-color);
 }
 
 .neutral-d4 {

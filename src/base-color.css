@@ -12,8 +12,13 @@
   --link-color: var(--base-color);
   --link-hover-color: #00baff;
   --link-active-color: #00baff;
+  --selection-color: unset;
 
   color: var(--base-color);
+}
+
+::selection {
+  background: var(--selection-color);
 }
 
 .white {
