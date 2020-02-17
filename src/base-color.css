@@ -12,7 +12,7 @@
   --link-color: var(--base-color);
   --link-hover-color: #00baff;
   --link-active-color: #00baff;
-  --selection-color: unset;
+  --selection-color: #99e4ff;
 
   color: var(--base-color);
 }
