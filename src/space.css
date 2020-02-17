@@ -733,6 +733,14 @@ Naming conventions
   margin-left: calc(-1 * var(--space-6)) !important;
 }
 
+.mrt-auto {
+  margin-top: auto !important; /* for flexbox*/
+}
+
+.mrb-auto {
+  margin-bottom: auto !important; /* for flexbox */
+}
+
 .mrl-auto {
   margin-left: auto !important;
 }
@@ -745,6 +753,16 @@ Naming conventions
   margin-left: auto !important;
   margin-right: auto !important;
 }
+
+.mry-auto { /* for flexbox */
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+
+.mr-auto {
+  margin: auto; /*for flexbox */
+}
+
 
 .pd-0,
 .no-pd {
