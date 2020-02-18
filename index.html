@@ -44,6 +44,14 @@
         visibility: visible;
     }
 
+    [class^="x"] h2::before {
+        content: "";
+        display: block;
+        background: var(--base-color);
+        width: var(--space-4);
+        height: var(--space-d1);
+    }
+
     :root {
         --mrt-h2: calc(var(--space-4) * var(--space-factor) *var(--space-factor));
         --mrt-h3: var(--space-4);
