@@ -44,7 +44,8 @@
         visibility: visible;
     }
 
-    [class^="x"] h2::before {
+    body>h2::before,
+    div>h2::before {
         content: "";
         display: block;
         background: var(--base-color);
