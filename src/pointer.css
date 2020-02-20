@@ -11,6 +11,6 @@ a {
     touch-action: manipulation;
 }
 
-a:active {
+a:active:focus {
     color: var(--link-active-color);
 }

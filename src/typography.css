@@ -45,9 +45,6 @@
   --mrt-blockquote: var(--vertical-rhythm);
   --mrb-blockquote: var(--vertical-rhythm);
 
-  --mrt-list: var(--vertical-rhythm);
-  --mrb-list: var(--vertical-rhythm);
-
   --mrt-figure: var(--vertical-rhythm);
   --mrb-figure: var(--vertical-rhythm);
   --mrt-figcaption: var(--space-d1);
@@ -59,7 +56,6 @@
   --mrt-hr: var(--vertical-rhythm);
   --mrb-hr: var(--vertical-rhythm);
 
-  --list-item-type: "–";
   --hr-content: "◊      ◊      ◊";
   --quotes: "«""»""‹""›";
   --quotes-de: '»''«'"›""‹";
@@ -362,142 +358,6 @@ h6.indent {
   padding-left: var(--horizontal-rhythm);
 }
 
-dl {
-  margin-top: var(--mrt-list);
-  margin-bottom: var(--mrb-list);
-}
-
-dd {
-  margin-left: var(--horizontal-rhythm);
-}
-
-dd+dt {
-  margin-top: var(--mrt-list);
-}
-
-ul {
-  list-style: none;
-}
-
-ol {
-  list-style: none;
-  counter-reset: styled-number;
-}
-
-ol,
-ul {
-  padding-left: 0;
-  margin-top: var(--mrt-list);
-  margin-bottom: var(--mrb-list);
-}
-
-ol ol,
-ol ul,
-ul ul,
-ul ol {
-  padding-left: var(--horizontal-rhythm);
-}
-
-li {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-li p {
-  display: inline;
-}
-
-
-
-ol li {
-  counter-increment: styled-number;
-}
-
-ol li::before {
-  content: counter(styled-number) ".";
-  margin-left: calc(var(--horizontal-rhythm) * -1);
-  min-width: var(--horizontal-rhythm);
-  padding-right: var(--space-d1);
-  padding-left: var(--space-d3);
-  text-align: left;
-  display: inline-block;
-}
-
-ul li::before {
-  content: var(--list-item-type);
-  margin-left: calc(var(--horizontal-rhythm) * -1);
-  min-width: var(--horizontal-rhythm);
-  padding-right: var(--space-d1);
-  padding-left: var(--space-d2);
-  text-align: left;
-  display: inline-block;
-}
-
-@media (--breakpoint-max-rg) {
-  /* grid white space border changes at this breakpoint */
-  ul,
-  ol {
-    padding-left: var(--horizontal-rhythm);
-  }
-
-  ul li::before,
-  ol li::before {
-    padding-left: 0;
-  }
-}
-
-ol ol li::before,
-ol ul li::before,
-ul ul li::before,
-ul ol li::before {
-  margin-left: calc(var(--horizontal-rhythm) * -1);
-  min-width: var(--horizontal-rhythm);
-  padding-left: 0;
-}
-
-
-
-.indent li::before {
-  padding-left: 0;
-}
-
-.indent ol,
-.indent ul,
-ol.indent,
-ul.indent {
-  padding-left: 0;
-}
-
-
-.indent ol ol,
-ol.indent ol,
-.indent ul ol,
-ul.indent ol,
-.indent ol ul,
-ol.indent ul,
-.indent ul ul,
-ul.indent ul {
-  padding-left: var(--horizontal-rhythm);
-}
-
-.indent li::before {
-  margin-left: unset;
-}
-
-ul.no-list-type li::before {
-  content: unset;
-}
-
-ul.reset {
-  padding-left: 0;
-}
-
-ul.reset li::before {
-  content: unset;
-  margin-left: unset;
-  min-width: unset;
-  display: unset;
-}
 
 p {
   margin-top: 0;
@@ -509,7 +369,6 @@ p.indent {
   margin-bottom: 0;
   text-indent: var(--horizontal-rhythm);
 }
-
 
 .no-indent p,
 p.no-indent {
