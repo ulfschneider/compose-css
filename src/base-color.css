@@ -1,17 +1,21 @@
 :root {  
-  --base-color: #333;
+  --base-color: #303030;
   --base-background: white;
   --mark-background: yellow;
   --kbd-background: lightgray;
   --link-color: var(--base-color);
   --text-decoration-color: unset;
   --pre-border-color: gray;
+
   --code-background: transparent;
   --code-color: var(--base-color);
+
+  --heading-color: black;
 
   --link-color: var(--base-color);
   --link-hover-color: #00baff;
   --link-active-color: #00baff;
+
   --selection-color: #99e4ff;
 
   color: var(--base-color);

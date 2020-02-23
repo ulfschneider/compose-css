@@ -2,7 +2,7 @@
   --color-step-factor: 0.2;
   --neutral-h: 0;
   --neutral-s: 0%;
-  --neutral-l: 53%;
+  --neutral-l: 55%;
   --neutral-step: calc((100% - var(--neutral-l)) * var(--color-step-factor));
 
   --neutral-d4: hsl(var(--neutral-h), var(--neutral-s), calc(var(--neutral-l) - 4 * var(--neutral-step)));
@@ -88,6 +88,8 @@
   --code-background: transparent;
   --code-color: var(--base-color);
   
+  --heading-color: black;
+
   --link-color: var(--base-color);
   --link-hover-color: var(--primary);
   --link-active-color: var(--primary);

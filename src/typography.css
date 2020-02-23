@@ -58,7 +58,7 @@
 
   --hr-content: "◊      ◊      ◊";
   --quotes: "«""»""‹""›";
-  --quotes-de: '»''«'"›""‹";
+  --quotes-de: "»""«""›""‹";
 
   font-family: var(--font-family);
   font-weight: var(--font-weight-normal);
@@ -290,10 +290,10 @@ h6 {
   letter-spacing: var(--headline-letter-spacing);
   font-weight: var(--headline-font-weight);
   font-family: var(--headline-font-family);
+  color: var(--heading-color);
 }
 
-h1,
-h1.no-indent {
+h1 {
   font-size: var(--fs-h1);
   line-height: var(--lh-h1);
   margin-top: var(--mrt-h1);
@@ -301,8 +301,7 @@ h1.no-indent {
   padding-left: 0;
 }
 
-h2,
-h2.no-indent {
+h2 {
   font-size: var(--fs-h2);
   line-height: var(--lh-h2);
   margin-top: var(--mrt-h2);
@@ -310,8 +309,7 @@ h2.no-indent {
   padding-left: 0;
 }
 
-h3,
-h3.no-indent {
+h3 {
   font-size: var(--fs-h3);
   line-height: var(--lh-h3);
   margin-top: var(--mrt-h3);
@@ -319,8 +317,7 @@ h3.no-indent {
   padding-left: 0;
 }
 
-h4,
-h4.no-indent {
+h4 {
   font-size: var(--fs-h4);
   line-height: var(--lh-h4);
   margin-top: var(--mrt-h4);
@@ -328,8 +325,7 @@ h4.no-indent {
   padding-left: 0;
 }
 
-h5,
-h5.no-indent {
+h5 {
   font-size: var(--fs-h5);
   line-height: var(--lh-h5);
 
@@ -337,8 +333,7 @@ h5.no-indent {
   margin-bottom: var(--mrb-h5);
 }
 
-h6,
-h6.no-indent {
+h6 {
   font-size: var(--fs-h6);
   line-height: var(--lh-h6);
 
@@ -346,28 +341,19 @@ h6.no-indent {
   margin-bottom: var(--mrb-h6);
 }
 
-.indent h2,
-h2.indent,
-.indent h3,
-h3.indent,
-.indent h4,
-h4.indent,
-.indent h5,
-h5.indent .indent h6,
-h6.indent {
-  padding-left: var(--horizontal-rhythm);
-}
-
-
 p {
   margin-top: 0;
   margin-bottom: var(--space);
 }
 
-.indent p,
+.indent p+p,
 p.indent {
   margin-bottom: 0;
   text-indent: var(--horizontal-rhythm);
+}
+
+.indent p {
+  margin-bottom: 0;
 }
 
 .no-indent p,
@@ -419,21 +405,15 @@ a {
 blockquote {
   margin-top: var(--mrt-blockquote);
   margin-bottom: var(--mrb-blockquote);
-  margin-left: 0;
   margin-right: 0;
+  margin-left: 0;
   padding-left: var(--horizontal-rhythm);
 }
 
 blockquote::before {
-  content: "";
-  display: block;
-  position: relative;
-  left: calc(0px - var(--space-d1));
-  top: calc(0px + var(--space-d1));
-  width: var(--horizontal-rhythm);
-  height: var(--space);
-  border-top: var(--space-d3) solid var(--base-color);
-  border-left: var(--space-d3) solid var(--base-color);
+  content: "»";
+  float:left;
+  margin-left: calc(0px - var(--horizontal-rhythm));
 }
 
 

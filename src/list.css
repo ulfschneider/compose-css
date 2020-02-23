@@ -33,11 +33,14 @@ ul {
     margin-bottom: var(--mrb-list);
 }
 
+
 ol ol,
 ol ul,
 ul ul,
 ul ol {
     padding-left: var(--horizontal-rhythm);
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 li {
@@ -48,8 +51,6 @@ li {
 li p {
     display: inline;
 }
-
-
 
 ol li {
     counter-increment: styled-number;
@@ -75,6 +76,11 @@ ul li::before {
     display: inline-block;
 }
 
+ol.indent li::before,
+ul.indent li::before{
+    margin-left: 0;
+}
+
 @media (--breakpoint-max-rg) {
 
     /* grid white space border changes at this breakpoint */
@@ -96,35 +102,6 @@ ul ol li::before {
     margin-left: calc(var(--horizontal-rhythm) * -1);
     min-width: var(--horizontal-rhythm);
     padding-left: 0;
-}
-
-
-
-.indent li::before {
-    padding-left: 0;
-}
-
-.indent ol,
-.indent ul,
-ol.indent,
-ul.indent {
-    padding-left: 0;
-}
-
-
-.indent ol ol,
-ol.indent ol,
-.indent ul ol,
-ul.indent ol,
-.indent ol ul,
-ol.indent ul,
-.indent ul ul,
-ul.indent ul {
-    padding-left: var(--horizontal-rhythm);
-}
-
-.indent li::before {
-    margin-left: unset;
 }
 
 ul.no-list-type li::before {

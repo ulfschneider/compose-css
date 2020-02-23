@@ -31,7 +31,7 @@
         left: 0;
         bottom: 0;
 
-        background: var(--base-color);
+        background: var(--heading-color);
         color: var(--base-background);
         padding-left: var(--space);
         padding-right: var(--space-d2);
@@ -48,7 +48,7 @@
     div>h2::before {
         content: "";
         display: block;
-        background: var(--base-color);
+        background: var(--heading-color);
         width: var(--space-4);
         height: var(--space-d1);
     }
@@ -72,7 +72,7 @@
                     </p>
                 </div>
                 <div class="xx-12 md-xx-3">
-                    <div class="pd inline-block bg-base-color rounded white"><span id="version">v0.22.1</span></div>
+                    <div class="pd inline-block bg-black rounded white"><span id="version">v1.0.0</span></div>
                 </div>
             </div>
         </div>
@@ -125,35 +125,38 @@
         </header>
     </div>
 
-
-    <h2 class="pdt-3 mrt-0" id="start">Quickstart</h2>
-    <p>Compose CSS is on <a href="https://github.com/ulfschneider/compose-css">GitHub</a>.</p>
-    <p>Download the <a href="https://raw.githubusercontent.com/ulfschneider/compose-css/master/css/compose.css">Compose
-            CSS</code></a> file and put
-        it into the css folder of your website project. </p>
-    <p>Reference the CSS file in your HTML:</p>
-    <pre class="mid">&lt;link rel="stylesheet" type="text/css" href="/css/compose.css"></pre>
-    <p>By then you are ready to use Compose CSS.</p>
-    <p class="mrt-2">Another way to use Compose CSS is by adding the <a
-            href="https://www.npmjs.com/package/compose-css">compose-css</a>
-        npm package to your node project. Install with</p>
-    <pre>npm i compose-css</pre>
-    <p class="mrt-2">There is also a <a
-            href="https://raw.githubusercontent.com/ulfschneider/compose-css/master/css/base-compose.css">Base
-            Compose CSS</a> available – with only half the size.</p>
-    <p>It can be used as a faster-loading alternative with a reduced feature set. Compared to the full version,
-        it has the following limitations:</p>
-    <ul>
-        <li>Lightweight <a href="#colors">color system</a>, it has only color edge
-            values for color, background and border;</li>
-        <li>No <a href="#forms">form</a> styling;</li>
-        <li>No <a href="#width">max-width, min-width</a>, <a href="#height">max-height, and min-height</a> classes;
-        </li>
-        <li>No responsive breakpoints for <a href="#typography">font size, line height</a>, <a href="#height">height,
-                max-height, min-height</a>, <a href="#width">width,
-                max-width, and min-width</a>;</li>
-        <li>No <a href="#square">square</a> classes.</li>
-    </ul>
+    <div>
+        <h2 class="pdt-3 mrt-0" id="start">Quickstart</h2>
+        <p>Compose CSS is on <a href="https://github.com/ulfschneider/compose-css">GitHub</a>.</p>
+        <p>Download the <a
+                href="https://raw.githubusercontent.com/ulfschneider/compose-css/master/css/compose.css">Compose
+                CSS</code></a> file and put
+            it into the css folder of your website project. </p>
+        <p>Reference the CSS file in your HTML:</p>
+        <pre class="mid">&lt;link rel="stylesheet" type="text/css" href="/css/compose.css"></pre>
+        <p>By then you are ready to use Compose CSS.</p>
+        <p class="mrt-2">Another way to use Compose CSS is by adding the <a
+                href="https://www.npmjs.com/package/compose-css">compose-css</a>
+            npm package to your node project. Install with</p>
+        <pre>npm i compose-css</pre>
+        <p class="mrt-2">There is also a <a
+                href="https://raw.githubusercontent.com/ulfschneider/compose-css/master/css/base-compose.css">Base
+                Compose CSS</a> available – with only half the size.</p>
+        <p>It can be used as a faster-loading alternative with a reduced feature set. Compared to the full version,
+            it has the following limitations:</p>
+        <ul>
+            <li>Lightweight <a href="#colors">color system</a>, it has only color edge
+                values for color, background and border;</li>
+            <li>No <a href="#forms">form</a> styling;</li>
+            <li>No <a href="#width">min-width</a>, <a href="#height">max-height, and min-height</a> classes;
+            </li>
+            <li>No responsive breakpoints for <a href="#typography">font size, line height</a>, <a
+                    href="#height">height,
+                    max-height, min-height</a>, <a href="#width">width,
+                    max-width, and min-width</a>;</li>
+            <li>No <a href="#square">square</a> classes.</li>
+        </ul>
+    </div>
 
     <div>
         <h2 id="notation" class="mrt-4">Notation</h2>
@@ -192,67 +195,70 @@
     </div>
 
 
-    <h2 id="typography">Typography</h2>
-    <h3>Elements</h3>
+    <div>
+        <h2 id="typography">Typography</h2>
+        <h3>Elements</h3>
 
-    <p><span class="mrr">Regular</span> <code>.normal</code></p>
-    <p><a href="#" class="mrr">Link</a> <code>a</code></p>
-    <p><b class="mrr">Bold</b> <code>strong</code>, <code>b</code>, <code>.strong</code>, <code>.bold</code>,
-        <code>.b</code></p>
-    <p><i class="mrr">Italic</i> <code>i</code>, <code>.i</code>, <code>.italic</code></p>
-    <p><u class="mrr">Underline</u> <code>u</code>, <code>.underline</code></p>
-    <p><del class="mrr">Deleted</del> <code>del</code>, <code>.del</code></p>
-    <p><span class="mrr caps">Caps</span> <code>.caps</code></p>
-    <p><span class="mrr lsp">Letter Spacing</span> <code>.lsp</code></p>
-    <p><mark class="mrr">Highlighted</mark> <code>mark</code>, <code>.mark</code></p>
-    <p><kbd class="mrr">Ctrl+K</kbd> <code>kbd</code>, <code>.kbd</code></p>
-    <p><span class="mrr">Text <sup>superscript</sup></span> <code>sup</code>, <code>.sup</code></p>
-    <p><span class="mrr">Text <sub>subscript</sub></span> <code>sub</code>, <code>.sup</code></p>
-    <p><cite class="mrr">Cite</cite> <code>cite</code>, <code>.cite</code></p>
-    <p><q class="mrr">Quote</q> <code>q, .q, .quote</code></p>
-    <p><em class="mrr">Emphasis</em> <code>em</code>, <code>.em</code></p>
-    <p><s class="strike mrr">Strikethrough</s> <code>s</code>, <code>.s</code>, <code>.strike</code></p>
-    <p><small class="mrr">Small</small> <code>small</code>, <code>.small</code></p>
-    <p><code class="mrr">Code</code> <code>code</code>, <code>.code</code></p>
-
-
-    <h3>Special Cases</h3>
-    <p><a href="#" class="mrr no-deco">A link without text decoration</a> <code>.no-deco</code></p>
-    <p>
-        <div class="block br width-3 height-2 no-wrap mrr">No word wrap at white space</div>
-        <code>.no-wrap</code>
-    </p>
-    <p>
-        <div class="block br width-2 height-4 word-wrap mrr lh">Word wrap anywhere</div>
-        <code>.word-wrap</code>
-    </p>
-    <p>
-        <div class="block br width-3 height-2 truncate mrr">No word wrap at white space</div>
-        <code>.truncate</code>
-    </p>
-    <div class="br pdt">
-        <hr>
+        <p><span class="mrr">Regular</span> <code>.normal</code></p>
+        <p><a href="#" class="mrr">Link</a> <code>a</code></p>
+        <p><b class="mrr">Bold</b> <code>strong</code>, <code>b</code>, <code>.strong</code>, <code>.bold</code>,
+            <code>.b</code></p>
+        <p><i class="mrr">Italic</i> <code>i</code>, <code>.i</code>, <code>.italic</code></p>
+        <p><u class="mrr">Underline</u> <code>u</code>, <code>.underline</code></p>
+        <p><del class="mrr">Deleted</del> <code>del</code>, <code>.del</code></p>
+        <p><span class="mrr caps">Caps</span> <code>.caps</code></p>
+        <p><span class="mrr lsp">Letter Spacing</span> <code>.lsp</code></p>
+        <p><mark class="mrr">Highlighted</mark> <code>mark</code>, <code>.mark</code></p>
+        <p><kbd class="mrr">Ctrl+K</kbd> <code>kbd</code>, <code>.kbd</code></p>
+        <p><span class="mrr">Text <sup>superscript</sup></span> <code>sup</code>, <code>.sup</code></p>
+        <p><span class="mrr">Text <sub>subscript</sub></span> <code>sub</code>, <code>.sup</code></p>
+        <p><cite class="mrr">Cite</cite> <code>cite</code>, <code>.cite</code></p>
+        <p><q class="mrr">Quote</q> <code>q, .q, .quote</code></p>
+        <p><em class="mrr">Emphasis</em> <code>em</code>, <code>.em</code></p>
+        <p><s class="strike mrr">Strikethrough</s> <code>s</code>, <code>.s</code>, <code>.strike</code></p>
+        <p><small class="mrr">Small</small> <code>small</code>, <code>.small</code></p>
+        <p><code class="mrr">Code</code> <code>code</code>, <code>.code</code></p>
     </div>
-    <code>hr</code>
 
-    <h3>Paragraph</h3>
-    <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
-        horrible vermin.</p>
+    <div>
+        <h3>Special Cases</h3>
+        <p><a href="#" class="mrr no-deco">A link without text decoration</a> <code>.no-deco</code></p>
+        <p>
+            <div class="block br width-3 height-2 no-wrap mrr">No word wrap at white space</div>
+            <code>.no-wrap</code>
+        </p>
+        <p>
+            <div class="block br width-2 height-4 word-wrap mrr lh">Word wrap anywhere</div>
+            <code>.word-wrap</code>
+        </p>
+        <p>
+            <div class="block br width-3 height-2 truncate mrr">No word wrap at white space</div>
+            <code>.truncate</code>
+        </p>
+        <div class="br pdt">
+            <hr>
+        </div>
+        <code>hr</code>
+    </div>
 
-    <p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly
-        domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to
-        slide off any moment.</p>
+    <div>
+        <h3>Paragraph</h3>
+        <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
+            horrible vermin.</p>
 
-    <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.
-        <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.</p>
+        <p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly
+            domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to
+            slide off any moment.</p>
 
-    <pre class="mid">p/</pre>
+        <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.
+            <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.</p>
 
+        <pre class="mid">p/</pre>
+    </div>
 
     <div>
         <h3>Indented Paragraph</h3>
         <div class="indent">
-            <h4>Headings within indentation-blocks are completely indented</h4>
             <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed
                 into a
                 horrible vermin.</p>
@@ -268,107 +274,100 @@
                 <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.</p>
         </div>
         <pre class="mid mrt">div .indent
-    h4/
     p/
 /div
-
-h4/ .indent 
-h4/ .no-indent //remove indentation for this heading
 
 p/ .indent
 p/ .no-indent //remove indentation for this p</pre>
     </div>
 
 
-    <h3>Unordered List</h3>
+    <div>
+        <h3>Unordered List</h3>
 
-    <ul>
-        <li>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
-            horrible vermin.
-        </li>
-        <li>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly,
-            slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and
-            seemed ready to slide off any moment.
-            <ul>
-                <li>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly
-                    as he looked. <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.
-                </li>
-                <li>His room, a proper human room although a little too small, lay peacefully between its four
-                    familiar walls.
-                </li>
-            </ul>
-        </li>
-        <li>A collection of textile samples lay spread out on the table – Samsa was a travelling salesman – and
-            above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a
-            nice, gilded frame.
-        </li>
-    </ul>
-    <pre class="mid">ul
+        <ul>
+            <li>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
+                horrible vermin.
+            </li>
+            <li>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly,
+                slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and
+                seemed ready to slide off any moment.
+                <ul>
+                    <li>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly
+                        as he looked. <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.
+                    </li>
+                    <li>His room, a proper human room although a little too small, lay peacefully between its four
+                        familiar walls.
+                    </li>
+                </ul>
+            </li>
+            <li>A collection of textile samples lay spread out on the table – Samsa was a travelling salesman – and
+                above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a
+                nice, gilded frame.
+            </li>
+        </ul>
+        <pre class="mid">ul
     li/
 /ul</pre>
+    </div>
 
 
-
-    <h3>Indented Unordered List</h3>
-    <ul class="indent">
-        <li>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
-            horrible vermin.
-        </li>
-        <li>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly,
-            slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and
-            seemed ready to slide off any moment.
-            <ul>
-                <li>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly
-                    as he looked. <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.
-                </li>
-                <li>His room, a proper human room although a little too small, lay peacefully between its four
-                    familiar walls.
-                </li>
-            </ul>
-        </li>
-        <li>A collection of textile samples lay spread out on the table – Samsa was a travelling salesman – and
-            above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a
-            nice, gilded frame.
-        </li>
-    </ul>
-    <pre class="mid">ul .indent
+    <div>
+        <h3>Indented Unordered List</h3>
+        <ul class="indent">
+            <li>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
+                horrible vermin.
+            </li>
+            <li>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly,
+                slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and
+                seemed ready to slide off any moment.
+                <ul>
+                    <li>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly
+                        as he looked. <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.
+                    </li>
+                    <li>His room, a proper human room although a little too small, lay peacefully between its four
+                        familiar walls.
+                    </li>
+                </ul>
+            </li>
+            <li>A collection of textile samples lay spread out on the table – Samsa was a travelling salesman – and
+                above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a
+                nice, gilded frame.
+            </li>
+        </ul>
+        <pre class="mid">ul .indent
     li/
-/ul
-
-div .indent
-    ul
-        li/
-    /ul 
-/div</pre>
+/ul</pre>
+    </div>>
 
 
-
-    <h3>Ordered List</h3>
-    <ol>
-        <li>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
-            horrible vermin.
-        </li>
-        <li>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly,
-            slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and
-            seemed ready to slide off any moment.
-            <ol>
-                <li>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly
-                    as he looked. <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.
-                </li>
-                <li>His room, a proper human room although a little too small, lay peacefully between its four
-                    familiar walls.
-                </li>
-            </ol>
-        </li>
-        <li>A collection of textile samples lay spread out on the table – Samsa was a travelling salesman – and
-            above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a
-            nice, gilded frame.
-        </li>
-    </ol>
-    <pre class="mid">ol
+    <div>
+        <h3>Ordered List</h3>
+        <ol>
+            <li>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
+                horrible vermin.
+            </li>
+            <li>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly,
+                slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and
+                seemed ready to slide off any moment.
+                <ol>
+                    <li>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly
+                        as he looked. <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.
+                    </li>
+                    <li>His room, a proper human room although a little too small, lay peacefully between its four
+                        familiar walls.
+                    </li>
+                </ol>
+            </li>
+            <li>A collection of textile samples lay spread out on the table – Samsa was a travelling salesman – and
+                above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a
+                nice, gilded frame.
+            </li>
+        </ol>
+        <pre class="mid">ol
     li/
 /ol</pre>
-
+    </div>
 
     <div>
         <h3>Indented Ordered List</h3>
@@ -401,59 +400,55 @@ div .indent
         </ol>
         <pre class="mid">ol .indent
     li/
-/ol
-
-div .indent
-    ol
-        li/
-    /ol 
-/div</pre>
+/ol</pre>
     </div>
 
+    <div>
+        <h3>Definition List</h3>
 
-    <h3>Definition List</h3>
+        <dl>
+            <dt>One morning</dt>
+            <dd>when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
+                horrible vermin.</dd>
+        </dl>
+        <dl>
+            <dt>He lay on his armour-like back</dt>
+            <dd>and if he lifted his head a little he could see his brown belly,
+                slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and
+                seemed ready to slide off any moment.</dd>
+        </dl>
+        <dl>
+            <dt>His many legs</dt>
+            <dd>pitifully thin compared with the size of the rest of him, waved about helplessly
+                as he looked. <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.</dd>
+        </dl>
+        <dl>
+            <dt>His room</dt>
+            <dd>a proper human room although a little too small, lay peacefully between its four
+                familiar walls.</dd>
+        </dl>
 
-    <dl>
-        <dt>One morning</dt>
-        <dd>when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
-            horrible vermin.</dd>
-    </dl>
-    <dl>
-        <dt>He lay on his armour-like back</dt>
-        <dd>and if he lifted his head a little he could see his brown belly,
-            slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and
-            seemed ready to slide off any moment.</dd>
-    </dl>
-    <dl>
-        <dt>His many legs</dt>
-        <dd>pitifully thin compared with the size of the rest of him, waved about helplessly
-            as he looked. <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.</dd>
-    </dl>
-    <dl>
-        <dt>His room</dt>
-        <dd>a proper human room although a little too small, lay peacefully between its four
-            familiar walls.</dd>
-    </dl>
-
-    <pre class="mid">dl
+        <pre class="mid">dl
     dt/
     dd/
 /dl</pre>
+    </div>
 
-    <h3>Blockquote</h3>
-    <figure>
-        <blockquote>
-            <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed
-                into a
-                horrible vermin.</p>
+    <div>
+        <h3>Blockquote</h3>
+        <figure>
+            <blockquote>
+                <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed
+                    into a
+                    horrible vermin.</p>
 
-            <p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly,
-                slightly
-                domed and divided by arches into stiff sections.</p>
-            <figcaption>Franz Kafka, <cite>The Metamorphosis</cite></figcaption>
-        </blockquote>
-    </figure>
-    <pre class="mid">blockquote/
+                <p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly,
+                    slightly
+                    domed and divided by arches into stiff sections.</p>
+                <figcaption>Franz Kafka, <cite>The Metamorphosis</cite></figcaption>
+            </blockquote>
+        </figure>
+        <pre class="mid">blockquote/
 
 blockquote
     p/
@@ -465,36 +460,34 @@ figure
         figcaption/
     /blockquote
 /figure</pre>
+    </div>
 
+    <div>
+        <h3>Writing Mode</h3>
 
-    <h3>Writing Mode</h3>
-
-    <div class="x-12 gpy-2">
-        <div class="xx-12 sm-xx-4">
-            <div class="square-4 horizontal-tb bg-neutral-4">
-                He lay on his armour-like back
+        <div class="x-12 gpy-2">
+            <div class="xx-12 sm-xx-4">
+                <div class="square-4 horizontal-tb bg-neutral-4">
+                    He lay on his armour-like back
+                </div>
+                <code>.horizontal-tb</code>
             </div>
-            <code>.horizontal-tb</code>
-        </div>
-        <div class="xx-12 sm-xx-4">
-            <div class="square-4 vertical-lr bg-neutral-4">
-                He lay on his armour-like back
+            <div class="xx-12 sm-xx-4">
+                <div class="square-4 vertical-lr bg-neutral-4">
+                    He lay on his armour-like back
+                </div>
+                <code>.vertical-lr</code>
             </div>
-            <code>.vertical-lr</code>
-        </div>
-        <div class="xx-12 sm-xx-4">
-            <div class="square-4 vertical-rl bg-neutral-4">
-                He lay on his armour-like back
+            <div class="xx-12 sm-xx-4">
+                <div class="square-4 vertical-rl bg-neutral-4">
+                    He lay on his armour-like back
+                </div>
+                <code>.vertical-rl</code>
             </div>
-            <code>.vertical-rl</code>
         </div>
     </div>
 
-
-
-
     <div class="x-12">
-
         <div class="xx-12 rg-xx-6">
             <h3>Heading Styling</h3>
 
@@ -669,34 +662,38 @@ figure
     </div>
 
 
-    <h3>Responsive Breakpoints</h3>
-    <p>Heading size, font size, and line height can have different sizes based on minimum screen width.
-        Address the different minimum screen sizes with responsive breakpoints, wich are indicated by CSS class
-        prefix values
-        of:</p>
-    <dl>
-        <dt class="float-left"><code>.sm-</code></dt>
-        <dd>The size is applied only if the screen is at least of small width.</dd>
-    </dl>
-    <dl>
-        <dt class="float-left"><code>.rg-</code></dt>
-        <dd>The size is applied only if the screen is at least of regular size.</dd>
-    </dl>
-    <dl>
-        <dt class="float-left"><code>.md-</code></dt>
-        <dd>The size is applied only if the screen is at least of mid size.</dd>
-    </dl>
-    <dl>
-        <dt class="float-left"><code>.lg-</code></dt>
-        <dd>The size is applied only if the screen is at least of large size.</dd>
-    </dl>
-    <p>E.g. <code>.lg-fs-1</code>, <code>.md-h1</code>, or <code>.rg-lh-3</code>.</p>
-    <p> A size class without a prefix will be used in case the
-        alternate minimum screen size is not defined.</p>
+    <div>
+        <h3>Responsive Breakpoints</h3>
+        <p>Heading size, font size, and line height can have different sizes based on minimum screen width.
+            Address the different minimum screen sizes with responsive breakpoints, wich are indicated by CSS class
+            prefix values
+            of:</p>
+        <table>
+            <tr>
+                <td><code>.sm-</code></td>
+                <td>The size is applied only if the screen is at least of small width.</td>
+            </tr>
+            <tr>
+                <td><code>.rg-</code></td>
+                <td>The size is applied only if the screen is at least of regular size.</td>
+            </tr>
+            <tr>
+                <td><code>.md-</code></td>
+                <td>The size is applied only if the screen is at least of mid size.</td>
+            </tr>
+            <tr>
+                <td><code>.lg-</code></td>
+                <td>The size is applied only if the screen is at least of large size.</td>
+            </tr>
+        </table>
 
-    <p class="fs-1 rg-fs-2 md-fs-3 lg-fs-4">One morning, when Gregor Samsa woke from troubled dreams</p>
-    <pre class="mid">p/ .fs-1.rg-fs-2.md-fs-3.lg-fs-4</pre>
+        <p>E.g. <code>.lg-fs-1</code>, <code>.md-h1</code>, or <code>.rg-lh-3</code>.</p>
+        <p> A size class without a prefix will be used in case the
+            alternate minimum screen size is not defined.</p>
 
+        <p class="fs-1 rg-fs-2 md-fs-3 lg-fs-4">One morning, when Gregor Samsa woke from troubled dreams</p>
+        <pre class="mid">p/ .fs-1.rg-fs-2.md-fs-3.lg-fs-4</pre>
+    </div>
 
     <div>
         <h3>Font Weight</h3>
@@ -910,114 +907,115 @@ figure
         </table>
     </div>
 
-    <h3>Edge Values</h3>
-    <p>In addition there are the following color classes available:</p>
+    <div>
+        <h3>Edge Values</h3>
+        <p>In addition there are the following color classes available:</p>
 
-    <dl>
-        <dt class="square-1 bg-base-color float-left"></dt>
-        <dd class="mrl-2"><code>.base-color</code> (which is
-            default text-color). <p>The color can be used as text color, background color and border color. It is
-                defined through:</p>
-            <pre>:root { --base-color: var(--neutral-color-d4); }</pre>
-        </dd>
-    </dl>
+        <dl>
+            <dt class="square-1 bg-base-color float-left"></dt>
+            <dd class="mrl-2"><code>.base-color</code> (which is
+                default text-color). <p>The color can be used as text color, background color and border color. It is
+                    defined through:</p>
+                <pre>:root { --base-color: var(--neutral-color-d4); }</pre>
+            </dd>
+        </dl>
 
-    <dl>
-        <dt class="square-1 br br-base-color float-left"></dt>
-        <dd class="mrl-2"><code>.base-background</code>
-            <p>The color can be used as text color, background color and border color. It is defined through:</p>
-            <pre>:root { --base-background: white; }</pre>
-        </dd>
-    </dl>
+        <dl>
+            <dt class="square-1 br br-base-color float-left"></dt>
+            <dd class="mrl-2"><code>.base-background</code>
+                <p>The color can be used as text color, background color and border color. It is defined through:</p>
+                <pre>:root { --base-background: white; }</pre>
+            </dd>
+        </dl>
 
-    <dl>
-        <dt class="square-1 float-left" style="background: var(--link-hover-color);"></dt>
-        <dd class="mrl-2">
-            <p>Link colors are not set with dedicated CSS classes. The configuration is only possible by assigning
-                values to
-                the following CSS variables:</p>
-            <pre>:root { 
+        <dl>
+            <dt class="square-1 float-left" style="background: var(--link-hover-color);"></dt>
+            <dd class="mrl-2">
+                <p>Link colors are not set with dedicated CSS classes. The configuration is only possible by assigning
+                    values to
+                    the following CSS variables:</p>
+                <pre>:root { 
     --link-color: var(--base-color); 
     --link-active-color: var(--primary);
     --link-hover-color: var(--primary); 
 }</pre>
-        </dd>
-    </dl>
+            </dd>
+        </dl>
 
-    <dl>
-        <dt class="square-1 float-left" style="background: var(--selection-color);"></dt>
-        <dd class="mrl-2">
-            <p>The color to indicate selected text. The configuration is only possible by assigning values to
-                the following CSS variable:</p>
-            <pre>:root { 
+        <dl>
+            <dt class="square-1 float-left" style="background: var(--selection-color);"></dt>
+            <dd class="mrl-2">
+                <p>The color to indicate selected text. The configuration is only possible by assigning values to
+                    the following CSS variable:</p>
+                <pre>:root { 
     --selection-color: var(--primary-3); 
 }</pre>
-        </dd>
-    </dl>
+            </dd>
+        </dl>
 
-    <dl>
-        <dt class="square-1 bg-black float-left"></dt>
-        <dd class="mrl-2"><code>.black</code>
-            <p>The color can be used as text color, background color and border color. It is defined through:</p>
-            <pre>:root { --black: black; }</pre>
-        </dd>
-    </dl>
+        <dl>
+            <dt class="square-1 bg-black float-left"></dt>
+            <dd class="mrl-2"><code>.black</code>
+                <p>The color can be used as text color, background color and border color. It is defined through:</p>
+                <pre>:root { --black: black; }</pre>
+            </dd>
+        </dl>
 
-    <dl>
-        <dt class="square-1 br br-base-color float-left"></dt>
-        <dd class="mrl-2"><code>.white</code>
-            <p>The color can be used as text color, background color and border color. It is defined through:</p>
-            <pre>:root { --white: white; }</pre>
-        </dd>
-    </dl>
+        <dl>
+            <dt class="square-1 br br-base-color float-left"></dt>
+            <dd class="mrl-2"><code>.white</code>
+                <p>The color can be used as text color, background color and border color. It is defined through:</p>
+                <pre>:root { --white: white; }</pre>
+            </dd>
+        </dl>
 
-    <dl>
-        <dt class="square-1 mark float-left"></dt>
-        <dd class="mrl-2"><code>.mark</code>, <code>mark</code>
-            <p>The color is defined through:</p>
-            <pre>:root { --mark-background: yellow; }</pre>
-        </dd>
-    </dl>
+        <dl>
+            <dt class="square-1 mark float-left"></dt>
+            <dd class="mrl-2"><code>.mark</code>, <code>mark</code>
+                <p>The color is defined through:</p>
+                <pre>:root { --mark-background: yellow; }</pre>
+            </dd>
+        </dl>
 
-    <dl>
-        <dt class="square-1 kbd float-left"></dt>
-        <dd class="mrl-2"><code>.kbd</code>, <code>kbd</code>
-            <p>The color is defined through:</p>
-            <pre>:root { --kbd-background: var(--neutral-4); }</pre>
-        </dd>
-    </dl>
+        <dl>
+            <dt class="square-1 kbd float-left"></dt>
+            <dd class="mrl-2"><code>.kbd</code>, <code>kbd</code>
+                <p>The color is defined through:</p>
+                <pre>:root { --kbd-background: var(--neutral-4); }</pre>
+            </dd>
+        </dl>
+    </div>
 
+    <div>
+        <h3>Define Your Own Color System</h3>
+        <p>The color system is built around the five colors:</p>
 
+        <dl>
+            <dt class="square-1 bg-neutral float-left"></dt>
+            <dd class="mrl-2">neutral</dd>
+        </dl>
+        <dl>
+            <dt class="square-1 bg-primary float-left"></dt>
+            <dd class="mrl-2">primary</dd>
+        </dl>
+        <dl>
+            <dt class="square-1 bg-accent-one float-left"></dt>
+            <dd class="mrl-2">accent one</dd>
+        </dl>
+        <dl>
+            <dt class="square-1 bg-accent-two float-left"></dt>
+            <dd class="mrl-2">accent two</dd>
+        </dl>
+        <dl>
+            <dt class="square-1 bg-accent-three float-left"></dt>
+            <dd class="mrl-2">accent three</dd>
+        </dl>
 
-    <h3>Define Your Own Color System</h3>
-    <p>The color system is built around the five colors:</p>
-
-    <dl>
-        <dt class="square-1 bg-neutral float-left"></dt>
-        <dd class="mrl-2">neutral</dd>
-    </dl>
-    <dl>
-        <dt class="square-1 bg-primary float-left"></dt>
-        <dd class="mrl-2">primary</dd>
-    </dl>
-    <dl>
-        <dt class="square-1 bg-accent-one float-left"></dt>
-        <dd class="mrl-2">accent one</dd>
-    </dl>
-    <dl>
-        <dt class="square-1 bg-accent-two float-left"></dt>
-        <dd class="mrl-2">accent two</dd>
-    </dl>
-    <dl>
-        <dt class="square-1 bg-accent-three float-left"></dt>
-        <dd class="mrl-2">accent three</dd>
-    </dl>
-
-    <p>To define your own color palette, change the colors by providing their hsl color code.</p>
-    <pre class="mid">:root {
+        <p>To define your own color palette, change the colors by providing their hsl color code.</p>
+        <pre class="mid">:root {
     --neutral-h: 0;
     --neutral-s: 0%;
-    --neutral-l: 53%;              
+    --neutral-l: 55%;              
     
     --primary-h: 213;
     --primary-s: 19%;
@@ -1035,7 +1033,7 @@ figure
     --accent-three-s: 100%;
     --accent-three-l: 50%;  
 }</pre>
-
+    </div>
 
 
 
@@ -1095,9 +1093,9 @@ figure
         </table>
     </div>
 
-    <h3>Margin</h3>
-
     <div class="breakout x-12 gp-1 mxw-md">
+        <h3>Margin</h3>
+
         <div>
             <div class="br inline-block middle">
                 <div class="square-3 bg-neutral-4 mr-0 inline-block middle"></div>
@@ -1325,8 +1323,8 @@ figure
 
     </div>
 
-    <h3>Padding</h3>
     <div class="breakout x-12 gp-1 mxw-md">
+        <h3 class="mrb-0">Padding</h3>
         <div>
             <div class="bg-neutral-4 inline-block pd-0">Padding</div>
             <div><code>.pd-0</code>, <code>.no-pd</code></div>
@@ -1567,8 +1565,9 @@ figure
         </table>
     </div>
 
-    <h3>Border</h3>
     <div class="x-12 gp-1">
+        <h3 class="mrb-0">Border</h3>
+
         <div class="xx-4 br pd-1 bg-neutral-4"></div>
         <div class="xx-8"><code>.br</code></div>
         <div class="xx-4 bry pd-1 bg-neutral-4"></div>
@@ -1587,9 +1586,8 @@ figure
         <div class="xx-8"><code>.no-br</code></div>
     </div>
 
-
-    <h3>Border Style</h3>
     <div class="x-12 gp-1">
+        <h3 class="mrb-0">Border Style</h3>
         <div class="xx-4 br dashed pd-1 bg-neutral-4"></div>
         <div class="xx-8"><code>.br.dashed</code></div>
         <div class="xx-4 br dotted pd-1 bg-neutral-4"></div>
@@ -1598,8 +1596,8 @@ figure
         <div class="xx-8"><code>.br.solid</code></div>
     </div>
 
-    <h3>Border Width</h3>
     <div class="x-12 gp-1">
+        <h3 class="mrb-0">Border Width</h3>
         <div class="xx-4 br brw-0 pd-1 bg-neutral-4"></div>
         <div class="xx-8"><code>.brw-0</code>, <code>.no-br</code></div>
         <div class="xx-4 br brw-d5 pd-1 bg-neutral-4"></div>
@@ -1618,8 +1616,8 @@ figure
 
 
 
-    <h3>Border Radius</h3>
     <div class="x-12 gp-1">
+        <h3 class="mrb-0">Border Radius</h3>
         <div class="xx-4 br radius-0 pd-1 bg-neutral-4"></div>
         <div class="xx-8"><code>.br.radius-0</code></div>
 
@@ -1668,6 +1666,9 @@ figure
         <div class="xx-8"><code>.br.radius.radius-l</code></div>
     </div>
 
+
+
+
     <h2 id="tables">Tables</h2>
 
     <div>
@@ -1710,19 +1711,16 @@ figure
             </tr>
         </table>
         <pre>table/</pre>
+
+        <p>Apply padding with <code>.pd</code>, <code>.pdx</code>, or <code>.pdy</code> styling
+            which can be assigned to the
+            table, rows or
+            td and th elements.</p>
+        <p>Borders can be used with <code>.br</code>, <code>.brx</code>,
+            <code>.bry</code>,
+            <code>.brt</code>, <code>.brr</code>, <code>.brb</code>, <code>.brl</code> and
+            <code>.brw</code> styling.</p>
     </div>
-
-
-
-    <p>Apply padding with <code>.pd</code>, <code>.pdx</code>, or <code>.pdy</code> styling
-        which can be assigned to the
-        table, rows or
-        td and th elements.</p>
-    <p>Borders can be used with <code>.br</code>, <code>.brx</code>,
-        <code>.bry</code>,
-        <code>.brt</code>, <code>.brr</code>, <code>.brb</code>, <code>.brl</code> and
-        <code>.brw</code> styling.</p>
-
 
     <div>
         <h3>Alternate Table Row Background</h3>
@@ -1765,8 +1763,6 @@ figure
         </table>
         <pre>table/ .alternate-rows</pre>
     </div>
-
-
 
     <div>
         <h3>Alternate Table Column Background</h3>
@@ -1815,7 +1811,6 @@ figure
         <pre>table/ .alternate-cols</pre>
     </div>
 
-
     <div>
         <h3>Underline Table Rows</h3>
         <table class="underline-rows">
@@ -1858,25 +1853,25 @@ figure
         <pre class="mrt-1">table/ .underline-rows</pre>
     </div>
 
-
-
-
-    <h2 id="figures">Figures</h2>
-    <figure>
-        <img loading="lazy" src="images/pierre-chatel-innocenti-unsplash.jpg" />
-        <figcaption>Photo by Pierre Chatel on Unsplash</figcaption>
-    </figure>
-    <pre class="mid">figure
+    <div>
+        <h2 id="figures">Figures</h2>
+        <figure>
+            <img loading="lazy" src="images/pierre-chatel-innocenti-unsplash.jpg" />
+            <figcaption>Photo by Pierre Chatel on Unsplash</figcaption>
+        </figure>
+        <pre class="mid">figure
     img/
     figcaption/    
 /figure</pre>
+    </div>
 
-    <h2 id="images">Images</h2>
+    <div>
+        <h2 id="images">Images</h2>
 
-
-    <h3>Responsive Images</h3>
-    <p>Images are by default responsive and take the entire available horizontal
-        space (up to the width of the image) while preserving aspect-ratio.</p>
+        <h3>Responsive Images</h3>
+        <p class="mr-0">Images are by default responsive and take the entire available horizontal
+            space (up to the width of the image) while preserving aspect-ratio.</p>
+    </div>
 
     <div class="wide">
         <figure>
@@ -1885,31 +1880,31 @@ figure
         </figure>
     </div>
 
-    <pre
-        class="breakout">img/ .width-100 //will consume the entire available width, may enlarge the image while preserving aspect ratio</pre>
+    <div>
+        <pre
+            class="breakout mr-0">img/ .width-100 //will consume the entire available width, may enlarge the image while preserving aspect ratio</pre>
 
-    <h3>Contained Images</h3>
+        <h3>Contained Images</h3>
 
-    <p>If the image has a fixed width or fixed height, the
-        usage of <code>.fix-contain</code> will put the entire visible image inside of the given
-        dimensions while preserving aspect-ratio and without stretching the image.</p>
-    <p class="mrb-0">Combine <code>.fit-contain</code> with fit positions </p>
-    <ul class="reset">
-        <li><code>.fit-t</code> (top),</li>
-        <li><code>.fit-tl</code> (top-left),</li>
-        <li><code>.fit-tr</code> (top-right),</li>
-        <li><code>.fit-r</code> (right),</li>
-        <li><code>.fit-b</code> (bottom),</li>
-        <li><code>.fit-bl</code> (bottom-left),</li>
-        <li><code>.fit-br</code> (bottom-right), and</li>
-        <li><code>.fit-l</code> (left).</li>
-    </ul>
-
+        <p>If the image has a fixed width or fixed height, the
+            usage of <code>.fix-contain</code> will put the entire visible image inside of the given
+            dimensions while preserving aspect-ratio and without stretching the image.</p>
+        <p>Combine <code>.fit-contain</code> with fit positions </p>
+        <ul class="reset mrb-0">
+            <li><code>.fit-t</code> (top),</li>
+            <li><code>.fit-tl</code> (top-left),</li>
+            <li><code>.fit-tr</code> (top-right),</li>
+            <li><code>.fit-r</code> (right),</li>
+            <li><code>.fit-b</code> (bottom),</li>
+            <li><code>.fit-bl</code> (bottom-left),</li>
+            <li><code>.fit-br</code> (bottom-right), and</li>
+            <li><code>.fit-l</code> (left).</li>
+        </ul>
+    </div>
 
     <div class="breakout x-12">
         <div class="xx-12 rg-xx-6">
             <figure>
-
                 <img loading="lazy" src="images/jayden-chong-unsplash.jpg" style="height:400px; width:100%"
                     class="fit-contain br" />
 
@@ -1943,16 +1938,15 @@ figure
         </div>
     </div>
 
-
-
-    <h3>Background Images</h3>
-    <p>Background images can also be positioned with <code>.fit-cover</code>, which is useful
-        for hero banners. In addition, <code>.bg-fixed</code> makes an interesting effect when scrolling over a
-        background image.
-    </p>
-
+    <div>
+        <h3>Background Images</h3>
+        <p>Background images can also be positioned with <code>.fit-cover</code>, which is useful
+            for hero banners. In addition, <code>.bg-fixed</code> makes an interesting effect when scrolling over a
+            background image.
+        </p>
+    </div>
     <div class="full fit-cover x height-rg bg-fixed" style='background-image: url("images/swan-leroi-unsplash.jpg")'>
-        <div class="breakout-l fs-8 bold mry-4 caps lsp overflow-hidden">Hero</div>
+        <div class="breakout-l fs-8 bold mry-4 caps lsp overflow-hidden black">Hero</div>
     </div>
 
     <pre class="breakout mrt">div/ .fit-cover.bg-fixed.height-rg style="background-image: url('image.jpg')" </pre>
@@ -2012,32 +2006,37 @@ figure
         /div
     </div>
 
+    <div>
+        <p>The <code>.x</code> and <code>.xl</code> layout grids can have a different horizontal structure based on
+            minimum screen width. E.g.
+            <code>.sm-wide</code> for at least minimum screen width and <code>.rg-breakout</code> for at least regular
+            screen width.
+            Address the different minimum screen sizes with column prefix values of:</p>
 
-    <p>The <code>.x</code> and <code>.xl</code> layout grids can have a different horizontal structure based on
-        minimum screen width. E.g.
-        <code>.sm-wide</code> for at least minimum screen width and <code>.rg-breakout</code> for at least regular
-        screen width.
-        Address the different minimum screen sizes with column prefix values of</p>
-    <dl>
-        <dt class="float-left"><code>.sm-</code></dt>
-        <dd>The grid structure is applied only if the screen is at least of small width</dd>
-    </dl>
-    <dl>
-        <dt class="float-left"><code>.rg-</code></dt>
-        <dd>The grid structure is applied only if the screen is at least of regular width</dd>
-    </dl>
-    <dl>
-        <dt class="float-left"><code>.md-</code></dt>
-        <dd>The grid structure is applied only if the screen is at least of mid width</dd>
-    </dl>
-    <dl>
-        <dt class="float-left"><code>.lg-</code></dt>
-        <dd>The grid structure is applied only if the screen is at least of large width</dd>
-    </dl>
-    <p>
-        A grid class without a prefix will be used in case the
-        alternate minimum screen size is not defined.
-    </p>
+        <table>
+            <tr>
+                <td><code>.sm-</code></td>
+                <td>The grid structure is applied only if the screen is at least of small width.</td>
+            </tr>
+            <tr>
+                <td><code>.rg-</code></td>
+                <td>The grid structure is applied only if the screen is at least of regular width.</td>
+            </tr>
+            <tr>
+                <td><code>.md-</code></td>
+                <td>The grid structure is applied only if the screen is at least of mid width.</td>
+            </tr>
+            <tr>
+                <td><code>.lg-</code></td>
+                <td>The grid structure is applied only if the screen is at least of large width.</td>
+            </tr>
+        </table>
+        <p>
+            A grid class without a prefix will be used in case the
+            alternate minimum screen size is not defined.
+        </p>
+
+    </div>
 
 
     <h3>Columns inside the Layout Grid</h3>
@@ -2105,12 +2104,14 @@ figure
         /div
     </div>
 
-    <p class="mry-2">Alternatively, let the browser decide about the number of columns by assigning
-        <code>.columns-fluid</code>. The CSS property <code>column-width</code> with a default setting of
-        <code>var(--column-fluid-width)</code> is used to create the layout.</p>
-    <p>Use <code>.column-rule</code> to assign a rule between columns. Customize the rule with
-        <code>var(--column-rule)</code>.
-    </p>
+    <div>
+        <p class="mrt">Alternatively, let the browser decide about the number of columns by assigning
+            <code>.columns-fluid</code>. The CSS property <code>column-width</code> with a default setting of
+            <code>var(--column-fluid-width)</code> is used to create the layout.</p>
+        <p>Use <code>.column-rule</code> to assign a rule between columns. Customize the rule with
+            <code>var(--column-rule)</code>.
+        </p>
+    </div>
 
     <div class="breakout mry-2 mxw-lg columns-fluid column-rule indent pdy ">
         <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
@@ -2172,37 +2173,43 @@ figure
         /div
     </div>
 
-    <h3>Responsive Breakpoints</h3>
-    <p class="mrt">The column count can vary based on available screen width.
-        Address the different minimum screen sizes with responsive breakpoints, wich are indicated by CSS class
-        prefix values values of:</p>
-    <dl>
-        <dt class="float-left"><code>.sm-</code></dt>
-        <dd>The column count is applied only if the screen is at least of small width.</dd>
-    </dl>
-    <dl>
-        <dt class="float-left"><code>.rg-</code></dt>
-        <dd>The column count is applied only if the screen is at least of regular width.</dd>
-    </dl>
-    <dl>
-        <dt class="float-left"><code>.md-</code></dt>
-        <dd>The column count is applied only if the screen is at least of mid width.</dd>
-    </dl>
-    <dl>
-        <dt class="float-left"><code>.lg-</code></dt>
-        <dd>The column count is applied only if the screen is at least of large width.</dd>
-    </dl>
-    <p>A column class without a prefix will be used in case the
-        alternate minimum screen size is not defined.</p>
+    <div>
+        <h3>Responsive Breakpoints</h3>
+        <p class="mrt">The column count can vary based on available screen width.
+            Address the different minimum screen sizes with responsive breakpoints, wich are indicated by CSS class
+            prefix values values of:</p>
 
+        <table>
+            <tr>
+                <td><code>.sm-</code></td>
+                <td>The column count is applied only if the screen is at least of small width.</td>
+            </tr>
+            <tr>
+                <td><code>.rg-</code></td>
+                <td>The column count is applied only if the screen is at least of regular width.</td>
+            </tr>
+            <tr>
+                <td><code>.md-</code></td>
+                <td>The column count is applied only if the screen is at least of mid width.</td>
+            </tr>
+            <tr>
+                <td><code>.lg-</code></td>
+                <td>The column count is applied only if the screen is at least of large width.</td>
+            </tr>
+        </table>
+        <p>A column class without a prefix will be used in case the
+            alternate minimum screen size is not defined.</p>
 
+    </div>
 
-    <h2 id="column-grid">12 Column Grid</h2>
+    <div>
+        <h2 id="column-grid">12 Column Grid</h2>
 
-    <p>Any space can be divided horizontally into 12ths. E.g. nesting the column grid into the layout grid is a
-        typical case.</p>
-    <p>The sum of the cols per row has to add up to 12. Not specifiying a column size will result in taking
-        the entire grid width into one column.</p>
+        <p>Any space can be divided horizontally into 12ths. E.g. nesting the column grid into the layout grid is a
+            typical case.</p>
+        <p>The sum of the cols per row has to add up to 12. Not specifiying a column size will result in taking
+            the entire grid width into one column.</p>
+    </div>
 
     <div class="breakout bry dotted br-small br-neutral mb code">
         div .x-12
@@ -2236,30 +2243,34 @@ figure
         /div
     </div>
 
-    <h3>Responsive Breakpoints</h3>
-    <p>Columns can have a different width based on minimum screen width.
-        Address the different minimum screen sizes with responsive breakpoints, wich are indicated by CSS class
-        prefix values of:</p>
-    <dl>
-        <dt class="float-left"><code>.sm-</code></dt>
-        <dd>The column width is applied only if the screen is at least of small width.</dd>
-    </dl>
-    <dl>
-        <dt class="float-left"><code>.rg-</code></dt>
-        <dd>The column width is applied only if the screen is at least of regular width.</dd>
-    </dl>
-    <dl>
-        <dt class="float-left"><code>.md-</code></dt>
-        <dd>The column width is applied only if the screen is at least of mid width.</dd>
-    </dl>
-    <dl>
-        <dt class="float-left"><code>.lg-</code></dt>
-        <dd>The column width is applied only if the screen is at least of large width.</dd>
-    </dl>
-    <p>
-        A column class without a prefix will be used in case the
-        alternate minimum screen size is not defined.
-    </p>
+    <div>
+        <h3>Responsive Breakpoints</h3>
+        <p>Columns can have a different width based on minimum screen width.
+            Address the different minimum screen sizes with responsive breakpoints, wich are indicated by CSS class
+            prefix values of:</p>
+        <table>
+            <tr>
+                <td><code>.sm-</code></td>
+                <td>The column width is applied only if the screen is at least of small width.</td>
+            </tr>
+            <tr>
+                <td><code>.rg-</code></td>
+                <td>The column width is applied only if the screen is at least of regular width.</td>
+            </tr>
+            <tr>
+                <td><code>.md-</code></td>
+                <td>The column width is applied only if the screen is at least of mid width.</td>
+            </tr>
+            <tr>
+                <td><code>.lg-</code></td>
+                <td>The column width is applied only if the screen is at least of large width.</td>
+            </tr>
+        </table>
+        <p>
+            A column class without a prefix will be used in case the
+            alternate minimum screen size is not defined.
+        </p>
+    </div>
 
     <div class="breakout bry dotted br-small br-neutral mb  code">
         div .x-12
@@ -2271,17 +2282,18 @@ figure
         /div
     </div>
 
-    <h2 id="flexbox">Flexbox</h2>
+    <div>
+        <h2 id="flexbox">Flexbox</h2>
 
-    <div class="flex justify-start height-5 bg-neutral-4 white br">
-        <div class="square-3 mr bg-neutral-d4">1</div>
-        <div class="square-1 mr bg-neutral-d4">2</div>
-        <div class="square-2 mr bg-neutral-d4">3</div>
-        <div class="square-1 mr bg-neutral-d4">4</div>
-        <div class="square-3 mr bg-neutral-d4">5</div>
-    </div>
+        <div class="flex justify-start height-5 bg-neutral-4 white br">
+            <div class="square-3 mr bg-neutral-d4">1</div>
+            <div class="square-1 mr bg-neutral-d4">2</div>
+            <div class="square-2 mr bg-neutral-d4">3</div>
+            <div class="square-1 mr bg-neutral-d4">4</div>
+            <div class="square-3 mr bg-neutral-d4">5</div>
+        </div>
 
-    <pre class="mry mid">div .flex.justify-start.height-5
+        <pre class="mry mid">div .flex.justify-start.height-5
     div 1 /div .square-3 
     div 2 /div .square-1 
     div 3 /div .square-2 
@@ -2289,15 +2301,15 @@ figure
     div 5 /div .square-3
 /div</pre>
 
-    <div class="mrt-2 flex justify-center height-5 bg-neutral-4 white br">
-        <div class="square-3 mr bg-neutral-d4">1</div>
-        <div class="square-1 mr bg-neutral-d4">2</div>
-        <div class="square-2 mr bg-neutral-d4">3</div>
-        <div class="square-1 mr bg-neutral-d4">4</div>
-        <div class="square-3 mr bg-neutral-d4">5</div>
-    </div>
+        <div class="mrt-2 flex justify-center height-5 bg-neutral-4 white br">
+            <div class="square-3 mr bg-neutral-d4">1</div>
+            <div class="square-1 mr bg-neutral-d4">2</div>
+            <div class="square-2 mr bg-neutral-d4">3</div>
+            <div class="square-1 mr bg-neutral-d4">4</div>
+            <div class="square-3 mr bg-neutral-d4">5</div>
+        </div>
 
-    <pre class="mry mid">div .flex.justify-center.height-5
+        <pre class="mry mid">div .flex.justify-center.height-5
     div 1 /div .square-3 
     div 2 /div .square-1 
     div 3 /div .square-2 
@@ -2305,15 +2317,15 @@ figure
     div 5 /div .square-3
 /div</pre>
 
-    <div class="mrt-2 flex justify-end height-5 bg-neutral-4 white br">
-        <div class="square-3 mr bg-neutral-d4">1</div>
-        <div class="square-1 mr bg-neutral-d4">2</div>
-        <div class="square-2 mr bg-neutral-d4">3</div>
-        <div class="square-1 mr bg-neutral-d4">4</div>
-        <div class="square-3 mr bg-neutral-d4">5</div>
-    </div>
+        <div class="mrt-2 flex justify-end height-5 bg-neutral-4 white br">
+            <div class="square-3 mr bg-neutral-d4">1</div>
+            <div class="square-1 mr bg-neutral-d4">2</div>
+            <div class="square-2 mr bg-neutral-d4">3</div>
+            <div class="square-1 mr bg-neutral-d4">4</div>
+            <div class="square-3 mr bg-neutral-d4">5</div>
+        </div>
 
-    <pre class="mry mid">div .flex.justify-end.height-5
+        <pre class="mry mid">div .flex.justify-end.height-5
     div 1 /div .square-3 
     div 2 /div .square-1 
     div 3 /div .square-2 
@@ -2321,15 +2333,15 @@ figure
     div 5 /div .square-3
 /div</pre>
 
-    <div class="mrt-2 flex justify-space-between height-5 bg-neutral-4 white br">
-        <div class="square-3 mr bg-neutral-d4">1</div>
-        <div class="square-1 mr bg-neutral-d4">2</div>
-        <div class="square-2 mr bg-neutral-d4">3</div>
-        <div class="square-1 mr bg-neutral-d4">4</div>
-        <div class="square-3 mr bg-neutral-d4">5</div>
-    </div>
+        <div class="mrt-2 flex justify-space-between height-5 bg-neutral-4 white br">
+            <div class="square-3 mr bg-neutral-d4">1</div>
+            <div class="square-1 mr bg-neutral-d4">2</div>
+            <div class="square-2 mr bg-neutral-d4">3</div>
+            <div class="square-1 mr bg-neutral-d4">4</div>
+            <div class="square-3 mr bg-neutral-d4">5</div>
+        </div>
 
-    <pre class="mry mid">div .flex.justify-space-between.height-5
+        <pre class="mry mid">div .flex.justify-space-between.height-5
     div 1 /div .square-3 
     div 2 /div .square-1 
     div 3 /div .square-2 
@@ -2337,15 +2349,15 @@ figure
     div 5 /div .square-3
 /div</pre>
 
-    <div class="mrt-2 flex justify-space-around height-5 bg-neutral-4 white br">
-        <div class="square-3 mr bg-neutral-d4">1</div>
-        <div class="square-1 mr bg-neutral-d4">2</div>
-        <div class="square-2 mr bg-neutral-d4">3</div>
-        <div class="square-1 mr bg-neutral-d4">4</div>
-        <div class="square-3 mr bg-neutral-d4">5</div>
-    </div>
+        <div class="mrt-2 flex justify-space-around height-5 bg-neutral-4 white br">
+            <div class="square-3 mr bg-neutral-d4">1</div>
+            <div class="square-1 mr bg-neutral-d4">2</div>
+            <div class="square-2 mr bg-neutral-d4">3</div>
+            <div class="square-1 mr bg-neutral-d4">4</div>
+            <div class="square-3 mr bg-neutral-d4">5</div>
+        </div>
 
-    <pre class="mry mid">div .flex.justify-space-around.height-5
+        <pre class="mry mid">div .flex.justify-space-around.height-5
     div 1 /div .square-3 
     div 2 /div .square-1 
     div 3 /div .square-2 
@@ -2353,15 +2365,15 @@ figure
     div 5 /div .square-3
 /div</pre>
 
-    <div class="mrt-2 flex justify-space-evenly height-5 bg-neutral-4 white br">
-        <div class="square-3 mr bg-neutral-d4">1</div>
-        <div class="square-1 mr bg-neutral-d4">2</div>
-        <div class="square-2 mr bg-neutral-d4">3</div>
-        <div class="square-1 mr bg-neutral-d4">4</div>
-        <div class="square-3 mr bg-neutral-d4">5</div>
-    </div>
+        <div class="mrt-2 flex justify-space-evenly height-5 bg-neutral-4 white br">
+            <div class="square-3 mr bg-neutral-d4">1</div>
+            <div class="square-1 mr bg-neutral-d4">2</div>
+            <div class="square-2 mr bg-neutral-d4">3</div>
+            <div class="square-1 mr bg-neutral-d4">4</div>
+            <div class="square-3 mr bg-neutral-d4">5</div>
+        </div>
 
-    <pre class="mry mid">div .flex.justify-space-evenly.height-5
+        <pre class="mry mid">div .flex.justify-space-evenly.height-5
     div 1 /div .square-3 
     div 2 /div .square-1 
     div 3 /div .square-2 
@@ -2369,15 +2381,15 @@ figure
     div 5 /div .square-3
 /div</pre>
 
-    <div class="mrt-2 flex align-start height-5 bg-neutral-4 white br">
-        <div class="square-3 mr bg-neutral-d4">1</div>
-        <div class="square-1 mr bg-neutral-d4">2</div>
-        <div class="square-2 mr bg-neutral-d4">3</div>
-        <div class="square-1 mr bg-neutral-d4">4</div>
-        <div class="square-3 mr bg-neutral-d4">5</div>
-    </div>
+        <div class="mrt-2 flex align-start height-5 bg-neutral-4 white br">
+            <div class="square-3 mr bg-neutral-d4">1</div>
+            <div class="square-1 mr bg-neutral-d4">2</div>
+            <div class="square-2 mr bg-neutral-d4">3</div>
+            <div class="square-1 mr bg-neutral-d4">4</div>
+            <div class="square-3 mr bg-neutral-d4">5</div>
+        </div>
 
-    <pre class="mry mid">div .flex.align-start.height-5
+        <pre class="mry mid">div .flex.align-start.height-5
     div 1 /div .square-3 
     div 2 /div .square-1 
     div 3 /div .square-2 
@@ -2385,15 +2397,15 @@ figure
     div 5 /div .square-3
 /div</pre>
 
-    <div class="mrt-2 flex align-center height-5 bg-neutral-4 white br">
-        <div class="square-3 mr bg-neutral-d4">1</div>
-        <div class="square-1 mr bg-neutral-d4">2</div>
-        <div class="square-2 mr bg-neutral-d4">3</div>
-        <div class="square-1 mr bg-neutral-d4">4</div>
-        <div class="square-3 mr bg-neutral-d4">5</div>
-    </div>
+        <div class="mrt-2 flex align-center height-5 bg-neutral-4 white br">
+            <div class="square-3 mr bg-neutral-d4">1</div>
+            <div class="square-1 mr bg-neutral-d4">2</div>
+            <div class="square-2 mr bg-neutral-d4">3</div>
+            <div class="square-1 mr bg-neutral-d4">4</div>
+            <div class="square-3 mr bg-neutral-d4">5</div>
+        </div>
 
-    <pre class="mry mid">div .flex.align-center.height-5
+        <pre class="mry mid">div .flex.align-center.height-5
     div 1 /div .square-3 
     div 2 /div .square-1 
     div 3 /div .square-2 
@@ -2401,15 +2413,15 @@ figure
     div 5 /div .square-3
 /div</pre>
 
-    <div class="mrt-2 flex align-end height-5 bg-neutral-4 white br">
-        <div class="square-3 mr bg-neutral-d4">1</div>
-        <div class="square-1 mr bg-neutral-d4">2</div>
-        <div class="square-2 mr bg-neutral-d4">3</div>
-        <div class="square-1 mr bg-neutral-d4">4</div>
-        <div class="square-3 mr bg-neutral-d4">5</div>
-    </div>
+        <div class="mrt-2 flex align-end height-5 bg-neutral-4 white br">
+            <div class="square-3 mr bg-neutral-d4">1</div>
+            <div class="square-1 mr bg-neutral-d4">2</div>
+            <div class="square-2 mr bg-neutral-d4">3</div>
+            <div class="square-1 mr bg-neutral-d4">4</div>
+            <div class="square-3 mr bg-neutral-d4">5</div>
+        </div>
 
-    <pre class="mry mid">div .flex.align-end.height-5
+        <pre class="mry mid">div .flex.align-end.height-5
     div 1 /div .square-3 
     div 2 /div .square-1 
     div 3 /div .square-2 
@@ -2417,15 +2429,15 @@ figure
     div 5 /div .square-3
 /div</pre>
 
-    <div class="mrt-2 flex align-stretch height-5 bg-neutral-4 white br">
-        <div class="width-3 mr bg-neutral-d4">1</div>
-        <div class="width-1 mr bg-neutral-d4">2</div>
-        <div class="width-2 mr bg-neutral-d4">3</div>
-        <div class="width-1 mr bg-neutral-d4">4</div>
-        <div class="width-3 mr bg-neutral-d4">5</div>
-    </div>
+        <div class="mrt-2 flex align-stretch height-5 bg-neutral-4 white br">
+            <div class="width-3 mr bg-neutral-d4">1</div>
+            <div class="width-1 mr bg-neutral-d4">2</div>
+            <div class="width-2 mr bg-neutral-d4">3</div>
+            <div class="width-1 mr bg-neutral-d4">4</div>
+            <div class="width-3 mr bg-neutral-d4">5</div>
+        </div>
 
-    <pre class="mry mid">div .flex.align-stretch.height-5
+        <pre class="mry mid">div .flex.align-stretch.height-5
     div 1 /div .width-3 
     div 2 /div .width-1 
     div 3 /div .width-2 
@@ -2433,15 +2445,15 @@ figure
     div 5 /div .width-3
 /div</pre>
 
-    <div class="mrt-2 flex align-baseline height-5 bg-neutral-4 white br">
-        <div class="square-3 mr bg-neutral-d4 fs-3">One Morning</div>
-        <div class="square-3 mr bg-neutral-d4 fs">Gregor Samsa</div>
-        <div class="square-2 mr bg-neutral-d4"></div>
-        <div class="square-1 mr bg-neutral-d4"></div>
-        <div class="square-3 mr bg-neutral-d4"></div>
-    </div>
+        <div class="mrt-2 flex align-baseline height-5 bg-neutral-4 white br">
+            <div class="square-3 mr bg-neutral-d4 fs-3">One Morning</div>
+            <div class="square-3 mr bg-neutral-d4 fs">Gregor Samsa</div>
+            <div class="square-2 mr bg-neutral-d4"></div>
+            <div class="square-1 mr bg-neutral-d4"></div>
+            <div class="square-3 mr bg-neutral-d4"></div>
+        </div>
 
-    <pre class="mry mid">div .flex.align-baseline.height-5
+        <pre class="mry mid">div .flex.align-baseline.height-5
     div 1 /div .square-3 
     div 2 /div .square-3 
     div 3 /div .square-2 
@@ -2449,19 +2461,19 @@ figure
     div 5 /div .square-3
 /div</pre>
 
-    <div class="mrt-2 flex-wrap bg-neutral-4 white br overflow-x-auto">
-        <div class="square-3 mr bg-neutral-d4">1</div>
-        <div class="square-3 mr bg-neutral-d4">2</div>
-        <div class="square-2 mr bg-neutral-d4">3</div>
-        <div class="square-1 mr bg-neutral-d4">4</div>
-        <div class="square-3 mr bg-neutral-d4">5</div>
-        <div class="square-3 mr bg-neutral-d4">6</div>
-        <div class="square-2 mr bg-neutral-d4">7</div>
-        <div class="square-1 mr bg-neutral-d4">8</div>
-        <div class="square-3 mr bg-neutral-d4">9</div>
-    </div>
+        <div class="mrt-2 flex-wrap bg-neutral-4 white br overflow-x-auto">
+            <div class="square-3 mr bg-neutral-d4">1</div>
+            <div class="square-3 mr bg-neutral-d4">2</div>
+            <div class="square-2 mr bg-neutral-d4">3</div>
+            <div class="square-1 mr bg-neutral-d4">4</div>
+            <div class="square-3 mr bg-neutral-d4">5</div>
+            <div class="square-3 mr bg-neutral-d4">6</div>
+            <div class="square-2 mr bg-neutral-d4">7</div>
+            <div class="square-1 mr bg-neutral-d4">8</div>
+            <div class="square-3 mr bg-neutral-d4">9</div>
+        </div>
 
-    <pre class="mry mid">div .flex-wrap
+        <pre class="mry mid">div .flex-wrap
     div 1 /div .square-3 
     div 2 /div .square-3 
     div 3 /div .square-2 
@@ -2473,15 +2485,15 @@ figure
     div 9 /div .square-3
 /div</pre>
 
-    <div class="mrt-2 flex-column align-stretch bg-neutral-4 white br">
-        <div class="square-3 mr bg-neutral-d4">1</div>
-        <div class="square-1 mr bg-neutral-d4">2</div>
-        <div class="square-2 mr bg-neutral-d4">3</div>
-        <div class="square-1 mr bg-neutral-d4">4</div>
-        <div class="square-3 mr bg-neutral-d4">5</div>
-    </div>
+        <div class="mrt-2 flex-column align-stretch bg-neutral-4 white br">
+            <div class="square-3 mr bg-neutral-d4">1</div>
+            <div class="square-1 mr bg-neutral-d4">2</div>
+            <div class="square-2 mr bg-neutral-d4">3</div>
+            <div class="square-1 mr bg-neutral-d4">4</div>
+            <div class="square-3 mr bg-neutral-d4">5</div>
+        </div>
 
-    <pre class="mry mid">div .flex-column
+        <pre class="mry mid">div .flex-column
     div 1 /div .square-3 
     div 2 /div .square-1 
     div 3 /div .square-2 
@@ -2489,19 +2501,19 @@ figure
     div 5 /div .square-3
 /div</pre>
 
-    <div class="mrt-2 flex-column flex-wrap overflow-x-auto height-6 bg-neutral-4 white br">
-        <div class="square-3 mr bg-neutral-d4">1</div>
-        <div class="square-3 mr bg-neutral-d4">2</div>
-        <div class="square-2 mr bg-neutral-d4">3</div>
-        <div class="square-1 mr bg-neutral-d4">4</div>
-        <div class="square-3 mr bg-neutral-d4">5</div>
-        <div class="square-3 mr bg-neutral-d4">6</div>
-        <div class="square-2 mr bg-neutral-d4">7</div>
-        <div class="square-1 mr bg-neutral-d4">8</div>
-        <div class="square-3 mr bg-neutral-d4">9</div>
-    </div>
+        <div class="mrt-2 flex-column flex-wrap overflow-x-auto height-6 bg-neutral-4 white br">
+            <div class="square-3 mr bg-neutral-d4">1</div>
+            <div class="square-3 mr bg-neutral-d4">2</div>
+            <div class="square-2 mr bg-neutral-d4">3</div>
+            <div class="square-1 mr bg-neutral-d4">4</div>
+            <div class="square-3 mr bg-neutral-d4">5</div>
+            <div class="square-3 mr bg-neutral-d4">6</div>
+            <div class="square-2 mr bg-neutral-d4">7</div>
+            <div class="square-1 mr bg-neutral-d4">8</div>
+            <div class="square-3 mr bg-neutral-d4">9</div>
+        </div>
 
-    <pre class="mry mid">div .flex-column.flex-wrap.height-6
+        <pre class="mry mid">div .flex-column.flex-wrap.height-6
     div 1 /div .square-3 
     div 2 /div .square-3 
     div 3 /div .square-2 
@@ -2512,6 +2524,8 @@ figure
     div 8 /div .square-1 
     div 9 /div .square-3
 /div</pre>
+
+    </div>
 
 
     <h2 id="layout">Layout</h2>
@@ -2739,37 +2753,41 @@ figure
             </tr>
         </table>
     </div>
-    <h3>Clearfix</h3>
 
-    <p>Using <code>float</code> without <code>.clearfix</code></p>
     <div>
-        <div class="br brw-d2 br-neutral-3">
+        <h3>Clearfix</h3>
+
+        <p>Using <code>float</code> without <code>.clearfix</code></p>
+        <div>
+            <div class="br brw-d2 br-neutral-3">
+                <div class="float-left width-4 height-3 bg-base-color"><code class="white">.float-left</code></div>
+                <div class="float-right width-4 height-3 bg-base-color"><code class="white">.float-right</code></div>
+            </div>
+        </div>
+
+        <div class="float-clear"></div>
+        <pre class="mrt">div 
+    div/ .float-left 
+    div/ .float-right 
+/div</pre>
+
+        <p class="float-clear mrt-2">Using <code>float</code> with <code>.clearfix</code> assigned to the outer
+            container</p>
+        <div class="br brw-d2 br-neutral-3 clearfix">
             <div class="float-left width-4 height-3 bg-base-color"><code class="white">.float-left</code></div>
             <div class="float-right width-4 height-3 bg-base-color"><code class="white">.float-right</code></div>
         </div>
-    </div>
-
-
-    <pre class="mid mrt">div 
+        <pre class="mid mrt">div .clearfix
     div/ .float-left 
     div/ .float-right 
 /div</pre>
-
-    <p class="float-clear mrt-2">Using <code>float</code> with <code>.clearfix</code> assigned to the outer
-        container</p>
-    <div class="br brw-d2 br-neutral-3 clearfix">
-        <div class="float-left width-4 height-3 bg-base-color"><code class="white">.float-left</code></div>
-        <div class="float-right width-4 height-3 bg-base-color"><code class="white">.float-right</code></div>
     </div>
-    <pre class="mid mrt">div .clearfix
-    div/ .float-left 
-    div/ .float-right 
-/div</pre>
 
-    <h2 id="width">Width, Max-Width, and Min-Width</h2>
+    <div>
+        <h2 id="width">Width, Max-Width, and Min-Width</h2>
 
-
-    <p>Set the width by assigning any of the following shorthand CSS classes.</p>
+        <p>Set the width by assigning any of the following shorthand CSS classes.</p>
+    </div>
 
     <div class="no-wrap overflow-x-auto">
         <div>
@@ -2854,26 +2872,31 @@ figure
         <p>In addition <code>.width</code>, <code>.max-width</code>, and <code>.min-with</code> classes can
             be altered with responsive breakpoints, wich are indicated by CSS class
             prefix values of:</p>
-        <dl>
-            <dt class="float-left"><code>.sm-</code></dt>
-            <dd>The width is applied only if the screen is at least of small width.</dd>
-        </dl>
-        <dl>
-            <dt class="float-left"><code>.rg-</code></dt>
-            <dd>The width is applied only if the screen is at least of regular width.</dd>
-        </dl>
-        <dl>
-            <dt class="float-left"><code>.md-</code></dt>
-            <dd>The width is applied only if the screen is at least of mid width.</dd>
-        </dl>
-        <dl>
-            <dt class="float-left"><code>.lg-</code></dt>
-            <dd>The width is applied only if the screen is at least of large width.</dd>
-        </dl>
+
+        <table>
+            <tr>
+                <td><code>.sm-</code></td>
+                <td>The width is applied only if the screen is at least of small width.</td>
+            </tr>
+            <tr>
+                <td><code>.rg-</code></td>
+                <td>The width is applied only if the screen is at least of regular width.</td>
+            </tr>
+            <tr>
+                <td><code>.md-</code></td>
+                <td>The width is applied only if the screen is at least of mid width.</td>
+            </tr>
+            <tr>
+                <td><code>.lg-</code></td>
+                <td>The width is applied only if the screen is at least of large width.</td>
+            </tr>
+        </table>
     </div>
 
-    <h3>Viewport width</h3>
-    <p>The class <code>.vw-100</code> will assign the exact width of the viewport.</p>
+    <div>
+        <h3>Viewport width</h3>
+        <p>The class <code>.vw-100</code> will assign the exact width of the viewport.</p>
+    </div>
     <div class="full brb bg-neutral-4 vw-100 fit height-1 mrb-d2 right">
         <code class="pdr">.vw-100</code>
     </div>
@@ -2985,30 +3008,36 @@ figure
             be altered with responsive breakpoints, wich are indicated by CSS class
             prefix values
             of:</p>
-        <dl>
-            <dt class="float-left"><code>.sm-</code></dt>
-            <dd>The height is applied only if the screen is at least of small width.</dd>
-        </dl>
-        <dl>
-            <dt class="float-left"><code>.rg-</code></dt>
-            <dd>The height is applied only if the screen is at least of regular width.</dd>
-        </dl>
-        <dl>
-            <dt class="float-left"><code>.md-</code></dt>
-            <dd>The height is applied only if the screen is at least of mid width.</dd>
-        </dl>
-        <dl>
-            <dt class="float-left"><code>.lg-</code></dt>
-            <dd>The height is applied only if the screen is at least of large width.</dd>
-        </dl>
+
+        <table>
+            <tr>
+                <td><code>.sm-</code></td>
+                <td>The height is applied only if the screen is at least of small width.</td>
+            </tr>
+            <tr>
+                <td><code>.rg-</code></td>
+                <td>The height is applied only if the screen is at least of regular width.</td>
+            </tr>
+            <tr>
+                <td><code>.md-</code></td>
+                <td>The height is applied only if the screen is at least of mid width.</td>
+            </tr>
+            <tr>
+                <td><code>.lg-</code></td>
+                <td>The height is applied only if the screen is at least of large width.</td>
+            </tr>
+        </table>
 
     </div>
 
-    <h3>Viewport height</h3>
-    <p>The class <code>.vh-100</code> will assign the exact height of the viewport.</p>
-    <div class="vh-100 brl x-12">
-        <div class="xx-4 bg-neutral-4"></div>
-        <div class="xx-8"><code>.vh-100</code></div>
+    <div>
+        <h3>Viewport height</h3>
+        <p>The class <code>.vh-100</code> will assign the exact height of the viewport.</p>
+        <div class="vh-100 brl x-12">
+            <div class="xx-4 bg-neutral-4"></div>
+            <div class="xx-8"><code>.vh-100</code></div>
+        </div>
+
     </div>
 
 
@@ -3081,32 +3110,34 @@ figure
         </div>
     </div>
 
-
-    <h3>Responsive Breakpoints</h3>
-    <p>The <code>.square</code> classes can be altered with responsive breakpoints, wich are indicated by CSS class
-        prefix values
-        of:</p>
-    <dl>
-        <dt class="float-left"><code>.sm-</code></dt>
-        <dd>The square is applied only if the screen is at least of small width.</dd>
-    </dl>
-    <dl>
-        <dt class="float-left"><code>.rg-</code></dt>
-        <dd>The square is applied only if the screen is at least of regular width.</dd>
-    </dl>
-    <dl>
-        <dt class="float-left"><code>.md-</code></dt>
-        <dd>The square is applied only if the screen is at least of mid width.</dd>
-    </dl>
-    <dl>
-        <dt class="float-left"><code>.lg-</code></dt>
-        <dd>The square is applied only if the screen is at least of large width.</dd>
-    </dl>
-
+    <div>
+        <h3>Responsive Breakpoints</h3>
+        <p>The <code>.square</code> classes can be altered with responsive breakpoints, wich are indicated by CSS class
+            prefix values
+            of:</p>
+        <table>
+            <tr>
+                <td><code>.sm-</code></td>
+                <td>The square is applied only if the screen is at least of small width.</td>
+            </tr>
+            <tr>
+                <td><code>.rg-</code></td>
+                <td>The square is applied only if the screen is at least of regular width.</td>
+            </tr>
+            <tr>
+                <td><code>.md-</code></td>
+                <td>The square is applied only if the screen is at least of mid width.</td>
+            </tr>
+            <tr>
+                <td><code>.lg-</code></td>
+                <td>The square is applied only if the screen is at least of large width.</td>
+            </tr>
+        </table>
+    </div>
 
     <h2 id="hide">Responsive Hide</h2>
 
-    <div class="full mry-2">
+    <div class="full">
         <div class="top brb bg-neutral-4 max-width-sm sm-hide pdx-d1 height-1 mrb-d2 overflow-hidden"><span
                 class="mrr">Screen
                 has
@@ -3184,58 +3215,60 @@ div/ .below-lg-hide //When visible: screen is above large width</pre>
 
     </div>
 
-    <h2 id="forms">Forms</h2>
+    <div>
+        <h2 id="forms">Forms</h2>
 
-    <form class="mry-3 mxw-sm">
-        <dl>
-            <label>Email Address</label>
-            <input type="email" class="width-100 block">
-        </dl>
-        <dl>
-            <label>Password</label>
-            <input type="password" class="width-100 block">
-        </dl>
-        <dl>
-            <label>Select</label>
-            <select class="block">
-                <option>Option 1</option>
-                <option>Option 2</option>
-                <option>Option 3</option>
-                <option>Option 4</option>
-                <option>Option 5</option>
-            </select>
-        </dl>
-        <dl>
-            <label>Datalist</label>
-            <input class="width-100 block" type="list" list="browsers">
-            <datalist id="browsers">
-                <option value="Internet Explorer">
-                <option value="Firefox">
-                <option value="Chrome">
-                <option value="Opera">
-                <option value="Safari">
-            </datalist>
-        </dl>
+        <form class="mxw-sm">
+            <dl>
+                <label>Email Address</label>
+                <input type="email" class="width-100 block">
+            </dl>
+            <dl>
+                <label>Password</label>
+                <input type="password" class="width-100 block">
+            </dl>
+            <dl>
+                <label>Select</label>
+                <select class="block">
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                    <option>Option 4</option>
+                    <option>Option 5</option>
+                </select>
+            </dl>
+            <dl>
+                <label>Datalist</label>
+                <input class="width-100 block" type="list" list="browsers">
+                <datalist id="browsers">
+                    <option value="Internet Explorer">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+            </dl>
 
-        <dl>
-            <label class="block">
-                <input type="checkbox" checked>
-                Remember me
-            </label>
-        </dl>
-        <button type="submit">Sign In</button>
-        <button type="reset">Cancel</button>
-        <dl><label>Textarea</label>
-            <textarea class="block width-100 height-3"></textarea>
-        </dl>
-    </form>
+            <dl>
+                <label class="block">
+                    <input type="checkbox" checked>
+                    Remember me
+                </label>
+            </dl>
+            <button type="submit">Sign In</button>
+            <button type="reset">Cancel</button>
+            <dl><label>Textarea</label>
+                <textarea class="block width-100 height-3"></textarea>
+            </dl>
+        </form>
+    </div>
 </body>
 
 <script src="resources/dynamic-header.min.js"></script>
 <script src="resources/active-toc.min.js"></script>
 
 <script>
-    DynamicHeader.init({delta: 100});
+    DynamicHeader.init({ delta: 100 });
     ActiveToc.init();
 </script>
 

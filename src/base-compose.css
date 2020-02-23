@@ -12,5 +12,6 @@
 @import "base-color";
 @import "borders";
 @import "width";
+@import "width-max";
 @import "height";
 @import "space";

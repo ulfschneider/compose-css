@@ -45,12 +45,15 @@ th {
     font-weight: var(--font-weight-bold);
 }
 
-th, td {
+th,
+td {
     padding: var(--space-d2) var(--space-d1);
 }
 
-tr:first-child th {
-   padding-top: 0;
+
+tr:first-child th,
+tr:first-child td {
+    padding-top: 0;
 }
 
 tr:last-child td {
