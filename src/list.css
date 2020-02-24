@@ -81,16 +81,17 @@ ul.indent li::before{
     margin-left: 0;
 }
 
-@media (--breakpoint-max-rg) {
-
-    /* grid white space border changes at this breakpoint */
+@media (--breakpoint-max-md) {
+    
     ul,
     ol {
         padding-left: var(--horizontal-rhythm);
     }
 
     ul.indent,
-    ol.indent {
+    ol.indent,
+    ul.indent li::before,
+    ol.indent li::before {
         padding-left: 0;
     }
 
