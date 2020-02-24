@@ -2,8 +2,8 @@
 
   --size-factor: 1.25;
 
-  --fs-d2: calc(var(--fs-d1) / var(--size-factor));
-  --fs-d1: calc(1rem / var(--size-factor));
+  --fs-d2: calc(.75rem);
+  --fs-d1: calc(.85rem);
 
   --fs: calc(16px + 0.175vw);
   --fs-mono: .85rem;
@@ -15,6 +15,8 @@
   --fs-6: calc(var(--fs-5) * var(--size-factor));
   --fs-7: calc(var(--fs-6) * var(--size-factor));
   --fs-8: calc(var(--fs-7) * var(--size-factor));
+  --fs-9: calc(var(--fs-8) * var(--size-factor));
+  --fs-10: calc(var(--fs-9) * var(--size-factor));
 
   --lh-d1: 0.9em;
   --lh: 1em;
@@ -120,6 +122,16 @@
 
 .fs-8 {
   font-size: var(--fs-8);
+  line-height: var(--lh-2)
+}
+
+.fs-9 {
+  font-size: var(--fs-9);
+  line-height: var(--lh-2)
+}
+
+.fs-10 {
+  font-size: var(--fs-10);
   line-height: var(--lh-2)
 }
 
