@@ -59,6 +59,7 @@
   --hr-content: "◊      ◊      ◊";
   --quotes: "«""»""‹""›";
   --quotes-de: "»""«""›""‹";
+  --blockquote-indicator: "❯❯";
 
   font-family: var(--font-family);
   font-weight: var(--font-weight-normal);
@@ -411,7 +412,7 @@ blockquote {
 }
 
 blockquote::before {
-  content: "»";
+  content: var(--blockquote-indicator);
   float:left;
   margin-left: calc(0px - var(--horizontal-rhythm));
 }
@@ -456,7 +457,7 @@ figure {
 figcaption {
   margin-top: var(--mrt-figcaption);
   margin-bottom: var(--mrb-figcaption);
-  line-height: var(--lh-1);
+  line-height: var(--lh-2);
   font-style: normal;
   font-size: var(--fs);
 }

@@ -89,6 +89,11 @@ ul.indent li::before{
         padding-left: var(--horizontal-rhythm);
     }
 
+    ul.indent,
+    ol.indent {
+        padding-left: 0;
+    }
+
     ul li::before,
     ol li::before {
         padding-left: 0;
