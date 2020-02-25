@@ -1,16 +1,7 @@
-@media (hover: hover) {
-    a:hover {
-        color: var(--link-hover-color);
-    }
-}
 
 .button,
 button,
 a {
     cursor: pointer;
     touch-action: manipulation;
-}
-
-a:active:focus {
-    color: var(--link-active-color);
 }

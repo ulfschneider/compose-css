@@ -13,8 +13,10 @@
   --pre-border: var(--border-width-default) dotted var(--pre-border-color);
 
   --link-text-decoration: underline;
-  --text-underline-offset: 0.25em;
+  --link-text-decoration-color: var(--base-color);
+  --text-underline-offset: 0.1em;
   --text-decoration-thickness: 0.035em;
+  
   --font-variant-numeric: normal;
 
   --vertical-rhythm: var(--space);
@@ -395,9 +397,21 @@ pre,
 }
 
 a {
-  color: var(--link-color);
-  text-decoration-color: var(--text-decoration-color);
+  color: var(--link-color);  
   text-decoration: var(--link-text-decoration);
+  text-decoration-color: var(--link-text-decoration-color);
+}
+
+@media (hover: hover) {
+  a:hover {
+      color: var(--link-hover-color);
+      text-decoration-color: var(--link-hover-color);
+  }
+}
+
+a:active:focus {
+  color: var(--link-active-color);
+  text-decoration-color: var(--link-active-color);
 }
 
 blockquote {
