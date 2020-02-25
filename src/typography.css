@@ -3,10 +3,10 @@
   --font-weight-bold: 600;
   --font-weight-normal: 400;
 
-  --headline-font-family: var(--font-family);
-  --headline-font-weight: 600;
-  --headline-letter-spacing: 0.025em;
-  --headline-text-transform: uppercase;
+  --heading-font-family: var(--font-family);
+  --heading-font-weight: 600;
+  --heading-letter-spacing: 0.025em;
+  --heading-text-transform: uppercase;
 
   --mono-font-family: monospace;
   --code-font-family: monospace;
@@ -291,10 +291,10 @@ h3,
 h4,
 h5,
 h6 {
-  text-transform: var(--headline-text-transform);
-  letter-spacing: var(--headline-letter-spacing);
-  font-weight: var(--headline-font-weight);
-  font-family: var(--headline-font-family);
+  text-transform: var(--heading-text-transform);
+  letter-spacing: var(--heading-letter-spacing);
+  font-weight: var(--heading-font-weight);
+  font-family: var(--heading-font-family);
   color: var(--heading-color);
   scroll-margin-top: var(--scroll-margin-top);
 }
