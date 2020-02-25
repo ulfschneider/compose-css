@@ -59,7 +59,9 @@
   --hr-content: "◊      ◊      ◊";
   --quotes: "«""»""‹""›";
   --quotes-de: "»""«""›""‹";
-  --blockquote-indicator: "❯❯";
+  --blockquote-indicator: "❯";
+
+  --scroll-margin-top: var(--vertical-rhythm);
 
   font-family: var(--font-family);
   font-weight: var(--font-weight-normal);
@@ -292,6 +294,7 @@ h6 {
   font-weight: var(--headline-font-weight);
   font-family: var(--headline-font-family);
   color: var(--heading-color);
+  scroll-margin-top: var(--scroll-margin-top);
 }
 
 h1 {
@@ -299,7 +302,6 @@ h1 {
   line-height: var(--lh-h1);
   margin-top: var(--mrt-h1);
   margin-bottom: var(--mrb-h1);
-  padding-left: 0;
 }
 
 h2 {
@@ -307,7 +309,6 @@ h2 {
   line-height: var(--lh-h2);
   margin-top: var(--mrt-h2);
   margin-bottom: var(--mrb-h2);
-  padding-left: 0;
 }
 
 h3 {
@@ -315,7 +316,6 @@ h3 {
   line-height: var(--lh-h3);
   margin-top: var(--mrt-h3);
   margin-bottom: var(--mrb-h3);
-  padding-left: 0;
 }
 
 h4 {
@@ -323,13 +323,11 @@ h4 {
   line-height: var(--lh-h4);
   margin-top: var(--mrt-h4);
   margin-bottom: var(--mrb-h4);
-  padding-left: 0;
 }
 
 h5 {
   font-size: var(--fs-h5);
   line-height: var(--lh-h5);
-
   margin-top: var(--mrt-h5);
   margin-bottom: var(--mrb-h5);
 }
@@ -337,7 +335,6 @@ h5 {
 h6 {
   font-size: var(--fs-h6);
   line-height: var(--lh-h6);
-
   margin-top: var(--mrt-h6);
   margin-bottom: var(--mrb-h6);
 }
