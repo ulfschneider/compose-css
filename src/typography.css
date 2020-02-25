@@ -57,8 +57,8 @@
   --mrb-hr: var(--vertical-rhythm);
 
   --hr-content: "◊      ◊      ◊";
-  --quotes: "«""»""‹""›";
-  --quotes-de: "»""«""›""‹";
+  --quotes: """ """ "'" "'";
+  --quotes-de: """ """ "'" "'";
   --blockquote-indicator: "❯";
 
   --scroll-margin-top: var(--vertical-rhythm);

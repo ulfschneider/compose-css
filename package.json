@@ -1,6 +1,6 @@
 {
   "name": "compose-css",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Composable CSS Toolkit",
   "main": "src/compose.css",
   "style": "css/compose.css",
@@ -36,5 +36,5 @@
   "bugs": {
     "url": "https://github.com/ulfschneider/compose-css/issues"
   },
-  "homepage": "https://github.com/ulfschneider/compose-css#readme"
+  "homepage": "https://ulf.codes/compose"
 }
