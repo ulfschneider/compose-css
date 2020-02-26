@@ -47,7 +47,7 @@
   --mrt-blockquote: var(--vertical-rhythm);
   --mrb-blockquote: var(--vertical-rhythm);
 
-  --mrt-figure: var(--vertical-rhythm);
+  --mrt-figure: var(--space-2);
   --mrb-figure: var(--space-2);
   --mrt-figcaption: var(--vertical-rhythm);
   --mrb-figcaption: 0;
@@ -467,10 +467,9 @@ figure {
 
 figcaption {
   margin-top: var(--mrt-figcaption);
-  margin-bottom: var(--mrb-figcaption);
-  line-height: var(--lh-2);
+  margin-bottom: var(--mrb-figcaption);  
   font-style: normal;
-  font-size: var(--fs);
+  font-size: var(--fs-d1);
 }
 
 figure blockquote {

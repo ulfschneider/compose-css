@@ -57,10 +57,9 @@ ol li {
 }
 
 ol li::before {
-    content: counter(styled-number) ".";
+    content: counter(styled-number) ". ";
     margin-left: calc(var(--horizontal-rhythm) * -1);
-    min-width: var(--horizontal-rhythm);
-    padding-right: var(--space-d1);    
+    min-width: var(--horizontal-rhythm);     
     text-align: left;
     display: inline-block;
 }
@@ -68,8 +67,7 @@ ol li::before {
 ul li::before {
     content: var(--list-item-type);
     margin-left: calc(var(--horizontal-rhythm) * -1);
-    min-width: var(--horizontal-rhythm);
-    padding-right: var(--space-d1);    
+    min-width: var(--horizontal-rhythm);    
     text-align: left;
     display: inline-block;
 }
