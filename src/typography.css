@@ -357,7 +357,8 @@ p.indent {
 }
 
 .no-indent p,
-p.no-indent {
+p.no-indent,
+p+p.no-indent {
   text-indent: 0;
   margin-bottom: var(--space);
 }
@@ -470,6 +471,7 @@ figcaption {
   margin-bottom: var(--mrb-figcaption);  
   font-style: normal;
   font-size: var(--fs-d1);
+  line-height: var(--lh-2);
 }
 
 figure blockquote {
