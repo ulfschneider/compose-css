@@ -431,6 +431,7 @@ blockquote::before {
 
 
 blockquote figcaption {
+  margin-top: var(--space-d2);
   font-weight: var(--font-weight-bold);
 }
 
