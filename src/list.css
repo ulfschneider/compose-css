@@ -59,7 +59,7 @@ ol li {
 ol li::before {
     content: counter(styled-number) ". ";
     margin-left: calc(var(--horizontal-rhythm) * -1);
-    min-width: var(--horizontal-rhythm);     
+    min-width: var(--horizontal-rhythm);
     text-align: left;
     display: inline-block;
 }
@@ -67,36 +67,45 @@ ol li::before {
 ul li::before {
     content: var(--list-item-type);
     margin-left: calc(var(--horizontal-rhythm) * -1);
-    min-width: var(--horizontal-rhythm);    
+    min-width: var(--horizontal-rhythm);
     text-align: left;
     display: inline-block;
 }
 
-ol.indent li::before,
-ul.indent li::before{
-    margin-left: 0;
-}
-
-@media (--breakpoint-max-md) {
-    
-    ul,
-    ol {
-        padding-left: var(--horizontal-rhythm);
-    }
-
-    ul.indent,
-    ol.indent {
-        padding-left: 0;
-    }
-
-}
 
 ol ol li::before,
 ol ul li::before,
 ul ul li::before,
 ul ol li::before {
     margin-left: calc(var(--horizontal-rhythm) * -1);
-    min-width: var(--horizontal-rhythm);    
+    min-width: var(--horizontal-rhythm);
+}
+
+@media (--breakpoint-max-md) {
+
+    ul li::before,
+    ol li::before,
+    ol ol li::before,
+    ol ul li::before,
+    ul ul li::before,
+    ul ol li::before {
+        margin-left: 0;
+    }
+}
+
+
+ul.indent,
+ol.indent,
+[class^="columns"] ul,
+[class^="columns"] ol {
+    padding-left: 0;
+}
+
+ol.indent li::before,
+ul.indent li::before,
+[class^="columns"] ol li::before,
+[class^="columns"] ul li::before {
+    margin-left: 0;
 }
 
 ul.no-list-type li::before {
