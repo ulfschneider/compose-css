@@ -87,3 +87,7 @@
 .mxh-6 {
     max-height: var(--space-6);
 }
+
+.max-vh-100 {
+    max-height: 100vh;
+}

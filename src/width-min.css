@@ -82,3 +82,8 @@
 .miw-6 {
     min-width: var(--space-6);
 }
+
+
+.min-vw-100 {
+    min-width: 100vw;
+}

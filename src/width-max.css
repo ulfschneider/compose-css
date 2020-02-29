@@ -87,3 +87,7 @@
 .mxw-6 {
     max-width: var(--space-6);
 }
+
+.max-vw-100 {
+    max-width: 100vw;
+}

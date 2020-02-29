@@ -10,14 +10,6 @@
     width: 100vw;
 }
 
-.vmaxw-100 {
-    width: 100vmax;
-}
-
-.vminw-100 {
-    widht: 100vmin;
-}
-
 .width-sm {
     width: var(--small-width);
 }

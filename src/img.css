@@ -1,7 +1,10 @@
-.fit-cover {
+.fit-cover { 
   object-fit: cover;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  object-position: center;
 }
+/* background-size: cover;*/
 
 .fit-contain {
   object-fit: contain;
