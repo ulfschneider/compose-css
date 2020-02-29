@@ -34,4 +34,6 @@
 @import "hide-breakpoints";
 
 @import "forms";
+@import "grid-collapsing-typography";
+
 @import "debug";

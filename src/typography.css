@@ -84,8 +84,6 @@
   font-size: inherit;
 }
 
-
-
 .bold,
 b,
 .b,
@@ -342,25 +340,28 @@ h6 {
 }
 
 p {
-  margin-top: 0;
-  margin-bottom: var(--space);
+ margin:0;
+}
+
+p+p {
+  margin-top: var(--vertical-rhythm);
 }
 
 .indent p+p,
 p.indent {
-  margin-bottom: 0;
+  margin-top: 0;
   text-indent: var(--horizontal-rhythm);
 }
 
 .indent p {
-  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .no-indent p,
 p.no-indent,
 p+p.no-indent {
   text-indent: 0;
-  margin-bottom: var(--space);
+  margin-top: var(--vertical-rhythm);
 }
 
 .code,

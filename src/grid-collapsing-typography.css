@@ -1,0 +1,146 @@
+/* try to come near to collapsing margins in grid
+    not bulletproof, but probably good enough
+*/
+
+:not(p)+ul,
+:not(p)+ol,
+:not(p)+dl,
+:not(p)+table,
+:not(p)+blockquote,
+:not(p)+figure,
+:not(p)+pre {
+    margin-top: 0;
+}
+
+
+ul+h1,
+ol+h1,
+dl+h1 {
+    margin-top: calc(var(--mrt-h1) - var(--mrb-list));
+}
+
+ul+h2,
+ol+h2,
+dl+h2 {
+    margin-top: calc(var(--mrt-h2) - var(--mrb-list));
+}
+
+ul+h3,
+ol+h3,
+dl+h3 {
+    margin-top: calc(var(--mrt-h3) - var(--mrb-list));
+}
+
+ul+h4,
+ol+h4,
+dl+h4 {
+    margin-top: calc(var(--mrt-h4) - var(--mrb-list));
+}
+
+ul+h5,
+ol+h5,
+dl+h5 {
+    margin-top: calc(var(--mrt-h5) - var(--mrb-list));
+}
+
+ul+h6,
+ol+h6,
+dl+h6 {
+    margin-top: calc(var(--mrt-h6) - var(--mrb-list));
+}
+
+table+h1 {
+    margin-top: calc(var(--mrt-h1) - var(--mrb-table));
+}
+
+table+h2 {
+    margin-top: calc(var(--mrt-h2) - var(--mrb-list));
+}
+
+table+h3 {
+    margin-top: calc(var(--mrt-h3) - var(--mrb-list));
+}
+
+table+h4 {
+    margin-top: calc(var(--mrt-h4) - var(--mrb-list));
+}
+
+table+h5 {
+    margin-top: calc(var(--mrt-h5) - var(--mrb-list));
+}
+
+table+h6 {
+    margin-top: calc(var(--mrt-h6) - var(--mrb-list));
+}
+
+blockquote+h1 {
+    margin-top: calc(var(--mrt-h1) - var(--mrb-blockquote));
+}
+
+blockquote+h2 {
+    margin-top: calc(var(--mrt-h2) - var(--mrb-blockquote));
+}
+
+blockquote+h3 {
+    margin-top: calc(var(--mrt-h3) - var(--mrb-blockquote));
+}
+
+blockquote+h4 {
+    margin-top: calc(var(--mrt-h4) - var(--mrb-blockquote));
+}
+
+blockquote+h5 {
+    margin-top: calc(var(--mrt-h5) - var(--mrb-blockquote));
+}
+
+blockquote+h6 {
+    margin-top: calc(var(--mrt-h6) - var(--mrb-blockquote));
+}
+
+figure+h1 {
+    margin-top: calc(var(--mrt-h1) - var(--mrb-figure));
+}
+
+figure+h2 {
+    margin-top: calc(var(--mrt-h2) - var(--mrb-figure));
+}
+
+figure+h3 {
+    margin-top: calc(var(--mrt-h3) - var(--mrb-figure));
+}
+
+figure+h4 {
+    margin-top: calc(var(--mrt-h4) - var(--mrb-figure));
+}
+
+figure+h5 {
+    margin-top: calc(var(--mrt-h5) - var(--mrb-figure));
+}
+
+figure+h6 {
+    margin-top: calc(var(--mrt-h6) - var(--mrb-figure));
+}
+
+pre+h1 {
+    margin-top: calc(var(--mrt-h1) - var(--mrb-pre));
+}
+
+pre+h2 {
+    margin-top: calc(var(--mrt-h2) - var(--mrb-pre));
+}
+
+pre+h3 {
+    margin-top: calc(var(--mrt-h3) - var(--mrb-pre));
+}
+
+pre+h4 {
+    margin-top: calc(var(--mrt-h4) - var(--mrb-pre));
+}
+
+pre+h5 {
+    margin-top: calc(var(--mrt-h5) - var(--mrb-pre));
+}
+
+pre+h6 {
+    margin-top: calc(var(--mrt-h6) - var(--mrb-pre));
+}
