@@ -70,6 +70,7 @@
   text-underline-offset: var(--text-underline-offset);
   text-decoration-thickness: var(--text-decoration-thickness);
   font-variant-numeric: var(--font-variant-numeric);
+  
 }
 
 * {
@@ -395,7 +396,7 @@ pre,
   padding: var(--space-d4);
   border-radius: var(--space-d4);
   display: inline-block;
-  line-height: 1em;
+  line-height: var(--lh);
 }
 
 a {
