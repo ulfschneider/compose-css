@@ -73,7 +73,7 @@
                         </p>
                     </div>
                     <div class="xx-12 md-xx-3">
-                        <div class="pd inline-block bg-black rounded white"><span id="version">v2.0.1</span></div>
+                        <div class="pd inline-block bg-black rounded white"><span id="version">v3.0.0</span></div>
                     </div>
                 </div>
             </div>
@@ -1907,14 +1907,15 @@ figure
                 dimensions while preserving aspect-ratio and without stretching the image.</p>
             <p>Combine <code>.fit-contain</code> with fit positions </p>
             <ul class="reset mrb-0">
-                <li><code>.fit-t</code> (top),</li>
-                <li><code>.fit-tl</code> (top-left),</li>
-                <li><code>.fit-tr</code> (top-right),</li>
-                <li><code>.fit-r</code> (right),</li>
-                <li><code>.fit-b</code> (bottom),</li>
-                <li><code>.fit-bl</code> (bottom-left),</li>
-                <li><code>.fit-br</code> (bottom-right), and</li>
-                <li><code>.fit-l</code> (left).</li>
+                <li><code>.fit-center</code> <small>(default)</small></li>
+                <li><code>.fit-top</code></li>
+                <li><code>.fit-top-left</code></li>
+                <li><code>.fit-top-right</code></li>
+                <li><code>.fit-right</code></li>
+                <li><code>.fit-bottom</code></li>
+                <li><code>.fit-bottom-left</code></li>
+                <li><code>.fit-bottom-right</code></li>
+                <li><code>.fit-left</code></li>
             </ul>
         </div>
 
@@ -1932,16 +1933,16 @@ figure
             <div class="xx-12 rg-xx-6">
                 <figure>
                     <img loading="lazy" src="images/jayden-chong-unsplash.jpg" style="height:400px; width:100%"
-                        class="fit-contain fit-tl br" />
+                        class="fit-contain fit-top-left br" />
                     <figcaption>Photo by Jayden Chong on Unsplash</figcaption>
                 </figure>
-                <pre>img/ .fit-contain.fit-tl</pre>
+                <pre>img/ .fit-contain.fit-top-left</pre>
             </div>
 
             <div class="xx-12">
                 <h3>Cover Images</h3>
                 <p class="mxw-rg">If the image has a fixed widht or fixed height, the
-                    usage of <code>.fix-cover</code> will consume the entire available space of the given dimensions
+                    usage of <code>.fit-cover</code> will consume the entire available space of the given dimensions
                     while preserving aspect-ratio.</p>
                 <p>The image might be stretched to cover.</p>
                 <figure>
@@ -1956,23 +1957,36 @@ figure
 
         <div>
             <h3>Background Images</h3>
-            <p>Background images can also be positioned with <code>.fit-cover</code>, which is useful
+            <p>Background images can be positioned with <code>.bg-cover</code>, which is useful
                 for hero banners. In addition, <code>.bg-fixed</code> makes an interesting effect when scrolling over a
                 background image.
             </p>
         </div>
-        <div class="full fit-cover x height-rg bg-fixed"
+        <div class="full mry bg-cover bg-fixed bg-center bg-no-repeat x height-rg"
             style='background-image: url("images/swan-leroi-unsplash.jpg")'>
             <div class="breakout-l fs-8 lh-2 bold mry-4 caps lsp overflow-hidden black">Hero</div>
         </div>
 
-        <pre class="breakout mrt">div/ .fit-cover.bg-fixed.height-rg style="background-image: url('image.jpg')" </pre>
+        <pre class="breakout">div/ .bg-cover.bg-fixed.bg-center.bg-no-repeat.height-rg style="background-image: url('image.jpg')" </pre>
+
+        <p>Combine <code>.bg-cover</code> with background positions </p>
+            <ul class="reset mrb-0">
+                <li><code>.bg-center</code></li>
+                <li><code>.bg-top</code></li>
+                <li><code>.bg-top-left</code> <small>(default)</small></li>
+                <li><code>.bg-top-right</code></li>
+                <li><code>.bg-right</code></li>
+                <li><code>.bg-bottom</code></li>
+                <li><code>.bg-bottom-left</code></li>
+                <li><code>.bg-bottom-right</code></li>
+                <li><code>.bg-left</code></li>
+            </ul>
 
         <h2 id="layout-grid">Horizontal Layout Grid</h2>
 
         <h3>Centered Grid</h3>
 
-        <div class="full bry dotted br-neutral mry-2 code">
+        <div class="full bry dotted br-neutral mry code">
             div .x
             <div class="x gpy mry">
                 <div class="middle bg-neutral-4 br pd">
@@ -1998,7 +2012,7 @@ figure
         </div>
 
         <h3>Left Shifted Grid</h3>
-        <div class="full bry dotted br-neutral mry-2 code">
+        <div class="full bry dotted br-neutral mry code">
             div .xl
             <div class="xl gpy mry">
                 <div class="middle bg-neutral-4 br pd">
@@ -2112,7 +2126,7 @@ figure
 
 
         <!-- Code Example -->
-        <div class="full bry dotted br-small br-neutral code mb">
+        <div class="full bry dotted br-small br-neutral code">
             div .xl
             <div class="x">
                 <div class="breakout bg-neutral-4 pd br mry">
@@ -2181,7 +2195,7 @@ figure
         </div>
 
         <!-- Code Example -->
-        <div class="full bry dotted br-small br-neutral code mb">
+        <div class="full bry dotted br-small br-neutral code">
             div .xl
             <div class="x">
                 <div class="breakout bg-neutral-4 pd br mry">
@@ -2229,7 +2243,7 @@ figure
                 the entire grid width into one column.</p>
         </div>
 
-        <div class="breakout bry dotted br-small br-neutral mb code">
+        <div class="breakout bry dotted br-small br-neutral mry code">
             div .x-12
             <div class="x-12 gp center mry">
                 <div class="xx-2 br pdy bg-neutral-4">.xx-2</div>
@@ -2290,7 +2304,7 @@ figure
             </p>
         </div>
 
-        <div class="breakout bry dotted br-small br-neutral mb  code">
+        <div class="breakout bry dotted br-small br-neutral mry code">
             div .x-12
             <div class="x-12 mry gp center">
                 <div class="xx-12 rg-xx-6 lg-xx-4 br pd middle bg-neutral-4">.xx-12.rg-xx-6.lg-xx-4</div>
@@ -3176,7 +3190,7 @@ figure
         </div>
 
 
-        <pre class="breakout mxw-md">div/ .sm-hide //When visible: screen has small width or below
+        <pre class="breakout mxw-md mry">div/ .sm-hide //When visible: screen has small width or below
 div/ .below-sm-hide //When visible: screen is above small width
 div/ .below-rg-hide //When visible: screen is above regular width
 div/ .below-md-hide //When visible: screen is above mid width

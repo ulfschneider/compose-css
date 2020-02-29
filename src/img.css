@@ -1,47 +1,100 @@
-.fit-cover { 
-  object-fit: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  object-position: center;
+.bg-cover {
+  background-size: cover;
 }
-/* background-size: cover;*/
+
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-repeat {
+  background-repeat: repeat;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.bg-fixed {
+  background-attachment: fixed;
+}
+
+.bg-center {
+  background-position: center center;
+}
+
+.bg-top {
+  background-position: top;
+}
+
+.bg-top-left {
+  background-position: top left;
+}
+
+.bg-top-right {
+  background-position: top right;
+}
+
+.bg-right {
+  background-position: right;
+}
+
+.bg-bottom {
+  background-position: bottom;
+}
+
+.bg-bottom-left {
+  background-position: bottom left;
+}
+
+.bg-bottom-right {
+  background-position: bottom right;
+}
+
+.bg-left {
+  background-position: left;
+}
+
+
+.fit-cover {
+  object-fit: cover;
+}
 
 .fit-contain {
   object-fit: contain;
 }
 
-.fit-t {
+.fit-center {
+  object-position: center center;
+}
+
+.fit-top {
   object-position: top;
 }
 
-.fit-tl {
+.fit-top-left {
   object-position: top left;
 }
 
-.fit-tr {
+.fit-top-right {
   object-position: top right;
 }
 
-.fit-r {
+.fit-right {
   object-position: right;
 }
 
-.fit-b {
+.fit-bottom {
   object-position: bottom;
 }
 
-.fit-bl {
+.fit-bottom-left {
   object-position: bottom left;
 }
 
-.fit-br {
+.fit-bottom-right {
   object-position: bottom right;
 }
 
-.fit-l {
+.fit-left {
   object-position: left;
-}
-
-.bg-fixed {
-  background-attachment: fixed;
 }
