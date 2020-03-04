@@ -2,11 +2,13 @@
 
   --size-factor: 1.25;
 
+  font-size: 18px;
+  --fs: 1rem;
+  --fs-mono: .85rem;
+
   --fs-d2: calc(.75rem);
   --fs-d1: calc(.85rem);
 
-  --fs: calc(17px + 0.12vw);
-  --fs-mono: .85rem;
   --fs-1: calc(var(--fs) * var(--size-factor));
   --fs-2: calc(var(--fs-1) * var(--size-factor));
   --fs-3: calc(var(--fs-2) * var(--size-factor));
@@ -39,9 +41,26 @@
   --lh-h3: var(--lh-2);
   --lh-h2: var(--lh-2);
   --lh-h1: var(--lh-2);
-
-  font-size: var(--fs);
+  
   line-height: var(--lh-3);
+}
+
+@media (min-width: 600px) {
+  :root {
+    font-size: calc(var(--fs) + 1px);    
+  }
+}
+
+@media (min-width: 800px) {
+  :root {
+    font-size: calc(var(--fs) + 2px);
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    font-size: calc(var(--fs) + 3px);
+  }
 }
 
 .h1 {
