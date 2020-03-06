@@ -46,25 +46,6 @@
   line-height: var(--lh-3);
 }
 
-@media (min-width: 600px) {
-  :root {
-    font-size: calc(var(--base-font-size) + 1px);    
-  }
-}
-
-@media (min-width: 800px) {
-  :root {
-    font-size: calc(var(--base-font-size) + 2px);
-  }
-}
-
-@media (min-width: 1000px) {
-  :root {
-    font-size: calc(var(--base-font-size) + 3px);
-  }
-}
-
-
 .h1 {
   font-size: var(--fs-h1);
   line-height: var(--lh-h1);

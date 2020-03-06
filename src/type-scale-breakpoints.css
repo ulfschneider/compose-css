@@ -1,3 +1,22 @@
+@media (min-width: 600px) {
+  :root {
+    font-size: calc(var(--base-font-size) + 1px);
+  }
+}
+
+@media (min-width: 800px) {
+  :root {
+    font-size: calc(var(--base-font-size) + 2px);
+  }
+}
+
+@media (min-width: 1000px) {
+  :root {
+    font-size: calc(var(--base-font-size) + 3px);
+  }
+}
+
+
 @media (--breakpoint-sm) {
 
   .sm-h1 {
@@ -74,7 +93,7 @@
   .sm-fs-9 {
     font-size: var(--fs-9);
   }
-  
+
   .sm-fs-10 {
     font-size: var(--fs-10);
   }
@@ -195,7 +214,7 @@
   .rg-fs-9 {
     font-size: var(--fs-9);
   }
-  
+
   .rg-fs-10 {
     font-size: var(--fs-10);
   }
@@ -314,7 +333,7 @@
   .md-fs-9 {
     font-size: var(--fs-9);
   }
-  
+
   .md-fs-10 {
     font-size: var(--fs-10);
   }
@@ -435,7 +454,7 @@
   .lg-9 {
     font-size: var(--fs-9);
   }
-  
+
   .lg-10 {
     font-size: var(--fs-10);
   }
