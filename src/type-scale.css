@@ -2,7 +2,7 @@
 
   --size-factor: 1.25;
 
-  font-size: 18px;
+  --base-font-size: 18px;
   --fs: 1rem;
   --fs-mono: .85rem;
 
@@ -42,26 +42,28 @@
   --lh-h2: var(--lh-2);
   --lh-h1: var(--lh-2);
   
+  font-size: var(--base-font-size);
   line-height: var(--lh-3);
 }
 
 @media (min-width: 600px) {
   :root {
-    font-size: calc(var(--fs) + 1px);    
+    font-size: calc(var(--base-font-size) + 1px);    
   }
 }
 
 @media (min-width: 800px) {
   :root {
-    font-size: calc(var(--fs) + 2px);
+    font-size: calc(var(--base-font-size) + 2px);
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   :root {
-    font-size: calc(var(--fs) + 3px);
+    font-size: calc(var(--base-font-size) + 3px);
   }
 }
+
 
 .h1 {
   font-size: var(--fs-h1);
