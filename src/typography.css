@@ -145,6 +145,10 @@ em,
   font-style: italic;
 }
 
+.normal {
+  font-style: normal;
+}
+
 small,
 .small {
   font-size: var(--fs-d1);
