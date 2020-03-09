@@ -70,7 +70,6 @@
   text-underline-offset: var(--text-underline-offset);
   text-decoration-thickness: var(--text-decoration-thickness);
   font-variant-numeric: var(--font-variant-numeric);
-  
 }
 
 * {
@@ -476,6 +475,7 @@ figure {
 figcaption {
   margin-top: var(--mrt-figcaption);
   margin-bottom: var(--mrb-figcaption);  
+  color: var(--heading-color);
   font-style: normal;
   font-size: var(--fs-d1);
   line-height: var(--lh-2);
