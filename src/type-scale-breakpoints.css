@@ -1,21 +1,22 @@
-@media (min-width: 600px) {
+
+@media (--breakpoint-type-scale-1) {
   :root {
     font-size: calc(var(--base-font-size) + 1px);
   }
 }
 
-@media (min-width: 800px) {
+@media (--breakpoint-type-scale-2) {
   :root {
     font-size: calc(var(--base-font-size) + 2px);
   }
 }
 
-@media (min-width: 1000px) {
+
+@media (--breakpoint-type-scale-3) {
   :root {
-    font-size: calc(var(--base-font-size) + 3px);
+    font-size: calc(var(--base-font-size) + 2px);
   }
 }
-
 
 @media (--breakpoint-sm) {
 

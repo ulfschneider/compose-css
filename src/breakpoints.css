@@ -1,27 +1,57 @@
 :root {
-    --small-width: 24rem;
+    --small-width: 400px;
     /*keep in sync with breakpoint media queries */
-    --regular-width: 32rem;
+    --regular-width: 700px;
     /*keep in sync with breakpoint media queries */
-    --mid-width: 42rem;
+    --mid-width: 900px;
     /*keep in sync with breakpoint media queries */
-    --large-width: 64rem;
+    --large-width: 1200px;
     /*keep in sync with breakpoint media queries */
 }
 
-@custom-media --breakpoint-max-sm (max-width: 24rem);
+@custom-media --breakpoint-max-sm (max-width: 400px);
 /* keep in sync with var(--small-width) */
-@custom-media --breakpoint-max-rg (max-width: 32rem);
+
+@custom-media --breakpoint-max-rg (max-width: 700px);
 /* keep in sync with var(--regular-width) */
-@custom-media --breakpoint-max-md (max-width: 42rem);
+
+@custom-media --breakpoint-max-md (max-width: 900px);
 /* keep in sync with var(--mid-width) */
-@custom-media --breakpoint-max-lg (max-width: 64rem);
+
+@custom-media --breakpoint-max-lg (max-width: 1200px);
 /* keep in sync with var(--large-width) */
-@custom-media --breakpoint-sm (min-width: 24rem);
+
+@custom-media --breakpoint-sm (min-width: 400px);
 /* keep in sync with var(--small-width) */
-@custom-media --breakpoint-rg (min-width: 32rem);
+
+@custom-media --breakpoint-rg (min-width: 700px);
 /* keep in sync with var(--regular-width) */
-@custom-media --breakpoint-md (min-width: 42rem);
+
+@custom-media --breakpoint-md (min-width: 900px);
 /* keep in sync with var(--mid-width) */
-@custom-media --breakpoint-lg (min-width: 64rem);
+
+@custom-media --breakpoint-lg (min-width: 1200px);
 /* keep in sync with var(--large-width) */
+
+
+
+@custom-media --breakpoint-x-list-indent (max-width: 800px);
+/*--breakpoint-list-indent is --rg-width + some padding */
+
+@custom-media --breakpoint-xl-list-indent (max-width: 1000px);
+/* --mid-width + some padding */
+
+@custom-media --breakpoint-xl-padding (max-width: 995px);
+/* should be a little bit (5px) below --breakpoint-xl-list-indent*/
+
+
+
+@custom-media --breakpoint-type-scale-1 (min-width: 600px);
+/* a little bit less than --regular-width */
+
+@custom-media --breakpoint-type-scale-2 (min-width: 800px);
+/* in sync with --breakoint-x-list-indent */
+
+@custom-media --breakpoint-type-scale-3 (min-width: 1000px);
+/* in sync with --breakpoint-xl-list-indent */
+

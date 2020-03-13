@@ -9,14 +9,14 @@
   --heading-text-transform: uppercase;
 
   --mono-font-family: monospace;
-  --code-font-family: monospace;
+  --code-font-family: var(--mono-font-family);
   --pre-border: var(--border-width-default) dotted var(--pre-border-color);
 
   --link-text-decoration: underline;
   --link-text-decoration-color: var(--base-color);
   --text-underline-offset: 0.1em;
   --text-decoration-thickness: 0.035em;
-  
+
   --font-variant-numeric: normal;
 
   --vertical-rhythm: var(--space);
@@ -59,8 +59,8 @@
   --mrb-hr: var(--vertical-rhythm);
 
   --hr-content: "◊      ◊      ◊";
-  --quotes: """ """ "'" "'";
-  --quotes-de: """ """ "'" "'";
+  --quotes: """ """"'""'";
+  --quotes-de: """ """"'""'";
   --blockquote-indicator: "❯";
 
   --scroll-margin-top: var(--vertical-rhythm);
@@ -185,31 +185,31 @@ u {
 }
 
 .ft-num-normal {
-  font-variant-numeric: normal;
+  font-variant-numeric: "normal";
 }
 
 .ft-num-ordinal {
-  font-feature-settings: ordn;
+  font-feature-settings: "ordn";
   font-variant-numeric: ordinal;
 }
 
 .ft-num-zero {
-  font-feature-settings: zero;
+  font-feature-settings: "zero";
   font-variant-numeric: slashed-zero;
 }
 
 .ft-num-onum {
-  font-feature-settings: onum;
+  font-feature-settings: "onum";
   font-variant-numeric: oldstyle-nums;
 }
 
 .ft-num-lnum {
-  font-feature-settings: lnum;
+  font-feature-settings: "lnum";
   font-variant-numeric: lining-nums;
 }
 
 .ft-num-tab {
-  font-feature-settings: tnum;
+  font-feature-settings: "tnum";
   font-variant-numeric: tabular-nums;
 }
 
@@ -344,21 +344,18 @@ h6 {
 }
 
 p {
- margin:0;
-}
-
-p+p {
   margin-top: var(--vertical-rhythm);
-}
-
-.indent p+p,
-p.indent {
-  margin-top: 0;
-  text-indent: var(--horizontal-rhythm);
+  margin-bottom: var(--vertical-rhythm);
 }
 
 .indent p {
   margin-top: 0;
+  margin-bottom: 0;
+}
+
+.indent p+p,
+p.indent {  
+  text-indent: var(--horizontal-rhythm);
 }
 
 .no-indent p,
@@ -403,15 +400,15 @@ pre,
 }
 
 a {
-  color: var(--link-color);  
+  color: var(--link-color);
   text-decoration: var(--link-text-decoration);
   text-decoration-color: var(--link-text-decoration-color);
 }
 
 @media (hover: hover) {
   a:hover {
-      color: var(--link-hover-color);
-      text-decoration-color: var(--link-hover-color);
+    color: var(--link-hover-color);
+    text-decoration-color: var(--link-hover-color);
   }
 }
 
@@ -430,7 +427,7 @@ blockquote {
 
 blockquote::before {
   content: var(--blockquote-indicator);
-  float:left;
+  float: left;
   margin-left: calc(0px - var(--horizontal-rhythm));
 }
 
@@ -474,7 +471,7 @@ figure {
 
 figcaption {
   margin-top: var(--mrt-figcaption);
-  margin-bottom: var(--mrb-figcaption);  
+  margin-bottom: var(--mrb-figcaption);
   color: var(--heading-color);
   font-style: normal;
   font-size: var(--fs-d1);

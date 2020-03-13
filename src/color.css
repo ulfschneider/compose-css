@@ -1,5 +1,5 @@
 :root {
-  --color-step-factor: 0.2;
+  --color-step-factor: 0.21;
   --neutral-h: 0;
   --neutral-s: 0%;
   --neutral-l: 58%;
@@ -95,7 +95,7 @@
   --link-color: var(--base-color);
   --link-hover-color: var(--primary);
   --link-active-color: var(--primary);
-
+  
   --selection-color: var(--primary-3);
 
   color: var(--base-color);

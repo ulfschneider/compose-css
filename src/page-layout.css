@@ -1,0 +1,77 @@
+:root {
+    --x-layout-padding: 5vw;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.x {
+    max-width: calc(var(--regular-width) + 2 * var(--x-layout-padding));
+    padding-left: var(--x-layout-padding);
+    padding-right: var(--x-layout-padding);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.xl {
+    max-width: calc(var(--mid-width) + 2 * var(--x-layout-padding));
+    padding-left: var(--x-layout-padding);
+    padding-right: var(--x-layout-padding);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.xl>:not([class^='breakout']) {
+    max-width: var(--regular-width);
+}
+
+.xl>.breakout {
+    max-width: unset;
+}
+
+.x>.breakout {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    padding-left: var(--horizontal-rhythm);
+    padding-right: var(--horizontal-rhythm);
+}
+
+.x>.breakout>* {
+    max-width: var(--mid-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.breakout-full {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+
+.breakout-wide {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    padding-left: var(--horizontal-rhythm);
+    padding-right: var(--horizontal-rhythm);
+}
+
+@media(--breakpoint-xl-list-indent) {
+
+    .x,
+    .xl {
+        padding-left: var(--horizontal-rhythm);
+        padding-right: var(--horizontal-rhythm);
+    }
+}
+
+@media(--breakpoint-max-rg) {
+    .x,
+    .xl {
+        padding-left: var(--space);
+        padding-right: var(--space);
+    }
+    .breakout, .breakout-wide {
+        padding-left: var(--space);
+        padding-right: var(--space);
+    }
+}

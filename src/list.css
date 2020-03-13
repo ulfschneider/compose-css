@@ -61,7 +61,7 @@ ol li::before {
     margin-left: calc(var(--horizontal-rhythm) * -1);
     min-width: var(--horizontal-rhythm);
     text-align: left;
-    display: inline-block;
+    display: inline-block;    
 }
 
 ul li::before {
@@ -70,6 +70,7 @@ ul li::before {
     min-width: var(--horizontal-rhythm);
     text-align: left;
     display: inline-block;
+
 }
 
 
@@ -79,14 +80,24 @@ ul ul li::before,
 ul ol li::before {
     margin-left: calc(var(--horizontal-rhythm) * -1);
     min-width: var(--horizontal-rhythm);
+    padding-left: 0;
 }
 
-@media (--breakpoint-max-md) {
+/* have the breakpoints before the .indent styles */
+@media (--breakpoint-x-list-indent) {
 
-    ul,
-    ol {
-        padding-left: var(--horizontal-rhythm);
-    }
+    .x ul,
+    .x ol {
+        padding-left: var(--horizontal-rhythm);        
+    }    
+}
+
+@media (--breakpoint-xl-list-indent) {
+
+    .xl ul,
+    .xl ol {
+        padding-left: var(--horizontal-rhythm);        
+    }    
 }
 
 
@@ -102,6 +113,7 @@ ul.indent li::before,
 [class^="columns"] ol li::before,
 [class^="columns"] ul li::before {
     margin-left: 0;
+    padding-left: 0;
 }
 
 ul.no-list-type li::before {
@@ -118,3 +130,4 @@ ul.reset li::before {
     min-width: unset;
     display: unset;
 }
+
