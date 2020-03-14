@@ -1,7 +1,7 @@
 :root {
     --small-width: 400px;
     /*keep in sync with breakpoint media queries */
-    --regular-width: 700px;
+    --regular-width: 650px;
     /*keep in sync with breakpoint media queries */
     --mid-width: 900px;
     /*keep in sync with breakpoint media queries */
@@ -12,7 +12,7 @@
 @custom-media --breakpoint-max-sm (max-width: 400px);
 /* keep in sync with var(--small-width) */
 
-@custom-media --breakpoint-max-rg (max-width: 700px);
+@custom-media --breakpoint-max-rg (max-width: 650px);
 /* keep in sync with var(--regular-width) */
 
 @custom-media --breakpoint-max-md (max-width: 900px);
@@ -24,7 +24,7 @@
 @custom-media --breakpoint-sm (min-width: 400px);
 /* keep in sync with var(--small-width) */
 
-@custom-media --breakpoint-rg (min-width: 700px);
+@custom-media --breakpoint-rg (min-width: 650px);
 /* keep in sync with var(--regular-width) */
 
 @custom-media --breakpoint-md (min-width: 900px);
@@ -35,7 +35,7 @@
 
 
 
-@custom-media --breakpoint-x-list-indent (max-width: 800px);
+@custom-media --breakpoint-x-list-indent (max-width: 750px);
 /*--breakpoint-list-indent is --rg-width + some padding */
 
 @custom-media --breakpoint-xl-list-indent (max-width: 1000px);
@@ -46,10 +46,10 @@
 
 
 
-@custom-media --breakpoint-type-scale-1 (min-width: 600px);
+@custom-media --breakpoint-type-scale-1 (min-width: 450px);
 /* a little bit less than --regular-width */
 
-@custom-media --breakpoint-type-scale-2 (min-width: 800px);
+@custom-media --breakpoint-type-scale-2 (min-width: 650px);
 /* in sync with --breakoint-x-list-indent */
 
 @custom-media --breakpoint-type-scale-3 (min-width: 1000px);
