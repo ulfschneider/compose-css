@@ -70,7 +70,7 @@ body {
         padding-left: var(--space);
         padding-right: var(--space);
     }
-    .breakout, .breakout-wide {
+    .x > .breakout, .breakout-wide {
         padding-left: var(--space);
         padding-right: var(--space);
     }
