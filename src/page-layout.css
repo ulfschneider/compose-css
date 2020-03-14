@@ -64,13 +64,13 @@ body {
     }
 }
 
-@media(--breakpoint-max-rg) {
+@media(--breakpoint-x-list-indent) {
     .x,
     .xl {
         padding-left: var(--space);
         padding-right: var(--space);
     }
-    .breakout, .breakout-wide {
+    .x > .breakout, .breakout-wide {
         padding-left: var(--space);
         padding-right: var(--space);
     }
