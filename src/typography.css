@@ -354,7 +354,7 @@ p {
 }
 
 .indent p+p,
-p.indent {  
+p.indent {
   text-indent: var(--horizontal-rhythm);
 }
 
@@ -434,7 +434,11 @@ blockquote::before {
 
 blockquote figcaption {
   margin-top: var(--space-d2);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--heading-font-weight);
+  font-family: var(--heading-font-family);
+  letter-spacing: var(--heading-letter-spacing);
+  text-transform: var(--heading-text-transform);
+  color: var(--heading-color);
 }
 
 blockquote p,
@@ -472,7 +476,6 @@ figure {
 figcaption {
   margin-top: var(--mrt-figcaption);
   margin-bottom: var(--mrb-figcaption);
-  color: var(--heading-color);
   font-style: normal;
   font-size: var(--fs-d1);
   line-height: var(--lh-2);

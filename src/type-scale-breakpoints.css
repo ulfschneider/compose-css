@@ -1,20 +1,20 @@
 
 @media (--breakpoint-type-scale-1) {
   :root {
-    font-size: calc(var(--base-font-size) + 1px);
+    font-size: calc(var(--base-font-size) + 2px);
   }
 }
 
 @media (--breakpoint-type-scale-2) {
   :root {
-    font-size: calc(var(--base-font-size) + 2px);
+    font-size: calc(var(--base-font-size) + 3px);
   }
 }
 
 
 @media (--breakpoint-type-scale-3) {
   :root {
-    font-size: calc(var(--base-font-size) + 2px);
+    font-size: calc(var(--base-font-size) + 3px);
   }
 }
 
