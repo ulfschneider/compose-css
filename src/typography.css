@@ -432,13 +432,14 @@ blockquote::before {
 }
 
 
-blockquote figcaption {
-  margin-top: var(--space-d2);
+blockquote+figcaption {  
+  padding-left: var(--horizontal-rhythm);
   font-weight: var(--heading-font-weight);
   font-family: var(--heading-font-family);
   letter-spacing: var(--heading-letter-spacing);
   text-transform: var(--heading-text-transform);
   color: var(--heading-color);
+
 }
 
 blockquote p,
@@ -479,11 +480,6 @@ figcaption {
   font-style: normal;
   font-size: var(--fs-d1);
   line-height: var(--lh-2);
-}
-
-figure blockquote {
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 hr {
