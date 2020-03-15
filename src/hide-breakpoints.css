@@ -3,50 +3,50 @@
 }
 
 @media (--breakpoint-sm) {
-    .sm-hide {
+    .sm\:hide {
         display: none !important;
     }
 }
 
 @media (--breakpoint-rg) {
-    .rg-hide {
+    .rg\:hide {
         display: none !important;
     }
 }
 
 @media (--breakpoint-md) {
-    .md-hide {
+    .md\:hide {
         display: none !important;
     }
 }
 
 @media (--breakpoint-lg) {
-    .lg-hide {
+    .lg\:hide {
         display: none !important;
     }
 }
 
 @media (--breakpoint-max-sm) {
-    .below-sm-hide {
+    .below-sm\:hide {
         display: none !important;
     }
 }
 
 @media (--breakpoint-max-rg) {
-    .below-rg-hide {
+    .below-rg\:hide {
         display: none !important;
     }
 }
 
 
 @media (--breakpoint-max-md) {
-    .below-md-hide {
+    .below-md\:hide {
         display: none !important;
     }
 }
 
 @media (--breakpoint-max-lg) {
-    .below-lg-hide {
+    .below-lg\:hide {
         display: none !important;
     }
 }

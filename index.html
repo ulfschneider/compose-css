@@ -73,11 +73,11 @@
                             websites.
                         </p>
                     </div>
-                    <div class="pd mry-d1 xx-3 inline-block bg-black rounded white"><span id="version">v3.1.0</span>
+                    <div class="pd mry-d1 xx-3 inline-block bg-black rounded white"><span id="version">v4.0.0</span>
                     </div>
                 </div>
                 <header id="navigation" class="bg-neutral-4 small" style="z-index: 1000;">
-                    <div class="xl md-columns-4 sm-columns-3 columns-2 lh-4 pdy caps small lsp">
+                    <div class="xl md:columns-4 sm:columns-3 columns-2 lh-4 pdy caps small lsp">
                         <div><a href="#start" class="no-deco">Quickstart</a></div>
                         <div><a href="#notation" class="no-deco">Notation</a></div>
                         <div><a href="#typography" class="no-deco">Typography</a></div>
@@ -502,19 +502,19 @@ figure
                 <h3>Writing Mode</h3>
 
                 <div class="x-12 gpy-2">
-                    <div class="xx-12 sm-xx-4">
+                    <div class="xx-12 sm:xx-4">
                         <div class="square-4 horizontal-tb bg-neutral-4">
                             He lay on his armour-like back
                         </div>
                         <code>.horizontal-tb</code>
                     </div>
-                    <div class="xx-12 sm-xx-4">
+                    <div class="xx-12 sm:xx-4">
                         <div class="square-4 vertical-lr bg-neutral-4">
                             He lay on his armour-like back
                         </div>
                         <code>.vertical-lr</code>
                     </div>
-                    <div class="xx-12 sm-xx-4">
+                    <div class="xx-12 sm:xx-4">
                         <div class="square-4 vertical-rl bg-neutral-4">
                             He lay on his armour-like back
                         </div>
@@ -711,30 +711,30 @@ figure
                     of:</p>
                 <table>
                     <tr>
-                        <td><code>.sm-</code></td>
+                        <td><code>.sm:</code></td>
                         <td>The size is applied only if the screen is at least of small width.</td>
                     </tr>
                     <tr>
-                        <td><code>.rg-</code></td>
+                        <td><code>.rg:</code></td>
                         <td>The size is applied only if the screen is at least of regular size.</td>
                     </tr>
                     <tr>
-                        <td><code>.md-</code></td>
+                        <td><code>.md:</code></td>
                         <td>The size is applied only if the screen is at least of mid size.</td>
                     </tr>
                     <tr>
-                        <td><code>.lg-</code></td>
+                        <td><code>.lg:</code></td>
                         <td>The size is applied only if the screen is at least of large size.</td>
                     </tr>
                 </table>
 
-                <p>E.g. <code>.lg-fs-1</code>, <code>.md-h1</code>, or <code>.rg-lh-3</code>.</p>
+                <p>E.g. <code>.lg:fs-1</code>, <code>.md:h1</code>, or <code>.rg:lh-3</code>.</p>
                 <p> A size class without a prefix will be used in case the
                     alternate minimum screen size is not defined.</p>
 
-                <p class="fs-1 lh-2 rg-fs-2 md-fs-3 lg-fs-4">One morning, when Gregor Samsa woke from troubled dreams
+                <p class="fs-1 lh-2 rg:fs-2 md:fs-3 lg:fs-4">One morning, when Gregor Samsa woke from troubled dreams
                 </p>
-                <pre class="mid">p/ .fs-1.rg-fs-2.md-fs-3.lg-fs-4</pre>
+                <pre class="mid">p/ .fs-1.rg:fs-2.md:fs-3.lg:fs-4</pre>
             </div>
 
             <div>
@@ -844,19 +844,19 @@ figure
                     </tr>
                     <tr>
                         <th class="middle normal">.neutral </th>
-                        <td class="bg-neutral-d4 square sm-square-2 "></td>
-                        <td class="bg-neutral-d3 square sm-square-2 "></td>
-                        <td class="bg-neutral-d2 square sm-square-2 "></td>
-                        <td class="bg-neutral-d1 square sm-square-2 "></td>
-                        <td class="bg-neutral square sm-square-2  brx brw-d4 br-white"></td>
-                        <td class="bg-neutral-1 square sm-square-2 "></td>
-                        <td class="bg-neutral-2 square sm-square-2 "></td>
-                        <td class="bg-neutral-3 square sm-square-2 "></td>
-                        <td class="bg-neutral-4 square sm-square-2 "></td>
+                        <td class="bg-neutral-d4 square sm:square-2 "></td>
+                        <td class="bg-neutral-d3 square sm:square-2 "></td>
+                        <td class="bg-neutral-d2 square sm:square-2 "></td>
+                        <td class="bg-neutral-d1 square sm:square-2 "></td>
+                        <td class="bg-neutral square sm:square-2  brx brw-d4 br-white"></td>
+                        <td class="bg-neutral-1 square sm:square-2 "></td>
+                        <td class="bg-neutral-2 square sm:square-2 "></td>
+                        <td class="bg-neutral-3 square sm:square-2 "></td>
+                        <td class="bg-neutral-4 square sm:square-2 "></td>
                     </tr>
                     <tr>
                         <th class="middle normal">.primary </th>
-                        <td class="bg-primary-d4 square sm-square-2 "></td>
+                        <td class="bg-primary-d4 square sm:square-2 "></td>
                         <td class="bg-primary-d3"></td>
                         <td class="bg-primary-d2"></td>
                         <td class="bg-primary-d1"></td>
@@ -868,7 +868,7 @@ figure
                     </tr>
                     <tr>
                         <th class="middle normal">.accent-one </th>
-                        <td class="bg-accent-one-d4 square sm-square-2 "></td>
+                        <td class="bg-accent-one-d4 square sm:square-2 "></td>
                         <td class="bg-accent-one-d3"></td>
                         <td class="bg-accent-one-d2"></td>
                         <td class="bg-accent-one-d1"></td>
@@ -880,7 +880,7 @@ figure
                     </tr>
                     <tr>
                         <th class="middle normal">.accent-two </th>
-                        <td class="bg-accent-two-d4 square sm-square-2 "></td>
+                        <td class="bg-accent-two-d4 square sm:square-2 "></td>
                         <td class="bg-accent-two-d3"></td>
                         <td class="bg-accent-two-d2"></td>
                         <td class="bg-accent-two-d1"></td>
@@ -892,7 +892,7 @@ figure
                     </tr>
                     <tr>
                         <th class="middle normal">.accent-three </th>
-                        <td class="bg-accent-three-d4 square sm-square-2 "></td>
+                        <td class="bg-accent-three-d4 square sm:square-2 "></td>
                         <td class="bg-accent-three-d3"></td>
                         <td class="bg-accent-three-d2"></td>
                         <td class="bg-accent-three-d1"></td>
@@ -916,38 +916,38 @@ figure
                         <th class="left">Color</th>
                         <th class="center">Background</th>
                         <th class="center">Border</th>
-                        <th class="below-sm-hide">Refine</th>
+                        <th class="below-sm:hide">Refine</th>
                     </tr>
                     <tr>
                         <td class="neutral code middle left">.neutral</td>
                         <td class="bg-neutral white code middle center">.bg-neutral</td>
                         <td class="br brw-d3 neutral br-neutral middle code center">.br-neutral</td>
-                        <td class="neutral code middle below-sm-hide">neutral-d4 … neutral-4</td>
+                        <td class="neutral code middle below-sm:hide">neutral-d4 … neutral-4</td>
                     </tr>
                     <tr>
                         <td class="primary code middle left">.primary</td>
                         <td class="bg-primary white middle code center">.bg-primary</td>
                         <td class="primary br-primary middle br brw-d3 code center">.br-primary</td>
-                        <td class="primary code middle  below-sm-hide">primary-d4 … primary-4</td>
+                        <td class="primary code middle  below-sm:hide">primary-d4 … primary-4</td>
                     </tr>
                     <tr>
                         <td class="accent-one code middle left">.accent-one</td>
                         <td class="bg-accent-one white middle code center">.bg-accent-one</td>
                         <td class="accent-one br-accent-one middle br brw-d3 code center">.br-accent-one</td>
-                        <td class="accent-one code middle below-sm-hide">accent-one-d4 … accent-one-4</td>
+                        <td class="accent-one code middle below-sm:hide">accent-one-d4 … accent-one-4</td>
                     </tr>
                     <tr>
                         <td class="accent-two code middle left">.accent-two</td>
                         <td class="bg-accent-two white code middle center">.bg-accent-two</td>
                         <td class="accent-two br-accent-two br brw-d3 code middl ecenter">.br-accent-two</td>
-                        <td class="accent-two code middle below-sm-hide">accent-two-d4 … accent-two-4</td>
+                        <td class="accent-two code middle below-sm:hide">accent-two-d4 … accent-two-4</td>
                     </tr>
                     <tr>
                         <td class="accent-three pdb-d2 code middle left">.accent-three</td>
                         <td class="bg-accent-three pdb-d2 white code middle center">.bg-accent-three</td>
                         <td class="accent-three pdb-d2 br-accent-three br brw-d3 code middle center">.br-accent-three
                         </td>
-                        <td class="accent-three pdb-d2 code below-sm-hide middle">accent-three-d4 … accent-three-4</td>
+                        <td class="accent-three pdb-d2 code below-sm:hide middle">accent-three-d4 … accent-three-4</td>
                     </tr>
                 </table>
             </div>
@@ -1168,49 +1168,49 @@ figure
                     <div><code>.mr-0</code>, <code>.no-mr</code></div>
                 </div>
 
-                <div class="sm-xx-6 rg-xx-3">
+                <div class="sm:xx-6 rg:xx-3">
                     <div class="br inline-block middle">
                         <div class="square-3 bg-neutral-4 mr inline-block middle"></div>
                     </div>
                     <div><code>.mr</code> <small>(1rem)</small></div>
                 </div>
 
-                <div class="sm-xx-6 rg-xx-3">
+                <div class="sm:xx-6 rg:xx-3">
                     <div class="br inline-block middle">
                         <div class="square-3 bg-neutral-4 mry inline-block middle"></div>
                     </div>
                     <div class="code">.mry</div>
                 </div>
 
-                <div class="sm-xx-6  rg-xx-6">
+                <div class="sm:xx-6  rg:xx-6">
                     <div class="br inline-block middle">
                         <div class="square-3 bg-neutral-4 mrx inline-block middle"></div>
                     </div>
                     <div class="code">.mrx</div>
                 </div>
 
-                <div class="sm-xx-6 rg-xx-3">
+                <div class="sm:xx-6 rg:xx-3">
                     <div class="br inline-block bottom">
                         <div class="square-3 bg-neutral-4 mrt inline-block bottom"></div>
                     </div>
                     <div class="code">.mrt</div>
                 </div>
 
-                <div class="sm-xx-6 rg-xx-3">
+                <div class="sm:xx-6 rg:xx-3">
                     <div class="br inline-block bottom">
                         <div class="square-3 bg-neutral-4 mrr inline-block bottom"></div>
                     </div>
                     <div class="code">.mrr</div>
                 </div>
 
-                <div class="sm-xx-6 rg-xx-3">
+                <div class="sm:xx-6 rg:xx-3">
                     <div class="br inline-block bottom">
                         <div class="square-3 bg-neutral-4 mrb inline-block bottom"></div>
                     </div>
                     <div class="code">.mrb</div>
                 </div>
 
-                <div class="sm-xx-6 rg-xx-3">
+                <div class="sm:xx-6 rg:xx-3">
                     <div class="br inline-block bottom">
                         <div class="square-3 bg-neutral-4 mrl inline-block bottom"></div>
                     </div>
@@ -1219,28 +1219,28 @@ figure
 
                 <div>Negative margins are supported:</div>
 
-                <div class="sm-xx-6 rg-xx-3">
+                <div class="sm:xx-6 rg:xx-3">
                     <div class="br inline-block middle">
                         <div class="square-3 bg-neutral-4 mrtn inline-block middle"></div>
                     </div>
                     <div class="code">.mrtn</div>
                 </div>
 
-                <div class="sm-xx-6 rg-xx-3">
+                <div class="sm:xx-6 rg:xx-3">
                     <div class="br inline-block middle">
                         <div class="square-3 bg-neutral-4 mrrn inline-block middle"></div>
                     </div>
                     <div class="code">.mrrn</div>
                 </div>
 
-                <div class="sm-xx-6 rg-xx-3">
+                <div class="sm:xx-6 rg:xx-3">
                     <div class="br inline-block middle">
                         <div class="square-3 bg-neutral-4 mrbn inline-block middle"></div>
                     </div>
                     <div class="code">.mrbn</div>
                 </div>
 
-                <div class="sm-xx-6 rg-xx-3">
+                <div class="sm:xx-6 rg:xx-3">
                     <div class="br inline-block middle">
                         <div class="square-3 bg-neutral-4 mrln inline-block middle"></div>
                     </div>
@@ -1272,28 +1272,28 @@ figure
 
                 <div>In combination with <a href="#flexbox">flexbox</a>, vertical auto margins are possible.</div>
 
-                <div class="sm-xx-6">
+                <div class="sm:xx-6">
                     <div class="square-4 flex br">
                         <div class="square-3 bg-neutral-4 mrt-auto mrx-auto"></div>
                     </div>
                     <div class="code">.mrt-auto.mrx-auto</div>
                 </div>
 
-                <div class="sm-xx-6">
+                <div class="sm:xx-6">
                     <div class="square-4 flex br">
                         <div class="square-3 bg-neutral-4 mrb-auto mrx-auto"></div>
                     </div>
                     <div class="code">.mrb-auto.mrx-auto</div>
                 </div>
 
-                <div class="sm-xx-6">
+                <div class="sm:xx-6">
                     <div class="square-4 flex br">
                         <div class="square-3 bg-neutral-4 mry-auto"></div>
                     </div>
                     <div class="code">.mry-auto</div>
                 </div>
 
-                <div class="sm-xx-6">
+                <div class="sm:xx-6">
                     <div class="square-4 flex br">
                         <div class="square-3 bg-neutral-4 mr-auto"></div>
                     </div>
@@ -1396,37 +1396,37 @@ figure
                     <div><code>.pd-0</code>, <code>.no-pd</code></div>
                 </div>
 
-                <div class="sm-xx-6 rg-xx-3">
+                <div class="sm:xx-6 rg:xx-3">
                     <div class="bg-neutral-4 pd inline-block">Padding</div>
                     <div><code>.pd</code> <small>(1rem)</small></div>
                 </div>
 
-                <div class="sm-xx-6 rg-xx-3">
+                <div class="sm:xx-6 rg:xx-3">
                     <div class="bg-neutral-4 pdy inline-block">Padding</div>
                     <div class="code">.pdy</div>
                 </div>
 
-                <div class="rg-xx-6">
+                <div class="rg:xx-6">
                     <div class="bg-neutral-4 pdx inline-block">Padding</div>
                     <div class="code">.pdx</div>
                 </div>
 
-                <div class="sm-xx-6 rg-xx-3">
+                <div class="sm:xx-6 rg:xx-3">
                     <div class="bg-neutral-4 pdt inline-block">Padding</div>
                     <div class="code">.pdt</div>
                 </div>
 
-                <div class="sm-xx-6 rg-xx-3">
+                <div class="sm:xx-6 rg:xx-3">
                     <div class="bg-neutral-4 pdr inline-block">Padding</div>
                     <div class="code">.pdr</div>
                 </div>
 
-                <div class="sm-xx-6 rg-xx-3">
+                <div class="sm:xx-6 rg:xx-3">
                     <div class="bg-neutral-4 pdb inline-block">Padding</div>
                     <div class="code">.pdb</div>
                 </div>
 
-                <div class="sm-xx-6 rg-xx-3">
+                <div class="sm:xx-6 rg:xx-3">
                     <div class="bg-neutral-4 pdl inline-block">Padding</div>
                     <div class="code">.pdl</div>
                 </div>
@@ -1965,7 +1965,7 @@ figure
 
 
             <div class="breakout x-12">
-                <div class="xx-12 rg-xx-6">
+                <div class="xx-12 rg:xx-6">
                     <figure>
                         <img loading="lazy" src="images/jayden-chong-unsplash.jpg" style="height:400px; width:100%"
                             class="fit-contain br" />
@@ -1975,7 +1975,7 @@ figure
                     <pre>img/ .fit-contain</pre>
                 </div>
 
-                <div class="xx-12 rg-xx-6">
+                <div class="xx-12 rg:xx-6">
                     <figure>
                         <img loading="lazy" src="images/jayden-chong-unsplash.jpg" style="height:400px; width:100%"
                             class="fit-contain fit-top-left br" />
@@ -2326,7 +2326,7 @@ figure
             <h2 id="columns">Columns</h2>
             <p>A flow of a maximum of six columns – each of the same width – can be created for any space.</p>
 
-            <div class="breakout mxw-lg columns-1 rg-columns-2 md-columns-3 lg-columns-4 indent">
+            <div class="breakout mxw-lg columns-1 rg:columns-2 md:columns-3 lg:columns-4 indent">
                 <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed
                     into a
                     horrible vermin.</p>
@@ -2387,7 +2387,7 @@ figure
                 div .xl
                 <div class="xl">
                     <div class="breakout bg-neutral-4 pd br mry">
-                        .breakout.columns-1.rg-columns-2.md-columns-3.lg-columns-4
+                        .breakout.columns-1.rg:columns-2.md:columns-3.lg:columns-4
                     </div>
                 </div>
                 /div
@@ -2477,19 +2477,19 @@ figure
 
             <table>
                 <tr>
-                    <td><code>.sm-</code></td>
+                    <td><code>.sm:</code></td>
                     <td>The column count is applied only if the screen is at least of small width.</td>
                 </tr>
                 <tr>
-                    <td><code>.rg-</code></td>
+                    <td><code>.rg:</code></td>
                     <td>The column count is applied only if the screen is at least of regular width.</td>
                 </tr>
                 <tr>
-                    <td><code>.md-</code></td>
+                    <td><code>.md:</code></td>
                     <td>The column count is applied only if the screen is at least of mid width.</td>
                 </tr>
                 <tr>
-                    <td><code>.lg-</code></td>
+                    <td><code>.lg:</code></td>
                     <td>The column count is applied only if the screen is at least of large width.</td>
                 </tr>
             </table>
@@ -2544,19 +2544,19 @@ figure
                 prefix values of:</p>
             <table>
                 <tr>
-                    <td><code>.sm-</code></td>
+                    <td><code>.sm:</code></td>
                     <td>The column width is applied only if the screen is at least of small width.</td>
                 </tr>
                 <tr>
-                    <td><code>.rg-</code></td>
+                    <td><code>.rg:</code></td>
                     <td>The column width is applied only if the screen is at least of regular width.</td>
                 </tr>
                 <tr>
-                    <td><code>.md-</code></td>
+                    <td><code>.md:</code></td>
                     <td>The column width is applied only if the screen is at least of mid width.</td>
                 </tr>
                 <tr>
-                    <td><code>.lg-</code></td>
+                    <td><code>.lg:</code></td>
                     <td>The column width is applied only if the screen is at least of large width.</td>
                 </tr>
             </table>
@@ -2569,8 +2569,8 @@ figure
             <div class="breakout bry dotted br-small br-neutral mry code">
                 div .x-12
                 <div class="x-12 mry gp center">
-                    <div class="xx-12 rg-xx-6 lg-xx-4 br pd middle bg-neutral-4">.xx-12.rg-xx-6.lg-xx-4</div>
-                    <div class="xx-12 rg-xx-6 lg-xx-8 br pd middle bg-neutral-4">.xx-12.rg-xx-6.lg-xx-8</div>
+                    <div class="xx-12 rg:xx-6 lg:xx-4 br pd middle bg-neutral-4">.xx-12.rg:xx-6.lg:xx-4</div>
+                    <div class="xx-12 rg:xx-6 lg:xx-8 br pd middle bg-neutral-4">.xx-12.rg:xx-6.lg:xx-8</div>
                 </div>
 
                 /div
@@ -2876,22 +2876,22 @@ figure
             <div class="breakout-full no-wrap mrt-2 overflow-hidden">
                 <div class="top brb bg-neutral-4 mxw-sm height-1 mrb-d2 right">
                     <code class="pdr">.width-sm</code>
-                    <small class="sm-hide">there is more →</small>
+                    <small class="sm:hide">there is more →</small>
                 </div>
 
                 <div class="top brb bg-neutral-4 mxw-rg height-1 mrb-d2 right">
                     <code class="pdr">.width-rg</code>
-                    <small class="rg-hide">there is more →</small>
+                    <small class="rg:hide">there is more →</small>
                 </div>
 
                 <div class="top brb bg-neutral-4 mxw-md height-1 mrb-d2 right">
                     <code class="pdr">.width-md</code>
-                    <small class="md-hide">there is more →</small>
+                    <small class="md:hide">there is more →</small>
                 </div>
 
                 <div class="top brb bg-neutral-4 mxw-lg height-1 mrb-d2 right">
                     <code class="pdr">.width-lg</code>
-                    <small class="lg-hide">there is more →</small>
+                    <small class="lg:hide">there is more →</small>
                 </div>
 
                 <div class="top brb bg-neutral-4 width-100 height-1 mrb-d2 right">
@@ -2913,19 +2913,19 @@ figure
 
             <table>
                 <tr>
-                    <td><code>.sm-</code></td>
+                    <td><code>.sm:</code></td>
                     <td>The width is applied only if the screen is at least of small width.</td>
                 </tr>
                 <tr>
-                    <td><code>.rg-</code></td>
+                    <td><code>.rg:</code></td>
                     <td>The width is applied only if the screen is at least of regular width.</td>
                 </tr>
                 <tr>
-                    <td><code>.md-</code></td>
+                    <td><code>.md:</code></td>
                     <td>The width is applied only if the screen is at least of mid width.</td>
                 </tr>
                 <tr>
-                    <td><code>.lg-</code></td>
+                    <td><code>.lg:</code></td>
                     <td>The width is applied only if the screen is at least of large width.</td>
                 </tr>
             </table>
@@ -3052,19 +3052,19 @@ figure
 
             <table>
                 <tr>
-                    <td><code>.sm-</code></td>
+                    <td><code>.sm:</code></td>
                     <td>The height is applied only if the screen is at least of small width.</td>
                 </tr>
                 <tr>
-                    <td><code>.rg-</code></td>
+                    <td><code>.rg:</code></td>
                     <td>The height is applied only if the screen is at least of regular width.</td>
                 </tr>
                 <tr>
-                    <td><code>.md-</code></td>
+                    <td><code>.md:</code></td>
                     <td>The height is applied only if the screen is at least of mid width.</td>
                 </tr>
                 <tr>
-                    <td><code>.lg-</code></td>
+                    <td><code>.lg:</code></td>
                     <td>The height is applied only if the screen is at least of large width.</td>
                 </tr>
             </table>
@@ -3160,19 +3160,19 @@ figure
                 of:</p>
             <table>
                 <tr>
-                    <td><code>.sm-</code></td>
+                    <td><code>.sm:</code></td>
                     <td>The square is applied only if the screen is at least of small width.</td>
                 </tr>
                 <tr>
-                    <td><code>.rg-</code></td>
+                    <td><code>.rg:</code></td>
                     <td>The square is applied only if the screen is at least of regular width.</td>
                 </tr>
                 <tr>
-                    <td><code>.md-</code></td>
+                    <td><code>.md:</code></td>
                     <td>The square is applied only if the screen is at least of mid width.</td>
                 </tr>
                 <tr>
-                    <td><code>.lg-</code></td>
+                    <td><code>.lg:</code></td>
                     <td>The square is applied only if the screen is at least of large width.</td>
                 </tr>
             </table>
@@ -3181,33 +3181,32 @@ figure
             <h2 id="hide">Responsive Hide</h2>
 
             <div class="breakout-full">
-                <div class="top brb bg-neutral-4 max-width-sm sm-hide pdx-d1 height-1 mrb-d2 overflow-hidden"><span
+                <div class="top brb bg-neutral-4 max-width-sm sm:hide pdx-d1 height-1 mrb-d2 no-wrap"><span
                         class="mrr">Screen
-                        has
-                        at max small width</span><code>.sm-hide</code></div>
-                <div class="top brb bg-neutral-4 max-width-sm below-sm-hide pdx-d1 height-1 mrb-d2"><span
+                        has max small width</span><code>.sm:hide</code></div>
+                <div class="top brb bg-neutral-4 max-width-sm below-sm:hide pdx-d1 height-1 mrb-d2 no-wrap"><span
                         class="mrr">Screen
-                        has at least small width</span><code>.below-sm-hide</code></div>
-                <div class="top brb bg-neutral-4 max-width-rg below-rg-hide pdx-d1 height-1 mrb-d2"><span
+                        has at least small width</span><code>.below-sm:hide</code></div>
+                <div class="top brb bg-neutral-4 max-width-rg below-rg:hide pdx-d1 height-1 mrb-d2"><span
                         class="mrr">Screen
-                        has at least regular width</span><code>.below-rg-hide</code>
+                        has at least regular width</span><code>.below-rg:hide</code>
                 </div>
-                <div class="top brb bg-neutral-4 max-width-md below-md-hide pdx-d1 height-1 mrb-d2"><span
+                <div class="top brb bg-neutral-4 max-width-md below-md:hide pdx-d1 height-1 mrb-d2"><span
                         class="mrr">Screen
-                        has at least mid width</span><code>.below-md-hide</code>
+                        has at least mid width</span><code>.below-md:hide</code>
                 </div>
-                <div class="top brb bg-neutral-4 max-width-lg below-lg-hide pdx-d1 height-1 mrb-d2"><span
+                <div class="top brb bg-neutral-4 max-width-lg below-lg:hide pdx-d1 height-1 mrb-d2"><span
                         class="mrr">Screen
-                        has at least large width</span><code>.below-lg-hide</code>
+                        has at least large width</span><code>.below-lg:hide</code>
                 </div>
             </div>
 
 
-            <pre class="breakout mxw-md mry">div/ .sm-hide //When visible: screen has small width or below
-div/ .below-sm-hide //When visible: screen is above small width
-div/ .below-rg-hide //When visible: screen is above regular width
-div/ .below-md-hide //When visible: screen is above mid width
-div/ .below-lg-hide //When visible: screen is above large width</pre>
+            <pre class="breakout mxw-md mry">div/ .sm:hide //When visible: screen has small width or below
+div/ .below-sm:hide //When visible: screen is above small width
+div/ .below-rg:hide //When visible: screen is above regular width
+div/ .below-md:hide //When visible: screen is above mid width
+div/ .below-lg:hide //When visible: screen is above large width</pre>
 
             <table class="mrt-2">
                 <tr>
@@ -3219,42 +3218,42 @@ div/ .below-lg-hide //When visible: screen is above large width</pre>
                     <td>Hide in any case</td>
                 </tr>
                 <tr>
-                    <td><code class="no-wrap">.sm-hide</code></td>
+                    <td><code class="no-wrap">.sm:hide</code></td>
                     <td>Hide if the screen has at least small screen width.
                     </td>
                 </tr>
                 <tr>
-                    <td><code class="no-wrap">.below-sm-hide</code></td>
+                    <td><code class="no-wrap">.below-sm:hide</code></td>
                     <td>Hide if the screen at max small screen width.
                     </td>
                 </tr>
                 <tr>
-                    <td><code class="no-wrap">.rg-hide</code></td>
+                    <td><code class="no-wrap">.rg:hide</code></td>
                     <td>Hide if the screen has at least regular screen width.
                     </td>
                 </tr>
                 <tr>
-                    <td><code class="no-wrap">.below-rg-hide</code></td>
+                    <td><code class="no-wrap">.below-rg:hide</code></td>
                     <td>Hide if the screen has at max regular screen width.
                     </td>
                 </tr>
                 <tr>
-                    <td><code class="no-wrap">.md-hide</code></td>
+                    <td><code class="no-wrap">.md:hide</code></td>
                     <td>Hide if the screen at least mid screen width.
                     </td>
                 </tr>
                 <tr>
-                    <td><code class="no-wrap">.below-md-hide</code></td>
+                    <td><code class="no-wrap">.below-md:hide</code></td>
                     <td>Hide if the screen at max mid screen width.
                     </td>
                 </tr>
                 <tr>
-                    <td><code class="no-wrap">.lg-hide</code></td>
+                    <td><code class="no-wrap">.lg:hide</code></td>
                     <td>Hide if the screen has at least large screen width.
                     </td>
                 </tr>
                 <tr>
-                    <td><code class="no-wrap">.below-lg-hide</code></td>
+                    <td><code class="no-wrap">.below-lg:hide</code></td>
                     <td>Hide if the screen has at max large screen width.
                     </td>
                 </tr>

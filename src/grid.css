@@ -99,298 +99,298 @@
 
 @media (--breakpoint-sm) {
 
-  .sm-columns-1 {
+  .sm\:columns-1 {
     columns: 1;
   }
 
-  .sm-columns-2 {
+  .sm\:columns-2 {
     columns: 2;
   }
 
-  .sm-columns-3 {
+  .sm\:columns-3 {
     columns: 3;
   }
 
-  .sm-columns-4 {
+  .sm\:columns-4 {
     columns: 4;
   }
 
-  .sm-columns-5 {
+  .sm\:columns-5 {
     columns: 5;
   }
 
-  .sm-columns-6 {
+  .sm\:columns-6 {
     columns: 6;
   }
 
-  .x-12>.sm-xx-1 {
+  .x-12>.sm\:xx-1 {
     grid-area: span 1/span 1;
   }
 
-  .x-12>.sm-xx-2 {
+  .x-12>.sm\:xx-2 {
     grid-area: span 1/span 2;
   }
 
-  .x-12>.sm-xx-3 {
+  .x-12>.sm\:xx-3 {
     grid-area: span 1/span 3;
   }
 
-  .x-12>.sm-xx-4 {
+  .x-12>.sm\:xx-4 {
     grid-area: span 1/span 4;
   }
 
-  .x-12>.sm-xx-5 {
+  .x-12>.sm\:xx-5 {
     grid-area: span 1/span 5;
   }
 
-  .x-12>.sm-xx-6 {
+  .x-12>.sm\:xx-6 {
     grid-area: span 1/span 6;
   }
 
-  .x-12>.sm-xx-7 {
+  .x-12>.sm\:xx-7 {
     grid-area: span 1/span 7;
   }
 
-  .x-12>.sm-xx-8 {
+  .x-12>.sm\:xx-8 {
     grid-area: span 1/span 8;
   }
 
-  .x-12>.sm-xx-9 {
+  .x-12>.sm\:xx-9 {
     grid-area: span 1/span 9;
   }
 
-  .x-12>.sm-xx-10 {
+  .x-12>.sm\:xx-10 {
     grid-area: span 1/span 10;
   }
 
-  .x-12>.sm-xx-11 {
+  .x-12>.sm\:xx-11 {
     grid-area: span 1/span 11;
   }
 
-  .x-12>.sm-xx-12 {
+  .x-12>.sm\:xx-12 {
     grid-area: span 1/span 12;
   }
 }
 
 @media (--breakpoint-rg) {
-  .rg-columns-1 {
+  .rg\:columns-1 {
     columns: 1;
   }
 
-  .rg-columns-2 {
+  .rg\:columns-2 {
     columns: 2;
   }
 
-  .rg-columns-3 {
+  .rg\:columns-3 {
     columns: 3;
   }
 
-  .rg-columns-4 {
+  .rg\:columns-4 {
     columns: 4;
   }
 
-  .rg-columns-5 {
+  .rg\:columns-5 {
     columns: 5;
   }
 
-  .rg-columns-6 {
+  .rg\:columns-6 {
     columns: 6;
   }
 
-  .x-12>.rg-xx-1 {
+  .x-12>.rg\:xx-1 {
     grid-area: span 1/span 1;
   }
 
-  .x-12>.rg-xx-2 {
+  .x-12>.rg\:xx-2 {
     grid-area: span 1/span 2;
   }
 
-  .x-12>.rg-xx-3 {
+  .x-12>.rg\:xx-3 {
     grid-area: span 1/span 3;
   }
 
-  .x-12>.rg-xx-4 {
+  .x-12>.rg\:xx-4 {
     grid-area: span 1/span 4;
   }
 
-  .x-12>.rg-xx-5 {
+  .x-12>.rg\:xx-5 {
     grid-area: span 1/span 5;
   }
 
-  .x-12>.rg-xx-6 {
+  .x-12>.rg\:xx-6 {
     grid-area: span 1/span 6;
   }
 
-  .x-12>.rg-xx-7 {
+  .x-12>.rg\:xx-7 {
     grid-area: span 1/span 7;
   }
 
-  .x-12>.rg-xx-8 {
+  .x-12>.rg\:xx-8 {
     grid-area: span 1/span 8;
   }
 
-  .x-12>.rg-xx-9 {
+  .x-12>.rg\:xx-9 {
     grid-area: span 1/span 9;
   }
 
-  .x-12>.rg-xx-10 {
+  .x-12>.rg\:xx-10 {
     grid-area: span 1/span 10;
   }
 
-  .x-12>.rg-xx-11 {
+  .x-12>.rg\:xx-11 {
     grid-area: span 1/span 11;
   }
 
-  .x-12>.rg-xx-12 {
+  .x-12>.rg\:xx-12 {
     grid-area: span 1/span 12;
   }
 }
 
 @media (--breakpoint-md) {
 
-  .md-columns-1 {
+  .md\:columns-1 {
     columns: 1;
   }
 
-  .md-columns-2 {
+  .md\:columns-2 {
     columns: 2;
   }
 
-  .md-columns-3 {
+  .md\:columns-3 {
     columns: 3;
   }
 
-  .md-columns-4 {
+  .md\:columns-4 {
     columns: 4;
   }
 
-  .md-columns-5 {
+  .md\:columns-5 {
     columns: 5;
   }
 
-  .md-columns-6 {
+  .md\:columns-6 {
     columns: 6;
   }
 
-  .x-12>.md-xx-1 {
+  .x-12>.md\:xx-1 {
     grid-area: span 1/span 1;
   }
 
-  .x-12>.md-xx-2 {
+  .x-12>.md\:xx-2 {
     grid-area: span 1/span 2;
   }
 
-  .x-12>.md-xx-3 {
+  .x-12>.md\:xx-3 {
     grid-area: span 1/span 3;
   }
 
-  .x-12>.md-xx-4 {
+  .x-12>.md\:xx-4 {
     grid-area: span 1/span 4;
   }
 
-  .x-12>.md-xx-5 {
+  .x-12>.md\:xx-5 {
     grid-area: span 1/span 5;
   }
 
-  .x-12>.md-xx-6 {
+  .x-12>.md\:xx-6 {
     grid-area: span 1/span 6;
   }
 
-  .x-12>.md-xx-7 {
+  .x-12>.md\:xx-7 {
     grid-area: span 1/span 7;
   }
 
-  .x-12>.md-xx-8 {
+  .x-12>.md\:xx-8 {
     grid-area: span 1/span 8;
   }
 
-  .x-12>.md-xx-9 {
+  .x-12>.md\:xx-9 {
     grid-area: span 1/span 9;
   }
 
-  .x-12>.md-xx-10 {
+  .x-12>.md\:xx-10 {
     grid-area: span 1/span 10;
   }
 
-  .x-12>.md-xx-11 {
+  .x-12>.md\:xx-11 {
     grid-area: span 1/span 11;
   }
 
-  .x-12>.md-xx-12 {
+  .x-12>.md\:xx-12 {
     grid-area: span 1/span 12;
   }
 }
 
 @media (--breakpoint-lg) {
-  .x>.lg-columns-1 {
+  .x>.lg\:columns-1 {
     columns: 1;
   }
 
-  .x>.lg-columns-2 {
+  .x>.lg\:columns-2 {
     columns: 2;
   }
 
-  .x>.lg-columns-3 {
+  .x>.lg\:columns-3 {
     columns: 3;
   }
 
-  .x>.lg-columns-4 {
+  .x>.lg\:columns-4 {
     columns: 4;
   }
 
-  .x>.lg-columns-5 {
+  .x>.lg\:columns-5 {
     columns: 5;
   }
 
-  .x>.lg-columns-6 {
+  .x>.lg\:columns-6 {
     columns: 6;
   }
 
-  .x-12>.lg-xx-1 {
+  .x-12>.lg\:xx-1 {
     grid-area: span 1/span 1;
   }
 
-  .x-12>.lg-xx-2 {
+  .x-12>.lg\:xx-2 {
     grid-area: span 1/span 2;
   }
 
-  .x-12>.lg-xx-3 {
+  .x-12>.lg\:xx-3 {
     grid-area: span 1/span 3;
   }
 
-  .x-12>.lg-xx-4 {
+  .x-12>.lg\:xx-4 {
     grid-area: span 1/span 4;
   }
 
-  .x-12>.lg-xx-5 {
+  .x-12>.lg\:xx-5 {
     grid-area: span 1/span 5;
   }
 
-  .x-12>.lg-xx-6 {
+  .x-12>.lg\:xx-6 {
     grid-area: span 1/span 6;
   }
 
-  .x-12>.lg-xx-7 {
+  .x-12>.lg\:xx-7 {
     grid-area: span 1/span 7;
   }
 
-  .x-12>.lg-xx-8 {
+  .x-12>.lg\:xx-8 {
     grid-area: span 1/span 8;
   }
 
-  .x-12>.lg-xx-9 {
+  .x-12>.lg\:xx-9 {
     grid-area: span 1/span 9;
   }
 
-  .x-12>.lg-xx-10 {
+  .x-12>.lg\:xx-10 {
     grid-area: span 1/span 10;
   }
 
-  .x-12>.lg-xx-11 {
+  .x-12>.lg\:xx-11 {
     grid-area: span 1/span 11;
   }
 
-  .x-12>.lg-xx-12 {
+  .x-12>.lg\:xx-12 {
     grid-area: span 1/span 12;
   }
 }
