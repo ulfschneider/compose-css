@@ -91,6 +91,7 @@
   --code-color: var(--base-color);
   
   --heading-color: black;
+  --meta-color: var(--neutral-d1);
 
   --link-color: var(--base-color);
   --link-hover-color: var(--primary);
@@ -158,6 +159,10 @@
   color: var(--base-color);
 }
 
+.meta-color {
+  color: var(--meta-color);
+}
+
 /* Background */
 
 .bg-neutral-d4 {
@@ -214,6 +219,10 @@
 
 .bg-base-color {
   background-color: var(--base-color);
+}
+
+.bg-meta-color {
+  background-color: var(--meta-color);
 }
 
 

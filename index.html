@@ -207,6 +207,7 @@
                 <p><s class="strike mrr">Strikethrough</s> <code>s</code>, <code>.s</code>, <code>.strike</code></p>
                 <p><small class="mrr">Small</small> <code>small</code>, <code>.small</code></p>
                 <p><code class="mrr">Code</code> <code>code</code>, <code>.code</code></p>
+                <p><span class="meta mrr">Meta Text</span> <code>.meta</code></p>
             </div>
 
             <div>
@@ -479,7 +480,7 @@ p/ .no-indent //remove indentation for this p</pre>
                         <p>He lay on his armour-like back, and if he lifted his head a little he could see his brown
                             belly,
                             slightly
-                            domed and divided by arches into stiff sections.</p>                        
+                            domed and divided by arches into stiff sections.</p>
                     </blockquote>
                     <figcaption>Franz Kafka, <cite>The Metamorphosis</cite></figcaption>
                 </figure>
@@ -1036,6 +1037,16 @@ figure
                     <dd class="mrl-2"><code>.kbd</code>, <code>kbd</code>
                         <p>The color is defined through:</p>
                         <pre>:root { --kbd-background: var(--neutral-4); }</pre>
+                    </dd>
+                </dl>
+
+                <dl>
+                    <dt class="square-1 bg-meta-color float-left"></dt>
+                    <dd class="mrl-2"><code>.meta-color</code>
+                        <p>The color can be used as text color and background color. It is defined
+                            through:
+                        </p>
+                        <pre>:root { --meta-color: var(--neutral-d1); }</pre>
                     </dd>
                 </dl>
             </div>

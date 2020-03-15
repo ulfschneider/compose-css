@@ -8,6 +8,11 @@
   --heading-letter-spacing: 0.025em;
   --heading-text-transform: uppercase;
 
+  --meta-font-family: var(--font-family);
+  --meta-font-weight: var(--font-weight-normal);
+  --meta-letter-spacing: unset;
+  --meta-text-transform: unset;
+
   --mono-font-family: monospace;
   --code-font-family: var(--mono-font-family);
   --pre-border: var(--border-width-default) dotted var(--pre-border-color);
@@ -84,6 +89,14 @@
   font-size: inherit;
 }
 
+.meta {
+  font-family: var(--meta-font-family);
+  font-weight: var(--meta-font-weight);
+  text-transform: var(--meta-text-transform);
+  letter-spacing: var(--meta-letter-spacing);
+  color: var(--meta-color);  
+}
+
 .bold,
 b,
 .b,
@@ -132,7 +145,6 @@ strong,
 .fw-900 {
   font-weight: 900;
 }
-
 
 .italic,
 i,
@@ -432,7 +444,7 @@ blockquote::before {
 }
 
 
-blockquote+figcaption {  
+blockquote+figcaption {
   padding-left: var(--horizontal-rhythm);
   font-weight: var(--heading-font-weight);
   font-family: var(--heading-font-family);
