@@ -1,19 +1,23 @@
 :root {
   --font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-feature-settings: unset;
   --font-weight-bold: 600;
   --font-weight-normal: 400;
 
   --heading-font-family: var(--font-family);
+  --heading-font-feature-settings: var(--font-feature-settings);
   --heading-font-weight: 600;
   --heading-letter-spacing: 0.025em;
   --heading-text-transform: uppercase;
 
   --meta-font-family: var(--font-family);
+  --meta-font-feature-settings: var(--font-feature-settings);
   --meta-font-weight: var(--font-weight-normal);
   --meta-letter-spacing: unset;
   --meta-text-transform: unset;
 
   --mono-font-family: monospace;
+  --mono-font-feature-settings: var(--font-feature-settings);
   --code-font-family: var(--mono-font-family);
   --pre-border: var(--border-width-default) dotted var(--pre-border-color);
 
@@ -71,6 +75,7 @@
   --scroll-margin-top: var(--vertical-rhythm);
 
   font-family: var(--font-family);
+  font-feature-settings: var(--font-feature-settings);
   font-weight: var(--font-weight-normal);
   text-underline-offset: var(--text-underline-offset);
   text-decoration-thickness: var(--text-decoration-thickness);
@@ -91,6 +96,7 @@
 
 .meta {
   font-family: var(--meta-font-family);
+  font-feature-settings: var(--meta-font-feature-settings);
   font-weight: var(--meta-font-weight);
   text-transform: var(--meta-text-transform);
   letter-spacing: var(--meta-letter-spacing);
@@ -297,6 +303,7 @@ kbd,
 
 .mono {
   font-family: var(--mono-font-family);
+  font-feature-settings: var(--mono-font-feature-settings);
 }
 
 h1,
@@ -309,6 +316,7 @@ h6 {
   letter-spacing: var(--heading-letter-spacing);
   font-weight: var(--heading-font-weight);
   font-family: var(--heading-font-family);
+  font-feature-settings: var(--heading-font-feature-settings);
   color: var(--heading-color);
   scroll-margin-top: var(--scroll-margin-top);
 }
