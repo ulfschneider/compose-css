@@ -94,6 +94,14 @@
   font-size: inherit;
 }
 
+.line-height-inherit {
+  line-height: inherit;
+}
+
+.base-font {
+  font-family: var(--font-family);
+}
+
 .meta {
   font-family: var(--meta-font-family);
   font-feature-settings: var(--meta-font-feature-settings);
@@ -112,7 +120,7 @@ strong,
 }
 
 .normal,
-.fw-default {
+.fw-normal {
   font-weight: normal;
 }
 
@@ -455,11 +463,8 @@ blockquote::before {
 blockquote+figcaption {
   padding-left: var(--horizontal-rhythm);
   font-weight: var(--heading-font-weight);
-  font-family: var(--heading-font-family);
   letter-spacing: var(--heading-letter-spacing);
   text-transform: var(--heading-text-transform);
-  color: var(--heading-color);
-
 }
 
 blockquote p,
@@ -497,6 +502,7 @@ figure {
 figcaption {
   margin-top: var(--mrt-figcaption);
   margin-bottom: var(--mrb-figcaption);
+  font-family: var(--heading-font-family);
   font-style: normal;
   font-size: var(--fs-d1);
   line-height: var(--lh-2);
