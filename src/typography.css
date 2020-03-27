@@ -24,7 +24,7 @@
   --link-text-decoration: underline;
   --link-text-decoration-color: var(--base-color);
   --text-underline-offset: 0.1em;
-  --text-decoration-thickness: 0.035em;
+  --text-decoration-thickness: 1px;
 
   --font-variant-numeric: normal;
 
@@ -108,7 +108,7 @@
   font-weight: var(--meta-font-weight);
   text-transform: var(--meta-text-transform);
   letter-spacing: var(--meta-letter-spacing);
-  color: var(--meta-color);  
+  color: var(--meta-color);
 }
 
 .bold,
@@ -179,8 +179,12 @@ small,
   font-size: var(--fs-d1);
 }
 
-.caps {
+.caps, .uppercase {
   text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
 }
 
 .no-lsp,
@@ -460,13 +464,6 @@ blockquote::before {
 }
 
 
-blockquote+figcaption {
-  padding-left: var(--horizontal-rhythm);
-  font-weight: var(--heading-font-weight);
-  letter-spacing: var(--heading-letter-spacing);
-  text-transform: var(--heading-text-transform);
-}
-
 blockquote p,
 .indent blockquote p {
   margin: 0;
@@ -506,6 +503,15 @@ figcaption {
   font-style: normal;
   font-size: var(--fs-d1);
   line-height: var(--lh-2);
+  max-width: var(--space-5);
+}
+
+blockquote+figcaption {
+  padding-left: var(--horizontal-rhythm);
+  font-weight: var(--heading-font-weight);
+  letter-spacing: var(--heading-letter-spacing);
+  text-transform: var(--heading-text-transform);
+  max-width: unset;
 }
 
 hr {
