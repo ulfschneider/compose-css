@@ -59,7 +59,7 @@
   --mrt-figure: var(--space-2);
   --mrb-figure: var(--space-2);
   --mrt-figcaption: var(--vertical-rhythm);
-  --mrb-figcaption: 0;
+  --mrb-figcaption: var(--vertical-rhythm);
 
   --mrt-pre: var(--vertical-rhythm);
   --mrb-pre: var(--vertical-rhythm);
@@ -504,6 +504,12 @@ figcaption {
   font-size: var(--fs-d1);
   line-height: var(--lh-2);
   max-width: var(--space-5);
+}
+
+@media(--breakpoint-max-sm) {
+  figcaption {
+    max-width: unset;
+  }
 }
 
 blockquote+figcaption {

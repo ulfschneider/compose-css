@@ -5,7 +5,7 @@
     /*keep in sync with breakpoint media queries */
     --mid-width: 900px;
     /*keep in sync with breakpoint media queries */
-    --large-width: 1200px;
+    --large-width: 1400px;
     /*keep in sync with breakpoint media queries */
 }
 
@@ -18,7 +18,7 @@
 @custom-media --breakpoint-max-md (max-width: 900px);
 /* keep in sync with var(--mid-width) */
 
-@custom-media --breakpoint-max-lg (max-width: 1200px);
+@custom-media --breakpoint-max-lg (max-width: 1400px);
 /* keep in sync with var(--large-width) */
 
 @custom-media --breakpoint-sm (min-width: 400px);
@@ -30,7 +30,7 @@
 @custom-media --breakpoint-md (min-width: 900px);
 /* keep in sync with var(--mid-width) */
 
-@custom-media --breakpoint-lg (min-width: 1200px);
+@custom-media --breakpoint-lg (min-width: 1400px);
 /* keep in sync with var(--large-width) */
 
 
@@ -55,3 +55,5 @@
 @custom-media --breakpoint-type-scale-3 (min-width: 1000px);
 /* in sync with --breakpoint-xl-list-indent */
 
+@custom-media --breakpoint-type-scale-4 (min-width: 1400px);
+/* in sync with --breakpoint-lg */

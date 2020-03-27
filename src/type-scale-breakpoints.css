@@ -18,6 +18,12 @@
   }
 }
 
+@media (--breakpoint-type-scale-4) {
+  :root {
+    font-size: calc(var(--base-font-size) + 3px);
+  }
+}
+
 @media (--breakpoint-sm) {
 
   .sm\:h1 {
