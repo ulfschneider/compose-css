@@ -402,7 +402,7 @@ code,
 pre,
 .pre {
   font-family: var(--code-font-family);
-  font-size: var(--fs-mono);
+  font-size: var(--fs-mono);  
 }
 
 .code,
@@ -421,6 +421,7 @@ pre,
   border-bottom: var(--pre-border);
   overflow: auto;
   white-space: pre;
+
 }
 
 .tag {

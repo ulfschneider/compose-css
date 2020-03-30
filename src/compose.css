@@ -1,5 +1,9 @@
 @import "reset";
 @import "typography";
+@import "forms";
+@import "page-layout";
+@import "grid";
+@import "flex-box";
 @import "list";
 @import "pointer";
 @import "type-scale";
@@ -7,9 +11,6 @@
 @import "type-scale-breakpoints";
 @import "img";
 @import "table";
-@import "page-layout";
-@import "grid";
-@import "flex-box";
 @import "layout";
 @import "color";
 @import "borders";
@@ -33,7 +34,5 @@
 @import "square-breakpoints";
 
 @import "hide-breakpoints";
-
-@import "forms";
 
 @import "debug";

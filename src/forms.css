@@ -1,14 +1,15 @@
 :root {
     --form-font-family: var(--font-family);
-    --form-label-color: var(--neutral-2);
+    --form-label-color: var(--neutral);
     --form-font-size: var(--fs);
     --form-radius: var(--space-d3);
 
-    --form-field-border-color: var(--neutral-3);
+    --form-field-border-color: var(--neutral-2);
 
     --form-button-pdx: var(--space-d2);
     --form-button-pdy: var(--space-d2);
-    --form-button-bg-color: var(--neutral-4);
+    --form-button-bg-color: var(--base-color);
+    --form-button-color: var(--base-background);
 }
 
 ::placeholder,
@@ -32,11 +33,14 @@ input[type=search],
 input[type=tel],
 input[type=url],
 input[list],
+input[type=submit],
+input[type=reset],
 button,
 .button,
 select,
 textarea,
-fieldset {
+fieldset,
+label {
     margin: 0;
     font-family: var(--form-font-family);
     font-size: var(--form-font-size);
@@ -45,15 +49,29 @@ fieldset {
     -moz-appearance: none;
 }
 
+input[type=submit],
+input[type=reset],
 button,
 .button,
 select {
     border: 0;
     border-radius: var(--form-radius);
-    vertical-align: middle;
+    vertical-align: baseline;
     background: var(--form-button-bg-color);
+    color: var(--form-button-color);
     padding: var(--form-button-pdx) var(--form-button-pdy);
     cursor: pointer;
+}
+
+
+@media (hover: hover) {
+    input[type=submit]:hover,
+    input[type=reset]:hover,
+    button:hover,
+    .button:hover,
+    select:hover {
+        background: var(--primary);
+    }
 }
 
 label {
@@ -75,10 +93,11 @@ input[list] {
     border: none;
     border-bottom: 1px solid var(--form-field-border-color);
     vertical-align: middle;
-    padding: 0 0 var(--space-d2) 0;
+    padding: var(--form-button-pdy) 0;
     line-height: var(--lh);
     border-radius: 0;
     -webkit-border-radius: 0;
+    background: var(--neutral-5);
 }
 
 textarea {
@@ -86,4 +105,5 @@ textarea {
     border: 1px solid var(--form-field-border-color);
     border-radius: var(--form-radius);
     resize: none;
+    background: var(--neutral-5);
 }
