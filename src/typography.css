@@ -421,7 +421,8 @@ pre,
   border-bottom: var(--pre-border);
   overflow: auto;
   white-space: pre;
-
+  color: var(--pre-color);
+  background: var(--pre-background);
 }
 
 .tag {

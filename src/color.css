@@ -97,6 +97,8 @@
 
   --code-background: transparent;
   --code-color: var(--base-color);
+  --pre-background: transparent;
+  --pre-color: var(--base-color);
   
   --heading-color: black;
   --meta-color: var(--neutral-d2);
