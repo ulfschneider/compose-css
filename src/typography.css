@@ -419,10 +419,10 @@ pre,
   padding-bottom: var(--space-d2);
   border-top: var(--pre-border);
   border-bottom: var(--pre-border);
-  overflow: auto;
-  white-space: pre;
   color: var(--pre-color);
   background: var(--pre-background);
+  white-space: pre;  
+  overflow: auto;
 }
 
 .tag {
