@@ -1,14 +1,14 @@
 :root {
     --form-font-family: var(--font-family);
-    --form-label-color: var(--neutral);
+    --form-label-color: var(--meta-color);
     --form-font-size: var(--fs);
-    --form-radius: var(--space-d3);
+    --form-radius: var(--rounded);
 
     --form-field-border-color: var(--neutral-2);
 
     --form-button-pdx: var(--space-d2);
     --form-button-pdy: var(--space-d2);
-    --form-button-bg-color: var(--base-color);
+    --form-button-background: var(--base-color);
     --form-button-color: var(--base-background);
 }
 
@@ -17,7 +17,7 @@
 ::-ms-input-placeholder {
     color: var(--form-label-color);
     opacity: 1;
-    text-transform: uppercase;
+    text-transform: var(--heading-text-transform);
 }
 
 form dl {
@@ -57,7 +57,7 @@ select {
     border: 0;
     border-radius: var(--form-radius);
     vertical-align: baseline;
-    background: var(--form-button-bg-color);
+    background: var(--form-button-background);
     color: var(--form-button-color);
     padding: var(--form-button-pdx) var(--form-button-pdy);
     cursor: pointer;
@@ -75,8 +75,8 @@ select {
 }
 
 label {
-    vertical-align: middle;
-    text-transform: uppercase;
+    vertical-align: baseline;
+    text-transform: var(--heading-text-transform);
     font-size: var(--fs-d1);
     color: var(--form-label-color);
 }
