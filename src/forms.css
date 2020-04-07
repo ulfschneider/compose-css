@@ -5,11 +5,14 @@
     --form-radius: var(--rounded);
 
     --form-field-border-color: var(--neutral-2);
+    --caret-color: var(--primary);
 
     --form-button-pdx: var(--space-d2);
     --form-button-pdy: var(--space-d2);
     --form-button-background: var(--base-color);
     --form-button-color: var(--base-background);
+
+    caret-color: var(--caret-color);
 }
 
 ::placeholder,
