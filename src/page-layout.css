@@ -6,7 +6,8 @@ body {
     overflow-x: hidden;
 }
 
-.x {
+.x,
+.xl {
     max-width: calc(var(--regular-width) + 2 * var(--x-layout-padding));
     padding-left: var(--x-layout-padding);
     padding-right: var(--x-layout-padding);
@@ -14,12 +15,23 @@ body {
     margin-right: auto;
 }
 
-.xl {
-    max-width: calc(var(--mid-width) + 2 * var(--x-layout-padding));
-    padding-left: var(--x-layout-padding);
-    padding-right: var(--x-layout-padding);
+
+.x>.breakout {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    padding-left: var(--space);
+    padding-right: var(--space);
+}
+
+
+.x>.breakout>* {
+    max-width: var(--mid-width);
     margin-left: auto;
     margin-right: auto;
+}
+
+.xl {
+    max-width: calc(var(--mid-width) + 2 * var(--x-layout-padding));
 }
 
 .xl>:not([class^='breakout']) {
@@ -30,25 +42,15 @@ body {
     max-width: unset;
 }
 
-.x>.breakout {
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    padding-left: var(--space);
-    padding-right: var(--space);
-}
 
-.x>.breakout>* {
-    max-width: var(--mid-width);
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.breakout-full {
+.x>.breakout-full,
+.xl>.breakout-full {
     width: 100vw;
     margin-left: calc(50% - 50vw);
 }
 
-.breakout-wide {
+.x>.breakout-wide,
+.xl>.breakout-wide {
     width: 100vw;
     margin-left: calc(50% - 50vw);
     padding-left: var(--space);
