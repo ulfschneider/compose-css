@@ -318,6 +318,10 @@ kbd,
   font-feature-settings: var(--mono-font-feature-settings);
 }
 
+address {
+  font-style: normal;
+}
+
 h1,
 h2,
 h3,
