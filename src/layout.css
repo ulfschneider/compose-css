@@ -43,7 +43,7 @@
 
 .bottom {
   vertical-align: bottom;
-  
+
 }
 
 .left {
@@ -192,4 +192,10 @@
 
 .z-4 {
   z-index: var(--z-4)
+}
+
+.box-break-clone {
+  box-decoration-break: clone;
+  -o-box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
