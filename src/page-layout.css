@@ -1,65 +1,54 @@
 :root {
-    --x-layout-padding: 5vw;
+    --x-layout-padding: var(--space); 
+    --breakout-width: 1100px;
 }
 
 body {
     overflow-x: hidden;
 }
 
-.x {
-    max-width: calc(var(--regular-width) + 2 * var(--x-layout-padding));
-    padding-left: var(--x-layout-padding);
-    padding-right: var(--x-layout-padding);
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.xl {
-    max-width: calc(var(--mid-width) + 2 * var(--x-layout-padding));
-    padding-left: var(--x-layout-padding);
-    padding-right: var(--x-layout-padding);
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.xl>:not([class^='breakout']) {
+.x>* {
     max-width: var(--regular-width);
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.xl>.breakout {
+.x {
+    padding-left: var(--x-layout-padding);
+    padding-right: var(--x-layout-padding);
+}
+
+.x, .x>.breakout, .x.breakout, .x.breakout>* {
+    max-width: var(--breakout-width);    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media(--breakpoint-x-breakout) {
+    .x>.breakout-r, .x.breakout-r>* {
+        margin-left: calc((100% - var(--regular-width)) / 2);       
+        max-width: unset;
+    }    
+    .x>.breakout-l, .x.breakout-l>* {        
+        margin-right: calc((100% - var(--regular-width)) / 2);          
+        max-width: unset;
+    }
+}
+
+
+.x>.breakout-full, .x.breakout-full {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
     max-width: unset;
 }
 
-.x>.breakout {
+.x>.breakout-wide, .x.breakout-wide {
     width: 100vw;
     margin-left: calc(50% - 50vw);
-    padding-left: var(--space);
-    padding-right: var(--space);
+    padding-left: var(--x-layout-padding);
+    padding-right: var(--x-layout-padding);
+    max-width: unset;
 }
 
-.x>.breakout>* {
-    max-width: var(--mid-width);
-    margin-left: auto;
-    margin-right: auto;
-}
 
-.breakout-full {
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-}
-
-.breakout-wide {
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    padding-left: var(--space);
-    padding-right: var(--space);
-}
-
-@media(--breakpoint-x-list-indent) {
-
-    .x,
-    .xl {
-        padding-left: var(--space);
-        padding-right: var(--space);
-    }
-}
