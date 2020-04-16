@@ -1,5 +1,5 @@
 :root {
-    --breakout-width: 1100px;
+    --breakout-width: var(--mid-width);
 }
 
 body {

@@ -92,14 +92,6 @@ ul ol li::before {
     }    
 }
 
-@media (--breakpoint-xl-list-indent) {
-
-    .xl ul,
-    .xl ol {
-        padding-left: var(--horizontal-rhythm);        
-    }    
-}
-
 
 ul.indent,
 ol.indent,
