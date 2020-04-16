@@ -93,11 +93,12 @@
   --kbd-background: var(--neutral-4);
   --link-color: var(--base-color);
   --text-decoration-color: unset;
-  --pre-border-color: var(--neutral);
+  
 
   --code-background: transparent;
   --code-color: var(--base-color);
-  --pre-background: transparent;
+  --pre-border-color: var(--neutral);
+  --pre-background: var(--neutral-5);
   --pre-color: var(--base-color);
   
   --heading-color: black;
