@@ -34,26 +34,20 @@
 /* keep in sync with var(--large-width) */
 
 
+@custom-media --breakpoint-x-breakout (min-width: 650px);
+/*--breakpoint-x-breakout is --rg-width + some padding */
 
-@custom-media --breakpoint-x-list-indent (max-width: 650px);
+@custom-media --breakpoint-x-list-indent (max-width: 700px);
 /*--breakpoint-list-indent is --rg-width + some padding */
-
-@custom-media --breakpoint-xl-list-indent (max-width: 1000px);
-/* --mid-width + some padding */
-
-@custom-media --breakpoint-xl-padding (max-width: 995px);
-/* should be a little bit (5px) below --breakpoint-xl-list-indent*/
-
 
 
 @custom-media --breakpoint-type-scale-1 (min-width: 400px);
 /* a little bit less than --regular-width */
 
-@custom-media --breakpoint-type-scale-2 (min-width: 650px);
+@custom-media --breakpoint-type-scale-2 (min-width: 700px);
 /* in sync with --breakoint-x-list-indent */
 
 @custom-media --breakpoint-type-scale-3 (min-width: 1000px);
-/* in sync with --breakpoint-xl-list-indent */
 
 @custom-media --breakpoint-type-scale-4 (min-width: 1400px);
 /* in sync with --breakpoint-lg */
