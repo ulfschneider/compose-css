@@ -92,6 +92,11 @@ ul ol li::before {
     }    
 }
 
+[class^="breakout"] ul,
+[class^="breakout"] ol {
+        padding-left: var(--horizontal-rhythm);        
+}  
+
 
 ul.indent,
 ol.indent,
