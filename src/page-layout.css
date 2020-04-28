@@ -30,6 +30,11 @@ body {
     max-width: var(--breakout-width);
 }
 
+.x>.breakout-full, .x.breakout-full {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    max-width: unset;
+}
 
 @media(--breakpoint-x-breakout) {
     .x>.breakout-r, .x.breakout-r {
@@ -40,18 +45,72 @@ body {
         margin-right: calc((100% - var(--regular-width)) / 2); 
         max-width: unset;
     }
-
     .x.breakout-r, .x.breakout-l {
         max-width: calc(var(--breakout-width) - (var(--breakout-width) - var(--regular-width)) / 2);
     }
 }
 
 
-.x>.breakout-full, .x.breakout-full {
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    max-width: unset;
+@media(--breakpoint-md) {
+    .x>.md\:breakout, .x.md\:breakout {
+        max-width: var(--breakout-width);    
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .x.md\:breakout>*, .x.md\:breakout-l>*, .x.md\:breakout-r>* {
+        margin-left: unset;
+        margin-right: unset;
+        max-width: var(--breakout-width);
+    }
+    .x>.md\:breakout-r, .x.md\:breakout-r {
+        margin-left: calc((100% - var(--regular-width)) / 2);   
+        max-width: unset;
+    }    
+    .x>.md\:breakout-l, .x.md\:breakout-l {        
+        margin-right: calc((100% - var(--regular-width)) / 2); 
+        max-width: unset;
+    }
+    .x.md\:breakout-r, .x.md\:breakout-l {
+        max-width: calc(var(--breakout-width) - (var(--breakout-width) - var(--regular-width)) / 2);
+    }
+    .x>.md\:breakout-full, .x.md\:breakout-full {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        max-width: unset;
+    }
 }
+
+@media(--breakpoint-lg) {
+    .x>.lg\:breakout, .x.lg\:breakout {
+        max-width: var(--breakout-width);    
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .x.lg\:breakout>*, .x.lg\:breakout-l>*, .x.lg\:breakout-r>* {
+        margin-left: unset;
+        margin-right: unset;
+        max-width: var(--breakout-width);
+    }
+    .x>.lg\:breakout-r, .x.lg\:breakout-r {
+        margin-left: calc((100% - var(--regular-width)) / 2);   
+        max-width: unset;
+    }    
+    .x>.lg\:breakout-l, .x.lg\:breakout-l {        
+        margin-right: calc((100% - var(--regular-width)) / 2); 
+        max-width: unset;
+    }
+    .x.lg\:breakout-r, .x.lg\:breakout-l {
+        max-width: calc(var(--breakout-width) - (var(--breakout-width) - var(--regular-width)) / 2);
+    }   
+    .x>.lg\:breakout-full, .x.lg\:breakout-full {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        max-width: unset;
+    } 
+}
+
+
+
 
 
 

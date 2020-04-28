@@ -72,7 +72,7 @@
                     websites.
                 </p>
 
-                <div class="pd mry-d1 xx-3 inline-block bg-black rounded white"><span id="version">v4.4.0</span>
+                <div class="pd mry-d1 xx-3 inline-block bg-black rounded white"><span id="version">v5.1.0</span>
                 </div>
             </div>
             <header id="navigation" class="x breakout-full pdx bg-neutral-4 small" style="z-index: 1000;">
@@ -2098,6 +2098,29 @@ figure
                     </div>
                 </div>
                 /div
+            </div>
+
+            <div class="breakout-l">
+                <h3>Responsive Breakpoints</h3>
+                <p>The <code>breakout</code>s can vary based on available screen width.
+                    Address the different minimum screen sizes with responsive breakpoints, wich are indicated by CSS
+                    class prefix values values of:</p>
+
+                <table>
+                    <tr>
+                        <td><code>.md:</code></td>
+                        <td><code>.md:breakout</code> for example will only breakout at a screen of at least mid size.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.lg:</code></td>
+                        <td><code>.lg:breakout</code> for example will only breakout at a screen of at least large size.
+                        </td>
+                    </tr>
+                </table>
+                <p>A <code>breakout</code> class without a prefix will be used in case the alternate minimum screen size
+                    is not defined. The responsive breakpoints <code>.sm:</code> and <code>.rg:</code> do not exist for
+                    breakouts.</p>
             </div>
 
             <div class="breakout-l">
