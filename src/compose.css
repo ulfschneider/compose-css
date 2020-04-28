@@ -10,6 +10,7 @@
 @import "breakpoints";
 @import "type-scale-breakpoints";
 @import "img";
+@import "media";
 @import "table";
 @import "layout";
 @import "colors";
