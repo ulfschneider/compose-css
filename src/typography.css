@@ -70,7 +70,8 @@
   --hr-content: "◊      ◊      ◊";
   --quotes: """ """"'""'";
   --quotes-de: """ """"'""'";
-  --blockquote-indicator: "❯";
+  --blockquote-indicator: "";
+  --blockquote-font-style: italic;
 
   --scroll-margin-top: var(--vertical-rhythm);
 
@@ -191,7 +192,8 @@ small,
   font-size: var(--fs-d1);
 }
 
-.caps, .uppercase {
+.caps,
+.uppercase {
   text-transform: uppercase;
 }
 
@@ -401,16 +403,20 @@ p {
   margin-bottom: 0;
 }
 
-.indent p+p,
-p.indent {
+.indent p+p {
   text-indent: var(--horizontal-rhythm);
 }
 
-.no-indent p,
-p.no-indent,
-p+p.no-indent {
+p.indent {
+  text-indent: var(--horizontal-rhythm) !important;
+}
+
+.no-indent p+p {
   text-indent: 0;
-  margin-top: var(--vertical-rhythm);
+}
+
+p.no-indent {
+  text-indent: 0 !important;
 }
 
 .code,
@@ -418,7 +424,7 @@ code,
 pre,
 .pre {
   font-family: var(--code-font-family);
-  font-size: var(--fs-mono);  
+  font-size: var(--fs-mono);
 }
 
 .code,
@@ -437,7 +443,7 @@ pre,
   border-bottom: var(--pre-border);
   color: var(--pre-color);
   background: var(--pre-background);
-  white-space: pre;  
+  white-space: pre;
   overflow: auto;
 }
 
@@ -471,8 +477,11 @@ blockquote {
   margin-top: var(--mrt-blockquote);
   margin-bottom: var(--mrb-blockquote);
   margin-right: 0;
-  margin-left: 0;
-  padding-left: var(--horizontal-rhythm);
+  margin-left:0;
+  padding-left: calc(var(--horizontal-rhythm) - var(--space-d2));
+  border-left: var(--space-d2) solid var(--blockquote-color);
+  color: var(--blockquote-color);
+  font-style: var(--blockquote-font-style);
 }
 
 blockquote::before {
@@ -530,13 +539,6 @@ figcaption {
   }
 }
 
-blockquote+figcaption {
-  padding-left: var(--horizontal-rhythm);
-  font-weight: var(--heading-font-weight);
-  letter-spacing: var(--heading-letter-spacing);
-  text-transform: var(--heading-text-transform);
-  max-width: unset;
-}
 
 hr {
   border: 0;
