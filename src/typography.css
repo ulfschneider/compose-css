@@ -102,6 +102,18 @@
   font-family: var(--font-family);
 }
 
+.heading-font {
+  font-family: var(--heading-font-family);
+}
+
+.meta-font {
+  font-family: var(--meta-font-family);
+}
+
+.mono-font {
+  font-family: var(--mono-font-family);
+}
+
 .meta {
   font-family: var(--meta-font-family);
   font-feature-settings: var(--meta-font-feature-settings);
