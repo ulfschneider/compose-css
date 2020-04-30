@@ -72,7 +72,7 @@
                     websites.
                 </p>
 
-                <div class="pd mry-d1 xx-3 inline-block bg-black rounded white"><span id="version">v5.0.0</span>
+                <div class="pd mry-d1 xx-3 inline-block bg-black rounded white"><span id="version">v5.2.0</span>
                 </div>
             </div>
             <header id="navigation" class="x breakout-full pdx bg-neutral-4 small" style="z-index: 1000;">
@@ -470,32 +470,23 @@ p/ .no-indent //remove indentation for this p</pre>
 
             <div class="breakout-l">
                 <h3>Blockquote</h3>
-                <figure>
-                    <blockquote>
-                        <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his
-                            bed
-                            into a
-                            horrible vermin.</p>
+                <blockquote>
+                    <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his
+                        bed
+                        into a
+                        horrible vermin.</p>
 
-                        <p>He lay on his armour-like back, and if he lifted his head a little he could see his brown
-                            belly,
-                            slightly
-                            domed and divided by arches into stiff sections.</p>
-                    </blockquote>
-                    <figcaption>Franz Kafka, <cite>The Metamorphosis</cite></figcaption>
-                </figure>
-                <pre class="mid">blockquote/
-
-blockquote
+                    <p>He lay on his armour-like back, and if he lifted his head a little he could see his brown
+                        belly,
+                        slightly
+                        domed and divided by arches into stiff sections.</p>
+                    <footer>Franz Kafka, <cite>The Metamorphosis</cite></footer>
+                </blockquote>
+                <pre class="mid">blockquote
     p/
+    footer/
 /blockquote
-
-figure
-    blockquote
-        p/
-        figcaption/
-    /blockquote
-/figure</pre>
+</pre>
             </div>
 
             <div class="breakout-l">
@@ -2101,6 +2092,29 @@ figure
             </div>
 
             <div class="breakout-l">
+                <h3>Responsive Breakpoints</h3>
+                <p>The breakouts can vary based on available screen width.
+                    Address the different minimum screen sizes with responsive breakpoints, wich are indicated by CSS
+                    class prefix values of:</p>
+
+                <table>
+                    <tr>
+                        <td><code>.md:</code></td>
+                        <td><code>.md:breakout</code> for example will only breakout at a screen of at least mid size.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><code>.lg:</code></td>
+                        <td><code>.lg:breakout</code> for example will only breakout at a screen of at least large size.
+                        </td>
+                    </tr>
+                </table>
+                <p>A <code>breakout</code> class without a prefix will be used in case the alternate minimum screen size
+                    is not defined. The responsive breakpoints <code>.sm:</code> and <code>.rg:</code> do not exist for
+                    breakouts.</p>
+            </div>
+
+            <div class="breakout-l">
                 <h2 id="layout">Layout</h2>
 
 
@@ -3339,52 +3353,52 @@ div/ .below-lg:hide //When visible: screen is above large width</pre>
             </div>
 
             <div class="breakout-l">
-            <h2 id="forms">Forms</h2>
+                <h2 id="forms">Forms</h2>
 
-            <form class="mxw-sm">
-                <dl>
-                    <label>Email Address</label>
-                    <input type="email" class="width-100 block">
-                </dl>
-                <dl>
-                    <label>Password</label>
-                    <input type="password" class="width-100 block">
-                </dl>
-                <dl>
-                    <label>Select</label>
-                    <select class="block">
-                        <option>Option 1</option>
-                        <option>Option 2</option>
-                        <option>Option 3</option>
-                        <option>Option 4</option>
-                        <option>Option 5</option>
-                    </select>
-                </dl>
-                <dl>
-                    <label>Datalist</label>
-                    <input class="width-100 block" type="list" list="browsers">
-                    <datalist id="browsers">
-                        <option value="Internet Explorer">
-                        <option value="Firefox">
-                        <option value="Chrome">
-                        <option value="Opera">
-                        <option value="Safari">
-                    </datalist>
-                </dl>
+                <form class="mxw-sm">
+                    <dl>
+                        <label>Email Address</label>
+                        <input type="email" class="width-100 block">
+                    </dl>
+                    <dl>
+                        <label>Password</label>
+                        <input type="password" class="width-100 block">
+                    </dl>
+                    <dl>
+                        <label>Select</label>
+                        <select class="block">
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                            <option>Option 4</option>
+                            <option>Option 5</option>
+                        </select>
+                    </dl>
+                    <dl>
+                        <label>Datalist</label>
+                        <input class="width-100 block" type="list" list="browsers">
+                        <datalist id="browsers">
+                            <option value="Internet Explorer">
+                            <option value="Firefox">
+                            <option value="Chrome">
+                            <option value="Opera">
+                            <option value="Safari">
+                        </datalist>
+                    </dl>
 
-                <dl>
-                    <label class="block">
-                        <input type="checkbox" checked>
-                        Remember me
-                    </label>
-                </dl>
-                <button type="submit">Sign In</button>
-                <button type="reset">Cancel</button>
-                <dl class="inline-block width-100"><label>Textarea</label>
-                    <textarea class="block width-100 height-3"></textarea>
-                </dl>
-            </form>
-        </div>
+                    <dl>
+                        <label class="block">
+                            <input type="checkbox" checked>
+                            Remember me
+                        </label>
+                    </dl>
+                    <button type="submit">Sign In</button>
+                    <button type="reset">Cancel</button>
+                    <dl class="inline-block width-100"><label>Textarea</label>
+                        <textarea class="block width-100 height-3"></textarea>
+                    </dl>
+                </form>
+            </div>
         </div>
     </div>
 </body>

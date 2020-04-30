@@ -523,7 +523,7 @@ figure {
   margin-right: 0;
 }
 
-figcaption {
+figcaption, blockquote footer {
   margin-top: var(--mrt-figcaption);
   margin-bottom: var(--mrb-figcaption);
   font-family: var(--heading-font-family);
@@ -533,8 +533,12 @@ figcaption {
   max-width: var(--space-5);
 }
 
+blockquote footer::before {
+  content: "— ";
+}
+
 @media(--breakpoint-max-sm) {
-  figcaption {
+  figcaption, blockquote footer {
     max-width: unset;
   }
 }
