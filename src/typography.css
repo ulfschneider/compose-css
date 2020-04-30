@@ -22,7 +22,7 @@
   --pre-border: var(--border-width-default) dotted var(--pre-border-color);
 
   --link-text-decoration: underline;
-  --link-text-decoration-color: var(--base-color);
+  --link-text-decoration-color: unset;
   --text-underline-offset: 0.1em;
   --text-decoration-thickness: 1px;
 
