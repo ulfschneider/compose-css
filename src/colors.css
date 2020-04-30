@@ -183,6 +183,10 @@
   color: var(--meta-color);
 }
 
+.heading-color {
+  color: var(--heading-color);
+}
+
 /* Background */
 
 .bg-neutral-d5 {
@@ -253,6 +257,10 @@
   background-color: var(--meta-color);
 }
 
+.bg-heading-color {
+  background-color: var(--heading-color);
+}
+
 
 /* Border Colors */
 
@@ -314,6 +322,14 @@
 
 .br-base-color {
   border-color: var(--base-color);
+}
+
+.br-meta-color {
+  border-color: var(--meta-color);
+}
+
+.br-heading-color {
+  border-color: var(--heading-color);
 }
 
 .primary-d5 {
