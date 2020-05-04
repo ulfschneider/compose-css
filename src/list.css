@@ -57,12 +57,14 @@ ol li {
 }
 
 ol li::before {
-    content: counter(styled-number) ". ";
+    content: counter(styled-number, decimal-leading-zero) " ";
     margin-left: calc(var(--horizontal-rhythm) * -1);
     min-width: var(--horizontal-rhythm);
     text-align: left;
-    display: inline-block; 
-    color: var(--li-prefix-color);   
+    display: inline-block;    
+    font-family: var(--meta-font-family);
+    font-size: smaller;
+    font-weight: bold;    
 }
 
 ul li::before {
