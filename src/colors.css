@@ -103,7 +103,9 @@
   
   --heading-color: black;
   --meta-color: var(--neutral-d2);
-  --blockquote-color: var(--base-color);
+  
+  --br-blockquote-color: var(--base-color);
+  --li-prefix-color: var(--base-color);
 
   --link-color: var(--base-color);
   --link-hover-color: var(--primary);

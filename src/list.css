@@ -61,7 +61,8 @@ ol li::before {
     margin-left: calc(var(--horizontal-rhythm) * -1);
     min-width: var(--horizontal-rhythm);
     text-align: left;
-    display: inline-block;    
+    display: inline-block; 
+    color: var(--li-prefix-color);   
 }
 
 ul li::before {
@@ -70,7 +71,7 @@ ul li::before {
     min-width: var(--horizontal-rhythm);
     text-align: left;
     display: inline-block;
-
+    color: var(--li-prefix-color);
 }
 
 
@@ -84,7 +85,7 @@ ul ol li::before {
 }
 
 /* have the breakpoints before the .indent styles */
-@media (--breakpoint-x-list-indent) {
+@media (--breakpoint-x-indent) {
 
     .x ul,
     .x ol {

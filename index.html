@@ -62,20 +62,19 @@
 </style>
 
 <body class="bg-primary-3">
-    <div class="bg-base-background pdx min-vh-100">
+    <div class="bg-base-background min-vh-100">
 
-        <div id="top" class="x breakout-full pdx bg-neutral-4">
-            <div class="breakout pdt-3 mrb-2">
+        <div id="top" class="bg-neutral-4">
+            <div class="x breakout pdt-3 mrb-2">
                 <h1 class="mr-0 lh fw-700 caps lsp">Compose CSS</h1>
                 <p class="mxw-sm mrt-d1">A composable CSS Toolkit to build fast, maintainable, and
                     responsive
                     websites.
-                </p>
-
-                <div class="pd mry-d1 xx-3 inline-block bg-black rounded white"><span id="version">v5.3.0</span>
-                </div>
+                    <span class="pd mry-d1 xx-3 inline-block bg-heading-color rounded white" id="version">v5.3.0</span>
+                </p>                
             </div>
-            <header id="navigation" class="x breakout-full pdx bg-neutral-4 small" style="z-index: 1000;">
+
+            <header id="navigation" class="x bg-neutral-4 small" style="z-index: 1000;">
                 <div class="breakout md:columns-4 sm:columns-3 columns-2 lh-4 pdy caps small lsp">
                     <div><a href="#start" class="no-deco">Quickstart</a></div>
                     <div><a href="#notation" class="no-deco">Notation</a></div>
@@ -126,6 +125,7 @@
                 </div>
             </header>
         </div>
+
         <div class="x">
             <div class="breakout-l">
                 <h2 class="pdt-3 mrt-0" id="start">Quickstart</h2>
@@ -1957,11 +1957,11 @@ p/ .no-indent //remove indentation for this p</pre>
 /figure</pre>
 
                 <figure>
-                    <figcaption class="mrl-auto">Photo by Matthew Henry on Unsplash</figcaption>
+                    <figcaption class="mrl-auto right">Photo by Matthew Henry on Unsplash</figcaption>
                     <img loading="lazy" class="width-100" src="images/matthew-henry-unsplash.jpg" />
                 </figure>
                 <pre>figure
-    figcaption/ .mrl-auto
+    figcaption/ .mrl-auto.right
     img/    
 /figure</pre>
             </div>
@@ -2054,7 +2054,7 @@ p/ .no-indent //remove indentation for this p</pre>
             </div>
             <div class="breakout-full mry bg-cover bg-fixed bg-center bg-no-repeat height-rg"
                 style='background-image: url("images/swan-leroi-unsplash.jpg")'>
-                <div class="x fs-8 lh-2 bold pdy-4 caps lsp overflow-hidden black">Hero</div>
+                <div class="x fs-8 lh-2 bold mr-4 caps lsp overflow-hidden heading-color">Hero</div>
             </div>
 
             <div class="breakout-l">
@@ -2110,7 +2110,7 @@ p/ .no-indent //remove indentation for this p</pre>
                 <table>
                     <tr>
                         <td><code>.md:</code></td>
-                        <td><code>.md:breakout</code> for example will only breakout at a screen of at least mid size.
+                        <td><code>.breakout</code> for example will only breakout at a screen of at least mid size.
                         </td>
                     </tr>
                     <tr>
@@ -2362,9 +2362,9 @@ p/ .no-indent //remove indentation for this p</pre>
                 <p>Using <code>float</code> without <code>.clearfix</code></p>
                 <div>
                     <div class="br brw-d2 br-neutral-3">
-                        <div class="float-left width-4 height-3 bg-base-color"><code class="white">.float-left</code>
+                        <div class="float-left width-4 height-3 bg-heading-color"><code class="white">.float-left</code>
                         </div>
-                        <div class="float-right width-4 height-3 bg-base-color"><code class="white">.float-right</code>
+                        <div class="float-right width-4 height-3 bg-heading-color"><code class="white">.float-right</code>
                         </div>
                     </div>
                 </div>
@@ -2378,8 +2378,8 @@ p/ .no-indent //remove indentation for this p</pre>
                 <p class="float-clear mrt-2">Using <code>float</code> with <code>.clearfix</code> assigned to the outer
                     container</p>
                 <div class="br brw-d2 br-neutral-3 clearfix">
-                    <div class="float-left width-4 height-3 bg-base-color"><code class="white">.float-left</code></div>
-                    <div class="float-right width-4 height-3 bg-base-color"><code class="white">.float-right</code>
+                    <div class="float-left width-4 height-3 bg-heading-color"><code class="white">.float-left</code></div>
+                    <div class="float-right width-4 height-3 bg-heading-color"><code class="white">.float-right</code>
                     </div>
                 </div>
                 <pre class="mid mrt">div .clearfix
@@ -2670,11 +2670,11 @@ p/ .no-indent //remove indentation for this p</pre>
                 <h2 id="flexbox">Flexbox</h2>
 
                 <div class="flex justify-start height-5 bg-neutral-4 white br">
-                    <div class="square-3 mr bg-neutral-d4">1</div>
-                    <div class="square-1 mr bg-neutral-d4">2</div>
-                    <div class="square-2 mr bg-neutral-d4">3</div>
-                    <div class="square-1 mr bg-neutral-d4">4</div>
-                    <div class="square-3 mr bg-neutral-d4">5</div>
+                    <div class="square-3 mr bg-heading-color">1</div>
+                    <div class="square-1 mr bg-heading-color">2</div>
+                    <div class="square-2 mr bg-heading-color">3</div>
+                    <div class="square-1 mr bg-heading-color">4</div>
+                    <div class="square-3 mr bg-heading-color">5</div>
                 </div>
 
                 <pre class="mry mid">div .flex.justify-start.height-5
@@ -2686,11 +2686,11 @@ p/ .no-indent //remove indentation for this p</pre>
 /div</pre>
 
                 <div class="mrt-3 flex justify-center height-5 bg-neutral-4 white br">
-                    <div class="square-3 mr bg-neutral-d4">1</div>
-                    <div class="square-1 mr bg-neutral-d4">2</div>
-                    <div class="square-2 mr bg-neutral-d4">3</div>
-                    <div class="square-1 mr bg-neutral-d4">4</div>
-                    <div class="square-3 mr bg-neutral-d4">5</div>
+                    <div class="square-3 mr bg-heading-color">1</div>
+                    <div class="square-1 mr bg-heading-color">2</div>
+                    <div class="square-2 mr bg-heading-color">3</div>
+                    <div class="square-1 mr bg-heading-color">4</div>
+                    <div class="square-3 mr bg-heading-color">5</div>
                 </div>
 
                 <pre class="mry mid">div .flex.justify-center.height-5
@@ -2702,11 +2702,11 @@ p/ .no-indent //remove indentation for this p</pre>
 /div</pre>
 
                 <div class="mrt-3 flex justify-end height-5 bg-neutral-4 white br">
-                    <div class="square-3 mr bg-neutral-d4">1</div>
-                    <div class="square-1 mr bg-neutral-d4">2</div>
-                    <div class="square-2 mr bg-neutral-d4">3</div>
-                    <div class="square-1 mr bg-neutral-d4">4</div>
-                    <div class="square-3 mr bg-neutral-d4">5</div>
+                    <div class="square-3 mr bg-heading-color">1</div>
+                    <div class="square-1 mr bg-heading-color">2</div>
+                    <div class="square-2 mr bg-heading-color">3</div>
+                    <div class="square-1 mr bg-heading-color">4</div>
+                    <div class="square-3 mr bg-heading-color">5</div>
                 </div>
 
                 <pre class="mry mid">div .flex.justify-end.height-5
@@ -2718,11 +2718,11 @@ p/ .no-indent //remove indentation for this p</pre>
 /div</pre>
 
                 <div class="mrt-3 flex justify-space-between height-5 bg-neutral-4 white br">
-                    <div class="square-3 mr bg-neutral-d4">1</div>
-                    <div class="square-1 mr bg-neutral-d4">2</div>
-                    <div class="square-2 mr bg-neutral-d4">3</div>
-                    <div class="square-1 mr bg-neutral-d4">4</div>
-                    <div class="square-3 mr bg-neutral-d4">5</div>
+                    <div class="square-3 mr bg-heading-color">1</div>
+                    <div class="square-1 mr bg-heading-color">2</div>
+                    <div class="square-2 mr bg-heading-color">3</div>
+                    <div class="square-1 mr bg-heading-color">4</div>
+                    <div class="square-3 mr bg-heading-color">5</div>
                 </div>
 
                 <pre class="mry mid">div .flex.justify-space-between.height-5
@@ -2734,11 +2734,11 @@ p/ .no-indent //remove indentation for this p</pre>
 /div</pre>
 
                 <div class="mrt-3 flex justify-space-around height-5 bg-neutral-4 white br">
-                    <div class="square-3 mr bg-neutral-d4">1</div>
-                    <div class="square-1 mr bg-neutral-d4">2</div>
-                    <div class="square-2 mr bg-neutral-d4">3</div>
-                    <div class="square-1 mr bg-neutral-d4">4</div>
-                    <div class="square-3 mr bg-neutral-d4">5</div>
+                    <div class="square-3 mr bg-heading-color">1</div>
+                    <div class="square-1 mr bg-heading-color">2</div>
+                    <div class="square-2 mr bg-heading-color">3</div>
+                    <div class="square-1 mr bg-heading-color">4</div>
+                    <div class="square-3 mr bg-heading-color">5</div>
                 </div>
 
                 <pre class="mry mid">div .flex.justify-space-around.height-5
@@ -2750,11 +2750,11 @@ p/ .no-indent //remove indentation for this p</pre>
 /div</pre>
 
                 <div class="mrt-3 flex justify-space-evenly height-5 bg-neutral-4 white br">
-                    <div class="square-3 mr bg-neutral-d4">1</div>
-                    <div class="square-1 mr bg-neutral-d4">2</div>
-                    <div class="square-2 mr bg-neutral-d4">3</div>
-                    <div class="square-1 mr bg-neutral-d4">4</div>
-                    <div class="square-3 mr bg-neutral-d4">5</div>
+                    <div class="square-3 mr bg-heading-color">1</div>
+                    <div class="square-1 mr bg-heading-color">2</div>
+                    <div class="square-2 mr bg-heading-color">3</div>
+                    <div class="square-1 mr bg-heading-color">4</div>
+                    <div class="square-3 mr bg-heading-color">5</div>
                 </div>
 
                 <pre class="mry mid">div .flex.justify-space-evenly.height-5
@@ -2766,11 +2766,11 @@ p/ .no-indent //remove indentation for this p</pre>
 /div</pre>
 
                 <div class="mrt-3 flex align-start height-5 bg-neutral-4 white br">
-                    <div class="square-3 mr bg-neutral-d4">1</div>
-                    <div class="square-1 mr bg-neutral-d4">2</div>
-                    <div class="square-2 mr bg-neutral-d4">3</div>
-                    <div class="square-1 mr bg-neutral-d4">4</div>
-                    <div class="square-3 mr bg-neutral-d4">5</div>
+                    <div class="square-3 mr bg-heading-color">1</div>
+                    <div class="square-1 mr bg-heading-color">2</div>
+                    <div class="square-2 mr bg-heading-color">3</div>
+                    <div class="square-1 mr bg-heading-color">4</div>
+                    <div class="square-3 mr bg-heading-color">5</div>
                 </div>
 
                 <pre class="mry mid">div .flex.align-start.height-5
@@ -2782,11 +2782,11 @@ p/ .no-indent //remove indentation for this p</pre>
 /div</pre>
 
                 <div class="mrt-3 flex align-center height-5 bg-neutral-4 white br">
-                    <div class="square-3 mr bg-neutral-d4">1</div>
-                    <div class="square-1 mr bg-neutral-d4">2</div>
-                    <div class="square-2 mr bg-neutral-d4">3</div>
-                    <div class="square-1 mr bg-neutral-d4">4</div>
-                    <div class="square-3 mr bg-neutral-d4">5</div>
+                    <div class="square-3 mr bg-heading-color">1</div>
+                    <div class="square-1 mr bg-heading-color">2</div>
+                    <div class="square-2 mr bg-heading-color">3</div>
+                    <div class="square-1 mr bg-heading-color">4</div>
+                    <div class="square-3 mr bg-heading-color">5</div>
                 </div>
 
                 <pre class="mry mid">div .flex.align-center.height-5
@@ -2798,11 +2798,11 @@ p/ .no-indent //remove indentation for this p</pre>
 /div</pre>
 
                 <div class="mrt-3 flex align-end height-5 bg-neutral-4 white br">
-                    <div class="square-3 mr bg-neutral-d4">1</div>
-                    <div class="square-1 mr bg-neutral-d4">2</div>
-                    <div class="square-2 mr bg-neutral-d4">3</div>
-                    <div class="square-1 mr bg-neutral-d4">4</div>
-                    <div class="square-3 mr bg-neutral-d4">5</div>
+                    <div class="square-3 mr bg-heading-color">1</div>
+                    <div class="square-1 mr bg-heading-color">2</div>
+                    <div class="square-2 mr bg-heading-color">3</div>
+                    <div class="square-1 mr bg-heading-color">4</div>
+                    <div class="square-3 mr bg-heading-color">5</div>
                 </div>
 
                 <pre class="mry mid">div .flex.align-end.height-5
@@ -2814,11 +2814,11 @@ p/ .no-indent //remove indentation for this p</pre>
 /div</pre>
 
                 <div class="mrt-3 flex align-stretch height-5 bg-neutral-4 white br">
-                    <div class="width-3 mr bg-neutral-d4">1</div>
-                    <div class="width-1 mr bg-neutral-d4">2</div>
-                    <div class="width-2 mr bg-neutral-d4">3</div>
-                    <div class="width-1 mr bg-neutral-d4">4</div>
-                    <div class="width-3 mr bg-neutral-d4">5</div>
+                    <div class="width-3 mr bg-heading-color">1</div>
+                    <div class="width-1 mr bg-heading-color">2</div>
+                    <div class="width-2 mr bg-heading-color">3</div>
+                    <div class="width-1 mr bg-heading-color">4</div>
+                    <div class="width-3 mr bg-heading-color">5</div>
                 </div>
 
                 <pre class="mry mid">div .flex.align-stretch.height-5
@@ -2830,11 +2830,11 @@ p/ .no-indent //remove indentation for this p</pre>
 /div</pre>
 
                 <div class="mrt-3 flex align-baseline height-5 bg-neutral-4 white br">
-                    <div class="square-3 mr bg-neutral-d4 fs-3">One Morning</div>
-                    <div class="square-3 mr bg-neutral-d4 fs">Gregor Samsa</div>
-                    <div class="square-2 mr bg-neutral-d4"></div>
-                    <div class="square-1 mr bg-neutral-d4"></div>
-                    <div class="square-3 mr bg-neutral-d4"></div>
+                    <div class="square-3 mr bg-heading-color fs-3">One Morning</div>
+                    <div class="square-3 mr bg-heading-color fs">Gregor Samsa</div>
+                    <div class="square-2 mr bg-heading-color"></div>
+                    <div class="square-1 mr bg-heading-color"></div>
+                    <div class="square-3 mr bg-heading-color"></div>
                 </div>
 
                 <pre class="mry mid">div .flex.align-baseline.height-5
@@ -2846,15 +2846,15 @@ p/ .no-indent //remove indentation for this p</pre>
 /div</pre>
 
                 <div class="mrt-3 flex-wrap bg-neutral-4 white br overflow-x-auto">
-                    <div class="square-3 mr bg-neutral-d4">1</div>
-                    <div class="square-3 mr bg-neutral-d4">2</div>
-                    <div class="square-2 mr bg-neutral-d4">3</div>
-                    <div class="square-1 mr bg-neutral-d4">4</div>
-                    <div class="square-3 mr bg-neutral-d4">5</div>
-                    <div class="square-3 mr bg-neutral-d4">6</div>
-                    <div class="square-2 mr bg-neutral-d4">7</div>
-                    <div class="square-1 mr bg-neutral-d4">8</div>
-                    <div class="square-3 mr bg-neutral-d4">9</div>
+                    <div class="square-3 mr bg-heading-color">1</div>
+                    <div class="square-3 mr bg-heading-color">2</div>
+                    <div class="square-2 mr bg-heading-color">3</div>
+                    <div class="square-1 mr bg-heading-color">4</div>
+                    <div class="square-3 mr bg-heading-color">5</div>
+                    <div class="square-3 mr bg-heading-color">6</div>
+                    <div class="square-2 mr bg-heading-color">7</div>
+                    <div class="square-1 mr bg-heading-color">8</div>
+                    <div class="square-3 mr bg-heading-color">9</div>
                 </div>
 
                 <pre class="mry mid">div .flex-wrap
@@ -2870,11 +2870,11 @@ p/ .no-indent //remove indentation for this p</pre>
 /div</pre>
 
                 <div class="mrt-3 flex-column align-stretch bg-neutral-4 white br">
-                    <div class="square-3 mr bg-neutral-d4">1</div>
-                    <div class="square-1 mr bg-neutral-d4">2</div>
-                    <div class="square-2 mr bg-neutral-d4">3</div>
-                    <div class="square-1 mr bg-neutral-d4">4</div>
-                    <div class="square-3 mr bg-neutral-d4">5</div>
+                    <div class="square-3 mr bg-heading-color">1</div>
+                    <div class="square-1 mr bg-heading-color">2</div>
+                    <div class="square-2 mr bg-heading-color">3</div>
+                    <div class="square-1 mr bg-heading-color">4</div>
+                    <div class="square-3 mr bg-heading-color">5</div>
                 </div>
 
                 <pre class="mry mid">div .flex-column
@@ -2886,15 +2886,15 @@ p/ .no-indent //remove indentation for this p</pre>
 /div</pre>
 
                 <div class="mrt-3 flex-column flex-wrap overflow-x-auto height-6 bg-neutral-4 white br">
-                    <div class="square-3 mr bg-neutral-d4">1</div>
-                    <div class="square-3 mr bg-neutral-d4">2</div>
-                    <div class="square-2 mr bg-neutral-d4">3</div>
-                    <div class="square-1 mr bg-neutral-d4">4</div>
-                    <div class="square-3 mr bg-neutral-d4">5</div>
-                    <div class="square-3 mr bg-neutral-d4">6</div>
-                    <div class="square-2 mr bg-neutral-d4">7</div>
-                    <div class="square-1 mr bg-neutral-d4">8</div>
-                    <div class="square-3 mr bg-neutral-d4">9</div>
+                    <div class="square-3 mr bg-heading-color">1</div>
+                    <div class="square-3 mr bg-heading-color">2</div>
+                    <div class="square-2 mr bg-heading-color">3</div>
+                    <div class="square-1 mr bg-heading-color">4</div>
+                    <div class="square-3 mr bg-heading-color">5</div>
+                    <div class="square-3 mr bg-heading-color">6</div>
+                    <div class="square-2 mr bg-heading-color">7</div>
+                    <div class="square-1 mr bg-heading-color">8</div>
+                    <div class="square-3 mr bg-heading-color">9</div>
                 </div>
 
                 <pre class="mry mid">div .flex-column.flex-wrap.height-6

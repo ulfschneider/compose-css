@@ -1,7 +1,7 @@
 @import "reset";
 @import "typography";
 @import "forms";
-@import "page-layout";
+@import "x-layout";
 @import "grid";
 @import "flex-box";
 @import "list";

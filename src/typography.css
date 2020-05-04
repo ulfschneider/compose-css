@@ -69,8 +69,7 @@
 
   --hr-content: "◊      ◊      ◊";
   --quotes: """ """"'""'";
-  --quotes-de: """ """"'""'";
-  --blockquote-indicator: "";
+  --quotes-de: """ """"'""'";  
   --blockquote-font-style: italic;
 
   --scroll-margin-top: var(--vertical-rhythm);
@@ -262,16 +261,13 @@ u {
 }
 
 .word-wrap {
+  word-break: break-word;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
 
 .no-deco {
   text-decoration: none;
-}
-
-.break-word {
-  word-wrap: break-word;
 }
 
 .truncate {
@@ -444,7 +440,7 @@ pre,
   color: var(--pre-color);
   background: var(--pre-background);
   white-space: pre;
-  overflow: auto;
+  overflow-x: scroll;
 }
 
 .tag {
@@ -477,24 +473,22 @@ blockquote {
   margin-top: var(--mrt-blockquote);
   margin-bottom: var(--mrb-blockquote);
   margin-right: 0;
-  margin-left:0;
+  margin-left:calc(var(--horizontal-rhythm) * -1);
   padding-left: calc(var(--horizontal-rhythm) - var(--space-d2));
-  border-left: var(--space-d2) solid var(--blockquote-color);
-  color: var(--blockquote-color);
+  border-left: var(--space-d2) solid var(--br-blockquote-color);
   font-style: var(--blockquote-font-style);
 }
 
-blockquote::before {
-  content: var(--blockquote-indicator);
-  float: left;
-  margin-left: calc(0px - var(--horizontal-rhythm));
+@media (--breakpoint-x-indent) {
+  blockquote {
+    margin-left: 0;
+  }
 }
 
 
-blockquote p,
-.indent blockquote p {
-  margin: 0;
-  text-indent: 0;
+blockquote p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 blockquote p+p {
@@ -530,7 +524,11 @@ figcaption, blockquote footer {
   font-style: normal;
   font-size: var(--fs-d1);
   line-height: var(--lh-2);
-  max-width: var(--space-5);
+  max-width: var(--space-6);
+}
+
+blockquote footer {
+  margin-bottom: 0;
 }
 
 blockquote footer::before {
