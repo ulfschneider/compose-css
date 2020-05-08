@@ -441,7 +441,6 @@ pre,
   background: var(--pre-background);
   white-space: pre;
   overflow-x: auto;
-  display: none;
 }
 
 .tag {
