@@ -53,11 +53,11 @@ li p {
 }
 
 ol li {
-    counter-increment: styled-number;
+    counter-increment: li-counter;
 }
 
 ol li::before {
-    content: counter(styled-number, decimal-leading-zero) " ";
+    content: counter(li-counter, decimal-leading-zero) " ";
     margin-left: calc(var(--horizontal-rhythm) * -1);
     min-width: var(--horizontal-rhythm);
     text-align: left;
@@ -65,6 +65,7 @@ ol li::before {
     font-family: var(--meta-font-family);
     font-size: smaller;
     font-weight: bold;    
+    color: var(--li-prefix-color);
 }
 
 ul li::before {
@@ -73,7 +74,7 @@ ul li::before {
     min-width: var(--horizontal-rhythm);
     text-align: left;
     display: inline-block;
-    color: var(--li-prefix-color);
+    color: var(--li-prefix-color);    
 }
 
 

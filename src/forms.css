@@ -3,9 +3,11 @@
     --form-label-color: var(--meta-color);
     --form-font-size: var(--fs);
     --form-radius: var(--rounded);
+    --form-field-color: var(--base-color);
 
     --form-field-border-color: var(--neutral-2);
     --caret-color: var(--primary);
+    --form-focus-color: var(--primary);
 
     --form-button-pdx: var(--space-d2);
     --form-button-pdy: var(--space-d2);
@@ -68,12 +70,12 @@ select {
 
 
 @media (hover: hover) {
-    input[type=submit]:hover,
-    input[type=reset]:hover,
-    button:hover,
-    .button:hover,
-    select:hover {
-        background: var(--primary);
+    input[type=submit]:hover, input[type=submit]:focus,
+    input[type=reset]:hover, input[type=reset]:focus,
+    button:hover, button:focus,
+    .button:hover, .button:focus,
+    select:hover, select:focus {
+        background: var(--form-focus-color);
     }
 }
 
@@ -101,6 +103,7 @@ input[list] {
     border-radius: 0;
     -webkit-border-radius: 0;
     background: var(--neutral-5);
+    color: var(--form-field-color);
 }
 
 textarea {
@@ -109,4 +112,24 @@ textarea {
     border-radius: var(--form-radius);
     resize: none;
     background: var(--neutral-5);
+    color: var(--form-field-color);
 }
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+input[type=password]:focus,
+input[type=search]:focus,
+input[type=tel]:focus,
+input[type=url]:focus,
+input[list]:focus,
+textarea:focus {
+    border-color: var(--form-field-color);
+}
+
+input:focus+label,
+textarea:focus+label,
+label:focus-within {
+    color: var(--form-focus-color);
+}
+

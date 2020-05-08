@@ -440,7 +440,8 @@ pre,
   color: var(--pre-color);
   background: var(--pre-background);
   white-space: pre;
-  overflow-x: scroll;
+  overflow-x: auto;
+  display: none;
 }
 
 .tag {
@@ -464,9 +465,14 @@ a {
   }
 }
 
-a:active:focus {
+a:active {
   color: var(--link-active-color);
   text-decoration-color: var(--link-active-color);
+}
+
+a:focus {
+  color: var(--link-focus-color);
+  text-decoration-color: var(--link-focus-color);
 }
 
 blockquote {

@@ -104,12 +104,13 @@
   --heading-color: black;
   --meta-color: var(--neutral-d2);
   
-  --br-blockquote-color: var(--base-color);
-  --li-prefix-color: var(--base-color);
+  --br-blockquote-color: var(--heading-color);
+  --li-prefix-color: var(--heading-color);
 
   --link-color: var(--base-color);
   --link-hover-color: var(--primary);
   --link-active-color: var(--primary);
+  --link-focus-color: var(--primary);
   
   --selection-color: var(--primary-4);
 
