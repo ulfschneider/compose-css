@@ -440,6 +440,7 @@ pre,
   color: var(--pre-color);
   background: var(--pre-background);
   white-space: pre;
+  word-wrap: normal; /* for safari */
   overflow-x: auto;
 }
 
