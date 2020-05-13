@@ -8,7 +8,7 @@
   --heading-font-feature-settings: var(--font-feature-settings);
   --heading-font-weight: 600;
   --heading-letter-spacing: 0.025em;
-  --heading-text-transform: uppercase;
+  --heading-text-transform: none;
 
   --meta-font-family: var(--font-family);
   --meta-font-feature-settings: var(--font-feature-settings);
@@ -19,7 +19,7 @@
   --mono-font-family: monospace;
   --mono-font-feature-settings: var(--font-feature-settings);
   --code-font-family: var(--mono-font-family);
-  --pre-border: var(--border-width-default) dotted var(--pre-border-color);
+  --pre-border: var(--border-w-default) dotted var(--pre-border-color);
 
   --link-text-decoration: underline;
   --link-text-decoration-color: unset;
@@ -69,7 +69,7 @@
 
   --hr-content: "◊      ◊      ◊";
   --quotes: """ """"'""'";
-  --quotes-de: """ """"'""'";  
+  --quotes-de: """ """"'""'";
   --blockquote-font-style: italic;
 
   --scroll-margin-top: var(--vertical-rhythm);
@@ -94,7 +94,7 @@
   font-size: inherit;
 }
 
-.line-height-inherit {
+.line-h-inherit {
   line-height: inherit;
 }
 
@@ -186,11 +186,6 @@ em,
   font-style: normal;
 }
 
-small,
-.small {
-  font-size: var(--fs-d1);
-}
-
 .caps,
 .uppercase {
   text-transform: uppercase;
@@ -260,7 +255,7 @@ u {
   white-space: nowrap;
 }
 
-.word-wrap {
+.break-word {
   word-break: break-word;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -440,8 +435,12 @@ pre,
   color: var(--pre-color);
   background: var(--pre-background);
   white-space: pre;
-  word-wrap: normal; /* for safari */
+  word-break: normal;
+  /*for safari */
+  overflow-wrap: normal;
+  /*for safari */
   overflow-x: auto;
+
 }
 
 .tag {
@@ -479,10 +478,15 @@ blockquote {
   margin-top: var(--mrt-blockquote);
   margin-bottom: var(--mrb-blockquote);
   margin-right: 0;
-  margin-left:calc(var(--horizontal-rhythm) * -1);
+  margin-left: calc(var(--horizontal-rhythm) * -1);
   padding-left: calc(var(--horizontal-rhythm) - var(--space-d2));
   border-left: var(--space-d2) solid var(--br-blockquote-color);
   font-style: var(--blockquote-font-style);
+}
+
+/* consider x-layout */
+[class^="breakout"] blockquote {
+  margin-left: 0;
 }
 
 @media (--breakpoint-x-indent) {
@@ -523,7 +527,8 @@ figure {
   margin-right: 0;
 }
 
-figcaption, blockquote footer {
+figcaption,
+blockquote footer {
   margin-top: var(--mrt-figcaption);
   margin-bottom: var(--mrb-figcaption);
   font-family: var(--heading-font-family);
@@ -542,7 +547,9 @@ blockquote footer::before {
 }
 
 @media(--breakpoint-max-sm) {
-  figcaption, blockquote footer {
+
+  figcaption,
+  blockquote footer {
     max-width: unset;
   }
 }

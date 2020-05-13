@@ -1,50 +1,50 @@
 :root {
-  --border-width-default: var(--space-d5);
+  --border-w-default: var(--space-d5);
   --rounded: var(--space-d3);
   border-color: var(--base-color);
 }
 
 .br {
   border-style: solid;
-  border-width: var(--border-width-default);
+  border-width: var(--border-w-default);
 }
 
 .brx {
   border-left-style: solid;
-  border-left-width: var(--border-width-default);
+  border-left-width: var(--border-w-default);
   border-right-style: solid;
-  border-right-width: var(--border-width-default);
+  border-right-width: var(--border-w-default);
   border-top-width: 0;
   border-bottom-width: 0;
 }
 
 .bry {
   border-top-style: solid;
-  border-top-width: var(--border-width-default);
+  border-top-width: var(--border-w-default);
   border-bottom-style: solid;
-  border-bottom-width: var(--border-width-default);
+  border-bottom-width: var(--border-w-default);
   border-left-width: 0;
   border-right-width: 0;
 }
 
 .brt {
   border-top-style: solid;
-  border-top-width: var(--border-width-default);
+  border-top-width: var(--border-w-default);
 }
 
 .brr {
   border-right-style: solid;
-  border-right-width: var(--border-width-default);
+  border-right-width: var(--border-w-default);
 }
 
 .brb {
   border-bottom-style: solid;
-  border-bottom-width: var(--border-width-default);
+  border-bottom-width: var(--border-w-default);
 }
 
 .brl {
   border-left-style: solid;
-  border-left-width: var(--border-width-default);
+  border-left-width: var(--border-w-default);
 }
 
 .br-0, .no-br {

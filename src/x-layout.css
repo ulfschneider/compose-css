@@ -4,7 +4,7 @@
 }
 .x {
     display: grid;
-    grid-template-columns: var(--x-padding) 1fr minmax(auto, var(--regular-width)) 1fr var(--x-padding);
+    grid-template-columns: var(--x-padding) 1fr minmax(auto, var(--regular-width)) 1fr var(--x-padding);    
     overflow: hidden;
 }
 
@@ -20,6 +20,7 @@
 .x.main>*,
 .x>.main {
     grid-column-start: 3;
+    min-width: 0; /* https://css-tricks.com/preventing-a-grid-blowout/ */
 }
 
 .x.breakout-wide>*,
@@ -37,7 +38,7 @@
 .x.breakout-wide-l>*,
 .x>.breakout-wide-l {
     grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-end: 4;
 }
 
 .x.breakout-full>*,
@@ -69,6 +70,7 @@
     .x.main>*,
     .x>.main {
         grid-column-start: 4;
+        min-width: 0; /*https://css-tricks.com/preventing-a-grid-blowout/*/
     }
 
     .x.breakout-l>*,
@@ -98,7 +100,7 @@
     .x.breakout-wide-l>*,
     .x>.breakout-wide-l {
         grid-column-start: 2;
-        grid-column-end: 4;
+        grid-column-end: 5;
     }
 
     .x.breakout-full-r>*,

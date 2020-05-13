@@ -1,31 +1,31 @@
 @media (--breakpoint-sm) {
 
-    .sm\:min-height-unset,
+    .sm\:mih-unset,
     .sm\:mih-u {
         min-height: unset;
     }
 
-    .sm\:min-height-d5,
+    .sm\:mih-d5,
     .sm\:mih-d5 {
         min-height: var(--space-d5);
     }
 
-    .sm\:min-height-d4,
+    .sm\:mih-d4,
     .sm\:mih-d4 {
         min-height: var(--space-d4);
     }
 
-    .sm\:min-height-d3,
+    .sm\:mih-d3,
     .sm\:mih-d3 {
         min-height: var(--space-d3);
     }
 
-    .sm\:min-height-d2,
+    .sm\:mih-d2,
     .sm\:mih-d2 {
         min-height: var(--space-d2);
     }
 
-    .sm\:min-height-d1,
+    .sm\:mih-d1,
     .sm\:mih-d1 {
         min-height: var(--space-d1);
     }
@@ -35,32 +35,32 @@
         min-height: var(--space);
     }
 
-    .sm\:min-height-1,
+    .sm\:mih-1,
     .sm\:mih-1 {
         min-height: var(--space-1)
     }
 
-    .sm\:min-height-2,
+    .sm\:mih-2,
     .sm\:mih-2 {
         min-height: var(--space-2);
     }
 
-    .sm\:min-height-3,
+    .sm\:mih-3,
     .sm\:mih-3 {
         min-height: var(--space-3);
     }
 
-    .sm\:min-height-4,
+    .sm\:mih-4,
     .sm\:mih-4 {
         min-height: var(--space-4);
     }
 
-    .sm\:min-height-5,
+    .sm\:mih-5,
     .sm\:mih-5 {
         min-height: var(--space-5);
     }
 
-    .sm\:min-height-6,
+    .sm\:mih-6,
     .sm\:mih-6 {
         min-height: var(--space-6);
     }
@@ -69,32 +69,32 @@
 
 @media (--breakpoint-rg) {
 
-    .rg\:min-height-unset,
+    .rg\:mih-unset,
     .rg\:mih-u {
         min-height: unset;
     }
 
-    .rg\:min-height-d5,
+    .rg\:mih-d5,
     .rg\:mih-d5 {
         min-height: var(--space-d5);
     }
 
-    .rg\:min-height-d4,
+    .rg\:mih-d4,
     .rg\:mih-d4 {
         min-height: var(--space-d4);
     }
 
-    .rg\:min-height-d3,
+    .rg\:mih-d3,
     .rg\:mih-d3 {
         min-height: var(--space-d3);
     }
 
-    .rg\:min-height-d2,
+    .rg\:mih-d2,
     .rg\:mih-d2 {
         min-height: var(--space-d2);
     }
 
-    .rg\:min-height-d1,
+    .rg\:mih-d1,
     .rg\:mih-d1 {
         min-height: var(--space-d1);
     }
@@ -104,32 +104,32 @@
         min-height: var(--space);
     }
 
-    .rg\:min-height-1,
+    .rg\:mih-1,
     .rg\:mih-1 {
         min-height: var(--space-1)
     }
 
-    .rg\:min-height-2,
+    .rg\:mih-2,
     .rg\:mih-2 {
         min-height: var(--space-2);
     }
 
-    .rg\:min-height-3,
+    .rg\:mih-3,
     .rg\:mih-3 {
         min-height: var(--space-3);
     }
 
-    .rg\:min-height-4,
+    .rg\:mih-4,
     .rg\:mih-4 {
         min-height: var(--space-4);
     }
 
-    .rg\:min-height-5,
+    .rg\:mih-5,
     .rg\:mih-5 {
         min-height: var(--space-5);
     }
 
-    .rg\:min-height-6,
+    .rg\:mih-6,
     .rg\:mih-6 {
         min-height: var(--space-6);
     }
@@ -137,32 +137,32 @@
 
 @media (--breakpoint-md) {
 
-    .md\:min-height-unset,
+    .md\:mih-unset,
     .md\:mih-u {
         min-height: unset;
     }
 
-    .md\:min-height-d5,
+    .md\:mih-d5,
     .md\:mih-d5 {
         min-height: var(--space-d5);
     }
 
-    .md\:min-height-d4,
+    .md\:mih-d4,
     .md\:mih-d4 {
         min-height: var(--space-d4);
     }
 
-    .md\:min-height-d3,
+    .md\:mih-d3,
     .md\:mih-d3 {
         min-height: var(--space-d3);
     }
 
-    .md\:min-height-d2,
+    .md\:mih-d2,
     .md\:mih-d2 {
         min-height: var(--space-d2);
     }
 
-    .md\:min-height-d1,
+    .md\:mih-d1,
     .md\:mih-d1 {
         min-height: var(--space-d1);
     }
@@ -172,32 +172,32 @@
         min-height: var(--space);
     }
 
-    .md\:min-height-1,
+    .md\:mih-1,
     .md\:mih-1 {
         min-height: var(--space-1)
     }
 
-    .md\:min-height-2,
+    .md\:mih-2,
     .md\:mih-2 {
         min-height: var(--space-2);
     }
 
-    .md\:min-height-3,
+    .md\:mih-3,
     .md\:mih-3 {
         min-height: var(--space-3);
     }
 
-    .md\:min-height-4,
+    .md\:mih-4,
     .md\:mih-4 {
         min-height: var(--space-4);
     }
 
-    .md\:min-height-5,
+    .md\:mih-5,
     .md\:mih-5 {
         min-height: var(--space-5);
     }
 
-    .md\:min-height-6,
+    .md\:mih-6,
     .md\:mih-6 {
         min-height: var(--space-6);
     }
@@ -205,52 +205,52 @@
 
 @media (--breakpoint-lg) {
 
-    .lg\:min-height-unset,
+    .lg\:mih-unset,
     .lg\:mih-u {
         min-height: unset;
     }
 
-    .lg\:min-height-sm,
+    .lg\:mih-sm,
     .lg\:mih-sm {
         min-height: var(--small-height);
     }
 
-    .lg\:min-height-rg,
+    .lg\:mih-rg,
     .lg\:mih-rg {
         min-height: var(--regular-height);
     }
 
-    .lg\:min-height-md,
+    .lg\:mih-md,
     .lg\:mih-md {
         min-height: var(--mid-height);
     }
 
-    .lg\:min-height-lg,
+    .lg\:mih-lg,
     .lg\:mih-lg {
         min-height: var(--large-height);
     }
 
-    .lg\:min-height-d5,
+    .lg\:mih-d5,
     .lg\:mih-d5 {
         min-height: var(--space-d5);
     }
 
-    .lg\:min-height-d4,
+    .lg\:mih-d4,
     .lg\:mih-d4 {
         min-height: var(--space-d4);
     }
 
-    .lg\:min-height-d3,
+    .lg\:mih-d3,
     .lg\:mih-d3 {
         min-height: var(--space-d3);
     }
 
-    .lg\:min-height-d2,
+    .lg\:mih-d2,
     .lg\:mih-d2 {
         min-height: var(--space-d2);
     }
 
-    .lg\:min-height-d1,
+    .lg\:mih-d1,
     .lg\:mih-d1 {
         min-height: var(--space-d1);
     }
@@ -260,32 +260,32 @@
         min-height: var(--space);
     }
 
-    .lg\:min-height-1,
+    .lg\:mih-1,
     .lg\:mih-1 {
         min-height: var(--space-1)
     }
 
-    .lg\:min-height-2,
+    .lg\:mih-2,
     .lg\:mih-2 {
         min-height: var(--space-2);
     }
 
-    .lg\:min-height-3,
+    .lg\:mih-3,
     .lg\:mih-3 {
         min-height: var(--space-3);
     }
 
-    .lg\:min-height-4,
+    .lg\:mih-4,
     .lg\:mih-4 {
         min-height: var(--space-4);
     }
 
-    .lg\:min-height-5,
+    .lg\:mih-5,
     .lg\:mih-5 {
         min-height: var(--space-5);
     }
 
-    .lg\:min-height-6,
+    .lg\:mih-6,
     .lg\:mih-6 {
         min-height: var(--space-6);
     }

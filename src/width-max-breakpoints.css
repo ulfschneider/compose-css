@@ -1,66 +1,54 @@
 @media (--breakpoint-sm) {
 
-    .sm\:max-width-unset,
+    .sm\:mxw-unset,
     .sm\:mxw-u {
         max-width: unset;
     }
 
-    .sm\:max-width-d5,
     .sm\:mxw-d5 {
         max-width: var(--space-d5);
     }
 
-    .sm\:max-width-d4,
     .sm\:mxw-d4 {
         max-width: var(--space-d4);
     }
 
-    .sm\:max-width-d3,
     .sm\:mxw-d3 {
         max-width: var(--space-d3);
     }
 
-    .sm\:max-width-d2,
     .sm\:mxw-d2 {
         max-width: var(--space-d2);
     }
 
-    .sm\:max-width-d1,
     .sm\:mxw-d1 {
         max-width: var(--space-d1);
     }
 
-    .sm\:max-width,
     .sm\:mxw {
         max-width: var(--space);
     }
 
-    .sm\:max-width-1,
     .sm\:mxw-1 {
         max-width: var(--space-1);
     }
 
-    .sm\:max-width-2,
     .sm\:mxw-2 {
         max-width: var(--space-2);
     }
 
-    .sm\:max-width-3,
     .sm\:mxw-3 {
         max-width: var(--space-3);
     }
 
-    .sm\:max-width-4,
     .sm\:mxw-4 {
         max-width: var(--space-4);
     }
 
-    .sm\:max-width-5,
     .sm\:mxw-5 {
         max-width: var(--space-5);
     }
 
-    .sm\:max-width-6,
     .sm\:mxw-6 {
         max-width: var(--space-6);
     }
@@ -69,67 +57,55 @@
 
 @media (--breakpoint-rg) {
 
-    .rg\:max-width-unset,
+    .rg\:mxw-unset,
     .rg\:mxw-u {
         max-width: unset;
     }
 
-    .rg\:max-width-d5,
     .rg\:mxw-d5 {
         max-width: var(--space-d5);
     }
 
-    .rg\:max-width-d4,
     .rg\:mxw-d4 {
         max-width: var(--space-d4);
     }
 
-    .rg\:max-width-d3,
     .rg\:mxw-d3 {
         max-width: var(--space-d3);
     }
 
-    .rg\:max-width-d2,
     .rg\:mxw-d2 {
         max-width: var(--space-d2);
     }
 
-    .rg\:max-width-d1,
     .rg\:mxw-d1 {
         max-width: var(--space-d1);
     }
 
-    .rg\:max-width,
     .rg\:mxw {
         max-width: var(--space);
     }
 
-    .rg\:max-width-1,
     .rg\:mxw-1 {
         max-width: var(--space-1);
     }
 
-    .rg\:max-width-2,
     .rg\:mxw-2 {
         max-width: var(--space-2);
     }
 
-    .rg\:max-width-3,
     .rg\:mxw-3 {
         max-width: var(--space-3);
     }
 
-    .rg\:max-width-4,
     .rg\:mxw-4 {
         max-width: var(--space-4);
     }
 
-    .rg\:max-width-5,
     .rg\:mxw-5 {
         max-width: var(--space-5);
     }
 
-    .rg\:max-width-6,
     .rg\:mxw-6 {
         max-width: var(--space-6);
     }
@@ -138,67 +114,55 @@
 
 @media (--breakpoint-md) {
 
-    .md\:max-width-unset,
+    .md\:mxw-unset,
     .md\:mxw-u {
         max-width: unset;
     }
 
-    .md\:max-width-d5,
     .md\:mxw-d5 {
         max-width: var(--space-d5);
     }
 
-    .md\:max-width-d4,
     .md\:mxw-d4 {
         max-width: var(--space-d4);
     }
 
-    .md\:max-width-d3,
     .md\:mxw-d3 {
         max-width: var(--space-d3);
     }
 
-    .md\:max-width-d2,
     .md\:mxw-d2 {
         max-width: var(--space-d2);
     }
 
-    .md\:max-width-d1,
     .md\:mxw-d1 {
         max-width: var(--space-d1);
     }
 
-    .md\:max-width,
     .md\:mxw {
         max-width: var(--space);
     }
 
-    .md\:max-width-1,
     .md\:mxw-1 {
         max-width: var(--space-1);
     }
 
-    .md\:max-width-2,
     .md\:mxw-2 {
         max-width: var(--space-2);
     }
 
-    .md\:max-width-3,
     .md\:mxw-3 {
         max-width: var(--space-3);
     }
 
-    .md\:max-width-4,
     .md\:mxw-4 {
         max-width: var(--space-4);
     }
 
-    .md\:max-width-5,
     .md\:mxw-5 {
         max-width: var(--space-5);
     }
 
-    .md\:max-width-6,
     .md\:mxw-6 {
         max-width: var(--space-6);
     }
@@ -207,67 +171,55 @@
 
 @media (--breakpoint-lg) {
 
-    .lg\:max-width-unset,
+    .lg\:mxw-unset,
     .lg\:mxw-u {
         max-width: unset;
     }
 
-    .lg\:max-width-d5,
     .lg\:mxw-d5 {
         max-width: var(--space-d5);
     }
 
-    .lg\:max-width-d4,
     .lg\:mxw-d4 {
         max-width: var(--space-d4);
     }
 
-    .lg\:max-width-d3,
     .lg\:mxw-d3 {
         max-width: var(--space-d3);
     }
 
-    .lg\:max-width-d2,
     .lg\:mxw-d2 {
         max-width: var(--space-d2);
     }
 
-    .lg\:max-width-d1,
     .lg\:mxw-d1 {
         max-width: var(--space-d1);
     }
 
-    .lg\:max-width,
     .lg\:mxw {
         max-width: var(--space);
     }
 
-    .lg\:max-width-1,
     .lg\:mxw-1 {
         max-width: var(--space-1);
     }
 
-    .lg\:max-width-2,
     .lg\:mxw-2 {
         max-width: var(--space-2);
     }
 
-    .lg\:max-width-3,
     .lg\:mxw-3 {
         max-width: var(--space-3);
     }
 
-    .lg\:max-width-4,
     .lg\:mxw-4 {
         max-width: var(--space-4);
     }
 
-    .lg\:max-width-5,
     .lg\:mxw-5 {
         max-width: var(--space-5);
     }
 
-    .lg\:max-width-6,
     .lg\:mxw-6 {
         max-width: var(--space-6);
     }

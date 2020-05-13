@@ -1,84 +1,84 @@
-.square-unset {
+.sq-unset {
     width: unset;
     height: unset;
 }
 
-.square-d5 {
+.sq-d5 {
     width: var(--space-d5);
     height: var(--space-d5);
 }
 
-.square-d4 {
+.sq-d4 {
     width: var(--space-d4);
     height: var(--space-d4);
 }
 
-.square-d3 {
+.sq-d3 {
     width: var(--space-d3);
     height: var(--space-d3);
 }
 
-.square-d2 {
+.sq-d2 {
     width: var(--space-d2);
     height: var(--space-d2);
 }
 
-.square-d1 {
+.sq-d1 {
     width: var(--space-d1);
     height: var(--space-d1);
 }
 
-.square {
+.sq {
     width: var(--space);
     height: var(--space);
 }
 
-.square-1 {
+.sq-1 {
     width: var(--space-1);
     height: var(--space-1);
 }
 
-.square-2 {
+.sq-2 {
     width: var(--space-2);
     height: var(--space-2);
 }
 
-.square-3 {
+.sq-3 {
     width: var(--space-3);
     height: var(--space-3);
 }
 
-.square-4 {
+.sq-4 {
     width: var(--space-4);
     height: var(--space-4);
 }
 
-.square-5 {
+.sq-5 {
     width: var(--space-5);
     height: var(--space-5);
 }
 
-.square-6 {
+.sq-6 {
     width: var(--space-6);
     height: var(--space-6);
 }
 
-.square-sm {
+.sq-sm {
     width: var(--small-width);
     height: var(--small-width);
 }
 
-.square-rg {
+.sq-rg {
     width: var(--regular-width);
     height: var(--regular-width);
 }
 
-.square-md {
+.sq-md {
     width: var(--mid-width);
     height: var(--mid-width);
 }
 
-.square-lg {
+.sq-lg {
     width: var(--large-width);
     height: var(--large-width);
 }

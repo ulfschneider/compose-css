@@ -1,25 +1,25 @@
 @media (--breakpoint-sm) {
-    .sm\:height-unset {
+    .sm\:h-unset {
         height: unset;
     }
 
-    .sm\:height-d5 {
+    .sm\:h-d5 {
         height: var(--space-d5);
     }
 
-    .sm\:height-d4 {
+    .sm\:h-d4 {
         height: var(--space-d4);
     }
 
-    .sm\:height-d3 {
+    .sm\:h-d3 {
         height: var(--space-d3);
     }
 
-    .sm\:height-d2 {
+    .sm\:h-d2 {
         height: var(--space-d2);
     }
 
-    .sm\:height-d1 {
+    .sm\:h-d1 {
         height: var(--space-d1);
     }
 
@@ -27,27 +27,27 @@
         height: var(--space);
     }
 
-    .sm\:height-1 {
+    .sm\:h-1 {
         height: var(--space-1)
     }
 
-    .sm\:height-2 {
+    .sm\:h-2 {
         height: var(--space-2);
     }
 
-    .sm\:height-3 {
+    .sm\:h-3 {
         height: var(--space-3);
     }
 
-    .sm\:height-4 {
+    .sm\:h-4 {
         height: var(--space-4);
     }
 
-    .sm\:height-5 {
+    .sm\:h-5 {
         height: var(--space-5);
     }
 
-    .sm\:height-6 {
+    .sm\:h-6 {
         height: var(--space-6);
     }
     
@@ -55,27 +55,27 @@
 
 @media (--breakpoint-rg) {
 
-    .rg\:height-unset {
+    .rg\:h-unset {
         height: unset;
     }
 
-    .rg\:height-d5 {
+    .rg\:h-d5 {
         height: var(--space-d5);
     }
 
-    .rg\:height-d4 {
+    .rg\:h-d4 {
         height: var(--space-d4);
     }
 
-    .rg\:height-d3 {
+    .rg\:h-d3 {
         height: var(--space-d3);
     }
 
-    .rg\:height-d2 {
+    .rg\:h-d2 {
         height: var(--space-d2);
     }
 
-    .rg\:height-d1 {
+    .rg\:h-d1 {
         height: var(--space-d1);
     }
 
@@ -83,54 +83,54 @@
         height: var(--space);
     }
 
-    .rg\:height-1 {
+    .rg\:h-1 {
         height: var(--space-1)
     }
 
-    .rg\:height-2 {
+    .rg\:h-2 {
         height: var(--space-2);
     }
 
-    .rg\:height-3 {
+    .rg\:h-3 {
         height: var(--space-3);
     }
 
-    .rg\:height-4 {
+    .rg\:h-4 {
         height: var(--space-4);
     }
 
-    .rg\:height-5 {
+    .rg\:h-5 {
         height: var(--space-5);
     }
 
-    .rg\:height-6 {
+    .rg\:h-6 {
         height: var(--space-6);
     }
 }
 
 @media (--breakpoint-md) {
 
-    .md\:height-unset {
+    .md\:h-unset {
         height: unset;
     }
 
-    .md\:height-d5 {
+    .md\:h-d5 {
         height: var(--space-d5);
     }
 
-    .md\:height-d4 {
+    .md\:h-d4 {
         height: var(--space-d4);
     }
 
-    .md\:height-d3 {
+    .md\:h-d3 {
         height: var(--space-d3);
     }
 
-    .md\:height-d2 {
+    .md\:h-d2 {
         height: var(--space-d2);
     }
 
-    .md\:height-d1 {
+    .md\:h-d1 {
         height: var(--space-d1);
     }
 
@@ -138,69 +138,69 @@
         height: var(--space);
     }
 
-    .md\:height-1 {
+    .md\:h-1 {
         height: var(--space-1)
     }
 
-    .md\:height-2 {
+    .md\:h-2 {
         height: var(--space-2);
     }
 
-    .md\:height-3 {
+    .md\:h-3 {
         height: var(--space-3);
     }
 
-    .md\:height-4 {
+    .md\:h-4 {
         height: var(--space-4);
     }
 
-    .md\:height-5 {
+    .md\:h-5 {
         height: var(--space-5);
     }
 
-    .md\:height-6 {
+    .md\:h-6 {
         height: var(--space-6);
     }
 }
 
 @media (--breakpoint-lg) {
-    .lg\:height-unset {
+    .lg\:h-unset {
         height: unset;
     }
 
-    .lg\:height-sm {
+    .lg\:h-sm {
         height: var(--small-height);
     }
 
-    .lg\:height-rg {
+    .lg\:h-rg {
         height: var(--regular-height);
     }
 
-    .lg\:height-md {
+    .lg\:h-md {
         height: var(--mid-height);
     }
 
-    .lg\:height-lg {
+    .lg\:h-lg {
         height: var(--large-height);
     }
 
-    .lg\:height-d5 {
+    .lg\:h-d5 {
         height: var(--space-d5);
     }
 
-    .lg\:height-d4 {
+    .lg\:h-d4 {
         height: var(--space-d4);
     }
 
-    .lg\:height-d3 {
+    .lg\:h-d3 {
         height: var(--space-d3);
     }
 
-    .lg\:height-d2 {
+    .lg\:h-d2 {
         height: var(--space-d2);
     }
 
-    .lg\:height-d1 {
+    .lg\:h-d1 {
         height: var(--space-d1);
     }
 
@@ -208,28 +208,28 @@
         height: var(--space);
     }
 
-    .lg\:height-1 {
+    .lg\:h-1 {
         height: var(--space-1)
     }
 
-    .lg\:height-2 {
+    .lg\:h-2 {
         height: var(--space-2);
     }
 
-    .lg\:height-3 {
+    .lg\:h-3 {
         height: var(--space-3);
     }
 
-    .lg\:height-4 {
+    .lg\:h-4 {
         height: var(--space-4);
     }
 
-    .lg\:height-5 {
+    .lg\:h-5 {
         height: var(--space-5);
     }
 
 
-    .lg\:height-6 {
+    .lg\:h-6 {
         height: var(--space-6);
     }
 }

@@ -2,7 +2,7 @@
 @import "typography";
 @import "forms";
 @import "x-layout";
-@import "grid";
+@import "x-columns";
 @import "flex-box";
 @import "list";
 @import "pointer";

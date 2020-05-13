@@ -1,8 +1,8 @@
-.width-unset, .w-unset {
+.w-unset, .w-unset {
     width: unset;
 }
 
-.width-100, .w-100 {
+.w-100, .w-100 {
     width: 100%;
 }
 
@@ -46,66 +46,66 @@
     width: 10vw;
 }
 
-.width-sm, .w-sm {
+.w-sm, .w-sm {
     width: var(--small-width);
 }
 
-.width-rg, .w-rg {
+.w-rg, .w-rg {
     width: var(--regular-width);
 }
 
-.width-md, .w-md {
+.w-md, .w-md {
     width: var(--mid-width);
 }
 
-.width-lg, .w-lg {
+.w-lg, .w-lg {
     width: var(--large-width);
 }
 
-.width-d5, .w-d5 {
+.w-d5, .w-d5 {
     width: var(--space-d5);
 }
 
-.width-d4, .w-d4 {
+.w-d4, .w-d4 {
     width: var(--space-d4);
 }
 
-.width-d3, .w-d3 {
+.w-d3, .w-d3 {
     width: var(--space-d3);
 }
 
-.width-d2, .w-d2 {
+.w-d2, .w-d2 {
     width: var(--space-d2);
 }
 
-.width-d1, .w-d1 {
+.w-d1, .w-d1 {
     width: var(--space-d1);
 }
 
-.width, .w {
+.w, .w {
     width: var(--space);
 }
 
-.width-1, .w-1 {
+.w-1, .w-1 {
     width: var(--space-1);
 }
 
-.width-2, .w-2 {
+.w-2, .w-2 {
     width: var(--space-2);
 }
 
-.width-3, .w-3 {
+.w-3, .w-3 {
     width: var(--space-3);
 }
 
-.width-4, .w-4 {
+.w-4, .w-4 {
     width: var(--space-4);
 }
 
-.width-5, .w-5 {
+.w-5, .w-5 {
     width: var(--space-5);
 }
 
-.width-6, .w-6 {
+.w-6, .w-6 {
     width: var(--space-6);
 }

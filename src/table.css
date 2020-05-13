@@ -1,6 +1,6 @@
 :root {
-    --alternate-row-color: var(--neutral-4);
-    --alternate-col-color: var(--neutral-4);
+    --alternate-row-color: var(--neutral-5);
+    --alternate-col-color: var(--neutral-5);
     --underline-row-color: var(--neutral-3);
 
     --mrt-table: var(--vertical-rhythm);

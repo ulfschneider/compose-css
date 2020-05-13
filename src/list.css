@@ -96,12 +96,13 @@ ul ol li::before {
     }    
 }
 
-[class^="breakout"] ul,
-[class^="breakout"] ol {
+/* consider x-layout */
+[class*="breakout"] ul,
+[class*="breakout"] ol {
         padding-left: var(--horizontal-rhythm);        
 }  
 
-
+/* consider x-grid */
 ul.indent,
 ol.indent,
 [class^="columns"] ul,
