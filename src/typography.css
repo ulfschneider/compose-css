@@ -529,7 +529,7 @@ figure {
 
 figcaption,
 blockquote footer {
-  margin-top: var(--mrt-figcaption);
+  margin-top: 0;
   margin-bottom: var(--mrb-figcaption);
   font-family: var(--heading-font-family);
   font-style: normal;
@@ -538,7 +538,14 @@ blockquote footer {
   max-width: var(--space-6);
 }
 
-blockquote footer {
+figcaption {
+  margin-top: var(--mrt-figcaption);
+  margin-bottom: var(--mrb-figcaption);
+}
+
+blockquote *+footer,
+figure *+figcaption {
+  margin-top: var(--mrt-figcaption);
   margin-bottom: 0;
 }
 
