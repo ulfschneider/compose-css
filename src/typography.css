@@ -528,9 +528,10 @@ figure {
 }
 
 figcaption,
-blockquote footer {
+blockquote footer,
+blockquote header {
   margin-top: 0;
-  margin-bottom: var(--mrb-figcaption);
+  margin-bottom: 0;  
   font-family: var(--heading-font-family);
   font-style: normal;
   font-size: var(--fs-d1);
@@ -539,12 +540,12 @@ blockquote footer {
 }
 
 figcaption {
-  margin-top: var(--mrt-figcaption);
+  margin-top: 0;
   margin-bottom: var(--mrb-figcaption);
 }
 
-blockquote *+footer,
-figure *+figcaption {
+figure > *+figcaption,
+blockquote footer {
   margin-top: var(--mrt-figcaption);
   margin-bottom: 0;
 }
@@ -552,6 +553,18 @@ figure *+figcaption {
 blockquote footer::before {
   content: "— ";
 }
+
+blockquote header {
+  margin-top: 0;
+  margin-bottom: var(--mrb-figcaption);
+}
+
+blockquote header::after {
+  content: " —";
+}
+
+
+
 
 @media(--breakpoint-max-sm) {
 
