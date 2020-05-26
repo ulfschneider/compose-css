@@ -19,8 +19,8 @@ if (index && package) {
     fs.writeFileSync(INDEX_PATH, index, 'utf8');
 
     var serve = SERVE_HEADER + index;
-    serve = serve.replace(/resources\//g, '/r/');
-    serve = serve.replace(/images\//g, '/i/compose/');
+    serve = serve.replace(/resources\//g, '/js/');
+    serve = serve.replace(/images\//g, '/img/compose/');
     var replaceStart = serve.indexOf(SERVE_REPLACE_BREAKPOINT_START);
     var replaceEnd = serve.indexOf(SERVE_REPLACE_BREAKPOINT_END) + SERVE_REPLACE_BREAKPOINT_END.length;
     serve = serve.substring(0, replaceStart) + SERVE_REPLACE_BREAKPOINT + serve.substring(replaceEnd);
