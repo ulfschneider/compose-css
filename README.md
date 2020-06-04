@@ -2,4 +2,4 @@
 
 A composable CSS Toolkit to build fast, maintainable, and responsive websites.
 
-Visit [ulf.codes/compose](https://ulf.codes/compose) to see the usage.
+Visit [ulf.codes/tools/compose/](https://ulf.codes/tools/compose/) to see the usage.
