@@ -22,11 +22,12 @@
 
   --lh-d1: 0.9em;
   --lh: 1em;
-  --lh-1: 1.15em;
-  --lh-2: 1.4em;
-  --lh-3: 1.62em;
-  --lh-4: 2em;
-  --lh-5: 2.5em;
+  --lh-1: calc((var(--lh-3) - var(--lh)) / 3 + var(--lh));
+  --lh-2: calc((var(--lh-3) - var(--lh)) / 3 * 2 + var(--lh));
+  --lh-3: calc(var(--space-factor) * var(--lh));
+  --lh-default: var(--lh-3);
+  --lh-4: calc((var(--lh-3) - var(--lh)) / 3 * 4 + var(--lh));
+  --lh-5: calc((var(--lh-3) - var(--lh)) / 3 * 5 + var(--lh));
 
   --fs-h6: var(--fs-d1);
   --fs-h5: var(--fs);
@@ -41,7 +42,7 @@
   --lh-h3: var(--lh-2);
   --lh-h2: var(--lh-2);
   --lh-h1: var(--lh-2);
-  
+
   font-size: var(--base-font-size);
   line-height: var(--lh-3);
 }
