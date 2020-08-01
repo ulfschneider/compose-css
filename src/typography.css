@@ -1,13 +1,13 @@
 :root {
   --font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   --font-feature-settings: unset;
-  --font-weight-bold: 600;
+  --font-weight-bold: 700;
   --font-weight-normal: 400;
 
   --heading-font-family: var(--font-family);
   --heading-font-feature-settings: var(--font-feature-settings);
-  --heading-font-weight: 600;
-  --heading-letter-spacing: 0;
+  --heading-font-weight: 700;
+  --heading-letter-spacing: 0em;
   --heading-text-transform: none;
 
   --meta-font-family: var(--font-family);
