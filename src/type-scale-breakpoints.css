@@ -14,13 +14,13 @@
 
 @media (--breakpoint-type-scale-3) {
   :root {
-    font-size: calc(var(--base-font-size) + 1px);
+    font-size: calc(var(--base-font-size) + 2px);
   }
 }
 
 @media (--breakpoint-type-scale-4) {
   :root {
-    font-size: calc(var(--base-font-size) + 2px);
+    font-size: calc(var(--base-font-size) + 3px);
   }
 }
 

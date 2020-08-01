@@ -61,7 +61,8 @@
     grid-column-end: 3;
 }
 
-@media(min-width: 900px) {
+
+@media(--breakpoint-md) {
     .x {
         display: grid;
         grid-template-columns: var(--x-padding) 1fr calc((var(--breakout-width) - var(--regular-width)) * 0.5) minmax(auto, var(--regular-width)) calc((var(--breakout-width) - var(--regular-width)) * 0.5) 1fr var(--x-padding);
