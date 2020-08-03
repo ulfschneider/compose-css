@@ -5,7 +5,7 @@
 
 .x {
     display: grid;
-    grid-template-columns: var(--x-padding) 1fr minmax(auto, var(--regular-width)) 1fr var(--x-padding);
+    grid-template-columns: [gutter-l] var(--x-padding) [breakout-l] 1fr [main-content-start] minmax(auto, var(--regular-width)) [main-content-end] 1fr [breakout-r] var(--x-padding) [gutter-r];
     overflow: hidden;
 }
 
@@ -65,7 +65,7 @@
 @media(--breakpoint-md) {
     .x {
         display: grid;
-        grid-template-columns: var(--x-padding) 1fr calc((var(--breakout-width) - var(--regular-width)) * 0.5) minmax(auto, var(--regular-width)) calc((var(--breakout-width) - var(--regular-width)) * 0.5) 1fr var(--x-padding);
+        grid-template-columns: [gutter-l] var(--x-padding) [breakout-wide-l] 1fr [breakout-l] calc((var(--breakout-width) - var(--regular-width)) * 0.5) [main-content-start] minmax(auto, var(--regular-width)) [main-content-end] calc((var(--breakout-width) - var(--regular-width)) * 0.5) [breakout-r] 1fr [breakout-wide-r] var(--x-padding) [gutter-r];
     }
     .x>*,
     .x.main>*,

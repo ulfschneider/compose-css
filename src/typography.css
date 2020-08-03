@@ -535,7 +535,7 @@ blockquote footer,
 blockquote header {
   margin-top: 0;
   margin-bottom: 0;  
-  font-family: var(--heading-font-family);
+  font-family: var(--font-family);
   font-style: normal;
   font-size: var(--fs-d1);
   line-height: var(--lh-2);
