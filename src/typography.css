@@ -10,6 +10,8 @@
   --heading-letter-spacing: 0em;
   --heading-text-transform: none;
 
+  --figcaption-font-family: var(--heading-font-family);
+
   --meta-font-family: var(--font-family);
   --meta-font-feature-settings: var(--font-feature-settings);
   --meta-font-weight: var(--font-weight-normal);
@@ -535,7 +537,7 @@ blockquote footer,
 blockquote header {
   margin-top: 0;
   margin-bottom: 0;  
-  font-family: var(--heading-font-family);
+  font-family: var(--figcaption-font-family);
   font-style: normal;
   font-size: var(--fs-d1);
   line-height: var(--lh-2);
