@@ -1,5 +1,5 @@
 :root {
-  --grid-column-gap: var(--space-1);
+  --grid-column-gap: 0;
   --column-fluid-width: 16rem;
   --column-rule: 1px solid var(--neutral-2);
 }
