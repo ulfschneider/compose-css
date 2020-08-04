@@ -5,9 +5,10 @@
 
 .x {
     display: grid;
-    grid-template-columns: [gutter-l] var(--x-padding) [breakout-l] 1fr [main-content-start] minmax(auto, var(--regular-width)) [main-content-end] 1fr [breakout-r] var(--x-padding) [gutter-r];
+    grid-template-columns: [gutter-l] var(--x-padding) [breakout-wide-l] 1fr [breakout-l] 1fr [main-content-start] minmax(auto, var(--regular-width)) [main-content-end] 1fr [breakout-r] 1fr [breakout-wide-r] var(--x-padding) [gutter-r];
     overflow: hidden;
 }
+
 
 .x>:not(p):not(div)+:not(p):not(div):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
     margin-top: 0;
@@ -20,93 +21,61 @@
 .x>*,
 .x.main>*,
 .x>.main {
-    grid-column-start: 3;
+    grid-column-start: main-content-start;
     min-width: 0;
     /* https://css-tricks.com/preventing-a-grid-blowout/ */
 }
 
 .x.breakout-wide>*,
 .x>.breakout-wide {
-    grid-column-start: 2;
-    grid-column-end: -2;
+    grid-column-start: breakout-wide-l;
+    grid-column-end: breakout-wide-r;
 }
 
 .x.breakout-wide-r>*,
 .x>.breakout-wide-r {
-    grid-column-start: 3;
-    grid-column-end: -2;
+    grid-column-start: main-content-start;
+    grid-column-end: breakout-wide-r;
 }
 
 .x.breakout-wide-l>*,
 .x>.breakout-wide-l {
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-start: breakout-wide-l;
+    grid-column-end: main-content-end;
 }
 
 .x.breakout-full>*,
 .x>.breakout-full {
-    grid-column-start: 1;
-    grid-column-end: -1;
+    grid-column-start: gutter-l;
+    grid-column-end: gutter-r;
 }
 
 .x.breakout-full-r>*,
 .x>.breakout-full-r {
-    grid-column-start: 3;
-    grid-column-end: -1;
+    grid-column-start: main-content-start;
+    grid-column-end: gutter-r;
 }
 
 .x.breakout-full-l>*,
 .x>.breakout-full-l {
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-start: gutter-l;
+    grid-column-end: main-content-end;
 }
 
+.x.breakout-l>*,
+.x>.breakout-l {
+    grid-column-start: breakout-l;
+    grid-column-end: main-content-end;
+}
 
-@media(--breakpoint-md) {
-    .x {
-        display: grid;
-        grid-template-columns: [gutter-l] var(--x-padding) [breakout-wide-l] 1fr [breakout-l] calc((var(--breakout-width) - var(--regular-width)) * 0.5) [main-content-start] minmax(auto, var(--regular-width)) [main-content-end] calc((var(--breakout-width) - var(--regular-width)) * 0.5) [breakout-r] 1fr [breakout-wide-r] var(--x-padding) [gutter-r];
-    }
-    .x>*,
-    .x.main>*,
-    .x>.main {
-        grid-column-start: 4;
-        min-width: 0;
-        /*https://css-tricks.com/preventing-a-grid-blowout/*/
-    }
-    .x.breakout-l>*,
-    .x>.breakout-l {
-        grid-column-start: 3;
-        grid-column-end: 5;
-    }
-    .x.breakout-r>*,
-    .x>.breakout-r {
-        grid-column-start: 4;
-        grid-column-end: 6;
-    }
-    .x.breakout>*,
-    .x>.breakout {
-        grid-column-start: 3;
-        grid-column-end: -3;
-    }
-    .x.breakout-wide-r>*,
-    .x>.breakout-wide-r {
-        grid-column-start: 4;
-        grid-column-end: -2;
-    }
-    .x.breakout-wide-l>*,
-    .x>.breakout-wide-l {
-        grid-column-start: 2;
-        grid-column-end: 5;
-    }
-    .x.breakout-full-r>*,
-    .x>.breakout-full-r {
-        grid-column-start: 4;
-        grid-column-end: -1;
-    }
-    .x.breakout-full-l>*,
-    .x>.breakout-full-l {
-        grid-column-start: 1;
-        grid-column-end: 4;
-    }
+.x.breakout-r>*,
+.x>.breakout-r {
+    grid-column-start: main-content-start;
+    grid-column-end: breakout-r;
+}
+
+.x.breakout>*,
+.x>.breakout {
+    grid-column-start: breakout-l;
+    grid-column-end: breakout-r;
 }

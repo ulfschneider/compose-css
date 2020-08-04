@@ -3,7 +3,7 @@ module.exports = {
     require('postcss-import'),
     require('postcss-custom-media'),
     require('postcss-custom-properties', {
-      preserve: true
+      preserve: false
     }),
     require('postcss-calc'),
     require('cssstats'),
