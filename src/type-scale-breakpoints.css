@@ -1,24 +1,24 @@
 
-@media (--breakpoint-type-scale-1) {
+@media (--breakpoint-sm) {
   :root {
     font-size: calc(var(--base-font-size) + 1px);
   }
 }
 
-@media (--breakpoint-type-scale-2) {
+@media (--breakpoint-rg) {
   :root {
     font-size: calc(var(--base-font-size) + 1px);
   }
 }
 
 
-@media (--breakpoint-type-scale-3) {
+@media (--breakpoint-md) {
   :root {
     font-size: calc(var(--base-font-size) + 2px);
   }
 }
 
-@media (--breakpoint-type-scale-4) {
+@media (--breakpoint-lg) {
   :root {
     font-size: calc(var(--base-font-size) + 3px);
   }

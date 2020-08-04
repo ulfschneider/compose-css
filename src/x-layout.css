@@ -1,11 +1,15 @@
-:root {
-    --breakout-width: var(--mid-width);
+:root {    
     --x-padding: var(--space);
+    --main-content-width: var(--regular-width);
 }
+
+@custom-media --breakpoint-x-indent (max-width: 35rem);
+/*--breakpoint-list-indent main content width + some padding */
+
 
 .x {
     display: grid;
-    grid-template-columns: [gutter-l] var(--x-padding) [breakout-wide-l] 1fr [breakout-l] 1fr [main-content-start] minmax(auto, var(--regular-width)) [main-content-end] 1fr [breakout-r] 1fr [breakout-wide-r] var(--x-padding) [gutter-r];
+    grid-template-columns: [gutter-l] var(--x-padding) [breakout-wide-l] 1fr [breakout-l] 1fr [main-content-start] minmax(auto,  var(--main-content-width)) [main-content-end] 1fr [breakout-r] 1fr [breakout-wide-r] var(--x-padding) [gutter-r];
     overflow: hidden;
 }
 
