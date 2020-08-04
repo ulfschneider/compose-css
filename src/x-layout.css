@@ -3,7 +3,7 @@
     --main-content-width: var(--regular-width);
 }
 
-@custom-media --breakpoint-x-indent (max-width: 35rem);
+@custom-media --breakpoint-x-indent (max-width: 750px);
 /*--breakpoint-list-indent main content width + some padding */
 
 
