@@ -6,7 +6,7 @@
 
   --heading-font-family: var(--font-family);
   --heading-font-feature-settings: var(--font-feature-settings);
-  --heading-font-weight: 700;
+  --heading-font-weight: var(--font-weight-bold);
   --heading-letter-spacing: 0em;
   --heading-text-transform: none;
 
