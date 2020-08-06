@@ -1,26 +1,32 @@
+:root {
+  --font-size-breakpoint-sm: calc(var(--base-font-size) + 1px);
+  --font-size-breakpoint-rg: calc(var(--base-font-size) + 1px);
+  --font-size-breakpoint-md: calc(var(--base-font-size) + 1px);
+  --font-size-breakpoint-lg: calc(var(--base-font-size) + 2px);
+}
 
 @media (--breakpoint-sm) {
   :root {
-    font-size: calc(var(--base-font-size) + 1px);
+    font-size: var(--font-size-breakpoint-sm);
   }
 }
 
 @media (--breakpoint-rg) {
   :root {
-    font-size: calc(var(--base-font-size) + 1px);
+    font-size: var(--font-size-breakpoint-rg);
   }
 }
 
 
 @media (--breakpoint-md) {
   :root {
-    font-size: calc(var(--base-font-size) + 2px);
+    font-size: var(--font-size-breakpoint-md);
   }
 }
 
 @media (--breakpoint-lg) {
   :root {
-    font-size: calc(var(--base-font-size) + 3px);
+    font-size: var(--font-size-breakpoint-lg);
   }
 }
 
