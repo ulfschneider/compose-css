@@ -541,7 +541,7 @@ blockquote header {
   font-style: normal;
   font-size: var(--fs-d1);
   line-height: var(--lh-2);
-  max-width: var(--space-6);
+  max-width: var(--regular-width);
 }
 
 figcaption {
