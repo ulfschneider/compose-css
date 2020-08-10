@@ -1,8 +1,8 @@
 :root {
   --font-size-breakpoint-sm: calc(var(--base-font-size) + 1px);
-  --font-size-breakpoint-rg: calc(var(--base-font-size) + 1px);
-  --font-size-breakpoint-md: calc(var(--base-font-size) + 1px);
-  --font-size-breakpoint-lg: calc(var(--base-font-size) + 2px);
+  --font-size-breakpoint-rg: calc(var(--base-font-size) + 2px);
+  --font-size-breakpoint-md: calc(var(--base-font-size) + 2px);
+  --font-size-breakpoint-lg: calc(var(--base-font-size) + 3px);
 }
 
 @media (--breakpoint-sm) {
