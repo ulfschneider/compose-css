@@ -36,11 +36,11 @@
   --fs-h2: 1.6rem;
   --fs-h1: 2.4rem;
 
-  --lh-h6: var(--lh-3);
-  --lh-h5: var(--lh-3);
-  --lh-h4: var(--lh-2);
-  --lh-h3: var(--lh-2);
-  --lh-h2: var(--lh-2);
+  --lh-h6: var(--lh-1);
+  --lh-h5: var(--lh-1);
+  --lh-h4: var(--lh-1);
+  --lh-h3: var(--lh-1);
+  --lh-h2: var(--lh-1);
   --lh-h1: var(--lh-1);
 
   font-size: var(--base-font-size);
