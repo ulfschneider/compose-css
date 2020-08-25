@@ -101,7 +101,7 @@
   --pre-background: var(--neutral-5);
   --pre-color: var(--base-color);
   
-  --heading-color: black;
+  --heading-color: var(--base-color);
   --meta-color: var(--neutral-d2);
   
   --br-blockquote-color: var(--heading-color);
