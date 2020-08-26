@@ -84,7 +84,7 @@
   font-variant-numeric: var(--font-variant-numeric);
 }
 
-* {
+*, *:hover, *:active {
   outline: none;
 }
 
@@ -94,6 +94,26 @@
   position: relative;
   z-index: 11111;
 }
+
+@media (hover: hover) {
+  a:hover {
+    color: var(--link-hover-color);
+    text-decoration-color: var(--link-hover-color);
+  }
+}
+
+a:active {
+  color: var(--link-active-color);
+  text-decoration-color: var(--link-active-color); 
+}
+
+a:focus {
+  color: var(--link-focus-color);
+  text-decoration-color: var(--link-focus-color);
+}
+
+
+
 
 .font-family-inherit {
   font-family: inherit;
@@ -469,23 +489,6 @@ a {
   overflow-wrap: break-word;
 }
 
-@media (hover: hover) {
-  a:hover {
-    color: var(--link-hover-color);
-    text-decoration-color: var(--link-hover-color);
-  }
-}
-
-
-a:focus {
-  color: var(--link-focus-color);
-  text-decoration-color: var(--link-focus-color);
-}
-
-a:active {
-  color: var(--link-active-color);
-  text-decoration-color: var(--link-active-color); 
-}
 
 blockquote {
   margin-top: var(--mrt-blockquote);
