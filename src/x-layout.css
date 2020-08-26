@@ -14,7 +14,7 @@
 }
 
 
-.x>:not(p):not(div)+:not(p):not(div):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+.x>:not(p):not(div):not(img)+:not(p):not(div):not(img):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
     margin-top: 0;
 }
 

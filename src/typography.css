@@ -26,9 +26,8 @@
 
   --link-text-decoration: underline;
   --link-text-decoration-color: unset;
-  --text-underline-offset: 0.1em;
-  --text-decoration-thickness: 1px;
-
+  --text-underline-offset: 0.25em;
+  --text-decoration-thickness: 1.5px;
   --font-variant-numeric: normal;
 
   --vertical-rhythm: var(--space);
@@ -56,8 +55,8 @@
   --mrb-h6: var(--vertical-rhythm);
 
 
-  --mrt-blockquote: var(--vertical-rhythm);
-  --mrb-blockquote: var(--vertical-rhythm);
+  --mrt-blockquote: var(--space-2);
+  --mrb-blockquote: var(--space-2);
 
   --mrt-figure: var(--space-2);
   --mrb-figure: var(--space-2);

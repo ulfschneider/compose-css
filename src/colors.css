@@ -18,10 +18,10 @@
   --neutral-3: hsl(var(--neutral-h), var(--neutral-s), calc(var(--neutral-l) + 3 * var(--neutral-step)));
   --neutral-4: hsl(var(--neutral-h), var(--neutral-s), calc(var(--neutral-l) + 4 * var(--neutral-step)));
   --neutral-5: hsl(var(--neutral-h), var(--neutral-s), calc(var(--neutral-l) + 5 * var(--neutral-step)));
-  /*196 100 50        213 19 60*/
+  
   --primary-h: 196;
   --primary-s: 100%;
-  --primary-l: 50%;
+  --primary-l: 42%;
   --primary-step: calc((100% - var(--primary-l)) * var(--color-step-factor));
 
   --primary-d5: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) - 5 * var(--primary-step)));
