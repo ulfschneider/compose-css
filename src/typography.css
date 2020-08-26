@@ -84,7 +84,7 @@
   font-variant-numeric: var(--font-variant-numeric);
 }
 
-*, *:hover, *:active {
+* {
   outline: none;
 }
 
@@ -93,6 +93,10 @@
   outline-offset: var(--space-d4);
   position: relative;
   z-index: 11111;
+}
+
+*:hover, *:active {
+  outline: none;
 }
 
 @media (hover: hover) {
