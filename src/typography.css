@@ -58,8 +58,8 @@
   --mrt-blockquote: var(--space-1);
   --mrb-blockquote: var(--space-1);
 
-  --mrt-figure: var(--space-1);
-  --mrb-figure: var(--space-1);
+  --mrt-figure: var(--space-2);
+  --mrb-figure: var(--space-2);
   --mrt-figcaption: var(--vertical-rhythm);
   --mrb-figcaption: var(--vertical-rhythm);
 
