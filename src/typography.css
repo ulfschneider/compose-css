@@ -95,10 +95,6 @@
   z-index: 11111;
 }
 
-*:hover, *:active {
-  outline: none;
-}
-
 @media (hover: hover) {
   a:hover {
     color: var(--link-hover-color);
