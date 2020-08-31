@@ -85,10 +85,10 @@
     --code-color: var(--base-color);
     --pre-border-color: var(--neutral);
     --pre-background: var(--neutral-5);
+    --blockquote-background: var(--pre-background);
     --pre-color: var(--base-color);
     --heading-color: var(--base-color);
     --meta-color: var(--neutral-d2);
-    --br-blockquote-color: var(--heading-color);
     --li-prefix-color: var(--heading-color);
     --link-color: var(--base-color);
     --link-hover-color: var(--primary);

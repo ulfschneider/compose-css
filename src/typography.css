@@ -19,6 +19,7 @@
     --mono-font-feature-settings: var(--font-feature-settings);
     --code-font-family: var(--mono-font-family);
     --pre-border: var(--border-w-default) dotted var(--pre-border-color);
+    --blockquote-border: var(--pre-border);
     --link-text-decoration: underline;
     --link-text-decoration-color: unset;
     --text-underline-offset: 0.25em;
@@ -446,6 +447,29 @@ pre,
     overflow-x: auto;
 }
 
+blockquote {
+    margin-top: var(--mrt-blockquote);
+    margin-bottom: var(--mrb-blockquote);
+    margin-right: 0;
+    margin-left: calc(var(--horizontal-rhythm) * -1);
+    padding-left: var(--horizontal-rhythm);
+    font-style: var(--blockquote-font-style);
+    background: var(--blockquote-background);
+    padding-top: var(--space-d2);
+    padding-bottom: var(--space-d2);
+    padding-right: var(--space-d2);
+    border-top: var(--blockquote-border);
+    border-bottom: var(--blockquote-border);
+}
+
+blockquote::before {
+    content: "“";
+    margin-left: calc(-1 * var(--horizontal-rhythm));
+    position: absolute;
+    line-height: 1;
+    font-size: var(--fs-4);
+}
+
 .tag {
     white-space: nowrap;
     padding: var(--space-d4);
@@ -461,16 +485,6 @@ a {
     word-break: break-word;
     word-wrap: break-word;
     overflow-wrap: break-word;
-}
-
-blockquote {
-    margin-top: var(--mrt-blockquote);
-    margin-bottom: var(--mrb-blockquote);
-    margin-right: 0;
-    margin-left: calc(var(--horizontal-rhythm) * -1);
-    padding-left: calc(var(--horizontal-rhythm) - var(--space-d2));
-    border-left: var(--space-d2) solid var(--br-blockquote-color);
-    font-style: var(--blockquote-font-style);
 }
 
 
