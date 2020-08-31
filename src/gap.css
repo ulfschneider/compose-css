@@ -1,0 +1,147 @@
+/**
+Naming conventions
+    x=x-axis
+    y=y-axis
+    t=top
+    r=right
+    b=bottom
+    l=left
+    n=negative
+    0=none
+    d<i>=decrease by <i>  
+    <i>=increase by <i>
+    
+*/
+
+.gp-0,
+.no-gp {
+    grid-gap: 0;
+}
+
+.gpx-0 {
+    grid-column-gap: 0;
+}
+
+.gpy-0 {
+    grid-row-gap: 0;
+}
+
+.gp-d5 {
+    grid-gap: var(--space-d5);
+}
+
+.gpx-d5 {
+    grid-column-gap: var(--space-d5);
+}
+
+.gpy-d5 {
+    grid-row-gap: var(--space-d5);
+}
+
+.gp-d4 {
+    grid-gap: var(--space-d4);
+}
+
+.gpx-d4 {
+    grid-column-gap: var(--space-d4);
+}
+
+.gpy-d4 {
+    grid-row-gap: var(--space-d4);
+}
+
+.gp-d3 {
+    grid-gap: var(--space-d3);
+}
+
+.gpx-d3 {
+    grid-column-gap: var(--space-d3);
+}
+
+.gpy-d3 {
+    grid-row-gap: var(--space-d3);
+}
+
+.gp-d2 {
+    grid-gap: var(--space-d2);
+}
+
+.gpx-d2 {
+    grid-column-gap: var(--space-d2);
+}
+
+.gpy-d2 {
+    grid-row-gap: var(--space-d2);
+}
+
+.gp-d1 {
+    grid-gap: var(--space-d1);
+}
+
+.gpx-d1 {
+    grid-column-gap: var(--space-d1);
+}
+
+.gpy-d1 {
+    grid-row-gap: var(--space-d1);
+}
+
+.gp {
+    grid-gap: var(--space);
+}
+
+.gpx {
+    grid-column-gap: var(--space);
+}
+
+.gpy {
+    grid-row-gap: var(--space);
+}
+
+.gp-1 {
+    grid-gap: var(--space-1);
+}
+
+.gpx-1 {
+    grid-column-gap: var(--space-1);
+}
+
+.gpy-1 {
+    grid-row-gap: var(--space-1);
+}
+
+.gp-2 {
+    grid-gap: var(--space-2);
+}
+
+.gpx-2 {
+    grid-column-gap: var(--space-2);
+}
+
+.gpy-2 {
+    grid-row-gap: var(--space-2);
+}
+
+.gp-3 {
+    grid-gap: var(--space-3);
+}
+
+.gpx-3 {
+    grid-column-gap: var(--space-3);
+}
+
+.gpy-3 {
+    grid-row-gap: var(--space-3);
+}
+
+.gp-4 {
+    grid-gap: var(--space-4);
+}
+
+.gpx-4 {
+    grid-column-gap: var(--space-4);
+}
+
+.gpy-4 {
+    grid-row-gap: var(--space-4);
+}

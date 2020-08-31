@@ -4,16 +4,13 @@
     --form-font-size: var(--fs);
     --form-radius: var(--rounded);
     --form-field-color: var(--base-color);
-
     --form-field-border-color: var(--neutral-2);
     --caret-color: var(--primary);
     --form-focus-color: var(--primary);
-
     --form-button-pdx: var(--space-d2);
     --form-button-pdy: var(--space-d2);
     --form-button-background: var(--base-color);
     --form-button-color: var(--base-background);
-
     caret-color: var(--caret-color);
 }
 
@@ -68,13 +65,17 @@ select {
     cursor: pointer;
 }
 
-
 @media (hover: hover) {
-    input[type=submit]:hover, input[type=submit]:focus,
-    input[type=reset]:hover, input[type=reset]:focus,
-    button:hover, button:focus,
-    .button:hover, .button:focus,
-    select:hover, select:focus {
+    input[type=submit]:hover,
+    input[type=submit]:focus,
+    input[type=reset]:hover,
+    input[type=reset]:focus,
+    button:hover,
+    button:focus,
+    .button:hover,
+    .button:focus,
+    select:hover,
+    select:focus {
         background: var(--form-focus-color);
     }
 }
@@ -85,7 +86,6 @@ label {
     font-size: var(--fs-d1);
     color: var(--form-label-color);
 }
-
 
 input[type=text],
 input[type=email],
@@ -134,4 +134,3 @@ textarea:focus+label,
 label:focus-within {
     color: var(--form-focus-color);
 }
-

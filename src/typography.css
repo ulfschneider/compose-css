@@ -1,155 +1,131 @@
 :root {
-  --font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-feature-settings: unset;
-  --font-weight-bold: 700;
-  --font-weight-normal: 400;
-
-  --heading-font-family: var(--font-family);
-  --heading-font-feature-settings: var(--font-feature-settings);
-  --heading-font-weight: var(--font-weight-bold);
-  --heading-letter-spacing: 0em;
-  --heading-text-transform: none;
-
-  --figcaption-font-family: var(--heading-font-family);
-  --figcaption-font-size: var(--fs-d1);
-
-  --meta-font-family: var(--font-family);
-  --meta-font-feature-settings: var(--font-feature-settings);
-  --meta-font-weight: var(--font-weight-normal);
-  --meta-letter-spacing: unset;
-  --meta-text-transform: unset;
-
-  --mono-font-family: monospace;
-  --mono-font-feature-settings: var(--font-feature-settings);
-  --code-font-family: var(--mono-font-family);
-  --pre-border: var(--border-w-default) dotted var(--pre-border-color);
-
-  --link-text-decoration: underline;
-  --link-text-decoration-color: unset;
-  --text-underline-offset: 0.25em;
-  --text-decoration-thickness: 1.5px;
-  --font-variant-numeric: normal;
-
-  --vertical-rhythm: var(--space);
-  --horizontal-rhythm: var(--space-1);
-
-  --mrt-paragraph: var(--vertical-rhythm);
-  --mrb-paragraph: var(--vertical-rhythm);
-
-  --mrt-h1: var(--space-1);
-  --mrb-h1: var(--vertical-rhythm);
-
-  --mrt-h2: var(--space-2);
-  --mrb-h2: var(--vertical-rhythm);
-
-  --mrt-h3: var(--space-2);
-  --mrb-h3: var(--vertical-rhythm);
-
-  --mrt-h4: var(--space-2);
-  --mrb-h4: var(--vertical-rhythm);
-
-  --mrt-h5: var(--space-2);
-  --mrb-h5: var(--vertical-rhythm);
-
-  --mrt-h6: var(--space-2);
-  --mrb-h6: var(--vertical-rhythm);
-
-
-  --mrt-blockquote: var(--space-1);
-  --mrb-blockquote: var(--space-1);
-
-  --mrt-figure: var(--space-2);
-  --mrb-figure: var(--space-2);
-  --mrt-figcaption: var(--vertical-rhythm);
-  --mrb-figcaption: var(--vertical-rhythm);
-
-  --mrt-pre: var(--vertical-rhythm);
-  --mrb-pre: var(--vertical-rhythm);
-
-  --mrt-hr: var(--vertical-rhythm);
-  --mrb-hr: var(--vertical-rhythm);
-
-  --hr-content: "◊      ◊      ◊";
-  --quotes: """ """"'""'";
-  --quotes-de: """ """"'""'";
-  --blockquote-font-style: italic;
-
-  --scroll-margin-top: var(--vertical-rhythm);
-
-  font-family: var(--font-family);
-  font-feature-settings: var(--font-feature-settings);
-  font-weight: var(--font-weight-normal);
-  text-underline-offset: var(--text-underline-offset);
-  text-decoration-thickness: var(--text-decoration-thickness);
-  font-variant-numeric: var(--font-variant-numeric);
+    --font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-feature-settings: unset;
+    --font-weight-bold: 700;
+    --font-weight-normal: 400;
+    --heading-font-family: var(--font-family);
+    --heading-font-feature-settings: var(--font-feature-settings);
+    --heading-font-weight: var(--font-weight-bold);
+    --heading-letter-spacing: 0em;
+    --heading-text-transform: none;
+    --figcaption-font-family: var(--heading-font-family);
+    --figcaption-font-size: var(--fs-d1);
+    --meta-font-family: var(--font-family);
+    --meta-font-feature-settings: var(--font-feature-settings);
+    --meta-font-weight: var(--font-weight-normal);
+    --meta-letter-spacing: unset;
+    --meta-text-transform: unset;
+    --mono-font-family: monospace;
+    --mono-font-feature-settings: var(--font-feature-settings);
+    --code-font-family: var(--mono-font-family);
+    --pre-border: var(--border-w-default) dotted var(--pre-border-color);
+    --link-text-decoration: underline;
+    --link-text-decoration-color: unset;
+    --text-underline-offset: 0.25em;
+    --text-decoration-thickness: 1.5px;
+    --font-variant-numeric: normal;
+    --vertical-rhythm: var(--space);
+    --horizontal-rhythm: var(--space-1);
+    --mrt-paragraph: var(--vertical-rhythm);
+    --mrb-paragraph: var(--vertical-rhythm);
+    --mrt-h1: var(--space-1);
+    --mrb-h1: var(--vertical-rhythm);
+    --mrt-h2: var(--space-2);
+    --mrb-h2: var(--vertical-rhythm);
+    --mrt-h3: var(--space-2);
+    --mrb-h3: var(--vertical-rhythm);
+    --mrt-h4: var(--space-2);
+    --mrb-h4: var(--vertical-rhythm);
+    --mrt-h5: var(--space-2);
+    --mrb-h5: var(--vertical-rhythm);
+    --mrt-h6: var(--space-2);
+    --mrb-h6: var(--vertical-rhythm);
+    --mrt-blockquote: var(--space-1);
+    --mrb-blockquote: var(--space-1);
+    --mrt-figure: var(--space-2);
+    --mrb-figure: var(--space-2);
+    --mrt-figcaption: var(--vertical-rhythm);
+    --mrb-figcaption: var(--vertical-rhythm);
+    --mrt-pre: var(--vertical-rhythm);
+    --mrb-pre: var(--vertical-rhythm);
+    --mrt-hr: var(--vertical-rhythm);
+    --mrb-hr: var(--vertical-rhythm);
+    --hr-content: "◊      ◊      ◊";
+    --quotes: """ """"'""'";
+    --quotes-de: """ """"'""'";
+    --blockquote-font-style: italic;
+    --scroll-margin-top: var(--vertical-rhythm);
+    font-family: var(--font-family);
+    font-feature-settings: var(--font-feature-settings);
+    font-weight: var(--font-weight-normal);
+    text-underline-offset: var(--text-underline-offset);
+    text-decoration-thickness: var(--text-decoration-thickness);
+    font-variant-numeric: var(--font-variant-numeric);
 }
 
 * {
-  outline: none;
+    outline: none;
 }
 
 *:focus {
-  outline: var(--space-d3) solid var(--link-focus-color);
-  outline-offset: var(--space-d4);
-  position: relative;
-  z-index: 11111;
+    outline: var(--space-d3) solid var(--link-focus-color);
+    outline-offset: var(--space-d4);
+    position: relative;
+    z-index: 11111;
 }
 
 @media (hover: hover) {
-  a:hover {
-    color: var(--link-hover-color);
-    text-decoration-color: var(--link-hover-color);
-  }
+    a:hover {
+        color: var(--link-hover-color);
+        text-decoration-color: var(--link-hover-color);
+    }
 }
 
 a:active {
-  color: var(--link-active-color);
-  text-decoration-color: var(--link-active-color); 
+    color: var(--link-active-color);
+    text-decoration-color: var(--link-active-color);
 }
 
 a:focus {
-  color: var(--link-focus-color);
-  text-decoration-color: var(--link-focus-color);
+    color: var(--link-focus-color);
+    text-decoration-color: var(--link-focus-color);
 }
 
-
-
-
 .font-family-inherit {
-  font-family: inherit;
+    font-family: inherit;
 }
 
 .font-size-inherit {
-  font-size: inherit;
+    font-size: inherit;
 }
 
 .line-h-inherit {
-  line-height: inherit;
+    line-height: inherit;
 }
 
 .base-font {
-  font-family: var(--font-family);
+    font-family: var(--font-family);
 }
 
 .heading-font {
-  font-family: var(--heading-font-family);
+    font-family: var(--heading-font-family);
 }
 
 .meta-font {
-  font-family: var(--meta-font-family);
+    font-family: var(--meta-font-family);
 }
 
 .mono-font {
-  font-family: var(--mono-font-family);
+    font-family: var(--mono-font-family);
 }
 
 .meta {
-  font-family: var(--meta-font-family);
-  font-feature-settings: var(--meta-font-feature-settings);
-  font-weight: var(--meta-font-weight);
-  text-transform: var(--meta-text-transform);
-  letter-spacing: var(--meta-letter-spacing);
-  color: var(--meta-color);
+    font-family: var(--meta-font-family);
+    font-feature-settings: var(--meta-font-feature-settings);
+    font-weight: var(--meta-font-weight);
+    text-transform: var(--meta-text-transform);
+    letter-spacing: var(--meta-letter-spacing);
+    color: var(--meta-color);
 }
 
 .bold,
@@ -157,48 +133,48 @@ b,
 .b,
 strong,
 .strong {
-  font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
 }
 
 .normal,
 .fw-normal {
-  font-weight: normal;
+    font-weight: normal;
 }
 
 .fw-100 {
-  font-weight: 100;
+    font-weight: 100;
 }
 
 .fw-200 {
-  font-weight: 200;
+    font-weight: 200;
 }
 
 .fw-300 {
-  font-weight: 400;
+    font-weight: 400;
 }
 
 .fw-400 {
-  font-weight: 400;
+    font-weight: 400;
 }
 
 .fw-500 {
-  font-weight: 500;
+    font-weight: 500;
 }
 
 .fw-600 {
-  font-weight: 600;
+    font-weight: 600;
 }
 
 .fw-700 {
-  font-weight: 700;
+    font-weight: 700;
 }
 
 .fw-800 {
-  font-weight: 800;
+    font-weight: 800;
 }
 
 .fw-900 {
-  font-weight: 900;
+    font-weight: 900;
 }
 
 .italic,
@@ -208,97 +184,97 @@ cite,
 .cite,
 em,
 .em {
-  font-style: italic;
+    font-style: italic;
 }
 
 .normal {
-  font-style: normal;
+    font-style: normal;
 }
 
 .caps,
 .uppercase {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .lowercase {
-  text-transform: lowercase;
+    text-transform: lowercase;
 }
 
 .no-lsp,
 .lsp-0 {
-  letter-spacing: none;
+    letter-spacing: none;
 }
 
 .lsp-1 {
-  letter-spacing: 0.05em;
+    letter-spacing: 0.05em;
 }
 
 .lsp-2,
 .lsp {
-  letter-spacing: 0.1em;
+    letter-spacing: 0.1em;
 }
 
 .lsp-3 {
-  letter-spacing: 0.15em;
+    letter-spacing: 0.15em;
 }
 
 .lsp-4 {
-  letter-spacing: 0.2em;
+    letter-spacing: 0.2em;
 }
 
 .underline,
 u {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .ft-num-normal {
-  font-variant-numeric: "normal";
+    font-variant-numeric: "normal";
 }
 
 .ft-num-ordinal {
-  font-feature-settings: "ordn";
-  font-variant-numeric: ordinal;
+    font-feature-settings: "ordn";
+    font-variant-numeric: ordinal;
 }
 
 .ft-num-zero {
-  font-feature-settings: "zero";
-  font-variant-numeric: slashed-zero;
+    font-feature-settings: "zero";
+    font-variant-numeric: slashed-zero;
 }
 
 .ft-num-onum {
-  font-feature-settings: "onum";
-  font-variant-numeric: oldstyle-nums;
+    font-feature-settings: "onum";
+    font-variant-numeric: oldstyle-nums;
 }
 
 .ft-num-lnum {
-  font-feature-settings: "lnum";
-  font-variant-numeric: lining-nums;
+    font-feature-settings: "lnum";
+    font-variant-numeric: lining-nums;
 }
 
 .ft-num-tab {
-  font-feature-settings: "tnum";
-  font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+    font-variant-numeric: tabular-nums;
 }
 
 .no-wrap {
-  white-space: nowrap;
+    white-space: nowrap;
 }
 
 .break-word {
-  word-break: break-word;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+    word-break: break-word;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .no-deco {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .truncate {
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 s,
@@ -306,54 +282,53 @@ s,
 .strike,
 del,
 .del {
-  text-decoration: line-through;
+    text-decoration: line-through;
 }
 
 sub,
 sup,
 .sub,
 .sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
 }
 
 sub,
 .sub {
-  bottom: -0.25em;
+    bottom: -0.25em;
 }
 
 sup,
 .sup {
-  top: -0.5em;
+    top: -0.5em;
 }
 
 mark,
 .mark {
-  background: var(--mark-background);
-  padding-top: 0.1em;
-  padding-bottom: 0.1em;
+    background: var(--mark-background);
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
 }
 
 kbd,
 .kbd {
-  background: var(--kbd-background);
-  border-radius: var(--space-d4);
-  border: 1px solid var(--base-color);
-  padding: 0.1em;
-  font-family: var(--mono-font-family);
-  white-space: nowrap;
+    background: var(--kbd-background);
+    border-radius: var(--space-d4);
+    border: 1px solid var(--base-color);
+    padding: 0.1em;
+    font-family: var(--mono-font-family);
+    white-space: nowrap;
 }
 
-
 .mono {
-  font-family: var(--mono-font-family);
-  font-feature-settings: var(--mono-font-feature-settings);
+    font-family: var(--mono-font-family);
+    font-feature-settings: var(--mono-font-feature-settings);
 }
 
 address {
-  font-style: normal;
+    font-style: normal;
 }
 
 h1,
@@ -362,255 +337,248 @@ h3,
 h4,
 h5,
 h6 {
-  text-transform: var(--heading-text-transform);
-  letter-spacing: var(--heading-letter-spacing);
-  font-weight: var(--heading-font-weight);
-  font-family: var(--heading-font-family);
-  font-feature-settings: var(--heading-font-feature-settings);
-  color: var(--heading-color);
-  scroll-margin-top: var(--scroll-margin-top);
+    text-transform: var(--heading-text-transform);
+    letter-spacing: var(--heading-letter-spacing);
+    font-weight: var(--heading-font-weight);
+    font-family: var(--heading-font-family);
+    font-feature-settings: var(--heading-font-feature-settings);
+    color: var(--heading-color);
+    scroll-margin-top: var(--scroll-margin-top);
 }
 
 h1 {
-  font-size: var(--fs-h1);
-  line-height: var(--lh-h1);
-  margin-top: var(--mrt-h1);
-  margin-bottom: var(--mrb-h1);
+    font-size: var(--fs-h1);
+    line-height: var(--lh-h1);
+    margin-top: var(--mrt-h1);
+    margin-bottom: var(--mrb-h1);
 }
 
 h2 {
-  font-size: var(--fs-h2);
-  line-height: var(--lh-h2);
-  margin-top: var(--mrt-h2);
-  margin-bottom: var(--mrb-h2);
+    font-size: var(--fs-h2);
+    line-height: var(--lh-h2);
+    margin-top: var(--mrt-h2);
+    margin-bottom: var(--mrb-h2);
 }
 
 h3 {
-  font-size: var(--fs-h3);
-  line-height: var(--lh-h3);
-  margin-top: var(--mrt-h3);
-  margin-bottom: var(--mrb-h3);
+    font-size: var(--fs-h3);
+    line-height: var(--lh-h3);
+    margin-top: var(--mrt-h3);
+    margin-bottom: var(--mrb-h3);
 }
 
 h4 {
-  font-size: var(--fs-h4);
-  line-height: var(--lh-h4);
-  margin-top: var(--mrt-h4);
-  margin-bottom: var(--mrb-h4);
+    font-size: var(--fs-h4);
+    line-height: var(--lh-h4);
+    margin-top: var(--mrt-h4);
+    margin-bottom: var(--mrb-h4);
 }
 
 h5 {
-  font-size: var(--fs-h5);
-  line-height: var(--lh-h5);
-  margin-top: var(--mrt-h5);
-  margin-bottom: var(--mrb-h5);
+    font-size: var(--fs-h5);
+    line-height: var(--lh-h5);
+    margin-top: var(--mrt-h5);
+    margin-bottom: var(--mrb-h5);
 }
 
 h6 {
-  font-size: var(--fs-h6);
-  line-height: var(--lh-h6);
-  margin-top: var(--mrt-h6);
-  margin-bottom: var(--mrb-h6);
+    font-size: var(--fs-h6);
+    line-height: var(--lh-h6);
+    margin-top: var(--mrt-h6);
+    margin-bottom: var(--mrb-h6);
 }
 
 p {
-  margin-top: var(--vertical-rhythm);
-  margin-bottom: var(--vertical-rhythm);
+    margin-top: var(--vertical-rhythm);
+    margin-bottom: var(--vertical-rhythm);
 }
 
 .indent p {
-  margin-top: 0;
-  margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .indent p+p {
-  text-indent: var(--horizontal-rhythm);
+    text-indent: var(--horizontal-rhythm);
 }
 
 p.indent {
-  text-indent: var(--horizontal-rhythm) !important;
+    text-indent: var(--horizontal-rhythm) !important;
 }
 
 .no-indent p+p {
-  text-indent: 0;
+    text-indent: 0;
 }
 
 p.no-indent {
-  text-indent: 0 !important;
+    text-indent: 0 !important;
 }
 
 .code,
 code,
 pre,
 .pre {
-  font-family: var(--code-font-family);
-  font-size: var(--fs-mono);
+    font-family: var(--code-font-family);
+    font-size: var(--fs-mono);
 }
 
 .code,
 code {
-  color: var(--code-color);
-  background: var(--code-background);
+    color: var(--code-color);
+    background: var(--code-background);
 }
 
 pre,
 .pre {
-  margin-top: var(--mrt-pre);
-  margin-bottom: var(--mrb-pre);
-  padding-top: var(--space-d2);
-  padding-bottom: var(--space-d2);
-  border-top: var(--pre-border);
-  border-bottom: var(--pre-border);
-  color: var(--pre-color);
-  background: var(--pre-background);
-  white-space: pre;
-  word-break: normal;
-  /*for safari */
-  overflow-wrap: normal;
-  /*for safari */
-  overflow-x: auto;
-
+    margin-top: var(--mrt-pre);
+    margin-bottom: var(--mrb-pre);
+    padding-top: var(--space-d2);
+    padding-bottom: var(--space-d2);
+    border-top: var(--pre-border);
+    border-bottom: var(--pre-border);
+    color: var(--pre-color);
+    background: var(--pre-background);
+    white-space: pre;
+    word-break: normal;
+    /*for safari */
+    overflow-wrap: normal;
+    /*for safari */
+    overflow-x: auto;
 }
 
 .tag {
-  white-space: nowrap;
-  padding: var(--space-d4);
-  border-radius: var(--space-d4);
-  display: inline-block;
-  line-height: var(--lh);
+    white-space: nowrap;
+    padding: var(--space-d4);
+    border-radius: var(--space-d4);
+    display: inline-block;
+    line-height: var(--lh);
 }
 
 a {
-  color: var(--link-color);
-  text-decoration: var(--link-text-decoration);
-  text-decoration-color: var(--link-text-decoration-color);
-  word-break: break-word;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+    color: var(--link-color);
+    text-decoration: var(--link-text-decoration);
+    text-decoration-color: var(--link-text-decoration-color);
+    word-break: break-word;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
-
 
 blockquote {
-  margin-top: var(--mrt-blockquote);
-  margin-bottom: var(--mrb-blockquote);
-  margin-right: 0;
-  margin-left: calc(var(--horizontal-rhythm) * -1);
-  padding-left: calc(var(--horizontal-rhythm) - var(--space-d2));
-  border-left: var(--space-d2) solid var(--br-blockquote-color);
-  font-style: var(--blockquote-font-style);
+    margin-top: var(--mrt-blockquote);
+    margin-bottom: var(--mrb-blockquote);
+    margin-right: 0;
+    margin-left: calc(var(--horizontal-rhythm) * -1);
+    padding-left: calc(var(--horizontal-rhythm) - var(--space-d2));
+    border-left: var(--space-d2) solid var(--br-blockquote-color);
+    font-style: var(--blockquote-font-style);
 }
+
 
 /* consider x-layout */
+
 [class^="breakout"] blockquote {
-  margin-left: 0;
-}
-
-@media (--breakpoint-x-indent) {
-  blockquote {
     margin-left: 0;
-  }
 }
 
+@media (--breakpoint-max-md) {
+    blockquote {
+        margin-left: 0;
+    }
+}
 
 blockquote p {
-  margin-top: 0;
-  margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 blockquote p+p {
-  text-indent: var(--horizontal-rhythm);
+    text-indent: var(--horizontal-rhythm);
 }
 
 q,
 .q,
 .quote,
 blockquote {
-  quotes: var(--quotes);
+    quotes: var(--quotes);
 }
 
 html[lang="de-DE"] q,
 html[lang="de-DE"] .q,
 html[lang="de-DE"] .quote,
 html[lang="de-DE"] blockquote {
-  quotes: var(--quotes-de);
+    quotes: var(--quotes-de);
 }
 
-
 figure {
-  margin-top: var(--mrt-figure);
-  margin-bottom: var(--mrb-figure);
-  margin-left: 0;
-  margin-right: 0;
+    margin-top: var(--mrt-figure);
+    margin-bottom: var(--mrb-figure);
+    margin-left: 0;
+    margin-right: 0;
 }
 
 figcaption,
 blockquote footer,
 blockquote header {
-  margin-top: 0;
-  margin-bottom: 0;  
-  font-family: var(--figcaption-font-family);
-  font-style: normal;
-  font-size: var(--figcaption-font-size);
-  line-height: var(--lh-2);
-  max-width: var(--regular-width);
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: var(--figcaption-font-family);
+    font-style: normal;
+    font-size: var(--figcaption-font-size);
+    line-height: var(--lh-2);
+    max-width: var(--regular-width);
 }
 
 figcaption {
-  margin-top: 0;
-  margin-bottom: var(--mrb-figcaption);
+    margin-top: 0;
+    margin-bottom: var(--mrb-figcaption);
 }
 
-figure > *+figcaption,
+figure>*+figcaption,
 blockquote footer {
-  margin-top: var(--mrt-figcaption);
-  margin-bottom: 0;
+    margin-top: var(--mrt-figcaption);
+    margin-bottom: 0;
 }
 
 blockquote footer::before {
-  content: "— ";
+    content: "— ";
 }
 
 blockquote header {
-  margin-top: 0;
-  margin-bottom: var(--mrb-figcaption);
+    margin-top: 0;
+    margin-bottom: var(--mrb-figcaption);
 }
 
 blockquote header::after {
-  content: " —";
+    content: " —";
 }
-
-
-
 
 @media(--breakpoint-max-sm) {
-
-  figcaption,
-  blockquote footer {
-    max-width: unset;
-  }
+    figcaption,
+    blockquote footer {
+        max-width: unset;
+    }
 }
 
-
 hr {
-  border: 0;
-  text-align: center;
-  margin-top: var(--mrt-hr);
-  margin-bottom: var(--mrb-hr);
+    border: 0;
+    text-align: center;
+    margin-top: var(--mrt-hr);
+    margin-bottom: var(--mrb-hr);
 }
 
 hr::after {
-  content: var(--hr-content);
-  white-space: pre;
+    content: var(--hr-content);
+    white-space: pre;
 }
 
 .vertical-lr {
-  writing-mode: vertical-lr;
+    writing-mode: vertical-lr;
 }
 
 .vertical-rl {
-  writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
 }
 
 .horizontal-tb {
-  writing-mode: horizontal-tb;
+    writing-mode: horizontal-tb;
 }

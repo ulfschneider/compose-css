@@ -1,68 +1,85 @@
-.h-unset, .h-unset {
+.h-unset,
+.h-unset {
     height: unset;
 }
 
-.h-sm, .h-sm {
+.h-sm,
+.h-sm {
     height: var(--small-width);
 }
 
-.h-rg, .h-rg {
+.h-rg,
+.h-rg {
     height: var(--regular-width);
 }
 
-.h-md, .h-md {
+.h-md,
+.h-md {
     height: var(--mid-width);
 }
 
-.h-lg, .h-lg {
+.h-lg,
+.h-lg {
     height: var(--large-width);
 }
 
-.h-d5, .h-d5 {
+.h-d5,
+.h-d5 {
     height: var(--space-d5);
 }
 
-.h-d4, .h-d4 {
+.h-d4,
+.h-d4 {
     height: var(--space-d4);
 }
 
-.h-d3, .h-d3 {
+.h-d3,
+.h-d3 {
     height: var(--space-d3);
 }
 
-.h-d2, .h-d2 {
+.h-d2,
+.h-d2 {
     height: var(--space-d2);
 }
 
-.h-d1, .h-d1 {
+.h-d1,
+.h-d1 {
     height: var(--space-d1);
 }
 
-.h, .h {
+.h,
+.h {
     height: var(--space);
 }
 
-.h-1, .h-2 {
+.h-1,
+.h-2 {
     height: var(--space-1)
 }
 
-.h-2, .h-2 {
+.h-2,
+.h-2 {
     height: var(--space-2);
 }
 
-.h-3, .h-3 {
+.h-3,
+.h-3 {
     height: var(--space-3);
 }
 
-.h-4, .h-4 {
+.h-4,
+.h-4 {
     height: var(--space-4);
 }
 
-.h-5, .h-5 {
+.h-5,
+.h-5 {
     height: var(--space-5);
 }
 
-.h-6, .h-6 {
+.h-6,
+.h-6 {
     height: var(--space-6);
 }
 

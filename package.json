@@ -1,40 +1,40 @@
 {
-  "name": "compose-css",
-  "version": "7.2.7",
-  "description": "Composable CSS Toolkit",
-  "main": "src/compose.css",
-  "style": "css/compose.css",
-  "devDependencies": {
-    "autoprefixer": "^9.8.6",
-    "browser-sync": "^2.26.12",
-    "cssnano": "^4.1.10",
-    "cssstats": "^3.4.1",
-    "file-system": "^2.2.2",
-    "npm-run-all": "^4.1.5",
-    "postcss-calc": "^7.0.2",
-    "postcss-cli": "^6.1.3",
-    "postcss-custom-media": "^7.0.8",
-    "postcss-custom-properties": "^9.1.1",
-    "postcss-discard-comments": "^4.0.2",
-    "postcss-import": "^12.0.1",
-    "postcss-reporter": "^6.0.1"
-  },
-  "scripts": {
-    "start": "run-p \"watch:*\"",
-    "serve": "run-p \"watch:*\"",
-    "watch:build": "postcss src/*.css --dir css --config postcss.config.js --watch",
-    "watch:serve": "browser-sync start --server --files 'css/compose.css' 'index.html'",
-    "build": "node build.js && postcss src/*.css --dir css --config postcss.config.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ulfschneider/compose-css.git"
-  },
-  "author": "Ulf Schneider",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ulfschneider/compose-css/issues"
-  },
-  "homepage": "https://ulf.codes/tools/compose/"
+    "name": "compose-css",
+    "version": "7.3.0",
+    "description": "Composable CSS Toolkit",
+    "main": "src/compose.css",
+    "style": "css/compose.css",
+    "devDependencies": {
+        "autoprefixer": "^9.8.6",
+        "browser-sync": "^2.26.12",
+        "cssnano": "^4.1.10",
+        "cssstats": "^3.4.1",
+        "file-system": "^2.2.2",
+        "npm-run-all": "^4.1.5",
+        "postcss-calc": "^7.0.2",
+        "postcss-cli": "^6.1.3",
+        "postcss-custom-media": "^7.0.8",
+        "postcss-custom-properties": "^9.1.1",
+        "postcss-discard-comments": "^4.0.2",
+        "postcss-import": "^12.0.1",
+        "postcss-reporter": "^6.0.1"
+    },
+    "scripts": {
+        "start": "run-p \"watch:*\"",
+        "serve": "run-p \"watch:*\"",
+        "watch:build": "postcss src/*.css --dir css --config postcss.config.js --watch",
+        "watch:serve": "browser-sync start --server --files 'css/compose.css' 'index.html'",
+        "build": "node build.js && postcss src/*.css --dir css --config postcss.config.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ulfschneider/compose-css.git"
+    },
+    "author": "Ulf Schneider",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ulfschneider/compose-css/issues"
+    },
+    "homepage": "https://ulf.codes/tools/compose/"
 }

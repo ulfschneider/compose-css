@@ -2,7 +2,6 @@
     --alternate-row-color: var(--neutral-5);
     --alternate-col-color: var(--neutral-5);
     --underline-row-color: var(--neutral-3);
-
     --mrt-table: var(--vertical-rhythm);
     --mrb-table: var(--vertical-rhythm);
 }
@@ -35,7 +34,6 @@ table {
     border-bottom: 1px solid var(--underline-row-color);
 }
 
-
 td {
     vertical-align: top;
 }
@@ -49,7 +47,6 @@ th,
 td {
     padding: var(--space-d3) var(--space-d1);
 }
-
 
 tr:first-child th,
 tr:first-child td {
