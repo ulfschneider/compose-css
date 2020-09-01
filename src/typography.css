@@ -1,5 +1,5 @@
 :root {
-    --font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-family: sans-serif;
     --font-feature-settings: unset;
     --font-weight-bold: 700;
     --font-weight-normal: 400;
@@ -20,6 +20,7 @@
     --code-font-family: var(--mono-font-family);
     --pre-border: var(--border-w-default) dotted var(--pre-border-color);
     --blockquote-border: var(--pre-border);
+    --blockquote-font-style: italic;
     --link-text-decoration: underline;
     --link-text-decoration-color: unset;
     --text-underline-offset: 0.25em;
@@ -54,7 +55,6 @@
     --hr-content: "◊      ◊      ◊";
     --quotes: """ """"'""'";
     --quotes-de: """ """"'""'";
-    --blockquote-font-style: italic;
     --scroll-margin-top: var(--vertical-rhythm);
     font-family: var(--font-family);
     font-feature-settings: var(--font-feature-settings);
