@@ -1,7 +1,10 @@
 :root {
-    --alternate-row-color: var(--neutral-5);
-    --alternate-col-color: var(--neutral-5);
-    --underline-row-color: var(--neutral-3);
+    --table-alternate-row-color: var(--neutral-5);
+    --table-alternate-col-color: var(--neutral-5);
+    --table-underline-row-color: var(--base-color);
+    --table-underline: var(--border-w-default) solid var(--table-underline-row-color);
+    --table-font-family: var(--font-family);
+    --table-font-size: var(--figcaption-font-size);
     --mrt-table: var(--vertical-rhythm);
     --mrb-table: var(--vertical-rhythm);
 }
@@ -12,10 +15,21 @@ table {
     margin-top: var(--mrt-table);
     margin-bottom: var(--mrb-table);
     text-align: left;
+    font-family: var(--table-font-family);
+    font-size: var(--table-font-size);
+    line-height: var(--lh-2);
+}
+
+table caption {
+    margin: var(--vertical-rhythm) 0;
+    text-align: left;    
+    font-style: normal;    
+    max-width: var(--regular-width);
+    font-family: var(--figcaption-font-family);    
 }
 
 .alternate-rows tr:nth-child(even) {
-    background: var(--alternate-row-color);
+    background: var(--table-alternate-row-color);
 }
 
 .alternate-rows tr:nth-child(odd) {
@@ -23,7 +37,7 @@ table {
 }
 
 .alternate-cols col:nth-child(even) {
-    background: var(--alternate-col-color);
+    background: var(--table-alternate-col-color);
 }
 
 .alternate-cols col:nth-child(odd) {
@@ -31,7 +45,7 @@ table {
 }
 
 .underline-rows tr {
-    border-bottom: 1px solid var(--underline-row-color);
+    border-bottom: var(--table-underline);
 }
 
 td {
@@ -41,20 +55,12 @@ td {
 th {
     vertical-align: bottom;
     font-weight: var(--font-weight-bold);
+    font-family: var(--heading-font-family);
 }
 
 th,
 td {
-    padding: var(--space-d3) var(--space-d1);
-}
-
-tr:first-child th,
-tr:first-child td {
-    padding-top: 0;
-}
-
-tr:last-child td {
-    padding-bottom: 0;
+    padding: var(--space-d2) var(--space-d1);
 }
 
 th:first-child,
