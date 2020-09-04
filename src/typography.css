@@ -390,8 +390,8 @@ h6 {
 }
 
 p {
-    margin-top: var(--vertical-rhythm);
-    margin-bottom: var(--vertical-rhythm);
+    margin-top: var(--mrt-paragraph);
+    margin-bottom: var(--mrb-paragraph);
 }
 
 .indent p {
@@ -535,6 +535,7 @@ blockquote footer,
 blockquote header {
     margin-top: 0;
     margin-bottom: 0;
+    text-align: left;
     font-family: var(--figcaption-font-family);
     font-style: normal;
     font-size: var(--figcaption-font-size);
