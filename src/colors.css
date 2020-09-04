@@ -78,7 +78,8 @@
     --base-color: var(--neutral-d5);
     --base-background: white;
     --mark-background: yellow;
-    --kbd-background: var(--neutral-4);
+    --kbd-background: var(--pre-background);
+    --kbd-border-color: var(--form-field-border-color);
     --link-color: var(--base-color);
     --text-decoration-color: unset;
     --code-background: transparent;
