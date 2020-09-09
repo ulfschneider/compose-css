@@ -318,8 +318,9 @@ kbd,
     background: var(--kbd-background);
     border-radius: var(--space-d4);
     border: 1px solid var(--kbd-border-color);
-    padding: 0.1em;
-    font-family: var(--mono-font-family);
+    padding: 0.1em 0.3em;
+    font-family: var(--meta-font-family);
+    letter-spacing: 0.1em;
     white-space: nowrap;
 }
 
