@@ -77,3 +77,7 @@
 .align-baseline {
     align-items: baseline;
 }
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
