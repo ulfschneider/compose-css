@@ -88,23 +88,23 @@ ul ol li::before {
 
 /* have the breakpoints before the .indent styles */
 
+
+/* consider x-layout */
+
 @media (--breakpoint-max-md) {
-    .x ul,
-    .x ol {
+    [class^="x"] ul,
+    [class^="x"] ol {
         padding-left: var(--horizontal-rhythm);
     }
 }
 
-
-/* consider x-layout */
-
-[class*="breakout"] ul,
-[class*="breakout"] ol {
+[class*="breakout-wide"] ul,
+[class*="breakout-wide"] ol {
     padding-left: var(--horizontal-rhythm);
 }
 
 
-/* consider x-grid */
+/* consider x-columns */
 
 ul.indent,
 ol.indent,
