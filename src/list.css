@@ -98,6 +98,8 @@ ul ol li::before {
     }
 }
 
+table ul,
+table ol,
 [class*="breakout-wide"] ul,
 [class*="breakout-wide"] ol {
     padding-left: var(--horizontal-rhythm);
