@@ -323,7 +323,7 @@ kbd,
     white-space: nowrap;
     text-align: center;
     display: inline-block;
-    min-width: var(--space);    
+    min-width: var(--space);
 }
 
 .mono {
@@ -485,6 +485,9 @@ a {
     color: var(--link-color);
     text-decoration: var(--link-text-decoration);
     text-decoration-color: var(--link-text-decoration-color);
+}
+
+:not(table) a {
     word-break: break-word;
     word-wrap: break-word;
     overflow-wrap: break-word;
