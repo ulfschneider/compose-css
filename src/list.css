@@ -108,18 +108,14 @@ table ol,
 ul.indent,
 ol.indent,
 [class^="columns"] ul,
-[class^="columns"] ol,
-table ul,
-table ol {
+[class^="columns"] ol {
     padding-left: 0;
 }
 
 ol.indent li::before,
 ul.indent li::before,
 [class^="columns"] ol li::before,
-[class^="columns"] ul li::before,
-table ol li::before,
-table ul li::before {
+[class^="columns"] ul li::before {
     margin-left: 0;
     padding-left: 0;
 }
