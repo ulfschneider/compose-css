@@ -105,20 +105,21 @@ table ol,
     padding-left: var(--horizontal-rhythm);
 }
 
-
-/* consider x-columns */
-
 ul.indent,
 ol.indent,
 [class^="columns"] ul,
-[class^="columns"] ol {
+[class^="columns"] ol,
+table ul,
+table ol {
     padding-left: 0;
 }
 
 ol.indent li::before,
 ul.indent li::before,
 [class^="columns"] ol li::before,
-[class^="columns"] ul li::before {
+[class^="columns"] ul li::before,
+table ol li::before,
+table ul li::before {
     margin-left: 0;
     padding-left: 0;
 }
