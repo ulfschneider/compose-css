@@ -22,9 +22,6 @@
     --blockquote-border: var(--pre-border);
     --blockquote-font-style: italic;
     --link-text-decoration: underline;
-    --link-text-decoration-color: unset;
-    --text-underline-offset: 0.25em;
-    --text-decoration-thickness: 1.5px;
     --font-variant-numeric: normal;
     --vertical-rhythm: var(--space);
     --horizontal-rhythm: var(--space-1);
@@ -59,8 +56,6 @@
     font-family: var(--font-family);
     font-feature-settings: var(--font-feature-settings);
     font-weight: var(--font-weight-normal);
-    text-underline-offset: var(--text-underline-offset);
-    text-decoration-thickness: var(--text-decoration-thickness);
     font-variant-numeric: var(--font-variant-numeric);
 }
 
@@ -78,18 +73,15 @@
 @media (hover: hover) {
     a:hover {
         color: var(--link-hover-color);
-        text-decoration-color: var(--link-hover-color);
     }
 }
 
 a:active {
     color: var(--link-active-color);
-    text-decoration-color: var(--link-active-color);
 }
 
 a:focus {
     color: var(--link-focus-color);
-    text-decoration-color: var(--link-focus-color);
 }
 
 .font-family-inherit {
@@ -484,7 +476,6 @@ blockquote::before {
 a {
     color: var(--link-color);
     text-decoration: var(--link-text-decoration);
-    text-decoration-color: var(--link-text-decoration-color);
 }
 
 a:not(table a) {
