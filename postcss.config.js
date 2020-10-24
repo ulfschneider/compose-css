@@ -4,10 +4,10 @@ module.exports = {
         require('postcss-custom-media'),
         require('postcss-custom-properties'),
         require('postcss-calc'),
-        require('cssstats'),
         require('postcss-discard-comments'),
         require('autoprefixer'),
         require('postcss-reporter'),
+        require('cssstats'),
         require('cssnano'),
     ]
 }
