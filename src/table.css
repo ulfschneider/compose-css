@@ -22,10 +22,10 @@ table {
 
 table caption {
     margin: var(--vertical-rhythm) 0;
-    text-align: left;    
-    font-style: normal;    
+    text-align: left;
+    font-style: normal;
     max-width: var(--regular-width);
-    font-family: var(--figcaption-font-family);    
+    font-family: var(--figcaption-font-family);
 }
 
 .alternate-rows tr:nth-child(even) {
@@ -56,6 +56,10 @@ th {
     vertical-align: bottom;
     font-weight: var(--font-weight-bold);
     font-family: var(--heading-font-family);
+}
+
+tr:not(first-child) th {
+    vertical-align: top;
 }
 
 th,
