@@ -77,3 +77,81 @@
 .align-baseline {
     align-items: baseline;
 }
+
+
+
+.order-0 {
+    order: 0;
+}
+
+.order-1 {
+    order: 1;
+}
+
+.order-2 {
+    order: 2;
+}
+
+.order-3 {
+    order: 3;
+}
+
+.order-4 {
+    order: 4;
+}
+
+.order-5 {
+    order: 5;
+}
+
+.order-6 {
+    order: 6;
+}
+
+.order-7 {
+    order: 7;
+}
+
+.order-8 {
+    order: 8;
+}
+
+.order-9 {
+    order: 9;
+}
+
+.order-d1 {
+    order: -1;
+}
+
+.order-d2 {
+    order: -2;
+}
+
+.order-d3 {
+    order: -3;
+}
+
+.order-d4 {
+    order: -4;
+}
+
+.order-d5 {
+    order: -5;
+}
+
+.order-d6 {
+    order: -6;
+}
+
+.order-d7 {
+    order: -7;
+}
+
+.order-d8 {
+    order: -8;
+}
+
+.order-d9 {
+    order: -9;
+}
