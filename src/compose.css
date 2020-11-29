@@ -4,7 +4,7 @@
 @import "x-layout";
 @import "x-columns";
 @import "flex-box";
-@import "flox-box-breakpoints";
+@import "flex-box-breakpoints";
 @import "list";
 @import "pointer";
 @import "type-scale";
