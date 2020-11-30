@@ -20,6 +20,7 @@
 @import "margin";
 @import "margin-breakpoints";
 @import "padding";
+@import "padding-breakpoints";
 @import "gap";
 @import "width";
 @import "width-breakpoints";

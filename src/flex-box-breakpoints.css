@@ -156,6 +156,10 @@
         order: -9;
     }
 
+    .sm\:flex-grow-0 {
+        flex-grow: 0;
+    }
+
     .sm\:flex-grow-1 {
         flex-grow: 1;
     }
@@ -170,6 +174,26 @@
 
     .sm\:flex-grow-4 {
         flex-grow: 4;
+    }
+
+    .sm\:flex-shrink-0 {
+        flex-shrink: 0;
+    }
+    
+    .sm\:flex-shrink-1 {
+        flex-shrink: 1;
+    }
+    
+    .sm\:flex-shrink-2 {
+        flex-shrink: 2;
+    }
+    
+    .sm\:lex-shrink-3 {
+        flex-shrink: 3;
+    }
+    
+    .sm\:flex-shrink-4 {
+        flex-shrink: 4;
     }
 }
 
@@ -331,6 +355,10 @@
         order: -9;
     }
 
+    .rg\:flex-grow-0 {
+        flex-grow: 0;
+    }
+
     .rg\:flex-grow-1 {
         flex-grow: 1;
     }
@@ -345,6 +373,26 @@
 
     .rg\:flex-grow-4 {
         flex-grow: 4;
+    }
+
+    .rg\:flex-shrink-0 {
+        flex-shrink: 0;
+    }
+    
+    .rg\:flex-shrink-1 {
+        flex-shrink: 1;
+    }
+    
+    .rg\:flex-shrink-2 {
+        flex-shrink: 2;
+    }
+    
+    .rg\:lex-shrink-3 {
+        flex-shrink: 3;
+    }
+    
+    .rg\:flex-shrink-4 {
+        flex-shrink: 4;
     }
 }
 
@@ -506,6 +554,10 @@
         order: -9;
     }
 
+    .md\:flex-grow-0 {
+        flex-grow: 0;
+    }
+
     .md\:flex-grow-1 {
         flex-grow: 1;
     }
@@ -520,6 +572,26 @@
 
     .md\:flex-grow-4 {
         flex-grow: 4;
+    }
+
+    .md\:flex-shrink-0 {
+        flex-shrink: 0;
+    }
+    
+    .md\:flex-shrink-1 {
+        flex-shrink: 1;
+    }
+    
+    .md\:flex-shrink-2 {
+        flex-shrink: 2;
+    }
+    
+    .md\:lex-shrink-3 {
+        flex-shrink: 3;
+    }
+    
+    .md\:flex-shrink-4 {
+        flex-shrink: 4;
     }
 }
 
@@ -681,6 +753,10 @@
         order: -9;
     }
 
+    .lg\:flex-grow-0 {
+        flex-grow: 0;
+    }
+
     .lg\:flex-grow-1 {
         flex-grow: 1;
     }
@@ -695,5 +771,25 @@
 
     .lg\:flex-grow-4 {
         flex-grow: 4;
+    }
+
+    .lg\:flex-shrink-0 {
+        flex-shrink: 0;
+    }
+    
+    .lg\:flex-shrink-1 {
+        flex-shrink: 1;
+    }
+    
+    .lg\:flex-shrink-2 {
+        flex-shrink: 2;
+    }
+    
+    .lg\:lex-shrink-3 {
+        flex-shrink: 3;
+    }
+    
+    .lg\:flex-shrink-4 {
+        flex-shrink: 4;
     }
 }
