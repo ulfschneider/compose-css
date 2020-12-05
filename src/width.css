@@ -5,12 +5,10 @@
     --large-width: 60rem;
 }
 
-.w-unset,
 .w-unset {
     width: unset;
 }
 
-.w-100,
 .w-100 {
     width: 100%;
 }

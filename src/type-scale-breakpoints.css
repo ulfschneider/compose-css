@@ -364,10 +364,10 @@
     .lg\:fs-8 {
         font-size: var(--fs-8);
     }
-    .lg\:9 {
+    .lg\:fs-9 {
         font-size: var(--fs-9);
     }
-    .lg\:10 {
+    .lg\:fs-10 {
         font-size: var(--fs-10);
     }
     .lg\:lh-0 {
