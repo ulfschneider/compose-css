@@ -102,6 +102,17 @@
     margin-left: calc(50% - 50vw);
 }
 
+.split {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: var(--horizontal-rhythm);
+    row-gap: var(--mrb-figure);
+}
+
+.split>* {
+    margin: 0;
+}
+
 
 /* Nicolas Gallaghers Clearfix solution
    Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
