@@ -32,7 +32,7 @@
     --primary-5: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 5 * var(--primary-step)));
     --accent-one-h: 3.1;
     --accent-one-s: 53.7%;
-    --accent-one-l: 53%; 
+    --accent-one-l: 53%;
     --accent-one-step: calc((100% - var(--accent-one-l)) * var(--color-step-factor));
     --accent-one-d5: hsl(var(--accent-one-h), var(--accent-one-s), calc(var(--accent-one-l) - 5 * var(--accent-one-step)));
     --accent-one-d4: hsl(var(--accent-one-h), var(--accent-one-s), calc(var(--accent-one-l) - 4 * var(--accent-one-step)));
@@ -86,11 +86,11 @@
     --code-color: var(--base-color);
     --pre-border-color: var(--neutral);
     --pre-background: var(--neutral-5);
-    --blockquote-background: var(--pre-background);
     --pre-color: var(--base-color);
     --heading-color: var(--base-color);
     --meta-color: var(--neutral-d2);
     --li-prefix-color: var(--heading-color);
+    --blockquote-prefix-color: var(--li-prefix-color);
     --link-color: var(--base-color);
     --link-hover-color: var(--primary);
     --link-active-color: var(--primary);

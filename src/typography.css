@@ -19,7 +19,6 @@
     --mono-font-feature-settings: var(--font-feature-settings);
     --code-font-family: var(--mono-font-family);
     --pre-border: var(--border-w-default) dotted var(--pre-border-color);
-    --blockquote-border: var(--pre-border);
     --blockquote-font-style: italic;
     --link-text-decoration: underline;
     --font-variant-numeric: normal;
@@ -39,10 +38,10 @@
     --mrb-h5: var(--vertical-rhythm);
     --mrt-h6: var(--space-2);
     --mrb-h6: var(--vertical-rhythm);
-    --mrt-blockquote: var(--space-1);
-    --mrb-blockquote: var(--space-1);
     --mrt-figure: var(--space-2);
     --mrb-figure: var(--space-2);
+    --mrt-blockquote: var(--mrt-figure);
+    --mrb-blockquote: var(--mrb-figure);
     --mrt-figcaption: var(--vertical-rhythm);
     --mrb-figcaption: var(--vertical-rhythm);
     --mrt-pre: var(--vertical-rhythm);
@@ -445,12 +444,9 @@ blockquote {
     margin-bottom: var(--mrb-blockquote);
     margin-left: 0;
     margin-right: 0;
-    padding-left: var(--horizontal-rhythm);
+    padding: 0;
     font-style: var(--blockquote-font-style);
     background: var(--blockquote-background);
-    padding-top: var(--space-d2);
-    padding-bottom: var(--space-d2);
-    padding-right: var(--space-d2);
     border-top: var(--blockquote-border);
     border-bottom: var(--blockquote-border);
 }
@@ -460,7 +456,8 @@ blockquote::before {
     margin-left: calc(-1 * var(--horizontal-rhythm));
     position: absolute;
     line-height: 1;
-    font-size: var(--fs-4);
+    font-size: var(--fs-5);
+    color: var(--blockquote-prefix-color);
 }
 
 .tag {
