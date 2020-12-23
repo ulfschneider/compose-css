@@ -5,8 +5,8 @@
     --table-underline: var(--border-w-default) solid var(--table-underline-row-color);
     --table-font-family: var(--font-family);
     --table-font-size: var(--figcaption-font-size);
-    --mrt-table: var(--vertical-rhythm);
-    --mrb-table: var(--vertical-rhythm);
+    --mrt-table: var(--mrt-figure);
+    --mrb-table: var(--mrb-figure);
 }
 
 table {
@@ -18,6 +18,12 @@ table {
     font-family: var(--table-font-family);
     font-size: var(--table-font-size);
     line-height: var(--lh-2);
+    display: block;
+    overflow-x: auto;
+}
+
+table table {
+    margin: 0;
 }
 
 table caption {
