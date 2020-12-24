@@ -18,8 +18,6 @@ table {
     font-family: var(--table-font-family);
     font-size: var(--table-font-size);
     line-height: var(--lh-2);
-    display: block;
-    overflow-x: auto;
 }
 
 table table {
