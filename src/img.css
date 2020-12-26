@@ -3,7 +3,7 @@ img {
     height: auto;
     vertical-align: top;
     font-family: var(--meta-font-family);
-    font-size: small;
+    font-size: var(--fs-d1);
 }
 
 svg {
