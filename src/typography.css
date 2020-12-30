@@ -62,6 +62,10 @@
     outline: none;
 }
 
+*:target {
+    background: var(--mark-background);
+}
+
 *:focus {
     outline: var(--space-d3) solid var(--link-focus-color);
     outline-offset: var(--space-d4);
