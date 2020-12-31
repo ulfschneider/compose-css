@@ -212,3 +212,30 @@
     -o-box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
 }
+
+
+/* containment */
+
+.contain-content {
+    contain: content;
+}
+
+.contain-strict {
+    contain: strict;
+}
+
+.contain-layout {
+    contain: layout;
+}
+
+.contain-paint {
+    contain: paint;
+}
+
+.contain-size {
+    contain: paint;
+}
+
+.contain-style {
+    contain: style;
+}

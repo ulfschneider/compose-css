@@ -1,10 +1,3 @@
-:root {
-    --z-1: 1000;
-    --z-2: 2000;
-    --z-3: 3000;
-    --z-4: 4000;
-}
-
 @media (--breakpoint-sm) {
     .sm\:inline {
         display: inline;
@@ -162,6 +155,24 @@
         box-decoration-break: clone;
         -o-box-decoration-break: clone;
         -webkit-box-decoration-break: clone;
+    }
+    .sm\:contain-content {
+        contain: content;
+    }
+    .sm\:contain-strict {
+        contain: strict;
+    }
+    .sm\:contain-layout {
+        contain: layout;
+    }
+    .sm\:contain-paint {
+        contain: paint;
+    }
+    .sm\:contain-size {
+        contain: paint;
+    }
+    .sm\:contain-style {
+        contain: style;
     }
 }
 
@@ -323,6 +334,24 @@
         -o-box-decoration-break: clone;
         -webkit-box-decoration-break: clone;
     }
+    .rg\:contain-content {
+        contain: content;
+    }
+    .rg\:contain-strict {
+        contain: strict;
+    }
+    .rg\:contain-layout {
+        contain: layout;
+    }
+    .rg\:contain-paint {
+        contain: paint;
+    }
+    .rg\:contain-size {
+        contain: paint;
+    }
+    .rg\:contain-style {
+        contain: style;
+    }
 }
 
 @media (--breakpoint-md) {
@@ -483,6 +512,24 @@
         -o-box-decoration-break: clone;
         -webkit-box-decoration-break: clone;
     }
+    .md\:contain-content {
+        contain: content;
+    }
+    .md\:contain-strict {
+        contain: strict;
+    }
+    .md\:contain-layout {
+        contain: layout;
+    }
+    .md\:contain-paint {
+        contain: paint;
+    }
+    .md\:contain-size {
+        contain: paint;
+    }
+    .md\:contain-style {
+        contain: style;
+    }
 }
 
 @media (--breakpoint-lg) {
@@ -642,5 +689,23 @@
         box-decoration-break: clone;
         -o-box-decoration-break: clone;
         -webkit-box-decoration-break: clone;
+    }
+    .lg\:contain-content {
+        contain: content;
+    }
+    .lg\:contain-strict {
+        contain: strict;
+    }
+    .lg\:contain-layout {
+        contain: layout;
+    }
+    .lg\:contain-paint {
+        contain: paint;
+    }
+    .lg\:contain-size {
+        contain: paint;
+    }
+    .lg\:contain-style {
+        contain: style;
     }
 }
