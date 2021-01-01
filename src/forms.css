@@ -83,7 +83,6 @@ select {
 label {
     vertical-align: baseline;
     text-transform: var(--heading-text-transform);
-    font-size: var(--fs-d1);
     color: var(--form-label-color);
 }
 
