@@ -94,9 +94,9 @@
     --blockquote-background: transparent;
     --blockquote-border: unset;
     --link-color: var(--base-color);
-    --link-hover-color: var(--primary);
-    --link-active-color: var(--primary);
-    --link-focus-color: var(--primary);
+    --link-hover-color: var(--primary-d1);
+    --link-active-color: var(--primary-d1);
+    --link-focus-color: var(--primary-d1);
     --selection-color: var(--primary-4);
     color: var(--base-color);
 }
