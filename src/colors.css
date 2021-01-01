@@ -95,7 +95,7 @@
     --blockquote-border: unset;
     --link-color: var(--base-color);
     --link-focus-color: var(--primary);
-    --link-hover-color: var(--linki-focus-color);
+    --link-hover-color: var(--link-focus-color);
     --link-active-color: var(--link-focus-color);
     --selection-color: var(--primary-4);
     color: var(--base-color);
