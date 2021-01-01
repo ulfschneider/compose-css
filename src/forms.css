@@ -5,8 +5,8 @@
     --form-radius: var(--rounded);
     --form-field-color: var(--base-color);
     --form-field-border-color: var(--neutral);
-    --caret-color: var(--primary);
-    --form-focus-color: var(--primary);
+    --caret-color: var(--primary-d1);
+    --form-focus-color: var(--primary-d1);
     --form-button-pdx: var(--space-d2);
     --form-button-pdy: var(--space-d2);
     --form-button-background: var(--base-color);
