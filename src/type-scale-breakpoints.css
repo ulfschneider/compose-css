@@ -57,6 +57,12 @@
     .sm\:fs-d1 {
         font-size: var(--fs-d1);
     }
+    .sm\:small {
+        font-size: var(--small);
+    }
+    .sm\:smaller {
+        font-size: var(--smaller);
+    }
     .sm\:fs,
     .sm\:fs-default {
         font-size: var(--fs);
@@ -149,6 +155,12 @@
     }
     .rg\:fs-d1 {
         font-size: var(--fs-d1);
+    }
+    .rg\:small {
+        font-size: var(--small);
+    }
+    .rg\:smaller {
+        font-size: var(--smaller);
     }
     .rg\:fs,
     .rg\:fs-default {
@@ -243,6 +255,12 @@
     .md\:fs-d1 {
         font-size: var(--fs-d1);
     }
+    .md\:small {
+        font-size: var(--small);
+    }
+    .md\:smaller {
+        font-size: var(--smaller);
+    }
     .md\:fs,
     .md\:fs-default {
         font-size: var(--fs);
@@ -335,6 +353,12 @@
     }
     .lg\:fs-d1 {
         font-size: var(--fs-d1);
+    }
+    .lg\:small {
+        font-size: var(--small);
+    }
+    .lg\:smaller {
+        font-size: var(--smaller);
     }
     .lg\:fs,
     .lg\:fs-default {
