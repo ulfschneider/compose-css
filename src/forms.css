@@ -6,7 +6,7 @@
     --form-field-color: var(--base-color);
     --form-field-border-color: var(--neutral);
     --caret-color: var(--primary-d1);
-    --form-focus-color: var(--primary-d1);
+    --form-focus-color: var(--link-focus-color);
     --form-button-pdx: var(--space-d2);
     --form-button-pdy: var(--space-d2);
     --form-button-background: var(--base-color);
@@ -83,7 +83,6 @@ select {
 label {
     vertical-align: baseline;
     text-transform: var(--heading-text-transform);
-    font-size: var(--fs-d1);
     color: var(--form-label-color);
 }
 
