@@ -56,6 +56,8 @@
     font-feature-settings: var(--font-feature-settings);
     font-weight: var(--font-weight-normal);
     font-variant-numeric: var(--font-variant-numeric);
+    --outline: var(--space-d3) solid var(--link-focus-color);
+    --outline-offset: var(--space-d4);
 }
 
 * {
@@ -63,8 +65,8 @@
 }
 
 *:focus {
-    outline: var(--space-d3) solid var(--link-focus-color);
-    outline-offset: var(--space-d4);
+    outline: var(--outline);
+    outline-offset: var(--outline-offset);
 }
 
 @media (hover: hover) {
