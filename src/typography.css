@@ -401,12 +401,16 @@ p.indent {
     text-indent: var(--horizontal-rhythm) !important;
 }
 
-.no-indent p+p {
+.no-indent p {
     text-indent: 0;
+    margin-top: var(--mrt-paragraph);
+    margin-bottom: var(--mrb-paragraph);
 }
 
 p.no-indent {
     text-indent: 0 !important;
+    margin-top: var(--mrt-paragraph) !important;
+    margin-bottom: var(--mrb-paragraph) !important;
 }
 
 .code,
