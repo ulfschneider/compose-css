@@ -7,6 +7,8 @@
     --fs-d1: calc(.9rem);
     --small: var(--fs-d1);
     --smaller: .9em;
+    --large: var(--fs-1);
+    --larger: calc(var(--size-factor) * 1em);
     --fs-1: calc(var(--fs) * var(--size-factor));
     --fs-2: calc(var(--fs-1) * var(--size-factor));
     --fs-3: calc(var(--fs-2) * var(--size-factor));
@@ -48,6 +50,14 @@ small,
 
 .smaller {
     font-size: var(--smaller);
+}
+
+.large {
+    font-size: var(--large);
+}
+
+.larger {
+    font-size: var(--larger);
 }
 
 .h1 {
