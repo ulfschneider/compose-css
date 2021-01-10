@@ -1,4 +1,4 @@
-@media (--breakpoint-sm) {
+@media (--sm) {
     .sm\:miw-unset,
     .sm\:miw-u {
         min-width: unset;
@@ -42,7 +42,7 @@
     }
 }
 
-@media (--breakpoint-rg) {
+@media (--rg) {
     .rg\:miw-unset,
     .rg\:miw-u {
         min-width: unset;
@@ -85,7 +85,7 @@
     }
 }
 
-@media (--breakpoint-md) {
+@media (--md) {
     .md\:miw-unset,
     .md\:miw-u {
         min-width: unset;
@@ -128,7 +128,7 @@
     }
 }
 
-@media (--breakpoint-lg) {
+@media (--lg) {
     .lg\:miw-unset,
     .lg\:miw-u {
         min-width: unset;

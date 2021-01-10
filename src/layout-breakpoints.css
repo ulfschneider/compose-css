@@ -1,4 +1,4 @@
-@media (--breakpoint-sm) {
+@media (--sm) {
     .sm\:inline {
         display: inline;
     }
@@ -176,7 +176,7 @@
     }
 }
 
-@media (--breakpoint-rg) {
+@media (--rg) {
     .rg\:inline {
         display: inline;
     }
@@ -354,7 +354,7 @@
     }
 }
 
-@media (--breakpoint-md) {
+@media (--md) {
     .md\:inline {
         display: inline;
     }
@@ -532,7 +532,7 @@
     }
 }
 
-@media (--breakpoint-lg) {
+@media (--lg) {
     .lg\:inline {
         display: inline;
     }

@@ -12,7 +12,7 @@ Naming conventions
     <i>=increase by <i>
 */
 
-@media (--breakpoint-sm) {
+@media (--sm) {
     .sm\:mr-0,
     .sm\:no-mr {
         margin: 0;
@@ -471,7 +471,7 @@ Naming conventions
     }
 }
 
-@media (--breakpoint-rg) {
+@media (--rg) {
     .rg\:mr-0,
     .rg\:no-mr {
         margin: 0;
@@ -930,7 +930,7 @@ Naming conventions
     }
 }
 
-@media (--breakpoint-md) {
+@media (--md) {
     .md\:mr-0,
     .md\:no-mr {
         margin: 0;
@@ -1389,7 +1389,7 @@ Naming conventions
     }
 }
 
-@media (--breakpoint-lg) {
+@media (--lg) {
     .lg\:mr-0,
     .lg\:no-mr {
         margin: 0;

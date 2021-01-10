@@ -559,7 +559,7 @@ blockquote header::after {
     content: " —";
 }
 
-@media(--breakpoint-max-sm) {
+@media(--max-sm) {
     figcaption,
     blockquote footer {
         max-width: unset;

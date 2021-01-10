@@ -145,7 +145,7 @@
     grid-column-start: 12;
 }
 
-@media (--breakpoint-sm) {
+@media (--sm) {
     .sm\:columns-1 {
         columns: 1;
     }
@@ -239,7 +239,7 @@
     }
 }
 
-@media (--breakpoint-rg) {
+@media (--rg) {
     .rg\:columns-1 {
         columns: 1;
     }
@@ -333,7 +333,7 @@
     }
 }
 
-@media (--breakpoint-md) {
+@media (--md) {
     .md\:columns-1 {
         columns: 1;
     }
@@ -427,7 +427,7 @@
     }
 }
 
-@media (--breakpoint-lg) {
+@media (--lg) {
     .x>.lg\:columns-1 {
         columns: 1;
     }

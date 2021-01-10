@@ -1,4 +1,4 @@
-@media (--breakpoint-sm) {
+@media (--sm) {
     .sm\:mxw-unset,
     .sm\:mxw-u {
         max-width: unset;
@@ -41,7 +41,7 @@
     }
 }
 
-@media (--breakpoint-rg) {
+@media (--rg) {
     .rg\:mxw-unset,
     .rg\:mxw-u {
         max-width: unset;
@@ -84,7 +84,7 @@
     }
 }
 
-@media (--breakpoint-md) {
+@media (--md) {
     .md\:mxw-unset,
     .md\:mxw-u {
         max-width: unset;
@@ -127,7 +127,7 @@
     }
 }
 
-@media (--breakpoint-lg) {
+@media (--lg) {
     .lg\:mxw-unset,
     .lg\:mxw-u {
         max-width: unset;

@@ -1,4 +1,4 @@
-@media (--breakpoint-sm) {
+@media (--sm) {
     .sm\:w-unset {
         width: unset;
     }
@@ -43,7 +43,7 @@
     }
 }
 
-@media (--breakpoint-rg) {
+@media (--rg) {
     .rg\:w-unset {
         width: unset;
     }
@@ -88,7 +88,7 @@
     }
 }
 
-@media (--breakpoint-md) {
+@media (--md) {
     .md\:w-unset {
         width: unset;
     }
@@ -133,7 +133,7 @@
     }
 }
 
-@media (--breakpoint-lg) {
+@media (--lg) {
     .lg\:w-unset {
         width: unset;
     }

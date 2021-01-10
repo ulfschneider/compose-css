@@ -97,7 +97,7 @@ ul ol li::before {
 
 /* consider x-layout */
 
-@media (--breakpoint-max-md) {
+@media (--max-md) {
     [class^="x"] ul,
     [class^="x"] ol,
     [class^="x"] blockquote {

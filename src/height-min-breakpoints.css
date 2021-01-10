@@ -1,4 +1,4 @@
-@media (--breakpoint-sm) {
+@media (--sm) {
     .sm\:mih-unset,
     .sm\:mih-u {
         min-height: unset;
@@ -53,7 +53,7 @@
     }
 }
 
-@media (--breakpoint-rg) {
+@media (--rg) {
     .rg\:mih-unset,
     .rg\:mih-u {
         min-height: unset;
@@ -108,7 +108,7 @@
     }
 }
 
-@media (--breakpoint-md) {
+@media (--md) {
     .md\:mih-unset,
     .md\:mih-u {
         min-height: unset;
@@ -163,7 +163,7 @@
     }
 }
 
-@media (--breakpoint-lg) {
+@media (--lg) {
     .lg\:mih-unset,
     .lg\:mih-u {
         min-height: unset;

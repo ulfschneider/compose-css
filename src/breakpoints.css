@@ -1,8 +1,9 @@
-@custom-media --breakpoint-max-sm (max-width: 400px);
-@custom-media --breakpoint-max-rg (max-width: 600px);
-@custom-media --breakpoint-max-md (max-width: 900px);
-@custom-media --breakpoint-max-lg (max-width: 1400px);
-@custom-media --breakpoint-sm (min-width: 400px);
-@custom-media --breakpoint-rg (min-width: 600px);
-@custom-media --breakpoint-md (min-width: 900px);
-@custom-media --breakpoint-lg (min-width: 1400px);
+@custom-media --max-sm (max-width: 400px);
+@custom-media --max-rg (max-width: 600px);
+@custom-media --max-md (max-width: 900px);
+@custom-media --max-lg (max-width: 1400px);
+@custom-media --sm (min-width: 400px);
+@custom-media --rg (min-width: 600px);
+@custom-media --md (min-width: 900px);
+@custom-media --lg (min-width: 1400px);
+@custom-media --touch-device screen and (hover: none) and (pointer: coarse)
