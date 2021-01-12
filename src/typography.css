@@ -313,7 +313,6 @@ kbd,
     font-family: var(--meta-font-family);
     white-space: nowrap;
     text-align: center;
-    display: inline-block;
     min-width: var(--space);
 }
 
