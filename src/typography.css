@@ -20,6 +20,7 @@
     --code-font-family: var(--mono-font-family);
     --pre-border: var(--border-w-default) dotted var(--pre-border-color);
     --blockquote-font-style: italic;
+    --blockquote-prefix-font-size: var(--fs-2);
     --link-text-decoration: underline;
     --font-variant-numeric: normal;
     --vertical-rhythm: var(--space);
@@ -461,7 +462,7 @@ blockquote::before {
     margin-left: calc(-1 * var(--horizontal-rhythm));
     position: absolute;
     line-height: 1;
-    font-size: var(--fs-5);
+    font-size: var(--blockquote-prefix-font-size);
     color: var(--blockquote-prefix-color);
 }
 
