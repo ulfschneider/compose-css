@@ -102,6 +102,11 @@
     margin-left: calc(50% - 50vw);
 }
 
+.full-bleed>* {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .split {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
