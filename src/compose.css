@@ -38,4 +38,5 @@
 @import "square";
 @import "square-breakpoints";
 @import "hide-breakpoints";
+@import "snap";
 @import "debug";
