@@ -19,11 +19,11 @@ Naming conventions
 }
 
 .gpx-0 {
-    grid-column-gap: 0;
+    column-gap: 0;
 }
 
 .gpy-0 {
-    grid-row-gap: 0;
+    row-gap: 0;
 }
 
 .gp-d5 {
@@ -31,11 +31,11 @@ Naming conventions
 }
 
 .gpx-d5 {
-    grid-column-gap: var(--space-d5);
+    column-gap: var(--space-d5);
 }
 
 .gpy-d5 {
-    grid-row-gap: var(--space-d5);
+    row-gap: var(--space-d5);
 }
 
 .gp-d4 {
@@ -43,11 +43,11 @@ Naming conventions
 }
 
 .gpx-d4 {
-    grid-column-gap: var(--space-d4);
+    column-gap: var(--space-d4);
 }
 
 .gpy-d4 {
-    grid-row-gap: var(--space-d4);
+    row-gap: var(--space-d4);
 }
 
 .gp-d3 {
@@ -55,11 +55,11 @@ Naming conventions
 }
 
 .gpx-d3 {
-    grid-column-gap: var(--space-d3);
+    column-gap: var(--space-d3);
 }
 
 .gpy-d3 {
-    grid-row-gap: var(--space-d3);
+    row-gap: var(--space-d3);
 }
 
 .gp-d2 {
@@ -67,11 +67,11 @@ Naming conventions
 }
 
 .gpx-d2 {
-    grid-column-gap: var(--space-d2);
+    column-gap: var(--space-d2);
 }
 
 .gpy-d2 {
-    grid-row-gap: var(--space-d2);
+    row-gap: var(--space-d2);
 }
 
 .gp-d1 {
@@ -79,11 +79,11 @@ Naming conventions
 }
 
 .gpx-d1 {
-    grid-column-gap: var(--space-d1);
+    column-gap: var(--space-d1);
 }
 
 .gpy-d1 {
-    grid-row-gap: var(--space-d1);
+    row-gap: var(--space-d1);
 }
 
 .gp {
@@ -91,11 +91,11 @@ Naming conventions
 }
 
 .gpx {
-    grid-column-gap: var(--space);
+    column-gap: var(--space);
 }
 
 .gpy {
-    grid-row-gap: var(--space);
+    row-gap: var(--space);
 }
 
 .gp-1 {
@@ -103,11 +103,11 @@ Naming conventions
 }
 
 .gpx-1 {
-    grid-column-gap: var(--space-1);
+    column-gap: var(--space-1);
 }
 
 .gpy-1 {
-    grid-row-gap: var(--space-1);
+    row-gap: var(--space-1);
 }
 
 .gp-2 {
@@ -115,11 +115,11 @@ Naming conventions
 }
 
 .gpx-2 {
-    grid-column-gap: var(--space-2);
+    column-gap: var(--space-2);
 }
 
 .gpy-2 {
-    grid-row-gap: var(--space-2);
+    row-gap: var(--space-2);
 }
 
 .gp-3 {
@@ -127,11 +127,11 @@ Naming conventions
 }
 
 .gpx-3 {
-    grid-column-gap: var(--space-3);
+    column-gap: var(--space-3);
 }
 
 .gpy-3 {
-    grid-row-gap: var(--space-3);
+    row-gap: var(--space-3);
 }
 
 .gp-4 {
@@ -139,9 +139,9 @@ Naming conventions
 }
 
 .gpx-4 {
-    grid-column-gap: var(--space-4);
+    column-gap: var(--space-4);
 }
 
 .gpy-4 {
-    grid-row-gap: var(--space-4);
+    row-gap: var(--space-4);
 }

@@ -1,5 +1,5 @@
 :root {
-    --grid-column-gap: 0;
+    --column-gap: 0;
     --column-fluid-width: 16rem;
     --column-rule: 1px solid var(--neutral-2);
 }
@@ -39,7 +39,7 @@
 .x-12 {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    column-gap: var(--grid-column-gap);
+    column-gap: var(--column-gap);
 }
 
 .x-12>* {
