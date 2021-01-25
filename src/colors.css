@@ -93,7 +93,7 @@
     --blockquote-prefix-color: var(--li-prefix-color);
     --blockquote-background: transparent;
     --blockquote-border: unset;
-    --link-color: var(--base-color);
+    --link-color: inherit;
     --link-focus-color: var(--primary);
     --link-hover-color: var(--link-focus-color);
     --link-active-color: var(--link-focus-color);

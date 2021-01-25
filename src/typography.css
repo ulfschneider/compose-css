@@ -477,6 +477,7 @@ blockquote::before {
 a {
     color: var(--link-color);
     text-decoration: var(--link-text-decoration);
+    transition: color .1s ease-out;
 }
 
 a:not(table a) {
