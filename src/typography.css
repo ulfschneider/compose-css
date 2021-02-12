@@ -420,12 +420,6 @@ pre,
     font-size: var(--fs-mono);
 }
 
-.code,
-code {
-    color: var(--code-color);
-    background: var(--code-background);
-}
-
 pre,
 .pre {
     margin-top: var(--mrt-pre);
