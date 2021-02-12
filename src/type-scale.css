@@ -5,10 +5,6 @@
     --fs-mono: .8rem;
     --fs-d2: calc(.8rem);
     --fs-d1: calc(.9rem);
-    --small: var(--fs-d1);
-    --smaller: .9em;
-    --large: var(--fs-1);
-    --larger: calc(var(--size-factor) * 1em);
     --fs-1: calc(var(--fs) * var(--size-factor));
     --fs-2: calc(var(--fs-1) * var(--size-factor));
     --fs-3: calc(var(--fs-2) * var(--size-factor));
@@ -19,11 +15,15 @@
     --fs-8: calc(var(--fs-7) * var(--size-factor));
     --fs-9: calc(var(--fs-8) * var(--size-factor));
     --fs-10: calc(var(--fs-9) * var(--size-factor));
+    --small: var(--fs-d1);
+    --smaller: .9em;
+    --large: var(--fs-1);
+    --larger: calc(var(--size-factor) * 1em);
     --lh-d1: 0.9;
     --lh: 1;
-    --lh-1: calc((var(--lh-3) - var(--lh)) / 3 + var(--lh));
-    --lh-2: calc((var(--lh-3) - var(--lh)) / 3 * 2 + var(--lh));
     --lh-3: calc(var(--space-factor) * var(--lh));
+    --lh-2: calc((var(--lh-3) - var(--lh)) / 3 * 2 + var(--lh));
+    --lh-1: calc((var(--lh-3) - var(--lh)) / 3 + var(--lh));
     --lh-default: var(--lh-3);
     --lh-4: calc((var(--lh-3) - var(--lh)) / 3 * 4 + var(--lh));
     --lh-5: calc((var(--lh-3) - var(--lh)) / 3 * 5 + var(--lh));

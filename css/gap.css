@@ -1,1 +1,147 @@
-.gp-0,.no-gp{grid-gap:0}.gpx-0{column-gap:0}.gpy-0{row-gap:0}.gp-d5{grid-gap:var(--space-d5)}.gpx-d5{column-gap:var(--space-d5)}.gpy-d5{row-gap:var(--space-d5)}.gp-d4{grid-gap:var(--space-d4)}.gpx-d4{column-gap:var(--space-d4)}.gpy-d4{row-gap:var(--space-d4)}.gp-d3{grid-gap:var(--space-d3)}.gpx-d3{column-gap:var(--space-d3)}.gpy-d3{row-gap:var(--space-d3)}.gp-d2{grid-gap:var(--space-d2)}.gpx-d2{column-gap:var(--space-d2)}.gpy-d2{row-gap:var(--space-d2)}.gp-d1{grid-gap:var(--space-d1)}.gpx-d1{column-gap:var(--space-d1)}.gpy-d1{row-gap:var(--space-d1)}.gp{grid-gap:var(--space)}.gpx{column-gap:var(--space)}.gpy{row-gap:var(--space)}.gp-1{grid-gap:var(--space-1)}.gpx-1{column-gap:var(--space-1)}.gpy-1{row-gap:var(--space-1)}.gp-2{grid-gap:var(--space-2)}.gpx-2{column-gap:var(--space-2)}.gpy-2{row-gap:var(--space-2)}.gp-3{grid-gap:var(--space-3)}.gpx-3{column-gap:var(--space-3)}.gpy-3{row-gap:var(--space-3)}.gp-4{grid-gap:var(--space-4)}.gpx-4{column-gap:var(--space-4)}.gpy-4{row-gap:var(--space-4)}
+/**
+Naming conventions
+    x=x-axis
+    y=y-axis
+    t=top
+    r=right
+    b=bottom
+    l=left
+    n=negative
+    0=none
+    d<i>=decrease by <i>  
+    <i>=increase by <i>
+    
+*/
+
+.gp-0,
+.no-gp {
+    grid-gap: 0;
+}
+
+.gpx-0 {
+    column-gap: 0;
+}
+
+.gpy-0 {
+    row-gap: 0;
+}
+
+.gp-d5 {
+    grid-gap: var(--space-d5);
+}
+
+.gpx-d5 {
+    column-gap: var(--space-d5);
+}
+
+.gpy-d5 {
+    row-gap: var(--space-d5);
+}
+
+.gp-d4 {
+    grid-gap: var(--space-d4);
+}
+
+.gpx-d4 {
+    column-gap: var(--space-d4);
+}
+
+.gpy-d4 {
+    row-gap: var(--space-d4);
+}
+
+.gp-d3 {
+    grid-gap: var(--space-d3);
+}
+
+.gpx-d3 {
+    column-gap: var(--space-d3);
+}
+
+.gpy-d3 {
+    row-gap: var(--space-d3);
+}
+
+.gp-d2 {
+    grid-gap: var(--space-d2);
+}
+
+.gpx-d2 {
+    column-gap: var(--space-d2);
+}
+
+.gpy-d2 {
+    row-gap: var(--space-d2);
+}
+
+.gp-d1 {
+    grid-gap: var(--space-d1);
+}
+
+.gpx-d1 {
+    column-gap: var(--space-d1);
+}
+
+.gpy-d1 {
+    row-gap: var(--space-d1);
+}
+
+.gp {
+    grid-gap: var(--space);
+}
+
+.gpx {
+    column-gap: var(--space);
+}
+
+.gpy {
+    row-gap: var(--space);
+}
+
+.gp-1 {
+    grid-gap: var(--space-1);
+}
+
+.gpx-1 {
+    column-gap: var(--space-1);
+}
+
+.gpy-1 {
+    row-gap: var(--space-1);
+}
+
+.gp-2 {
+    grid-gap: var(--space-2);
+}
+
+.gpx-2 {
+    column-gap: var(--space-2);
+}
+
+.gpy-2 {
+    row-gap: var(--space-2);
+}
+
+.gp-3 {
+    grid-gap: var(--space-3);
+}
+
+.gpx-3 {
+    column-gap: var(--space-3);
+}
+
+.gpy-3 {
+    row-gap: var(--space-3);
+}
+
+.gp-4 {
+    grid-gap: var(--space-4);
+}
+
+.gpx-4 {
+    column-gap: var(--space-4);
+}
+
+.gpy-4 {
+    row-gap: var(--space-4);
+}

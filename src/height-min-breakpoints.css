@@ -168,22 +168,6 @@
     .lg\:mih-u {
         min-height: unset;
     }
-    .lg\:mih-sm,
-    .lg\:mih-sm {
-        min-height: var(--small-height);
-    }
-    .lg\:mih-rg,
-    .lg\:mih-rg {
-        min-height: var(--regular-height);
-    }
-    .lg\:mih-md,
-    .lg\:mih-md {
-        min-height: var(--mid-height);
-    }
-    .lg\:mih-lg,
-    .lg\:mih-lg {
-        min-height: var(--large-height);
-    }
     .lg\:mih-d5,
     .lg\:mih-d5 {
         min-height: var(--space-d5);

@@ -1,6 +1,7 @@
 :root {
     --border-w-default: var(--space-d5);
     --rounded: var(--space-d3);
+    --pre-border: var(--border-w-default) dotted var(--pre-border-color);
     border-color: var(--base-color);
 }
 

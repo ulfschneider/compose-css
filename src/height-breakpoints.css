@@ -128,18 +128,6 @@
     .lg\:h-unset {
         height: unset;
     }
-    .lg\:h-sm {
-        height: var(--small-height);
-    }
-    .lg\:h-rg {
-        height: var(--regular-height);
-    }
-    .lg\:h-md {
-        height: var(--mid-height);
-    }
-    .lg\:h-lg {
-        height: var(--large-height);
-    }
     .lg\:h-d5 {
         height: var(--space-d5);
     }

@@ -18,7 +18,6 @@
     --mono-font-family: monospace;
     --mono-font-feature-settings: var(--font-feature-settings);
     --code-font-family: var(--mono-font-family);
-    --pre-border: var(--border-w-default) dotted var(--pre-border-color);
     --blockquote-font-style: italic;
     --blockquote-prefix-font-size: var(--fs-2);
     --link-text-decoration: underline;

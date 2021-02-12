@@ -1,1 +1,92 @@
-:root{--x-padding:var(--space);--main-content-width:var(--regular-width)}.x{grid-template-columns:[gutter-l] var(--x-padding) [breakout-wide-l] 1fr [breakout-l] 1fr [main-content-start] minmax(auto,var(--main-content-width)) [main-content-end] 1fr [breakout-r] 1fr [breakout-wide-r] var(--x-padding) [gutter-r]}.x,.x-l{display:grid;overflow:hidden}.x-l{grid-template-columns:[gutter-l] var(--x-padding) [breakout-wide-l] 1fr [breakout-l] 0fr [main-content-start] minmax(auto,var(--main-content-width)) [main-content-end] 1fr [breakout-r] 2fr [breakout-wide-r] var(--x-padding) [gutter-r]}.x-r{display:grid;grid-template-columns:[gutter-l] var(--x-padding) [breakout-wide-l] 2fr [breakout-l] 1fr [main-content-start] minmax(auto,var(--main-content-width)) [main-content-end] 0fr [breakout-r] 1fr [breakout-wide-r] var(--x-padding) [gutter-r];overflow:hidden}[class^="x"]>:not(p):not(div):not(img)+:not(p):not(div):not(img):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6),[class^="x"]>div+:not(div){margin-top:0}[class^="x"].main>*,[class^="x"]>*,[class^="x"]>.main{grid-column-start:main-content-start;min-width:0}[class^="x"].breakout-wide>*,[class^="x"]>.breakout-wide{grid-column-start:breakout-wide-l;grid-column-end:breakout-wide-r}[class^="x"].breakout-wide-r>*,[class^="x"]>.breakout-wide-r{grid-column-start:main-content-start;grid-column-end:breakout-wide-r}[class^="x"].breakout-wide-l>*,[class^="x"]>.breakout-wide-l{grid-column-start:breakout-wide-l;grid-column-end:main-content-end}[class^="x"].breakout-full>*,[class^="x"]>.breakout-full{grid-column-start:gutter-l;grid-column-end:gutter-r}[class^="x"].breakout-full-r>*,[class^="x"]>.breakout-full-r{grid-column-start:main-content-start;grid-column-end:gutter-r}[class^="x"].breakout-full-l>*,[class^="x"]>.breakout-full-l{grid-column-start:gutter-l;grid-column-end:main-content-end}[class^="x"].breakout-l>*,[class^="x"]>.breakout-l{grid-column-start:breakout-l;grid-column-end:main-content-end}[class^="x"].breakout-r>*,[class^="x"]>.breakout-r{grid-column-start:main-content-start;grid-column-end:breakout-r}[class^="x"].breakout>*,[class^="x"]>.breakout{grid-column-start:breakout-l;grid-column-end:breakout-r}
+:root {
+    --x-padding: var(--space);
+    --main-content-width: var(--regular-width);
+}
+
+.x {
+    display: grid;
+    grid-template-columns: [gutter-l] var(--x-padding) [breakout-wide-l] 1fr [breakout-l] 1fr [main-content-start] minmax(auto, var(--main-content-width)) [main-content-end] 1fr [breakout-r] 1fr [breakout-wide-r] var(--x-padding) [gutter-r];
+    overflow: hidden;
+}
+
+.x-l {
+    display: grid;
+    grid-template-columns: [gutter-l] var(--x-padding) [breakout-wide-l] 1fr [breakout-l] 0fr [main-content-start] minmax(auto, var(--main-content-width)) [main-content-end] 1fr [breakout-r] 2fr [breakout-wide-r] var(--x-padding) [gutter-r];
+    overflow: hidden;
+}
+
+.x-r {
+    display: grid;
+    grid-template-columns: [gutter-l] var(--x-padding) [breakout-wide-l] 2fr [breakout-l] 1fr [main-content-start] minmax(auto, var(--main-content-width)) [main-content-end] 0fr [breakout-r] 1fr [breakout-wide-r] var(--x-padding) [gutter-r];
+    overflow: hidden;
+}
+
+[class^="x"]>:not(p):not(div):not(img)+:not(p):not(div):not(img):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+    margin-top: 0;
+}
+
+[class^="x"]>div+:not(div) {
+    margin-top: 0;
+}
+
+[class^="x"]>*,
+[class^="x"].main>*,
+[class^="x"]>.main {
+    grid-column-start: main-content-start;
+    min-width: 0;
+    /* https://css-tricks.com/preventing-a-grid-blowout/ */
+}
+
+[class^="x"].breakout-wide>*,
+[class^="x"]>.breakout-wide {
+    grid-column-start: breakout-wide-l;
+    grid-column-end: breakout-wide-r;
+}
+
+[class^="x"].breakout-wide-r>*,
+[class^="x"]>.breakout-wide-r {
+    grid-column-start: main-content-start;
+    grid-column-end: breakout-wide-r;
+}
+
+[class^="x"].breakout-wide-l>*,
+[class^="x"]>.breakout-wide-l {
+    grid-column-start: breakout-wide-l;
+    grid-column-end: main-content-end;
+}
+
+[class^="x"].breakout-full>*,
+[class^="x"]>.breakout-full {
+    grid-column-start: gutter-l;
+    grid-column-end: gutter-r;
+}
+
+[class^="x"].breakout-full-r>*,
+[class^="x"]>.breakout-full-r {
+    grid-column-start: main-content-start;
+    grid-column-end: gutter-r;
+}
+
+[class^="x"].breakout-full-l>*,
+[class^="x"]>.breakout-full-l {
+    grid-column-start: gutter-l;
+    grid-column-end: main-content-end;
+}
+
+[class^="x"].breakout-l>*,
+[class^="x"]>.breakout-l {
+    grid-column-start: breakout-l;
+    grid-column-end: main-content-end;
+}
+
+[class^="x"].breakout-r>*,
+[class^="x"]>.breakout-r {
+    grid-column-start: main-content-start;
+    grid-column-end: breakout-r;
+}
+
+[class^="x"].breakout>*,
+[class^="x"]>.breakout {
+    grid-column-start: breakout-l;
+    grid-column-end: breakout-r;
+}

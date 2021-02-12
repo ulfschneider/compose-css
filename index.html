@@ -178,22 +178,26 @@
                     href="https://www.npmjs.com/package/compose-css">compose-css</a>
                 npm package to your node project. Install with</p>
             <pre>npm i compose-css</pre>
-            <p>Ideally, you run a purgecss/cssnano build-pipeline in your project 
+            <p>Ideally, you run at least a postcss-custom-properties, a postcss-purgecss, and and a cssnano build-pipeline in your project 
             to reduce the size of the initial compose-css by 
             removing styles you don´t use. As an example, your <code>postcss.config.js</code> file would look in some way like this:</p>
         </div>
         <pre class="breakout"><code>module.exports = {
     plugins: [
-        /*all your postcss plugins go here*/
-        /*...*/
+        require('postcss-import'),
+        require('postcss-custom-media'),
+        require('postcss-custom-properties')({
+            preserve: false
+        }),
+        require('postcss-calc'),
         require('@fullhuman/postcss-purgecss')({
-            content: [
+        content: [
                 /*decide about the content to search for CSS classes to keep*/
                 /*...*/
             ],
             whitelistPatternsChildren: [/^token/, /^pre/, /^code/],
-            defaultExtractor: content => content.match(/[\w-/:]+(?&lt;!:)/g) || [] /*check https://flaviocopes.com/tailwind-setup/ */
-        }),
+            defaultExtractor: content => content.match(/[\w-/:]+(?&lt;!:)/g) || [] /*check https://flaviocopes.com/tailwind-setup/ */       
+        }),        
         require('cssnano')
     ]
 }</code></pre>

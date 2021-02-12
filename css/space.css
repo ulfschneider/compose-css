@@ -1,1 +1,16 @@
-:root{--space:1rem;--space-factor:1.7;--space-1:calc(var(--space-factor)*var(--space));--space-2:calc(var(--space-1)*var(--space-factor));--space-3:calc(var(--space-2)*var(--space-factor));--space-4:calc(var(--space-3)*var(--space-factor));--space-5:calc(var(--space-4)*var(--space-factor));--space-6:calc(var(--space-5)*var(--space-factor));--space-d1:calc(var(--space)/var(--space-factor));--space-d2:calc(var(--space-d1)/var(--space-factor));--space-d3:3px;--space-d4:2px;--space-d5:1px}
+:root {
+    --space: 1rem;
+    --space-factor: 1.7;
+    --space-1: calc(var(--space-factor) * var(--space));
+    --space-2: calc(var(--space-1) * var(--space-factor));
+    --space-3: calc(var(--space-2) * var(--space-factor));
+    --space-4: calc(var(--space-3) * var(--space-factor));
+    --space-5: calc(var(--space-4) * var(--space-factor));
+    --space-6: calc(var(--space-5) * var(--space-factor));
+    --space-d1: calc(var(--space) / var(--space-factor));
+    --space-d2: calc(var(--space-d1) / var(--space-factor));
+    --space-d3: 3px;
+    --space-d4: 2px;
+    --space-d5: 1px;
+}
+

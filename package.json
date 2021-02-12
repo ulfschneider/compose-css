@@ -36,5 +36,6 @@
     "bugs": {
         "url": "https://github.com/ulfschneider/compose-css/issues"
     },
-    "homepage": "https://ulf.codes/tools/compose/"
+    "homepage": "https://ulf.codes/tools/compose/",
+    "dependencies": {}
 }

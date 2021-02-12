@@ -1,1 +1,47 @@
-@media (--sm){.sm\:grid{display:grid}}@media (--rg){.rg\:grid{display:grid}}@media (--md){.md\:grid{display:grid}}@media (--lg){.lg\:grid{display:grid}}
+@media (--sm) {
+    .sm\:grid {
+        display: grid;
+    }
+}
+
+@media (--sm) {
+    .sm\:grid {
+        display: grid;
+    }
+}
+
+@media (--rg) {
+    .rg\:grid {
+        display: grid;
+    }
+}
+
+@media (--rg) {
+    .rg\:grid {
+        display: grid;
+    }
+}
+
+@media (--md) {
+    .md\:grid {
+        display: grid;
+    }
+}
+
+@media (--md) {
+    .md\:grid {
+        display: grid;
+    }
+}
+
+@media (--lg) {
+    .lg\:grid {
+        display: grid;
+    }
+}
+
+@media (--lg) {
+    .lg\:grid {
+        display: grid;
+    }
+}

@@ -1,1 +1,7 @@
-.button,.pointer,a,button{cursor:pointer;touch-action:manipulation}
+.pointer,
+.button,
+button,
+a {
+    cursor: pointer;
+    touch-action: manipulation;
+}
