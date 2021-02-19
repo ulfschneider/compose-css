@@ -15,7 +15,7 @@ Naming conventions
 
 .gp-0,
 .no-gp {
-    grid-gap: 0;
+    gap: 0;
 }
 
 .gpx-0 {
@@ -27,7 +27,7 @@ Naming conventions
 }
 
 .gp-d5 {
-    grid-gap: var(--space-d5);
+    gap: var(--space-d5);
 }
 
 .gpx-d5 {
@@ -39,7 +39,7 @@ Naming conventions
 }
 
 .gp-d4 {
-    grid-gap: var(--space-d4);
+    gap: var(--space-d4);
 }
 
 .gpx-d4 {
@@ -51,7 +51,7 @@ Naming conventions
 }
 
 .gp-d3 {
-    grid-gap: var(--space-d3);
+    gap: var(--space-d3);
 }
 
 .gpx-d3 {
@@ -63,7 +63,7 @@ Naming conventions
 }
 
 .gp-d2 {
-    grid-gap: var(--space-d2);
+    gap: var(--space-d2);
 }
 
 .gpx-d2 {
@@ -75,7 +75,7 @@ Naming conventions
 }
 
 .gp-d1 {
-    grid-gap: var(--space-d1);
+    gap: var(--space-d1);
 }
 
 .gpx-d1 {
@@ -87,7 +87,7 @@ Naming conventions
 }
 
 .gp {
-    grid-gap: var(--space);
+    gap: var(--space);
 }
 
 .gpx {
@@ -99,7 +99,7 @@ Naming conventions
 }
 
 .gp-1 {
-    grid-gap: var(--space-1);
+    gap: var(--space-1);
 }
 
 .gpx-1 {
@@ -111,7 +111,7 @@ Naming conventions
 }
 
 .gp-2 {
-    grid-gap: var(--space-2);
+    gap: var(--space-2);
 }
 
 .gpx-2 {
@@ -123,7 +123,7 @@ Naming conventions
 }
 
 .gp-3 {
-    grid-gap: var(--space-3);
+    gap: var(--space-3);
 }
 
 .gpx-3 {
@@ -135,7 +135,7 @@ Naming conventions
 }
 
 .gp-4 {
-    grid-gap: var(--space-4);
+    gap: var(--space-4);
 }
 
 .gpx-4 {
