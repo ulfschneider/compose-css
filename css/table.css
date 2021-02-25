@@ -1,7 +1,4 @@
 :root {
-    --table-alternate-row-color: var(--neutral-5);
-    --table-alternate-col-color: var(--neutral-5);
-    --table-underline-row-color: var(--base-color);
     --table-underline: var(--border-w-default) solid var(--table-underline-row-color);
     --table-heading-font-family: var(--heading-font-family);
     --table-font-family: var(--font-family);
@@ -21,20 +18,29 @@ table {
     line-height: var(--lh-2);
 }
 
+thead>tr>th {
+    vertical-align: bottom;
+}
+
 table table {
     margin: 0;
 }
 
-.alternate-rows tr:nth-child(even) {
-    background: var(--table-alternate-row-color);
+thead>tr:last-child>th,
+table *:not(thead) tr:first-child>th {
+    border-bottom: var(--table-underline);
 }
 
-.alternate-rows tr:nth-child(odd) {
+.alternate-rows *:not(thead) tr:nth-child(odd) {
     background: transparent;
 }
 
+.alternate-rows *:not(thead) tr:nth-child(even) {
+    background: var(--table-alternate-row-background);
+}
+
 .alternate-cols col:nth-child(even) {
-    background: var(--table-alternate-col-color);
+    background: var(--table-alternate-col-background);
 }
 
 .alternate-cols col:nth-child(odd) {
@@ -50,13 +56,9 @@ td {
 }
 
 th {
-    vertical-align: bottom;
     font-weight: var(--font-weight-bold);
     font-family: var(--table-heading-font-family);
-}
-
-tr:not(first-child) th {
-    vertical-align: top;
+    background: var(--table-head-background);
 }
 
 table caption {
