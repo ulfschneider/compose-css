@@ -26,29 +26,30 @@ table table {
     margin: 0;
 }
 
-thead>tr:last-child>th,
-table *:not(thead) tr:first-child>th {
-    border-bottom: var(--table-underline);
-}
-
 .alternate-rows *:not(thead) tr:nth-child(odd) {
-    background: transparent;
-}
-
-.alternate-rows *:not(thead) tr:nth-child(even) {
     background: var(--table-alternate-row-background);
 }
 
-.alternate-cols col:nth-child(even) {
-    background: var(--table-alternate-col-background);
+.alternate-rows *:not(thead) tr:nth-child(even) {
+    background: transparent;
 }
 
 .alternate-cols col:nth-child(odd) {
+    background: var(--table-alternate-col-background);
+}
+
+.alternate-cols col:nth-child(even) {
     background: transparent;
 }
 
 .underline-rows tr {
     border-bottom: var(--table-underline);
+}
+
+@media (hover: hover) {
+    .hover-rows tr:hover {
+        background: var(--table-hover-row-background);
+    }
 }
 
 td {
