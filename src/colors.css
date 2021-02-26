@@ -145,7 +145,7 @@
     --table-alternate-row-background: var(--neutral-5);
     --table-alternate-col-background: var(--neutral-5);
     --table-hover-row-background: var(--primary-5);
-    --table-underline-row-color: var(--neutral);
+    --table-underline-row-color: var(--neutral-3);
     --table-head-background: var(--base-background);
     color: var(--base-color);
 }

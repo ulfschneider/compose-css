@@ -26,11 +26,11 @@ table table {
     margin: 0;
 }
 
-.alternate-rows *:not(thead) tr:nth-child(odd) {
+.alternate-rows tr:nth-child(odd) {
     background: var(--table-alternate-row-background);
 }
 
-.alternate-rows *:not(thead) tr:nth-child(even) {
+.alternate-rows tr:nth-child(even) {
     background: transparent;
 }
 
