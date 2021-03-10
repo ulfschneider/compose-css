@@ -1,7 +1,7 @@
 :root {
     --mrt-list: var(--vertical-rhythm);
     --mrb-list: var(--vertical-rhythm);
-    --list-item-type: "—";
+    --list-item-type: "–";
     --ol-counter-delimiter: "-";
     --ol-counter-type: decimal-leading-zero;
     --h-counter-type: decimal;
@@ -35,7 +35,7 @@ ol,
 ul {
     list-style: none;
     padding: 0;
-    margin-left: 0;
+    margin-left: var(--horizontal-rhythm);
     margin-right: 0;
     margin-top: var(--mrt-list);
     margin-bottom: var(--mrb-list);
@@ -45,7 +45,6 @@ ol ol,
 ol ul,
 ul ul,
 ul ol {
-    margin-left: var(--horizontal-rhythm);
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -69,8 +68,8 @@ ol li {
 
 ol li::before {
     content: var(--ol-counter);
-    margin-left: calc(var(--horizontal-rhythm) * -1);
     min-width: var(--horizontal-rhythm);
+    margin-left: calc(var(--horizontal-rhythm) * -1);
     text-align: left;
     display: inline-block;
     font-family: var(--meta-font-family);
@@ -92,7 +91,6 @@ ol ol li::before,
 ol ul li::before,
 ul ul li::before,
 ul ol li::before {
-    margin-left: calc(var(--horizontal-rhythm) * -1);
     min-width: var(--horizontal-rhythm);
     padding-left: 0;
 }
@@ -136,34 +134,6 @@ h5::before {
 
 h6::before {
     counter-increment: h6-counter;
-}
-
-/* have the breakpoints before the .indent styles */
-
-/* consider x-layout */
-
-@media (--max-md) {
-    [class^="x"] ul,
-    [class^="x"] ol,
-    [class^="x"] blockquote {
-        margin-left: var(--horizontal-rhythm);
-    }
-}
-
-@media (--max-md) {
-    [class^="x"] ul,
-    [class^="x"] ol,
-    [class^="x"] blockquote {
-        margin-left: var(--horizontal-rhythm);
-    }
-}
-
-table ul,
-table ol,
-[class*="breakout-wide"] ul,
-[class*="breakout-wide"] ol,
-[class*="breakout-wide"] blockquote {
-    margin-left: var(--horizontal-rhythm);
 }
 
 ul.indent,
