@@ -116,7 +116,7 @@
     --base-color: var(--neutral-d5);
     --base-background: white;
     --mark-background: yellow;
-    --pre-border-color: var(--neutral);
+    --border-color: var(--neutral-d2);
     --pre-background: var(--neutral-5);
     --link-color: inherit;
     --link-focus-color: var(--primary);
@@ -139,9 +139,7 @@
     --code-background: transparent;
     --code-color: var(--base-color);
     --pre-color: var(--base-color);
-    --blockquote-prefix-color: var(--li-prefix-color);
     --blockquote-background: transparent;
-    --blockquote-border: unset;
     --table-alternate-row-background: var(--neutral-5);
     --table-alternate-col-background: var(--neutral-5);
     --table-hover-row-background: var(--primary-5);

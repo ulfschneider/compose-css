@@ -1,51 +1,61 @@
 :root {
-    --border-w-default: var(--space-d5);
+    --border-width: var(--space-d5);
     --rounded: var(--space-d3);
-    --pre-border: var(--border-w-default) dotted var(--pre-border-color);
-    border-color: var(--base-color);
+    --border-style: solid;
+    --border: var(--border-width) var(--border-style) var(--border-color);
+    border-color: var(--border-color);
 }
 
 .br {
-    border-style: solid;
-    border-width: var(--border-w-default);
+    border-style: var(--border-style);
+    border-width: var(--border-width);
+    border-color: var(--border-color);
 }
 
 .brx {
-    border-left-style: solid;
-    border-left-width: var(--border-w-default);
-    border-right-style: solid;
-    border-right-width: var(--border-w-default);
+    border-left-style: var(--border-style);
+    border-left-width: var(--border-width);
+    border-left-color: var(--border-color);
+    border-right-style: var(--border-style);
+    border-right-width: var(--border-width);
+    border-right-color: var(--border-color);
     border-top-width: 0;
     border-bottom-width: 0;
 }
 
 .bry {
-    border-top-style: solid;
-    border-top-width: var(--border-w-default);
-    border-bottom-style: solid;
-    border-bottom-width: var(--border-w-default);
+    border-top-style: var(--border-style);
+    border-top-width: var(--border-width);
+    border-top-color: var(--border-color);
+    border-bottom-style: var(--border-style);
+    border-bottom-width: var(--border-width);
+    border-bottom-color: var(--border-color);
     border-left-width: 0;
     border-right-width: 0;
 }
 
 .brt {
-    border-top-style: solid;
-    border-top-width: var(--border-w-default);
+    border-top-style: var(--border-style);
+    border-top-width: var(--border-width);
+    border-top-color: var(--border-color);
 }
 
 .brr {
-    border-right-style: solid;
-    border-right-width: var(--border-w-default);
+    border-right-style: var(--border-style);
+    border-right-width: var(--border-width);
+    border-right-color: var(--border-color);
 }
 
 .brb {
-    border-bottom-style: solid;
-    border-bottom-width: var(--border-w-default);
+    border-bottom-style: var(--border-style);
+    border-bottom-width: var(--border-width);
+    border-bottom-color: var(--border-color);
 }
 
 .brl {
-    border-left-style: solid;
-    border-left-width: var(--border-w-default);
+    border-left-style: var(--border-style);
+    border-left-width: var(--border-width);
+    border-left-color: var(--border-color);
 }
 
 .br-0,

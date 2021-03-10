@@ -1192,7 +1192,7 @@ small,
     --base-color: var(--neutral-d5);
     --base-background: white;
     --mark-background: yellow;
-    --pre-border-color: var(--neutral);
+    --border-color: var(--neutral-d2);
     --pre-background: var(--neutral-5);
     --link-color: inherit;
     --link-focus-color: var(--primary);
@@ -1215,9 +1215,7 @@ small,
     --code-background: transparent;
     --code-color: var(--base-color);
     --pre-color: var(--base-color);
-    --blockquote-prefix-color: var(--li-prefix-color);
     --blockquote-background: transparent;
-    --blockquote-border: unset;
     --table-alternate-row-background: var(--neutral-5);
     --table-alternate-col-background: var(--neutral-5);
     --table-hover-row-background: var(--primary-5);
@@ -2299,53 +2297,63 @@ small,
 }
 
 :root {
-    --border-w-default: var(--space-d5);
+    --border-width: var(--space-d5);
     --rounded: var(--space-d3);
-    --pre-border: var(--border-w-default) dotted var(--pre-border-color);
-    border-color: var(--base-color);
+    --border-style: solid;
+    --border: var(--border-width) var(--border-style) var(--border-color);
+    border-color: var(--border-color);
 }
 
 .br {
-    border-style: solid;
-    border-width: var(--border-w-default);
+    border-style: var(--border-style);
+    border-width: var(--border-width);
+    border-color: var(--border-color);
 }
 
 .brx {
-    border-left-style: solid;
-    border-left-width: var(--border-w-default);
-    border-right-style: solid;
-    border-right-width: var(--border-w-default);
+    border-left-style: var(--border-style);
+    border-left-width: var(--border-width);
+    border-left-color: var(--border-color);
+    border-right-style: var(--border-style);
+    border-right-width: var(--border-width);
+    border-right-color: var(--border-color);
     border-top-width: 0;
     border-bottom-width: 0;
 }
 
 .bry {
-    border-top-style: solid;
-    border-top-width: var(--border-w-default);
-    border-bottom-style: solid;
-    border-bottom-width: var(--border-w-default);
+    border-top-style: var(--border-style);
+    border-top-width: var(--border-width);
+    border-top-color: var(--border-color);
+    border-bottom-style: var(--border-style);
+    border-bottom-width: var(--border-width);
+    border-bottom-color: var(--border-color);
     border-left-width: 0;
     border-right-width: 0;
 }
 
 .brt {
-    border-top-style: solid;
-    border-top-width: var(--border-w-default);
+    border-top-style: var(--border-style);
+    border-top-width: var(--border-width);
+    border-top-color: var(--border-color);
 }
 
 .brr {
-    border-right-style: solid;
-    border-right-width: var(--border-w-default);
+    border-right-style: var(--border-style);
+    border-right-width: var(--border-width);
+    border-right-color: var(--border-color);
 }
 
 .brb {
-    border-bottom-style: solid;
-    border-bottom-width: var(--border-w-default);
+    border-bottom-style: var(--border-style);
+    border-bottom-width: var(--border-width);
+    border-bottom-color: var(--border-color);
 }
 
 .brl {
-    border-left-style: solid;
-    border-left-width: var(--border-w-default);
+    border-left-style: var(--border-style);
+    border-left-width: var(--border-width);
+    border-left-color: var(--border-color);
 }
 
 .br-0,
@@ -13302,7 +13310,6 @@ Naming conventions
     --mono-font-feature-settings: var(--font-feature-settings);
     --code-font-family: var(--mono-font-family);
     --blockquote-font-style: italic;
-    --blockquote-prefix-font-size: var(--fs-2);
     --link-text-decoration: underline;
     --font-variant-numeric: normal;
     --vertical-rhythm: var(--space);
@@ -13709,8 +13716,8 @@ pre,
     margin-bottom: var(--mrb-pre);
     padding-top: var(--space-d2);
     padding-bottom: var(--space-d2);
-    border-top: var(--pre-border);
-    border-bottom: var(--pre-border);
+    border-top: var(--border);
+    border-bottom: var(--border);
     color: var(--pre-color);
     background: var(--pre-background);
     white-space: pre;
@@ -13724,22 +13731,11 @@ pre,
 blockquote {
     margin-top: var(--mrt-blockquote);
     margin-bottom: var(--mrb-blockquote);
-    margin-left: var(--horizontal-rhythm);
+    margin-left: 0;
     margin-right: 0;
     padding: 0;
     font-style: var(--blockquote-font-style);
     background: var(--blockquote-background);
-    border-top: var(--blockquote-border);
-    border-bottom: var(--blockquote-border);
-}
-
-blockquote::before {
-    content: "“";
-    margin-left: calc(-1 * var(--horizontal-rhythm));
-    position: absolute;
-    line-height: 1;
-    font-size: var(--blockquote-prefix-font-size);
-    color: var(--blockquote-prefix-color);
 }
 
 .tag {
@@ -17147,7 +17143,7 @@ svg {
 }
 
 :root {
-    --table-underline: var(--border-w-default) solid var(--table-underline-row-color);
+    --table-underline: var(--border-width) solid var(--table-underline-row-color);
     --table-heading-font-family: var(--heading-font-family);
     --table-font-family: var(--font-family);
     --table-font-size: var(--figcaption-font-size);
