@@ -529,7 +529,7 @@ blockquote footer {
 }
 
 blockquote footer::before {
-    content: "— ";
+    content: "—";
 }
 
 blockquote header {
@@ -538,7 +538,7 @@ blockquote header {
 }
 
 blockquote header::after {
-    content: " —";
+    content: "—";
 }
 
 @media(--max-sm) {
