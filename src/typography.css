@@ -441,7 +441,7 @@ pre,
 blockquote {
     margin-top: var(--mrt-blockquote);
     margin-bottom: var(--mrb-blockquote);
-    margin-left: 0;
+    margin-left: var(--horizontal-rhythm);
     margin-right: 0;
     padding: 0;
     font-style: var(--blockquote-font-style);
