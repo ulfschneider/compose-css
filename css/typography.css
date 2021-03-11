@@ -309,7 +309,7 @@ kbd,
     border-radius: var(--space-d4);
     border: 1px solid var(--kbd-border-color);
     padding: 0 0.2em;
-    font-family: var(--meta-font-family);
+    font-family: var(--mono-font-family);
     white-space: nowrap;
     text-align: center;
     min-width: var(--space);
