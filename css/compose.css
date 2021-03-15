@@ -17162,6 +17162,10 @@ table {
     line-height: var(--lh-2);
 }
 
+th {
+    vertical-align: top;
+}
+
 thead>tr>th {
     vertical-align: bottom;
 }
