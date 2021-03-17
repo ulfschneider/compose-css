@@ -17227,16 +17227,6 @@ caption {
     padding: var(--space-d2) 0;
 }
 
-th:first-child,
-td:first-child {
-    padding-left: 0;
-}
-
-th:last-child,
-td:last-child {
-    padding-right: 0;
-}
-
 .br-separate {
     border-collapse: separate;
 }
