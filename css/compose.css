@@ -13989,6 +13989,11 @@ textarea {
     color: var(--form-field-color);
 }
 
+fieldset {
+    border: none;
+    padding: 0;
+}
+
 input[type=text]:focus,
 input[type=email]:focus,
 input[type=number]:focus,
