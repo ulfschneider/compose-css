@@ -79,6 +79,22 @@ td {
     padding: var(--space-d2) var(--space-d1);
 }
 
+th:first-child,
+td:first-child,
+th+td {
+    padding-left: 0;
+}
+
+*+td,
+*+th {
+    padding-left: var(--space-d2);
+}
+
+th:last-child,
+td:last-child {
+    padding-right: 0;
+}
+
 caption {
     padding: var(--space-d2) 0;
 }
