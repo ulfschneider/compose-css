@@ -13884,6 +13884,10 @@ h6+* {
     --form-radius: var(--rounded);
     --form-button-pdx: var(--space-d2);
     --form-button-pdy: var(--space-d2);
+    --custom-check-space: calc(var(--horizontal-rhythm) / 5);
+    --custom-check-size: calc(var(--horizontal-rhythm) - var(--custom-check-space));
+    --custom-check-pos: calc(var(--custom-check-space) / 4);
+    --custom-check-border-width: 2px;
     caret-color: var(--caret-color);
 }
 
@@ -14010,6 +14014,97 @@ input:focus+label,
 textarea:focus+label,
 label:focus-within {
     color: var(--form-focus-color);
+}
+
+/*
+https://www.sarasoueidan.com/blog/inclusively-hiding-and-styling-checkboxes-and-radio-buttons/
+and
+https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-button-with-css 
+*/
+
+.custom-control {
+    position: relative;
+    cursor: pointer;
+}
+
+.custom-control input[type=checkbox],
+.custom-control input[type=radio] {
+    /* remove the control from flow */
+    position: absolute;
+    /* hide it visually */
+    opacity: 0.00001;
+}
+
+.custom-control input[type=checkbox]+*,
+.custom-control input[type=radio]+* {
+    margin-left: var(--horizontal-rhythm);
+}
+
+/* box */
+
+.custom-control input[type=checkbox]+*::before,
+.custom-control input[type=radio]+*::before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: var(--custom-check-pos);
+    height: var(--custom-check-size);
+    width: var(--custom-check-size);
+    border: var(--custom-check-border-width) solid currentColor;
+    border-radius: var(--form-radius);
+}
+
+/* circle */
+
+.custom-control input[type=radio]+*::before {
+    border-radius: 50%;
+}
+
+/* check */
+
+.custom-control input[type=checkbox]+*::after {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    left: calc(var(--custom-check-size) * .2);
+    top: calc(var(--custom-check-pos) + (var(--custom-check-size) * .25));
+    width: calc(var(--custom-check-size) * .6);
+    height: calc(var(--custom-check-size) * .3);
+    transform: rotate(-45deg);
+    border: solid;
+    border-width: 0 0 var(--custom-check-border-width) var(--custom-check-border-width);
+    border-top-color: transparent;
+    opacity: 0;
+    background: transparent;
+}
+
+/* select */
+
+.custom-control input[type=radio]+*::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: calc(var(--custom-check-border-width) * 3);
+    top: calc(var(--custom-check-pos) + var(--custom-check-border-width) * 3);
+    height: calc(var(--custom-check-size) - var(--custom-check-border-width) * 6);
+    width: calc(var(--custom-check-size) - var(--custom-check-border-width) * 6);
+    background: currentColor;
+    border-radius: 50%;
+}
+
+/* unchecked / unselected */
+
+.custom-control input[type=checkbox]:not(:checked)+*::after,
+.custom-control input[type=radio]:not(:checked)+*::after {
+    opacity: 0;
+}
+
+/* checked / selected*/
+
+.custom-control input[type=checkbox]:checked+*::after,
+.custom-control input[type=radio]:checked+*::after {
+    opacity: 1;
 }
 
 :root {
