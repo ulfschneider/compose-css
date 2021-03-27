@@ -149,6 +149,12 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     color: inherit;
 }
 
+.custom-control:focus-within input[type=checkbox]+*::before,
+.custom-control:focus-within input[type=radio]+*::before {
+    outline: var(--outline);
+    outline-offset: var(--outline-offset);
+}
+
 .custom-control input[type=checkbox],
 .custom-control input[type=radio] {
     /* remove the control from flow */
