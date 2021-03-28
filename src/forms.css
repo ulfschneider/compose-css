@@ -133,8 +133,7 @@ textarea:focus {
 }
 
 input:focus+label,
-textarea:focus+label,
-label:focus-within {
+textarea:focus+label {
     color: var(--form-focus-color);
 }
 
