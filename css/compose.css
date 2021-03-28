@@ -13884,9 +13884,10 @@ h6+* {
     --form-radius: var(--rounded);
     --form-button-pdx: var(--space-d2);
     --form-button-pdy: var(--space-d2);
-    --custom-check-space: calc(var(--horizontal-rhythm) / 5);
-    --custom-check-size: calc(var(--horizontal-rhythm) - var(--custom-check-space));
-    --custom-check-pos: calc(var(--custom-check-space) / 4);
+    --custom-check-lh: var(--lh-default);
+    --custom-check-space: .1em;
+    --custom-check-size: 1em;
+    --custom-check-pos: calc((var(--custom-check-lh) * 1em - var(--custom-check-size)) / 2);
     --custom-check-border-width: 2px;
     caret-color: var(--caret-color);
 }
@@ -14026,6 +14027,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     position: relative;
     cursor: pointer;
     color: inherit;
+    display: inline-block;
 }
 
 .custom-control:focus-within input[type=checkbox]+*::before,
