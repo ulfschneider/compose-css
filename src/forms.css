@@ -169,6 +169,9 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     position: absolute;
     /* hide it visually */
     opacity: 0.00001;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
 }
 
 .custom-control input[type=checkbox]+*,
