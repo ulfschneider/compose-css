@@ -147,9 +147,14 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
 
 .custom-control {
     position: relative;
-    cursor: pointer;
     color: inherit;
     display: inline-block;
+    font-size: inherit;
+}
+
+.custom-control * {
+    font-size: inherit;
+    cursor: pointer;
 }
 
 .custom-control:focus-within input[type=checkbox]+*::before,
