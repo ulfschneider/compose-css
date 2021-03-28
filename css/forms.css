@@ -9,6 +9,7 @@
     --custom-check-size: 1em;
     --custom-check-pos: calc((var(--custom-check-lh) * 1em - var(--custom-check-size)) / 2);
     --custom-check-border-width: 2px;
+    --custom-radio-gap: var(--custom-check-border-width);
     caret-color: var(--caret-color);
 }
 
@@ -214,10 +215,10 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     content: '';
     box-sizing: border-box;
     position: absolute;
-    left: calc(var(--custom-check-border-width) * 3);
-    top: calc(var(--custom-check-pos) + var(--custom-check-border-width) * 3);
-    height: calc(var(--custom-check-size) - var(--custom-check-border-width) * 6);
-    width: calc(var(--custom-check-size) - var(--custom-check-border-width) * 6);
+    left: calc(var(--custom-radio-gap) * 2);
+    top: calc(var(--custom-check-pos) + var(--custom-radio-gap) * 2);
+    height: calc(var(--custom-check-size) - var(--custom-radio-gap) * 4);
+    width: calc(var(--custom-check-size) - var(--custom-radio-gap) * 4);
     background: currentColor;
     border-radius: 50%;
 }
