@@ -3,7 +3,7 @@
     --mrb-list: var(--vertical-rhythm);
     --list-item-type: "–";
     --ol-counter-delimiter: "-";
-    --ol-counter-type: decimal-leading-zero;
+    --ol-counter-type: decimal;
     --h-counter-type: decimal;
     --h-counter-delimiter: ".";
     --ol-counter: counters(ol-counter, var(--ol-counter-delimiter), var(--ol-counter-type)) "\0000a0\0000a0";
@@ -73,7 +73,6 @@ ol li::before {
     text-align: left;
     display: inline-block;
     font-family: var(--meta-font-family);
-    font-size: smaller;
     font-weight: bold;
     color: var(--li-prefix-color);
 }
