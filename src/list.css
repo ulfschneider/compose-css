@@ -55,7 +55,6 @@ dl.timeline dd,
 dl.timeline dt,
 .timeline>dl dt {
     font-weight: bold;
-    font-size: smaller;
 }
 
 dl.timeline dt::before,
