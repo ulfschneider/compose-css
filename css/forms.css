@@ -102,7 +102,7 @@ input[list] {
     line-height: var(--lh);
     border-radius: 0;
     -webkit-border-radius: 0;
-    background: var(--neutral-5);
+    background: var(--form-field-background);
     color: var(--form-field-color);
 }
 
@@ -113,7 +113,7 @@ textarea {
     border-radius: 0;
     -webkit-border-radius: 0;
     resize: none;
-    background: var(--neutral-5);
+    background: var(--form-field-background);
     color: var(--form-field-color);
 }
 

@@ -133,8 +133,10 @@
     --form-focus-color: var(--link-focus-color);
     --form-button-background: var(--base-color);
     --form-button-color: var(--base-background);
+    --form-field-background: var(--neutral-5);
     --kbd-background: var(--pre-background);
     --kbd-border-color: var(--border-color);
+    --timeline-color: var(--li-prefix-color);
     --text-decoration-color: unset;
     --code-background: transparent;
     --code-color: var(--base-color);
