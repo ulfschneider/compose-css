@@ -17020,7 +17020,7 @@ dl.timeline dt,
 
 dl.timeline dt::before,
 .timeline>dl dt::before {
-    border-radius: 100%;
+    border-radius: 50%;
     content: " ";
     width: 1em;
     height: 1em;
