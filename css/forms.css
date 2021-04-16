@@ -41,7 +41,8 @@ button,
 select,
 textarea,
 fieldset,
-label {
+label,
+legend {
     margin: 0;
     font-family: var(--form-font-family);
     font-size: var(--form-font-size);
@@ -79,7 +80,8 @@ select {
     }
 }
 
-label {
+label,
+legend {
     vertical-align: baseline;
     text-transform: var(--heading-text-transform);
     color: var(--form-label-color);
