@@ -553,11 +553,13 @@ hr {
     text-align: center;
     margin-top: var(--mrt-hr);
     margin-bottom: var(--mrb-hr);
+    color: inherit;
 }
 
 hr::after {
     content: var(--hr-content);
     white-space: pre;
+    color: inherit;
 }
 
 .vertical-lr {
