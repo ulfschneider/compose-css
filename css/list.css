@@ -31,41 +31,30 @@ dd+dt {
     margin-top: var(--mrt-list);
 }
 
-dl.timeline,
-.timeline>dl {
+dl.timeline {
     border-left: 2px solid var(--timeline-color);
 }
 
-.timeline>dl {
-    margin: 0;
-}
-
-dl.timeline dt,
-dl.timeline dd,
-.timeline>dl dt,
-.timeline>dl dd {
+dl.timeline>dt,
+dl.timeline>dd {
     margin-left: 0;
     padding-left: calc(var(--horizontal-rhythm));
 }
 
-.timeline>dl+dl {
-    padding-top: var(--mrt-list);
-}
-
-dl.timeline dt,
-.timeline>dl dt {
+dl.timeline>dt {
     font-weight: bold;
 }
 
-dl.timeline dt::before,
-.timeline>dl dt::before {
+dl.timeline>dt::before {
     border-radius: 50%;
-    content: " ";
+    content: "";
     width: 1em;
     height: 1em;
+    display: block;
     position: absolute;
     margin-left: calc(-0.5em - 1px - var(--horizontal-rhythm));
-    background: var(--timeline-color);
+    background-color: var(--base-background);
+    border: 2px solid var(--timeline-color);
 }
 
 ol,
