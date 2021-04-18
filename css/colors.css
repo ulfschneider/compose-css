@@ -137,6 +137,8 @@
     --kbd-background: var(--pre-background);
     --kbd-border-color: var(--border-color);
     --timeline-color: var(--li-prefix-color);
+    --timeline-blub-color: var(--li-prefix-color);
+    --timeline-blub-background: var(--base-background);
     --text-decoration-color: unset;
     --code-background: transparent;
     --code-color: var(--base-color);
