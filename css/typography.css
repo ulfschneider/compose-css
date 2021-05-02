@@ -521,6 +521,11 @@ figcaption {
     margin-bottom: var(--mrb-figcaption);
 }
 
+figure>* {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 figure>*+figcaption,
 blockquote footer {
     margin-top: var(--mrt-figcaption);
