@@ -153,7 +153,7 @@ ul ol li::before {
 }
 
 .outline h3::before {
-    counter-increment: h3-counter !important;
+    counter-increment: h3-counter;
     content: var(--h3-counter);
 }
 
