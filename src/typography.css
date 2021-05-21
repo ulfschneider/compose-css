@@ -444,7 +444,8 @@ blockquote {
     margin-bottom: var(--mrb-blockquote);
     margin-left: 0;
     margin-right: 0;
-    padding: 0;
+    padding: 0 0 0 var(--horizontal-rhythm);
+    border-left: var(--border-width) solid var(--li-prefix-color);
     font-style: var(--blockquote-font-style);
     background: var(--blockquote-background);
 }

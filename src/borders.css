@@ -1,5 +1,5 @@
 :root {
-    --border-width: var(--space-d5);
+    --border-width: 1px;
     --rounded: var(--space-d3);
     --border-style: solid;
     --border: var(--border-width) var(--border-style) var(--border-color);

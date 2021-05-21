@@ -2301,7 +2301,7 @@ small,
 }
 
 :root {
-    --border-width: var(--space-d5);
+    --border-width: 1px;
     --rounded: var(--space-d3);
     --border-style: solid;
     --border: var(--border-width) var(--border-style) var(--border-color);
@@ -13739,7 +13739,8 @@ blockquote {
     margin-bottom: var(--mrb-blockquote);
     margin-left: 0;
     margin-right: 0;
-    padding: 0;
+    padding: 0 0 0 var(--horizontal-rhythm);
+    border-left: var(--border-width) solid var(--li-prefix-color);
     font-style: var(--blockquote-font-style);
     background: var(--blockquote-background);
 }
@@ -16994,8 +16995,8 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     --h5-counter: counter(h2-counter) var(--h-counter-delimiter) counter(h3-counter) var(--h-counter-delimiter) counter(h4-counter) var(--h-counter-delimiter) counter(h5-counter);
     --h6-counter: counter(h2-counter) var(--h-counter-delimiter) counter(h3-counter) var(--h-counter-delimiter) counter(h4-counter) var(--h-counter-delimiter) counter(h5-counter) var(--h-counter-delimiter) counter(h6-counter);
     --timeline-blub-size: 1em;
-    --timeline-width: 1px;
-    --timeline-blub-border: 1px;
+    --timeline-width: var(--border-width);
+    --timeline-blub-border: var(--border-width);
 }
 
 dl {
