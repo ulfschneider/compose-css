@@ -17413,6 +17413,7 @@ table caption {
     font-style: normal;
     max-width: var(--regular-width);
     font-family: var(--figcaption-font-family);
+    font-size: var(--fs);
 }
 
 th,
