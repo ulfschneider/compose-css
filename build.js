@@ -5,10 +5,10 @@ const PACKAGE_PATH = 'package.json';
 const VERSION_PATTERN = /<span id="version">.*<\/span>/;
 
 const SERVE_ULF_CODES_PATH = 'compose.html'
-const SERVE_HEADER = '---\nlayout: none\ntitle: Compose CSS\npermalink: /tools/compose/\ncategories: tools\nabstract: A composable CSS Toolkit to build fast, maintainable, and responsive websites.\n---\n';
+const SERVE_HEADER = '---\nlayout: none\ntitle: Compose CSS\ntag: tool\npermalink: /tools/compose/\nabstract: A composable CSS Toolkit to build fast, maintainable, and responsive websites.\n---\n';
 const SERVE_REPLACE_BREAKPOINT_START = '<!--replace breakpoint start-->';
 const SERVE_REPLACE_BREAKPOINT_END = '<!--replace breakpoint end-->';
-const SERVE_REPLACE_BREAKPOINT = '<div><a href="/blog/tools/" class="no-deco">↰ ulf.codes</a></div><div class="only-when-dynamic"><a href="#top" class="no-deco">↑ Go to top</a></div>';
+const SERVE_REPLACE_BREAKPOINT = '<div><a href="/blog/tool/" class="no-deco">↰ ulf.codes</a></div><div class="only-when-dynamic"><a href="#top" class="no-deco">↑ Go to top</a></div>';
 
 var index = fs.readFileSync(INDEX_PATH, 'utf8');
 var package = fs.readFileSync(PACKAGE_PATH, 'utf8');
@@ -28,5 +28,3 @@ if (index && package) {
 } else {
     console.error('No index file found to populate version information');
 }
-
-

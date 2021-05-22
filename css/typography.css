@@ -505,8 +505,8 @@ figure {
 }
 
 figcaption,
-blockquote footer,
-blockquote header {
+blockquote>footer,
+blockquote>header {
     margin-top: 0;
     margin-bottom: 0;
     text-align: left;
@@ -538,29 +538,29 @@ blockquote>*+footer {
     margin-bottom: 0;
 }
 
-blockquote footer::before {
+blockquote>footer::before {
     content: "—";
 }
 
-blockquote header {
+blockquote>header {
     margin-top: 0;
     margin-bottom: var(--mrb-figcaption);
 }
 
-blockquote header::after {
+blockquote>header::after {
     content: "—";
 }
 
 @media(--max-sm) {
     figcaption,
-    blockquote footer {
+    blockquote>footer {
         max-width: unset;
     }
 }
 
 @media(--max-sm) {
     figcaption,
-    blockquote footer {
+    blockquote>footer {
         max-width: unset;
     }
 }
