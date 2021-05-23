@@ -1,7 +1,6 @@
-var fs = require('file-system');
+var fs = require('fs');
 
 const INDEX_PATH = 'index.html';
-const PACKAGE_PATH = 'package.json';
 const VERSION_PATTERN = /<span id="version">.*<\/span>/;
 
 const SERVE_ULF_CODES_PATH = 'compose.html'
@@ -11,11 +10,11 @@ const SERVE_REPLACE_BREAKPOINT_END = '<!--replace breakpoint end-->';
 const SERVE_REPLACE_BREAKPOINT = '<div><a href="/blog/tool/" class="no-deco">↰ ulf.codes</a></div><div class="only-when-dynamic"><a href="#top" class="no-deco">↑ Go to top</a></div>';
 
 var index = fs.readFileSync(INDEX_PATH, 'utf8');
-var package = fs.readFileSync(PACKAGE_PATH, 'utf8');
+var package = require('./package.json');
 
 if (index && package) {
-    var npmConfig = JSON.parse(package);
-    index = index.replace(VERSION_PATTERN, '<span id="version">v' + npmConfig.version + '</span>');
+
+    index = index.replace(VERSION_PATTERN, '<span id="version">v' + package.version + '</span>');
     fs.writeFileSync(INDEX_PATH, index, 'utf8');
 
     var serve = SERVE_HEADER + index;

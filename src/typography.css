@@ -534,7 +534,7 @@ blockquote>:last-child {
 }
 
 figure>*+figcaption,
-blockquote>*+footer {
+blockquote>footer {
     margin-top: var(--mrt-figcaption);
     margin-bottom: 0;
 }

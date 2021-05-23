@@ -1,8 +1,8 @@
 {
     "name": "compose-css",
-    "version": "14.1.7",
+    "version": "14.1.8",
     "description": "Composable CSS Toolkit",
-    "main": "src/compose.css",
+    "main": "css/compose.css",
     "style": "css/compose.css",
     "devDependencies": {
         "autoprefixer": "^9.8.6",
