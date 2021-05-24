@@ -1,4 +1,4 @@
-@media (--sm) {
+@media (min-width: 400px) {
     .sm\:inline {
         display: inline;
     }
@@ -362,7 +362,7 @@
     }
 }
 
-@media (--rg) {
+@media (min-width: 600px) {
     .rg\:inline {
         display: inline;
     }
@@ -726,7 +726,7 @@
     }
 }
 
-@media (--md) {
+@media (min-width: 900px) {
     .md\:inline {
         display: inline;
     }
@@ -1090,7 +1090,7 @@
     }
 }
 
-@media (--lg) {
+@media (min-width: 1400px) {
     .lg\:inline {
         display: inline;
     }

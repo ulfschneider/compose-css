@@ -1,6 +1,6 @@
 :root {
-    --small-width: 20rem;
-    --regular-width: 30rem;
+    --small-width: 25rem;
+    --regular-width: 35rem;
     --mid-width: 45rem;
     --large-width: 60rem;
 }
@@ -54,18 +54,22 @@
 }
 
 .w-sm {
+    width: 25rem;
     width: var(--small-width);
 }
 
 .w-rg {
+    width: 35rem;
     width: var(--regular-width);
 }
 
 .w-md {
+    width: 45rem;
     width: var(--mid-width);
 }
 
 .w-lg {
+    width: 60rem;
     width: var(--large-width);
 }
 

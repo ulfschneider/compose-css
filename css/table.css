@@ -12,10 +12,14 @@
 table {
     border-collapse: collapse;
     font-variant-numeric: tabular-nums;
+    margin-top: var(--mrt-figure);
     margin-top: var(--mrt-table);
+    margin-bottom: var(--mrb-figure);
     margin-bottom: var(--mrb-table);
     text-align: left;
+    font-family: var(--font-family);
     font-family: var(--table-font-family);
+    font-size: var(--figcaption-font-size);
     font-size: var(--table-font-size);
     line-height: var(--lh-2);
 }
@@ -49,6 +53,7 @@ table table {
 }
 
 .underline-rows tr {
+    border-bottom: var(--border-width) solid var(--table-underline-row-color);
     border-bottom: var(--table-underline);
 }
 
@@ -64,6 +69,7 @@ td {
 
 th {
     font-weight: var(--font-weight-bold);
+    font-family: var(--heading-font-family);
     font-family: var(--table-heading-font-family);
     background: var(--table-head-background);
 }
@@ -79,6 +85,7 @@ table caption {
 
 th,
 td {
+    padding: var(--space-d1) var(--space);
     padding: var(--td-y-padding) var(--td-x-padding);
 }
 
@@ -90,6 +97,7 @@ th+td {
 
 *+td,
 *+th {
+    padding-left: var(--space);
     padding-left: var(--td-x-padding);
 }
 
@@ -99,6 +107,7 @@ td:last-child {
 }
 
 caption {
+    padding: var(--space-d1) 0;
     padding: var(--td-y-padding) 0;
 }
 

@@ -29,16 +29,19 @@
 }
 
 .columns-fluid {
+    column-width: 16rem;
     column-width: var(--column-fluid-width);
 }
 
 .column-rule {
+    column-rule: 1px solid var(--neutral-2);
     column-rule: var(--column-rule);
 }
 
 .x-12 {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    column-gap: 0;
     column-gap: var(--column-gap);
 }
 
@@ -144,7 +147,7 @@
     grid-column-start: 12;
 }
 
-@media (--sm) {
+@media (min-width: 400px) {
     .sm\:columns-1 {
         columns: 1;
     }
@@ -332,7 +335,7 @@
     }
 }
 
-@media (--rg) {
+@media (min-width: 600px) {
     .rg\:columns-1 {
         columns: 1;
     }
@@ -520,7 +523,7 @@
     }
 }
 
-@media (--md) {
+@media (min-width: 900px) {
     .md\:columns-1 {
         columns: 1;
     }
@@ -708,7 +711,7 @@
     }
 }
 
-@media (--lg) {
+@media (min-width: 1400px) {
     .x>.lg\:columns-1 {
         columns: 1;
     }

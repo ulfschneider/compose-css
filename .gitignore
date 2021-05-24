@@ -3,4 +3,3 @@
 *.css.map
 .tags
 node_modules/
-compose.html

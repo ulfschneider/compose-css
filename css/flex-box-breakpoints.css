@@ -1,4 +1,4 @@
-@media (--sm) {
+@media (min-width: 400px) {
     .sm\:flex,
     .sm\:flex-row {
         display: flex;
@@ -302,7 +302,7 @@
     }
 }
 
-@media (--rg) {
+@media (min-width: 600px) {
     .rg\:flex,
     .rg\:flex-row {
         display: flex;
@@ -606,7 +606,7 @@
     }
 }
 
-@media (--md) {
+@media (min-width: 900px) {
     .md\:flex,
     .md\:flex-row {
         display: flex;
@@ -910,7 +910,7 @@
     }
 }
 
-@media (--lg) {
+@media (min-width: 1400px) {
     .lg\:flex,
     .lg\:flex-row {
         display: flex;

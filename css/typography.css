@@ -51,9 +51,13 @@
     --quotes: """ """"'""'";
     --quotes-de: """ """"'""'";
     --scroll-margin-top: var(--vertical-rhythm);
+    font-family: sans-serif;
     font-family: var(--font-family);
+    font-feature-settings: unset;
     font-feature-settings: var(--font-feature-settings);
+    font-weight: 400;
     font-weight: var(--font-weight-normal);
+    font-variant-numeric: normal;
     font-variant-numeric: var(--font-variant-numeric);
     --outline: var(--space-d3) solid var(--link-focus-color);
     --outline-offset: var(--space-d4);
@@ -64,7 +68,9 @@
 }
 
 *:focus {
+    outline: var(--space-d3) solid var(--link-focus-color);
     outline: var(--outline);
+    outline-offset: var(--space-d4);
     outline-offset: var(--outline-offset);
 }
 
@@ -95,26 +101,35 @@ a:focus {
 }
 
 .base-font {
+    font-family: sans-serif;
     font-family: var(--font-family);
 }
 
 .heading-font {
+    font-family: sans-serif;
     font-family: var(--heading-font-family);
 }
 
 .meta-font {
+    font-family: sans-serif;
     font-family: var(--meta-font-family);
 }
 
 .mono-font {
+    font-family: monospace;
     font-family: var(--mono-font-family);
 }
 
 .meta {
+    font-family: sans-serif;
     font-family: var(--meta-font-family);
+    font-feature-settings: unset;
     font-feature-settings: var(--meta-font-feature-settings);
+    font-weight: 400;
     font-weight: var(--meta-font-weight);
+    text-transform: unset;
     text-transform: var(--meta-text-transform);
+    letter-spacing: unset;
     letter-spacing: var(--meta-letter-spacing);
     color: var(--meta-color);
 }
@@ -124,6 +139,7 @@ b,
 .b,
 strong,
 .strong {
+    font-weight: 700;
     font-weight: var(--font-weight-bold);
 }
 
@@ -311,6 +327,7 @@ kbd,
     border-radius: var(--space-d4);
     border: 1px solid var(--kbd-border-color);
     padding: 0 0.2em;
+    font-family: monospace;
     font-family: var(--mono-font-family);
     white-space: nowrap;
     text-align: center;
@@ -318,7 +335,9 @@ kbd,
 }
 
 .mono {
+    font-family: monospace;
     font-family: var(--mono-font-family);
+    font-feature-settings: unset;
     font-feature-settings: var(--mono-font-feature-settings);
 }
 
@@ -332,59 +351,79 @@ h3,
 h4,
 h5,
 h6 {
+    text-transform: none;
     text-transform: var(--heading-text-transform);
+    letter-spacing: 0em;
     letter-spacing: var(--heading-letter-spacing);
+    font-weight: 700;
     font-weight: var(--heading-font-weight);
+    font-family: sans-serif;
     font-family: var(--heading-font-family);
+    font-feature-settings: unset;
     font-feature-settings: var(--heading-font-feature-settings);
     color: var(--heading-color);
+    scroll-margin-top: var(--space);
     scroll-margin-top: var(--scroll-margin-top);
 }
 
 h1 {
     font-size: var(--fs-h1);
     line-height: var(--lh-h1);
+    margin-top: var(--space-1);
     margin-top: var(--mrt-h1);
+    margin-bottom: var(--space);
     margin-bottom: var(--mrb-h1);
 }
 
 h2 {
     font-size: var(--fs-h2);
     line-height: var(--lh-h2);
+    margin-top: var(--space-2);
     margin-top: var(--mrt-h2);
+    margin-bottom: var(--space);
     margin-bottom: var(--mrb-h2);
 }
 
 h3 {
     font-size: var(--fs-h3);
     line-height: var(--lh-h3);
+    margin-top: var(--space-2);
     margin-top: var(--mrt-h3);
+    margin-bottom: var(--space);
     margin-bottom: var(--mrb-h3);
 }
 
 h4 {
     font-size: var(--fs-h4);
     line-height: var(--lh-h4);
+    margin-top: var(--space-2);
     margin-top: var(--mrt-h4);
+    margin-bottom: var(--space);
     margin-bottom: var(--mrb-h4);
 }
 
 h5 {
     font-size: var(--fs-h5);
     line-height: var(--lh-h5);
+    margin-top: var(--space-2);
     margin-top: var(--mrt-h5);
+    margin-bottom: var(--space);
     margin-bottom: var(--mrb-h5);
 }
 
 h6 {
     font-size: var(--fs-h6);
     line-height: var(--lh-h6);
+    margin-top: var(--space-2);
     margin-top: var(--mrt-h6);
+    margin-bottom: var(--space);
     margin-bottom: var(--mrb-h6);
 }
 
 p {
+    margin-top: var(--space);
     margin-top: var(--mrt-paragraph);
+    margin-bottom: var(--space);
     margin-bottom: var(--mrb-paragraph);
 }
 
@@ -394,22 +433,28 @@ p {
 }
 
 .indent p+p {
+    text-indent: var(--space-1);
     text-indent: var(--horizontal-rhythm);
 }
 
 p.indent {
+    text-indent: var(--space-1) !important;
     text-indent: var(--horizontal-rhythm) !important;
 }
 
 .no-indent p {
     text-indent: 0;
+    margin-top: var(--space);
     margin-top: var(--mrt-paragraph);
+    margin-bottom: var(--space);
     margin-bottom: var(--mrb-paragraph);
 }
 
 p.no-indent {
     text-indent: 0 !important;
+    margin-top: var(--space) !important;
     margin-top: var(--mrt-paragraph) !important;
+    margin-bottom: var(--space) !important;
     margin-bottom: var(--mrb-paragraph) !important;
 }
 
@@ -417,13 +462,16 @@ p.no-indent {
 code,
 pre,
 .pre {
+    font-family: monospace;
     font-family: var(--code-font-family);
     font-size: var(--fs-mono);
 }
 
 pre,
 .pre {
+    margin-top: var(--space);
     margin-top: var(--mrt-pre);
+    margin-bottom: var(--space);
     margin-bottom: var(--mrb-pre);
     padding-top: var(--space-d2);
     padding-bottom: var(--space-d2);
@@ -440,12 +488,16 @@ pre,
 }
 
 blockquote {
+    margin-top: var(--space-2);
     margin-top: var(--mrt-blockquote);
+    margin-bottom: var(--space-2);
     margin-bottom: var(--mrb-blockquote);
     margin-left: 0;
     margin-right: 0;
+    padding: 0 0 0 var(--space-1);
     padding: 0 0 0 var(--horizontal-rhythm);
     border-left: var(--border-width) solid var(--li-prefix-color);
+    font-style: italic;
     font-style: var(--blockquote-font-style);
     background: var(--blockquote-background);
 }
@@ -460,6 +512,7 @@ blockquote {
 
 a {
     color: var(--link-color);
+    text-decoration: underline;
     text-decoration: var(--link-text-decoration);
     transition: color .1s ease-out;
 }
@@ -480,6 +533,7 @@ blockquote p {
 }
 
 blockquote p+p {
+    text-indent: var(--space-1);
     text-indent: var(--horizontal-rhythm);
 }
 
@@ -487,6 +541,7 @@ q,
 .q,
 .quote,
 blockquote {
+    quotes: """ """"'""'";
     quotes: var(--quotes);
 }
 
@@ -494,11 +549,14 @@ html[lang="de-DE"] q,
 html[lang="de-DE"] .q,
 html[lang="de-DE"] .quote,
 html[lang="de-DE"] blockquote {
+    quotes: """ """"'""'";
     quotes: var(--quotes-de);
 }
 
 figure {
+    margin-top: var(--space-2);
     margin-top: var(--mrt-figure);
+    margin-bottom: var(--space-2);
     margin-bottom: var(--mrb-figure);
     margin-left: 0;
     margin-right: 0;
@@ -510,8 +568,10 @@ blockquote>header {
     margin-top: 0;
     margin-bottom: 0;
     text-align: left;
+    font-family: sans-serif;
     font-family: var(--figcaption-font-family);
     font-style: normal;
+    font-size: var(--fs-d1);
     font-size: var(--figcaption-font-size);
     line-height: var(--lh-2);
     max-width: var(--regular-width);
@@ -519,6 +579,7 @@ blockquote>header {
 
 figcaption {
     margin-top: 0;
+    margin-bottom: var(--space);
     margin-bottom: var(--mrb-figcaption);
 }
 
@@ -534,6 +595,7 @@ blockquote>:last-child {
 
 figure>*+figcaption,
 blockquote>footer {
+    margin-top: var(--space);
     margin-top: var(--mrt-figcaption);
     margin-bottom: 0;
 }
@@ -544,6 +606,7 @@ blockquote>footer::before {
 
 blockquote>header {
     margin-top: 0;
+    margin-bottom: var(--space);
     margin-bottom: var(--mrb-figcaption);
 }
 
@@ -551,7 +614,7 @@ blockquote>header::after {
     content: "—";
 }
 
-@media(--max-sm) {
+@media(max-width: 400px) {
     figcaption,
     blockquote>footer {
         max-width: unset;
@@ -568,12 +631,15 @@ blockquote>header::after {
 hr {
     border: 0;
     text-align: center;
+    margin-top: var(--space);
     margin-top: var(--mrt-hr);
+    margin-bottom: var(--space);
     margin-bottom: var(--mrb-hr);
     color: inherit;
 }
 
 hr::after {
+    content: "·\0000a0\0000a0\0000a0·\0000a0\0000a0\0000a0·";
     content: var(--hr-content);
     white-space: pre;
     color: inherit;

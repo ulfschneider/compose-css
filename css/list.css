@@ -19,7 +19,9 @@
 }
 
 dl {
+    margin-top: var(--vertical-rhythm);
     margin-top: var(--mrt-list);
+    margin-bottom: var(--vertical-rhythm);
     margin-bottom: var(--mrb-list);
     margin-left: 0;
     margin-right: 0;
@@ -31,10 +33,12 @@ dd {
 }
 
 dd+dt {
+    margin-top: var(--vertical-rhythm);
     margin-top: var(--mrt-list);
 }
 
 dl.timeline {
+    border-left: var(--border-width) solid var(--timeline-color);
     border-left: var(--timeline-width) solid var(--timeline-color);
 }
 
@@ -51,13 +55,18 @@ dl.timeline>dt {
 dl.timeline>dt::before {
     border-radius: 50%;
     content: "";
+    width: 1em;
     width: var(--timeline-blub-size);
+    height: 1em;
     height: var(--timeline-blub-size);
     display: block;
     position: absolute;
+    margin-left: calc(-0.5 * (1em + var(--border-width)) - var(--horizontal-rhythm));
     margin-left: calc(-0.5 * (var(--timeline-blub-size) + var(--timeline-width)) - var(--horizontal-rhythm));
+    margin-top: calc(0.5em * var(--lh-default) - 0.5 * 1em - var(--border-width));
     margin-top: calc(0.5em * var(--lh-default) - 0.5 * var(--timeline-blub-size) - var(--timeline-width));
     background-color: var(--timeline-blub-background);
+    border: var(--border-width) solid var(--timeline-blub-color);
     border: var(--timeline-blub-border) solid var(--timeline-blub-color);
 }
 
@@ -67,7 +76,9 @@ ul {
     padding: 0;
     margin-left: var(--horizontal-rhythm);
     margin-right: 0;
+    margin-top: var(--vertical-rhythm);
     margin-top: var(--mrt-list);
+    margin-bottom: var(--vertical-rhythm);
     margin-bottom: var(--mrb-list);
 }
 
@@ -97,6 +108,7 @@ ol>li {
 }
 
 ol li::before {
+    content: counters(ol-counter, "-", decimal-leading-zero);
     content: var(--ol-counter);
     min-width: var(--horizontal-rhythm);
     padding-right: var(--space-d2);
@@ -110,6 +122,7 @@ ol li::before {
 }
 
 ul li::before {
+    content: "–";
     content: var(--list-item-type);
     margin-left: calc(var(--horizontal-rhythm) * -1);
     padding-right: var(--space-d2);
@@ -144,6 +157,7 @@ ul ol li::before {
 }
 
 .outline h2::before {
+    content: counter(h2-counter);
     content: var(--h2-counter);
 }
 
@@ -153,6 +167,7 @@ ul ol li::before {
 }
 
 .outline h3::before {
+    content: counter(h2-counter) "." counter(h3-counter);
     content: var(--h3-counter);
 }
 
@@ -162,6 +177,7 @@ ul ol li::before {
 }
 
 .outline h4::before {
+    content: counter(h2-counter) "." counter(h3-counter) "." counter(h4-counter);
     content: var(--h4-counter);
 }
 
@@ -171,6 +187,7 @@ ul ol li::before {
 }
 
 .outline h5::before {
+    content: counter(h2-counter) "." counter(h3-counter) "." counter(h4-counter) "." counter(h5-counter);
     content: var(--h5-counter);
 }
 
@@ -180,6 +197,7 @@ ul ol li::before {
 }
 
 .outline h6::before {
+    content: counter(h2-counter) "." counter(h3-counter) "." counter(h4-counter) "." counter(h5-counter) "." counter(h6-counter);
     content: var(--h6-counter);
 }
 

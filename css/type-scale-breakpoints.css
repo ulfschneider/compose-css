@@ -5,55 +5,63 @@
     --font-size-breakpoint-lg: calc(var(--base-font-size) + 3px);
 }
 
-@media (--sm) {
+@media (min-width: 400px) {
      :root {
+        font-size: calc(var(--base-font-size) + 1px);
         font-size: var(--font-size-breakpoint-sm);
     }
 }
 
 @media (--sm) {
      :root {
+        font-size: calc(var(--base-font-size) + 1px);
         font-size: var(--font-size-breakpoint-sm);
     }
 }
 
-@media (--rg) {
+@media (min-width: 600px) {
      :root {
+        font-size: calc(var(--base-font-size) + 2px);
         font-size: var(--font-size-breakpoint-rg);
     }
 }
 
 @media (--rg) {
      :root {
+        font-size: calc(var(--base-font-size) + 2px);
         font-size: var(--font-size-breakpoint-rg);
     }
 }
 
-@media (--md) {
+@media (min-width: 900px) {
      :root {
+        font-size: calc(var(--base-font-size) + 2px);
         font-size: var(--font-size-breakpoint-md);
     }
 }
 
 @media (--md) {
      :root {
+        font-size: calc(var(--base-font-size) + 2px);
         font-size: var(--font-size-breakpoint-md);
     }
 }
 
-@media (--lg) {
+@media (min-width: 1400px) {
      :root {
+        font-size: calc(var(--base-font-size) + 3px);
         font-size: var(--font-size-breakpoint-lg);
     }
 }
 
 @media (--lg) {
      :root {
+        font-size: calc(var(--base-font-size) + 3px);
         font-size: var(--font-size-breakpoint-lg);
     }
 }
 
-@media (--sm) {
+@media (min-width: 400px) {
     .sm\:h1 {
         font-size: var(--fs-h1);
         line-height: var(--lh-h1);
@@ -251,7 +259,7 @@
     }
 }
 
-@media (--rg) {
+@media (min-width: 600px) {
     .rg\:h1 {
         font-size: var(--fs-h1);
         line-height: var(--lh-h1);
@@ -449,7 +457,7 @@
     }
 }
 
-@media (--md) {
+@media (min-width: 900px) {
     .md\:h1 {
         font-size: var(--fs-h1);
         line-height: var(--lh-h1);
@@ -647,7 +655,7 @@
     }
 }
 
-@media (--lg) {
+@media (min-width: 1400px) {
     .lg\:h1 {
         font-size: var(--fs-h1);
         line-height: var(--lh-h1);

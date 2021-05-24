@@ -13,7 +13,7 @@ Naming conventions
     
 */
 
-@media (--sm) {
+@media (min-width: 400px) {
     .sm\:pd-0,
     .sm\:no-pd {
         padding: 0;
@@ -619,7 +619,7 @@ Naming conventions
     }
 }
 
-@media (--rg) {
+@media (min-width: 600px) {
     .rg\:pd-0,
     .rg\:no-pd {
         padding: 0;
@@ -1225,7 +1225,7 @@ Naming conventions
     }
 }
 
-@media (--md) {
+@media (min-width: 900px) {
     .md\:pd-0,
     .md\:no-pd {
         padding: 0;
@@ -1831,7 +1831,7 @@ Naming conventions
     }
 }
 
-@media (--lg) {
+@media (min-width: 1400px) {
     .lg\:pd-0,
     .lg\:no-pd {
         padding: 0;

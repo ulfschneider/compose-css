@@ -12,7 +12,7 @@ Naming conventions
     <i>=increase by <i>
 */
 
-@media (--sm) {
+@media (min-width: 400px) {
     .sm\:mr-0,
     .sm\:no-mr {
         margin: 0;
@@ -930,7 +930,7 @@ Naming conventions
     }
 }
 
-@media (--rg) {
+@media (min-width: 600px) {
     .rg\:mr-0,
     .rg\:no-mr {
         margin: 0;
@@ -1848,7 +1848,7 @@ Naming conventions
     }
 }
 
-@media (--md) {
+@media (min-width: 900px) {
     .md\:mr-0,
     .md\:no-mr {
         margin: 0;
@@ -2766,7 +2766,7 @@ Naming conventions
     }
 }
 
-@media (--lg) {
+@media (min-width: 1400px) {
     .lg\:mr-0,
     .lg\:no-mr {
         margin: 0;

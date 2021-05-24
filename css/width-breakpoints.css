@@ -1,4 +1,4 @@
-@media (--sm) {
+@media (min-width: 400px) {
     .sm\:w-unset {
         width: unset;
     }
@@ -88,7 +88,7 @@
     }
 }
 
-@media (--rg) {
+@media (min-width: 600px) {
     .rg\:w-unset {
         width: unset;
     }
@@ -178,7 +178,7 @@
     }
 }
 
-@media (--md) {
+@media (min-width: 900px) {
     .md\:w-unset {
         width: unset;
     }
@@ -268,7 +268,7 @@
     }
 }
 
-@media (--lg) {
+@media (min-width: 1400px) {
     .lg\:w-unset {
         width: unset;
     }

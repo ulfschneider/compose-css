@@ -7,16 +7,22 @@
 }
 
 .br {
+    border-style: solid;
     border-style: var(--border-style);
+    border-width: 1px;
     border-width: var(--border-width);
     border-color: var(--border-color);
 }
 
 .brx {
+    border-left-style: solid;
     border-left-style: var(--border-style);
+    border-left-width: 1px;
     border-left-width: var(--border-width);
     border-left-color: var(--border-color);
+    border-right-style: solid;
     border-right-style: var(--border-style);
+    border-right-width: 1px;
     border-right-width: var(--border-width);
     border-right-color: var(--border-color);
     border-top-width: 0;
@@ -24,10 +30,14 @@
 }
 
 .bry {
+    border-top-style: solid;
     border-top-style: var(--border-style);
+    border-top-width: 1px;
     border-top-width: var(--border-width);
     border-top-color: var(--border-color);
+    border-bottom-style: solid;
     border-bottom-style: var(--border-style);
+    border-bottom-width: 1px;
     border-bottom-width: var(--border-width);
     border-bottom-color: var(--border-color);
     border-left-width: 0;
@@ -35,25 +45,33 @@
 }
 
 .brt {
+    border-top-style: solid;
     border-top-style: var(--border-style);
+    border-top-width: 1px;
     border-top-width: var(--border-width);
     border-top-color: var(--border-color);
 }
 
 .brr {
+    border-right-style: solid;
     border-right-style: var(--border-style);
+    border-right-width: 1px;
     border-right-width: var(--border-width);
     border-right-color: var(--border-color);
 }
 
 .brb {
+    border-bottom-style: solid;
     border-bottom-style: var(--border-style);
+    border-bottom-width: 1px;
     border-bottom-width: var(--border-width);
     border-bottom-color: var(--border-color);
 }
 
 .brl {
+    border-left-style: solid;
     border-left-style: var(--border-style);
+    border-left-width: 1px;
     border-left-width: var(--border-width);
     border-left-color: var(--border-color);
 }
@@ -112,6 +130,7 @@
 
 .radius-d3,
 .rounded {
+    border-radius: var(--space-d3);
     border-radius: var(--rounded);
 }
 

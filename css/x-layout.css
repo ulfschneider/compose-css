@@ -5,18 +5,21 @@
 
 .x {
     display: grid;
+    grid-template-columns: [gutter-l] var(--space) [breakout-wide-l] 1fr [breakout-l] 1fr [main-content-start] minmax(auto, var(--regular-width)) [main-content-end] 1fr [breakout-r] 1fr [breakout-wide-r] var(--space) [gutter-r];
     grid-template-columns: [gutter-l] var(--x-padding) [breakout-wide-l] 1fr [breakout-l] 1fr [main-content-start] minmax(auto, var(--main-content-width)) [main-content-end] 1fr [breakout-r] 1fr [breakout-wide-r] var(--x-padding) [gutter-r];
     overflow: hidden;
 }
 
 .x-l {
     display: grid;
+    grid-template-columns: [gutter-l] var(--space) [breakout-wide-l] 1fr [breakout-l] 0fr [main-content-start] minmax(auto, var(--regular-width)) [main-content-end] 1fr [breakout-r] 2fr [breakout-wide-r] var(--space) [gutter-r];
     grid-template-columns: [gutter-l] var(--x-padding) [breakout-wide-l] 1fr [breakout-l] 0fr [main-content-start] minmax(auto, var(--main-content-width)) [main-content-end] 1fr [breakout-r] 2fr [breakout-wide-r] var(--x-padding) [gutter-r];
     overflow: hidden;
 }
 
 .x-r {
     display: grid;
+    grid-template-columns: [gutter-l] var(--space) [breakout-wide-l] 2fr [breakout-l] 1fr [main-content-start] minmax(auto, var(--regular-width)) [main-content-end] 0fr [breakout-r] 1fr [breakout-wide-r] var(--space) [gutter-r];
     grid-template-columns: [gutter-l] var(--x-padding) [breakout-wide-l] 2fr [breakout-l] 1fr [main-content-start] minmax(auto, var(--main-content-width)) [main-content-end] 0fr [breakout-r] 1fr [breakout-wide-r] var(--x-padding) [gutter-r];
     overflow: hidden;
 }

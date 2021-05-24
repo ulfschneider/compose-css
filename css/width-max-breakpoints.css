@@ -1,4 +1,4 @@
-@media (--sm) {
+@media (min-width: 400px) {
     .sm\:mxw-unset,
     .sm\:mxw-u {
         max-width: unset;
@@ -84,7 +84,7 @@
     }
 }
 
-@media (--rg) {
+@media (min-width: 600px) {
     .rg\:mxw-unset,
     .rg\:mxw-u {
         max-width: unset;
@@ -170,7 +170,7 @@
     }
 }
 
-@media (--md) {
+@media (min-width: 900px) {
     .md\:mxw-unset,
     .md\:mxw-u {
         max-width: unset;
@@ -256,7 +256,7 @@
     }
 }
 
-@media (--lg) {
+@media (min-width: 1400px) {
     .lg\:mxw-unset,
     .lg\:mxw-u {
         max-width: unset;
