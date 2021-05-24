@@ -10,10 +10,10 @@ const processingDoc = (callback) => {
 }
 
 const watcher = () => {
-    watch(['src/*.css'], processingCSS)
-    watch(['css/compose.css', 'doc/prism.css', 'doc/customize.css'], processingDocCSS)
     watch('doc/compose.md', processingDoc);
+    watch(['css/compose.css', 'doc/prism.css', 'doc/customize.css'], processingDocCSS)
+    watch(['src/*.css'], processingCSS)
 };
 
-exports.default = series([processingCSS, processingDocCSS, processingDoc]);
+exports.default = series([processingDoc, processingCSS, processingDocCSS]);
 exports.watch = watcher;
