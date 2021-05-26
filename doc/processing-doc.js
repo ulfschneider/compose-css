@@ -1,5 +1,5 @@
 const SOURCE = 'doc/compose.md';
-const DEST = 'index.html';
+const DEST = 'index-new.html';
 
 const package = require('../package.json');
 
@@ -47,7 +47,7 @@ function processingDoc() {
     let source = fs.readFileSync(SOURCE, 'utf8');
     const mdlib = getMarkdownLib();
     let doc = mdlib.render(source).replace('{{compose-version}}', package.version);
-    let wrapper = `<main class="mxw-rg mrx-auto mry-1">${doc}</main>`;
+    let wrapper = `<main class="mxw-rg mrx-auto pdx-1">${doc}</main>`;
 
     $ = cheerio.load(wrapper);
 

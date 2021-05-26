@@ -10,7 +10,7 @@ const processingDoc = (callback) => {
 }
 
 const watcher = () => {
-    watch('doc/compose.md', processingDoc);
+    watch(['doc/compose.md'], processingDoc);
     watch(['css/compose.css', 'doc/prism.css', 'doc/customize.css'], processingDocCSS)
     watch(['src/*.css'], processingCSS)
 };
