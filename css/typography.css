@@ -562,11 +562,19 @@ figure {
     margin-right: 0;
 }
 
+figure>:first-child,
+blockquote>:first-child {
+    margin-top: 0;
+}
+
+figure>:last-child,
+blockquote>:last-child {
+    margin-bottom: 0;
+}
+
 figcaption,
 blockquote>footer,
 blockquote>header {
-    margin-top: 0;
-    margin-bottom: 0;
     text-align: left;
     font-family: sans-serif;
     font-family: var(--figcaption-font-family);
@@ -581,16 +589,6 @@ figcaption {
     margin-top: 0;
     margin-bottom: var(--space);
     margin-bottom: var(--mrb-figcaption);
-}
-
-figure>:first-child,
-blockquote>:first-child {
-    margin-top: 0;
-}
-
-figure>:last-child,
-blockquote>:last-child {
-    margin-bottom: 0;
 }
 
 figure>*+figcaption,
