@@ -563,12 +563,12 @@ figure {
 }
 
 figure>:first-child,
-blockquote>:first-child {
+blockquote>:first-child:not(footer) {
     margin-top: 0;
 }
 
 figure>:last-child,
-blockquote>:last-child {
+blockquote>:last-child:not(header) {
     margin-bottom: 0;
 }
 
