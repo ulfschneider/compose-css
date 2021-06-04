@@ -9,7 +9,7 @@
     --heading-letter-spacing: 0em;
     --heading-text-transform: none;
     --figcaption-font-family: var(--heading-font-family);
-    --figcaption-font-size: var(--fs-d1);
+    --figcaption-font-size: var(--fs);
     --meta-font-family: var(--font-family);
     --meta-font-feature-settings: var(--font-feature-settings);
     --meta-font-weight: var(--font-weight-normal);
@@ -448,6 +448,7 @@ blockquote {
     border-left: var(--border-width) solid var(--li-prefix-color);
     font-style: var(--blockquote-font-style);
     background: var(--blockquote-background);
+    font-size: larger;
 }
 
 .tag {

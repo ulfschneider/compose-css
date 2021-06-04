@@ -9,7 +9,7 @@
     --heading-letter-spacing: 0em;
     --heading-text-transform: none;
     --figcaption-font-family: var(--heading-font-family);
-    --figcaption-font-size: var(--fs-d1);
+    --figcaption-font-size: var(--fs);
     --meta-font-family: var(--font-family);
     --meta-font-feature-settings: var(--font-feature-settings);
     --meta-font-weight: var(--font-weight-normal);
@@ -500,6 +500,7 @@ blockquote {
     font-style: italic;
     font-style: var(--blockquote-font-style);
     background: var(--blockquote-background);
+    font-size: larger;
 }
 
 .tag {
@@ -579,7 +580,7 @@ blockquote>header {
     font-family: sans-serif;
     font-family: var(--figcaption-font-family);
     font-style: normal;
-    font-size: var(--fs-d1);
+    font-size: var(--fs);
     font-size: var(--figcaption-font-size);
     line-height: var(--lh-2);
     max-width: var(--regular-width);
