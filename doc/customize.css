@@ -1,7 +1,13 @@
+.anchor {
+    font-size: var(--fs);
+    color: var(--neutral);
+    text-decoration: none;
+    font-weight: normal;
+}
+
 @media (--rg) {
     main>figure,
-    main>pre,
-    main>pre[class*=language-],
+    main>pre,    
     main>.title {
         margin-right: calc(-0.5 * (100vw - var(--regular-width)) + var(--space));
         min-width: 100%;

@@ -117,7 +117,7 @@
     --base-background: white;
     --mark-background: yellow;
     --border-color: var(--neutral);
-    --pre-background: var(--neutral-5);
+    --pre-background: transparent;
     --link-color: inherit;
     --link-focus-color: var(--primary);
     --link-hover-color: var(--link-focus-color);
@@ -134,13 +134,14 @@
     --form-button-background: var(--base-color);
     --form-button-color: var(--base-background);
     --form-field-background: var(--neutral-5);
-    --kbd-background: var(--pre-background);
+    --kbd-background: var(--neutral-5);
+    --kbd-color: var(--base-color);
     --kbd-border-color: var(--border-color);
     --timeline-color: var(--li-prefix-color);
     --timeline-blub-color: var(--li-prefix-color);
     --timeline-blub-background: var(--base-background);
     --text-decoration-color: unset;
-    --code-background: transparent;
+    --code-background: var(--neutral-5);
     --code-color: var(--base-color);
     --pre-color: var(--base-color);
     --blockquote-background: transparent;

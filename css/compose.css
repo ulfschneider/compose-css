@@ -34,7 +34,7 @@ iframe {
     --size-factor: 1.25;
     --base-font-size: 19px;
     --fs: 1rem;
-    --fs-mono: .8rem;
+    --fs-mono: .9rem;
     --fs-d2: calc(.8rem);
     --fs-d1: calc(.9rem);
     --fs-1: calc(var(--fs) * var(--size-factor));
@@ -1502,7 +1502,7 @@ small,
     --base-background: white;
     --mark-background: yellow;
     --border-color: var(--neutral);
-    --pre-background: var(--neutral-5);
+    --pre-background: transparent;
     --link-color: inherit;
     --link-focus-color: var(--primary);
     --link-hover-color: var(--link-focus-color);
@@ -1519,13 +1519,14 @@ small,
     --form-button-background: var(--base-color);
     --form-button-color: var(--base-background);
     --form-field-background: var(--neutral-5);
-    --kbd-background: var(--pre-background);
+    --kbd-background: var(--neutral-5);
+    --kbd-color: var(--base-color);
     --kbd-border-color: var(--border-color);
     --timeline-color: var(--li-prefix-color);
     --timeline-blub-color: var(--li-prefix-color);
     --timeline-blub-background: var(--base-background);
     --text-decoration-color: unset;
-    --code-background: transparent;
+    --code-background: var(--neutral-5);
     --code-color: var(--base-color);
     --pre-color: var(--base-color);
     --blockquote-background: transparent;
@@ -17503,6 +17504,8 @@ mark,
 
 kbd,
 .kbd {
+    color: hsl(0, 0%, calc(58% - 5 * calc(58% / 7)));
+    color: var(--kbd-color);
     background: hsl(0, 0%, calc(58% + 5 * calc((100% - 58%) / 6)));
     background: var(--kbd-background);
     border-radius: 2px;
@@ -17661,8 +17664,17 @@ pre,
 .pre {
     font-family: monospace;
     font-family: var(--code-font-family);
-    font-size: .8rem;
+    font-size: .9rem;
     font-size: var(--fs-mono);
+}
+
+.code,
+code {
+    color: hsl(0, 0%, calc(58% - 5 * calc(58% / 7)));
+    color: var(--code-color);
+    background: hsl(0, 0%, calc(58% + 5 * calc((100% - 58%) / 6)));
+    background: var(--code-background);
+
 }
 
 pre,
@@ -17681,7 +17693,7 @@ pre,
     border-bottom: var(--border);
     color: hsl(0, 0%, calc(58% - 5 * calc(58% / 7)));
     color: var(--pre-color);
-    background: hsl(0, 0%, calc(58% + 5 * calc((100% - 58%) / 6)));
+    background: transparent;
     background: var(--pre-background);
     white-space: pre;
     word-break: normal;
@@ -17826,6 +17838,7 @@ blockquote>header::after {
 }
 
 @media(max-width: 400px) {
+
     figcaption,
     blockquote>footer {
         max-width: unset;
@@ -17833,6 +17846,7 @@ blockquote>header::after {
 }
 
 @media(--max-sm) {
+
     figcaption,
     blockquote>footer {
         max-width: unset;

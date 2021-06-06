@@ -1,7 +1,7 @@
-const SOURCE = 'doc/compose.md';
+const SOURCE = 'doc/doc.md';
 const DEST = 'index-new.html';
 
-const package = require('../package.json');
+const package = require(`${process.cwd()}/package.json`);
 
 const fs = require('fs');
 const cheerio = require('cheerio');
@@ -43,7 +43,7 @@ function getMarkdownLib() {
 }
 
 
-function processingDoc() {
+function processingDoc(callback) {
     let source = fs.readFileSync(SOURCE, 'utf8');
     const mdlib = getMarkdownLib();
     let doc = mdlib.render(source).replace('{{compose-version}}', package.version);
@@ -60,6 +60,7 @@ function processingDoc() {
     $('body').addClass('pd');
 
     fs.writeFileSync(DEST, $.html(), 'utf8');
+    callback();
 }
 
 module.exports = processingDoc;

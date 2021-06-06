@@ -1,6 +1,6 @@
 {
     "name": "compose-css",
-    "version": "14.1.12",
+    "version": "14.1.13",
     "description": "Composable CSS Toolkit",
     "main": "css/compose.css",
     "style": "css/compose.css",
@@ -38,7 +38,7 @@
         "start": "run-p \"*watch:*\"",
         "serve": "run-p \"*watch:*\"",
         "watch:build": "gulp && gulp watch",
-        "watch:serve": "browser-sync start --server --files 'doc.css' 'index.html'",
+        "watch:serve": "browser-sync start --server --files 'doc.css' 'index-new.html' --index 'index-new.html'",
         "build": "npm update && npm audit fix && gulp",
         "test": "echo \"Error: no test specified\" && exit 1"
     },

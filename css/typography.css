@@ -323,6 +323,7 @@ mark,
 
 kbd,
 .kbd {
+    color: var(--kbd-color);
     background: var(--kbd-background);
     border-radius: var(--space-d4);
     border: 1px solid var(--kbd-border-color);
@@ -465,6 +466,13 @@ pre,
     font-family: monospace;
     font-family: var(--code-font-family);
     font-size: var(--fs-mono);
+}
+
+.code,
+code {
+    color: var(--code-color);
+    background: var(--code-background);
+
 }
 
 pre,
@@ -614,6 +622,7 @@ blockquote>header::after {
 }
 
 @media(max-width: 400px) {
+
     figcaption,
     blockquote>footer {
         max-width: unset;
@@ -621,6 +630,7 @@ blockquote>header::after {
 }
 
 @media(--max-sm) {
+
     figcaption,
     blockquote>footer {
         max-width: unset;

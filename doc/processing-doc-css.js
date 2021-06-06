@@ -20,7 +20,7 @@ const processingDocCSS = () => {
             postcssCalc(),
             postcssPurgeCSS({
                 content: [
-                    'index.html',
+                    'index-new.html',
                     'doc/prism.css',
                     'doc/customize.css'
                 ],

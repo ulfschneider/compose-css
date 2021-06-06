@@ -8,13 +8,13 @@
 
 ## Install
 
-Add the `compose-css` npm package to your node project. Install with
+Add the `compose-css` npm package to your node project. Install with:
 
 ~~~shell
 npm i compose-css
 ~~~
 
-Ideally, you run at least a `postcss-import` to load `compose-css` into your project, followed by a `postcss-custom-properties` , a `postcss-purgecss` , and a `cssnano` build-pipeline in your project to reduce the size of the initial compose-css by removing styles you don´t use. As an example, your `postcss.config.js` file would look in some way like this:
+Ideally, you run at least a `postcss-import` to load `compose-css` into your project, followed by a `postcss-custom-properties` , a `postcss-purgecss` , and a `cssnano` build-pipeline to reduce the size of the initial compose-css by removing styles you don´t use. As an example, your `postcss.config.js` file would look in some way like this:
 
 ~~~javascript
 module.exports = {
@@ -39,8 +39,6 @@ module.exports = {
 
 }
 ~~~
-
-## Notation
 
 ## Typography
 
