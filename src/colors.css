@@ -116,8 +116,7 @@
     --base-color: var(--neutral-d5);
     --base-background: white;
     --mark-background: yellow;
-    --border-color: var(--neutral);
-    --pre-background: transparent;
+    --border-color: var(--neutral);    
     --link-color: inherit;
     --link-focus-color: var(--primary);
     --link-hover-color: var(--link-focus-color);
@@ -141,10 +140,11 @@
     --timeline-blub-color: var(--li-prefix-color);
     --timeline-blub-background: var(--base-background);
     --text-decoration-color: unset;
+
     --code-background: var(--neutral-5);
-    --code-color: var(--base-color);
+    --code-color: unset;
     --pre-background: var(--code-background);
-    --pre-color: var(--code-color);
+    --pre-color: unset;
     --blockquote-background: transparent;
     --table-alternate-row-background: var(--neutral-5);
     --table-alternate-col-background: var(--neutral-5);

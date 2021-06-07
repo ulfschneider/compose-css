@@ -1501,8 +1501,7 @@ small,
     --base-color: var(--neutral-d5);
     --base-background: white;
     --mark-background: yellow;
-    --border-color: var(--neutral);
-    --pre-background: transparent;
+    --border-color: var(--neutral);    
     --link-color: inherit;
     --link-focus-color: var(--primary);
     --link-hover-color: var(--link-focus-color);
@@ -1526,10 +1525,11 @@ small,
     --timeline-blub-color: var(--li-prefix-color);
     --timeline-blub-background: var(--base-background);
     --text-decoration-color: unset;
+
     --code-background: var(--neutral-5);
-    --code-color: var(--base-color);
+    --code-color: unset;
     --pre-background: var(--code-background);
-    --pre-color: var(--code-color);
+    --pre-color: unset;
     --blockquote-background: transparent;
     --table-alternate-row-background: var(--neutral-5);
     --table-alternate-col-background: var(--neutral-5);
@@ -17671,7 +17671,7 @@ pre,
 
 .code,
 code {
-    color: hsl(0, 0%, calc(58% - 5 * calc(58% / 7)));
+    color: unset;
     color: var(--code-color);
     background: hsl(0, 0%, calc(58% + 5 * calc((100% - 58%) / 6)));
     background: var(--code-background);
@@ -17692,7 +17692,7 @@ pre,
     border-top: var(--border);
     border-bottom: 1px solid hsl(0, 0%, 58%);
     border-bottom: var(--border);
-    color: hsl(0, 0%, calc(58% - 5 * calc(58% / 7)));
+    color: unset;
     color: var(--pre-color);
     background: hsl(0, 0%, calc(58% + 5 * calc((100% - 58%) / 6)));
     background: var(--pre-background);
