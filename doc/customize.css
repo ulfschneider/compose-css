@@ -1,3 +1,8 @@
+:root {
+    --pre-background: transparent;
+    --code-background: transparent;
+}
+
 .anchor {
     font-size: var(--fs);
     color: var(--neutral);
@@ -6,8 +11,8 @@
 }
 
 @media (--rg) {
-    main>figure,
-    main>pre,    
+    main>figure,  
+    pre,  
     main>.title {
         margin-right: calc(-0.5 * (100vw - var(--regular-width)) + var(--space));
         min-width: 100%;

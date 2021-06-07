@@ -1,36 +1,293 @@
-<html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Compose CSS</title><link rel="stylesheet" href="doc.css"></head><body class="pd"><main class="mxw-rg mrx-auto pdx-1"><div class="title">
+<html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Compose CSS</title><link rel="stylesheet" href="doc.css"></head><body class="pd"><main class="mxw-rg mrx-auto"><div class="title">
 <h1>Compose CSS</h1>
-<span class="bg-primary white pdx-d3">v14.1.12</span>
-<div>A composable CSS Toolkit to build fast, maintainable, and responsive websites.</div>
+<span class="bg-primary white pd-d3">v14.1.14</span>
+<p>A composable CSS Toolkit to build fast, maintainable, and responsive websites.</p>
 </div>
-<nav class="table-of-contents"><ol><li><a href="#install">Install </a></li><li><a href="#typography">Typography </a></li><li><a href="#lists">Lists </a></li><li><a href="#tables">Tables </a></li><li><a href="#figures">Figures </a></li><li><a href="#images">Images </a></li><li><a href="#colors">Colors </a></li><li><a href="#layout">Layout </a></li></ol></nav><h2 id="install">Install <a class="anchor" href="#install">#</a></h2>
-<p>Add the <code>compose-css</code> npm package to your node project. Install with:</p>
+<nav class="table-of-contents"><ol><li><a href="#install">Install </a></li><li><a href="#typography">Typography </a><ol><li><a href="#elements">Elements </a></li><li><a href="#word-wrapping">Word wrapping </a></li><li><a href="#horizontal-ruler">Horizontal ruler </a></li><li><a href="#paragraph">Paragraph </a></li><li><a href="#indented-paragraph">Indented Paragraph </a></li><li><a href="#blockquote">Blockquote </a></li><li><a href="#writing-mode">Writing mode </a></li></ol></li><li><a href="#lists">Lists </a></li><li><a href="#tables">Tables </a></li><li><a href="#figures">Figures </a></li><li><a href="#images">Images </a></li><li><a href="#colors">Colors </a></li><li><a href="#layout">Layout </a></li></ol></nav><h2 id="install">Install <a class="anchor" href="#install">#</a></h2>
+<p>Add the <code>compose-css</code> npm package to your <code>node</code> project. Install with:</p>
 <pre class="language-shell"><code class="language-shell"><span class="token function">npm</span> i compose-css
 </code></pre>
 <p>Ideally, you run at least a <code>postcss-import</code> to load <code>compose-css</code> into your project, followed by a <code>postcss-custom-properties</code> , a <code>postcss-purgecss</code> , and a <code>cssnano</code> build-pipeline to reduce the size of the initial compose-css by removing styles you don´t use. As an example, your <code>postcss.config.js</code> file would look in some way like this:</p>
 <pre class="language-javascript"><code class="language-javascript">module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
-
-    plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
-        <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'postcss-import'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-        <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'postcss-custom-media'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-        <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'postcss-custom-properties'</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-            preserve<span class="token operator">:</span> <span class="token boolean">false</span>
-        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-        <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'postcss-calc'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-        <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'@fullhuman/postcss-purgecss'</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-        content<span class="token operator">:</span> <span class="token punctuation">[</span>
-                <span class="token comment">/*decide about the content to search for CSS classes to keep*/</span>
-                <span class="token comment">/*...*/</span>
-            <span class="token punctuation">]</span><span class="token punctuation">,</span>
-            whitelistPatternsChildren<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^token</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^pre</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^code</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-            <span class="token function-variable function">defaultExtractor</span><span class="token operator">:</span> <span class="token parameter">content</span> <span class="token operator">=&gt;</span> content<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">[\w-/:]+(?&lt;!:)</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span><span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token comment">/*check https://flaviocopes.com/tailwind-setup/ */</span>       
-        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>        
-        <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'cssnano'</span><span class="token punctuation">)</span>
-    <span class="token punctuation">]</span>
-
-<span class="token punctuation">}</span>
+  plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"postcss-import"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"postcss-custom-media"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"postcss-custom-properties"</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      preserve<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"postcss-calc"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"@fullhuman/postcss-purgecss"</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      content<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token comment">/*decide about the content to search for CSS classes to keep*/</span>
+        <span class="token comment">/*...*/</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      whitelistPatternsChildren<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^token</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^pre</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^code</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token function-variable function">defaultExtractor</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">content</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span>
+        content<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">[\w-/:]+(?&lt;!:)</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span><span class="token punctuation">)</span> <span class="token operator">||</span>
+        <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token comment">/*check https://flaviocopes.com/tailwind-setup/ */</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"cssnano"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
 <h2 id="typography">Typography <a class="anchor" href="#typography">#</a></h2>
+<h3 id="elements">Elements <a class="anchor" href="#elements">#</a></h3>
+<div class="scroll-table" style="overflow-x:auto;"><table class="underline-rows">
+    <tbody><tr>
+        <th>Element</th>
+        <th>Set style with CSS class or HTML tag</th>
+    </tr>
+                <tr>
+                    <td>
+                        <span>Normal</span></td>
+                    <td>
+                        <code>.normal</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#">Link</a>
+                    </td>
+                    <td>
+                        <code>a</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Bold</b>
+                    </td>
+                    <td>
+                        <code>strong</code>, <code>b</code>, <code>.strong</code>,
+                        <code>.bold</code>,
+                        <code>.b</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i>Italic</i>
+                    </td>
+                    <td>
+                        <code>i</code>, <code>.i</code>, <code>.italic</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <u>Underline</u>
+                    </td>
+                    <td>
+                        <code>u</code>, <code>.underline</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <del>Deleted</del>
+                    </td>
+                    <td>
+                        <code>del</code>, <code>.del</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="caps">Caps</span></td>
+                    <td>
+                        <code>.caps</code>, <code>.uppercase</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="lowercase">Lowercase</span></td>
+                    <td>
+                        <code>.lowercase</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="lsp">Spacing</span></td>
+                    <td>
+                        <code>.lsp</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mark>Highlighted</mark>
+                    </td>
+                    <td>
+                        <code>mark</code>, <code>.mark</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <kbd>Ctrl+K</kbd>
+                    </td>
+                    <td>
+                        <code>kbd</code>, <code>.kbd</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Text with <sup>superscript</sup>
+                    </td>
+                    <td>
+                        <code>sup</code>, <code>.sup</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Text with <sub>subscript</sub>
+                    </td>
+                    <td>
+                        <code>sub</code>, <code>.sub</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <cite>Citing the title of a work</cite>
+                    </td>
+                    <td>
+                        <code>cite</code>, <code>.cite</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <q>A quotation</q>
+                    </td>
+                    <td>
+                        <code>q</code>, <code>.q</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <em>Emphasize</em>
+                    </td>
+                    <td>
+                        <code>em</code>, <code>.em</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <s>Strike through</s>
+                    </td>
+                    <td>
+                        <code>s</code>, <code>.s</code>, <code>.strike</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <small>Small</small>
+                    </td>
+                    <td>
+                        <code>small</code>, <code>.small</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="smaller">Smaller</span>
+                    </td>
+                    <td>
+                        <code>.smaller</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <code>Code</code>
+                    </td>
+                    <td>
+                        <code>code</code>, <code>.code</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="meta">Meta text</span>
+                    </td>
+                    <td>
+                        <code>.meta</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="no-deco">No text decoration, eg. for links</span>
+                    </td>
+                    <td>
+                        <code>.no-deco</code>
+                    </td>
+                </tr>
+            </tbody></table></div>
+<h3 id="word-wrapping">Word wrapping <a class="anchor" href="#word-wrapping">#</a></h3>
+<div class="block br w-3 no-wrap mrr bg-neutral-5">No word wrap in small spaces</div>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>no-wrap<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+No word wrap in small spaces
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<div class="block br w-3 wrap-normal mrr bg-neutral-5">Normal word wrap in small spaces</div>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>wrap-normal<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+Normal word wrap in small spaces
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<div class="block br w-2 break-word mrr bg-neutral-5">Wrap and break word anywhere</div>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>break-word<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+Wrap and break word anywhere
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<div class="block br w-3 truncate mrr bg-neutral-5">
+Truncate instead of word wrap
+</div>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>truncate<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+Truncate instead of word wrap
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<h3 id="horizontal-ruler">Horizontal ruler <a class="anchor" href="#horizontal-ruler">#</a></h3>
+<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</p>
+<hr>
+<p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>hr</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>Configure with:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">:root</span> <span class="token punctuation">{</span>
+    <span class="token property">--hr-content</span><span class="token punctuation">:</span> <span class="token string">"·\0000a0\0000a0\0000a0·\0000a0\0000a0\0000a0·"</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="paragraph">Paragraph <a class="anchor" href="#paragraph">#</a></h3>
+<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</p>
+<p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.</p>
+<p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. <q>What’s happened to me?</q> he thought. It wasn’t a dream.</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q</span><span class="token punctuation">&gt;</span></span>What's happened to me?<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q</span><span class="token punctuation">&gt;</span></span> he thought. It wasn't a dream.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<h3 id="indented-paragraph">Indented Paragraph <a class="anchor" href="#indented-paragraph">#</a></h3>
+<div class="indent">
+<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</p>
+<p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.</p>
+<p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. <q>What's happened to me?</q> he thought. It wasn't a dream.</p>
+</div>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>indent<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q</span><span class="token punctuation">&gt;</span></span>What's happened to me?<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q</span><span class="token punctuation">&gt;</span></span> he thought. It wasn't a dream.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<h3 id="blockquote">Blockquote <a class="anchor" href="#blockquote">#</a></h3>
+<blockquote>
+<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</p>
+<p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
+<footer>Franz Kafka, <cite>The Metamorphosis</cite></footer>
+</blockquote>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>blockquote</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>footer</span><span class="token punctuation">&gt;</span></span>Franz Kafka, <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cite</span><span class="token punctuation">&gt;</span></span>The Metamorphosis<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>cite</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>footer</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>blockquote</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<h3 id="writing-mode">Writing mode <a class="anchor" href="#writing-mode">#</a></h3>
+<div class="sq-4 horizontal-tb br bg-neutral-5">
+He lay on his armour-like back
+</div>
+<div class="sq-4 vertical-lr br bg-neutral-5">
+He lay on his armour-like back
+</div>
+<div class="sq-4 vertical-rl br bg-neutral-5">
+He lay on his armour-like back
+</div>
 <h2 id="lists">Lists <a class="anchor" href="#lists">#</a></h2>
 <h2 id="tables">Tables <a class="anchor" href="#tables">#</a></h2>
 <h2 id="figures">Figures <a class="anchor" href="#figures">#</a></h2>

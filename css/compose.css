@@ -1528,7 +1528,8 @@ small,
     --text-decoration-color: unset;
     --code-background: var(--neutral-5);
     --code-color: var(--base-color);
-    --pre-color: var(--base-color);
+    --pre-background: var(--code-background);
+    --pre-color: var(--code-color);
     --blockquote-background: transparent;
     --table-alternate-row-background: var(--neutral-5);
     --table-alternate-col-background: var(--neutral-5);
@@ -17443,11 +17444,11 @@ u {
     font-variant-numeric: tabular-nums;
 }
 
-.no-wrap {
+.no-wrap, .no-break {
     white-space: nowrap;
 }
 
-.break-normal {
+.wrap-normal, .break-normal {
     overflow-wrap: normal;
 }
 
@@ -17693,7 +17694,7 @@ pre,
     border-bottom: var(--border);
     color: hsl(0, 0%, calc(58% - 5 * calc(58% / 7)));
     color: var(--pre-color);
-    background: transparent;
+    background: hsl(0, 0%, calc(58% + 5 * calc((100% - 58%) / 6)));
     background: var(--pre-background);
     white-space: pre;
     word-break: normal;
@@ -17882,11 +17883,11 @@ hr::after {
     writing-mode: horizontal-tb;
 }
 
-h1+*,
-h2+*,
-h3+*,
-h4+*,
-h5+*,
+h1+*:not(h2),
+h2+*:not(h3),
+h3+*:not(h4),
+h4+*:not(h5),
+h5+*:not(h6),
 h6+* {
     margin-top: 0;
 }
@@ -21424,7 +21425,7 @@ svg {
     --table-underline: var(--border-width) solid var(--table-underline-row-color);
     --table-heading-font-family: var(--heading-font-family);
     --table-font-family: var(--font-family);
-    --table-font-size: var(--figcaption-font-size);
+    --table-font-size: var(--fs);
     --mrt-table: var(--mrt-figure);
     --mrb-table: var(--mrb-figure);
     --td-x-padding: var(--space);

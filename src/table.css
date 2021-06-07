@@ -2,7 +2,7 @@
     --table-underline: var(--border-width) solid var(--table-underline-row-color);
     --table-heading-font-family: var(--heading-font-family);
     --table-font-family: var(--font-family);
-    --table-font-size: var(--figcaption-font-size);
+    --table-font-size: var(--fs);
     --mrt-table: var(--mrt-figure);
     --mrb-table: var(--mrb-figure);
     --td-x-padding: var(--space);
