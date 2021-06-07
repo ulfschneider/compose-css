@@ -434,9 +434,7 @@ pre,
     margin-top: var(--mrt-pre);
     margin-bottom: var(--mrb-pre);
     padding-top: var(--space-d2);
-    padding-bottom: var(--space-d2);
-    border-top: var(--border);
-    border-bottom: var(--border);
+    padding-bottom: var(--space-d2);    
     color: var(--pre-color);
     background: var(--pre-background);
     white-space: pre;

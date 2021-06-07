@@ -17687,12 +17687,8 @@ pre,
     padding-top: calc(calc(1rem / 1.7) / 1.7);
     padding-top: var(--space-d2);
     padding-bottom: calc(calc(1rem / 1.7) / 1.7);
-    padding-bottom: var(--space-d2);
-    border-top: 1px solid hsl(0, 0%, 58%);
-    border-top: var(--border);
-    border-bottom: 1px solid hsl(0, 0%, 58%);
-    border-bottom: var(--border);
-    color: unset;
+    padding-bottom: var(--space-d2);    
+    color: unset;    
     color: var(--pre-color);
     background: hsl(0, 0%, calc(58% + 5 * calc((100% - 58%) / 6)));
     background: var(--pre-background);
