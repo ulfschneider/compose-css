@@ -13,20 +13,20 @@
     caret-color: var(--caret-color);
 }
 
-::placeholder,
-:-ms-input-placeholder,
-::-ms-input-placeholder {
+ ::placeholder,
+ :-ms-input-placeholder,
+ ::-ms-input-placeholder {
     color: var(--form-label-color);
     opacity: 1;
     text-transform: var(--heading-text-transform);
 }
 
-form dl {
+ form dl {
     margin-top: var(--space-1);
     margin-bottom: var(--space-1);
 }
 
-input[type=text],
+ input[type=text],
 input[type=email],
 input[type=number],
 input[type=password],
@@ -53,7 +53,7 @@ legend {
     -moz-appearance: none;
 }
 
-input[type=submit],
+ input[type=submit],
 input[type=reset],
 button,
 .button,
@@ -69,7 +69,25 @@ select {
     cursor: pointer;
 }
 
-input[type=submit]:active,
+ @media(hover: hover) {
+    input[type=submit]:hover,
+    input[type=reset]:hover,
+    button:hover,
+    .button:hover,
+    select:hover {
+        background: var(--form-button-hover-background);
+    }
+}
+
+ input[type=submit]:focus,
+input[type=reset]:focus,
+button:focus,
+.button:focus,
+select:focus {
+    background: var(--form-button-hover-background);
+}
+
+ input[type=submit]:active,
 input[type=reset]:active,
 button:active,
 .button:active,
@@ -77,14 +95,14 @@ select:active {
     background: var(--form-button-active-background);
 }
 
-label,
+ label,
 legend {
     vertical-align: baseline;
     text-transform: var(--heading-text-transform);
     color: var(--form-label-color);
 }
 
-input[type=text],
+ input[type=text],
 input[type=email],
 input[type=number],
 input[type=password],
@@ -104,7 +122,7 @@ input[list] {
     color: var(--form-field-color);
 }
 
-textarea {
+ textarea {
     line-height: var(--lh-2);
     border: 0;
     border-bottom: 1px solid var(--form-field-border-color);
@@ -115,12 +133,12 @@ textarea {
     color: var(--form-field-color);
 }
 
-fieldset {
+ fieldset {
     border: none;
     padding: 0;
 }
 
-input[type=text]:focus,
+ input[type=text]:focus,
 input[type=email]:focus,
 input[type=number]:focus,
 input[type=password]:focus,
@@ -132,36 +150,36 @@ textarea:focus {
     border-color: var(--form-field-color);
 }
 
-input:focus+label,
+ input:focus+label,
 textarea:focus+label {
     color: var(--form-field-focus-color);
 }
 
-/*
+ /*
 https://www.sarasoueidan.com/blog/inclusively-hiding-and-styling-checkboxes-and-radio-buttons/
 and
 https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-button-with-css 
 */
 
-.custom-control {
+ .custom-control {
     position: relative;
     color: inherit;
     display: inline-block;
     font-size: inherit;
 }
 
-.custom-control * {
+ .custom-control * {
     font-size: inherit;
     cursor: pointer;
 }
 
-.custom-control:focus-within input[type=checkbox]+*::before,
+ .custom-control:focus-within input[type=checkbox]+*::before,
 .custom-control:focus-within input[type=radio]+*::before {
     outline: var(--outline);
     outline-offset: var(--outline-offset);
 }
 
-.custom-control input[type=checkbox],
+ .custom-control input[type=checkbox],
 .custom-control input[type=radio] {
     /* remove the control from flow */
     position: absolute;
@@ -172,14 +190,14 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     overflow: hidden;
 }
 
-.custom-control input[type=checkbox]+*,
+ .custom-control input[type=checkbox]+*,
 .custom-control input[type=radio]+* {
     margin-left: var(--horizontal-rhythm);
 }
 
-/* box */
+ /* box */
 
-.custom-control input[type=checkbox]+*::before,
+ .custom-control input[type=checkbox]+*::before,
 .custom-control input[type=radio]+*::before {
     content: '';
     box-sizing: border-box;
@@ -197,15 +215,15 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     border-radius: var(--form-radius);
 }
 
-/* circle */
+ /* circle */
 
-.custom-control input[type=radio]+*::before {
+ .custom-control input[type=radio]+*::before {
     border-radius: 50%;
 }
 
-/* check */
+ /* check */
 
-.custom-control input[type=checkbox]+*::after {
+ .custom-control input[type=checkbox]+*::after {
     content: "";
     box-sizing: border-box;
     position: absolute;
@@ -226,9 +244,9 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     background: transparent;
 }
 
-/* select */
+ /* select */
 
-.custom-control input[type=radio]+*::after {
+ .custom-control input[type=radio]+*::after {
     content: '';
     box-sizing: border-box;
     position: absolute;
@@ -244,16 +262,16 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     border-radius: 50%;
 }
 
-/* unchecked / unselected */
+ /* unchecked / unselected */
 
-.custom-control input[type=checkbox]:not(:checked)+*::after,
+ .custom-control input[type=checkbox]:not(:checked)+*::after,
 .custom-control input[type=radio]:not(:checked)+*::after {
     opacity: 0;
 }
 
-/* checked / selected*/
+ /* checked / selected*/
 
-.custom-control input[type=checkbox]:checked+*::after,
+ .custom-control input[type=checkbox]:checked+*::after,
 .custom-control input[type=radio]:checked+*::after {
     opacity: 1;
 }

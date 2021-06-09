@@ -1516,6 +1516,8 @@ small,
     --form-field-border-color: var(--border-color);
     --caret-color: var(--primary-d1);
     --form-button-active-background: var(--primary);
+    --form-button-hover-background: var(--neutral-d3);
+    --form-button-focus-background: var(--form-button-hover-background);
     --form-button-background: var(--base-color);
     --form-button-color: var(--base-background);
     --form-field-background: var(--neutral-5);
@@ -17964,8 +17966,8 @@ details summary>* {
 }
 
 ::placeholder,
-:-ms-input-placeholder,
-::-ms-input-placeholder {
+ :-ms-input-placeholder,
+ ::-ms-input-placeholder {
     color: hsl(0, 0%, calc(58% - 2 * calc(58% / 7)));
     color: var(--form-label-color);
     opacity: 1;
@@ -18023,6 +18025,26 @@ select {
     padding: calc(calc(1rem / 1.7) / 1.7) calc(calc(1rem / 1.7) / 1.7);
     padding: var(--form-button-pdx) var(--form-button-pdy);
     cursor: pointer;
+}
+
+@media(hover: hover) {
+    input[type=submit]:hover,
+    input[type=reset]:hover,
+    button:hover,
+    .button:hover,
+    select:hover {
+        background: hsl(0, 0%, calc(58% - 3 * calc(58% / 7)));
+        background: var(--form-button-hover-background);
+    }
+}
+
+input[type=submit]:focus,
+input[type=reset]:focus,
+button:focus,
+.button:focus,
+select:focus {
+    background: hsl(0, 0%, calc(58% - 3 * calc(58% / 7)));
+    background: var(--form-button-hover-background);
 }
 
 input[type=submit]:active,

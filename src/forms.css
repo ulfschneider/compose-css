@@ -13,9 +13,9 @@
     caret-color: var(--caret-color);
 }
 
-::placeholder,
-:-ms-input-placeholder,
-::-ms-input-placeholder {
+ ::placeholder,
+ :-ms-input-placeholder,
+ ::-ms-input-placeholder {
     color: var(--form-label-color);
     opacity: 1;
     text-transform: var(--heading-text-transform);
@@ -63,6 +63,24 @@ select {
     color: var(--form-button-color);
     padding: var(--form-button-pdx) var(--form-button-pdy);
     cursor: pointer;
+}
+
+@media(hover: hover) {
+    input[type=submit]:hover,
+    input[type=reset]:hover,
+    button:hover,
+    .button:hover,
+    select:hover {
+        background: var(--form-button-hover-background);
+    }
+}
+
+input[type=submit]:focus,
+input[type=reset]:focus,
+button:focus,
+.button:focus,
+select:focus {
+    background: var(--form-button-hover-background);
 }
 
 input[type=submit]:active,
