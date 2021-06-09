@@ -1,6 +1,9 @@
 :root {
-    --pre-background: transparent;
-    --code-background: transparent;
+    --mrt-h2: var(--space-4);
+    --mrt-h3: var(--space-3);
+    --fs-h1: var(--fs-5);
+    --fs-h2: var(--fs-4);
+    --fs-h2: var(--fs-3);
 }
 
 .anchor {
@@ -10,9 +13,24 @@
     font-weight: normal;
 }
 
+.table-of-contents li::before {
+    color: var(--neutral);
+    content: var(--h-counter);
+    font-weight: normal;
+    font-size: inherit;
+}
+
+.table-of-contents li a {
+    text-decoration: none;
+}
+
+pre[class^=language] {
+    margin-bottom: var(--space-3);
+}
+
 @media (--rg) {
-    main>figure,  
-    pre,  
+    main>figure,
+    pre,
     main>.title {
         margin-right: calc(-0.5 * (100vw - var(--regular-width)) + var(--space));
         min-width: 100%;
@@ -21,5 +39,15 @@
     main>.scroll-table {
         margin-right: calc(-0.5 * (100vw - var(--regular-width)) + var(--space));
         min-width: 100%;
+    }
+}
+
+@media(--lg) {
+    .table-of-contents {
+        position: fixed;
+        left: var(--space);
+        top: var(--space-1);
+        width: var(--space-5);
+        font-size: var(--fs-d1);
     }
 }

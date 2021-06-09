@@ -116,11 +116,11 @@
     --base-color: var(--neutral-d5);
     --base-background: white;
     --mark-background: yellow;
-    --border-color: var(--neutral);    
+    --border-color: var(--neutral);
     --link-color: inherit;
-    --link-focus-color: var(--primary);
-    --link-hover-color: var(--link-focus-color);
-    --link-active-color: var(--link-focus-color);
+    --link-focus-color: inherit;
+    --link-hover-color: var(--primary);
+    --link-active-color: var(--link-hover-color);
     --selection-color: var(--accent-three-4);
     --heading-color: var(--base-color);
     --meta-color: var(--neutral-d2);
@@ -129,10 +129,11 @@
     --form-field-color: var(--base-color);
     --form-field-border-color: var(--border-color);
     --caret-color: var(--primary-d1);
-    --form-focus-color: var(--link-focus-color);
+    --form-button-active-background: var(--primary);
     --form-button-background: var(--base-color);
     --form-button-color: var(--base-background);
     --form-field-background: var(--neutral-5);
+    --form-field-focus-color: var(--primary);
     --kbd-background: var(--neutral-5);
     --kbd-color: var(--base-color);
     --kbd-border-color: var(--border-color);
@@ -140,7 +141,6 @@
     --timeline-blub-color: var(--li-prefix-color);
     --timeline-blub-background: var(--base-background);
     --text-decoration-color: unset;
-
     --code-background: var(--neutral-5);
     --code-color: unset;
     --pre-background: var(--code-background);
@@ -259,8 +259,20 @@
 }
 
 .link-focus-color {
-    color: hsl(200, 55.6%, 53%);
+    color: inherit;
     color: var(--link-focus-color);
+}
+
+.form-hover-color {
+    color: var(--form-hover-color);
+}
+
+.form-active-color {
+    color: var(--form-active-color);
+}
+
+.form-focus-color {
+    color: var(--form-focus-color);
 }
 
 .li-prefix-color {
@@ -269,6 +281,43 @@
 }
 
 /* Background */
+
+.bg-link-color {
+    background: inherit;
+    background: var(--link-color);
+}
+
+.bg-link-hover-color {
+    background: hsl(200, 55.6%, 53%);
+    background: var(--link-hover-color);
+}
+
+.bg-link-active-color {
+    background: hsl(200, 55.6%, 53%);
+    background: var(--link-active-color);
+}
+
+.bg-link-focus-color {
+    background: inherit;
+    background: var(--link-focus-color);
+}
+
+.bg-form-hover-color {
+    background: var(--form-hover-color);
+}
+
+.bg-form-active-color {
+    background: var(--form-active-color);
+}
+
+.bg-form-focus-color {
+    background: var(--form-focus-color);
+}
+
+.bg-li-prefix-color {
+    background: hsl(0, 0%, calc(58% - 5 * calc(58% / 7)));
+    background: var(--li-prefix-color);
+}
 
 .bg-neutral-d5 {
     background-color: hsl(0, 0%, calc(58% - 5 * calc(58% / 7)));
@@ -373,7 +422,7 @@
 }
 
 .bg-link-focus-color {
-    background-color: hsl(200, 55.6%, 53%);
+    background-color: inherit;
     background-color: var(--link-focus-color);
 }
 
@@ -483,7 +532,7 @@
 }
 
 .br-link-focus-color {
-    border-color: hsl(200, 55.6%, 53%);
+    border-color: inherit;
     border-color: var(--link-focus-color);
 }
 

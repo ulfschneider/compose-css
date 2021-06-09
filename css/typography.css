@@ -263,11 +263,13 @@ u {
     font-variant-numeric: tabular-nums;
 }
 
-.no-wrap, .no-break {
+.no-wrap,
+.no-break {
     white-space: nowrap;
 }
 
-.wrap-normal, .break-normal {
+.wrap-normal,
+.break-normal {
     overflow-wrap: normal;
 }
 
@@ -472,7 +474,6 @@ pre,
 code {
     color: var(--code-color);
     background: var(--code-background);
-
 }
 
 pre,
@@ -482,7 +483,7 @@ pre,
     margin-bottom: var(--space);
     margin-bottom: var(--mrb-pre);
     padding-top: var(--space-d2);
-    padding-bottom: var(--space-d2);    
+    padding-bottom: var(--space-d2);
     color: var(--pre-color);
     background: var(--pre-background);
     white-space: pre;
@@ -620,7 +621,6 @@ blockquote>header::after {
 }
 
 @media(max-width: 400px) {
-
     figcaption,
     blockquote>footer {
         max-width: unset;
@@ -628,7 +628,6 @@ blockquote>header::after {
 }
 
 @media(--max-sm) {
-
     figcaption,
     blockquote>footer {
         max-width: unset;

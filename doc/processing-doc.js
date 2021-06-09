@@ -47,7 +47,7 @@ function processingDoc(callback) {
     let source = fs.readFileSync(SOURCE, 'utf8');
     const mdlib = getMarkdownLib();
     let doc = mdlib.render(source).replace('{{compose-version}}', package.version);
-    let wrapper = `<main class="mxw-rg mrx-auto">${doc}</main>`;
+    let wrapper = `<main class="mxw-rg mrx-auto outline">${doc}</main>`;
 
     $ = cheerio.load(wrapper);
 
