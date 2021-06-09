@@ -121,7 +121,8 @@
     --link-focus-color: inherit;
     --link-hover-color: var(--primary);
     --link-active-color: var(--link-hover-color);
-    --selection-color: var(--accent-three-4);
+    --selection-background: var(--accent-three-4);
+    --selection-color: var(--base-color);
     --heading-color: var(--base-color);
     --meta-color: var(--neutral-d2);
     --li-prefix-color: var(--heading-color);
@@ -156,8 +157,10 @@
 }
 
 ::selection {
+    color: hsl(0, 0%, calc(58% - 5 * calc(58% / 7)));
+    color: var(--selection-color);
     background: hsl(55, 62.8%, calc(53% + 4 * calc((100% - 53%) / 6)));
-    background: var(--selection-color);
+    background: var(--selection-background);
 }
 
 .neutral-d5 {
