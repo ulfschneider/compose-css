@@ -1,5 +1,5 @@
 :root {
-    --font-family: sans-serif;
+    --font-family: system-ui, ui-sans-serif, sans-serif;
     --font-feature-settings: unset;
     --font-weight-bold: 700;
     --font-weight-normal: 400;
@@ -15,7 +15,7 @@
     --meta-font-weight: var(--font-weight-normal);
     --meta-letter-spacing: unset;
     --meta-text-transform: unset;
-    --mono-font-family: monospace;
+    --mono-font-family: ui-monospace, monospace;
     --mono-font-feature-settings: var(--font-feature-settings);
     --code-font-family: var(--mono-font-family);
     --blockquote-font-style: italic;
@@ -51,7 +51,7 @@
     --quotes: """ """"'""'";
     --quotes-de: """ """"'""'";
     --scroll-margin-top: var(--vertical-rhythm);
-    font-family: sans-serif;
+    font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--font-family);
     font-feature-settings: unset;
     font-feature-settings: var(--font-feature-settings);
@@ -101,27 +101,27 @@ a:focus {
 }
 
 .base-font {
-    font-family: sans-serif;
+    font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--font-family);
 }
 
 .heading-font {
-    font-family: sans-serif;
+    font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--heading-font-family);
 }
 
 .meta-font {
-    font-family: sans-serif;
+    font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--meta-font-family);
 }
 
 .mono-font {
-    font-family: monospace;
+    font-family: ui-monospace, monospace;
     font-family: var(--mono-font-family);
 }
 
 .meta {
-    font-family: sans-serif;
+    font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--meta-font-family);
     font-feature-settings: unset;
     font-feature-settings: var(--meta-font-feature-settings);
@@ -201,6 +201,7 @@ em,
 .caps,
 .uppercase {
     text-transform: uppercase;
+    letter-spacing: .08em;
 }
 
 .lowercase {
@@ -330,7 +331,7 @@ kbd,
     border-radius: var(--space-d4);
     border: 1px solid var(--kbd-border-color);
     padding: 0 0.2em;
-    font-family: monospace;
+    font-family: ui-monospace, monospace;
     font-family: var(--mono-font-family);
     white-space: nowrap;
     text-align: center;
@@ -338,7 +339,7 @@ kbd,
 }
 
 .mono {
-    font-family: monospace;
+    font-family: ui-monospace, monospace;
     font-family: var(--mono-font-family);
     font-feature-settings: unset;
     font-feature-settings: var(--mono-font-feature-settings);
@@ -360,7 +361,7 @@ h6 {
     letter-spacing: var(--heading-letter-spacing);
     font-weight: 700;
     font-weight: var(--heading-font-weight);
-    font-family: sans-serif;
+    font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--heading-font-family);
     font-feature-settings: unset;
     font-feature-settings: var(--heading-font-feature-settings);
@@ -465,7 +466,7 @@ p.no-indent {
 code,
 pre,
 .pre {
-    font-family: monospace;
+    font-family: ui-monospace, monospace;
     font-family: var(--code-font-family);
     font-size: var(--fs-mono);
 }
@@ -501,9 +502,7 @@ blockquote {
     margin-bottom: var(--mrb-blockquote);
     margin-left: 0;
     margin-right: 0;
-    padding: 0 0 0 var(--space-1);
-    padding: 0 0 0 var(--horizontal-rhythm);
-    border-left: var(--border-width) solid var(--li-prefix-color);
+    padding: 0;
     font-style: italic;
     font-style: var(--blockquote-font-style);
     background: var(--blockquote-background);
@@ -584,7 +583,7 @@ figcaption,
 blockquote>footer,
 blockquote>header {
     text-align: left;
-    font-family: sans-serif;
+    font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--figcaption-font-family);
     font-style: normal;
     font-size: var(--fs);

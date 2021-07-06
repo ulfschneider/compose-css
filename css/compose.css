@@ -1515,10 +1515,10 @@ small,
     --form-field-color: var(--base-color);
     --form-field-border-color: var(--border-color);
     --caret-color: var(--primary-d1);
+    --form-button-background: var(--neutral-d4);
     --form-button-active-background: var(--primary);
-    --form-button-hover-background: var(--neutral-d3);
+    --form-button-hover-background: var(--base-color);
     --form-button-focus-background: var(--form-button-hover-background);
-    --form-button-background: var(--base-color);
     --form-button-color: var(--base-background);
     --form-field-background: var(--neutral-5);
     --form-field-focus-color: var(--primary);
@@ -17230,7 +17230,7 @@ Naming conventions
 }
 
 :root {
-    --font-family: sans-serif;
+    --font-family: system-ui, ui-sans-serif, sans-serif;
     --font-feature-settings: unset;
     --font-weight-bold: 700;
     --font-weight-normal: 400;
@@ -17246,7 +17246,7 @@ Naming conventions
     --meta-font-weight: var(--font-weight-normal);
     --meta-letter-spacing: unset;
     --meta-text-transform: unset;
-    --mono-font-family: monospace;
+    --mono-font-family: ui-monospace, monospace;
     --mono-font-feature-settings: var(--font-feature-settings);
     --code-font-family: var(--mono-font-family);
     --blockquote-font-style: italic;
@@ -17282,7 +17282,7 @@ Naming conventions
     --quotes: """ """"'""'";
     --quotes-de: """ """"'""'";
     --scroll-margin-top: var(--vertical-rhythm);
-    font-family: sans-serif;
+    font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--font-family);
     font-feature-settings: unset;
     font-feature-settings: var(--font-feature-settings);
@@ -17335,27 +17335,27 @@ a:focus {
 }
 
 .base-font {
-    font-family: sans-serif;
+    font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--font-family);
 }
 
 .heading-font {
-    font-family: sans-serif;
+    font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--heading-font-family);
 }
 
 .meta-font {
-    font-family: sans-serif;
+    font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--meta-font-family);
 }
 
 .mono-font {
-    font-family: monospace;
+    font-family: ui-monospace, monospace;
     font-family: var(--mono-font-family);
 }
 
 .meta {
-    font-family: sans-serif;
+    font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--meta-font-family);
     font-feature-settings: unset;
     font-feature-settings: var(--meta-font-feature-settings);
@@ -17436,6 +17436,7 @@ em,
 .caps,
 .uppercase {
     text-transform: uppercase;
+    letter-spacing: .08em;
 }
 
 .lowercase {
@@ -17570,7 +17571,7 @@ kbd,
     border: 1px solid hsl(0, 0%, 58%);
     border: 1px solid var(--kbd-border-color);
     padding: 0 0.2em;
-    font-family: monospace;
+    font-family: ui-monospace, monospace;
     font-family: var(--mono-font-family);
     white-space: nowrap;
     text-align: center;
@@ -17579,7 +17580,7 @@ kbd,
 }
 
 .mono {
-    font-family: monospace;
+    font-family: ui-monospace, monospace;
     font-family: var(--mono-font-family);
     font-feature-settings: unset;
     font-feature-settings: var(--mono-font-feature-settings);
@@ -17601,7 +17602,7 @@ h6 {
     letter-spacing: var(--heading-letter-spacing);
     font-weight: 700;
     font-weight: var(--heading-font-weight);
-    font-family: sans-serif;
+    font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--heading-font-family);
     font-feature-settings: unset;
     font-feature-settings: var(--heading-font-feature-settings);
@@ -17719,7 +17720,7 @@ p.no-indent {
 code,
 pre,
 .pre {
-    font-family: monospace;
+    font-family: ui-monospace, monospace;
     font-family: var(--code-font-family);
     font-size: .9rem;
     font-size: var(--fs-mono);
@@ -17762,10 +17763,7 @@ blockquote {
     margin-bottom: var(--mrb-blockquote);
     margin-left: 0;
     margin-right: 0;
-    padding: 0 0 0 calc(1.7 * 1rem);
-    padding: 0 0 0 var(--horizontal-rhythm);
-    border-left: 1px solid hsl(0, 0%, calc(58% - 5 * calc(58% / 7)));
-    border-left: var(--border-width) solid var(--li-prefix-color);
+    padding: 0;
     font-style: italic;
     font-style: var(--blockquote-font-style);
     background: transparent;
@@ -17851,7 +17849,7 @@ figcaption,
 blockquote>footer,
 blockquote>header {
     text-align: left;
-    font-family: sans-serif;
+    font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--figcaption-font-family);
     font-style: normal;
     font-size: 1rem;
@@ -18000,7 +17998,7 @@ fieldset,
 label,
 legend {
     margin: 0;
-    font-family: sans-serif;
+    font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--form-font-family);
     font-size: 1rem;
     font-size: var(--form-font-size);
@@ -18018,7 +18016,7 @@ select {
     border-radius: 3px;
     border-radius: var(--form-radius);
     vertical-align: baseline;
-    background: hsl(0, 0%, calc(58% - 5 * calc(58% / 7)));
+    background: hsl(0, 0%, calc(58% - 4 * calc(58% / 7)));
     background: var(--form-button-background);
     color: white;
     color: var(--form-button-color);
@@ -18033,7 +18031,7 @@ select {
     button:hover,
     .button:hover,
     select:hover {
-        background: hsl(0, 0%, calc(58% - 3 * calc(58% / 7)));
+        background: hsl(0, 0%, calc(58% - 5 * calc(58% / 7)));
         background: var(--form-button-hover-background);
     }
 }
@@ -18043,7 +18041,7 @@ input[type=reset]:focus,
 button:focus,
 .button:focus,
 select:focus {
-    background: hsl(0, 0%, calc(58% - 3 * calc(58% / 7)));
+    background: hsl(0, 0%, calc(58% - 5 * calc(58% / 7)));
     background: var(--form-button-hover-background);
 }
 
@@ -21210,7 +21208,7 @@ ol li::before {
     margin-left: calc(var(--horizontal-rhythm) * -1);
     text-align: left;
     display: inline-block;
-    font-family: sans-serif;
+    font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--meta-font-family);
     font-weight: bold;
     font-size: smaller;
@@ -21352,7 +21350,7 @@ img {
     max-width: 100%;
     height: auto;
     vertical-align: top;
-    font-family: sans-serif;
+    font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--meta-font-family);
     font-size: calc(.9rem);
     font-size: var(--fs-d1);
@@ -21502,7 +21500,7 @@ table {
     margin-bottom: calc(calc(1.7 * 1rem) * 1.7);
     margin-bottom: var(--mrb-table);
     text-align: left;
-    font-family: sans-serif;
+    font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--table-font-family);
     font-size: 1rem;
     font-size: var(--table-font-size);
@@ -21559,7 +21557,7 @@ td {
 th {
     font-weight: 700;
     font-weight: var(--font-weight-bold);
-    font-family: sans-serif;
+    font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--table-heading-font-family);
     background: white;
     background: var(--table-head-background);
@@ -21571,7 +21569,7 @@ table caption {
     font-style: normal;
     max-width: 35rem;
     max-width: var(--regular-width);
-    font-family: sans-serif;
+    font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--figcaption-font-family);
     font-size: 1rem;
     font-size: var(--fs);
