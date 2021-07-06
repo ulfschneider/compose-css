@@ -1,5 +1,5 @@
 :root {
-    --font-family: sans-serif;
+    --font-family: system-ui, ui-sans-serif, sans-serif;
     --font-feature-settings: unset;
     --font-weight-bold: 700;
     --font-weight-normal: 400;
@@ -15,7 +15,7 @@
     --meta-font-weight: var(--font-weight-normal);
     --meta-letter-spacing: unset;
     --meta-text-transform: unset;
-    --mono-font-family: monospace;
+    --mono-font-family: ui-monospace, monospace;
     --mono-font-feature-settings: var(--font-feature-settings);
     --code-font-family: var(--mono-font-family);
     --blockquote-font-style: italic;
@@ -185,6 +185,7 @@ em,
 .caps,
 .uppercase {
     text-transform: uppercase;
+    letter-spacing: .08em;
 }
 
 .lowercase {
@@ -451,8 +452,7 @@ blockquote {
     margin-bottom: var(--mrb-blockquote);
     margin-left: 0;
     margin-right: 0;
-    padding: 0 0 0 var(--horizontal-rhythm);
-    border-left: var(--border-width) solid var(--li-prefix-color);
+    padding: 0;
     font-style: var(--blockquote-font-style);
     background: var(--blockquote-background);
     font-size: larger;
