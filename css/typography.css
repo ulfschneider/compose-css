@@ -588,7 +588,6 @@ blockquote>header {
     font-style: normal;
     font-size: var(--fs);
     font-size: var(--figcaption-font-size);
-    line-height: var(--lh-2);
     max-width: var(--regular-width);
 }
 

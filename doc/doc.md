@@ -486,7 +486,6 @@ Use to increase or decrease font-size relatively from the current font-size, ass
                         found himself transformed in his bed into a horrible vermin.</td>
                     <td class="lh baseline pdl pd-0">
                         <code>.lh</code>
-                        <small>(1)</small>
                     </td>
                 </tr>
                 <tr>
