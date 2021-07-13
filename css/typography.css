@@ -204,6 +204,16 @@ em,
     letter-spacing: .08em;
 }
 
+.small-caps {
+    font-variant-caps: small-caps;
+    letter-spacing: .08em;
+}
+
+.all-small-caps {
+    font-variant-caps: all-small-caps;
+    letter-spacing: .08em;
+}
+
 .lowercase {
     text-transform: lowercase;
 }
@@ -528,12 +538,6 @@ a:not(table a) {
     overflow-wrap: break-word;
 }
 
-/* consider x-layout */
-
-[class^="breakout"] blockquote {
-    margin-left: 0;
-}
-
 blockquote p {
     margin-top: 0;
     margin-bottom: 0;
@@ -588,6 +592,7 @@ blockquote>header {
     font-style: normal;
     font-size: var(--fs);
     font-size: var(--figcaption-font-size);
+    line-height: var(--lh-2);
     max-width: var(--regular-width);
 }
 
@@ -659,15 +664,6 @@ hr::after {
 
 .horizontal-tb {
     writing-mode: horizontal-tb;
-}
-
-h1+*:not(h2),
-h2+*:not(h3),
-h3+*:not(h4),
-h4+*:not(h5),
-h5+*:not(h6),
-h6+* {
-    margin-top: 0;
 }
 
 details summary {

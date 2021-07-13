@@ -45,7 +45,7 @@ CSS classes
 :   In flowing text, a CSS class will be denoted with a starting period, e.g. <code>.css</code>. 
 
 HTML tags
-:   HTML tags in flowing text are denoted lowercase and and without pointing brackets, e.g. <code>strong</code>. 
+:   HTML tags in flowing text are denoted lowercase and with pointing brackets, e.g. <code>&lt;strong></code>. 
 
 In formatted code, CSS classes and HTML tags are presented syntactically correct.
 
@@ -69,7 +69,7 @@ In formatted code, CSS classes and HTML tags are presented syntactically correct
                         <a href="#">Link</a>
                     </td>
                     <td>
-                        <code>a</code>
+                        <code>&lt;a></code>
                     </td>
                 </tr>
                 <tr>
@@ -77,7 +77,7 @@ In formatted code, CSS classes and HTML tags are presented syntactically correct
                         <b>Bold</b>
                     </td>
                     <td>
-                        <code>strong</code>, <code>b</code>, <code>.strong</code>,
+                        <code>&lt;strong></code>, <code>&lt;b></code>, <code>.strong</code>,
                         <code>.bold</code>,
                         <code>.b</code>
                     </td>
@@ -87,7 +87,7 @@ In formatted code, CSS classes and HTML tags are presented syntactically correct
                         <i>Italic</i>
                     </td>
                     <td>
-                        <code>i</code>, <code>.i</code>, <code>.italic</code>
+                        <code>&lt;i></code>, <code>.i</code>, <code>.italic</code>
                     </td>
                 </tr>
                 <tr>
@@ -95,7 +95,7 @@ In formatted code, CSS classes and HTML tags are presented syntactically correct
                         <u>Underline</u>
                     </td>
                     <td>
-                        <code>u</code>, <code>.underline</code>
+                        <code>&lt;u></code>, <code>.underline</code>
                     </td>
                 </tr>
  <tr>
@@ -111,7 +111,7 @@ In formatted code, CSS classes and HTML tags are presented syntactically correct
                         <del>Deleted</del>
                     </td>
                     <td>
-                        <code>del</code>, <code>.del</code>
+                        <code>&lt;del></code>, <code>.del</code>
                     </td>
                 </tr>
                 <tr>
@@ -121,6 +121,20 @@ In formatted code, CSS classes and HTML tags are presented syntactically correct
                         <code>.caps</code>, <code>.uppercase</code>
                     </td>
                 </tr>
+                <tr>
+                    <td>
+                        <span class="small-caps">Small Caps</span></td>
+                    <td>
+                        <code>.small-caps</code>
+                    </td>
+                </tr> 
+                <tr>
+                    <td>
+                        <span class="all-small-caps">All Small Caps</span></td>
+                    <td>
+                        <code>.all-small-caps</code>
+                    </td>
+                </tr> 
                 <tr>
                     <td>
                         <span class="lowercase">Lowercase</span></td>
@@ -140,7 +154,7 @@ In formatted code, CSS classes and HTML tags are presented syntactically correct
                         <mark>Highlighted</mark>
                     </td>
                     <td>
-                        <code>mark</code>, <code>.mark</code>
+                        <code>&lt;mark></code>, <code>.mark</code>
                     </td>
                 </tr>
                 <tr>
@@ -148,21 +162,21 @@ In formatted code, CSS classes and HTML tags are presented syntactically correct
                         <kbd>Ctrl+K</kbd>
                     </td>
                     <td>
-                        <code>kbd</code>, <code>.kbd</code>
+                        <code>&lt;kbd></code>, <code>.kbd</code>
                     </td>
                 </tr>
                 <tr>
                     <td>Text with <sup>superscript</sup>
                     </td>
                     <td>
-                        <code>sup</code>, <code>.sup</code>
+                        <code>&lt;sup></code>, <code>.sup</code>
                     </td>
                 </tr>
                 <tr>
                     <td>Text with <sub>subscript</sub>
                     </td>
                     <td>
-                        <code>sub</code>, <code>.sub</code>
+                        <code>&lt;sub></code>, <code>.sub</code>
                     </td>
                 </tr>
                 <tr>
@@ -170,7 +184,7 @@ In formatted code, CSS classes and HTML tags are presented syntactically correct
                         <cite>Citing the title of a work</cite>
                     </td>
                     <td>
-                        <code>cite</code>, <code>.cite</code>
+                        <code>&lt;cite></code>, <code>.cite</code>
                     </td>
                 </tr>
                 <tr>
@@ -178,7 +192,7 @@ In formatted code, CSS classes and HTML tags are presented syntactically correct
                         <q>A quotation</q>
                     </td>
                     <td>
-                        <code>q</code>, <code>.q</code>
+                        <code>&lt;q></code>, <code>.q</code>
                     </td>
                 </tr>
                 <tr>
@@ -186,7 +200,7 @@ In formatted code, CSS classes and HTML tags are presented syntactically correct
                         <em>Emphasize</em>
                     </td>
                     <td>
-                        <code>em</code>, <code>.em</code>
+                        <code>&lt;em></code>, <code>.em</code>
                     </td>
                 </tr>
                 <tr>
@@ -194,7 +208,7 @@ In formatted code, CSS classes and HTML tags are presented syntactically correct
                         <s>Strike through</s>
                     </td>
                     <td>
-                        <code>s</code>, <code>.s</code>, <code>.strike</code>
+                        <code>&lt;s></code>, <code>.s</code>, <code>.strike</code>
                     </td>
                 </tr>
                 <tr>
@@ -202,7 +216,7 @@ In formatted code, CSS classes and HTML tags are presented syntactically correct
                         <small>Small</small>
                     </td>
                     <td>
-                        <code>small</code>, <code>.small</code>
+                        <code>&lt;small></code>, <code>.small</code>
                     </td>
                 </tr>
                 <tr>
@@ -218,7 +232,7 @@ In formatted code, CSS classes and HTML tags are presented syntactically correct
                         <code>Code</code>
                     </td>
                     <td>
-                        <code>code</code>, <code>.code</code>
+                        <code>&lt;code></code>, <code>.code</code>
                     </td>
                 </tr>
                 <tr>
@@ -410,7 +424,8 @@ He lay on his armour-like back
         
 ### Font sizes
 
-Use to increase or decrease font-size relatively from the current font-size, assign CSS class <code>.larger</code> or <code>.smaller</code>.
+To increase or decrease font-size relatively from the current font-size, assign CSS class <code>.larger</code> or <code>.smaller</code>.
+For absolute sizing of fonts use the below listed CSS classes.
 
 <table>
 <tr><th class="right">Font size</th><th>CSS class</th><tr>
@@ -468,8 +483,6 @@ Use to increase or decrease font-size relatively from the current font-size, ass
                     <td class="baseline pdy-0">.fs-10</td>
                 </tr>
             </table>
-        
-
         
 ### Line height
 <table class="mxw-rg">
