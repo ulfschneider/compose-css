@@ -124,8 +124,8 @@
     --selection-background: var(--accent-three-4);
     --selection-color: var(--base-color);
     --heading-color: var(--base-color);
-    --meta-color: var(--neutral-d2);
-    --li-prefix-color: var(--neutral);
+    --meta-color: var(--neutral-d1);
+    --li-prefix-color: var(--meta-color);
     --heading-outline-color: var(--li-prefix-color);
     --form-label-color: var(--meta-color);
     --form-field-color: var(--base-color);

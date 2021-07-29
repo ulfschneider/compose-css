@@ -15,7 +15,6 @@
 }
 
 .table-of-contents li::before {
-    color: var(--neutral);
     content: var(--h-counter);
     font-weight: normal;
     font-size: inherit;

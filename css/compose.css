@@ -1509,8 +1509,8 @@ small,
     --selection-background: var(--accent-three-4);
     --selection-color: var(--base-color);
     --heading-color: var(--base-color);
-    --meta-color: var(--neutral-d2);
-    --li-prefix-color: var(--neutral);
+    --meta-color: var(--neutral-d1);
+    --li-prefix-color: var(--meta-color);
     --heading-outline-color: var(--li-prefix-color);
     --form-label-color: var(--meta-color);
     --form-field-color: var(--base-color);
@@ -1625,7 +1625,7 @@ small,
 }
 
 .meta-color {
-    color: hsl(0, 0%, calc(58% - 2 * calc(58% / 7)));
+    color: hsl(0, 0%, calc(58% - calc(58% / 7)));
     color: var(--meta-color);
 }
 
@@ -1667,7 +1667,7 @@ small,
 }
 
 .li-prefix-color {
-    color: hsl(0, 0%, 58%);
+    color: hsl(0, 0%, calc(58% - calc(58% / 7)));
     color: var(--li-prefix-color);
 }
 
@@ -1706,7 +1706,7 @@ small,
 }
 
 .bg-li-prefix-color {
-    background: hsl(0, 0%, 58%);
+    background: hsl(0, 0%, calc(58% - calc(58% / 7)));
     background: var(--li-prefix-color);
 }
 
@@ -1788,7 +1788,7 @@ small,
 }
 
 .bg-meta-color {
-    background-color: hsl(0, 0%, calc(58% - 2 * calc(58% / 7)));
+    background-color: hsl(0, 0%, calc(58% - calc(58% / 7)));
     background-color: var(--meta-color);
 }
 
@@ -1818,7 +1818,7 @@ small,
 }
 
 .bg-li-prefix-color {
-    background-color: hsl(0, 0%, 58%);
+    background-color: hsl(0, 0%, calc(58% - calc(58% / 7)));
     background-color: var(--li-prefix-color);
 }
 
@@ -1898,7 +1898,7 @@ small,
 }
 
 .br-meta-color {
-    border-color: hsl(0, 0%, calc(58% - 2 * calc(58% / 7)));
+    border-color: hsl(0, 0%, calc(58% - calc(58% / 7)));
     border-color: var(--meta-color);
 }
 
@@ -1928,7 +1928,7 @@ small,
 }
 
 .br-li-prefix-color {
-    border-color: hsl(0, 0%, 58%);
+    border-color: hsl(0, 0%, calc(58% - calc(58% / 7)));
     border-color: var(--li-prefix-color);
 }
 
@@ -17366,7 +17366,7 @@ a:focus {
     text-transform: var(--meta-text-transform);
     letter-spacing: unset;
     letter-spacing: var(--meta-letter-spacing);
-    color: hsl(0, 0%, calc(58% - 2 * calc(58% / 7)));
+    color: hsl(0, 0%, calc(58% - calc(58% / 7)));
     color: var(--meta-color);
 }
 
@@ -17962,7 +17962,7 @@ details summary>* {
 ::placeholder,
  :-ms-input-placeholder,
  ::-ms-input-placeholder {
-    color: hsl(0, 0%, calc(58% - 2 * calc(58% / 7)));
+    color: hsl(0, 0%, calc(58% - calc(58% / 7)));
     color: var(--form-label-color);
     opacity: 1;
     text-transform: none;
@@ -18055,7 +18055,7 @@ legend {
     vertical-align: baseline;
     text-transform: none;
     text-transform: var(--heading-text-transform);
-    color: hsl(0, 0%, calc(58% - 2 * calc(58% / 7)));
+    color: hsl(0, 0%, calc(58% - calc(58% / 7)));
     color: var(--form-label-color);
 }
 
@@ -21122,7 +21122,7 @@ dd+dt {
 }
 
 dl.timeline {
-    border-left: 1px solid hsl(0, 0%, 58%);
+    border-left: 1px solid hsl(0, 0%, calc(58% - calc(58% / 7)));
     border-left: var(--timeline-width) solid var(--timeline-color);
 }
 
@@ -21152,7 +21152,7 @@ dl.timeline>dt::before {
     margin-top: calc(0.5em * var(--lh-default) - 0.5 * var(--timeline-blub-size) - var(--timeline-width));
     background-color: white;
     background-color: var(--timeline-blub-background);
-    border: 1px solid hsl(0, 0%, 58%);
+    border: 1px solid hsl(0, 0%, calc(58% - calc(58% / 7)));
     border: var(--timeline-blub-border-width) solid var(--timeline-blub-color);
 }
 
@@ -21209,7 +21209,7 @@ ol li::before {
     font-family: var(--meta-font-family);
     font-weight: bold;
     font-size: smaller;
-    color: hsl(0, 0%, 58%);
+    color: hsl(0, 0%, calc(58% - calc(58% / 7)));
     color: var(--li-prefix-color);
 }
 
@@ -21224,7 +21224,7 @@ ul li::before {
     min-width: var(--horizontal-rhythm);
     text-align: left;
     display: inline-block;
-    color: hsl(0, 0%, 58%);
+    color: hsl(0, 0%, calc(58% - calc(58% / 7)));
     color: var(--li-prefix-color);
 }
 
@@ -21247,7 +21247,7 @@ ul ol li::before {
 .outline h5::before,
 .outline h6::before {
     display: inline-block;
-    color: hsl(0, 0%, 58%);
+    color: hsl(0, 0%, calc(58% - calc(58% / 7)));
     color: var(--heading-outline-color);
     font-weight: inherit;
     min-width: calc(1.7 * 1rem);
