@@ -15,7 +15,7 @@
     --h6-counter: counter(h2-counter) var(--h-counter-delimiter) counter(h3-counter) var(--h-counter-delimiter) counter(h4-counter) var(--h-counter-delimiter) counter(h5-counter) var(--h-counter-delimiter) counter(h6-counter);
     --timeline-blub-size: 1em;
     --timeline-width: var(--border-width);
-    --timeline-blub-border: var(--border-width);
+    --timeline-blub-border-width: var(--border-width);
 }
 
 dl {
@@ -58,7 +58,7 @@ dl.timeline>dt::before {
     margin-left: calc(-0.5 * (var(--timeline-blub-size) + var(--timeline-width)) - var(--horizontal-rhythm));
     margin-top: calc(0.5em * var(--lh-default) - 0.5 * var(--timeline-blub-size) - var(--timeline-width));
     background-color: var(--timeline-blub-background);
-    border: var(--timeline-blub-border) solid var(--timeline-blub-color);
+    border: var(--timeline-blub-border-width) solid var(--timeline-blub-color);
 }
 
 ol,
@@ -137,7 +137,7 @@ ul ol li::before {
 .outline h5::before,
 .outline h6::before {
     display: inline-block;
-    color: var(--neutral);
+    color: var(--heading-outline-color);
     font-weight: inherit;
     min-width: var(--horizontal-rhythm);
     padding-right: var(--space-d2);

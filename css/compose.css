@@ -1510,7 +1510,8 @@ small,
     --selection-color: var(--base-color);
     --heading-color: var(--base-color);
     --meta-color: var(--neutral-d2);
-    --li-prefix-color: var(--heading-color);
+    --li-prefix-color: var(--neutral);
+    --heading-outline-color: var(--li-prefix-color);
     --form-label-color: var(--meta-color);
     --form-field-color: var(--base-color);
     --form-field-border-color: var(--border-color);
@@ -1666,7 +1667,7 @@ small,
 }
 
 .li-prefix-color {
-    color: hsl(0, 0%, calc(58% - 5 * calc(58% / 7)));
+    color: hsl(0, 0%, 58%);
     color: var(--li-prefix-color);
 }
 
@@ -1705,7 +1706,7 @@ small,
 }
 
 .bg-li-prefix-color {
-    background: hsl(0, 0%, calc(58% - 5 * calc(58% / 7)));
+    background: hsl(0, 0%, 58%);
     background: var(--li-prefix-color);
 }
 
@@ -1817,7 +1818,7 @@ small,
 }
 
 .bg-li-prefix-color {
-    background-color: hsl(0, 0%, calc(58% - 5 * calc(58% / 7)));
+    background-color: hsl(0, 0%, 58%);
     background-color: var(--li-prefix-color);
 }
 
@@ -1927,7 +1928,7 @@ small,
 }
 
 .br-li-prefix-color {
-    border-color: hsl(0, 0%, calc(58% - 5 * calc(58% / 7)));
+    border-color: hsl(0, 0%, 58%);
     border-color: var(--li-prefix-color);
 }
 
@@ -18162,6 +18163,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
 .custom-control input[type=radio]+* {
     margin-left: calc(1.7 * 1rem);
     margin-left: var(--horizontal-rhythm);
+    display: inline-block;
 }
 
 /* box */
@@ -21096,7 +21098,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     --h6-counter: counter(h2-counter) var(--h-counter-delimiter) counter(h3-counter) var(--h-counter-delimiter) counter(h4-counter) var(--h-counter-delimiter) counter(h5-counter) var(--h-counter-delimiter) counter(h6-counter);
     --timeline-blub-size: 1em;
     --timeline-width: var(--border-width);
-    --timeline-blub-border: var(--border-width);
+    --timeline-blub-border-width: var(--border-width);
 }
 
 dl {
@@ -21120,7 +21122,7 @@ dd+dt {
 }
 
 dl.timeline {
-    border-left: 1px solid hsl(0, 0%, calc(58% - 5 * calc(58% / 7)));
+    border-left: 1px solid hsl(0, 0%, 58%);
     border-left: var(--timeline-width) solid var(--timeline-color);
 }
 
@@ -21150,8 +21152,8 @@ dl.timeline>dt::before {
     margin-top: calc(0.5em * var(--lh-default) - 0.5 * var(--timeline-blub-size) - var(--timeline-width));
     background-color: white;
     background-color: var(--timeline-blub-background);
-    border: 1px solid hsl(0, 0%, calc(58% - 5 * calc(58% / 7)));
-    border: var(--timeline-blub-border) solid var(--timeline-blub-color);
+    border: 1px solid hsl(0, 0%, 58%);
+    border: var(--timeline-blub-border-width) solid var(--timeline-blub-color);
 }
 
 ol,
@@ -21207,7 +21209,7 @@ ol li::before {
     font-family: var(--meta-font-family);
     font-weight: bold;
     font-size: smaller;
-    color: hsl(0, 0%, calc(58% - 5 * calc(58% / 7)));
+    color: hsl(0, 0%, 58%);
     color: var(--li-prefix-color);
 }
 
@@ -21222,7 +21224,7 @@ ul li::before {
     min-width: var(--horizontal-rhythm);
     text-align: left;
     display: inline-block;
-    color: hsl(0, 0%, calc(58% - 5 * calc(58% / 7)));
+    color: hsl(0, 0%, 58%);
     color: var(--li-prefix-color);
 }
 
@@ -21246,7 +21248,7 @@ ul ol li::before {
 .outline h6::before {
     display: inline-block;
     color: hsl(0, 0%, 58%);
-    color: var(--neutral);
+    color: var(--heading-outline-color);
     font-weight: inherit;
     min-width: calc(1.7 * 1rem);
     min-width: var(--horizontal-rhythm);

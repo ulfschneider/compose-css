@@ -125,7 +125,8 @@
     --selection-color: var(--base-color);
     --heading-color: var(--base-color);
     --meta-color: var(--neutral-d2);
-    --li-prefix-color: var(--heading-color);
+    --li-prefix-color: var(--neutral);
+    --heading-outline-color: var(--li-prefix-color);
     --form-label-color: var(--meta-color);
     --form-field-color: var(--base-color);
     --form-field-border-color: var(--border-color);

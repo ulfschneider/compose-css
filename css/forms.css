@@ -193,6 +193,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
  .custom-control input[type=checkbox]+*,
 .custom-control input[type=radio]+* {
     margin-left: var(--horizontal-rhythm);
+    display: inline-block;
 }
 
  /* box */
