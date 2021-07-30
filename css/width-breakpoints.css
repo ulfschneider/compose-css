@@ -268,7 +268,7 @@
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
     .lg\:w-unset {
         width: unset;
     }

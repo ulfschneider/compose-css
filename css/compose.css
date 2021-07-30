@@ -246,13 +246,15 @@ small,
     line-height: var(--lh-5);
 }
 
+/* https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/ */
+
 @custom-media --max-sm (max-width: 400px);
 
 @custom-media --max-rg (max-width: 600px);
 
 @custom-media --max-md (max-width: 900px);
 
-@custom-media --max-lg (max-width: 1400px);
+@custom-media --max-lg (max-width: 1200px);
 
 @custom-media --sm (min-width: 400px);
 
@@ -260,7 +262,7 @@ small,
 
 @custom-media --md (min-width: 900px);
 
-@custom-media --lg (min-width: 1400px);
+@custom-media --lg (min-width: 1200px);
 
 @custom-media --touch-device screen and (hover: none) and (pointer: coarse);
 
@@ -313,7 +315,7 @@ small,
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
      :root {
         font-size: calc(19px + 3px);
         font-size: var(--font-size-breakpoint-lg);
@@ -1119,7 +1121,7 @@ small,
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
     .lg\:h1 {
         font-size: 2.4rem;
         font-size: var(--fs-h1);
@@ -7581,7 +7583,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
     .lg\:mr-0,
     .lg\:no-mr {
         margin: 0;
@@ -11796,7 +11798,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
     .lg\:pd-0,
     .lg\:no-pd {
         padding: 0;
@@ -13273,7 +13275,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
     .lg\:w-unset {
         width: unset;
     }
@@ -13842,7 +13844,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
     .lg\:mxw-unset,
     .lg\:mxw-u {
         max-width: unset;
@@ -14373,7 +14375,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
     .lg\:miw-unset,
     .lg\:miw-u {
         min-width: unset;
@@ -14984,7 +14986,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
     .lg\:h-unset {
         height: unset;
     }
@@ -15605,7 +15607,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
     .lg\:mxh-unset,
     .lg\:mxh-u {
         max-height: unset;
@@ -16247,7 +16249,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
     .lg\:mih-unset,
     .lg\:mih-u {
         min-height: unset;
@@ -16972,7 +16974,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
     .lg\:sq-unset {
         width: unset;
         height: unset;
@@ -17170,7 +17172,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
     .lg\:hide {
         display: none !important;
     }
@@ -17218,7 +17220,7 @@ Naming conventions
     }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
     .below-lg\:hide {
         display: none !important;
     }
@@ -19056,7 +19058,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
     .x>.lg\:columns-1 {
         columns: 1;
     }
@@ -20352,7 +20354,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
     .lg\:flex,
     .lg\:flex-row {
         display: flex;
@@ -20989,7 +20991,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
     .lg\:grid {
         display: grid;
     }
@@ -22987,7 +22989,7 @@ caption {
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
     .lg\:inline {
         display: inline;
     }

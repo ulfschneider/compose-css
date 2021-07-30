@@ -38,7 +38,7 @@
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
     .lg\:hide {
         display: none !important;
     }
@@ -86,7 +86,7 @@
     }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
     .below-lg\:hide {
         display: none !important;
     }

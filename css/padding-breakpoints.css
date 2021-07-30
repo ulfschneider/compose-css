@@ -1831,7 +1831,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
     .lg\:pd-0,
     .lg\:no-pd {
         padding: 0;

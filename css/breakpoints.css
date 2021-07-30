@@ -1,9 +1,19 @@
+/* https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/ */
+
 @custom-media --max-sm (max-width: 400px);
+
 @custom-media --max-rg (max-width: 600px);
+
 @custom-media --max-md (max-width: 900px);
-@custom-media --max-lg (max-width: 1400px);
+
+@custom-media --max-lg (max-width: 1200px);
+
 @custom-media --sm (min-width: 400px);
+
 @custom-media --rg (min-width: 600px);
+
 @custom-media --md (min-width: 900px);
-@custom-media --lg (min-width: 1400px);
+
+@custom-media --lg (min-width: 1200px);
+
 @custom-media --touch-device screen and (hover: none) and (pointer: coarse)

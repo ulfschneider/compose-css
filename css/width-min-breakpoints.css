@@ -258,7 +258,7 @@
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
     .lg\:miw-unset,
     .lg\:miw-u {
         min-width: unset;
