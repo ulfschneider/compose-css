@@ -7,20 +7,20 @@
     --lg-px: 1200px;
 }
 
-@custom-media --max-sm (max-width: var(--sm-px));
+@custom-media --max-sm (max-width: 400px);
 
-@custom-media --max-rg (max-width: var(--rg-px));
+@custom-media --max-rg (max-width: 600px);
 
-@custom-media --max-md (max-width: var(--md-px));
+@custom-media --max-md (max-width: 900px);
 
-@custom-media --max-lg (max-width: var(--lg-px));
+@custom-media --max-lg (max-width: 1200px);
 
-@custom-media --sm (min-width: calc(var(--sm-px) + 1));
+@custom-media --sm (min-width: 401px);
 
-@custom-media --rg (min-width: calc(var(--rg-px) + 1));
+@custom-media --rg (min-width: 601px);
 
-@custom-media --md (min-width: calc(var(--md-px) + 1));
+@custom-media --md (min-width: 901px);
 
-@custom-media --lg (min-width: calc(var(--lg-px) + 1));
+@custom-media --lg (min-width: 1201px);
 
 @custom-media --touch-device screen and (hover: none) and (pointer: coarse)

@@ -1,4 +1,4 @@
-@media (min-width: calc(var(--sm-px) + 1)) {
+@media (min-width: 401px) {
     .sm\:sq-unset {
         width: unset;
         height: unset;
@@ -108,7 +108,7 @@
     }
 }
 
-@media (min-width: calc(var(--rg-px) + 1)) {
+@media (min-width: 601px) {
     .rg\:sq-unset {
         width: unset;
         height: unset;
@@ -218,7 +218,7 @@
     }
 }
 
-@media (min-width: calc(var(--md-px) + 1)) {
+@media (min-width: 901px) {
     .md\:sq-unset {
         width: unset;
         height: unset;
@@ -328,7 +328,7 @@
     }
 }
 
-@media (min-width: calc(var(--lg-px) + 1)) {
+@media (min-width: 1201px) {
     .lg\:sq-unset {
         width: unset;
         height: unset;

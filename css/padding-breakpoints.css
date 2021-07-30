@@ -13,7 +13,7 @@ Naming conventions
     
 */
 
-@media (min-width: calc(var(--sm-px) + 1)) {
+@media (min-width: 401px) {
     .sm\:pd-0,
     .sm\:no-pd {
         padding: 0;
@@ -619,7 +619,7 @@ Naming conventions
     }
 }
 
-@media (min-width: calc(var(--rg-px) + 1)) {
+@media (min-width: 601px) {
     .rg\:pd-0,
     .rg\:no-pd {
         padding: 0;
@@ -1225,7 +1225,7 @@ Naming conventions
     }
 }
 
-@media (min-width: calc(var(--md-px) + 1)) {
+@media (min-width: 901px) {
     .md\:pd-0,
     .md\:no-pd {
         padding: 0;
@@ -1831,7 +1831,7 @@ Naming conventions
     }
 }
 
-@media (min-width: calc(var(--lg-px) + 1)) {
+@media (min-width: 1201px) {
     .lg\:pd-0,
     .lg\:no-pd {
         padding: 0;

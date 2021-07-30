@@ -623,7 +623,7 @@ blockquote>header::after {
     content: "—";
 }
 
-@media(max-width: var(--sm-px)) {
+@media(max-width: 400px) {
     figcaption,
     blockquote>footer {
         max-width: unset;

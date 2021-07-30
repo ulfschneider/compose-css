@@ -1,4 +1,4 @@
-@media (min-width: calc(var(--sm-px) + 1)) {
+@media (min-width: 401px) {
     .sm\:grid {
         display: grid;
     }
@@ -90,7 +90,7 @@
     }
 }
 
-@media (min-width: calc(var(--rg-px) + 1)) {
+@media (min-width: 601px) {
     .rg\:grid {
         display: grid;
     }
@@ -182,7 +182,7 @@
     }
 }
 
-@media (min-width: calc(var(--md-px) + 1)) {
+@media (min-width: 901px) {
     .md\:grid {
         display: grid;
     }
@@ -274,7 +274,7 @@
     }
 }
 
-@media (min-width: calc(var(--lg-px) + 1)) {
+@media (min-width: 1201px) {
     .lg\:grid {
         display: grid;
     }

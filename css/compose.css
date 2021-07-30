@@ -255,21 +255,21 @@ small,
     --lg-px: 1200px;
 }
 
-@custom-media --max-sm (max-width: var(--sm-px));
+@custom-media --max-sm (max-width: 400px);
 
-@custom-media --max-rg (max-width: var(--rg-px));
+@custom-media --max-rg (max-width: 600px);
 
-@custom-media --max-md (max-width: var(--md-px));
+@custom-media --max-md (max-width: 900px);
 
-@custom-media --max-lg (max-width: var(--lg-px));
+@custom-media --max-lg (max-width: 1200px);
 
-@custom-media --sm (min-width: calc(var(--sm-px) + 1));
+@custom-media --sm (min-width: 401px);
 
-@custom-media --rg (min-width: calc(var(--rg-px) + 1));
+@custom-media --rg (min-width: 601px);
 
-@custom-media --md (min-width: calc(var(--md-px) + 1));
+@custom-media --md (min-width: 901px);
 
-@custom-media --lg (min-width: calc(var(--lg-px) + 1));
+@custom-media --lg (min-width: 1201px);
 
 @custom-media --touch-device screen and (hover: none) and (pointer: coarse);
 
@@ -280,7 +280,7 @@ small,
     --font-size-breakpoint-lg: calc(var(--base-font-size) + 3px);
 }
 
-@media (min-width: calc(var(--sm-px) + 1)) {
+@media (min-width: 401px) {
      :root {
         font-size: calc(19px + 1px);
         font-size: var(--font-size-breakpoint-sm);
@@ -294,7 +294,7 @@ small,
     }
 }
 
-@media (min-width: calc(var(--rg-px) + 1)) {
+@media (min-width: 601px) {
      :root {
         font-size: calc(19px + 2px);
         font-size: var(--font-size-breakpoint-rg);
@@ -308,7 +308,7 @@ small,
     }
 }
 
-@media (min-width: calc(var(--md-px) + 1)) {
+@media (min-width: 901px) {
      :root {
         font-size: calc(19px + 2px);
         font-size: var(--font-size-breakpoint-md);
@@ -322,7 +322,7 @@ small,
     }
 }
 
-@media (min-width: calc(var(--lg-px) + 1)) {
+@media (min-width: 1201px) {
      :root {
         font-size: calc(19px + 3px);
         font-size: var(--font-size-breakpoint-lg);
@@ -336,7 +336,7 @@ small,
     }
 }
 
-@media (min-width: calc(var(--sm-px) + 1)) {
+@media (min-width: 401px) {
     .sm\:h1 {
         font-size: 2.4rem;
         font-size: var(--fs-h1);
@@ -600,7 +600,7 @@ small,
     }
 }
 
-@media (min-width: calc(var(--rg-px) + 1)) {
+@media (min-width: 601px) {
     .rg\:h1 {
         font-size: 2.4rem;
         font-size: var(--fs-h1);
@@ -864,7 +864,7 @@ small,
     }
 }
 
-@media (min-width: calc(var(--md-px) + 1)) {
+@media (min-width: 901px) {
     .md\:h1 {
         font-size: 2.4rem;
         font-size: var(--fs-h1);
@@ -1128,7 +1128,7 @@ small,
     }
 }
 
-@media (min-width: calc(var(--lg-px) + 1)) {
+@media (min-width: 1201px) {
     .lg\:h1 {
         font-size: 2.4rem;
         font-size: var(--fs-h1);
@@ -3930,7 +3930,7 @@ Naming conventions
     <i>=increase by <i>
 */
 
-@media (min-width: calc(var(--sm-px) + 1)) {
+@media (min-width: 401px) {
     .sm\:mr-0,
     .sm\:no-mr {
         margin: 0;
@@ -5150,7 +5150,7 @@ Naming conventions
     }
 }
 
-@media (min-width: calc(var(--rg-px) + 1)) {
+@media (min-width: 601px) {
     .rg\:mr-0,
     .rg\:no-mr {
         margin: 0;
@@ -6370,7 +6370,7 @@ Naming conventions
     }
 }
 
-@media (min-width: calc(var(--md-px) + 1)) {
+@media (min-width: 901px) {
     .md\:mr-0,
     .md\:no-mr {
         margin: 0;
@@ -7590,7 +7590,7 @@ Naming conventions
     }
 }
 
-@media (min-width: calc(var(--lg-px) + 1)) {
+@media (min-width: 1201px) {
     .lg\:mr-0,
     .lg\:no-mr {
         margin: 0;
@@ -9339,7 +9339,7 @@ Naming conventions
     
 */
 
-@media (min-width: calc(var(--sm-px) + 1)) {
+@media (min-width: 401px) {
     .sm\:pd-0,
     .sm\:no-pd {
         padding: 0;
@@ -10161,7 +10161,7 @@ Naming conventions
     }
 }
 
-@media (min-width: calc(var(--rg-px) + 1)) {
+@media (min-width: 601px) {
     .rg\:pd-0,
     .rg\:no-pd {
         padding: 0;
@@ -10983,7 +10983,7 @@ Naming conventions
     }
 }
 
-@media (min-width: calc(var(--md-px) + 1)) {
+@media (min-width: 901px) {
     .md\:pd-0,
     .md\:no-pd {
         padding: 0;
@@ -11805,7 +11805,7 @@ Naming conventions
     }
 }
 
-@media (min-width: calc(var(--lg-px) + 1)) {
+@media (min-width: 1201px) {
     .lg\:pd-0,
     .lg\:no-pd {
         padding: 0;
@@ -12940,7 +12940,7 @@ Naming conventions
     width: var(--space-6);
 }
 
-@media (min-width: calc(var(--sm-px) + 1)) {
+@media (min-width: 401px) {
     .sm\:w-unset {
         width: unset;
     }
@@ -13054,7 +13054,7 @@ Naming conventions
     }
 }
 
-@media (min-width: calc(var(--rg-px) + 1)) {
+@media (min-width: 601px) {
     .rg\:w-unset {
         width: unset;
     }
@@ -13168,7 +13168,7 @@ Naming conventions
     }
 }
 
-@media (min-width: calc(var(--md-px) + 1)) {
+@media (min-width: 901px) {
     .md\:w-unset {
         width: unset;
     }
@@ -13282,7 +13282,7 @@ Naming conventions
     }
 }
 
-@media (min-width: calc(var(--lg-px) + 1)) {
+@media (min-width: 1201px) {
     .lg\:w-unset {
         width: unset;
     }
@@ -13521,7 +13521,7 @@ Naming conventions
     max-width: 100vw;
 }
 
-@media (min-width: calc(var(--sm-px) + 1)) {
+@media (min-width: 401px) {
     .sm\:mxw-unset,
     .sm\:mxw-u {
         max-width: unset;
@@ -13631,7 +13631,7 @@ Naming conventions
     }
 }
 
-@media (min-width: calc(var(--rg-px) + 1)) {
+@media (min-width: 601px) {
     .rg\:mxw-unset,
     .rg\:mxw-u {
         max-width: unset;
@@ -13741,7 +13741,7 @@ Naming conventions
     }
 }
 
-@media (min-width: calc(var(--md-px) + 1)) {
+@media (min-width: 901px) {
     .md\:mxw-unset,
     .md\:mxw-u {
         max-width: unset;
@@ -13851,7 +13851,7 @@ Naming conventions
     }
 }
 
-@media (min-width: calc(var(--lg-px) + 1)) {
+@media (min-width: 1201px) {
     .lg\:mxw-unset,
     .lg\:mxw-u {
         max-width: unset;
@@ -14050,7 +14050,7 @@ Naming conventions
     min-width: 100vw;
 }
 
-@media (min-width: calc(var(--sm-px) + 1)) {
+@media (min-width: 401px) {
     .sm\:miw-unset,
     .sm\:miw-u {
         min-width: unset;
@@ -14162,7 +14162,7 @@ Naming conventions
     }
 }
 
-@media (min-width: calc(var(--rg-px) + 1)) {
+@media (min-width: 601px) {
     .rg\:miw-unset,
     .rg\:miw-u {
         min-width: unset;
@@ -14272,7 +14272,7 @@ Naming conventions
     }
 }
 
-@media (min-width: calc(var(--md-px) + 1)) {
+@media (min-width: 901px) {
     .md\:miw-unset,
     .md\:miw-u {
         min-width: unset;
@@ -14382,7 +14382,7 @@ Naming conventions
     }
 }
 
-@media (min-width: calc(var(--lg-px) + 1)) {
+@media (min-width: 1201px) {
     .lg\:miw-unset,
     .lg\:miw-u {
         min-width: unset;
@@ -14669,7 +14669,7 @@ Naming conventions
     height: 10vh;
 }
 
-@media (min-width: calc(var(--sm-px) + 1)) {
+@media (min-width: 401px) {
     .sm\:h-unset {
         height: unset;
     }
@@ -14777,7 +14777,7 @@ Naming conventions
     }
 }
 
-@media (min-width: calc(var(--rg-px) + 1)) {
+@media (min-width: 601px) {
     .rg\:h-unset {
         height: unset;
     }
@@ -14885,7 +14885,7 @@ Naming conventions
     }
 }
 
-@media (min-width: calc(var(--md-px) + 1)) {
+@media (min-width: 901px) {
     .md\:h-unset {
         height: unset;
     }
@@ -14993,7 +14993,7 @@ Naming conventions
     }
 }
 
-@media (min-width: calc(var(--lg-px) + 1)) {
+@media (min-width: 1201px) {
     .lg\:h-unset {
         height: unset;
     }
@@ -15212,7 +15212,7 @@ Naming conventions
     max-height: 100vh;
 }
 
-@media (min-width: calc(var(--sm-px) + 1)) {
+@media (min-width: 401px) {
     .sm\:mxh-unset,
     .sm\:mxh-u {
         max-height: unset;
@@ -15346,7 +15346,7 @@ Naming conventions
     }
 }
 
-@media (min-width: calc(var(--rg-px) + 1)) {
+@media (min-width: 601px) {
     .rg\:mxh-unset,
     .rg\:mxh-u {
         max-height: unset;
@@ -15480,7 +15480,7 @@ Naming conventions
     }
 }
 
-@media (min-width: calc(var(--md-px) + 1)) {
+@media (min-width: 901px) {
     .md\:mxh-unset,
     .md\:mxh-u {
         max-height: unset;
@@ -15614,7 +15614,7 @@ Naming conventions
     }
 }
 
-@media (min-width: calc(var(--lg-px) + 1)) {
+@media (min-width: 1201px) {
     .lg\:mxh-unset,
     .lg\:mxh-u {
         max-height: unset;
@@ -15854,7 +15854,7 @@ Naming conventions
     min-height: 100vh;
 }
 
-@media (min-width: calc(var(--sm-px) + 1)) {
+@media (min-width: 401px) {
     .sm\:mih-unset,
     .sm\:mih-u {
         min-height: unset;
@@ -15988,7 +15988,7 @@ Naming conventions
     }
 }
 
-@media (min-width: calc(var(--rg-px) + 1)) {
+@media (min-width: 601px) {
     .rg\:mih-unset,
     .rg\:mih-u {
         min-height: unset;
@@ -16122,7 +16122,7 @@ Naming conventions
     }
 }
 
-@media (min-width: calc(var(--md-px) + 1)) {
+@media (min-width: 901px) {
     .md\:mih-unset,
     .md\:mih-u {
         min-height: unset;
@@ -16256,7 +16256,7 @@ Naming conventions
     }
 }
 
-@media (min-width: calc(var(--lg-px) + 1)) {
+@media (min-width: 1201px) {
     .lg\:mih-unset,
     .lg\:mih-u {
         min-height: unset;
@@ -16507,7 +16507,7 @@ Naming conventions
     height: var(--large-width);
 }
 
-@media (min-width: calc(var(--sm-px) + 1)) {
+@media (min-width: 401px) {
     .sm\:sq-unset {
         width: unset;
         height: unset;
@@ -16665,7 +16665,7 @@ Naming conventions
     }
 }
 
-@media (min-width: calc(var(--rg-px) + 1)) {
+@media (min-width: 601px) {
     .rg\:sq-unset {
         width: unset;
         height: unset;
@@ -16823,7 +16823,7 @@ Naming conventions
     }
 }
 
-@media (min-width: calc(var(--md-px) + 1)) {
+@media (min-width: 901px) {
     .md\:sq-unset {
         width: unset;
         height: unset;
@@ -16981,7 +16981,7 @@ Naming conventions
     }
 }
 
-@media (min-width: calc(var(--lg-px) + 1)) {
+@media (min-width: 1201px) {
     .lg\:sq-unset {
         width: unset;
         height: unset;
@@ -17143,7 +17143,7 @@ Naming conventions
     display: none !important;
 }
 
-@media (min-width: calc(var(--sm-px) + 1)) {
+@media (min-width: 401px) {
     .sm\:hide {
         display: none !important;
     }
@@ -17155,7 +17155,7 @@ Naming conventions
     }
 }
 
-@media (min-width: calc(var(--rg-px) + 1)) {
+@media (min-width: 601px) {
     .rg\:hide {
         display: none !important;
     }
@@ -17167,7 +17167,7 @@ Naming conventions
     }
 }
 
-@media (min-width: calc(var(--md-px) + 1)) {
+@media (min-width: 901px) {
     .md\:hide {
         display: none !important;
     }
@@ -17179,7 +17179,7 @@ Naming conventions
     }
 }
 
-@media (min-width: calc(var(--lg-px) + 1)) {
+@media (min-width: 1201px) {
     .lg\:hide {
         display: none !important;
     }
@@ -17191,7 +17191,7 @@ Naming conventions
     }
 }
 
-@media (max-width: var(--sm-px)) {
+@media (max-width: 400px) {
     .below-sm\:hide {
         display: none !important;
     }
@@ -17203,7 +17203,7 @@ Naming conventions
     }
 }
 
-@media (max-width: var(--rg-px)) {
+@media (max-width: 600px) {
     .below-rg\:hide {
         display: none !important;
     }
@@ -17215,7 +17215,7 @@ Naming conventions
     }
 }
 
-@media (max-width: var(--md-px)) {
+@media (max-width: 900px) {
     .below-md\:hide {
         display: none !important;
     }
@@ -17227,7 +17227,7 @@ Naming conventions
     }
 }
 
-@media (max-width: var(--lg-px)) {
+@media (max-width: 1200px) {
     .below-lg\:hide {
         display: none !important;
     }
@@ -17901,7 +17901,7 @@ blockquote>header::after {
     content: "—";
 }
 
-@media(max-width: var(--sm-px)) {
+@media(max-width: 400px) {
     figcaption,
     blockquote>footer {
         max-width: unset;
@@ -18501,7 +18501,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     grid-column-start: 12;
 }
 
-@media (min-width: calc(var(--sm-px) + 1)) {
+@media (min-width: 401px) {
     .sm\:columns-1 {
         columns: 1;
     }
@@ -18689,7 +18689,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     }
 }
 
-@media (min-width: calc(var(--rg-px) + 1)) {
+@media (min-width: 601px) {
     .rg\:columns-1 {
         columns: 1;
     }
@@ -18877,7 +18877,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     }
 }
 
-@media (min-width: calc(var(--md-px) + 1)) {
+@media (min-width: 901px) {
     .md\:columns-1 {
         columns: 1;
     }
@@ -19065,7 +19065,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     }
 }
 
-@media (min-width: calc(var(--lg-px) + 1)) {
+@media (min-width: 1201px) {
     .x>.lg\:columns-1 {
         columns: 1;
     }
@@ -19449,7 +19449,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     flex-shrink: 4;
 }
 
-@media (min-width: calc(var(--sm-px) + 1)) {
+@media (min-width: 401px) {
     .sm\:flex,
     .sm\:flex-row {
         display: flex;
@@ -19753,7 +19753,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     }
 }
 
-@media (min-width: calc(var(--rg-px) + 1)) {
+@media (min-width: 601px) {
     .rg\:flex,
     .rg\:flex-row {
         display: flex;
@@ -20057,7 +20057,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     }
 }
 
-@media (min-width: calc(var(--md-px) + 1)) {
+@media (min-width: 901px) {
     .md\:flex,
     .md\:flex-row {
         display: flex;
@@ -20361,7 +20361,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     }
 }
 
-@media (min-width: calc(var(--lg-px) + 1)) {
+@media (min-width: 1201px) {
     .lg\:flex,
     .lg\:flex-row {
         display: flex;
@@ -20722,7 +20722,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     grid-template-columns: none;
 }
 
-@media (min-width: calc(var(--sm-px) + 1)) {
+@media (min-width: 401px) {
     .sm\:grid {
         display: grid;
     }
@@ -20814,7 +20814,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     }
 }
 
-@media (min-width: calc(var(--rg-px) + 1)) {
+@media (min-width: 601px) {
     .rg\:grid {
         display: grid;
     }
@@ -20906,7 +20906,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     }
 }
 
-@media (min-width: calc(var(--md-px) + 1)) {
+@media (min-width: 901px) {
     .md\:grid {
         display: grid;
     }
@@ -20998,7 +20998,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     }
 }
 
-@media (min-width: calc(var(--lg-px) + 1)) {
+@media (min-width: 1201px) {
     .lg\:grid {
         display: grid;
     }
@@ -21868,7 +21868,7 @@ caption {
     contain: style;
 }
 
-@media (min-width: calc(var(--sm-px) + 1)) {
+@media (min-width: 401px) {
     .sm\:inline {
         display: inline;
     }
@@ -22244,7 +22244,7 @@ caption {
     }
 }
 
-@media (min-width: calc(var(--rg-px) + 1)) {
+@media (min-width: 601px) {
     .rg\:inline {
         display: inline;
     }
@@ -22620,7 +22620,7 @@ caption {
     }
 }
 
-@media (min-width: calc(var(--md-px) + 1)) {
+@media (min-width: 901px) {
     .md\:inline {
         display: inline;
     }
@@ -22996,7 +22996,7 @@ caption {
     }
 }
 
-@media (min-width: calc(var(--lg-px) + 1)) {
+@media (min-width: 1201px) {
     .lg\:inline {
         display: inline;
     }

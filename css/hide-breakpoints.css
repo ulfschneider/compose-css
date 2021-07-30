@@ -2,7 +2,7 @@
     display: none !important;
 }
 
-@media (min-width: calc(var(--sm-px) + 1)) {
+@media (min-width: 401px) {
     .sm\:hide {
         display: none !important;
     }
@@ -14,7 +14,7 @@
     }
 }
 
-@media (min-width: calc(var(--rg-px) + 1)) {
+@media (min-width: 601px) {
     .rg\:hide {
         display: none !important;
     }
@@ -26,7 +26,7 @@
     }
 }
 
-@media (min-width: calc(var(--md-px) + 1)) {
+@media (min-width: 901px) {
     .md\:hide {
         display: none !important;
     }
@@ -38,7 +38,7 @@
     }
 }
 
-@media (min-width: calc(var(--lg-px) + 1)) {
+@media (min-width: 1201px) {
     .lg\:hide {
         display: none !important;
     }
@@ -50,7 +50,7 @@
     }
 }
 
-@media (max-width: var(--sm-px)) {
+@media (max-width: 400px) {
     .below-sm\:hide {
         display: none !important;
     }
@@ -62,7 +62,7 @@
     }
 }
 
-@media (max-width: var(--rg-px)) {
+@media (max-width: 600px) {
     .below-rg\:hide {
         display: none !important;
     }
@@ -74,7 +74,7 @@
     }
 }
 
-@media (max-width: var(--md-px)) {
+@media (max-width: 900px) {
     .below-md\:hide {
         display: none !important;
     }
@@ -86,7 +86,7 @@
     }
 }
 
-@media (max-width: var(--lg-px)) {
+@media (max-width: 1200px) {
     .below-lg\:hide {
         display: none !important;
     }
