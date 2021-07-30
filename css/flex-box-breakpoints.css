@@ -1,4 +1,4 @@
-@media (min-width: 400px) {
+@media (min-width: calc(var(--sm-px) + 1)) {
     .sm\:flex,
     .sm\:flex-row {
         display: flex;
@@ -302,7 +302,7 @@
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: calc(var(--rg-px) + 1)) {
     .rg\:flex,
     .rg\:flex-row {
         display: flex;
@@ -606,7 +606,7 @@
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: calc(var(--md-px) + 1)) {
     .md\:flex,
     .md\:flex-row {
         display: flex;
@@ -910,7 +910,7 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: calc(var(--lg-px) + 1)) {
     .lg\:flex,
     .lg\:flex-row {
         display: flex;

@@ -248,21 +248,28 @@ small,
 
 /* https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/ */
 
-@custom-media --max-sm (max-width: 400px);
+:root {
+    --sm-px: 400px;
+    --rg-px: 600px;
+    --md-px: 900px;
+    --lg-px: 1200px;
+}
 
-@custom-media --max-rg (max-width: 600px);
+@custom-media --max-sm (max-width: var(--sm-px));
 
-@custom-media --max-md (max-width: 900px);
+@custom-media --max-rg (max-width: var(--rg-px));
 
-@custom-media --max-lg (max-width: 1200px);
+@custom-media --max-md (max-width: var(--md-px));
 
-@custom-media --sm (min-width: 400px);
+@custom-media --max-lg (max-width: var(--lg-px));
 
-@custom-media --rg (min-width: 600px);
+@custom-media --sm (min-width: calc(var(--sm-px) + 1));
 
-@custom-media --md (min-width: 900px);
+@custom-media --rg (min-width: calc(var(--rg-px) + 1));
 
-@custom-media --lg (min-width: 1200px);
+@custom-media --md (min-width: calc(var(--md-px) + 1));
+
+@custom-media --lg (min-width: calc(var(--lg-px) + 1));
 
 @custom-media --touch-device screen and (hover: none) and (pointer: coarse);
 
@@ -273,7 +280,7 @@ small,
     --font-size-breakpoint-lg: calc(var(--base-font-size) + 3px);
 }
 
-@media (min-width: 400px) {
+@media (min-width: calc(var(--sm-px) + 1)) {
      :root {
         font-size: calc(19px + 1px);
         font-size: var(--font-size-breakpoint-sm);
@@ -287,7 +294,7 @@ small,
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: calc(var(--rg-px) + 1)) {
      :root {
         font-size: calc(19px + 2px);
         font-size: var(--font-size-breakpoint-rg);
@@ -301,7 +308,7 @@ small,
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: calc(var(--md-px) + 1)) {
      :root {
         font-size: calc(19px + 2px);
         font-size: var(--font-size-breakpoint-md);
@@ -315,7 +322,7 @@ small,
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: calc(var(--lg-px) + 1)) {
      :root {
         font-size: calc(19px + 3px);
         font-size: var(--font-size-breakpoint-lg);
@@ -329,7 +336,7 @@ small,
     }
 }
 
-@media (min-width: 400px) {
+@media (min-width: calc(var(--sm-px) + 1)) {
     .sm\:h1 {
         font-size: 2.4rem;
         font-size: var(--fs-h1);
@@ -593,7 +600,7 @@ small,
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: calc(var(--rg-px) + 1)) {
     .rg\:h1 {
         font-size: 2.4rem;
         font-size: var(--fs-h1);
@@ -857,7 +864,7 @@ small,
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: calc(var(--md-px) + 1)) {
     .md\:h1 {
         font-size: 2.4rem;
         font-size: var(--fs-h1);
@@ -1121,7 +1128,7 @@ small,
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: calc(var(--lg-px) + 1)) {
     .lg\:h1 {
         font-size: 2.4rem;
         font-size: var(--fs-h1);
@@ -3923,7 +3930,7 @@ Naming conventions
     <i>=increase by <i>
 */
 
-@media (min-width: 400px) {
+@media (min-width: calc(var(--sm-px) + 1)) {
     .sm\:mr-0,
     .sm\:no-mr {
         margin: 0;
@@ -5143,7 +5150,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: calc(var(--rg-px) + 1)) {
     .rg\:mr-0,
     .rg\:no-mr {
         margin: 0;
@@ -6363,7 +6370,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: calc(var(--md-px) + 1)) {
     .md\:mr-0,
     .md\:no-mr {
         margin: 0;
@@ -7583,7 +7590,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: calc(var(--lg-px) + 1)) {
     .lg\:mr-0,
     .lg\:no-mr {
         margin: 0;
@@ -9332,7 +9339,7 @@ Naming conventions
     
 */
 
-@media (min-width: 400px) {
+@media (min-width: calc(var(--sm-px) + 1)) {
     .sm\:pd-0,
     .sm\:no-pd {
         padding: 0;
@@ -10154,7 +10161,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: calc(var(--rg-px) + 1)) {
     .rg\:pd-0,
     .rg\:no-pd {
         padding: 0;
@@ -10976,7 +10983,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: calc(var(--md-px) + 1)) {
     .md\:pd-0,
     .md\:no-pd {
         padding: 0;
@@ -11798,7 +11805,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: calc(var(--lg-px) + 1)) {
     .lg\:pd-0,
     .lg\:no-pd {
         padding: 0;
@@ -12933,7 +12940,7 @@ Naming conventions
     width: var(--space-6);
 }
 
-@media (min-width: 400px) {
+@media (min-width: calc(var(--sm-px) + 1)) {
     .sm\:w-unset {
         width: unset;
     }
@@ -13047,7 +13054,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: calc(var(--rg-px) + 1)) {
     .rg\:w-unset {
         width: unset;
     }
@@ -13161,7 +13168,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: calc(var(--md-px) + 1)) {
     .md\:w-unset {
         width: unset;
     }
@@ -13275,7 +13282,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: calc(var(--lg-px) + 1)) {
     .lg\:w-unset {
         width: unset;
     }
@@ -13514,7 +13521,7 @@ Naming conventions
     max-width: 100vw;
 }
 
-@media (min-width: 400px) {
+@media (min-width: calc(var(--sm-px) + 1)) {
     .sm\:mxw-unset,
     .sm\:mxw-u {
         max-width: unset;
@@ -13624,7 +13631,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: calc(var(--rg-px) + 1)) {
     .rg\:mxw-unset,
     .rg\:mxw-u {
         max-width: unset;
@@ -13734,7 +13741,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: calc(var(--md-px) + 1)) {
     .md\:mxw-unset,
     .md\:mxw-u {
         max-width: unset;
@@ -13844,7 +13851,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: calc(var(--lg-px) + 1)) {
     .lg\:mxw-unset,
     .lg\:mxw-u {
         max-width: unset;
@@ -14043,7 +14050,7 @@ Naming conventions
     min-width: 100vw;
 }
 
-@media (min-width: 400px) {
+@media (min-width: calc(var(--sm-px) + 1)) {
     .sm\:miw-unset,
     .sm\:miw-u {
         min-width: unset;
@@ -14155,7 +14162,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: calc(var(--rg-px) + 1)) {
     .rg\:miw-unset,
     .rg\:miw-u {
         min-width: unset;
@@ -14265,7 +14272,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: calc(var(--md-px) + 1)) {
     .md\:miw-unset,
     .md\:miw-u {
         min-width: unset;
@@ -14375,7 +14382,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: calc(var(--lg-px) + 1)) {
     .lg\:miw-unset,
     .lg\:miw-u {
         min-width: unset;
@@ -14662,7 +14669,7 @@ Naming conventions
     height: 10vh;
 }
 
-@media (min-width: 400px) {
+@media (min-width: calc(var(--sm-px) + 1)) {
     .sm\:h-unset {
         height: unset;
     }
@@ -14770,7 +14777,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: calc(var(--rg-px) + 1)) {
     .rg\:h-unset {
         height: unset;
     }
@@ -14878,7 +14885,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: calc(var(--md-px) + 1)) {
     .md\:h-unset {
         height: unset;
     }
@@ -14986,7 +14993,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: calc(var(--lg-px) + 1)) {
     .lg\:h-unset {
         height: unset;
     }
@@ -15205,7 +15212,7 @@ Naming conventions
     max-height: 100vh;
 }
 
-@media (min-width: 400px) {
+@media (min-width: calc(var(--sm-px) + 1)) {
     .sm\:mxh-unset,
     .sm\:mxh-u {
         max-height: unset;
@@ -15339,7 +15346,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: calc(var(--rg-px) + 1)) {
     .rg\:mxh-unset,
     .rg\:mxh-u {
         max-height: unset;
@@ -15473,7 +15480,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: calc(var(--md-px) + 1)) {
     .md\:mxh-unset,
     .md\:mxh-u {
         max-height: unset;
@@ -15607,7 +15614,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: calc(var(--lg-px) + 1)) {
     .lg\:mxh-unset,
     .lg\:mxh-u {
         max-height: unset;
@@ -15847,7 +15854,7 @@ Naming conventions
     min-height: 100vh;
 }
 
-@media (min-width: 400px) {
+@media (min-width: calc(var(--sm-px) + 1)) {
     .sm\:mih-unset,
     .sm\:mih-u {
         min-height: unset;
@@ -15981,7 +15988,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: calc(var(--rg-px) + 1)) {
     .rg\:mih-unset,
     .rg\:mih-u {
         min-height: unset;
@@ -16115,7 +16122,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: calc(var(--md-px) + 1)) {
     .md\:mih-unset,
     .md\:mih-u {
         min-height: unset;
@@ -16249,7 +16256,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: calc(var(--lg-px) + 1)) {
     .lg\:mih-unset,
     .lg\:mih-u {
         min-height: unset;
@@ -16500,7 +16507,7 @@ Naming conventions
     height: var(--large-width);
 }
 
-@media (min-width: 400px) {
+@media (min-width: calc(var(--sm-px) + 1)) {
     .sm\:sq-unset {
         width: unset;
         height: unset;
@@ -16658,7 +16665,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: calc(var(--rg-px) + 1)) {
     .rg\:sq-unset {
         width: unset;
         height: unset;
@@ -16816,7 +16823,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: calc(var(--md-px) + 1)) {
     .md\:sq-unset {
         width: unset;
         height: unset;
@@ -16974,7 +16981,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: calc(var(--lg-px) + 1)) {
     .lg\:sq-unset {
         width: unset;
         height: unset;
@@ -17136,7 +17143,7 @@ Naming conventions
     display: none !important;
 }
 
-@media (min-width: 400px) {
+@media (min-width: calc(var(--sm-px) + 1)) {
     .sm\:hide {
         display: none !important;
     }
@@ -17148,7 +17155,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: calc(var(--rg-px) + 1)) {
     .rg\:hide {
         display: none !important;
     }
@@ -17160,7 +17167,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: calc(var(--md-px) + 1)) {
     .md\:hide {
         display: none !important;
     }
@@ -17172,7 +17179,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: calc(var(--lg-px) + 1)) {
     .lg\:hide {
         display: none !important;
     }
@@ -17184,7 +17191,7 @@ Naming conventions
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: var(--sm-px)) {
     .below-sm\:hide {
         display: none !important;
     }
@@ -17196,7 +17203,7 @@ Naming conventions
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--rg-px)) {
     .below-rg\:hide {
         display: none !important;
     }
@@ -17208,7 +17215,7 @@ Naming conventions
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: var(--md-px)) {
     .below-md\:hide {
         display: none !important;
     }
@@ -17220,7 +17227,7 @@ Naming conventions
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: var(--lg-px)) {
     .below-lg\:hide {
         display: none !important;
     }
@@ -17894,7 +17901,7 @@ blockquote>header::after {
     content: "—";
 }
 
-@media(max-width: 400px) {
+@media(max-width: var(--sm-px)) {
     figcaption,
     blockquote>footer {
         max-width: unset;
@@ -18494,7 +18501,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     grid-column-start: 12;
 }
 
-@media (min-width: 400px) {
+@media (min-width: calc(var(--sm-px) + 1)) {
     .sm\:columns-1 {
         columns: 1;
     }
@@ -18682,7 +18689,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: calc(var(--rg-px) + 1)) {
     .rg\:columns-1 {
         columns: 1;
     }
@@ -18870,7 +18877,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: calc(var(--md-px) + 1)) {
     .md\:columns-1 {
         columns: 1;
     }
@@ -19058,7 +19065,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: calc(var(--lg-px) + 1)) {
     .x>.lg\:columns-1 {
         columns: 1;
     }
@@ -19442,7 +19449,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     flex-shrink: 4;
 }
 
-@media (min-width: 400px) {
+@media (min-width: calc(var(--sm-px) + 1)) {
     .sm\:flex,
     .sm\:flex-row {
         display: flex;
@@ -19746,7 +19753,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: calc(var(--rg-px) + 1)) {
     .rg\:flex,
     .rg\:flex-row {
         display: flex;
@@ -20050,7 +20057,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: calc(var(--md-px) + 1)) {
     .md\:flex,
     .md\:flex-row {
         display: flex;
@@ -20354,7 +20361,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: calc(var(--lg-px) + 1)) {
     .lg\:flex,
     .lg\:flex-row {
         display: flex;
@@ -20715,7 +20722,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     grid-template-columns: none;
 }
 
-@media (min-width: 400px) {
+@media (min-width: calc(var(--sm-px) + 1)) {
     .sm\:grid {
         display: grid;
     }
@@ -20807,7 +20814,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: calc(var(--rg-px) + 1)) {
     .rg\:grid {
         display: grid;
     }
@@ -20899,7 +20906,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: calc(var(--md-px) + 1)) {
     .md\:grid {
         display: grid;
     }
@@ -20991,7 +20998,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: calc(var(--lg-px) + 1)) {
     .lg\:grid {
         display: grid;
     }
@@ -21861,7 +21868,7 @@ caption {
     contain: style;
 }
 
-@media (min-width: 400px) {
+@media (min-width: calc(var(--sm-px) + 1)) {
     .sm\:inline {
         display: inline;
     }
@@ -22237,7 +22244,7 @@ caption {
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: calc(var(--rg-px) + 1)) {
     .rg\:inline {
         display: inline;
     }
@@ -22613,7 +22620,7 @@ caption {
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: calc(var(--md-px) + 1)) {
     .md\:inline {
         display: inline;
     }
@@ -22989,7 +22996,7 @@ caption {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: calc(var(--lg-px) + 1)) {
     .lg\:inline {
         display: inline;
     }

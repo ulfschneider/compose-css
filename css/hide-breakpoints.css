@@ -2,7 +2,7 @@
     display: none !important;
 }
 
-@media (min-width: 400px) {
+@media (min-width: calc(var(--sm-px) + 1)) {
     .sm\:hide {
         display: none !important;
     }
@@ -14,7 +14,7 @@
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: calc(var(--rg-px) + 1)) {
     .rg\:hide {
         display: none !important;
     }
@@ -26,7 +26,7 @@
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: calc(var(--md-px) + 1)) {
     .md\:hide {
         display: none !important;
     }
@@ -38,7 +38,7 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: calc(var(--lg-px) + 1)) {
     .lg\:hide {
         display: none !important;
     }
@@ -50,7 +50,7 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: var(--sm-px)) {
     .below-sm\:hide {
         display: none !important;
     }
@@ -62,7 +62,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: var(--rg-px)) {
     .below-rg\:hide {
         display: none !important;
     }
@@ -74,7 +74,7 @@
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: var(--md-px)) {
     .below-md\:hide {
         display: none !important;
     }
@@ -86,7 +86,7 @@
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: var(--lg-px)) {
     .below-lg\:hide {
         display: none !important;
     }

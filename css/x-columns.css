@@ -147,7 +147,7 @@
     grid-column-start: 12;
 }
 
-@media (min-width: 400px) {
+@media (min-width: calc(var(--sm-px) + 1)) {
     .sm\:columns-1 {
         columns: 1;
     }
@@ -335,7 +335,7 @@
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: calc(var(--rg-px) + 1)) {
     .rg\:columns-1 {
         columns: 1;
     }
@@ -523,7 +523,7 @@
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: calc(var(--md-px) + 1)) {
     .md\:columns-1 {
         columns: 1;
     }
@@ -711,7 +711,7 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: calc(var(--lg-px) + 1)) {
     .x>.lg\:columns-1 {
         columns: 1;
     }

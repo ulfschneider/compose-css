@@ -1,4 +1,4 @@
-@media (min-width: 400px) {
+@media (min-width: calc(var(--sm-px) + 1)) {
     .sm\:mxh-unset,
     .sm\:mxh-u {
         max-height: unset;
@@ -108,7 +108,7 @@
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: calc(var(--rg-px) + 1)) {
     .rg\:mxh-unset,
     .rg\:mxh-u {
         max-height: unset;
@@ -218,7 +218,7 @@
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: calc(var(--md-px) + 1)) {
     .md\:mxh-unset,
     .md\:mxh-u {
         max-height: unset;
@@ -328,7 +328,7 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: calc(var(--lg-px) + 1)) {
     .lg\:mxh-unset,
     .lg\:mxh-u {
         max-height: unset;
