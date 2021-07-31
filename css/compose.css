@@ -21143,7 +21143,7 @@ dl.timeline>dd {
 }
 
 dl.timeline>dt {
-    font-weight: bold;
+    font-style: italic;
 }
 
 dl.timeline>dt::before {
@@ -21216,7 +21216,6 @@ ol li::before {
     display: inline-block;
     font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--meta-font-family);
-    font-weight: bold;
     font-size: smaller;
     color: hsl(0, 0%, calc(58% - calc(58% / 7)));
     color: var(--li-prefix-color);

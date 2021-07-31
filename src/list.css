@@ -45,7 +45,7 @@ dl.timeline>dd {
 }
 
 dl.timeline>dt {
-    font-weight: bold;
+    font-style: italic;
 }
 
 dl.timeline>dt::before {
@@ -104,7 +104,6 @@ ol li::before {
     text-align: left;
     display: inline-block;
     font-family: var(--meta-font-family);
-    font-weight: bold;
     font-size: smaller;
     color: var(--li-prefix-color);
 }
