@@ -22,15 +22,11 @@
 @import "height-max-breakpoints";
 @import "height-min";
 @import "height-min-breakpoints";
-@import "square";
-@import "square-breakpoints";
 @import "hide-breakpoints";
 @import "typography";
 @import "forms";
 @import "flex-box";
 @import "flex-box-breakpoints";
-@import "grid";
-@import "grid-breakpoints";
 @import "list";
 @import "pointer";
 @import "img";
