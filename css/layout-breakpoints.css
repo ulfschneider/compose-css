@@ -72,9 +72,17 @@
         width: 100vw;
         margin-left: calc(50% - 50vw);
     }
-    .sm\:full-bleed>* {
-        margin-left: auto;
-        margin-right: auto;
+    .sm\:bleed {
+        width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
+        margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
+    }
+    .sm\:bleed-right {
+        width: auto;
+        margin-right: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
+    }
+    .sm\:bleed-left {
+        width: auto;
+        margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .sm\:split {
         display: grid;
@@ -254,9 +262,17 @@
         width: 100vw;
         margin-left: calc(50% - 50vw);
     }
-    .sm\:full-bleed>* {
-        margin-left: auto;
-        margin-right: auto;
+    .sm\:bleed {
+        width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
+        margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
+    }
+    .sm\:bleed-right {
+        width: auto;
+        margin-right: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
+    }
+    .sm\:bleed-left {
+        width: auto;
+        margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .sm\:split {
         display: grid;
@@ -436,9 +452,17 @@
         width: 100vw;
         margin-left: calc(50% - 50vw);
     }
-    .rg\:full-bleed>* {
-        margin-left: auto;
-        margin-right: auto;
+    .rg\:bleed {
+        width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
+        margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
+    }
+    .rg\:bleed-right {
+        width: auto;
+        margin-right: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
+    }
+    .rg\:bleed-left {
+        width: auto;
+        margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .rg\:split {
         display: grid;
@@ -618,9 +642,17 @@
         width: 100vw;
         margin-left: calc(50% - 50vw);
     }
-    .rg\:full-bleed>* {
-        margin-left: auto;
-        margin-right: auto;
+    .rg\:bleed {
+        width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
+        margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
+    }
+    .rg\:bleed-right {
+        width: auto;
+        margin-right: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
+    }
+    .rg\:bleed-left {
+        width: auto;
+        margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .rg\:split {
         display: grid;
@@ -800,9 +832,17 @@
         width: 100vw;
         margin-left: calc(50% - 50vw);
     }
-    .md\:full-bleed>* {
-        margin-left: auto;
-        margin-right: auto;
+    .md\:bleed {
+        width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
+        margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
+    }
+    .md\:bleed-right {
+        width: auto;
+        margin-right: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
+    }
+    .md\:bleed-left {
+        width: auto;
+        margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .md\:split {
         display: grid;
@@ -982,9 +1022,17 @@
         width: 100vw;
         margin-left: calc(50% - 50vw);
     }
-    .md\:full-bleed>* {
-        margin-left: auto;
-        margin-right: auto;
+    .md\:bleed {
+        width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
+        margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
+    }
+    .md\:bleed-right {
+        width: auto;
+        margin-right: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
+    }
+    .md\:bleed-left {
+        width: auto;
+        margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .md\:split {
         display: grid;
@@ -1164,9 +1212,17 @@
         width: 100vw;
         margin-left: calc(50% - 50vw);
     }
-    .lg\:full-bleed>* {
-        margin-left: auto;
-        margin-right: auto;
+    .lg\:bleed {
+        width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
+        margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
+    }
+    .lg\:bleed-right {
+        width: auto;
+        margin-right: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
+    }
+    .lg\:bleed-left {
+        width: auto;
+        margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .lg\:split {
         display: grid;
@@ -1346,9 +1402,17 @@
         width: 100vw;
         margin-left: calc(50% - 50vw);
     }
-    .lg\:full-bleed>* {
-        margin-left: auto;
-        margin-right: auto;
+    .lg\:bleed {
+        width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
+        margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
+    }
+    .lg\:bleed-right {
+        width: auto;
+        margin-right: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
+    }
+    .lg\:bleed-left {
+        width: auto;
+        margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .lg\:split {
         display: grid;
