@@ -39,6 +39,9 @@
     .sm\:mxw-6 {
         max-width: var(--space-6);
     }
+    .sm\:mxw-bleed {
+        max-width: var(--bleed-width);
+    }
 }
 
 @media (--mi-rg-bp) {
@@ -81,6 +84,9 @@
     }
     .rg\:mxw-6 {
         max-width: var(--space-6);
+    }
+    .rg\:mxw-bleed {
+        max-width: var(--bleed-width);
     }
 }
 
@@ -125,6 +131,9 @@
     .md\:mxw-6 {
         max-width: var(--space-6);
     }
+    .md\:mxw-bleed {
+        max-width: var(--bleed-width);
+    }
 }
 
 @media (--mi-lg-bp) {
@@ -167,5 +176,8 @@
     }
     .lg\:mxw-6 {
         max-width: var(--space-6);
+    }
+    .lg\:mxw-bleed {
+        max-width: var(--bleed-width);
     }
 }

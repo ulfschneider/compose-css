@@ -86,3 +86,7 @@
 .mivw-100 {
     min-width: 100vw;
 }
+
+.miw-bleed {
+    min-width: var(--bleed-width);
+}

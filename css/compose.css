@@ -12980,6 +12980,11 @@ Naming conventions
     width: var(--space-6);
 }
 
+.w-bleed {
+    width: 1200px;
+    width: var(--bleed-width);
+}
+
 @media (min-width: 401px) {
     .sm\:w-unset {
         width: unset;
@@ -13034,6 +13039,10 @@ Naming conventions
     .sm\:w-6 {
         width: calc(calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7) * 1.7);
         width: var(--space-6);
+    }
+    .sm\:w-bleed {
+        width: 1200px;
+        width: var(--bleed-width);
     }
 }
 
@@ -13092,6 +13101,10 @@ Naming conventions
         width: calc(calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7) * 1.7);
         width: var(--space-6);
     }
+    .sm\:w-bleed {
+        width: 1200px;
+        width: var(--bleed-width);
+    }
 }
 
 @media (min-width: 601px) {
@@ -13148,6 +13161,10 @@ Naming conventions
     .rg\:w-6 {
         width: calc(calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7) * 1.7);
         width: var(--space-6);
+    }
+    .rg\:w-bleed {
+        width: 1200px;
+        width: var(--bleed-width);
     }
 }
 
@@ -13206,6 +13223,10 @@ Naming conventions
         width: calc(calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7) * 1.7);
         width: var(--space-6);
     }
+    .rg\:w-bleed {
+        width: 1200px;
+        width: var(--bleed-width);
+    }
 }
 
 @media (min-width: 901px) {
@@ -13263,6 +13284,10 @@ Naming conventions
         width: calc(calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7) * 1.7);
         width: var(--space-6);
     }
+    .md\:w-bleed {
+        width: 1200px;
+        width: var(--bleed-width);
+    }
 }
 
 @media (--mi-md-bp) {
@@ -13319,6 +13344,10 @@ Naming conventions
     .md\:w-6 {
         width: calc(calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7) * 1.7);
         width: var(--space-6);
+    }
+    .md\:w-bleed {
+        width: 1200px;
+        width: var(--bleed-width);
     }
 }
 
@@ -13393,6 +13422,10 @@ Naming conventions
         width: calc(calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7) * 1.7);
         width: var(--space-6);
     }
+    .lg\:w-bleed {
+        width: 1200px;
+        width: var(--bleed-width);
+    }
 }
 
 @media (--mi-lg-bp) {
@@ -13465,6 +13498,10 @@ Naming conventions
     .lg\:w-6 {
         width: calc(calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7) * 1.7);
         width: var(--space-6);
+    }
+    .lg\:w-bleed {
+        width: 1200px;
+        width: var(--bleed-width);
     }
 }
 
@@ -13581,6 +13618,11 @@ Naming conventions
     max-width: 100vw;
 }
 
+.mxw-bleed {
+    max-width: 1200px;
+    max-width: var(--bleed-width);
+}
+
 @media (min-width: 401px) {
     .sm\:mxw-unset,
     .sm\:mxw-u {
@@ -13633,6 +13675,10 @@ Naming conventions
     .sm\:mxw-6 {
         max-width: calc(calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7) * 1.7);
         max-width: var(--space-6);
+    }
+    .sm\:mxw-bleed {
+        max-width: 1200px;
+        max-width: var(--bleed-width);
     }
 }
 
@@ -13689,6 +13735,10 @@ Naming conventions
         max-width: calc(calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7) * 1.7);
         max-width: var(--space-6);
     }
+    .sm\:mxw-bleed {
+        max-width: 1200px;
+        max-width: var(--bleed-width);
+    }
 }
 
 @media (min-width: 601px) {
@@ -13743,6 +13793,10 @@ Naming conventions
     .rg\:mxw-6 {
         max-width: calc(calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7) * 1.7);
         max-width: var(--space-6);
+    }
+    .rg\:mxw-bleed {
+        max-width: 1200px;
+        max-width: var(--bleed-width);
     }
 }
 
@@ -13799,6 +13853,10 @@ Naming conventions
         max-width: calc(calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7) * 1.7);
         max-width: var(--space-6);
     }
+    .rg\:mxw-bleed {
+        max-width: 1200px;
+        max-width: var(--bleed-width);
+    }
 }
 
 @media (min-width: 901px) {
@@ -13853,6 +13911,10 @@ Naming conventions
     .md\:mxw-6 {
         max-width: calc(calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7) * 1.7);
         max-width: var(--space-6);
+    }
+    .md\:mxw-bleed {
+        max-width: 1200px;
+        max-width: var(--bleed-width);
     }
 }
 
@@ -13909,6 +13971,10 @@ Naming conventions
         max-width: calc(calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7) * 1.7);
         max-width: var(--space-6);
     }
+    .md\:mxw-bleed {
+        max-width: 1200px;
+        max-width: var(--bleed-width);
+    }
 }
 
 @media (min-width: 1201px) {
@@ -13964,6 +14030,10 @@ Naming conventions
         max-width: calc(calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7) * 1.7);
         max-width: var(--space-6);
     }
+    .lg\:mxw-bleed {
+        max-width: 1200px;
+        max-width: var(--bleed-width);
+    }
 }
 
 @media (--mi-lg-bp) {
@@ -14018,6 +14088,10 @@ Naming conventions
     .lg\:mxw-6 {
         max-width: calc(calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7) * 1.7);
         max-width: var(--space-6);
+    }
+    .lg\:mxw-bleed {
+        max-width: 1200px;
+        max-width: var(--bleed-width);
     }
 }
 
@@ -14130,6 +14204,11 @@ Naming conventions
     min-width: 100vw;
 }
 
+.miw-bleed {
+    min-width: 1200px;
+    min-width: var(--bleed-width);
+}
+
 @media (min-width: 401px) {
     .sm\:miw-unset,
     .sm\:miw-u {
@@ -14183,6 +14262,10 @@ Naming conventions
     .sm\:miw-6 {
         min-width: calc(calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7) * 1.7);
         min-width: var(--space-6);
+    }
+    .sm\:miw-bleed {
+        min-width: 1200px;
+        min-width: var(--bleed-width);
     }
 }
 
@@ -14240,6 +14323,10 @@ Naming conventions
         min-width: calc(calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7) * 1.7);
         min-width: var(--space-6);
     }
+    .sm\:miw-bleed {
+        min-width: 1200px;
+        min-width: var(--bleed-width);
+    }
 }
 
 @media (min-width: 601px) {
@@ -14294,6 +14381,10 @@ Naming conventions
     .rg\:miw-6 {
         min-width: calc(calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7) * 1.7);
         min-width: var(--space-6);
+    }
+    .rg\:miw-bleed {
+        min-width: 1200px;
+        min-width: var(--bleed-width);
     }
 }
 
@@ -14350,6 +14441,10 @@ Naming conventions
         min-width: calc(calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7) * 1.7);
         min-width: var(--space-6);
     }
+    .rg\:miw-bleed {
+        min-width: 1200px;
+        min-width: var(--bleed-width);
+    }
 }
 
 @media (min-width: 901px) {
@@ -14405,6 +14500,10 @@ Naming conventions
         min-width: calc(calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7) * 1.7);
         min-width: var(--space-6);
     }
+    .md\:miw-bleed {
+        min-width: 1200px;
+        min-width: var(--bleed-width);
+    }
 }
 
 @media (--mi-md-bp) {
@@ -14459,6 +14558,10 @@ Naming conventions
     .md\:miw-6 {
         min-width: calc(calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7) * 1.7);
         min-width: var(--space-6);
+    }
+    .md\:miw-bleed {
+        min-width: 1200px;
+        min-width: var(--bleed-width);
     }
 }
 
@@ -14531,6 +14634,10 @@ Naming conventions
         min-width: calc(calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7) * 1.7);
         min-width: var(--space-6);
     }
+    .lg\:miw-bleed {
+        min-width: 1200px;
+        min-width: var(--bleed-width);
+    }
 }
 
 @media (--mi-lg-bp) {
@@ -14601,6 +14708,10 @@ Naming conventions
     .lg\:miw-6 {
         min-width: calc(calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7) * 1.7);
         min-width: var(--space-6);
+    }
+    .lg\:miw-bleed {
+        min-width: 1200px;
+        min-width: var(--bleed-width);
     }
 }
 

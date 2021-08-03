@@ -41,6 +41,9 @@
     .sm\:w-6 {
         width: var(--space-6);
     }
+    .sm\:w-bleed {
+        width: var(--bleed-width);
+    }
 }
 
 @media (--mi-rg-bp) {
@@ -86,6 +89,9 @@
     .rg\:w-6 {
         width: var(--space-6);
     }
+    .rg\:w-bleed {
+        width: var(--bleed-width);
+    }
 }
 
 @media (--mi-md-bp) {
@@ -130,6 +136,9 @@
     }
     .md\:w-6 {
         width: var(--space-6);
+    }
+    .md\:w-bleed {
+        width: var(--bleed-width);
     }
 }
 
@@ -187,5 +196,8 @@
     }
     .lg\:w-6 {
         width: var(--space-6);
+    }
+    .lg\:w-bleed {
+        width: var(--bleed-width);
     }
 }

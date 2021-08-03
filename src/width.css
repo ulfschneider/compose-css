@@ -132,3 +132,7 @@
 .w-6 {
     width: var(--space-6);
 }
+
+.w-bleed {
+    width: var(--bleed-width);
+}

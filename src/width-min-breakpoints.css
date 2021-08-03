@@ -40,6 +40,9 @@
     .sm\:miw-6 {
         min-width: var(--space-6);
     }
+    .sm\:miw-bleed {
+        min-width: var(--bleed-width);
+    }
 }
 
 @media (--mi-rg-bp) {
@@ -83,6 +86,9 @@
     .rg\:miw-6 {
         min-width: var(--space-6);
     }
+    .rg\:miw-bleed {
+        min-width: var(--bleed-width);
+    }
 }
 
 @media (--mi-md-bp) {
@@ -125,6 +131,9 @@
     }
     .md\:miw-6 {
         min-width: var(--space-6);
+    }
+    .md\:miw-bleed {
+        min-width: var(--bleed-width);
     }
 }
 
@@ -180,5 +189,8 @@
     }
     .lg\:miw-6 {
         min-width: var(--space-6);
+    }
+    .lg\:miw-bleed {
+        min-width: var(--bleed-width);
     }
 }
