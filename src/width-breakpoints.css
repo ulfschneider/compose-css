@@ -1,4 +1,4 @@
-@media (--sm) {
+@media (--mi-sm-bp) {
     .sm\:w-unset {
         width: unset;
     }
@@ -43,7 +43,7 @@
     }
 }
 
-@media (--rg) {
+@media (--mi-rg-bp) {
     .rg\:w-unset {
         width: unset;
     }
@@ -88,7 +88,7 @@
     }
 }
 
-@media (--md) {
+@media (--mi-md-bp) {
     .md\:w-unset {
         width: unset;
     }
@@ -133,7 +133,7 @@
     }
 }
 
-@media (--lg) {
+@media (--mi-lg-bp) {
     .lg\:w-unset {
         width: unset;
     }
@@ -141,16 +141,16 @@
         width: 100%;
     }
     .lg\:w-sm {
-        width: var(--small-width);
+        width: var(--sm-width);
     }
     .lg\:w-rg {
-        width: var(--regular-width);
+        width: var(--rg-width);
     }
     .lg\:w-md {
-        width: var(--mid-width);
+        width: var(--md-width);
     }
     .lg\:w-lg {
-        width: var(--large-width);
+        width: var(--lg-width);
     }
     .lg\:w-d5 {
         width: var(--space-d5);

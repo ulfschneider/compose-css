@@ -5,22 +5,22 @@
 
 .mih-sm,
 .mih-sm {
-    min-height: var(--small-width);
+    min-height: var(--sm-width);
 }
 
 .mih-rg,
 .mih-rg {
-    min-height: var(--regular-width);
+    min-height: var(--rg-width);
 }
 
 .mih-md,
 .mih-md {
-    min-height: var(--mid-width);
+    min-height: var(--md-width);
 }
 
 .mih-lg,
 .mih-lg {
-    min-height: var(--large-width);
+    min-height: var(--lg-width);
 }
 
 .mih-d5,

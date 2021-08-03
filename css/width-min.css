@@ -4,19 +4,35 @@
 }
 
 .miw-sm {
-    min-width: var(--small-width);
+    min-width: var(--sm-width);
+}
+
+.miw-sm-bp {
+    min-width: var(--sm-breakpoint);
 }
 
 .miw-rg {
-    min-width: var(--regular-width);
+    min-width: var(--rg-width);
+}
+
+.miw-rg-bp {
+    min-width: var(--rg-breakpoint);
 }
 
 .miw-md {
-    min-width: var(--mid-width);
+    min-width: var(--md-width);
+}
+
+.miw-md-bp {
+    min-width: var(--md-breakpoint);
 }
 
 .miw-lg {
-    min-width: var(--large-width);
+    min-width: var(--lg-width);
+}
+
+.miw-lg-bp {
+    min-width: var(--lg-breakpoint);
 }
 
 .miw-d5 {

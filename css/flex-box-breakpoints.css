@@ -150,7 +150,7 @@
     }
 }
 
-@media (--sm) {
+@media (--mi-sm-bp) {
     .sm\:flex,
     .sm\:flex-row {
         display: flex;
@@ -454,7 +454,7 @@
     }
 }
 
-@media (--rg) {
+@media (--mi-rg-bp) {
     .rg\:flex,
     .rg\:flex-row {
         display: flex;
@@ -758,7 +758,7 @@
     }
 }
 
-@media (--md) {
+@media (--mi-md-bp) {
     .md\:flex,
     .md\:flex-row {
         display: flex;
@@ -1062,7 +1062,7 @@
     }
 }
 
-@media (--lg) {
+@media (--mi-lg-bp) {
     .lg\:flex,
     .lg\:flex-row {
         display: flex;

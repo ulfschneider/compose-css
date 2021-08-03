@@ -13,7 +13,7 @@ Naming conventions
     
 */
 
-@media (--sm) {
+@media (--mi-sm-bp) {
     .sm\:pd-0,
     .sm\:no-pd {
         padding: 0;
@@ -316,7 +316,7 @@ Naming conventions
     }
 }
 
-@media (--rg) {
+@media (--mi-rg-bp) {
     .rg\:pd-0,
     .rg\:no-pd {
         padding: 0;
@@ -619,7 +619,7 @@ Naming conventions
     }
 }
 
-@media (--md) {
+@media (--mi-md-bp) {
     .md\:pd-0,
     .md\:no-pd {
         padding: 0;
@@ -922,7 +922,7 @@ Naming conventions
     }
 }
 
-@media (--lg) {
+@media (--mi-lg-bp) {
     .lg\:pd-0,
     .lg\:no-pd {
         padding: 0;

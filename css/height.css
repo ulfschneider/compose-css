@@ -5,22 +5,22 @@
 
 .h-sm,
 .h-sm {
-    height: var(--small-width);
+    height: var(--sm-width);
 }
 
 .h-rg,
 .h-rg {
-    height: var(--regular-width);
+    height: var(--rg-width);
 }
 
 .h-md,
 .h-md {
-    height: var(--mid-width);
+    height: var(--md-width);
 }
 
 .h-lg,
 .h-lg {
-    height: var(--large-width);
+    height: var(--lg-width);
 }
 
 .h-d5,

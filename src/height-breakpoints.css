@@ -1,4 +1,4 @@
-@media (--sm) {
+@media (--mi-sm-bp) {
     .sm\:h-unset {
         height: unset;
     }
@@ -40,7 +40,7 @@
     }
 }
 
-@media (--rg) {
+@media (--mi-rg-bp) {
     .rg\:h-unset {
         height: unset;
     }
@@ -82,7 +82,7 @@
     }
 }
 
-@media (--md) {
+@media (--mi-md-bp) {
     .md\:h-unset {
         height: unset;
     }
@@ -124,7 +124,7 @@
     }
 }
 
-@media (--lg) {
+@media (--mi-lg-bp) {
     .lg\:h-unset {
         height: unset;
     }

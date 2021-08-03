@@ -1,4 +1,4 @@
-@media (--sm) {
+@media (--mi-sm-bp) {
     .sm\:inline {
         display: inline;
     }
@@ -188,7 +188,7 @@
     }
 }
 
-@media (--rg) {
+@media (--mi-rg-bp) {
     .rg\:inline {
         display: inline;
     }
@@ -378,7 +378,7 @@
     }
 }
 
-@media (--md) {
+@media (--mi-md-bp) {
     .md\:inline {
         display: inline;
     }
@@ -568,7 +568,7 @@
     }
 }
 
-@media (--lg) {
+@media (--mi-lg-bp) {
     .lg\:inline {
         display: inline;
     }

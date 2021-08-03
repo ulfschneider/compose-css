@@ -593,7 +593,7 @@ blockquote>header {
     font-size: var(--fs);
     font-size: var(--figcaption-font-size);
     line-height: var(--lh-2);
-    max-width: var(--regular-width);
+    max-width: var(--rg-width);
 }
 
 figcaption {
@@ -630,7 +630,7 @@ blockquote>header::after {
     }
 }
 
-@media(--max-sm) {
+@media(--mx-sm-bp) {
     figcaption,
     blockquote>footer {
         max-width: unset;

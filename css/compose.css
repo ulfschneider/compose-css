@@ -38,15 +38,15 @@ iframe {
     --fs-d2: calc(.8rem);
     --fs-d1: calc(.9rem);
     --fs-1: calc(var(--fs) * var(--size-factor));
-    --fs-2: calc(var(--fs-1) * var(--size-factor));
-    --fs-3: calc(var(--fs-2) * var(--size-factor));
-    --fs-4: calc(var(--fs-3) * var(--size-factor));
-    --fs-5: calc(var(--fs-4) * var(--size-factor));
-    --fs-6: calc(var(--fs-5) * var(--size-factor));
-    --fs-7: calc(var(--fs-6) * var(--size-factor));
-    --fs-8: calc(var(--fs-7) * var(--size-factor));
-    --fs-9: calc(var(--fs-8) * var(--size-factor));
-    --fs-10: calc(var(--fs-9) * var(--size-factor));
+    --fs-2: calc(var(--fs) * var(--size-factor) * var(--size-factor));
+    --fs-3: calc(var(--fs) * var(--size-factor) * var(--size-factor) * var(--size-factor));
+    --fs-4: calc(var(--fs) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor));
+    --fs-5: calc(var(--fs) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor));
+    --fs-6: calc(var(--fs) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor));
+    --fs-7: calc(var(--fs) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor));
+    --fs-8: calc(var(--fs) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor));
+    --fs-9: calc(var(--fs) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor));
+    --fs-10: calc(var(--fs) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor));
     --small: var(--fs-d1);
     --smaller: .9em;
     --large: var(--fs-1);
@@ -157,47 +157,47 @@ small,
 }
 
 .fs-2 {
-    font-size: calc(calc(1rem * 1.25) * 1.25);
+    font-size: calc(1rem * 1.25 * 1.25);
     font-size: var(--fs-2);
 }
 
 .fs-3 {
-    font-size: calc(calc(calc(1rem * 1.25) * 1.25) * 1.25);
+    font-size: calc(1rem * 1.25 * 1.25 * 1.25);
     font-size: var(--fs-3);
 }
 
 .fs-4 {
-    font-size: calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25);
+    font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25);
     font-size: var(--fs-4);
 }
 
 .fs-5 {
-    font-size: calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+    font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
     font-size: var(--fs-5);
 }
 
 .fs-6 {
-    font-size: calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+    font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
     font-size: var(--fs-6);
 }
 
 .fs-7 {
-    font-size: calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+    font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
     font-size: var(--fs-7);
 }
 
 .fs-8 {
-    font-size: calc(calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+    font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
     font-size: var(--fs-8);
 }
 
 .fs-9 {
-    font-size: calc(calc(calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+    font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
     font-size: var(--fs-9);
 }
 
 .fs-10 {
-    font-size: calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+    font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
     font-size: var(--fs-10);
 }
 
@@ -249,27 +249,27 @@ small,
 /* https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/ */
 
 :root {
-    --sm-px: 400px;
-    --rg-px: 600px;
-    --md-px: 900px;
-    --lg-px: 1200px;
+    --sm-breakpoint: 400px;
+    --rg-breakpoint: 600px;
+    --md-breakpoint: 900px;
+    --lg-breakpoint: 1200px;
 }
 
-@custom-media --max-sm (max-width: 400px);
+@custom-media --mx-sm-bp (max-width: 400px);
 
-@custom-media --max-rg (max-width: 600px);
+@custom-media --mx-rg-bp (max-width: 600px);
 
-@custom-media --max-md (max-width: 900px);
+@custom-media --mx-md-bp (max-width: 900px);
 
-@custom-media --max-lg (max-width: 1200px);
+@custom-media --mx-lg-bp (max-width: 1200px);
 
-@custom-media --sm (min-width: 401px);
+@custom-media --mi-sm-bp (min-width: 401px);
 
-@custom-media --rg (min-width: 601px);
+@custom-media --mi-rg-bp (min-width: 601px);
 
-@custom-media --md (min-width: 901px);
+@custom-media --mi-md-bp (min-width: 901px);
 
-@custom-media --lg (min-width: 1201px);
+@custom-media --mi-lg-bp (min-width: 1201px);
 
 @custom-media --touch-device screen and (hover: none) and (pointer: coarse);
 
@@ -287,7 +287,7 @@ small,
     }
 }
 
-@media (--sm) {
+@media (--mi-sm-bp) {
      :root {
         font-size: calc(19px + 1px);
         font-size: var(--font-size-breakpoint-sm);
@@ -301,7 +301,7 @@ small,
     }
 }
 
-@media (--rg) {
+@media (--mi-rg-bp) {
      :root {
         font-size: calc(19px + 2px);
         font-size: var(--font-size-breakpoint-rg);
@@ -315,7 +315,7 @@ small,
     }
 }
 
-@media (--md) {
+@media (--mi-md-bp) {
      :root {
         font-size: calc(19px + 2px);
         font-size: var(--font-size-breakpoint-md);
@@ -329,7 +329,7 @@ small,
     }
 }
 
-@media (--lg) {
+@media (--mi-lg-bp) {
      :root {
         font-size: calc(19px + 3px);
         font-size: var(--font-size-breakpoint-lg);
@@ -395,39 +395,39 @@ small,
         font-size: var(--fs-1);
     }
     .sm\:fs-2 {
-        font-size: calc(calc(1rem * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25);
         font-size: var(--fs-2);
     }
     .sm\:fs-3 {
-        font-size: calc(calc(calc(1rem * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-3);
     }
     .sm\:fs-4 {
-        font-size: calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-4);
     }
     .sm\:fs-5 {
-        font-size: calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-5);
     }
     .sm\:fs-6 {
-        font-size: calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-6);
     }
     .sm\:fs-7 {
-        font-size: calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-7);
     }
     .sm\:fs-8 {
-        font-size: calc(calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-8);
     }
     .sm\:fs-9 {
-        font-size: calc(calc(calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-9);
     }
     .sm\:fs-10 {
-        font-size: calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-10);
     }
     .sm\:lh-d1 {
@@ -468,7 +468,7 @@ small,
     }
 }
 
-@media (--sm) {
+@media (--mi-sm-bp) {
     .sm\:h1 {
         font-size: 2.4rem;
         font-size: var(--fs-h1);
@@ -527,39 +527,39 @@ small,
         font-size: var(--fs-1);
     }
     .sm\:fs-2 {
-        font-size: calc(calc(1rem * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25);
         font-size: var(--fs-2);
     }
     .sm\:fs-3 {
-        font-size: calc(calc(calc(1rem * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-3);
     }
     .sm\:fs-4 {
-        font-size: calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-4);
     }
     .sm\:fs-5 {
-        font-size: calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-5);
     }
     .sm\:fs-6 {
-        font-size: calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-6);
     }
     .sm\:fs-7 {
-        font-size: calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-7);
     }
     .sm\:fs-8 {
-        font-size: calc(calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-8);
     }
     .sm\:fs-9 {
-        font-size: calc(calc(calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-9);
     }
     .sm\:fs-10 {
-        font-size: calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-10);
     }
     .sm\:lh-d1 {
@@ -659,39 +659,39 @@ small,
         font-size: var(--fs-1);
     }
     .rg\:fs-2 {
-        font-size: calc(calc(1rem * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25);
         font-size: var(--fs-2);
     }
     .rg\:fs-3 {
-        font-size: calc(calc(calc(1rem * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-3);
     }
     .rg\:fs-4 {
-        font-size: calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-4);
     }
     .rg\:fs-5 {
-        font-size: calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-5);
     }
     .rg\:fs-6 {
-        font-size: calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-6);
     }
     .rg\:fs-7 {
-        font-size: calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-7);
     }
     .rg\:fs-8 {
-        font-size: calc(calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-8);
     }
     .rg\:fs-9 {
-        font-size: calc(calc(calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-9);
     }
     .rg\:fs-10 {
-        font-size: calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-10);
     }
     .rg\:lh-0 {
@@ -732,7 +732,7 @@ small,
     }
 }
 
-@media (--rg) {
+@media (--mi-rg-bp) {
     .rg\:h1 {
         font-size: 2.4rem;
         font-size: var(--fs-h1);
@@ -791,39 +791,39 @@ small,
         font-size: var(--fs-1);
     }
     .rg\:fs-2 {
-        font-size: calc(calc(1rem * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25);
         font-size: var(--fs-2);
     }
     .rg\:fs-3 {
-        font-size: calc(calc(calc(1rem * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-3);
     }
     .rg\:fs-4 {
-        font-size: calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-4);
     }
     .rg\:fs-5 {
-        font-size: calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-5);
     }
     .rg\:fs-6 {
-        font-size: calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-6);
     }
     .rg\:fs-7 {
-        font-size: calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-7);
     }
     .rg\:fs-8 {
-        font-size: calc(calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-8);
     }
     .rg\:fs-9 {
-        font-size: calc(calc(calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-9);
     }
     .rg\:fs-10 {
-        font-size: calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-10);
     }
     .rg\:lh-0 {
@@ -923,39 +923,39 @@ small,
         font-size: var(--fs-1);
     }
     .md\:fs-2 {
-        font-size: calc(calc(1rem * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25);
         font-size: var(--fs-2);
     }
     .md\:fs-3 {
-        font-size: calc(calc(calc(1rem * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-3);
     }
     .md\:fs-4 {
-        font-size: calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-4);
     }
     .md\:fs-5 {
-        font-size: calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-5);
     }
     .md\:fs-6 {
-        font-size: calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-6);
     }
     .md\:fs-7 {
-        font-size: calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-7);
     }
     .md\:fs-8 {
-        font-size: calc(calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-8);
     }
     .md\:fs-9 {
-        font-size: calc(calc(calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-9);
     }
     .md\:fs-10 {
-        font-size: calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-10);
     }
     .md\:lh-0 {
@@ -996,7 +996,7 @@ small,
     }
 }
 
-@media (--md) {
+@media (--mi-md-bp) {
     .md\:h1 {
         font-size: 2.4rem;
         font-size: var(--fs-h1);
@@ -1055,39 +1055,39 @@ small,
         font-size: var(--fs-1);
     }
     .md\:fs-2 {
-        font-size: calc(calc(1rem * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25);
         font-size: var(--fs-2);
     }
     .md\:fs-3 {
-        font-size: calc(calc(calc(1rem * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-3);
     }
     .md\:fs-4 {
-        font-size: calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-4);
     }
     .md\:fs-5 {
-        font-size: calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-5);
     }
     .md\:fs-6 {
-        font-size: calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-6);
     }
     .md\:fs-7 {
-        font-size: calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-7);
     }
     .md\:fs-8 {
-        font-size: calc(calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-8);
     }
     .md\:fs-9 {
-        font-size: calc(calc(calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-9);
     }
     .md\:fs-10 {
-        font-size: calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-10);
     }
     .md\:lh-0 {
@@ -1187,39 +1187,39 @@ small,
         font-size: var(--fs-1);
     }
     .lg\:fs-2 {
-        font-size: calc(calc(1rem * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25);
         font-size: var(--fs-2);
     }
     .lg\:fs-3 {
-        font-size: calc(calc(calc(1rem * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-3);
     }
     .lg\:fs-4 {
-        font-size: calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-4);
     }
     .lg\:fs-5 {
-        font-size: calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-5);
     }
     .lg\:fs-6 {
-        font-size: calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-6);
     }
     .lg\:fs-7 {
-        font-size: calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-7);
     }
     .lg\:fs-8 {
-        font-size: calc(calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-8);
     }
     .lg\:fs-9 {
-        font-size: calc(calc(calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-9);
     }
     .lg\:fs-10 {
-        font-size: calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-10);
     }
     .lg\:lh-0 {
@@ -1260,7 +1260,7 @@ small,
     }
 }
 
-@media (--lg) {
+@media (--mi-lg-bp) {
     .lg\:h1 {
         font-size: 2.4rem;
         font-size: var(--fs-h1);
@@ -1319,39 +1319,39 @@ small,
         font-size: var(--fs-1);
     }
     .lg\:fs-2 {
-        font-size: calc(calc(1rem * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25);
         font-size: var(--fs-2);
     }
     .lg\:fs-3 {
-        font-size: calc(calc(calc(1rem * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-3);
     }
     .lg\:fs-4 {
-        font-size: calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-4);
     }
     .lg\:fs-5 {
-        font-size: calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-5);
     }
     .lg\:fs-6 {
-        font-size: calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-6);
     }
     .lg\:fs-7 {
-        font-size: calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-7);
     }
     .lg\:fs-8 {
-        font-size: calc(calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-8);
     }
     .lg\:fs-9 {
-        font-size: calc(calc(calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-9);
     }
     .lg\:fs-10 {
-        font-size: calc(calc(calc(calc(calc(calc(calc(calc(calc(calc(1rem * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25) * 1.25);
+        font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-10);
     }
     .lg\:lh-0 {
@@ -4540,7 +4540,7 @@ Naming conventions
     }
 }
 
-@media (--sm) {
+@media (--mi-sm-bp) {
     .sm\:mr-0,
     .sm\:no-mr {
         margin: 0;
@@ -5760,7 +5760,7 @@ Naming conventions
     }
 }
 
-@media (--rg) {
+@media (--mi-rg-bp) {
     .rg\:mr-0,
     .rg\:no-mr {
         margin: 0;
@@ -6980,7 +6980,7 @@ Naming conventions
     }
 }
 
-@media (--md) {
+@media (--mi-md-bp) {
     .md\:mr-0,
     .md\:no-mr {
         margin: 0;
@@ -8200,7 +8200,7 @@ Naming conventions
     }
 }
 
-@media (--lg) {
+@media (--mi-lg-bp) {
     .lg\:mr-0,
     .lg\:no-mr {
         margin: 0;
@@ -9750,7 +9750,7 @@ Naming conventions
     }
 }
 
-@media (--sm) {
+@media (--mi-sm-bp) {
     .sm\:pd-0,
     .sm\:no-pd {
         padding: 0;
@@ -10572,7 +10572,7 @@ Naming conventions
     }
 }
 
-@media (--rg) {
+@media (--mi-rg-bp) {
     .rg\:pd-0,
     .rg\:no-pd {
         padding: 0;
@@ -11394,7 +11394,7 @@ Naming conventions
     }
 }
 
-@media (--md) {
+@media (--mi-md-bp) {
     .md\:pd-0,
     .md\:no-pd {
         padding: 0;
@@ -12216,7 +12216,7 @@ Naming conventions
     }
 }
 
-@media (--lg) {
+@media (--mi-lg-bp) {
     .lg\:pd-0,
     .lg\:no-pd {
         padding: 0;
@@ -12826,10 +12826,10 @@ Naming conventions
 }
 
 :root {
-    --small-width: 25rem;
-    --regular-width: 35rem;
-    --mid-width: 45rem;
-    --large-width: 60rem;
+    --sm-width: 25rem;
+    --rg-width: 35rem;
+    --md-width: 45rem;
+    --lg-width: 60rem;
 }
 
 .w-unset {
@@ -12882,22 +12882,42 @@ Naming conventions
 
 .w-sm {
     width: 25rem;
-    width: var(--small-width);
+    width: var(--sm-width);
+}
+
+.w-sm-bp {
+    width: 400px;
+    width: var(--sm-breakpoint);
 }
 
 .w-rg {
     width: 35rem;
-    width: var(--regular-width);
+    width: var(--rg-width);
+}
+
+.w-rg-bp {
+    width: 600px;
+    width: var(--rg-breakpoint);
 }
 
 .w-md {
     width: 45rem;
-    width: var(--mid-width);
+    width: var(--md-width);
+}
+
+.w-md-bp {
+    width: 900px;
+    width: var(--md-breakpoint);
 }
 
 .w-lg {
     width: 60rem;
-    width: var(--large-width);
+    width: var(--lg-width);
+}
+
+.w-lg-bp {
+    width: 1200px;
+    width: var(--lg-breakpoint);
 }
 
 .w-d5 {
@@ -13017,7 +13037,7 @@ Naming conventions
     }
 }
 
-@media (--sm) {
+@media (--mi-sm-bp) {
     .sm\:w-unset {
         width: unset;
     }
@@ -13131,7 +13151,7 @@ Naming conventions
     }
 }
 
-@media (--rg) {
+@media (--mi-rg-bp) {
     .rg\:w-unset {
         width: unset;
     }
@@ -13245,7 +13265,7 @@ Naming conventions
     }
 }
 
-@media (--md) {
+@media (--mi-md-bp) {
     .md\:w-unset {
         width: unset;
     }
@@ -13311,19 +13331,19 @@ Naming conventions
     }
     .lg\:w-sm {
         width: 25rem;
-        width: var(--small-width);
+        width: var(--sm-width);
     }
     .lg\:w-rg {
         width: 35rem;
-        width: var(--regular-width);
+        width: var(--rg-width);
     }
     .lg\:w-md {
         width: 45rem;
-        width: var(--mid-width);
+        width: var(--md-width);
     }
     .lg\:w-lg {
         width: 60rem;
-        width: var(--large-width);
+        width: var(--lg-width);
     }
     .lg\:w-d5 {
         width: 1px;
@@ -13375,7 +13395,7 @@ Naming conventions
     }
 }
 
-@media (--lg) {
+@media (--mi-lg-bp) {
     .lg\:w-unset {
         width: unset;
     }
@@ -13384,19 +13404,19 @@ Naming conventions
     }
     .lg\:w-sm {
         width: 25rem;
-        width: var(--small-width);
+        width: var(--sm-width);
     }
     .lg\:w-rg {
         width: 35rem;
-        width: var(--regular-width);
+        width: var(--rg-width);
     }
     .lg\:w-md {
         width: 45rem;
-        width: var(--mid-width);
+        width: var(--md-width);
     }
     .lg\:w-lg {
         width: 60rem;
-        width: var(--large-width);
+        width: var(--lg-width);
     }
     .lg\:w-d5 {
         width: 1px;
@@ -13459,22 +13479,42 @@ Naming conventions
 
 .mxw-sm {
     max-width: 25rem;
-    max-width: var(--small-width);
+    max-width: var(--sm-width);
+}
+
+.mxw-sm-bp {
+    max-width: 400px;
+    max-width: var(--sm-breakpoint);
 }
 
 .mxw-rg {
     max-width: 35rem;
-    max-width: var(--regular-width);
+    max-width: var(--rg-width);
+}
+
+.mxw-rg-bp {
+    max-width: 600px;
+    max-width: var(--rg-breakpoint);
 }
 
 .mxw-md {
     max-width: 45rem;
-    max-width: var(--mid-width);
+    max-width: var(--md-width);
+}
+
+.mxw-md-bp {
+    max-width: 900px;
+    max-width: var(--md-breakpoint);
 }
 
 .mxw-lg {
     max-width: 60rem;
-    max-width: var(--large-width);
+    max-width: var(--lg-width);
+}
+
+.mxw-lg-bp {
+    max-width: 1200px;
+    max-width: var(--lg-breakpoint);
 }
 
 .mxw-d5 {
@@ -13596,7 +13636,7 @@ Naming conventions
     }
 }
 
-@media (--sm) {
+@media (--mi-sm-bp) {
     .sm\:mxw-unset,
     .sm\:mxw-u {
         max-width: unset;
@@ -13706,7 +13746,7 @@ Naming conventions
     }
 }
 
-@media (--rg) {
+@media (--mi-rg-bp) {
     .rg\:mxw-unset,
     .rg\:mxw-u {
         max-width: unset;
@@ -13816,7 +13856,7 @@ Naming conventions
     }
 }
 
-@media (--md) {
+@media (--mi-md-bp) {
     .md\:mxw-unset,
     .md\:mxw-u {
         max-width: unset;
@@ -13926,7 +13966,7 @@ Naming conventions
     }
 }
 
-@media (--lg) {
+@media (--mi-lg-bp) {
     .lg\:mxw-unset,
     .lg\:mxw-u {
         max-width: unset;
@@ -13988,22 +14028,42 @@ Naming conventions
 
 .miw-sm {
     min-width: 25rem;
-    min-width: var(--small-width);
+    min-width: var(--sm-width);
+}
+
+.miw-sm-bp {
+    min-width: 400px;
+    min-width: var(--sm-breakpoint);
 }
 
 .miw-rg {
     min-width: 35rem;
-    min-width: var(--regular-width);
+    min-width: var(--rg-width);
+}
+
+.miw-rg-bp {
+    min-width: 600px;
+    min-width: var(--rg-breakpoint);
 }
 
 .miw-md {
     min-width: 45rem;
-    min-width: var(--mid-width);
+    min-width: var(--md-width);
+}
+
+.miw-md-bp {
+    min-width: 900px;
+    min-width: var(--md-breakpoint);
 }
 
 .miw-lg {
     min-width: 60rem;
-    min-width: var(--large-width);
+    min-width: var(--lg-width);
+}
+
+.miw-lg-bp {
+    min-width: 1200px;
+    min-width: var(--lg-breakpoint);
 }
 
 .miw-d5 {
@@ -14126,7 +14186,7 @@ Naming conventions
     }
 }
 
-@media (--sm) {
+@media (--mi-sm-bp) {
     .sm\:miw-unset,
     .sm\:miw-u {
         min-width: unset;
@@ -14237,7 +14297,7 @@ Naming conventions
     }
 }
 
-@media (--rg) {
+@media (--mi-rg-bp) {
     .rg\:miw-unset,
     .rg\:miw-u {
         min-width: unset;
@@ -14347,7 +14407,7 @@ Naming conventions
     }
 }
 
-@media (--md) {
+@media (--mi-md-bp) {
     .md\:miw-unset,
     .md\:miw-u {
         min-width: unset;
@@ -14409,19 +14469,19 @@ Naming conventions
     }
     .lg\:miw-sm {
         min-width: 25rem;
-        min-width: var(--small-width);
+        min-width: var(--sm-width);
     }
     .lg\:miw-rg {
         min-width: 35rem;
-        min-width: var(--regular-width);
+        min-width: var(--rg-width);
     }
     .lg\:miw-md {
         min-width: 45rem;
-        min-width: var(--mid-width);
+        min-width: var(--md-width);
     }
     .lg\:miw-lg {
         min-width: 60rem;
-        min-width: var(--large-width);
+        min-width: var(--lg-width);
     }
     .lg\:miw-d5 {
         min-width: 1px;
@@ -14473,26 +14533,26 @@ Naming conventions
     }
 }
 
-@media (--lg) {
+@media (--mi-lg-bp) {
     .lg\:miw-unset,
     .lg\:miw-u {
         min-width: unset;
     }
     .lg\:miw-sm {
         min-width: 25rem;
-        min-width: var(--small-width);
+        min-width: var(--sm-width);
     }
     .lg\:miw-rg {
         min-width: 35rem;
-        min-width: var(--regular-width);
+        min-width: var(--rg-width);
     }
     .lg\:miw-md {
         min-width: 45rem;
-        min-width: var(--mid-width);
+        min-width: var(--md-width);
     }
     .lg\:miw-lg {
         min-width: 60rem;
-        min-width: var(--large-width);
+        min-width: var(--lg-width);
     }
     .lg\:miw-d5 {
         min-width: 1px;
@@ -14552,25 +14612,25 @@ Naming conventions
 .h-sm,
 .h-sm {
     height: 25rem;
-    height: var(--small-width);
+    height: var(--sm-width);
 }
 
 .h-rg,
 .h-rg {
     height: 35rem;
-    height: var(--regular-width);
+    height: var(--rg-width);
 }
 
 .h-md,
 .h-md {
     height: 45rem;
-    height: var(--mid-width);
+    height: var(--md-width);
 }
 
 .h-lg,
 .h-lg {
     height: 60rem;
-    height: var(--large-width);
+    height: var(--lg-width);
 }
 
 .h-d5,
@@ -14743,7 +14803,7 @@ Naming conventions
     }
 }
 
-@media (--sm) {
+@media (--mi-sm-bp) {
     .sm\:h-unset {
         height: unset;
     }
@@ -14851,7 +14911,7 @@ Naming conventions
     }
 }
 
-@media (--rg) {
+@media (--mi-rg-bp) {
     .rg\:h-unset {
         height: unset;
     }
@@ -14959,7 +15019,7 @@ Naming conventions
     }
 }
 
-@media (--md) {
+@media (--mi-md-bp) {
     .md\:h-unset {
         height: unset;
     }
@@ -15067,7 +15127,7 @@ Naming conventions
     }
 }
 
-@media (--lg) {
+@media (--mi-lg-bp) {
     .lg\:h-unset {
         height: unset;
     }
@@ -15134,25 +15194,25 @@ Naming conventions
 .mxh-sm,
 .mxh-sm {
     max-height: 25rem;
-    max-height: var(--small-width);
+    max-height: var(--sm-width);
 }
 
 .mxh-rg,
 .mxh-rg {
     max-height: 35rem;
-    max-height: var(--regular-width);
+    max-height: var(--rg-width);
 }
 
 .mxh-md,
 .mxh-md {
     max-height: 45rem;
-    max-height: var(--mid-width);
+    max-height: var(--md-width);
 }
 
 .mxh-lg,
 .mxh-lg {
     max-height: 60rem;
-    max-height: var(--large-width);
+    max-height: var(--lg-width);
 }
 
 .mxh-d5,
@@ -15299,7 +15359,7 @@ Naming conventions
     }
 }
 
-@media (--sm) {
+@media (--mi-sm-bp) {
     .sm\:mxh-unset,
     .sm\:mxh-u {
         max-height: unset;
@@ -15433,7 +15493,7 @@ Naming conventions
     }
 }
 
-@media (--rg) {
+@media (--mi-rg-bp) {
     .rg\:mxh-unset,
     .rg\:mxh-u {
         max-height: unset;
@@ -15567,7 +15627,7 @@ Naming conventions
     }
 }
 
-@media (--md) {
+@media (--mi-md-bp) {
     .md\:mxh-unset,
     .md\:mxh-u {
         max-height: unset;
@@ -15701,7 +15761,7 @@ Naming conventions
     }
 }
 
-@media (--lg) {
+@media (--mi-lg-bp) {
     .lg\:mxh-unset,
     .lg\:mxh-u {
         max-height: unset;
@@ -15776,25 +15836,25 @@ Naming conventions
 .mih-sm,
 .mih-sm {
     min-height: 25rem;
-    min-height: var(--small-width);
+    min-height: var(--sm-width);
 }
 
 .mih-rg,
 .mih-rg {
     min-height: 35rem;
-    min-height: var(--regular-width);
+    min-height: var(--rg-width);
 }
 
 .mih-md,
 .mih-md {
     min-height: 45rem;
-    min-height: var(--mid-width);
+    min-height: var(--md-width);
 }
 
 .mih-lg,
 .mih-lg {
     min-height: 60rem;
-    min-height: var(--large-width);
+    min-height: var(--lg-width);
 }
 
 .mih-d5,
@@ -15941,7 +16001,7 @@ Naming conventions
     }
 }
 
-@media (--sm) {
+@media (--mi-sm-bp) {
     .sm\:mih-unset,
     .sm\:mih-u {
         min-height: unset;
@@ -16075,7 +16135,7 @@ Naming conventions
     }
 }
 
-@media (--rg) {
+@media (--mi-rg-bp) {
     .rg\:mih-unset,
     .rg\:mih-u {
         min-height: unset;
@@ -16209,7 +16269,7 @@ Naming conventions
     }
 }
 
-@media (--md) {
+@media (--mi-md-bp) {
     .md\:mih-unset,
     .md\:mih-u {
         min-height: unset;
@@ -16343,7 +16403,7 @@ Naming conventions
     }
 }
 
-@media (--lg) {
+@media (--mi-lg-bp) {
     .lg\:mih-unset,
     .lg\:mih-u {
         min-height: unset;
@@ -16420,7 +16480,7 @@ Naming conventions
     }
 }
 
-@media (--sm) {
+@media (--mi-sm-bp) {
     .sm\:hide {
         display: none !important;
     }
@@ -16432,7 +16492,7 @@ Naming conventions
     }
 }
 
-@media (--rg) {
+@media (--mi-rg-bp) {
     .rg\:hide {
         display: none !important;
     }
@@ -16444,7 +16504,7 @@ Naming conventions
     }
 }
 
-@media (--md) {
+@media (--mi-md-bp) {
     .md\:hide {
         display: none !important;
     }
@@ -16456,7 +16516,7 @@ Naming conventions
     }
 }
 
-@media (--lg) {
+@media (--mi-lg-bp) {
     .lg\:hide {
         display: none !important;
     }
@@ -16468,7 +16528,7 @@ Naming conventions
     }
 }
 
-@media (--max-sm) {
+@media (--mx-sm-bp) {
     .below-sm\:hide {
         display: none !important;
     }
@@ -16480,7 +16540,7 @@ Naming conventions
     }
 }
 
-@media (--max-rg) {
+@media (--mx-rg-bp) {
     .below-rg\:hide {
         display: none !important;
     }
@@ -16492,7 +16552,7 @@ Naming conventions
     }
 }
 
-@media (--max-md) {
+@media (--mx-md-bp) {
     .below-md\:hide {
         display: none !important;
     }
@@ -16504,7 +16564,7 @@ Naming conventions
     }
 }
 
-@media (--max-lg) {
+@media (--mx-lg-bp) {
     .below-lg\:hide {
         display: none !important;
     }
@@ -17142,7 +17202,7 @@ blockquote>header {
     line-height: calc((calc(1.7 * 1) - 1) / 3 * 2 + 1);
     line-height: var(--lh-2);
     max-width: 35rem;
-    max-width: var(--regular-width);
+    max-width: var(--rg-width);
 }
 
 figcaption {
@@ -17179,7 +17239,7 @@ blockquote>header::after {
     }
 }
 
-@media(--max-sm) {
+@media(--mx-sm-bp) {
     figcaption,
     blockquote>footer {
         max-width: unset;
@@ -17875,7 +17935,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     }
 }
 
-@media (--sm) {
+@media (--mi-sm-bp) {
     .sm\:flex,
     .sm\:flex-row {
         display: flex;
@@ -18179,7 +18239,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     }
 }
 
-@media (--rg) {
+@media (--mi-rg-bp) {
     .rg\:flex,
     .rg\:flex-row {
         display: flex;
@@ -18483,7 +18543,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     }
 }
 
-@media (--md) {
+@media (--mi-md-bp) {
     .md\:flex,
     .md\:flex-row {
         display: flex;
@@ -18787,7 +18847,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     }
 }
 
-@media (--lg) {
+@media (--mi-lg-bp) {
     .lg\:flex,
     .lg\:flex-row {
         display: flex;
@@ -19422,7 +19482,7 @@ table caption {
     text-align: left;
     font-style: normal;
     max-width: 35rem;
-    max-width: var(--regular-width);
+    max-width: var(--rg-width);
     font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--figcaption-font-family);
     font-size: 1rem;
@@ -19470,7 +19530,7 @@ caption {
     --z-2: 2000;
     --z-3: 3000;
     --z-4: 4000;
-    --bleed-width: var(--lg-px);
+    --bleed-width: var(--mi-lg-bp-px);
     --bleed-padding: var(--space);
 }
 
@@ -19572,21 +19632,21 @@ caption {
 }
 
 .bleed {
-    width: min(100vw - 2 * 1rem, 1200px);
+    width: min(100vw - 2 * 1rem, var(--mi-lg-bp-px));
     width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
-    margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+    margin-left: max(50% - 50vw + 1rem, 50% - var(--mi-lg-bp-px) / 2);
     margin-left: max(50% - 50vw + 1rem, 50% - var(--bleed-width) / 2);
 }
 
 .bleed-right {
     width: auto;
-    margin-right: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+    margin-right: max(50% - 50vw + 1rem, 50% - var(--mi-lg-bp-px) / 2);
     margin-right: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
 }
 
 .bleed-left {
     width: auto;
-    margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+    margin-left: max(50% - 50vw + 1rem, 50% - var(--mi-lg-bp-px) / 2);
     margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
 }
 
@@ -19807,19 +19867,19 @@ caption {
         margin-left: calc(50% - 50vw);
     }
     .sm\:bleed {
-        width: min(100vw - 2 * 1rem, 1200px);
+        width: min(100vw - 2 * 1rem, var(--mi-lg-bp-px));
         width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
-        margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-left: max(50% - 50vw + 1rem, 50% - var(--mi-lg-bp-px) / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .sm\:bleed-right {
         width: auto;
-        margin-right: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-right: max(50% - 50vw + 1rem, 50% - var(--mi-lg-bp-px) / 2);
         margin-right: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .sm\:bleed-left {
         width: auto;
-        margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-left: max(50% - 50vw + 1rem, 50% - var(--mi-lg-bp-px) / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .sm\:split {
@@ -19932,7 +19992,7 @@ caption {
     }
 }
 
-@media (--sm) {
+@media (--mi-sm-bp) {
     .sm\:inline {
         display: inline;
     }
@@ -20007,19 +20067,19 @@ caption {
         margin-left: calc(50% - 50vw);
     }
     .sm\:bleed {
-        width: min(100vw - 2 * 1rem, 1200px);
+        width: min(100vw - 2 * 1rem, var(--mi-lg-bp-px));
         width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
-        margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-left: max(50% - 50vw + 1rem, 50% - var(--mi-lg-bp-px) / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .sm\:bleed-right {
         width: auto;
-        margin-right: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-right: max(50% - 50vw + 1rem, 50% - var(--mi-lg-bp-px) / 2);
         margin-right: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .sm\:bleed-left {
         width: auto;
-        margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-left: max(50% - 50vw + 1rem, 50% - var(--mi-lg-bp-px) / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .sm\:split {
@@ -20207,19 +20267,19 @@ caption {
         margin-left: calc(50% - 50vw);
     }
     .rg\:bleed {
-        width: min(100vw - 2 * 1rem, 1200px);
+        width: min(100vw - 2 * 1rem, var(--mi-lg-bp-px));
         width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
-        margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-left: max(50% - 50vw + 1rem, 50% - var(--mi-lg-bp-px) / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .rg\:bleed-right {
         width: auto;
-        margin-right: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-right: max(50% - 50vw + 1rem, 50% - var(--mi-lg-bp-px) / 2);
         margin-right: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .rg\:bleed-left {
         width: auto;
-        margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-left: max(50% - 50vw + 1rem, 50% - var(--mi-lg-bp-px) / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .rg\:split {
@@ -20332,7 +20392,7 @@ caption {
     }
 }
 
-@media (--rg) {
+@media (--mi-rg-bp) {
     .rg\:inline {
         display: inline;
     }
@@ -20407,19 +20467,19 @@ caption {
         margin-left: calc(50% - 50vw);
     }
     .rg\:bleed {
-        width: min(100vw - 2 * 1rem, 1200px);
+        width: min(100vw - 2 * 1rem, var(--mi-lg-bp-px));
         width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
-        margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-left: max(50% - 50vw + 1rem, 50% - var(--mi-lg-bp-px) / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .rg\:bleed-right {
         width: auto;
-        margin-right: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-right: max(50% - 50vw + 1rem, 50% - var(--mi-lg-bp-px) / 2);
         margin-right: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .rg\:bleed-left {
         width: auto;
-        margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-left: max(50% - 50vw + 1rem, 50% - var(--mi-lg-bp-px) / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .rg\:split {
@@ -20607,19 +20667,19 @@ caption {
         margin-left: calc(50% - 50vw);
     }
     .md\:bleed {
-        width: min(100vw - 2 * 1rem, 1200px);
+        width: min(100vw - 2 * 1rem, var(--mi-lg-bp-px));
         width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
-        margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-left: max(50% - 50vw + 1rem, 50% - var(--mi-lg-bp-px) / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .md\:bleed-right {
         width: auto;
-        margin-right: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-right: max(50% - 50vw + 1rem, 50% - var(--mi-lg-bp-px) / 2);
         margin-right: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .md\:bleed-left {
         width: auto;
-        margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-left: max(50% - 50vw + 1rem, 50% - var(--mi-lg-bp-px) / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .md\:split {
@@ -20732,7 +20792,7 @@ caption {
     }
 }
 
-@media (--md) {
+@media (--mi-md-bp) {
     .md\:inline {
         display: inline;
     }
@@ -20807,19 +20867,19 @@ caption {
         margin-left: calc(50% - 50vw);
     }
     .md\:bleed {
-        width: min(100vw - 2 * 1rem, 1200px);
+        width: min(100vw - 2 * 1rem, var(--mi-lg-bp-px));
         width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
-        margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-left: max(50% - 50vw + 1rem, 50% - var(--mi-lg-bp-px) / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .md\:bleed-right {
         width: auto;
-        margin-right: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-right: max(50% - 50vw + 1rem, 50% - var(--mi-lg-bp-px) / 2);
         margin-right: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .md\:bleed-left {
         width: auto;
-        margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-left: max(50% - 50vw + 1rem, 50% - var(--mi-lg-bp-px) / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .md\:split {
@@ -21007,19 +21067,19 @@ caption {
         margin-left: calc(50% - 50vw);
     }
     .lg\:bleed {
-        width: min(100vw - 2 * 1rem, 1200px);
+        width: min(100vw - 2 * 1rem, var(--mi-lg-bp-px));
         width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
-        margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-left: max(50% - 50vw + 1rem, 50% - var(--mi-lg-bp-px) / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .lg\:bleed-right {
         width: auto;
-        margin-right: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-right: max(50% - 50vw + 1rem, 50% - var(--mi-lg-bp-px) / 2);
         margin-right: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .lg\:bleed-left {
         width: auto;
-        margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-left: max(50% - 50vw + 1rem, 50% - var(--mi-lg-bp-px) / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .lg\:split {
@@ -21132,7 +21192,7 @@ caption {
     }
 }
 
-@media (--lg) {
+@media (--mi-lg-bp) {
     .lg\:inline {
         display: inline;
     }
@@ -21207,19 +21267,19 @@ caption {
         margin-left: calc(50% - 50vw);
     }
     .lg\:bleed {
-        width: min(100vw - 2 * 1rem, 1200px);
+        width: min(100vw - 2 * 1rem, var(--mi-lg-bp-px));
         width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
-        margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-left: max(50% - 50vw + 1rem, 50% - var(--mi-lg-bp-px) / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .lg\:bleed-right {
         width: auto;
-        margin-right: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-right: max(50% - 50vw + 1rem, 50% - var(--mi-lg-bp-px) / 2);
         margin-right: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .lg\:bleed-left {
         width: auto;
-        margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-left: max(50% - 50vw + 1rem, 50% - var(--mi-lg-bp-px) / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .lg\:split {

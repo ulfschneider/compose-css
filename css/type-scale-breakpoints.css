@@ -12,7 +12,7 @@
     }
 }
 
-@media (--sm) {
+@media (--mi-sm-bp) {
      :root {
         font-size: calc(var(--base-font-size) + 1px);
         font-size: var(--font-size-breakpoint-sm);
@@ -26,7 +26,7 @@
     }
 }
 
-@media (--rg) {
+@media (--mi-rg-bp) {
      :root {
         font-size: calc(var(--base-font-size) + 2px);
         font-size: var(--font-size-breakpoint-rg);
@@ -40,7 +40,7 @@
     }
 }
 
-@media (--md) {
+@media (--mi-md-bp) {
      :root {
         font-size: calc(var(--base-font-size) + 2px);
         font-size: var(--font-size-breakpoint-md);
@@ -54,7 +54,7 @@
     }
 }
 
-@media (--lg) {
+@media (--mi-lg-bp) {
      :root {
         font-size: calc(var(--base-font-size) + 3px);
         font-size: var(--font-size-breakpoint-lg);
@@ -160,7 +160,7 @@
     }
 }
 
-@media (--sm) {
+@media (--mi-sm-bp) {
     .sm\:h1 {
         font-size: var(--fs-h1);
         line-height: var(--lh-h1);
@@ -358,7 +358,7 @@
     }
 }
 
-@media (--rg) {
+@media (--mi-rg-bp) {
     .rg\:h1 {
         font-size: var(--fs-h1);
         line-height: var(--lh-h1);
@@ -556,7 +556,7 @@
     }
 }
 
-@media (--md) {
+@media (--mi-md-bp) {
     .md\:h1 {
         font-size: var(--fs-h1);
         line-height: var(--lh-h1);
@@ -754,7 +754,7 @@
     }
 }
 
-@media (--lg) {
+@media (--mi-lg-bp) {
     .lg\:h1 {
         font-size: var(--fs-h1);
         line-height: var(--lh-h1);

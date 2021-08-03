@@ -1,18 +1,18 @@
 /* https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/ */
 
 :root {
-    --sm-px: 400px;
-    --rg-px: 600px;
-    --md-px: 900px;
-    --lg-px: 1200px;
+    --sm-breakpoint: 400px;
+    --rg-breakpoint: 600px;
+    --md-breakpoint: 900px;
+    --lg-breakpoint: 1200px;
 }
 
-@custom-media --max-sm (max-width: 400px);
-@custom-media --max-rg (max-width: 600px);
-@custom-media --max-md (max-width: 900px);
-@custom-media --max-lg (max-width: 1200px);
-@custom-media --sm (min-width: 401px);
-@custom-media --rg (min-width: 601px);
-@custom-media --md (min-width: 901px);
-@custom-media --lg (min-width: 1201px);
+@custom-media --mx-sm-bp (max-width: 400px);
+@custom-media --mx-rg-bp (max-width: 600px);
+@custom-media --mx-md-bp (max-width: 900px);
+@custom-media --mx-lg-bp (max-width: 1200px);
+@custom-media --mi-sm-bp (min-width: 401px);
+@custom-media --mi-rg-bp (min-width: 601px);
+@custom-media --mi-md-bp (min-width: 901px);
+@custom-media --mi-lg-bp (min-width: 1201px);
 @custom-media --touch-device screen and (hover: none) and (pointer: coarse)

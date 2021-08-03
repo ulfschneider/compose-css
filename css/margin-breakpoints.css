@@ -471,7 +471,7 @@ Naming conventions
     }
 }
 
-@media (--sm) {
+@media (--mi-sm-bp) {
     .sm\:mr-0,
     .sm\:no-mr {
         margin: 0;
@@ -1389,7 +1389,7 @@ Naming conventions
     }
 }
 
-@media (--rg) {
+@media (--mi-rg-bp) {
     .rg\:mr-0,
     .rg\:no-mr {
         margin: 0;
@@ -2307,7 +2307,7 @@ Naming conventions
     }
 }
 
-@media (--md) {
+@media (--mi-md-bp) {
     .md\:mr-0,
     .md\:no-mr {
         margin: 0;
@@ -3225,7 +3225,7 @@ Naming conventions
     }
 }
 
-@media (--lg) {
+@media (--mi-lg-bp) {
     .lg\:mr-0,
     .lg\:no-mr {
         margin: 0;

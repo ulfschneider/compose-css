@@ -357,7 +357,7 @@ His many legs, pitifully thin compared with the size of the rest of him, waved a
 
 ### Writing mode
 
-<div class="sq-4 horizontal-tb br bg-neutral-5">
+<div class="w-4 h-4 horizontal-tb br bg-neutral-5">
 He lay on his armour-like back
 </div>
 
@@ -367,7 +367,7 @@ He lay on his armour-like back
 </div>
 ~~~
 
-<div class="sq-4 vertical-lr br bg-neutral-5">
+<div class="w-4 h-4 vertical-lr br bg-neutral-5">
 He lay on his armour-like back
 </div>
 
@@ -377,7 +377,7 @@ He lay on his armour-like back
 </div>
 ~~~
 
-<div class="sq-4 vertical-rl br bg-neutral-5">
+<div class="w-4 h-4 vertical-rl br bg-neutral-5">
 He lay on his armour-like back
 </div>
 

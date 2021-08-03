@@ -10,22 +10,22 @@
 
 .mxh-sm,
 .mxh-sm {
-    max-height: var(--small-width);
+    max-height: var(--sm-width);
 }
 
 .mxh-rg,
 .mxh-rg {
-    max-height: var(--regular-width);
+    max-height: var(--rg-width);
 }
 
 .mxh-md,
 .mxh-md {
-    max-height: var(--mid-width);
+    max-height: var(--md-width);
 }
 
 .mxh-lg,
 .mxh-lg {
-    max-height: var(--large-width);
+    max-height: var(--lg-width);
 }
 
 .mxh-d5,

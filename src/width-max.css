@@ -8,19 +8,35 @@
 }
 
 .mxw-sm {
-    max-width: var(--small-width);
+    max-width: var(--sm-width);
+}
+
+.mxw-sm-bp {
+    max-width: var(--sm-breakpoint);
 }
 
 .mxw-rg {
-    max-width: var(--regular-width);
+    max-width: var(--rg-width);
+}
+
+.mxw-rg-bp {
+    max-width: var(--rg-breakpoint);
 }
 
 .mxw-md {
-    max-width: var(--mid-width);
+    max-width: var(--md-width);
+}
+
+.mxw-md-bp {
+    max-width: var(--md-breakpoint);
 }
 
 .mxw-lg {
-    max-width: var(--large-width);
+    max-width: var(--lg-width);
+}
+
+.mxw-lg-bp {
+    max-width: var(--lg-breakpoint);
 }
 
 .mxw-d5 {

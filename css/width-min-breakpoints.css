@@ -42,7 +42,7 @@
     }
 }
 
-@media (--sm) {
+@media (--mi-sm-bp) {
     .sm\:miw-unset,
     .sm\:miw-u {
         min-width: unset;
@@ -129,7 +129,7 @@
     }
 }
 
-@media (--rg) {
+@media (--mi-rg-bp) {
     .rg\:miw-unset,
     .rg\:miw-u {
         min-width: unset;
@@ -215,7 +215,7 @@
     }
 }
 
-@media (--md) {
+@media (--mi-md-bp) {
     .md\:miw-unset,
     .md\:miw-u {
         min-width: unset;
@@ -264,16 +264,16 @@
         min-width: unset;
     }
     .lg\:miw-sm {
-        min-width: var(--small-width);
+        min-width: var(--sm-width);
     }
     .lg\:miw-rg {
-        min-width: var(--regular-width);
+        min-width: var(--rg-width);
     }
     .lg\:miw-md {
-        min-width: var(--mid-width);
+        min-width: var(--md-width);
     }
     .lg\:miw-lg {
-        min-width: var(--large-width);
+        min-width: var(--lg-width);
     }
     .lg\:miw-d5 {
         min-width: var(--space-d5);
@@ -313,22 +313,22 @@
     }
 }
 
-@media (--lg) {
+@media (--mi-lg-bp) {
     .lg\:miw-unset,
     .lg\:miw-u {
         min-width: unset;
     }
     .lg\:miw-sm {
-        min-width: var(--small-width);
+        min-width: var(--sm-width);
     }
     .lg\:miw-rg {
-        min-width: var(--regular-width);
+        min-width: var(--rg-width);
     }
     .lg\:miw-md {
-        min-width: var(--mid-width);
+        min-width: var(--md-width);
     }
     .lg\:miw-lg {
-        min-width: var(--large-width);
+        min-width: var(--lg-width);
     }
     .lg\:miw-d5 {
         min-width: var(--space-d5);

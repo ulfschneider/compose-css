@@ -1,4 +1,4 @@
-@media (--sm) {
+@media (--mi-sm-bp) {
     .sm\:mxh-unset,
     .sm\:mxh-u {
         max-height: unset;
@@ -53,7 +53,7 @@
     }
 }
 
-@media (--rg) {
+@media (--mi-rg-bp) {
     .rg\:mxh-unset,
     .rg\:mxh-u {
         max-height: unset;
@@ -108,7 +108,7 @@
     }
 }
 
-@media (--md) {
+@media (--mi-md-bp) {
     .md\:mxh-unset,
     .md\:mxh-u {
         max-height: unset;
@@ -163,7 +163,7 @@
     }
 }
 
-@media (--lg) {
+@media (--mi-lg-bp) {
     .lg\:mxh-unset,
     .lg\:mxh-u {
         max-height: unset;
