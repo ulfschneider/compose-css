@@ -15,4 +15,4 @@
 @custom-media --mi-rg-bp (min-width: 601px);
 @custom-media --mi-md-bp (min-width: 901px);
 @custom-media --mi-lg-bp (min-width: 1201px);
-@custom-media --touch-device screen and (hover: none) and (pointer: coarse)
+@custom-media --touch-device screen and (hover: none) and (pointer: coarse);
