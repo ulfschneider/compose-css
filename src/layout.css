@@ -3,7 +3,7 @@
     --z-2: 2000;
     --z-3: 3000;
     --z-4: 4000;
-    --bleed-width: var(--mi-lg-bp-px);
+    --bleed-width: var(--mi-lg-bp);
     --bleed-padding: var(--space);
 }
 
