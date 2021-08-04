@@ -1,63 +1,63 @@
 :root {
-    --font-size-breakpoint-sm: calc(var(--base-font-size) + 1px);
-    --font-size-breakpoint-rg: calc(var(--base-font-size) + 2px);
-    --font-size-breakpoint-md: calc(var(--base-font-size) + 2px);
-    --font-size-breakpoint-lg: calc(var(--base-font-size) + 3px);
+    --font-size-sm-breakpoint: calc(var(--base-font-size) + 1px);
+    --font-size-rg-breakpoint: calc(var(--base-font-size) + 2px);
+    --font-size-md-breakpoint: calc(var(--base-font-size) + 2px);
+    --font-size-lg-breakpoint: calc(var(--base-font-size) + 3px);
 }
 
 @media (min-width: 401px) {
      :root {
         font-size: calc(var(--base-font-size) + 1px);
-        font-size: var(--font-size-breakpoint-sm);
+        font-size: var(--font-size-sm-breakpoint);
     }
 }
 
 @media (--mi-sm-bp) {
      :root {
         font-size: calc(var(--base-font-size) + 1px);
-        font-size: var(--font-size-breakpoint-sm);
+        font-size: var(--font-size-sm-breakpoint);
     }
 }
 
 @media (min-width: 601px) {
      :root {
         font-size: calc(var(--base-font-size) + 2px);
-        font-size: var(--font-size-breakpoint-rg);
+        font-size: var(--font-size-rg-breakpoint);
     }
 }
 
 @media (--mi-rg-bp) {
      :root {
         font-size: calc(var(--base-font-size) + 2px);
-        font-size: var(--font-size-breakpoint-rg);
+        font-size: var(--font-size-rg-breakpoint);
     }
 }
 
 @media (min-width: 901px) {
      :root {
         font-size: calc(var(--base-font-size) + 2px);
-        font-size: var(--font-size-breakpoint-md);
+        font-size: var(--font-size-md-breakpoint);
     }
 }
 
 @media (--mi-md-bp) {
      :root {
         font-size: calc(var(--base-font-size) + 2px);
-        font-size: var(--font-size-breakpoint-md);
+        font-size: var(--font-size-md-breakpoint);
     }
 }
 
 @media (min-width: 1201px) {
      :root {
         font-size: calc(var(--base-font-size) + 3px);
-        font-size: var(--font-size-breakpoint-lg);
+        font-size: var(--font-size-lg-breakpoint);
     }
 }
 
 @media (--mi-lg-bp) {
      :root {
         font-size: calc(var(--base-font-size) + 3px);
-        font-size: var(--font-size-breakpoint-lg);
+        font-size: var(--font-size-lg-breakpoint);
     }
 }
 
