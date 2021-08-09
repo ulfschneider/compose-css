@@ -72,7 +72,7 @@ table caption {
     margin: 0;
     text-align: left;
     font-style: normal;
-    max-width: var(--rg-width);
+    max-width: min(10vw, var(--rg-width));
     font-family: var(--figcaption-font-family);
     font-size: var(--fs);
 }
