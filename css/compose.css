@@ -19592,8 +19592,8 @@ table caption {
     margin: 0;
     text-align: left;
     font-style: normal;
-    max-width: min(10vw, 35rem);
-    max-width: min(10vw, var(--rg-width));
+    max-width: min(calc(10vw - 2 * 1rem), 35rem);
+    max-width: min(calc(10vw - 2 * var(--space)), var(--rg-width));
     font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--figcaption-font-family);
     font-size: 1rem;
