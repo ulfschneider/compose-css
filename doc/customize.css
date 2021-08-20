@@ -4,6 +4,7 @@
     --fs-h1: var(--fs-5);
     --fs-h2: var(--fs-4);
     --fs-h2: var(--fs-3);
+    --base-font-size: 17px;
 }
 
 .anchor {
@@ -13,18 +14,39 @@
     font-weight: normal;
 }
 
-.table-of-contents li::before {
+.table-of-contents ol {
+    font-size: smaller;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.table-of-contents ol li::before {
     content: var(--h-counter);
     font-weight: normal;
     font-size: inherit;
 }
 
+.table-of-contents ol ol {
+    margin: 0;
+}
+
+.table-of-contents ol ol li {
+    line-height: var(--lh-2);
+    margin: var(--space-d3) 0;
+}
+
+.table-of-contents ol ol li::before {
+    content: "";
+}
+
 .table-of-contents li a {
-    text-decoration: none;
+    text-decoration: none;    
 }
 
 pre[class^=language] {
     margin-bottom: var(--space-3);
+    width: auto;
+    margin-right: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
 }
 
 @media (--rg) {
@@ -49,13 +71,6 @@ pre[class^=language] {
 }
 
 @media(--lg) {
-    .table-of-contents {
-        position: fixed;
-        left: var(--space);
-        top: var(--space-1);
-        width: var(--space-5);
-        font-size: var(--fs-d1);
-    }
     main>.bleed\:lg {
         width: min(100vw - 2rem, var(--lg-px));
         margin-left: max(50% - 50vw + 1rem, 50% - var(--lg-px) / 2);

@@ -31,6 +31,7 @@
 @import "pointer";
 @import "img";
 @import "media";
+@import "columns";
 @import "table";
 @import "layout";
 @import "layout-breakpoints";

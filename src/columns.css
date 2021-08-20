@@ -1,0 +1,23 @@
+.fluid-columns-1 {
+    column-width: var(--space-1);
+}
+
+.fluid-columns-2 {
+    column-width: var(--space-2);
+}
+
+.fluid-columns-3 {
+    column-width: var(--space-3);
+}
+
+.fluid-columns-4 {
+    column-width: var(--space-4);
+}
+
+.fluid-columns-5 {
+    column-width: var(--space-5);
+}
+
+.fluid-columns-6 {
+    column-width: var(--space-6);
+}

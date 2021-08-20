@@ -16730,7 +16730,7 @@ Naming conventions
     --mrb-pre: var(--vertical-rhythm);
     --mrt-hr: var(--vertical-rhythm);
     --mrb-hr: var(--vertical-rhythm);
-    --hr-content: "·\0000a0\0000a0\0000a0·\0000a0\0000a0\0000a0·";
+    --hr-content: "·\0000a0\0000a0\0000a0\0000a0·\0000a0\0000a0\0000a0\0000a0·";
     --quotes: """ """"'""'";
     --quotes-de: """ """"'""'";
     --scroll-margin-top: var(--vertical-rhythm);
@@ -17368,7 +17368,7 @@ hr {
 }
 
 hr::after {
-    content: "·\0000a0\0000a0\0000a0·\0000a0\0000a0\0000a0·";
+    content: "·\0000a0\0000a0\0000a0\0000a0·\0000a0\0000a0\0000a0\0000a0·";
     content: var(--hr-content);
     white-space: pre;
     color: inherit;
@@ -19504,6 +19504,36 @@ svg {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.fluid-columns-1 {
+    column-width: calc(1.7 * 1rem);
+    column-width: var(--space-1);
+}
+
+.fluid-columns-2 {
+    column-width: calc(calc(1.7 * 1rem) * 1.7);
+    column-width: var(--space-2);
+}
+
+.fluid-columns-3 {
+    column-width: calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7);
+    column-width: var(--space-3);
+}
+
+.fluid-columns-4 {
+    column-width: calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7);
+    column-width: var(--space-4);
+}
+
+.fluid-columns-5 {
+    column-width: calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7);
+    column-width: var(--space-5);
+}
+
+.fluid-columns-6 {
+    column-width: calc(calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7) * 1.7);
+    column-width: var(--space-6);
 }
 
 :root {
