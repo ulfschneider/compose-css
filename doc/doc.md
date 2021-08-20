@@ -1,7 +1,7 @@
 <header class="title">
 <h1>Compose CSS</h1>
 <span class="bg-primary white pd-d3">Version {{compose-version}}</span>
-<p>A composable CSS Toolkit to build fast, maintainable, and responsive websites.</p>
+<p>A low-level CSS Toolkit to build fast, maintainable, and responsive websites.</p>
 </header>
 
 [[toc]]
@@ -18,51 +18,54 @@ Ideally, you run at least a `postcss-import` to load `compose-css` into your pro
 
 ```javascript
 module.exports = {
-    plugins: [
-        require("postcss-import"),
-        require("postcss-custom-media"),
-        require("postcss-custom-properties")({
-            preserve: false,
-        }),
-        require("postcss-calc"),
-        require("@fullhuman/postcss-purgecss")({
-            content: [
-                /*decide about the content to search for CSS classes to keep*/
-                /*...*/
-            ],
-            whitelistPatternsChildren: [/^token/, /^pre/, /^code/],
-            defaultExtractor: (content) =>
-                content.match(/[\w-/:]+(?<!:)/g) || [] /*check https://flaviocopes.com/tailwind-setup/ */ ,
-        }),
-        require("cssnano"),
-    ],
+  plugins: [
+    require("postcss-import"),
+    require("postcss-custom-media"),
+    require("postcss-custom-properties")({
+      preserve: false,
+    }),
+    require("postcss-calc"),
+    require("@fullhuman/postcss-purgecss")({
+      content: [
+        /*decide about the content to search for CSS classes to keep*/
+        /*...*/
+      ],
+      whitelistPatternsChildren: [/^token/, /^pre/, /^code/],
+      defaultExtractor: (content) =>
+        content.match(/[\w-/:]+(?<!:)/g) ||
+        [] /*check https://flaviocopes.com/tailwind-setup/ */,
+    }),
+    require("cssnano"),
+  ],
 };
 ```
 
 ## Notation
 
-CSS classes
-:   In flowing text, a CSS class will be denoted with a starting period, e.g. <code>.css</code>. 
-
-HTML tags
-:   HTML tags in flowing text are denoted lowercase and with pointing brackets, e.g. <code>&lt;strong></code>. 
-
-In formatted code, CSS classes and HTML tags are presented syntactically correct.
+- In flowing text, a CSS class will be denoted with a starting period, for example: <code>.css</code>.
+- HTML tags in flowing text are denoted lowercase and with pointing brackets, for example: <code>&lt;strong></code>.
+- In formatted code, CSS classes and HTML tags are presented syntactically correct. For example:
+  ```html
+  <div class="no-wrap">No word wrap in small spaces</div>
+  ```
 
 ## Typography
 
-### Inline tags
+### Basic elements
 
+<div class="bleed-right">
 <table class="underline-rows">
     <tr>
         <th>Element</th>
         <th>Set style with HTML tag or CSS class</th>
+        <th>Example</th>
     </tr>
     <tr>
-    <td><span>Normal</span></td>
+    <td><span>Normal text</span></td>
                     <td>
                         <code>.normal</code>
                     </td>
+                    <td><code>&lt;span class="normal">Normal text&lt;/span></code></td>
                 </tr>
                 <tr>
                     <td>
@@ -74,7 +77,7 @@ In formatted code, CSS classes and HTML tags are presented syntactically correct
                 </tr>
                 <tr>
                     <td>
-                        <b>Bold</b>
+                        <b>Bold text</b>
                     </td>
                     <td>
                         <code>&lt;strong></code>, <code>&lt;b></code>, <code>.strong</code>,
@@ -84,7 +87,7 @@ In formatted code, CSS classes and HTML tags are presented syntactically correct
                 </tr>
                 <tr>
                     <td>
-                        <i>Italic</i>
+                        <i>Italic text</i>
                     </td>
                     <td>
                         <code>&lt;i></code>, <code>.i</code>, <code>.italic</code>
@@ -92,7 +95,7 @@ In formatted code, CSS classes and HTML tags are presented syntactically correct
                 </tr>
                 <tr>
                     <td>
-                        <u>Underline</u>
+                        <u>Underlined text</u>
                     </td>
                     <td>
                         <code>&lt;u></code>, <code>.underline</code>
@@ -108,7 +111,7 @@ In formatted code, CSS classes and HTML tags are presented syntactically correct
                 </tr>                
                 <tr>
                     <td>
-                        <del>Deleted</del>
+                        <del>Deleted text</del>
                     </td>
                     <td>
                         <code>&lt;del></code>, <code>.del</code>
@@ -116,42 +119,42 @@ In formatted code, CSS classes and HTML tags are presented syntactically correct
                 </tr>
                 <tr>
                     <td>
-                        <span class="caps">Caps</span></td>
+                        <span class="caps">Caps text</span></td>
                     <td>
                         <code>.caps</code>, <code>.uppercase</code>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <span class="small-caps">Small Caps</span></td>
+                        <span class="small-caps">Small caps text</span></td>
                     <td>
                         <code>.small-caps</code>
                     </td>
                 </tr> 
                 <tr>
                     <td>
-                        <span class="all-small-caps">All Small Caps</span></td>
+                        <span class="all-small-caps">All small caps text</span></td>
                     <td>
                         <code>.all-small-caps</code>
                     </td>
                 </tr> 
                 <tr>
                     <td>
-                        <span class="lowercase">Lowercase</span></td>
+                        <span class="lowercase">Lowercase text</span></td>
                     <td>
                         <code>.lowercase</code>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <span class="lsp">Spacing</span></td>
+                        <span class="lsp">Letterspacing</span></td>
                     <td>
                         <code>.lsp</code>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <mark>Highlighted</mark>
+                        <mark>Highlighted text</mark>
                     </td>
                     <td>
                         <code>&lt;mark></code>, <code>.mark</code>
@@ -159,7 +162,7 @@ In formatted code, CSS classes and HTML tags are presented syntactically correct
                 </tr>
                 <tr>
                     <td>
-                        <kbd>Ctrl+K</kbd>
+                        <kbd>Keyboard indication</kbd>
                     </td>
                     <td>
                         <code>&lt;kbd></code>, <code>.kbd</code>
@@ -197,7 +200,7 @@ In formatted code, CSS classes and HTML tags are presented syntactically correct
                 </tr>
                 <tr>
                     <td>
-                        <em>Emphasize</em>
+                        <em>Emphasized text</em>
                     </td>
                     <td>
                         <code>&lt;em></code>, <code>.em</code>
@@ -205,7 +208,7 @@ In formatted code, CSS classes and HTML tags are presented syntactically correct
                 </tr>
                 <tr>
                     <td>
-                        <s>Strike through</s>
+                        <s>Striked through text</s>
                     </td>
                     <td>
                         <code>&lt;s></code>, <code>.s</code>, <code>.strike</code>
@@ -213,20 +216,28 @@ In formatted code, CSS classes and HTML tags are presented syntactically correct
                 </tr>
                 <tr>
                     <td>
-                        <small>Small</small>
+                        <small>Small text</small>
                     </td>
                     <td>
                         <code>&lt;small></code>, <code>.small</code>
                     </td>
                 </tr>
-                <tr>
+ <tr>
                     <td>
-                        <span class="smaller">Smaller</span>
+                        <span class="smaller">Smaller text</span>
                     </td>
                     <td>
                         <code>.smaller</code>
                     </td>
-                </tr>
+                </tr>    
+                <tr>
+                    <td>
+                        <span class="larger">Larger text</span>
+                    </td>
+                    <td>
+                        <code>.larger</code>
+                    </td>
+                </tr>                            
                 <tr>
                     <td>
                         <code>Code</code>
@@ -244,46 +255,37 @@ In formatted code, CSS classes and HTML tags are presented syntactically correct
                     </td>
                 </tr>               
             </table>
+        </div>
 
 ### Word wrapping
 
 <div class="block br w-3 no-wrap mrr bg-neutral-5">No word wrap in small spaces</div>
 
-~~~html
-<div class="no-wrap">
-No word wrap in small spaces
-</div>
-~~~
+```html
+<div class="no-wrap">No word wrap in small spaces</div>
+```
 
 <div class="block br w-3 wrap-normal mrr bg-neutral-5">Normal word wrap in small spaces</div>
 
-~~~html
-<div class="wrap-normal">
-Normal word wrap in small spaces
-</div>
-~~~
+```html
+<div class="wrap-normal">Normal word wrap in small spaces</div>
+```
 
 <div class="block br w-2 break-word mrr bg-neutral-5">Wrap and break word anywhere</div>
 
-~~~html
-<div class="break-word">
-Wrap and break word anywhere
-</div>
-~~~
+```html
+<div class="break-word">Wrap and break word anywhere</div>
+```
 
 <div class="block br w-3 truncate mrr bg-neutral-5">
 Truncate instead of word wrap
 </div>
 
-~~~html
-<div class="truncate">
-Truncate instead of word wrap
-</div>
-~~~
+```html
+<div class="truncate">Truncate instead of word wrap</div>
+```
 
 ### Horizontal ruler
-
-            
 
 One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.
 
@@ -291,19 +293,27 @@ One morning, when Gregor Samsa woke from troubled dreams, he found himself trans
 
 He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.
 
-~~~html
-<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</p>
-<hr>
-<p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.</p>
-~~~
+```html
+<p>
+  One morning, when Gregor Samsa woke from troubled dreams, he found himself
+  transformed in his bed into a horrible vermin.
+</p>
+<hr />
+<p>
+  He lay on his armour-like back, and if he lifted his head a little he could
+  see his brown belly, slightly domed and divided by arches into stiff sections.
+  The bedding was hardly able to cover it and seemed ready to slide off any
+  moment.
+</p>
+```
 
-Configure with: 
+Configure the displayed symbols with:
 
-~~~css
+```css
 :root {
-    --hr-content: "·\0000a0\0000a0\0000a0·\0000a0\0000a0\0000a0·";
+  --hr-content: "·\0000a0\0000a0\0000a0\0000a0·\0000a0\0000a0\0000a0\0000a0·";
 }
-~~~
+```
 
 ### Paragraph
 
@@ -313,13 +323,23 @@ He lay on his armour-like back, and if he lifted his head a little he could see 
 
 His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. <q>What's happened to me?</q> he thought. It wasn't a dream.
 
-            
-
-~~~html
-<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</p>
-<p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.</p>
-<p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. <q>What's happened to me?</q> he thought. It wasn't a dream.</p>
-~~~
+```html
+<p>
+  One morning, when Gregor Samsa woke from troubled dreams, he found himself
+  transformed in his bed into a horrible vermin.
+</p>
+<p>
+  He lay on his armour-like back, and if he lifted his head a little he could
+  see his brown belly, slightly domed and divided by arches into stiff sections.
+  The bedding was hardly able to cover it and seemed ready to slide off any
+  moment.
+</p>
+<p>
+  His many legs, pitifully thin compared with the size of the rest of him, waved
+  about helplessly as he looked. <q>What's happened to me?</q> he thought. It
+  wasn't a dream.
+</p>
+```
 
 ### Indented Paragraph
 
@@ -329,15 +349,25 @@ His many legs, pitifully thin compared with the size of the rest of him, waved a
 <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. <q>What's happened to me?</q> he thought. It wasn't a dream.</p>
 </div>
 
-            
-
-~~~html
+```html
 <div class="indent">
-<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</p>
-<p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.</p>
-<p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. <q>What's happened to me?</q> he thought. It wasn't a dream.</p>
+  <p>
+    One morning, when Gregor Samsa woke from troubled dreams, he found himself
+    transformed in his bed into a horrible vermin.
+  </p>
+  <p>
+    He lay on his armour-like back, and if he lifted his head a little he could
+    see his brown belly, slightly domed and divided by arches into stiff
+    sections. The bedding was hardly able to cover it and seemed ready to slide
+    off any moment.
+  </p>
+  <p>
+    His many legs, pitifully thin compared with the size of the rest of him,
+    waved about helplessly as he looked. <q>What's happened to me?</q> he
+    thought. It wasn't a dream.
+  </p>
 </div>
-~~~
+```
 
 ### Blockquote
 
@@ -347,13 +377,20 @@ His many legs, pitifully thin compared with the size of the rest of him, waved a
 <footer>Franz Kafka, <cite>The Metamorphosis</cite></footer>
 </blockquote>
 
-~~~html
+```html
 <blockquote>
-<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</p>
-<p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
-<footer>Franz Kafka, <cite>The Metamorphosis</cite></footer>
+  <p>
+    One morning, when Gregor Samsa woke from troubled dreams, he found himself
+    transformed in his bed into a horrible vermin.
+  </p>
+  <p>
+    He lay on his armour-like back, and if he lifted his head a little he could
+    see his brown belly, slightly domed and divided by arches into stiff
+    sections.
+  </p>
+  <footer>Franz Kafka, <cite>The Metamorphosis</cite></footer>
 </blockquote>
-~~~
+```
 
 ### Writing mode
 
@@ -361,31 +398,25 @@ His many legs, pitifully thin compared with the size of the rest of him, waved a
 He lay on his armour-like back
 </div>
 
-~~~html
-<div class="horizontal-tb">
-He lay on his armour-like back
-</div>
-~~~
+```html
+<div class="horizontal-tb">He lay on his armour-like back</div>
+```
 
 <div class="w-4 h-4 vertical-lr br bg-neutral-5">
 He lay on his armour-like back
 </div>
 
-~~~html
-<div class="vertical-lr">
-He lay on his armour-like back
-</div>
-~~~
+```html
+<div class="vertical-lr">He lay on his armour-like back</div>
+```
 
 <div class="w-4 h-4 vertical-rl br bg-neutral-5">
 He lay on his armour-like back
 </div>
 
-~~~html
-<div class="vertical-rl">
-He lay on his armour-like back
-</div>
-~~~
+```html
+<div class="vertical-rl">He lay on his armour-like back</div>
+```
 
 ### Heading sizes
 
@@ -419,12 +450,20 @@ He lay on his armour-like back
                     </td>
                 </tr>
             </table>
-        
 
-        
 ### Font sizes
 
-To increase or decrease font-size relatively from the current font-size, assign CSS class <code>.larger</code> or <code>.smaller</code>.
+To increase or decrease font size relatively from the current font size, assign CSS class <code>.larger</code> or <code>.smaller</code>. For example:
+
+This is a paragraph with <span class="smaller">smaller</span> and <span class="larger">larger</span> text.
+
+```html
+<p>
+  This is a paragraph with <span class="smaller">smaller</span> and
+  <span class="larger">larger</span> text.
+</p>
+```
+
 For absolute sizing of fonts use the below listed CSS classes.
 
 <table>
@@ -561,12 +600,12 @@ For absolute sizing of fonts use the below listed CSS classes.
                     familiar walls.</dd>
                     </dl>
 
-~~~html
+```html
 <dl class="timeline">
-<dt>Point in time</dt>
-<dd>What happened?</dd>
+  <dt>Point in time</dt>
+  <dd>What happened?</dd>
 </dl>
-~~~
+```
 
 ## Tables
 

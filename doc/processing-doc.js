@@ -29,7 +29,7 @@ function getMarkdownLib() {
             permalinkBefore: false,
             permalinkSpace: true
         })
-        .use(markdownItTableOfContents)
+        .use(markdownItTableOfContents, {containerClass: 'table-of-contents fluid-columns-4 bleed-right'})
         .use(markdownItDefList)
         .use(markdownItFitMedia, {
             imgDir: './content'

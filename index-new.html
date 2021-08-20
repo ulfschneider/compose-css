@@ -1,54 +1,58 @@
 <html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Compose CSS</title><link rel="stylesheet" href="doc.css"></head><body class="pd"><main class="mxw-rg mrx-auto outline"><header class="title">
 <h1>Compose CSS</h1>
 <span class="bg-primary white pd-d3">Version 16.1.5</span>
-<p>A composable CSS Toolkit to build fast, maintainable, and responsive websites.</p>
+<p>A low-level CSS Toolkit to build fast, maintainable, and responsive websites.</p>
 </header>
-<nav class="table-of-contents"><ol><li><a href="#install">Install </a></li><li><a href="#notation">Notation </a></li><li><a href="#typography">Typography </a><ol><li><a href="#inline-tags">Inline tags </a></li><li><a href="#word-wrapping">Word wrapping </a></li><li><a href="#horizontal-ruler">Horizontal ruler </a></li><li><a href="#paragraph">Paragraph </a></li><li><a href="#indented-paragraph">Indented Paragraph </a></li><li><a href="#blockquote">Blockquote </a></li><li><a href="#writing-mode">Writing mode </a></li><li><a href="#heading-sizes">Heading sizes </a></li><li><a href="#font-sizes">Font sizes </a></li><li><a href="#line-height">Line height </a></li><li><a href="#rhythm">Rhythm </a></li></ol></li><li><a href="#lists">Lists </a><ol><li><a href="#timeline">Timeline </a></li></ol></li><li><a href="#tables">Tables </a></li><li><a href="#figures">Figures </a></li><li><a href="#images">Images </a></li><li><a href="#colors">Colors </a></li><li><a href="#layout">Layout </a></li><li><a href="#forms">Forms </a></li></ol></nav><h2 id="install">Install <a class="anchor" href="#install">#</a></h2>
+<nav class="table-of-contents fluid-columns bleed-right"><ol><li><a href="#install">Install </a></li><li><a href="#notation">Notation </a></li><li><a href="#typography">Typography </a><ol><li><a href="#basic-elements">Basic elements </a></li><li><a href="#word-wrapping">Word wrapping </a></li><li><a href="#horizontal-ruler">Horizontal ruler </a></li><li><a href="#paragraph">Paragraph </a></li><li><a href="#indented-paragraph">Indented Paragraph </a></li><li><a href="#blockquote">Blockquote </a></li><li><a href="#writing-mode">Writing mode </a></li><li><a href="#heading-sizes">Heading sizes </a></li><li><a href="#font-sizes">Font sizes </a></li><li><a href="#line-height">Line height </a></li><li><a href="#rhythm">Rhythm </a></li></ol></li><li><a href="#lists">Lists </a><ol><li><a href="#timeline">Timeline </a></li></ol></li><li><a href="#tables">Tables </a></li><li><a href="#figures">Figures </a></li><li><a href="#images">Images </a></li><li><a href="#colors">Colors </a></li><li><a href="#layout">Layout </a></li><li><a href="#forms">Forms </a></li></ol></nav><h2 id="install">Install <a class="anchor" href="#install">#</a></h2>
 <p>Add the <code>compose-css</code> npm package to your <code>node</code> project. Install with:</p>
 <pre class="language-shell"><code class="language-shell"><span class="token function">npm</span> i compose-css
 </code></pre>
 <p>Ideally, you run at least a <code>postcss-import</code> to load <code>compose-css</code> into your project, followed by a <code>postcss-custom-properties</code> , a <code>postcss-purgecss</code> , and a <code>cssnano</code> build-pipeline to reduce the size of the initial compose-css by removing styles you don´t use. As an example, your <code>postcss.config.js</code> file would look in some way like this:</p>
 <pre class="language-javascript"><code class="language-javascript">module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
-    plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
-        <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"postcss-import"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-        <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"postcss-custom-media"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-        <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"postcss-custom-properties"</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-            preserve<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
-        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-        <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"postcss-calc"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-        <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"@fullhuman/postcss-purgecss"</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-            content<span class="token operator">:</span> <span class="token punctuation">[</span>
-                <span class="token comment">/*decide about the content to search for CSS classes to keep*/</span>
-                <span class="token comment">/*...*/</span>
-            <span class="token punctuation">]</span><span class="token punctuation">,</span>
-            whitelistPatternsChildren<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^token</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^pre</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^code</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-            <span class="token function-variable function">defaultExtractor</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">content</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span>
-                content<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">[\w-/:]+(?&lt;!:)</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span><span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token comment">/*check https://flaviocopes.com/tailwind-setup/ */</span> <span class="token punctuation">,</span>
-        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-        <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"cssnano"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"postcss-import"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"postcss-custom-media"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"postcss-custom-properties"</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      preserve<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"postcss-calc"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"@fullhuman/postcss-purgecss"</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      content<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token comment">/*decide about the content to search for CSS classes to keep*/</span>
+        <span class="token comment">/*...*/</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      whitelistPatternsChildren<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^token</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^pre</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^code</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token function-variable function">defaultExtractor</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">content</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span>
+        content<span class="token punctuation">.</span><span class="token function">match</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">[\w-/:]+(?&lt;!:)</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span><span class="token punctuation">)</span> <span class="token operator">||</span>
+        <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token comment">/*check https://flaviocopes.com/tailwind-setup/ */</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"cssnano"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
 <h2 id="notation">Notation <a class="anchor" href="#notation">#</a></h2>
-<dl>
-<dt>CSS classes</dt>
-<dd>In flowing text, a CSS class will be denoted with a starting period, e.g. <code>.css</code>.</dd>
-<dt>HTML tags</dt>
-<dd>HTML tags in flowing text are denoted lowercase and with pointing brackets, e.g. <code>&lt;strong&gt;</code>.</dd>
-</dl>
-<p>In formatted code, CSS classes and HTML tags are presented syntactically correct.</p>
+<ul>
+<li>In flowing text, a CSS class will be denoted with a starting period, for example: <code>.css</code>.</li>
+<li>HTML tags in flowing text are denoted lowercase and with pointing brackets, for example: <code>&lt;strong&gt;</code>.</li>
+<li>In formatted code, CSS classes and HTML tags are presented syntactically correct. For example:<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>no-wrap<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>No word wrap in small spaces<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+</li>
+</ul>
 <h2 id="typography">Typography <a class="anchor" href="#typography">#</a></h2>
-<h3 id="inline-tags">Inline tags <a class="anchor" href="#inline-tags">#</a></h3>
+<h3 id="basic-elements">Basic elements <a class="anchor" href="#basic-elements">#</a></h3>
+<div class="bleed-right">
 <div class="scroll-table" style="overflow-x:auto;"><table class="underline-rows">
     <tbody><tr>
         <th>Element</th>
         <th>Set style with HTML tag or CSS class</th>
+        <th>Example</th>
     </tr>
     <tr>
-    <td><span>Normal</span></td>
+    <td><span>Normal text</span></td>
                     <td>
                         <code>.normal</code>
                     </td>
+                    <td><code>&lt;span class="normal"&gt;Normal text&lt;/span&gt;</code></td>
                 </tr>
                 <tr>
                     <td>
@@ -60,7 +64,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <b>Bold</b>
+                        <b>Bold text</b>
                     </td>
                     <td>
                         <code>&lt;strong&gt;</code>, <code>&lt;b&gt;</code>, <code>.strong</code>,
@@ -70,7 +74,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <i>Italic</i>
+                        <i>Italic text</i>
                     </td>
                     <td>
                         <code>&lt;i&gt;</code>, <code>.i</code>, <code>.italic</code>
@@ -78,7 +82,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <u>Underline</u>
+                        <u>Underlined text</u>
                     </td>
                     <td>
                         <code>&lt;u&gt;</code>, <code>.underline</code>
@@ -94,7 +98,7 @@
                 </tr>                
                 <tr>
                     <td>
-                        <del>Deleted</del>
+                        <del>Deleted text</del>
                     </td>
                     <td>
                         <code>&lt;del&gt;</code>, <code>.del</code>
@@ -102,42 +106,42 @@
                 </tr>
                 <tr>
                     <td>
-                        <span class="caps">Caps</span></td>
+                        <span class="caps">Caps text</span></td>
                     <td>
                         <code>.caps</code>, <code>.uppercase</code>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <span class="small-caps">Small Caps</span></td>
+                        <span class="small-caps">Small caps text</span></td>
                     <td>
                         <code>.small-caps</code>
                     </td>
                 </tr> 
                 <tr>
                     <td>
-                        <span class="all-small-caps">All Small Caps</span></td>
+                        <span class="all-small-caps">All small caps text</span></td>
                     <td>
                         <code>.all-small-caps</code>
                     </td>
                 </tr> 
                 <tr>
                     <td>
-                        <span class="lowercase">Lowercase</span></td>
+                        <span class="lowercase">Lowercase text</span></td>
                     <td>
                         <code>.lowercase</code>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <span class="lsp">Spacing</span></td>
+                        <span class="lsp">Letterspacing</span></td>
                     <td>
                         <code>.lsp</code>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <mark>Highlighted</mark>
+                        <mark>Highlighted text</mark>
                     </td>
                     <td>
                         <code>&lt;mark&gt;</code>, <code>.mark</code>
@@ -145,7 +149,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <kbd>Ctrl+K</kbd>
+                        <kbd>Keyboard indication</kbd>
                     </td>
                     <td>
                         <code>&lt;kbd&gt;</code>, <code>.kbd</code>
@@ -183,7 +187,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <em>Emphasize</em>
+                        <em>Emphasized text</em>
                     </td>
                     <td>
                         <code>&lt;em&gt;</code>, <code>.em</code>
@@ -191,7 +195,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <s>Strike through</s>
+                        <s>Striked through text</s>
                     </td>
                     <td>
                         <code>&lt;s&gt;</code>, <code>.s</code>, <code>.strike</code>
@@ -199,20 +203,28 @@
                 </tr>
                 <tr>
                     <td>
-                        <small>Small</small>
+                        <small>Small text</small>
                     </td>
                     <td>
                         <code>&lt;small&gt;</code>, <code>.small</code>
                     </td>
                 </tr>
-                <tr>
+ <tr>
                     <td>
-                        <span class="smaller">Smaller</span>
+                        <span class="smaller">Smaller text</span>
                     </td>
                     <td>
                         <code>.smaller</code>
                     </td>
-                </tr>
+                </tr>    
+                <tr>
+                    <td>
+                        <span class="larger">Larger text</span>
+                    </td>
+                    <td>
+                        <code>.larger</code>
+                    </td>
+                </tr>                            
                 <tr>
                     <td>
                         <code>Code</code>
@@ -230,49 +242,62 @@
                     </td>
                 </tr>               
             </tbody></table></div>
+        </div>
 <h3 id="word-wrapping">Word wrapping <a class="anchor" href="#word-wrapping">#</a></h3>
 <div class="block br w-3 no-wrap mrr bg-neutral-5">No word wrap in small spaces</div>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>no-wrap<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-No word wrap in small spaces
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>no-wrap<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>No word wrap in small spaces<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 <div class="block br w-3 wrap-normal mrr bg-neutral-5">Normal word wrap in small spaces</div>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>wrap-normal<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-Normal word wrap in small spaces
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>wrap-normal<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Normal word wrap in small spaces<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 <div class="block br w-2 break-word mrr bg-neutral-5">Wrap and break word anywhere</div>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>break-word<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-Wrap and break word anywhere
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>break-word<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Wrap and break word anywhere<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 <div class="block br w-3 truncate mrr bg-neutral-5">
 Truncate instead of word wrap
 </div>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>truncate<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-Truncate instead of word wrap
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>truncate<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Truncate instead of word wrap<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 <h3 id="horizontal-ruler">Horizontal ruler <a class="anchor" href="#horizontal-ruler">#</a></h3>
 <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</p>
 <hr>
 <p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.</p>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>hr</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
+  One morning, when Gregor Samsa woke from troubled dreams, he found himself
+  transformed in his bed into a horrible vermin.
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>hr</span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
+  He lay on his armour-like back, and if he lifted his head a little he could
+  see his brown belly, slightly domed and divided by arches into stiff sections.
+  The bedding was hardly able to cover it and seemed ready to slide off any
+  moment.
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
-<p>Configure with:</p>
+<p>Configure the displayed symbols with:</p>
 <pre class="language-css"><code class="language-css"><span class="token selector">:root</span> <span class="token punctuation">{</span>
-    <span class="token property">--hr-content</span><span class="token punctuation">:</span> <span class="token string">"·\0000a0\0000a0\0000a0·\0000a0\0000a0\0000a0·"</span><span class="token punctuation">;</span>
+  <span class="token property">--hr-content</span><span class="token punctuation">:</span> <span class="token string">"·\0000a0\0000a0\0000a0\0000a0·\0000a0\0000a0\0000a0\0000a0·"</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
 <h3 id="paragraph">Paragraph <a class="anchor" href="#paragraph">#</a></h3>
 <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</p>
 <p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.</p>
 <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. <q>What’s happened to me?</q> he thought. It wasn’t a dream.</p>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q</span><span class="token punctuation">&gt;</span></span>What's happened to me?<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q</span><span class="token punctuation">&gt;</span></span> he thought. It wasn't a dream.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
+  One morning, when Gregor Samsa woke from troubled dreams, he found himself
+  transformed in his bed into a horrible vermin.
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
+  He lay on his armour-like back, and if he lifted his head a little he could
+  see his brown belly, slightly domed and divided by arches into stiff sections.
+  The bedding was hardly able to cover it and seemed ready to slide off any
+  moment.
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
+  His many legs, pitifully thin compared with the size of the rest of him, waved
+  about helplessly as he looked. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q</span><span class="token punctuation">&gt;</span></span>What's happened to me?<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q</span><span class="token punctuation">&gt;</span></span> he thought. It
+  wasn't a dream.
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 <h3 id="indented-paragraph">Indented Paragraph <a class="anchor" href="#indented-paragraph">#</a></h3>
 <div class="indent">
@@ -281,9 +306,21 @@ Truncate instead of word wrap
 <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. <q>What's happened to me?</q> he thought. It wasn't a dream.</p>
 </div>
 <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>indent<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q</span><span class="token punctuation">&gt;</span></span>What's happened to me?<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q</span><span class="token punctuation">&gt;</span></span> he thought. It wasn't a dream.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
+    One morning, when Gregor Samsa woke from troubled dreams, he found himself
+    transformed in his bed into a horrible vermin.
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
+    He lay on his armour-like back, and if he lifted his head a little he could
+    see his brown belly, slightly domed and divided by arches into stiff
+    sections. The bedding was hardly able to cover it and seemed ready to slide
+    off any moment.
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
+    His many legs, pitifully thin compared with the size of the rest of him,
+    waved about helplessly as he looked. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q</span><span class="token punctuation">&gt;</span></span>What's happened to me?<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q</span><span class="token punctuation">&gt;</span></span> he
+    thought. It wasn't a dream.
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 <h3 id="blockquote">Blockquote <a class="anchor" href="#blockquote">#</a></h3>
@@ -293,32 +330,33 @@ Truncate instead of word wrap
 <footer>Franz Kafka, <cite>The Metamorphosis</cite></footer>
 </blockquote>
 <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>blockquote</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>footer</span><span class="token punctuation">&gt;</span></span>Franz Kafka, <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cite</span><span class="token punctuation">&gt;</span></span>The Metamorphosis<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>cite</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>footer</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
+    One morning, when Gregor Samsa woke from troubled dreams, he found himself
+    transformed in his bed into a horrible vermin.
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
+    He lay on his armour-like back, and if he lifted his head a little he could
+    see his brown belly, slightly domed and divided by arches into stiff
+    sections.
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>footer</span><span class="token punctuation">&gt;</span></span>Franz Kafka, <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cite</span><span class="token punctuation">&gt;</span></span>The Metamorphosis<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>cite</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>footer</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>blockquote</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 <h3 id="writing-mode">Writing mode <a class="anchor" href="#writing-mode">#</a></h3>
 <div class="w-4 h-4 horizontal-tb br bg-neutral-5">
 He lay on his armour-like back
 </div>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>horizontal-tb<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-He lay on his armour-like back
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>horizontal-tb<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>He lay on his armour-like back<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 <div class="w-4 h-4 vertical-lr br bg-neutral-5">
 He lay on his armour-like back
 </div>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>vertical-lr<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-He lay on his armour-like back
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>vertical-lr<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>He lay on his armour-like back<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 <div class="w-4 h-4 vertical-rl br bg-neutral-5">
 He lay on his armour-like back
 </div>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>vertical-rl<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-He lay on his armour-like back
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>vertical-rl<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>He lay on his armour-like back<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 <h3 id="heading-sizes">Heading sizes <a class="anchor" href="#heading-sizes">#</a></h3>
 <div class="scroll-table" style="overflow-x:auto;"><table>
@@ -352,8 +390,14 @@ He lay on his armour-like back
                 </tr>
             </tbody></table></div>
 <h3 id="font-sizes">Font sizes <a class="anchor" href="#font-sizes">#</a></h3>
-<p>To increase or decrease font-size relatively from the current font-size, assign CSS class <code>.larger</code> or <code>.smaller</code>.<br>
-For absolute sizing of fonts use the below listed CSS classes.</p>
+<p>To increase or decrease font size relatively from the current font size, assign CSS class <code>.larger</code> or <code>.smaller</code>. For example:</p>
+<p>This is a paragraph with <span class="smaller">smaller</span> and <span class="larger">larger</span> text.</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
+  This is a paragraph with <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>smaller<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>smaller<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span> and
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>larger<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>larger<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span> text.
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>For absolute sizing of fonts use the below listed CSS classes.</p>
 <div class="scroll-table" style="overflow-x:auto;"><table>
 <tbody><tr><th class="right">Font size</th><th>CSS class</th></tr><tr>
                 </tr><tr>
@@ -483,8 +527,8 @@ For absolute sizing of fonts use the below listed CSS classes.</p>
                     familiar walls.</dd>
                     </dl>
 <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dl</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>timeline<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dt</span><span class="token punctuation">&gt;</span></span>Point in time<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dt</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dd</span><span class="token punctuation">&gt;</span></span>What happened?<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dd</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dt</span><span class="token punctuation">&gt;</span></span>Point in time<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dt</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dd</span><span class="token punctuation">&gt;</span></span>What happened?<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dd</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dl</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 <h2 id="tables">Tables <a class="anchor" href="#tables">#</a></h2>
