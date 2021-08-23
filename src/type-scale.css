@@ -3,8 +3,7 @@
     --base-font-size: 19px;
     --fs: 1rem;
     --fs-mono: .9rem;
-    --fs-d2: calc(.8rem);
-    --fs-d1: calc(.9rem);
+    --fs-d1: .9rem;
     --fs-1: calc(var(--fs) * var(--size-factor));
     --fs-2: calc(var(--fs) * var(--size-factor) * var(--size-factor));
     --fs-3: calc(var(--fs) * var(--size-factor) * var(--size-factor) * var(--size-factor));

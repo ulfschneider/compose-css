@@ -53,7 +53,6 @@ module.exports = {
 
 ### Basic elements
 
-<div class="bleed-right">
 <table class="underline-rows">
     <tr>
         <th>Element</th>
@@ -255,173 +254,113 @@ module.exports = {
                     </td>
                 </tr>               
             </table>
-        </div>
+        
 
-### Word wrapping
+### Font size
 
-<div class="block br w-3 no-wrap mrr bg-neutral-5">No word wrap in small spaces</div>
+To increase or decrease font size in relation to the current font size, assign CSS class <code>.larger</code> or <code>.smaller</code>. For example:
 
-```html
-<div class="no-wrap">No word wrap in small spaces</div>
-```
-
-<div class="block br w-3 wrap-normal mrr bg-neutral-5">Normal word wrap in small spaces</div>
-
-```html
-<div class="wrap-normal">Normal word wrap in small spaces</div>
-```
-
-<div class="block br w-2 break-word mrr bg-neutral-5">Wrap and break word anywhere</div>
-
-```html
-<div class="break-word">Wrap and break word anywhere</div>
-```
-
-<div class="block br w-3 truncate mrr bg-neutral-5">
-Truncate instead of word wrap
-</div>
-
-```html
-<div class="truncate">Truncate instead of word wrap</div>
-```
-
-### Horizontal ruler
-
-One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.
-
----
-
-He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.
+This is a paragraph with <span class="smaller">smaller</span> and <span class="larger">larger</span> text.
 
 ```html
 <p>
-  One morning, when Gregor Samsa woke from troubled dreams, he found himself
-  transformed in his bed into a horrible vermin.
-</p>
-<hr />
-<p>
-  He lay on his armour-like back, and if he lifted his head a little he could
-  see his brown belly, slightly domed and divided by arches into stiff sections.
-  The bedding was hardly able to cover it and seemed ready to slide off any
-  moment.
+  This is a paragraph with <span class="smaller">smaller</span> and
+  <span class="larger">larger</span> text.
 </p>
 ```
 
-Configure the displayed symbols with:
+Configure the amount of relative decrease and increase with:
 
 ```css
 :root {
-  --hr-content: "·\0000a0\0000a0\0000a0\0000a0·\0000a0\0000a0\0000a0\0000a0·";
+  --smaller: .9em;
+  --larger: calc(var(--size-factor) * 1em);
 }
 ```
 
-### Paragraph
-
-One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.
-
-He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.
-
-His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. <q>What's happened to me?</q> he thought. It wasn't a dream.
-
-```html
-<p>
-  One morning, when Gregor Samsa woke from troubled dreams, he found himself
-  transformed in his bed into a horrible vermin.
-</p>
-<p>
-  He lay on his armour-like back, and if he lifted his head a little he could
-  see his brown belly, slightly domed and divided by arches into stiff sections.
-  The bedding was hardly able to cover it and seemed ready to slide off any
-  moment.
-</p>
-<p>
-  His many legs, pitifully thin compared with the size of the rest of him, waved
-  about helplessly as he looked. <q>What's happened to me?</q> he thought. It
-  wasn't a dream.
-</p>
-```
-
-### Indented Paragraph
-
-<div class="indent">
-<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</p>
-<p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.</p>
-<p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. <q>What's happened to me?</q> he thought. It wasn't a dream.</p>
-</div>
-
-```html
-<div class="indent">
-  <p>
-    One morning, when Gregor Samsa woke from troubled dreams, he found himself
-    transformed in his bed into a horrible vermin.
-  </p>
-  <p>
-    He lay on his armour-like back, and if he lifted his head a little he could
-    see his brown belly, slightly domed and divided by arches into stiff
-    sections. The bedding was hardly able to cover it and seemed ready to slide
-    off any moment.
-  </p>
-  <p>
-    His many legs, pitifully thin compared with the size of the rest of him,
-    waved about helplessly as he looked. <q>What's happened to me?</q> he
-    thought. It wasn't a dream.
-  </p>
-</div>
-```
-
-### Blockquote
-
-<blockquote>
-<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</p>
-<p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
-<footer>Franz Kafka, <cite>The Metamorphosis</cite></footer>
-</blockquote>
-
-```html
-<blockquote>
-  <p>
-    One morning, when Gregor Samsa woke from troubled dreams, he found himself
-    transformed in his bed into a horrible vermin.
-  </p>
-  <p>
-    He lay on his armour-like back, and if he lifted his head a little he could
-    see his brown belly, slightly domed and divided by arches into stiff
-    sections.
-  </p>
-  <footer>Franz Kafka, <cite>The Metamorphosis</cite></footer>
-</blockquote>
-```
-
-### Writing mode
-
-<div class="w-4 h-4 horizontal-tb br bg-neutral-5">
-He lay on his armour-like back
-</div>
-
-```html
-<div class="horizontal-tb">He lay on his armour-like back</div>
-```
-
-<div class="w-4 h-4 vertical-lr br bg-neutral-5">
-He lay on his armour-like back
-</div>
-
-```html
-<div class="vertical-lr">He lay on his armour-like back</div>
-```
-
-<div class="w-4 h-4 vertical-rl br bg-neutral-5">
-He lay on his armour-like back
-</div>
-
-```html
-<div class="vertical-rl">He lay on his armour-like back</div>
-```
-
-### Heading sizes
+For absolute sizing of fonts use the below listed CSS classes.
 
 <table>
-<tr><th class="right">Heading size</th><th>CSS class</th><tr>
+<tr><th class="right">Font size</th><th>CSS class</th><tr>
+                <tr>
+                    <td class="fs-d1 baseline pdy-0 right lh pdy-0">Aa</td>
+                    <td class="baseline pdy-0 pdy-0">
+                        <code>&lt;small&gt;</code>, <code>.small</code>, <code>.fs-d1</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fs baseline pdy-0 lh right">Aa</td>
+                    <td class="baseline pdy-0">
+                        <code>.fs</code>, <code>.fs-default</code>
+                        <small>(1rem)</small>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fs-1 baseline pdy-0 lh right">Aa</td>
+                    <td class="baseline pdy-0"><code>&lt;large&gt;</code>, <code>.large</code>, <code>.fs-1</code></td>
+                </tr>
+                <tr>
+                    <td class="fs-2 baseline pdy-0 lh right">Aa</td>
+                    <td class="baseline pdy-0"><code>.fs-2</code></td>
+                </tr>
+                <tr>
+                    <td class="fs-3 baseline pdy-0 lh right">Aa</td>
+                    <td class="baseline pdy-0"><code>.fs-3</code></td>
+                </tr>
+                <tr>
+                    <td class="fs-4 baseline pdy-0 lh right">Aa</td>
+                    <td class="baseline pdy-0"><code>.fs-4</code></td>
+                </tr>
+                <tr>
+                    <td class="fs-5 baseline pdy-0 lh right">Aa</td>
+                    <td class="baseline pdy-0"><code>.fs-5</code></td>
+                </tr>
+                <tr>
+                    <td class="fs-6 baseline pdy-0 lh right">Aa</td>
+                    <td class="baseline pdy-0"><code>.fs-6</code></td>
+                </tr>
+                <tr>
+                    <td class="fs-7 baseline pdy-0 lh right">Aa</td>
+                    <td class="baseline pdy-0"><code>.fs-7</code></td>
+                </tr>
+                <tr>
+                    <td class="fs-8 baseline pdy-0 lh right">Aa</td>
+                    <td class="baseline pdy-0"><code>.fs-8</code></td>
+                </tr>
+                <tr>
+                    <td class="fs-9 baseline pdy-0 lh right">Aa</td>
+                    <td class="baseline pdy-0"><code>.fs-9</code></td>
+                </tr>
+                <tr>
+                    <td class="fs-10 baseline pdy-0 lh right">Aa</td>
+                    <td class="baseline pdy-0"><code>.fs-10</code></td>
+                </tr>
+            </table>
+
+Configure the font sizing steps with:
+
+```css
+:root {
+    --size-factor: 1.25; /*for increasing steps starting from --fs*/
+    --base-font-size: 19px; /*this is the normal font size represented by 1rem*/
+    --fs: 1rem;
+    --fs-mono: .9rem;    
+    --fs-d1: .9rem;
+    --small: var(--fs-d1);
+    --large: var(--fs-1);
+}
+```
+
+### Headings
+
+
+
+### Heading size
+
+Take the size and line height of headings and apply it to any element *without* making that element a heading.
+
+<table>
+<tr><th class="right">Heading size and line height</th><th>CSS class</th><tr>
                 <tr>
                     <td class="h1 baseline pdy-0 right">H1</td>
                     <td class="baseline pdy-0"><code>.h1</code></td>
@@ -440,8 +379,7 @@ He lay on his armour-like back
                 </tr>
                 <tr>
                     <td class="h5 baseline pdy-0 right">H5</td>
-                    <td class="baseline pdy-0 no-wrap"><code>.h5</code> <small>(1rem)</small>
-                    </td>
+                    <td class="baseline pdy-0 no-wrap"><code>.h5</code></td>
                 </tr>
                 <tr>
                     <td class="h6 baseline pdy-0 right">H6</td>
@@ -451,77 +389,6 @@ He lay on his armour-like back
                 </tr>
             </table>
 
-### Font sizes
-
-To increase or decrease font size relatively from the current font size, assign CSS class <code>.larger</code> or <code>.smaller</code>. For example:
-
-This is a paragraph with <span class="smaller">smaller</span> and <span class="larger">larger</span> text.
-
-```html
-<p>
-  This is a paragraph with <span class="smaller">smaller</span> and
-  <span class="larger">larger</span> text.
-</p>
-```
-
-For absolute sizing of fonts use the below listed CSS classes.
-
-<table>
-<tr><th class="right">Font size</th><th>CSS class</th><tr>
-                <tr>
-                    <td class="fs-d1 baseline pdy-0 right lh pdy-0">Aa</td>
-                    <td class="baseline pdy-0 pdy-0">
-                        <code>.small</code>, <code>.fs-d1</code>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="fs baseline pdy-0 lh right">Aa</td>
-                    <td class="baseline pdy-0">
-                        <code>.fs</code>, <code>.fs-default</code>
-                        <small>(1rem)</small>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="fs-1 baseline pdy-0 lh right">Aa</td>
-                    <td class="baseline pdy-0">.fs-1</td>
-                </tr>
-                <tr>
-                    <td class="fs-2 baseline pdy-0 lh right">Aa</td>
-                    <td class="baseline pdy-0">.fs-2</td>
-                </tr>
-                <tr>
-                    <td class="fs-3 baseline pdy-0 lh right">Aa</td>
-                    <td class="baseline pdy-0">.fs-3</td>
-                </tr>
-                <tr>
-                    <td class="fs-4 baseline pdy-0 lh right">Aa</td>
-                    <td class="baseline pdy-0">.fs-4</td>
-                </tr>
-                <tr>
-                    <td class="fs-5 baseline pdy-0 lh right">Aa</td>
-                    <td class="baseline pdy-0">.fs-5</td>
-                </tr>
-                <tr>
-                    <td class="fs-6 baseline pdy-0 lh right">Aa</td>
-                    <td class="baseline pdy-0">.fs-6</td>
-                </tr>
-                <tr>
-                    <td class="fs-7 baseline pdy-0 lh right">Aa</td>
-                    <td class="baseline pdy-0">.fs-7</td>
-                </tr>
-                <tr>
-                    <td class="fs-8 baseline pdy-0 lh right">Aa</td>
-                    <td class="baseline pdy-0">.fs-8</td>
-                </tr>
-                <tr>
-                    <td class="fs-9 baseline pdy-0 lh right">Aa</td>
-                    <td class="baseline pdy-0">.fs-9</td>
-                </tr>
-                <tr>
-                    <td class="fs-10 baseline pdy-0 lh right">Aa</td>
-                    <td class="baseline pdy-0">.fs-10</td>
-                </tr>
-            </table>
         
 ### Line height
 <table class="mxw-rg">
@@ -579,6 +446,167 @@ For absolute sizing of fonts use the below listed CSS classes.
             </table>
         
 ### Rhythm
+
+### Word wrapping
+
+<div class="block br w-3 no-wrap mrr bg-neutral-5">No word wrap in small spaces</div>
+
+```html
+<div class="no-wrap">No word wrap in small spaces</div>
+```
+
+<div class="block br w-3 wrap-normal mrr bg-neutral-5">Normal word wrap in small spaces</div>
+
+```html
+<div class="wrap-normal">Normal word wrap in small spaces</div>
+```
+
+<div class="block br w-2 break-word mrr bg-neutral-5">Wrap and break word anywhere</div>
+
+```html
+<div class="break-word">Wrap and break word anywhere</div>
+```
+
+<div class="block br w-3 truncate mrr bg-neutral-5">
+Truncate instead of word wrap
+</div>
+
+```html
+<div class="truncate">Truncate instead of word wrap</div>
+```
+
+### Writing mode
+
+<div class="w-4 h-4 horizontal-tb br bg-neutral-5">
+He lay on his armour-like back
+</div>
+
+```html
+<div class="horizontal-tb">He lay on his armour-like back</div>
+```
+
+<div class="w-4 h-4 vertical-lr br bg-neutral-5">
+He lay on his armour-like back
+</div>
+
+```html
+<div class="vertical-lr">He lay on his armour-like back</div>
+```
+
+<div class="w-4 h-4 vertical-rl br bg-neutral-5">
+He lay on his armour-like back
+</div>
+
+```html
+<div class="vertical-rl">He lay on his armour-like back</div>
+```
+
+### Paragraph
+
+One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.
+
+He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.
+
+His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. <q>What's happened to me?</q> he thought. It wasn't a dream.
+
+```html
+<p>
+  One morning, when Gregor Samsa woke from troubled dreams, he found himself
+  transformed in his bed into a horrible vermin.
+</p>
+<p>
+  He lay on his armour-like back, and if he lifted his head a little he could
+  see his brown belly, slightly domed and divided by arches into stiff sections.
+  The bedding was hardly able to cover it and seemed ready to slide off any
+  moment.
+</p>
+<p>
+  His many legs, pitifully thin compared with the size of the rest of him, waved
+  about helplessly as he looked. <q>What's happened to me?</q> he thought. It
+  wasn't a dream.
+</p>
+```
+
+### Indented Paragraph
+
+<div class="indent">
+<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</p>
+<p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.</p>
+<p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. <q>What's happened to me?</q> he thought. It wasn't a dream.</p>
+</div>
+
+```html
+<div class="indent">
+  <p>
+    One morning, when Gregor Samsa woke from troubled dreams, he found himself
+    transformed in his bed into a horrible vermin.
+  </p>
+  <p>
+    He lay on his armour-like back, and if he lifted his head a little he could
+    see his brown belly, slightly domed and divided by arches into stiff
+    sections. The bedding was hardly able to cover it and seemed ready to slide
+    off any moment.
+  </p>
+  <p>
+    His many legs, pitifully thin compared with the size of the rest of him,
+    waved about helplessly as he looked. <q>What's happened to me?</q> he
+    thought. It wasn't a dream.
+  </p>
+</div>
+```
+
+### Horizontal ruler
+
+One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.
+
+---
+
+He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.
+
+```html
+<p>
+  One morning, when Gregor Samsa woke from troubled dreams, he found himself
+  transformed in his bed into a horrible vermin.
+</p>
+<hr />
+<p>
+  He lay on his armour-like back, and if he lifted his head a little he could
+  see his brown belly, slightly domed and divided by arches into stiff sections.
+  The bedding was hardly able to cover it and seemed ready to slide off any
+  moment.
+</p>
+```
+
+Configure the displayed symbols with:
+
+```css
+:root {
+  --hr-content: "·\0000a0\0000a0\0000a0\0000a0·\0000a0\0000a0\0000a0\0000a0·";
+}
+```
+
+### Blockquote
+
+<blockquote>
+<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</p>
+<p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
+<footer>Franz Kafka, <cite>The Metamorphosis</cite></footer>
+</blockquote>
+
+```html
+<blockquote>
+  <p>
+    One morning, when Gregor Samsa woke from troubled dreams, he found himself
+    transformed in his bed into a horrible vermin.
+  </p>
+  <p>
+    He lay on his armour-like back, and if he lifted his head a little he could
+    see his brown belly, slightly domed and divided by arches into stiff
+    sections.
+  </p>
+  <footer>Franz Kafka, <cite>The Metamorphosis</cite></footer>
+</blockquote>
+```
 
 ## Lists
 

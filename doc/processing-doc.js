@@ -29,7 +29,7 @@ function getMarkdownLib() {
             permalinkBefore: false,
             permalinkSpace: true
         })
-        .use(markdownItTableOfContents, {containerClass: 'table-of-contents fluid-columns-4 bleed-right'})
+        .use(markdownItTableOfContents, { containerClass: 'table-of-contents fluid-columns-4 bleed-right' })
         .use(markdownItDefList)
         .use(markdownItFitMedia, {
             imgDir: './content'
@@ -47,7 +47,7 @@ function processingDoc(callback) {
     let source = fs.readFileSync(SOURCE, 'utf8');
     const mdlib = getMarkdownLib();
     let doc = mdlib.render(source).replace('{{compose-version}}', package.version);
-    let wrapper = `<main class="mxw-rg mrx-auto outline">${doc}</main>`;
+    let wrapper = `<main class="outline mxw-lg mrx-auto">${doc}</main>`;
 
     $ = cheerio.load(wrapper);
 
