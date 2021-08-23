@@ -32,6 +32,7 @@
 @import "img";
 @import "media";
 @import "columns";
+@import "columns-breakpoints";
 @import "table";
 @import "layout";
 @import "layout-breakpoints";
