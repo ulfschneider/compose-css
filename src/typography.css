@@ -463,9 +463,10 @@ blockquote {
     margin-left: 0;
     margin-right: 0;
     padding: 0;
+    padding-left: var(--horizontal-rhythm);
+    border-left: 1px solid var(--base-color);
     font-style: var(--blockquote-font-style);
     background: var(--blockquote-background);
-    font-size: larger;
 }
 
 .tag {

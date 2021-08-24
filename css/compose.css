@@ -17225,11 +17225,14 @@ blockquote {
     margin-left: 0;
     margin-right: 0;
     padding: 0;
+    padding-left: calc(1.7 * 1rem);
+    padding-left: var(--horizontal-rhythm);
+    border-left: 1px solid hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
+    border-left: 1px solid var(--base-color);
     font-style: italic;
     font-style: var(--blockquote-font-style);
     background: transparent;
     background: var(--blockquote-background);
-    font-size: larger;
 }
 
 .tag {
