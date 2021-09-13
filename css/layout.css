@@ -5,6 +5,8 @@
     --z-4: 4000;
     --bleed-width: var(--lg-breakpoint);
     --bleed-padding: var(--space);
+    --justify-split-items: start;
+    --align-split-items: end;
 }
 
 .inline {
@@ -128,6 +130,10 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: var(--horizontal-rhythm);
     row-gap: var(--mrb-figure);
+    align-items: end;
+    align-items: var(--align-split-items);
+    justify-items: start;
+    justify-items: var(--justify-split-items);
 }
 
 .split>* {

@@ -29,10 +29,10 @@
         flex-wrap: wrap-reverse;
     }
     .sm\:justify-start {
-        justify-content: flex-start;
+        justify-content: start;
     }
     .sm\:justify-end {
-        justify-content: flex-end;
+        justify-content: end;
     }
     .sm\:justify-center {
         justify-content: center;
@@ -47,10 +47,10 @@
         justify-content: space-evenly
     }
     .sm\:align-start {
-        align-items: flex-start;
+        align-items: start;
     }
     .sm\:align-end {
-        align-items: flex-end;
+        align-items: end;
     }
     .sm\:align-center {
         align-items: center;
@@ -181,10 +181,10 @@
         flex-wrap: wrap-reverse;
     }
     .rg\:justify-start {
-        justify-content: flex-start;
+        justify-content: start;
     }
     .rg\:justify-end {
-        justify-content: flex-end;
+        justify-content: end;
     }
     .rg\:justify-center {
         justify-content: center;
@@ -199,10 +199,10 @@
         justify-content: space-evenly
     }
     .rg\:align-start {
-        align-items: flex-start;
+        align-items: start;
     }
     .rg\:align-end {
-        align-items: flex-end;
+        align-items: end;
     }
     .rg\:align-center {
         align-items: center;
@@ -333,10 +333,10 @@
         flex-wrap: wrap-reverse;
     }
     .md\:justify-start {
-        justify-content: flex-start;
+        justify-content: start;
     }
     .md\:justify-end {
-        justify-content: flex-end;
+        justify-content: end;
     }
     .md\:justify-center {
         justify-content: center;
@@ -351,10 +351,10 @@
         justify-content: space-evenly
     }
     .md\:align-start {
-        align-items: flex-start;
+        align-items: start;
     }
     .md\:align-end {
-        align-items: flex-end;
+        align-items: end;
     }
     .md\:align-center {
         align-items: center;
@@ -485,10 +485,10 @@
         flex-wrap: wrap-reverse;
     }
     .lg\:justify-start {
-        justify-content: flex-start;
+        justify-content: start;
     }
     .lg\:justify-end {
-        justify-content: flex-end;
+        justify-content: end;
     }
     .lg\:justify-center {
         justify-content: center;
@@ -503,10 +503,10 @@
         justify-content: space-evenly
     }
     .lg\:align-start {
-        align-items: flex-start;
+        align-items: start;
     }
     .lg\:align-end {
-        align-items: flex-end;
+        align-items: end;
     }
     .lg\:align-center {
         align-items: center;

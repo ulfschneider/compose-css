@@ -20,6 +20,7 @@ const processingDocCSS = () => {
             postcssCalc(),
             postcssPurgeCSS({
                 content: [
+                    'resources/sotable-min.js',
                     'index-new.html',
                     'doc/prism.css',
                     'doc/customize.css'

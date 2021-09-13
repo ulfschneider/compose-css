@@ -29,7 +29,7 @@ function getMarkdownLib() {
             permalinkBefore: false,
             permalinkSpace: true
         })
-        .use(markdownItTableOfContents, { containerClass: 'table-of-contents fluid-columns-4 bleed-right' })
+        .use(markdownItTableOfContents, { containerClass: 'table-of-contents fluid-columns-5 bleed-right' })
         .use(markdownItDefList)
         .use(markdownItFitMedia, {
             imgDir: './content'
@@ -56,7 +56,11 @@ function processingDoc(callback) {
     $('<meta name="viewport" content="width=device-width, initial-scale=1">').appendTo('head');
     $('<title>Compose CSS</title>').appendTo('head');
 
-    $('<link rel="stylesheet" href="doc.css"/>').appendTo('head');
+    $('<link rel="stylesheet" href="/doc.css"/>').appendTo('head');
+    $(`<script src="/resources/sotable-min.js"></script>
+    <script>
+    addEventListener('load', () => sotable({whiteList: '.soso'})); //activate sotable functionalty on load
+    `).appendTo('head');
     $('body').addClass('pd');
 
     fs.writeFileSync(DEST, $.html(), 'utf8');

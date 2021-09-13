@@ -6,7 +6,9 @@
 
 [[toc]]
 
-## Install
+## Preparatory
+
+### Install Compose CSS
 
 Add the `compose-css` npm package to your `node` project. Install with:
 
@@ -18,36 +20,43 @@ Ideally, you run at least a `postcss-import` to load `compose-css` into your pro
 
 ```javascript
 module.exports = {
-  plugins: [
-    require("postcss-import"),
-    require("postcss-custom-media"),
-    require("postcss-custom-properties")({
-      preserve: false,
-    }),
-    require("postcss-calc"),
-    require("@fullhuman/postcss-purgecss")({
-      content: [
-        /*decide about the content to search for CSS classes to keep*/
-        /*...*/
-      ],
-      whitelistPatternsChildren: [/^token/, /^pre/, /^code/],
-      defaultExtractor: (content) =>
-        content.match(/[\w-/:]+(?<!:)/g) ||
-        [] /*check https://flaviocopes.com/tailwind-setup/ */,
-    }),
-    require("cssnano"),
-  ],
+    plugins: [
+        require("postcss-import"),
+        require("postcss-custom-media"),
+        require("postcss-custom-properties")({
+            preserve: false,
+        }),
+        require("postcss-calc"),
+        require("@fullhuman/postcss-purgecss")({
+            content: [
+                /*decide about the content to search for CSS classes to keep*/
+                /*...*/
+            ],
+            whitelistPatternsChildren: [/^token/, /^pre/, /^code/],
+            defaultExtractor: (content) =>
+                content.match(/[\w-/:]+(?<!:)/g) || [] /*check https://flaviocopes.com/tailwind-setup/ */ ,
+        }),
+        require("cssnano"),
+    ],
 };
 ```
 
-## Notation
+### Notation used in this document
 
-- In flowing text, a CSS class will be denoted with a starting period, for example: <code>.css</code>.
-- HTML tags in flowing text are denoted lowercase and with pointing brackets, for example: <code>&lt;strong></code>.
-- In formatted code, CSS classes and HTML tags are presented syntactically correct. For example:
-  ```html
-  <div class="no-wrap">No word wrap in small spaces</div>
-  ```
+* In flowing text, a CSS class will be denoted with a starting period, for example: <code>.css</code>.
+* HTML tags in flowing text are denoted lowercase and with pointing brackets, for example: <code>&lt;strong></code>.
+* In formatted code, CSS classes and HTML tags are presented syntactically correct. For example:
+    ```html
+    <div class="no-wrap">No word wrap in small spaces</div>
+    ```
+
+### Stepping through options
+
+* Many CSS classes of Compose CSS allow to step up and down through multiple options of *the same thing.* For example, `line-height` can be set with `.lh-d1`, `.lh`, `.lh-1`, `.lh-2`, … , `.lh-5`. 
+`.lh` stands for *1, the neutral value.* `.lh-d1` stands for *decrease one step down from the neutral value,* while `.lh-1` stands for *increase one step up from the neutral value,* `.lh-2` is *increase two steps up,* and so on. Please refer to [line-height](#line-height) for more details.
+It could also be how dark or how light the primary color is set, like `.primary-d5`, `.primary-d4`, `.primary-d3`, … , `.primary`, `.primary-1`, `.primary-2`, … `.primary-5`, where `.primary` is the neutral primary color tone and `-d1`, `-d2`, … is making it darker, while `-1`, `-2`, … is making it lighter. Please refer to [colors](#colors) for more details. 
+* A default value is often represented by a `-default` postfix added to the corresponding CSS class. For example, the default `line-height` that is used by Compose CSS defined by `.lh-3`, which can also be set by `.lh-default`.
+
 
 ## Typography
 
@@ -161,7 +170,7 @@ module.exports = {
                 </tr>
                 <tr>
                     <td>
-                        <kbd>Keyboard indication</kbd>
+                        <kbd>CTRL</kbd>+<kbd>K</kbd>
                     </td>
                     <td>
                         <code>&lt;kbd></code>, <code>.kbd</code>
@@ -254,6 +263,7 @@ module.exports = {
                     </td>
                 </tr>               
             </table>
+
         
 
 ### Font size
@@ -264,8 +274,8 @@ This is a paragraph with <span class="smaller">smaller</span> and <span class="l
 
 ```html
 <p>
-  This is a paragraph with <span class="smaller">smaller</span> and
-  <span class="larger">larger</span> text.
+    This is a paragraph with <span class="smaller">smaller</span> and
+    <span class="larger">larger</span> text.
 </p>
 ```
 
@@ -273,8 +283,8 @@ Configure the amount of relative decrease and increase with:
 
 ```css
 :root {
-  --smaller: .9em;
-  --larger: calc(var(--size-factor) * 1em);
+    --smaller: .9em;
+    --larger: calc(var(--size-factor) * 1em);
 }
 ```
 
@@ -341,10 +351,12 @@ Configure the font sizing steps with:
 
 ```css
 :root {
-    --size-factor: 1.25; /*for increasing steps starting from --fs*/
-    --base-font-size: 19px; /*this is the normal font size represented by 1rem*/
+    --size-factor: 1.25;
+    /*for increasing steps starting from --fs*/
+    --base-font-size: 19px;
+    /*this is the normal font size represented by 1rem*/
     --fs: 1rem;
-    --fs-mono: .9rem;    
+    --fs-mono: .9rem;
     --fs-d1: .9rem;
     --small: var(--fs-d1);
     --large: var(--fs-1);
@@ -352,8 +364,6 @@ Configure the font sizing steps with:
 ```
 
 ### Headings
-
-
 
 ### Heading size
 
@@ -390,7 +400,9 @@ Take the size and line height of headings and apply it to any element *without* 
             </table>
 
         
+
 ### Line height
+
 <table class="mxw-rg">
 <tr><th>Line height</th><th>CSS class</th><tr>
                 <tr>
@@ -425,7 +437,7 @@ Take the size and line height of headings and apply it to any element *without* 
                         dreams, he
                         found himself transformed in his bed into a horrible vermin.</td>
                     <td class="lh-3 baseline pdl pd-0">
-                        <code class="no-wrap">.lh-3</code>,
+                        <code class="no-wrap">.lh-3</code>, 
                         <code class="no-wrap">.lh-default</code>
                     </td>
                 </tr>
@@ -444,7 +456,9 @@ Take the size and line height of headings and apply it to any element *without* 
                     <td class="lh-5 baseline pdl pd-0"><code>.lh-5</code></td>
                 </tr>
             </table>
+
         
+
 ### Rhythm
 
 ### Word wrapping
@@ -511,19 +525,19 @@ His many legs, pitifully thin compared with the size of the rest of him, waved a
 
 ```html
 <p>
-  One morning, when Gregor Samsa woke from troubled dreams, he found himself
-  transformed in his bed into a horrible vermin.
+    One morning, when Gregor Samsa woke from troubled dreams, he found himself
+    transformed in his bed into a horrible vermin.
 </p>
 <p>
-  He lay on his armour-like back, and if he lifted his head a little he could
-  see his brown belly, slightly domed and divided by arches into stiff sections.
-  The bedding was hardly able to cover it and seemed ready to slide off any
-  moment.
+    He lay on his armour-like back, and if he lifted his head a little he could
+    see his brown belly, slightly domed and divided by arches into stiff sections.
+    The bedding was hardly able to cover it and seemed ready to slide off any
+    moment.
 </p>
 <p>
-  His many legs, pitifully thin compared with the size of the rest of him, waved
-  about helplessly as he looked. <q>What's happened to me?</q> he thought. It
-  wasn't a dream.
+    His many legs, pitifully thin compared with the size of the rest of him, waved
+    about helplessly as he looked. <q>What's happened to me?</q> he thought. It
+    wasn't a dream.
 </p>
 ```
 
@@ -537,21 +551,21 @@ His many legs, pitifully thin compared with the size of the rest of him, waved a
 
 ```html
 <div class="indent">
-  <p>
-    One morning, when Gregor Samsa woke from troubled dreams, he found himself
-    transformed in his bed into a horrible vermin.
-  </p>
-  <p>
-    He lay on his armour-like back, and if he lifted his head a little he could
-    see his brown belly, slightly domed and divided by arches into stiff
-    sections. The bedding was hardly able to cover it and seemed ready to slide
-    off any moment.
-  </p>
-  <p>
-    His many legs, pitifully thin compared with the size of the rest of him,
-    waved about helplessly as he looked. <q>What's happened to me?</q> he
-    thought. It wasn't a dream.
-  </p>
+    <p>
+        One morning, when Gregor Samsa woke from troubled dreams, he found himself
+        transformed in his bed into a horrible vermin.
+    </p>
+    <p>
+        He lay on his armour-like back, and if he lifted his head a little he could
+        see his brown belly, slightly domed and divided by arches into stiff
+        sections. The bedding was hardly able to cover it and seemed ready to slide
+        off any moment.
+    </p>
+    <p>
+        His many legs, pitifully thin compared with the size of the rest of him,
+        waved about helplessly as he looked. <q>What's happened to me?</q> he
+        thought. It wasn't a dream.
+    </p>
 </div>
 ```
 
@@ -565,15 +579,15 @@ He lay on his armour-like back, and if he lifted his head a little he could see 
 
 ```html
 <p>
-  One morning, when Gregor Samsa woke from troubled dreams, he found himself
-  transformed in his bed into a horrible vermin.
+    One morning, when Gregor Samsa woke from troubled dreams, he found himself
+    transformed in his bed into a horrible vermin.
 </p>
 <hr />
 <p>
-  He lay on his armour-like back, and if he lifted his head a little he could
-  see his brown belly, slightly domed and divided by arches into stiff sections.
-  The bedding was hardly able to cover it and seemed ready to slide off any
-  moment.
+    He lay on his armour-like back, and if he lifted his head a little he could
+    see his brown belly, slightly domed and divided by arches into stiff sections.
+    The bedding was hardly able to cover it and seemed ready to slide off any
+    moment.
 </p>
 ```
 
@@ -581,7 +595,7 @@ Configure the displayed symbols with:
 
 ```css
 :root {
-  --hr-content: "·\0000a0\0000a0\0000a0\0000a0·\0000a0\0000a0\0000a0\0000a0·";
+    --hr-content: "·\0000a0\0000a0\0000a0\0000a0·\0000a0\0000a0\0000a0\0000a0·";
 }
 ```
 
@@ -595,16 +609,16 @@ Configure the displayed symbols with:
 
 ```html
 <blockquote>
-  <p>
-    One morning, when Gregor Samsa woke from troubled dreams, he found himself
-    transformed in his bed into a horrible vermin.
-  </p>
-  <p>
-    He lay on his armour-like back, and if he lifted his head a little he could
-    see his brown belly, slightly domed and divided by arches into stiff
-    sections.
-  </p>
-  <footer>Franz Kafka, <cite>The Metamorphosis</cite></footer>
+    <p>
+        One morning, when Gregor Samsa woke from troubled dreams, he found himself
+        transformed in his bed into a horrible vermin.
+    </p>
+    <p>
+        He lay on his armour-like back, and if he lifted his head a little he could
+        see his brown belly, slightly domed and divided by arches into stiff
+        sections.
+    </p>
+    <footer>Franz Kafka, <cite>The Metamorphosis</cite></footer>
 </blockquote>
 ```
 
@@ -614,24 +628,36 @@ Configure the displayed symbols with:
 
 <dl class="timeline">
 <dt>One morning</dt>
-<dd>when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</dd>
-                        <dt>He lay on his armour-like back</dt>
-                        <dd>and if he lifted his head a little he could see his brown belly,
-                    slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover
-                    it and seemed ready to slide off any moment.</dd>
-                        <dt>His many legs</dt>
-                        <dd>pitifully thin compared with the size of the rest of him, waved about helplessly
-                    as he looked. <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.
-                </dd>
-                        <dt>His room</dt>
-                        <dd>a proper human room although a little too small, lay peacefully between its four
-                    familiar walls.</dd>
-                    </dl>
+<dd>when Gregor Samsa woke from troubled dreams, he found himself 
+transformed in his bed into a horrible vermin.</dd>
+<dt>He lay on his armour-like back</dt>
+<dd>and if he lifted his head a little he could see his brown belly,
+slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover
+it and seemed ready to slide off any moment.</dd>
+<dt>His many legs</dt>
+<dd>pitifully thin compared with the size of the rest of him, waved about helplessly
+as he looked. <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.
+</dd>
+<dt>His room</dt>
+<dd>a proper human room although a little too small, lay peacefully between its four
+familiar walls.</dd>
+</dl>
 
 ```html
 <dl class="timeline">
-  <dt>Point in time</dt>
-  <dd>What happened?</dd>
+    <dt>One morning</dt>
+    <dd>when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</dd>
+    <dt>He lay on his armour-like back</dt>
+    <dd>and if he lifted his head a little he could see his brown belly,
+        slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover
+        it and seemed ready to slide off any moment.</dd>
+    <dt>His many legs</dt>
+    <dd>pitifully thin compared with the size of the rest of him, waved about helplessly
+        as he looked. <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.
+    </dd>
+    <dt>His room</dt>
+    <dd>a proper human room although a little too small, lay peacefully between its four
+        familiar walls.</dd>
 </dl>
 ```
 

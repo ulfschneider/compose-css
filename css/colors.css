@@ -1,6 +1,8 @@
 :root {
     --color-dn-spread: 7;
+    /*smaller dn-spread number makes darker colors*/
     --color-up-spread: 6;
+    /*smaller up-spread number makes lighter colors*/
     --neutral-h: 0;
     --neutral-s: 0%;
     --neutral-l: 53%;
@@ -146,9 +148,9 @@
     --timeline-blub-background: var(--base-background);
     --text-decoration-color: unset;
     --code-background: var(--neutral-5);
-    --code-color: unset;
+    --code-color: var(--base-color);
     --pre-background: var(--code-background);
-    --pre-color: unset;
+    --pre-color: var(--code-color);
     --blockquote-background: transparent;
     --table-alternate-row-background: var(--neutral-5);
     --table-alternate-col-background: var(--neutral-5);
