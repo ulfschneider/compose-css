@@ -1516,7 +1516,7 @@ small,
     --link-focus-color: inherit;
     --link-hover-color: var(--primary);
     --link-active-color: var(--link-hover-color);
-    --selection-background: var(--accent-three-4);
+    --selection-background: var(--primary-4);
     --selection-color: var(--base-color);
     --heading-color: var(--base-color);
     --meta-color: var(--neutral-d1);
@@ -1557,7 +1557,7 @@ small,
 ::selection {
     color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
     color: var(--selection-color);
-    background: hsl(347.8, 68.4%, calc(49.6% + 4 * calc((100% - 49.6%) / 6)));
+    background: hsl(198, 100%, calc(33.3% + 4 * calc((100% - 33.3%) / 6)));
     background: var(--selection-background);
 }
 
