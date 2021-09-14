@@ -19806,7 +19806,7 @@ svg {
     --table-font-size: var(--fs);
     --mrt-table: var(--mrt-figure);
     --mrb-table: var(--mrb-figure);
-    --td-x-padding: var(--space-d2);
+    --td-x-padding: var(--space-d1);
     --td-y-padding: var(--space-d1);
 }
 
@@ -19895,7 +19895,7 @@ table caption {
 
 th,
 td {
-    padding: calc(1rem / 1.7) calc(calc(1rem / 1.7) / 1.7);
+    padding: calc(1rem / 1.7) calc(1rem / 1.7);
     padding: var(--td-y-padding) var(--td-x-padding);
 }
 
