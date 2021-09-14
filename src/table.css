@@ -5,7 +5,7 @@
     --table-font-size: var(--fs);
     --mrt-table: var(--mrt-figure);
     --mrb-table: var(--mrb-figure);
-    --td-x-padding: var(--space);
+    --td-x-padding: var(--space-d2);
     --td-y-padding: var(--space-d1);
 }
 
@@ -80,22 +80,6 @@ table caption {
 th,
 td {
     padding: var(--td-y-padding) var(--td-x-padding);
-}
-
-th:first-child,
-td:first-child,
-th+td {
-    padding-left: 0;
-}
-
-*+td,
-*+th {
-    padding-left: var(--td-x-padding);
-}
-
-th:last-child,
-td:last-child {
-    padding-right: 0;
 }
 
 caption {

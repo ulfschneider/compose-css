@@ -6,24 +6,24 @@
     --neutral-h: 0;
     --neutral-s: 0%;
     --neutral-l: 53%;
-    --primary-h: 200;
-    --primary-s: 55.6%;
-    --primary-l: 53%;
-    --accent-one-h: 3.1;
-    --accent-one-s: 53.7%;
-    --accent-one-l: 53%;
-    --accent-two-h: 143;
-    --accent-two-s: 56.6%;
-    --accent-two-l: 53%;
-    --accent-three-h: 55;
-    --accent-three-s: 62.8%;
-    --accent-three-l: 53%;
-    --accent-four-h: 175.2;
-    --accent-four-s: 62.5%;
-    --accent-four-l: 52.94%;
-    --accent-five-h: 295.2;
-    --accent-five-s: 62.5%;
-    --accent-five-l: 52.94%;
+    --primary-h: 198;
+    --primary-s: 100%;
+    --primary-l: 33.3%;
+    --accent-one-h: 80;
+    --accent-one-s: 100%;
+    --accent-one-l: 30%;
+    --accent-two-h: 326.7;
+    --accent-two-s: 100%;
+    --accent-two-l: 30%;
+    --accent-three-h: 347.8;
+    --accent-three-s: 68.4%;
+    --accent-three-l: 49.6%;
+    --accent-four-h: 38.6;
+    --accent-four-s: 100%;
+    --accent-four-l: 46.7%;
+    --accent-five-h: 32.5;
+    --accent-five-s: 45.3%;
+    --accent-five-l: 41.6%;
     --neutral-up-step: calc((100% - var(--neutral-l)) / var(--color-up-spread));
     --neutral-dn-step: calc(var(--neutral-l) / var(--color-dn-spread));
     --neutral-d5: hsl(var(--neutral-h), var(--neutral-s), calc(var(--neutral-l) - 5 * var(--neutral-dn-step)));
@@ -164,7 +164,7 @@
 ::selection {
     color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
     color: var(--selection-color);
-    background: hsl(55, 62.8%, calc(53% + 4 * calc((100% - 53%) / 6)));
+    background: hsl(347.8, 68.4%, calc(49.6% + 4 * calc((100% - 49.6%) / 6)));
     background: var(--selection-background);
 }
 
@@ -257,12 +257,12 @@
 }
 
 .link-hover-color {
-    color: hsl(200, 55.6%, 53%);
+    color: hsl(198, 100%, 33.3%);
     color: var(--link-hover-color);
 }
 
 .link-active-color {
-    color: hsl(200, 55.6%, 53%);
+    color: hsl(198, 100%, 33.3%);
     color: var(--link-active-color);
 }
 
@@ -296,12 +296,12 @@
 }
 
 .bg-link-hover-color {
-    background: hsl(200, 55.6%, 53%);
+    background: hsl(198, 100%, 33.3%);
     background: var(--link-hover-color);
 }
 
 .bg-link-active-color {
-    background: hsl(200, 55.6%, 53%);
+    background: hsl(198, 100%, 33.3%);
     background: var(--link-active-color);
 }
 
@@ -420,12 +420,12 @@
 }
 
 .bg-link-hover-color {
-    background-color: hsl(200, 55.6%, 53%);
+    background-color: hsl(198, 100%, 33.3%);
     background-color: var(--link-hover-color);
 }
 
 .bg-link-active-color {
-    background-color: hsl(200, 55.6%, 53%);
+    background-color: hsl(198, 100%, 33.3%);
     background-color: var(--link-active-color);
 }
 
@@ -530,12 +530,12 @@
 }
 
 .br-link-hover-color {
-    border-color: hsl(200, 55.6%, 53%);
+    border-color: hsl(198, 100%, 33.3%);
     border-color: var(--link-hover-color);
 }
 
 .br-link-active-color {
-    border-color: hsl(200, 55.6%, 53%);
+    border-color: hsl(198, 100%, 33.3%);
     border-color: var(--link-active-color);
 }
 
@@ -550,995 +550,995 @@
 }
 
 .primary-d5 {
-    color: hsl(200, 55.6%, calc(53% - 5 * calc(53% / 7)));
+    color: hsl(198, 100%, calc(33.3% - 5 * calc(33.3% / 7)));
     color: var(--primary-d5);
 }
 
 .primary-d4 {
-    color: hsl(200, 55.6%, calc(53% - 4 * calc(53% / 7)));
+    color: hsl(198, 100%, calc(33.3% - 4 * calc(33.3% / 7)));
     color: var(--primary-d4);
 }
 
 .primary-d3 {
-    color: hsl(200, 55.6%, calc(53% - 3 * calc(53% / 7)));
+    color: hsl(198, 100%, calc(33.3% - 3 * calc(33.3% / 7)));
     color: var(--primary-d3);
 }
 
 .primary-d2 {
-    color: hsl(200, 55.6%, calc(53% - 2 * calc(53% / 7)));
+    color: hsl(198, 100%, calc(33.3% - 2 * calc(33.3% / 7)));
     color: var(--primary-d2);
 }
 
 .primary-d1 {
-    color: hsl(200, 55.6%, calc(53% - calc(53% / 7)));
+    color: hsl(198, 100%, calc(33.3% - calc(33.3% / 7)));
     color: var(--primary-d1);
 }
 
 .primary {
-    color: hsl(200, 55.6%, 53%);
+    color: hsl(198, 100%, 33.3%);
     color: var(--primary);
 }
 
 .primary-1 {
-    color: hsl(200, 55.6%, calc(53% + calc((100% - 53%) / 6)));
+    color: hsl(198, 100%, calc(33.3% + calc((100% - 33.3%) / 6)));
     color: var(--primary-1);
 }
 
 .primary-2 {
-    color: hsl(200, 55.6%, calc(53% + 2 * calc((100% - 53%) / 6)));
+    color: hsl(198, 100%, calc(33.3% + 2 * calc((100% - 33.3%) / 6)));
     color: var(--primary-2);
 }
 
 .primary-3 {
-    color: hsl(200, 55.6%, calc(53% + 3 * calc((100% - 53%) / 6)));
+    color: hsl(198, 100%, calc(33.3% + 3 * calc((100% - 33.3%) / 6)));
     color: var(--primary-3);
 }
 
 .primary-4 {
-    color: hsl(200, 55.6%, calc(53% + 4 * calc((100% - 53%) / 6)));
+    color: hsl(198, 100%, calc(33.3% + 4 * calc((100% - 33.3%) / 6)));
     color: var(--primary-4);
 }
 
 .primary-5 {
-    color: hsl(200, 55.6%, calc(53% + 5 * calc((100% - 53%) / 6)));
+    color: hsl(198, 100%, calc(33.3% + 5 * calc((100% - 33.3%) / 6)));
     color: var(--primary-5);
 }
 
 .accent-one-d5 {
-    color: hsl(3.1, 53.7%, calc(53% - 5 * calc(53% / 7)));
+    color: hsl(80, 100%, calc(30% - 5 * calc(30% / 7)));
     color: var(--accent-one-d5);
 }
 
 .accent-one-d4 {
-    color: hsl(3.1, 53.7%, calc(53% - 4 * calc(53% / 7)));
+    color: hsl(80, 100%, calc(30% - 4 * calc(30% / 7)));
     color: var(--accent-one-d4);
 }
 
 .accent-one-d3 {
-    color: hsl(3.1, 53.7%, calc(53% - 3 * calc(53% / 7)));
+    color: hsl(80, 100%, calc(30% - 3 * calc(30% / 7)));
     color: var(--accent-one-d3);
 }
 
 .accent-one-d2 {
-    color: hsl(3.1, 53.7%, calc(53% - 2 * calc(53% / 7)));
+    color: hsl(80, 100%, calc(30% - 2 * calc(30% / 7)));
     color: var(--accent-one-d2);
 }
 
 .accent-one-d1 {
-    color: hsl(3.1, 53.7%, calc(53% - calc(53% / 7)));
+    color: hsl(80, 100%, calc(30% - calc(30% / 7)));
     color: var(--accent-one-d1);
 }
 
 .accent-one {
-    color: hsl(3.1, 53.7%, 53%);
+    color: hsl(80, 100%, 30%);
     color: var(--accent-one);
 }
 
 .accent-one-1 {
-    color: hsl(3.1, 53.7%, calc(53% + calc((100% - 53%) / 6)));
+    color: hsl(80, 100%, calc(30% + calc((100% - 30%) / 6)));
     color: var(--accent-one-1);
 }
 
 .accent-one-2 {
-    color: hsl(3.1, 53.7%, calc(53% + 2 * calc((100% - 53%) / 6)));
+    color: hsl(80, 100%, calc(30% + 2 * calc((100% - 30%) / 6)));
     color: var(--accent-one-2);
 }
 
 .accent-one-3 {
-    color: hsl(3.1, 53.7%, calc(53% + 3 * calc((100% - 53%) / 6)));
+    color: hsl(80, 100%, calc(30% + 3 * calc((100% - 30%) / 6)));
     color: var(--accent-one-3);
 }
 
 .accent-one-4 {
-    color: hsl(3.1, 53.7%, calc(53% + 4 * calc((100% - 53%) / 6)));
+    color: hsl(80, 100%, calc(30% + 4 * calc((100% - 30%) / 6)));
     color: var(--accent-one-4);
 }
 
 .accent-one-5 {
-    color: hsl(3.1, 53.7%, calc(53% + 5 * calc((100% - 53%) / 6)));
+    color: hsl(80, 100%, calc(30% + 5 * calc((100% - 30%) / 6)));
     color: var(--accent-one-5);
 }
 
 .accent-two-d5 {
-    color: hsl(143, 56.6%, calc(53% - 5 * calc(53% / 7)));
+    color: hsl(326.7, 100%, calc(30% - 5 * calc(30% / 7)));
     color: var(--accent-two-d5);
 }
 
 .accent-two-d4 {
-    color: hsl(143, 56.6%, calc(53% - 4 * calc(53% / 7)));
+    color: hsl(326.7, 100%, calc(30% - 4 * calc(30% / 7)));
     color: var(--accent-two-d4);
 }
 
 .accent-two-d3 {
-    color: hsl(143, 56.6%, calc(53% - 3 * calc(53% / 7)));
+    color: hsl(326.7, 100%, calc(30% - 3 * calc(30% / 7)));
     color: var(--accent-two-d3);
 }
 
 .accent-two-d2 {
-    color: hsl(143, 56.6%, calc(53% - 2 * calc(53% / 7)));
+    color: hsl(326.7, 100%, calc(30% - 2 * calc(30% / 7)));
     color: var(--accent-two-d2);
 }
 
 .accent-two-d1 {
-    color: hsl(143, 56.6%, calc(53% - calc(53% / 7)));
+    color: hsl(326.7, 100%, calc(30% - calc(30% / 7)));
     color: var(--accent-two-d1);
 }
 
 .accent-two {
-    color: hsl(143, 56.6%, 53%);
+    color: hsl(326.7, 100%, 30%);
     color: var(--accent-two);
 }
 
 .accent-two-1 {
-    color: hsl(143, 56.6%, calc(53% + calc((100% - 53%) / 6)));
+    color: hsl(326.7, 100%, calc(30% + calc((100% - 30%) / 6)));
     color: var(--accent-two-1);
 }
 
 .accent-two-2 {
-    color: hsl(143, 56.6%, calc(53% + 2 * calc((100% - 53%) / 6)));
+    color: hsl(326.7, 100%, calc(30% + 2 * calc((100% - 30%) / 6)));
     color: var(--accent-two-2);
 }
 
 .accent-two-3 {
-    color: hsl(143, 56.6%, calc(53% + 3 * calc((100% - 53%) / 6)));
+    color: hsl(326.7, 100%, calc(30% + 3 * calc((100% - 30%) / 6)));
     color: var(--accent-two-3);
 }
 
 .accent-two-4 {
-    color: hsl(143, 56.6%, calc(53% + 4 * calc((100% - 53%) / 6)));
+    color: hsl(326.7, 100%, calc(30% + 4 * calc((100% - 30%) / 6)));
     color: var(--accent-two-4);
 }
 
 .accent-two-5 {
-    color: hsl(143, 56.6%, calc(53% + 5 * calc((100% - 53%) / 6)));
+    color: hsl(326.7, 100%, calc(30% + 5 * calc((100% - 30%) / 6)));
     color: var(--accent-two-5);
 }
 
 .accent-three-d5 {
-    color: hsl(55, 62.8%, calc(53% - 5 * calc(53% / 7)));
+    color: hsl(347.8, 68.4%, calc(49.6% - 5 * calc(49.6% / 7)));
     color: var(--accent-three-d5);
 }
 
 .accent-three-d4 {
-    color: hsl(55, 62.8%, calc(53% - 4 * calc(53% / 7)));
+    color: hsl(347.8, 68.4%, calc(49.6% - 4 * calc(49.6% / 7)));
     color: var(--accent-three-d4);
 }
 
 .accent-three-d3 {
-    color: hsl(55, 62.8%, calc(53% - 3 * calc(53% / 7)));
+    color: hsl(347.8, 68.4%, calc(49.6% - 3 * calc(49.6% / 7)));
     color: var(--accent-three-d3);
 }
 
 .accent-three-d2 {
-    color: hsl(55, 62.8%, calc(53% - 2 * calc(53% / 7)));
+    color: hsl(347.8, 68.4%, calc(49.6% - 2 * calc(49.6% / 7)));
     color: var(--accent-three-d2);
 }
 
 .accent-three-d1 {
-    color: hsl(55, 62.8%, calc(53% - calc(53% / 7)));
+    color: hsl(347.8, 68.4%, calc(49.6% - calc(49.6% / 7)));
     color: var(--accent-three-d1);
 }
 
 .accent-three {
-    color: hsl(55, 62.8%, 53%);
+    color: hsl(347.8, 68.4%, 49.6%);
     color: var(--accent-three);
 }
 
 .accent-three-1 {
-    color: hsl(55, 62.8%, calc(53% + calc((100% - 53%) / 6)));
+    color: hsl(347.8, 68.4%, calc(49.6% + calc((100% - 49.6%) / 6)));
     color: var(--accent-three-1);
 }
 
 .accent-three-2 {
-    color: hsl(55, 62.8%, calc(53% + 2 * calc((100% - 53%) / 6)));
+    color: hsl(347.8, 68.4%, calc(49.6% + 2 * calc((100% - 49.6%) / 6)));
     color: var(--accent-three-2);
 }
 
 .accent-three-3 {
-    color: hsl(55, 62.8%, calc(53% + 3 * calc((100% - 53%) / 6)));
+    color: hsl(347.8, 68.4%, calc(49.6% + 3 * calc((100% - 49.6%) / 6)));
     color: var(--accent-three-3);
 }
 
 .accent-three-4 {
-    color: hsl(55, 62.8%, calc(53% + 4 * calc((100% - 53%) / 6)));
+    color: hsl(347.8, 68.4%, calc(49.6% + 4 * calc((100% - 49.6%) / 6)));
     color: var(--accent-three-4);
 }
 
 .accent-three-5 {
-    color: hsl(55, 62.8%, calc(53% + 5 * calc((100% - 53%) / 6)));
+    color: hsl(347.8, 68.4%, calc(49.6% + 5 * calc((100% - 49.6%) / 6)));
     color: var(--accent-three-5);
 }
 
 .accent-four-d5 {
-    color: hsl(175.2, 62.5%, calc(52.94% - 5 * calc(52.94% / 7)));
+    color: hsl(38.6, 100%, calc(46.7% - 5 * calc(46.7% / 7)));
     color: var(--accent-four-d5);
 }
 
 .accent-four-d4 {
-    color: hsl(175.2, 62.5%, calc(52.94% - 4 * calc(52.94% / 7)));
+    color: hsl(38.6, 100%, calc(46.7% - 4 * calc(46.7% / 7)));
     color: var(--accent-four-d4);
 }
 
 .accent-four-d3 {
-    color: hsl(175.2, 62.5%, calc(52.94% - 3 * calc(52.94% / 7)));
+    color: hsl(38.6, 100%, calc(46.7% - 3 * calc(46.7% / 7)));
     color: var(--accent-four-d3);
 }
 
 .accent-four-d2 {
-    color: hsl(175.2, 62.5%, calc(52.94% - 2 * calc(52.94% / 7)));
+    color: hsl(38.6, 100%, calc(46.7% - 2 * calc(46.7% / 7)));
     color: var(--accent-four-d2);
 }
 
 .accent-four-d1 {
-    color: hsl(175.2, 62.5%, calc(52.94% - calc(52.94% / 7)));
+    color: hsl(38.6, 100%, calc(46.7% - calc(46.7% / 7)));
     color: var(--accent-four-d1);
 }
 
 .accent-four {
-    color: hsl(175.2, 62.5%, 52.94%);
+    color: hsl(38.6, 100%, 46.7%);
     color: var(--accent-four);
 }
 
 .accent-four-1 {
-    color: hsl(175.2, 62.5%, calc(52.94% + calc((100% - 52.94%) / 6)));
+    color: hsl(38.6, 100%, calc(46.7% + calc((100% - 46.7%) / 6)));
     color: var(--accent-four-1);
 }
 
 .accent-four-2 {
-    color: hsl(175.2, 62.5%, calc(52.94% + 2 * calc((100% - 52.94%) / 6)));
+    color: hsl(38.6, 100%, calc(46.7% + 2 * calc((100% - 46.7%) / 6)));
     color: var(--accent-four-2);
 }
 
 .accent-four-3 {
-    color: hsl(175.2, 62.5%, calc(52.94% + 3 * calc((100% - 52.94%) / 6)));
+    color: hsl(38.6, 100%, calc(46.7% + 3 * calc((100% - 46.7%) / 6)));
     color: var(--accent-four-3);
 }
 
 .accent-four-4 {
-    color: hsl(175.2, 62.5%, calc(52.94% + 4 * calc((100% - 52.94%) / 6)));
+    color: hsl(38.6, 100%, calc(46.7% + 4 * calc((100% - 46.7%) / 6)));
     color: var(--accent-four-4);
 }
 
 .accent-four-5 {
-    color: hsl(175.2, 62.5%, calc(53% + 5 * calc((100% - 53%) / 6)));
+    color: hsl(38.6, 100%, calc(49.6% + 5 * calc((100% - 49.6%) / 6)));
     color: var(--accent-four-5);
 }
 
 .accent-five-d5 {
-    color: hsl(295.2, 62.5%, calc(52.94% - 5 * calc(52.94% / 7)));
+    color: hsl(32.5, 45.3%, calc(41.6% - 5 * calc(41.6% / 7)));
     color: var(--accent-five-d5);
 }
 
 .accent-five-d4 {
-    color: hsl(295.2, 62.5%, calc(52.94% - 4 * calc(52.94% / 7)));
+    color: hsl(32.5, 45.3%, calc(41.6% - 4 * calc(41.6% / 7)));
     color: var(--accent-five-d4);
 }
 
 .accent-five-d3 {
-    color: hsl(295.2, 62.5%, calc(52.94% - 3 * calc(52.94% / 7)));
+    color: hsl(32.5, 45.3%, calc(41.6% - 3 * calc(41.6% / 7)));
     color: var(--accent-five-d3);
 }
 
 .accent-five-d2 {
-    color: hsl(295.2, 62.5%, calc(52.94% - 2 * calc(52.94% / 7)));
+    color: hsl(32.5, 45.3%, calc(41.6% - 2 * calc(41.6% / 7)));
     color: var(--accent-five-d2);
 }
 
 .accent-five-d1 {
-    color: hsl(295.2, 62.5%, calc(52.94% - calc(52.94% / 7)));
+    color: hsl(32.5, 45.3%, calc(41.6% - calc(41.6% / 7)));
     color: var(--accent-five-d1);
 }
 
 .accent-five {
-    color: hsl(295.2, 62.5%, 52.94%);
+    color: hsl(32.5, 45.3%, 41.6%);
     color: var(--accent-five);
 }
 
 .accent-five-1 {
-    color: hsl(295.2, 62.5%, calc(52.94% + calc((100% - 52.94%) / 6)));
+    color: hsl(32.5, 45.3%, calc(41.6% + calc((100% - 41.6%) / 6)));
     color: var(--accent-five-1);
 }
 
 .accent-five-2 {
-    color: hsl(295.2, 62.5%, calc(52.94% + 2 * calc((100% - 52.94%) / 6)));
+    color: hsl(32.5, 45.3%, calc(41.6% + 2 * calc((100% - 41.6%) / 6)));
     color: var(--accent-five-2);
 }
 
 .accent-five-3 {
-    color: hsl(295.2, 62.5%, calc(52.94% + 3 * calc((100% - 52.94%) / 6)));
+    color: hsl(32.5, 45.3%, calc(41.6% + 3 * calc((100% - 41.6%) / 6)));
     color: var(--accent-five-3);
 }
 
 .accent-five-4 {
-    color: hsl(295.2, 62.5%, calc(52.94% + 4 * calc((100% - 52.94%) / 6)));
+    color: hsl(32.5, 45.3%, calc(41.6% + 4 * calc((100% - 41.6%) / 6)));
     color: var(--accent-five-4);
 }
 
 .accent-five-5 {
-    color: hsl(295.2, 62.5%, calc(53% + 5 * calc((100% - 53%) / 6)));
+    color: hsl(32.5, 45.3%, calc(49.6% + 5 * calc((100% - 49.6%) / 6)));
     color: var(--accent-five-5);
 }
 
 /* Background */
 
 .bg-primary-d5 {
-    background-color: hsl(200, 55.6%, calc(53% - 5 * calc(53% / 7)));
+    background-color: hsl(198, 100%, calc(33.3% - 5 * calc(33.3% / 7)));
     background-color: var(--primary-d5);
 }
 
 .bg-primary-d4 {
-    background-color: hsl(200, 55.6%, calc(53% - 4 * calc(53% / 7)));
+    background-color: hsl(198, 100%, calc(33.3% - 4 * calc(33.3% / 7)));
     background-color: var(--primary-d4);
 }
 
 .bg-primary-d3 {
-    background-color: hsl(200, 55.6%, calc(53% - 3 * calc(53% / 7)));
+    background-color: hsl(198, 100%, calc(33.3% - 3 * calc(33.3% / 7)));
     background-color: var(--primary-d3);
 }
 
 .bg-primary-d2 {
-    background-color: hsl(200, 55.6%, calc(53% - 2 * calc(53% / 7)));
+    background-color: hsl(198, 100%, calc(33.3% - 2 * calc(33.3% / 7)));
     background-color: var(--primary-d2);
 }
 
 .bg-primary-d1 {
-    background-color: hsl(200, 55.6%, calc(53% - calc(53% / 7)));
+    background-color: hsl(198, 100%, calc(33.3% - calc(33.3% / 7)));
     background-color: var(--primary-d1);
 }
 
 .bg-primary {
-    background-color: hsl(200, 55.6%, 53%);
+    background-color: hsl(198, 100%, 33.3%);
     background-color: var(--primary);
 }
 
 .bg-primary-1 {
-    background-color: hsl(200, 55.6%, calc(53% + calc((100% - 53%) / 6)));
+    background-color: hsl(198, 100%, calc(33.3% + calc((100% - 33.3%) / 6)));
     background-color: var(--primary-1);
 }
 
 .bg-primary-2 {
-    background-color: hsl(200, 55.6%, calc(53% + 2 * calc((100% - 53%) / 6)));
+    background-color: hsl(198, 100%, calc(33.3% + 2 * calc((100% - 33.3%) / 6)));
     background-color: var(--primary-2);
 }
 
 .bg-primary-3 {
-    background-color: hsl(200, 55.6%, calc(53% + 3 * calc((100% - 53%) / 6)));
+    background-color: hsl(198, 100%, calc(33.3% + 3 * calc((100% - 33.3%) / 6)));
     background-color: var(--primary-3);
 }
 
 .bg-primary-4 {
-    background-color: hsl(200, 55.6%, calc(53% + 4 * calc((100% - 53%) / 6)));
+    background-color: hsl(198, 100%, calc(33.3% + 4 * calc((100% - 33.3%) / 6)));
     background-color: var(--primary-4);
 }
 
 .bg-primary-5 {
-    background-color: hsl(200, 55.6%, calc(53% + 5 * calc((100% - 53%) / 6)));
+    background-color: hsl(198, 100%, calc(33.3% + 5 * calc((100% - 33.3%) / 6)));
     background-color: var(--primary-5);
 }
 
 .bg-accent-one-d5 {
-    background-color: hsl(3.1, 53.7%, calc(53% - 5 * calc(53% / 7)));
+    background-color: hsl(80, 100%, calc(30% - 5 * calc(30% / 7)));
     background-color: var(--accent-one-d5);
 }
 
 .bg-accent-one-d4 {
-    background-color: hsl(3.1, 53.7%, calc(53% - 4 * calc(53% / 7)));
+    background-color: hsl(80, 100%, calc(30% - 4 * calc(30% / 7)));
     background-color: var(--accent-one-d4);
 }
 
 .bg-accent-one-d3 {
-    background-color: hsl(3.1, 53.7%, calc(53% - 3 * calc(53% / 7)));
+    background-color: hsl(80, 100%, calc(30% - 3 * calc(30% / 7)));
     background-color: var(--accent-one-d3);
 }
 
 .bg-accent-one-d2 {
-    background-color: hsl(3.1, 53.7%, calc(53% - 2 * calc(53% / 7)));
+    background-color: hsl(80, 100%, calc(30% - 2 * calc(30% / 7)));
     background-color: var(--accent-one-d2);
 }
 
 .bg-accent-one-d1 {
-    background-color: hsl(3.1, 53.7%, calc(53% - calc(53% / 7)));
+    background-color: hsl(80, 100%, calc(30% - calc(30% / 7)));
     background-color: var(--accent-one-d1);
 }
 
 .bg-accent-one {
-    background-color: hsl(3.1, 53.7%, 53%);
+    background-color: hsl(80, 100%, 30%);
     background-color: var(--accent-one);
 }
 
 .bg-accent-one-1 {
-    background-color: hsl(3.1, 53.7%, calc(53% + calc((100% - 53%) / 6)));
+    background-color: hsl(80, 100%, calc(30% + calc((100% - 30%) / 6)));
     background-color: var(--accent-one-1);
 }
 
 .bg-accent-one-2 {
-    background-color: hsl(3.1, 53.7%, calc(53% + 2 * calc((100% - 53%) / 6)));
+    background-color: hsl(80, 100%, calc(30% + 2 * calc((100% - 30%) / 6)));
     background-color: var(--accent-one-2);
 }
 
 .bg-accent-one-3 {
-    background-color: hsl(3.1, 53.7%, calc(53% + 3 * calc((100% - 53%) / 6)));
+    background-color: hsl(80, 100%, calc(30% + 3 * calc((100% - 30%) / 6)));
     background-color: var(--accent-one-3);
 }
 
 .bg-accent-one-4 {
-    background-color: hsl(3.1, 53.7%, calc(53% + 4 * calc((100% - 53%) / 6)));
+    background-color: hsl(80, 100%, calc(30% + 4 * calc((100% - 30%) / 6)));
     background-color: var(--accent-one-4);
 }
 
 .bg-accent-one-5 {
-    background-color: hsl(3.1, 53.7%, calc(53% + 5 * calc((100% - 53%) / 6)));
+    background-color: hsl(80, 100%, calc(30% + 5 * calc((100% - 30%) / 6)));
     background-color: var(--accent-one-5);
 }
 
 .bg-accent-two-d5 {
-    background-color: hsl(143, 56.6%, calc(53% - 5 * calc(53% / 7)));
+    background-color: hsl(326.7, 100%, calc(30% - 5 * calc(30% / 7)));
     background-color: var(--accent-two-d5);
 }
 
 .bg-accent-two-d4 {
-    background-color: hsl(143, 56.6%, calc(53% - 4 * calc(53% / 7)));
+    background-color: hsl(326.7, 100%, calc(30% - 4 * calc(30% / 7)));
     background-color: var(--accent-two-d4);
 }
 
 .bg-accent-two-d3 {
-    background-color: hsl(143, 56.6%, calc(53% - 3 * calc(53% / 7)));
+    background-color: hsl(326.7, 100%, calc(30% - 3 * calc(30% / 7)));
     background-color: var(--accent-two-d3);
 }
 
 .bg-accent-two-d2 {
-    background-color: hsl(143, 56.6%, calc(53% - 2 * calc(53% / 7)));
+    background-color: hsl(326.7, 100%, calc(30% - 2 * calc(30% / 7)));
     background-color: var(--accent-two-d2);
 }
 
 .bg-accent-two-d1 {
-    background-color: hsl(143, 56.6%, calc(53% - calc(53% / 7)));
+    background-color: hsl(326.7, 100%, calc(30% - calc(30% / 7)));
     background-color: var(--accent-two-d1);
 }
 
 .bg-accent-two {
-    background-color: hsl(143, 56.6%, 53%);
+    background-color: hsl(326.7, 100%, 30%);
     background-color: var(--accent-two);
 }
 
 .bg-accent-two-1 {
-    background-color: hsl(143, 56.6%, calc(53% + calc((100% - 53%) / 6)));
+    background-color: hsl(326.7, 100%, calc(30% + calc((100% - 30%) / 6)));
     background-color: var(--accent-two-1);
 }
 
 .bg-accent-two-2 {
-    background-color: hsl(143, 56.6%, calc(53% + 2 * calc((100% - 53%) / 6)));
+    background-color: hsl(326.7, 100%, calc(30% + 2 * calc((100% - 30%) / 6)));
     background-color: var(--accent-two-2);
 }
 
 .bg-accent-two-3 {
-    background-color: hsl(143, 56.6%, calc(53% + 3 * calc((100% - 53%) / 6)));
+    background-color: hsl(326.7, 100%, calc(30% + 3 * calc((100% - 30%) / 6)));
     background-color: var(--accent-two-3);
 }
 
 .bg-accent-two-4 {
-    background-color: hsl(143, 56.6%, calc(53% + 4 * calc((100% - 53%) / 6)));
+    background-color: hsl(326.7, 100%, calc(30% + 4 * calc((100% - 30%) / 6)));
     background-color: var(--accent-two-4);
 }
 
 .bg-accent-two-5 {
-    background-color: hsl(143, 56.6%, calc(53% + 5 * calc((100% - 53%) / 6)));
+    background-color: hsl(326.7, 100%, calc(30% + 5 * calc((100% - 30%) / 6)));
     background-color: var(--accent-two-5);
 }
 
 .bg-accent-three-d5 {
-    background-color: hsl(55, 62.8%, calc(53% - 5 * calc(53% / 7)));
+    background-color: hsl(347.8, 68.4%, calc(49.6% - 5 * calc(49.6% / 7)));
     background-color: var(--accent-three-d5);
 }
 
 .bg-accent-three-d4 {
-    background-color: hsl(55, 62.8%, calc(53% - 4 * calc(53% / 7)));
+    background-color: hsl(347.8, 68.4%, calc(49.6% - 4 * calc(49.6% / 7)));
     background-color: var(--accent-three-d4);
 }
 
 .bg-accent-three-d3 {
-    background-color: hsl(55, 62.8%, calc(53% - 3 * calc(53% / 7)));
+    background-color: hsl(347.8, 68.4%, calc(49.6% - 3 * calc(49.6% / 7)));
     background-color: var(--accent-three-d3);
 }
 
 .bg-accent-three-d2 {
-    background-color: hsl(55, 62.8%, calc(53% - 2 * calc(53% / 7)));
+    background-color: hsl(347.8, 68.4%, calc(49.6% - 2 * calc(49.6% / 7)));
     background-color: var(--accent-three-d2);
 }
 
 .bg-accent-three-d1 {
-    background-color: hsl(55, 62.8%, calc(53% - calc(53% / 7)));
+    background-color: hsl(347.8, 68.4%, calc(49.6% - calc(49.6% / 7)));
     background-color: var(--accent-three-d1);
 }
 
 .bg-accent-three {
-    background-color: hsl(55, 62.8%, 53%);
+    background-color: hsl(347.8, 68.4%, 49.6%);
     background-color: var(--accent-three);
 }
 
 .bg-accent-three-1 {
-    background-color: hsl(55, 62.8%, calc(53% + calc((100% - 53%) / 6)));
+    background-color: hsl(347.8, 68.4%, calc(49.6% + calc((100% - 49.6%) / 6)));
     background-color: var(--accent-three-1);
 }
 
 .bg-accent-three-2 {
-    background-color: hsl(55, 62.8%, calc(53% + 2 * calc((100% - 53%) / 6)));
+    background-color: hsl(347.8, 68.4%, calc(49.6% + 2 * calc((100% - 49.6%) / 6)));
     background-color: var(--accent-three-2);
 }
 
 .bg-accent-three-3 {
-    background-color: hsl(55, 62.8%, calc(53% + 3 * calc((100% - 53%) / 6)));
+    background-color: hsl(347.8, 68.4%, calc(49.6% + 3 * calc((100% - 49.6%) / 6)));
     background-color: var(--accent-three-3);
 }
 
 .bg-accent-three-4 {
-    background-color: hsl(55, 62.8%, calc(53% + 4 * calc((100% - 53%) / 6)));
+    background-color: hsl(347.8, 68.4%, calc(49.6% + 4 * calc((100% - 49.6%) / 6)));
     background-color: var(--accent-three-4);
 }
 
 .bg-accent-three-5 {
-    background-color: hsl(55, 62.8%, calc(53% + 5 * calc((100% - 53%) / 6)));
+    background-color: hsl(347.8, 68.4%, calc(49.6% + 5 * calc((100% - 49.6%) / 6)));
     background-color: var(--accent-three-5);
 }
 
 .bg-accent-four-d5 {
-    background-color: hsl(175.2, 62.5%, calc(52.94% - 5 * calc(52.94% / 7)));
+    background-color: hsl(38.6, 100%, calc(46.7% - 5 * calc(46.7% / 7)));
     background-color: var(--accent-four-d5);
 }
 
 .bg-accent-four-d4 {
-    background-color: hsl(175.2, 62.5%, calc(52.94% - 4 * calc(52.94% / 7)));
+    background-color: hsl(38.6, 100%, calc(46.7% - 4 * calc(46.7% / 7)));
     background-color: var(--accent-four-d4);
 }
 
 .bg-accent-four-d3 {
-    background-color: hsl(175.2, 62.5%, calc(52.94% - 3 * calc(52.94% / 7)));
+    background-color: hsl(38.6, 100%, calc(46.7% - 3 * calc(46.7% / 7)));
     background-color: var(--accent-four-d3);
 }
 
 .bg-accent-four-d2 {
-    background-color: hsl(175.2, 62.5%, calc(52.94% - 2 * calc(52.94% / 7)));
+    background-color: hsl(38.6, 100%, calc(46.7% - 2 * calc(46.7% / 7)));
     background-color: var(--accent-four-d2);
 }
 
 .bg-accent-four-d1 {
-    background-color: hsl(175.2, 62.5%, calc(52.94% - calc(52.94% / 7)));
+    background-color: hsl(38.6, 100%, calc(46.7% - calc(46.7% / 7)));
     background-color: var(--accent-four-d1);
 }
 
 .bg-accent-four {
-    background-color: hsl(175.2, 62.5%, 52.94%);
+    background-color: hsl(38.6, 100%, 46.7%);
     background-color: var(--accent-four);
 }
 
 .bg-accent-four-1 {
-    background-color: hsl(175.2, 62.5%, calc(52.94% + calc((100% - 52.94%) / 6)));
+    background-color: hsl(38.6, 100%, calc(46.7% + calc((100% - 46.7%) / 6)));
     background-color: var(--accent-four-1);
 }
 
 .bg-accent-four-2 {
-    background-color: hsl(175.2, 62.5%, calc(52.94% + 2 * calc((100% - 52.94%) / 6)));
+    background-color: hsl(38.6, 100%, calc(46.7% + 2 * calc((100% - 46.7%) / 6)));
     background-color: var(--accent-four-2);
 }
 
 .bg-accent-four-3 {
-    background-color: hsl(175.2, 62.5%, calc(52.94% + 3 * calc((100% - 52.94%) / 6)));
+    background-color: hsl(38.6, 100%, calc(46.7% + 3 * calc((100% - 46.7%) / 6)));
     background-color: var(--accent-four-3);
 }
 
 .bg-accent-four-4 {
-    background-color: hsl(175.2, 62.5%, calc(52.94% + 4 * calc((100% - 52.94%) / 6)));
+    background-color: hsl(38.6, 100%, calc(46.7% + 4 * calc((100% - 46.7%) / 6)));
     background-color: var(--accent-four-4);
 }
 
 .bg-accent-four-5 {
-    background-color: hsl(175.2, 62.5%, calc(53% + 5 * calc((100% - 53%) / 6)));
+    background-color: hsl(38.6, 100%, calc(49.6% + 5 * calc((100% - 49.6%) / 6)));
     background-color: var(--accent-four-5);
 }
 
 .bg-accent-five-d5 {
-    background-color: hsl(295.2, 62.5%, calc(52.94% - 5 * calc(52.94% / 7)));
+    background-color: hsl(32.5, 45.3%, calc(41.6% - 5 * calc(41.6% / 7)));
     background-color: var(--accent-five-d5);
 }
 
 .bg-accent-five-d4 {
-    background-color: hsl(295.2, 62.5%, calc(52.94% - 4 * calc(52.94% / 7)));
+    background-color: hsl(32.5, 45.3%, calc(41.6% - 4 * calc(41.6% / 7)));
     background-color: var(--accent-five-d4);
 }
 
 .bg-accent-five-d3 {
-    background-color: hsl(295.2, 62.5%, calc(52.94% - 3 * calc(52.94% / 7)));
+    background-color: hsl(32.5, 45.3%, calc(41.6% - 3 * calc(41.6% / 7)));
     background-color: var(--accent-five-d3);
 }
 
 .bg-accent-five-d2 {
-    background-color: hsl(295.2, 62.5%, calc(52.94% - 2 * calc(52.94% / 7)));
+    background-color: hsl(32.5, 45.3%, calc(41.6% - 2 * calc(41.6% / 7)));
     background-color: var(--accent-five-d2);
 }
 
 .bg-accent-five-d1 {
-    background-color: hsl(295.2, 62.5%, calc(52.94% - calc(52.94% / 7)));
+    background-color: hsl(32.5, 45.3%, calc(41.6% - calc(41.6% / 7)));
     background-color: var(--accent-five-d1);
 }
 
 .bg-accent-five {
-    background-color: hsl(295.2, 62.5%, 52.94%);
+    background-color: hsl(32.5, 45.3%, 41.6%);
     background-color: var(--accent-five);
 }
 
 .bg-accent-five-1 {
-    background-color: hsl(295.2, 62.5%, calc(52.94% + calc((100% - 52.94%) / 6)));
+    background-color: hsl(32.5, 45.3%, calc(41.6% + calc((100% - 41.6%) / 6)));
     background-color: var(--accent-five-1);
 }
 
 .bg-accent-five-2 {
-    background-color: hsl(295.2, 62.5%, calc(52.94% + 2 * calc((100% - 52.94%) / 6)));
+    background-color: hsl(32.5, 45.3%, calc(41.6% + 2 * calc((100% - 41.6%) / 6)));
     background-color: var(--accent-five-2);
 }
 
 .bg-accent-five-3 {
-    background-color: hsl(295.2, 62.5%, calc(52.94% + 3 * calc((100% - 52.94%) / 6)));
+    background-color: hsl(32.5, 45.3%, calc(41.6% + 3 * calc((100% - 41.6%) / 6)));
     background-color: var(--accent-five-3);
 }
 
 .bg-accent-five-4 {
-    background-color: hsl(295.2, 62.5%, calc(52.94% + 4 * calc((100% - 52.94%) / 6)));
+    background-color: hsl(32.5, 45.3%, calc(41.6% + 4 * calc((100% - 41.6%) / 6)));
     background-color: var(--accent-five-4);
 }
 
 .bg-accent-five-5 {
-    background-color: hsl(295.2, 62.5%, calc(53% + 5 * calc((100% - 53%) / 6)));
+    background-color: hsl(32.5, 45.3%, calc(49.6% + 5 * calc((100% - 49.6%) / 6)));
     background-color: var(--accent-five-5);
 }
 
 /* Border Colors */
 
 .br-primary-d5 {
-    border-color: hsl(200, 55.6%, calc(53% - 5 * calc(53% / 7)));
+    border-color: hsl(198, 100%, calc(33.3% - 5 * calc(33.3% / 7)));
     border-color: var(--primary-d5);
 }
 
 .br-primary-d4 {
-    border-color: hsl(200, 55.6%, calc(53% - 4 * calc(53% / 7)));
+    border-color: hsl(198, 100%, calc(33.3% - 4 * calc(33.3% / 7)));
     border-color: var(--primary-d4);
 }
 
 .br-primary-d3 {
-    border-color: hsl(200, 55.6%, calc(53% - 3 * calc(53% / 7)));
+    border-color: hsl(198, 100%, calc(33.3% - 3 * calc(33.3% / 7)));
     border-color: var(--primary-d3);
 }
 
 .br-primary-d2 {
-    border-color: hsl(200, 55.6%, calc(53% - 2 * calc(53% / 7)));
+    border-color: hsl(198, 100%, calc(33.3% - 2 * calc(33.3% / 7)));
     border-color: var(--primary-d2);
 }
 
 .br-primary-d1 {
-    border-color: hsl(200, 55.6%, calc(53% - calc(53% / 7)));
+    border-color: hsl(198, 100%, calc(33.3% - calc(33.3% / 7)));
     border-color: var(--primary-d1);
 }
 
 .br-primary {
-    border-color: hsl(200, 55.6%, 53%);
+    border-color: hsl(198, 100%, 33.3%);
     border-color: var(--primary);
 }
 
 .br-primary-1 {
-    border-color: hsl(200, 55.6%, calc(53% + calc((100% - 53%) / 6)));
+    border-color: hsl(198, 100%, calc(33.3% + calc((100% - 33.3%) / 6)));
     border-color: var(--primary-1);
 }
 
 .br-primary-2 {
-    border-color: hsl(200, 55.6%, calc(53% + 2 * calc((100% - 53%) / 6)));
+    border-color: hsl(198, 100%, calc(33.3% + 2 * calc((100% - 33.3%) / 6)));
     border-color: var(--primary-2);
 }
 
 .br-primary-3 {
-    border-color: hsl(200, 55.6%, calc(53% + 3 * calc((100% - 53%) / 6)));
+    border-color: hsl(198, 100%, calc(33.3% + 3 * calc((100% - 33.3%) / 6)));
     border-color: var(--primary-3);
 }
 
 .br-primary-4 {
-    border-color: hsl(200, 55.6%, calc(53% + 4 * calc((100% - 53%) / 6)));
+    border-color: hsl(198, 100%, calc(33.3% + 4 * calc((100% - 33.3%) / 6)));
     border-color: var(--primary-4);
 }
 
 .br-primary-5 {
-    border-color: hsl(200, 55.6%, calc(53% + 5 * calc((100% - 53%) / 6)));
+    border-color: hsl(198, 100%, calc(33.3% + 5 * calc((100% - 33.3%) / 6)));
     border-color: var(--primary-5);
 }
 
 .br-accent-one-d5 {
-    border-color: hsl(3.1, 53.7%, calc(53% - 5 * calc(53% / 7)));
+    border-color: hsl(80, 100%, calc(30% - 5 * calc(30% / 7)));
     border-color: var(--accent-one-d5);
 }
 
 .br-accent-one-d4 {
-    border-color: hsl(3.1, 53.7%, calc(53% - 4 * calc(53% / 7)));
+    border-color: hsl(80, 100%, calc(30% - 4 * calc(30% / 7)));
     border-color: var(--accent-one-d4);
 }
 
 .br-accent-one-d3 {
-    border-color: hsl(3.1, 53.7%, calc(53% - 3 * calc(53% / 7)));
+    border-color: hsl(80, 100%, calc(30% - 3 * calc(30% / 7)));
     border-color: var(--accent-one-d3);
 }
 
 .br-accent-one-d2 {
-    border-color: hsl(3.1, 53.7%, calc(53% - 2 * calc(53% / 7)));
+    border-color: hsl(80, 100%, calc(30% - 2 * calc(30% / 7)));
     border-color: var(--accent-one-d2);
 }
 
 .br-accent-one-d1 {
-    border-color: hsl(3.1, 53.7%, calc(53% - calc(53% / 7)));
+    border-color: hsl(80, 100%, calc(30% - calc(30% / 7)));
     border-color: var(--accent-one-d1);
 }
 
 .br-accent-one {
-    border-color: hsl(3.1, 53.7%, 53%);
+    border-color: hsl(80, 100%, 30%);
     border-color: var(--accent-one);
 }
 
 .br-accent-one-1 {
-    border-color: hsl(3.1, 53.7%, calc(53% + calc((100% - 53%) / 6)));
+    border-color: hsl(80, 100%, calc(30% + calc((100% - 30%) / 6)));
     border-color: var(--accent-one-1);
 }
 
 .br-accent-one-2 {
-    border-color: hsl(3.1, 53.7%, calc(53% + 2 * calc((100% - 53%) / 6)));
+    border-color: hsl(80, 100%, calc(30% + 2 * calc((100% - 30%) / 6)));
     border-color: var(--accent-one-2);
 }
 
 .br-accent-one-3 {
-    border-color: hsl(3.1, 53.7%, calc(53% + 3 * calc((100% - 53%) / 6)));
+    border-color: hsl(80, 100%, calc(30% + 3 * calc((100% - 30%) / 6)));
     border-color: var(--accent-one-3);
 }
 
 .br-accent-one-4 {
-    border-color: hsl(3.1, 53.7%, calc(53% + 4 * calc((100% - 53%) / 6)));
+    border-color: hsl(80, 100%, calc(30% + 4 * calc((100% - 30%) / 6)));
     border-color: var(--accent-one-4);
 }
 
 .br-accent-one-5 {
-    border-color: hsl(3.1, 53.7%, calc(53% + 5 * calc((100% - 53%) / 6)));
+    border-color: hsl(80, 100%, calc(30% + 5 * calc((100% - 30%) / 6)));
     border-color: var(--accent-one-5);
 }
 
 .br-accent-two-d5 {
-    border-color: hsl(143, 56.6%, calc(53% - 4 * calc(53% / 7)));
+    border-color: hsl(326.7, 100%, calc(30% - 4 * calc(30% / 7)));
     border-color: var(--accent-two-d4);
 }
 
 .br-accent-two-d4 {
-    border-color: hsl(143, 56.6%, calc(53% - 4 * calc(53% / 7)));
+    border-color: hsl(326.7, 100%, calc(30% - 4 * calc(30% / 7)));
     border-color: var(--accent-two-d4);
 }
 
 .br-accent-two-d3 {
-    border-color: hsl(143, 56.6%, calc(53% - 3 * calc(53% / 7)));
+    border-color: hsl(326.7, 100%, calc(30% - 3 * calc(30% / 7)));
     border-color: var(--accent-two-d3);
 }
 
 .br-accent-two-d2 {
-    border-color: hsl(143, 56.6%, calc(53% - 2 * calc(53% / 7)));
+    border-color: hsl(326.7, 100%, calc(30% - 2 * calc(30% / 7)));
     border-color: var(--accent-two-d2);
 }
 
 .br-accent-two-d1 {
-    border-color: hsl(143, 56.6%, calc(53% - calc(53% / 7)));
+    border-color: hsl(326.7, 100%, calc(30% - calc(30% / 7)));
     border-color: var(--accent-two-d1);
 }
 
 .br-accent-two {
-    border-color: hsl(143, 56.6%, 53%);
+    border-color: hsl(326.7, 100%, 30%);
     border-color: var(--accent-two);
 }
 
 .br-accent-two-1 {
-    border-color: hsl(143, 56.6%, calc(53% + calc((100% - 53%) / 6)));
+    border-color: hsl(326.7, 100%, calc(30% + calc((100% - 30%) / 6)));
     border-color: var(--accent-two-1);
 }
 
 .br-accent-two-2 {
-    border-color: hsl(143, 56.6%, calc(53% + 2 * calc((100% - 53%) / 6)));
+    border-color: hsl(326.7, 100%, calc(30% + 2 * calc((100% - 30%) / 6)));
     border-color: var(--accent-two-2);
 }
 
 .br-accent-two-3 {
-    border-color: hsl(143, 56.6%, calc(53% + 3 * calc((100% - 53%) / 6)));
+    border-color: hsl(326.7, 100%, calc(30% + 3 * calc((100% - 30%) / 6)));
     border-color: var(--accent-two-3);
 }
 
 .br-accent-two-4 {
-    border-color: hsl(143, 56.6%, calc(53% + 4 * calc((100% - 53%) / 6)));
+    border-color: hsl(326.7, 100%, calc(30% + 4 * calc((100% - 30%) / 6)));
     border-color: var(--accent-two-4);
 }
 
 .br-accent-two-5 {
-    border-color: hsl(143, 56.6%, calc(53% + 5 * calc((100% - 53%) / 6)));
+    border-color: hsl(326.7, 100%, calc(30% + 5 * calc((100% - 30%) / 6)));
     border-color: var(--accent-two-5);
 }
 
 .br-accent-three-d5 {
-    border-color: hsl(55, 62.8%, calc(53% - 5 * calc(53% / 7)));
+    border-color: hsl(347.8, 68.4%, calc(49.6% - 5 * calc(49.6% / 7)));
     border-color: var(--accent-three-d5);
 }
 
 .br-accent-three-d4 {
-    border-color: hsl(55, 62.8%, calc(53% - 4 * calc(53% / 7)));
+    border-color: hsl(347.8, 68.4%, calc(49.6% - 4 * calc(49.6% / 7)));
     border-color: var(--accent-three-d4);
 }
 
 .br-accent-three-d3 {
-    border-color: hsl(55, 62.8%, calc(53% - 3 * calc(53% / 7)));
+    border-color: hsl(347.8, 68.4%, calc(49.6% - 3 * calc(49.6% / 7)));
     border-color: var(--accent-three-d3);
 }
 
 .br-accent-three-d2 {
-    border-color: hsl(55, 62.8%, calc(53% - 2 * calc(53% / 7)));
+    border-color: hsl(347.8, 68.4%, calc(49.6% - 2 * calc(49.6% / 7)));
     border-color: var(--accent-three-d2);
 }
 
 .br-accent-three-d1 {
-    border-color: hsl(55, 62.8%, calc(53% - calc(53% / 7)));
+    border-color: hsl(347.8, 68.4%, calc(49.6% - calc(49.6% / 7)));
     border-color: var(--accent-three-d1);
 }
 
 .br-accent-three {
-    border-color: hsl(55, 62.8%, 53%);
+    border-color: hsl(347.8, 68.4%, 49.6%);
     border-color: var(--accent-three);
 }
 
 .br-accent-three-1 {
-    border-color: hsl(55, 62.8%, calc(53% + calc((100% - 53%) / 6)));
+    border-color: hsl(347.8, 68.4%, calc(49.6% + calc((100% - 49.6%) / 6)));
     border-color: var(--accent-three-1);
 }
 
 .br-accent-three-2 {
-    border-color: hsl(55, 62.8%, calc(53% + 2 * calc((100% - 53%) / 6)));
+    border-color: hsl(347.8, 68.4%, calc(49.6% + 2 * calc((100% - 49.6%) / 6)));
     border-color: var(--accent-three-2);
 }
 
 .br-accent-three-3 {
-    border-color: hsl(55, 62.8%, calc(53% + 3 * calc((100% - 53%) / 6)));
+    border-color: hsl(347.8, 68.4%, calc(49.6% + 3 * calc((100% - 49.6%) / 6)));
     border-color: var(--accent-three-3);
 }
 
 .br-accent-three-4 {
-    border-color: hsl(55, 62.8%, calc(53% + 4 * calc((100% - 53%) / 6)));
+    border-color: hsl(347.8, 68.4%, calc(49.6% + 4 * calc((100% - 49.6%) / 6)));
     border-color: var(--accent-three-4);
 }
 
 .br-accent-three-5 {
-    border-color: hsl(55, 62.8%, calc(53% + 5 * calc((100% - 53%) / 6)));
+    border-color: hsl(347.8, 68.4%, calc(49.6% + 5 * calc((100% - 49.6%) / 6)));
     border-color: var(--accent-three-5);
 }
 
 .br-accent-four-d5 {
-    border-color: hsl(175.2, 62.5%, calc(52.94% - 5 * calc(52.94% / 7)));
+    border-color: hsl(38.6, 100%, calc(46.7% - 5 * calc(46.7% / 7)));
     border-color: var(--accent-four-d5);
 }
 
 .br-accent-four-d4 {
-    border-color: hsl(175.2, 62.5%, calc(52.94% - 4 * calc(52.94% / 7)));
+    border-color: hsl(38.6, 100%, calc(46.7% - 4 * calc(46.7% / 7)));
     border-color: var(--accent-four-d4);
 }
 
 .br-accent-four-d3 {
-    border-color: hsl(175.2, 62.5%, calc(52.94% - 3 * calc(52.94% / 7)));
+    border-color: hsl(38.6, 100%, calc(46.7% - 3 * calc(46.7% / 7)));
     border-color: var(--accent-four-d3);
 }
 
 .br-accent-four-d2 {
-    border-color: hsl(175.2, 62.5%, calc(52.94% - 2 * calc(52.94% / 7)));
+    border-color: hsl(38.6, 100%, calc(46.7% - 2 * calc(46.7% / 7)));
     border-color: var(--accent-four-d2);
 }
 
 .br-accent-four-d1 {
-    border-color: hsl(175.2, 62.5%, calc(52.94% - calc(52.94% / 7)));
+    border-color: hsl(38.6, 100%, calc(46.7% - calc(46.7% / 7)));
     border-color: var(--accent-four-d1);
 }
 
 .br-accent-four {
-    border-color: hsl(175.2, 62.5%, 52.94%);
+    border-color: hsl(38.6, 100%, 46.7%);
     border-color: var(--accent-four);
 }
 
 .br-accent-four-1 {
-    border-color: hsl(175.2, 62.5%, calc(52.94% + calc((100% - 52.94%) / 6)));
+    border-color: hsl(38.6, 100%, calc(46.7% + calc((100% - 46.7%) / 6)));
     border-color: var(--accent-four-1);
 }
 
 .br-accent-four-2 {
-    border-color: hsl(175.2, 62.5%, calc(52.94% + 2 * calc((100% - 52.94%) / 6)));
+    border-color: hsl(38.6, 100%, calc(46.7% + 2 * calc((100% - 46.7%) / 6)));
     border-color: var(--accent-four-2);
 }
 
 .br-accent-four-3 {
-    border-color: hsl(175.2, 62.5%, calc(52.94% + 3 * calc((100% - 52.94%) / 6)));
+    border-color: hsl(38.6, 100%, calc(46.7% + 3 * calc((100% - 46.7%) / 6)));
     border-color: var(--accent-four-3);
 }
 
 .br-accent-four-4 {
-    border-color: hsl(175.2, 62.5%, calc(52.94% + 4 * calc((100% - 52.94%) / 6)));
+    border-color: hsl(38.6, 100%, calc(46.7% + 4 * calc((100% - 46.7%) / 6)));
     border-color: var(--accent-four-4);
 }
 
 .br-accent-four-5 {
-    border-color: hsl(175.2, 62.5%, calc(53% + 5 * calc((100% - 53%) / 6)));
+    border-color: hsl(38.6, 100%, calc(49.6% + 5 * calc((100% - 49.6%) / 6)));
     border-color: var(--accent-four-5);
 }
 
 .br-accent-five-d5 {
-    border-color: hsl(295.2, 62.5%, calc(52.94% - 5 * calc(52.94% / 7)));
+    border-color: hsl(32.5, 45.3%, calc(41.6% - 5 * calc(41.6% / 7)));
     border-color: var(--accent-five-d5);
 }
 
 .br-accent-five-d4 {
-    border-color: hsl(295.2, 62.5%, calc(52.94% - 4 * calc(52.94% / 7)));
+    border-color: hsl(32.5, 45.3%, calc(41.6% - 4 * calc(41.6% / 7)));
     border-color: var(--accent-five-d4);
 }
 
 .br-accent-five-d3 {
-    border-color: hsl(295.2, 62.5%, calc(52.94% - 3 * calc(52.94% / 7)));
+    border-color: hsl(32.5, 45.3%, calc(41.6% - 3 * calc(41.6% / 7)));
     border-color: var(--accent-five-d3);
 }
 
 .br-accent-five-d2 {
-    border-color: hsl(295.2, 62.5%, calc(52.94% - 2 * calc(52.94% / 7)));
+    border-color: hsl(32.5, 45.3%, calc(41.6% - 2 * calc(41.6% / 7)));
     border-color: var(--accent-five-d2);
 }
 
 .br-accent-five-d1 {
-    border-color: hsl(295.2, 62.5%, calc(52.94% - calc(52.94% / 7)));
+    border-color: hsl(32.5, 45.3%, calc(41.6% - calc(41.6% / 7)));
     border-color: var(--accent-five-d1);
 }
 
 .br-accent-five {
-    border-color: hsl(295.2, 62.5%, 52.94%);
+    border-color: hsl(32.5, 45.3%, 41.6%);
     border-color: var(--accent-five);
 }
 
 .br-accent-five-1 {
-    border-color: hsl(295.2, 62.5%, calc(52.94% + calc((100% - 52.94%) / 6)));
+    border-color: hsl(32.5, 45.3%, calc(41.6% + calc((100% - 41.6%) / 6)));
     border-color: var(--accent-five-1);
 }
 
 .br-accent-five-2 {
-    border-color: hsl(295.2, 62.5%, calc(52.94% + 2 * calc((100% - 52.94%) / 6)));
+    border-color: hsl(32.5, 45.3%, calc(41.6% + 2 * calc((100% - 41.6%) / 6)));
     border-color: var(--accent-five-2);
 }
 
 .br-accent-five-3 {
-    border-color: hsl(295.2, 62.5%, calc(52.94% + 3 * calc((100% - 52.94%) / 6)));
+    border-color: hsl(32.5, 45.3%, calc(41.6% + 3 * calc((100% - 41.6%) / 6)));
     border-color: var(--accent-five-3);
 }
 
 .br-accent-five-4 {
-    border-color: hsl(295.2, 62.5%, calc(52.94% + 4 * calc((100% - 52.94%) / 6)));
+    border-color: hsl(32.5, 45.3%, calc(41.6% + 4 * calc((100% - 41.6%) / 6)));
     border-color: var(--accent-five-4);
 }
 
 .br-accent-five-5 {
-    border-color: hsl(295.2, 62.5%, calc(53% + 5 * calc((100% - 53%) / 6)));
+    border-color: hsl(32.5, 45.3%, calc(49.6% + 5 * calc((100% - 49.6%) / 6)));
     border-color: var(--accent-five-5);
 }

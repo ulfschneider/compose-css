@@ -669,6 +669,121 @@ familiar walls.</dd>
 
 ## Colors
 
+<table class="code noso">
+    <tr class="center">
+        <th class="below-rg:hide"></th>
+        <th class="normal">d5</th>
+        <th class="normal">d4</th>
+        <th class="normal">d3</th>
+        <th class="normal">d2</th>
+        <th class="normal">d1</th>
+        <th class="normal"></th>
+        <th class="normal">1</th>
+        <th class="normal">2</th>
+        <th class="normal">3</th>
+        <th class="normal">4</th>
+        <th class="normal">5</th>
+    </tr>
+    <tr>
+        <th class="middle normal below-rg:hide">.neutral </th>
+        <td class="bg-neutral-d5"></td>
+        <td class="bg-neutral-d4"></td>
+        <td class="bg-neutral-d3"></td>
+        <td class="bg-neutral-d2"></td>
+        <td class="bg-neutral-d1"></td>
+        <td class="bg-neutral brx br-solid br-base-background"></td>
+        <td class="bg-neutral-1"></td>
+        <td class="bg-neutral-2"></td>
+        <td class="bg-neutral-3"></td>
+        <td class="bg-neutral-4"></td>
+        <td class="bg-neutral-5"></td>
+    </tr>
+    <tr>
+        <th class="middle normal below-rg:hide">.primary </th>
+        <td class="bg-primary-d5"></td>
+        <td class="bg-primary-d4"></td>
+        <td class="bg-primary-d3"></td>
+        <td class="bg-primary-d2"></td>
+        <td class="bg-primary-d1"></td>
+        <td class="bg-primary"></td>
+        <td class="bg-primary-1"></td>
+        <td class="bg-primary-2"></td>
+        <td class="bg-primary-3"></td>
+        <td class="bg-primary-4"></td>
+        <td class="bg-primary-5"></td>
+    </tr>
+    <tr>
+        <th class="middle normal below-rg:hide">.accent-one </th>
+        <td class="bg-accent-one-d5"></td>
+        <td class="bg-accent-one-d4"></td>
+        <td class="bg-accent-one-d3"></td>
+        <td class="bg-accent-one-d2"></td>
+        <td class="bg-accent-one-d1"></td>
+        <td class="bg-accent-one"></td>
+        <td class="bg-accent-one-1"></td>
+        <td class="bg-accent-one-2"></td>
+        <td class="bg-accent-one-3"></td>
+        <td class="bg-accent-one-4"></td>
+        <td class="bg-accent-one-5"></td>
+    </tr>
+    <tr>
+        <th class="middle normal below-rg:hide">.accent-two </th>
+        <td class="bg-accent-two-d5"></td>
+        <td class="bg-accent-two-d4"></td>
+        <td class="bg-accent-two-d3"></td>
+        <td class="bg-accent-two-d2"></td>
+        <td class="bg-accent-two-d1"></td>
+        <td class="bg-accent-two"></td>
+        <td class="bg-accent-two-1"></td>
+        <td class="bg-accent-two-2"></td>
+        <td class="bg-accent-two-3"></td>
+        <td class="bg-accent-two-4"></td>
+        <td class="bg-accent-two-5"></td>
+    </tr>
+    <tr>
+        <th class="middle normal below-rg:hide">.accent-three </th>
+        <td class="bg-accent-three-d5"></td>
+        <td class="bg-accent-three-d4"></td>
+        <td class="bg-accent-three-d3"></td>
+        <td class="bg-accent-three-d2"></td>
+        <td class="bg-accent-three-d1"></td>
+        <td class="bg-accent-three"></td>
+        <td class="bg-accent-three-1"></td>
+        <td class="bg-accent-three-2"></td>
+        <td class="bg-accent-three-3"></td>
+        <td class="bg-accent-three-4"></td>
+        <td class="bg-accent-three-5"></td>
+    </tr>
+    <tr>
+        <th class="middle normal below-rg:hide">.accent-four</th>
+        <td class="bg-accent-four-d5"></td>
+        <td class="bg-accent-four-d4"></td>
+        <td class="bg-accent-four-d3"></td>
+        <td class="bg-accent-four-d2"></td>
+        <td class="bg-accent-four-d1"></td>
+        <td class="bg-accent-four"></td>
+        <td class="bg-accent-four-1"></td>
+        <td class="bg-accent-four-2"></td>
+        <td class="bg-accent-four-3"></td>
+        <td class="bg-accent-four-4"></td>
+        <td class="bg-accent-four-5"></td>
+    </tr>
+ <tr>
+        <th class="middle normal below-rg:hide">.accent-five</th>
+        <td class="bg-accent-five-d5"></td>
+        <td class="bg-accent-five-d4"></td>
+        <td class="bg-accent-five-d3"></td>
+        <td class="bg-accent-five-d2"></td>
+        <td class="bg-accent-five-d1"></td>
+        <td class="bg-accent-five"></td>
+        <td class="bg-accent-five-1"></td>
+        <td class="bg-accent-five-2"></td>
+        <td class="bg-accent-five-3"></td>
+        <td class="bg-accent-five-4"></td>
+        <td class="bg-accent-five-5"></td>
+    </tr>    
+</table>
+
 ## Layout
 
 ## Forms
