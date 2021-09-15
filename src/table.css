@@ -5,7 +5,7 @@
     --table-font-size: var(--fs);
     --mrt-table: var(--mrt-figure);
     --mrb-table: var(--mrb-figure);
-    --td-x-padding: var(--space-d1);
+    --td-x-padding: var(--space);
     --td-y-padding: var(--space-d1);
 }
 
@@ -79,7 +79,12 @@ table caption {
 
 th,
 td {
-    padding: var(--td-y-padding) var(--td-x-padding);
+    padding: var(--td-y-padding) var(--td-x-padding) var(--td-y-padding) 0;
+}
+
+*+th,
+*+td {
+    padding-left: var(--td-x-padding);
 }
 
 caption {

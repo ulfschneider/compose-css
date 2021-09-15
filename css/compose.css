@@ -1526,9 +1526,9 @@ small,
     --form-field-color: var(--base-color);
     --form-field-border-color: var(--border-color);
     --caret-color: var(--primary-d1);
-    --form-button-background: var(--neutral-d4);
+    --form-button-background: var(--primary-d1);
     --form-button-active-background: var(--primary);
-    --form-button-hover-background: var(--base-color);
+    --form-button-hover-background: var(--primary);
     --form-button-focus-background: var(--form-button-hover-background);
     --form-button-color: var(--base-background);
     --form-field-background: var(--neutral-5);
@@ -17470,7 +17470,7 @@ select {
     border-radius: 3px;
     border-radius: var(--form-radius);
     vertical-align: baseline;
-    background: hsl(0, 0%, calc(53% - 4 * calc(53% / 7)));
+    background: hsl(198, 100%, calc(33.3% - calc(33.3% / 7)));
     background: var(--form-button-background);
     color: white;
     color: var(--form-button-color);
@@ -17485,7 +17485,7 @@ select {
     button:hover,
     .button:hover,
     select:hover {
-        background: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
+        background: hsl(198, 100%, 33.3%);
         background: var(--form-button-hover-background);
     }
 }
@@ -17495,7 +17495,7 @@ input[type=reset]:focus,
 button:focus,
 .button:focus,
 select:focus {
-    background: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
+    background: hsl(198, 100%, 33.3%);
     background: var(--form-button-hover-background);
 }
 
@@ -19806,7 +19806,7 @@ svg {
     --table-font-size: var(--fs);
     --mrt-table: var(--mrt-figure);
     --mrb-table: var(--mrb-figure);
-    --td-x-padding: var(--space-d1);
+    --td-x-padding: var(--space);
     --td-y-padding: var(--space-d1);
 }
 
@@ -19895,8 +19895,14 @@ table caption {
 
 th,
 td {
-    padding: calc(1rem / 1.7) calc(1rem / 1.7);
-    padding: var(--td-y-padding) var(--td-x-padding);
+    padding: calc(1rem / 1.7) 1rem calc(1rem / 1.7) 0;
+    padding: var(--td-y-padding) var(--td-x-padding) var(--td-y-padding) 0;
+}
+
+*+th,
+*+td {
+    padding-left: 1rem;
+    padding-left: var(--td-x-padding);
 }
 
 caption {

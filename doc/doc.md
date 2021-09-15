@@ -406,54 +406,54 @@ Take the size and line height of headings and apply it to any element *without* 
 <table class="mxw-rg">
 <tr><th>Line height</th><th>CSS class</th><tr>
                 <tr>
-                    <td class="lh-d1 brt baseline pd-0 bg-neutral-5">One morning, when Gregor Samsa woke from troubled
+                    <td class="lh-d1 brt baseline bg-neutral-5">One morning, when Gregor Samsa woke from troubled
                         dreams, he
                         found himself transformed in his bed into a horrible vermin.</td>
-                    <td class="lh-d1 baseline pdl pd-0"><code>.lh-d1</code></td>
+                    <td class="lh-d1 baseline"><code>.lh-d1</code></td>
                 </tr>
                 <tr>
-                    <td class="lh brt baseline pd-0 bg-neutral-5">One morning, when Gregor Samsa woke from troubled
+                    <td class="lh brt baseline bg-neutral-5">One morning, when Gregor Samsa woke from troubled
                         dreams, he
                         found himself transformed in his bed into a horrible vermin.</td>
-                    <td class="lh baseline pdl pd-0">
+                    <td class="lh baseline">
                         <code>.lh</code>
                     </td>
                 </tr>
                 <tr>
-                    <td class="lh-1 brt baseline pd-0 bg-neutral-5">One morning, when Gregor Samsa woke from troubled
+                    <td class="lh-1 brt baseline bg-neutral-5">One morning, when Gregor Samsa woke from troubled
                         dreams, he
                         found himself transformed in his bed into a horrible vermin.
                     </td>
-                    <td class="lh-1 baseline pdl pd-0"><code>.lh-1</code></td>
+                    <td class="lh-1 baseline"><code>.lh-1</code></td>
                 </tr>
                 <tr>
-                    <td class="lh-2 brt baseline pd-0 bg-neutral-5">One morning, when Gregor Samsa woke from troubled
+                    <td class="lh-2 brt baseline bg-neutral-5">One morning, when Gregor Samsa woke from troubled
                         dreams, he
                         found himself transformed in his bed into a horrible vermin.</td>
-                    <td class="lh-2 baseline pdl pd-0"><code>.lh-2</code></td>
+                    <td class="lh-2 baseline"><code>.lh-2</code></td>
                 </tr>
                 <tr>
-                    <td class="lh-3 brt baseline pd-0 bg-neutral-5">One morning, when Gregor Samsa woke from troubled
+                    <td class="lh-3 brt baseline bg-neutral-5">One morning, when Gregor Samsa woke from troubled
                         dreams, he
                         found himself transformed in his bed into a horrible vermin.</td>
-                    <td class="lh-3 baseline pdl pd-0">
+                    <td class="lh-3 baseline">
                         <code class="no-wrap">.lh-3</code>, 
                         <code class="no-wrap">.lh-default</code>
                     </td>
                 </tr>
                 <tr>
-                    <td class="lh-4 brt m brb baseline pd-0 bg-neutral-5">One morning, when Gregor Samsa woke from
+                    <td class="lh-4 brt m brb baseline bg-neutral-5">One morning, when Gregor Samsa woke from
                         troubled
                         dreams, he found himself transformed in his bed into a horrible vermin.
                     </td>
-                    <td class="lh-4 baseline pdl pd-0"><code>.lh-4</code></td>
+                    <td class="lh-4 baseline"><code>.lh-4</code></td>
                 </tr>
                 <tr>
-                    <td class="lh-5 brt m brb baseline pd-0 bg-neutral-5">One morning, when Gregor Samsa woke from
+                    <td class="lh-5 brt m brb baseline bg-neutral-5">One morning, when Gregor Samsa woke from
                         troubled
                         dreams, he found himself transformed in his bed into a horrible vermin.
                     </td>
-                    <td class="lh-5 baseline pdl pd-0"><code>.lh-5</code></td>
+                    <td class="lh-5 baseline"><code>.lh-5</code></td>
                 </tr>
             </table>
 
