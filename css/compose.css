@@ -19900,7 +19900,9 @@ td {
 }
 
 *+th,
-*+td {
+table table th,
+*+td,
+table table td {
     padding-left: 1rem;
     padding-left: var(--td-x-padding);
 }
