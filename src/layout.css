@@ -134,6 +134,38 @@
     margin: 0;
 }
 
+.split.one-two {
+    grid-template-columns: 1fr 2fr;
+}
+
+.split.two-one {
+    grid-template-columns: 2fr 1fr;
+}
+
+.split.one-three {
+    grid-template-columns: 1fr 3fr;
+}
+
+.split.three-one {
+    grid-template-columns: 3fr 1fr;
+}
+
+.split.one-four {
+    grid-template-columns: 1fr 4fr;
+}
+
+.split.four-one {
+    grid-template-columns: 4fr 1fr;
+}
+
+.split.one-five {
+    grid-template-columns: 1fr 5fr;
+}
+
+.split.five-one {
+    grid-template-columns: 5fr 1fr;
+}
+
 
 /* Nicolas Gallaghers Clearfix solution
    Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */

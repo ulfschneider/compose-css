@@ -63,11 +63,13 @@ It could also be how dark or how light the primary color is set, like `.primary-
 ### Basic elements
 
 <table class="underline-rows">
+<thead>
     <tr>
         <th>Element</th>
         <th>Set style with HTML tag or CSS class</th>
         <th>Example</th>
     </tr>
+    </thead>
     <tr>
     <td><span>Normal text</span></td>
                     <td>
