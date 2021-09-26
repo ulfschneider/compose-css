@@ -125,7 +125,7 @@
     margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
 }
 
-.split {
+[class^="split"] {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: var(--horizontal-rhythm);
@@ -136,40 +136,48 @@
     justify-items: var(--justify-split-items);
 }
 
-.split>* {
+[class^="split"]>* {
     margin: 0;
 }
 
-.split.one-two {
+.split-1-2 {
     grid-template-columns: 1fr 2fr;
 }
 
-.split.two-one {
+.split-2-1 {
     grid-template-columns: 2fr 1fr;
 }
 
-.split.one-three {
+.split-1-3 {
     grid-template-columns: 1fr 3fr;
 }
 
-.split.three-one {
+.split-3-1 {
     grid-template-columns: 3fr 1fr;
 }
 
-.split.one-four {
+.split-1-4 {
     grid-template-columns: 1fr 4fr;
 }
 
-.split.four-one {
+.split-4-1 {
     grid-template-columns: 4fr 1fr;
 }
 
-.split.one-five {
+.split-1-5 {
     grid-template-columns: 1fr 5fr;
 }
 
-.split.five-one {
+.split-5-1 {
     grid-template-columns: 5fr 1fr;
+}
+
+.split-1-6 {
+    grid-template-columns: 1fr 6fr;
+}
+
+.split-6-1 {
+    grid-template-columns: 6fr 1fr;
 }
 
 /* Nicolas Gallaghers Clearfix solution
