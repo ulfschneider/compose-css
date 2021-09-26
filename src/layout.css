@@ -132,8 +132,7 @@
 }
 
 [class*=" split"]>*,
-[class|="split"]>*,
-.split>* {
+[class|="split"]>* {
     margin: 0;
 }
 
