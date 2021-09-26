@@ -57,7 +57,7 @@ module.exports = {
 It could also be how dark or how light the primary color is set, like `.primary-d5`, `.primary-d4`, `.primary-d3`, … , `.primary`, `.primary-1`, `.primary-2`, … `.primary-5`, where `.primary` is the neutral primary color tone and `-d1`, `-d2`, … is making it darker, while `-1`, `-2`, … is making it lighter. Please refer to [colors](#colors) for more details. 
 * A default value is often represented by a `-default` postfix added to the corresponding CSS class. For example, the default `line-height` that is used by Compose CSS defined by `.lh-3`, which can also be set by `.lh-default`.
 
-<div class="rg:split-1-5">
+<div class="bleed rg:split-1-5">
 <div class="bg-primary"><img src="/images/jayden-chong-unsplash.jpg"></div>
 <div class="bg-accent-one"><img src="/images/matthew-henry-unsplash.jpg"></div>
 </div>
