@@ -20071,8 +20071,8 @@ th.sotable-column .indicator {
     margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
 }
 
-[class^="split"],
-[class*=" split"] {
+[class*=" split"],
+[class|="split"] {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: calc(1.7 * 1rem);
@@ -20085,8 +20085,9 @@ th.sotable-column .indicator {
     justify-items: var(--justify-split-items);
 }
 
-[class^="split"]>*,
-[class*=" split"]>* {
+[class*=" split"]>*,
+[class|="split"]>*,
+.split>* {
     margin: 0;
 }
 
@@ -20349,8 +20350,7 @@ th.sotable-column .indicator {
         margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
-    [class^="sm:split"],
-    [class*=" sm:split"] {
+    [class*="sm\:split"] {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.7 * 1rem);
@@ -20362,8 +20362,7 @@ th.sotable-column .indicator {
         justify-items: start;
         justify-items: var(--justify-split-items);
     }
-    [class^="sm:split"]>*,
-    [class*=" sm:split"]>* {
+    [class*="sm\:split"]>* {
         margin: 0;
     }
     .sm\:split-1-2 {
@@ -20585,8 +20584,7 @@ th.sotable-column .indicator {
         margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
-    [class^="sm:split"],
-    [class*=" sm:split"] {
+    [class*="sm\:split"] {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.7 * 1rem);
@@ -20598,8 +20596,7 @@ th.sotable-column .indicator {
         justify-items: start;
         justify-items: var(--justify-split-items);
     }
-    [class^="sm:split"]>*,
-    [class*=" sm:split"]>* {
+    [class*="sm\:split"]>* {
         margin: 0;
     }
     .sm\:split-1-2 {
@@ -20821,8 +20818,7 @@ th.sotable-column .indicator {
         margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
-    [class^="rg:split"],
-    [class*=" rg:split"] {
+    [class*="rg\:split"] {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.7 * 1rem);
@@ -20834,8 +20830,7 @@ th.sotable-column .indicator {
         justify-items: start;
         justify-items: var(--justify-split-items);
     }
-    [class^="rg:split"]>*,
-    [class*=" rg:split"]>* {
+    [class*="rg\:split"]>* {
         margin: 0;
     }
     .rg\:split-1-2 {
@@ -21057,8 +21052,7 @@ th.sotable-column .indicator {
         margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
-    [class^="rg:split"],
-    [class*=" rg:split"] {
+    [class*="rg\:split"] {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.7 * 1rem);
@@ -21070,8 +21064,7 @@ th.sotable-column .indicator {
         justify-items: start;
         justify-items: var(--justify-split-items);
     }
-    [class^="rg:split"]>*,
-    [class*=" rg:split"]>* {
+    [class*="rg\:split"]>* {
         margin: 0;
     }
     .rg\:split-1-2 {
@@ -21293,8 +21286,7 @@ th.sotable-column .indicator {
         margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
-    [class^="md:split"],
-    [class*=" md:split"] {
+    [class*="md\:split"] {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.7 * 1rem);
@@ -21306,8 +21298,7 @@ th.sotable-column .indicator {
         justify-items: start;
         justify-items: var(--justify-split-items);
     }
-    [class^="md:split"]>*,
-    [class*=" md:split"]>* {
+    [class*="md\:split"]>* {
         margin: 0;
     }
     .md\:split-1-2 {
@@ -21529,8 +21520,7 @@ th.sotable-column .indicator {
         margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
-    [class^="md:split"],
-    [class*=" md:split"] {
+    [class*="md\:split"] {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.7 * 1rem);
@@ -21542,8 +21532,7 @@ th.sotable-column .indicator {
         justify-items: start;
         justify-items: var(--justify-split-items);
     }
-    [class^="md:split"]>*,
-    [class*=" md:split"]>* {
+    [class*="md\:split"]>* {
         margin: 0;
     }
     .md\:split-1-2 {
@@ -21765,8 +21754,7 @@ th.sotable-column .indicator {
         margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
-    [class^="lg:split"],
-    [class*=" lg:split"] {
+    [class*="lg\:split"] {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.7 * 1rem);
@@ -21778,8 +21766,7 @@ th.sotable-column .indicator {
         justify-items: start;
         justify-items: var(--justify-split-items);
     }
-    [class^="lg:split"]>*,
-    [class*=" lg:split"]>* {
+    [class*="lg\:split"]>* {
         margin: 0;
     }
     .lg\:split-1-2 {
@@ -22001,8 +21988,7 @@ th.sotable-column .indicator {
         margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
-    [class^="lg:split"],
-    [class*=" lg:split"] {
+    [class*="lg\:split"] {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.7 * 1rem);
@@ -22014,8 +22000,7 @@ th.sotable-column .indicator {
         justify-items: start;
         justify-items: var(--justify-split-items);
     }
-    [class^="lg:split"]>*,
-    [class*=" lg:split"]>* {
+    [class*="lg\:split"]>* {
         margin: 0;
     }
     .lg\:split-1-2 {

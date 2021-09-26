@@ -121,8 +121,8 @@
     margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
 }
 
-[class^="split"],
-[class*=" split"] {
+[class*=" split"],
+[class|="split"] {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: var(--horizontal-rhythm);
@@ -131,8 +131,9 @@
     justify-items: var(--justify-split-items);
 }
 
-[class^="split"]>*,
-[class*=" split"]>* {
+[class*=" split"]>*,
+[class|="split"]>*,
+.split>* {
     margin: 0;
 }
 
