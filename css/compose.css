@@ -17317,8 +17317,6 @@ blockquote>header {
     font-style: normal;
     font-size: 1rem;
     font-size: var(--figcaption-font-size);
-    line-height: calc((calc(1.7 * 1) - 1) / 3 * 2 + 1);
-    line-height: var(--lh-2);
     max-width: 35rem;
     max-width: var(--rg-width);
 }
