@@ -125,36 +125,6 @@
     .sm\:split-6-1 {
         grid-template-columns: 6fr 1fr;
     }
-    .sm\:split-1-sm {
-        grid-template-columns: 1fr var(--sm-width);
-    }
-    .sm\:split-1-rg {
-        grid-template-columns: 1fr var(--rg-width);
-    }
-    .sm\:split-1-md {
-        grid-template-columns: 1fr var(--md-width);
-    }
-    .sm\:split-1-lg {
-        grid-template-columns: 1fr var(--lg-width);
-    }
-    .sm\:split-sm-1 {
-        grid-template-columns: var(--sm-width) 1fr;
-    }
-    .sm\:split-rg-1 {
-        grid-template-columns: var(--rg-width) 1fr;
-    }
-    .sm\:split-md-1 {
-        grid-template-columns: var(--md-width) 1fr;
-    }
-    .sm\:split-lg-1 {
-        grid-template-columns: var(--lg-width) 1fr;
-    }
-    .sm\:split-aside-1 {
-        grid-template-columns: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
-    }
-    .sm\:split-1-aside {
-        grid-template-columns: 1fr calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
-    }
     /* Nicolas Gallaghers Clearfix solution
    Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
     .sm\:clearfix::before,
@@ -380,32 +350,8 @@
     .rg\:split-1-sm {
         grid-template-columns: 1fr var(--sm-width);
     }
-    .rg\:split-1-rg {
-        grid-template-columns: 1fr var(--rg-width);
-    }
-    .rg\:split-1-md {
-        grid-template-columns: 1fr var(--md-width);
-    }
-    .rg\:split-1-lg {
-        grid-template-columns: 1fr var(--lg-width);
-    }
     .rg\:split-sm-1 {
         grid-template-columns: var(--sm-width) 1fr;
-    }
-    .rg\:split-rg-1 {
-        grid-template-columns: var(--rg-width) 1fr;
-    }
-    .rg\:split-md-1 {
-        grid-template-columns: var(--md-width) 1fr;
-    }
-    .rg\:split-lg-1 {
-        grid-template-columns: var(--lg-width) 1fr;
-    }
-    .rg\:split-aside-1 {
-        grid-template-columns: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
-    }
-    .rg\:split-1-aside {
-        grid-template-columns: 1fr calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
     }
     /* Nicolas Gallaghers Clearfix solution
    Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
@@ -635,23 +581,11 @@
     .md\:split-1-rg {
         grid-template-columns: 1fr var(--rg-width);
     }
-    .md\:split-1-md {
-        grid-template-columns: 1fr var(--md-width);
-    }
-    .md\:split-1-lg {
-        grid-template-columns: 1fr var(--lg-width);
-    }
     .md\:split-sm-1 {
         grid-template-columns: var(--sm-width) 1fr;
     }
     .md\:split-rg-1 {
         grid-template-columns: var(--rg-width) 1fr;
-    }
-    .md\:split-md-1 {
-        grid-template-columns: var(--md-width) 1fr;
-    }
-    .md\:split-lg-1 {
-        grid-template-columns: var(--lg-width) 1fr;
     }
     .md\:split-aside-1 {
         grid-template-columns: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
@@ -890,9 +824,6 @@
     .lg\:split-1-md {
         grid-template-columns: 1fr var(--md-width);
     }
-    .lg\:split-1-lg {
-        grid-template-columns: 1fr var(--lg-width);
-    }
     .lg\:split-sm-1 {
         grid-template-columns: var(--sm-width) 1fr;
     }
@@ -901,9 +832,6 @@
     }
     .lg\:split-md-1 {
         grid-template-columns: var(--md-width) 1fr;
-    }
-    .lg\:split-lg-1 {
-        grid-template-columns: var(--lg-width) 1fr;
     }
     .lg\:split-aside-1 {
         grid-template-columns: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
