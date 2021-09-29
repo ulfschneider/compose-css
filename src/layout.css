@@ -211,11 +211,11 @@
 }
 
 .split-aside-1 {
-    grid-template-columns: calc((var(--bleed-width) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
+    grid-template-columns: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
 }
 
 .split-1-aside {
-    grid-template-columns: 1fr calc((var(--bleed-width) - var(--rg-width)) / 2 - var(--split-column-gap));
+    grid-template-columns: 1fr calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
 }
 
 
