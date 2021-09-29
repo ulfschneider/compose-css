@@ -7,6 +7,8 @@
     --bleed-padding: var(--space);
     --justify-split-items: start;
     --align-split-items: end;
+    --split-column-gap: var(--horizontal-rhythm);
+    --split-row-gap: var(--mrb-figure);
 }
 
 .inline {
@@ -130,7 +132,9 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: var(--horizontal-rhythm);
+    column-gap: var(--split-column-gap);
     row-gap: var(--mrb-figure);
+    row-gap: var(--split-row-gap);
     align-items: end;
     align-items: var(--align-split-items);
     justify-items: start;
@@ -212,6 +216,16 @@
 
 .split-lg-1 {
     grid-template-columns: var(--lg-width) 1fr;
+}
+
+.split-aside-1 {
+    grid-template-columns: calc((var(--lg-width) - var(--rg-width)) / 2 - var(--horizontal-rhythm)) 1fr;
+    grid-template-columns: calc((var(--lg-width) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
+}
+
+.split-1-aside {
+    grid-template-columns: 1fr calc((var(--lg-width) - var(--rg-width)) / 2 - var(--horizontal-rhythm));
+    grid-template-columns: 1fr calc((var(--lg-width) - var(--rg-width)) / 2 - var(--split-column-gap));
 }
 
 /* Nicolas Gallaghers Clearfix solution

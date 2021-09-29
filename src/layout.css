@@ -7,6 +7,8 @@
     --bleed-padding: var(--space);
     --justify-split-items: start;
     --align-split-items: end;
+    --split-column-gap: var(--horizontal-rhythm);
+    --split-row-gap: var(--mrb-figure);
 }
 
 .inline {
@@ -125,8 +127,8 @@
 [class|="split"] {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: var(--horizontal-rhythm);
-    row-gap: var(--mrb-figure);
+    column-gap: var(--split-column-gap);
+    row-gap: var(--split-row-gap);
     align-items: var(--align-split-items);
     justify-items: var(--justify-split-items);
 }
@@ -206,6 +208,14 @@
 
 .split-lg-1 {
     grid-template-columns: var(--lg-width) 1fr;
+}
+
+.split-aside-1 {
+    grid-template-columns: calc((var(--lg-width) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
+}
+
+.split-1-aside {
+    grid-template-columns: 1fr calc((var(--lg-width) - var(--rg-width)) / 2 - var(--split-column-gap));
 }
 
 

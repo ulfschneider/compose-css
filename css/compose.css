@@ -19951,6 +19951,8 @@ th.sotable-column .indicator {
     --bleed-padding: var(--space);
     --justify-split-items: start;
     --align-split-items: end;
+    --split-column-gap: var(--horizontal-rhythm);
+    --split-row-gap: var(--mrb-figure);
 }
 
 .inline {
@@ -20074,9 +20076,9 @@ th.sotable-column .indicator {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: calc(1.7 * 1rem);
-    column-gap: var(--horizontal-rhythm);
+    column-gap: var(--split-column-gap);
     row-gap: calc(calc(1.7 * 1rem) * 1.7);
-    row-gap: var(--mrb-figure);
+    row-gap: var(--split-row-gap);
     align-items: end;
     align-items: var(--align-split-items);
     justify-items: start;
@@ -20166,6 +20168,16 @@ th.sotable-column .indicator {
 .split-lg-1 {
     grid-template-columns: 60rem 1fr;
     grid-template-columns: var(--lg-width) 1fr;
+}
+
+.split-aside-1 {
+    grid-template-columns: calc((60rem - 35rem) / 2 - calc(1.7 * 1rem)) 1fr;
+    grid-template-columns: calc((var(--lg-width) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
+}
+
+.split-1-aside {
+    grid-template-columns: 1fr calc((60rem - 35rem) / 2 - calc(1.7 * 1rem));
+    grid-template-columns: 1fr calc((var(--lg-width) - var(--rg-width)) / 2 - var(--split-column-gap));
 }
 
 /* Nicolas Gallaghers Clearfix solution
@@ -20391,9 +20403,9 @@ th.sotable-column .indicator {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.7 * 1rem);
-        column-gap: var(--horizontal-rhythm);
+        column-gap: var(--split-column-gap);
         row-gap: calc(calc(1.7 * 1rem) * 1.7);
-        row-gap: var(--mrb-figure);
+        row-gap: var(--split-row-gap);
         align-items: end;
         align-items: var(--align-split-items);
         justify-items: start;
@@ -20463,6 +20475,14 @@ th.sotable-column .indicator {
     .sm\:split-lg-1 {
         grid-template-columns: 60rem 1fr;
         grid-template-columns: var(--lg-width) 1fr;
+    }
+    .sm\:split-aside-1 {
+        grid-template-columns: calc((60rem - 35rem) / 2 - calc(1.7 * 1rem)) 1fr;
+        grid-template-columns: calc((var(--lg-width) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
+    }
+    .sm\:split-1-aside {
+        grid-template-columns: 1fr calc((60rem - 35rem) / 2 - calc(1.7 * 1rem));
+        grid-template-columns: 1fr calc((var(--lg-width) - var(--rg-width)) / 2 - var(--split-column-gap));
     }
     /* Nicolas Gallaghers Clearfix solution
    Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
@@ -20657,9 +20677,9 @@ th.sotable-column .indicator {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.7 * 1rem);
-        column-gap: var(--horizontal-rhythm);
+        column-gap: var(--split-column-gap);
         row-gap: calc(calc(1.7 * 1rem) * 1.7);
-        row-gap: var(--mrb-figure);
+        row-gap: var(--split-row-gap);
         align-items: end;
         align-items: var(--align-split-items);
         justify-items: start;
@@ -20729,6 +20749,14 @@ th.sotable-column .indicator {
     .sm\:split-lg-1 {
         grid-template-columns: 60rem 1fr;
         grid-template-columns: var(--lg-width) 1fr;
+    }
+    .sm\:split-aside-1 {
+        grid-template-columns: calc((60rem - 35rem) / 2 - calc(1.7 * 1rem)) 1fr;
+        grid-template-columns: calc((var(--lg-width) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
+    }
+    .sm\:split-1-aside {
+        grid-template-columns: 1fr calc((60rem - 35rem) / 2 - calc(1.7 * 1rem));
+        grid-template-columns: 1fr calc((var(--lg-width) - var(--rg-width)) / 2 - var(--split-column-gap));
     }
     /* Nicolas Gallaghers Clearfix solution
    Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
@@ -20923,9 +20951,9 @@ th.sotable-column .indicator {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.7 * 1rem);
-        column-gap: var(--horizontal-rhythm);
+        column-gap: var(--split-column-gap);
         row-gap: calc(calc(1.7 * 1rem) * 1.7);
-        row-gap: var(--mrb-figure);
+        row-gap: var(--split-row-gap);
         align-items: end;
         align-items: var(--align-split-items);
         justify-items: start;
@@ -20995,6 +21023,14 @@ th.sotable-column .indicator {
     .rg\:split-lg-1 {
         grid-template-columns: 60rem 1fr;
         grid-template-columns: var(--lg-width) 1fr;
+    }
+    .rg\:split-aside-1 {
+        grid-template-columns: calc((60rem - 35rem) / 2 - calc(1.7 * 1rem)) 1fr;
+        grid-template-columns: calc((var(--lg-width) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
+    }
+    .rg\:split-1-aside {
+        grid-template-columns: 1fr calc((60rem - 35rem) / 2 - calc(1.7 * 1rem));
+        grid-template-columns: 1fr calc((var(--lg-width) - var(--rg-width)) / 2 - var(--split-column-gap));
     }
     /* Nicolas Gallaghers Clearfix solution
    Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
@@ -21189,9 +21225,9 @@ th.sotable-column .indicator {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.7 * 1rem);
-        column-gap: var(--horizontal-rhythm);
+        column-gap: var(--split-column-gap);
         row-gap: calc(calc(1.7 * 1rem) * 1.7);
-        row-gap: var(--mrb-figure);
+        row-gap: var(--split-row-gap);
         align-items: end;
         align-items: var(--align-split-items);
         justify-items: start;
@@ -21261,6 +21297,14 @@ th.sotable-column .indicator {
     .rg\:split-lg-1 {
         grid-template-columns: 60rem 1fr;
         grid-template-columns: var(--lg-width) 1fr;
+    }
+    .rg\:split-aside-1 {
+        grid-template-columns: calc((60rem - 35rem) / 2 - calc(1.7 * 1rem)) 1fr;
+        grid-template-columns: calc((var(--lg-width) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
+    }
+    .rg\:split-1-aside {
+        grid-template-columns: 1fr calc((60rem - 35rem) / 2 - calc(1.7 * 1rem));
+        grid-template-columns: 1fr calc((var(--lg-width) - var(--rg-width)) / 2 - var(--split-column-gap));
     }
     /* Nicolas Gallaghers Clearfix solution
    Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
@@ -21455,9 +21499,9 @@ th.sotable-column .indicator {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.7 * 1rem);
-        column-gap: var(--horizontal-rhythm);
+        column-gap: var(--split-column-gap);
         row-gap: calc(calc(1.7 * 1rem) * 1.7);
-        row-gap: var(--mrb-figure);
+        row-gap: var(--split-row-gap);
         align-items: end;
         align-items: var(--align-split-items);
         justify-items: start;
@@ -21527,6 +21571,14 @@ th.sotable-column .indicator {
     .md\:split-lg-1 {
         grid-template-columns: 60rem 1fr;
         grid-template-columns: var(--lg-width) 1fr;
+    }
+    .md\:split-aside-1 {
+        grid-template-columns: calc((60rem - 35rem) / 2 - calc(1.7 * 1rem)) 1fr;
+        grid-template-columns: calc((var(--lg-width) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
+    }
+    .md\:split-1-aside {
+        grid-template-columns: 1fr calc((60rem - 35rem) / 2 - calc(1.7 * 1rem));
+        grid-template-columns: 1fr calc((var(--lg-width) - var(--rg-width)) / 2 - var(--split-column-gap));
     }
     /* Nicolas Gallaghers Clearfix solution
    Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
@@ -21721,9 +21773,9 @@ th.sotable-column .indicator {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.7 * 1rem);
-        column-gap: var(--horizontal-rhythm);
+        column-gap: var(--split-column-gap);
         row-gap: calc(calc(1.7 * 1rem) * 1.7);
-        row-gap: var(--mrb-figure);
+        row-gap: var(--split-row-gap);
         align-items: end;
         align-items: var(--align-split-items);
         justify-items: start;
@@ -21793,6 +21845,14 @@ th.sotable-column .indicator {
     .md\:split-lg-1 {
         grid-template-columns: 60rem 1fr;
         grid-template-columns: var(--lg-width) 1fr;
+    }
+    .md\:split-aside-1 {
+        grid-template-columns: calc((60rem - 35rem) / 2 - calc(1.7 * 1rem)) 1fr;
+        grid-template-columns: calc((var(--lg-width) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
+    }
+    .md\:split-1-aside {
+        grid-template-columns: 1fr calc((60rem - 35rem) / 2 - calc(1.7 * 1rem));
+        grid-template-columns: 1fr calc((var(--lg-width) - var(--rg-width)) / 2 - var(--split-column-gap));
     }
     /* Nicolas Gallaghers Clearfix solution
    Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
@@ -21987,9 +22047,9 @@ th.sotable-column .indicator {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.7 * 1rem);
-        column-gap: var(--horizontal-rhythm);
+        column-gap: var(--split-column-gap);
         row-gap: calc(calc(1.7 * 1rem) * 1.7);
-        row-gap: var(--mrb-figure);
+        row-gap: var(--split-row-gap);
         align-items: end;
         align-items: var(--align-split-items);
         justify-items: start;
@@ -22059,6 +22119,14 @@ th.sotable-column .indicator {
     .lg\:split-lg-1 {
         grid-template-columns: 60rem 1fr;
         grid-template-columns: var(--lg-width) 1fr;
+    }
+    .lg\:split-aside-1 {
+        grid-template-columns: calc((60rem - 35rem) / 2 - calc(1.7 * 1rem)) 1fr;
+        grid-template-columns: calc((var(--lg-width) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
+    }
+    .lg\:split-1-aside {
+        grid-template-columns: 1fr calc((60rem - 35rem) / 2 - calc(1.7 * 1rem));
+        grid-template-columns: 1fr calc((var(--lg-width) - var(--rg-width)) / 2 - var(--split-column-gap));
     }
     /* Nicolas Gallaghers Clearfix solution
    Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
@@ -22253,9 +22321,9 @@ th.sotable-column .indicator {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.7 * 1rem);
-        column-gap: var(--horizontal-rhythm);
+        column-gap: var(--split-column-gap);
         row-gap: calc(calc(1.7 * 1rem) * 1.7);
-        row-gap: var(--mrb-figure);
+        row-gap: var(--split-row-gap);
         align-items: end;
         align-items: var(--align-split-items);
         justify-items: start;
@@ -22325,6 +22393,14 @@ th.sotable-column .indicator {
     .lg\:split-lg-1 {
         grid-template-columns: 60rem 1fr;
         grid-template-columns: var(--lg-width) 1fr;
+    }
+    .lg\:split-aside-1 {
+        grid-template-columns: calc((60rem - 35rem) / 2 - calc(1.7 * 1rem)) 1fr;
+        grid-template-columns: calc((var(--lg-width) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
+    }
+    .lg\:split-1-aside {
+        grid-template-columns: 1fr calc((60rem - 35rem) / 2 - calc(1.7 * 1rem));
+        grid-template-columns: 1fr calc((var(--lg-width) - var(--rg-width)) / 2 - var(--split-column-gap));
     }
     /* Nicolas Gallaghers Clearfix solution
    Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */

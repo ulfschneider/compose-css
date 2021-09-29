@@ -87,8 +87,8 @@
     [class*="sm\:split"] {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: var(--horizontal-rhythm);
-        row-gap: var(--mrb-figure);
+        column-gap: var(--split-column-gap);
+        row-gap: var(--split-row-gap);
         align-items: var(--align-split-items);
         justify-items: var(--justify-split-items);
     }
@@ -148,6 +148,12 @@
     }
     .sm\:split-lg-1 {
         grid-template-columns: var(--lg-width) 1fr;
+    }
+    .sm\:split-aside-1 {
+        grid-template-columns: calc((var(--lg-width) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
+    }
+    .sm\:split-1-aside {
+        grid-template-columns: 1fr calc((var(--lg-width) - var(--rg-width)) / 2 - var(--split-column-gap));
     }
     /* Nicolas Gallaghers Clearfix solution
    Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
@@ -333,8 +339,8 @@
     [class*="rg\:split"] {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: var(--horizontal-rhythm);
-        row-gap: var(--mrb-figure);
+        column-gap: var(--split-column-gap);
+        row-gap: var(--split-row-gap);
         align-items: var(--align-split-items);
         justify-items: var(--justify-split-items);
     }
@@ -394,6 +400,12 @@
     }
     .rg\:split-lg-1 {
         grid-template-columns: var(--lg-width) 1fr;
+    }
+    .rg\:split-aside-1 {
+        grid-template-columns: calc((var(--lg-width) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
+    }
+    .rg\:split-1-aside {
+        grid-template-columns: 1fr calc((var(--lg-width) - var(--rg-width)) / 2 - var(--split-column-gap));
     }
     /* Nicolas Gallaghers Clearfix solution
    Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
@@ -579,8 +591,8 @@
     [class*="md\:split"] {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: var(--horizontal-rhythm);
-        row-gap: var(--mrb-figure);
+        column-gap: var(--split-column-gap);
+        row-gap: var(--split-row-gap);
         align-items: var(--align-split-items);
         justify-items: var(--justify-split-items);
     }
@@ -640,6 +652,12 @@
     }
     .md\:split-lg-1 {
         grid-template-columns: var(--lg-width) 1fr;
+    }
+    .md\:split-aside-1 {
+        grid-template-columns: calc((var(--lg-width) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
+    }
+    .md\:split-1-aside {
+        grid-template-columns: 1fr calc((var(--lg-width) - var(--rg-width)) / 2 - var(--split-column-gap));
     }
     /* Nicolas Gallaghers Clearfix solution
    Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
@@ -825,8 +843,8 @@
     [class*="lg\:split"] {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: var(--horizontal-rhythm);
-        row-gap: var(--mrb-figure);
+        column-gap: var(--split-column-gap);
+        row-gap: var(--split-row-gap);
         align-items: var(--align-split-items);
         justify-items: var(--justify-split-items);
     }
@@ -886,6 +904,12 @@
     }
     .lg\:split-lg-1 {
         grid-template-columns: var(--lg-width) 1fr;
+    }
+    .lg\:split-aside-1 {
+        grid-template-columns: calc((var(--lg-width) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
+    }
+    .lg\:split-1-aside {
+        grid-template-columns: 1fr calc((var(--lg-width) - var(--rg-width)) / 2 - var(--split-column-gap));
     }
     /* Nicolas Gallaghers Clearfix solution
    Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
