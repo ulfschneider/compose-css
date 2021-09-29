@@ -176,6 +176,38 @@
     grid-template-columns: 6fr 1fr;
 }
 
+.split-1-sm {
+    grid-template-columns: 1fr var(--sm-width);
+}
+
+.split-1-rg {
+    grid-template-columns: 1fr var(--rg-width);
+}
+
+.split-1-md {
+    grid-template-columns: 1fr var(--md-width);
+}
+
+.split-1-lg {
+    grid-template-columns: 1fr var(--lg-width);
+}
+
+.split-sm-1 {
+    grid-template-columns: var(--sm-width) 1fr;
+}
+
+.split-rg-1 {
+    grid-template-columns: var(--rg-width) 1fr;
+}
+
+.split-md-1 {
+    grid-template-columns: var(--md-width) 1fr;
+}
+
+.split-lg-1 {
+    grid-template-columns: var(--lg-width) 1fr;
+}
+
 
 /* Nicolas Gallaghers Clearfix solution
    Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
