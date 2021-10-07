@@ -218,26 +218,41 @@ em,
     text-transform: lowercase;
 }
 
+.lsp-d4 {
+    letter-spacing: -0.08em;
+}
+
+.lsp-d3 {
+    letter-spacing: -0.04em;
+}
+
+.lsp-d2 {
+    letter-spacing: -0.02em;
+}
+
+.lsp-d1 {
+    letter-spacing: -0.01em;
+}
+
 .no-lsp,
 .lsp-0 {
     letter-spacing: none;
 }
 
 .lsp-1 {
-    letter-spacing: 0.05em;
+    letter-spacing: .01em;
 }
 
-.lsp-2,
-.lsp {
-    letter-spacing: 0.1em;
+.lsp-2 {
+    letter-spacing: .02em;
 }
 
 .lsp-3 {
-    letter-spacing: 0.15em;
+    letter-spacing: .04em;
 }
 
 .lsp-4 {
-    letter-spacing: 0.2em;
+    letter-spacing: .08em;
 }
 
 .underline,
