@@ -12828,8 +12828,8 @@ Naming conventions
 
 :root {
     --sm-width: 25rem;
-    --rg-width: 35rem;
-    --md-width: 45rem;
+    --rg-width: 40rem;
+    --md-width: 50rem;
     --lg-width: 60rem;
 }
 
@@ -12892,7 +12892,7 @@ Naming conventions
 }
 
 .w-rg {
-    width: 35rem;
+    width: 40rem;
     width: var(--rg-width);
 }
 
@@ -12902,7 +12902,7 @@ Naming conventions
 }
 
 .w-md {
-    width: 45rem;
+    width: 50rem;
     width: var(--md-width);
 }
 
@@ -13364,11 +13364,11 @@ Naming conventions
         width: var(--sm-width);
     }
     .lg\:w-rg {
-        width: 35rem;
+        width: 40rem;
         width: var(--rg-width);
     }
     .lg\:w-md {
-        width: 45rem;
+        width: 50rem;
         width: var(--md-width);
     }
     .lg\:w-lg {
@@ -13441,11 +13441,11 @@ Naming conventions
         width: var(--sm-width);
     }
     .lg\:w-rg {
-        width: 35rem;
+        width: 40rem;
         width: var(--rg-width);
     }
     .lg\:w-md {
-        width: 45rem;
+        width: 50rem;
         width: var(--md-width);
     }
     .lg\:w-lg {
@@ -13526,7 +13526,7 @@ Naming conventions
 }
 
 .mxw-rg {
-    max-width: 35rem;
+    max-width: 40rem;
     max-width: var(--rg-width);
 }
 
@@ -13536,7 +13536,7 @@ Naming conventions
 }
 
 .mxw-md {
-    max-width: 45rem;
+    max-width: 50rem;
     max-width: var(--md-width);
 }
 
@@ -14112,7 +14112,7 @@ Naming conventions
 }
 
 .miw-rg {
-    min-width: 35rem;
+    min-width: 40rem;
     min-width: var(--rg-width);
 }
 
@@ -14122,7 +14122,7 @@ Naming conventions
 }
 
 .miw-md {
-    min-width: 45rem;
+    min-width: 50rem;
     min-width: var(--md-width);
 }
 
@@ -14576,11 +14576,11 @@ Naming conventions
         min-width: var(--sm-width);
     }
     .lg\:miw-rg {
-        min-width: 35rem;
+        min-width: 40rem;
         min-width: var(--rg-width);
     }
     .lg\:miw-md {
-        min-width: 45rem;
+        min-width: 50rem;
         min-width: var(--md-width);
     }
     .lg\:miw-lg {
@@ -14651,11 +14651,11 @@ Naming conventions
         min-width: var(--sm-width);
     }
     .lg\:miw-rg {
-        min-width: 35rem;
+        min-width: 40rem;
         min-width: var(--rg-width);
     }
     .lg\:miw-md {
-        min-width: 45rem;
+        min-width: 50rem;
         min-width: var(--md-width);
     }
     .lg\:miw-lg {
@@ -14729,13 +14729,13 @@ Naming conventions
 
 .h-rg,
 .h-rg {
-    height: 35rem;
+    height: 40rem;
     height: var(--rg-width);
 }
 
 .h-md,
 .h-md {
-    height: 45rem;
+    height: 50rem;
     height: var(--md-width);
 }
 
@@ -15311,13 +15311,13 @@ Naming conventions
 
 .mxh-rg,
 .mxh-rg {
-    max-height: 35rem;
+    max-height: 40rem;
     max-height: var(--rg-width);
 }
 
 .mxh-md,
 .mxh-md {
-    max-height: 45rem;
+    max-height: 50rem;
     max-height: var(--md-width);
 }
 
@@ -15953,13 +15953,13 @@ Naming conventions
 
 .mih-rg,
 .mih-rg {
-    min-height: 35rem;
+    min-height: 40rem;
     min-height: var(--rg-width);
 }
 
 .mih-md,
 .mih-md {
-    min-height: 45rem;
+    min-height: 50rem;
     min-height: var(--md-width);
 }
 
@@ -17332,7 +17332,7 @@ blockquote>header {
     font-style: normal;
     font-size: 1rem;
     font-size: var(--figcaption-font-size);
-    max-width: 35rem;
+    max-width: 40rem;
     max-width: var(--rg-width);
 }
 
@@ -19898,7 +19898,7 @@ table caption {
     margin: 0;
     text-align: left;
     font-style: normal;
-    max-width: min(calc(100vw - 2 * 1rem), 35rem);
+    max-width: min(calc(100vw - 2 * 1rem), 40rem);
     max-width: min(calc(100vw - 2 * var(--space)), var(--rg-width));
     font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--figcaption-font-family);
@@ -20151,12 +20151,12 @@ th.sotable-column .indicator {
 }
 
 .split-1-rg {
-    grid-template-columns: 1fr 35rem;
+    grid-template-columns: 1fr 40rem;
     grid-template-columns: 1fr var(--rg-width);
 }
 
 .split-1-md {
-    grid-template-columns: 1fr 45rem;
+    grid-template-columns: 1fr 50rem;
     grid-template-columns: 1fr var(--md-width);
 }
 
@@ -20171,12 +20171,12 @@ th.sotable-column .indicator {
 }
 
 .split-rg-1 {
-    grid-template-columns: 35rem 1fr;
+    grid-template-columns: 40rem 1fr;
     grid-template-columns: var(--rg-width) 1fr;
 }
 
 .split-md-1 {
-    grid-template-columns: 45rem 1fr;
+    grid-template-columns: 50rem 1fr;
     grid-template-columns: var(--md-width) 1fr;
 }
 
@@ -20186,12 +20186,12 @@ th.sotable-column .indicator {
 }
 
 .split-aside-1 {
-    grid-template-columns: calc((min(1200px, 100vw - 2*1rem) - 35rem) / 2 - calc(1.7 * 1rem)) 1fr;
+    grid-template-columns: calc((min(1200px, 100vw - 2*1rem) - 40rem) / 2 - calc(1.7 * 1rem)) 1fr;
     grid-template-columns: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
 }
 
 .split-1-aside {
-    grid-template-columns: 1fr calc((min(1200px, 100vw - 2*1rem) - 35rem) / 2 - calc(1.7 * 1rem));
+    grid-template-columns: 1fr calc((min(1200px, 100vw - 2*1rem) - 40rem) / 2 - calc(1.7 * 1rem));
     grid-template-columns: 1fr calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
 }
 
@@ -21416,7 +21416,7 @@ th.sotable-column .indicator {
         grid-template-columns: 1fr var(--sm-width);
     }
     .md\:split-1-rg {
-        grid-template-columns: 1fr 35rem;
+        grid-template-columns: 1fr 40rem;
         grid-template-columns: 1fr var(--rg-width);
     }
     .md\:split-sm-1 {
@@ -21424,15 +21424,15 @@ th.sotable-column .indicator {
         grid-template-columns: var(--sm-width) 1fr;
     }
     .md\:split-rg-1 {
-        grid-template-columns: 35rem 1fr;
+        grid-template-columns: 40rem 1fr;
         grid-template-columns: var(--rg-width) 1fr;
     }
     .md\:split-aside-1 {
-        grid-template-columns: calc((min(1200px, 100vw - 2*1rem) - 35rem) / 2 - calc(1.7 * 1rem)) 1fr;
+        grid-template-columns: calc((min(1200px, 100vw - 2*1rem) - 40rem) / 2 - calc(1.7 * 1rem)) 1fr;
         grid-template-columns: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
     }
     .md\:split-1-aside {
-        grid-template-columns: 1fr calc((min(1200px, 100vw - 2*1rem) - 35rem) / 2 - calc(1.7 * 1rem));
+        grid-template-columns: 1fr calc((min(1200px, 100vw - 2*1rem) - 40rem) / 2 - calc(1.7 * 1rem));
         grid-template-columns: 1fr calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
     }
     /* Nicolas Gallaghers Clearfix solution
@@ -21674,7 +21674,7 @@ th.sotable-column .indicator {
         grid-template-columns: 1fr var(--sm-width);
     }
     .md\:split-1-rg {
-        grid-template-columns: 1fr 35rem;
+        grid-template-columns: 1fr 40rem;
         grid-template-columns: 1fr var(--rg-width);
     }
     .md\:split-sm-1 {
@@ -21682,15 +21682,15 @@ th.sotable-column .indicator {
         grid-template-columns: var(--sm-width) 1fr;
     }
     .md\:split-rg-1 {
-        grid-template-columns: 35rem 1fr;
+        grid-template-columns: 40rem 1fr;
         grid-template-columns: var(--rg-width) 1fr;
     }
     .md\:split-aside-1 {
-        grid-template-columns: calc((min(1200px, 100vw - 2*1rem) - 35rem) / 2 - calc(1.7 * 1rem)) 1fr;
+        grid-template-columns: calc((min(1200px, 100vw - 2*1rem) - 40rem) / 2 - calc(1.7 * 1rem)) 1fr;
         grid-template-columns: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
     }
     .md\:split-1-aside {
-        grid-template-columns: 1fr calc((min(1200px, 100vw - 2*1rem) - 35rem) / 2 - calc(1.7 * 1rem));
+        grid-template-columns: 1fr calc((min(1200px, 100vw - 2*1rem) - 40rem) / 2 - calc(1.7 * 1rem));
         grid-template-columns: 1fr calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
     }
     /* Nicolas Gallaghers Clearfix solution
@@ -21932,11 +21932,11 @@ th.sotable-column .indicator {
         grid-template-columns: 1fr var(--sm-width);
     }
     .lg\:split-1-rg {
-        grid-template-columns: 1fr 35rem;
+        grid-template-columns: 1fr 40rem;
         grid-template-columns: 1fr var(--rg-width);
     }
     .lg\:split-1-md {
-        grid-template-columns: 1fr 45rem;
+        grid-template-columns: 1fr 50rem;
         grid-template-columns: 1fr var(--md-width);
     }
     .lg\:split-sm-1 {
@@ -21944,19 +21944,19 @@ th.sotable-column .indicator {
         grid-template-columns: var(--sm-width) 1fr;
     }
     .lg\:split-rg-1 {
-        grid-template-columns: 35rem 1fr;
+        grid-template-columns: 40rem 1fr;
         grid-template-columns: var(--rg-width) 1fr;
     }
     .lg\:split-md-1 {
-        grid-template-columns: 45rem 1fr;
+        grid-template-columns: 50rem 1fr;
         grid-template-columns: var(--md-width) 1fr;
     }
     .lg\:split-aside-1 {
-        grid-template-columns: calc((min(1200px, 100vw - 2*1rem) - 35rem) / 2 - calc(1.7 * 1rem)) 1fr;
+        grid-template-columns: calc((min(1200px, 100vw - 2*1rem) - 40rem) / 2 - calc(1.7 * 1rem)) 1fr;
         grid-template-columns: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
     }
     .lg\:split-1-aside {
-        grid-template-columns: 1fr calc((min(1200px, 100vw - 2*1rem) - 35rem) / 2 - calc(1.7 * 1rem));
+        grid-template-columns: 1fr calc((min(1200px, 100vw - 2*1rem) - 40rem) / 2 - calc(1.7 * 1rem));
         grid-template-columns: 1fr calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
     }
     /* Nicolas Gallaghers Clearfix solution
@@ -22198,11 +22198,11 @@ th.sotable-column .indicator {
         grid-template-columns: 1fr var(--sm-width);
     }
     .lg\:split-1-rg {
-        grid-template-columns: 1fr 35rem;
+        grid-template-columns: 1fr 40rem;
         grid-template-columns: 1fr var(--rg-width);
     }
     .lg\:split-1-md {
-        grid-template-columns: 1fr 45rem;
+        grid-template-columns: 1fr 50rem;
         grid-template-columns: 1fr var(--md-width);
     }
     .lg\:split-sm-1 {
@@ -22210,19 +22210,19 @@ th.sotable-column .indicator {
         grid-template-columns: var(--sm-width) 1fr;
     }
     .lg\:split-rg-1 {
-        grid-template-columns: 35rem 1fr;
+        grid-template-columns: 40rem 1fr;
         grid-template-columns: var(--rg-width) 1fr;
     }
     .lg\:split-md-1 {
-        grid-template-columns: 45rem 1fr;
+        grid-template-columns: 50rem 1fr;
         grid-template-columns: var(--md-width) 1fr;
     }
     .lg\:split-aside-1 {
-        grid-template-columns: calc((min(1200px, 100vw - 2*1rem) - 35rem) / 2 - calc(1.7 * 1rem)) 1fr;
+        grid-template-columns: calc((min(1200px, 100vw - 2*1rem) - 40rem) / 2 - calc(1.7 * 1rem)) 1fr;
         grid-template-columns: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
     }
     .lg\:split-1-aside {
-        grid-template-columns: 1fr calc((min(1200px, 100vw - 2*1rem) - 35rem) / 2 - calc(1.7 * 1rem));
+        grid-template-columns: 1fr calc((min(1200px, 100vw - 2*1rem) - 40rem) / 2 - calc(1.7 * 1rem));
         grid-template-columns: 1fr calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
     }
     /* Nicolas Gallaghers Clearfix solution
