@@ -1,8 +1,8 @@
 :root {
     --sm-width: 25rem;
     --rg-width: 40rem;
-    --md-width: 50rem;
-    --lg-width: 60rem;
+    --md-width: 55rem;
+    --lg-width: 65rem;
 }
 
 .w-unset {
@@ -72,7 +72,7 @@
 }
 
 .w-md {
-    width: 50rem;
+    width: 55rem;
     width: var(--md-width);
 }
 
@@ -81,7 +81,7 @@
 }
 
 .w-lg {
-    width: 60rem;
+    width: 65rem;
     width: var(--lg-width);
 }
 

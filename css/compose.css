@@ -249,9 +249,9 @@ small,
 
 :root {
     --sm-breakpoint: 400px;
-    --rg-breakpoint: 600px;
-    --md-breakpoint: 900px;
-    --lg-breakpoint: 1200px;
+    --rg-breakpoint: 650px;
+    --md-breakpoint: 950px;
+    --lg-breakpoint: 1250px;
 }
 
 @custom-media --mx-sm-bp (max-width: 400px);
@@ -12829,8 +12829,8 @@ Naming conventions
 :root {
     --sm-width: 25rem;
     --rg-width: 40rem;
-    --md-width: 50rem;
-    --lg-width: 60rem;
+    --md-width: 55rem;
+    --lg-width: 65rem;
 }
 
 .w-unset {
@@ -12897,27 +12897,27 @@ Naming conventions
 }
 
 .w-rg-bp {
-    width: 600px;
+    width: 650px;
     width: var(--rg-breakpoint);
 }
 
 .w-md {
-    width: 50rem;
+    width: 55rem;
     width: var(--md-width);
 }
 
 .w-md-bp {
-    width: 900px;
+    width: 950px;
     width: var(--md-breakpoint);
 }
 
 .w-lg {
-    width: 60rem;
+    width: 65rem;
     width: var(--lg-width);
 }
 
 .w-lg-bp {
-    width: 1200px;
+    width: 1250px;
     width: var(--lg-breakpoint);
 }
 
@@ -12982,7 +12982,7 @@ Naming conventions
 }
 
 .w-bleed {
-    width: 1200px;
+    width: 1250px;
     width: var(--bleed-width);
 }
 
@@ -13042,7 +13042,7 @@ Naming conventions
         width: var(--space-6);
     }
     .sm\:w-bleed {
-        width: 1200px;
+        width: 1250px;
         width: var(--bleed-width);
     }
 }
@@ -13103,7 +13103,7 @@ Naming conventions
         width: var(--space-6);
     }
     .sm\:w-bleed {
-        width: 1200px;
+        width: 1250px;
         width: var(--bleed-width);
     }
 }
@@ -13164,7 +13164,7 @@ Naming conventions
         width: var(--space-6);
     }
     .rg\:w-bleed {
-        width: 1200px;
+        width: 1250px;
         width: var(--bleed-width);
     }
 }
@@ -13225,7 +13225,7 @@ Naming conventions
         width: var(--space-6);
     }
     .rg\:w-bleed {
-        width: 1200px;
+        width: 1250px;
         width: var(--bleed-width);
     }
 }
@@ -13286,7 +13286,7 @@ Naming conventions
         width: var(--space-6);
     }
     .md\:w-bleed {
-        width: 1200px;
+        width: 1250px;
         width: var(--bleed-width);
     }
 }
@@ -13347,7 +13347,7 @@ Naming conventions
         width: var(--space-6);
     }
     .md\:w-bleed {
-        width: 1200px;
+        width: 1250px;
         width: var(--bleed-width);
     }
 }
@@ -13368,11 +13368,11 @@ Naming conventions
         width: var(--rg-width);
     }
     .lg\:w-md {
-        width: 50rem;
+        width: 55rem;
         width: var(--md-width);
     }
     .lg\:w-lg {
-        width: 60rem;
+        width: 65rem;
         width: var(--lg-width);
     }
     .lg\:w-d5 {
@@ -13424,7 +13424,7 @@ Naming conventions
         width: var(--space-6);
     }
     .lg\:w-bleed {
-        width: 1200px;
+        width: 1250px;
         width: var(--bleed-width);
     }
 }
@@ -13445,11 +13445,11 @@ Naming conventions
         width: var(--rg-width);
     }
     .lg\:w-md {
-        width: 50rem;
+        width: 55rem;
         width: var(--md-width);
     }
     .lg\:w-lg {
-        width: 60rem;
+        width: 65rem;
         width: var(--lg-width);
     }
     .lg\:w-d5 {
@@ -13501,7 +13501,7 @@ Naming conventions
         width: var(--space-6);
     }
     .lg\:w-bleed {
-        width: 1200px;
+        width: 1250px;
         width: var(--bleed-width);
     }
 }
@@ -13531,27 +13531,27 @@ Naming conventions
 }
 
 .mxw-rg-bp {
-    max-width: 600px;
+    max-width: 650px;
     max-width: var(--rg-breakpoint);
 }
 
 .mxw-md {
-    max-width: 50rem;
+    max-width: 55rem;
     max-width: var(--md-width);
 }
 
 .mxw-md-bp {
-    max-width: 900px;
+    max-width: 950px;
     max-width: var(--md-breakpoint);
 }
 
 .mxw-lg {
-    max-width: 60rem;
+    max-width: 65rem;
     max-width: var(--lg-width);
 }
 
 .mxw-lg-bp {
-    max-width: 1200px;
+    max-width: 1250px;
     max-width: var(--lg-breakpoint);
 }
 
@@ -13620,7 +13620,7 @@ Naming conventions
 }
 
 .mxw-bleed {
-    max-width: 1200px;
+    max-width: 1250px;
     max-width: var(--bleed-width);
 }
 
@@ -13678,7 +13678,7 @@ Naming conventions
         max-width: var(--space-6);
     }
     .sm\:mxw-bleed {
-        max-width: 1200px;
+        max-width: 1250px;
         max-width: var(--bleed-width);
     }
 }
@@ -13737,7 +13737,7 @@ Naming conventions
         max-width: var(--space-6);
     }
     .sm\:mxw-bleed {
-        max-width: 1200px;
+        max-width: 1250px;
         max-width: var(--bleed-width);
     }
 }
@@ -13796,7 +13796,7 @@ Naming conventions
         max-width: var(--space-6);
     }
     .rg\:mxw-bleed {
-        max-width: 1200px;
+        max-width: 1250px;
         max-width: var(--bleed-width);
     }
 }
@@ -13855,7 +13855,7 @@ Naming conventions
         max-width: var(--space-6);
     }
     .rg\:mxw-bleed {
-        max-width: 1200px;
+        max-width: 1250px;
         max-width: var(--bleed-width);
     }
 }
@@ -13914,7 +13914,7 @@ Naming conventions
         max-width: var(--space-6);
     }
     .md\:mxw-bleed {
-        max-width: 1200px;
+        max-width: 1250px;
         max-width: var(--bleed-width);
     }
 }
@@ -13973,7 +13973,7 @@ Naming conventions
         max-width: var(--space-6);
     }
     .md\:mxw-bleed {
-        max-width: 1200px;
+        max-width: 1250px;
         max-width: var(--bleed-width);
     }
 }
@@ -14032,7 +14032,7 @@ Naming conventions
         max-width: var(--space-6);
     }
     .lg\:mxw-bleed {
-        max-width: 1200px;
+        max-width: 1250px;
         max-width: var(--bleed-width);
     }
 }
@@ -14091,7 +14091,7 @@ Naming conventions
         max-width: var(--space-6);
     }
     .lg\:mxw-bleed {
-        max-width: 1200px;
+        max-width: 1250px;
         max-width: var(--bleed-width);
     }
 }
@@ -14117,27 +14117,27 @@ Naming conventions
 }
 
 .miw-rg-bp {
-    min-width: 600px;
+    min-width: 650px;
     min-width: var(--rg-breakpoint);
 }
 
 .miw-md {
-    min-width: 50rem;
+    min-width: 55rem;
     min-width: var(--md-width);
 }
 
 .miw-md-bp {
-    min-width: 900px;
+    min-width: 950px;
     min-width: var(--md-breakpoint);
 }
 
 .miw-lg {
-    min-width: 60rem;
+    min-width: 65rem;
     min-width: var(--lg-width);
 }
 
 .miw-lg-bp {
-    min-width: 1200px;
+    min-width: 1250px;
     min-width: var(--lg-breakpoint);
 }
 
@@ -14206,7 +14206,7 @@ Naming conventions
 }
 
 .miw-bleed {
-    min-width: 1200px;
+    min-width: 1250px;
     min-width: var(--bleed-width);
 }
 
@@ -14265,7 +14265,7 @@ Naming conventions
         min-width: var(--space-6);
     }
     .sm\:miw-bleed {
-        min-width: 1200px;
+        min-width: 1250px;
         min-width: var(--bleed-width);
     }
 }
@@ -14325,7 +14325,7 @@ Naming conventions
         min-width: var(--space-6);
     }
     .sm\:miw-bleed {
-        min-width: 1200px;
+        min-width: 1250px;
         min-width: var(--bleed-width);
     }
 }
@@ -14384,7 +14384,7 @@ Naming conventions
         min-width: var(--space-6);
     }
     .rg\:miw-bleed {
-        min-width: 1200px;
+        min-width: 1250px;
         min-width: var(--bleed-width);
     }
 }
@@ -14443,7 +14443,7 @@ Naming conventions
         min-width: var(--space-6);
     }
     .rg\:miw-bleed {
-        min-width: 1200px;
+        min-width: 1250px;
         min-width: var(--bleed-width);
     }
 }
@@ -14502,7 +14502,7 @@ Naming conventions
         min-width: var(--space-6);
     }
     .md\:miw-bleed {
-        min-width: 1200px;
+        min-width: 1250px;
         min-width: var(--bleed-width);
     }
 }
@@ -14561,7 +14561,7 @@ Naming conventions
         min-width: var(--space-6);
     }
     .md\:miw-bleed {
-        min-width: 1200px;
+        min-width: 1250px;
         min-width: var(--bleed-width);
     }
 }
@@ -14580,11 +14580,11 @@ Naming conventions
         min-width: var(--rg-width);
     }
     .lg\:miw-md {
-        min-width: 50rem;
+        min-width: 55rem;
         min-width: var(--md-width);
     }
     .lg\:miw-lg {
-        min-width: 60rem;
+        min-width: 65rem;
         min-width: var(--lg-width);
     }
     .lg\:miw-d5 {
@@ -14636,7 +14636,7 @@ Naming conventions
         min-width: var(--space-6);
     }
     .lg\:miw-bleed {
-        min-width: 1200px;
+        min-width: 1250px;
         min-width: var(--bleed-width);
     }
 }
@@ -14655,11 +14655,11 @@ Naming conventions
         min-width: var(--rg-width);
     }
     .lg\:miw-md {
-        min-width: 50rem;
+        min-width: 55rem;
         min-width: var(--md-width);
     }
     .lg\:miw-lg {
-        min-width: 60rem;
+        min-width: 65rem;
         min-width: var(--lg-width);
     }
     .lg\:miw-d5 {
@@ -14711,7 +14711,7 @@ Naming conventions
         min-width: var(--space-6);
     }
     .lg\:miw-bleed {
-        min-width: 1200px;
+        min-width: 1250px;
         min-width: var(--bleed-width);
     }
 }
@@ -14735,13 +14735,13 @@ Naming conventions
 
 .h-md,
 .h-md {
-    height: 50rem;
+    height: 55rem;
     height: var(--md-width);
 }
 
 .h-lg,
 .h-lg {
-    height: 60rem;
+    height: 65rem;
     height: var(--lg-width);
 }
 
@@ -15317,13 +15317,13 @@ Naming conventions
 
 .mxh-md,
 .mxh-md {
-    max-height: 50rem;
+    max-height: 55rem;
     max-height: var(--md-width);
 }
 
 .mxh-lg,
 .mxh-lg {
-    max-height: 60rem;
+    max-height: 65rem;
     max-height: var(--lg-width);
 }
 
@@ -15959,13 +15959,13 @@ Naming conventions
 
 .mih-md,
 .mih-md {
-    min-height: 50rem;
+    min-height: 55rem;
     min-height: var(--md-width);
 }
 
 .mih-lg,
 .mih-lg {
-    min-height: 60rem;
+    min-height: 65rem;
     min-height: var(--lg-width);
 }
 
@@ -20068,21 +20068,21 @@ th.sotable-column .indicator {
 }
 
 .bleed {
-    width: min(100vw - 2 * 1rem, 1200px);
+    width: min(100vw - 2 * 1rem, 1250px);
     width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
-    margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+    margin-left: max(50% - 50vw + 1rem, 50% - 1250px / 2);
     margin-left: max(50% - 50vw + 1rem, 50% - var(--bleed-width) / 2);
 }
 
 .bleed-right {
     width: auto;
-    margin-right: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+    margin-right: max(50% - 50vw + 1rem, 50% - 1250px / 2);
     margin-right: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
 }
 
 .bleed-left {
     width: auto;
-    margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+    margin-left: max(50% - 50vw + 1rem, 50% - 1250px / 2);
     margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
 }
 
@@ -20156,12 +20156,12 @@ th.sotable-column .indicator {
 }
 
 .split-1-md {
-    grid-template-columns: 1fr 50rem;
+    grid-template-columns: 1fr 55rem;
     grid-template-columns: 1fr var(--md-width);
 }
 
 .split-1-lg {
-    grid-template-columns: 1fr 60rem;
+    grid-template-columns: 1fr 65rem;
     grid-template-columns: 1fr var(--lg-width);
 }
 
@@ -20176,22 +20176,22 @@ th.sotable-column .indicator {
 }
 
 .split-md-1 {
-    grid-template-columns: 50rem 1fr;
+    grid-template-columns: 55rem 1fr;
     grid-template-columns: var(--md-width) 1fr;
 }
 
 .split-lg-1 {
-    grid-template-columns: 60rem 1fr;
+    grid-template-columns: 65rem 1fr;
     grid-template-columns: var(--lg-width) 1fr;
 }
 
 .split-aside-1 {
-    grid-template-columns: calc((min(1200px, 100vw - 2*1rem) - 40rem) / 2 - calc(1.7 * 1rem)) 1fr;
+    grid-template-columns: calc((min(1250px, 100vw - 2*1rem) - 40rem) / 2 - calc(1.7 * 1rem)) 1fr;
     grid-template-columns: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
 }
 
 .split-1-aside {
-    grid-template-columns: 1fr calc((min(1200px, 100vw - 2*1rem) - 40rem) / 2 - calc(1.7 * 1rem));
+    grid-template-columns: 1fr calc((min(1250px, 100vw - 2*1rem) - 40rem) / 2 - calc(1.7 * 1rem));
     grid-template-columns: 1fr calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
 }
 
@@ -20399,19 +20399,19 @@ th.sotable-column .indicator {
         margin-left: calc(50% - 50vw);
     }
     .sm\:bleed {
-        width: min(100vw - 2 * 1rem, 1200px);
+        width: min(100vw - 2 * 1rem, 1250px);
         width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
-        margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-left: max(50% - 50vw + 1rem, 50% - 1250px / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .sm\:bleed-right {
         width: auto;
-        margin-right: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-right: max(50% - 50vw + 1rem, 50% - 1250px / 2);
         margin-right: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .sm\:bleed-left {
         width: auto;
-        margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-left: max(50% - 50vw + 1rem, 50% - 1250px / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     [class*="sm\:split"] {
@@ -20633,19 +20633,19 @@ th.sotable-column .indicator {
         margin-left: calc(50% - 50vw);
     }
     .sm\:bleed {
-        width: min(100vw - 2 * 1rem, 1200px);
+        width: min(100vw - 2 * 1rem, 1250px);
         width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
-        margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-left: max(50% - 50vw + 1rem, 50% - 1250px / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .sm\:bleed-right {
         width: auto;
-        margin-right: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-right: max(50% - 50vw + 1rem, 50% - 1250px / 2);
         margin-right: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .sm\:bleed-left {
         width: auto;
-        margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-left: max(50% - 50vw + 1rem, 50% - 1250px / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     [class*="sm\:split"] {
@@ -20867,19 +20867,19 @@ th.sotable-column .indicator {
         margin-left: calc(50% - 50vw);
     }
     .rg\:bleed {
-        width: min(100vw - 2 * 1rem, 1200px);
+        width: min(100vw - 2 * 1rem, 1250px);
         width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
-        margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-left: max(50% - 50vw + 1rem, 50% - 1250px / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .rg\:bleed-right {
         width: auto;
-        margin-right: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-right: max(50% - 50vw + 1rem, 50% - 1250px / 2);
         margin-right: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .rg\:bleed-left {
         width: auto;
-        margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-left: max(50% - 50vw + 1rem, 50% - 1250px / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     [class*="rg\:split"] {
@@ -21109,19 +21109,19 @@ th.sotable-column .indicator {
         margin-left: calc(50% - 50vw);
     }
     .rg\:bleed {
-        width: min(100vw - 2 * 1rem, 1200px);
+        width: min(100vw - 2 * 1rem, 1250px);
         width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
-        margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-left: max(50% - 50vw + 1rem, 50% - 1250px / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .rg\:bleed-right {
         width: auto;
-        margin-right: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-right: max(50% - 50vw + 1rem, 50% - 1250px / 2);
         margin-right: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .rg\:bleed-left {
         width: auto;
-        margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-left: max(50% - 50vw + 1rem, 50% - 1250px / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     [class*="rg\:split"] {
@@ -21351,19 +21351,19 @@ th.sotable-column .indicator {
         margin-left: calc(50% - 50vw);
     }
     .md\:bleed {
-        width: min(100vw - 2 * 1rem, 1200px);
+        width: min(100vw - 2 * 1rem, 1250px);
         width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
-        margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-left: max(50% - 50vw + 1rem, 50% - 1250px / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .md\:bleed-right {
         width: auto;
-        margin-right: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-right: max(50% - 50vw + 1rem, 50% - 1250px / 2);
         margin-right: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .md\:bleed-left {
         width: auto;
-        margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-left: max(50% - 50vw + 1rem, 50% - 1250px / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     [class*="md\:split"] {
@@ -21428,11 +21428,11 @@ th.sotable-column .indicator {
         grid-template-columns: var(--rg-width) 1fr;
     }
     .md\:split-aside-1 {
-        grid-template-columns: calc((min(1200px, 100vw - 2*1rem) - 40rem) / 2 - calc(1.7 * 1rem)) 1fr;
+        grid-template-columns: calc((min(1250px, 100vw - 2*1rem) - 40rem) / 2 - calc(1.7 * 1rem)) 1fr;
         grid-template-columns: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
     }
     .md\:split-1-aside {
-        grid-template-columns: 1fr calc((min(1200px, 100vw - 2*1rem) - 40rem) / 2 - calc(1.7 * 1rem));
+        grid-template-columns: 1fr calc((min(1250px, 100vw - 2*1rem) - 40rem) / 2 - calc(1.7 * 1rem));
         grid-template-columns: 1fr calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
     }
     /* Nicolas Gallaghers Clearfix solution
@@ -21609,19 +21609,19 @@ th.sotable-column .indicator {
         margin-left: calc(50% - 50vw);
     }
     .md\:bleed {
-        width: min(100vw - 2 * 1rem, 1200px);
+        width: min(100vw - 2 * 1rem, 1250px);
         width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
-        margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-left: max(50% - 50vw + 1rem, 50% - 1250px / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .md\:bleed-right {
         width: auto;
-        margin-right: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-right: max(50% - 50vw + 1rem, 50% - 1250px / 2);
         margin-right: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .md\:bleed-left {
         width: auto;
-        margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-left: max(50% - 50vw + 1rem, 50% - 1250px / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     [class*="md\:split"] {
@@ -21686,11 +21686,11 @@ th.sotable-column .indicator {
         grid-template-columns: var(--rg-width) 1fr;
     }
     .md\:split-aside-1 {
-        grid-template-columns: calc((min(1200px, 100vw - 2*1rem) - 40rem) / 2 - calc(1.7 * 1rem)) 1fr;
+        grid-template-columns: calc((min(1250px, 100vw - 2*1rem) - 40rem) / 2 - calc(1.7 * 1rem)) 1fr;
         grid-template-columns: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
     }
     .md\:split-1-aside {
-        grid-template-columns: 1fr calc((min(1200px, 100vw - 2*1rem) - 40rem) / 2 - calc(1.7 * 1rem));
+        grid-template-columns: 1fr calc((min(1250px, 100vw - 2*1rem) - 40rem) / 2 - calc(1.7 * 1rem));
         grid-template-columns: 1fr calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
     }
     /* Nicolas Gallaghers Clearfix solution
@@ -21867,19 +21867,19 @@ th.sotable-column .indicator {
         margin-left: calc(50% - 50vw);
     }
     .lg\:bleed {
-        width: min(100vw - 2 * 1rem, 1200px);
+        width: min(100vw - 2 * 1rem, 1250px);
         width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
-        margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-left: max(50% - 50vw + 1rem, 50% - 1250px / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .lg\:bleed-right {
         width: auto;
-        margin-right: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-right: max(50% - 50vw + 1rem, 50% - 1250px / 2);
         margin-right: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .lg\:bleed-left {
         width: auto;
-        margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-left: max(50% - 50vw + 1rem, 50% - 1250px / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     [class*="lg\:split"] {
@@ -21936,7 +21936,7 @@ th.sotable-column .indicator {
         grid-template-columns: 1fr var(--rg-width);
     }
     .lg\:split-1-md {
-        grid-template-columns: 1fr 50rem;
+        grid-template-columns: 1fr 55rem;
         grid-template-columns: 1fr var(--md-width);
     }
     .lg\:split-sm-1 {
@@ -21948,15 +21948,15 @@ th.sotable-column .indicator {
         grid-template-columns: var(--rg-width) 1fr;
     }
     .lg\:split-md-1 {
-        grid-template-columns: 50rem 1fr;
+        grid-template-columns: 55rem 1fr;
         grid-template-columns: var(--md-width) 1fr;
     }
     .lg\:split-aside-1 {
-        grid-template-columns: calc((min(1200px, 100vw - 2*1rem) - 40rem) / 2 - calc(1.7 * 1rem)) 1fr;
+        grid-template-columns: calc((min(1250px, 100vw - 2*1rem) - 40rem) / 2 - calc(1.7 * 1rem)) 1fr;
         grid-template-columns: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
     }
     .lg\:split-1-aside {
-        grid-template-columns: 1fr calc((min(1200px, 100vw - 2*1rem) - 40rem) / 2 - calc(1.7 * 1rem));
+        grid-template-columns: 1fr calc((min(1250px, 100vw - 2*1rem) - 40rem) / 2 - calc(1.7 * 1rem));
         grid-template-columns: 1fr calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
     }
     /* Nicolas Gallaghers Clearfix solution
@@ -22133,19 +22133,19 @@ th.sotable-column .indicator {
         margin-left: calc(50% - 50vw);
     }
     .lg\:bleed {
-        width: min(100vw - 2 * 1rem, 1200px);
+        width: min(100vw - 2 * 1rem, 1250px);
         width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
-        margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-left: max(50% - 50vw + 1rem, 50% - 1250px / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .lg\:bleed-right {
         width: auto;
-        margin-right: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-right: max(50% - 50vw + 1rem, 50% - 1250px / 2);
         margin-right: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     .lg\:bleed-left {
         width: auto;
-        margin-left: max(50% - 50vw + 1rem, 50% - 1200px / 2);
+        margin-left: max(50% - 50vw + 1rem, 50% - 1250px / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
     [class*="lg\:split"] {
@@ -22202,7 +22202,7 @@ th.sotable-column .indicator {
         grid-template-columns: 1fr var(--rg-width);
     }
     .lg\:split-1-md {
-        grid-template-columns: 1fr 50rem;
+        grid-template-columns: 1fr 55rem;
         grid-template-columns: 1fr var(--md-width);
     }
     .lg\:split-sm-1 {
@@ -22214,15 +22214,15 @@ th.sotable-column .indicator {
         grid-template-columns: var(--rg-width) 1fr;
     }
     .lg\:split-md-1 {
-        grid-template-columns: 50rem 1fr;
+        grid-template-columns: 55rem 1fr;
         grid-template-columns: var(--md-width) 1fr;
     }
     .lg\:split-aside-1 {
-        grid-template-columns: calc((min(1200px, 100vw - 2*1rem) - 40rem) / 2 - calc(1.7 * 1rem)) 1fr;
+        grid-template-columns: calc((min(1250px, 100vw - 2*1rem) - 40rem) / 2 - calc(1.7 * 1rem)) 1fr;
         grid-template-columns: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
     }
     .lg\:split-1-aside {
-        grid-template-columns: 1fr calc((min(1200px, 100vw - 2*1rem) - 40rem) / 2 - calc(1.7 * 1rem));
+        grid-template-columns: 1fr calc((min(1250px, 100vw - 2*1rem) - 40rem) / 2 - calc(1.7 * 1rem));
         grid-template-columns: 1fr calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
     }
     /* Nicolas Gallaghers Clearfix solution

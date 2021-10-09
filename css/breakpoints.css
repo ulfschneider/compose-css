@@ -2,9 +2,9 @@
 
 :root {
     --sm-breakpoint: 400px;
-    --rg-breakpoint: 600px;
-    --md-breakpoint: 900px;
-    --lg-breakpoint: 1200px;
+    --rg-breakpoint: 650px;
+    --md-breakpoint: 950px;
+    --lg-breakpoint: 1250px;
 }
 
 @custom-media --mx-sm-bp (max-width: 400px);
