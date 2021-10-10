@@ -29,7 +29,7 @@ dl {
 }
 
 .table-of-contents ol a {
-    display: inline-block;    
+    display: inline-block;
 }
 
 .table-of-contents ol li::before {
@@ -56,9 +56,8 @@ dl {
     text-decoration: none;
 }
 
-.sotable caption button, .sotable th button {
-    
-}
+.sotable caption button,
+.sotable th button {}
 
 pre[class^=language] {
     margin-bottom: var(--space-3);

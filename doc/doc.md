@@ -792,7 +792,7 @@ familiar walls.</dd>
 
 ## Breakpoints
 
-Each breakpoint triggers a change in base font size. The wider the screen, the taller the font size. While the breakpoints are measured in <code>px</code>, the widths are measured in <code>rem</code>. That means, when a breakpoint triggers an increase in font size, the width will automatically increase as it´s based on <code>rem</code> font size. For that reason the default setting of Compose CSS is so that the <code>rem</code>-based width will fit into the breakpoint width – but that´s not a must. Configure the settings with the following custom variables:
+Each breakpoint triggers a change in base font size. The wider the screen, the taller the font size. While the breakpoints are measured in <code>px</code>, the widths are measured in <code>rem</code>. That means, when a breakpoint triggers an increase in font size, the width will automatically increase as it´s based on <code>rem</code> font size. The <code>rem</code>-based width must not fit into the breakpoint width. For example, if you don´t increase font size at certain breakpoints, having <code>rem</code>-based widths exceeding the breakpoint widths doesn´t trigger text layout changes. Configure the settings with the following custom variables:
 
 <table>
 <thead>

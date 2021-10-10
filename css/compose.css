@@ -19251,7 +19251,7 @@ li {
     padding: 0;
 }
 
-li p {
+li>p {
     display: inline;
 }
 
