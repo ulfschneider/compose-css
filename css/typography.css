@@ -642,14 +642,14 @@ blockquote>header::after {
     content: "—";
 }
 
-@media(max-width: 400px) {
+@media(max-width: 640px) {
     figcaption,
     blockquote>footer {
         max-width: unset;
     }
 }
 
-@media(--mx-sm-bp) {
+@media(--mx-sm-breakpoint) {
     figcaption,
     blockquote>footer {
         max-width: unset;

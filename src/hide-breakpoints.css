@@ -2,49 +2,49 @@
     display: none !important;
 }
 
-@media (--mi-sm-bp) {
+@media (--mi-sm-breakpoint) {
     .sm\:hide {
         display: none !important;
     }
 }
 
-@media (--mi-rg-bp) {
+@media (--mi-rg-breakpoint) {
     .rg\:hide {
         display: none !important;
     }
 }
 
-@media (--mi-md-bp) {
+@media (--mi-md-breakpoint) {
     .md\:hide {
         display: none !important;
     }
 }
 
-@media (--mi-lg-bp) {
+@media (--mi-lg-breakpoint) {
     .lg\:hide {
         display: none !important;
     }
 }
 
-@media (--mx-sm-bp) {
+@media (--mx-sm-breakpoint) {
     .below-sm\:hide {
         display: none !important;
     }
 }
 
-@media (--mx-rg-bp) {
+@media (--mx-rg-breakpoint) {
     .below-rg\:hide {
         display: none !important;
     }
 }
 
-@media (--mx-md-bp) {
+@media (--mx-md-breakpoint) {
     .below-md\:hide {
         display: none !important;
     }
 }
 
-@media (--mx-lg-bp) {
+@media (--mx-lg-breakpoint) {
     .below-lg\:hide {
         display: none !important;
     }

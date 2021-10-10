@@ -1,4 +1,4 @@
-@media (min-width: 401px) {
+@media (min-width: 641px) {
     .sm\:flex,
     .sm\:flex-row {
         display: flex;
@@ -150,7 +150,7 @@
     }
 }
 
-@media (--mi-sm-bp) {
+@media (--mi-sm-breakpoint) {
     .sm\:flex,
     .sm\:flex-row {
         display: flex;
@@ -302,7 +302,7 @@
     }
 }
 
-@media (min-width: 601px) {
+@media (min-width: 769px) {
     .rg\:flex,
     .rg\:flex-row {
         display: flex;
@@ -454,7 +454,7 @@
     }
 }
 
-@media (--mi-rg-bp) {
+@media (--mi-rg-breakpoint) {
     .rg\:flex,
     .rg\:flex-row {
         display: flex;
@@ -606,7 +606,7 @@
     }
 }
 
-@media (min-width: 901px) {
+@media (min-width: 1025px) {
     .md\:flex,
     .md\:flex-row {
         display: flex;
@@ -758,7 +758,7 @@
     }
 }
 
-@media (--mi-md-bp) {
+@media (--mi-md-breakpoint) {
     .md\:flex,
     .md\:flex-row {
         display: flex;
@@ -910,7 +910,7 @@
     }
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1281px) {
     .lg\:flex,
     .lg\:flex-row {
         display: flex;
@@ -1062,7 +1062,7 @@
     }
 }
 
-@media (--mi-lg-bp) {
+@media (--mi-lg-breakpoint) {
     .lg\:flex,
     .lg\:flex-row {
         display: flex;

@@ -13,7 +13,7 @@ Naming conventions
     
 */
 
-@media (min-width: 401px) {
+@media (min-width: 641px) {
     .sm\:pd-0,
     .sm\:no-pd {
         padding: 0;
@@ -316,7 +316,7 @@ Naming conventions
     }
 }
 
-@media (--mi-sm-bp) {
+@media (--mi-sm-breakpoint) {
     .sm\:pd-0,
     .sm\:no-pd {
         padding: 0;
@@ -619,7 +619,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 601px) {
+@media (min-width: 769px) {
     .rg\:pd-0,
     .rg\:no-pd {
         padding: 0;
@@ -922,7 +922,7 @@ Naming conventions
     }
 }
 
-@media (--mi-rg-bp) {
+@media (--mi-rg-breakpoint) {
     .rg\:pd-0,
     .rg\:no-pd {
         padding: 0;
@@ -1225,7 +1225,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 901px) {
+@media (min-width: 1025px) {
     .md\:pd-0,
     .md\:no-pd {
         padding: 0;
@@ -1528,7 +1528,7 @@ Naming conventions
     }
 }
 
-@media (--mi-md-bp) {
+@media (--mi-md-breakpoint) {
     .md\:pd-0,
     .md\:no-pd {
         padding: 0;
@@ -1831,7 +1831,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1281px) {
     .lg\:pd-0,
     .lg\:no-pd {
         padding: 0;
@@ -2134,7 +2134,7 @@ Naming conventions
     }
 }
 
-@media (--mi-lg-bp) {
+@media (--mi-lg-breakpoint) {
     .lg\:pd-0,
     .lg\:no-pd {
         padding: 0;

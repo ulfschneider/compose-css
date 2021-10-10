@@ -790,6 +790,51 @@ familiar walls.</dd>
     </tr>    
 </table>
 
+## Breakpoints
+
+Each breakpoint triggers a change in base font size. The wider the screen, the taller the font size. While the breakpoints are measured in <code>px</code>, the widths are measured in <code>rem</code>. That means, when a breakpoint triggers an increase in font size, the width will automatically increase as it´s based on <code>rem</code> font size. For that reason the default setting of Compose CSS is so that the <code>rem</code>-based width will fit into the breakpoint width – but that´s not a must. Configure the settings with the following custom variables:
+
+<table>
+<thead>
+<tr><th>Min Breakpoint</th><th>Max Breakpoint</th><th>Breakpoint Width</th><th><code>rem</code>-based Width<th>1 <code>rem</code></th></tr>
+</thead>
+<tbody>
+<tr><td>mi-sm-breakpoint</td><td>mx-sm-breakpoint</td><td>--sm-breakpoint</td><td>--sm-width</td><td>--font-size-sm-breakpoint</td></tr>
+<tr><td>mi-rg-breakpoint</td><td>mx-rg-breakpoint</td><td>--rg-breakpoint</td><td>--rg-width</td><td>--font-size-rg-breakpoint</td></tr>
+<tr><td>mi-md-breakpoint</td><td>mx-md-breakpoint</td><td>--rg-breakpoint</td><td>--md-width</td><td>--font-size-md-breakpoint</td></tr>
+<tr><td>mi-lg-breakpoint</td><td>mx-lg-breakpoint</td><td>--lg-breakpoint</td><td>--lg-width</td><td>--font-size-lg-breakpoint</td></tr>
+</tbody>
+</table>
+
+
+<div class="full-bleed pd-x overflow-hidden"> 
+    <div class="w-lg-breakpoint mry-2 mrx-auto br bg-neutral-5">
+    <span class="pd">.w-lg-breakpoint</span>        
+        <div class="w-lg mry mrx-auto br">
+            <span class="pd">.w-lg</span>
+        </div>
+        <div class="w-md-breakpoint mry-2 mrx-auto br bg-neutral-4">
+            <span class="pd">.w-md-breakpoint</span>
+            <div class="w-md mry mrx-auto br">
+                <span class="pd">.w-md</span>
+            </div>
+            <div class="w-rg-breakpoint mry-2 mrx-auto br bg-neutral-3">
+                <span class="pd">.w-rg-breakpoint</span>
+                <div class="w-rg mry mrx-auto br">
+                    <span class="pd">.w-rg</span>
+                </div>
+                <div class="w-sm-breakpoint mry-2 mrx-auto bg-neutral-2 br">
+                    <span class="pd">.w-sm-breakpoint</span>
+                    <div class="w-sm mry mrx-auto br">
+                        <span class="pd">.w-sm</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 ## Layout
 
 ## Forms

@@ -1,4 +1,4 @@
-@media (min-width: 401px) {
+@media (min-width: 641px) {
     .sm\:h-unset {
         height: unset;
     }
@@ -40,7 +40,7 @@
     }
 }
 
-@media (--mi-sm-bp) {
+@media (--mi-sm-breakpoint) {
     .sm\:h-unset {
         height: unset;
     }
@@ -82,7 +82,7 @@
     }
 }
 
-@media (min-width: 601px) {
+@media (min-width: 769px) {
     .rg\:h-unset {
         height: unset;
     }
@@ -124,7 +124,7 @@
     }
 }
 
-@media (--mi-rg-bp) {
+@media (--mi-rg-breakpoint) {
     .rg\:h-unset {
         height: unset;
     }
@@ -166,7 +166,7 @@
     }
 }
 
-@media (min-width: 901px) {
+@media (min-width: 1025px) {
     .md\:h-unset {
         height: unset;
     }
@@ -208,7 +208,7 @@
     }
 }
 
-@media (--mi-md-bp) {
+@media (--mi-md-breakpoint) {
     .md\:h-unset {
         height: unset;
     }
@@ -250,7 +250,7 @@
     }
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1281px) {
     .lg\:h-unset {
         height: unset;
     }
@@ -292,7 +292,7 @@
     }
 }
 
-@media (--mi-lg-bp) {
+@media (--mi-lg-breakpoint) {
     .lg\:h-unset {
         height: unset;
     }

@@ -1,8 +1,8 @@
 :root {
-    --sm-width: 25rem;
-    --rg-width: 40rem;
-    --md-width: 55rem;
-    --lg-width: 65rem;
+    --sm-width: 29rem;
+    --rg-width: 36rem;
+    --md-width: 48rem;
+    --lg-width: 60rem;
 }
 
 .w-unset {
@@ -57,7 +57,7 @@
     width: var(--sm-width);
 }
 
-.w-sm-bp {
+.w-sm-breakpoint {
     width: var(--sm-breakpoint);
 }
 
@@ -65,7 +65,7 @@
     width: var(--rg-width);
 }
 
-.w-rg-bp {
+.w-rg-breakpoint {
     width: var(--rg-breakpoint);
 }
 
@@ -73,7 +73,7 @@
     width: var(--md-width);
 }
 
-.w-md-bp {
+.w-md-breakpoint {
     width: var(--md-breakpoint);
 }
 
@@ -81,7 +81,7 @@
     width: var(--lg-width);
 }
 
-.w-lg-bp {
+.w-lg-breakpoint {
     width: var(--lg-breakpoint);
 }
 
@@ -135,4 +135,20 @@
 
 .w-bleed {
     width: var(--bleed-width);
+}
+
+.w-sm-breakpoint {
+    width: var(--sm-breakpoint);
+}
+
+.w-rg-breakpoint {
+    width: var(--rg-breakpoint);
+}
+
+.w-md-breakpoint {
+    width: var(--md-breakpoint);
+}
+
+.w-lg-breakpoint {
+    width: var(--lg-breakpoint);
 }

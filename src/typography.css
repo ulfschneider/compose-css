@@ -579,7 +579,7 @@ blockquote>header::after {
     content: "—";
 }
 
-@media(--mx-sm-bp) {
+@media(--mx-sm-breakpoint) {
     figcaption,
     blockquote>footer {
         max-width: unset;

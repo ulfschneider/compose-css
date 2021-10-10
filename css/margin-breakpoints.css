@@ -12,7 +12,7 @@ Naming conventions
     <i>=increase by <i>
 */
 
-@media (min-width: 401px) {
+@media (min-width: 641px) {
     .sm\:mr-0,
     .sm\:no-mr {
         margin: 0;
@@ -471,7 +471,7 @@ Naming conventions
     }
 }
 
-@media (--mi-sm-bp) {
+@media (--mi-sm-breakpoint) {
     .sm\:mr-0,
     .sm\:no-mr {
         margin: 0;
@@ -930,7 +930,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 601px) {
+@media (min-width: 769px) {
     .rg\:mr-0,
     .rg\:no-mr {
         margin: 0;
@@ -1389,7 +1389,7 @@ Naming conventions
     }
 }
 
-@media (--mi-rg-bp) {
+@media (--mi-rg-breakpoint) {
     .rg\:mr-0,
     .rg\:no-mr {
         margin: 0;
@@ -1848,7 +1848,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 901px) {
+@media (min-width: 1025px) {
     .md\:mr-0,
     .md\:no-mr {
         margin: 0;
@@ -2307,7 +2307,7 @@ Naming conventions
     }
 }
 
-@media (--mi-md-bp) {
+@media (--mi-md-breakpoint) {
     .md\:mr-0,
     .md\:no-mr {
         margin: 0;
@@ -2766,7 +2766,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1281px) {
     .lg\:mr-0,
     .lg\:no-mr {
         margin: 0;
@@ -3225,7 +3225,7 @@ Naming conventions
     }
 }
 
-@media (--mi-lg-bp) {
+@media (--mi-lg-breakpoint) {
     .lg\:mr-0,
     .lg\:no-mr {
         margin: 0;

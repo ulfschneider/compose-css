@@ -1,4 +1,4 @@
-@media (--mi-sm-bp) {
+@media (--mi-sm-breakpoint) {
     .sm\:inline {
         display: inline;
     }
@@ -220,7 +220,7 @@
     }
 }
 
-@media (--mi-rg-bp) {
+@media (--mi-rg-breakpoint) {
     .rg\:inline {
         display: inline;
     }
@@ -448,7 +448,7 @@
     }
 }
 
-@media (--mi-md-bp) {
+@media (--mi-md-breakpoint) {
     .md\:inline {
         display: inline;
     }
@@ -688,7 +688,7 @@
     }
 }
 
-@media (--mi-lg-bp) {
+@media (--mi-lg-breakpoint) {
     .lg\:inline {
         display: inline;
     }

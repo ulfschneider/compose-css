@@ -7,7 +7,7 @@
     min-width: var(--sm-width);
 }
 
-.miw-sm-bp {
+.miw-sm-breakpoint {
     min-width: var(--sm-breakpoint);
 }
 
@@ -15,7 +15,7 @@
     min-width: var(--rg-width);
 }
 
-.miw-rg-bp {
+.miw-rg-breakpoint {
     min-width: var(--rg-breakpoint);
 }
 
@@ -23,7 +23,7 @@
     min-width: var(--md-width);
 }
 
-.miw-md-bp {
+.miw-md-breakpoint {
     min-width: var(--md-breakpoint);
 }
 
@@ -31,7 +31,7 @@
     min-width: var(--lg-width);
 }
 
-.miw-lg-bp {
+.miw-lg-breakpoint {
     min-width: var(--lg-breakpoint);
 }
 
