@@ -14,11 +14,11 @@
     --fs-8: calc(var(--fs) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor));
     --fs-9: calc(var(--fs) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor));
     --fs-10: calc(var(--fs) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor));
-    --small: var(--fs-d1);
-    --smaller: .9em;
     --large: var(--fs-1);
     --larger: calc(var(--size-factor) * 1em);
     --lh-d1: 0.9;
+    --small: var(--fs-d1);
+    --smaller: calc(var(--lh-d1) * 1em);
     --lh: 1;
     --lh-3: calc(var(--space-factor) * var(--lh));
     --lh-2: calc((var(--lh-3) - var(--lh)) / 3 * 2 + var(--lh));
@@ -51,7 +51,7 @@ small,
 }
 
 .smaller {
-    font-size: .9em;
+    font-size: calc(0.9 * 1em);
     font-size: var(--smaller);
 }
 

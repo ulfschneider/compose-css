@@ -117,7 +117,8 @@ ol li::before {
     text-align: left;
     float: left;
     font-family: var(--meta-font-family);
-    font-size: smaller;
+    font-size: calc(1em * var(--lh-d1));
+    margin-top: calc((1em / var(--lh-d1)) - 1em);
     color: var(--li-prefix-color);
 }
 
