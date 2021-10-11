@@ -5,8 +5,8 @@
     --z-4: 4000;
     --bleed-width: var(--lg-breakpoint);
     --bleed-padding: var(--space);
-    --justify-split-items: start;
-    --align-split-items: end;
+    --justify-split-items: inherit;
+    --align-split-items: inherit;
     --split-column-gap: var(--horizontal-rhythm);
     --split-row-gap: var(--mrb-figure);
 }
@@ -135,9 +135,9 @@
     column-gap: var(--split-column-gap);
     row-gap: var(--mrb-figure);
     row-gap: var(--split-row-gap);
-    align-items: end;
+    align-items: inherit;
     align-items: var(--align-split-items);
-    justify-items: start;
+    justify-items: inherit;
     justify-items: var(--justify-split-items);
 }
 

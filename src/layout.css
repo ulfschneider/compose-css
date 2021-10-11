@@ -5,8 +5,8 @@
     --z-4: 4000;
     --bleed-width: var(--lg-breakpoint);
     --bleed-padding: var(--space);
-    --justify-split-items: start;
-    --align-split-items: end;
+    --justify-split-items: inherit;
+    --align-split-items: inherit;
     --split-column-gap: var(--horizontal-rhythm);
     --split-row-gap: var(--mrb-figure);
 }

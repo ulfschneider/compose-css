@@ -19944,8 +19944,8 @@ th.sotable-column .indicator {
     --z-4: 4000;
     --bleed-width: var(--lg-breakpoint);
     --bleed-padding: var(--space);
-    --justify-split-items: start;
-    --align-split-items: end;
+    --justify-split-items: inherit;
+    --align-split-items: inherit;
     --split-column-gap: var(--horizontal-rhythm);
     --split-row-gap: var(--mrb-figure);
 }
@@ -20074,9 +20074,9 @@ th.sotable-column .indicator {
     column-gap: var(--split-column-gap);
     row-gap: calc(calc(1.7 * 1rem) * 1.7);
     row-gap: var(--split-row-gap);
-    align-items: end;
+    align-items: inherit;
     align-items: var(--align-split-items);
-    justify-items: start;
+    justify-items: inherit;
     justify-items: var(--justify-split-items);
 }
 
@@ -20401,9 +20401,9 @@ th.sotable-column .indicator {
         column-gap: var(--split-column-gap);
         row-gap: calc(calc(1.7 * 1rem) * 1.7);
         row-gap: var(--split-row-gap);
-        align-items: end;
+        align-items: inherit;
         align-items: var(--align-split-items);
-        justify-items: start;
+        justify-items: inherit;
         justify-items: var(--justify-split-items);
     }
     [class*="sm\:split"]>* {
@@ -20635,9 +20635,9 @@ th.sotable-column .indicator {
         column-gap: var(--split-column-gap);
         row-gap: calc(calc(1.7 * 1rem) * 1.7);
         row-gap: var(--split-row-gap);
-        align-items: end;
+        align-items: inherit;
         align-items: var(--align-split-items);
-        justify-items: start;
+        justify-items: inherit;
         justify-items: var(--justify-split-items);
     }
     [class*="sm\:split"]>* {
@@ -20869,9 +20869,9 @@ th.sotable-column .indicator {
         column-gap: var(--split-column-gap);
         row-gap: calc(calc(1.7 * 1rem) * 1.7);
         row-gap: var(--split-row-gap);
-        align-items: end;
+        align-items: inherit;
         align-items: var(--align-split-items);
-        justify-items: start;
+        justify-items: inherit;
         justify-items: var(--justify-split-items);
     }
     [class*="rg\:split"]>* {
@@ -21111,9 +21111,9 @@ th.sotable-column .indicator {
         column-gap: var(--split-column-gap);
         row-gap: calc(calc(1.7 * 1rem) * 1.7);
         row-gap: var(--split-row-gap);
-        align-items: end;
+        align-items: inherit;
         align-items: var(--align-split-items);
-        justify-items: start;
+        justify-items: inherit;
         justify-items: var(--justify-split-items);
     }
     [class*="rg\:split"]>* {
@@ -21353,9 +21353,9 @@ th.sotable-column .indicator {
         column-gap: var(--split-column-gap);
         row-gap: calc(calc(1.7 * 1rem) * 1.7);
         row-gap: var(--split-row-gap);
-        align-items: end;
+        align-items: inherit;
         align-items: var(--align-split-items);
-        justify-items: start;
+        justify-items: inherit;
         justify-items: var(--justify-split-items);
     }
     [class*="md\:split"]>* {
@@ -21611,9 +21611,9 @@ th.sotable-column .indicator {
         column-gap: var(--split-column-gap);
         row-gap: calc(calc(1.7 * 1rem) * 1.7);
         row-gap: var(--split-row-gap);
-        align-items: end;
+        align-items: inherit;
         align-items: var(--align-split-items);
-        justify-items: start;
+        justify-items: inherit;
         justify-items: var(--justify-split-items);
     }
     [class*="md\:split"]>* {
@@ -21869,9 +21869,9 @@ th.sotable-column .indicator {
         column-gap: var(--split-column-gap);
         row-gap: calc(calc(1.7 * 1rem) * 1.7);
         row-gap: var(--split-row-gap);
-        align-items: end;
+        align-items: inherit;
         align-items: var(--align-split-items);
-        justify-items: start;
+        justify-items: inherit;
         justify-items: var(--justify-split-items);
     }
     [class*="lg\:split"]>* {
@@ -22135,9 +22135,9 @@ th.sotable-column .indicator {
         column-gap: var(--split-column-gap);
         row-gap: calc(calc(1.7 * 1rem) * 1.7);
         row-gap: var(--split-row-gap);
-        align-items: end;
+        align-items: inherit;
         align-items: var(--align-split-items);
-        justify-items: start;
+        justify-items: inherit;
         justify-items: var(--justify-split-items);
     }
     [class*="lg\:split"]>* {
