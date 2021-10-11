@@ -48,10 +48,10 @@ iframe {
     --fs-10: calc(var(--fs) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor));
     --large: var(--fs-1);
     --larger: calc(var(--size-factor) * 1em);
-    --lh-d1: 0.9;
     --small: var(--fs-d1);
-    --smaller: calc(var(--lh-d1) * 1em);
+    --smaller: 0.9em;
     --lh: 1;
+    --lh-d1: 0.9;
     --lh-3: calc(var(--space-factor) * var(--lh));
     --lh-2: calc((var(--lh-3) - var(--lh)) / 3 * 2 + var(--lh));
     --lh-1: calc((var(--lh-3) - var(--lh)) / 3 + var(--lh));
@@ -83,7 +83,7 @@ small,
 }
 
 .smaller {
-    font-size: calc(0.9 * 1em);
+    font-size: 0.9em;
     font-size: var(--smaller);
 }
 
@@ -381,7 +381,7 @@ small,
         font-size: var(--small);
     }
     .sm\:smaller {
-        font-size: calc(0.9 * 1em);
+        font-size: 0.9em;
         font-size: var(--smaller);
     }
     .sm\:fs,
@@ -513,7 +513,7 @@ small,
         font-size: var(--small);
     }
     .sm\:smaller {
-        font-size: calc(0.9 * 1em);
+        font-size: 0.9em;
         font-size: var(--smaller);
     }
     .sm\:fs,
@@ -645,7 +645,7 @@ small,
         font-size: var(--small);
     }
     .rg\:smaller {
-        font-size: calc(0.9 * 1em);
+        font-size: 0.9em;
         font-size: var(--smaller);
     }
     .rg\:fs,
@@ -777,7 +777,7 @@ small,
         font-size: var(--small);
     }
     .rg\:smaller {
-        font-size: calc(0.9 * 1em);
+        font-size: 0.9em;
         font-size: var(--smaller);
     }
     .rg\:fs,
@@ -909,7 +909,7 @@ small,
         font-size: var(--small);
     }
     .md\:smaller {
-        font-size: calc(0.9 * 1em);
+        font-size: 0.9em;
         font-size: var(--smaller);
     }
     .md\:fs,
@@ -1041,7 +1041,7 @@ small,
         font-size: var(--small);
     }
     .md\:smaller {
-        font-size: calc(0.9 * 1em);
+        font-size: 0.9em;
         font-size: var(--smaller);
     }
     .md\:fs,
@@ -1173,7 +1173,7 @@ small,
         font-size: var(--small);
     }
     .lg\:smaller {
-        font-size: calc(0.9 * 1em);
+        font-size: 0.9em;
         font-size: var(--smaller);
     }
     .lg\:fs,
@@ -1305,7 +1305,7 @@ small,
         font-size: var(--small);
     }
     .lg\:smaller {
-        font-size: calc(0.9 * 1em);
+        font-size: 0.9em;
         font-size: var(--smaller);
     }
     .lg\:fs,
@@ -19159,6 +19159,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     --h-counter-type: decimal;
     --h-counter-delimiter: ".";
     --ol-counter: counters(ol-counter, var(--ol-counter-delimiter), var(--ol-counter-type));
+    --ol-counter-size-factor: .8;
     --h-counter: counters(ol-counter, var(--h-counter-delimiter), var(--h-counter-type));
     --h2-counter: counter(h2-counter);
     --h3-counter: counter(h2-counter) var(--h-counter-delimiter) counter(h3-counter);
@@ -19277,10 +19278,10 @@ ol li::before {
     float: left;
     font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--meta-font-family);
-    font-size: calc(1em * 0.9);
-    font-size: calc(1em * var(--lh-d1));
-    margin-top: calc((1em / 0.9) - 1em);
-    margin-top: calc((1em / var(--lh-d1)) - 1em);
+    font-size: calc(1em * .8);
+    font-size: calc(1em * var(--ol-counter-size-factor));
+    margin-top: calc((1em / .8) - 1em);
+    margin-top: calc((1em / var(--ol-counter-size-factor)) - 1em);
     color: hsl(0, 0%, calc(53% - calc(53% / 7)));
     color: var(--li-prefix-color);
 }

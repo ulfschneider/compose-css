@@ -16,10 +16,10 @@
     --fs-10: calc(var(--fs) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor));
     --large: var(--fs-1);
     --larger: calc(var(--size-factor) * 1em);
-    --lh-d1: 0.9;
     --small: var(--fs-d1);
-    --smaller: calc(var(--lh-d1) * 1em);
+    --smaller: 0.9em;
     --lh: 1;
+    --lh-d1: 0.9;
     --lh-3: calc(var(--space-factor) * var(--lh));
     --lh-2: calc((var(--lh-3) - var(--lh)) / 3 * 2 + var(--lh));
     --lh-1: calc((var(--lh-3) - var(--lh)) / 3 + var(--lh));

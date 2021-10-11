@@ -658,11 +658,16 @@ transformed in his bed into a horrible vermin.
     </p>
 </li>
 <li>He lay on his armour-like back
-    <ul>
+    <ol>
         <li>and if he lifted his head a little he could
         see his brown belly, slightly domed and divided by arches into stiff
         sections.</li>
-    </ul>
+        <ol>
+        <li>and if he lifted his head a little he could
+        see his brown belly, slightly domed and divided by arches into stiff
+        sections.</li>
+    </ol>
+    </ol>
 </li>
 <li>His many legs</li>
 <li>His room</li>
