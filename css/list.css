@@ -114,7 +114,7 @@ ol li::before {
     padding-right: var(--space-d2);
     margin-left: calc(var(--horizontal-rhythm) * -1);
     text-align: left;
-    display: inline-block;
+    float: left;
     font-family: var(--meta-font-family);
     font-size: smaller;
     color: var(--li-prefix-color);
@@ -127,7 +127,7 @@ ul li::before {
     padding-right: var(--space-d2);
     min-width: var(--horizontal-rhythm);
     text-align: left;
-    display: inline-block;
+    float: left;
     color: var(--li-prefix-color);
 }
 

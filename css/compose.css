@@ -19273,7 +19273,7 @@ ol li::before {
     margin-left: calc(calc(1.7 * 1rem) * -1);
     margin-left: calc(var(--horizontal-rhythm) * -1);
     text-align: left;
-    display: inline-block;
+    float: left;
     font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--meta-font-family);
     font-size: smaller;
@@ -19291,7 +19291,7 @@ ul li::before {
     min-width: calc(1.7 * 1rem);
     min-width: var(--horizontal-rhythm);
     text-align: left;
-    display: inline-block;
+    float: left;
     color: hsl(0, 0%, calc(53% - calc(53% / 7)));
     color: var(--li-prefix-color);
 }
