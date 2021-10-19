@@ -54,13 +54,8 @@ module.exports = {
 
 * Many CSS classes of Compose CSS allow to step up and down through multiple options of *the same thing.* For example, `line-height` can be set with `.lh-d1`, `.lh`, `.lh-1`, `.lh-2`, … , `.lh-5`. 
 `.lh` stands for *1, the neutral value.* `.lh-d1` stands for *decrease one step down from the neutral value,* while `.lh-1` stands for *increase one step up from the neutral value,* `.lh-2` is *increase two steps up,* and so on. Please refer to [line-height](#line-height) for more details.
-It could also be how dark or how light the primary color is set, like `.primary-d5`, `.primary-d4`, `.primary-d3`, … , `.primary`, `.primary-1`, `.primary-2`, … `.primary-5`, where `.primary` is the neutral primary color tone and `-d1`, `-d2`, … is making it darker, while `-1`, `-2`, … is making it lighter. Please refer to [colors](#colors) for more details. 
-* A default value is often represented by a `-default` postfix added to the corresponding CSS class. For example, the default `line-height` that is used by Compose CSS defined by `.lh-3`, which can also be set by `.lh-default`.
-
-<div class="bleed split-aside-1">
-<div class="bg-primary"><img src="/images/jayden-chong-unsplash.jpg"></div>
-<div class="bg-accent-one"><img src="/images/matthew-henry-unsplash.jpg"></div>
-</div>
+Another example is how dark or how light a color is set, like `.primary-d5`, `.primary-d4`, `.primary-d3`, … , `.primary`, `.primary-1`, `.primary-2`, … `.primary-5`, where `.primary` is the neutral primary color tone and `-d1`, `-d2`, … is making it darker, while `-1`, `-2`, … is making it lighter. Please refer to [colors](#colors) for more details. 
+* A default value is often represented by a `-default` postfix added to the corresponding CSS class. For example, the default `line-height` that is used by Compose CSS is defined by `.lh-3`, which can also be set by `.lh-default`.
 
 ## Typography
 
@@ -854,22 +849,22 @@ Each breakpoint triggers a change in base font size. The wider the screen, the t
 <div class="full-bleed pd-x overflow-hidden"> 
     <div class="w-lg-breakpoint mry-2 mrx-auto br bg-neutral-5">
     <span class="pd">.w-lg-breakpoint</span>        
-        <div class="w-lg mry mrx-auto br">
+        <div class="w-lg mry mrx-auto bg-primary white">
             <span class="pd">.w-lg</span>
         </div>
         <div class="w-md-breakpoint mry-2 mrx-auto br bg-neutral-4">
             <span class="pd">.w-md-breakpoint</span>
-            <div class="w-md mry mrx-auto br">
+            <div class="w-md mry mrx-auto bg-primary white">
                 <span class="pd">.w-md</span>
             </div>
             <div class="w-rg-breakpoint mry-2 mrx-auto br bg-neutral-3">
                 <span class="pd">.w-rg-breakpoint</span>
-                <div class="w-rg mry mrx-auto br">
+                <div class="w-rg mry mrx-auto bg-primary white">
                     <span class="pd">.w-rg</span>
                 </div>
                 <div class="w-sm-breakpoint mry-2 mrx-auto bg-neutral-2 br">
                     <span class="pd">.w-sm-breakpoint</span>
-                    <div class="w-sm mry mrx-auto br">
+                    <div class="w-sm mry mrx-auto bg-primary white">
                         <span class="pd">.w-sm</span>
                     </div>
                 </div>

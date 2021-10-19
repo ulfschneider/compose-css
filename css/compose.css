@@ -17362,7 +17362,7 @@ figcaption {
     margin-bottom: var(--mrb-figcaption);
 }
 
-figure>*+figcaption,
+*+figcaption,
 blockquote>footer {
     margin-top: 1rem;
     margin-top: var(--mrt-figcaption);

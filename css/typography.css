@@ -621,7 +621,7 @@ figcaption {
     margin-bottom: var(--mrb-figcaption);
 }
 
-figure>*+figcaption,
+*+figcaption,
 blockquote>footer {
     margin-top: var(--space);
     margin-top: var(--mrt-figcaption);
