@@ -17437,7 +17437,7 @@ details summary>* {
 :root {
     --form-font-family: var(--font-family);
     --form-font-size: var(--fs);
-    --form-radius: var(--rounded);
+    --form-radius: 0px;
     --form-button-pdx: var(--space-d2);
     --form-button-pdy: var(--space-d2);
     --custom-check-lh: var(--lh-default);
@@ -17500,7 +17500,7 @@ button,
 .button,
 select {
     border: 0;
-    border-radius: 3px;
+    border-radius: 0px;
     border-radius: var(--form-radius);
     vertical-align: baseline;
     background: hsl(198, 100%, calc(33.3% - calc(33.3% / 7)));
@@ -17673,7 +17673,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     width: var(--custom-check-size);
     border: 2px solid currentColor;
     border: var(--custom-check-border-width) solid currentColor;
-    border-radius: 3px;
+    border-radius: 0px;
     border-radius: var(--form-radius);
 }
 

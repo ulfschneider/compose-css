@@ -1,7 +1,7 @@
 :root {
     --form-font-family: var(--font-family);
     --form-font-size: var(--fs);
-    --form-radius: var(--rounded);
+    --form-radius: 0px;
     --form-button-pdx: var(--space-d2);
     --form-button-pdy: var(--space-d2);
     --custom-check-lh: var(--lh-default);
