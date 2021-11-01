@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+*+* {
+    margin-top: 1rem;
+    margin-top: var(--vertical-rhythm);
+}
+
 body {
     margin: 0;
     width: 100%;
@@ -12827,8 +12832,8 @@ Naming conventions
 }
 
 :root {
-    --sm-width: 29rem;
-    --rg-width: 36rem;
+    --sm-width: 28rem;
+    --rg-width: 34rem;
     --md-width: 48rem;
     --lg-width: 60rem;
 }
@@ -12882,7 +12887,7 @@ Naming conventions
 }
 
 .w-sm {
-    width: 29rem;
+    width: 28rem;
     width: var(--sm-width);
 }
 
@@ -12892,7 +12897,7 @@ Naming conventions
 }
 
 .w-rg {
-    width: 36rem;
+    width: 34rem;
     width: var(--rg-width);
 }
 
@@ -13380,11 +13385,11 @@ Naming conventions
         width: 100%;
     }
     .lg\:w-sm {
-        width: 29rem;
+        width: 28rem;
         width: var(--sm-width);
     }
     .lg\:w-rg {
-        width: 36rem;
+        width: 34rem;
         width: var(--rg-width);
     }
     .lg\:w-md {
@@ -13457,11 +13462,11 @@ Naming conventions
         width: 100%;
     }
     .lg\:w-sm {
-        width: 29rem;
+        width: 28rem;
         width: var(--sm-width);
     }
     .lg\:w-rg {
-        width: 36rem;
+        width: 34rem;
         width: var(--rg-width);
     }
     .lg\:w-md {
@@ -13536,7 +13541,7 @@ Naming conventions
 }
 
 .mxw-sm {
-    max-width: 29rem;
+    max-width: 28rem;
     max-width: var(--sm-width);
 }
 
@@ -13546,7 +13551,7 @@ Naming conventions
 }
 
 .mxw-rg {
-    max-width: 36rem;
+    max-width: 34rem;
     max-width: var(--rg-width);
 }
 
@@ -14122,7 +14127,7 @@ Naming conventions
 }
 
 .miw-sm {
-    min-width: 29rem;
+    min-width: 28rem;
     min-width: var(--sm-width);
 }
 
@@ -14132,7 +14137,7 @@ Naming conventions
 }
 
 .miw-rg {
-    min-width: 36rem;
+    min-width: 34rem;
     min-width: var(--rg-width);
 }
 
@@ -14592,11 +14597,11 @@ Naming conventions
         min-width: unset;
     }
     .lg\:miw-sm {
-        min-width: 29rem;
+        min-width: 28rem;
         min-width: var(--sm-width);
     }
     .lg\:miw-rg {
-        min-width: 36rem;
+        min-width: 34rem;
         min-width: var(--rg-width);
     }
     .lg\:miw-md {
@@ -14667,11 +14672,11 @@ Naming conventions
         min-width: unset;
     }
     .lg\:miw-sm {
-        min-width: 29rem;
+        min-width: 28rem;
         min-width: var(--sm-width);
     }
     .lg\:miw-rg {
-        min-width: 36rem;
+        min-width: 34rem;
         min-width: var(--rg-width);
     }
     .lg\:miw-md {
@@ -14743,13 +14748,13 @@ Naming conventions
 
 .h-sm,
 .h-sm {
-    height: 29rem;
+    height: 28rem;
     height: var(--sm-width);
 }
 
 .h-rg,
 .h-rg {
-    height: 36rem;
+    height: 34rem;
     height: var(--rg-width);
 }
 
@@ -15325,13 +15330,13 @@ Naming conventions
 
 .mxh-sm,
 .mxh-sm {
-    max-height: 29rem;
+    max-height: 28rem;
     max-height: var(--sm-width);
 }
 
 .mxh-rg,
 .mxh-rg {
-    max-height: 36rem;
+    max-height: 34rem;
     max-height: var(--rg-width);
 }
 
@@ -15967,13 +15972,13 @@ Naming conventions
 
 .mih-sm,
 .mih-sm {
-    min-height: 29rem;
+    min-height: 28rem;
     min-height: var(--sm-width);
 }
 
 .mih-rg,
 .mih-rg {
-    min-height: 36rem;
+    min-height: 34rem;
     min-height: var(--rg-width);
 }
 
@@ -17352,7 +17357,7 @@ blockquote>header {
     font-style: normal;
     font-size: 1rem;
     font-size: var(--figcaption-font-size);
-    max-width: 36rem;
+    max-width: 34rem;
     max-width: var(--rg-width);
 }
 
@@ -19883,7 +19888,7 @@ table caption {
     margin: 0;
     text-align: left;
     font-style: normal;
-    max-width: min(calc(100vw - 2 * 1rem), 36rem);
+    max-width: min(calc(100vw - 2 * 1rem), 34rem);
     max-width: min(calc(100vw - 2 * var(--space)), var(--rg-width));
     font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--figcaption-font-family);
@@ -20131,12 +20136,12 @@ th.sotable-column .indicator {
 }
 
 .split-1-sm {
-    grid-template-columns: 1fr 29rem;
+    grid-template-columns: 1fr 28rem;
     grid-template-columns: 1fr var(--sm-width);
 }
 
 .split-1-rg {
-    grid-template-columns: 1fr 36rem;
+    grid-template-columns: 1fr 34rem;
     grid-template-columns: 1fr var(--rg-width);
 }
 
@@ -20151,12 +20156,12 @@ th.sotable-column .indicator {
 }
 
 .split-sm-1 {
-    grid-template-columns: 29rem 1fr;
+    grid-template-columns: 28rem 1fr;
     grid-template-columns: var(--sm-width) 1fr;
 }
 
 .split-rg-1 {
-    grid-template-columns: 36rem 1fr;
+    grid-template-columns: 34rem 1fr;
     grid-template-columns: var(--rg-width) 1fr;
 }
 
@@ -20171,12 +20176,12 @@ th.sotable-column .indicator {
 }
 
 .split-aside-1 {
-    grid-template-columns: calc((min(1280px, 100vw - 2*1rem) - 36rem) / 2 - calc(1.7 * 1rem)) 1fr;
+    grid-template-columns: calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem)) 1fr;
     grid-template-columns: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
 }
 
 .split-1-aside {
-    grid-template-columns: 1fr calc((min(1280px, 100vw - 2*1rem) - 36rem) / 2 - calc(1.7 * 1rem));
+    grid-template-columns: 1fr calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem));
     grid-template-columns: 1fr calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
 }
 
@@ -20913,11 +20918,11 @@ th.sotable-column .indicator {
         grid-template-columns: 6fr 1fr;
     }
     .rg\:split-1-sm {
-        grid-template-columns: 1fr 29rem;
+        grid-template-columns: 1fr 28rem;
         grid-template-columns: 1fr var(--sm-width);
     }
     .rg\:split-sm-1 {
-        grid-template-columns: 29rem 1fr;
+        grid-template-columns: 28rem 1fr;
         grid-template-columns: var(--sm-width) 1fr;
     }
     /* Nicolas Gallaghers Clearfix solution
@@ -21155,11 +21160,11 @@ th.sotable-column .indicator {
         grid-template-columns: 6fr 1fr;
     }
     .rg\:split-1-sm {
-        grid-template-columns: 1fr 29rem;
+        grid-template-columns: 1fr 28rem;
         grid-template-columns: 1fr var(--sm-width);
     }
     .rg\:split-sm-1 {
-        grid-template-columns: 29rem 1fr;
+        grid-template-columns: 28rem 1fr;
         grid-template-columns: var(--sm-width) 1fr;
     }
     /* Nicolas Gallaghers Clearfix solution
@@ -21397,27 +21402,27 @@ th.sotable-column .indicator {
         grid-template-columns: 6fr 1fr;
     }
     .md\:split-1-sm {
-        grid-template-columns: 1fr 29rem;
+        grid-template-columns: 1fr 28rem;
         grid-template-columns: 1fr var(--sm-width);
     }
     .md\:split-1-rg {
-        grid-template-columns: 1fr 36rem;
+        grid-template-columns: 1fr 34rem;
         grid-template-columns: 1fr var(--rg-width);
     }
     .md\:split-sm-1 {
-        grid-template-columns: 29rem 1fr;
+        grid-template-columns: 28rem 1fr;
         grid-template-columns: var(--sm-width) 1fr;
     }
     .md\:split-rg-1 {
-        grid-template-columns: 36rem 1fr;
+        grid-template-columns: 34rem 1fr;
         grid-template-columns: var(--rg-width) 1fr;
     }
     .md\:split-aside-1 {
-        grid-template-columns: calc((min(1280px, 100vw - 2*1rem) - 36rem) / 2 - calc(1.7 * 1rem)) 1fr;
+        grid-template-columns: calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem)) 1fr;
         grid-template-columns: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
     }
     .md\:split-1-aside {
-        grid-template-columns: 1fr calc((min(1280px, 100vw - 2*1rem) - 36rem) / 2 - calc(1.7 * 1rem));
+        grid-template-columns: 1fr calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem));
         grid-template-columns: 1fr calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
     }
     /* Nicolas Gallaghers Clearfix solution
@@ -21655,27 +21660,27 @@ th.sotable-column .indicator {
         grid-template-columns: 6fr 1fr;
     }
     .md\:split-1-sm {
-        grid-template-columns: 1fr 29rem;
+        grid-template-columns: 1fr 28rem;
         grid-template-columns: 1fr var(--sm-width);
     }
     .md\:split-1-rg {
-        grid-template-columns: 1fr 36rem;
+        grid-template-columns: 1fr 34rem;
         grid-template-columns: 1fr var(--rg-width);
     }
     .md\:split-sm-1 {
-        grid-template-columns: 29rem 1fr;
+        grid-template-columns: 28rem 1fr;
         grid-template-columns: var(--sm-width) 1fr;
     }
     .md\:split-rg-1 {
-        grid-template-columns: 36rem 1fr;
+        grid-template-columns: 34rem 1fr;
         grid-template-columns: var(--rg-width) 1fr;
     }
     .md\:split-aside-1 {
-        grid-template-columns: calc((min(1280px, 100vw - 2*1rem) - 36rem) / 2 - calc(1.7 * 1rem)) 1fr;
+        grid-template-columns: calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem)) 1fr;
         grid-template-columns: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
     }
     .md\:split-1-aside {
-        grid-template-columns: 1fr calc((min(1280px, 100vw - 2*1rem) - 36rem) / 2 - calc(1.7 * 1rem));
+        grid-template-columns: 1fr calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem));
         grid-template-columns: 1fr calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
     }
     /* Nicolas Gallaghers Clearfix solution
@@ -21913,11 +21918,11 @@ th.sotable-column .indicator {
         grid-template-columns: 6fr 1fr;
     }
     .lg\:split-1-sm {
-        grid-template-columns: 1fr 29rem;
+        grid-template-columns: 1fr 28rem;
         grid-template-columns: 1fr var(--sm-width);
     }
     .lg\:split-1-rg {
-        grid-template-columns: 1fr 36rem;
+        grid-template-columns: 1fr 34rem;
         grid-template-columns: 1fr var(--rg-width);
     }
     .lg\:split-1-md {
@@ -21925,11 +21930,11 @@ th.sotable-column .indicator {
         grid-template-columns: 1fr var(--md-width);
     }
     .lg\:split-sm-1 {
-        grid-template-columns: 29rem 1fr;
+        grid-template-columns: 28rem 1fr;
         grid-template-columns: var(--sm-width) 1fr;
     }
     .lg\:split-rg-1 {
-        grid-template-columns: 36rem 1fr;
+        grid-template-columns: 34rem 1fr;
         grid-template-columns: var(--rg-width) 1fr;
     }
     .lg\:split-md-1 {
@@ -21937,11 +21942,11 @@ th.sotable-column .indicator {
         grid-template-columns: var(--md-width) 1fr;
     }
     .lg\:split-aside-1 {
-        grid-template-columns: calc((min(1280px, 100vw - 2*1rem) - 36rem) / 2 - calc(1.7 * 1rem)) 1fr;
+        grid-template-columns: calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem)) 1fr;
         grid-template-columns: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
     }
     .lg\:split-1-aside {
-        grid-template-columns: 1fr calc((min(1280px, 100vw - 2*1rem) - 36rem) / 2 - calc(1.7 * 1rem));
+        grid-template-columns: 1fr calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem));
         grid-template-columns: 1fr calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
     }
     /* Nicolas Gallaghers Clearfix solution
@@ -22179,11 +22184,11 @@ th.sotable-column .indicator {
         grid-template-columns: 6fr 1fr;
     }
     .lg\:split-1-sm {
-        grid-template-columns: 1fr 29rem;
+        grid-template-columns: 1fr 28rem;
         grid-template-columns: 1fr var(--sm-width);
     }
     .lg\:split-1-rg {
-        grid-template-columns: 1fr 36rem;
+        grid-template-columns: 1fr 34rem;
         grid-template-columns: 1fr var(--rg-width);
     }
     .lg\:split-1-md {
@@ -22191,11 +22196,11 @@ th.sotable-column .indicator {
         grid-template-columns: 1fr var(--md-width);
     }
     .lg\:split-sm-1 {
-        grid-template-columns: 29rem 1fr;
+        grid-template-columns: 28rem 1fr;
         grid-template-columns: var(--sm-width) 1fr;
     }
     .lg\:split-rg-1 {
-        grid-template-columns: 36rem 1fr;
+        grid-template-columns: 34rem 1fr;
         grid-template-columns: var(--rg-width) 1fr;
     }
     .lg\:split-md-1 {
@@ -22203,11 +22208,11 @@ th.sotable-column .indicator {
         grid-template-columns: var(--md-width) 1fr;
     }
     .lg\:split-aside-1 {
-        grid-template-columns: calc((min(1280px, 100vw - 2*1rem) - 36rem) / 2 - calc(1.7 * 1rem)) 1fr;
+        grid-template-columns: calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem)) 1fr;
         grid-template-columns: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
     }
     .lg\:split-1-aside {
-        grid-template-columns: 1fr calc((min(1280px, 100vw - 2*1rem) - 36rem) / 2 - calc(1.7 * 1rem));
+        grid-template-columns: 1fr calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem));
         grid-template-columns: 1fr calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
     }
     /* Nicolas Gallaghers Clearfix solution

@@ -1,6 +1,6 @@
 <header class="title">
 <h1>Compose CSS</h1>
-<span class="bg-primary white pd-d3">Version {{compose-version}}</span>
+<span class="bg-primary-5 pd-d3">Version {{compose-version}}</span>
 <p>A low-level CSS Toolkit to build fast, maintainable, and responsive websites.</p>
 </header>
 
@@ -831,7 +831,7 @@ familiar walls.</dd>
 
 ## Breakpoints
 
-Each breakpoint triggers a change in base font size. The wider the screen, the taller the font size. While the breakpoints are measured in <code>px</code>, the widths are measured in <code>rem</code>. That means, when a breakpoint triggers an increase in font size, the width will automatically increase as it´s based on <code>rem</code> font size. The <code>rem</code>-based width must not fit into the breakpoint width. For example, if you don´t increase font size at certain breakpoints, having <code>rem</code>-based widths exceeding the breakpoint widths doesn´t trigger text layout changes. Configure the settings with the following custom variables:
+Each breakpoint *can* trigger a change in base font size. The wider the screen, the taller the font size. While the breakpoint widths are measured in <code>px</code>, the other widths are measured in <code>rem</code>. That means, when a breakpoint triggers a change in font size, the <code>rem</code>-based width will automatically change. The <code>rem</code>-based width must not fit into the breakpoint width. For example, if you don´t increase/change font size at certain breakpoints, having <code>rem</code>-based widths exceeding the breakpoint widths doesn´t trigger text layout changes. Configure the settings with the following custom variables:
 
 <table>
 <thead>
@@ -846,29 +846,29 @@ Each breakpoint triggers a change in base font size. The wider the screen, the t
 </table>
 
 
-<div class="full-bleed pd-x overflow-hidden"> 
+<div class="full-bleed pdx overflow-hidden"> 
     <div class="w-lg-breakpoint mry-2 mrx-auto br bg-neutral-5">
     <span class="pd">.w-lg-breakpoint</span>        
-        <div class="w-lg mry mrx-auto bg-primary white">
-            <span class="pd">.w-lg</span>
+        <div class="w-lg pdx mry mrx-auto bg-primary white">
+            <span>.w-lg</span>
         </div>
-        <div class="w-md-breakpoint mry-2 mrx-auto br bg-neutral-4">
-            <span class="pd">.w-md-breakpoint</span>
-            <div class="w-md mry mrx-auto bg-primary white">
-                <span class="pd">.w-md</span>
-            </div>
-            <div class="w-rg-breakpoint mry-2 mrx-auto br bg-neutral-3">
-                <span class="pd">.w-rg-breakpoint</span>
-                <div class="w-rg mry mrx-auto bg-primary white">
-                    <span class="pd">.w-rg</span>
-                </div>
-                <div class="w-sm-breakpoint mry-2 mrx-auto bg-neutral-2 br">
-                    <span class="pd">.w-sm-breakpoint</span>
-                    <div class="w-sm mry mrx-auto bg-primary white">
-                        <span class="pd">.w-sm</span>
-                    </div>
-                </div>
-            </div>
+    </div>
+    <div class="w-md-breakpoint mry-2 mrx-auto br bg-neutral-5">
+        <span class="pd">.w-md-breakpoint</span>
+        <div class="w-md pdx mry mrx-auto bg-primary white">
+            <span>.w-md</span>
+        </div>
+    </div>
+    <div class="w-rg-breakpoint mry-2 mrx-auto br bg-neutral-5">
+        <span class="pd">.w-rg-breakpoint</span>
+        <div class="w-rg pdx mry mrx-auto bg-primary white">
+            <span>.w-rg</span>
+        </div>
+    </div>
+    <div class="w-sm-breakpoint mry-2 mrx-auto bg-neutral-5 br">
+        <span class="pd">.w-sm-breakpoint</span>
+        <div class="w-sm pdx mry mrx-auto bg-primary white">
+            <span>.w-sm</span>
         </div>
     </div>
 </div>

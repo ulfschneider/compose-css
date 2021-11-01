@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+*+* {
+    margin-top: var(--vertical-rhythm);
+}
+
 body {
     margin: 0;
     width: 100%;
