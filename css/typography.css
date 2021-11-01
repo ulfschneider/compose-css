@@ -61,6 +61,7 @@
     font-variant-numeric: var(--font-variant-numeric);
     --outline: var(--space-d3) solid var(--link-focus-color);
     --outline-offset: var(--space-d4);
+    --kbd-shadow: .07em .07em var(--border-color);
 }
 
 * {
@@ -361,6 +362,8 @@ kbd,
     white-space: nowrap;
     text-align: center;
     min-width: var(--space);
+    box-shadow: .07em .07em var(--border-color);
+    box-shadow: var(--kbd-shadow);
 }
 
 .mono {
