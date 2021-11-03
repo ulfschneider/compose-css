@@ -1533,7 +1533,7 @@ small,
     --form-button-color: var(--base-background);
     --form-field-background: var(--neutral-5);
     --form-field-focus-color: var(--primary);
-    --kbd-background: var(--neutral-5);
+    --kbd-background: var(--base-background);
     --kbd-color: var(--base-color);
     --kbd-border-color: var(--border-color);
     --timeline-color: var(--li-prefix-color);
@@ -17064,7 +17064,7 @@ kbd,
     color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
     color: var(--kbd-color);
     font-size: smaller;
-    background: hsl(0, 0%, calc(53% + 5 * calc((100% - 53%) / 6)));
+    background: white;
     background: var(--kbd-background);
     border-radius: 2px;
     border-radius: var(--space-d4);
