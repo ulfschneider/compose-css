@@ -353,15 +353,16 @@ mark,
 kbd,
 .kbd {
     color: var(--kbd-color);
+    font-size: smaller;
     background: var(--kbd-background);
     border-radius: var(--space-d4);
     border: 1px solid var(--kbd-border-color);
     padding: 0 0.2em;
-    font-family: ui-monospace, monospace;
-    font-family: var(--mono-font-family);
+    font-family: system-ui, ui-sans-serif, sans-serif;
+    font-family: var(--font-family);
     white-space: nowrap;
     text-align: center;
-    min-width: var(--space);
+    min-width: 1em;
     box-shadow: .07em .07em var(--border-color);
     box-shadow: var(--kbd-shadow);
 }
