@@ -358,11 +358,14 @@ kbd,
     border-radius: var(--space-d4);
     border: 1px solid var(--kbd-border-color);
     padding: 0 0.2em;
+    margin: 0 0.2em;
     font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--font-family);
     white-space: nowrap;
     text-align: center;
-    min-width: 1em;
+    vertical-align: baseline;
+    display: inline-block;
+    min-width: 1.35em;
     box-shadow: .07em .07em var(--border-color);
     box-shadow: var(--kbd-shadow);
 }
