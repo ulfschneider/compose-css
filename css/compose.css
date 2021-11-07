@@ -13013,6 +13013,38 @@ Naming conventions
     .sm\:w-100 {
         width: 100%;
     }
+    .sm\:w-sm {
+        width: 28rem;
+        width: var(--sm-width);
+    }
+    .sm\:w-sm-breakpoint {
+        width: 640px;
+        width: var(--sm-breakpoint);
+    }
+    .sm\:w-rg {
+        width: 34rem;
+        width: var(--rg-width);
+    }
+    .sm\:w-rg-breakpoint {
+        width: 768px;
+        width: var(--rg-breakpoint);
+    }
+    .sm\:w-md {
+        width: 48rem;
+        width: var(--md-width);
+    }
+    .sm\:w-md-breakpoint {
+        width: 1024px;
+        width: var(--md-breakpoint);
+    }
+    .sm\:w-lg {
+        width: 60rem;
+        width: var(--lg-width);
+    }
+    .sm\:w-lg-breakpoint {
+        width: 1280px;
+        width: var(--lg-breakpoint);
+    }
     .sm\:w-d5 {
         width: 1px;
         width: var(--space-d5);
@@ -13073,6 +13105,38 @@ Naming conventions
     }
     .sm\:w-100 {
         width: 100%;
+    }
+    .sm\:w-sm {
+        width: 28rem;
+        width: var(--sm-width);
+    }
+    .sm\:w-sm-breakpoint {
+        width: 640px;
+        width: var(--sm-breakpoint);
+    }
+    .sm\:w-rg {
+        width: 34rem;
+        width: var(--rg-width);
+    }
+    .sm\:w-rg-breakpoint {
+        width: 768px;
+        width: var(--rg-breakpoint);
+    }
+    .sm\:w-md {
+        width: 48rem;
+        width: var(--md-width);
+    }
+    .sm\:w-md-breakpoint {
+        width: 1024px;
+        width: var(--md-breakpoint);
+    }
+    .sm\:w-lg {
+        width: 60rem;
+        width: var(--lg-width);
+    }
+    .sm\:w-lg-breakpoint {
+        width: 1280px;
+        width: var(--lg-breakpoint);
     }
     .sm\:w-d5 {
         width: 1px;
@@ -13135,6 +13199,38 @@ Naming conventions
     .rg\:w-100 {
         width: 100%;
     }
+    .rg\:w-sm {
+        width: 28rem;
+        width: var(--sm-width);
+    }
+    .rg\:w-sm-breakpoint {
+        width: 640px;
+        width: var(--sm-breakpoint);
+    }
+    .rg\:w-rg {
+        width: 34rem;
+        width: var(--rg-width);
+    }
+    .rg\:w-rg-breakpoint {
+        width: 768px;
+        width: var(--rg-breakpoint);
+    }
+    .rg\:w-md {
+        width: 48rem;
+        width: var(--md-width);
+    }
+    .rg\:w-md-breakpoint {
+        width: 1024px;
+        width: var(--md-breakpoint);
+    }
+    .rg\:w-lg {
+        width: 60rem;
+        width: var(--lg-width);
+    }
+    .rg\:w-lg-breakpoint {
+        width: 1280px;
+        width: var(--lg-breakpoint);
+    }
     .rg\:w-d5 {
         width: 1px;
         width: var(--space-d5);
@@ -13195,6 +13291,38 @@ Naming conventions
     }
     .rg\:w-100 {
         width: 100%;
+    }
+    .rg\:w-sm {
+        width: 28rem;
+        width: var(--sm-width);
+    }
+    .rg\:w-sm-breakpoint {
+        width: 640px;
+        width: var(--sm-breakpoint);
+    }
+    .rg\:w-rg {
+        width: 34rem;
+        width: var(--rg-width);
+    }
+    .rg\:w-rg-breakpoint {
+        width: 768px;
+        width: var(--rg-breakpoint);
+    }
+    .rg\:w-md {
+        width: 48rem;
+        width: var(--md-width);
+    }
+    .rg\:w-md-breakpoint {
+        width: 1024px;
+        width: var(--md-breakpoint);
+    }
+    .rg\:w-lg {
+        width: 60rem;
+        width: var(--lg-width);
+    }
+    .rg\:w-lg-breakpoint {
+        width: 1280px;
+        width: var(--lg-breakpoint);
     }
     .rg\:w-d5 {
         width: 1px;
@@ -13257,6 +13385,38 @@ Naming conventions
     .md\:w-100 {
         width: 100%;
     }
+    .md\:w-sm {
+        width: 28rem;
+        width: var(--sm-width);
+    }
+    .md\:w-sm-breakpoint {
+        width: 640px;
+        width: var(--sm-breakpoint);
+    }
+    .md\:w-rg {
+        width: 34rem;
+        width: var(--rg-width);
+    }
+    .md\:w-rg-breakpoint {
+        width: 768px;
+        width: var(--rg-breakpoint);
+    }
+    .md\:w-md {
+        width: 48rem;
+        width: var(--md-width);
+    }
+    .md\:w-md-breakpoint {
+        width: 1024px;
+        width: var(--md-breakpoint);
+    }
+    .md\:w-lg {
+        width: 60rem;
+        width: var(--lg-width);
+    }
+    .md\:w-lg-breakpoint {
+        width: 1280px;
+        width: var(--lg-breakpoint);
+    }
     .md\:w-d5 {
         width: 1px;
         width: var(--space-d5);
@@ -13317,6 +13477,38 @@ Naming conventions
     }
     .md\:w-100 {
         width: 100%;
+    }
+    .md\:w-sm {
+        width: 28rem;
+        width: var(--sm-width);
+    }
+    .md\:w-sm-breakpoint {
+        width: 640px;
+        width: var(--sm-breakpoint);
+    }
+    .md\:w-rg {
+        width: 34rem;
+        width: var(--rg-width);
+    }
+    .md\:w-rg-breakpoint {
+        width: 768px;
+        width: var(--rg-breakpoint);
+    }
+    .md\:w-md {
+        width: 48rem;
+        width: var(--md-width);
+    }
+    .md\:w-md-breakpoint {
+        width: 1024px;
+        width: var(--md-breakpoint);
+    }
+    .md\:w-lg {
+        width: 60rem;
+        width: var(--lg-width);
+    }
+    .md\:w-lg-breakpoint {
+        width: 1280px;
+        width: var(--lg-breakpoint);
     }
     .md\:w-d5 {
         width: 1px;
@@ -13383,17 +13575,33 @@ Naming conventions
         width: 28rem;
         width: var(--sm-width);
     }
+    .lg\:w-sm-breakpoint {
+        width: 640px;
+        width: var(--sm-breakpoint);
+    }
     .lg\:w-rg {
         width: 34rem;
         width: var(--rg-width);
+    }
+    .lg\:w-rg-breakpoint {
+        width: 768px;
+        width: var(--rg-breakpoint);
     }
     .lg\:w-md {
         width: 48rem;
         width: var(--md-width);
     }
+    .lg\:w-md-breakpoint {
+        width: 1024px;
+        width: var(--md-breakpoint);
+    }
     .lg\:w-lg {
         width: 60rem;
         width: var(--lg-width);
+    }
+    .lg\:w-lg-breakpoint {
+        width: 1280px;
+        width: var(--lg-breakpoint);
     }
     .lg\:w-d5 {
         width: 1px;
@@ -13460,17 +13668,33 @@ Naming conventions
         width: 28rem;
         width: var(--sm-width);
     }
+    .lg\:w-sm-breakpoint {
+        width: 640px;
+        width: var(--sm-breakpoint);
+    }
     .lg\:w-rg {
         width: 34rem;
         width: var(--rg-width);
+    }
+    .lg\:w-rg-breakpoint {
+        width: 768px;
+        width: var(--rg-breakpoint);
     }
     .lg\:w-md {
         width: 48rem;
         width: var(--md-width);
     }
+    .lg\:w-md-breakpoint {
+        width: 1024px;
+        width: var(--md-breakpoint);
+    }
     .lg\:w-lg {
         width: 60rem;
         width: var(--lg-width);
+    }
+    .lg\:w-lg-breakpoint {
+        width: 1280px;
+        width: var(--lg-breakpoint);
     }
     .lg\:w-d5 {
         width: 1px;
@@ -13649,6 +13873,45 @@ Naming conventions
     .sm\:mxw-u {
         max-width: unset;
     }
+    .sm\:mxw-100 {
+        max-width: 100%;
+    }
+    .sm\:mxw-sm {
+        max-width: 28rem;
+        max-width: var(--sm-width);
+    }
+    .sm\:mxw-sm-breakpoint {
+        max-width: 640px;
+        max-width: var(--sm-breakpoint);
+    }
+    .sm\:mxw-rg {
+        max-width: 34rem;
+        max-width: var(--rg-width);
+    }
+    .sm\:mxw-rg-breakpoint {
+        max-width: 768px;
+        max-width: var(--rg-breakpoint);
+    }
+    .sm\:mxw-md {
+        max-width: 48rem;
+        max-width: var(--md-width);
+    }
+    .sm\:mxw-md-breakpoint {
+        max-width: 1024px;
+        max-width: var(--md-breakpoint);
+    }
+    .sm\:mxw-lg {
+        max-width: 60rem;
+        max-width: var(--lg-width);
+    }
+    .sm\:mxw-lg-breakpoint {
+        max-width: 1280px;
+        max-width: var(--lg-breakpoint);
+    }
+    .sm\:mxw-bleed {
+        max-width: 1280px;
+        max-width: var(--bleed-width);
+    }
     .sm\:mxw-d5 {
         max-width: 1px;
         max-width: var(--space-d5);
@@ -13696,10 +13959,6 @@ Naming conventions
     .sm\:mxw-6 {
         max-width: calc(calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7) * 1.7);
         max-width: var(--space-6);
-    }
-    .sm\:mxw-bleed {
-        max-width: 1280px;
-        max-width: var(--bleed-width);
     }
 }
 
@@ -13708,6 +13967,45 @@ Naming conventions
     .sm\:mxw-u {
         max-width: unset;
     }
+    .sm\:mxw-100 {
+        max-width: 100%;
+    }
+    .sm\:mxw-sm {
+        max-width: 28rem;
+        max-width: var(--sm-width);
+    }
+    .sm\:mxw-sm-breakpoint {
+        max-width: 640px;
+        max-width: var(--sm-breakpoint);
+    }
+    .sm\:mxw-rg {
+        max-width: 34rem;
+        max-width: var(--rg-width);
+    }
+    .sm\:mxw-rg-breakpoint {
+        max-width: 768px;
+        max-width: var(--rg-breakpoint);
+    }
+    .sm\:mxw-md {
+        max-width: 48rem;
+        max-width: var(--md-width);
+    }
+    .sm\:mxw-md-breakpoint {
+        max-width: 1024px;
+        max-width: var(--md-breakpoint);
+    }
+    .sm\:mxw-lg {
+        max-width: 60rem;
+        max-width: var(--lg-width);
+    }
+    .sm\:mxw-lg-breakpoint {
+        max-width: 1280px;
+        max-width: var(--lg-breakpoint);
+    }
+    .sm\:mxw-bleed {
+        max-width: 1280px;
+        max-width: var(--bleed-width);
+    }
     .sm\:mxw-d5 {
         max-width: 1px;
         max-width: var(--space-d5);
@@ -13756,16 +14054,51 @@ Naming conventions
         max-width: calc(calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7) * 1.7);
         max-width: var(--space-6);
     }
-    .sm\:mxw-bleed {
-        max-width: 1280px;
-        max-width: var(--bleed-width);
-    }
 }
 
 @media (min-width: 769px) {
     .rg\:mxw-unset,
     .rg\:mxw-u {
         max-width: unset;
+    }
+    .rg\:mxw-100 {
+        max-width: 100%;
+    }
+    .rg\:mxw-sm {
+        max-width: 28rem;
+        max-width: var(--sm-width);
+    }
+    .rg\:mxw-sm-breakpoint {
+        max-width: 640px;
+        max-width: var(--sm-breakpoint);
+    }
+    .rg\:mxw-rg {
+        max-width: 34rem;
+        max-width: var(--rg-width);
+    }
+    .rg\:mxw-rg-breakpoint {
+        max-width: 768px;
+        max-width: var(--rg-breakpoint);
+    }
+    .rg\:mxw-md {
+        max-width: 48rem;
+        max-width: var(--md-width);
+    }
+    .rg\:mxw-md-breakpoint {
+        max-width: 1024px;
+        max-width: var(--md-breakpoint);
+    }
+    .rg\:mxw-lg {
+        max-width: 60rem;
+        max-width: var(--lg-width);
+    }
+    .rg\:mxw-lg-breakpoint {
+        max-width: 1280px;
+        max-width: var(--lg-breakpoint);
+    }
+    .rg\:mxw-bleed {
+        max-width: 1280px;
+        max-width: var(--bleed-width);
     }
     .rg\:mxw-d5 {
         max-width: 1px;
@@ -13814,10 +14147,6 @@ Naming conventions
     .rg\:mxw-6 {
         max-width: calc(calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7) * 1.7);
         max-width: var(--space-6);
-    }
-    .rg\:mxw-bleed {
-        max-width: 1280px;
-        max-width: var(--bleed-width);
     }
 }
 
@@ -13826,6 +14155,45 @@ Naming conventions
     .rg\:mxw-u {
         max-width: unset;
     }
+    .rg\:mxw-100 {
+        max-width: 100%;
+    }
+    .rg\:mxw-sm {
+        max-width: 28rem;
+        max-width: var(--sm-width);
+    }
+    .rg\:mxw-sm-breakpoint {
+        max-width: 640px;
+        max-width: var(--sm-breakpoint);
+    }
+    .rg\:mxw-rg {
+        max-width: 34rem;
+        max-width: var(--rg-width);
+    }
+    .rg\:mxw-rg-breakpoint {
+        max-width: 768px;
+        max-width: var(--rg-breakpoint);
+    }
+    .rg\:mxw-md {
+        max-width: 48rem;
+        max-width: var(--md-width);
+    }
+    .rg\:mxw-md-breakpoint {
+        max-width: 1024px;
+        max-width: var(--md-breakpoint);
+    }
+    .rg\:mxw-lg {
+        max-width: 60rem;
+        max-width: var(--lg-width);
+    }
+    .rg\:mxw-lg-breakpoint {
+        max-width: 1280px;
+        max-width: var(--lg-breakpoint);
+    }
+    .rg\:mxw-bleed {
+        max-width: 1280px;
+        max-width: var(--bleed-width);
+    }
     .rg\:mxw-d5 {
         max-width: 1px;
         max-width: var(--space-d5);
@@ -13874,16 +14242,51 @@ Naming conventions
         max-width: calc(calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7) * 1.7);
         max-width: var(--space-6);
     }
-    .rg\:mxw-bleed {
-        max-width: 1280px;
-        max-width: var(--bleed-width);
-    }
 }
 
 @media (min-width: 1025px) {
     .md\:mxw-unset,
     .md\:mxw-u {
         max-width: unset;
+    }
+    .md\:mxw-100 {
+        max-width: 100%;
+    }
+    .md\:mxw-sm {
+        max-width: 28rem;
+        max-width: var(--sm-width);
+    }
+    .md\:mxw-sm-breakpoint {
+        max-width: 640px;
+        max-width: var(--sm-breakpoint);
+    }
+    .md\:mxw-rg {
+        max-width: 34rem;
+        max-width: var(--rg-width);
+    }
+    .md\:mxw-rg-breakpoint {
+        max-width: 768px;
+        max-width: var(--rg-breakpoint);
+    }
+    .md\:mxw-md {
+        max-width: 48rem;
+        max-width: var(--md-width);
+    }
+    .md\:mxw-md-breakpoint {
+        max-width: 1024px;
+        max-width: var(--md-breakpoint);
+    }
+    .md\:mxw-lg {
+        max-width: 60rem;
+        max-width: var(--lg-width);
+    }
+    .md\:mxw-lg-breakpoint {
+        max-width: 1280px;
+        max-width: var(--lg-breakpoint);
+    }
+    .md\:mxw-bleed {
+        max-width: 1280px;
+        max-width: var(--bleed-width);
     }
     .md\:mxw-d5 {
         max-width: 1px;
@@ -13932,10 +14335,6 @@ Naming conventions
     .md\:mxw-6 {
         max-width: calc(calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7) * 1.7);
         max-width: var(--space-6);
-    }
-    .md\:mxw-bleed {
-        max-width: 1280px;
-        max-width: var(--bleed-width);
     }
 }
 
@@ -13944,6 +14343,45 @@ Naming conventions
     .md\:mxw-u {
         max-width: unset;
     }
+    .md\:mxw-100 {
+        max-width: 100%;
+    }
+    .md\:mxw-sm {
+        max-width: 28rem;
+        max-width: var(--sm-width);
+    }
+    .md\:mxw-sm-breakpoint {
+        max-width: 640px;
+        max-width: var(--sm-breakpoint);
+    }
+    .md\:mxw-rg {
+        max-width: 34rem;
+        max-width: var(--rg-width);
+    }
+    .md\:mxw-rg-breakpoint {
+        max-width: 768px;
+        max-width: var(--rg-breakpoint);
+    }
+    .md\:mxw-md {
+        max-width: 48rem;
+        max-width: var(--md-width);
+    }
+    .md\:mxw-md-breakpoint {
+        max-width: 1024px;
+        max-width: var(--md-breakpoint);
+    }
+    .md\:mxw-lg {
+        max-width: 60rem;
+        max-width: var(--lg-width);
+    }
+    .md\:mxw-lg-breakpoint {
+        max-width: 1280px;
+        max-width: var(--lg-breakpoint);
+    }
+    .md\:mxw-bleed {
+        max-width: 1280px;
+        max-width: var(--bleed-width);
+    }
     .md\:mxw-d5 {
         max-width: 1px;
         max-width: var(--space-d5);
@@ -13992,16 +14430,51 @@ Naming conventions
         max-width: calc(calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7) * 1.7);
         max-width: var(--space-6);
     }
-    .md\:mxw-bleed {
-        max-width: 1280px;
-        max-width: var(--bleed-width);
-    }
 }
 
 @media (min-width: 1281px) {
     .lg\:mxw-unset,
     .lg\:mxw-u {
         max-width: unset;
+    }
+    .lg\:mxw-100 {
+        max-width: 100%;
+    }
+    .lg\:mxw-sm {
+        max-width: 28rem;
+        max-width: var(--sm-width);
+    }
+    .lg\:mxw-sm-breakpoint {
+        max-width: 640px;
+        max-width: var(--sm-breakpoint);
+    }
+    .lg\:mxw-rg {
+        max-width: 34rem;
+        max-width: var(--rg-width);
+    }
+    .lg\:mxw-rg-breakpoint {
+        max-width: 768px;
+        max-width: var(--rg-breakpoint);
+    }
+    .lg\:mxw-md {
+        max-width: 48rem;
+        max-width: var(--md-width);
+    }
+    .lg\:mxw-md-breakpoint {
+        max-width: 1024px;
+        max-width: var(--md-breakpoint);
+    }
+    .lg\:mxw-lg {
+        max-width: 60rem;
+        max-width: var(--lg-width);
+    }
+    .lg\:mxw-lg-breakpoint {
+        max-width: 1280px;
+        max-width: var(--lg-breakpoint);
+    }
+    .lg\:mxw-bleed {
+        max-width: 1280px;
+        max-width: var(--bleed-width);
     }
     .lg\:mxw-d5 {
         max-width: 1px;
@@ -14050,10 +14523,6 @@ Naming conventions
     .lg\:mxw-6 {
         max-width: calc(calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7) * 1.7);
         max-width: var(--space-6);
-    }
-    .lg\:mxw-bleed {
-        max-width: 1280px;
-        max-width: var(--bleed-width);
     }
 }
 
@@ -14062,6 +14531,45 @@ Naming conventions
     .lg\:mxw-u {
         max-width: unset;
     }
+    .lg\:mxw-100 {
+        max-width: 100%;
+    }
+    .lg\:mxw-sm {
+        max-width: 28rem;
+        max-width: var(--sm-width);
+    }
+    .lg\:mxw-sm-breakpoint {
+        max-width: 640px;
+        max-width: var(--sm-breakpoint);
+    }
+    .lg\:mxw-rg {
+        max-width: 34rem;
+        max-width: var(--rg-width);
+    }
+    .lg\:mxw-rg-breakpoint {
+        max-width: 768px;
+        max-width: var(--rg-breakpoint);
+    }
+    .lg\:mxw-md {
+        max-width: 48rem;
+        max-width: var(--md-width);
+    }
+    .lg\:mxw-md-breakpoint {
+        max-width: 1024px;
+        max-width: var(--md-breakpoint);
+    }
+    .lg\:mxw-lg {
+        max-width: 60rem;
+        max-width: var(--lg-width);
+    }
+    .lg\:mxw-lg-breakpoint {
+        max-width: 1280px;
+        max-width: var(--lg-breakpoint);
+    }
+    .lg\:mxw-bleed {
+        max-width: 1280px;
+        max-width: var(--bleed-width);
+    }
     .lg\:mxw-d5 {
         max-width: 1px;
         max-width: var(--space-d5);
@@ -14109,10 +14617,6 @@ Naming conventions
     .lg\:mxw-6 {
         max-width: calc(calc(calc(calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7) * 1.7) * 1.7) * 1.7);
         max-width: var(--space-6);
-    }
-    .lg\:mxw-bleed {
-        max-width: 1280px;
-        max-width: var(--bleed-width);
     }
 }
 
@@ -14235,6 +14739,38 @@ Naming conventions
     .sm\:miw-u {
         min-width: unset;
     }
+    .sm\:miw-sm {
+        min-width: 28rem;
+        min-width: var(--sm-width);
+    }
+    .sm\:miw-sm-breakpoint {
+        min-width: 640px;
+        min-width: var(--sm-breakpoint);
+    }
+    .sm\:miw-rg {
+        min-width: 34rem;
+        min-width: var(--rg-width);
+    }
+    .sm\:miw-rg-breakpoint {
+        min-width: 768px;
+        min-width: var(--rg-breakpoint);
+    }
+    .sm\:miw-md {
+        min-width: 48rem;
+        min-width: var(--md-width);
+    }
+    .sm\:miw-md-breakpoint {
+        min-width: 1024px;
+        min-width: var(--md-breakpoint);
+    }
+    .sm\:miw-lg {
+        min-width: 60rem;
+        min-width: var(--lg-width);
+    }
+    .sm\:miw-lg-breakpoint {
+        min-width: 1280px;
+        min-width: var(--lg-breakpoint);
+    }
     .sm\:miw-d5 {
         min-width: 1px;
         min-width: var(--space-d5);
@@ -14294,6 +14830,38 @@ Naming conventions
     .sm\:miw-unset,
     .sm\:miw-u {
         min-width: unset;
+    }
+    .sm\:miw-sm {
+        min-width: 28rem;
+        min-width: var(--sm-width);
+    }
+    .sm\:miw-sm-breakpoint {
+        min-width: 640px;
+        min-width: var(--sm-breakpoint);
+    }
+    .sm\:miw-rg {
+        min-width: 34rem;
+        min-width: var(--rg-width);
+    }
+    .sm\:miw-rg-breakpoint {
+        min-width: 768px;
+        min-width: var(--rg-breakpoint);
+    }
+    .sm\:miw-md {
+        min-width: 48rem;
+        min-width: var(--md-width);
+    }
+    .sm\:miw-md-breakpoint {
+        min-width: 1024px;
+        min-width: var(--md-breakpoint);
+    }
+    .sm\:miw-lg {
+        min-width: 60rem;
+        min-width: var(--lg-width);
+    }
+    .sm\:miw-lg-breakpoint {
+        min-width: 1280px;
+        min-width: var(--lg-breakpoint);
     }
     .sm\:miw-d5 {
         min-width: 1px;
@@ -14355,6 +14923,38 @@ Naming conventions
     .rg\:miw-u {
         min-width: unset;
     }
+    .rg\:miw-sm {
+        min-width: 28rem;
+        min-width: var(--sm-width);
+    }
+    .rg\:miw-sm-breakpoint {
+        min-width: 640px;
+        min-width: var(--sm-breakpoint);
+    }
+    .rg\:miw-rg {
+        min-width: 34rem;
+        min-width: var(--rg-width);
+    }
+    .rg\:miw-rg-breakpoint {
+        min-width: 768px;
+        min-width: var(--rg-breakpoint);
+    }
+    .rg\:miw-md {
+        min-width: 48rem;
+        min-width: var(--md-width);
+    }
+    .rg\:miw-md-breakpoint {
+        min-width: 1024px;
+        min-width: var(--md-breakpoint);
+    }
+    .rg\:miw-lg {
+        min-width: 60rem;
+        min-width: var(--lg-width);
+    }
+    .rg\:miw-lg-breakpoint {
+        min-width: 1280px;
+        min-width: var(--lg-breakpoint);
+    }
     .rg\:miw-d5 {
         min-width: 1px;
         min-width: var(--space-d5);
@@ -14413,6 +15013,38 @@ Naming conventions
     .rg\:miw-unset,
     .rg\:miw-u {
         min-width: unset;
+    }
+    .rg\:miw-sm {
+        min-width: 28rem;
+        min-width: var(--sm-width);
+    }
+    .rg\:miw-sm-breakpoint {
+        min-width: 640px;
+        min-width: var(--sm-breakpoint);
+    }
+    .rg\:miw-rg {
+        min-width: 34rem;
+        min-width: var(--rg-width);
+    }
+    .rg\:miw-rg-breakpoint {
+        min-width: 768px;
+        min-width: var(--rg-breakpoint);
+    }
+    .rg\:miw-md {
+        min-width: 48rem;
+        min-width: var(--md-width);
+    }
+    .rg\:miw-md-breakpoint {
+        min-width: 1024px;
+        min-width: var(--md-breakpoint);
+    }
+    .rg\:miw-lg {
+        min-width: 60rem;
+        min-width: var(--lg-width);
+    }
+    .rg\:miw-lg-breakpoint {
+        min-width: 1280px;
+        min-width: var(--lg-breakpoint);
     }
     .rg\:miw-d5 {
         min-width: 1px;
@@ -14473,6 +15105,38 @@ Naming conventions
     .md\:miw-u {
         min-width: unset;
     }
+    .md\:miw-sm {
+        min-width: 28rem;
+        min-width: var(--sm-width);
+    }
+    .md\:miw-sm-breakpoint {
+        min-width: 640px;
+        min-width: var(--sm-breakpoint);
+    }
+    .md\:miw-rg {
+        min-width: 34rem;
+        min-width: var(--rg-width);
+    }
+    .md\:miw-rg-breakpoint {
+        min-width: 768px;
+        min-width: var(--rg-breakpoint);
+    }
+    .md\:miw-md {
+        min-width: 48rem;
+        min-width: var(--md-width);
+    }
+    .md\:miw-md-breakpoint {
+        min-width: 1024px;
+        min-width: var(--md-breakpoint);
+    }
+    .md\:miw-lg {
+        min-width: 60rem;
+        min-width: var(--lg-width);
+    }
+    .md\:miw-lg-breakpoint {
+        min-width: 1280px;
+        min-width: var(--lg-breakpoint);
+    }
     .md\:miw-d5 {
         min-width: 1px;
         min-width: var(--space-d5);
@@ -14531,6 +15195,38 @@ Naming conventions
     .md\:miw-unset,
     .md\:miw-u {
         min-width: unset;
+    }
+    .md\:miw-sm {
+        min-width: 28rem;
+        min-width: var(--sm-width);
+    }
+    .md\:miw-sm-breakpoint {
+        min-width: 640px;
+        min-width: var(--sm-breakpoint);
+    }
+    .md\:miw-rg {
+        min-width: 34rem;
+        min-width: var(--rg-width);
+    }
+    .md\:miw-rg-breakpoint {
+        min-width: 768px;
+        min-width: var(--rg-breakpoint);
+    }
+    .md\:miw-md {
+        min-width: 48rem;
+        min-width: var(--md-width);
+    }
+    .md\:miw-md-breakpoint {
+        min-width: 1024px;
+        min-width: var(--md-breakpoint);
+    }
+    .md\:miw-lg {
+        min-width: 60rem;
+        min-width: var(--lg-width);
+    }
+    .md\:miw-lg-breakpoint {
+        min-width: 1280px;
+        min-width: var(--lg-breakpoint);
     }
     .md\:miw-d5 {
         min-width: 1px;
@@ -14595,17 +15291,33 @@ Naming conventions
         min-width: 28rem;
         min-width: var(--sm-width);
     }
+    .lg\:miw-sm-breakpoint {
+        min-width: 640px;
+        min-width: var(--sm-breakpoint);
+    }
     .lg\:miw-rg {
         min-width: 34rem;
         min-width: var(--rg-width);
+    }
+    .lg\:miw-rg-breakpoint {
+        min-width: 768px;
+        min-width: var(--rg-breakpoint);
     }
     .lg\:miw-md {
         min-width: 48rem;
         min-width: var(--md-width);
     }
+    .lg\:miw-md-breakpoint {
+        min-width: 1024px;
+        min-width: var(--md-breakpoint);
+    }
     .lg\:miw-lg {
         min-width: 60rem;
         min-width: var(--lg-width);
+    }
+    .lg\:miw-lg-breakpoint {
+        min-width: 1280px;
+        min-width: var(--lg-breakpoint);
     }
     .lg\:miw-d5 {
         min-width: 1px;
@@ -14670,17 +15382,33 @@ Naming conventions
         min-width: 28rem;
         min-width: var(--sm-width);
     }
+    .lg\:miw-sm-breakpoint {
+        min-width: 640px;
+        min-width: var(--sm-breakpoint);
+    }
     .lg\:miw-rg {
         min-width: 34rem;
         min-width: var(--rg-width);
+    }
+    .lg\:miw-rg-breakpoint {
+        min-width: 768px;
+        min-width: var(--rg-breakpoint);
     }
     .lg\:miw-md {
         min-width: 48rem;
         min-width: var(--md-width);
     }
+    .lg\:miw-md-breakpoint {
+        min-width: 1024px;
+        min-width: var(--md-breakpoint);
+    }
     .lg\:miw-lg {
         min-width: 60rem;
         min-width: var(--lg-width);
+    }
+    .lg\:miw-lg-breakpoint {
+        min-width: 1280px;
+        min-width: var(--lg-breakpoint);
     }
     .lg\:miw-d5 {
         min-width: 1px;

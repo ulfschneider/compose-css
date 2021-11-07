@@ -3,6 +3,30 @@
     .sm\:miw-u {
         min-width: unset;
     }
+    .sm\:miw-sm {
+        min-width: var(--sm-width);
+    }
+    .sm\:miw-sm-breakpoint {
+        min-width: var(--sm-breakpoint);
+    }
+    .sm\:miw-rg {
+        min-width: var(--rg-width);
+    }
+    .sm\:miw-rg-breakpoint {
+        min-width: var(--rg-breakpoint);
+    }
+    .sm\:miw-md {
+        min-width: var(--md-width);
+    }
+    .sm\:miw-md-breakpoint {
+        min-width: var(--md-breakpoint);
+    }
+    .sm\:miw-lg {
+        min-width: var(--lg-width);
+    }
+    .sm\:miw-lg-breakpoint {
+        min-width: var(--lg-breakpoint);
+    }
     .sm\:miw-d5 {
         min-width: var(--space-d5);
     }
@@ -49,6 +73,30 @@
     .sm\:miw-unset,
     .sm\:miw-u {
         min-width: unset;
+    }
+    .sm\:miw-sm {
+        min-width: var(--sm-width);
+    }
+    .sm\:miw-sm-breakpoint {
+        min-width: var(--sm-breakpoint);
+    }
+    .sm\:miw-rg {
+        min-width: var(--rg-width);
+    }
+    .sm\:miw-rg-breakpoint {
+        min-width: var(--rg-breakpoint);
+    }
+    .sm\:miw-md {
+        min-width: var(--md-width);
+    }
+    .sm\:miw-md-breakpoint {
+        min-width: var(--md-breakpoint);
+    }
+    .sm\:miw-lg {
+        min-width: var(--lg-width);
+    }
+    .sm\:miw-lg-breakpoint {
+        min-width: var(--lg-breakpoint);
     }
     .sm\:miw-d5 {
         min-width: var(--space-d5);
@@ -97,6 +145,30 @@
     .rg\:miw-u {
         min-width: unset;
     }
+    .rg\:miw-sm {
+        min-width: var(--sm-width);
+    }
+    .rg\:miw-sm-breakpoint {
+        min-width: var(--sm-breakpoint);
+    }
+    .rg\:miw-rg {
+        min-width: var(--rg-width);
+    }
+    .rg\:miw-rg-breakpoint {
+        min-width: var(--rg-breakpoint);
+    }
+    .rg\:miw-md {
+        min-width: var(--md-width);
+    }
+    .rg\:miw-md-breakpoint {
+        min-width: var(--md-breakpoint);
+    }
+    .rg\:miw-lg {
+        min-width: var(--lg-width);
+    }
+    .rg\:miw-lg-breakpoint {
+        min-width: var(--lg-breakpoint);
+    }
     .rg\:miw-d5 {
         min-width: var(--space-d5);
     }
@@ -142,6 +214,30 @@
     .rg\:miw-unset,
     .rg\:miw-u {
         min-width: unset;
+    }
+    .rg\:miw-sm {
+        min-width: var(--sm-width);
+    }
+    .rg\:miw-sm-breakpoint {
+        min-width: var(--sm-breakpoint);
+    }
+    .rg\:miw-rg {
+        min-width: var(--rg-width);
+    }
+    .rg\:miw-rg-breakpoint {
+        min-width: var(--rg-breakpoint);
+    }
+    .rg\:miw-md {
+        min-width: var(--md-width);
+    }
+    .rg\:miw-md-breakpoint {
+        min-width: var(--md-breakpoint);
+    }
+    .rg\:miw-lg {
+        min-width: var(--lg-width);
+    }
+    .rg\:miw-lg-breakpoint {
+        min-width: var(--lg-breakpoint);
     }
     .rg\:miw-d5 {
         min-width: var(--space-d5);
@@ -189,6 +285,30 @@
     .md\:miw-u {
         min-width: unset;
     }
+    .md\:miw-sm {
+        min-width: var(--sm-width);
+    }
+    .md\:miw-sm-breakpoint {
+        min-width: var(--sm-breakpoint);
+    }
+    .md\:miw-rg {
+        min-width: var(--rg-width);
+    }
+    .md\:miw-rg-breakpoint {
+        min-width: var(--rg-breakpoint);
+    }
+    .md\:miw-md {
+        min-width: var(--md-width);
+    }
+    .md\:miw-md-breakpoint {
+        min-width: var(--md-breakpoint);
+    }
+    .md\:miw-lg {
+        min-width: var(--lg-width);
+    }
+    .md\:miw-lg-breakpoint {
+        min-width: var(--lg-breakpoint);
+    }
     .md\:miw-d5 {
         min-width: var(--space-d5);
     }
@@ -234,6 +354,30 @@
     .md\:miw-unset,
     .md\:miw-u {
         min-width: unset;
+    }
+    .md\:miw-sm {
+        min-width: var(--sm-width);
+    }
+    .md\:miw-sm-breakpoint {
+        min-width: var(--sm-breakpoint);
+    }
+    .md\:miw-rg {
+        min-width: var(--rg-width);
+    }
+    .md\:miw-rg-breakpoint {
+        min-width: var(--rg-breakpoint);
+    }
+    .md\:miw-md {
+        min-width: var(--md-width);
+    }
+    .md\:miw-md-breakpoint {
+        min-width: var(--md-breakpoint);
+    }
+    .md\:miw-lg {
+        min-width: var(--lg-width);
+    }
+    .md\:miw-lg-breakpoint {
+        min-width: var(--lg-breakpoint);
     }
     .md\:miw-d5 {
         min-width: var(--space-d5);
@@ -284,14 +428,26 @@
     .lg\:miw-sm {
         min-width: var(--sm-width);
     }
+    .lg\:miw-sm-breakpoint {
+        min-width: var(--sm-breakpoint);
+    }
     .lg\:miw-rg {
         min-width: var(--rg-width);
+    }
+    .lg\:miw-rg-breakpoint {
+        min-width: var(--rg-breakpoint);
     }
     .lg\:miw-md {
         min-width: var(--md-width);
     }
+    .lg\:miw-md-breakpoint {
+        min-width: var(--md-breakpoint);
+    }
     .lg\:miw-lg {
         min-width: var(--lg-width);
+    }
+    .lg\:miw-lg-breakpoint {
+        min-width: var(--lg-breakpoint);
     }
     .lg\:miw-d5 {
         min-width: var(--space-d5);
@@ -342,14 +498,26 @@
     .lg\:miw-sm {
         min-width: var(--sm-width);
     }
+    .lg\:miw-sm-breakpoint {
+        min-width: var(--sm-breakpoint);
+    }
     .lg\:miw-rg {
         min-width: var(--rg-width);
+    }
+    .lg\:miw-rg-breakpoint {
+        min-width: var(--rg-breakpoint);
     }
     .lg\:miw-md {
         min-width: var(--md-width);
     }
+    .lg\:miw-md-breakpoint {
+        min-width: var(--md-breakpoint);
+    }
     .lg\:miw-lg {
         min-width: var(--lg-width);
+    }
+    .lg\:miw-lg-breakpoint {
+        min-width: var(--lg-breakpoint);
     }
     .lg\:miw-d5 {
         min-width: var(--space-d5);

@@ -5,6 +5,30 @@
     .sm\:w-100 {
         width: 100%;
     }
+    .sm\:w-sm {
+        width: var(--sm-width);
+    }
+    .sm\:w-sm-breakpoint {
+        width: var(--sm-breakpoint);
+    }
+    .sm\:w-rg {
+        width: var(--rg-width);
+    }
+    .sm\:w-rg-breakpoint {
+        width: var(--rg-breakpoint);
+    }
+    .sm\:w-md {
+        width: var(--md-width);
+    }
+    .sm\:w-md-breakpoint {
+        width: var(--md-breakpoint);
+    }
+    .sm\:w-lg {
+        width: var(--lg-width);
+    }
+    .sm\:w-lg-breakpoint {
+        width: var(--lg-breakpoint);
+    }
     .sm\:w-d5 {
         width: var(--space-d5);
     }
@@ -53,6 +77,30 @@
     .rg\:w-100 {
         width: 100%;
     }
+    .rg\:w-sm {
+        width: var(--sm-width);
+    }
+    .rg\:w-sm-breakpoint {
+        width: var(--sm-breakpoint);
+    }
+    .rg\:w-rg {
+        width: var(--rg-width);
+    }
+    .rg\:w-rg-breakpoint {
+        width: var(--rg-breakpoint);
+    }
+    .rg\:w-md {
+        width: var(--md-width);
+    }
+    .rg\:w-md-breakpoint {
+        width: var(--md-breakpoint);
+    }
+    .rg\:w-lg {
+        width: var(--lg-width);
+    }
+    .rg\:w-lg-breakpoint {
+        width: var(--lg-breakpoint);
+    }
     .rg\:w-d5 {
         width: var(--space-d5);
     }
@@ -100,6 +148,30 @@
     }
     .md\:w-100 {
         width: 100%;
+    }
+    .md\:w-sm {
+        width: var(--sm-width);
+    }
+    .md\:w-sm-breakpoint {
+        width: var(--sm-breakpoint);
+    }
+    .md\:w-rg {
+        width: var(--rg-width);
+    }
+    .md\:w-rg-breakpoint {
+        width: var(--rg-breakpoint);
+    }
+    .md\:w-md {
+        width: var(--md-width);
+    }
+    .md\:w-md-breakpoint {
+        width: var(--md-breakpoint);
+    }
+    .md\:w-lg {
+        width: var(--lg-width);
+    }
+    .md\:w-lg-breakpoint {
+        width: var(--lg-breakpoint);
     }
     .md\:w-d5 {
         width: var(--space-d5);
@@ -152,14 +224,26 @@
     .lg\:w-sm {
         width: var(--sm-width);
     }
+    .lg\:w-sm-breakpoint {
+        width: var(--sm-breakpoint);
+    }
     .lg\:w-rg {
         width: var(--rg-width);
+    }
+    .lg\:w-rg-breakpoint {
+        width: var(--rg-breakpoint);
     }
     .lg\:w-md {
         width: var(--md-width);
     }
+    .lg\:w-md-breakpoint {
+        width: var(--md-breakpoint);
+    }
     .lg\:w-lg {
         width: var(--lg-width);
+    }
+    .lg\:w-lg-breakpoint {
+        width: var(--lg-breakpoint);
     }
     .lg\:w-d5 {
         width: var(--space-d5);
