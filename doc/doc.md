@@ -43,6 +43,8 @@ module.exports = {
 
 ### Notation used in this document
 
+<div class="bleed-left aside-left">hello world hello world hello world hello world</div>
+
 * In flowing text, a CSS class will be denoted with a starting period, for example: <code>.css</code>.
 * HTML tags in flowing text are denoted lowercase and with pointing brackets, for example: <code>&lt;strong></code>.
 * In formatted code, CSS classes and HTML tags are presented syntactically correct. For example:

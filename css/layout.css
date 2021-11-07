@@ -218,14 +218,26 @@
     grid-template-columns: var(--lg-width) 1fr;
 }
 
-.split-aside-1 {
+.split-aside-left {
     grid-template-columns: calc((min(var(--lg-breakpoint), 100vw - 2*var(--space)) - var(--rg-width)) / 2 - var(--horizontal-rhythm)) 1fr;
     grid-template-columns: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
 }
 
-.split-1-aside {
+.aside-left {
+    float: left;
+    width: calc((min(var(--lg-breakpoint), 100vw - 2*var(--space)) - var(--rg-width)) / 2 - var(--horizontal-rhythm));
+    width: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
+}
+
+.split-aside-right {
     grid-template-columns: 1fr calc((min(var(--lg-breakpoint), 100vw - 2*var(--space)) - var(--rg-width)) / 2 - var(--horizontal-rhythm));
     grid-template-columns: 1fr calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
+}
+
+.aside-right {
+    float: right;
+    width: calc((min(var(--lg-breakpoint), 100vw - 2*var(--space)) - var(--rg-width)) / 2 - var(--horizontal-rhythm));
+    width: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
 }
 
 /* Nicolas Gallaghers Clearfix solution

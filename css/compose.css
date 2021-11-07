@@ -20904,14 +20904,26 @@ th.sotable-column .indicator {
     grid-template-columns: var(--lg-width) 1fr;
 }
 
-.split-aside-1 {
+.split-aside-left {
     grid-template-columns: calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem)) 1fr;
     grid-template-columns: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
 }
 
-.split-1-aside {
+.aside-left {
+    float: left;
+    width: calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem));
+    width: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
+}
+
+.split-aside-right {
     grid-template-columns: 1fr calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem));
     grid-template-columns: 1fr calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
+}
+
+.aside-right {
+    float: right;
+    width: calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem));
+    width: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
 }
 
 /* Nicolas Gallaghers Clearfix solution
@@ -21178,6 +21190,20 @@ th.sotable-column .indicator {
     .sm\:split-6-1 {
         grid-template-columns: 6fr 1fr;
     }
+    .sm\:aside-left {
+        float: left;
+        margin-left: calc(-1 * (min(1280px, 100vw - 2*1rem) - 34rem) / 2);
+        margin-left: calc(-1 * (min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2);
+        width: calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem));
+        width: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
+    }
+    .sm\:aside-right {
+        float: right;
+        margin-right: calc(-1 * (min(1280px, 100vw - 2*1rem) - 34rem) / 2);
+        margin-right: calc(-1 * (min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2);
+        width: calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem));
+        width: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
+    }
     /* Nicolas Gallaghers Clearfix solution
    Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
     .sm\:clearfix::before,
@@ -21411,6 +21437,20 @@ th.sotable-column .indicator {
     }
     .sm\:split-6-1 {
         grid-template-columns: 6fr 1fr;
+    }
+    .sm\:aside-left {
+        float: left;
+        margin-left: calc(-1 * (min(1280px, 100vw - 2*1rem) - 34rem) / 2);
+        margin-left: calc(-1 * (min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2);
+        width: calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem));
+        width: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
+    }
+    .sm\:aside-right {
+        float: right;
+        margin-right: calc(-1 * (min(1280px, 100vw - 2*1rem) - 34rem) / 2);
+        margin-right: calc(-1 * (min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2);
+        width: calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem));
+        width: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
     }
     /* Nicolas Gallaghers Clearfix solution
    Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
@@ -21654,6 +21694,20 @@ th.sotable-column .indicator {
         grid-template-columns: 28rem 1fr;
         grid-template-columns: var(--sm-width) 1fr;
     }
+    .rg\:aside-left {
+        float: left;
+        margin-left: calc(-1 * (min(1280px, 100vw - 2*1rem) - 34rem) / 2);
+        margin-left: calc(-1 * (min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2);
+        width: calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem));
+        width: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
+    }
+    .rg\:aside-right {
+        float: right;
+        margin-right: calc(-1 * (min(1280px, 100vw - 2*1rem) - 34rem) / 2);
+        margin-right: calc(-1 * (min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2);
+        width: calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem));
+        width: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
+    }
     /* Nicolas Gallaghers Clearfix solution
    Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
     .rg\:clearfix::before,
@@ -21895,6 +21949,20 @@ th.sotable-column .indicator {
     .rg\:split-sm-1 {
         grid-template-columns: 28rem 1fr;
         grid-template-columns: var(--sm-width) 1fr;
+    }
+    .rg\:aside-left {
+        float: left;
+        margin-left: calc(-1 * (min(1280px, 100vw - 2*1rem) - 34rem) / 2);
+        margin-left: calc(-1 * (min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2);
+        width: calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem));
+        width: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
+    }
+    .rg\:aside-right {
+        float: right;
+        margin-right: calc(-1 * (min(1280px, 100vw - 2*1rem) - 34rem) / 2);
+        margin-right: calc(-1 * (min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2);
+        width: calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem));
+        width: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
     }
     /* Nicolas Gallaghers Clearfix solution
    Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
@@ -22146,13 +22214,27 @@ th.sotable-column .indicator {
         grid-template-columns: 34rem 1fr;
         grid-template-columns: var(--rg-width) 1fr;
     }
-    .md\:split-aside-1 {
+    .md\:split-aside-left {
         grid-template-columns: calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem)) 1fr;
         grid-template-columns: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
     }
-    .md\:split-1-aside {
+    .md\:split-aside-right {
         grid-template-columns: 1fr calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem));
         grid-template-columns: 1fr calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
+    }
+    .md\:aside-left {
+        float: left;
+        margin-left: calc(-1 * (min(1280px, 100vw - 2*1rem) - 34rem) / 2);
+        margin-left: calc(-1 * (min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2);
+        width: calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem));
+        width: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
+    }
+    .md\:aside-right {
+        float: right;
+        margin-right: calc(-1 * (min(1280px, 100vw - 2*1rem) - 34rem) / 2);
+        margin-right: calc(-1 * (min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2);
+        width: calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem));
+        width: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
     }
     /* Nicolas Gallaghers Clearfix solution
    Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
@@ -22404,13 +22486,27 @@ th.sotable-column .indicator {
         grid-template-columns: 34rem 1fr;
         grid-template-columns: var(--rg-width) 1fr;
     }
-    .md\:split-aside-1 {
+    .md\:split-aside-left {
         grid-template-columns: calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem)) 1fr;
         grid-template-columns: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
     }
-    .md\:split-1-aside {
+    .md\:split-aside-right {
         grid-template-columns: 1fr calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem));
         grid-template-columns: 1fr calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
+    }
+    .md\:aside-left {
+        float: left;
+        margin-left: calc(-1 * (min(1280px, 100vw - 2*1rem) - 34rem) / 2);
+        margin-left: calc(-1 * (min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2);
+        width: calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem));
+        width: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
+    }
+    .md\:aside-right {
+        float: right;
+        margin-right: calc(-1 * (min(1280px, 100vw - 2*1rem) - 34rem) / 2);
+        margin-right: calc(-1 * (min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2);
+        width: calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem));
+        width: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
     }
     /* Nicolas Gallaghers Clearfix solution
    Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
@@ -22670,13 +22766,27 @@ th.sotable-column .indicator {
         grid-template-columns: 48rem 1fr;
         grid-template-columns: var(--md-width) 1fr;
     }
-    .lg\:split-aside-1 {
+    .lg\:split-aside-left {
         grid-template-columns: calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem)) 1fr;
         grid-template-columns: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
     }
-    .lg\:split-1-aside {
+    .lg\:split-aside-right {
         grid-template-columns: 1fr calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem));
         grid-template-columns: 1fr calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
+    }
+    .lg\:aside-left {
+        float: left;
+        margin-left: calc(-1 * (min(1280px, 100vw - 2*1rem) - 34rem) / 2);
+        margin-left: calc(-1 * (min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2);
+        width: calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem));
+        width: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
+    }
+    .lg\:aside-right {
+        float: right;
+        margin-right: calc(-1 * (min(1280px, 100vw - 2*1rem) - 34rem) / 2);
+        margin-right: calc(-1 * (min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2);
+        width: calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem));
+        width: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
     }
     /* Nicolas Gallaghers Clearfix solution
    Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
@@ -22936,13 +23046,27 @@ th.sotable-column .indicator {
         grid-template-columns: 48rem 1fr;
         grid-template-columns: var(--md-width) 1fr;
     }
-    .lg\:split-aside-1 {
+    .lg\:split-aside-left {
         grid-template-columns: calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem)) 1fr;
         grid-template-columns: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
     }
-    .lg\:split-1-aside {
+    .lg\:split-aside-right {
         grid-template-columns: 1fr calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem));
         grid-template-columns: 1fr calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
+    }
+    .lg\:aside-left {
+        float: left;
+        margin-left: calc(-1 * (min(1280px, 100vw - 2*1rem) - 34rem) / 2);
+        margin-left: calc(-1 * (min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2);
+        width: calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem));
+        width: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
+    }
+    .lg\:aside-right {
+        float: right;
+        margin-right: calc(-1 * (min(1280px, 100vw - 2*1rem) - 34rem) / 2);
+        margin-right: calc(-1 * (min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2);
+        width: calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem));
+        width: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
     }
     /* Nicolas Gallaghers Clearfix solution
    Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
