@@ -96,6 +96,10 @@ li {
     padding: 0;
 }
 
+li>*:first-child:not(ul,ol){
+    display: inline;
+}
+
 li p {
     margin-top: 0;
     margin-bottom: 0;
@@ -116,12 +120,12 @@ ol li::before {
     padding-right: var(--space-d2);
     margin-left: calc(var(--horizontal-rhythm) * -1);
     text-align: left;
-    float: left;
+    display: inline-grid;
+    justify-content: start;
+    align-items: baseline;
     font-family: var(--meta-font-family);
     font-size: calc(1em * .8);
     font-size: calc(1em * var(--ol-counter-size-factor));
-    margin-top: calc((1em / .8) - 1em);
-    margin-top: calc((1em / var(--ol-counter-size-factor)) - 1em);
     color: var(--li-prefix-color);
 }
 
@@ -132,7 +136,9 @@ ul li::before {
     padding-right: var(--space-d2);
     min-width: var(--horizontal-rhythm);
     text-align: left;
-    float: left;
+    display: inline-grid;
+    justify-content: start;
+    align-items: baseline;
     color: var(--li-prefix-color);
 }
 

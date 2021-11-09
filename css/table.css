@@ -1,5 +1,5 @@
 :root {
-    --table-underline: var(--border-width) solid var(--table-underline-row-color);
+    --table-underline: .5px solid var(--table-underline-row-color);
     --table-heading-font-family: var(--heading-font-family);
     --table-font-family: var(--font-family);
     --table-font-size: var(--fs);
@@ -53,7 +53,7 @@ table table {
 }
 
 .underline-rows tr {
-    border-bottom: var(--border-width) solid var(--table-underline-row-color);
+    border-bottom: .5px solid var(--table-underline-row-color);
     border-bottom: var(--table-underline);
 }
 

@@ -1511,7 +1511,7 @@ small,
     --base-color: var(--neutral-d5);
     --base-background: white;
     --mark-background: yellow;
-    --border-color: var(--neutral);
+    --border-color: var(--neutral-3);
     --link-color: inherit;
     --link-focus-color: inherit;
     --link-hover-color: var(--primary);
@@ -2941,7 +2941,7 @@ small,
     --rounded: var(--space-d3);
     --border-style: solid;
     --border: var(--border-width) var(--border-style) var(--border-color);
-    border-color: hsl(0, 0%, 53%);
+    border-color: hsl(0, 0%, calc(53% + 3 * calc((100% - 53%) / 6)));
     border-color: var(--border-color);
 }
 
@@ -2950,7 +2950,7 @@ small,
     border-style: var(--border-style);
     border-width: 1px;
     border-width: var(--border-width);
-    border-color: hsl(0, 0%, 53%);
+    border-color: hsl(0, 0%, calc(53% + 3 * calc((100% - 53%) / 6)));
     border-color: var(--border-color);
 }
 
@@ -2959,13 +2959,13 @@ small,
     border-left-style: var(--border-style);
     border-left-width: 1px;
     border-left-width: var(--border-width);
-    border-left-color: hsl(0, 0%, 53%);
+    border-left-color: hsl(0, 0%, calc(53% + 3 * calc((100% - 53%) / 6)));
     border-left-color: var(--border-color);
     border-right-style: solid;
     border-right-style: var(--border-style);
     border-right-width: 1px;
     border-right-width: var(--border-width);
-    border-right-color: hsl(0, 0%, 53%);
+    border-right-color: hsl(0, 0%, calc(53% + 3 * calc((100% - 53%) / 6)));
     border-right-color: var(--border-color);
     border-top-width: 0;
     border-bottom-width: 0;
@@ -2976,13 +2976,13 @@ small,
     border-top-style: var(--border-style);
     border-top-width: 1px;
     border-top-width: var(--border-width);
-    border-top-color: hsl(0, 0%, 53%);
+    border-top-color: hsl(0, 0%, calc(53% + 3 * calc((100% - 53%) / 6)));
     border-top-color: var(--border-color);
     border-bottom-style: solid;
     border-bottom-style: var(--border-style);
     border-bottom-width: 1px;
     border-bottom-width: var(--border-width);
-    border-bottom-color: hsl(0, 0%, 53%);
+    border-bottom-color: hsl(0, 0%, calc(53% + 3 * calc((100% - 53%) / 6)));
     border-bottom-color: var(--border-color);
     border-left-width: 0;
     border-right-width: 0;
@@ -2993,7 +2993,7 @@ small,
     border-top-style: var(--border-style);
     border-top-width: 1px;
     border-top-width: var(--border-width);
-    border-top-color: hsl(0, 0%, 53%);
+    border-top-color: hsl(0, 0%, calc(53% + 3 * calc((100% - 53%) / 6)));
     border-top-color: var(--border-color);
 }
 
@@ -3002,7 +3002,7 @@ small,
     border-right-style: var(--border-style);
     border-right-width: 1px;
     border-right-width: var(--border-width);
-    border-right-color: hsl(0, 0%, 53%);
+    border-right-color: hsl(0, 0%, calc(53% + 3 * calc((100% - 53%) / 6)));
     border-right-color: var(--border-color);
 }
 
@@ -3011,7 +3011,7 @@ small,
     border-bottom-style: var(--border-style);
     border-bottom-width: 1px;
     border-bottom-width: var(--border-width);
-    border-bottom-color: hsl(0, 0%, 53%);
+    border-bottom-color: hsl(0, 0%, calc(53% + 3 * calc((100% - 53%) / 6)));
     border-bottom-color: var(--border-color);
 }
 
@@ -3020,7 +3020,7 @@ small,
     border-left-style: var(--border-style);
     border-left-width: 1px;
     border-left-width: var(--border-width);
-    border-left-color: hsl(0, 0%, 53%);
+    border-left-color: hsl(0, 0%, calc(53% + 3 * calc((100% - 53%) / 6)));
     border-left-color: var(--border-color);
 }
 
@@ -17796,7 +17796,7 @@ kbd,
     background: var(--kbd-background);
     border-radius: 2px;
     border-radius: var(--space-d4);
-    border: 1px solid hsl(0, 0%, 53%);
+    border: 1px solid hsl(0, 0%, calc(53% + 3 * calc((100% - 53%) / 6)));
     border: 1px solid var(--kbd-border-color);
     padding: 0 0.2em;
     margin: 0 0.2em;
@@ -17807,7 +17807,7 @@ kbd,
     vertical-align: baseline;
     display: inline-block;
     min-width: 1.35em;
-    box-shadow: .07em .07em hsl(0, 0%, 53%);
+    box-shadow: .07em .07em hsl(0, 0%, calc(53% + 3 * calc((100% - 53%) / 6)));
     box-shadow: var(--kbd-shadow);
 }
 
@@ -18293,7 +18293,7 @@ input[type=tel],
 input[type=url],
 input[list] {
     border: none;
-    border-bottom: 1px solid hsl(0, 0%, 53%);
+    border-bottom: 1px solid hsl(0, 0%, calc(53% + 3 * calc((100% - 53%) / 6)));
     border-bottom: 1px solid var(--form-field-border-color);
     vertical-align: middle;
     padding: calc(calc(1rem / 1.7) / 1.7) 0;
@@ -18312,7 +18312,7 @@ textarea {
     line-height: calc((calc(1.7 * 1) - 1) / 3 * 2 + 1);
     line-height: var(--lh-2);
     border: 0;
-    border-bottom: 1px solid hsl(0, 0%, 53%);
+    border-bottom: 1px solid hsl(0, 0%, calc(53% + 3 * calc((100% - 53%) / 6)));
     border-bottom: 1px solid var(--form-field-border-color);
     border-radius: 0;
     -webkit-border-radius: 0;
@@ -19986,6 +19986,10 @@ li {
     padding: 0;
 }
 
+li>*:first-child:not(ul,ol){
+    display: inline;
+}
+
 li p {
     margin-top: 0;
     margin-bottom: 0;
@@ -20009,13 +20013,13 @@ ol li::before {
     margin-left: calc(calc(1.7 * 1rem) * -1);
     margin-left: calc(var(--horizontal-rhythm) * -1);
     text-align: left;
-    float: left;
+    display: inline-grid;
+    justify-content: start;
+    align-items: baseline;
     font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--meta-font-family);
     font-size: calc(1em * .8);
     font-size: calc(1em * var(--ol-counter-size-factor));
-    margin-top: calc((1em / .8) - 1em);
-    margin-top: calc((1em / var(--ol-counter-size-factor)) - 1em);
     color: hsl(0, 0%, calc(53% - calc(53% / 7)));
     color: var(--li-prefix-color);
 }
@@ -20030,7 +20034,9 @@ ul li::before {
     min-width: calc(1.7 * 1rem);
     min-width: var(--horizontal-rhythm);
     text-align: left;
-    float: left;
+    display: inline-grid;
+    justify-content: start;
+    align-items: baseline;
     color: hsl(0, 0%, calc(53% - calc(53% / 7)));
     color: var(--li-prefix-color);
 }
@@ -20532,7 +20538,7 @@ svg {
 }
 
 :root {
-    --table-underline: var(--border-width) solid var(--table-underline-row-color);
+    --table-underline: .5px solid var(--table-underline-row-color);
     --table-heading-font-family: var(--heading-font-family);
     --table-font-family: var(--font-family);
     --table-font-size: var(--fs);
@@ -20589,7 +20595,7 @@ table table {
 }
 
 .underline-rows tr {
-    border-bottom: 1px solid hsl(0, 0%, 53%);
+    border-bottom: .5px solid hsl(0, 0%, calc(53% + 3 * calc((100% - 53%) / 6)));
     border-bottom: var(--table-underline);
 }
 

@@ -43,8 +43,6 @@ module.exports = {
 
 ### Notation used in this document
 
-<div class="bleed-left aside-left">hello world hello world hello world hello world</div>
-
 * In flowing text, a CSS class will be denoted with a starting period, for example: <code>.css</code>.
 * HTML tags in flowing text are denoted lowercase and with pointing brackets, for example: <code>&lt;strong></code>.
 * In formatted code, CSS classes and HTML tags are presented syntactically correct. For example:
@@ -630,8 +628,7 @@ Configure the displayed symbols with:
 ### Unordered list
 
 <ul>
-<li>
-    <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself
+<li><p>One morning, when Gregor Samsa woke from troubled dreams, he found himself
 transformed in his bed into a horrible vermin.
     </p>
 </li>
@@ -649,8 +646,7 @@ transformed in his bed into a horrible vermin.
 ### Ordered List
 
 <ol>
-<li>
-    <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself
+<li><p>One morning, when Gregor Samsa woke from troubled dreams, he found himself
 transformed in his bed into a horrible vermin.
     </p>
 </li>
@@ -659,11 +655,6 @@ transformed in his bed into a horrible vermin.
         <li>and if he lifted his head a little he could
         see his brown belly, slightly domed and divided by arches into stiff
         sections.</li>
-        <ol>
-        <li>and if he lifted his head a little he could
-        see his brown belly, slightly domed and divided by arches into stiff
-        sections.</li>
-    </ol>
     </ol>
 </li>
 <li>His many legs</li>
