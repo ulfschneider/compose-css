@@ -118,7 +118,7 @@
     --base-color: var(--neutral-d5);
     --base-background: white;
     --mark-background: yellow;
-    --border-color: var(--neutral);
+    --border-color: var(--neutral-3);
     --link-color: inherit;
     --link-focus-color: inherit;
     --link-hover-color: var(--primary);
