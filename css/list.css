@@ -96,10 +96,6 @@ li {
     padding: 0;
 }
 
-li>*:first-child:not(ul,ol){
-    display: inline;
-}
-
 li p {
     margin-top: 0;
     margin-bottom: 0;
