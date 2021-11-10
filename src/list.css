@@ -7,7 +7,6 @@
     --h-counter-type: decimal;
     --h-counter-delimiter: ".";
     --ol-counter: counters(ol-counter, var(--ol-counter-delimiter), var(--ol-counter-type));
-    --ol-counter-size-factor: .8;
     --h-counter: counters(ol-counter, var(--h-counter-delimiter), var(--h-counter-type));
     --h2-counter: counter(h2-counter);
     --h3-counter: counter(h2-counter) var(--h-counter-delimiter) counter(h3-counter);
@@ -103,12 +102,11 @@ ol li::before {
     min-width: var(--horizontal-rhythm);
     padding-right: var(--space-d2);
     margin-left: calc(var(--horizontal-rhythm) * -1);
-    text-align: left;
     display: inline-grid;
     justify-content: start;
     align-items: baseline;
     font-family: var(--meta-font-family);
-    font-size: calc(1em * var(--ol-counter-size-factor));
+    font-size: smaller;
     color: var(--li-prefix-color);
 }
 
@@ -117,7 +115,6 @@ ul li::before {
     margin-left: calc(var(--horizontal-rhythm) * -1);
     padding-right: var(--space-d2);
     min-width: var(--horizontal-rhythm);
-    text-align: left;
     display: inline-grid;
     justify-content: start;
     align-items: baseline;

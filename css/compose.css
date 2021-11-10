@@ -19893,7 +19893,6 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     --h-counter-type: decimal;
     --h-counter-delimiter: ".";
     --ol-counter: counters(ol-counter, var(--ol-counter-delimiter), var(--ol-counter-type));
-    --ol-counter-size-factor: .8;
     --h-counter: counters(ol-counter, var(--h-counter-delimiter), var(--h-counter-type));
     --h2-counter: counter(h2-counter);
     --h3-counter: counter(h2-counter) var(--h-counter-delimiter) counter(h3-counter);
@@ -20008,14 +20007,12 @@ ol li::before {
     padding-right: var(--space-d2);
     margin-left: calc(calc(1.7 * 1rem) * -1);
     margin-left: calc(var(--horizontal-rhythm) * -1);
-    text-align: left;
     display: inline-grid;
     justify-content: start;
     align-items: baseline;
     font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--meta-font-family);
-    font-size: calc(1em * .8);
-    font-size: calc(1em * var(--ol-counter-size-factor));
+    font-size: smaller;
     color: hsl(0, 0%, calc(53% - calc(53% / 7)));
     color: var(--li-prefix-color);
 }
@@ -20029,7 +20026,6 @@ ul li::before {
     padding-right: var(--space-d2);
     min-width: calc(1.7 * 1rem);
     min-width: var(--horizontal-rhythm);
-    text-align: left;
     display: inline-grid;
     justify-content: start;
     align-items: baseline;
