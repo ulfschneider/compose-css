@@ -13,3 +13,14 @@ iframe {
     max-width: 100%;
     height: auto;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+svg {
+    max-height: 100%;
+    height: auto;
+}

@@ -65,7 +65,9 @@ ol,
 ul {
     list-style: none;
     padding: 0;
-    margin-left: var(--horizontal-rhythm);
+    margin-left: 0;
+    padding-left: var(--horizontal-rhythm);
+    list-style-position: outside;
     margin-right: 0;
     margin-top: var(--mrt-list);
     margin-bottom: var(--mrb-list);

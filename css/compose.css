@@ -14,6 +14,17 @@ iframe {
     height: auto;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+svg {
+    max-height: 100%;
+    height: auto;
+}
+
 :root {
     --space: 1rem;
     --space-factor: 1.7;
@@ -19963,8 +19974,10 @@ ol,
 ul {
     list-style: none;
     padding: 0;
-    margin-left: calc(1.7 * 1rem);
-    margin-left: var(--horizontal-rhythm);
+    margin-left: 0;
+    padding-left: calc(1.7 * 1rem);
+    padding-left: var(--horizontal-rhythm);
+    list-style-position: outside;
     margin-right: 0;
     margin-top: 1rem;
     margin-top: var(--mrt-list);
@@ -20149,20 +20162,12 @@ a {
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    vertical-align: top;
     font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--meta-font-family);
     font-size: .9rem;
     font-size: var(--fs-d1);
     background-color: hsl(0, 0%, calc(53% + 5 * calc((100% - 53%) / 6)));
     background-color: var(--neutral-5);
-}
-
-svg {
-    max-height: 100%;
-    height: auto;
 }
 
 .bg-cover {

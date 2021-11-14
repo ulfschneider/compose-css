@@ -39,7 +39,7 @@ dl {
 }
 
 .table-of-contents ol ol {
-    margin: 0;
+    padding-inline-start: 0;
     font-size: smaller;
 }
 

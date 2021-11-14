@@ -1,15 +1,7 @@
 img {
-    max-width: 100%;
-    height: auto;
-    vertical-align: top;
     font-family: var(--meta-font-family);
     font-size: var(--fs-d1);
     background-color: var(--neutral-5);
-}
-
-svg {
-    max-height: 100%;
-    height: auto;
 }
 
 .bg-cover {
