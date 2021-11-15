@@ -661,6 +661,24 @@ transformed in his bed into a horrible vermin.
 <li>His room</li>
 </ol>
 
+### Indented Ordered List
+
+<ol class="indent">
+<li><p>One morning, when Gregor Samsa woke from troubled dreams, he found himself
+transformed in his bed into a horrible vermin.
+    </p>
+</li>
+<li>He lay on his armour-like back
+    <ol>
+        <li>and if he lifted his head a little he could
+        see his brown belly, slightly domed and divided by arches into stiff
+        sections.</li>
+    </ol>
+</li>
+<li>His many legs</li>
+<li>His room</li>
+</ol>
+
 
 ### Timeline
 

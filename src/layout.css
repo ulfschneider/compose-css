@@ -214,17 +214,19 @@
     grid-template-columns: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
 }
 
-.aside-left {
-    float: left;
-    width: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
-}
-
 .split-aside-right {
     grid-template-columns: 1fr calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
 }
 
+.aside-left {
+    float: left;
+    margin-left: calc(-1 * (min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2);
+    width: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
+}
+
 .aside-right {
     float: right;
+    margin-right: calc(-1 * (min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2);
     width: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
 }
 

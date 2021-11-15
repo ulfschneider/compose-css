@@ -19,7 +19,10 @@
     --mono-font-feature-settings: var(--font-feature-settings);
     --code-font-family: var(--mono-font-family);
     --blockquote-font-style: italic;
-    --link-text-decoration: underline;
+    --text-decoration: solid underline inherit;
+    --text-decoration-thickness: .05em;
+    --link-text-decoration: var(--text-decoration);
+    --link-text-decoration-thickness: var(--text-decoration-thickness);
     --font-variant-numeric: normal;
     --vertical-rhythm: var(--space);
     --horizontal-rhythm: var(--space-1);
@@ -51,6 +54,9 @@
     --quotes: """ """"'""'";
     --quotes-de: """ """"'""'";
     --scroll-margin-top: var(--vertical-rhythm);
+    --outline: var(--space-d3) solid var(--link-focus-color);
+    --outline-offset: var(--space-d4);
+    --kbd-shadow: .07em .07em var(--border-color);
     font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--font-family);
     font-feature-settings: unset;
@@ -59,9 +65,6 @@
     font-weight: var(--font-weight-normal);
     font-variant-numeric: normal;
     font-variant-numeric: var(--font-variant-numeric);
-    --outline: var(--space-d3) solid var(--link-focus-color);
-    --outline-offset: var(--space-d4);
-    --kbd-shadow: .07em .07em var(--border-color);
 }
 
 * {
@@ -258,7 +261,10 @@ em,
 
 .underline,
 u {
-    text-decoration: underline;
+    text-decoration: solid underline inherit;
+    text-decoration: var(--text-decoration);
+    text-decoration-thickness: .05em;
+    text-decoration-thickness: var(--text-decoration-thickness);
 }
 
 .ft-num-normal {
@@ -556,8 +562,10 @@ blockquote {
 
 a {
     color: var(--link-color);
-    text-decoration: underline;
+    text-decoration: solid underline inherit;
     text-decoration: var(--link-text-decoration);
+    text-decoration-thickness: .05em;
+    text-decoration-thickness: var(--link-text-decoration-thickness);
     transition: color .1s ease-out;
 }
 

@@ -17462,7 +17462,10 @@ Naming conventions
     --mono-font-feature-settings: var(--font-feature-settings);
     --code-font-family: var(--mono-font-family);
     --blockquote-font-style: italic;
-    --link-text-decoration: underline;
+    --text-decoration: solid underline inherit;
+    --text-decoration-thickness: .05em;
+    --link-text-decoration: var(--text-decoration);
+    --link-text-decoration-thickness: var(--text-decoration-thickness);
     --font-variant-numeric: normal;
     --vertical-rhythm: var(--space);
     --horizontal-rhythm: var(--space-1);
@@ -17494,6 +17497,9 @@ Naming conventions
     --quotes: """ """"'""'";
     --quotes-de: """ """"'""'";
     --scroll-margin-top: var(--vertical-rhythm);
+    --outline: var(--space-d3) solid var(--link-focus-color);
+    --outline-offset: var(--space-d4);
+    --kbd-shadow: .07em .07em var(--border-color);
     font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--font-family);
     font-feature-settings: unset;
@@ -17502,9 +17508,6 @@ Naming conventions
     font-weight: var(--font-weight-normal);
     font-variant-numeric: normal;
     font-variant-numeric: var(--font-variant-numeric);
-    --outline: var(--space-d3) solid var(--link-focus-color);
-    --outline-offset: var(--space-d4);
-    --kbd-shadow: .07em .07em var(--border-color);
 }
 
 * {
@@ -17705,7 +17708,10 @@ em,
 
 .underline,
 u {
-    text-decoration: underline;
+    text-decoration: solid underline inherit;
+    text-decoration: var(--text-decoration);
+    text-decoration-thickness: .05em;
+    text-decoration-thickness: var(--text-decoration-thickness);
 }
 
 .ft-num-normal {
@@ -18034,8 +18040,10 @@ blockquote {
 a {
     color: inherit;
     color: var(--link-color);
-    text-decoration: underline;
+    text-decoration: solid underline inherit;
     text-decoration: var(--link-text-decoration);
+    text-decoration-thickness: .05em;
+    text-decoration-thickness: var(--link-text-decoration-thickness);
     transition: color .1s ease-out;
 }
 
@@ -19974,11 +19982,9 @@ ol,
 ul {
     list-style: none;
     padding: 0;
-    margin-left: 0;
+    margin: 0;
     padding-left: calc(1.7 * 1rem);
     padding-left: var(--horizontal-rhythm);
-    list-style-position: outside;
-    margin-right: 0;
     margin-top: 1rem;
     margin-top: var(--mrt-list);
     margin-bottom: 1rem;
@@ -20124,10 +20130,8 @@ ul ol li::before {
 }
 
 ul.indent,
-ol.indent,
-[class^="columns"] ul,
-[class^="columns"] ol {
-    margin-left: 0;
+ol.indent {
+    padding-left: 0;
 }
 
 ol.indent li::before,
@@ -20135,7 +20139,6 @@ ul.indent li::before,
 [class^="columns"] ol li::before,
 [class^="columns"] ul li::before {
     margin-left: 0;
-    padding-left: 0;
 }
 
 ul.no-list-type li::before {
@@ -20912,19 +20915,23 @@ th.sotable-column .indicator {
     grid-template-columns: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap)) 1fr;
 }
 
-.aside-left {
-    float: left;
-    width: calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem));
-    width: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
-}
-
 .split-aside-right {
     grid-template-columns: 1fr calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem));
     grid-template-columns: 1fr calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
 }
 
+.aside-left {
+    float: left;
+    margin-left: calc(-1 * (min(1280px, 100vw - 2*1rem) - 34rem) / 2);
+    margin-left: calc(-1 * (min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2);
+    width: calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem));
+    width: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
+}
+
 .aside-right {
     float: right;
+    margin-right: calc(-1 * (min(1280px, 100vw - 2*1rem) - 34rem) / 2);
+    margin-right: calc(-1 * (min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2);
     width: calc((min(1280px, 100vw - 2*1rem) - 34rem) / 2 - calc(1.7 * 1rem));
     width: calc((min(var(--bleed-width), 100vw - 2*var(--bleed-padding)) - var(--rg-width)) / 2 - var(--split-column-gap));
 }
