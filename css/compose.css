@@ -20146,7 +20146,7 @@ ul.no-list-type li::before {
 }
 
 ul.reset {
-    margin-left: 0;
+    padding-left: 0;
 }
 
 ul.reset li::before {
