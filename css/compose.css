@@ -20071,7 +20071,7 @@ ul li::before {
     display: inline-grid;
     justify-content: start;
     align-items: baseline;
-    font-size: .6em;
+    font-size: smaller;
     color: hsl(0, 0%, calc(53% - calc(53% / 7)));
     color: var(--li-prefix-color);
 }

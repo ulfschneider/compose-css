@@ -132,7 +132,7 @@ ul li::before {
     display: inline-grid;
     justify-content: start;
     align-items: baseline;
-    font-size: .6em;
+    font-size: smaller;
     color: var(--li-prefix-color);
 }
 
