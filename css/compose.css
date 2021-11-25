@@ -1548,9 +1548,8 @@ small,
     --kbd-color: var(--base-color);
     --kbd-border-color: var(--border-color);
     --timeline-color: var(--li-prefix-color);
-    --timeline-blub-color: var(--li-prefix-color);
+    --timeline-blub-color: var(--timeline-color);
     --timeline-blub-background: var(--base-background);
-    --text-decoration-color: unset;
     --code-background: var(--neutral-5);
     --code-color: var(--base-color);
     --pre-background: var(--code-background);
@@ -18018,8 +18017,8 @@ blockquote {
     padding: 0;
     padding-left: calc(1.7 * 1rem);
     padding-left: var(--horizontal-rhythm);
-    border-left: 1px solid hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
-    border-left: 1px solid var(--base-color);
+    border-left: 2px solid hsl(0, 0%, calc(53% - calc(53% / 7)));
+    border-left: 2px solid var(--li-prefix-color);
     font-style: italic;
     font-style: var(--blockquote-font-style);
     background: transparent;
@@ -19942,8 +19941,8 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     --h5-counter: counter(h2-counter) var(--h-counter-delimiter) counter(h3-counter) var(--h-counter-delimiter) counter(h4-counter) var(--h-counter-delimiter) counter(h5-counter);
     --h6-counter: counter(h2-counter) var(--h-counter-delimiter) counter(h3-counter) var(--h-counter-delimiter) counter(h4-counter) var(--h-counter-delimiter) counter(h5-counter) var(--h-counter-delimiter) counter(h6-counter);
     --timeline-blub-size: 1em;
-    --timeline-width: var(--border-width);
-    --timeline-blub-border-width: var(--border-width);
+    --timeline-width: 1px;
+    --timeline-blub-border-width: 1px;
 }
 
 dl {
@@ -20076,15 +20075,6 @@ ul li::before {
     color: var(--li-prefix-color);
 }
 
-ol ol li::before,
-ol ul li::before,
-ul ul li::before,
-ul ol li::before {
-    min-width: calc(1.7 * 1rem);
-    min-width: var(--horizontal-rhythm);
-    padding-left: 0;
-}
-
 *.outline {
     counter-reset: h2-counter;
 }
@@ -20189,6 +20179,19 @@ ul.indent li::before,
     ol li::before {
         margin-left: 0;
     }
+    ol li::before {
+        color: white;
+        color: var(--base-background);
+        background: hsl(0, 0%, calc(53% - calc(53% / 7)));
+        background: var(--li-prefix-color);
+        min-width: calc(calc(1.7 * 1rem) - calc(calc(1rem / 1.7) / 1.7));
+        min-width: calc(var(--horizontal-rhythm) - var(--space-d2));
+        margin-right: calc(calc(1rem / 1.7) / 1.7);
+        margin-right: var(--space-d2);
+        justify-content: center;
+        padding: 0 2px 0 2px;
+        padding: 0 var(--space-d4) 0 var(--space-d4);
+    }
 }
 
 @media (--mx-sm-breakpoint) {
@@ -20206,6 +20209,19 @@ ul.indent li::before,
     ul li::before,
     ol li::before {
         margin-left: 0;
+    }
+    ol li::before {
+        color: white;
+        color: var(--base-background);
+        background: hsl(0, 0%, calc(53% - calc(53% / 7)));
+        background: var(--li-prefix-color);
+        min-width: calc(calc(1.7 * 1rem) - calc(calc(1rem / 1.7) / 1.7));
+        min-width: calc(var(--horizontal-rhythm) - var(--space-d2));
+        margin-right: calc(calc(1rem / 1.7) / 1.7);
+        margin-right: var(--space-d2);
+        justify-content: center;
+        padding: 0 2px 0 2px;
+        padding: 0 var(--space-d4) 0 var(--space-d4);
     }
 }
 

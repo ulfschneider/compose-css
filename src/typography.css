@@ -492,7 +492,7 @@ blockquote {
     margin-right: 0;
     padding: 0;
     padding-left: var(--horizontal-rhythm);
-    border-left: 1px solid var(--base-color);
+    border-left: 2px solid var(--li-prefix-color);
     font-style: var(--blockquote-font-style);
     background: var(--blockquote-background);
 }

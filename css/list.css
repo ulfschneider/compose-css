@@ -15,8 +15,8 @@
     --h5-counter: counter(h2-counter) var(--h-counter-delimiter) counter(h3-counter) var(--h-counter-delimiter) counter(h4-counter) var(--h-counter-delimiter) counter(h5-counter);
     --h6-counter: counter(h2-counter) var(--h-counter-delimiter) counter(h3-counter) var(--h-counter-delimiter) counter(h4-counter) var(--h-counter-delimiter) counter(h5-counter) var(--h-counter-delimiter) counter(h6-counter);
     --timeline-blub-size: 1em;
-    --timeline-width: var(--border-width);
-    --timeline-blub-border-width: var(--border-width);
+    --timeline-width: 1px;
+    --timeline-blub-border-width: 1px;
 }
 
 dl {
@@ -39,7 +39,7 @@ dd+dt {
 }
 
 dl.timeline {
-    border-left: var(--border-width) solid var(--timeline-color);
+    border-left: 1px solid var(--timeline-color);
     border-left: var(--timeline-width) solid var(--timeline-color);
 }
 
@@ -62,12 +62,12 @@ dl.timeline>dt::before {
     height: var(--timeline-blub-size);
     display: block;
     position: absolute;
-    margin-left: calc(-0.5 * (1em + var(--border-width)) - var(--horizontal-rhythm));
+    margin-left: calc(-0.5 * (1em + 1px) - var(--horizontal-rhythm));
     margin-left: calc(-0.5 * (var(--timeline-blub-size) + var(--timeline-width)) - var(--horizontal-rhythm));
-    margin-top: calc(0.5em * var(--lh-default) - 0.5 * 1em - var(--border-width));
+    margin-top: calc(0.5em * var(--lh-default) - 0.5 * 1em - 1px);
     margin-top: calc(0.5em * var(--lh-default) - 0.5 * var(--timeline-blub-size) - var(--timeline-width));
     background-color: var(--timeline-blub-background);
-    border: var(--border-width) solid var(--timeline-blub-color);
+    border: 1px solid var(--timeline-blub-color);
     border: var(--timeline-blub-border-width) solid var(--timeline-blub-color);
 }
 
@@ -134,14 +134,6 @@ ul li::before {
     align-items: baseline;
     font-size: smaller;
     color: var(--li-prefix-color);
-}
-
-ol ol li::before,
-ol ul li::before,
-ul ul li::before,
-ul ol li::before {
-    min-width: var(--horizontal-rhythm);
-    padding-left: 0;
 }
 
 *.outline {
@@ -243,6 +235,14 @@ ul.indent li::before,
     ol li::before {
         margin-left: 0;
     }
+    ol li::before {
+        color: var(--base-background);
+        background: var(--li-prefix-color);
+        min-width: calc(var(--horizontal-rhythm) - var(--space-d2));
+        margin-right: var(--space-d2);
+        justify-content: center;
+        padding: 0 var(--space-d4) 0 var(--space-d4);
+    }
 }
 
 @media (--mx-sm-breakpoint) {
@@ -259,6 +259,14 @@ ul.indent li::before,
     ul li::before,
     ol li::before {
         margin-left: 0;
+    }
+    ol li::before {
+        color: var(--base-background);
+        background: var(--li-prefix-color);
+        min-width: calc(var(--horizontal-rhythm) - var(--space-d2));
+        margin-right: var(--space-d2);
+        justify-content: center;
+        padding: 0 var(--space-d4) 0 var(--space-d4);
     }
 }
 
