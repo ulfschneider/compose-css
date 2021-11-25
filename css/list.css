@@ -212,11 +212,52 @@ ol.indent {
     padding-left: 0;
 }
 
+ul.indent ul,
+ul.indent ol,
+ol.indent ol,
+ol.indent ul {
+    padding-left: var(--horizontal-rhythm);
+}
+
 ol.indent li::before,
 ul.indent li::before,
 [class^="columns"] ol li::before,
 [class^="columns"] ul li::before {
     margin-left: 0;
+}
+
+@media (max-width: 640px) {
+    ul,
+    ol {
+        padding-left: 0;
+    }
+    ul ul,
+    ul ol,
+    ol ol,
+    ol ul {
+        padding-left: var(--horizontal-rhythm);
+    }
+    ul li::before,
+    ol li::before {
+        margin-left: 0;
+    }
+}
+
+@media (--mx-sm-breakpoint) {
+    ul,
+    ol {
+        padding-left: 0;
+    }
+    ul ul,
+    ul ol,
+    ol ol,
+    ol ul {
+        padding-left: var(--horizontal-rhythm);
+    }
+    ul li::before,
+    ol li::before {
+        margin-left: 0;
+    }
 }
 
 ul.no-list-type li::before {

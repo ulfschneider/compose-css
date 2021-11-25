@@ -18026,6 +18026,28 @@ blockquote {
     background: var(--blockquote-background);
 }
 
+@media (max-width: 640px) {
+    blockquote {
+        padding-left: 0;
+        border: 0;
+        border-top: 1px solid hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
+        border-top: 1px solid var(--base-color);
+        border-bottom: 1px solid hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
+        border-bottom: 1px solid var(--base-color);
+    }
+}
+
+@media (--mx-sm-breakpoint) {
+    blockquote {
+        padding-left: 0;
+        border: 0;
+        border-top: 1px solid hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
+        border-top: 1px solid var(--base-color);
+        border-bottom: 1px solid hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
+        border-bottom: 1px solid var(--base-color);
+    }
+}
+
 .tag {
     white-space: nowrap;
     padding: 2px;
@@ -20134,11 +20156,55 @@ ol.indent {
     padding-left: 0;
 }
 
+ul.indent ul,
+ul.indent ol,
+ol.indent ol,
+ol.indent ul {
+    padding-left: calc(1.7 * 1rem);
+    padding-left: var(--horizontal-rhythm);
+}
+
 ol.indent li::before,
 ul.indent li::before,
 [class^="columns"] ol li::before,
 [class^="columns"] ul li::before {
     margin-left: 0;
+}
+
+@media (max-width: 640px) {
+    ul,
+    ol {
+        padding-left: 0;
+    }
+    ul ul,
+    ul ol,
+    ol ol,
+    ol ul {
+        padding-left: calc(1.7 * 1rem);
+        padding-left: var(--horizontal-rhythm);
+    }
+    ul li::before,
+    ol li::before {
+        margin-left: 0;
+    }
+}
+
+@media (--mx-sm-breakpoint) {
+    ul,
+    ol {
+        padding-left: 0;
+    }
+    ul ul,
+    ul ol,
+    ol ol,
+    ol ul {
+        padding-left: calc(1.7 * 1rem);
+        padding-left: var(--horizontal-rhythm);
+    }
+    ul li::before,
+    ol li::before {
+        margin-left: 0;
+    }
 }
 
 ul.no-list-type li::before {

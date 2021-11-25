@@ -552,6 +552,24 @@ blockquote {
     background: var(--blockquote-background);
 }
 
+@media (max-width: 640px) {
+    blockquote {
+        padding-left: 0;
+        border: 0;
+        border-top: 1px solid var(--base-color);
+        border-bottom: 1px solid var(--base-color);
+    }
+}
+
+@media (--mx-sm-breakpoint) {
+    blockquote {
+        padding-left: 0;
+        border: 0;
+        border-top: 1px solid var(--base-color);
+        border-bottom: 1px solid var(--base-color);
+    }
+}
+
 .tag {
     white-space: nowrap;
     padding: var(--space-d4);
