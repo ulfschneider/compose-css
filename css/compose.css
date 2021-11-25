@@ -19928,7 +19928,8 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
 :root {
     --mrt-list: var(--vertical-rhythm);
     --mrb-list: var(--vertical-rhythm);
-    --list-item-type: "–";
+    --list-item-type: "●";
+    /*▁⁕●■ → */
     --ol-counter-delimiter: "-";
     --ol-counter-type: decimal-leading-zero;
     --h-counter-type: decimal;
@@ -20059,7 +20060,7 @@ ol li::before {
 }
 
 ul li::before {
-    content: "–";
+    content: "●";
     content: var(--list-item-type);
     margin-left: calc(calc(1.7 * 1rem) * -1);
     margin-left: calc(var(--horizontal-rhythm) * -1);
@@ -20070,6 +20071,7 @@ ul li::before {
     display: inline-grid;
     justify-content: start;
     align-items: baseline;
+    font-size: .6em;
     color: hsl(0, 0%, calc(53% - calc(53% / 7)));
     color: var(--li-prefix-color);
 }

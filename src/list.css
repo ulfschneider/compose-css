@@ -1,7 +1,8 @@
 :root {
     --mrt-list: var(--vertical-rhythm);
     --mrb-list: var(--vertical-rhythm);
-    --list-item-type: "–";
+    --list-item-type: "●";
+    /*▁⁕●■ → */
     --ol-counter-delimiter: "-";
     --ol-counter-type: decimal-leading-zero;
     --h-counter-type: decimal;
@@ -118,6 +119,7 @@ ul li::before {
     display: inline-grid;
     justify-content: start;
     align-items: baseline;
+    font-size: .6em;
     color: var(--li-prefix-color);
 }
 
