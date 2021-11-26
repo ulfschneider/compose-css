@@ -239,11 +239,11 @@ ol.clear {
 }
 
 ul.reset li::before,
-ul.clear li::before ol.reset li::before,
+ul.clear li::before,
+ol.reset li::before,
 ol.clear li::before {
     content: unset;
-    margin-left: unset;
-    min-width: unset;
-    padding: unset;
-    display: unset;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
 }

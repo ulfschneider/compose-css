@@ -627,7 +627,7 @@ Configure the displayed symbols with:
 
 ### Unordered list
 
-<ul>
+<ul class="clear">
 <li><p>One morning, when Gregor Samsa woke from troubled dreams, he found himself
 transformed in his bed into a horrible vermin.
     </p>
