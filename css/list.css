@@ -274,13 +274,19 @@ ul.no-list-type li::before {
     content: unset;
 }
 
-ul.reset {
+ul.reset,
+ul.clear,
+ol.reset,
+ol.clear {
     padding-left: 0;
 }
 
-ul.reset li::before {
+ul.reset li::before,
+ul.clear li::before ol.reset li::before,
+ol.clear li::before {
     content: unset;
     margin-left: unset;
     min-width: unset;
+    padding: unset;
     display: unset;
 }
