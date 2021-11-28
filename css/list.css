@@ -41,12 +41,15 @@ dd+dt {
 dl.timeline {
     border-left: 1px solid var(--timeline-color);
     border-left: var(--timeline-width) solid var(--timeline-color);
+    margin-left: calc(1em / 2 + 2px);
+    margin-left: calc(var(--timeline-blub-size) / 2 + 2px);
 }
 
 dl.timeline>dt,
 dl.timeline>dd {
     margin-left: 0;
-    padding-left: calc(var(--horizontal-rhythm));
+    padding-left: calc(var(--horizontal-rhythm) - 1em / 2 - 2px);
+    padding-left: calc(var(--horizontal-rhythm) - var(--timeline-blub-size) / 2 - 2px);
 }
 
 dl.timeline>dt::before {
@@ -58,8 +61,8 @@ dl.timeline>dt::before {
     height: var(--timeline-blub-size);
     display: block;
     position: absolute;
-    margin-left: calc(-0.5 * (1em + 1px) - var(--horizontal-rhythm));
-    margin-left: calc(-0.5 * (var(--timeline-blub-size) + var(--timeline-width)) - var(--horizontal-rhythm));
+    margin-left: calc(-0.5 * (1em + 1px) - var(--horizontal-rhythm) + 1em / 2 + 2px);
+    margin-left: calc(-0.5 * (var(--timeline-blub-size) + var(--timeline-width)) - var(--horizontal-rhythm) + var(--timeline-blub-size) / 2 + 2px);
     margin-top: calc(0.5em * var(--lh-default) - 0.5 * 1em - 1px);
     margin-top: calc(0.5em * var(--lh-default) - 0.5 * var(--timeline-blub-size) - var(--timeline-width));
     background-color: var(--timeline-blub-background);
