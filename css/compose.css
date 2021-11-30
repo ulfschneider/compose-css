@@ -20203,6 +20203,8 @@ ul.indent li::before,
         margin-left: 0;
     }
     ol li::before {
+        color: currentColor;
+        color: var(--li-prefix-color);
         background: white;
         background: var(--base-background);
         filter: invert(100%);
@@ -20213,7 +20215,6 @@ ul.indent li::before,
         justify-content: center;
         padding: 0 2px 0 2px;
         padding: 0 var(--space-d4) 0 var(--space-d4);
-        font-weight: normal;
     }
 }
 
@@ -20235,6 +20236,8 @@ ul.indent li::before,
         margin-left: 0;
     }
     ol li::before {
+        color: currentColor;
+        color: var(--li-prefix-color);
         background: white;
         background: var(--base-background);
         filter: invert(100%);
@@ -20245,7 +20248,6 @@ ul.indent li::before,
         justify-content: center;
         padding: 0 2px 0 2px;
         padding: 0 var(--space-d4) 0 var(--space-d4);
-        font-weight: normal;
     }
 }
 
