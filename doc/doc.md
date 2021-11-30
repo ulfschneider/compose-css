@@ -740,6 +740,11 @@ familiar walls.</dd>
 
 ## Figures
 
+<figure class="split-aside-left-reverse">
+<img src="images/swan-leroi-unsplash.jpg" style="width:30%">
+<figcaption class="bg-accent-one">Caption</figcaption>
+</figure>
+
 ## Images
 
 ## Colors

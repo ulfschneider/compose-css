@@ -127,7 +127,7 @@
     --selection-color: var(--base-color);
     --heading-color: var(--base-color);
     --meta-color: var(--neutral-d1);
-    --li-prefix-color: var(--meta-color);
+    --li-prefix-color: currentColor;
     --heading-outline-color: var(--li-prefix-color);
     --form-label-color: var(--meta-color);
     --form-field-color: var(--base-color);
@@ -283,7 +283,7 @@
 }
 
 .li-prefix-color {
-    color: hsl(0, 0%, calc(53% - calc(53% / 7)));
+    color: currentColor;
     color: var(--li-prefix-color);
 }
 
@@ -322,7 +322,7 @@
 }
 
 .bg-li-prefix-color {
-    background: hsl(0, 0%, calc(53% - calc(53% / 7)));
+    background: currentColor;
     background: var(--li-prefix-color);
 }
 
@@ -434,7 +434,7 @@
 }
 
 .bg-li-prefix-color {
-    background-color: hsl(0, 0%, calc(53% - calc(53% / 7)));
+    background-color: currentColor;
     background-color: var(--li-prefix-color);
 }
 
@@ -544,7 +544,7 @@
 }
 
 .br-li-prefix-color {
-    border-color: hsl(0, 0%, calc(53% - calc(53% / 7)));
+    border-color: currentColor;
     border-color: var(--li-prefix-color);
 }
 

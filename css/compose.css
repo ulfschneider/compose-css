@@ -1,28 +1,51 @@
+/*
+* This reset is influenced by https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
+* {
+    margin: 0;
+}
+
+html,
 body {
     margin: 0;
     width: 100%;
 }
 
-iframe {
-    max-width: 100%;
-    height: auto;
+body {
+    -webkit-font-smoothing: antialiased;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    vertical-align: top;
-}
-
+iframe,
+img,
+picture,
+canvas,
 svg {
-    max-height: 100%;
+    max-width: 100%;
     height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
 }
 
 :root {
@@ -1531,7 +1554,7 @@ small,
     --selection-color: var(--base-color);
     --heading-color: var(--base-color);
     --meta-color: var(--neutral-d1);
-    --li-prefix-color: var(--meta-color);
+    --li-prefix-color: currentColor;
     --heading-outline-color: var(--li-prefix-color);
     --form-label-color: var(--meta-color);
     --form-field-color: var(--base-color);
@@ -1687,7 +1710,7 @@ small,
 }
 
 .li-prefix-color {
-    color: hsl(0, 0%, calc(53% - calc(53% / 7)));
+    color: currentColor;
     color: var(--li-prefix-color);
 }
 
@@ -1726,7 +1749,7 @@ small,
 }
 
 .bg-li-prefix-color {
-    background: hsl(0, 0%, calc(53% - calc(53% / 7)));
+    background: currentColor;
     background: var(--li-prefix-color);
 }
 
@@ -1838,7 +1861,7 @@ small,
 }
 
 .bg-li-prefix-color {
-    background-color: hsl(0, 0%, calc(53% - calc(53% / 7)));
+    background-color: currentColor;
     background-color: var(--li-prefix-color);
 }
 
@@ -1948,7 +1971,7 @@ small,
 }
 
 .br-li-prefix-color {
-    border-color: hsl(0, 0%, calc(53% - calc(53% / 7)));
+    border-color: currentColor;
     border-color: var(--li-prefix-color);
 }
 
@@ -18017,7 +18040,7 @@ blockquote {
     padding: 0;
     padding-left: calc(1.7 * 1rem);
     padding-left: var(--horizontal-rhythm);
-    border-left: 2px solid hsl(0, 0%, calc(53% - calc(53% / 7)));
+    border-left: 2px solid currentColor;
     border-left: 2px solid var(--li-prefix-color);
     font-style: italic;
     font-style: var(--blockquote-font-style);
@@ -19966,7 +19989,7 @@ dd+dt {
 }
 
 dl.timeline {
-    border-left: 1px solid hsl(0, 0%, calc(53% - calc(53% / 7)));
+    border-left: 1px solid currentColor;
     border-left: var(--timeline-width) solid var(--timeline-color);
     margin-left: calc(1em / 2 + 2px);
     margin-left: calc(var(--timeline-blub-size) / 2 + 2px);
@@ -19994,7 +20017,7 @@ dl.timeline>dt::before {
     margin-top: calc(0.5em * var(--lh-default) - 0.5 * var(--timeline-blub-size) - var(--timeline-width));
     background-color: white;
     background-color: var(--timeline-blub-background);
-    border: 1px solid hsl(0, 0%, calc(53% - calc(53% / 7)));
+    border: 1px solid currentColor;
     border: var(--timeline-blub-border-width) solid var(--timeline-blub-color);
 }
 
@@ -20052,7 +20075,8 @@ ol li::before {
     font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--meta-font-family);
     font-size: smaller;
-    color: hsl(0, 0%, calc(53% - calc(53% / 7)));
+    font-weight: bold;
+    color: currentColor;
     color: var(--li-prefix-color);
 }
 
@@ -20069,7 +20093,7 @@ ul li::before {
     justify-content: start;
     align-items: baseline;
     font-size: smaller;
-    color: hsl(0, 0%, calc(53% - calc(53% / 7)));
+    color: currentColor;
     color: var(--li-prefix-color);
 }
 
@@ -20083,7 +20107,7 @@ ul li::before {
 .outline h5::before,
 .outline h6::before {
     display: inline-block;
-    color: hsl(0, 0%, calc(53% - calc(53% / 7)));
+    color: currentColor;
     color: var(--heading-outline-color);
     font-weight: inherit;
     min-width: calc(1.7 * 1rem);
@@ -20179,10 +20203,9 @@ ul.indent li::before,
         margin-left: 0;
     }
     ol li::before {
-        color: white;
-        color: var(--base-background);
-        background: hsl(0, 0%, calc(53% - calc(53% / 7)));
-        background: var(--li-prefix-color);
+        background: white;
+        background: var(--base-background);
+        filter: invert(100%);
         min-width: calc(calc(1.7 * 1rem) - calc(calc(1rem / 1.7) / 1.7));
         min-width: calc(var(--horizontal-rhythm) - var(--space-d2));
         margin-right: calc(calc(1rem / 1.7) / 1.7);
@@ -20190,6 +20213,7 @@ ul.indent li::before,
         justify-content: center;
         padding: 0 2px 0 2px;
         padding: 0 var(--space-d4) 0 var(--space-d4);
+        font-weight: normal;
     }
 }
 
@@ -20211,10 +20235,9 @@ ul.indent li::before,
         margin-left: 0;
     }
     ol li::before {
-        color: white;
-        color: var(--base-background);
-        background: hsl(0, 0%, calc(53% - calc(53% / 7)));
-        background: var(--li-prefix-color);
+        background: white;
+        background: var(--base-background);
+        filter: invert(100%);
         min-width: calc(calc(1.7 * 1rem) - calc(calc(1rem / 1.7) / 1.7));
         min-width: calc(var(--horizontal-rhythm) - var(--space-d2));
         margin-right: calc(calc(1rem / 1.7) / 1.7);
@@ -20222,6 +20245,7 @@ ul.indent li::before,
         justify-content: center;
         padding: 0 2px 0 2px;
         padding: 0 var(--space-d4) 0 var(--space-d4);
+        font-weight: normal;
     }
 }
 
