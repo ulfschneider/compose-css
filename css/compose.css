@@ -17660,11 +17660,15 @@ strong,
 .italic,
 i,
 .i,
-cite,
-.cite,
 em,
 .em {
     font-style: italic;
+}
+
+cite,
+.cite {
+    font-weight: bold;
+    font-style: normal;
 }
 
 .normal {
@@ -20928,7 +20932,8 @@ th.sotable-column .indicator {
 }
 
 [class*=" split"],
-[class|="split"] {
+[class|="split"],
+.split {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: calc(1.7 * 1rem);
@@ -21271,7 +21276,8 @@ th.sotable-column .indicator {
         margin-left: max(50% - 50vw + 1rem, 50% - 1280px / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
-    [class*="sm\:split"] {
+    [class*="sm\:split"],
+    .sm\:split {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.7 * 1rem);
@@ -21519,7 +21525,8 @@ th.sotable-column .indicator {
         margin-left: max(50% - 50vw + 1rem, 50% - 1280px / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
-    [class*="sm\:split"] {
+    [class*="sm\:split"],
+    .sm\:split {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.7 * 1rem);
@@ -21767,7 +21774,8 @@ th.sotable-column .indicator {
         margin-left: max(50% - 50vw + 1rem, 50% - 1280px / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
-    [class*="rg\:split"] {
+    [class*="rg\:split"],
+    .rg\:split {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.7 * 1rem);
@@ -22023,7 +22031,8 @@ th.sotable-column .indicator {
         margin-left: max(50% - 50vw + 1rem, 50% - 1280px / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
-    [class*="rg\:split"] {
+    [class*="rg\:split"],
+    .rg\:split {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.7 * 1rem);
@@ -22279,7 +22288,8 @@ th.sotable-column .indicator {
         margin-left: max(50% - 50vw + 1rem, 50% - 1280px / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
-    [class*="md\:split"] {
+    [class*="md\:split"],
+    .md\:split {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.7 * 1rem);
@@ -22551,7 +22561,8 @@ th.sotable-column .indicator {
         margin-left: max(50% - 50vw + 1rem, 50% - 1280px / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
-    [class*="md\:split"] {
+    [class*="md\:split"],
+    .md\:split {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.7 * 1rem);
@@ -22823,7 +22834,8 @@ th.sotable-column .indicator {
         margin-left: max(50% - 50vw + 1rem, 50% - 1280px / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
-    [class*="lg\:split"] {
+    [class*="lg\:split"],
+    .lg\:split {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.7 * 1rem);
@@ -23103,7 +23115,8 @@ th.sotable-column .indicator {
         margin-left: max(50% - 50vw + 1rem, 50% - 1280px / 2);
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
-    [class*="lg\:split"] {
+    [class*="lg\:split"],
+    .lg\:split {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.7 * 1rem);

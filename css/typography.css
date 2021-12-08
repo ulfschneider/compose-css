@@ -191,11 +191,15 @@ strong,
 .italic,
 i,
 .i,
-cite,
-.cite,
 em,
 .em {
     font-style: italic;
+}
+
+cite,
+.cite {
+    font-weight: bold;
+    font-style: normal;
 }
 
 .normal {

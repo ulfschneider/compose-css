@@ -84,7 +84,8 @@
         width: auto;
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
-    [class*="sm\:split"] {
+    [class*="sm\:split"],
+    .sm\:split {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: var(--split-column-gap);
@@ -316,7 +317,8 @@
         width: auto;
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
-    [class*="sm\:split"] {
+    [class*="sm\:split"],
+    .sm\:split {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: var(--split-column-gap);
@@ -548,7 +550,8 @@
         width: auto;
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
-    [class*="rg\:split"] {
+    [class*="rg\:split"],
+    .rg\:split {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: var(--split-column-gap);
@@ -786,7 +789,8 @@
         width: auto;
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
-    [class*="rg\:split"] {
+    [class*="rg\:split"],
+    .rg\:split {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: var(--split-column-gap);
@@ -1024,7 +1028,8 @@
         width: auto;
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
-    [class*="md\:split"] {
+    [class*="md\:split"],
+    .md\:split {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: var(--split-column-gap);
@@ -1274,7 +1279,8 @@
         width: auto;
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
-    [class*="md\:split"] {
+    [class*="md\:split"],
+    .md\:split {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: var(--split-column-gap);
@@ -1524,7 +1530,8 @@
         width: auto;
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
-    [class*="lg\:split"] {
+    [class*="lg\:split"],
+    .lg\:split {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: var(--split-column-gap);
@@ -1780,7 +1787,8 @@
         width: auto;
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
     }
-    [class*="lg\:split"] {
+    [class*="lg\:split"],
+    .lg\:split {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: var(--split-column-gap);
