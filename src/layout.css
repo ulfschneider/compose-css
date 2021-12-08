@@ -124,7 +124,8 @@
 }
 
 [class*=" split"],
-[class|="split"] {
+[class|="split"],
+.split {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: var(--split-column-gap);
