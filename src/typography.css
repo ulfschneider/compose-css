@@ -503,8 +503,7 @@ blockquote {
 
 @media (--mx-sm-breakpoint) {
     blockquote {
-        padding-left: 0;
-        border: 0;
+        padding-left: var(--space-d2);
     }
 }
 

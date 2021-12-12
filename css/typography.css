@@ -558,15 +558,13 @@ blockquote {
 
 @media (max-width: 640px) {
     blockquote {
-        padding-left: 0;
-        border: 0;
+        padding-left: var(--space-d2);
     }
 }
 
 @media (--mx-sm-breakpoint) {
     blockquote {
-        padding-left: 0;
-        border: 0;
+        padding-left: var(--space-d2);
     }
 }
 
