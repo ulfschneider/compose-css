@@ -17522,6 +17522,7 @@ Naming conventions
     --outline: var(--space-d3) solid var(--link-focus-color);
     --outline-offset: var(--space-d4);
     --kbd-shadow: .07em .07em var(--border-color);
+    --blockquote-border-width: 2px;
     font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--font-family);
     font-feature-settings: unset;
@@ -18042,28 +18043,20 @@ blockquote {
     margin-left: 0;
     margin-right: 0;
     padding: 0;
-    padding-left: calc(1.7 * 1rem);
-    padding-left: var(--horizontal-rhythm);
-    border-left: 2px solid currentColor;
-    border-left: 2px solid var(--li-prefix-color);
     font-style: italic;
     font-style: var(--blockquote-font-style);
     background: transparent;
     background: var(--blockquote-background);
 }
 
-@media (max-width: 640px) {
-    blockquote {
-        padding-left: calc(calc(1rem / 1.7) / 1.7);
-        padding-left: var(--space-d2);
-    }
-}
-
-@media (--mx-sm-breakpoint) {
-    blockquote {
-        padding-left: calc(calc(1rem / 1.7) / 1.7);
-        padding-left: var(--space-d2);
-    }
+blockquote::before {
+    content: "";
+    width: calc(calc(calc(1.7 * 1rem) * 1.7) * 1.7);
+    width: var(--space-3);
+    position: absolute;
+    display: inline-block;
+    border-top: 2px solid currentColor;
+    border-top: var(--blockquote-border-width) solid var(--li-prefix-color);
 }
 
 .tag {
