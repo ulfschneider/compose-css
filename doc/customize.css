@@ -43,7 +43,7 @@ dl {
     font-size: smaller;
 }
 
-.table-of-contents ol ol li {
+.table-of-contents li li {
     line-height: var(--lh-1);
     margin: var(--space-d2) 0;
 }

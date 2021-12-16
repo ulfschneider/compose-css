@@ -20054,8 +20054,8 @@ ol li::before {
     content: var(--ol-counter);
     min-width: calc(1.7 * 1rem);
     min-width: var(--horizontal-rhythm);
-    padding-right: calc(calc(1rem / 1.7) / 1.7);
-    padding-right: var(--space-d2);
+    padding-right: calc(1rem / 1.7);
+    padding-right: var(--space-d1);
     margin-left: calc(calc(1.7 * 1rem) * -1);
     margin-left: calc(var(--horizontal-rhythm) * -1);
     display: inline-grid;
@@ -20067,6 +20067,7 @@ ol li::before {
     font-weight: bold;
     color: currentColor;
     color: var(--li-prefix-color);
+    font-variant-numeric: tabular-nums;
 }
 
 ul li::before {
@@ -20074,8 +20075,8 @@ ul li::before {
     content: var(--list-item-type);
     margin-left: calc(calc(1.7 * 1rem) * -1);
     margin-left: calc(var(--horizontal-rhythm) * -1);
-    padding-right: calc(calc(1rem / 1.7) / 1.7);
-    padding-right: var(--space-d2);
+    padding-right: calc(1rem / 1.7);
+    padding-right: var(--space-d1);
     min-width: calc(1.7 * 1rem);
     min-width: var(--horizontal-rhythm);
     display: inline-grid;
@@ -20098,11 +20099,11 @@ ul li::before {
     display: inline-block;
     color: currentColor;
     color: var(--heading-outline-color);
-    font-weight: inherit;
+    font-weight: normal;
     min-width: calc(1.7 * 1rem);
     min-width: var(--horizontal-rhythm);
-    padding-right: calc(calc(1rem / 1.7) / 1.7);
-    padding-right: var(--space-d2);
+    padding-right: calc(1rem / 1.7);
+    padding-right: var(--space-d1);
 }
 
 .outline h2::before {

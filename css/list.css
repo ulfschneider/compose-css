@@ -112,7 +112,7 @@ ol li::before {
     content: counters(ol-counter, "-", decimal-leading-zero);
     content: var(--ol-counter);
     min-width: var(--horizontal-rhythm);
-    padding-right: var(--space-d2);
+    padding-right: var(--space-d1);
     margin-left: calc(var(--horizontal-rhythm) * -1);
     display: inline-grid;
     justify-content: start;
@@ -121,13 +121,14 @@ ol li::before {
     font-size: smaller;
     font-weight: bold;
     color: var(--li-prefix-color);
+    font-variant-numeric: tabular-nums;
 }
 
 ul li::before {
     content: "●";
     content: var(--list-item-type);
     margin-left: calc(var(--horizontal-rhythm) * -1);
-    padding-right: var(--space-d2);
+    padding-right: var(--space-d1);
     min-width: var(--horizontal-rhythm);
     display: inline-grid;
     justify-content: start;
@@ -147,9 +148,9 @@ ul li::before {
 .outline h6::before {
     display: inline-block;
     color: var(--heading-outline-color);
-    font-weight: inherit;
+    font-weight: normal;
     min-width: var(--horizontal-rhythm);
-    padding-right: var(--space-d2);
+    padding-right: var(--space-d1);
 }
 
 .outline h2::before {
