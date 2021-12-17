@@ -20180,10 +20180,8 @@ ul.indent li::before,
     ol {
         padding-left: 0;
     }
-    ul ul,
-    ul ol,
-    ol ol,
-    ol ul {
+    li ul,
+    li ol {
         padding-left: calc(1.7 * 1rem);
         padding-left: var(--horizontal-rhythm);
     }
@@ -20213,10 +20211,8 @@ ul.indent li::before,
     ol {
         padding-left: 0;
     }
-    ul ul,
-    ul ol,
-    ol ol,
-    ol ul {
+    li ul,
+    li ol {
         padding-left: calc(1.7 * 1rem);
         padding-left: var(--horizontal-rhythm);
     }
