@@ -34,8 +34,6 @@ dl {
 
 .table-of-contents ol li::before {
     content: var(--h-counter);
-    font-weight: normal;
-    font-size: inherit;
 }
 
 .table-of-contents ol ol {

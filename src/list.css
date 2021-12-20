@@ -4,7 +4,7 @@
     --list-item-type: "●";
     /*▁⁕●■ → */
     --ol-counter-delimiter: "-";
-    --ol-counter-type: decimal-leading-zero;
+    --ol-counter-type: decimal;
     --h-counter-type: decimal;
     --h-counter-delimiter: ".";
     --ol-counter: counters(ol-counter, var(--ol-counter-delimiter), var(--ol-counter-type));

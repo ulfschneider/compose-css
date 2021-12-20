@@ -19942,7 +19942,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     --list-item-type: "●";
     /*▁⁕●■ → */
     --ol-counter-delimiter: "-";
-    --ol-counter-type: decimal-leading-zero;
+    --ol-counter-type: decimal;
     --h-counter-type: decimal;
     --h-counter-delimiter: ".";
     --ol-counter: counters(ol-counter, var(--ol-counter-delimiter), var(--ol-counter-type));
@@ -20050,7 +20050,7 @@ ol>li {
 }
 
 ol li::before {
-    content: counters(ol-counter, "-", decimal-leading-zero);
+    content: counters(ol-counter, "-", decimal);
     content: var(--ol-counter);
     min-width: calc(1.7 * 1rem);
     min-width: var(--horizontal-rhythm);
