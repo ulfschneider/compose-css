@@ -67,6 +67,12 @@
     .sm\:miw-bleed {
         min-width: var(--bleed-width);
     }
+    .sm\:mivw-100 {
+        min-width: 100vw;
+    }
+    .sm\:miw-100 {
+        min-width: 100%;
+    }
 }
 
 @media (--mi-sm-breakpoint) {
@@ -138,6 +144,12 @@
     .sm\:miw-bleed {
         min-width: var(--bleed-width);
     }
+    .sm\:mivw-100 {
+        min-width: 100vw;
+    }
+    .sm\:miw-100 {
+        min-width: 100%;
+    }
 }
 
 @media (min-width: 769px) {
@@ -207,6 +219,12 @@
     }
     .rg\:miw-bleed {
         min-width: var(--bleed-width);
+    }
+    .rg\:mivw-100 {
+        min-width: 100vw;
+    }
+    .rg\:miw-100 {
+        min-width: 100%;
     }
 }
 
@@ -278,6 +296,12 @@
     .rg\:miw-bleed {
         min-width: var(--bleed-width);
     }
+    .rg\:mivw-100 {
+        min-width: 100vw;
+    }
+    .rg\:miw-100 {
+        min-width: 100%;
+    }
 }
 
 @media (min-width: 1025px) {
@@ -347,6 +371,12 @@
     }
     .md\:miw-bleed {
         min-width: var(--bleed-width);
+    }
+    .md\:mivw-100 {
+        min-width: 100vw;
+    }
+    .md\:miw-100 {
+        min-width: 100%;
     }
 }
 
@@ -418,6 +448,12 @@
     .md\:miw-bleed {
         min-width: var(--bleed-width);
     }
+    .md\:mivw-100 {
+        min-width: 100vw;
+    }
+    .md\:miw-100 {
+        min-width: 100%;
+    }
 }
 
 @media (min-width: 1281px) {
@@ -488,6 +524,12 @@
     .lg\:miw-bleed {
         min-width: var(--bleed-width);
     }
+    .lg\:mivw-100 {
+        min-width: 100vw;
+    }
+    .lg\:miw-100 {
+        min-width: 100%;
+    }
 }
 
 @media (--mi-lg-breakpoint) {
@@ -557,5 +599,11 @@
     }
     .lg\:miw-bleed {
         min-width: var(--bleed-width);
+    }
+    .lg\:mivw-100 {
+        min-width: 100vw;
+    }
+    .lg\:miw-100 {
+        min-width: 100%;
     }
 }

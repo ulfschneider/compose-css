@@ -91,6 +91,10 @@
     max-width: 100vw;
 }
 
+.mxw-100 {
+    max-width: 100%;
+}
+
 .mxw-bleed {
     max-width: var(--bleed-width);
 }

@@ -92,3 +92,7 @@
 .mxvh-100 {
     max-height: 100vh;
 }
+
+.mxw-100 {
+    max-height: 100%;
+}

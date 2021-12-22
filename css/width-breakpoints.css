@@ -5,6 +5,36 @@
     .sm\:w-100 {
         width: 100%;
     }
+    .sm\:vw-100 {
+        width: 100vh;
+    }
+    .sm\:vw-90 {
+        width: 90vw;
+    }
+    .sm\:vw-80 {
+        width: 80vw;
+    }
+    .sm\:vw-70 {
+        width: 70vw;
+    }
+    .sm\:vw-60 {
+        width: 60vw;
+    }
+    .sm\:vw-50 {
+        width: 50vw;
+    }
+    .sm\:vw-40 {
+        width: 40vw;
+    }
+    .sm\:vw-30 {
+        width: 30vw;
+    }
+    .sm\:vw-20 {
+        width: 20vw;
+    }
+    .sm\:vw-10 {
+        width: 10vw;
+    }
     .sm\:w-sm {
         width: var(--sm-width);
     }
@@ -76,6 +106,36 @@
     }
     .sm\:w-100 {
         width: 100%;
+    }
+    .sm\:vw-100 {
+        width: 100vh;
+    }
+    .sm\:vw-90 {
+        width: 90vw;
+    }
+    .sm\:vw-80 {
+        width: 80vw;
+    }
+    .sm\:vw-70 {
+        width: 70vw;
+    }
+    .sm\:vw-60 {
+        width: 60vw;
+    }
+    .sm\:vw-50 {
+        width: 50vw;
+    }
+    .sm\:vw-40 {
+        width: 40vw;
+    }
+    .sm\:vw-30 {
+        width: 30vw;
+    }
+    .sm\:vw-20 {
+        width: 20vw;
+    }
+    .sm\:vw-10 {
+        width: 10vw;
     }
     .sm\:w-sm {
         width: var(--sm-width);
@@ -149,6 +209,36 @@
     .rg\:w-100 {
         width: 100%;
     }
+    .rg\:vw-100 {
+        width: 100vh;
+    }
+    .rg\:vw-90 {
+        width: 90vw;
+    }
+    .rg\:vw-80 {
+        width: 80vw;
+    }
+    .rg\:vw-70 {
+        width: 70vw;
+    }
+    .rg\:vw-60 {
+        width: 60vw;
+    }
+    .rg\:vw-50 {
+        width: 50vw;
+    }
+    .rg\:vw-40 {
+        width: 40vw;
+    }
+    .rg\:vw-30 {
+        width: 30vw;
+    }
+    .rg\:vw-80 {
+        width: 20vw;
+    }
+    .rg\:vw-10 {
+        width: 10vw;
+    }
     .rg\:w-sm {
         width: var(--sm-width);
     }
@@ -220,6 +310,36 @@
     }
     .rg\:w-100 {
         width: 100%;
+    }
+    .rg\:vw-100 {
+        width: 100vh;
+    }
+    .rg\:vw-90 {
+        width: 90vw;
+    }
+    .rg\:vw-80 {
+        width: 80vw;
+    }
+    .rg\:vw-70 {
+        width: 70vw;
+    }
+    .rg\:vw-60 {
+        width: 60vw;
+    }
+    .rg\:vw-50 {
+        width: 50vw;
+    }
+    .rg\:vw-40 {
+        width: 40vw;
+    }
+    .rg\:vw-30 {
+        width: 30vw;
+    }
+    .rg\:vw-80 {
+        width: 20vw;
+    }
+    .rg\:vw-10 {
+        width: 10vw;
     }
     .rg\:w-sm {
         width: var(--sm-width);
@@ -293,6 +413,36 @@
     .md\:w-100 {
         width: 100%;
     }
+    .md\:vw-100 {
+        width: 100vh;
+    }
+    .md\:vw-90 {
+        width: 90vw;
+    }
+    .md\:vw-80 {
+        width: 80vw;
+    }
+    .md\:vw-70 {
+        width: 70vw;
+    }
+    .md\:vw-60 {
+        width: 60vw;
+    }
+    .md\:vw-50 {
+        width: 50vw;
+    }
+    .md\:vw-40 {
+        width: 40vw;
+    }
+    .md\:vw-30 {
+        width: 30vw;
+    }
+    .md\:vw-20 {
+        width: 20vw;
+    }
+    .md\:vw-10 {
+        width: 10vw;
+    }
     .md\:w-sm {
         width: var(--sm-width);
     }
@@ -364,6 +514,36 @@
     }
     .md\:w-100 {
         width: 100%;
+    }
+    .md\:vw-100 {
+        width: 100vh;
+    }
+    .md\:vw-90 {
+        width: 90vw;
+    }
+    .md\:vw-80 {
+        width: 80vw;
+    }
+    .md\:vw-70 {
+        width: 70vw;
+    }
+    .md\:vw-60 {
+        width: 60vw;
+    }
+    .md\:vw-50 {
+        width: 50vw;
+    }
+    .md\:vw-40 {
+        width: 40vw;
+    }
+    .md\:vw-30 {
+        width: 30vw;
+    }
+    .md\:vw-20 {
+        width: 20vw;
+    }
+    .md\:vw-10 {
+        width: 10vw;
     }
     .md\:w-sm {
         width: var(--sm-width);
@@ -437,6 +617,36 @@
     .lg\:w-100 {
         width: 100%;
     }
+    .lg\:vw-100 {
+        width: 100vh;
+    }
+    .lg\:vw-90 {
+        width: 90vw;
+    }
+    .lg\:vw-80 {
+        width: 80vw;
+    }
+    .lg\:vw-70 {
+        width: 70vw;
+    }
+    .lg\:vw-60 {
+        width: 60vw;
+    }
+    .lg\:vw-50 {
+        width: 50vw;
+    }
+    .lg\:vw-40 {
+        width: 40vw;
+    }
+    .lg\:vw-30 {
+        width: 30vw;
+    }
+    .lg\:vw-20 {
+        width: 20vw;
+    }
+    .lg\:vw-10 {
+        width: 10vw;
+    }
     .lg\:w-sm {
         width: var(--sm-width);
     }
@@ -508,6 +718,36 @@
     }
     .lg\:w-100 {
         width: 100%;
+    }
+    .lg\:vw-100 {
+        width: 100vh;
+    }
+    .lg\:vw-90 {
+        width: 90vw;
+    }
+    .lg\:vw-80 {
+        width: 80vw;
+    }
+    .lg\:vw-70 {
+        width: 70vw;
+    }
+    .lg\:vw-60 {
+        width: 60vw;
+    }
+    .lg\:vw-50 {
+        width: 50vw;
+    }
+    .lg\:vw-40 {
+        width: 40vw;
+    }
+    .lg\:vw-30 {
+        width: 30vw;
+    }
+    .lg\:vw-20 {
+        width: 20vw;
+    }
+    .lg\:vw-10 {
+        width: 10vw;
     }
     .lg\:w-sm {
         width: var(--sm-width);

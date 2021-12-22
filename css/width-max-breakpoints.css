@@ -3,6 +3,9 @@
     .sm\:mxw-u {
         max-width: unset;
     }
+    .sm\:mxvw-100 {
+        max-width: 100vw;
+    }
     .sm\:mxw-100 {
         max-width: 100%;
     }
@@ -75,6 +78,9 @@
     .sm\:mxw-unset,
     .sm\:mxw-u {
         max-width: unset;
+    }
+    .sm\:mxvw-100 {
+        max-width: 100vw;
     }
     .sm\:mxw-100 {
         max-width: 100%;
@@ -149,6 +155,9 @@
     .rg\:mxw-u {
         max-width: unset;
     }
+    .rg\:mxvw-100 {
+        max-width: 100vw;
+    }
     .rg\:mxw-100 {
         max-width: 100%;
     }
@@ -221,6 +230,9 @@
     .rg\:mxw-unset,
     .rg\:mxw-u {
         max-width: unset;
+    }
+    .rg\:mxvw-100 {
+        max-width: 100vw;
     }
     .rg\:mxw-100 {
         max-width: 100%;
@@ -295,6 +307,9 @@
     .md\:mxw-u {
         max-width: unset;
     }
+    .md\:mxvw-100 {
+        max-width: 100vw;
+    }
     .md\:mxw-100 {
         max-width: 100%;
     }
@@ -367,6 +382,9 @@
     .md\:mxw-unset,
     .md\:mxw-u {
         max-width: unset;
+    }
+    .md\:mxvw-100 {
+        max-width: 100vw;
     }
     .md\:mxw-100 {
         max-width: 100%;
@@ -441,6 +459,9 @@
     .lg\:mxw-u {
         max-width: unset;
     }
+    .lg\:mxvw-100 {
+        max-width: 100vw;
+    }
     .lg\:mxw-100 {
         max-width: 100%;
     }
@@ -513,6 +534,9 @@
     .lg\:mxw-unset,
     .lg\:mxw-u {
         max-width: unset;
+    }
+    .lg\:mxvw-100 {
+        max-width: 100vw;
     }
     .lg\:mxw-100 {
         max-width: 100%;

@@ -51,6 +51,13 @@
     .sm\:mxh-6 {
         max-height: var(--space-6);
     }
+    .sm\:max-vh-100,
+    .sm\:mxvh-100 {
+        max-height: 100vh;
+    }
+    .sm\:mxw-100 {
+        max-height: 100%;
+    }
 }
 
 @media (--mi-rg-breakpoint) {
@@ -105,6 +112,13 @@
     .rg\:mxh-6,
     .rg\:mxh-6 {
         max-height: var(--space-6);
+    }
+    .rg\:max-vh-100,
+    .rg\:mxvh-100 {
+        max-height: 100vh;
+    }
+    .rg\:mxw-100 {
+        max-height: 100%;
     }
 }
 
@@ -161,6 +175,13 @@
     .md\:mxh-6 {
         max-height: var(--space-6);
     }
+    .md\:max-vh-100,
+    .md\:mxvh-100 {
+        max-height: 100vh;
+    }
+    .md\:mxw-100 {
+        max-height: 100%;
+    }
 }
 
 @media (--mi-lg-breakpoint) {
@@ -215,5 +236,12 @@
     .lg\:mxh-6,
     .lg\:mxh-6 {
         max-height: var(--space-6);
+    }
+    .lg\:max-vh-100,
+    .lg\:mxvh-100 {
+        max-height: 100vh;
+    }
+    .lg\:mxw-100 {
+        max-height: 100%;
     }
 }
