@@ -18855,8 +18855,7 @@ figcaption {
     margin-bottom: var(--mrb-figcaption);
 }
 
-*+figcaption,
-blockquote>footer {
+*+figcaption {
     margin-top: 1rem;
     margin-top: var(--mrt-figcaption);
     margin-bottom: 0;
@@ -18866,26 +18865,22 @@ blockquote>footer::before {
     content: "—";
 }
 
-blockquote>header {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    margin-bottom: var(--mrb-figcaption);
-}
-
 blockquote>header::after {
     content: "—";
 }
 
 @media(max-width: 640px) {
     figcaption,
-    blockquote>footer {
+    blockquote>footer,
+    blockquote>header {
         max-width: unset;
     }
 }
 
 @media(--mx-sm-breakpoint) {
     figcaption,
-    blockquote>footer {
+    blockquote>footer,
+    blockquote>header {
         max-width: unset;
     }
 }

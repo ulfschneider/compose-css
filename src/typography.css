@@ -582,8 +582,7 @@ figcaption {
     margin-bottom: var(--mrb-figcaption);
 }
 
-*+figcaption,
-blockquote>footer {
+*+figcaption {
     margin-top: var(--mrt-figcaption);
     margin-bottom: 0;
 }
@@ -592,18 +591,14 @@ blockquote>footer::before {
     content: "—";
 }
 
-blockquote>header {
-    margin-top: 0;
-    margin-bottom: var(--mrb-figcaption);
-}
-
 blockquote>header::after {
     content: "—";
 }
 
 @media(--mx-sm-breakpoint) {
     figcaption,
-    blockquote>footer {
+    blockquote>footer,
+    blockquote>header {
         max-width: unset;
     }
 }
