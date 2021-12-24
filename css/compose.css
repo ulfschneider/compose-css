@@ -20783,7 +20783,7 @@ ul li::before {
     min-width: var(--horizontal-rhythm);
     display: inline-grid;
     justify-content: start;
-    align-items: baseline;
+    align-items: center;
     font-size: smaller;
     color: currentColor;
     color: var(--li-prefix-color);
