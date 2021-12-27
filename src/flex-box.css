@@ -58,6 +58,10 @@
     justify-content: space-evenly
 }
 
+.align-auto {
+    align-items: auto;
+}
+
 .align-start {
     align-items: start;
 }
@@ -76,6 +80,30 @@
 
 .align-baseline {
     align-items: baseline;
+}
+
+.align-self-auto {
+    align-self: auto;
+}
+
+.align-self-start {
+    align-self: start;
+}
+
+.align-self-end {
+    align-self: end;
+}
+
+.align-self-center {
+    align-self: center;
+}
+
+.align-self-stretch {
+    align-self: stretch;
+}
+
+.align-self-baseline {
+    align-self: baseline;
 }
 
 .order-0 {

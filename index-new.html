@@ -3,10 +3,10 @@
     addEventListener('load', () => sotable({whiteList: '.soso'})); //activate sotable functionalty on load
     </script></head><body class="pd"><main class="outline mxw-lg mrx-auto"><header class="title">
 <h1>Compose CSS</h1>
-<span class="bg-primary-5 pd-d3">Version 26.2.3</span>
+<span class="bg-primary-5 pd-d3">Version 26.3.0</span>
 <p>A low-level CSS Toolkit to build fast, maintainable, and responsive websites.</p>
 </header>
-<nav class="table-of-contents fluid-columns-5 bleed-right"><ol><li><a href="#preparatory">Preparatory </a><ol><li><a href="#install-compose-css">Install Compose CSS </a></li><li><a href="#notation-used-in-this-document">Notation used in this document </a></li><li><a href="#stepping-through-options">Stepping through options </a></li></ol></li><li><a href="#typography">Typography </a><ol><li><a href="#basic-elements">Basic elements </a></li><li><a href="#font-size">Font size </a></li><li><a href="#headings">Headings </a></li><li><a href="#heading-size">Heading size </a></li><li><a href="#line-height">Line height </a></li><li><a href="#rhythm">Rhythm </a></li><li><a href="#word-wrapping">Word wrapping </a></li><li><a href="#writing-mode">Writing mode </a></li><li><a href="#paragraph">Paragraph </a></li><li><a href="#indented-paragraph">Indented Paragraph </a></li><li><a href="#horizontal-ruler">Horizontal ruler </a></li><li><a href="#blockquote">Blockquote </a></li></ol></li><li><a href="#lists">Lists </a><ol><li><a href="#unordered-list">Unordered list </a></li><li><a href="#ordered-list">Ordered List </a></li><li><a href="#indented-ordered-list">Indented Ordered List </a></li><li><a href="#definition-list">Definition List </a></li><li><a href="#timeline">Timeline </a></li></ol></li><li><a href="#tables">Tables </a></li><li><a href="#figures">Figures </a></li><li><a href="#images">Images </a></li><li><a href="#colors">Colors </a></li><li><a href="#breakpoints">Breakpoints </a></li><li><a href="#layout">Layout </a></li><li><a href="#forms">Forms </a></li></ol></nav><h2 id="preparatory">Preparatory <a class="anchor" href="#preparatory">#</a></h2>
+<nav class="table-of-contents fluid-columns-5 bleed-right"><ol><li><a href="#preparatory">Preparatory </a><ol><li><a href="#install-compose-css">Install Compose CSS </a></li><li><a href="#notation-used-in-this-document">Notation used in this document </a></li><li><a href="#stepping-through-options">Stepping through options </a></li></ol></li><li><a href="#typography">Typography </a><ol><li><a href="#basic-elements">Basic elements </a></li><li><a href="#font-size">Font size </a></li><li><a href="#headings">Headings </a></li><li><a href="#heading-size">Heading size </a></li><li><a href="#line-height">Line height </a></li><li><a href="#rhythm">Rhythm </a></li><li><a href="#word-wrapping">Word wrapping </a></li><li><a href="#writing-mode">Writing mode </a></li><li><a href="#paragraph">Paragraph </a></li><li><a href="#indented-paragraph">Indented Paragraph </a></li><li><a href="#horizontal-ruler">Horizontal ruler </a></li><li><a href="#blockquote">Blockquote </a></li><li><a href="#details-and-summary">Details and Summary </a></li></ol></li><li><a href="#lists">Lists </a><ol><li><a href="#unordered-list">Unordered list </a></li><li><a href="#ordered-list">Ordered List </a></li><li><a href="#indented-ordered-list">Indented Ordered List </a></li><li><a href="#definition-list">Definition List </a></li><li><a href="#timeline">Timeline </a></li></ol></li><li><a href="#tables">Tables </a></li><li><a href="#figures">Figures </a></li><li><a href="#images">Images </a></li><li><a href="#colors">Colors </a></li><li><a href="#breakpoints">Breakpoints </a></li><li><a href="#layout">Layout </a></li><li><a href="#forms">Forms </a></li></ol></nav><h2 id="preparatory">Preparatory <a class="anchor" href="#preparatory">#</a></h2>
 <h3 id="install-compose-css">Install Compose CSS <a class="anchor" href="#install-compose-css">#</a></h3>
 <p>Add the <code>compose-css</code> npm package to your <code>node</code> project. Install with:</p>
 <pre class="language-shell"><code class="language-shell"><span class="token function">npm</span> i compose-css
@@ -539,6 +539,18 @@ He lay on his armour-like back
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>footer</span><span class="token punctuation">&gt;</span></span>Franz Kafka, <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cite</span><span class="token punctuation">&gt;</span></span>The Metamorphosis<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>cite</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>footer</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>blockquote</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
+<h3 id="details-and-summary">Details and Summary <a class="anchor" href="#details-and-summary">#</a></h3>
+<details>
+<summary>One morning</summary>
+    <p>when Gregor Samsa woke from troubled dreams, he found himself
+        transformed in his bed into a horrible vermin.
+    </p>
+    <p>
+        He lay on his armour-like back, and if he lifted his head a little he could
+        see his brown belly, slightly domed and divided by arches into stiff
+        sections.
+    </p>
+</details>
 <h2 id="lists">Lists <a class="anchor" href="#lists">#</a></h2>
 <h3 id="unordered-list">Unordered list <a class="anchor" href="#unordered-list">#</a></h3>
 <ul>

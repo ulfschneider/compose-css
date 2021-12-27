@@ -46,6 +46,9 @@
     .sm\:justify-space-evenly {
         justify-content: space-evenly
     }
+    .sm\:align-auto {
+        align-items: auto;
+    }
     .sm\:align-start {
         align-items: start;
     }
@@ -60,6 +63,24 @@
     }
     .sm\:align-baseline {
         align-items: baseline;
+    }
+    .sm\:align-self-auto {
+        align-self: auto;
+    }
+    .sm\:align-self-start {
+        align-self: start;
+    }
+    .sm\:align-self-end {
+        align-self: end;
+    }
+    .sm\:align-self-center {
+        align-self: center;
+    }
+    .sm\:align-self-stretch {
+        align-self: stretch;
+    }
+    .sm\:align-self-baseline {
+        align-self: baseline;
     }
     .sm\:order-0 {
         order: 0;
@@ -198,6 +219,9 @@
     .sm\:justify-space-evenly {
         justify-content: space-evenly
     }
+    .sm\:align-auto {
+        align-items: auto;
+    }
     .sm\:align-start {
         align-items: start;
     }
@@ -212,6 +236,24 @@
     }
     .sm\:align-baseline {
         align-items: baseline;
+    }
+    .sm\:align-self-auto {
+        align-self: auto;
+    }
+    .sm\:align-self-start {
+        align-self: start;
+    }
+    .sm\:align-self-end {
+        align-self: end;
+    }
+    .sm\:align-self-center {
+        align-self: center;
+    }
+    .sm\:align-self-stretch {
+        align-self: stretch;
+    }
+    .sm\:align-self-baseline {
+        align-self: baseline;
     }
     .sm\:order-0 {
         order: 0;
@@ -350,6 +392,9 @@
     .rg\:justify-space-evenly {
         justify-content: space-evenly
     }
+    .rg\:align-auto {
+        align-items: auto;
+    }
     .rg\:align-start {
         align-items: start;
     }
@@ -364,6 +409,24 @@
     }
     .rg\:align-baseline {
         align-items: baseline;
+    }
+    .rg\:align-self-auto {
+        align-self: auto;
+    }
+    .rg\:align-self-start {
+        align-self: start;
+    }
+    .rg\:align-self-end {
+        align-self: end;
+    }
+    .rg\:align-self-center {
+        align-self: center;
+    }
+    .rg\:align-self-stretch {
+        align-self: stretch;
+    }
+    .rg\:align-self-baseline {
+        align-self: baseline;
     }
     .rg\:order-0 {
         order: 0;
@@ -502,6 +565,9 @@
     .rg\:justify-space-evenly {
         justify-content: space-evenly
     }
+    .rg\:align-auto {
+        align-items: auto;
+    }
     .rg\:align-start {
         align-items: start;
     }
@@ -516,6 +582,24 @@
     }
     .rg\:align-baseline {
         align-items: baseline;
+    }
+    .rg\:align-self-auto {
+        align-self: auto;
+    }
+    .rg\:align-self-start {
+        align-self: start;
+    }
+    .rg\:align-self-end {
+        align-self: end;
+    }
+    .rg\:align-self-center {
+        align-self: center;
+    }
+    .rg\:align-self-stretch {
+        align-self: stretch;
+    }
+    .rg\:align-self-baseline {
+        align-self: baseline;
     }
     .rg\:order-0 {
         order: 0;
@@ -654,6 +738,9 @@
     .md\:justify-space-evenly {
         justify-content: space-evenly
     }
+    .md\:align-auto {
+        align-items: auto;
+    }
     .md\:align-start {
         align-items: start;
     }
@@ -668,6 +755,24 @@
     }
     .md\:align-baseline {
         align-items: baseline;
+    }
+    .md\:align-self-auto {
+        align-self: auto;
+    }
+    .md\:align-self-start {
+        align-self: start;
+    }
+    .md\:align-self-end {
+        align-self: end;
+    }
+    .md\:align-self-center {
+        align-self: center;
+    }
+    .md\:align-self-stretch {
+        align-self: stretch;
+    }
+    .md\:align-self-baseline {
+        align-self: baseline;
     }
     .md\:order-0 {
         order: 0;
@@ -806,6 +911,9 @@
     .md\:justify-space-evenly {
         justify-content: space-evenly
     }
+    .md\:align-auto {
+        align-items: auto;
+    }
     .md\:align-start {
         align-items: start;
     }
@@ -820,6 +928,24 @@
     }
     .md\:align-baseline {
         align-items: baseline;
+    }
+    .md\:align-self-auto {
+        align-self: auto;
+    }
+    .md\:align-self-start {
+        align-self: start;
+    }
+    .md\:align-self-end {
+        align-self: end;
+    }
+    .md\:align-self-center {
+        align-self: center;
+    }
+    .md\:align-self-stretch {
+        align-self: stretch;
+    }
+    .md\:align-self-baseline {
+        align-self: baseline;
     }
     .md\:order-0 {
         order: 0;
@@ -958,6 +1084,9 @@
     .lg\:justify-space-evenly {
         justify-content: space-evenly
     }
+    .lg\:align-auto {
+        align-items: auto;
+    }
     .lg\:align-start {
         align-items: start;
     }
@@ -972,6 +1101,24 @@
     }
     .lg\:align-baseline {
         align-items: baseline;
+    }
+    .lg\:align-self-auto {
+        align-self: auto;
+    }
+    .lg\:align-self-start {
+        align-self: start;
+    }
+    .lg\:align-self-end {
+        align-self: end;
+    }
+    .lg\:align-self-center {
+        align-self: center;
+    }
+    .lg\:align-self-stretch {
+        align-self: stretch;
+    }
+    .lg\:align-self-baseline {
+        align-self: baseline;
     }
     .lg\:order-0 {
         order: 0;
@@ -1110,6 +1257,9 @@
     .lg\:justify-space-evenly {
         justify-content: space-evenly
     }
+    .lg\:align-auto {
+        align-items: auto;
+    }
     .lg\:align-start {
         align-items: start;
     }
@@ -1124,6 +1274,24 @@
     }
     .lg\:align-baseline {
         align-items: baseline;
+    }
+    .lg\:align-self-auto {
+        align-self: auto;
+    }
+    .lg\:align-self-start {
+        align-self: start;
+    }
+    .lg\:align-self-end {
+        align-self: end;
+    }
+    .lg\:align-self-center {
+        align-self: center;
+    }
+    .lg\:align-self-stretch {
+        align-self: stretch;
+    }
+    .lg\:align-self-baseline {
+        align-self: baseline;
     }
     .lg\:order-0 {
         order: 0;

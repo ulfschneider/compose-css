@@ -18230,6 +18230,8 @@ Naming conventions
     --outline-offset: var(--space-d4);
     --kbd-shadow: .07em .07em var(--border-color);
     --blockquote-border-width: 2px;
+    --summary-expanded-prefix: "–";
+    --summary-collapsed-prefix: '+';
     font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--font-family);
     font-feature-settings: unset;
@@ -18739,7 +18741,6 @@ pre,
     /*for safari */
     overflow-x: auto;
     display: inline-block;
-    max-width: 100%;
 }
 
 blockquote {
@@ -18914,12 +18915,37 @@ hr::after {
     writing-mode: horizontal-tb;
 }
 
-details summary {
+details>summary {
     cursor: pointer;
 }
 
-details summary>* {
+details>summary>* {
     display: inline;
+}
+
+details>summary::marker,
+details>summary::-webkit-details-marker {
+    display: none;
+}
+
+details>summary::before {
+    content: '+';
+    content: var(--summary-collapsed-prefix);
+    padding-right: calc(1rem / 1.7);
+    padding-right: var(--space-d1);
+    min-width: calc(1.7 * 1rem);
+    min-width: var(--horizontal-rhythm);
+    display: inline-grid;
+    justify-content: start;
+    align-items: center;
+    color: currentColor;
+    color: var(--li-prefix-color);
+    font-weight: bold;
+}
+
+details[open]>summary::before {
+    content: "–";
+    content: var(--summary-expanded-prefix);
 }
 
 :root {
@@ -19286,6 +19312,10 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     justify-content: space-evenly
 }
 
+.align-auto {
+    align-items: auto;
+}
+
 .align-start {
     align-items: start;
 }
@@ -19304,6 +19334,30 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
 
 .align-baseline {
     align-items: baseline;
+}
+
+.align-self-auto {
+    align-self: auto;
+}
+
+.align-self-start {
+    align-self: start;
+}
+
+.align-self-end {
+    align-self: end;
+}
+
+.align-self-center {
+    align-self: center;
+}
+
+.align-self-stretch {
+    align-self: stretch;
+}
+
+.align-self-baseline {
+    align-self: baseline;
 }
 
 .order-0 {
@@ -19470,6 +19524,9 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     .sm\:justify-space-evenly {
         justify-content: space-evenly
     }
+    .sm\:align-auto {
+        align-items: auto;
+    }
     .sm\:align-start {
         align-items: start;
     }
@@ -19484,6 +19541,24 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     }
     .sm\:align-baseline {
         align-items: baseline;
+    }
+    .sm\:align-self-auto {
+        align-self: auto;
+    }
+    .sm\:align-self-start {
+        align-self: start;
+    }
+    .sm\:align-self-end {
+        align-self: end;
+    }
+    .sm\:align-self-center {
+        align-self: center;
+    }
+    .sm\:align-self-stretch {
+        align-self: stretch;
+    }
+    .sm\:align-self-baseline {
+        align-self: baseline;
     }
     .sm\:order-0 {
         order: 0;
@@ -19622,6 +19697,9 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     .sm\:justify-space-evenly {
         justify-content: space-evenly
     }
+    .sm\:align-auto {
+        align-items: auto;
+    }
     .sm\:align-start {
         align-items: start;
     }
@@ -19636,6 +19714,24 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     }
     .sm\:align-baseline {
         align-items: baseline;
+    }
+    .sm\:align-self-auto {
+        align-self: auto;
+    }
+    .sm\:align-self-start {
+        align-self: start;
+    }
+    .sm\:align-self-end {
+        align-self: end;
+    }
+    .sm\:align-self-center {
+        align-self: center;
+    }
+    .sm\:align-self-stretch {
+        align-self: stretch;
+    }
+    .sm\:align-self-baseline {
+        align-self: baseline;
     }
     .sm\:order-0 {
         order: 0;
@@ -19774,6 +19870,9 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     .rg\:justify-space-evenly {
         justify-content: space-evenly
     }
+    .rg\:align-auto {
+        align-items: auto;
+    }
     .rg\:align-start {
         align-items: start;
     }
@@ -19788,6 +19887,24 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     }
     .rg\:align-baseline {
         align-items: baseline;
+    }
+    .rg\:align-self-auto {
+        align-self: auto;
+    }
+    .rg\:align-self-start {
+        align-self: start;
+    }
+    .rg\:align-self-end {
+        align-self: end;
+    }
+    .rg\:align-self-center {
+        align-self: center;
+    }
+    .rg\:align-self-stretch {
+        align-self: stretch;
+    }
+    .rg\:align-self-baseline {
+        align-self: baseline;
     }
     .rg\:order-0 {
         order: 0;
@@ -19926,6 +20043,9 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     .rg\:justify-space-evenly {
         justify-content: space-evenly
     }
+    .rg\:align-auto {
+        align-items: auto;
+    }
     .rg\:align-start {
         align-items: start;
     }
@@ -19940,6 +20060,24 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     }
     .rg\:align-baseline {
         align-items: baseline;
+    }
+    .rg\:align-self-auto {
+        align-self: auto;
+    }
+    .rg\:align-self-start {
+        align-self: start;
+    }
+    .rg\:align-self-end {
+        align-self: end;
+    }
+    .rg\:align-self-center {
+        align-self: center;
+    }
+    .rg\:align-self-stretch {
+        align-self: stretch;
+    }
+    .rg\:align-self-baseline {
+        align-self: baseline;
     }
     .rg\:order-0 {
         order: 0;
@@ -20078,6 +20216,9 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     .md\:justify-space-evenly {
         justify-content: space-evenly
     }
+    .md\:align-auto {
+        align-items: auto;
+    }
     .md\:align-start {
         align-items: start;
     }
@@ -20092,6 +20233,24 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     }
     .md\:align-baseline {
         align-items: baseline;
+    }
+    .md\:align-self-auto {
+        align-self: auto;
+    }
+    .md\:align-self-start {
+        align-self: start;
+    }
+    .md\:align-self-end {
+        align-self: end;
+    }
+    .md\:align-self-center {
+        align-self: center;
+    }
+    .md\:align-self-stretch {
+        align-self: stretch;
+    }
+    .md\:align-self-baseline {
+        align-self: baseline;
     }
     .md\:order-0 {
         order: 0;
@@ -20230,6 +20389,9 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     .md\:justify-space-evenly {
         justify-content: space-evenly
     }
+    .md\:align-auto {
+        align-items: auto;
+    }
     .md\:align-start {
         align-items: start;
     }
@@ -20244,6 +20406,24 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     }
     .md\:align-baseline {
         align-items: baseline;
+    }
+    .md\:align-self-auto {
+        align-self: auto;
+    }
+    .md\:align-self-start {
+        align-self: start;
+    }
+    .md\:align-self-end {
+        align-self: end;
+    }
+    .md\:align-self-center {
+        align-self: center;
+    }
+    .md\:align-self-stretch {
+        align-self: stretch;
+    }
+    .md\:align-self-baseline {
+        align-self: baseline;
     }
     .md\:order-0 {
         order: 0;
@@ -20382,6 +20562,9 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     .lg\:justify-space-evenly {
         justify-content: space-evenly
     }
+    .lg\:align-auto {
+        align-items: auto;
+    }
     .lg\:align-start {
         align-items: start;
     }
@@ -20396,6 +20579,24 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     }
     .lg\:align-baseline {
         align-items: baseline;
+    }
+    .lg\:align-self-auto {
+        align-self: auto;
+    }
+    .lg\:align-self-start {
+        align-self: start;
+    }
+    .lg\:align-self-end {
+        align-self: end;
+    }
+    .lg\:align-self-center {
+        align-self: center;
+    }
+    .lg\:align-self-stretch {
+        align-self: stretch;
+    }
+    .lg\:align-self-baseline {
+        align-self: baseline;
     }
     .lg\:order-0 {
         order: 0;
@@ -20534,6 +20735,9 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     .lg\:justify-space-evenly {
         justify-content: space-evenly
     }
+    .lg\:align-auto {
+        align-items: auto;
+    }
     .lg\:align-start {
         align-items: start;
     }
@@ -20548,6 +20752,24 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     }
     .lg\:align-baseline {
         align-items: baseline;
+    }
+    .lg\:align-self-auto {
+        align-self: auto;
+    }
+    .lg\:align-self-start {
+        align-self: start;
+    }
+    .lg\:align-self-end {
+        align-self: end;
+    }
+    .lg\:align-self-center {
+        align-self: center;
+    }
+    .lg\:align-self-stretch {
+        align-self: stretch;
+    }
+    .lg\:align-self-baseline {
+        align-self: baseline;
     }
     .lg\:order-0 {
         order: 0;
