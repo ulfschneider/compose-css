@@ -21115,6 +21115,7 @@ ul.indent li::before,
     dl:not(dl.timeline) dd {
         margin-left: 0;
     }
+    details summary::before,
     ol li::before {
         color: currentColor;
         color: var(--li-prefix-color);
@@ -21146,6 +21147,7 @@ ul.indent li::before,
     dl:not(dl.timeline) dd {
         margin-left: 0;
     }
+    details summary::before,
     ol li::before {
         color: currentColor;
         color: var(--li-prefix-color);

@@ -235,6 +235,7 @@ ul.indent li::before,
     dl:not(dl.timeline) dd {
         margin-left: 0;
     }
+    details summary::before,
     ol li::before {
         color: var(--li-prefix-color);
         background: var(--base-background);
@@ -260,6 +261,7 @@ ul.indent li::before,
     dl:not(dl.timeline) dd {
         margin-left: 0;
     }
+    details summary::before,
     ol li::before {
         color: var(--li-prefix-color);
         background: var(--base-background);
