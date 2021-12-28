@@ -18740,7 +18740,6 @@ pre,
     overflow-wrap: normal;
     /*for safari */
     overflow-x: auto;
-    display: inline-block;
 }
 
 blockquote {
@@ -18942,6 +18941,7 @@ details>summary::before {
     color: currentColor;
     color: var(--li-prefix-color);
     font-weight: bold;
+    font-size: smaller;
 }
 
 details[open]>summary::before {
@@ -21115,7 +21115,7 @@ ul.indent li::before,
     dl:not(dl.timeline) dd {
         margin-left: 0;
     }
-    details summary::before,
+    details>summary::before,
     ol li::before {
         color: currentColor;
         color: var(--li-prefix-color);
@@ -21147,7 +21147,7 @@ ul.indent li::before,
     dl:not(dl.timeline) dd {
         margin-left: 0;
     }
-    details summary::before,
+    details>summary::before,
     ol li::before {
         color: currentColor;
         color: var(--li-prefix-color);

@@ -539,7 +539,6 @@ pre,
     overflow-wrap: normal;
     /*for safari */
     overflow-x: auto;
-    display: inline-block;
 }
 
 blockquote {
@@ -732,6 +731,7 @@ details>summary::before {
     align-items: center;
     color: var(--li-prefix-color);
     font-weight: bold;
+    font-size: smaller;
 }
 
 details[open]>summary::before {
