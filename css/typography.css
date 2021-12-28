@@ -58,8 +58,8 @@
     --outline-offset: var(--space-d4);
     --kbd-shadow: .07em .07em var(--border-color);
     --blockquote-border-width: 2px;
-    --summary-expanded-prefix: "–";
-    --summary-collapsed-prefix: '+';
+    --summary-expanded-prefix: "ᐯ";
+    --summary-collapsed-prefix: 'ᐳ';
     font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--font-family);
     font-feature-settings: unset;
@@ -721,7 +721,7 @@ details>summary::-webkit-details-marker {
 }
 
 details>summary::before {
-    content: '+';
+    content: 'ᐳ';
     content: var(--summary-collapsed-prefix);
     padding-right: var(--space-d1);
     min-width: var(--space-1);
@@ -735,6 +735,6 @@ details>summary::before {
 }
 
 details[open]>summary::before {
-    content: "–";
+    content: "ᐯ";
     content: var(--summary-expanded-prefix);
 }
