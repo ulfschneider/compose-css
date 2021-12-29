@@ -52,43 +52,43 @@
 /* padding */
 
 
-.trans-mr {
+.trans-pd {
     transition: .14s padding ease;
     transition: var(--transition-duration) padding var(--transition-function);
 }
 
 
-.trans-mrx {
+.trans-pdx {
     transition: .14s padding-left ease, .14s padding-right ease;
     transition: var(--transition-duration) padding-left var(--transition-function), var(--transition-duration) padding-right var(--transition-function);
 }
 
 
-.trans-mry {
+.trans-pdy {
     transition: .14s padding-top ease, .14s padding-bottom ease;
     transition: var(--transition-duration) padding-top var(--transition-function), var(--transition-duration) padding-bottom var(--transition-function);
 }
 
 
-.trans-mrt {
+.trans-pdt {
     transition: .14s padding-top ease;
     transition: var(--transition-duration) padding-top var(--transition-function);
 }
 
 
-.trans-mrr {
+.trans-pdr {
     transition: .14s padding-right ease;
     transition: var(--transition-duration) padding-right var(--transition-function);
 }
 
 
-.trans-mrb {
+.trans-pdb {
     transition: .14s padding-bottom ease;
     transition: var(--transition-duration) padding-bottom var(--transition-function);
 }
 
 
-.trans-mrl {
+.trans-pdl {
     transition: .14s padding-left ease;
     transition: var(--transition-duration) padding-left var(--transition-function);
 }
@@ -116,6 +116,7 @@
 
 
 .trans-width,
+.trans-x,
 .trans-w {
     transition: .14s width ease;
     transition: var(--transition-duration) width var(--transition-function);
@@ -126,6 +127,7 @@
 
 
 .trans-height,
+.trans-y,
 .trans-h {
     transition: .14s height ease;
     transition: var(--transition-duration) height var(--transition-function);
@@ -134,6 +136,7 @@
 
 .trans-width-height,
 .trans-size,
+.trans-xy,
 .trans-wh {
     transition: .14s width ease, .14s height ease;
     transition: var(--transition-duration) width var(--transition-function), var(--transition-duration) height var(--transition-function);

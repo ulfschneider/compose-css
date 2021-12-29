@@ -37,31 +37,31 @@
 
 /* padding */
 
-.trans-mr {
+.trans-pd {
     transition: var(--transition-duration) padding var(--transition-function);
 }
 
-.trans-mrx {
+.trans-pdx {
     transition: var(--transition-duration) padding-left var(--transition-function), var(--transition-duration) padding-right var(--transition-function);
 }
 
-.trans-mry {
+.trans-pdy {
     transition: var(--transition-duration) padding-top var(--transition-function), var(--transition-duration) padding-bottom var(--transition-function);
 }
 
-.trans-mrt {
+.trans-pdt {
     transition: var(--transition-duration) padding-top var(--transition-function);
 }
 
-.trans-mrr {
+.trans-pdr {
     transition: var(--transition-duration) padding-right var(--transition-function);
 }
 
-.trans-mrb {
+.trans-pdb {
     transition: var(--transition-duration) padding-bottom var(--transition-function);
 }
 
-.trans-mrl {
+.trans-pdl {
     transition: var(--transition-duration) padding-left var(--transition-function);
 }
 
@@ -83,6 +83,7 @@
 /* background */
 
 .trans-width,
+.trans-x,
 .trans-w {
     transition: var(--transition-duration) width var(--transition-function);
 }
@@ -91,12 +92,14 @@
 /*width and height*/
 
 .trans-height,
+.trans-y,
 .trans-h {
     transition: var(--transition-duration) height var(--transition-function);
 }
 
 .trans-width-height,
 .trans-size,
+.trans-xy,
 .trans-wh {
     transition: var(--transition-duration) width var(--transition-function), var(--transition-duration) height var(--transition-function);
 }
