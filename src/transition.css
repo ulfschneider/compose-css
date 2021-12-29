@@ -1,0 +1,102 @@
+:root {
+    --transition-duration: .14s;
+    --transition-function: ease;
+}
+
+
+/* margin */
+
+.trans-mr {
+    transition: var(--transition-duration) margin var(--transition-function);
+}
+
+.trans-mrx {
+    transition: var(--transition-duration) margin-left var(--transition-function), var(--transition-duration) margin-right var(--transition-function);
+}
+
+.trans-mry {
+    transition: var(--transition-duration) margin-top var(--transition-function), var(--transition-duration) margin-bottom var(--transition-function);
+}
+
+.trans-mrt {
+    transition: var(--transition-duration) margin-top var(--transition-function);
+}
+
+.trans-mrr {
+    transition: var(--transition-duration) margin-right var(--transition-function);
+}
+
+.trans-mrb {
+    transition: var(--transition-duration) margin-bottom var(--transition-function);
+}
+
+.trans-mrl {
+    transition: var(--transition-duration) margin-left var(--transition-function);
+}
+
+
+/* padding */
+
+.trans-mr {
+    transition: var(--transition-duration) padding var(--transition-function);
+}
+
+.trans-mrx {
+    transition: var(--transition-duration) padding-left var(--transition-function), var(--transition-duration) padding-right var(--transition-function);
+}
+
+.trans-mry {
+    transition: var(--transition-duration) padding-top var(--transition-function), var(--transition-duration) padding-bottom var(--transition-function);
+}
+
+.trans-mrt {
+    transition: var(--transition-duration) padding-top var(--transition-function);
+}
+
+.trans-mrr {
+    transition: var(--transition-duration) padding-right var(--transition-function);
+}
+
+.trans-mrb {
+    transition: var(--transition-duration) padding-bottom var(--transition-function);
+}
+
+.trans-mrl {
+    transition: var(--transition-duration) padding-left var(--transition-function);
+}
+
+
+/* color */
+
+.trans-color {
+    transition: var(--transition-duration) color var(--transition-function);
+}
+
+
+/* background */
+
+.trans-background-color {
+    transition: var(--transition-duration) background-color var(--transition-function);
+}
+
+
+/* background */
+
+.trans-width,
+.trans-w {
+    transition: var(--transition-duration) width var(--transition-function);
+}
+
+
+/*width and height*/
+
+.trans-height,
+.trans-h {
+    transition: var(--transition-duration) height var(--transition-function);
+}
+
+.trans-width-height,
+.trans-size,
+.trans-wh {
+    transition: var(--transition-duration) width var(--transition-function), var(--transition-duration) height var(--transition-function);
+}

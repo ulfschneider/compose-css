@@ -3,8 +3,8 @@
 @import "type-scale";
 @import "breakpoints";
 @import "type-scale-breakpoints";
-@import "colors";
-@import "borders";
+@import "color";
+@import "border";
 @import "margin";
 @import "margin-breakpoints";
 @import "padding";
@@ -24,7 +24,7 @@
 @import "height-min-breakpoints";
 @import "hide-breakpoints";
 @import "typography";
-@import "forms";
+@import "form";
 @import "flex-box";
 @import "flex-box-breakpoints";
 @import "list";
@@ -37,4 +37,5 @@
 @import "layout";
 @import "layout-breakpoints";
 @import "snap";
+@import "transition";
 @import "debug";
