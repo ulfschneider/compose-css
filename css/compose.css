@@ -18231,7 +18231,7 @@ Naming conventions
     --kbd-shadow: .07em .07em var(--border-color);
     --blockquote-border-width: 2px;
     --summary-expanded-prefix: "ᐯ";
-    --summary-collapsed-prefix: 'ᐳ';
+    --summary-collapsed-prefix: "ᐳ";
     font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--font-family);
     font-feature-settings: unset;
@@ -18929,7 +18929,7 @@ details>summary::-webkit-details-marker {
 }
 
 details>summary::before {
-    content: 'ᐳ';
+    content: "ᐳ";
     content: var(--summary-collapsed-prefix);
     padding-right: calc(1rem / 1.7);
     padding-right: var(--space-d1);
@@ -21117,8 +21117,6 @@ ul.indent li::before,
     }
     details>summary::before,
     ol li::before {
-        color: currentColor;
-        color: var(--li-prefix-color);
         background: white;
         background: var(--base-background);
         filter: invert(100%);
@@ -21149,8 +21147,6 @@ ul.indent li::before,
     }
     details>summary::before,
     ol li::before {
-        color: currentColor;
-        color: var(--li-prefix-color);
         background: white;
         background: var(--base-background);
         filter: invert(100%);

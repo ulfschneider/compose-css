@@ -217,7 +217,6 @@ ul.indent li::before,
     }
     details>summary::before,
     ol li::before {
-        color: var(--li-prefix-color);
         background: var(--base-background);
         filter: invert(100%);
         min-width: calc(var(--horizontal-rhythm) - var(--space-d2));

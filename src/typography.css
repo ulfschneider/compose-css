@@ -59,7 +59,7 @@
     --kbd-shadow: .07em .07em var(--border-color);
     --blockquote-border-width: 2px;
     --summary-expanded-prefix: "ᐯ";
-    --summary-collapsed-prefix: 'ᐳ';
+    --summary-collapsed-prefix: "ᐳ";
     font-family: var(--font-family);
     font-feature-settings: var(--font-feature-settings);
     font-weight: var(--font-weight-normal);
