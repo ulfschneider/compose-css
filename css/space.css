@@ -1,6 +1,6 @@
 :root {
     --space: 1rem;
-    --space-factor: 1.5;
+    --space-factor: 1.6;
     --space-1: calc(var(--space-factor) * var(--space));
     --space-2: calc(var(--space-1) * var(--space-factor));
     --space-3: calc(var(--space-2) * var(--space-factor));

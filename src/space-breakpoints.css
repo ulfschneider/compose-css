@@ -1,8 +1,8 @@
 :root {
     --space-factor-sm-breakpoint: 1.6;
-    --space-factor-rg-breakpoint: 1.7;
-    --space-factor-md-breakpoint: 1.7;
-    --space-factor-breakpoint: 1.7;
+    --space-factor-rg-breakpoint: 1.75;
+    --space-factor-md-breakpoint: 1.75;
+    --space-factor-breakpoint: 1.75;
 }
 
 @media (--mi-sm-breakpoint) {
