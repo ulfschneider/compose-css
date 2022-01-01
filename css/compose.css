@@ -1558,6 +1558,8 @@ small,
     --heading-color: var(--base-color);
     --meta-color: var(--neutral-d1);
     --li-prefix-color: currentColor;
+    --li-high-prefix-color: var(--base-background);
+    --li-high-prefix-background: var(--base-color);
     --heading-outline-color: var(--li-prefix-color);
     --form-label-color: var(--meta-color);
     --form-field-color: var(--base-color);
@@ -21117,9 +21119,10 @@ ul.indent li::before,
     }
     details>summary::before,
     ol li::before {
-        background: white;
-        background: var(--base-background);
-        filter: invert(100%);
+        background: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
+        background: var(--li-high-prefix-background);
+        color: white;
+        color: var(--li-high-prefix-color);
         min-width: calc(calc(1.7 * 1rem) - calc(calc(1rem / 1.7) / 1.7));
         min-width: calc(var(--horizontal-rhythm) - var(--space-d2));
         margin-right: calc(calc(1rem / 1.7) / 1.7);
@@ -21147,9 +21150,10 @@ ul.indent li::before,
     }
     details>summary::before,
     ol li::before {
-        background: white;
-        background: var(--base-background);
-        filter: invert(100%);
+        background: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
+        background: var(--li-high-prefix-background);
+        color: white;
+        color: var(--li-high-prefix-color);
         min-width: calc(calc(1.7 * 1rem) - calc(calc(1rem / 1.7) / 1.7));
         min-width: calc(var(--horizontal-rhythm) - var(--space-d2));
         margin-right: calc(calc(1rem / 1.7) / 1.7);

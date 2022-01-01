@@ -128,6 +128,8 @@
     --heading-color: var(--base-color);
     --meta-color: var(--neutral-d1);
     --li-prefix-color: currentColor;
+    --li-high-prefix-color: var(--base-background);
+    --li-high-prefix-background: var(--base-color);
     --heading-outline-color: var(--li-prefix-color);
     --form-label-color: var(--meta-color);
     --form-field-color: var(--base-color);
