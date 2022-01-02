@@ -1,6 +1,6 @@
 :root {
     --size-factor: 1.25;
-    --base-font-size: 19px;
+    --base-font-size: 18px;
     --fs: 1rem;
     --fs-mono: .9rem;
     --fs-d1: .9rem;
@@ -38,7 +38,7 @@
     --lh-h3: var(--lh-1);
     --lh-h2: var(--lh-1);
     --lh-h1: var(--lh-1);
-    font-size: 19px;
+    font-size: 18px;
     font-size: var(--base-font-size);
     line-height: calc(var(--space-factor) * 1);
     line-height: var(--lh-3);

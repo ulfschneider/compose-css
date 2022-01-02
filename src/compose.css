@@ -1,8 +1,7 @@
 @import "reset";
-@import "space";
-@import "space-breakpoints";
-@import "type-scale";
 @import "breakpoints";
+@import "space";
+@import "type-scale";
 @import "type-scale-breakpoints";
 @import "color";
 @import "border";

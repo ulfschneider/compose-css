@@ -202,7 +202,7 @@ em,
 cite,
 .cite {
     font-weight: bold;
-    font-style: normal;
+    font-style: inherit;
 }
 
 .normal {
