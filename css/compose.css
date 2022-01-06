@@ -21119,6 +21119,7 @@ ul.indent li::before,
     }
     details>summary::before,
     ol li::before {
+        font-weight: inherit;
         background: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
         background: var(--li-high-prefix-background);
         color: white;
@@ -21150,6 +21151,7 @@ ul.indent li::before,
     }
     details>summary::before,
     ol li::before {
+        font-weight: inherit;
         background: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
         background: var(--li-high-prefix-background);
         color: white;
