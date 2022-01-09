@@ -19,6 +19,7 @@
     --mono-font-feature-settings: var(--font-feature-settings);
     --code-font-family: var(--mono-font-family);
     --blockquote-font-style: italic;
+    --quote-font-style: italic;
     --text-decoration: solid underline inherit;
     --text-decoration-thickness: .05em;
     --link-text-decoration: var(--text-decoration);
@@ -538,9 +539,9 @@ blockquote p+p {
 
 q,
 .q,
-.quote,
-blockquote {
+.quote {
     quotes: var(--quotes);
+    font-style: var(--quote-font-style);
 }
 
 html[lang="de-DE"] q,
