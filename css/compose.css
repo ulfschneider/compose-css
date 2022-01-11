@@ -18787,7 +18787,8 @@ a {
     text-decoration: var(--link-text-decoration);
     text-decoration-thickness: .05em;
     text-decoration-thickness: var(--link-text-decoration-thickness);
-    transition: color .1s ease-out;
+    transition: color .14s ease-out;
+    transition: color var(--transition-duration) ease-out;
 }
 
 a:not(table a) {
@@ -21659,6 +21660,8 @@ table caption {
     font-family: var(--figcaption-font-family);
     font-size: 1rem;
     font-size: var(--fs);
+    line-height: calc(1.66 * 1);
+    line-height: var(--lh-default);
 }
 
 th,

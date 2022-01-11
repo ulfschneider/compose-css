@@ -578,7 +578,7 @@ a {
     text-decoration: var(--link-text-decoration);
     text-decoration-thickness: .05em;
     text-decoration-thickness: var(--link-text-decoration-thickness);
-    transition: color .1s ease-out;
+    transition: color var(--transition-duration) ease-out;
 }
 
 a:not(table a) {

@@ -75,6 +75,7 @@ table caption {
     max-width: min(calc(100vw - 2 * var(--space)), var(--rg-width));
     font-family: var(--figcaption-font-family);
     font-size: var(--fs);
+    line-height: var(--lh-default);
 }
 
 th,
