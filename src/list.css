@@ -216,7 +216,7 @@ ul.indent li::before,
     }
     details>summary::before,
     ol li::before {
-        font-weight: inherit;
+        font-weight: normal;
         background: var(--li-high-prefix-background);
         color: var(--li-high-prefix-color);
         min-width: calc(var(--horizontal-rhythm) - var(--space-d2));
