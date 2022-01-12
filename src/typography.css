@@ -634,6 +634,12 @@ details>summary {
     cursor: pointer;
 }
 
+@media (hover: hover) {
+    details>summary:hover {
+        color: var(--link-hover-color);
+    }
+}
+
 details>summary>* {
     display: inline;
 }

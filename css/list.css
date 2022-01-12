@@ -111,9 +111,9 @@ ol li::before {
     content: counters(ol-counter, "-", decimal);
     content: var(--ol-counter);
     min-width: var(--horizontal-rhythm);
-    padding-right: var(--space-d1);
+    padding-right: var(--space-d2);
     margin-left: calc(var(--horizontal-rhythm) * -1);
-    display: inline-grid;
+    display: inline-flex;
     justify-content: start;
     align-items: baseline;
     font-family: var(--meta-font-family);
@@ -127,9 +127,9 @@ ul li::before {
     content: "●";
     content: var(--list-item-type);
     margin-left: calc(var(--horizontal-rhythm) * -1);
-    padding-right: var(--space-d1);
+    padding-right: var(--space-d2);
     min-width: var(--horizontal-rhythm);
-    display: inline-grid;
+    display: inline-flex;
     justify-content: start;
     align-items: center;
     font-size: smaller;
@@ -241,8 +241,8 @@ ul.indent li::before,
         color: var(--li-high-prefix-color);
         min-width: calc(var(--horizontal-rhythm) - var(--space-d2));
         margin-right: var(--space-d2);
+        padding: 0;
         justify-content: center;
-        padding: 0 var(--space-d4) 0 var(--space-d4);
     }
 }
 
@@ -267,8 +267,8 @@ ul.indent li::before,
         color: var(--li-high-prefix-color);
         min-width: calc(var(--horizontal-rhythm) - var(--space-d2));
         margin-right: var(--space-d2);
+        padding: 0;
         justify-content: center;
-        padding: 0 var(--space-d4) 0 var(--space-d4);
     }
 }
 

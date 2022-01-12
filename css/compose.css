@@ -18923,6 +18923,13 @@ details>summary {
     cursor: pointer;
 }
 
+@media (hover: hover) {
+    details>summary:hover {
+        color: hsl(198, 100%, 33.3%);
+        color: var(--link-hover-color);
+    }
+}
+
 details>summary>* {
     display: inline;
 }
@@ -20983,11 +20990,11 @@ ol li::before {
     content: var(--ol-counter);
     min-width: calc(1.66 * 1rem);
     min-width: var(--horizontal-rhythm);
-    padding-right: calc(1rem / 1.66);
-    padding-right: var(--space-d1);
+    padding-right: calc(calc(1rem / 1.66) / 1.66);
+    padding-right: var(--space-d2);
     margin-left: calc(calc(1.66 * 1rem) * -1);
     margin-left: calc(var(--horizontal-rhythm) * -1);
-    display: inline-grid;
+    display: inline-flex;
     justify-content: start;
     align-items: baseline;
     font-family: system-ui, ui-sans-serif, sans-serif;
@@ -21004,11 +21011,11 @@ ul li::before {
     content: var(--list-item-type);
     margin-left: calc(calc(1.66 * 1rem) * -1);
     margin-left: calc(var(--horizontal-rhythm) * -1);
-    padding-right: calc(1rem / 1.66);
-    padding-right: var(--space-d1);
+    padding-right: calc(calc(1rem / 1.66) / 1.66);
+    padding-right: var(--space-d2);
     min-width: calc(1.66 * 1rem);
     min-width: var(--horizontal-rhythm);
-    display: inline-grid;
+    display: inline-flex;
     justify-content: start;
     align-items: center;
     font-size: smaller;
@@ -21130,9 +21137,8 @@ ul.indent li::before,
         min-width: calc(var(--horizontal-rhythm) - var(--space-d2));
         margin-right: calc(calc(1rem / 1.66) / 1.66);
         margin-right: var(--space-d2);
+        padding: 0;
         justify-content: center;
-        padding: 0 2px 0 2px;
-        padding: 0 var(--space-d4) 0 var(--space-d4);
     }
 }
 
@@ -21162,9 +21168,8 @@ ul.indent li::before,
         min-width: calc(var(--horizontal-rhythm) - var(--space-d2));
         margin-right: calc(calc(1rem / 1.66) / 1.66);
         margin-right: var(--space-d2);
+        padding: 0;
         justify-content: center;
-        padding: 0 2px 0 2px;
-        padding: 0 var(--space-d4) 0 var(--space-d4);
     }
 }
 
