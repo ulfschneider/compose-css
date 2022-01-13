@@ -103,7 +103,6 @@ ol li::before {
     justify-content: start;
     align-items: baseline;
     font-family: var(--meta-font-family);
-    font-size: smaller;
     font-weight: bold;
     color: var(--li-prefix-color);
     font-variant-numeric: tabular-nums;
@@ -117,7 +116,6 @@ ul li::before {
     display: inline-flex;
     justify-content: start;
     align-items: center;
-    font-size: smaller;
     color: var(--li-prefix-color);
 }
 
@@ -213,16 +211,6 @@ ul.indent li::before,
     ol li::before,
     dl:not(dl.timeline) dd {
         margin-left: 0;
-    }
-    details>summary::before,
-    ol li::before {
-        font-weight: normal;
-        background: var(--li-high-prefix-background);
-        color: var(--li-high-prefix-color);
-        min-width: calc(var(--horizontal-rhythm) - var(--space-d2));
-        margin-right: var(--space-d2);
-        padding: 0;
-        justify-content: center;
     }
 }
 
