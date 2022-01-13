@@ -21003,6 +21003,7 @@ ol li::before {
     color: currentColor;
     color: var(--li-prefix-color);
     font-variant-numeric: tabular-nums;
+    font-size: smaller;
 }
 
 ul li::before {
@@ -21019,6 +21020,7 @@ ul li::before {
     align-items: center;
     color: currentColor;
     color: var(--li-prefix-color);
+    font-size: smaller;
 }
 
 *.outline {

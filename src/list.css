@@ -106,6 +106,7 @@ ol li::before {
     font-weight: bold;
     color: var(--li-prefix-color);
     font-variant-numeric: tabular-nums;
+    font-size: smaller;
 }
 
 ul li::before {
@@ -117,6 +118,7 @@ ul li::before {
     justify-content: start;
     align-items: center;
     color: var(--li-prefix-color);
+    font-size: smaller;
 }
 
 *.outline {
