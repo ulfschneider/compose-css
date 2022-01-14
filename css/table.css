@@ -84,6 +84,12 @@ table caption {
     line-height: var(--lh-default);
 }
 
+table caption p+p,
+table th p+p,
+table td p+p {
+    text-indent: 0;
+}
+
 th,
 td {
     padding: var(--space-d1) var(--space) var(--space-d1) 0;
