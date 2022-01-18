@@ -111,7 +111,7 @@ ol li::before {
     content: counters(ol-counter, "-", decimal);
     content: var(--ol-counter);
     min-width: var(--horizontal-rhythm);
-    padding-right: var(--space-d2);
+    padding-right: var(--space-d1);
     margin-left: calc(var(--horizontal-rhythm) * -1);
     display: inline-flex;
     justify-content: start;
@@ -127,7 +127,7 @@ ul li::before {
     content: "●";
     content: var(--list-item-type);
     margin-left: calc(var(--horizontal-rhythm) * -1);
-    padding-right: var(--space-d2);
+    padding-right: var(--space-d1);
     min-width: var(--horizontal-rhythm);
     display: inline-flex;
     justify-content: start;

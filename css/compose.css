@@ -20990,8 +20990,8 @@ ol li::before {
     content: var(--ol-counter);
     min-width: calc(1.66 * 1rem);
     min-width: var(--horizontal-rhythm);
-    padding-right: calc(calc(1rem / 1.66) / 1.66);
-    padding-right: var(--space-d2);
+    padding-right: calc(1rem / 1.66);
+    padding-right: var(--space-d1);
     margin-left: calc(calc(1.66 * 1rem) * -1);
     margin-left: calc(var(--horizontal-rhythm) * -1);
     display: inline-flex;
@@ -21011,8 +21011,8 @@ ul li::before {
     content: var(--list-item-type);
     margin-left: calc(calc(1.66 * 1rem) * -1);
     margin-left: calc(var(--horizontal-rhythm) * -1);
-    padding-right: calc(calc(1rem / 1.66) / 1.66);
-    padding-right: var(--space-d2);
+    padding-right: calc(1rem / 1.66);
+    padding-right: var(--space-d1);
     min-width: calc(1.66 * 1rem);
     min-width: var(--horizontal-rhythm);
     display: inline-flex;

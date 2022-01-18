@@ -97,7 +97,7 @@ ol>li {
 ol li::before {
     content: var(--ol-counter);
     min-width: var(--horizontal-rhythm);
-    padding-right: var(--space-d2);
+    padding-right: var(--space-d1);
     margin-left: calc(var(--horizontal-rhythm) * -1);
     display: inline-flex;
     justify-content: start;
@@ -112,7 +112,7 @@ ol li::before {
 ul li::before {
     content: var(--list-item-type);
     margin-left: calc(var(--horizontal-rhythm) * -1);
-    padding-right: var(--space-d2);
+    padding-right: var(--space-d1);
     min-width: var(--horizontal-rhythm);
     display: inline-flex;
     justify-content: start;
