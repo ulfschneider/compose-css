@@ -654,7 +654,7 @@ details>summary::before {
     content: var(--summary-collapsed-prefix);
     padding-right: var(--space-d1);
     min-width: var(--horizontal-rhythm);
-    display: inline-grid;
+    display: inline-flex;
     justify-content: start;
     align-items: center;
     color: var(--li-prefix-color);

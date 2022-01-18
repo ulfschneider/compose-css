@@ -18947,7 +18947,7 @@ details>summary::before {
     padding-right: var(--space-d1);
     min-width: calc(1.66 * 1rem);
     min-width: var(--horizontal-rhythm);
-    display: inline-grid;
+    display: inline-flex;
     justify-content: start;
     align-items: center;
     color: currentColor;
