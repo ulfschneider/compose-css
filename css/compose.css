@@ -20909,6 +20909,10 @@ dd {
     margin-left: var(--horizontal-rhythm);
 }
 
+table dd {
+    margin-left: 0;
+}
+
 dd+dt {
     margin-top: 1rem;
     margin-top: var(--mrt-list);
