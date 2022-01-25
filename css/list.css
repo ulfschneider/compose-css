@@ -79,6 +79,8 @@ dl.timeline>dt::before {
     border: var(--timeline-blub-border-width) solid var(--timeline-blub-color);
 }
 
+dl.timeline.framed>dt.figure,
+dl.timeline.framed>dd.figure,
 dl.timeline>dt>figure.framed,
 dl.timeline>dd>figure.framed {
     margin-left: var(--horizontal-rhythm);
@@ -88,6 +90,7 @@ dl.timeline>dd>figure.framed {
     padding: var(--timeline-figure-padding);
 }
 
+dl.timeline.framed>dt>figure::before,
 dl.timeline>dt>figure.framed::before {
     content: "";
     width: calc(var(--horizontal-rhythm) + calc(var(--horizontal-rhythm) - calc(1rem / 2 + 2px) - 1px) + 2 * 1px - 1rem / 2);
@@ -101,6 +104,7 @@ dl.timeline>dt>figure.framed::before {
     margin-left: calc(-1 * (var(--timeline-right-gap) + var(--horizontal-rhythm) + 2 * var(--timeline-width) + var(--timeline-figure-padding)) + var(--timeline-blub-size) / 2);
 }
 
+dl.timeline.framed>dd>figure::before,
 dl.timeline>dd>figure.framed::before {
     content: "";
     width: calc(var(--horizontal-rhythm) + calc(var(--horizontal-rhythm) - calc(1rem / 2 + 2px) - 1px) + 2 * 1px);
