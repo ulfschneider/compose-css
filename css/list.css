@@ -79,8 +79,8 @@ dl.timeline>dt::before {
     border: var(--timeline-blub-border-width) solid var(--timeline-blub-color);
 }
 
-dl.timeline.framed>dt.figure,
-dl.timeline.framed>dd.figure,
+dl.timeline.framed>dt>figure,
+dl.timeline.framed>dd>figure,
 dl.timeline>dt>figure.framed,
 dl.timeline>dd>figure.framed {
     margin-left: var(--horizontal-rhythm);
