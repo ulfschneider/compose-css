@@ -18854,18 +18854,6 @@ blockquote>header {
     max-width: var(--rg-width);
 }
 
-figcaption {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    margin-bottom: var(--mrb-figcaption);
-}
-
-*+figcaption {
-    margin-top: 1rem;
-    margin-top: var(--mrt-figcaption);
-    margin-bottom: 0;
-}
-
 blockquote>footer::before {
     content: "—";
 }
