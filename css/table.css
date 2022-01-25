@@ -95,9 +95,7 @@ td {
 }
 
 *+th,
-table table th,
-*+td,
-table table td {
+*+td {
     padding-left: var(--space);
     padding-left: var(--td-x-padding);
 }

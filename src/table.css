@@ -88,9 +88,7 @@ td {
 }
 
 *+th,
-table table th,
-*+td,
-table table td {
+*+td {
     padding-left: var(--td-x-padding);
 }
 

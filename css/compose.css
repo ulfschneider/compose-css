@@ -20889,9 +20889,14 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     --h4-counter: counter(h2-counter) var(--h-counter-delimiter) counter(h3-counter) var(--h-counter-delimiter) counter(h4-counter);
     --h5-counter: counter(h2-counter) var(--h-counter-delimiter) counter(h3-counter) var(--h-counter-delimiter) counter(h4-counter) var(--h-counter-delimiter) counter(h5-counter);
     --h6-counter: counter(h2-counter) var(--h-counter-delimiter) counter(h3-counter) var(--h-counter-delimiter) counter(h4-counter) var(--h-counter-delimiter) counter(h5-counter) var(--h-counter-delimiter) counter(h6-counter);
-    --timeline-blub-size: 1em;
+    --timeline-blub-size: 1rem;
     --timeline-width: 1px;
     --timeline-blub-border-width: 1px;
+    --timeline-left-gap: calc(var(--timeline-blub-size) / 2 + 2px);
+    --timeline-right-gap: calc(var(--horizontal-rhythm) - var(--timeline-left-gap) - var(--timeline-width));
+    --timeline-left-blub-pos: calc(-1 * (var(--timeline-right-gap) + .5 * (var(--timeline-blub-size) + var(--timeline-width))));
+    --timeline-top-blub-pos: calc(1em * var(--lh-default) / 2 - var(--timeline-blub-size) / 2);
+    --timeline-figure-padding: var(--space);
 }
 
 dl {
@@ -20921,34 +20926,70 @@ dd+dt {
 dl.timeline {
     border-left: 1px solid currentColor;
     border-left: var(--timeline-width) solid var(--timeline-color);
-    margin-left: calc(1em / 2 + 2px);
-    margin-left: calc(var(--timeline-blub-size) / 2 + 2px);
+    margin-left: calc(1rem / 2 + 2px);
+    margin-left: var(--timeline-left-gap);
 }
 
 dl.timeline>dt,
 dl.timeline>dd {
     margin-left: 0;
-    padding-left: calc(calc(1.66 * 1rem) - 1em / 2 - 2px);
-    padding-left: calc(var(--horizontal-rhythm) - var(--timeline-blub-size) / 2 - 2px);
+    padding-left: calc(calc(1.66 * 1rem) - calc(1rem / 2 + 2px) - 1px);
+    padding-left: var(--timeline-right-gap);
 }
 
 dl.timeline>dt::before {
     border-radius: 50%;
     content: "";
-    width: 1em;
+    width: 1rem;
     width: var(--timeline-blub-size);
-    height: 1em;
+    height: 1rem;
     height: var(--timeline-blub-size);
     display: block;
     position: absolute;
-    margin-left: calc(-0.5 * (1em + 1px) - calc(1.66 * 1rem) + 1em / 2 + 2px);
-    margin-left: calc(-0.5 * (var(--timeline-blub-size) + var(--timeline-width)) - var(--horizontal-rhythm) + var(--timeline-blub-size) / 2 + 2px);
-    margin-top: calc(0.5em * calc(1.66 * 1) - 0.5 * 1em - 1px);
-    margin-top: calc(0.5em * var(--lh-default) - 0.5 * var(--timeline-blub-size) - var(--timeline-width));
+    margin-left: calc(-1 * (calc(calc(1.66 * 1rem) - calc(1rem / 2 + 2px) - 1px) + .5 * (1rem + 1px)));
+    margin-left: var(--timeline-left-blub-pos);
+    margin-top: calc(1em * calc(1.66 * 1) / 2 - 1rem / 2);
+    margin-top: var(--timeline-top-blub-pos);
     background-color: white;
     background-color: var(--timeline-blub-background);
     border: 1px solid currentColor;
     border: var(--timeline-blub-border-width) solid var(--timeline-blub-color);
+}
+
+dl.timeline>dt>figure.framed,
+dl.timeline>dd>figure.framed {
+    margin-left: calc(1.66 * 1rem);
+    margin-left: var(--horizontal-rhythm);
+    border: 1px solid currentColor;
+    border: var(--timeline-width) solid var(--timeline-color);
+    padding: 1rem;
+    padding: var(--timeline-figure-padding);
+}
+
+dl.timeline>dt>figure.framed::before {
+    content: "";
+    width: calc(calc(1.66 * 1rem) + calc(calc(1.66 * 1rem) - calc(1rem / 2 + 2px) - 1px) + 2 * 1px - 1rem / 2);
+    width: calc(var(--horizontal-rhythm) + var(--timeline-right-gap) + 2 * var(--timeline-width) - var(--timeline-blub-size) / 2);
+    border-top: 1px solid currentColor;
+    border-top: var(--timeline-width) solid var(--timeline-color);
+    position: absolute;
+    margin-top: calc(calc(1em * calc(1.66 * 1) / 2 - 1rem / 2) + 1rem / 2 - 1rem);
+    margin-top: calc(var(--timeline-top-blub-pos) + var(--timeline-blub-size) / 2 - var(--timeline-figure-padding));
+    margin-left: calc(-1 * (calc(calc(1.66 * 1rem) - calc(1rem / 2 + 2px) - 1px) + calc(1.66 * 1rem) + 2 * 1px + 1rem) + 1rem / 2);
+    margin-left: calc(-1 * (var(--timeline-right-gap) + var(--horizontal-rhythm) + 2 * var(--timeline-width) + var(--timeline-figure-padding)) + var(--timeline-blub-size) / 2);
+}
+
+dl.timeline>dd>figure.framed::before {
+    content: "";
+    width: calc(calc(1.66 * 1rem) + calc(calc(1.66 * 1rem) - calc(1rem / 2 + 2px) - 1px) + 2 * 1px);
+    width: calc(var(--horizontal-rhythm) + var(--timeline-right-gap) + 2 * var(--timeline-width));
+    border-top: 1px solid currentColor;
+    border-top: var(--timeline-width) solid var(--timeline-color);
+    position: absolute;
+    margin-top: calc(calc(1em * calc(1.66 * 1) / 2 - 1rem / 2) + 1rem / 2 - 1rem);
+    margin-top: calc(var(--timeline-top-blub-pos) + var(--timeline-blub-size) / 2 - var(--timeline-figure-padding));
+    margin-left: calc(-1 * (calc(calc(1.66 * 1rem) - calc(1rem / 2 + 2px) - 1px) + calc(1.66 * 1rem) + 2 * 1px + 1rem));
+    margin-left: calc(-1 * (var(--timeline-right-gap) + var(--horizontal-rhythm) + 2 * var(--timeline-width) + var(--timeline-figure-padding)));
 }
 
 ol,
@@ -21656,9 +21697,7 @@ td {
 }
 
 *+th,
-table table th,
-*+td,
-table table td {
+*+td {
     padding-left: 1rem;
     padding-left: var(--td-x-padding);
 }
