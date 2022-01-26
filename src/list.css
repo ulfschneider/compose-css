@@ -256,6 +256,16 @@ ul.indent li::before {
 }
 
 @media (--mx-sm-breakpoint) {
+    ul,
+    ol {
+        padding-left: 0;
+    }
+    li ul,
+    li ol {
+        padding-left: var(--horizontal-rhythm);
+    }
+    ul li::before,
+    ol li::before,
     dl:not(dl.timeline) dd {
         margin-left: 0;
     }
