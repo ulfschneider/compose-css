@@ -21046,7 +21046,7 @@ ol>li {
     counter-increment: ol-counter;
 }
 
-ol li::before {
+ol>li::before {
     content: counters(ol-counter, ".", decimal);
     content: var(--ol-counter);
     min-width: calc(1.66 * 1rem);
@@ -21056,7 +21056,7 @@ ol li::before {
     margin-left: calc(calc(1.66 * 1rem) * -1);
     margin-left: calc(var(--horizontal-rhythm) * -1);
     display: inline-flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: baseline;
     font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--meta-font-family);
@@ -21065,7 +21065,7 @@ ol li::before {
     font-variant-numeric: lining-nums;
 }
 
-ul li::before {
+ul>li::before {
     content: "●";
     content: var(--list-item-type);
     margin-left: calc(calc(1.66 * 1rem) * -1);
@@ -21075,7 +21075,7 @@ ul li::before {
     min-width: calc(1.66 * 1rem);
     min-width: var(--horizontal-rhythm);
     display: inline-flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     color: currentColor;
     color: var(--li-prefix-color);
@@ -21179,7 +21179,7 @@ ul.indent li::before {
     }
 }
 
-ul.no-list-type li::before {
+ul.no-list-type>li::before {
     content: unset;
 }
 
@@ -21190,10 +21190,10 @@ ol.clear {
     padding-left: 0;
 }
 
-ul.reset li::before,
-ul.clear li::before,
-ol.reset li::before,
-ol.clear li::before {
+ul.reset>li::before,
+ul.clear>li::before,
+ol.reset>li::before,
+ol.clear>li::before {
     content: unset;
     min-width: 0;
     padding: 0;
