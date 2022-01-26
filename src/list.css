@@ -3,7 +3,7 @@
     --mrb-list: var(--vertical-rhythm);
     --list-item-type: "●";
     /*▁⁕●■ → */
-    --ol-counter-delimiter: "-";
+    --ol-counter-delimiter: ".";
     --ol-counter-type: decimal;
     --h-counter-type: decimal;
     --h-counter-delimiter: ".";
@@ -21,7 +21,10 @@
     --timeline-right-gap: calc(var(--horizontal-rhythm) - var(--timeline-left-gap) - var(--timeline-width));
     --timeline-left-blub-pos: calc(-1 * (var(--timeline-right-gap) + .5 * (var(--timeline-blub-size) + var(--timeline-width))));
     --timeline-top-blub-pos: calc(1em * var(--lh-default) / 2 - var(--timeline-blub-size) / 2);
-    --timeline-figure-padding: var(--space);
+    --timeline-framed-figure-indent: var(--horizontal-rhythm);
+    --timeline-framed-figure-padding: var(--space);
+    --timeline-framed-right-gap: calc(var(--timeline-framed-figure-indent) + var(--horizontal-rhythm) - var(--timeline-left-gap) - var(--timeline-width));
+    --timeline-framed-left-blub-pos: calc(-1 * (var(--timeline-framed-figure-indent) + var(--timeline-right-gap) + .5 * (var(--timeline-blub-size) + var(--timeline-width))));
 }
 
 dl {
@@ -44,6 +47,10 @@ dd+dt {
     margin-top: var(--mrt-list);
 }
 
+dl.timeline.framed dd+dt {
+    margin-top: var(--mrt-figure);
+}
+
 dl.timeline {
     border-left: var(--timeline-width) solid var(--timeline-color);
     margin-left: var(--timeline-left-gap);
@@ -53,6 +60,11 @@ dl.timeline>dt,
 dl.timeline>dd {
     margin-left: 0;
     padding-left: var(--timeline-right-gap);
+}
+
+dl.timeline.framed>dt,
+dl.timeline.framed>dd {
+    padding-left: var(--timeline-framed-right-gap);
 }
 
 dl.timeline>dt::before {
@@ -68,33 +80,42 @@ dl.timeline>dt::before {
     border: var(--timeline-blub-border-width) solid var(--timeline-blub-color);
 }
 
+dl.timeline.framed>dt::before {
+    margin-left: var(--timeline-framed-left-blub-pos);
+}
+
 dl.timeline.framed>dt>figure,
 dl.timeline.framed>dd>figure,
 dl.timeline>dt>figure.framed,
 dl.timeline>dd>figure.framed {
-    margin-left: var(--horizontal-rhythm);
+    margin-left: 0;
     border: var(--timeline-width) solid var(--timeline-color);
-    padding: var(--timeline-figure-padding);
+    padding: var(--timeline-framed-figure-padding);
+}
+
+dl.timeline:not(dl.timeline.framed)>dt>figure.framed,
+dl.timeline:not(dl.timeline.framed)>dd>figure.framed {
+    margin-left: var(--timeline-framed-figure-indent);
 }
 
 dl.timeline.framed>dt>figure::before,
 dl.timeline>dt>figure.framed::before {
     content: "";
-    width: calc(var(--horizontal-rhythm) + var(--timeline-right-gap) + 2 * var(--timeline-width) - var(--timeline-blub-size) / 2);
+    width: calc(var(--timeline-framed-figure-indent) + var(--timeline-right-gap) + var(--timeline-width) - var(--timeline-blub-size) / 2);
     border-top: var(--timeline-width) solid var(--timeline-color);
     position: absolute;
-    margin-top: calc(var(--timeline-top-blub-pos) + var(--timeline-blub-size) / 2 - var(--timeline-figure-padding));
-    margin-left: calc(-1 * (var(--timeline-right-gap) + var(--horizontal-rhythm) + 2 * var(--timeline-width) + var(--timeline-figure-padding)) + var(--timeline-blub-size) / 2);
+    margin-top: calc(var(--timeline-top-blub-pos) + var(--timeline-blub-size) / 2 - var(--timeline-framed-figure-padding));
+    margin-left: calc(-1 * (var(--timeline-right-gap) + var(--timeline-framed-figure-indent) + var(--timeline-width) + var(--timeline-framed-figure-padding)) + var(--timeline-blub-size) / 2);
 }
 
 dl.timeline.framed>dd>figure::before,
 dl.timeline>dd>figure.framed::before {
     content: "";
-    width: calc(var(--horizontal-rhythm) + var(--timeline-right-gap) + 2 * var(--timeline-width));
+    width: calc(var(--timeline-framed-figure-indent) + var(--timeline-right-gap) + var(--timeline-width));
     border-top: var(--timeline-width) solid var(--timeline-color);
     position: absolute;
-    margin-top: calc(var(--timeline-top-blub-pos) + var(--timeline-blub-size) / 2 - var(--timeline-figure-padding));
-    margin-left: calc(-1 * (var(--timeline-right-gap) + var(--horizontal-rhythm) + 2 * var(--timeline-width) + var(--timeline-figure-padding)));
+    margin-top: calc(var(--timeline-top-blub-pos) + var(--timeline-blub-size) / 2 - var(--timeline-framed-figure-padding));
+    margin-left: calc(-1 * (var(--timeline-right-gap) + var(--timeline-framed-figure-indent) + var(--timeline-width) + var(--timeline-framed-figure-padding)));
 }
 
 ol,
@@ -138,13 +159,11 @@ ol li::before {
     padding-right: var(--space-d1);
     margin-left: calc(var(--horizontal-rhythm) * -1);
     display: inline-flex;
-    justify-content: start;
+    justify-content: flex-end;
     align-items: baseline;
     font-family: var(--meta-font-family);
-    font-weight: bold;
     color: var(--li-prefix-color);
-    font-variant-numeric: tabular-nums;
-    font-size: smaller;
+    font-variant-numeric: lining-nums;
 }
 
 ul li::before {
@@ -153,7 +172,7 @@ ul li::before {
     padding-right: var(--space-d1);
     min-width: var(--horizontal-rhythm);
     display: inline-flex;
-    justify-content: start;
+    justify-content: flex-end;
     align-items: center;
     color: var(--li-prefix-color);
     font-size: smaller;
@@ -170,9 +189,8 @@ ul li::before {
 .outline h6::before {
     display: inline-block;
     color: var(--heading-outline-color);
-    font-weight: normal;
-    min-width: var(--horizontal-rhythm);
     padding-right: var(--space-d1);
+    font-variant-numeric: lining-nums;
 }
 
 .outline h2::before {
@@ -232,23 +250,12 @@ ol.indent ul {
 }
 
 ol.indent li::before,
-ul.indent li::before,
-[class^="columns"] ol li::before,
-[class^="columns"] ul li::before {
+ul.indent li::before {
     margin-left: 0;
+    justify-content: flex-start;
 }
 
 @media (--mx-sm-breakpoint) {
-    ul,
-    ol {
-        padding-left: 0;
-    }
-    li ul,
-    li ol {
-        padding-left: var(--horizontal-rhythm);
-    }
-    ul li::before,
-    ol li::before,
     dl:not(dl.timeline) dd {
         margin-left: 0;
     }

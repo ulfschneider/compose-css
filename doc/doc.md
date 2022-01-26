@@ -734,13 +734,36 @@ transformed in his bed into a horrible vermin.</dd>
 <dd>and if he lifted his head a little he could see his brown belly,
 slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover
 it and seemed ready to slide off any moment.</dd>
+<dt><figure class="framed">
+<img src="images/swan-leroi-unsplash.jpg">
+</figure></dt>
+<dt>His many legs</dt>
+<dd>pitifully thin compared with the size of the rest of him, waved about helplessly
+as he looked. <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.
+<figure class="framed">
+<img src="images/swan-leroi-unsplash.jpg">
+</figure>
+</dd>
+<dt>His room</dt>
+<dd>a proper human room although a little too small, lay peacefully between its four
+familiar walls.</dd>
+</dl>
+
+<dl class="timeline framed">
+<dt>One morning</dt>
+<dd>when Gregor Samsa woke from troubled dreams, he found himself 
+transformed in his bed into a horrible vermin.</dd>
+<dt>He lay on his armour-like back</dt>
+<dd>and if he lifted his head a little he could see his brown belly,
+slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover
+it and seemed ready to slide off any moment.</dd>
 <dt><figure>
 <img src="images/swan-leroi-unsplash.jpg">
 </figure></dt>
 <dt>His many legs</dt>
 <dd>pitifully thin compared with the size of the rest of him, waved about helplessly
 as he looked. <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.
-<figure>
+<figure class="framed">
 <img src="images/swan-leroi-unsplash.jpg">
 </figure>
 </dd>
@@ -750,7 +773,7 @@ familiar walls.</dd>
 </dl>
 
 ```html
-<dl class="timeline">
+<dl class="timeline framed">
     <dt>One morning</dt>
     <dd>when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</dd>
     <dt>He lay on his armour-like back</dt>
