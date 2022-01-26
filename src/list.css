@@ -19,12 +19,12 @@
     --timeline-blub-border-width: 1px;
     --timeline-left-gap: calc(var(--timeline-blub-size) / 2 + 2px);
     --timeline-right-gap: calc(var(--horizontal-rhythm) - var(--timeline-left-gap) - var(--timeline-width));
-    --timeline-left-blub-pos: calc(-1 * (var(--timeline-right-gap) + .5 * (var(--timeline-blub-size) + var(--timeline-width))));
+    --timeline-left-blub-pos: calc(-1 * (var(--timeline-right-gap) + var(--timeline-blub-size) / 2 + var(--timeline-width) / 2));
     --timeline-top-blub-pos: calc(1em * var(--lh-default) / 2 - var(--timeline-blub-size) / 2);
     --timeline-framed-figure-indent: var(--horizontal-rhythm);
     --timeline-framed-figure-padding: var(--space);
     --timeline-framed-right-gap: calc(var(--timeline-framed-figure-indent) + var(--horizontal-rhythm) - var(--timeline-left-gap) - var(--timeline-width));
-    --timeline-framed-left-blub-pos: calc(-1 * (var(--timeline-framed-figure-indent) + var(--timeline-right-gap) + .5 * (var(--timeline-blub-size) + var(--timeline-width))));
+    --timeline-framed-left-blub-pos: calc(-1 * (var(--timeline-framed-figure-indent) + var(--timeline-right-gap) + var(--timeline-blub-size) / 2 + var(--timeline-width) / 2));
 }
 
 dl {
@@ -104,8 +104,8 @@ dl.timeline>dt>figure.framed::before {
     width: calc(var(--timeline-framed-figure-indent) + var(--timeline-right-gap) + var(--timeline-width) - var(--timeline-blub-size) / 2);
     border-top: var(--timeline-width) solid var(--timeline-color);
     position: absolute;
-    margin-top: calc(var(--timeline-top-blub-pos) + var(--timeline-blub-size) / 2 - var(--timeline-framed-figure-padding));
-    margin-left: calc(-1 * (var(--timeline-right-gap) + var(--timeline-framed-figure-indent) + var(--timeline-width) + var(--timeline-framed-figure-padding)) + var(--timeline-blub-size) / 2);
+    margin-top: calc(var(--timeline-top-blub-pos) + var(--timeline-blub-size) / 2 - var(--timeline-framed-figure-padding) - var(--timeline-width));
+    margin-left: calc(-1 * (var(--timeline-right-gap) + var(--timeline-framed-figure-indent) + var(--timeline-width) * 2 + var(--timeline-framed-figure-padding)) + var(--timeline-blub-size) / 2);
 }
 
 dl.timeline.framed>dd>figure::before,
@@ -114,8 +114,8 @@ dl.timeline>dd>figure.framed::before {
     width: calc(var(--timeline-framed-figure-indent) + var(--timeline-right-gap) + var(--timeline-width));
     border-top: var(--timeline-width) solid var(--timeline-color);
     position: absolute;
-    margin-top: calc(var(--timeline-top-blub-pos) + var(--timeline-blub-size) / 2 - var(--timeline-framed-figure-padding));
-    margin-left: calc(-1 * (var(--timeline-right-gap) + var(--timeline-framed-figure-indent) + var(--timeline-width) + var(--timeline-framed-figure-padding)));
+    margin-top: calc(var(--timeline-top-blub-pos) + var(--timeline-blub-size) / 2 - var(--timeline-framed-figure-padding) - var(--timeline-width));
+    margin-left: calc(-1 * (var(--timeline-right-gap) + var(--timeline-framed-figure-indent) + var(--timeline-width) * 2 + var(--timeline-framed-figure-padding)));
 }
 
 ol,
@@ -256,8 +256,21 @@ ul.indent li::before {
 }
 
 @media (--mx-sm-breakpoint) {
+    ul,
+    ol {
+        padding-left: 0;
+    }
+    li ul,
+    li ol {
+        padding-left: var(--horizontal-rhythm);
+    }
+    ul li::before,
+    ol li::before,
     dl:not(dl.timeline) dd {
         margin-left: 0;
+    }
+    ol li::before {
+        font-weight: bold;
     }
 }
 

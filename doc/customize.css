@@ -28,17 +28,9 @@ dl {
     margin-bottom: 0;
 }
 
-.table-of-contents ol a {
-    display: inline-block;
-}
-
-.table-of-contents ol li::before {
-    content: var(--h-counter);
-}
-
 .table-of-contents ol ol {
-    padding-inline-start: 0;
     font-size: smaller;
+    padding: 0;
 }
 
 .table-of-contents li li {
@@ -46,16 +38,18 @@ dl {
     margin: var(--space-d2) 0;
 }
 
-.table-of-contents ol ol li::before {
-    content: "";
+.table-of-contents li::before {
+    content: var(--h-counter);
 }
 
-.table-of-contents li a {
+.table-of-contents li li::before {
+    content: unset;
+}
+
+.table-of-contents a {
     text-decoration: none;
+    display: inline-block;
 }
-
-.sotable caption button,
-.sotable th button {}
 
 pre[class^=language] {
     margin-bottom: var(--space-3);
