@@ -26,12 +26,12 @@
     --lh-default: var(--lh-3);
     --lh-4: calc((var(--lh-3) - var(--lh)) / 3 * 4 + var(--lh));
     --lh-5: calc((var(--lh-3) - var(--lh)) / 3 * 5 + var(--lh));
-    --fs-h6: var(--fs-d1);
+    --fs-h6: var(--fs);
     --fs-h5: var(--fs);
-    --fs-h4: 1.2rem;
-    --fs-h3: 1.4rem;
-    --fs-h2: 1.6rem;
-    --fs-h1: 2.4rem;
+    --fs-h4: var(--fs-1);
+    --fs-h3: var(--fs-2);
+    --fs-h2: var(--fs-3);
+    --fs-h1: var(--fs-7);
     --lh-h6: var(--lh-1);
     --lh-h5: var(--lh-1);
     --lh-h4: var(--lh-1);
@@ -66,28 +66,28 @@ small,
 }
 
 .h1 {
-    font-size: 2.4rem;
+    font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
     font-size: var(--fs-h1);
     line-height: calc((calc(var(--space-factor) * 1) - 1) / 3 + 1);
     line-height: var(--lh-h1);
 }
 
 .h2 {
-    font-size: 1.6rem;
+    font-size: calc(1rem * 1.25 * 1.25 * 1.25);
     font-size: var(--fs-h2);
     line-height: calc((calc(var(--space-factor) * 1) - 1) / 3 + 1);
     line-height: var(--lh-h2);
 }
 
 .h3 {
-    font-size: 1.4rem;
+    font-size: calc(1rem * 1.25 * 1.25);
     font-size: var(--fs-h3);
     line-height: calc((calc(var(--space-factor) * 1) - 1) / 3 + 1);
     line-height: var(--lh-h3);
 }
 
 .h4 {
-    font-size: 1.2rem;
+    font-size: calc(1rem * 1.25);
     font-size: var(--fs-h4);
     line-height: calc((calc(var(--space-factor) * 1) - 1) / 3 + 1);
     line-height: var(--lh-h4);
@@ -101,7 +101,7 @@ small,
 }
 
 .h6 {
-    font-size: .9rem;
+    font-size: 1rem;
     font-size: var(--fs-h6);
     line-height: calc((calc(var(--space-factor) * 1) - 1) / 3 + 1);
     line-height: var(--lh-h6);
