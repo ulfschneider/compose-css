@@ -58,7 +58,7 @@
     --outline: var(--space-d3) solid var(--link-focus-color);
     --outline-offset: var(--space-d4);
     --kbd-shadow: .07em .07em var(--border-color);
-    --blockquote-border-width: 2px;
+    --blockquote-border-width: 3px;
     --summary-expanded-prefix: "ᐯ";
     --summary-collapsed-prefix: "ᐳ";
     font-family: system-ui, ui-sans-serif, sans-serif;
@@ -584,7 +584,7 @@ blockquote::before {
     width: var(--space-3);
     position: absolute;
     display: inline-block;
-    border-top: 2px solid var(--li-prefix-color);
+    border-top: 3px solid var(--li-prefix-color);
     border-top: var(--blockquote-border-width) solid var(--li-prefix-color);
 }
 

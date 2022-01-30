@@ -58,7 +58,7 @@
     --outline: var(--space-d3) solid var(--link-focus-color);
     --outline-offset: var(--space-d4);
     --kbd-shadow: .07em .07em var(--border-color);
-    --blockquote-border-width: 2px;
+    --blockquote-border-width: 3px;
     --summary-expanded-prefix: "ᐯ";
     --summary-collapsed-prefix: "ᐳ";
     font-family: var(--font-family);
