@@ -522,7 +522,7 @@ code:not(pre code) {
     color: var(--code-color);
     background: var(--code-background);
     padding: var(--space-d3);
-    letter-spacing: 0.08em;
+    font-weight: bold;
 }
 
 pre,

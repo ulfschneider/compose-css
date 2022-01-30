@@ -148,10 +148,10 @@
     --timeline-color: var(--li-prefix-color);
     --timeline-blub-color: var(--timeline-color);
     --timeline-blub-background: var(--base-background);
-    --code-background: var(--neutral-5);
+    --code-background: var(--base-background);
     --code-color: var(--base-color);
-    --pre-background: var(--code-background);
-    --pre-color: var(--code-color);
+    --pre-background: var(--neutral-d4);
+    --pre-color: var(--base-background);
     --blockquote-background: transparent;
     --table-alternate-row-background: var(--neutral-5);
     --table-alternate-col-background: var(--neutral-5);

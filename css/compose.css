@@ -1578,10 +1578,10 @@ small,
     --timeline-color: var(--li-prefix-color);
     --timeline-blub-color: var(--timeline-color);
     --timeline-blub-background: var(--base-background);
-    --code-background: var(--neutral-5);
+    --code-background: var(--base-background);
     --code-color: var(--base-color);
-    --pre-background: var(--code-background);
-    --pre-color: var(--code-color);
+    --pre-background: var(--neutral-d4);
+    --pre-color: var(--base-background);
     --blockquote-background: transparent;
     --table-alternate-row-background: var(--neutral-5);
     --table-alternate-col-background: var(--neutral-5);
@@ -18718,11 +18718,11 @@ pre,
 code:not(pre code) {
     color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
     color: var(--code-color);
-    background: hsl(0, 0%, calc(53% + 5 * calc((100% - 53%) / 6)));
+    background: white;
     background: var(--code-background);
     padding: 3px;
     padding: var(--space-d3);
-    letter-spacing: 0.08em;
+    font-weight: bold;
 }
 
 pre,
@@ -18733,9 +18733,9 @@ pre,
     margin-bottom: var(--mrb-pre);
     padding: calc(calc(1rem / 1.66) / 1.66);
     padding: var(--space-d2);
-    color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
+    color: white;
     color: var(--pre-color);
-    background: hsl(0, 0%, calc(53% + 5 * calc((100% - 53%) / 6)));
+    background: hsl(0, 0%, calc(53% - 4 * calc(53% / 7)));
     background: var(--pre-background);
     white-space: pre;
     word-break: normal;
