@@ -1580,8 +1580,10 @@ small,
     --timeline-blub-background: var(--base-background);
     --code-background: var(--base-background);
     --code-color: var(--base-color);
-    --pre-background: var(--neutral-d4);
-    --pre-color: var(--base-background);
+    --pre-background: transparent;
+    --pre-color: var(--base-color);
+    --pre-code-color: var(--base-background);
+    --pre-code-background: #141414;
     --blockquote-background: transparent;
     --table-alternate-row-background: var(--neutral-5);
     --table-alternate-col-background: var(--neutral-5);
@@ -18219,12 +18221,12 @@ Naming conventions
     --mrb-figure: var(--space-2);
     --mrt-blockquote: var(--mrt-figure);
     --mrb-blockquote: var(--mrb-figure);
-    --mrt-figcaption: var(--vertical-rhythm);
-    --mrb-figcaption: var(--vertical-rhythm);
-    --mrt-pre: var(--vertical-rhythm);
-    --mrb-pre: var(--vertical-rhythm);
-    --mrt-hr: var(--vertical-rhythm);
-    --mrb-hr: var(--vertical-rhythm);
+    --mrt-figcaption: 0;
+    --mrb-figcaption: 0;
+    --mrt-pre: var(--mrt-figure);
+    --mrb-pre: var(--mrb-figure);
+    --mrt-hr: var(--mrt-figure);
+    --mrb-hr: var(--mrb-figure);
     --hr-content: "·\0000a0\0000a0\0000a0\0000a0·\0000a0\0000a0\0000a0\0000a0·";
     --quotes: """ """"'""'";
     --quotes-de: """ """"'""'";
@@ -18714,35 +18716,64 @@ pre,
     font-size: var(--fs-mono);
 }
 
-.code:not(pre .code),
-code:not(pre code) {
-    color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
-    color: var(--code-color);
-    background: white;
-    background: var(--code-background);
-    padding: 3px;
-    padding: var(--space-d3);
-    font-weight: bold;
-}
-
 pre,
 .pre {
-    margin-top: 1rem;
-    margin-top: var(--mrt-pre);
-    margin-bottom: 1rem;
-    margin-bottom: var(--mrb-pre);
-    padding: calc(calc(1rem / 1.66) / 1.66);
-    padding: var(--space-d2);
-    color: white;
-    color: var(--pre-color);
-    background: hsl(0, 0%, calc(53% - 4 * calc(53% / 7)));
-    background: var(--pre-background);
     white-space: pre;
     word-break: normal;
     /*for safari */
     overflow-wrap: normal;
     /*for safari */
+    background: transparent;
+    background: var(--pre-background);
+    color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
+    color: var(--pre-color);
+    margin-top: calc(calc(1.66 * 1rem) * 1.66);
+    margin-top: var(--mrt-pre);
+    margin-bottom: calc(calc(1.66 * 1rem) * 1.66);
+    margin-bottom: var(--mrb-pre);
     overflow-x: auto;
+}
+
+.code:not(pre .code),
+code:not(pre code) {
+    font-weight: bold;
+    background: white;
+    background: var(--code-background);
+    color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
+    color: var(--code-color);
+}
+
+pre>code {
+    background: #141414;
+    background: var(--pre-code-background);
+    color: white;
+    color: var(--pre-code-color);
+    padding: 3px;
+    padding: var(--space-d3);
+    display: inline-block;
+    line-height: 1.5;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+
+pre>code[class^=language-]::before {
+    content: attr(class);
+    font-size: 1rem;
+    font-size: var(--fs);
+    background: white;
+    background: var(--base-background);
+    color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
+    color: var(--base-color);
+    font-family: system-ui, ui-sans-serif, sans-serif;
+    font-family: var(--figcaption-font-family);
+    display: block;
+    margin: calc(-1 * 3px) calc(-1 * 3px) 0 calc(-1 * 3px);
+    margin: calc(-1 * var(--space-d3)) calc(-1 * var(--space-d3)) 0 calc(-1 * var(--space-d3));
 }
 
 blockquote {
@@ -18769,16 +18800,16 @@ blockquote::before {
     border-top: var(--blockquote-border-width) solid var(--li-prefix-color);
 }
 
+/*
+//FIXME
 .tag {
     white-space: nowrap;
-    padding: 2px;
     padding: var(--space-d4);
-    border-radius: 2px;
     border-radius: var(--space-d4);
     display: inline-block;
-    line-height: 1;
     line-height: var(--lh);
 }
+*/
 
 a {
     color: inherit;
@@ -18852,6 +18883,10 @@ blockquote>header {
     font-size: var(--figcaption-font-size);
     max-width: 34rem;
     max-width: var(--rg-width);
+    margin-top: 0;
+    margin-top: var(--mrt-figcaption);
+    margin-bottom: 0;
+    margin-bottom: var(--mrb-figcaption);
 }
 
 blockquote>footer::before {
@@ -18881,9 +18916,9 @@ blockquote>header::after {
 hr {
     border: 0;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: calc(calc(1.66 * 1rem) * 1.66);
     margin-top: var(--mrt-hr);
-    margin-bottom: 1rem;
+    margin-bottom: calc(calc(1.66 * 1rem) * 1.66);
     margin-bottom: var(--mrb-hr);
     color: inherit;
 }

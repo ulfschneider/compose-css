@@ -45,12 +45,12 @@
     --mrb-figure: var(--space-2);
     --mrt-blockquote: var(--mrt-figure);
     --mrb-blockquote: var(--mrb-figure);
-    --mrt-figcaption: var(--vertical-rhythm);
-    --mrb-figcaption: var(--vertical-rhythm);
-    --mrt-pre: var(--vertical-rhythm);
-    --mrb-pre: var(--vertical-rhythm);
-    --mrt-hr: var(--vertical-rhythm);
-    --mrb-hr: var(--vertical-rhythm);
+    --mrt-figcaption: 0;
+    --mrb-figcaption: 0;
+    --mrt-pre: var(--mrt-figure);
+    --mrb-pre: var(--mrb-figure);
+    --mrt-hr: var(--mrt-figure);
+    --mrb-hr: var(--mrb-figure);
     --hr-content: "·\0000a0\0000a0\0000a0\0000a0·\0000a0\0000a0\0000a0\0000a0·";
     --quotes: """ """"'""'";
     --quotes-de: """ """"'""'";
@@ -468,27 +468,50 @@ pre,
     font-size: var(--fs-mono);
 }
 
-.code:not(pre .code),
-code:not(pre code) {
-    color: var(--code-color);
-    background: var(--code-background);
-    padding: var(--space-d3);
-    font-weight: bold;
-}
-
 pre,
 .pre {
-    margin-top: var(--mrt-pre);
-    margin-bottom: var(--mrb-pre);
-    padding: var(--space-d2);
-    color: var(--pre-color);
-    background: var(--pre-background);
     white-space: pre;
     word-break: normal;
     /*for safari */
     overflow-wrap: normal;
     /*for safari */
+    background: var(--pre-background);
+    color: var(--pre-color);
+    margin-top: var(--mrt-pre);
+    margin-bottom: var(--mrb-pre);
     overflow-x: auto;
+}
+
+.code:not(pre .code),
+code:not(pre code) {
+    font-weight: bold;
+    background: var(--code-background);
+    color: var(--code-color);
+}
+
+pre>code {
+    background: var(--pre-code-background);
+    color: var(--pre-code-color);
+    padding: var(--space-d3);
+    display: inline-block;
+    line-height: 1.5;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+
+pre>code[class^=language-]::before {
+    content: attr(class);
+    font-size: var(--fs);
+    background: var(--base-background);
+    color: var(--base-color);
+    font-family: var(--figcaption-font-family);
+    display: block;
+    margin: calc(-1 * var(--space-d3)) calc(-1 * var(--space-d3)) 0 calc(-1 * var(--space-d3));
 }
 
 blockquote {
@@ -509,6 +532,9 @@ blockquote::before {
     border-top: var(--blockquote-border-width) solid var(--li-prefix-color);
 }
 
+
+/*
+//FIXME
 .tag {
     white-space: nowrap;
     padding: var(--space-d4);
@@ -516,6 +542,7 @@ blockquote::before {
     display: inline-block;
     line-height: var(--lh);
 }
+*/
 
 a {
     color: var(--link-color);
@@ -576,6 +603,8 @@ blockquote>header {
     font-style: normal;
     font-size: var(--figcaption-font-size);
     max-width: var(--rg-width);
+    margin-top: var(--mrt-figcaption);
+    margin-bottom: var(--mrb-figcaption);
 }
 
 blockquote>footer::before {
