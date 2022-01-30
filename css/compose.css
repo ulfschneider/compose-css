@@ -18889,6 +18889,11 @@ blockquote>header {
     margin-bottom: var(--mrb-figcaption);
 }
 
+blockquote>footer,
+blockquote>header {
+    font-weight: bold;
+}
+
 blockquote>footer::before {
     content: "—";
 }
