@@ -153,7 +153,7 @@
     --pre-background: transparent;
     --pre-color: var(--base-color);
     --pre-code-color: var(--base-background);
-    --pre-code-background: #141414;
+    --pre-code-background: var(--neutral-d5);
     --blockquote-background: transparent;
     --table-alternate-row-background: var(--neutral-5);
     --table-alternate-col-background: var(--neutral-5);

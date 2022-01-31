@@ -1583,7 +1583,7 @@ small,
     --pre-background: transparent;
     --pre-color: var(--base-color);
     --pre-code-color: var(--base-background);
-    --pre-code-background: #141414;
+    --pre-code-background: var(--neutral-d5);
     --blockquote-background: transparent;
     --table-alternate-row-background: var(--neutral-5);
     --table-alternate-col-background: var(--neutral-5);
@@ -18744,7 +18744,7 @@ code:not(pre code) {
 }
 
 pre>code {
-    background: #141414;
+    background: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
     background: var(--pre-code-background);
     color: white;
     color: var(--pre-code-color);
