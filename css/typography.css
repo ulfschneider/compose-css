@@ -555,6 +555,8 @@ pre>code {
     hyphens: none;
 }
 
+/* purgecss start ignore */
+
 pre>code[class^=language-]::before {
     content: attr(class);
     font-size: var(--fs);
@@ -565,6 +567,8 @@ pre>code[class^=language-]::before {
     display: block;
     margin: calc(-1 * var(--space-d3)) calc(-1 * var(--space-d3)) 0 calc(-1 * var(--space-d3));
 }
+
+/* purgecss end ignore */
 
 blockquote {
     margin-top: var(--space-2);
@@ -583,6 +587,7 @@ blockquote::before {
     content: "";
     width: var(--space-3);
     display: block;
+    margin-right: auto;
     border-top: 3px solid var(--li-prefix-color);
     border-top: var(--blockquote-border-width) solid var(--li-prefix-color);
 }

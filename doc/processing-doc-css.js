@@ -25,7 +25,7 @@ const processingDocCSS = () => {
                     'doc/prism.css',
                     'doc/customize.css'
                 ],
-                whitelistPatternsChildren: [/^token/, /^pre/, /^code/],
+                whitelistPatterns: [/^token/, /^pre/, /^code/],
                 defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [] //check https://flaviocopes.com/tailwind-setup/
             }),
             cssNano()

@@ -18761,6 +18761,8 @@ pre>code {
     hyphens: none;
 }
 
+/* purgecss start ignore */
+
 pre>code[class^=language-]::before {
     content: attr(class);
     font-size: 1rem;
@@ -18775,6 +18777,8 @@ pre>code[class^=language-]::before {
     margin: calc(-1 * 3px) calc(-1 * 3px) 0 calc(-1 * 3px);
     margin: calc(-1 * var(--space-d3)) calc(-1 * var(--space-d3)) 0 calc(-1 * var(--space-d3));
 }
+
+/* purgecss end ignore */
 
 blockquote {
     margin-top: calc(calc(1.66 * 1rem) * 1.66);
@@ -18795,6 +18799,7 @@ blockquote::before {
     width: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
     width: var(--space-3);
     display: block;
+    margin-right: auto;
     border-top: 3px solid currentColor;
     border-top: var(--blockquote-border-width) solid var(--li-prefix-color);
 }
