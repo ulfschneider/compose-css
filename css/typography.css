@@ -582,8 +582,7 @@ blockquote {
 blockquote::before {
     content: "";
     width: var(--space-3);
-    position: absolute;
-    display: inline-block;
+    display: block;
     border-top: 3px solid var(--li-prefix-color);
     border-top: var(--blockquote-border-width) solid var(--li-prefix-color);
 }

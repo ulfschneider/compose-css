@@ -527,8 +527,7 @@ blockquote {
 blockquote::before {
     content: "";
     width: var(--space-3);
-    position: absolute;
-    display: inline-block;
+    display: block;
     border-top: var(--blockquote-border-width) solid var(--li-prefix-color);
 }
 

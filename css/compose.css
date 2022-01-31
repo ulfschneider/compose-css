@@ -18794,8 +18794,7 @@ blockquote::before {
     content: "";
     width: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
     width: var(--space-3);
-    position: absolute;
-    display: inline-block;
+    display: block;
     border-top: 3px solid currentColor;
     border-top: var(--blockquote-border-width) solid var(--li-prefix-color);
 }
