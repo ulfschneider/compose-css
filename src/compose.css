@@ -3,8 +3,8 @@
 @import "space";
 @import "type-scale";
 @import "type-scale-breakpoints";
-@import "color";
 @import "border";
+@import "color";
 @import "margin";
 @import "margin-breakpoints";
 @import "padding";

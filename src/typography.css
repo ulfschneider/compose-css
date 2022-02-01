@@ -494,6 +494,7 @@ pre>code {
     color: var(--pre-code-color);
     padding: var(--space-d3);
     display: inline-block;
+    text-align: left;
     line-height: 1.5;
     -moz-tab-size: 4;
     -o-tab-size: 4;
