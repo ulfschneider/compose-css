@@ -53,4 +53,5 @@ dl {
 
 pre[class^=language] {
     margin-bottom: var(--space-3);
+    margin-top: var(--space-1);
 }

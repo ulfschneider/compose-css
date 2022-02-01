@@ -20928,10 +20928,10 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     --timeline-right-gap: calc(var(--horizontal-rhythm) - var(--timeline-left-gap) - var(--timeline-width));
     --timeline-left-blub-pos: calc(-1 * (var(--timeline-right-gap) + var(--timeline-blub-size) / 2 + var(--timeline-width) / 2));
     --timeline-top-blub-pos: calc(1em * var(--lh-default) / 2 - var(--timeline-blub-size) / 2);
-    --timeline-framed-figure-indent: var(--horizontal-rhythm);
-    --timeline-framed-figure-padding: var(--space);
-    --timeline-framed-right-gap: calc(var(--timeline-framed-figure-indent) + var(--horizontal-rhythm) - var(--timeline-left-gap) - var(--timeline-width));
-    --timeline-framed-left-blub-pos: calc(-1 * (var(--timeline-framed-figure-indent) + var(--timeline-right-gap) + var(--timeline-blub-size) / 2 + var(--timeline-width) / 2));
+    --timeline-framed-indent: var(--horizontal-rhythm);
+    --timeline-framed-padding: var(--space);
+    --timeline-framed-right-gap: calc(var(--timeline-framed-indent) + var(--horizontal-rhythm) - var(--timeline-left-gap) - var(--timeline-width));
+    --timeline-framed-left-blub-pos: calc(-1 * (var(--timeline-framed-indent) + var(--timeline-right-gap) + var(--timeline-blub-size) / 2 + var(--timeline-width) / 2));
 }
 
 dl {
@@ -21007,49 +21007,44 @@ dl.timeline.framed>dt::before {
     margin-left: var(--timeline-framed-left-blub-pos);
 }
 
-dl.timeline.framed>dt>figure,
-dl.timeline.framed>dd>figure,
-dl.timeline>dt>figure.framed,
-dl.timeline>dd>figure.framed {
-    margin-left: 0;
+dl.timeline>dt>.framed,
+dl.timeline>dd>.framed {
     border: 1px solid currentColor;
     border: var(--timeline-width) solid var(--timeline-color);
     padding: 1rem;
-    padding: var(--timeline-framed-figure-padding);
+    padding: var(--timeline-framed-padding);
 }
 
-dl.timeline:not(dl.timeline.framed)>dt>figure.framed,
-dl.timeline:not(dl.timeline.framed)>dd>figure.framed {
+dl.timeline:not(dl.timeline.framed)>dt>.framed,
+dl.timeline:not(dl.timeline.framed)>dd>.framed {
     margin-left: calc(1.66 * 1rem);
-    margin-left: var(--timeline-framed-figure-indent);
+    margin-left: var(--timeline-framed-indent);
 }
 
-dl.timeline.framed>dt>figure::before,
-dl.timeline>dt>figure.framed::before {
+dl.timeline>dt>*.framed::before {
     content: "";
     width: calc(calc(1.66 * 1rem) + calc(calc(1.66 * 1rem) - calc(1rem / 2 + 2px) - 1px) + 1px - 1rem / 2);
-    width: calc(var(--timeline-framed-figure-indent) + var(--timeline-right-gap) + var(--timeline-width) - var(--timeline-blub-size) / 2);
+    width: calc(var(--timeline-framed-indent) + var(--timeline-right-gap) + var(--timeline-width) - var(--timeline-blub-size) / 2);
     border-top: 1px solid currentColor;
     border-top: var(--timeline-width) solid var(--timeline-color);
     position: absolute;
     margin-top: calc(calc(1em * calc(1.66 * 1) / 2 - 1rem / 2) + 1rem / 2 - 1rem - 1px);
-    margin-top: calc(var(--timeline-top-blub-pos) + var(--timeline-blub-size) / 2 - var(--timeline-framed-figure-padding) - var(--timeline-width));
+    margin-top: calc(var(--timeline-top-blub-pos) + var(--timeline-blub-size) / 2 - var(--timeline-framed-padding) - var(--timeline-width));
     margin-left: calc(-1 * (calc(calc(1.66 * 1rem) - calc(1rem / 2 + 2px) - 1px) + calc(1.66 * 1rem) + 1px * 2 + 1rem) + 1rem / 2);
-    margin-left: calc(-1 * (var(--timeline-right-gap) + var(--timeline-framed-figure-indent) + var(--timeline-width) * 2 + var(--timeline-framed-figure-padding)) + var(--timeline-blub-size) / 2);
+    margin-left: calc(-1 * (var(--timeline-right-gap) + var(--timeline-framed-indent) + var(--timeline-width) * 2 + var(--timeline-framed-padding)) + var(--timeline-blub-size) / 2);
 }
 
-dl.timeline.framed>dd>figure::before,
-dl.timeline>dd>figure.framed::before {
+dl.timeline>dd>*.framed::before {
     content: "";
     width: calc(calc(1.66 * 1rem) + calc(calc(1.66 * 1rem) - calc(1rem / 2 + 2px) - 1px) + 1px);
-    width: calc(var(--timeline-framed-figure-indent) + var(--timeline-right-gap) + var(--timeline-width));
+    width: calc(var(--timeline-framed-indent) + var(--timeline-right-gap) + var(--timeline-width));
     border-top: 1px solid currentColor;
     border-top: var(--timeline-width) solid var(--timeline-color);
     position: absolute;
     margin-top: calc(calc(1em * calc(1.66 * 1) / 2 - 1rem / 2) + 1rem / 2 - 1rem - 1px);
-    margin-top: calc(var(--timeline-top-blub-pos) + var(--timeline-blub-size) / 2 - var(--timeline-framed-figure-padding) - var(--timeline-width));
+    margin-top: calc(var(--timeline-top-blub-pos) + var(--timeline-blub-size) / 2 - var(--timeline-framed-padding) - var(--timeline-width));
     margin-left: calc(-1 * (calc(calc(1.66 * 1rem) - calc(1rem / 2 + 2px) - 1px) + calc(1.66 * 1rem) + 1px * 2 + 1rem));
-    margin-left: calc(-1 * (var(--timeline-right-gap) + var(--timeline-framed-figure-indent) + var(--timeline-width) * 2 + var(--timeline-framed-figure-padding)));
+    margin-left: calc(-1 * (var(--timeline-right-gap) + var(--timeline-framed-indent) + var(--timeline-width) * 2 + var(--timeline-framed-padding)));
 }
 
 ol,
@@ -21209,6 +21204,10 @@ ol.indent li::before,
 ul.indent li::before {
     margin-left: 0;
     justify-content: flex-start;
+}
+
+ol li::before {
+    font-weight: bold;
 }
 
 @media (max-width: 640px) {
