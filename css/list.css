@@ -188,6 +188,12 @@ dl.timeline>dd>*.framed::before {
         border: var(--timeline-blub-border-width) solid var(--timeline-blub-color);
         z-index: 1000;
     }
+    dl.timeline.row>dt>*,
+    dl.timeline.row>dd>* {
+        margin: 0;
+        padding: 0;
+        background: var(--base-background);
+    }
     dl.timeline.row>dt>.framed,
     dl.timeline.row>dd>.framed {
         margin: 0;
@@ -264,6 +270,12 @@ dl.timeline>dd>*.framed::before {
         border: 1px solid var(--timeline-blub-color);
         border: var(--timeline-blub-border-width) solid var(--timeline-blub-color);
         z-index: 1000;
+    }
+    dl.timeline.row>dt>*,
+    dl.timeline.row>dd>* {
+        margin: 0;
+        padding: 0;
+        background: var(--base-background);
     }
     dl.timeline.row>dt>.framed,
     dl.timeline.row>dd>.framed {
