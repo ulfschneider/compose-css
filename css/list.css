@@ -195,6 +195,10 @@ dl.timeline>dd>*.framed::before {
         padding: 0;
         background: var(--base-background);
     }
+    dl.timeline.row>dt>*+*,
+    dl.timeline.row>dd>*+* {
+        margin-top: 1em;
+    }
     dl.timeline.row>dt>.framed,
     dl.timeline.row>dd>.framed {
         margin: 0;
@@ -278,6 +282,10 @@ dl.timeline>dd>*.framed::before {
         margin: 0;
         padding: 0;
         background: var(--base-background);
+    }
+    dl.timeline.row>dt>*+*,
+    dl.timeline.row>dd>*+* {
+        margin-top: 1em;
     }
     dl.timeline.row>dt>.framed,
     dl.timeline.row>dd>.framed {

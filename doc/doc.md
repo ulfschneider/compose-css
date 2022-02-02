@@ -783,9 +783,9 @@ familiar walls.</dd>
 <dd>when Gregor Samsa woke from troubled dreams, he found himself 
 transformed in his bed into a horrible vermin.</dd>
 <dt>He lay on his armour-like back</dt>
-<dd>and if he lifted his head a little he could see his brown belly,
-slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover
-it and seemed ready to slide off any moment.</dd>
+<dd><p>and if he lifted his head a little he could see his brown belly,</p>
+<p>slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover
+it and seemed ready to slide off any moment.</p></dd>
 <dt><figure class="framed">
 <img src="images/swan-leroi-unsplash.jpg">
 </figure></dt>
