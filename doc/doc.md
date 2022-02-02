@@ -726,6 +726,8 @@ familiar walls.</dd>
 
 ### Timeline
 
+#### Vertical
+
 <dl class="timeline">
 <dt>One morning</dt>
 <dd>when Gregor Samsa woke from troubled dreams, he found himself 
@@ -748,6 +750,8 @@ as he looked. <span class="quote">What's happened to me?</span> he thought. It w
 <dd>a proper human room although a little too small, lay peacefully between its four
 familiar walls.</dd>
 </dl>
+
+#### Vertical framed
 
 <dl class="timeline framed">
 <dt>One morning</dt>
@@ -772,7 +776,9 @@ as he looked. <span class="quote">What's happened to me?</span> he thought. It w
 familiar walls.</dd>
 </dl>
 
-<dl class="timeline row framed">
+#### Horizontal
+
+<dl class="timeline framed row">
 <dt>One morning</dt>
 <dd>when Gregor Samsa woke from troubled dreams, he found himself 
 transformed in his bed into a horrible vermin.</dd>
@@ -791,7 +797,7 @@ as he looked. <span class="quote">What's happened to me?</span> he thought. It w
 <figcaption>this wasn´t a dream</figcaption>
 </figure>
 </dd>
-<dt><div class="rounded framed">His room</div><div>hello</div></dt>
+<dt><div class="rounded framed">His room</div></dt>
 <dd>a proper human room although a little too small, lay peacefully between its four
 familiar walls.</dd>
 </dl>
