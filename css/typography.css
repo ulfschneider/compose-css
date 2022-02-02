@@ -9,7 +9,7 @@
     --heading-letter-spacing: 0em;
     --heading-text-transform: none;
     --figcaption-font-family: var(--heading-font-family);
-    --figcaption-font-size: var(--fs);
+    --figcaption-font-size: inherit;
     --meta-font-family: var(--font-family);
     --meta-font-feature-settings: var(--font-feature-settings);
     --meta-font-weight: var(--font-weight-normal);
@@ -670,7 +670,7 @@ blockquote>header {
     font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--figcaption-font-family);
     font-style: normal;
-    font-size: var(--fs);
+    font-size: inherit;
     font-size: var(--figcaption-font-size);
     max-width: var(--rg-width);
     margin-top: 0;
