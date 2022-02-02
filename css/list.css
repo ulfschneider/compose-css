@@ -155,6 +155,7 @@ dl.timeline>dd>*.framed::before {
         align-items: flex-end;
         max-width: unset;
         font-size: smaller;
+        max-width: unset;
     }
     dl.timeline.row>dt,
     dl.timeline.row>dd {
@@ -238,6 +239,7 @@ dl.timeline>dd>*.framed::before {
         align-items: flex-end;
         max-width: unset;
         font-size: smaller;
+        max-width: unset;
     }
     dl.timeline.row>dt,
     dl.timeline.row>dd {
