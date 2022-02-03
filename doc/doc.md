@@ -726,8 +726,6 @@ familiar walls.</dd>
 
 ### Timeline
 
-#### Vertical
-
 <dl class="timeline">
 <dt>One morning</dt>
 <dd>when Gregor Samsa woke from troubled dreams, he found himself 
@@ -751,9 +749,9 @@ as he looked. <span class="quote">What's happened to me?</span> he thought. It w
 familiar walls.</dd>
 </dl>
 
-#### Vertical framed
+### Framed Timeline
 
-<dl class="timeline framed">
+<dl class="timeline framed ordered">
 <dt>One morning</dt>
 <dd>when Gregor Samsa woke from troubled dreams, he found himself 
 transformed in his bed into a horrible vermin.</dd>
@@ -761,7 +759,7 @@ transformed in his bed into a horrible vermin.</dd>
 <dd>and if he lifted his head a little he could see his brown belly,
 slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover
 it and seemed ready to slide off any moment.</dd>
-<dt><figure class="framed">
+<dt blub=":"><figure class="framed">
 <img src="images/swan-leroi-unsplash.jpg">
 </figure></dt>
 <dt>His many legs</dt>
@@ -776,9 +774,9 @@ as he looked. <span class="quote">What's happened to me?</span> he thought. It w
 familiar walls.</dd>
 </dl>
 
-#### Horizontal
+### Horizontal Timeline
 
-<dl class="timeline framed row">
+<dl class="timeline framed row ordered">
 <dt>One morning</dt>
 <dd>when Gregor Samsa woke from troubled dreams, he found himself 
 transformed in his bed into a horrible vermin.</dd>

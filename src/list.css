@@ -14,14 +14,15 @@
     --h4-counter: counter(h2-counter) var(--h-counter-delimiter) counter(h3-counter) var(--h-counter-delimiter) counter(h4-counter);
     --h5-counter: counter(h2-counter) var(--h-counter-delimiter) counter(h3-counter) var(--h-counter-delimiter) counter(h4-counter) var(--h-counter-delimiter) counter(h5-counter);
     --h6-counter: counter(h2-counter) var(--h-counter-delimiter) counter(h3-counter) var(--h-counter-delimiter) counter(h4-counter) var(--h-counter-delimiter) counter(h5-counter) var(--h-counter-delimiter) counter(h6-counter);
-    --timeline-blub-size: 1rem;
+    --timeline-blub-font-size: 1em;
+    --timeline-blub-size: calc(var(--timeline-blub-font-size) + 4px);
     --timeline-width: 1px;
     --timeline-blub-border-width: 1px;
     /* column timeline */
-    --timeline-left-gap: calc(var(--timeline-blub-size) / 2 + 2px);
+    --timeline-left-gap: calc(var(--timeline-blub-size) / 2);
     --timeline-right-gap: calc(var(--horizontal-rhythm) - var(--timeline-left-gap) - var(--timeline-width));
     --timeline-left-blub-pos: calc(-1 * (var(--timeline-right-gap) + var(--timeline-blub-size) / 2 + var(--timeline-width) / 2));
-    --timeline-top-blub-pos: calc(1em * var(--lh-default) / 2 - var(--timeline-blub-size) / 2);
+    --timeline-top-blub-pos: calc(1em * var(--lh-default) / 2 - var(--timeline-blub-size) / 2 + (1rem - var(--timeline-blub-font-size)) * var(--lh-default) / 2);
     --timeline-framed-indent: var(--horizontal-rhythm);
     --timeline-framed-padding: var(--space);
     --timeline-framed-right-gap: calc(var(--timeline-framed-indent) + var(--horizontal-rhythm) - var(--timeline-left-gap) - var(--timeline-width));
@@ -69,6 +70,14 @@ dl.timeline>dd {
     padding-left: var(--timeline-right-gap);
 }
 
+dl.timeline {
+    counter-reset: ol-counter;
+}
+
+dl.timeline>dt {
+    counter-increment: ol-counter;
+}
+
 dl.timeline.framed>dt,
 dl.timeline.framed>dd {
     padding-left: var(--timeline-framed-right-gap);
@@ -76,16 +85,23 @@ dl.timeline.framed>dd {
 
 dl.timeline>dt::before {
     border-radius: 50%;
-    content: "";
+    content: attr(blub);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: var(--timeline-blub-size);
     height: var(--timeline-blub-size);
-    display: block;
     position: absolute;
     margin-left: var(--timeline-left-blub-pos);
     margin-top: var(--timeline-top-blub-pos);
     background-color: var(--timeline-blub-background);
     border: var(--timeline-blub-border-width) solid var(--timeline-blub-color);
     z-index: 1000;
+    font-size: var(--timeline-blub-font-size);
+}
+
+dl.timeline.ordered>dt::before {
+    content: var(--ol-counter);
 }
 
 dl.timeline.framed>dt::before {
@@ -148,15 +164,21 @@ dl.timeline>dd>*.framed::before {
     }
     dl.timeline.row>dt::after {
         border-radius: 50%;
-        content: "";
+        content: attr(blub);
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: var(--timeline-blub-size);
         height: var(--timeline-blub-size);
-        display: block;
         position: absolute;
         margin-top: calc(var(--timeline-row-y-gap) - var(--timeline-blub-size) / 2);
         background-color: var(--timeline-blub-background);
         border: var(--timeline-blub-border-width) solid var(--timeline-blub-color);
         z-index: 1000;
+        font-size: var(--timeline-blub-font-size);
+    }
+    dl.timeline.row.ordered>dt::after {
+        content: var(--ol-counter);
     }
     dl.timeline.row>dt>*,
     dl.timeline.row>dd>* {
@@ -332,7 +354,7 @@ ul.indent li::before {
     justify-content: flex-start;
 }
 
-ol li::before {
+ol.indent li::before {
     font-weight: bold;
 }
 
