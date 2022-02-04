@@ -20,7 +20,7 @@
     --code-font-family: var(--mono-font-family);
     --blockquote-font-style: italic;
     --quote-font-style: italic;
-    --text-decoration: solid underline inherit;
+    --text-decoration: underline;
     --text-decoration-thickness: .05em;
     --link-text-decoration: var(--text-decoration);
     --link-text-decoration-thickness: var(--text-decoration-thickness);
@@ -269,7 +269,7 @@ cite,
 
 .underline,
 u {
-    text-decoration: solid underline inherit;
+    text-decoration: underline;
     text-decoration: var(--text-decoration);
     text-decoration-thickness: .05em;
     text-decoration-thickness: var(--text-decoration-thickness);
@@ -606,7 +606,7 @@ blockquote::before {
 
 a {
     color: var(--link-color);
-    text-decoration: solid underline inherit;
+    text-decoration: underline;
     text-decoration: var(--link-text-decoration);
     text-decoration-thickness: .05em;
     text-decoration-thickness: var(--link-text-decoration-thickness);

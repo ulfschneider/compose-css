@@ -20,7 +20,7 @@
     --code-font-family: var(--mono-font-family);
     --blockquote-font-style: italic;
     --quote-font-style: italic;
-    --text-decoration: solid underline inherit;
+    --text-decoration: underline;
     --text-decoration-thickness: .05em;
     --link-text-decoration: var(--text-decoration);
     --link-text-decoration-thickness: var(--text-decoration-thickness);
