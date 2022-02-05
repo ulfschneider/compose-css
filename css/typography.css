@@ -337,6 +337,12 @@ del,
     text-decoration: line-through;
 }
 
+ins,
+.ins {}
+
+abbr,
+.abbr {}
+
 sub,
 sup,
 .sub,
@@ -510,6 +516,7 @@ p.no-indent {
 
 .code,
 code,
+samp,
 pre,
 .pre {
     font-family: ui-monospace, monospace;
@@ -540,7 +547,8 @@ code:not(pre code) {
     color: var(--code-color);
 }
 
-pre>code {
+pre>code,
+pre>samp {
     background: var(--pre-code-background);
     color: var(--pre-code-color);
     padding: var(--space-d3);

@@ -126,6 +126,22 @@ Another example is how dark or how light a color is set, like `.primary-d5`, `.p
                         <code>&lt;del></code>, <code>.del</code>
                     </td>
                 </tr>
+                    <tr>
+                    <td>
+                        <ins>Inserted text</ins>
+                    </td>
+                    <td>
+                        <code>&lt;ins></code>, <code>.ins</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Abbreviations (<abbr>Abbr</abbr>)
+                    </td>
+                    <td>
+                        <code>&lt;abbr></code>, <code>.del</code>
+                    </td>
+                </tr>                
                 <tr>
                     <td>
                         <span class="caps">Caps text</span></td>
