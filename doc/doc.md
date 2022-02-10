@@ -865,13 +865,13 @@ familiar walls.</dd>
     <tbody>
         <tr class="h-2">
             <td class="below-md:hide">5</td>
-            <td class="miw-2 bg-neutral-5"></td>
-            <td class="miw-2 bg-primary-5"></td>
-            <td class="miw-2 bg-accent-one-5"></td>
-            <td class="miw-2 bg-accent-two-5"></td>
-            <td class="miw-2 bg-accent-three-5"></td>
-            <td class="miw-2 bg-accent-four-5"></td>
-            <td class="miw-2 bg-accent-five-5"></td>
+            <td class="w-3 bg-neutral-5"></td>
+            <td class="w-3 bg-primary-5"></td>
+            <td class="w-3 bg-accent-one-5"></td>
+            <td class="w-3 bg-accent-two-5"></td>
+            <td class="w-3 bg-accent-three-5"></td>
+            <td class="w-3 bg-accent-four-5"></td>
+            <td class="w-3 bg-accent-five-5"></td>
         </tr>
         <tr class="h-2">
             <td class="below-md:hide">4</td>
@@ -1016,7 +1016,7 @@ familiar walls.</dd>
             <td>.[bg-]neutral-1</td>
             <td id="neutral-1" class="hex-color"></td>
         </tr>
-        <tr class="br-y brw-d4 br-white">
+        <tr class="bry brw-d4 br-white">
             <td class="bg-neutral"></td>
             <td class="neutral">Text</td>
             <td>.[bg-]neutral</td>
@@ -1095,7 +1095,7 @@ familiar walls.</dd>
             <td>.[bg-]primary-1</td>
             <td id="primary-1" class="hex-color"></td>
         </tr>
-        <tr class="br-y brw-d4 br-white">
+        <tr class="bry brw-d4 br-white">
             <td class="bg-primary"></td>
             <td class="primary">Text</td>
             <td>.[bg-]primary</td>
@@ -1174,7 +1174,7 @@ familiar walls.</dd>
             <td>.[bg-]accent-one-1</td>
             <td id="accent-one-1" class="hex-color"></td>
         </tr>
-        <tr class="br-y brw-d4 br-white">
+        <tr class="bry brw-d4 br-white">
             <td class="bg-accent-one"></td>
             <td class="accent-one">Text</td>
             <td>.[bg-]accent-one</td>
@@ -1253,7 +1253,7 @@ familiar walls.</dd>
             <td>.[bg-]accent-two-1</td>
             <td id="accent-two-1" class="hex-color"></td>
         </tr>
-        <tr class="br-y brw-d4 br-white">
+        <tr class="bry brw-d4 br-white">
             <td class="bg-accent-two"></td>
             <td class="accent-two">Text</td>
             <td>.[bg-]accent-two</td>
@@ -1332,7 +1332,7 @@ familiar walls.</dd>
             <td>.[bg-]accent-three-1</td>
             <td id="accent-three-1" class="hex-color"></td>
         </tr>
-        <tr class="br-y brw-d4 br-white">
+        <tr class="bry brw-d4 br-white">
             <td class="bg-accent-three"></td>
             <td class="accent-three">Text</td>
             <td>.[bg-]accent-three</td>
@@ -1411,7 +1411,7 @@ familiar walls.</dd>
             <td>.[bg-]accent-four-1</td>
             <td id="accent-four-1" class="hex-color"></td>
         </tr>
-        <tr class="br-y brw-d4 br-white">
+        <tr class="bry brw-d4 br-white">
             <td class="bg-accent-four"></td>
             <td class="accent-four">Text</td>
             <td>.[bg-]accent-four</td>
@@ -1490,7 +1490,7 @@ familiar walls.</dd>
             <td>.[bg-]accent-five-1</td>
             <td id="accent-five-1" class="hex-color"></td>
         </tr>
-        <tr class="br-y brw-d4 br-white">
+        <tr class="bry brw-d4 br-white">
             <td class="bg-accent-five"></td>
             <td class="accent-five">Text</td>
             <td>.[bg-]accent-five</td>

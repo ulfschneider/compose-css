@@ -1797,7 +1797,7 @@ small,
     --timeline-color: var(--li-prefix-color);
     --timeline-blub-color: var(--timeline-color);
     --timeline-blub-background: var(--base-background);
-    --code-background: var(--base-background);
+    --code-background: transparent;
     --code-color: var(--base-color);
     --pre-background: transparent;
     --pre-color: var(--base-color);
@@ -18744,7 +18744,7 @@ pre,
 .code:not(pre .code),
 code:not(pre code) {
     font-weight: bold;
-    background: white;
+    background: transparent;
     background: var(--code-background);
     color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
     color: var(--code-color);
