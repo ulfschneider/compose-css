@@ -103,16 +103,16 @@
     overflow-y: scroll;
 }
 
-.full-bleed {
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-}
-
-.full-bleed-padded {
-    width: calc(100vw - 2 * var(--space));
+.full-bleed {    
+    width: calc(100vw - 2 * var(--space));    
     width: calc(100vw - 2 * var(--bleed-padding));
     margin-left: calc(50% - 50vw + var(--space));
     margin-left: calc(50% - 50vw + var(--bleed-padding));
+}
+
+.full-bleed-unpadded {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
 }
 
 .bleed {

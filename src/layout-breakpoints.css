@@ -68,13 +68,13 @@
     .sm\:overflow-y-scroll {
         overflow-y: scroll;
     }
-    .sm\:full-bleed {
-        width: 100vw;
-        margin-left: calc(50% - 50vw);
-    }
-    .sm\:full-bleed-padded {
+    .sm\:full-bleed {        
         width: calc(100vw - 2 * var(--bleed-padding));
         margin-left: calc(50% - 50vw + var(--bleed-padding));
+    }
+    .sm\:full-bleed-unpadded {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
     }
     .sm\:bleed {
         width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
@@ -306,12 +306,12 @@
         overflow-y: scroll;
     }
     .rg\:full-bleed {
-        width: 100vw;
-        margin-left: calc(50% - 50vw);
-    }
-    .rg\:full-bleed-padded {
         width: calc(100vw - 2 * var(--bleed-padding));
         margin-left: calc(50% - 50vw + var(--bleed-padding));
+    }
+    .rg\:full-bleed-unpadded {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);        
     }
     .rg\:bleed {
         width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
@@ -549,12 +549,12 @@
         overflow-y: scroll;
     }
     .md\:full-bleed {
-        width: 100vw;
-        margin-left: calc(50% - 50vw);
-    }
-    .md\:full-bleed-padded {
         width: calc(100vw - 2 * var(--bleed-padding));
         margin-left: calc(50% - 50vw + var(--bleed-padding));
+    }
+    .md\:full-bleed-unpadded {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
     }
     .md\:bleed {
         width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
@@ -803,13 +803,13 @@
     .lg\:overflow-y-scroll {
         overflow-y: scroll;
     }
-    .lg\:full-bleed {
-        width: 100vw;
-        margin-left: calc(50% - 50vw);
-    }
-    .lg\:full-bleed-padded {
+    .lg\:full-bleed {        
         width: calc(100vw - 2 * var(--bleed-padding));
         margin-left: calc(50% - 50vw + var(--bleed-padding));
+    }
+    .lg\:full-bleed-unpadded {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
     }
     .lg\:bleed {
         width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
