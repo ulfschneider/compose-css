@@ -32,7 +32,7 @@ function getMarkdownLib() {
         .use(markdownItTableOfContents, { containerClass: 'table-of-contents fluid-columns-5 bleed-right' })
         .use(markdownItDefList)
         .use(markdownItFitMedia, {
-            imgDir: './content'
+            imgDir: './content/'
         })
         .use(markdownItScrollTable)
         .use(markdownItAttrs)

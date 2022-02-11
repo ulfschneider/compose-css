@@ -72,6 +72,10 @@
         width: 100vw;
         margin-left: calc(50% - 50vw);
     }
+    .sm\:full-bleed-padded {
+        width: calc(100vw - 2 * var(--bleed-padding));
+        margin-left: calc(50% - 50vw + var(--bleed-padding));
+    }
     .sm\:bleed {
         width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
         margin-left: max(50% - 50vw + var(--bleed-padding), 50% - var(--bleed-width) / 2);
@@ -304,6 +308,10 @@
     .rg\:full-bleed {
         width: 100vw;
         margin-left: calc(50% - 50vw);
+    }
+    .rg\:full-bleed-padded {
+        width: calc(100vw - 2 * var(--bleed-padding));
+        margin-left: calc(50% - 50vw + var(--bleed-padding));
     }
     .rg\:bleed {
         width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
@@ -543,6 +551,10 @@
     .md\:full-bleed {
         width: 100vw;
         margin-left: calc(50% - 50vw);
+    }
+    .md\:full-bleed-padded {
+        width: calc(100vw - 2 * var(--bleed-padding));
+        margin-left: calc(50% - 50vw + var(--bleed-padding));
     }
     .md\:bleed {
         width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
@@ -794,6 +806,10 @@
     .lg\:full-bleed {
         width: 100vw;
         margin-left: calc(50% - 50vw);
+    }
+    .lg\:full-bleed-padded {
+        width: calc(100vw - 2 * var(--bleed-padding));
+        margin-left: calc(50% - 50vw + var(--bleed-padding));
     }
     .lg\:bleed {
         width: min(100vw - 2 * var(--bleed-padding), var(--bleed-width));
