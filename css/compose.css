@@ -18207,18 +18207,18 @@ Naming conventions
     --mrb-paragraph: var(--vertical-rhythm);
     --mrt-h1: var(--space-1);
     --mrb-h1: var(--vertical-rhythm);
-    --mrt-h2: var(--space-2);
+    --mrt-h2: var(--space-3);
     --mrb-h2: var(--vertical-rhythm);
-    --mrt-h3: var(--space-2);
+    --mrt-h3: var(--space-3);
     --mrb-h3: var(--vertical-rhythm);
-    --mrt-h4: var(--space-2);
+    --mrt-h4: var(--space-3);
     --mrb-h4: var(--vertical-rhythm);
-    --mrt-h5: var(--space-2);
+    --mrt-h5: var(--space-3);
     --mrb-h5: var(--vertical-rhythm);
-    --mrt-h6: var(--space-2);
+    --mrt-h6: var(--space-3);
     --mrb-h6: var(--vertical-rhythm);
-    --mrt-figure: var(--space-2);
-    --mrb-figure: var(--space-2);
+    --mrt-figure: var(--space-3);
+    --mrb-figure: var(--space-3);
     --mrt-blockquote: var(--mrt-figure);
     --mrb-blockquote: var(--mrb-figure);
     --mrt-figcaption: 0;
@@ -18624,7 +18624,7 @@ h2 {
     font-size: var(--fs-h2);
     line-height: calc((calc(1.66 * 1) - 1) / 3 * 2 + 1);
     line-height: var(--lh-h2);
-    margin-top: calc(calc(1.66 * 1rem) * 1.66);
+    margin-top: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
     margin-top: var(--mrt-h2);
     margin-bottom: 1rem;
     margin-bottom: var(--mrb-h2);
@@ -18635,7 +18635,7 @@ h3 {
     font-size: var(--fs-h3);
     line-height: calc((calc(1.66 * 1) - 1) / 3 * 2 + 1);
     line-height: var(--lh-h3);
-    margin-top: calc(calc(1.66 * 1rem) * 1.66);
+    margin-top: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
     margin-top: var(--mrt-h3);
     margin-bottom: 1rem;
     margin-bottom: var(--mrb-h3);
@@ -18646,7 +18646,7 @@ h4 {
     font-size: var(--fs-h4);
     line-height: calc((calc(1.66 * 1) - 1) / 3 * 2 + 1);
     line-height: var(--lh-h4);
-    margin-top: calc(calc(1.66 * 1rem) * 1.66);
+    margin-top: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
     margin-top: var(--mrt-h4);
     margin-bottom: 1rem;
     margin-bottom: var(--mrb-h4);
@@ -18657,7 +18657,7 @@ h5 {
     font-size: var(--fs-h5);
     line-height: calc(1.66 * 1);
     line-height: var(--lh-h5);
-    margin-top: calc(calc(1.66 * 1rem) * 1.66);
+    margin-top: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
     margin-top: var(--mrt-h5);
     margin-bottom: 1rem;
     margin-bottom: var(--mrb-h5);
@@ -18668,7 +18668,7 @@ h6 {
     font-size: var(--fs-h6);
     line-height: calc(1.66 * 1);
     line-height: var(--lh-h6);
-    margin-top: calc(calc(1.66 * 1rem) * 1.66);
+    margin-top: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
     margin-top: var(--mrt-h6);
     margin-bottom: 1rem;
     margin-bottom: var(--mrb-h6);
@@ -18734,9 +18734,9 @@ pre,
     background: var(--pre-background);
     color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
     color: var(--pre-color);
-    margin-top: calc(calc(1.66 * 1rem) * 1.66);
+    margin-top: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
     margin-top: var(--mrt-pre);
-    margin-bottom: calc(calc(1.66 * 1rem) * 1.66);
+    margin-bottom: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
     margin-bottom: var(--mrb-pre);
     overflow-x: auto;
 }
@@ -18790,9 +18790,9 @@ pre>code[class^=language-]::before {
 /* purgecss end ignore */
 
 blockquote {
-    margin-top: calc(calc(1.66 * 1rem) * 1.66);
+    margin-top: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
     margin-top: var(--mrt-blockquote);
-    margin-bottom: calc(calc(1.66 * 1rem) * 1.66);
+    margin-bottom: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
     margin-bottom: var(--mrb-blockquote);
     margin-left: 0;
     margin-right: 0;
@@ -18867,9 +18867,9 @@ html[lang="de-DE"] blockquote {
 }
 
 figure {
-    margin-top: calc(calc(1.66 * 1rem) * 1.66);
+    margin-top: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
     margin-top: var(--mrt-figure);
-    margin-bottom: calc(calc(1.66 * 1rem) * 1.66);
+    margin-bottom: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
     margin-bottom: var(--mrb-figure);
     margin-left: 0;
     margin-right: 0;
@@ -18934,9 +18934,9 @@ blockquote>header::after {
 hr {
     border: 0;
     text-align: center;
-    margin-top: calc(calc(1.66 * 1rem) * 1.66);
+    margin-top: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
     margin-top: var(--mrt-hr);
-    margin-bottom: calc(calc(1.66 * 1rem) * 1.66);
+    margin-bottom: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
     margin-bottom: var(--mrb-hr);
     color: inherit;
 }
@@ -20976,7 +20976,7 @@ dd+dt {
 }
 
 dl.timeline.framed dd+dt {
-    margin-top: calc(calc(1.66 * 1rem) * 1.66);
+    margin-top: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
     margin-top: var(--mrt-figure);
 }
 
@@ -21897,9 +21897,9 @@ img {
 table {
     border-collapse: collapse;
     font-variant-numeric: tabular-nums;
-    margin-top: calc(calc(1.66 * 1rem) * 1.66);
+    margin-top: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
     margin-top: var(--mrt-table);
-    margin-bottom: calc(calc(1.66 * 1rem) * 1.66);
+    margin-bottom: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
     margin-bottom: var(--mrb-table);
     text-align: left;
     font-family: system-ui, ui-sans-serif, sans-serif;
@@ -22175,7 +22175,7 @@ th.sotable-column .indicator {
     grid-template-columns: repeat(2, 1fr);
     column-gap: calc(1.66 * 1rem);
     column-gap: var(--split-column-gap);
-    row-gap: calc(calc(1.66 * 1rem) * 1.66);
+    row-gap: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
     row-gap: var(--split-row-gap);
     align-items: inherit;
     align-items: var(--align-split-items);
@@ -22525,7 +22525,7 @@ th.sotable-column .indicator {
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.66 * 1rem);
         column-gap: var(--split-column-gap);
-        row-gap: calc(calc(1.66 * 1rem) * 1.66);
+        row-gap: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
         row-gap: var(--split-row-gap);
         align-items: inherit;
         align-items: var(--align-split-items);
@@ -22780,7 +22780,7 @@ th.sotable-column .indicator {
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.66 * 1rem);
         column-gap: var(--split-column-gap);
-        row-gap: calc(calc(1.66 * 1rem) * 1.66);
+        row-gap: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
         row-gap: var(--split-row-gap);
         align-items: inherit;
         align-items: var(--align-split-items);
@@ -23035,7 +23035,7 @@ th.sotable-column .indicator {
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.66 * 1rem);
         column-gap: var(--split-column-gap);
-        row-gap: calc(calc(1.66 * 1rem) * 1.66);
+        row-gap: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
         row-gap: var(--split-row-gap);
         align-items: inherit;
         align-items: var(--align-split-items);
@@ -23298,7 +23298,7 @@ th.sotable-column .indicator {
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.66 * 1rem);
         column-gap: var(--split-column-gap);
-        row-gap: calc(calc(1.66 * 1rem) * 1.66);
+        row-gap: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
         row-gap: var(--split-row-gap);
         align-items: inherit;
         align-items: var(--align-split-items);
@@ -23561,7 +23561,7 @@ th.sotable-column .indicator {
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.66 * 1rem);
         column-gap: var(--split-column-gap);
-        row-gap: calc(calc(1.66 * 1rem) * 1.66);
+        row-gap: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
         row-gap: var(--split-row-gap);
         align-items: inherit;
         align-items: var(--align-split-items);
@@ -23840,7 +23840,7 @@ th.sotable-column .indicator {
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.66 * 1rem);
         column-gap: var(--split-column-gap);
-        row-gap: calc(calc(1.66 * 1rem) * 1.66);
+        row-gap: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
         row-gap: var(--split-row-gap);
         align-items: inherit;
         align-items: var(--align-split-items);
@@ -24119,7 +24119,7 @@ th.sotable-column .indicator {
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.66 * 1rem);
         column-gap: var(--split-column-gap);
-        row-gap: calc(calc(1.66 * 1rem) * 1.66);
+        row-gap: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
         row-gap: var(--split-row-gap);
         align-items: inherit;
         align-items: var(--align-split-items);
@@ -24406,7 +24406,7 @@ th.sotable-column .indicator {
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.66 * 1rem);
         column-gap: var(--split-column-gap);
-        row-gap: calc(calc(1.66 * 1rem) * 1.66);
+        row-gap: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
         row-gap: var(--split-row-gap);
         align-items: inherit;
         align-items: var(--align-split-items);
