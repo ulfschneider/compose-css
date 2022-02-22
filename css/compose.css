@@ -1773,10 +1773,10 @@ small,
     --mark-background: yellow;
     --border-color: var(--neutral-3);
     --link-color: inherit;
-    --link-focus-color: inherit;
     --link-hover-color: var(--primary);
-    --outline-color: var(--primary);
+    --link-focus-color: inherit;
     --link-active-color: var(--link-hover-color);
+    --outline-color: var(--primary);    
     --selection-background: var(--primary-5);
     --selection-color: var(--base-color);
     --heading-color: var(--base-color);
@@ -18270,14 +18270,14 @@ Naming conventions
     }
 }
 
-a:active {
-    color: hsl(198, 100%, 33.3%);
-    color: var(--link-active-color);
-}
-
 a:focus {
     color: inherit;
     color: var(--link-focus-color);
+}
+
+a:active {
+    color: hsl(198, 100%, 33.3%);
+    color: var(--link-active-color);
 }
 
 .font-family-inherit {

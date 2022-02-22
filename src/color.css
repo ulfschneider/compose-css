@@ -120,10 +120,10 @@
     --mark-background: yellow;
     --border-color: var(--neutral-3);
     --link-color: inherit;
-    --link-focus-color: inherit;
     --link-hover-color: var(--primary);
-    --outline-color: var(--primary);
+    --link-focus-color: inherit;
     --link-active-color: var(--link-hover-color);
+    --outline-color: var(--primary);    
     --selection-background: var(--primary-5);
     --selection-color: var(--base-color);
     --heading-color: var(--base-color);

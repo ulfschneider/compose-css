@@ -88,12 +88,12 @@
     }
 }
 
-a:active {
-    color: var(--link-active-color);
-}
-
 a:focus {
     color: var(--link-focus-color);
+}
+
+a:active {
+    color: var(--link-active-color);
 }
 
 .font-family-inherit {
