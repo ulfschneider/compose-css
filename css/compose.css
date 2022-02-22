@@ -1790,7 +1790,7 @@ small,
     --form-field-border-color: var(--border-color);
     --caret-color: var(--primary-d1);
     --form-button-background: var(--primary);
-    --form-button-active-brightness: calc(100% + var(--primary-up-step));
+    --form-button-active-brightness: 1.25;
     --form-button-hover-brightness: var(--form-button-active-brightness);
     --form-button-focus-brightness: 1;
     --form-button-color: var(--base-background);
@@ -19091,7 +19091,7 @@ select {
     button:hover,
     .button:hover,
     select:hover {      
-        filter: brightness(calc(100% + calc((100% - 33.3%) / 6)));      
+        filter: brightness(1.25);      
         filter: brightness(var(--form-button-hover-brightness));
     }
 }
@@ -19110,7 +19110,7 @@ input[type=reset]:active,
 button:active,
 .button:active,
 select:active {
-    filter: brightness(calc(100% + calc((100% - 33.3%) / 6)));
+    filter: brightness(1.25);
     filter: brightness(var(--form-button-active-brightness));
 }
 
