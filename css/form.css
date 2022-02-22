@@ -74,8 +74,8 @@ select {
     input[type=reset]:hover,
     button:hover,
     .button:hover,
-    select:hover {
-        background: var(--form-button-hover-background);
+    select:hover {      
+        filter: brightness(var(--form-button-hover-brightness));
     }
 }
 
@@ -84,7 +84,7 @@ input[type=reset]:focus,
 button:focus,
 .button:focus,
 select:focus {
-    background: var(--form-button-hover-background);
+    filter: brightness(var(--form-button-focus-brightness));
 }
 
  input[type=submit]:active,
@@ -92,7 +92,7 @@ input[type=reset]:active,
 button:active,
 .button:active,
 select:active {
-    background: var(--form-button-active-background);
+    filter: brightness(var(--form-button-active-brightness));
 }
 
  label,

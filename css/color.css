@@ -135,10 +135,10 @@
     --form-field-color: var(--base-color);
     --form-field-border-color: var(--border-color);
     --caret-color: var(--primary-d1);
-    --form-button-background: var(--primary-d1);
-    --form-button-active-background: var(--primary);
-    --form-button-hover-background: var(--primary);
-    --form-button-focus-background: var(--form-button-hover-background);
+    --form-button-background: var(--primary);
+    --form-button-active-brightness: calc(100% + var(--primary-up-step));
+    --form-button-hover-brightness: var(--form-button-active-brightness);
+    --form-button-focus-brightness: 1;
     --form-button-color: var(--base-background);
     --form-field-background: var(--neutral-5);
     --form-field-focus-color: var(--primary);

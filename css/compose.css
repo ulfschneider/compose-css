@@ -1788,10 +1788,10 @@ small,
     --form-field-color: var(--base-color);
     --form-field-border-color: var(--border-color);
     --caret-color: var(--primary-d1);
-    --form-button-background: var(--primary-d1);
-    --form-button-active-background: var(--primary);
-    --form-button-hover-background: var(--primary);
-    --form-button-focus-background: var(--form-button-hover-background);
+    --form-button-background: var(--primary);
+    --form-button-active-brightness: calc(100% + var(--primary-up-step));
+    --form-button-hover-brightness: var(--form-button-active-brightness);
+    --form-button-focus-brightness: 1;
     --form-button-color: var(--base-background);
     --form-field-background: var(--neutral-5);
     --form-field-focus-color: var(--primary);
@@ -19075,7 +19075,7 @@ select {
     border-radius: 0px;
     border-radius: var(--form-radius);
     vertical-align: baseline;
-    background: hsl(198, 100%, calc(33.3% - calc(33.3% / 7)));
+    background: hsl(198, 100%, 33.3%);
     background: var(--form-button-background);
     color: white;
     color: var(--form-button-color);
@@ -19089,9 +19089,9 @@ select {
     input[type=reset]:hover,
     button:hover,
     .button:hover,
-    select:hover {
-        background: hsl(198, 100%, 33.3%);
-        background: var(--form-button-hover-background);
+    select:hover {      
+        filter: brightness(calc(100% + calc((100% - 33.3%) / 6)));      
+        filter: brightness(var(--form-button-hover-brightness));
     }
 }
 
@@ -19100,8 +19100,8 @@ input[type=reset]:focus,
 button:focus,
 .button:focus,
 select:focus {
-    background: hsl(198, 100%, 33.3%);
-    background: var(--form-button-hover-background);
+    filter: brightness(1);
+    filter: brightness(var(--form-button-focus-brightness));
 }
 
 input[type=submit]:active,
@@ -19109,8 +19109,8 @@ input[type=reset]:active,
 button:active,
 .button:active,
 select:active {
-    background: hsl(198, 100%, 33.3%);
-    background: var(--form-button-active-background);
+    filter: brightness(calc(100% + calc((100% - 33.3%) / 6)));
+    filter: brightness(var(--form-button-active-brightness));
 }
 
 label,
