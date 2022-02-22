@@ -121,7 +121,7 @@
     --border-color: var(--neutral-3);
     --link-color: inherit;
     --link-hover-color: var(--primary);
-    --link-focus-color: inherit;
+    --link-focus-color: var(--link-hover-color);
     --link-active-color: var(--link-hover-color);
     --outline-color: var(--primary);    
     --selection-background: var(--primary-5);
@@ -137,7 +137,7 @@
     --form-field-border-color: var(--border-color);
     --caret-color: var(--primary-d1);
     --form-button-background: var(--primary);
-    --form-button-active-brightness: 1.25;
+    --form-button-active-brightness: 1.3;
     --form-button-hover-brightness: var(--form-button-active-brightness);
     --form-button-focus-brightness: 1;
     --form-button-color: var(--base-background);
@@ -271,7 +271,7 @@
 }
 
 .link-focus-color {
-    color: inherit;
+    color: hsl(198, 100%, 33.3%);
     color: var(--link-focus-color);
 }
 
@@ -310,7 +310,7 @@
 }
 
 .bg-link-focus-color {
-    background: inherit;
+    background: hsl(198, 100%, 33.3%);
     background: var(--link-focus-color);
 }
 
@@ -434,7 +434,7 @@
 }
 
 .bg-link-focus-color {
-    background-color: inherit;
+    background-color: hsl(198, 100%, 33.3%);
     background-color: var(--link-focus-color);
 }
 
@@ -544,7 +544,7 @@
 }
 
 .br-link-focus-color {
-    border-color: inherit;
+    border-color: hsl(198, 100%, 33.3%);
     border-color: var(--link-focus-color);
 }
 
