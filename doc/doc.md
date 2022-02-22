@@ -1606,3 +1606,5 @@ Each breakpoint *can* trigger a change in base font size. The wider the screen, 
 
 <button>A button</button>
 
+<input type="text" />
+

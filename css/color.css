@@ -122,6 +122,7 @@
     --link-color: inherit;
     --link-focus-color: inherit;
     --link-hover-color: var(--primary);
+    --outline-color: var(--primary);
     --link-active-color: var(--link-hover-color);
     --selection-background: var(--primary-5);
     --selection-color: var(--base-color);

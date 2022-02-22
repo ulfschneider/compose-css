@@ -147,7 +147,7 @@ input[type=tel]:focus,
 input[type=url]:focus,
 input[list]:focus,
 textarea:focus {
-    border-color: var(--form-field-color);
+    border-color: transparent;
 }
 
  input:focus+label,
