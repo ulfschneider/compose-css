@@ -224,6 +224,7 @@ dl.timeline>dd>*.framed::before {
     dl.timeline.row>dt>*+*,
     dl.timeline.row>dd>*+* {
         margin-top: 1em;
+        text-indent: 0;
     }
     dl.timeline.row>dt>.framed,
     dl.timeline.row>dd>.framed {
@@ -320,6 +321,7 @@ dl.timeline>dd>*.framed::before {
     dl.timeline.row>dt>*+*,
     dl.timeline.row>dd>*+* {
         margin-top: 1em;
+        text-indent: 0;
     }
     dl.timeline.row>dt>.framed,
     dl.timeline.row>dd>.framed {
