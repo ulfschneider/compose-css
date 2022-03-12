@@ -20974,7 +20974,8 @@ table dd {
     margin-left: 0;
 }
 
-dd+dt {
+dd+dt, 
+dt+dt {
     margin-top: 1rem;
     margin-top: var(--mrt-list);
 }
@@ -21097,7 +21098,7 @@ dl.timeline>dd>*.framed::before {
         max-width: unset;
         font-size: smaller;
         max-width: unset;
-    }
+    }    
     dl.timeline.row>dt,
     dl.timeline.row>dd {
         flex-shrink: 1;
@@ -21197,7 +21198,7 @@ dl.timeline>dd>*.framed::before {
         max-width: unset;
         font-size: smaller;
         max-width: unset;
-    }
+    }    
     dl.timeline.row>dt,
     dl.timeline.row>dd {
         flex-shrink: 1;

@@ -793,7 +793,7 @@ familiar walls.</dd>
 ### Horizontal Timeline
 
 <dl class="timeline framed row ordered">
-<dt>One morning</dt>
+<dt class="stacked"><strong>One morning</strong><p>first paragraph</p><p>second paragraph</p></dt>
 <dd>when Gregor Samsa woke from troubled dreams, he found himself 
 transformed in his bed into a horrible vermin.</dd>
 <dt>He lay on his armour-like back</dt>
