@@ -216,6 +216,9 @@ dl.timeline>dd>*.framed::before {
         display: flex;
         flex-direction: column-reverse;        
     }
+    dl.timeline.row>dt.stacked>*:first-child {
+        margin-top: 1em;
+    }
     dl.timeline.row>dt.stacked::after {
         margin-top: calc(var(--vertical-rhythm) + calc(1em + 4px) / 2);
         margin-top: calc(var(--timeline-row-y-gap) + var(--timeline-blub-size) / 2);
@@ -320,6 +323,9 @@ dl.timeline>dd>*.framed::before {
     dl.timeline.row>dt.stacked {
         display: flex;
         flex-direction: column-reverse;        
+    }
+    dl.timeline.row>dt.stacked>*:first-child {
+        margin-top: 1em;
     }
     dl.timeline.row>dt.stacked::after {
         margin-top: calc(var(--vertical-rhythm) + calc(1em + 4px) / 2);

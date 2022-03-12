@@ -182,6 +182,9 @@ dl.timeline>dd>*.framed::before {
         display: flex;
         flex-direction: column-reverse;        
     }
+    dl.timeline.row>dt.stacked>*:first-child {
+        margin-top: 1em;
+    }
     dl.timeline.row>dt.stacked::after {
         margin-top: calc(var(--timeline-row-y-gap) + var(--timeline-blub-size) / 2);
     }
