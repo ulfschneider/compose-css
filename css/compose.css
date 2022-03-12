@@ -21136,6 +21136,14 @@ dl.timeline>dd>*.framed::before {
         font-size: 1em;
         font-size: var(--timeline-blub-font-size);
     }
+    dl.timeline.row>dt.stacked {
+        display: flex;
+        flex-direction: column-reverse;        
+    }
+    dl.timeline.row>dt.stacked::after {
+        margin-top: calc(1rem + calc(1em + 4px) / 2);
+        margin-top: calc(var(--timeline-row-y-gap) + var(--timeline-blub-size) / 2);
+    }
     dl.timeline.row.ordered>dt::after {
         content: counters(ol-counter, ".", decimal);
         content: var(--ol-counter);
@@ -21235,6 +21243,14 @@ dl.timeline>dd>*.framed::before {
         z-index: 1000;
         font-size: 1em;
         font-size: var(--timeline-blub-font-size);
+    }
+    dl.timeline.row>dt.stacked {
+        display: flex;
+        flex-direction: column-reverse;        
+    }
+    dl.timeline.row>dt.stacked::after {
+        margin-top: calc(1rem + calc(1em + 4px) / 2);
+        margin-top: calc(var(--timeline-row-y-gap) + var(--timeline-blub-size) / 2);
     }
     dl.timeline.row.ordered>dt::after {
         content: counters(ol-counter, ".", decimal);
