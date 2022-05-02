@@ -513,8 +513,8 @@ ol.indent li::before {
     ol {
         padding-left: 0;
     }
-    li ul,
-    li ol {
+    li>ul,
+    li>ol {
         padding-left: var(--horizontal-rhythm);
     }
     ul li::before,
@@ -532,8 +532,8 @@ ol.indent li::before {
     ol {
         padding-left: 0;
     }
-    li ul,
-    li ol {
+    li>ul,
+    li>ol {
         padding-left: var(--horizontal-rhythm);
     }
     ul li::before,
