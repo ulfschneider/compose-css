@@ -22,10 +22,8 @@ const processingDocCSS = () => {
                 content: [
                     'resources/sotable-min.js',
                     'index-new.html',
-                    'doc/prism.css',
                     'doc/customize.css'
                 ],
-                whitelistPatterns: [/^token/, /^pre/, /^code/],
                 defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [] //check https://flaviocopes.com/tailwind-setup/
             }),
             cssNano()

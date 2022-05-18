@@ -32,7 +32,6 @@ module.exports = {
                 /*decide about the content to search for CSS classes to keep*/
                 /*...*/
             ],
-            whitelistPatterns: [/^token/, /^pre/, /^code/],
             defaultExtractor: (content) =>
                 content.match(/[\w-/:]+(?<!:)/g) || [] /*check https://flaviocopes.com/tailwind-setup/ */ ,
         }),

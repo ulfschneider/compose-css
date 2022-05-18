@@ -26093,3 +26093,104 @@ Just tack one of these classes onto a parent element.
 .debug-grid-16-solid {
     background: white url(data:image/gif;base64,R0lGODdhEAAQAPEAAADw/wDx/xXy/////ywAAAAAEAAQAAACIZyPKckYDQFsb6ZqD85jZ2+BkwiRFKehhqQCQgDHcgwEBQA7) repeat top left;
 }
+
+/* PrismJS 1.26.0
+https://prismjs.com/download.html#themes=prism-funky&languages=markup+css+clike+javascript */
+
+/**
+ * prism.js Funky theme
+ * Based on “Polyfilling the gaps” talk slides http://lea.verou.me/polyfilling-the-gaps/
+ * @author Lea Verou
+ */
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: hsl(80, 100%, calc(30% + 3 * calc((100% - 30%) / 6)));
+    color: var(--accent-one-3);
+}
+
+.token.punctuation {
+    color: hsl(0, 0%, calc(53% + 3 * calc((100% - 53%) / 6)));
+    color: var(--neutral-3);
+}
+
+.token.namespace {
+    opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol {
+    color: hsl(198, 100%, calc(33.3% + 3 * calc((100% - 33.3%) / 6)));
+    color: var(--primary-3);
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin {
+    color: hsl(32, 100%, calc(49% + 3 * calc((100% - 49%) / 6)));
+    color: var(--accent-four-3);
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.token.variable,
+.token.inserted {
+    color: hsl(80, 100%, calc(30% + 3 * calc((100% - 30%) / 6)));
+    color: var(--accent-one-3);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword,
+.token.function {
+    color: hsl(326.7, 100%, calc(30% + 4 * calc((100% - 30%) / 6)));
+    color: var(--accent-two-4);
+}
+
+.token.regex,
+.token.important {
+    color: hsl(356, 83%, calc(41% + 4 * calc((100% - 41%) / 6)));
+    color: var(--accent-three-4);
+}
+
+.token.important,
+.token.bold {
+    font-weight: bold;
+}
+
+.token.italic {
+    font-style: italic;
+}
+
+.token.entity {
+    cursor: help;
+}
+
+.token.deleted {
+    color: hsl(356, 83%, 41%);
+    color: var(--accent-three);
+}
+
+/* Plugin styles: Diff Highlight */
+
+pre.diff-highlight.diff-highlight>code .token.deleted:not(.prefix),
+pre>code.diff-highlight.diff-highlight .token.deleted:not(.prefix) {
+    background-color: rgba(255, 0, 0, .3);
+    display: inline;
+}
+
+pre.diff-highlight.diff-highlight>code .token.inserted:not(.prefix),
+pre>code.diff-highlight.diff-highlight .token.inserted:not(.prefix) {
+    background-color: rgba(0, 255, 128, .3);
+    display: inline;
+}

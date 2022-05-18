@@ -8,6 +8,7 @@ https://prismjs.com/download.html#themes=prism-funky&languages=markup+css+clike+
  * @author Lea Verou
  */
 
+
 .token.comment,
 .token.prolog,
 .token.doctype,
@@ -15,13 +16,16 @@ https://prismjs.com/download.html#themes=prism-funky&languages=markup+css+clike+
     color: var(--accent-one-3);
 }
 
+
 .token.punctuation {
     color: var(--neutral-3);
 }
 
+
 .token.namespace {
     opacity: .7;
 }
+
 
 .token.property,
 .token.tag,
@@ -32,6 +36,7 @@ https://prismjs.com/download.html#themes=prism-funky&languages=markup+css+clike+
     color: var(--primary-3);
 }
 
+
 .token.selector,
 .token.attr-name,
 .token.string,
@@ -39,6 +44,7 @@ https://prismjs.com/download.html#themes=prism-funky&languages=markup+css+clike+
 .token.builtin {
     color: var(--accent-four-3);
 }
+
 
 .token.operator,
 .token.entity,
@@ -49,30 +55,36 @@ https://prismjs.com/download.html#themes=prism-funky&languages=markup+css+clike+
     color: var(--accent-one-3);
 }
 
+
 .token.atrule,
 .token.attr-value,
 .token.keyword,
 .token.function {
-    color: var(--accent-two-3);
+    color: var(--accent-two-4);
 }
+
 
 .token.regex,
 .token.important {
-    color: var(--accent-three-3);
+    color: var(--accent-three-4);
 }
+
 
 .token.important,
 .token.bold {
     font-weight: bold;
 }
 
+
 .token.italic {
     font-style: italic;
 }
 
+
 .token.entity {
     cursor: help;
 }
+
 
 .token.deleted {
     color: var(--accent-three);
@@ -81,11 +93,13 @@ https://prismjs.com/download.html#themes=prism-funky&languages=markup+css+clike+
 
 /* Plugin styles: Diff Highlight */
 
+
 pre.diff-highlight.diff-highlight>code .token.deleted:not(.prefix),
 pre>code.diff-highlight.diff-highlight .token.deleted:not(.prefix) {
     background-color: rgba(255, 0, 0, .3);
     display: inline;
 }
+
 
 pre.diff-highlight.diff-highlight>code .token.inserted:not(.prefix),
 pre>code.diff-highlight.diff-highlight .token.inserted:not(.prefix) {
