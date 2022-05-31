@@ -47,8 +47,8 @@
     --mrb-blockquote: var(--mrb-figure);
     --mrt-figcaption: 0;
     --mrb-figcaption: 0;
-    --mrt-pre: var(--mrt-figure);
-    --mrb-pre: var(--mrb-figure);
+    --mrt-pre: var(--vertical-rhythm);
+    --mrb-pre: var(--vertical-rhythm);
     --mrt-hr: var(--mrt-figure);
     --mrb-hr: var(--mrb-figure);
     --hr-content: "·\0000a0\0000a0\0000a0\0000a0·\0000a0\0000a0\0000a0\0000a0·";
@@ -533,9 +533,9 @@ pre,
     /*for safari */
     background: var(--pre-background);
     color: var(--pre-color);
-    margin-top: var(--space-3);
+    margin-top: var(--space);
     margin-top: var(--mrt-pre);
-    margin-bottom: var(--space-3);
+    margin-bottom: var(--space);
     margin-bottom: var(--mrb-pre);
     overflow-x: auto;
 }

@@ -47,8 +47,8 @@
     --mrb-blockquote: var(--mrb-figure);
     --mrt-figcaption: 0;
     --mrb-figcaption: 0;
-    --mrt-pre: var(--mrt-figure);
-    --mrb-pre: var(--mrb-figure);
+    --mrt-pre: var(--vertical-rhythm);
+    --mrb-pre: var(--vertical-rhythm);
     --mrt-hr: var(--mrt-figure);
     --mrb-hr: var(--mrb-figure);
     --hr-content: "·\0000a0\0000a0\0000a0\0000a0·\0000a0\0000a0\0000a0\0000a0·";

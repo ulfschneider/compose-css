@@ -18228,8 +18228,8 @@ Naming conventions
     --mrb-blockquote: var(--mrb-figure);
     --mrt-figcaption: 0;
     --mrb-figcaption: 0;
-    --mrt-pre: var(--mrt-figure);
-    --mrb-pre: var(--mrb-figure);
+    --mrt-pre: var(--vertical-rhythm);
+    --mrb-pre: var(--vertical-rhythm);
     --mrt-hr: var(--mrt-figure);
     --mrb-hr: var(--mrb-figure);
     --hr-content: "·\0000a0\0000a0\0000a0\0000a0·\0000a0\0000a0\0000a0\0000a0·";
@@ -18739,9 +18739,9 @@ pre,
     background: var(--pre-background);
     color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
     color: var(--pre-color);
-    margin-top: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
+    margin-top: 1rem;
     margin-top: var(--mrt-pre);
-    margin-bottom: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
+    margin-bottom: 1rem;
     margin-bottom: var(--mrb-pre);
     overflow-x: auto;
 }
@@ -21895,8 +21895,8 @@ img {
     --table-heading-font-family: var(--heading-font-family);
     --table-font-family: var(--font-family);
     --table-font-size: var(--fs);
-    --mrt-table: var(--mrt-figure);
-    --mrb-table: var(--mrb-figure);
+    --mrt-table: var(--vertical-rhythm);
+    --mrb-table: var(--vertical-rhythm);
     --td-x-padding: var(--space);
     --td-y-padding: var(--space-d1);
 }
@@ -21904,9 +21904,9 @@ img {
 table {
     border-collapse: collapse;
     font-variant-numeric: tabular-nums;
-    margin-top: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
+    margin-top: 1rem;
     margin-top: var(--mrt-table);
-    margin-bottom: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
+    margin-bottom: 1rem;
     margin-bottom: var(--mrb-table);
     text-align: left;
     font-family: system-ui, ui-sans-serif, sans-serif;
