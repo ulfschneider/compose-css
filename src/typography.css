@@ -26,31 +26,32 @@
     --link-text-decoration-thickness: var(--text-decoration-thickness);
     --font-variant-numeric: normal;
     --vertical-rhythm: var(--space);
+    --vertical-rhythm-plus: var(--space-1);
     --horizontal-rhythm: var(--space-1);
     --mrt-paragraph: var(--vertical-rhythm);
     --mrb-paragraph: var(--vertical-rhythm);
-    --mrt-h1: var(--space-1);
-    --mrb-h1: var(--vertical-rhythm);
+    --mrt-h1: var(--vertical-rhythm-plus);
+    --mrb-h1: var(--vertical-rhythm-plus);
     --mrt-h2: var(--space-3);
-    --mrb-h2: var(--vertical-rhythm);
-    --mrt-h3: var(--space-3);
-    --mrb-h3: var(--vertical-rhythm);
-    --mrt-h4: var(--space-3);
-    --mrb-h4: var(--vertical-rhythm);
-    --mrt-h5: var(--space-3);
-    --mrb-h5: var(--vertical-rhythm);
-    --mrt-h6: var(--space-3);
-    --mrb-h6: var(--vertical-rhythm);
-    --mrt-figure: var(--space-3);
-    --mrb-figure: var(--space-3);
-    --mrt-blockquote: var(--mrt-figure);
-    --mrb-blockquote: var(--mrb-figure);
+    --mrb-h2: var(--vertical-rhythm-plus);
+    --mrt-h3: var(--vertical-rhythm-plus);
+    --mrb-h3: var(--vertical-rhythm-plus);
+    --mrt-h4: var(--vertical-rhythm-plus);
+    --mrb-h4: var(--vertical-rhythm-plus);
+    --mrt-h5: var(--vertical-rhythm-plus);
+    --mrb-h5: var(--vertical-rhythm-plus);
+    --mrt-h6: var(--vertical-rhythm-plus);
+    --mrb-h6: var(--vertical-rhythm-plus);
+    --mrt-figure: var(--vertical-rhythm-plus);
+    --mrb-figure: var(--vertical-rhythm-plus);
+    --mrt-blockquote: var(--vertical-rhythm-plus);
+    --mrb-blockquote: var(--vertical-rhythm-plus);
     --mrt-figcaption: 0;
     --mrb-figcaption: 0;
-    --mrt-pre: var(--vertical-rhythm);
-    --mrb-pre: var(--vertical-rhythm);
-    --mrt-hr: var(--mrt-figure);
-    --mrb-hr: var(--mrb-figure);
+    --mrt-pre: var(--vertical-rhythm-plus);
+    --mrb-pre: var(--vertical-rhythm-plus);
+    --mrt-hr: var(--vertical-rhythm-plus);
+    --mrb-hr: var(--vertical-rhythm-plus);
     --hr-content: "·\0000a0\0000a0\0000a0\0000a0·\0000a0\0000a0\0000a0\0000a0·";
     --quotes: """ """"'""'";
     --quotes-de: """ """"'""'";
@@ -437,13 +438,15 @@ h6 {
 }
 
 p {
+    margin: 0;
+}
+
+p+p {
     margin-top: var(--mrt-paragraph);
-    margin-bottom: var(--mrb-paragraph);
 }
 
 .indent p {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .indent p+p {
@@ -456,14 +459,18 @@ p.indent {
 
 .no-indent p {
     text-indent: 0;
+}
+
+.no-indent p+p {
     margin-top: var(--mrt-paragraph);
-    margin-bottom: var(--mrb-paragraph);
 }
 
 p.no-indent {
     text-indent: 0 !important;
-    margin-top: var(--mrt-paragraph) !important;
-    margin-bottom: var(--mrb-paragraph) !important;
+}
+
+p+p.no-indent {
+    margin-top: var(--mrt-paragraph);
 }
 
 .code,
@@ -636,6 +643,7 @@ blockquote>header::after {
 }
 
 @media(--mx-sm-breakpoint) {
+
     figcaption,
     blockquote>footer,
     blockquote>header {

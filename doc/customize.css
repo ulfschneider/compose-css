@@ -1,6 +1,5 @@
 :root {
-    --mrt-h2: var(--space-4);
-    --mrt-h3: var(--space-3);
+    --mrt-h2: var(--space-4);    
     --fs-h1: var(--fs-5);
     --fs-h2: var(--fs-4);
     --fs-h2: var(--fs-3);
@@ -49,9 +48,4 @@ dl {
 .table-of-contents a {
     text-decoration: none;
     display: inline-block;
-}
-
-pre[class^=language] {
-    margin-bottom: var(--space-3);
-    margin-top: var(--space-1);
 }

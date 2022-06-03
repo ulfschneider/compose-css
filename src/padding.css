@@ -403,3 +403,29 @@ Naming conventions
 .pdl-6 {
     padding-left: var(--space-6);
 }
+
+.pdy-vr {
+    padding-top: var(--vertical-rhythm);
+    padding-bottom: var(--vertical-rhythm);
+}
+
+.pdt-vr {
+    padding-top: var(--vertical-rhythm);
+}
+
+.pdb-vr {
+    padding-bottom: var(--vertical-rhythm);
+}
+
+.pdy-vrplus {
+    padding-top: var(--vertical-rhythm-plus);
+    padding-bottom: var(--vertical-rhythm-plus);
+}
+
+.pdt-vrplus {
+    padding-top: var(--vertical-rhythm-plus);
+}
+
+.pdb-vrplus {
+    padding-bottom: var(--vertical-rhythm-plus);
+}

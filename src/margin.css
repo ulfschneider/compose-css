@@ -575,6 +575,32 @@ Naming conventions
     margin-left: calc(-1 * var(--space-6));
 }
 
+.mry-vr {
+    margin-top: var(--vertical-rhythm);
+    margin-bottom: var(--vertical-rhythm);
+}
+
+.mrt-vr {
+    margin-top: var(--vertical-rhythm);    
+}
+
+.mrb-vr {
+    margin-bottom: var(--vertical-rhythm);
+}
+
+.mry-vrplus {
+    margin-top: var(--vertical-rhythm-plus);
+    margin-bottom: var(--vertical-rhythm-plus);
+}
+
+.mrt-vrplus {
+    margin-top: var(--vertical-rhythm-plus);    
+}
+
+.mrb-vrplus {
+    margin-bottom: var(--vertical-rhythm-plus);
+}
+
 .mrt-auto {
     margin-top: auto;
     /* for flexbox*/
