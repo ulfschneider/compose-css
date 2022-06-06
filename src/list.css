@@ -2,7 +2,7 @@
     --mrt-list: var(--vertical-rhythm);
     --mrb-list: var(--vertical-rhythm);
     --list-item-type: "●";
-    /*▁⁕●■ → */
+    /*▁⁕●■ →* */
     --ol-counter-delimiter: ".";
     --ol-counter-type: decimal;
     --h-counter-type: decimal;

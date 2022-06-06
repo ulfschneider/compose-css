@@ -598,7 +598,7 @@ He lay on his armour-like back, and if he lifted his head a little he could see 
     One morning, when Gregor Samsa woke from troubled dreams, he found himself
     transformed in his bed into a horrible vermin.
 </p>
-<hr />
+<hr>
 <p>
     He lay on his armour-like back, and if he lifted his head a little he could
     see his brown belly, slightly domed and divided by arches into stiff sections.
@@ -611,7 +611,7 @@ Configure the displayed symbols with:
 
 ```css
 :root {
-    --hr-content: "·\0000a0\0000a0\0000a0\0000a0·\0000a0\0000a0\0000a0\0000a0·";
+    --hr-content: "*\0000a0\0000a0\0000a0\0000a0*\0000a0\0000a0\0000a0\0000a0*";
 }
 ```
 
@@ -1603,7 +1603,27 @@ Each breakpoint *can* trigger a change in base font size. The wider the screen, 
 
 ## Forms
 
+<form>
+<div>
 <button>A button</button>
+</div>
 
+<div>
+<label for="ccheck" class="custom-control">
+<input id="ccheck" type="checkbox"/>
+<span>Hello World</span>
+</label>
+</div>
+
+<div>
+<label for="cradio" class="custom-control">
+<input id="cradio" type="radio"/>
+<span>Hello World</span>
+</label>
+</div>
+
+<div>
 <input type="text" />
+</div>
+</form>
 

@@ -52,7 +52,7 @@
     --mrb-pre: var(--vertical-rhythm-plus);
     --mrt-hr: var(--vertical-rhythm-plus);
     --mrb-hr: var(--vertical-rhythm-plus);
-    --hr-content: "·\0000a0\0000a0\0000a0\0000a0·\0000a0\0000a0\0000a0\0000a0·";
+    --hr-content: "*\0000a0\0000a0\0000a0\0000a0*\0000a0\0000a0\0000a0\0000a0*";
     --quotes: """ """"'""'";
     --quotes-de: """ """"'""'";
     --scroll-margin-top: var(--vertical-rhythm);
@@ -733,7 +733,7 @@ hr {
 }
 
 hr::after {
-    content: "·\0000a0\0000a0\0000a0\0000a0·\0000a0\0000a0\0000a0\0000a0·";
+    content: "*\0000a0\0000a0\0000a0\0000a0*\0000a0\0000a0\0000a0\0000a0*";
     content: var(--hr-content);
     white-space: pre;
     color: inherit;
