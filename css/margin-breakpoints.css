@@ -636,6 +636,19 @@ Naming conventions
     .sm\:mrb-vrplus {
         margin-bottom: var(--vertical-rhythm-plus);
     }
+
+    .sm\:mrx-hr {
+        margin-left: var(--horizontal-rhythm);
+        margin-right: var(--horizontal-rhythm);
+    }
+
+    .sm\:mrl-hr {
+        margin-left: var(--horizontal-rhythm);
+    }
+
+    .sm\:mrr-hr {
+        margin-right: var(--horizontal-rhythm);
+    }
 }
 
 @media (--mi-sm-breakpoint) {
@@ -1261,6 +1274,19 @@ Naming conventions
 
     .sm\:mrb-vrplus {
         margin-bottom: var(--vertical-rhythm-plus);
+    }
+
+    .sm\:mrx-hr {
+        margin-left: var(--horizontal-rhythm);
+        margin-right: var(--horizontal-rhythm);
+    }
+
+    .sm\:mrl-hr {
+        margin-left: var(--horizontal-rhythm);
+    }
+
+    .sm\:mrr-hr {
+        margin-right: var(--horizontal-rhythm);
     }
 }
 
@@ -1888,6 +1914,19 @@ Naming conventions
     .rg\:mrb-vrplus {
         margin-bottom: var(--vertical-rhythm-plus);
     }
+
+    .rg\:mrx-hr {
+        margin-left: var(--horizontal-rhythm);
+        margin-right: var(--horizontal-rhythm);
+    }
+
+    .rg\:mrl-hr {
+        margin-left: var(--horizontal-rhythm);
+    }
+
+    .rg\:mrr-hr {
+        margin-right: var(--horizontal-rhythm);
+    }
 }
 
 @media (--mi-rg-breakpoint) {
@@ -2513,6 +2552,19 @@ Naming conventions
 
     .rg\:mrb-vrplus {
         margin-bottom: var(--vertical-rhythm-plus);
+    }
+
+    .rg\:mrx-hr {
+        margin-left: var(--horizontal-rhythm);
+        margin-right: var(--horizontal-rhythm);
+    }
+
+    .rg\:mrl-hr {
+        margin-left: var(--horizontal-rhythm);
+    }
+
+    .rg\:mrr-hr {
+        margin-right: var(--horizontal-rhythm);
     }
 }
 
@@ -3140,6 +3192,19 @@ Naming conventions
     .md\:mrb-vrplus {
         margin-bottom: var(--vertical-rhythm-plus);
     }
+
+    .md\:mrx-hr {
+        margin-left: var(--horizontal-rhythm);
+        margin-right: var(--horizontal-rhythm);
+    }
+
+    .md\:mrl-hr {
+        margin-left: var(--horizontal-rhythm);
+    }
+
+    .md\:mrr-hr {
+        margin-right: var(--horizontal-rhythm);
+    }
 }
 
 @media (--mi-md-breakpoint) {
@@ -3765,6 +3830,19 @@ Naming conventions
 
     .md\:mrb-vrplus {
         margin-bottom: var(--vertical-rhythm-plus);
+    }
+
+    .md\:mrx-hr {
+        margin-left: var(--horizontal-rhythm);
+        margin-right: var(--horizontal-rhythm);
+    }
+
+    .md\:mrl-hr {
+        margin-left: var(--horizontal-rhythm);
+    }
+
+    .md\:mrr-hr {
+        margin-right: var(--horizontal-rhythm);
     }
 }
 
@@ -4392,6 +4470,19 @@ Naming conventions
     .lg\:mrb-vrplus {
         margin-bottom: var(--vertical-rhythm-plus);
     }
+
+    .lg\:mrx-hr {
+        margin-left: var(--horizontal-rhythm);
+        margin-right: var(--horizontal-rhythm);
+    }
+
+    .lg\:mrl-hr {
+        margin-left: var(--horizontal-rhythm);
+    }
+
+    .lg\:mrr-hr {
+        margin-right: var(--horizontal-rhythm);
+    }
 }
 
 @media (--mi-lg-breakpoint) {
@@ -5017,5 +5108,18 @@ Naming conventions
 
     .lg\:mrb-vrplus {
         margin-bottom: var(--vertical-rhythm-plus);
+    }
+
+    .lg\:mrx-hr {
+        margin-left: var(--horizontal-rhythm);
+        margin-right: var(--horizontal-rhythm);
+    }
+
+    .lg\:mrl-hr {
+        margin-left: var(--horizontal-rhythm);
+    }
+
+    .lg\:mrr-hr {
+        margin-right: var(--horizontal-rhythm);
     }
 }

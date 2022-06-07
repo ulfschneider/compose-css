@@ -429,3 +429,16 @@ Naming conventions
 .pdb-vrplus {
     padding-bottom: var(--vertical-rhythm-plus);
 }
+
+.pdx-hr {
+    padding-left: var(--horizontal-rhythm);
+    padding-right: var(--horizontal-rhythm);
+}
+
+.pdl-hr {
+    padding-left: var(--horizontal-rhythm);
+}
+
+.pdr-hr {
+    padding-right: var(--horizontal-rhythm);
+}

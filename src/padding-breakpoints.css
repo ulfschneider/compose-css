@@ -431,6 +431,19 @@ Naming conventions
     .sm\:pdb-vrplus {
         padding-bottom: var(--vertical-rhythm-plus);
     }
+
+    .sm\:pdx-hr {
+        padding-left: var(--horizontal-rhythm);
+        padding-right: var(--horizontal-rhythm);
+    }
+
+    .sm\:pdl-hr {
+        padding-left: var(--horizontal-rhythm);
+    }
+
+    .sm\:pdr-hr {
+        padding-right: var(--horizontal-rhythm);
+    }
 }
 
 @media (--mi-rg-breakpoint) {
@@ -850,6 +863,19 @@ Naming conventions
 
     .rg\:pdb-vrplus {
         padding-bottom: var(--vertical-rhythm-plus);
+    }
+
+    .rg\:pdx-hr {
+        padding-left: var(--horizontal-rhythm);
+        padding-right: var(--horizontal-rhythm);
+    }
+
+    .rg\:pdl-hr {
+        padding-left: var(--horizontal-rhythm);
+    }
+
+    .rg\:pdr-hr {
+        padding-right: var(--horizontal-rhythm);
     }
 }
 
@@ -1271,6 +1297,19 @@ Naming conventions
     .md\:pd-1 {
         padding-bottom: var(--vertical-rhythm-plus);
     }
+
+    .md\:pdx-hr {
+        padding-left: var(--horizontal-rhythm);
+        padding-right: var(--horizontal-rhythm);
+    }
+
+    .md\:pdl-hr {
+        padding-left: var(--horizontal-rhythm);
+    }
+
+    .md\:pdr-hr {
+        padding-right: var(--horizontal-rhythm);
+    }
 }
 
 @media (--mi-lg-breakpoint) {
@@ -1690,5 +1729,18 @@ Naming conventions
 
     .lg\:pdb-vrplus {
         padding-bottom: var(--vertical-rhythm-plus);
+    }
+
+    .lg\:pdx-hr {
+        padding-left: var(--horizontal-rhythm);
+        padding-right: var(--horizontal-rhythm);
+    }
+
+    .lg\:pdl-hr {
+        padding-left: var(--horizontal-rhythm);
+    }
+
+    .lg\:pdr-hr {
+        padding-right: var(--horizontal-rhythm);
     }
 }

@@ -3928,40 +3928,6 @@ Naming conventions
     margin-left: calc(-1 * var(--space-6));
 }
 
-.mry-vr {
-    margin-top: 1rem;
-    margin-top: var(--vertical-rhythm);
-    margin-bottom: 1rem;
-    margin-bottom: var(--vertical-rhythm);
-}
-
-.mrt-vr {
-    margin-top: 1rem;
-    margin-top: var(--vertical-rhythm);    
-}
-
-.mrb-vr {
-    margin-bottom: 1rem;
-    margin-bottom: var(--vertical-rhythm);
-}
-
-.mry-vrplus {
-    margin-top: calc(1.66 * 1rem);
-    margin-top: var(--vertical-rhythm-plus);
-    margin-bottom: calc(1.66 * 1rem);
-    margin-bottom: var(--vertical-rhythm-plus);
-}
-
-.mrt-vrplus {
-    margin-top: calc(1.66 * 1rem);
-    margin-top: var(--vertical-rhythm-plus);    
-}
-
-.mrb-vrplus {
-    margin-bottom: calc(1.66 * 1rem);
-    margin-bottom: var(--vertical-rhythm-plus);
-}
-
 .mrt-auto {
     margin-top: auto;
     /* for flexbox*/
@@ -3994,6 +3960,57 @@ Naming conventions
 .mr-auto {
     margin: auto;
     /*for flexbox */
+}
+
+.mry-vr {
+    margin-top: 1rem;
+    margin-top: var(--vertical-rhythm);
+    margin-bottom: 1rem;
+    margin-bottom: var(--vertical-rhythm);
+}
+
+.mrt-vr {
+    margin-top: 1rem;
+    margin-top: var(--vertical-rhythm);
+}
+
+.mrb-vr {
+    margin-bottom: 1rem;
+    margin-bottom: var(--vertical-rhythm);
+}
+
+.mry-vrplus {
+    margin-top: calc(1.66 * 1rem);
+    margin-top: var(--vertical-rhythm-plus);
+    margin-bottom: calc(1.66 * 1rem);
+    margin-bottom: var(--vertical-rhythm-plus);
+}
+
+.mrt-vrplus {
+    margin-top: calc(1.66 * 1rem);
+    margin-top: var(--vertical-rhythm-plus);
+}
+
+.mrb-vrplus {
+    margin-bottom: calc(1.66 * 1rem);
+    margin-bottom: var(--vertical-rhythm-plus);
+}
+
+.mrx-hr {
+    margin-left: calc(1.66 * 1rem);
+    margin-left: var(--horizontal-rhythm);
+    margin-right: calc(1.66 * 1rem);
+    margin-right: var(--horizontal-rhythm);
+}
+
+.mrl-hr {
+    margin-left: calc(1.66 * 1rem);
+    margin-left: var(--horizontal-rhythm);
+}
+
+.mrr-hr {
+    margin-right: calc(1.66 * 1rem);
+    margin-right: var(--horizontal-rhythm);
 }
 
 /**
@@ -4793,6 +4810,23 @@ Naming conventions
         margin-bottom: calc(1.66 * 1rem);
         margin-bottom: var(--vertical-rhythm-plus);
     }
+
+    .sm\:mrx-hr {
+        margin-left: calc(1.66 * 1rem);
+        margin-left: var(--horizontal-rhythm);
+        margin-right: calc(1.66 * 1rem);
+        margin-right: var(--horizontal-rhythm);
+    }
+
+    .sm\:mrl-hr {
+        margin-left: calc(1.66 * 1rem);
+        margin-left: var(--horizontal-rhythm);
+    }
+
+    .sm\:mrr-hr {
+        margin-right: calc(1.66 * 1rem);
+        margin-right: var(--horizontal-rhythm);
+    }
 }
 
 @media (--mi-sm-breakpoint) {
@@ -5577,6 +5611,23 @@ Naming conventions
     .sm\:mrb-vrplus {
         margin-bottom: calc(1.66 * 1rem);
         margin-bottom: var(--vertical-rhythm-plus);
+    }
+
+    .sm\:mrx-hr {
+        margin-left: calc(1.66 * 1rem);
+        margin-left: var(--horizontal-rhythm);
+        margin-right: calc(1.66 * 1rem);
+        margin-right: var(--horizontal-rhythm);
+    }
+
+    .sm\:mrl-hr {
+        margin-left: calc(1.66 * 1rem);
+        margin-left: var(--horizontal-rhythm);
+    }
+
+    .sm\:mrr-hr {
+        margin-right: calc(1.66 * 1rem);
+        margin-right: var(--horizontal-rhythm);
     }
 }
 
@@ -6363,6 +6414,23 @@ Naming conventions
         margin-bottom: calc(1.66 * 1rem);
         margin-bottom: var(--vertical-rhythm-plus);
     }
+
+    .rg\:mrx-hr {
+        margin-left: calc(1.66 * 1rem);
+        margin-left: var(--horizontal-rhythm);
+        margin-right: calc(1.66 * 1rem);
+        margin-right: var(--horizontal-rhythm);
+    }
+
+    .rg\:mrl-hr {
+        margin-left: calc(1.66 * 1rem);
+        margin-left: var(--horizontal-rhythm);
+    }
+
+    .rg\:mrr-hr {
+        margin-right: calc(1.66 * 1rem);
+        margin-right: var(--horizontal-rhythm);
+    }
 }
 
 @media (--mi-rg-breakpoint) {
@@ -7147,6 +7215,23 @@ Naming conventions
     .rg\:mrb-vrplus {
         margin-bottom: calc(1.66 * 1rem);
         margin-bottom: var(--vertical-rhythm-plus);
+    }
+
+    .rg\:mrx-hr {
+        margin-left: calc(1.66 * 1rem);
+        margin-left: var(--horizontal-rhythm);
+        margin-right: calc(1.66 * 1rem);
+        margin-right: var(--horizontal-rhythm);
+    }
+
+    .rg\:mrl-hr {
+        margin-left: calc(1.66 * 1rem);
+        margin-left: var(--horizontal-rhythm);
+    }
+
+    .rg\:mrr-hr {
+        margin-right: calc(1.66 * 1rem);
+        margin-right: var(--horizontal-rhythm);
     }
 }
 
@@ -7933,6 +8018,23 @@ Naming conventions
         margin-bottom: calc(1.66 * 1rem);
         margin-bottom: var(--vertical-rhythm-plus);
     }
+
+    .md\:mrx-hr {
+        margin-left: calc(1.66 * 1rem);
+        margin-left: var(--horizontal-rhythm);
+        margin-right: calc(1.66 * 1rem);
+        margin-right: var(--horizontal-rhythm);
+    }
+
+    .md\:mrl-hr {
+        margin-left: calc(1.66 * 1rem);
+        margin-left: var(--horizontal-rhythm);
+    }
+
+    .md\:mrr-hr {
+        margin-right: calc(1.66 * 1rem);
+        margin-right: var(--horizontal-rhythm);
+    }
 }
 
 @media (--mi-md-breakpoint) {
@@ -8717,6 +8819,23 @@ Naming conventions
     .md\:mrb-vrplus {
         margin-bottom: calc(1.66 * 1rem);
         margin-bottom: var(--vertical-rhythm-plus);
+    }
+
+    .md\:mrx-hr {
+        margin-left: calc(1.66 * 1rem);
+        margin-left: var(--horizontal-rhythm);
+        margin-right: calc(1.66 * 1rem);
+        margin-right: var(--horizontal-rhythm);
+    }
+
+    .md\:mrl-hr {
+        margin-left: calc(1.66 * 1rem);
+        margin-left: var(--horizontal-rhythm);
+    }
+
+    .md\:mrr-hr {
+        margin-right: calc(1.66 * 1rem);
+        margin-right: var(--horizontal-rhythm);
     }
 }
 
@@ -9503,6 +9622,23 @@ Naming conventions
         margin-bottom: calc(1.66 * 1rem);
         margin-bottom: var(--vertical-rhythm-plus);
     }
+
+    .lg\:mrx-hr {
+        margin-left: calc(1.66 * 1rem);
+        margin-left: var(--horizontal-rhythm);
+        margin-right: calc(1.66 * 1rem);
+        margin-right: var(--horizontal-rhythm);
+    }
+
+    .lg\:mrl-hr {
+        margin-left: calc(1.66 * 1rem);
+        margin-left: var(--horizontal-rhythm);
+    }
+
+    .lg\:mrr-hr {
+        margin-right: calc(1.66 * 1rem);
+        margin-right: var(--horizontal-rhythm);
+    }
 }
 
 @media (--mi-lg-breakpoint) {
@@ -10287,6 +10423,23 @@ Naming conventions
     .lg\:mrb-vrplus {
         margin-bottom: calc(1.66 * 1rem);
         margin-bottom: var(--vertical-rhythm-plus);
+    }
+
+    .lg\:mrx-hr {
+        margin-left: calc(1.66 * 1rem);
+        margin-left: var(--horizontal-rhythm);
+        margin-right: calc(1.66 * 1rem);
+        margin-right: var(--horizontal-rhythm);
+    }
+
+    .lg\:mrl-hr {
+        margin-left: calc(1.66 * 1rem);
+        margin-left: var(--horizontal-rhythm);
+    }
+
+    .lg\:mrr-hr {
+        margin-right: calc(1.66 * 1rem);
+        margin-right: var(--horizontal-rhythm);
     }
 }
 
@@ -10838,6 +10991,23 @@ Naming conventions
     padding-bottom: var(--vertical-rhythm-plus);
 }
 
+.pdx-hr {
+    padding-left: calc(1.66 * 1rem);
+    padding-left: var(--horizontal-rhythm);
+    padding-right: calc(1.66 * 1rem);
+    padding-right: var(--horizontal-rhythm);
+}
+
+.pdl-hr {
+    padding-left: calc(1.66 * 1rem);
+    padding-left: var(--horizontal-rhythm);
+}
+
+.pdr-hr {
+    padding-right: calc(1.66 * 1rem);
+    padding-right: var(--horizontal-rhythm);
+}
+
 /**
 Naming conventions
     x=x-axis
@@ -11387,6 +11557,23 @@ Naming conventions
         padding-bottom: calc(1.66 * 1rem);
         padding-bottom: var(--vertical-rhythm-plus);
     }
+
+    .sm\:pdx-hr {
+        padding-left: calc(1.66 * 1rem);
+        padding-left: var(--horizontal-rhythm);
+        padding-right: calc(1.66 * 1rem);
+        padding-right: var(--horizontal-rhythm);
+    }
+
+    .sm\:pdl-hr {
+        padding-left: calc(1.66 * 1rem);
+        padding-left: var(--horizontal-rhythm);
+    }
+
+    .sm\:pdr-hr {
+        padding-right: calc(1.66 * 1rem);
+        padding-right: var(--horizontal-rhythm);
+    }
 }
 
 @media (--mi-sm-breakpoint) {
@@ -11922,6 +12109,23 @@ Naming conventions
     .sm\:pdb-vrplus {
         padding-bottom: calc(1.66 * 1rem);
         padding-bottom: var(--vertical-rhythm-plus);
+    }
+
+    .sm\:pdx-hr {
+        padding-left: calc(1.66 * 1rem);
+        padding-left: var(--horizontal-rhythm);
+        padding-right: calc(1.66 * 1rem);
+        padding-right: var(--horizontal-rhythm);
+    }
+
+    .sm\:pdl-hr {
+        padding-left: calc(1.66 * 1rem);
+        padding-left: var(--horizontal-rhythm);
+    }
+
+    .sm\:pdr-hr {
+        padding-right: calc(1.66 * 1rem);
+        padding-right: var(--horizontal-rhythm);
     }
 }
 
@@ -12459,6 +12663,23 @@ Naming conventions
         padding-bottom: calc(1.66 * 1rem);
         padding-bottom: var(--vertical-rhythm-plus);
     }
+
+    .rg\:pdx-hr {
+        padding-left: calc(1.66 * 1rem);
+        padding-left: var(--horizontal-rhythm);
+        padding-right: calc(1.66 * 1rem);
+        padding-right: var(--horizontal-rhythm);
+    }
+
+    .rg\:pdl-hr {
+        padding-left: calc(1.66 * 1rem);
+        padding-left: var(--horizontal-rhythm);
+    }
+
+    .rg\:pdr-hr {
+        padding-right: calc(1.66 * 1rem);
+        padding-right: var(--horizontal-rhythm);
+    }
 }
 
 @media (--mi-rg-breakpoint) {
@@ -12994,6 +13215,23 @@ Naming conventions
     .rg\:pdb-vrplus {
         padding-bottom: calc(1.66 * 1rem);
         padding-bottom: var(--vertical-rhythm-plus);
+    }
+
+    .rg\:pdx-hr {
+        padding-left: calc(1.66 * 1rem);
+        padding-left: var(--horizontal-rhythm);
+        padding-right: calc(1.66 * 1rem);
+        padding-right: var(--horizontal-rhythm);
+    }
+
+    .rg\:pdl-hr {
+        padding-left: calc(1.66 * 1rem);
+        padding-left: var(--horizontal-rhythm);
+    }
+
+    .rg\:pdr-hr {
+        padding-right: calc(1.66 * 1rem);
+        padding-right: var(--horizontal-rhythm);
     }
 }
 
@@ -13531,6 +13769,23 @@ Naming conventions
         padding-bottom: calc(1.66 * 1rem);
         padding-bottom: var(--vertical-rhythm-plus);
     }
+
+    .md\:pdx-hr {
+        padding-left: calc(1.66 * 1rem);
+        padding-left: var(--horizontal-rhythm);
+        padding-right: calc(1.66 * 1rem);
+        padding-right: var(--horizontal-rhythm);
+    }
+
+    .md\:pdl-hr {
+        padding-left: calc(1.66 * 1rem);
+        padding-left: var(--horizontal-rhythm);
+    }
+
+    .md\:pdr-hr {
+        padding-right: calc(1.66 * 1rem);
+        padding-right: var(--horizontal-rhythm);
+    }
 }
 
 @media (--mi-md-breakpoint) {
@@ -14066,6 +14321,23 @@ Naming conventions
     .md\:pd-1 {
         padding-bottom: calc(1.66 * 1rem);
         padding-bottom: var(--vertical-rhythm-plus);
+    }
+
+    .md\:pdx-hr {
+        padding-left: calc(1.66 * 1rem);
+        padding-left: var(--horizontal-rhythm);
+        padding-right: calc(1.66 * 1rem);
+        padding-right: var(--horizontal-rhythm);
+    }
+
+    .md\:pdl-hr {
+        padding-left: calc(1.66 * 1rem);
+        padding-left: var(--horizontal-rhythm);
+    }
+
+    .md\:pdr-hr {
+        padding-right: calc(1.66 * 1rem);
+        padding-right: var(--horizontal-rhythm);
     }
 }
 
@@ -14603,6 +14875,23 @@ Naming conventions
         padding-bottom: calc(1.66 * 1rem);
         padding-bottom: var(--vertical-rhythm-plus);
     }
+
+    .lg\:pdx-hr {
+        padding-left: calc(1.66 * 1rem);
+        padding-left: var(--horizontal-rhythm);
+        padding-right: calc(1.66 * 1rem);
+        padding-right: var(--horizontal-rhythm);
+    }
+
+    .lg\:pdl-hr {
+        padding-left: calc(1.66 * 1rem);
+        padding-left: var(--horizontal-rhythm);
+    }
+
+    .lg\:pdr-hr {
+        padding-right: calc(1.66 * 1rem);
+        padding-right: var(--horizontal-rhythm);
+    }
 }
 
 @media (--mi-lg-breakpoint) {
@@ -15138,6 +15427,23 @@ Naming conventions
     .lg\:pdb-vrplus {
         padding-bottom: calc(1.66 * 1rem);
         padding-bottom: var(--vertical-rhythm-plus);
+    }
+
+    .lg\:pdx-hr {
+        padding-left: calc(1.66 * 1rem);
+        padding-left: var(--horizontal-rhythm);
+        padding-right: calc(1.66 * 1rem);
+        padding-right: var(--horizontal-rhythm);
+    }
+
+    .lg\:pdl-hr {
+        padding-left: calc(1.66 * 1rem);
+        padding-left: var(--horizontal-rhythm);
+    }
+
+    .lg\:pdr-hr {
+        padding-right: calc(1.66 * 1rem);
+        padding-right: var(--horizontal-rhythm);
     }
 }
 
