@@ -21,7 +21,7 @@
     --blockquote-font-style: italic;
     --quote-font-style: italic;
     --text-decoration: underline;
-    --text-decoration-thickness: .05em;
+    --text-decoration-thickness: .1em;
     --link-text-decoration: var(--text-decoration);
     --link-text-decoration-thickness: var(--text-decoration-thickness);
     --font-variant-numeric: normal;
@@ -73,6 +73,7 @@
 }
 
 *:focus {
+
     outline: var(--outline);
     outline-offset: var(--outline-offset);
 }
@@ -206,6 +207,11 @@ cite,
     letter-spacing: .08em;
 }
 
+abbr,
+.abbr {
+    letter-spacing: .08em;
+}
+
 .all-small-caps {
     font-variant-caps: all-small-caps;
     letter-spacing: .08em;
@@ -320,11 +326,21 @@ del,
     text-decoration: line-through;
 }
 
-ins,
-.ins {}
+del,
+.del {
+    background: var(--deleted-background);
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+}
 
-abbr,
-.abbr {}
+ins,
+.ins {
+    background: var(--inserted-background);
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    text-decoration: none;
+}
+
 
 sub,
 sup,

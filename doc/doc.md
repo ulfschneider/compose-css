@@ -138,7 +138,7 @@ Another example is how dark or how light a color is set, like `.primary-d5`, `.p
                         Abbreviations (<abbr>Abbr</abbr>)
                     </td>
                     <td>
-                        <code>&lt;abbr></code>, <code>.del</code>
+                        <code>&lt;abbr></code>, <code>.abbr</code>
                     </td>
                 </tr>                
                 <tr>

@@ -118,6 +118,8 @@
     --base-color: var(--neutral-d5);
     --base-background: white;
     --mark-background: yellow;
+    --inserted-background: greenyellow;
+    --deleted-background: lightsalmon;
     --border-color: var(--neutral);
     --link-color: inherit;
     --link-hover-color: var(--primary);

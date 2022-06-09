@@ -1771,6 +1771,8 @@ small,
     --base-color: var(--neutral-d5);
     --base-background: white;
     --mark-background: yellow;
+    --inserted-background: greenyellow;
+    --deleted-background: lightsalmon;
     --border-color: var(--neutral);
     --link-color: inherit;
     --link-hover-color: var(--primary);
@@ -20976,7 +20978,7 @@ Naming conventions
     --blockquote-font-style: italic;
     --quote-font-style: italic;
     --text-decoration: underline;
-    --text-decoration-thickness: .05em;
+    --text-decoration-thickness: .1em;
     --link-text-decoration: var(--text-decoration);
     --link-text-decoration-thickness: var(--text-decoration-thickness);
     --font-variant-numeric: normal;
@@ -21032,7 +21034,9 @@ Naming conventions
 }
 
 *:focus {
+
     outline: 3px solid hsl(198, 100%, 33.3%);
+
     outline: var(--outline);
     outline-offset: 2px;
     outline-offset: var(--outline-offset);
@@ -21181,6 +21185,11 @@ cite,
     letter-spacing: .08em;
 }
 
+abbr,
+.abbr {
+    letter-spacing: .08em;
+}
+
 .all-small-caps {
     font-variant-caps: all-small-caps;
     letter-spacing: .08em;
@@ -21231,7 +21240,7 @@ cite,
 u {
     text-decoration: underline;
     text-decoration: var(--text-decoration);
-    text-decoration-thickness: .05em;
+    text-decoration-thickness: .1em;
     text-decoration-thickness: var(--text-decoration-thickness);
 }
 
@@ -21297,11 +21306,22 @@ del,
     text-decoration: line-through;
 }
 
-ins,
-.ins {}
+del,
+.del {
+    background: lightsalmon;
+    background: var(--deleted-background);
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+}
 
-abbr,
-.abbr {}
+ins,
+.ins {
+    background: greenyellow;
+    background: var(--inserted-background);
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    text-decoration: none;
+}
 
 sub,
 sup,
@@ -21612,7 +21632,7 @@ a {
     color: var(--link-color);
     text-decoration: underline;
     text-decoration: var(--link-text-decoration);
-    text-decoration-thickness: .05em;
+    text-decoration-thickness: .1em;
     text-decoration-thickness: var(--link-text-decoration-thickness);
     transition: color .14s ease-out;
     transition: color var(--transition-duration) ease-out;
