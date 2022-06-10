@@ -18,7 +18,9 @@
     --mono-font-family: ui-monospace, monospace;
     --mono-font-feature-settings: var(--font-feature-settings);
     --code-font-family: var(--mono-font-family);
-    --blockquote-font-style: italic;
+    --blockquote-font-style: normal;
+    --blockquote-font-weight: normal;
+    --blockquote-font-size: var(--fs-2);
     --quote-font-style: italic;
     --text-decoration: underline;
     --text-decoration-thickness: .1em;
@@ -607,9 +609,16 @@ blockquote {
     margin-left: 0;
     margin-right: 0;
     padding: 0;
-    font-style: italic;
+    font-style: normal;
     font-style: var(--blockquote-font-style);
+    font-weight: normal;
+    font-weight: var(--blockquote-font-weight);
     background: var(--blockquote-background);
+}
+
+blockquote>*:not(header):not(footer) {
+    font-size: var(--fs-2);
+    font-size: var(--blockquote-font-size);
 }
 
 blockquote::before {
