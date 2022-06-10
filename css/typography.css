@@ -9,7 +9,7 @@
     --heading-letter-spacing: 0em;
     --heading-text-transform: none;
     --figcaption-font-family: var(--heading-font-family);
-    --figcaption-font-size: inherit;
+    --figcaption-font-size: var(--fs);
     --meta-font-family: var(--font-family);
     --meta-font-feature-settings: var(--font-feature-settings);
     --meta-font-weight: var(--font-weight-normal);
@@ -614,12 +614,8 @@ blockquote {
     font-weight: normal;
     font-weight: var(--blockquote-font-weight);
     background: var(--blockquote-background);
-}
-
-blockquote>*:not(blockquote>header):not(blockquote>footer),
-blockquote:not(blockquote>header):not(blockquote>footer) {
-    font-size: var(--fs-2);
-    font-size: var(--blockquote-font-size);
+    font-size:var(--fs-2);
+    font-size:var(--blockquote-font-size);
 }
 
 blockquote::before {
@@ -708,7 +704,7 @@ blockquote>header {
     font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--figcaption-font-family);
     font-style: normal;
-    font-size: inherit;
+    font-size: var(--fs);
     font-size: var(--figcaption-font-size);
     max-width: var(--rg-width);
     margin-top: 0;

@@ -9,7 +9,7 @@
     --heading-letter-spacing: 0em;
     --heading-text-transform: none;
     --figcaption-font-family: var(--heading-font-family);
-    --figcaption-font-size: inherit;
+    --figcaption-font-size: var(--fs);
     --meta-font-family: var(--font-family);
     --meta-font-feature-settings: var(--font-feature-settings);
     --meta-font-weight: var(--font-weight-normal);
@@ -563,11 +563,7 @@ blockquote {
     font-style: var(--blockquote-font-style);
     font-weight: var(--blockquote-font-weight);
     background: var(--blockquote-background);
-}
-
-blockquote>*:not(blockquote>header):not(blockquote>footer),
-blockquote:not(blockquote>header):not(blockquote>footer) {
-    font-size: var(--blockquote-font-size);
+    font-size:var(--blockquote-font-size);
 }
 
 blockquote::before {

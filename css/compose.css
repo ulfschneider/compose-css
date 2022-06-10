@@ -20966,7 +20966,7 @@ Naming conventions
     --heading-letter-spacing: 0em;
     --heading-text-transform: none;
     --figcaption-font-family: var(--heading-font-family);
-    --figcaption-font-size: inherit;
+    --figcaption-font-size: var(--fs);
     --meta-font-family: var(--font-family);
     --meta-font-feature-settings: var(--font-feature-settings);
     --meta-font-weight: var(--font-weight-normal);
@@ -21608,12 +21608,8 @@ blockquote {
     font-weight: var(--blockquote-font-weight);
     background: transparent;
     background: var(--blockquote-background);
-}
-
-blockquote>*:not(blockquote>header):not(blockquote>footer),
-blockquote:not(blockquote>header):not(blockquote>footer) {
-    font-size: calc(1rem * 1.25 * 1.25);
-    font-size: var(--blockquote-font-size);
+    font-size:calc(1rem * 1.25 * 1.25);
+    font-size:var(--blockquote-font-size);
 }
 
 blockquote::before {
@@ -21705,7 +21701,7 @@ blockquote>header {
     font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--figcaption-font-family);
     font-style: normal;
-    font-size: inherit;
+    font-size: 1rem;
     font-size: var(--figcaption-font-size);
     max-width: 34rem;
     max-width: var(--rg-width);
