@@ -21610,7 +21610,8 @@ blockquote {
     background: var(--blockquote-background);
 }
 
-blockquote>*:not(header):not(footer) {
+blockquote>*:not(blockquote>header):not(blockquote>footer),
+blockquote:not(blockquote>header):not(blockquote>footer) {
     font-size: calc(1rem * 1.25 * 1.25);
     font-size: var(--blockquote-font-size);
 }
