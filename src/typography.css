@@ -44,8 +44,8 @@
     --mrb-h6: var(--vertical-rhythm-plus);
     --mrt-figure: var(--vertical-rhythm-plus);
     --mrb-figure: var(--vertical-rhythm-plus);
-    --mrt-blockquote: var(--vertical-rhythm-plus);
-    --mrb-blockquote: var(--vertical-rhythm-plus);
+    --mrt-blockquote: var(--space-2);
+    --mrb-blockquote: var(--space-2);
     --mrt-figcaption: 0;
     --mrb-figcaption: 0;
     --mrt-pre: var(--vertical-rhythm-plus);
