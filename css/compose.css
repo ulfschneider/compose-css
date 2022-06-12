@@ -21711,7 +21711,9 @@ blockquote>header {
     margin-top: 0;
     margin-top: var(--mrt-figcaption);
     margin-bottom: 0;
-    margin-bottom: var(--mrb-figcaption);    
+    margin-bottom: var(--mrb-figcaption);  
+    line-height: calc(1.66 * 1);  
+    line-height: var(--lh-default);  
 }
 
 blockquote>footer,

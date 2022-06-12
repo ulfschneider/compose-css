@@ -647,7 +647,8 @@ blockquote>header {
     font-size: var(--figcaption-font-size);
     max-width: var(--rg-width);
     margin-top: var(--mrt-figcaption);
-    margin-bottom: var(--mrb-figcaption);    
+    margin-bottom: var(--mrb-figcaption);  
+    line-height: var(--lh-default);  
 }
 
 blockquote>footer,
