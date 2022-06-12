@@ -21,6 +21,7 @@
     --blockquote-font-style: normal;
     --blockquote-font-weight: normal;
     --blockquote-font-size: var(--fs-2);
+    --blockquote-line-height: var(--lh-2);
     --quote-font-style: italic;
     --text-decoration: underline;
     --text-decoration-thickness: .1em;
@@ -551,7 +552,6 @@ pre>code[class^=language-]::before {
     margin: calc(-1 * var(--space-d3)) calc(-1 * var(--space-d3)) 0 calc(-1 * var(--space-d3));
 }
 
-
 /* purgecss end ignore */
 
 blockquote {
@@ -564,6 +564,7 @@ blockquote {
     font-weight: var(--blockquote-font-weight);
     background: var(--blockquote-background);
     font-size:var(--blockquote-font-size);
+    line-height: var(--blockquote-line-height);
 }
 
 blockquote::before {
@@ -646,7 +647,7 @@ blockquote>header {
     font-size: var(--figcaption-font-size);
     max-width: var(--rg-width);
     margin-top: var(--mrt-figcaption);
-    margin-bottom: var(--mrb-figcaption);
+    margin-bottom: var(--mrb-figcaption);    
 }
 
 blockquote>footer,

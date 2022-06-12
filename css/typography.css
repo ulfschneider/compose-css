@@ -21,6 +21,7 @@
     --blockquote-font-style: normal;
     --blockquote-font-weight: normal;
     --blockquote-font-size: var(--fs-2);
+    --blockquote-line-height: var(--lh-2);
     --quote-font-style: italic;
     --text-decoration: underline;
     --text-decoration-thickness: .1em;
@@ -616,6 +617,8 @@ blockquote {
     background: var(--blockquote-background);
     font-size:var(--fs-2);
     font-size:var(--blockquote-font-size);
+    line-height: var(--lh-2);
+    line-height: var(--blockquote-line-height);
 }
 
 blockquote::before {
@@ -710,7 +713,7 @@ blockquote>header {
     margin-top: 0;
     margin-top: var(--mrt-figcaption);
     margin-bottom: 0;
-    margin-bottom: var(--mrb-figcaption);
+    margin-bottom: var(--mrb-figcaption);    
 }
 
 blockquote>footer,
