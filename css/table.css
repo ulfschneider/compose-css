@@ -3,8 +3,8 @@
     --table-heading-font-family: var(--heading-font-family);
     --table-font-family: var(--font-family);
     --table-font-size: var(--fs);
-    --mrt-table: var(--vertical-rhythm-plus);
-    --mrb-table: var(--vertical-rhythm-plus);
+    --mrt-table: var(--space-2);
+    --mrb-table: var(--space-2);
     --td-x-padding: var(--space);
     --td-y-padding: var(--space-d1);
 }
@@ -12,9 +12,9 @@
 table {
     border-collapse: collapse;
     font-variant-numeric: tabular-nums;
-    margin-top: var(--vertical-rhythm-plus);
+    margin-top: var(--space-2);
     margin-top: var(--mrt-table);
-    margin-bottom: var(--vertical-rhythm-plus);
+    margin-bottom: var(--space-2);
     margin-bottom: var(--mrb-table);
     text-align: left;
     font-family: var(--font-family);

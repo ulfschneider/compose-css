@@ -45,8 +45,8 @@
     --mrb-h5: var(--vertical-rhythm-plus);
     --mrt-h6: var(--vertical-rhythm-plus);
     --mrb-h6: var(--vertical-rhythm-plus);
-    --mrt-figure: var(--vertical-rhythm-plus);
-    --mrb-figure: var(--vertical-rhythm-plus);
+    --mrt-figure: var(--space-2);
+    --mrb-figure: var(--space-2);
     --mrt-blockquote: var(--space-2);
     --mrb-blockquote: var(--space-2);
     --mrt-figcaption: 0;
@@ -682,9 +682,9 @@ html[lang="de-DE"] blockquote {
 }
 
 figure {
-    margin-top: var(--space-1);
+    margin-top: var(--space-2);
     margin-top: var(--mrt-figure);
-    margin-bottom: var(--space-1);
+    margin-bottom: var(--space-2);
     margin-bottom: var(--mrb-figure);
     margin-left: 0;
     margin-right: 0;

@@ -21002,8 +21002,8 @@ Naming conventions
     --mrb-h5: var(--vertical-rhythm-plus);
     --mrt-h6: var(--vertical-rhythm-plus);
     --mrb-h6: var(--vertical-rhythm-plus);
-    --mrt-figure: var(--vertical-rhythm-plus);
-    --mrb-figure: var(--vertical-rhythm-plus);
+    --mrt-figure: var(--space-2);
+    --mrb-figure: var(--space-2);
     --mrt-blockquote: var(--space-2);
     --mrb-blockquote: var(--space-2);
     --mrt-figcaption: 0;
@@ -21679,9 +21679,9 @@ html[lang="de-DE"] blockquote {
 }
 
 figure {
-    margin-top: calc(1.66 * 1rem);
+    margin-top: calc(calc(1.66 * 1rem) * 1.66);
     margin-top: var(--mrt-figure);
-    margin-bottom: calc(1.66 * 1rem);
+    margin-bottom: calc(calc(1.66 * 1rem) * 1.66);
     margin-bottom: var(--mrb-figure);
     margin-left: 0;
     margin-right: 0;
@@ -23799,7 +23799,7 @@ dt+dt {
 }
 
 dl.timeline.framed dd+dt {
-    margin-top: calc(1.66 * 1rem);
+    margin-top: calc(calc(1.66 * 1rem) * 1.66);
     margin-top: var(--mrt-figure);
 }
 
@@ -24713,8 +24713,8 @@ img {
     --table-heading-font-family: var(--heading-font-family);
     --table-font-family: var(--font-family);
     --table-font-size: var(--fs);
-    --mrt-table: var(--vertical-rhythm-plus);
-    --mrb-table: var(--vertical-rhythm-plus);
+    --mrt-table: var(--space-2);
+    --mrb-table: var(--space-2);
     --td-x-padding: var(--space);
     --td-y-padding: var(--space-d1);
 }
@@ -24722,9 +24722,9 @@ img {
 table {
     border-collapse: collapse;
     font-variant-numeric: tabular-nums;
-    margin-top: calc(1.66 * 1rem);
+    margin-top: calc(calc(1.66 * 1rem) * 1.66);
     margin-top: var(--mrt-table);
-    margin-bottom: calc(1.66 * 1rem);
+    margin-bottom: calc(calc(1.66 * 1rem) * 1.66);
     margin-bottom: var(--mrb-table);
     text-align: left;
     font-family: system-ui, ui-sans-serif, sans-serif;
@@ -25003,7 +25003,7 @@ th.sotable-column .indicator {
     grid-template-columns: repeat(2, 1fr);
     column-gap: calc(1.66 * 1rem);
     column-gap: var(--split-column-gap);
-    row-gap: calc(1.66 * 1rem);
+    row-gap: calc(calc(1.66 * 1rem) * 1.66);
     row-gap: var(--split-row-gap);
     align-items: inherit;
     align-items: var(--align-split-items);
@@ -25353,7 +25353,7 @@ th.sotable-column .indicator {
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.66 * 1rem);
         column-gap: var(--split-column-gap);
-        row-gap: calc(1.66 * 1rem);
+        row-gap: calc(calc(1.66 * 1rem) * 1.66);
         row-gap: var(--split-row-gap);
         align-items: inherit;
         align-items: var(--align-split-items);
@@ -25608,7 +25608,7 @@ th.sotable-column .indicator {
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.66 * 1rem);
         column-gap: var(--split-column-gap);
-        row-gap: calc(1.66 * 1rem);
+        row-gap: calc(calc(1.66 * 1rem) * 1.66);
         row-gap: var(--split-row-gap);
         align-items: inherit;
         align-items: var(--align-split-items);
@@ -25863,7 +25863,7 @@ th.sotable-column .indicator {
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.66 * 1rem);
         column-gap: var(--split-column-gap);
-        row-gap: calc(1.66 * 1rem);
+        row-gap: calc(calc(1.66 * 1rem) * 1.66);
         row-gap: var(--split-row-gap);
         align-items: inherit;
         align-items: var(--align-split-items);
@@ -26126,7 +26126,7 @@ th.sotable-column .indicator {
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.66 * 1rem);
         column-gap: var(--split-column-gap);
-        row-gap: calc(1.66 * 1rem);
+        row-gap: calc(calc(1.66 * 1rem) * 1.66);
         row-gap: var(--split-row-gap);
         align-items: inherit;
         align-items: var(--align-split-items);
@@ -26389,7 +26389,7 @@ th.sotable-column .indicator {
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.66 * 1rem);
         column-gap: var(--split-column-gap);
-        row-gap: calc(1.66 * 1rem);
+        row-gap: calc(calc(1.66 * 1rem) * 1.66);
         row-gap: var(--split-row-gap);
         align-items: inherit;
         align-items: var(--align-split-items);
@@ -26668,7 +26668,7 @@ th.sotable-column .indicator {
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.66 * 1rem);
         column-gap: var(--split-column-gap);
-        row-gap: calc(1.66 * 1rem);
+        row-gap: calc(calc(1.66 * 1rem) * 1.66);
         row-gap: var(--split-row-gap);
         align-items: inherit;
         align-items: var(--align-split-items);
@@ -26947,7 +26947,7 @@ th.sotable-column .indicator {
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.66 * 1rem);
         column-gap: var(--split-column-gap);
-        row-gap: calc(1.66 * 1rem);
+        row-gap: calc(calc(1.66 * 1rem) * 1.66);
         row-gap: var(--split-row-gap);
         align-items: inherit;
         align-items: var(--align-split-items);
@@ -27234,7 +27234,7 @@ th.sotable-column .indicator {
         grid-template-columns: repeat(2, 1fr);
         column-gap: calc(1.66 * 1rem);
         column-gap: var(--split-column-gap);
-        row-gap: calc(1.66 * 1rem);
+        row-gap: calc(calc(1.66 * 1rem) * 1.66);
         row-gap: var(--split-row-gap);
         align-items: inherit;
         align-items: var(--align-split-items);
