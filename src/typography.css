@@ -9,7 +9,7 @@
     --heading-letter-spacing: 0em;
     --heading-text-transform: none;
     --figcaption-font-family: var(--heading-font-family);
-    --figcaption-font-size: var(--fs);
+    --figcaption-font-size: var(--fs-d1);
     --meta-font-family: var(--font-family);
     --meta-font-feature-settings: var(--font-feature-settings);
     --meta-font-weight: var(--font-weight-normal);
@@ -37,13 +37,13 @@
     --mrb-h1: var(--vertical-rhythm-plus);
     --mrt-h2: var(--space-3);
     --mrb-h2: var(--vertical-rhythm-plus);
-    --mrt-h3: var(--vertical-rhythm-plus);
+    --mrt-h3: var(--space-2);
     --mrb-h3: var(--vertical-rhythm-plus);
-    --mrt-h4: var(--vertical-rhythm-plus);
+    --mrt-h4: var(--space-2);
     --mrb-h4: var(--vertical-rhythm-plus);
-    --mrt-h5: var(--vertical-rhythm-plus);
+    --mrt-h5: var(--space-2);
     --mrb-h5: var(--vertical-rhythm-plus);
-    --mrt-h6: var(--vertical-rhythm-plus);
+    --mrt-h6: var(--space-2);
     --mrb-h6: var(--vertical-rhythm-plus);
     --mrt-figure: var(--space-2);
     --mrb-figure: var(--space-2);
@@ -644,11 +644,14 @@ blockquote>header {
     text-align: left;
     font-family: var(--figcaption-font-family);
     font-style: normal;
-    font-size: var(--figcaption-font-size);
     max-width: var(--rg-width);
     margin-top: var(--mrt-figcaption);
     margin-bottom: var(--mrb-figcaption);  
     line-height: var(--lh-default);  
+}
+
+figcaption {
+    font-size: var(--figcaption-font-size);
 }
 
 blockquote>footer,

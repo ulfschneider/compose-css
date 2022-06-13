@@ -9,7 +9,7 @@
     --heading-letter-spacing: 0em;
     --heading-text-transform: none;
     --figcaption-font-family: var(--heading-font-family);
-    --figcaption-font-size: var(--fs);
+    --figcaption-font-size: var(--fs-d1);
     --meta-font-family: var(--font-family);
     --meta-font-feature-settings: var(--font-feature-settings);
     --meta-font-weight: var(--font-weight-normal);
@@ -37,13 +37,13 @@
     --mrb-h1: var(--vertical-rhythm-plus);
     --mrt-h2: var(--space-3);
     --mrb-h2: var(--vertical-rhythm-plus);
-    --mrt-h3: var(--vertical-rhythm-plus);
+    --mrt-h3: var(--space-2);
     --mrb-h3: var(--vertical-rhythm-plus);
-    --mrt-h4: var(--vertical-rhythm-plus);
+    --mrt-h4: var(--space-2);
     --mrb-h4: var(--vertical-rhythm-plus);
-    --mrt-h5: var(--vertical-rhythm-plus);
+    --mrt-h5: var(--space-2);
     --mrb-h5: var(--vertical-rhythm-plus);
-    --mrt-h6: var(--vertical-rhythm-plus);
+    --mrt-h6: var(--space-2);
     --mrb-h6: var(--vertical-rhythm-plus);
     --mrt-figure: var(--space-2);
     --mrb-figure: var(--space-2);
@@ -463,7 +463,7 @@ h2 {
 h3 {
     font-size: var(--fs-h3);
     line-height: var(--lh-h3);
-    margin-top: var(--space-1);
+    margin-top: var(--space-2);
     margin-top: var(--mrt-h3);
     margin-bottom: var(--space-1);
     margin-bottom: var(--mrb-h3);
@@ -472,7 +472,7 @@ h3 {
 h4 {
     font-size: var(--fs-h4);
     line-height: var(--lh-h4);
-    margin-top: var(--space-1);
+    margin-top: var(--space-2);
     margin-top: var(--mrt-h4);
     margin-bottom: var(--space-1);
     margin-bottom: var(--mrb-h4);
@@ -481,7 +481,7 @@ h4 {
 h5 {
     font-size: var(--fs-h5);
     line-height: var(--lh-h5);
-    margin-top: var(--space-1);
+    margin-top: var(--space-2);
     margin-top: var(--mrt-h5);
     margin-bottom: var(--space-1);
     margin-bottom: var(--mrb-h5);
@@ -490,7 +490,7 @@ h5 {
 h6 {
     font-size: var(--fs-h6);
     line-height: var(--lh-h6);
-    margin-top: var(--space-1);
+    margin-top: var(--space-2);
     margin-top: var(--mrt-h6);
     margin-bottom: var(--space-1);
     margin-bottom: var(--mrb-h6);
@@ -707,14 +707,17 @@ blockquote>header {
     font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--figcaption-font-family);
     font-style: normal;
-    font-size: var(--fs);
-    font-size: var(--figcaption-font-size);
     max-width: var(--rg-width);
     margin-top: 0;
     margin-top: var(--mrt-figcaption);
     margin-bottom: 0;
     margin-bottom: var(--mrb-figcaption);  
     line-height: var(--lh-default);  
+}
+
+figcaption {
+    font-size: var(--fs-d1);
+    font-size: var(--figcaption-font-size);
 }
 
 blockquote>footer,
