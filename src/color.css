@@ -120,7 +120,7 @@
     --mark-background: yellow;
     --inserted-background: greenyellow;
     --deleted-background: lightsalmon;
-    --border-color: var(--neutral);
+    --border-color: var(--base-color);
     --link-color: inherit;
     --link-hover-color: var(--primary);
     --link-focus-color: var(--link-hover-color);

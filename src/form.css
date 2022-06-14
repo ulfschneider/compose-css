@@ -107,22 +107,21 @@ input[type=search],
 input[type=tel],
 input[type=url],
 input[list] {
-    border: none;
-    border-bottom: 1px solid var(--form-field-border-color);
+    border: 1px solid var(--form-field-border-color);
     vertical-align: middle;
-    padding: var(--form-button-pdy) 0;
+    padding: var(--form-button-pdy);
     line-height: var(--lh);
     border-radius: 0;
     -webkit-border-radius: 0;
     background: var(--form-field-background);
-    color: var(--form-field-color);
+    color: var(--form-field-color);    
 }
 
 textarea {
-    line-height: var(--lh-2);
-    border: 0;
-    border-bottom: 1px solid var(--form-field-border-color);
+    line-height: var(--lh-2);    
+    border: 1px solid var(--form-field-border-color);
     border-radius: 0;
+    padding: var(--form-button-pdy);
     -webkit-border-radius: 0;
     resize: none;
     background: var(--form-field-background);

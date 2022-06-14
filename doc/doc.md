@@ -1625,5 +1625,9 @@ Each breakpoint *can* trigger a change in base font size. The wider the screen, 
 <div>
 <input type="text" />
 </div>
+
+<div>
+<textarea></textarea>
+</div>
 </form>
 
