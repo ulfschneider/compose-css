@@ -14,15 +14,16 @@
     --h4-counter: counter(h2-counter) var(--h-counter-delimiter) counter(h3-counter) var(--h-counter-delimiter) counter(h4-counter);
     --h5-counter: counter(h2-counter) var(--h-counter-delimiter) counter(h3-counter) var(--h-counter-delimiter) counter(h4-counter) var(--h-counter-delimiter) counter(h5-counter);
     --h6-counter: counter(h2-counter) var(--h-counter-delimiter) counter(h3-counter) var(--h-counter-delimiter) counter(h4-counter) var(--h-counter-delimiter) counter(h5-counter) var(--h-counter-delimiter) counter(h6-counter);
-    --timeline-blub-font-size: 1em;
-    --timeline-blub-size: calc(var(--timeline-blub-font-size) + 4px);
+
+    /* timeline */
+    --timeline-blub-size: var(--fs-d1); 
     --timeline-width: 1px;
     --timeline-blub-border-width: 1px;
     /* column timeline */
     --timeline-left-gap: calc(var(--timeline-blub-size) / 2);
     --timeline-right-gap: calc(var(--horizontal-rhythm) - var(--timeline-left-gap) - var(--timeline-width));
     --timeline-left-blub-pos: calc(-1 * (var(--timeline-right-gap) + var(--timeline-blub-size) / 2 + var(--timeline-width) / 2));
-    --timeline-top-blub-pos: calc(1em * var(--lh-default) / 2 - var(--timeline-blub-size) / 2 + (1rem - var(--timeline-blub-font-size)) * var(--lh-default) / 2);
+    --timeline-top-blub-pos: calc(1em * var(--lh-default) / 2 - var(--timeline-blub-size) / 2);
     --timeline-framed-indent: var(--horizontal-rhythm);
     --timeline-framed-padding: var(--space);
     --timeline-framed-right-gap: calc(var(--timeline-framed-indent) + var(--horizontal-rhythm) - var(--timeline-left-gap) - var(--timeline-width));
@@ -66,14 +67,14 @@ dl.timeline.framed dd+dt {
 dl.timeline {
     border-left: 1px solid var(--timeline-color);
     border-left: var(--timeline-width) solid var(--timeline-color);
-    margin-left: calc(calc(1em + 4px) / 2);
+    margin-left: calc(var(--fs-d1) / 2);
     margin-left: var(--timeline-left-gap);
 }
 
 dl.timeline>dt,
 dl.timeline>dd {
     margin-left: 0;
-    padding-left: calc(var(--horizontal-rhythm) - calc(calc(1em + 4px) / 2) - 1px);
+    padding-left: calc(var(--horizontal-rhythm) - calc(var(--fs-d1) / 2) - 1px);
     padding-left: var(--timeline-right-gap);
 }
 
@@ -87,40 +88,33 @@ dl.timeline>dt {
 
 dl.timeline.framed>dt,
 dl.timeline.framed>dd {
-    padding-left: calc(var(--horizontal-rhythm) + var(--horizontal-rhythm) - calc(calc(1em + 4px) / 2) - 1px);
+    padding-left: calc(var(--horizontal-rhythm) + var(--horizontal-rhythm) - calc(var(--fs-d1) / 2) - 1px);
     padding-left: var(--timeline-framed-right-gap);
 }
 
 dl.timeline>dt::before {
     border-radius: 50%;
-    content: attr(blub);
+    content: "";
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc(1em + 4px);
+    width: var(--fs-d1);
     width: var(--timeline-blub-size);
-    height: calc(1em + 4px);
+    height: var(--fs-d1);
     height: var(--timeline-blub-size);
     position: absolute;
-    margin-left: calc(-1 * (calc(var(--horizontal-rhythm) - calc(calc(1em + 4px) / 2) - 1px) + calc(1em + 4px) / 2 + 1px / 2));
+    margin-left: calc(-1 * (calc(var(--horizontal-rhythm) - calc(var(--fs-d1) / 2) - 1px) + var(--fs-d1) / 2 + 1px / 2));
     margin-left: var(--timeline-left-blub-pos);
-    margin-top: calc(1em * var(--lh-default) / 2 - calc(1em + 4px) / 2 + (1rem - 1em) * var(--lh-default) / 2);
+    margin-top: calc(1em * var(--lh-default) / 2 - var(--fs-d1) / 2);
     margin-top: var(--timeline-top-blub-pos);
     background-color: var(--timeline-blub-background);
     border: 1px solid var(--timeline-blub-color);
     border: var(--timeline-blub-border-width) solid var(--timeline-blub-color);
-    z-index: 1000;
-    font-size: 1em;
-    font-size: var(--timeline-blub-font-size);
-}
-
-dl.timeline.ordered>dt::before {
-    content: counters(ol-counter, ".", decimal);
-    content: var(--ol-counter);
+    z-index: 1000;    
 }
 
 dl.timeline.framed>dt::before {
-    margin-left: calc(-1 * (var(--horizontal-rhythm) + calc(var(--horizontal-rhythm) - calc(calc(1em + 4px) / 2) - 1px) + calc(1em + 4px) / 2 + 1px / 2));
+    margin-left: calc(-1 * (var(--horizontal-rhythm) + calc(var(--horizontal-rhythm) - calc(var(--fs-d1) / 2) - 1px) + var(--fs-d1) / 2 + 1px / 2));
     margin-left: var(--timeline-framed-left-blub-pos);
 }
 
@@ -138,29 +132,17 @@ dl.timeline:not(dl.timeline.framed)>dd>.framed {
     margin-left: var(--timeline-framed-indent);
 }
 
-dl.timeline>dt>*.framed::before {
-    content: "";
-    width: calc(var(--horizontal-rhythm) + calc(var(--horizontal-rhythm) - calc(calc(1em + 4px) / 2) - 1px) + 1px - calc(1em + 4px) / 2);
-    width: calc(var(--timeline-framed-indent) + var(--timeline-right-gap) + var(--timeline-width) - var(--timeline-blub-size) / 2);
-    border-top: 1px solid var(--timeline-color);
-    border-top: var(--timeline-width) solid var(--timeline-color);
-    position: absolute;
-    margin-top: calc(calc(1em * var(--lh-default) / 2 - calc(1em + 4px) / 2 + (1rem - 1em) * var(--lh-default) / 2) + calc(1em + 4px) / 2 - var(--space) - 1px);
-    margin-top: calc(var(--timeline-top-blub-pos) + var(--timeline-blub-size) / 2 - var(--timeline-framed-padding) - var(--timeline-width));
-    margin-left: calc(-1 * (calc(var(--horizontal-rhythm) - calc(calc(1em + 4px) / 2) - 1px) + var(--horizontal-rhythm) + 1px * 2 + var(--space)) + calc(1em + 4px) / 2);
-    margin-left: calc(-1 * (var(--timeline-right-gap) + var(--timeline-framed-indent) + var(--timeline-width) * 2 + var(--timeline-framed-padding)) + var(--timeline-blub-size) / 2);
-}
-
+dl.timeline>dt>*.framed::before,
 dl.timeline>dd>*.framed::before {
     content: "";
-    width: calc(var(--horizontal-rhythm) + calc(var(--horizontal-rhythm) - calc(calc(1em + 4px) / 2) - 1px) + 1px);
+    width: calc(var(--horizontal-rhythm) + calc(var(--horizontal-rhythm) - calc(var(--fs-d1) / 2) - 1px) + 1px);
     width: calc(var(--timeline-framed-indent) + var(--timeline-right-gap) + var(--timeline-width));
     border-top: 1px solid var(--timeline-color);
     border-top: var(--timeline-width) solid var(--timeline-color);
     position: absolute;
-    margin-top: calc(calc(1em * var(--lh-default) / 2 - calc(1em + 4px) / 2 + (1rem - 1em) * var(--lh-default) / 2) + calc(1em + 4px) / 2 - var(--space) - 1px);
+    margin-top: calc(calc(1em * var(--lh-default) / 2 - var(--fs-d1) / 2) + var(--fs-d1) / 2 - var(--space) - 1px);
     margin-top: calc(var(--timeline-top-blub-pos) + var(--timeline-blub-size) / 2 - var(--timeline-framed-padding) - var(--timeline-width));
-    margin-left: calc(-1 * (calc(var(--horizontal-rhythm) - calc(calc(1em + 4px) / 2) - 1px) + var(--horizontal-rhythm) + 1px * 2 + var(--space)));
+    margin-left: calc(-1 * (calc(var(--horizontal-rhythm) - calc(var(--fs-d1) / 2) - 1px) + var(--horizontal-rhythm) + 1px * 2 + var(--space)));
     margin-left: calc(-1 * (var(--timeline-right-gap) + var(--timeline-framed-indent) + var(--timeline-width) * 2 + var(--timeline-framed-padding)));
 }
 
@@ -194,28 +176,22 @@ dl.timeline>dd>*.framed::before {
     }
     dl.timeline.row>dt::after {
         border-radius: 50%;
-        content: attr(blub);
+        content: "";
         display: flex;
         justify-content: center;
         align-items: center;
-        width: calc(1em + 4px);
+        width: var(--fs-d1);
         width: var(--timeline-blub-size);
-        height: calc(1em + 4px);
+        height: var(--fs-d1);
         height: var(--timeline-blub-size);
         position: absolute;
-        margin-top: calc(var(--vertical-rhythm) - calc(1em + 4px) / 2);
+        margin-top: calc(var(--vertical-rhythm) - var(--fs-d1) / 2);
         margin-top: calc(var(--timeline-row-y-gap) - var(--timeline-blub-size) / 2);
         background-color: var(--timeline-blub-background);
         border: 1px solid var(--timeline-blub-color);
         border: var(--timeline-blub-border-width) solid var(--timeline-blub-color);
         z-index: 1000;
-        font-size: 1em;
-        font-size: var(--timeline-blub-font-size);
     }  
-    dl.timeline.row.ordered>dt::after {
-        content: counters(ol-counter, ".", decimal);
-        content: var(--ol-counter);
-    }
     dl.timeline.row>dt>*,
     dl.timeline.row>dd>* {
         margin: 0;
@@ -256,7 +232,7 @@ dl.timeline>dd>*.framed::before {
         display: block;
         margin-top: calc(calc(var(--space) / 2) + 1px);
         margin-top: calc(var(--timeline-row-framed-padding) + var(--timeline-width));
-        margin-left: calc(-1 * calc(var(--space) / 2) + calc(1em + 4px) / 2 - 1px);
+        margin-left: calc(-1 * calc(var(--space) / 2) + var(--fs-d1) / 2 - 1px);
         margin-left: calc(-1 * var(--timeline-row-framed-padding) + var(--timeline-blub-size) / 2 - var(--timeline-width));
     }
 }
@@ -291,28 +267,22 @@ dl.timeline>dd>*.framed::before {
     }
     dl.timeline.row>dt::after {
         border-radius: 50%;
-        content: attr(blub);
+        content: "";
         display: flex;
         justify-content: center;
         align-items: center;
-        width: calc(1em + 4px);
+        width: var(--fs-d1);
         width: var(--timeline-blub-size);
-        height: calc(1em + 4px);
+        height: var(--fs-d1);
         height: var(--timeline-blub-size);
         position: absolute;
-        margin-top: calc(var(--vertical-rhythm) - calc(1em + 4px) / 2);
+        margin-top: calc(var(--vertical-rhythm) - var(--fs-d1) / 2);
         margin-top: calc(var(--timeline-row-y-gap) - var(--timeline-blub-size) / 2);
         background-color: var(--timeline-blub-background);
         border: 1px solid var(--timeline-blub-color);
         border: var(--timeline-blub-border-width) solid var(--timeline-blub-color);
         z-index: 1000;
-        font-size: 1em;
-        font-size: var(--timeline-blub-font-size);
     }  
-    dl.timeline.row.ordered>dt::after {
-        content: counters(ol-counter, ".", decimal);
-        content: var(--ol-counter);
-    }
     dl.timeline.row>dt>*,
     dl.timeline.row>dd>* {
         margin: 0;
@@ -353,7 +323,7 @@ dl.timeline>dd>*.framed::before {
         display: block;
         margin-top: calc(calc(var(--space) / 2) + 1px);
         margin-top: calc(var(--timeline-row-framed-padding) + var(--timeline-width));
-        margin-left: calc(-1 * calc(var(--space) / 2) + calc(1em + 4px) / 2 - 1px);
+        margin-left: calc(-1 * calc(var(--space) / 2) + var(--fs-d1) / 2 - 1px);
         margin-left: calc(-1 * var(--timeline-row-framed-padding) + var(--timeline-blub-size) / 2 - var(--timeline-width));
     }
 }

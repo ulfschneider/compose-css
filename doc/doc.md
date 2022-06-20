@@ -766,7 +766,7 @@ familiar walls.</dd>
 
 ### Framed Timeline
 
-<dl class="timeline framed ordered">
+<dl class="timeline framed">
 <dt>One morning</dt>
 <dd>when Gregor Samsa woke from troubled dreams, he found himself 
 transformed in his bed into a horrible vermin.</dd>
@@ -791,7 +791,7 @@ familiar walls.</dd>
 
 ### Horizontal Timeline
 
-<dl class="timeline framed row ordered">
+<dl class="timeline framed row">
 <dt>One morning</dt>
 <dd>when Gregor Samsa woke from troubled dreams, he found himself 
 transformed in his bed into a horrible vermin.</dd>
@@ -816,7 +816,7 @@ familiar walls.</dd>
 </dl>
 
 ```html
-<dl class="timeline framed">
+<dl class="timeline framed row">
     <dt>One morning</dt>
     <dd>when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</dd>
     <dt>He lay on his armour-like back</dt>
