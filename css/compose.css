@@ -21615,6 +21615,13 @@ blockquote {
     line-height: var(--blockquote-line-height);
 }
 
+blockquote > header, blockquote>footer {
+    line-height: calc(1.66 * 1);
+    line-height: var(--lh-default);
+    font-size: 1rem;
+    font-size: var(--fs);        
+}
+
 blockquote::before {
     content: "";
     width: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
@@ -21711,7 +21718,7 @@ blockquote>header {
     margin-bottom: 0;
     margin-bottom: var(--mrb-figcaption);  
     line-height: calc(1.66 * 1);  
-    line-height: var(--lh-default);  
+    line-height: var(--lh-default);      
 }
 
 figcaption {
@@ -21722,6 +21729,7 @@ figcaption {
 blockquote>footer,
 blockquote>header {
     font-weight: bold;
+    font-size: var(--fs-default);
 }
 
 blockquote>footer::before {

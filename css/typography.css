@@ -621,6 +621,11 @@ blockquote {
     line-height: var(--blockquote-line-height);
 }
 
+blockquote > header, blockquote>footer {
+    line-height: var(--lh-default);
+    font-size: var(--fs);        
+}
+
 blockquote::before {
     content: "";
     width: var(--space-3);
@@ -712,7 +717,7 @@ blockquote>header {
     margin-top: var(--mrt-figcaption);
     margin-bottom: 0;
     margin-bottom: var(--mrb-figcaption);  
-    line-height: var(--lh-default);  
+    line-height: var(--lh-default);      
 }
 
 figcaption {
@@ -723,6 +728,7 @@ figcaption {
 blockquote>footer,
 blockquote>header {
     font-weight: bold;
+    font-size: var(--fs-default);
 }
 
 blockquote>footer::before {
