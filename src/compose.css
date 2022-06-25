@@ -4,6 +4,8 @@
 @import "type-scale";
 @import "type-scale-breakpoints";
 @import "border";
+@import "color-light-mode";
+@import "color-dark-mode";
 @import "color";
 @import "margin";
 @import "margin-breakpoints";
