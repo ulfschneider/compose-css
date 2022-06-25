@@ -20,7 +20,7 @@
     --code-font-family: var(--mono-font-family);
     --blockquote-font-style: normal;
     --blockquote-font-weight: normal;
-    --blockquote-font-size: var(--fs-2);
+    --blockquote-font-size: var(--fs-1);
     --blockquote-line-height: var(--lh-2);
     --quote-font-style: italic;
     --text-decoration: underline;
@@ -615,7 +615,7 @@ blockquote {
     font-weight: normal;
     font-weight: var(--blockquote-font-weight);
     background: var(--blockquote-background);
-    font-size:var(--fs-2);
+    font-size:var(--fs-1);
     font-size:var(--blockquote-font-size);
     line-height: var(--lh-2);
     line-height: var(--blockquote-line-height);
