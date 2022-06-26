@@ -1,6 +1,7 @@
 img {
     font-family: var(--meta-font-family);
     font-size: var(--fs-d1);
+    filter: var(--img-filter);
 }
 
 .bg-cover {

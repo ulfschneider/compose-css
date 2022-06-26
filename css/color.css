@@ -1,6 +1,6 @@
-html {    
-        color: var(--base-color);
-        background: var(--base-background);
+:root {
+    color: var(--base-color);
+    background: var(--base-background);
 }
 
 ::selection {

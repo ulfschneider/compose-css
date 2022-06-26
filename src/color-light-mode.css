@@ -1,8 +1,9 @@
 :root {
-    --color-dn-spread: 7;
     /*smaller dn-spread number makes darker colors*/
-    --color-up-spread: 6;
+    --color-dn-spread: 7;
     /*smaller up-spread number makes lighter colors*/
+    --color-up-spread: 6;
+
     --neutral-h: 0;
     --neutral-s: 0%;
     --neutral-l: 53%;
@@ -116,20 +117,31 @@
     --accent-five-4: hsl(var(--accent-five-h), var(--accent-five-s), calc(var(--accent-five-l) + 4 * var(--accent-five-up-step)));
     --accent-five-5: hsl(var(--accent-five-h), var(--accent-five-s), calc(var(--accent-three-l) + 5 * var(--accent-three-up-step)));
 
-
     --base-color: var(--neutral-d5);
     --base-background: white;
+
     --mark-background: yellow;
+    --mark-color: var(--neutral-d5);
+
+    --mark-background: yellow;
+    --mark-color: var(--neutral-d5);
+
     --inserted-background: greenyellow;
+    --inserted-color: var(--neutral-d5);
+
     --deleted-background: lightsalmon;
+    --deleted-color: var(--neutral-d5);
+
+    --selection-background: var(--primary-5);
+    --selection-color: var(--base-color);
+
+
     --border-color: var(--base-color);
     --link-color: inherit;
     --link-hover-color: var(--primary);
     --link-focus-color: var(--link-hover-color);
     --link-active-color: var(--link-hover-color);
-    --outline-color: var(--primary);    
-    --selection-background: var(--primary-5);
-    --selection-color: var(--base-color);
+    --outline-color: var(--primary);
     --heading-color: var(--base-color);
     --meta-color: var(--neutral-d1);
     --li-prefix-color: currentColor;
@@ -144,7 +156,7 @@
     --form-button-active-brightness: 1.3;
     --form-button-hover-brightness: var(--form-button-active-brightness);
     --form-button-focus-brightness: 1;
-    --form-button-color: var(--base-background);
+    --form-button-color: var(--neutral-5);
     --form-field-background: var(--neutral-5);
     --form-field-focus-color: var(--primary);
     --kbd-background: var(--base-background);
@@ -157,7 +169,7 @@
     --code-color: var(--base-color);
     --pre-background: transparent;
     --pre-color: var(--base-color);
-    --pre-code-color: var(--base-background);
+    --pre-code-color: var(--neutral-5);
     --pre-code-background: var(--neutral-d5);
     --blockquote-background: transparent;
     --table-alternate-row-background: var(--neutral-5);
@@ -165,5 +177,6 @@
     --table-hover-row-background: var(--primary-5);
     --table-underline-row-color: var(--border-color);
     --table-head-background: var(--base-background);
-}
 
+    --img-filter: ;
+}

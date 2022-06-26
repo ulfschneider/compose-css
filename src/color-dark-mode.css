@@ -1,33 +1,36 @@
+:root {
+    /*smaller dn-spread number makes darker colors*/
+    --dark-color-dn-spread: var(--color-dn-spread);
+    /*smaller up-spread number makes lighter colors*/
+    --dark-color-up-spread: var(--color-up-spread);
 
+
+    --dark-neutral-h: var(--neutral-h);
+    --dark-neutral-s: var(--neutral-s);
+    --dark-neutral-l: var(--neutral-l);
+    --dark-primary-h: var(--primary-h);
+    --dark-primary-s: var(--primary-s);
+    --dark-primary-l: var(--primary-l);
+    --dark-accent-one-h: var(--accent-one-h);
+    --dark-accent-one-s: var(--accent-one-s);
+    --dark-accent-one-l: var(--accent-one-l);
+    --dark-accent-two-h: var(--accent-two-h);
+    --dark-accent-two-s: var(--accent-two-s);
+    --dark-accent-two-l: var(--accent-two-l);
+    --dark-accent-three-h: var(--accent-three-h);
+    --dark-accent-three-s: var(--accent-three-s);
+    --dark-accent-three-l: var(--accent-three-l);
+    --dark-accent-four-h: var(--accent-four-h);
+    --dark-accent-four-s: var(--accent-four-s);
+    --dark-accent-four-l: var(--accent-four-l);
+    --dark-accent-five-h: var(--accent-five-h);
+    --dark-accent-five-s: var(--accent-five-s);
+    --dark-accent-five-l: var(--accent-five-l);
+}
 
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        --dark-color-dn-spread: 7;
-        /*smaller dn-spread number makes darker colors*/
-        --dark-color-up-spread: 6;
-        /*smaller up-spread number makes lighter colors*/
-        --dark-neutral-h: var(--neutral-h);
-        --dark-neutral-s: var(--neutral-s);
-        --dark-neutral-l: var(--neutral-l);
-        --dark-primary-h: var(--primary-h);
-        --dark-primary-s: var(--primary-s);
-        --dark-primary-l: var(--primary-l);
-        --dark-accent-one-h: var(--accent-one-h);
-        --dark-accent-one-s: var(--accent-one-s);
-        --dark-accent-one-l: var(--accent-one-l);
-        --dark-accent-two-h: var(--accent-two-h);
-        --dark-accent-two-s: var(--accent-two-s);
-        --dark-accent-two-l: var(--accent-two-l);
-        --dark-accent-three-h: var(--accent-three-h);
-        --dark-accent-three-s: var(--accent-three-s);
-        --dark-accent-three-l: var(--accent-three-l);
-        --dark-accent-four-h: var(--accent-four-h);
-        --dark-accent-four-s: var(--accent-four-s);
-        --dark-accent-four-l: var(--accent-four-l);
-        --dark-accent-five-h: var(--accent-five-h);
-        --dark-accent-five-s: var(--accent-five-s);
-        --dark-accent-five-l: var(--accent-five-l);
+    .auto-dark-mode {
         --neutral-up-step: calc((100% - var(--dark-neutral-l)) / var(--dark-color-up-spread));
         --neutral-dn-step: calc(var(--dark-neutral-l) / var(--dark-color-dn-spread));
         --neutral-d5: hsl(var(--dark-neutral-h), var(--dark-neutral-s), calc(var(--dark-neutral-l) - 5 * var(--neutral-dn-step)));
@@ -119,23 +122,30 @@
         --accent-five-3: hsl(var(--dark-accent-five-h), var(--dark-accent-five-s), calc(var(--dark-accent-five-l) + 3 * var(--accent-five-up-step)));
         --accent-five-4: hsl(var(--dark-accent-five-h), var(--dark-accent-five-s), calc(var(--dark-accent-five-l) + 4 * var(--accent-five-up-step)));
         --accent-five-5: hsl(var(--dark-accent-five-h), var(--dark-accent-five-s), calc(var(--dark-accent-three-l) + 5 * var(--accent-three-up-step)));
-    
-    
-        --base-color: var(--neutral-5);
+
+        --base-color: var(--neutral-4);
         --base-background: var(--neutral-d5);
+
         --mark-background: yellow;
+        --mark-color: var(--neutral-d5);
+
         --inserted-background: greenyellow;
+        --inserted-color: var(--neutral-d5);
+
         --deleted-background: lightsalmon;
+        --deleted-color: var(--neutral-d5);
+
+        --selection-background: var(--primary-5);
+        --selection-color: var(--neutral-d5);
+        
         --border-color: var(--base-color);
         --link-color: inherit;
-        --link-hover-color: var(--primary);
+        --link-hover-color: var(--primary-2);
         --link-focus-color: var(--link-hover-color);
         --link-active-color: var(--link-hover-color);
-        --outline-color: var(--primary);    
-        --selection-background: var(--primary-5);
-        --selection-color: var(--base-color);
+        --outline-color: var(--primary-2);
         --heading-color: var(--base-color);
-        --meta-color: var(--neutral-d1);
+        --meta-color: var(--neutral-1);
         --li-prefix-color: currentColor;
         --li-high-prefix-color: var(--base-background);
         --li-high-prefix-background: var(--base-color);
@@ -143,13 +153,13 @@
         --form-label-color: var(--meta-color);
         --form-field-color: var(--base-color);
         --form-field-border-color: var(--border-color);
-        --caret-color: var(--primary-d1);
+        --caret-color: var(--primary-2);
         --form-button-background: var(--primary);
         --form-button-active-brightness: 1.3;
         --form-button-hover-brightness: var(--form-button-active-brightness);
         --form-button-focus-brightness: 1;
-        --form-button-color: var(--base-background);
-        --form-field-background: var(--neutral-5);
+        --form-button-color: var(--neutral-5);
+        --form-field-background: var(--neutral-d4);
         --form-field-focus-color: var(--primary);
         --kbd-background: var(--base-background);
         --kbd-color: var(--base-color);
@@ -161,15 +171,15 @@
         --code-color: var(--base-color);
         --pre-background: transparent;
         --pre-color: var(--base-color);
-        --pre-code-color: var(--base-background);
-        --pre-code-background: var(--neutral-d5);
+        --pre-code-color: var(--neutral-5);
+        --pre-code-background: var(--neutral-d4);
         --blockquote-background: transparent;
         --table-alternate-row-background: var(--neutral-5);
         --table-alternate-col-background: var(--neutral-5);
         --table-hover-row-background: var(--primary-5);
         --table-underline-row-color: var(--border-color);
         --table-head-background: var(--base-background);
-        
-    }
-      
+
+        --img-filter: brightness(.8) contrast(1.2);
+        }
 }
