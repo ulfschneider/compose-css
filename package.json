@@ -1,6 +1,6 @@
 {
     "name": "compose-css",
-    "version": "28.2.14",
+    "version": "28.3.0",
     "description": "Composable CSS Toolkit",
     "main": "css/compose.css",
     "style": "css/compose.css",
@@ -9,7 +9,7 @@
         "autoprefixer": "^9.8.8",
         "browser-sync": "^2.27.10",
         "cheerio": "^1.0.0-rc.11",
-        "cssnano": "^5.1.11",
+        "cssnano": "^5.1.12",
         "cssstats": "^3.5.0",
         "gulp": "^4.0.2",
         "gulp-cli": "^2.3.0",
