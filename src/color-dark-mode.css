@@ -1,6 +1,6 @@
 :root {
     /*smaller dn-spread number makes darker colors*/
-    --dark-color-dn-spread: calc(var(--color-dn-spread) - 1.2);
+    --dark-color-dn-spread: calc(var(--color-dn-spread) - 1);
     /*smaller up-spread number makes lighter colors*/
     --dark-color-up-spread: calc(var(--color-up-spread) + 1.2);
 
