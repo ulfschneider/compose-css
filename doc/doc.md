@@ -477,25 +477,25 @@ Take the size and line height of headings and apply it to any element *without* 
 
 ### Word wrapping
 
-<div class="block br w-3 no-wrap mrr mrt-3">No word wrap in small spaces</div>
+<div class="block br bg-neutral-5 d:bg-neutral-d4  w-3 no-wrap mrr mrt-3">No word wrap in small spaces</div>
 
 ```html
 <div class="no-wrap w-3">No word wrap in small spaces</div>
 ```
 
-<div class="block br w-3 wrap-normal mrr mrt-3">Normal word wrap in small spaces</div>
+<div class="block br bg-neutral-5 d:bg-neutral-d4  w-3 wrap-normal mrr mrt-3">Normal word wrap in small spaces</div>
 
 ```html
 <div class="wrap-normal w-3">Normal word wrap in small spaces</div>
 ```
 
-<div class="block br w-2 break-word mrr mrt-3">Wrap and break word anywhere</div>
+<div class="block br bg-neutral-5 d:bg-neutral-d4  w-2 break-word mrr mrt-3">Wrap and break word anywhere</div>
 
 ```html
 <div class="break-word w-2">Wrap and break word anywhere</div>
 ```
 
-<div class="block br w-3 truncate mrr mrt-3">
+<div class="block br bg-neutral-5 d:bg-neutral-d4  w-3 truncate mrr mrt-3">
 Truncate instead of word wrap
 </div>
 
@@ -505,7 +505,7 @@ Truncate instead of word wrap
 
 ### Writing mode
 
-<div class="w-4 h-4 horizontal-tb br mrt-3">
+<div class="w-4 h-4 horizontal-tb br bg-neutral-5 d:bg-neutral-d4 mrt-3">
 He lay on his armour-like back
 </div>
 
@@ -513,7 +513,7 @@ He lay on his armour-like back
 <div class="horizontal-tb w-4 h-4">He lay on his armour-like back</div>
 ```
 
-<div class="w-4 h-4 vertical-lr br mrt-3">
+<div class="w-4 h-4 vertical-lr br bg-neutral-5 d:bg-neutral-d4 mrt-3">
 He lay on his armour-like back
 </div>
 
@@ -521,7 +521,7 @@ He lay on his armour-like back
 <div class="vertical-lr w-4 h-4">He lay on his armour-like back</div>
 ```
 
-<div class="w-4 h-4 vertical-rl br mrt-3">
+<div class="w-4 h-4 vertical-rl br bg-neutral-5 d:bg-neutral-d4 mrt-3">
 He lay on his armour-like back
 </div>
 
@@ -1568,25 +1568,25 @@ Each breakpoint *can* trigger a change in base font size. The wider the screen, 
 
 
 <div class="full-bleed pdx overflow-hidden"> 
-    <div class="w-lg-breakpoint mry-2 mrx-auto brx">
+    <div class="w-lg-breakpoint mry-2 mrx-auto br bg-neutral-5 d:bg-neutral-d4">
     <span class="pd">.w-lg-breakpoint</span>        
         <div class="w-lg pdx mry mrx-auto bg-primary white">
             <span>.w-lg</span>
         </div>
     </div>
-    <div class="w-md-breakpoint mry-2 mrx-auto brx">
+    <div class="w-md-breakpoint mry-2 mrx-auto br bg-neutral-5 d:bg-neutral-d4">
         <span class="pd">.w-md-breakpoint</span>
         <div class="w-md pdx mry mrx-auto bg-primary white">
             <span>.w-md</span>
         </div>
     </div>
-    <div class="w-rg-breakpoint mry-2 mrx-auto brx">
+    <div class="w-rg-breakpoint mry-2 mrx-auto br bg-neutral-5 d:bg-neutral-d4">
         <span class="pd">.w-rg-breakpoint</span>
         <div class="w-rg pdx mry mrx-auto bg-primary white">
             <span>.w-rg</span>
         </div>
     </div>
-    <div class="w-sm-breakpoint mry-2 mrx-auto brx">
+    <div class="w-sm-breakpoint mry-2 mrx-auto br bg-neutral-5 d:bg-neutral-d4">
         <span class="pd">.w-sm-breakpoint</span>
         <div class="w-sm pdx mry mrx-auto bg-primary white">
             <span>.w-sm</span>

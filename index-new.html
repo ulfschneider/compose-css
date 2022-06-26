@@ -3,7 +3,7 @@
     addEventListener('load', () => sotable({whiteList: '.soso'})); //activate sotable functionalty on load
     </script></head><body class="pd"><main class="outline mxw-lg mrx-auto"><header class="title">
 <h1>Compose CSS</h1>
-<span class="bg-primary neutral-5 pd-d3">Version 28.4.3</span>
+<span class="bg-primary neutral-5 pd-d3">Version 28.4.5</span>
 <p>A low-level CSS Toolkit to build fast, maintainable, and responsive websites.</p>
 </header>
 <nav class="table-of-contents fluid-columns-5 bleed-right"><ol><li><a href="#preparatory">Preparatory </a><ol><li><a href="#install-compose-css">Install Compose CSS </a></li><li><a href="#notation-used-in-this-document">Notation used in this document </a></li><li><a href="#stepping-through-options">Stepping through options </a></li></ol></li><li><a href="#typography">Typography </a><ol><li><a href="#basic-elements">Basic elements </a></li><li><a href="#font-size">Font size </a></li><li><a href="#headings">Headings </a></li><li><a href="#heading-size">Heading size </a></li><li><a href="#line-height">Line height </a></li><li><a href="#rhythm">Rhythm </a></li><li><a href="#word-wrapping">Word wrapping </a></li><li><a href="#writing-mode">Writing mode </a></li><li><a href="#paragraph">Paragraph </a></li><li><a href="#indented-paragraph">Indented Paragraph </a></li><li><a href="#horizontal-ruler">Horizontal ruler </a></li><li><a href="#blockquote">Blockquote </a></li><li><a href="#details-and-summary">Details and Summary </a></li></ol></li><li><a href="#lists">Lists </a><ol><li><a href="#unordered-list">Unordered list </a></li><li><a href="#ordered-list">Ordered List </a></li><li><a href="#indented-ordered-list">Indented Ordered List </a></li><li><a href="#definition-list">Definition List </a></li><li><a href="#timeline">Timeline </a></li><li><a href="#framed-timeline">Framed Timeline </a></li><li><a href="#horizontal-timeline">Horizontal Timeline </a></li></ol></li><li><a href="#tables">Tables </a></li><li><a href="#figures">Figures </a></li><li><a href="#images">Images </a></li><li><a href="#colors">Colors </a></li><li><a href="#breakpoints">Breakpoints </a></li><li><a href="#layout">Layout </a></li><li><a href="#forms">Forms </a></li></ol></nav><h2 id="preparatory" tabindex="-1">Preparatory <a class="anchor" href="#preparatory">#</a></h2>
@@ -438,32 +438,32 @@ Another example is how dark or how light a color is set, like <code>.primary-d5<
             </tbody></table></div>
 <h3 id="rhythm" tabindex="-1">Rhythm <a class="anchor" href="#rhythm">#</a></h3>
 <h3 id="word-wrapping" tabindex="-1">Word wrapping <a class="anchor" href="#word-wrapping">#</a></h3>
-<div class="block br w-3 no-wrap mrr mrt-3">No word wrap in small spaces</div>
+<div class="block br bg-neutral-5 d:bg-neutral-d4  w-3 no-wrap mrr mrt-3">No word wrap in small spaces</div>
 <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>no-wrap w-3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>No word wrap in small spaces<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
-<div class="block br w-3 wrap-normal mrr mrt-3">Normal word wrap in small spaces</div>
+<div class="block br bg-neutral-5 d:bg-neutral-d4  w-3 wrap-normal mrr mrt-3">Normal word wrap in small spaces</div>
 <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>wrap-normal w-3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Normal word wrap in small spaces<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
-<div class="block br w-2 break-word mrr mrt-3">Wrap and break word anywhere</div>
+<div class="block br bg-neutral-5 d:bg-neutral-d4  w-2 break-word mrr mrt-3">Wrap and break word anywhere</div>
 <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>break-word w-2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Wrap and break word anywhere<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
-<div class="block br w-3 truncate mrr mrt-3">
+<div class="block br bg-neutral-5 d:bg-neutral-d4  w-3 truncate mrr mrt-3">
 Truncate instead of word wrap
 </div>
 <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>truncate w-3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Truncate instead of word wrap<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 <h3 id="writing-mode" tabindex="-1">Writing mode <a class="anchor" href="#writing-mode">#</a></h3>
-<div class="w-4 h-4 horizontal-tb br mrt-3">
+<div class="w-4 h-4 horizontal-tb br bg-neutral-5 d:bg-neutral-d4 mrt-3">
 He lay on his armour-like back
 </div>
 <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>horizontal-tb w-4 h-4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>He lay on his armour-like back<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
-<div class="w-4 h-4 vertical-lr br mrt-3">
+<div class="w-4 h-4 vertical-lr br bg-neutral-5 d:bg-neutral-d4 mrt-3">
 He lay on his armour-like back
 </div>
 <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>vertical-lr w-4 h-4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>He lay on his armour-like back<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
-<div class="w-4 h-4 vertical-rl br mrt-3">
+<div class="w-4 h-4 vertical-rl br bg-neutral-5 d:bg-neutral-d4 mrt-3">
 He lay on his armour-like back
 </div>
 <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>vertical-rl w-4 h-4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>He lay on his armour-like back<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
@@ -1446,25 +1446,25 @@ familiar walls.</dd>
 </tbody>
 </table></div>
 <div class="full-bleed pdx overflow-hidden"> 
-    <div class="w-lg-breakpoint mry-2 mrx-auto brx">
+    <div class="w-lg-breakpoint mry-2 mrx-auto br bg-neutral-5 d:bg-neutral-d4">
     <span class="pd">.w-lg-breakpoint</span>        
         <div class="w-lg pdx mry mrx-auto bg-primary white">
             <span>.w-lg</span>
         </div>
     </div>
-    <div class="w-md-breakpoint mry-2 mrx-auto brx">
+    <div class="w-md-breakpoint mry-2 mrx-auto br bg-neutral-5 d:bg-neutral-d4">
         <span class="pd">.w-md-breakpoint</span>
         <div class="w-md pdx mry mrx-auto bg-primary white">
             <span>.w-md</span>
         </div>
     </div>
-    <div class="w-rg-breakpoint mry-2 mrx-auto brx">
+    <div class="w-rg-breakpoint mry-2 mrx-auto br bg-neutral-5 d:bg-neutral-d4">
         <span class="pd">.w-rg-breakpoint</span>
         <div class="w-rg pdx mry mrx-auto bg-primary white">
             <span>.w-rg</span>
         </div>
     </div>
-    <div class="w-sm-breakpoint mry-2 mrx-auto brx">
+    <div class="w-sm-breakpoint mry-2 mrx-auto br bg-neutral-5 d:bg-neutral-d4">
         <span class="pd">.w-sm-breakpoint</span>
         <div class="w-sm pdx mry mrx-auto bg-primary white">
             <span>.w-sm</span>

@@ -1836,9 +1836,9 @@ small,
 
 :root {
     /*smaller dn-spread number makes darker colors*/
-    --dark-color-dn-spread: calc(var(--color-dn-spread) - 1.2);
+    --dark-color-dn-spread: calc(var(--color-dn-spread) - 1);
     /*smaller up-spread number makes lighter colors*/
-    --dark-color-up-spread: calc(var(--color-up-spread) + 1.2);
+    --dark-color-up-spread: calc(var(--color-up-spread) + .5);
 
 
     --dark-neutral-h: var(--neutral-h);
@@ -1959,19 +1959,19 @@ small,
         --accent-five-5: hsl(var(--dark-accent-five-h), var(--dark-accent-five-s), calc(var(--dark-accent-three-l) + 5 * var(--accent-three-up-step)));
 
         --base-color: var(--neutral-4);
-        --base-background: var(--neutral-d4);
+        --base-background: var(--neutral-d5);
 
         --mark-background: yellow;
-        --mark-color: var(--neutral-d4);
+        --mark-color: var(--neutral-d5);
 
         --inserted-background: greenyellow;
-        --inserted-color: var(--neutral-d4);
+        --inserted-color: var(--neutral-d5);
 
         --deleted-background: lightsalmon;
-        --deleted-color: var(--neutral-d4);
+        --deleted-color: var(--neutral-d5);
 
         --selection-background: var(--primary-5);
-        --selection-color: var(--neutral-d4);
+        --selection-color: var(--neutral-d5);
         
         --border-color: var(--base-color);
         --link-color: inherit;
@@ -2009,8 +2009,8 @@ small,
         --pre-code-color: var(--neutral-5);
         --pre-code-background: var(--neutral-d4);
         --blockquote-background: transparent;
-        --table-alternate-row-background: var(--neutral-5);
-        --table-alternate-col-background: var(--neutral-5);
+        --table-alternate-row-background: var(--neutral-d4);
+        --table-alternate-col-background: var(--neutral-d4);
         --table-hover-row-background: var(--primary-5);
         --table-underline-row-color: var(--border-color);
         --table-head-background: var(--base-background);
