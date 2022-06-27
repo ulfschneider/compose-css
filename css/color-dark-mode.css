@@ -161,7 +161,7 @@
         --form-button-color: white;
         --form-field-background: var(--neutral-d4);
         --form-field-focus-color: var(--primary-1);
-        --kbd-background: var(--base-background);
+        --kbd-background: transparent;
         --kbd-color: var(--base-color);
         --kbd-border-color: var(--border-color);
         --timeline-color: var(--li-prefix-color);

@@ -1812,7 +1812,7 @@ small,
     --form-button-color: white;
     --form-field-background: var(--neutral-5);
     --form-field-focus-color: var(--primary);
-    --kbd-background: var(--base-background);
+    --kbd-background: transparent;
     --kbd-color: var(--base-color);
     --kbd-border-color: var(--border-color);
     --timeline-color: var(--li-prefix-color);
@@ -1996,7 +1996,7 @@ small,
         --form-button-color: white;
         --form-field-background: var(--neutral-d4);
         --form-field-focus-color: var(--primary-1);
-        --kbd-background: var(--base-background);
+        --kbd-background: transparent;
         --kbd-color: var(--base-color);
         --kbd-border-color: var(--border-color);
         --timeline-color: var(--li-prefix-color);
@@ -24343,7 +24343,7 @@ kbd,
     color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
     color: var(--kbd-color);
     font-size: smaller;
-    background: white;
+    background: transparent;
     background: var(--kbd-background);
     border-radius: 2px;
     border-radius: var(--space-d4);
