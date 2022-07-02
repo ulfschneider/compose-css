@@ -1,6 +1,7 @@
 :root {
     color: var(--base-color);
     background: var(--base-background);
+    color-scheme: light dark; /* both supported */
 }
 
 ::selection {

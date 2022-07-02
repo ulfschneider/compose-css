@@ -2026,6 +2026,7 @@ small,
     color: var(--base-color);
     background: white;
     background: var(--base-background);
+    color-scheme: light dark; /* both supported */
 }
 
 ::selection {
