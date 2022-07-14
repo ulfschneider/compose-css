@@ -57,10 +57,11 @@ function processingDoc(callback) {
     $('<title>Compose CSS</title>').appendTo('head');
 
     $('<link rel="stylesheet" href="/doc.css"/>').appendTo('head');
-    $(`<script src="/resources/sotable-min.js"></script>
+    $(`<script defer src="/resources/sotable-min.js"></script>
     <script>
     addEventListener('load', () => sotable({whiteList: '.soso'})); //activate sotable functionalty on load
     `).appendTo('head');
+    $('html').addClass('auto-dark-mode');
     $('body').addClass('pd');
 
     fs.writeFileSync(DEST, $.html(), 'utf8');

@@ -1,6 +1,6 @@
 <header class="title">
 <h1>Compose CSS</h1>
-<span class="bg-primary-5 pd-d3">Version {{compose-version}}</span>
+<span class="bg-primary neutral-5 pd-d3">Version {{compose-version}}</span>
 <p>A low-level CSS Toolkit to build fast, maintainable, and responsive websites.</p>
 </header>
 
@@ -23,9 +23,7 @@ module.exports = {
     plugins: [
         require("postcss-import"),
         require("postcss-custom-media"),
-        require("postcss-custom-properties")({
-            preserve: false,
-        }),
+        require("postcss-custom-properties")(),
         require("postcss-calc"),
         require("@fullhuman/postcss-purgecss")({
             content: [
@@ -422,13 +420,13 @@ Take the size and line height of headings and apply it to any element *without* 
 <table class="mxw-rg">
 <tr><th>Line height</th><th>CSS class</th><tr>
                 <tr>
-                    <td class="lh-d1 brt baseline bg-neutral-5">One morning, when Gregor Samsa woke from troubled
+                    <td class="lh-d1 brt baseline">One morning, when Gregor Samsa woke from troubled
                         dreams, he
                         found himself transformed in his bed into a horrible vermin.</td>
                     <td class="lh-d1 baseline"><code>.lh-d1</code></td>
                 </tr>
                 <tr>
-                    <td class="lh brt baseline bg-neutral-5">One morning, when Gregor Samsa woke from troubled
+                    <td class="lh brt baseline">One morning, when Gregor Samsa woke from troubled
                         dreams, he
                         found himself transformed in his bed into a horrible vermin.</td>
                     <td class="lh baseline">
@@ -436,20 +434,20 @@ Take the size and line height of headings and apply it to any element *without* 
                     </td>
                 </tr>
                 <tr>
-                    <td class="lh-1 brt baseline bg-neutral-5">One morning, when Gregor Samsa woke from troubled
+                    <td class="lh-1 brt baseline">One morning, when Gregor Samsa woke from troubled
                         dreams, he
                         found himself transformed in his bed into a horrible vermin.
                     </td>
                     <td class="lh-1 baseline"><code>.lh-1</code></td>
                 </tr>
                 <tr>
-                    <td class="lh-2 brt baseline bg-neutral-5">One morning, when Gregor Samsa woke from troubled
+                    <td class="lh-2 brt baseline">One morning, when Gregor Samsa woke from troubled
                         dreams, he
                         found himself transformed in his bed into a horrible vermin.</td>
                     <td class="lh-2 baseline"><code>.lh-2</code></td>
                 </tr>
                 <tr>
-                    <td class="lh-3 brt baseline bg-neutral-5">One morning, when Gregor Samsa woke from troubled
+                    <td class="lh-3 brt baseline">One morning, when Gregor Samsa woke from troubled
                         dreams, he
                         found himself transformed in his bed into a horrible vermin.</td>
                     <td class="lh-3 baseline">
@@ -458,14 +456,14 @@ Take the size and line height of headings and apply it to any element *without* 
                     </td>
                 </tr>
                 <tr>
-                    <td class="lh-4 brt m brb baseline bg-neutral-5">One morning, when Gregor Samsa woke from
+                    <td class="lh-4 brt m brb baseline">One morning, when Gregor Samsa woke from
                         troubled
                         dreams, he found himself transformed in his bed into a horrible vermin.
                     </td>
                     <td class="lh-4 baseline"><code>.lh-4</code></td>
                 </tr>
                 <tr>
-                    <td class="lh-5 brt m brb baseline bg-neutral-5">One morning, when Gregor Samsa woke from
+                    <td class="lh-5 brt m brb baseline">One morning, when Gregor Samsa woke from
                         troubled
                         dreams, he found himself transformed in his bed into a horrible vermin.
                     </td>
@@ -479,56 +477,56 @@ Take the size and line height of headings and apply it to any element *without* 
 
 ### Word wrapping
 
-<div class="block br w-3 no-wrap mrr bg-neutral-5">No word wrap in small spaces</div>
+<div class="block br bg-neutral-5 d:bg-neutral-d4  w-3 no-wrap mrr mrt-3">No word wrap in small spaces</div>
 
 ```html
-<div class="no-wrap">No word wrap in small spaces</div>
+<div class="no-wrap w-3">No word wrap in small spaces</div>
 ```
 
-<div class="block br w-3 wrap-normal mrr bg-neutral-5">Normal word wrap in small spaces</div>
+<div class="block br bg-neutral-5 d:bg-neutral-d4  w-3 wrap-normal mrr mrt-3">Normal word wrap in small spaces</div>
 
 ```html
-<div class="wrap-normal">Normal word wrap in small spaces</div>
+<div class="wrap-normal w-3">Normal word wrap in small spaces</div>
 ```
 
-<div class="block br w-2 break-word mrr bg-neutral-5">Wrap and break word anywhere</div>
+<div class="block br bg-neutral-5 d:bg-neutral-d4  w-2 break-word mrr mrt-3">Wrap and break word anywhere</div>
 
 ```html
-<div class="break-word">Wrap and break word anywhere</div>
+<div class="break-word w-2">Wrap and break word anywhere</div>
 ```
 
-<div class="block br w-3 truncate mrr bg-neutral-5">
+<div class="block br bg-neutral-5 d:bg-neutral-d4  w-3 truncate mrr mrt-3">
 Truncate instead of word wrap
 </div>
 
 ```html
-<div class="truncate">Truncate instead of word wrap</div>
+<div class="truncate w-3">Truncate instead of word wrap</div>
 ```
 
 ### Writing mode
 
-<div class="w-4 h-4 horizontal-tb br bg-neutral-5">
+<div class="w-4 h-4 horizontal-tb br bg-neutral-5 d:bg-neutral-d4 mrt-3">
 He lay on his armour-like back
 </div>
 
 ```html
-<div class="horizontal-tb">He lay on his armour-like back</div>
+<div class="horizontal-tb w-4 h-4">He lay on his armour-like back</div>
 ```
 
-<div class="w-4 h-4 vertical-lr br bg-neutral-5">
+<div class="w-4 h-4 vertical-lr br bg-neutral-5 d:bg-neutral-d4 mrt-3">
 He lay on his armour-like back
 </div>
 
 ```html
-<div class="vertical-lr">He lay on his armour-like back</div>
+<div class="vertical-lr w-4 h-4">He lay on his armour-like back</div>
 ```
 
-<div class="w-4 h-4 vertical-rl br bg-neutral-5">
+<div class="w-4 h-4 vertical-rl br bg-neutral-5 d:bg-neutral-d4 mrt-3">
 He lay on his armour-like back
 </div>
 
 ```html
-<div class="vertical-rl">He lay on his armour-like back</div>
+<div class="vertical-rl w-4 h-4">He lay on his armour-like back</div>
 ```
 
 ### Paragraph
@@ -753,7 +751,7 @@ it and seemed ready to slide off any moment.</dd>
 <img src="images/swan-leroi-unsplash.jpg">
 </figure></dt>
 <dt>His many legs</dt>
-<dd><p class="framed bg-accent-two-5">pitifully thin compared with the size of the rest of him, waved about helplessly
+<dd><p class="framed bg-accent-two neutral-5">pitifully thin compared with the size of the rest of him, waved about helplessly
 as he looked. <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.</p>
 <figure class="framed">
 <img src="images/swan-leroi-unsplash.jpg">
@@ -845,8 +843,6 @@ familiar walls.</dd>
 ## Images
 
 ## Colors
-
-<h2>Colors</h2>
 
 <table class="noso">
     <thead class="below-md:hide">
@@ -1572,25 +1568,25 @@ Each breakpoint *can* trigger a change in base font size. The wider the screen, 
 
 
 <div class="full-bleed pdx overflow-hidden"> 
-    <div class="w-lg-breakpoint mry-2 mrx-auto br bg-neutral-5">
+    <div class="w-lg-breakpoint mry-2 mrx-auto br bg-neutral-5 d:bg-neutral-d4">
     <span class="pd">.w-lg-breakpoint</span>        
         <div class="w-lg pdx mry mrx-auto bg-primary white">
             <span>.w-lg</span>
         </div>
     </div>
-    <div class="w-md-breakpoint mry-2 mrx-auto br bg-neutral-5">
+    <div class="w-md-breakpoint mry-2 mrx-auto br bg-neutral-5 d:bg-neutral-d4">
         <span class="pd">.w-md-breakpoint</span>
         <div class="w-md pdx mry mrx-auto bg-primary white">
             <span>.w-md</span>
         </div>
     </div>
-    <div class="w-rg-breakpoint mry-2 mrx-auto br bg-neutral-5">
+    <div class="w-rg-breakpoint mry-2 mrx-auto br bg-neutral-5 d:bg-neutral-d4">
         <span class="pd">.w-rg-breakpoint</span>
         <div class="w-rg pdx mry mrx-auto bg-primary white">
             <span>.w-rg</span>
         </div>
     </div>
-    <div class="w-sm-breakpoint mry-2 mrx-auto bg-neutral-5 br">
+    <div class="w-sm-breakpoint mry-2 mrx-auto br bg-neutral-5 d:bg-neutral-d4">
         <span class="pd">.w-sm-breakpoint</span>
         <div class="w-sm pdx mry mrx-auto bg-primary white">
             <span>.w-sm</span>

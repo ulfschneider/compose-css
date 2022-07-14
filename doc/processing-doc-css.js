@@ -15,8 +15,8 @@ const processingDocCSS = () => {
     return src(DOCU_CSS_SOURCE)
         .pipe(postcss([
             postcssImport(),
-            postcssCustomMedia(),
-            postcssCustomProperties({ preserve: false }),
+            postcssCustomProperties(),
+            postcssCustomMedia(),            
             postcssCalc(),
             postcssPurgeCSS({
                 content: [

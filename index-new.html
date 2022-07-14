@@ -1,27 +1,25 @@
-<html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Compose CSS</title><link rel="stylesheet" href="/doc.css"><script src="/resources/sotable-min.js"></script>
+<html class="auto-dark-mode"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Compose CSS</title><link rel="stylesheet" href="/doc.css"><script defer="" src="/resources/sotable-min.js"></script>
     <script>
     addEventListener('load', () => sotable({whiteList: '.soso'})); //activate sotable functionalty on load
     </script></head><body class="pd"><main class="outline mxw-lg mrx-auto"><header class="title">
 <h1>Compose CSS</h1>
-<span class="bg-primary-5 pd-d3">Version 28.2.14</span>
+<span class="bg-primary neutral-5 pd-d3">Version 28.5.9</span>
 <p>A low-level CSS Toolkit to build fast, maintainable, and responsive websites.</p>
 </header>
-<nav class="table-of-contents fluid-columns-5 bleed-right"><ol><li><a href="#preparatory">Preparatory </a><ol><li><a href="#install-compose-css">Install Compose CSS </a></li><li><a href="#notation-used-in-this-document">Notation used in this document </a></li><li><a href="#stepping-through-options">Stepping through options </a></li></ol></li><li><a href="#typography">Typography </a><ol><li><a href="#basic-elements">Basic elements </a></li><li><a href="#font-size">Font size </a></li><li><a href="#headings">Headings </a></li><li><a href="#heading-size">Heading size </a></li><li><a href="#line-height">Line height </a></li><li><a href="#rhythm">Rhythm </a></li><li><a href="#word-wrapping">Word wrapping </a></li><li><a href="#writing-mode">Writing mode </a></li><li><a href="#paragraph">Paragraph </a></li><li><a href="#indented-paragraph">Indented Paragraph </a></li><li><a href="#horizontal-ruler">Horizontal ruler </a></li><li><a href="#blockquote">Blockquote </a></li><li><a href="#details-and-summary">Details and Summary </a></li></ol></li><li><a href="#lists">Lists </a><ol><li><a href="#unordered-list">Unordered list </a></li><li><a href="#ordered-list">Ordered List </a></li><li><a href="#indented-ordered-list">Indented Ordered List </a></li><li><a href="#definition-list">Definition List </a></li><li><a href="#timeline">Timeline </a></li><li><a href="#framed-timeline">Framed Timeline </a></li><li><a href="#horizontal-timeline">Horizontal Timeline </a></li></ol></li><li><a href="#tables">Tables </a></li><li><a href="#figures">Figures </a></li><li><a href="#images">Images </a></li><li><a href="#colors">Colors </a></li><li><a href="#breakpoints">Breakpoints </a></li><li><a href="#layout">Layout </a></li><li><a href="#forms">Forms </a></li></ol></nav><h2 id="preparatory">Preparatory <a class="anchor" href="#preparatory">#</a></h2>
-<h3 id="install-compose-css">Install Compose CSS <a class="anchor" href="#install-compose-css">#</a></h3>
+<nav class="table-of-contents fluid-columns-5 bleed-right"><ol><li><a href="#preparatory">Preparatory </a><ol><li><a href="#install-compose-css">Install Compose CSS </a></li><li><a href="#notation-used-in-this-document">Notation used in this document </a></li><li><a href="#stepping-through-options">Stepping through options </a></li></ol></li><li><a href="#typography">Typography </a><ol><li><a href="#basic-elements">Basic elements </a></li><li><a href="#font-size">Font size </a></li><li><a href="#headings">Headings </a></li><li><a href="#heading-size">Heading size </a></li><li><a href="#line-height">Line height </a></li><li><a href="#rhythm">Rhythm </a></li><li><a href="#word-wrapping">Word wrapping </a></li><li><a href="#writing-mode">Writing mode </a></li><li><a href="#paragraph">Paragraph </a></li><li><a href="#indented-paragraph">Indented Paragraph </a></li><li><a href="#horizontal-ruler">Horizontal ruler </a></li><li><a href="#blockquote">Blockquote </a></li><li><a href="#details-and-summary">Details and Summary </a></li></ol></li><li><a href="#lists">Lists </a><ol><li><a href="#unordered-list">Unordered list </a></li><li><a href="#ordered-list">Ordered List </a></li><li><a href="#indented-ordered-list">Indented Ordered List </a></li><li><a href="#definition-list">Definition List </a></li><li><a href="#timeline">Timeline </a></li><li><a href="#framed-timeline">Framed Timeline </a></li><li><a href="#horizontal-timeline">Horizontal Timeline </a></li></ol></li><li><a href="#tables">Tables </a></li><li><a href="#figures">Figures </a></li><li><a href="#images">Images </a></li><li><a href="#colors">Colors </a></li><li><a href="#breakpoints">Breakpoints </a></li><li><a href="#layout">Layout </a></li><li><a href="#forms">Forms </a></li></ol></nav><h2 id="preparatory" tabindex="-1">Preparatory <a class="anchor" href="#preparatory">#</a></h2>
+<h3 id="install-compose-css" tabindex="-1">Install Compose CSS <a class="anchor" href="#install-compose-css">#</a></h3>
 <p>Add the <code>compose-css</code> npm package to your <code>node</code> project. Install with:</p>
 <pre class="language-shell"><code class="language-shell"><span class="token function">npm</span> i compose-css
 </code></pre>
 <p>Ideally, you run at least a <code>postcss-import</code> to load <code>compose-css</code> into your project, followed by a <code>postcss-custom-properties</code> , a <code>postcss-purgecss</code> , and a <code>cssnano</code> build-pipeline to reduce the size of the initial compose-css by removing styles you don´t use. As an example, your <code>postcss.config.js</code> file would look in some way like this:</p>
 <pre class="language-javascript"><code class="language-javascript">module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
-    plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span>
         <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"postcss-import"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
         <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"postcss-custom-media"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-        <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"postcss-custom-properties"</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-            preserve<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
-        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"postcss-custom-properties"</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
         <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"postcss-calc"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
         <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"@fullhuman/postcss-purgecss"</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-            content<span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token literal-property property">content</span><span class="token operator">:</span> <span class="token punctuation">[</span>
                 <span class="token comment">/*decide about the content to search for CSS classes to keep*/</span>
                 <span class="token comment">/*...*/</span>
             <span class="token punctuation">]</span><span class="token punctuation">,</span>
@@ -32,7 +30,7 @@
     <span class="token punctuation">]</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
-<h3 id="notation-used-in-this-document">Notation used in this document <a class="anchor" href="#notation-used-in-this-document">#</a></h3>
+<h3 id="notation-used-in-this-document" tabindex="-1">Notation used in this document <a class="anchor" href="#notation-used-in-this-document">#</a></h3>
 <ul>
 <li>In flowing text, a CSS class will be denoted with a starting period, for example: <code>.css</code>.</li>
 <li>HTML tags in flowing text are denoted lowercase and with pointing brackets, for example: <code>&lt;strong&gt;</code>.</li>
@@ -40,15 +38,15 @@
 </code></pre>
 </li>
 </ul>
-<h3 id="stepping-through-options">Stepping through options <a class="anchor" href="#stepping-through-options">#</a></h3>
+<h3 id="stepping-through-options" tabindex="-1">Stepping through options <a class="anchor" href="#stepping-through-options">#</a></h3>
 <ul>
 <li>Many CSS classes of Compose CSS allow to step up and down through multiple options of <em>the same thing.</em> For example, <code>line-height</code> can be set with <code>.lh-d1</code>, <code>.lh</code>, <code>.lh-1</code>, <code>.lh-2</code>, … , <code>.lh-5</code>.<br>
 <code>.lh</code> stands for <em>1, the neutral value.</em> <code>.lh-d1</code> stands for <em>decrease one step down from the neutral value,</em> while <code>.lh-1</code> stands for <em>increase one step up from the neutral value,</em> <code>.lh-2</code> is <em>increase two steps up,</em> and so on. Please refer to <a href="#line-height">line-height</a> for more details.<br>
 Another example is how dark or how light a color is set, like <code>.primary-d5</code>, <code>.primary-d4</code>, <code>.primary-d3</code>, … , <code>.primary</code>, <code>.primary-1</code>, <code>.primary-2</code>, … <code>.primary-5</code>, where <code>.primary</code> is the neutral primary color tone and <code>-d1</code>, <code>-d2</code>, … is making it darker, while <code>-1</code>, <code>-2</code>, … is making it lighter. Please refer to <a href="#colors">colors</a> for more details.</li>
 <li>A default value is often represented by a <code>-default</code> postfix added to the corresponding CSS class. For example, the default <code>line-height</code> that is used by Compose CSS is defined by <code>.lh-3</code>, which can also be set by <code>.lh-default</code>.</li>
 </ul>
-<h2 id="typography">Typography <a class="anchor" href="#typography">#</a></h2>
-<h3 id="basic-elements">Basic elements <a class="anchor" href="#basic-elements">#</a></h3>
+<h2 id="typography" tabindex="-1">Typography <a class="anchor" href="#typography">#</a></h2>
+<h3 id="basic-elements" tabindex="-1">Basic elements <a class="anchor" href="#basic-elements">#</a></h3>
 <div class="scroll-table" style="overflow-x:auto;"><table class="underline-rows">
 <thead>
     <tr>
@@ -268,7 +266,7 @@ Another example is how dark or how light a color is set, like <code>.primary-d5<
                     </td>
                 </tr>               
             </tbody></table></div>
-<h3 id="font-size">Font size <a class="anchor" href="#font-size">#</a></h3>
+<h3 id="font-size" tabindex="-1">Font size <a class="anchor" href="#font-size">#</a></h3>
 <p>To increase or decrease font size in relation to the current font size, assign CSS class <code>.larger</code> or <code>.smaller</code>. For example:</p>
 <p>This is a paragraph with <span class="smaller">smaller</span> and <span class="larger">larger</span> text.</p>
 <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
@@ -352,8 +350,8 @@ Another example is how dark or how light a color is set, like <code>.primary-d5<
     <span class="token property">--large</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--fs-1<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<h3 id="headings">Headings <a class="anchor" href="#headings">#</a></h3>
-<h3 id="heading-size">Heading size <a class="anchor" href="#heading-size">#</a></h3>
+<h3 id="headings" tabindex="-1">Headings <a class="anchor" href="#headings">#</a></h3>
+<h3 id="heading-size" tabindex="-1">Heading size <a class="anchor" href="#heading-size">#</a></h3>
 <p>Take the size and line height of headings and apply it to any element <em>without</em> making that element a heading.</p>
 <div class="scroll-table" style="overflow-x:auto;"><table>
 <tbody><tr><th class="right">Heading size and line height</th><th>CSS class</th></tr><tr>
@@ -384,17 +382,17 @@ Another example is how dark or how light a color is set, like <code>.primary-d5<
                     </td>
                 </tr>
             </tbody></table></div>
-<h3 id="line-height">Line height <a class="anchor" href="#line-height">#</a></h3>
+<h3 id="line-height" tabindex="-1">Line height <a class="anchor" href="#line-height">#</a></h3>
 <div class="scroll-table" style="overflow-x:auto;"><table class="mxw-rg">
 <tbody><tr><th>Line height</th><th>CSS class</th></tr><tr>
                 </tr><tr>
-                    <td class="lh-d1 brt baseline bg-neutral-5">One morning, when Gregor Samsa woke from troubled
+                    <td class="lh-d1 brt baseline">One morning, when Gregor Samsa woke from troubled
                         dreams, he
                         found himself transformed in his bed into a horrible vermin.</td>
                     <td class="lh-d1 baseline"><code>.lh-d1</code></td>
                 </tr>
                 <tr>
-                    <td class="lh brt baseline bg-neutral-5">One morning, when Gregor Samsa woke from troubled
+                    <td class="lh brt baseline">One morning, when Gregor Samsa woke from troubled
                         dreams, he
                         found himself transformed in his bed into a horrible vermin.</td>
                     <td class="lh baseline">
@@ -402,20 +400,20 @@ Another example is how dark or how light a color is set, like <code>.primary-d5<
                     </td>
                 </tr>
                 <tr>
-                    <td class="lh-1 brt baseline bg-neutral-5">One morning, when Gregor Samsa woke from troubled
+                    <td class="lh-1 brt baseline">One morning, when Gregor Samsa woke from troubled
                         dreams, he
                         found himself transformed in his bed into a horrible vermin.
                     </td>
                     <td class="lh-1 baseline"><code>.lh-1</code></td>
                 </tr>
                 <tr>
-                    <td class="lh-2 brt baseline bg-neutral-5">One morning, when Gregor Samsa woke from troubled
+                    <td class="lh-2 brt baseline">One morning, when Gregor Samsa woke from troubled
                         dreams, he
                         found himself transformed in his bed into a horrible vermin.</td>
                     <td class="lh-2 baseline"><code>.lh-2</code></td>
                 </tr>
                 <tr>
-                    <td class="lh-3 brt baseline bg-neutral-5">One morning, when Gregor Samsa woke from troubled
+                    <td class="lh-3 brt baseline">One morning, when Gregor Samsa woke from troubled
                         dreams, he
                         found himself transformed in his bed into a horrible vermin.</td>
                     <td class="lh-3 baseline">
@@ -424,53 +422,53 @@ Another example is how dark or how light a color is set, like <code>.primary-d5<
                     </td>
                 </tr>
                 <tr>
-                    <td class="lh-4 brt m brb baseline bg-neutral-5">One morning, when Gregor Samsa woke from
+                    <td class="lh-4 brt m brb baseline">One morning, when Gregor Samsa woke from
                         troubled
                         dreams, he found himself transformed in his bed into a horrible vermin.
                     </td>
                     <td class="lh-4 baseline"><code>.lh-4</code></td>
                 </tr>
                 <tr>
-                    <td class="lh-5 brt m brb baseline bg-neutral-5">One morning, when Gregor Samsa woke from
+                    <td class="lh-5 brt m brb baseline">One morning, when Gregor Samsa woke from
                         troubled
                         dreams, he found himself transformed in his bed into a horrible vermin.
                     </td>
                     <td class="lh-5 baseline"><code>.lh-5</code></td>
                 </tr>
             </tbody></table></div>
-<h3 id="rhythm">Rhythm <a class="anchor" href="#rhythm">#</a></h3>
-<h3 id="word-wrapping">Word wrapping <a class="anchor" href="#word-wrapping">#</a></h3>
-<div class="block br w-3 no-wrap mrr bg-neutral-5">No word wrap in small spaces</div>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>no-wrap<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>No word wrap in small spaces<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<h3 id="rhythm" tabindex="-1">Rhythm <a class="anchor" href="#rhythm">#</a></h3>
+<h3 id="word-wrapping" tabindex="-1">Word wrapping <a class="anchor" href="#word-wrapping">#</a></h3>
+<div class="block br bg-neutral-5 d:bg-neutral-d4  w-3 no-wrap mrr mrt-3">No word wrap in small spaces</div>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>no-wrap w-3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>No word wrap in small spaces<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
-<div class="block br w-3 wrap-normal mrr bg-neutral-5">Normal word wrap in small spaces</div>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>wrap-normal<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Normal word wrap in small spaces<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<div class="block br bg-neutral-5 d:bg-neutral-d4  w-3 wrap-normal mrr mrt-3">Normal word wrap in small spaces</div>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>wrap-normal w-3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Normal word wrap in small spaces<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
-<div class="block br w-2 break-word mrr bg-neutral-5">Wrap and break word anywhere</div>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>break-word<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Wrap and break word anywhere<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<div class="block br bg-neutral-5 d:bg-neutral-d4  w-2 break-word mrr mrt-3">Wrap and break word anywhere</div>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>break-word w-2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Wrap and break word anywhere<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
-<div class="block br w-3 truncate mrr bg-neutral-5">
+<div class="block br bg-neutral-5 d:bg-neutral-d4  w-3 truncate mrr mrt-3">
 Truncate instead of word wrap
 </div>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>truncate<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Truncate instead of word wrap<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>truncate w-3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Truncate instead of word wrap<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
-<h3 id="writing-mode">Writing mode <a class="anchor" href="#writing-mode">#</a></h3>
-<div class="w-4 h-4 horizontal-tb br bg-neutral-5">
+<h3 id="writing-mode" tabindex="-1">Writing mode <a class="anchor" href="#writing-mode">#</a></h3>
+<div class="w-4 h-4 horizontal-tb br bg-neutral-5 d:bg-neutral-d4 mrt-3">
 He lay on his armour-like back
 </div>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>horizontal-tb<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>He lay on his armour-like back<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>horizontal-tb w-4 h-4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>He lay on his armour-like back<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
-<div class="w-4 h-4 vertical-lr br bg-neutral-5">
+<div class="w-4 h-4 vertical-lr br bg-neutral-5 d:bg-neutral-d4 mrt-3">
 He lay on his armour-like back
 </div>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>vertical-lr<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>He lay on his armour-like back<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>vertical-lr w-4 h-4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>He lay on his armour-like back<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
-<div class="w-4 h-4 vertical-rl br bg-neutral-5">
+<div class="w-4 h-4 vertical-rl br bg-neutral-5 d:bg-neutral-d4 mrt-3">
 He lay on his armour-like back
 </div>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>vertical-rl<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>He lay on his armour-like back<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>vertical-rl w-4 h-4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>He lay on his armour-like back<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
-<h3 id="paragraph">Paragraph <a class="anchor" href="#paragraph">#</a></h3>
+<h3 id="paragraph" tabindex="-1">Paragraph <a class="anchor" href="#paragraph">#</a></h3>
 <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</p>
 <p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.</p>
 <p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. <q>What’s happened to me?</q> he thought. It wasn’t a dream.</p>
@@ -490,7 +488,7 @@ He lay on his armour-like back
     wasn't a dream.
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
-<h3 id="indented-paragraph">Indented Paragraph <a class="anchor" href="#indented-paragraph">#</a></h3>
+<h3 id="indented-paragraph" tabindex="-1">Indented Paragraph <a class="anchor" href="#indented-paragraph">#</a></h3>
 <div class="indent">
 <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</p>
 <p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.</p>
@@ -514,7 +512,7 @@ He lay on his armour-like back
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
-<h3 id="horizontal-ruler">Horizontal ruler <a class="anchor" href="#horizontal-ruler">#</a></h3>
+<h3 id="horizontal-ruler" tabindex="-1">Horizontal ruler <a class="anchor" href="#horizontal-ruler">#</a></h3>
 <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</p>
 <hr>
 <p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.</p>
@@ -535,7 +533,7 @@ He lay on his armour-like back
     <span class="token property">--hr-content</span><span class="token punctuation">:</span> <span class="token string">"*\0000a0\0000a0\0000a0\0000a0*\0000a0\0000a0\0000a0\0000a0*"</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<h3 id="blockquote">Blockquote <a class="anchor" href="#blockquote">#</a></h3>
+<h3 id="blockquote" tabindex="-1">Blockquote <a class="anchor" href="#blockquote">#</a></h3>
 <blockquote>
 <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</p>
 <p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
@@ -554,7 +552,7 @@ He lay on his armour-like back
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>footer</span><span class="token punctuation">&gt;</span></span>Franz Kafka, <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cite</span><span class="token punctuation">&gt;</span></span>The Metamorphosis<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>cite</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>footer</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>blockquote</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
-<h3 id="details-and-summary">Details and Summary <a class="anchor" href="#details-and-summary">#</a></h3>
+<h3 id="details-and-summary" tabindex="-1">Details and Summary <a class="anchor" href="#details-and-summary">#</a></h3>
 <details>
 <summary>One morning</summary>
     <p>when Gregor Samsa woke from troubled dreams, he found himself
@@ -577,8 +575,8 @@ He lay on his armour-like back
         </p>
         </details>
 </details>
-<h2 id="lists">Lists <a class="anchor" href="#lists">#</a></h2>
-<h3 id="unordered-list">Unordered list <a class="anchor" href="#unordered-list">#</a></h3>
+<h2 id="lists" tabindex="-1">Lists <a class="anchor" href="#lists">#</a></h2>
+<h3 id="unordered-list" tabindex="-1">Unordered list <a class="anchor" href="#unordered-list">#</a></h3>
 <ul>
 <li><p>One morning, when Gregor Samsa woke from troubled dreams, he found himself
 transformed in his bed into a horrible vermin.
@@ -594,7 +592,7 @@ transformed in his bed into a horrible vermin.
 <li>His many legs</li>
 <li>His room</li>
 </ul>
-<h3 id="ordered-list">Ordered List <a class="anchor" href="#ordered-list">#</a></h3>
+<h3 id="ordered-list" tabindex="-1">Ordered List <a class="anchor" href="#ordered-list">#</a></h3>
 <ol>
 <li><p>One morning, when Gregor Samsa woke from troubled dreams, he found himself
 transformed in his bed into a horrible vermin.
@@ -610,7 +608,7 @@ transformed in his bed into a horrible vermin.
 <li>His many legs</li>
 <li>His room</li>
 </ol>
-<h3 id="indented-ordered-list">Indented Ordered List <a class="anchor" href="#indented-ordered-list">#</a></h3>
+<h3 id="indented-ordered-list" tabindex="-1">Indented Ordered List <a class="anchor" href="#indented-ordered-list">#</a></h3>
 <ol class="indent">
 <li><p>One morning, when Gregor Samsa woke from troubled dreams, he found himself
 transformed in his bed into a horrible vermin.
@@ -626,7 +624,7 @@ transformed in his bed into a horrible vermin.
 <li>His many legs</li>
 <li>His room</li>
 </ol>
-<h3 id="definition-list">Definition List <a class="anchor" href="#definition-list">#</a></h3>
+<h3 id="definition-list" tabindex="-1">Definition List <a class="anchor" href="#definition-list">#</a></h3>
 <dl>
 <dt>One morning</dt>
 <dd>when Gregor Samsa woke from troubled dreams, he found himself 
@@ -643,7 +641,7 @@ as he looked. <span class="quote">What's happened to me?</span> he thought. It w
 <dd>a proper human room although a little too small, lay peacefully between its four
 familiar walls.</dd>
 </dl>
-<h3 id="timeline">Timeline <a class="anchor" href="#timeline">#</a></h3>
+<h3 id="timeline" tabindex="-1">Timeline <a class="anchor" href="#timeline">#</a></h3>
 <dl class="timeline">
 <dt>One morning</dt>
 <dd>when Gregor Samsa woke from troubled dreams, he found himself 
@@ -653,20 +651,20 @@ transformed in his bed into a horrible vermin.</dd>
 slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover
 it and seemed ready to slide off any moment.</dd>
 <dt><figure class="framed">
-<img src="images/swan-leroi-unsplash.jpg" loading="lazy" style="aspect-ratio:1500/844;">
+<img src="images/swan-leroi-unsplash.jpg" loading="lazy" style="aspect-ratio:1500/844;" width="1500" height="844">
 </figure></dt>
 <dt>His many legs</dt>
-<dd><p class="framed bg-accent-two-5">pitifully thin compared with the size of the rest of him, waved about helplessly
+<dd><p class="framed bg-accent-two neutral-5">pitifully thin compared with the size of the rest of him, waved about helplessly
 as he looked. <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.</p>
 <figure class="framed">
-<img src="images/swan-leroi-unsplash.jpg" loading="lazy" style="aspect-ratio:1500/844;">
+<img src="images/swan-leroi-unsplash.jpg" loading="lazy" style="aspect-ratio:1500/844;" width="1500" height="844">
 </figure>
 </dd>
 <dt>His room</dt>
 <dd>a proper human room although a little too small, lay peacefully between its four
 familiar walls.</dd>
 </dl>
-<h3 id="framed-timeline">Framed Timeline <a class="anchor" href="#framed-timeline">#</a></h3>
+<h3 id="framed-timeline" tabindex="-1">Framed Timeline <a class="anchor" href="#framed-timeline">#</a></h3>
 <dl class="timeline framed">
 <dt>One morning</dt>
 <dd>when Gregor Samsa woke from troubled dreams, he found himself 
@@ -676,20 +674,20 @@ transformed in his bed into a horrible vermin.</dd>
 slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover
 it and seemed ready to slide off any moment.</dd>
 <dt blub=":"><figure class="framed">
-<img src="images/swan-leroi-unsplash.jpg" loading="lazy" style="aspect-ratio:1500/844;">
+<img src="images/swan-leroi-unsplash.jpg" loading="lazy" style="aspect-ratio:1500/844;" width="1500" height="844">
 </figure></dt>
 <dt>His many legs</dt>
 <dd><p class="framed">pitifully thin compared with the size of the rest of him, waved about helplessly
 as he looked. <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.</p>
 <figure class="framed">
-<img src="images/swan-leroi-unsplash.jpg" loading="lazy" style="aspect-ratio:1500/844;">
+<img src="images/swan-leroi-unsplash.jpg" loading="lazy" style="aspect-ratio:1500/844;" width="1500" height="844">
 </figure>
 </dd>
 <dt>His room</dt>
 <dd>a proper human room although a little too small, lay peacefully between its four
 familiar walls.</dd>
 </dl>
-<h3 id="horizontal-timeline">Horizontal Timeline <a class="anchor" href="#horizontal-timeline">#</a></h3>
+<h3 id="horizontal-timeline" tabindex="-1">Horizontal Timeline <a class="anchor" href="#horizontal-timeline">#</a></h3>
 <dl class="timeline framed row">
 <dt>One morning</dt>
 <dd>when Gregor Samsa woke from troubled dreams, he found himself 
@@ -699,13 +697,13 @@ transformed in his bed into a horrible vermin.</dd>
 <p>slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover
 it and seemed ready to slide off any moment.</p></dd>
 <dt><figure class="framed">
-<img src="images/swan-leroi-unsplash.jpg" loading="lazy" style="aspect-ratio:1500/844;">
+<img src="images/swan-leroi-unsplash.jpg" loading="lazy" style="aspect-ratio:1500/844;" width="1500" height="844">
 </figure></dt>
 <dt>His many legs</dt>
 <dd><p class="framed">pitifully thin compared with the size of the rest of him, waved about helplessly
 as he looked. <span class="quote">What's happened to me?</span> he thought. It wasn't a dream.</p>
 <figure class="framed">
-<img src="images/swan-leroi-unsplash.jpg" loading="lazy" style="aspect-ratio:1500/844;">
+<img src="images/swan-leroi-unsplash.jpg" loading="lazy" style="aspect-ratio:1500/844;" width="1500" height="844">
 <figcaption>this wasn´t a dream</figcaption>
 </figure>
 </dd>
@@ -729,15 +727,14 @@ familiar walls.</dd>
         familiar walls.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dd</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dl</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
-<h2 id="tables">Tables <a class="anchor" href="#tables">#</a></h2>
-<h2 id="figures">Figures <a class="anchor" href="#figures">#</a></h2>
+<h2 id="tables" tabindex="-1">Tables <a class="anchor" href="#tables">#</a></h2>
+<h2 id="figures" tabindex="-1">Figures <a class="anchor" href="#figures">#</a></h2>
 <figure class="split-aside-left-reverse">
-<img src="images/swan-leroi-unsplash.jpg" style="width:30%; aspect-ratio:1500/844;" loading="lazy">
+<img src="images/swan-leroi-unsplash.jpg" style="width:30%; aspect-ratio:1500/844;" loading="lazy" width="1500" height="844">
 <figcaption class="bg-accent-one">Caption</figcaption>
 </figure>
-<h2 id="images">Images <a class="anchor" href="#images">#</a></h2>
-<h2 id="colors">Colors <a class="anchor" href="#colors">#</a></h2>
-<h2>Colors</h2>
+<h2 id="images" tabindex="-1">Images <a class="anchor" href="#images">#</a></h2>
+<h2 id="colors" tabindex="-1">Colors <a class="anchor" href="#colors">#</a></h2>
 <div class="scroll-table" style="overflow-x:auto;"><table class="noso">
     <thead class="below-md:hide">
         <tr>
@@ -1435,7 +1432,7 @@ familiar walls.</dd>
         }
     });
 </script>
-<h2 id="breakpoints">Breakpoints <a class="anchor" href="#breakpoints">#</a></h2>
+<h2 id="breakpoints" tabindex="-1">Breakpoints <a class="anchor" href="#breakpoints">#</a></h2>
 <p>Each breakpoint <em>can</em> trigger a change in base font size. The wider the screen, the taller the font size. While the breakpoint widths are measured in <code>px</code>, the other widths are measured in <code>rem</code>. That means, when a breakpoint triggers a change in font size, the <code>rem</code>-based width will automatically change. The <code>rem</code>-based width must not fit into the breakpoint width. For example, if you don´t increase/change font size at certain breakpoints, having <code>rem</code>-based widths exceeding the breakpoint widths doesn´t trigger text layout changes. Configure the settings with the following custom variables:</p>
 <div class="scroll-table" style="overflow-x:auto;"><table>
 <thead>
@@ -1449,33 +1446,33 @@ familiar walls.</dd>
 </tbody>
 </table></div>
 <div class="full-bleed pdx overflow-hidden"> 
-    <div class="w-lg-breakpoint mry-2 mrx-auto br bg-neutral-5">
+    <div class="w-lg-breakpoint mry-2 mrx-auto br bg-neutral-5 d:bg-neutral-d4">
     <span class="pd">.w-lg-breakpoint</span>        
         <div class="w-lg pdx mry mrx-auto bg-primary white">
             <span>.w-lg</span>
         </div>
     </div>
-    <div class="w-md-breakpoint mry-2 mrx-auto br bg-neutral-5">
+    <div class="w-md-breakpoint mry-2 mrx-auto br bg-neutral-5 d:bg-neutral-d4">
         <span class="pd">.w-md-breakpoint</span>
         <div class="w-md pdx mry mrx-auto bg-primary white">
             <span>.w-md</span>
         </div>
     </div>
-    <div class="w-rg-breakpoint mry-2 mrx-auto br bg-neutral-5">
+    <div class="w-rg-breakpoint mry-2 mrx-auto br bg-neutral-5 d:bg-neutral-d4">
         <span class="pd">.w-rg-breakpoint</span>
         <div class="w-rg pdx mry mrx-auto bg-primary white">
             <span>.w-rg</span>
         </div>
     </div>
-    <div class="w-sm-breakpoint mry-2 mrx-auto bg-neutral-5 br">
+    <div class="w-sm-breakpoint mry-2 mrx-auto br bg-neutral-5 d:bg-neutral-d4">
         <span class="pd">.w-sm-breakpoint</span>
         <div class="w-sm pdx mry mrx-auto bg-primary white">
             <span>.w-sm</span>
         </div>
     </div>
 </div>
-<h2 id="layout">Layout <a class="anchor" href="#layout">#</a></h2>
-<h2 id="forms">Forms <a class="anchor" href="#forms">#</a></h2>
+<h2 id="layout" tabindex="-1">Layout <a class="anchor" href="#layout">#</a></h2>
+<h2 id="forms" tabindex="-1">Forms <a class="anchor" href="#forms">#</a></h2>
 <form>
 <div>
 <button>A button</button>

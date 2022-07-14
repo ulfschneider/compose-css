@@ -71,6 +71,13 @@
     font-variant-numeric: var(--font-variant-numeric);
 }
 
+@media (prefers-color-scheme: dark) {
+    .auto-dark-mode {
+        --font-weight-bold: 600;
+        --font-weight-normal: 400;
+    }
+}
+
 * {
     outline: none;
 }
@@ -191,7 +198,7 @@ em,
 
 cite,
 .cite {
-    font-weight: bold;
+    font-weight: var(--font-weight-bold);
     font-style: inherit;
 }
 
@@ -332,6 +339,7 @@ del,
 del,
 .del {
     background: var(--deleted-background);
+    color: var(--deleted-color);
     padding-top: 0.1em;
     padding-bottom: 0.1em;
 }
@@ -339,6 +347,7 @@ del,
 ins,
 .ins {
     background: var(--inserted-background);
+    color: var(--inserted-color);
     padding-top: 0.1em;
     padding-bottom: 0.1em;
     text-decoration: none;
@@ -367,6 +376,7 @@ sup,
 
 mark,
 .mark {
+    color: var(--mark-color);
     background: var(--mark-background);
     padding-top: 0.1em;
     padding-bottom: 0.1em;
@@ -517,7 +527,7 @@ pre,
 
 .code:not(pre .code),
 code:not(pre code) {
-    font-weight: bold;
+    font-weight: var(--font-weight-bold);
     background: var(--code-background);
     color: var(--code-color);
 }
@@ -563,7 +573,7 @@ blockquote {
     font-style: var(--blockquote-font-style);
     font-weight: var(--blockquote-font-weight);
     background: var(--blockquote-background);
-    font-size:var(--blockquote-font-size);
+    font-size: var(--blockquote-font-size);
     line-height: var(--blockquote-line-height);
 }
 
@@ -647,8 +657,8 @@ blockquote>header {
     font-style: normal;
     max-width: var(--rg-width);
     margin-top: var(--mrt-figcaption);
-    margin-bottom: var(--mrb-figcaption);  
-    line-height: var(--lh-default);      
+    margin-bottom: var(--mrb-figcaption);
+    line-height: var(--lh-default);
 }
 
 figcaption {
@@ -657,7 +667,7 @@ figcaption {
 
 blockquote>footer,
 blockquote>header {
-    font-weight: bold;
+    font-weight: var(--font-weight-bold);
     font-size: var(--fs);
 }
 
@@ -732,7 +742,7 @@ details>summary::before {
     justify-content: start;
     align-items: center;
     color: var(--li-prefix-color);
-    font-weight: bold;
+    font-weight: var(--font-weight-bold);
     font-size: smaller;
 }
 
