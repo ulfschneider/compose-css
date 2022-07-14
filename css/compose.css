@@ -1801,7 +1801,7 @@ small,
     --li-high-prefix-color: var(--base-background);
     --li-high-prefix-background: var(--base-color);
     --heading-outline-color: var(--li-prefix-color);
-    --form-label-color: var(--meta-color);
+    --form-label-color: var(--base-color);
     --form-field-color: var(--base-color);
     --form-field-border-color: var(--border-color);
     --caret-color: var(--primary-d1);
@@ -1987,7 +1987,7 @@ small,
         --li-high-prefix-color: var(--base-background);
         --li-high-prefix-background: var(--base-color);
         --heading-outline-color: var(--li-prefix-color);
-        --form-label-color: var(--meta-color);
+        --form-label-color: var(--base-color);
         --form-field-color: var(--base-color);
         --form-field-border-color: var(--border-color);
         --caret-color: var(--primary-2);
@@ -24832,7 +24832,7 @@ details[open]>summary::before {
 ::placeholder,
 :-ms-input-placeholder,
 ::-ms-input-placeholder {
-    color: hsl(0, 0%, calc(53% - calc(53% / 7)));
+    color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
     color: var(--form-label-color);
     opacity: 1;
     text-transform: none;
@@ -24927,7 +24927,7 @@ legend {
     vertical-align: baseline;
     text-transform: none;
     text-transform: var(--heading-text-transform);
-    color: hsl(0, 0%, calc(53% - calc(53% / 7)));
+    color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
     color: var(--form-label-color);
 }
 
