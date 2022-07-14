@@ -152,7 +152,7 @@
         --li-high-prefix-color: var(--base-background);
         --li-high-prefix-background: var(--base-color);
         --heading-outline-color: var(--li-prefix-color);
-        --form-label-color: var(--base-color);
+        --form-label-color: var(--meta-color);
         --form-field-color: var(--base-color);
         --form-field-border-color: var(--border-color);
         --caret-color: var(--primary-2);
