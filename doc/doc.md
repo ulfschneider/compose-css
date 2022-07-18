@@ -661,6 +661,15 @@ Configure the displayed symbols with:
         </details>
 </details>
 
+
+<details>
+<p>
+        His many legs, pitifully thin compared with the size of the rest of him,
+        waved about helplessly as he looked. <q>What's happened to me?</q> he
+        thought. It wasn't a dream.
+        </p>
+</details>
+
 ## Lists
 
 ### Unordered list

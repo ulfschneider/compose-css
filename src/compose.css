@@ -1,4 +1,5 @@
 @import "reset";
+@import "form";
 @import "breakpoints";
 @import "space";
 @import "type-scale";
@@ -26,7 +27,6 @@
 @import "height-min-breakpoints";
 @import "hide-breakpoints";
 @import "typography";
-@import "form";
 @import "flex-box";
 @import "flex-box-breakpoints";
 @import "list";
