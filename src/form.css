@@ -43,7 +43,6 @@ textarea,
 fieldset,
 label,
 legend {
-    margin: 0;
     font-family: var(--form-font-family);
     font-size: var(--form-font-size);
     appearance: none;

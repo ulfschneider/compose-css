@@ -105,7 +105,6 @@ textarea,
 fieldset,
 label,
 legend {
-    margin: 0;
     font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--form-font-family);
     font-size: 1rem;
