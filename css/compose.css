@@ -2322,7 +2322,7 @@ small,
         --blockquote-background: transparent;
         --table-alternate-row-background: var(--neutral-d4);
         --table-alternate-col-background: var(--neutral-d4);
-        --table-hover-row-background: var(--primary-d4);
+        --table-hover-row-background: var(--primary-d3);
         --table-underline-row-color: var(--border-color);
         --table-head-background: var(--base-background);
 
