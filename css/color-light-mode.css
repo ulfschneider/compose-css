@@ -156,6 +156,7 @@
     --form-button-active-brightness: 1.15;
     --form-button-hover-brightness: var(--form-button-active-brightness);
     --form-button-focus-brightness: 1;
+    --form-button-disabled-opacity: .7;
     --form-button-color: white;
     --form-field-background: var(--neutral-5);
     --form-field-focus-color: var(--primary);

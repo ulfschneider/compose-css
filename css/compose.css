@@ -134,12 +134,22 @@ select {
     transition: filter var(--transition-duration) ease-out;
 }
 
+input[type=submit]:disabled,
+input[type=reset]:disabled,
+button:disabled,
+.button:disabled,
+select:disabled {
+    opacity: .7;
+    opacity: var(--form-button-disabled-opacity);
+    cursor: not-allowed;
+}
+
 @media(hover: hover) {
-    input[type=submit]:hover,
-    input[type=reset]:hover,
-    button:hover,
-    .button:hover,
-    select:hover {
+    input[type=submit]:hover:not(:disabled),
+    input[type=reset]:hover:not(:disabled),
+    button:hover:not(:disabled),
+    .button:hover:not(:disabled),
+    select:hover:not(:disabled) {
         filter: brightness(1.15);
         filter: brightness(var(--form-button-hover-brightness));
     }
@@ -2118,6 +2128,7 @@ small,
     --form-button-active-brightness: 1.15;
     --form-button-hover-brightness: var(--form-button-active-brightness);
     --form-button-focus-brightness: 1;
+    --form-button-disabled-opacity: .7;
     --form-button-color: white;
     --form-field-background: var(--neutral-5);
     --form-field-focus-color: var(--primary);
@@ -2304,6 +2315,7 @@ small,
         --form-button-active-brightness: 1.15;
         --form-button-hover-brightness: var(--form-button-active-brightness);
         --form-button-focus-brightness: 1;
+        --form-button-disabled-opacity: .7;
         --form-button-color: white;
         --form-field-background: var(--neutral-d4);
         --form-field-focus-color: var(--primary-1);
@@ -2322,7 +2334,7 @@ small,
         --blockquote-background: transparent;
         --table-alternate-row-background: var(--neutral-d4);
         --table-alternate-col-background: var(--neutral-d4);
-        --table-hover-row-background: var(--primary-d3);
+        --table-hover-row-background: var(--neutral-d3);
         --table-underline-row-color: var(--border-color);
         --table-head-background: var(--base-background);
 

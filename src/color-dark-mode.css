@@ -160,6 +160,7 @@
         --form-button-active-brightness: 1.15;
         --form-button-hover-brightness: var(--form-button-active-brightness);
         --form-button-focus-brightness: 1;
+        --form-button-disabled-opacity: .7;
         --form-button-color: white;
         --form-field-background: var(--neutral-d4);
         --form-field-focus-color: var(--primary-1);
@@ -178,7 +179,7 @@
         --blockquote-background: transparent;
         --table-alternate-row-background: var(--neutral-d4);
         --table-alternate-col-background: var(--neutral-d4);
-        --table-hover-row-background: var(--primary-d3);
+        --table-hover-row-background: var(--neutral-d3);
         --table-underline-row-color: var(--border-color);
         --table-head-background: var(--base-background);
 
