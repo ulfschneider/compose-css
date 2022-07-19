@@ -1,119 +1,114 @@
 :root {
     --transition-duration: .14s;
     --transition-function: ease;
+    --blink-duration: 1.5s;
+    --blink-function: ease;
 }
 
+@keyframes blink {
+    from,
+    to {
+        opacity: 0.0;
+    }
+    50% {
+        opacity: 1.0;
+    }
+}
+
+.blink {
+    animation: 1.5s blink ease infinite;
+    animation: var(--blink-duration) blink var(--blink-function) infinite;
+}
 
 /* margin */
-
 
 .trans-mr {
     transition: .14s margin ease;
     transition: var(--transition-duration) margin var(--transition-function);
 }
 
-
 .trans-mrx {
     transition: .14s margin-left ease, .14s margin-right ease;
     transition: var(--transition-duration) margin-left var(--transition-function), var(--transition-duration) margin-right var(--transition-function);
 }
-
 
 .trans-mry {
     transition: .14s margin-top ease, .14s margin-bottom ease;
     transition: var(--transition-duration) margin-top var(--transition-function), var(--transition-duration) margin-bottom var(--transition-function);
 }
 
-
 .trans-mrt {
     transition: .14s margin-top ease;
     transition: var(--transition-duration) margin-top var(--transition-function);
 }
-
 
 .trans-mrr {
     transition: .14s margin-right ease;
     transition: var(--transition-duration) margin-right var(--transition-function);
 }
 
-
 .trans-mrb {
     transition: .14s margin-bottom ease;
     transition: var(--transition-duration) margin-bottom var(--transition-function);
 }
-
 
 .trans-mrl {
     transition: .14s margin-left ease;
     transition: var(--transition-duration) margin-left var(--transition-function);
 }
 
-
 /* padding */
-
 
 .trans-pd {
     transition: .14s padding ease;
     transition: var(--transition-duration) padding var(--transition-function);
 }
 
-
 .trans-pdx {
     transition: .14s padding-left ease, .14s padding-right ease;
     transition: var(--transition-duration) padding-left var(--transition-function), var(--transition-duration) padding-right var(--transition-function);
 }
-
 
 .trans-pdy {
     transition: .14s padding-top ease, .14s padding-bottom ease;
     transition: var(--transition-duration) padding-top var(--transition-function), var(--transition-duration) padding-bottom var(--transition-function);
 }
 
-
 .trans-pdt {
     transition: .14s padding-top ease;
     transition: var(--transition-duration) padding-top var(--transition-function);
 }
-
 
 .trans-pdr {
     transition: .14s padding-right ease;
     transition: var(--transition-duration) padding-right var(--transition-function);
 }
 
-
 .trans-pdb {
     transition: .14s padding-bottom ease;
     transition: var(--transition-duration) padding-bottom var(--transition-function);
 }
-
 
 .trans-pdl {
     transition: .14s padding-left ease;
     transition: var(--transition-duration) padding-left var(--transition-function);
 }
 
-
 /* color */
-
 
 .trans-color {
     transition: .14s color ease;
     transition: var(--transition-duration) color var(--transition-function);
 }
 
-
 /* background */
-
 
 .trans-background-color {
     transition: .14s background-color ease;
     transition: var(--transition-duration) background-color var(--transition-function);
 }
 
-
 /* background */
-
 
 .trans-width,
 .trans-x,
@@ -122,9 +117,7 @@
     transition: var(--transition-duration) width var(--transition-function);
 }
 
-
 /*width and height*/
-
 
 .trans-height,
 .trans-y,
@@ -132,7 +125,6 @@
     transition: .14s height ease;
     transition: var(--transition-duration) height var(--transition-function);
 }
-
 
 .trans-width-height,
 .trans-size,

@@ -1,6 +1,22 @@
 :root {
     --transition-duration: .14s;
     --transition-function: ease;
+    --blink-duration: 1.5s;
+    --blink-function: ease;
+}
+
+@keyframes blink {
+    from,
+    to {
+        opacity: 0.0;
+    }
+    50% {
+        opacity: 1.0;
+    }
+}
+
+.blink {
+    animation: var(--blink-duration) blink var(--blink-function) infinite;
 }
 
 

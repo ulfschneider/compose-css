@@ -133,6 +133,14 @@ Another example is how dark or how light a color is set, like `.primary-d5`, `.p
                 </tr>
                 <tr>
                     <td>
+                        <span class="blink">Blinking text</span>
+                    </td>
+                    <td>
+                        <code>.blink</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                         Abbreviations (<abbr>Abbr</abbr>)
                     </td>
                     <td>
