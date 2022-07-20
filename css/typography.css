@@ -59,7 +59,8 @@
     --quotes: """ """"'""'";
     --quotes-de: """ """"'""'";
     --scroll-margin-top: var(--vertical-rhythm);
-    --outline: var(--space-d3) solid var(--outline-color);
+    --outline-width: var(--space-d3);
+    --outline: var(--outline-width) solid var(--outline-color);
     --outline-offset: var(--space-d4);
     --kbd-shadow: .07em .07em var(--border-color);
     --blockquote-border-width: 3px;

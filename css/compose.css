@@ -24310,7 +24310,8 @@ Naming conventions
     --quotes: """ """"'""'";
     --quotes-de: """ """"'""'";
     --scroll-margin-top: var(--vertical-rhythm);
-    --outline: var(--space-d3) solid var(--outline-color);
+    --outline-width: var(--space-d3);
+    --outline: var(--outline-width) solid var(--outline-color);
     --outline-offset: var(--space-d4);
     --kbd-shadow: .07em .07em var(--border-color);
     --blockquote-border-width: 3px;
@@ -27750,12 +27751,13 @@ table table {
 
 @media (hover: hover) {
     .hover-rows tr {
-        border-bottom: 1px solid transparent;
+        border-bottom: 3px solid transparent;
+        border-bottom: var(--outline-width) solid transparent;
     }
     
     .hover-rows tr:hover  {
-        border-bottom: 1px solid hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
-        border-bottom: 1px solid var(--base-color);
+        border-bottom: 3px solid hsl(198, 100%, 33.3%);
+        border-bottom: var(--outline);
     }
 }
 

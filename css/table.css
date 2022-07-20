@@ -59,11 +59,11 @@ table table {
 
 @media (hover: hover) {
     .hover-rows tr {
-        border-bottom: 1px solid transparent;
+        border-bottom: var(--outline-width) solid transparent;
     }
     
     .hover-rows tr:hover  {
-        border-bottom: 1px solid var(--base-color);
+        border-bottom: var(--outline);
     }
 }
 
