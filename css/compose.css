@@ -27748,10 +27748,14 @@ table table {
     border-bottom: var(--table-underline);
 }
 
+.hover-rows tr {
+    border-bottom: 1px solid transparent;
+}
+
 @media (hover: hover) {
-    .hover-rows tr:hover {
-        background: hsl(198, 100%, calc(33.3% + 5 * calc((100% - 33.3%) / 6)));
-        background: var(--table-hover-row-background);
+    .hover-rows tr:hover  {
+        border-bottom: 1px solid hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
+        border-bottom: 1px solid var(--base-color);
     }
 }
 

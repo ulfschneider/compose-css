@@ -1571,7 +1571,7 @@ familiar walls.</dd>
 
 Each breakpoint *can* trigger a change in base font size. The wider the screen, the taller the font size. While the breakpoint widths are measured in <code>px</code>, the other widths are measured in <code>rem</code>. That means, when a breakpoint triggers a change in font size, the <code>rem</code>-based width will automatically change. The <code>rem</code>-based width must not fit into the breakpoint width. For example, if you don´t increase/change font size at certain breakpoints, having <code>rem</code>-based widths exceeding the breakpoint widths doesn´t trigger text layout changes. Configure the settings with the following custom variables:
 
-<table>
+<table class="hover-rows">
 <thead>
 <tr><th>Min Breakpoint</th><th>Max Breakpoint</th><th>Breakpoint Width</th><th><code>rem</code>-based Width<th>1 <code>rem</code></th></tr>
 </thead>
