@@ -27688,7 +27688,8 @@ img {
 }
 
 :root {
-    --table-underline: .5px solid var(--table-underline-row-color);
+    --table-underline-width: .5px;
+    --table-underline: var(--table-underline-width) solid var(--table-underline-row-color);
     --table-heading-font-family: var(--heading-font-family);
     --table-font-family: var(--font-family);
     --table-font-size: var(--fs);
@@ -27749,15 +27750,12 @@ table table {
     border-bottom: var(--table-underline);
 }
 
-@media (hover: hover) {
-    .hover-rows tr {
-        border-bottom: 3px solid transparent;
-        border-bottom: var(--outline-width) solid transparent;
-    }
-    
-    .hover-rows tr:hover  {
-        border-bottom: 3px solid hsl(198, 100%, 33.3%);
-        border-bottom: var(--outline);
+@media (hover: hover) {   
+    .hover-rows tr:hover {
+        outline: 3px solid hsl(198, 100%, 33.3%);
+        outline: var(--outline);
+        outline-offset: calc(-1 * 3px);
+        outline-offset: calc(-1 * var(--outline-width));
     }
 }
 
