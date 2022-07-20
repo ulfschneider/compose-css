@@ -88,19 +88,19 @@ select:disabled {
     }
 }
 
-input[type=submit]:focus,
-input[type=reset]:focus,
-button:focus,
-.button:focus,
-select:focus {
+input[type=submit]:focus:not(:disabled),
+input[type=reset]:focus:not(:disabled),
+button:focus:not(:disabled),
+.button:focus:not(:disabled),
+select:focus:not(:disabled) {
     filter: brightness(var(--form-button-focus-brightness));
 }
 
-input[type=submit]:active,
-input[type=reset]:active,
-button:active,
-.button:active,
-select:active {
+input[type=submit]:active:not(:disabled),
+input[type=reset]:active:not(:disabled),
+button:active:not(:disabled),
+.button:active:not(:disabled),
+select:active:not(:disabled) {
     filter: brightness(var(--form-button-active-brightness));
 }
 
