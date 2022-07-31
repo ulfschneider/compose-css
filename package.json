@@ -1,6 +1,6 @@
 {
     "name": "compose-css",
-    "version": "28.6.8",
+    "version": "28.6.9",
     "description": "Composable CSS Toolkit",
     "main": "css/compose.css",
     "style": "css/compose.css",
