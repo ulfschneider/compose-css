@@ -24369,13 +24369,6 @@ Naming conventions
     font-variant-numeric: var(--font-variant-numeric);
 }
 
-@media (prefers-color-scheme: dark) {
-    .auto-dark-mode {
-        --font-weight-bold: 600;
-        --font-weight-normal: 400;
-    }
-}
-
 * {
     outline: none;
 }
