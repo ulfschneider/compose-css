@@ -3418,6 +3418,11 @@ small,
     background-color: var(--accent-five-5);
 }
 
+.bg-error-color {
+    background-color: crimson;
+    background-color: var(--error-color);
+}
+
 /* Border Colors */
 
 .br-primary-d5 {
@@ -4805,6 +4810,11 @@ small,
     .l\:bg-accent-five-5 {
         background-color: hsl(43, 100%, calc(41% + 5 * calc((100% - 41%) / 6)));
         background-color: var(--accent-five-5);
+    }
+
+    .l\:bg-error-color {
+        background-color: crimson;
+        background-color: var(--error-color);
     }
 
 
@@ -6196,6 +6206,11 @@ small,
     .auto-dark-mode .d\:bg-accent-five-5 {
         background-color: hsl(43, 100%, calc(41% + 5 * calc((100% - 41%) / 6)));
         background-color: var(--accent-five-5);
+    }
+
+    .auto-dark-mode .d\:bg-error-color {
+        background-color: crimson;
+        background-color: var(--error-color);
     }
 
 

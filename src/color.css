@@ -858,6 +858,10 @@
     background-color: var(--accent-five-5);
 }
 
+.bg-error-color {
+    background-color: var(--error-color);
+}
+
 
 /* Border Colors */
 
@@ -1982,6 +1986,10 @@
 
     .l\:bg-accent-five-5 {
         background-color: var(--accent-five-5);
+    }
+
+    .l\:bg-error-color {
+        background-color: var(--error-color);
     }
 
 
@@ -3111,6 +3119,10 @@
 
     .auto-dark-mode .d\:bg-accent-five-5 {
         background-color: var(--accent-five-5);
+    }
+
+    .auto-dark-mode .d\:bg-error-color {
+        background-color: var(--error-color);
     }
 
 
