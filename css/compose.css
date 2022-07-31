@@ -184,15 +184,19 @@ legend {
     color: var(--form-label-color);
 }
 
-.explanation,
-.description {
+form .explanation,
+form .description {
     color: hsl(0, 0%, calc(53% - calc(53% / 7)));
     color: var(--description-color);
+    line-height: calc((calc(1.66 * 1) - 1) / 3 * 2 + 1);
+    line-height: var(--lh-2);
 }
 
-.error {
+form .error {
     color: crimson;
     color: var(--error-color);
+    line-height: calc((calc(1.66 * 1) - 1) / 3 * 2 + 1);
+    line-height: var(--lh-2);
 }
 
 input[type=text],

@@ -112,13 +112,15 @@ legend {
     color: var(--form-label-color);
 }
 
-.explanation,
-.description {
+form .explanation,
+form .description {
     color: var(--description-color);
+    line-height: var(--lh-2);
 }
 
-.error {
+form .error {
     color: var(--error-color);
+    line-height: var(--lh-2);
 }
 
 input[type=text],
