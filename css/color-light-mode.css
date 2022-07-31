@@ -145,7 +145,7 @@
     --heading-color: var(--base-color);
     --meta-color: var(--neutral-d1);
     --description-color: var(--meta-color);
-    --error-color: var(--accent-three);
+    --error-color: crimson;
     --li-prefix-color: currentColor;
     --li-high-prefix-color: var(--base-background);
     --li-high-prefix-background: var(--base-color);

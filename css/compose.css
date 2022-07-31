@@ -191,7 +191,7 @@ legend {
 }
 
 .error {
-    color: hsl(356, 83%, 41%);
+    color: crimson;
     color: var(--error-color);
 }
 
@@ -2131,7 +2131,7 @@ small,
     --heading-color: var(--base-color);
     --meta-color: var(--neutral-d1);
     --description-color: var(--meta-color);
-    --error-color: var(--accent-three);
+    --error-color: crimson;
     --li-prefix-color: currentColor;
     --li-high-prefix-color: var(--base-background);
     --li-high-prefix-background: var(--base-color);
@@ -2320,7 +2320,7 @@ small,
         --heading-color: var(--base-color);
         --meta-color: var(--neutral-1);
         --description-color: var(--meta-color);
-        --error-color: var(--accent-three-2);
+        --error-color: crimson;
         --li-prefix-color: currentColor;
         --li-high-prefix-color: var(--base-background);
         --li-high-prefix-background: var(--base-color);
@@ -3751,7 +3751,7 @@ small,
 }
 
 .br-error-color {
-    border-color: hsl(356, 83%, 41%);
+    border-color: crimson;
     border-color: var(--error-color);
 }
 
@@ -4470,7 +4470,7 @@ small,
     }
 
     .l\:error-color {
-        color: hsl(356, 83%, 41%);
+        color: crimson;
         color: var(--error-color);
     }
 
@@ -5141,7 +5141,7 @@ small,
     }
 
     .l\:br-error-color {
-        border-color: hsl(356, 83%, 41%);
+        border-color: crimson;
         border-color: var(--error-color);
     }
 
@@ -6532,7 +6532,7 @@ small,
     }
 
     .auto-dark-mode .d\:br-error-color {
-        border-color: hsl(356, 83%, 41%);
+        border-color: crimson;
         border-color: var(--error-color);
     }
 
