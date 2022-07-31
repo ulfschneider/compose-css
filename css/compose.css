@@ -131,7 +131,7 @@ select {
     padding: var(--form-button-pdx) var(--form-button-pdy);
     cursor: pointer;
     transition: filter .14s ease-out;
-    transition: filter var(--transition-duration) ease-out;
+    transition: filter var(--transition-duration) ease-out;    
 }
 
 input[type=submit]:disabled,
@@ -173,13 +173,26 @@ select:active:not(:disabled) {
     filter: brightness(var(--form-button-active-brightness));
 }
 
-label,
+label:not(.custom-control):not(.explanation):not(.description):not(.error),
 legend {
     vertical-align: baseline;
     text-transform: none;
     text-transform: var(--heading-text-transform);
+    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
     color: var(--form-label-color);
+}
+
+.explanation,
+.description {
+    color: hsl(0, 0%, calc(53% - calc(53% / 7)));
+    color: var(--description-color);
+}
+
+.error {
+    color: hsl(356, 83%, 41%);
+    color: var(--error-color);
 }
 
 input[type=text],
@@ -219,6 +232,7 @@ textarea {
     background: var(--form-field-background);
     color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
     color: var(--form-field-color);
+    font-weight: normal;
 }
 
 fieldset {
@@ -2116,6 +2130,8 @@ small,
     --outline-color: var(--primary);
     --heading-color: var(--base-color);
     --meta-color: var(--neutral-d1);
+    --description-color: var(--meta-color);
+    --error-color: var(--accent-three);
     --li-prefix-color: currentColor;
     --li-high-prefix-color: var(--base-background);
     --li-high-prefix-background: var(--base-color);
@@ -2303,6 +2319,8 @@ small,
         --outline-color: var(--primary-1);
         --heading-color: var(--base-color);
         --meta-color: var(--neutral-1);
+        --description-color: var(--meta-color);
+        --error-color: var(--accent-three-2);
         --li-prefix-color: currentColor;
         --li-high-prefix-color: var(--base-background);
         --li-high-prefix-background: var(--base-color);
@@ -3732,6 +3750,11 @@ small,
     border-color: var(--accent-five-5);
 }
 
+.br-error-color {
+    border-color: hsl(356, 83%, 41%);
+    border-color: var(--error-color);
+}
+
 @media (prefers-color-scheme: light) {
     .l\:neutral-d5 {
         color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
@@ -4446,6 +4469,11 @@ small,
         color: var(--accent-five-5);
     }
 
+    .l\:error-color {
+        color: hsl(356, 83%, 41%);
+        color: var(--error-color);
+    }
+
 
     /* Background */
 
@@ -5110,6 +5138,11 @@ small,
     .l\:br-accent-five-5 {
         border-color: hsl(43, 100%, calc(41% + 5 * calc((100% - 41%) / 6)));
         border-color: var(--accent-five-5);
+    }
+
+    .l\:br-error-color {
+        border-color: hsl(356, 83%, 41%);
+        border-color: var(--error-color);
     }
 
 }
@@ -5828,6 +5861,10 @@ small,
         color: var(--accent-five-5);
     }
 
+    .auto-dark-mode .d\:error-color {
+        color: var(--error);
+    }
+
 
     /* Background */
 
@@ -6492,6 +6529,11 @@ small,
     .auto-dark-mode .d\:br-accent-five-5 {
         border-color: hsl(43, 100%, calc(41% + 5 * calc((100% - 41%) / 6)));
         border-color: var(--accent-five-5);
+    }
+
+    .auto-dark-mode .d\:br-error-color {
+        border-color: hsl(356, 83%, 41%);
+        border-color: var(--error-color);
     }
 
 }

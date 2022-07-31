@@ -1125,6 +1125,10 @@
     border-color: var(--accent-five-5);
 }
 
+.br-error-color {
+    border-color: var(--error-color);
+}
+
 
 @media (prefers-color-scheme: light) {
     .l\:neutral-d5 {
@@ -1709,6 +1713,10 @@
         color: var(--accent-five-5);
     }
 
+    .l\:error-color {
+        color: var(--error-color);
+    }
+
 
     /* Background */
 
@@ -2241,6 +2249,10 @@
 
     .l\:br-accent-five-5 {
         border-color: var(--accent-five-5);
+    }
+
+    .l\:br-error-color {
+        border-color: var(--error-color);
     }
 
 }
@@ -2830,6 +2842,10 @@
         color: var(--accent-five-5);
     }
 
+    .auto-dark-mode .d\:error-color {
+        color: var(--error);
+    }
+
 
     /* Background */
 
@@ -3362,6 +3378,10 @@
 
     .auto-dark-mode .d\:br-accent-five-5 {
         border-color: var(--accent-five-5);
+    }
+
+    .auto-dark-mode .d\:br-error-color {
+        border-color: var(--error-color);
     }
 
 }

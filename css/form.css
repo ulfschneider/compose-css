@@ -66,7 +66,7 @@ select {
     padding: var(--space-d2) var(--space-d2);
     padding: var(--form-button-pdx) var(--form-button-pdy);
     cursor: pointer;
-    transition: filter var(--transition-duration) ease-out;
+    transition: filter var(--transition-duration) ease-out;    
 }
 
 input[type=submit]:disabled,
@@ -104,11 +104,21 @@ select:active:not(:disabled) {
     filter: brightness(var(--form-button-active-brightness));
 }
 
-label,
+label:not(.custom-control):not(.explanation):not(.description):not(.error),
 legend {
     vertical-align: baseline;
     text-transform: var(--heading-text-transform);
+    font-weight: var(--font-weight-bold);
     color: var(--form-label-color);
+}
+
+.explanation,
+.description {
+    color: var(--description-color);
+}
+
+.error {
+    color: var(--error-color);
 }
 
 input[type=text],
@@ -140,6 +150,7 @@ textarea {
     resize: none;
     background: var(--form-field-background);
     color: var(--form-field-color);
+    font-weight: normal;
 }
 
 fieldset {
