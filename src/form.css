@@ -111,7 +111,8 @@ legend {
     margin-bottom: var(--space-d2);
 }
 
-.custom-control .label {
+.custom-control .label,
+.custom-control label {
     margin-top: unset;
     margin-bottom: unset;
 }
