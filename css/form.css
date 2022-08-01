@@ -115,12 +115,6 @@ legend {
     margin-bottom: var(--space-d2);
 }
 
-.custom-control .label,
-.custom-control label {
-    margin-top: unset;
-    margin-bottom: unset;
-}
-
 form .desc,
 form .error {
     color: var(--description-color);
@@ -128,13 +122,6 @@ form .error {
     margin-top: var(--space-d2);
     margin-bottom: var(--space-d2);
     font-weight: normal;
-}
-
-form label+.desc,
-form .label+.desc,
-form label+.error,
-form .label+.error {
-    margin-top: unset;
 }
 
 form .error {
