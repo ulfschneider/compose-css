@@ -183,6 +183,10 @@ legend {
     color: var(--form-label-color);
     line-height: calc((calc(1.66 * 1) - 1) / 3 * 2 + 1);
     line-height: var(--lh-2);
+    margin-top: calc(calc(1rem / 1.66) / 1.66);
+    margin-top: var(--space-d2);
+    margin-bottom: calc(calc(1rem / 1.66) / 1.66);
+    margin-bottom: var(--space-d2);
 }
 
 form .desc,

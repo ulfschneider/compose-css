@@ -107,6 +107,8 @@ legend {
     font-weight: var(--font-weight-bold);
     color: var(--form-label-color);
     line-height: var(--lh-2);
+    margin-top: var(--space-d2);
+    margin-bottom: var(--space-d2);
 }
 
 
