@@ -110,6 +110,7 @@ legend {
     vertical-align: baseline;    
     font-weight: var(--font-weight-bold);
     color: var(--form-label-color);
+    line-height: var(--lh-2);
 }
 
 form .desc,

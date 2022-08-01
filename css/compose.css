@@ -181,6 +181,8 @@ legend {
     font-weight: var(--font-weight-bold);
     color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
     color: var(--form-label-color);
+    line-height: calc((calc(1.66 * 1) - 1) / 3 * 2 + 1);
+    line-height: var(--lh-2);
 }
 
 form .desc,
