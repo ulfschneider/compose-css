@@ -4,10 +4,11 @@
     --form-radius: 0px;
     --form-button-pdx: var(--space-d2);
     --form-button-pdy: var(--space-d2);
-    --custom-check-lh: var(--lh-default);
+    --label-line-height: var(--lh-2);
+    --custom-check-line-height: var(--label-line-height);    
     --custom-check-space: .1em;
     --custom-check-size: 1em;
-    --custom-check-pos: calc((var(--custom-check-lh) * 1em - var(--custom-check-size)) / 2);
+    --custom-check-pos: calc((var(--custom-check-line-height) * 1em - var(--custom-check-size)) / 2);
     --custom-check-border-width: 2px;
     --custom-radio-gap: var(--custom-check-border-width);
     caret-color: var(--caret-color);
@@ -101,14 +102,20 @@ select:active:not(:disabled) {
 }
 
 label:not(.custom-control),
-.label,
+.label:not(.custom-control),
 legend {
     vertical-align: baseline;    
     font-weight: var(--font-weight-bold);
     color: var(--form-label-color);
-    line-height: var(--lh-2);
+    line-height: var(--label-line-height);
     margin-top: var(--space-d2);
     margin-bottom: var(--space-d2);
+}
+
+label.custom-control,
+.custom-control .label {
+    margin-top: unset;
+    margin-bottom: unset;
 }
 
 

@@ -1625,7 +1625,7 @@ Each breakpoint *can* trigger a change in base font size. The wider the screen, 
 <div>
 <label for="ccheck" class="custom-control">
 <input id="ccheck" type="checkbox"/>
-<span>Hello World</span>
+<span class="label">Hello World</span>
 </label>
 </div>
 

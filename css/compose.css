@@ -61,10 +61,11 @@ h6 {
     --form-radius: 0px;
     --form-button-pdx: var(--space-d2);
     --form-button-pdy: var(--space-d2);
-    --custom-check-lh: var(--lh-default);
+    --label-line-height: var(--lh-2);
+    --custom-check-line-height: var(--label-line-height);    
     --custom-check-space: .1em;
     --custom-check-size: 1em;
-    --custom-check-pos: calc((var(--custom-check-lh) * 1em - var(--custom-check-size)) / 2);
+    --custom-check-pos: calc((var(--custom-check-line-height) * 1em - var(--custom-check-size)) / 2);
     --custom-check-border-width: 2px;
     --custom-radio-gap: var(--custom-check-border-width);
     caret-color: hsl(198, 100%, calc(33.3% - calc(33.3% / 7)));
@@ -174,7 +175,7 @@ select:active:not(:disabled) {
 }
 
 label:not(.custom-control),
-.label,
+.label:not(.custom-control),
 legend {
     vertical-align: baseline;    
     font-weight: 700;    
@@ -182,11 +183,17 @@ legend {
     color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
     color: var(--form-label-color);
     line-height: calc((calc(1.66 * 1) - 1) / 3 * 2 + 1);
-    line-height: var(--lh-2);
+    line-height: var(--label-line-height);
     margin-top: calc(calc(1rem / 1.66) / 1.66);
     margin-top: var(--space-d2);
     margin-bottom: calc(calc(1rem / 1.66) / 1.66);
     margin-bottom: var(--space-d2);
+}
+
+label.custom-control,
+.custom-control .label {
+    margin-top: unset;
+    margin-bottom: unset;
 }
 
 form .desc,
@@ -322,7 +329,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     box-sizing: border-box;
     position: absolute;
     left: 0;
-    top: calc((calc(1.66 * 1) * 1em - 1em) / 2);
+    top: calc((calc((calc(1.66 * 1) - 1) / 3 * 2 + 1) * 1em - 1em) / 2);
     top: var(--custom-check-pos);
     height: 1em;
     height: var(--custom-check-size);
@@ -348,7 +355,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     position: absolute;
     left: calc(1em * .2);
     left: calc(var(--custom-check-size) * .2);
-    top: calc(calc((calc(1.66 * 1) * 1em - 1em) / 2) + (1em * .25));
+    top: calc(calc((calc((calc(1.66 * 1) - 1) / 3 * 2 + 1) * 1em - 1em) / 2) + (1em * .25));
     top: calc(var(--custom-check-pos) + (var(--custom-check-size) * .25));
     width: calc(1em * .6);
     width: calc(var(--custom-check-size) * .6);
@@ -372,7 +379,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     position: absolute;
     left: calc(2px * 2);
     left: calc(var(--custom-radio-gap) * 2);
-    top: calc(calc((calc(1.66 * 1) * 1em - 1em) / 2) + 2px * 2);
+    top: calc(calc((calc((calc(1.66 * 1) - 1) / 3 * 2 + 1) * 1em - 1em) / 2) + 2px * 2);
     top: calc(var(--custom-check-pos) + var(--custom-radio-gap) * 2);
     height: calc(1em - 2px * 4);
     height: calc(var(--custom-check-size) - var(--custom-radio-gap) * 4);
