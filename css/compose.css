@@ -188,12 +188,12 @@ form .desc,
 form .error {
     color: hsl(0, 0%, calc(53% - calc(53% / 7)));
     color: var(--description-color);
-    line-height: calc((calc(1.66 * 1) - 1) / 3 * 2 + 1);
-    line-height: var(--lh-2);
-    margin-top: 3px;
-    margin-top: var(--space-d3);
-    margin-bottom: 3px;
-    margin-bottom: var(--space-d3);
+    line-height: calc((calc(1.66 * 1) - 1) / 3 + 1);
+    line-height: var(--lh-1);
+    margin-top: calc(calc(1rem / 1.66) / 1.66);
+    margin-top: var(--space-d2);
+    margin-bottom: calc(calc(1rem / 1.66) / 1.66);
+    margin-bottom: var(--space-d2);
     font-weight: normal;
 }
 

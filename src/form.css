@@ -112,9 +112,9 @@ legend {
 form .desc,
 form .error {
     color: var(--description-color);
-    line-height: var(--lh-2);
-    margin-top: var(--space-d3);
-    margin-bottom: var(--space-d3);
+    line-height: var(--lh-1);
+    margin-top: var(--space-d2);
+    margin-bottom: var(--space-d2);
     font-weight: normal;
 }
 
