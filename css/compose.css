@@ -174,11 +174,10 @@ select:active:not(:disabled) {
 }
 
 label:not(.custom-control),
+.label,
 legend {
-    vertical-align: baseline;
-    text-transform: none;
-    text-transform: var(--heading-text-transform);
-    font-weight: 700;
+    vertical-align: baseline;    
+    font-weight: 700;    
     font-weight: var(--font-weight-bold);
     color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
     color: var(--form-label-color);
@@ -198,7 +197,9 @@ form .error {
 }
 
 form label+.desc,
-form label+.error {
+form .label+.desc,
+form label+.error,
+form .label+.error {
     margin-top: unset;
 }
 
