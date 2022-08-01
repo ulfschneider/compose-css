@@ -212,6 +212,12 @@ form .error {
 form .error {
     color: crimson;
     color: var(--error-color);
+    border-left: 3px solid crimson;
+    border-left: var(--outline-width) solid var(--error-color);
+    padding-left: calc(calc(1rem / 1.66) / 1.66);
+    padding-left: var(--space-d2);
+    margin-left: calc(-1 * (calc(calc(1rem / 1.66) / 1.66) + 3px));
+    margin-left: calc(-1 * (var(--space-d2) + var(--outline-width)));
 }
 
 input[type=text],
