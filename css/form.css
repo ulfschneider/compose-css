@@ -115,6 +115,11 @@ legend {
     margin-bottom: var(--space-d2);
 }
 
+.custom-control .label {
+    margin-top: unset;
+    margin-bottom: unset;
+}
+
 form .desc,
 form .error {
     color: var(--description-color);
