@@ -8,25 +8,25 @@
 
 @media (--mi-xs-breakpoint) {
     :root {
-       font-size: var(--font-size-xs-breakpoint);
+       font-size: min(var(--font-size-xs-breakpoint), var(--font-size-sm-breakpoint));
    }
 }
 
 @media (--mi-sm-breakpoint) {
      :root {
-        font-size: var(--font-size-sm-breakpoint);
+        font-size: min(var(--font-size-sm-breakpoint), var(--font-size-rg-breakpoint));
     }
 }
 
 @media (--mi-rg-breakpoint) {
      :root {
-        font-size: var(--font-size-rg-breakpoint);
+        font-size: min(var(--font-size-rg-breakpoint), var(--font-size-md-breakpoint));
     }
 }
 
 @media (--mi-md-breakpoint) {
      :root {
-        font-size: var(--font-size-md-breakpoint);
+        font-size: min(var(--font-size-md-breakpoint), var(--font-size-lg-breakpoint));
     }
 }
 

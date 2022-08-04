@@ -8,57 +8,57 @@
 
 @media (min-width: 401px) {
     :root {
-       font-size: calc(var(--base-font-size) + 2px);
-       font-size: var(--font-size-xs-breakpoint);
+       font-size: min(calc(var(--base-font-size) + 2px), calc(var(--base-font-size) + 2px));
+       font-size: min(var(--font-size-xs-breakpoint), var(--font-size-sm-breakpoint));
    }
 }
 
 @media (--mi-xs-breakpoint) {
     :root {
-       font-size: calc(var(--base-font-size) + 2px);
-       font-size: var(--font-size-xs-breakpoint);
+       font-size: min(calc(var(--base-font-size) + 2px), calc(var(--base-font-size) + 2px));
+       font-size: min(var(--font-size-xs-breakpoint), var(--font-size-sm-breakpoint));
    }
 }
 
 @media (min-width: 601px) {
      :root {
-        font-size: calc(var(--base-font-size) + 2px);
-        font-size: var(--font-size-sm-breakpoint);
+        font-size: min(calc(var(--base-font-size) + 2px), calc(var(--base-font-size) + 2px));
+        font-size: min(var(--font-size-sm-breakpoint), var(--font-size-rg-breakpoint));
     }
 }
 
 @media (--mi-sm-breakpoint) {
      :root {
-        font-size: calc(var(--base-font-size) + 2px);
-        font-size: var(--font-size-sm-breakpoint);
+        font-size: min(calc(var(--base-font-size) + 2px), calc(var(--base-font-size) + 2px));
+        font-size: min(var(--font-size-sm-breakpoint), var(--font-size-rg-breakpoint));
     }
 }
 
 @media (min-width: 769px) {
      :root {
-        font-size: calc(var(--base-font-size) + 2px);
-        font-size: var(--font-size-rg-breakpoint);
+        font-size: min(calc(var(--base-font-size) + 2px), calc(var(--base-font-size) + 3px));
+        font-size: min(var(--font-size-rg-breakpoint), var(--font-size-md-breakpoint));
     }
 }
 
 @media (--mi-rg-breakpoint) {
      :root {
-        font-size: calc(var(--base-font-size) + 2px);
-        font-size: var(--font-size-rg-breakpoint);
+        font-size: min(calc(var(--base-font-size) + 2px), calc(var(--base-font-size) + 3px));
+        font-size: min(var(--font-size-rg-breakpoint), var(--font-size-md-breakpoint));
     }
 }
 
 @media (min-width: 1025px) {
      :root {
-        font-size: calc(var(--base-font-size) + 3px);
-        font-size: var(--font-size-md-breakpoint);
+        font-size: min(calc(var(--base-font-size) + 3px), calc(var(--base-font-size) + 4px));
+        font-size: min(var(--font-size-md-breakpoint), var(--font-size-lg-breakpoint));
     }
 }
 
 @media (--mi-md-breakpoint) {
      :root {
-        font-size: calc(var(--base-font-size) + 3px);
-        font-size: var(--font-size-md-breakpoint);
+        font-size: min(calc(var(--base-font-size) + 3px), calc(var(--base-font-size) + 4px));
+        font-size: min(var(--font-size-md-breakpoint), var(--font-size-lg-breakpoint));
     }
 }
 

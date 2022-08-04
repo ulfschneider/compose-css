@@ -1627,7 +1627,7 @@ Each breakpoint *can* trigger a change in base font size. The wider the screen, 
 <div>
 <button class="mry">A button</button>
 <button class="mry" disabled>A disabled button</button>
-<button class="mry">A button with a long text, a button with a long text, a button with a long text, a button with a long text, a button with a long text, a button with a long text, a button with a long text</button>
+<input type="submit" class="mry" value="A submit with a long text, a button with a long text, a button with a long text, a button with a long text, a button with a long text, a button with a long text, a button with a long text">
 </div>
 
 <div>
