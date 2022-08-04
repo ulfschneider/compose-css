@@ -3,7 +3,7 @@
     addEventListener('load', () => sotable({whiteList: '.soso'})); //activate sotable functionalty on load
     </script></head><body class="pd"><main class="outline mxw-lg mrx-auto"><header class="title">
 <h1>Compose CSS</h1>
-<span class="bg-primary neutral-5 pd-d3">Version 28.6.21</span>
+<span class="bg-primary neutral-5 pd-d3">Version 28.7.0</span>
 <p>A low-level CSS Toolkit to build fast, maintainable, and responsive websites.</p>
 </header>
 <nav class="table-of-contents fluid-columns-5 bleed-right"><ol><li><a href="#preparatory">Preparatory </a><ol><li><a href="#install-compose-css">Install Compose CSS </a></li><li><a href="#notation-used-in-this-document">Notation used in this document </a></li><li><a href="#stepping-through-options">Stepping through options </a></li></ol></li><li><a href="#typography">Typography </a><ol><li><a href="#basic-elements">Basic elements </a></li><li><a href="#font-size">Font size </a></li><li><a href="#headings">Headings </a></li><li><a href="#heading-size">Heading size </a></li><li><a href="#line-height">Line height </a></li><li><a href="#rhythm">Rhythm </a></li><li><a href="#word-wrapping">Word wrapping </a></li><li><a href="#writing-mode">Writing mode </a></li><li><a href="#paragraph">Paragraph </a></li><li><a href="#indented-paragraph">Indented Paragraph </a></li><li><a href="#horizontal-ruler">Horizontal ruler </a></li><li><a href="#blockquote">Blockquote </a></li><li><a href="#details-and-summary">Details and Summary </a></li></ol></li><li><a href="#lists">Lists </a><ol><li><a href="#unordered-list">Unordered list </a></li><li><a href="#ordered-list">Ordered List </a></li><li><a href="#indented-ordered-list">Indented Ordered List </a></li><li><a href="#definition-list">Definition List </a></li><li><a href="#timeline">Timeline </a></li><li><a href="#framed-timeline">Framed Timeline </a></li><li><a href="#horizontal-timeline">Horizontal Timeline </a></li></ol></li><li><a href="#tables">Tables </a></li><li><a href="#figures">Figures </a></li><li><a href="#images">Images </a></li><li><a href="#colors">Colors </a></li><li><a href="#breakpoints">Breakpoints </a></li><li><a href="#layout">Layout </a></li><li><a href="#forms">Forms </a></li></ol></nav><h2 id="preparatory">Preparatory <a class="anchor" href="#preparatory">#</a></h2>
@@ -1454,6 +1454,7 @@ familiar walls.</dd>
 <tr><th>Min Breakpoint</th><th>Max Breakpoint</th><th>Breakpoint Width</th><th><code>rem</code>-based Width</th><th>1 <code>rem</code></th></tr>
 </thead>
 <tbody>
+<tr><td>mi-xs-breakpoint</td><td>mx-xs-breakpoint</td><td>--xs-breakpoint</td><td>--xs-width</td><td>--font-size-xs-breakpoint</td></tr>
 <tr><td>mi-sm-breakpoint</td><td>mx-sm-breakpoint</td><td>--sm-breakpoint</td><td>--sm-width</td><td>--font-size-sm-breakpoint</td></tr>
 <tr><td>mi-rg-breakpoint</td><td>mx-rg-breakpoint</td><td>--rg-breakpoint</td><td>--rg-width</td><td>--font-size-rg-breakpoint</td></tr>
 <tr><td>mi-md-breakpoint</td><td>mx-md-breakpoint</td><td>--rg-breakpoint</td><td>--md-width</td><td>--font-size-md-breakpoint</td></tr>
@@ -1485,13 +1486,20 @@ familiar walls.</dd>
             <span>.w-sm</span>
         </div>
     </div>
+    <div class="w-xs-breakpoint mry-2 mrx-auto br bg-neutral-5 d:bg-neutral-d4">
+        <span class="pd">.w-xs-breakpoint</span>
+        <div class="w-xs pdx mry mrx-auto bg-primary white">
+            <span>.w-xs</span>
+        </div>
+    </div>
 </div>
 <h2 id="layout">Layout <a class="anchor" href="#layout">#</a></h2>
 <h2 id="forms">Forms <a class="anchor" href="#forms">#</a></h2>
 <form>
 <div>
-<button>A button</button>
-<button disabled="">A disabled button</button>
+<button class="mry">A button</button>
+<button class="mry" disabled="">A disabled button</button>
+<button class="mry">A button with a long text, a button with a long text, a button with a long text, a button with a long text, a button with a long text, a button with a long text, a button with a long text</button>
 </div>
 <div>
 <label for="ccheck" class="custom-control">

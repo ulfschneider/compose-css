@@ -1,3 +1,66 @@
+@media (--mi-xs-breakpoint) {
+    .xs\:mih-unset,
+    .xs\:mih-u {
+        min-height: unset;
+    }
+    .xs\:mih-d5,
+    .xs\:mih-d5 {
+        min-height: var(--space-d5);
+    }
+    .xs\:mih-d4,
+    .xs\:mih-d4 {
+        min-height: var(--space-d4);
+    }
+    .xs\:mih-d3,
+    .xs\:mih-d3 {
+        min-height: var(--space-d3);
+    }
+    .xs\:mih-d2,
+    .xs\:mih-d2 {
+        min-height: var(--space-d2);
+    }
+    .xs\:mih-d1,
+    .xs\:mih-d1 {
+        min-height: var(--space-d1);
+    }
+    .xs\:min-height,
+    .xs\:mih {
+        min-height: var(--space);
+    }
+    .xs\:mih-1,
+    .xs\:mih-1 {
+        min-height: var(--space-1)
+    }
+    .xs\:mih-2,
+    .xs\:mih-2 {
+        min-height: var(--space-2);
+    }
+    .xs\:mih-3,
+    .xs\:mih-3 {
+        min-height: var(--space-3);
+    }
+    .xs\:mih-4,
+    .xs\:mih-4 {
+        min-height: var(--space-4);
+    }
+    .xs\:mih-5,
+    .xs\:mih-5 {
+        min-height: var(--space-5);
+    }
+    .xs\:mih-6,
+    .xs\:mih-6 {
+        min-height: var(--space-6);
+    }
+    .xs\:min-vh-100,
+    .xs\:mivh-100 {
+        min-height: 100vh;
+    }
+    .xs\:mih-100 {
+        min-height: 100%;
+    }
+}
+
+
 @media (--mi-sm-breakpoint) {
     .sm\:mih-unset,
     .sm\:mih-u {

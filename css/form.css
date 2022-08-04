@@ -5,6 +5,7 @@
     --form-button-pdx: var(--space-d2);
     --form-button-pdy: var(--space-d2);
     --label-line-height: var(--lh-2);
+    --button-line-height: var(--lh-2);
     --custom-check-line-height: var(--label-line-height);    
     --custom-check-space: .1em;
     --custom-check-size: 1em;
@@ -68,6 +69,8 @@ select {
     padding: var(--form-button-pdx) var(--form-button-pdy);
     cursor: pointer;
     transition: filter var(--transition-duration) ease-out;    
+    line-height: var(--lh-2);    
+    line-height: var(--button-line-height);
 }
 
 input[type=submit]:disabled,

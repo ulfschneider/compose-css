@@ -1,4 +1,130 @@
-@media (min-width: 641px) {
+@media (min-width: 401px) {
+    .xs\:mxh-unset,
+    .xs\:mxh-u {
+        max-height: unset;
+    }
+    .xs\:mxh-d5,
+    .xs\:mxh-d5 {
+        max-height: var(--space-d5);
+    }
+    .xs\:mxh-d4,
+    .xs\:mxh-d4 {
+        max-height: var(--space-d4);
+    }
+    .xs\:mxh-d3,
+    .xs\:mxh-d3 {
+        max-height: var(--space-d3);
+    }
+    .xs\:mxh-d2,
+    .xs\:mxh-d2 {
+        max-height: var(--space-d2);
+    }
+    .xs\:mxh-d1,
+    .xs\:mxh-d1 {
+        max-height: var(--space-d1);
+    }
+    .xs\:max-height,
+    .xs\:mxh {
+        max-height: var(--space);
+    }
+    .xs\:mxh-1,
+    .xs\:mxh-1 {
+        max-height: var(--space-1)
+    }
+    .xs\:mxh-2,
+    .xs\:mxh-2 {
+        max-height: var(--space-2);
+    }
+    .xs\:mxh-3,
+    .xs\:mxh-3 {
+        max-height: var(--space-3);
+    }
+    .xs\:mxh-4,
+    .xs\:mxh-4 {
+        max-height: var(--space-4);
+    }
+    .xs\:mxh-5,
+    .xs\:mxh-5 {
+        max-height: var(--space-5);
+    }
+    .xs\:mxh-6,
+    .xs\:mxh-6 {
+        max-height: var(--space-6);
+    }
+    .xs\:max-vh-100,
+    .xs\:mxvh-100 {
+        max-height: 100vh;
+    }
+    .xs\:mxw-100 {
+        max-height: 100%;
+    }
+}
+
+
+@media (--mi-xs-breakpoint) {
+    .xs\:mxh-unset,
+    .xs\:mxh-u {
+        max-height: unset;
+    }
+    .xs\:mxh-d5,
+    .xs\:mxh-d5 {
+        max-height: var(--space-d5);
+    }
+    .xs\:mxh-d4,
+    .xs\:mxh-d4 {
+        max-height: var(--space-d4);
+    }
+    .xs\:mxh-d3,
+    .xs\:mxh-d3 {
+        max-height: var(--space-d3);
+    }
+    .xs\:mxh-d2,
+    .xs\:mxh-d2 {
+        max-height: var(--space-d2);
+    }
+    .xs\:mxh-d1,
+    .xs\:mxh-d1 {
+        max-height: var(--space-d1);
+    }
+    .xs\:max-height,
+    .xs\:mxh {
+        max-height: var(--space);
+    }
+    .xs\:mxh-1,
+    .xs\:mxh-1 {
+        max-height: var(--space-1)
+    }
+    .xs\:mxh-2,
+    .xs\:mxh-2 {
+        max-height: var(--space-2);
+    }
+    .xs\:mxh-3,
+    .xs\:mxh-3 {
+        max-height: var(--space-3);
+    }
+    .xs\:mxh-4,
+    .xs\:mxh-4 {
+        max-height: var(--space-4);
+    }
+    .xs\:mxh-5,
+    .xs\:mxh-5 {
+        max-height: var(--space-5);
+    }
+    .xs\:mxh-6,
+    .xs\:mxh-6 {
+        max-height: var(--space-6);
+    }
+    .xs\:max-vh-100,
+    .xs\:mxvh-100 {
+        max-height: 100vh;
+    }
+    .xs\:mxw-100 {
+        max-height: 100%;
+    }
+}
+
+
+@media (min-width: 601px) {
     .sm\:mxh-unset,
     .sm\:mxh-u {
         max-height: unset;
@@ -59,6 +185,7 @@
         max-height: 100%;
     }
 }
+
 
 @media (--mi-sm-breakpoint) {
     .sm\:mxh-unset,
@@ -122,6 +249,7 @@
     }
 }
 
+
 @media (min-width: 769px) {
     .rg\:mxh-unset,
     .rg\:mxh-u {
@@ -183,6 +311,7 @@
         max-height: 100%;
     }
 }
+
 
 @media (--mi-rg-breakpoint) {
     .rg\:mxh-unset,
@@ -246,6 +375,7 @@
     }
 }
 
+
 @media (min-width: 1025px) {
     .md\:mxh-unset,
     .md\:mxh-u {
@@ -307,6 +437,7 @@
         max-height: 100%;
     }
 }
+
 
 @media (--mi-md-breakpoint) {
     .md\:mxh-unset,
@@ -370,6 +501,7 @@
     }
 }
 
+
 @media (min-width: 1281px) {
     .lg\:mxh-unset,
     .lg\:mxh-u {
@@ -431,6 +563,7 @@
         max-height: 100%;
     }
 }
+
 
 @media (--mi-lg-breakpoint) {
     .lg\:mxh-unset,

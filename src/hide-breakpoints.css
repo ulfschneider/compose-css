@@ -2,6 +2,13 @@
     display: none !important;
 }
 
+
+@media (--mi-xs-breakpoint) {
+    .xs\:hide {
+        display: none !important;
+    }
+}
+
 @media (--mi-sm-breakpoint) {
     .sm\:hide {
         display: none !important;
@@ -22,6 +29,12 @@
 
 @media (--mi-lg-breakpoint) {
     .lg\:hide {
+        display: none !important;
+    }
+}
+
+@media (--mx-xs-breakpoint) {
+    .below-xs\:hide {
         display: none !important;
     }
 }

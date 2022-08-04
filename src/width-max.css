@@ -7,6 +7,14 @@
     max-width: 100%;
 }
 
+.mxw-xs {
+    max-width: var(--xs-width);
+}
+
+.mxw-xs-breakpoint {
+    max-width: var(--xs-breakpoint);
+}
+
 .mxw-sm {
     max-width: var(--sm-width);
 }

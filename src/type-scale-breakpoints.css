@@ -1,8 +1,15 @@
 :root {
+    --font-size-xs-breakpoint: calc(var(--base-font-size) + 2px);
     --font-size-sm-breakpoint: calc(var(--base-font-size) + 2px);
     --font-size-rg-breakpoint: calc(var(--base-font-size) + 2px);
     --font-size-md-breakpoint: calc(var(--base-font-size) + 3px);
     --font-size-lg-breakpoint: calc(var(--base-font-size) + 4px);
+}
+
+@media (--mi-xs-breakpoint) {
+    :root {
+       font-size: var(--font-size-xs-breakpoint);
+   }
 }
 
 @media (--mi-sm-breakpoint) {
@@ -26,6 +33,105 @@
 @media (--mi-lg-breakpoint) {
      :root {
         font-size: var(--font-size-lg-breakpoint);
+    }
+}
+
+@media (--mi-xs-breakpoint) {
+    .xs\:h1 {
+        font-size: var(--fs-h1);
+        line-height: var(--lh-h1);
+    }
+    .xs\:h2 {
+        font-size: var(--fs-h2);
+        line-height: var(--lh-h2);
+    }
+    .xs\:h3 {
+        font-size: var(--fs-h3);
+        line-height: var(--lh-h3);
+    }
+    .xs\:h4 {
+        font-size: var(--fs-h4);
+        line-height: var(--lh-h4);
+    }
+    .xs\:h5 {
+        font-size: var(--fs-h5);
+        line-height: var(--lh-h5);
+    }
+    .xs\:h6 {
+        font-size: var(--fs-h6);
+        line-height: var(--lh-h6);
+    }
+    .xs\:fs-d1 {
+        font-size: var(--fs-d1);
+    }
+    .xs\:small {
+        font-size: var(--small);
+    }
+    .xs\:smaller {
+        font-size: var(--smaller);
+    }
+    .xs\:fs,
+    .xs\:fs-default {
+        font-size: var(--fs);
+    }
+    .xs\:fs-1 {
+        font-size: var(--fs-1);
+    }
+    .xs\:fs-2 {
+        font-size: var(--fs-2);
+    }
+    .xs\:fs-3 {
+        font-size: var(--fs-3);
+    }
+    .xs\:fs-4 {
+        font-size: var(--fs-4);
+    }
+    .xs\:fs-5 {
+        font-size: var(--fs-5);
+    }
+    .xs\:fs-6 {
+        font-size: var(--fs-6);
+    }
+    .xs\:fs-7 {
+        font-size: var(--fs-7);
+    }
+    .xs\:fs-8 {
+        font-size: var(--fs-8);
+    }
+    .xs\:fs-9 {
+        font-size: var(--fs-9);
+    }
+    .xs\:fs-10 {
+        font-size: var(--fs-10);
+    }
+    .xs\:lh-d1 {
+        line-height: var(--lh-d1);
+    }
+    .xs\:lh-0 {
+        line-height: 0;
+    }
+    .xs\:lh-unset,
+    .xs\:lh-u {
+        line-height: unset;
+    }
+    .xs\:lh {
+        line-height: var(--lh);
+    }
+    .xs\:lh-1 {
+        line-height: var(--lh-1);
+    }
+    .xs\:lh-2 {
+        line-height: var(--lh-2);
+    }
+    .xs\:lh-3,
+    .xs\:lh-default {
+        line-height: var(--lh-3);
+    }
+    .xs\:lh-4 {
+        line-height: var(--lh-4);
+    }
+    .xs\:lh-5 {
+        line-height: var(--lh-5);
     }
 }
 

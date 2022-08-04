@@ -1576,6 +1576,7 @@ Each breakpoint *can* trigger a change in base font size. The wider the screen, 
 <tr><th>Min Breakpoint</th><th>Max Breakpoint</th><th>Breakpoint Width</th><th><code>rem</code>-based Width<th>1 <code>rem</code></th></tr>
 </thead>
 <tbody>
+<tr><td>mi-xs-breakpoint</td><td>mx-xs-breakpoint</td><td>--xs-breakpoint</td><td>--xs-width</td><td>--font-size-xs-breakpoint</td></tr>
 <tr><td>mi-sm-breakpoint</td><td>mx-sm-breakpoint</td><td>--sm-breakpoint</td><td>--sm-width</td><td>--font-size-sm-breakpoint</td></tr>
 <tr><td>mi-rg-breakpoint</td><td>mx-rg-breakpoint</td><td>--rg-breakpoint</td><td>--rg-width</td><td>--font-size-rg-breakpoint</td></tr>
 <tr><td>mi-md-breakpoint</td><td>mx-md-breakpoint</td><td>--rg-breakpoint</td><td>--md-width</td><td>--font-size-md-breakpoint</td></tr>
@@ -1609,6 +1610,12 @@ Each breakpoint *can* trigger a change in base font size. The wider the screen, 
             <span>.w-sm</span>
         </div>
     </div>
+    <div class="w-xs-breakpoint mry-2 mrx-auto br bg-neutral-5 d:bg-neutral-d4">
+        <span class="pd">.w-xs-breakpoint</span>
+        <div class="w-xs pdx mry mrx-auto bg-primary white">
+            <span>.w-xs</span>
+        </div>
+    </div>
 </div>
 
 
@@ -1618,8 +1625,9 @@ Each breakpoint *can* trigger a change in base font size. The wider the screen, 
 
 <form>
 <div>
-<button>A button</button>
-<button disabled>A disabled button</button>
+<button class="mry">A button</button>
+<button class="mry" disabled>A disabled button</button>
+<button class="mry">A button with a long text, a button with a long text, a button with a long text, a button with a long text, a button with a long text, a button with a long text, a button with a long text</button>
 </div>
 
 <div>

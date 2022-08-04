@@ -3,6 +3,14 @@
     min-width: unset;
 }
 
+.miw-xs {
+    min-width: var(--xs-width);
+}
+
+.miw-xs-breakpoint {
+    min-width: var(--xs-breakpoint);
+}
+
 .miw-sm {
     min-width: var(--sm-width);
 }

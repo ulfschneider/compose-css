@@ -1,3 +1,24 @@
+@media (--mi-xs-breakpoint) {
+    .xs\:fluid-columns-1 {
+        column-width: var(--space-1);
+    }
+    .xs\:fluid-columns-2 {
+        column-width: var(--space-2);
+    }
+    .xs\:fluid-columns-3 {
+        column-width: var(--space-3);
+    }
+    .xs\:fluid-columns-4 {
+        column-width: var(--space-4);
+    }
+    .xs\:fluid-columns-5 {
+        column-width: var(--space-5);
+    }
+    .xs\:fluid-columns-6 {
+        column-width: var(--space-6);
+    }
+}
+
 @media (--mi-sm-breakpoint) {
     .sm\:fluid-columns-1 {
         column-width: var(--space-1);

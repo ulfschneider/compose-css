@@ -1,3 +1,79 @@
+@media (--mi-xs-breakpoint) {
+    .xs\:h-unset {
+        height: unset;
+    }
+    .xs\:h-d5 {
+        height: var(--space-d5);
+    }
+    .xs\:h-d4 {
+        height: var(--space-d4);
+    }
+    .xs\:h-d3 {
+        height: var(--space-d3);
+    }
+    .xs\:h-d2 {
+        height: var(--space-d2);
+    }
+    .xs\:h-d1 {
+        height: var(--space-d1);
+    }
+    .xs\:height {
+        height: var(--space);
+    }
+    .xs\:h-1 {
+        height: var(--space-1)
+    }
+    .xs\:h-2 {
+        height: var(--space-2);
+    }
+    .xs\:h-3 {
+        height: var(--space-3);
+    }
+    .xs\:h-4 {
+        height: var(--space-4);
+    }
+    .xs\:h-5 {
+        height: var(--space-5);
+    }
+    .xs\:h-6 {
+        height: var(--space-6);
+    }
+    .xs\:h-100 {
+        height: 100%;
+    }
+    .xs\:vh-100 {
+        height: 100vh;
+    }
+    .xs\:vh-90 {
+        height: 90vh;
+    }
+    .xs\:vh-80 {
+        height: 80vh;
+    }
+    .xs\:vh-70 {
+        height: 70vh;
+    }
+    .xs\:vh-60 {
+        height: 60vh;
+    }
+    .xs\:vh-50 {
+        height: 50vh;
+    }
+    .xs\:vh-40 {
+        height: 40vh;
+    }
+    .xs\:vh-30 {
+        height: 30vh;
+    }
+    .xs\:vh-20 {
+        height: 20vh;
+    }
+    .xs\:vh-10 {
+        height: 10vh;
+    }
+}
+
+
 @media (--mi-sm-breakpoint) {
     .sm\:h-unset {
         height: unset;

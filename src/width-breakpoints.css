@@ -1,3 +1,111 @@
+@media (--mi-xs-breakpoint) {
+    .xs\:w-unset {
+        width: unset;
+    }
+    .xs\:w-100 {
+        width: 100%;
+    }
+    .xs\:vw-100 {
+        width: 100vh;
+    }
+    .xs\:vw-90 {
+        width: 90vw;
+    }
+    .xs\:vw-80 {
+        width: 80vw;
+    }
+    .xs\:vw-70 {
+        width: 70vw;
+    }
+    .xs\:vw-60 {
+        width: 60vw;
+    }
+    .xs\:vw-50 {
+        width: 50vw;
+    }
+    .xs\:vw-40 {
+        width: 40vw;
+    }
+    .xs\:vw-30 {
+        width: 30vw;
+    }
+    .xs\:vw-20 {
+        width: 20vw;
+    }
+    .xs\:vw-10 {
+        width: 10vw;
+    }
+    .xs\:w-xs {
+        width: var(--xs-width);
+    }
+    .xs\:w-xs-breakpoint {
+        width: var(--xs-breakpoint);
+    }
+    .xs\:w-sm {
+        width: var(--sm-width);
+    }
+    .xs\:w-sm-breakpoint {
+        width: var(--sm-breakpoint);
+    }
+    .xs\:w-rg {
+        width: var(--rg-width);
+    }
+    .xs\:w-rg-breakpoint {
+        width: var(--rg-breakpoint);
+    }
+    .xs\:w-md {
+        width: var(--md-width);
+    }
+    .xs\:w-md-breakpoint {
+        width: var(--md-breakpoint);
+    }
+    .xs\:w-lg {
+        width: var(--lg-width);
+    }
+    .xs\:w-lg-breakpoint {
+        width: var(--lg-breakpoint);
+    }
+    .xs\:w-d5 {
+        width: var(--space-d5);
+    }
+    .xs\:w-d4 {
+        width: var(--space-d4);
+    }
+    .xs\:w-d3 {
+        width: var(--space-d3);
+    }
+    .xs\:w-d2 {
+        width: var(--space-d2);
+    }
+    .xs\:w-d1 {
+        width: var(--space-d1);
+    }
+    .xs\:width {
+        width: var(--space);
+    }
+    .xs\:w-1 {
+        width: var(--space-1);
+    }
+    .xs\:w-2 {
+        width: var(--space-2);
+    }
+    .xs\:w-3 {
+        width: var(--space-3);
+    }
+    .xs\:w-4 {
+        width: var(--space-4);
+    }
+    .xs\:w-5 {
+        width: var(--space-5);
+    }
+    .xs\:w-6 {
+        width: var(--space-6);
+    }
+    .xs\:w-bleed {
+        width: var(--bleed-width);
+    }
+}
+
 @media (--mi-sm-breakpoint) {
     .sm\:w-unset {
         width: unset;
@@ -34,6 +142,12 @@
     }
     .sm\:vw-10 {
         width: 10vw;
+    }
+    .sm\:w-xs {
+        width: var(--xs-width);
+    }
+    .sm\:w-xs-breakpoint {
+        width: var(--xs-breakpoint);
     }
     .sm\:w-sm {
         width: var(--sm-width);
@@ -137,6 +251,12 @@
     .rg\:vw-10 {
         width: 10vw;
     }
+    .rg\:w-xs {
+        width: var(--xs-width);
+    }
+    .rg\:w-xs-breakpoint {
+        width: var(--xs-breakpoint);
+    }
     .rg\:w-sm {
         width: var(--sm-width);
     }
@@ -239,6 +359,12 @@
     .md\:vw-10 {
         width: 10vw;
     }
+    .md\:w-xs {
+        width: var(--xs-width);
+    }
+    .md\:w-xs-breakpoint {
+        width: var(--xs-breakpoint);
+    }
     .md\:w-sm {
         width: var(--sm-width);
     }
@@ -340,6 +466,12 @@
     }
     .lg\:vw-10 {
         width: 10vw;
+    }
+    .lg\:w-xs {
+        width: var(--xs-width);
+    }
+    .lg\:w-xs-breakpoint {
+        width: var(--xs-breakpoint);
     }
     .lg\:w-sm {
         width: var(--sm-width);
