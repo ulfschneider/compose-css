@@ -392,6 +392,7 @@ ol>li::before {
     font-family: var(--meta-font-family);
     color: var(--li-prefix-color);
     font-variant-numeric: lining-nums;
+    font-size: smaller;
 }
 
 ul>li::before {

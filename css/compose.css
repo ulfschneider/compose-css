@@ -31971,6 +31971,7 @@ ol>li::before {
     color: currentColor;
     color: var(--li-prefix-color);
     font-variant-numeric: lining-nums;
+    font-size: smaller;
 }
 
 ul>li::before {
