@@ -448,7 +448,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
 
 @custom-media --touch-device screen and (hover: none) and (pointer: coarse);
 
-@custom-media --outdent-breakpoint (min-width: 1025px);
+@custom-media --outdent-breakpoint (min-width: 900px);
 
 :root {
     --space: 1rem;
@@ -29591,7 +29591,7 @@ details[open]>summary::before {
     content: var(--summary-expanded-prefix);
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 900px) {
     details>summary:not(table details>summary):not(pre details>summary)::before {
         margin-left: calc(-1 * calc(1.66 * 1rem));
         margin-left: calc(-1 * var(--horizontal-rhythm));
@@ -31710,7 +31710,7 @@ dl.timeline>dd>*.framed::before {
     margin-left: calc(-1 * (var(--timeline-right-gap) + var(--timeline-framed-indent) + var(--timeline-width) * 2 + var(--timeline-framed-padding)));
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 900px) {
     dl.timeline::not(dl.timeline.row):not(table dl.timeline):not(pre dl.timeline) {
         margin-left: calc(-1 * (calc(calc(1.66 * 1rem) - calc(.9rem / 2) - 1px) - 1px));
         margin-left: calc(-1 * (var(--timeline-right-gap) - var(--timeline-width)));
@@ -32054,7 +32054,7 @@ ul>li::before {
     counter-increment: h6-counter;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 900px) {
     ol:not(ol ol):not(ul ol):not(table ol):not(pre ol), 
     ul:not(ul ul):not(ol ul):not(table ul):not(pre ul) {
         padding-left: 0;

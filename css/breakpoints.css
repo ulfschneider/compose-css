@@ -30,4 +30,4 @@
 
 @custom-media --touch-device screen and (hover: none) and (pointer: coarse);
 
-@custom-media --outdent-breakpoint (min-width: 1025px);
+@custom-media --outdent-breakpoint (min-width: 900px);
