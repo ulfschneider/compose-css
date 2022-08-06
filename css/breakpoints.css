@@ -32,4 +32,4 @@
 
 /* This is --mi-rg-breakpoint + some space*/
 
-@custom-media --outdent-breakpoint (min-width: 869px);
+@custom-media --outdent-breakpoint (min-width: 800px);

@@ -945,7 +945,7 @@ details[open]>summary::before {
 }
 
 
-@media (min-width: 869px) {
+@media (min-width: 800px) {
     details>summary:not(table details>summary):not(pre details>summary)::before {
         margin-left: calc(-1 * var(--space-1));
         margin-left: calc(-1 * var(--horizontal-rhythm));
