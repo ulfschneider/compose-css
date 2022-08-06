@@ -17,8 +17,8 @@ const processingDocCSS = () => {
         .pipe(postcss([
             postcssImport(),
             postcssNested(),
-            postcssCustomProperties(),
-            postcssCustomMedia(),            
+            postcssCustomProperties({preserve: true}),
+            postcssCustomMedia({preserve: true}),            
             postcssCalc(),
             postcssPurgeCSS({
                 content: [

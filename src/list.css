@@ -126,13 +126,6 @@ dl.timeline>dd>*.framed::before {
     margin-left: calc(-1 * (var(--timeline-right-gap) + var(--timeline-framed-indent) + var(--timeline-width) * 2 + var(--timeline-framed-padding)));
 }
 
-@media (--outdent-breakpoint) {
-    dl.timeline::not(dl.timeline.row):not(table dl.timeline):not(pre dl.timeline) {
-        margin-left: calc(-1 * (var(--timeline-right-gap) - var(--timeline-width)));
-    }
-}
-
-
 @media (--mi-sm-breakpoint) {
     dl.timeline.row {
         display: flex;
@@ -207,6 +200,12 @@ dl.timeline>dd>*.framed::before {
         display: block;
         margin-top: calc(var(--timeline-row-framed-padding) + var(--timeline-width));
         margin-left: calc(-1 * var(--timeline-row-framed-padding) + var(--timeline-blub-size) / 2 - var(--timeline-width));
+    }
+}
+
+@media (--outdent-breakpoint) {
+    dl.timeline:not(dl.timeline.row):not(table dl.timeline):not(pre dl.timeline) {
+        margin-left: calc(-1 * (var(--timeline-right-gap) - var(--timeline-width)));
     }
 }
 

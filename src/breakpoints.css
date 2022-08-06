@@ -20,4 +20,5 @@
 @custom-media --mi-lg-breakpoint (min-width: 1281px);
 @custom-media --touch-device screen and (hover: none) and (pointer: coarse);
 
-@custom-media --outdent-breakpoint (min-width: 900px);
+ /* This is --mi-rg-breakpoint + some space*/
+@custom-media --outdent-breakpoint (min-width: 869px);
