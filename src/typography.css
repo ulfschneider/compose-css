@@ -744,3 +744,9 @@ details>summary::before {
 details[open]>summary::before {
     content: var(--summary-expanded-prefix);
 }
+
+@media (--outdent-breakpoint) {
+    details>summary:not(table details>summary):not(pre details>summary)::before {
+        margin-left: calc(-1 * var(--horizontal-rhythm));
+    }
+}

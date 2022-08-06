@@ -22,6 +22,7 @@ Ideally, you run at least a `postcss-import` to load `compose-css` into your pro
 module.exports = {
     plugins: [
         require("postcss-import"),
+        require("postcss-nested"),
         require("postcss-custom-media"),
         require("postcss-custom-properties")(),
         require("postcss-calc"),
@@ -657,8 +658,7 @@ Configure the displayed symbols with:
         sections.
         </p>
         <details>
-        <summary>
-        The bedding was hardly able to cover it and seemed ready to slide
+        <summary>The bedding was hardly able to cover it and seemed ready to slide
         off any moment.
         </summary>
         <p>

@@ -943,3 +943,19 @@ details[open]>summary::before {
     content: "ᐯ";
     content: var(--summary-expanded-prefix);
 }
+
+
+@media (min-width: 1025px) {
+    details>summary:not(table details>summary):not(pre details>summary)::before {
+        margin-left: calc(-1 * var(--space-1));
+        margin-left: calc(-1 * var(--horizontal-rhythm));
+    }
+}
+
+
+@media (--outdent-breakpoint) {
+    details>summary:not(table details>summary):not(pre details>summary)::before {
+        margin-left: calc(-1 * var(--space-1));
+        margin-left: calc(-1 * var(--horizontal-rhythm));
+    }
+}

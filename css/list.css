@@ -146,6 +146,20 @@ dl.timeline>dd>*.framed::before {
     margin-left: calc(-1 * (var(--timeline-right-gap) + var(--timeline-framed-indent) + var(--timeline-width) * 2 + var(--timeline-framed-padding)));
 }
 
+@media (min-width: 1025px) {
+    dl.timeline::not(dl.timeline.row):not(table dl.timeline):not(pre dl.timeline) {
+        margin-left: calc(-1 * (calc(var(--horizontal-rhythm) - calc(var(--fs-d1) / 2) - 1px) - 1px));
+        margin-left: calc(-1 * (var(--timeline-right-gap) - var(--timeline-width)));
+    }
+}
+
+@media (--outdent-breakpoint) {
+    dl.timeline::not(dl.timeline.row):not(table dl.timeline):not(pre dl.timeline) {
+        margin-left: calc(-1 * (calc(var(--horizontal-rhythm) - calc(var(--fs-d1) / 2) - 1px) - 1px));
+        margin-left: calc(-1 * (var(--timeline-right-gap) - var(--timeline-width)));
+    }
+}
+
 @media (min-width: 601px) {
     dl.timeline.row {
         display: flex;
@@ -346,6 +360,7 @@ ul ul,
 ul ol {
     margin-top: 0;
     margin-bottom: 0;
+    padding-left: var(--horizontal-rhythm);
 }
 
 li {
@@ -454,6 +469,20 @@ ul>li::before {
 
 .outline h6 {
     counter-increment: h6-counter;
+}
+
+@media (min-width: 1025px) {
+    ol:not(ol ol):not(ul ol):not(table ol):not(pre ol), 
+    ul:not(ul ul):not(ol ul):not(table ul):not(pre ul) {
+        padding-left: 0;
+    }  
+}
+
+@media (--outdent-breakpoint) {
+    ol:not(ol ol):not(ul ol):not(table ol):not(pre ol), 
+    ul:not(ul ul):not(ol ul):not(table ul):not(pre ul) {
+        padding-left: 0;
+    }  
 }
 
 ul.indent,

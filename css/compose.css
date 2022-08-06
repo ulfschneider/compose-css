@@ -448,6 +448,8 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
 
 @custom-media --touch-device screen and (hover: none) and (pointer: coarse);
 
+@custom-media --outdent-breakpoint (min-width: 1025px);
+
 :root {
     --space: 1rem;
     --space-factor: 1.66;
@@ -29589,6 +29591,20 @@ details[open]>summary::before {
     content: var(--summary-expanded-prefix);
 }
 
+@media (min-width: 1025px) {
+    details>summary:not(table details>summary):not(pre details>summary)::before {
+        margin-left: calc(-1 * calc(1.66 * 1rem));
+        margin-left: calc(-1 * var(--horizontal-rhythm));
+    }
+}
+
+@media (--outdent-breakpoint) {
+    details>summary:not(table details>summary):not(pre details>summary)::before {
+        margin-left: calc(-1 * calc(1.66 * 1rem));
+        margin-left: calc(-1 * var(--horizontal-rhythm));
+    }
+}
+
 .flex,
 .flex-row {
     display: flex;
@@ -31694,6 +31710,20 @@ dl.timeline>dd>*.framed::before {
     margin-left: calc(-1 * (var(--timeline-right-gap) + var(--timeline-framed-indent) + var(--timeline-width) * 2 + var(--timeline-framed-padding)));
 }
 
+@media (min-width: 1025px) {
+    dl.timeline::not(dl.timeline.row):not(table dl.timeline):not(pre dl.timeline) {
+        margin-left: calc(-1 * (calc(calc(1.66 * 1rem) - calc(.9rem / 2) - 1px) - 1px));
+        margin-left: calc(-1 * (var(--timeline-right-gap) - var(--timeline-width)));
+    }
+}
+
+@media (--outdent-breakpoint) {
+    dl.timeline::not(dl.timeline.row):not(table dl.timeline):not(pre dl.timeline) {
+        margin-left: calc(-1 * (calc(calc(1.66 * 1rem) - calc(.9rem / 2) - 1px) - 1px));
+        margin-left: calc(-1 * (var(--timeline-right-gap) - var(--timeline-width)));
+    }
+}
+
 @media (min-width: 601px) {
     dl.timeline.row {
         display: flex;
@@ -31901,6 +31931,8 @@ ul ul,
 ul ol {
     margin-top: 0;
     margin-bottom: 0;
+    padding-left: calc(1.66 * 1rem);
+    padding-left: var(--horizontal-rhythm);
 }
 
 li {
@@ -32020,6 +32052,20 @@ ul>li::before {
 
 .outline h6 {
     counter-increment: h6-counter;
+}
+
+@media (min-width: 1025px) {
+    ol:not(ol ol):not(ul ol):not(table ol):not(pre ol), 
+    ul:not(ul ul):not(ol ul):not(table ul):not(pre ul) {
+        padding-left: 0;
+    }  
+}
+
+@media (--outdent-breakpoint) {
+    ol:not(ol ol):not(ul ol):not(table ol):not(pre ol), 
+    ul:not(ul ul):not(ol ul):not(table ul):not(pre ul) {
+        padding-left: 0;
+    }  
 }
 
 ul.indent,

@@ -1,6 +1,6 @@
 {
     "name": "compose-css",
-    "version": "28.7.1",
+    "version": "28.8.0",
     "description": "Composable CSS Toolkit",
     "main": "css/compose.css",
     "style": "css/compose.css",
@@ -32,6 +32,7 @@
         "postcss-custom-properties": "^9.2.0",
         "postcss-discard-comments": "^4.0.2",
         "postcss-import": "^12.0.1",
+        "postcss-nested": "^5.0.6",
         "postcss-reporter": "^6.0.1"
     },
     "scripts": {

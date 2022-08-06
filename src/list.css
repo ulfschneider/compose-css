@@ -126,6 +126,12 @@ dl.timeline>dd>*.framed::before {
     margin-left: calc(-1 * (var(--timeline-right-gap) + var(--timeline-framed-indent) + var(--timeline-width) * 2 + var(--timeline-framed-padding)));
 }
 
+@media (--outdent-breakpoint) {
+    dl.timeline::not(dl.timeline.row):not(table dl.timeline):not(pre dl.timeline) {
+        margin-left: calc(-1 * (var(--timeline-right-gap) - var(--timeline-width)));
+    }
+}
+
 
 @media (--mi-sm-breakpoint) {
     dl.timeline.row {
@@ -220,6 +226,7 @@ ul ul,
 ul ol {
     margin-top: 0;
     margin-bottom: 0;
+    padding-left: var(--horizontal-rhythm);
 }
 
 li {
@@ -321,6 +328,14 @@ ul>li::before {
 
 .outline h6 {
     counter-increment: h6-counter;
+}
+
+
+@media (--outdent-breakpoint) {
+    ol:not(ol ol):not(ul ol):not(table ol):not(pre ol), 
+    ul:not(ul ul):not(ol ul):not(table ul):not(pre ul) {
+        padding-left: 0;
+    }  
 }
 
 ul.indent,

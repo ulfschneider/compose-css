@@ -1,5 +1,6 @@
 const { dest, src } = require('gulp');
 const postcss = require('gulp-postcss');
+const postcssNested = require('postcss-nested');
 const postcssImport = require('postcss-import');
 const postcssCustomMedia = require('postcss-custom-media');
 const postcssCustomProperties = require('postcss-custom-properties');
@@ -12,6 +13,7 @@ const processingCSS = () => {
     return src(CSS_SOURCE)
         .pipe(postcss([
             postcssImport(),
+            postcssNested(),
             postcssCustomProperties({preserve: true}),
             postcssCustomMedia({preserve: true})            
         ]))
