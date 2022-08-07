@@ -30,7 +30,7 @@
     --font-variant-numeric: normal;
     --vertical-rhythm: var(--space);
     --vertical-rhythm-plus: var(--space-1);
-    --horizontal-rhythm: var(--space-1);
+    --horizontal-rhythm: calc(2 * var(--space));
     --mrt-paragraph: var(--vertical-rhythm);
     --mrb-paragraph: var(--vertical-rhythm);
     --mrt-h1: var(--vertical-rhythm-plus);
@@ -589,13 +589,13 @@ p+p {
 
 
 .indent p+p {
-    text-indent: var(--space-1);
+    text-indent: calc(2 * var(--space));
     text-indent: var(--horizontal-rhythm);
 }
 
 
 p.indent {
-    text-indent: var(--space-1) !important;
+    text-indent: calc(2 * var(--space)) !important;
     text-indent: var(--horizontal-rhythm) !important;
 }
 
@@ -759,7 +759,7 @@ blockquote p {
 
 
 blockquote p+p {
-    text-indent: var(--space-1);
+    text-indent: calc(2 * var(--space));
     text-indent: var(--horizontal-rhythm);
 }
 
@@ -927,7 +927,7 @@ details>summary::before {
     content: "ᐳ";
     content: var(--summary-collapsed-prefix);
     padding-right: var(--space-d1);
-    min-width: var(--space-1);
+    min-width: calc(2 * var(--space));
     min-width: var(--horizontal-rhythm);
     display: inline-flex;
     justify-content: flex-start;
@@ -948,17 +948,19 @@ details[open]>summary::before {
 
 @media (min-width: 9999px) {
     details>summary:not(details>summary.no-outdent):not(.no-outdent summary):not(table details>summary):not(pre details>summary)::before {
-        margin-left: calc(-1 * var(--space-1));
+        margin-left: calc(-1 * calc(2 * var(--space)));
         margin-left: calc(-1 * var(--horizontal-rhythm));
         justify-content: flex-end;
+        padding-right: var(--space);
     }
 }
 
 
 @media (--outdent-breakpoint) {
     details>summary:not(details>summary.no-outdent):not(.no-outdent summary):not(table details>summary):not(pre details>summary)::before {
-        margin-left: calc(-1 * var(--space-1));
+        margin-left: calc(-1 * calc(2 * var(--space)));
         margin-left: calc(-1 * var(--horizontal-rhythm));
         justify-content: flex-end;
+        padding-right: var(--space);
     }
 }

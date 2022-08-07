@@ -30,7 +30,7 @@
     --font-variant-numeric: normal;
     --vertical-rhythm: var(--space);
     --vertical-rhythm-plus: var(--space-1);
-    --horizontal-rhythm: var(--space-1);
+    --horizontal-rhythm: calc(2 * var(--space));
     --mrt-paragraph: var(--vertical-rhythm);
     --mrb-paragraph: var(--vertical-rhythm);
     --mrt-h1: var(--vertical-rhythm-plus);
@@ -750,5 +750,6 @@ details[open]>summary::before {
     details>summary:not(details>summary.no-outdent):not(.no-outdent summary):not(table details>summary):not(pre details>summary)::before {
         margin-left: calc(-1 * var(--horizontal-rhythm));
         justify-content: flex-end;
+        padding-right: var(--space);
     }
 }

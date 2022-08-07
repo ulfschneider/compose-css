@@ -20,8 +20,10 @@
     --timeline-width: 1px;
     --timeline-blub-border-width: 1px;
     /* column timeline */
-    --timeline-left-gap: calc(var(--timeline-blub-size) / 2);
-    --timeline-right-gap: calc(var(--horizontal-rhythm) - var(--timeline-left-gap) - var(--timeline-width));
+    /*--timeline-left-gap: calc(var(--timeline-blub-size) / 2);*/
+    /*--timeline-right-gap: calc(var(--horizontal-rhythm) - var(--timeline-left-gap) - var(--timeline-width));*/
+    --timeline-right-gap: calc(var(--space) + var(--timeline-blub-size) / 2);
+    --timeline-left-gap: calc(var(--horizontal-rhythm) - var(--timeline-right-gap) - var(--timeline-width));
     --timeline-left-blub-pos: calc(-1 * (var(--timeline-right-gap) + var(--timeline-blub-size) / 2 + var(--timeline-width) / 2));
     --timeline-top-blub-pos: calc(1em * var(--lh-default) / 2 - var(--timeline-blub-size) / 2);
     --timeline-framed-indent: var(--horizontal-rhythm);
@@ -35,7 +37,7 @@
     --timeline-row-framed-indent: var(--timeline-row-y-gap);
     --timeline-row-item-width: var(--space-5);
 
-    --outdent-outline-width: var(--space-3);
+    --outdent-outline-width: var(--space-4);
 }
 
 dl {
@@ -352,12 +354,13 @@ ul>li::before {
 
 @media (--outdent-breakpoint) {
 
-    ol:not(.no-outdent ol):not(ol.no-outdent):not(ol ol):not(ul ol):not(table ol):not(pre ol),
-    ul:not(.no-outdent ol):not(ol.no-outdent):not(ul ul):not(ol ul):not(table ul):not(pre ul) {
+    ol:not(.no-outdent ol):not(ol.no-outdent):not(.indent ol):not(ol.indent):not(ol ol):not(ul ol):not(table ol):not(pre ol),
+    ul:not(.no-outdent ol):not(ol.no-outdent):not(.indent ul):not(ul.indent):not(ul ul):not(ol ul):not(table ul):not(pre ul) {
         padding-left: 0;
 
         & > li::before {
             justify-content: flex-end;
+            padding-right: var(--space);
         }
     }
 }
@@ -371,9 +374,9 @@ ul>li::before {
         h5::before,
         h6::before {
             margin-left: calc(-1 * var(--outdent-outline-width));
+            padding-right: var(--space);
             white-space: nowrap;
             min-width: var(--outdent-outline-width);
-            padding-right: var(--space-d1);
             justify-content: flex-end;
         }
     }
