@@ -450,10 +450,20 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
 
 /* To activate the outdent breakpoint choose a width suitable to 
 your site design. E.g. for a centered layout with a regular center content width
-(--rg-width) an --outdent-breakpoint could set to the value of --rg-breakpoint.
-The initial setting of 9999px for --outdent-breakpoint deactivates outdenting of list elements.*/
+(--rg-width) an --outdent-breakpoint could be set to a value of --rg-breakpoint.
+The initial setting of 9999px for --outdent-breakpoint deactivates outdenting of 
+list elements (ul, ol), timelines (dl.timeline), and summaries (detail>summary)*/
 
 @custom-media --outdent-breakpoint (min-width: 9999px);
+
+/*The --outdent-outline-breakpoint works similar to the --outdent-breakpoint
+except it is only for outlining numbered heading elements like h2, h3, …. Heading elements
+that are enclosed in an .outline class will be outdented when this breakpoint
+is fulfilled. Because the outline numbers of headings might take more space the 
+--outdent-outline-breakpoint will typically be wider than the --outdent-breakpoint! 
+It is also possible to activate only one of the two --outdent… breakpoints*/
+
+@custom-media --outdent-outline-breakpoint (min-width: 9999px);
 
 :root {
     --space: 1rem;
@@ -31600,6 +31610,8 @@ details[open]>summary::before {
     --timeline-row-framed-padding: calc(var(--timeline-framed-padding) / 2);
     --timeline-row-framed-indent: var(--timeline-row-y-gap);
     --timeline-row-item-width: var(--space-5);
+
+    --outdent-outline-width: var(--space-3);
 }
 
 dl {
@@ -32008,8 +32020,8 @@ ul>li::before {
     display: inline-block;
     color: currentColor;
     color: var(--heading-outline-color);
-    padding-right: calc(1rem / 1.66);
-    padding-right: var(--space-d1);
+    margin-right: calc(1rem / 1.66);
+    margin-right: var(--space-d1);
     font-variant-numeric: lining-nums;
 }
 
@@ -32066,14 +32078,44 @@ ul>li::before {
     ol:not(.no-outdent ol):not(ol.no-outdent):not(ol ol):not(ul ol):not(table ol):not(pre ol), 
     ul:not(.no-outdent ol):not(ol.no-outdent):not(ul ul):not(ol ul):not(table ul):not(pre ul) {
         padding-left: 0;
-    }  
+    } 
 }
 
 @media (--outdent-breakpoint) {
     ol:not(.no-outdent ol):not(ol.no-outdent):not(ol ol):not(ul ol):not(table ol):not(pre ol), 
     ul:not(.no-outdent ol):not(ol.no-outdent):not(ul ul):not(ol ul):not(table ul):not(pre ul) {
         padding-left: 0;
-    }  
+    } 
+}
+
+@media (min-width: 9999px) {
+        .outline:not(.outline.no-outdent):not(.no-outdent .outline) h2::before,
+        .outline:not(.outline.no-outdent):not(.no-outdent .outline) h3::before,
+        .outline:not(.outline.no-outdent):not(.no-outdent .outline) h4::before,
+        .outline:not(.outline.no-outdent):not(.no-outdent .outline) h5::before,
+        .outline:not(.outline.no-outdent):not(.no-outdent .outline) h6::before {
+            width: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
+            width: var(--outdent-outline-width);
+            margin-left: calc(-1 * (calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66) + calc(1rem / 1.66)));
+            margin-left: calc(-1 * (var(--outdent-outline-width) + var(--space-d1))); /*include the right margin for the outdent calc*/
+            text-align: right; 
+            white-space: nowrap;
+        }
+}
+
+@media (--outdent-outline-breakpoint) {
+        .outline:not(.outline.no-outdent):not(.no-outdent .outline) h2::before,
+        .outline:not(.outline.no-outdent):not(.no-outdent .outline) h3::before,
+        .outline:not(.outline.no-outdent):not(.no-outdent .outline) h4::before,
+        .outline:not(.outline.no-outdent):not(.no-outdent .outline) h5::before,
+        .outline:not(.outline.no-outdent):not(.no-outdent .outline) h6::before {
+            width: calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66);
+            width: var(--outdent-outline-width);
+            margin-left: calc(-1 * (calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66) + calc(1rem / 1.66)));
+            margin-left: calc(-1 * (var(--outdent-outline-width) + var(--space-d1))); /*include the right margin for the outdent calc*/
+            text-align: right; 
+            white-space: nowrap;
+        }
 }
 
 ul.indent,

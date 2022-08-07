@@ -34,6 +34,8 @@
     --timeline-row-framed-padding: calc(var(--timeline-framed-padding) / 2);
     --timeline-row-framed-indent: var(--timeline-row-y-gap);
     --timeline-row-item-width: var(--space-5);
+
+    --outdent-outline-width: var(--space-3);
 }
 
 dl {
@@ -283,7 +285,7 @@ ul>li::before {
 .outline h6::before {
     display: inline-block;
     color: var(--heading-outline-color);
-    padding-right: var(--space-d1);
+    margin-right: var(--space-d1);
     font-variant-numeric: lining-nums;
 }
 
@@ -336,7 +338,21 @@ ul>li::before {
     ol:not(.no-outdent ol):not(ol.no-outdent):not(ol ol):not(ul ol):not(table ol):not(pre ol), 
     ul:not(.no-outdent ol):not(ol.no-outdent):not(ul ul):not(ol ul):not(table ul):not(pre ul) {
         padding-left: 0;
-    }  
+    } 
+}
+@media (--outdent-outline-breakpoint) {
+    .outline:not(.outline.no-outdent):not(.no-outdent .outline) {
+        h2::before,
+        h3::before,
+        h4::before,
+        h5::before,
+        h6::before {
+            width: var(--outdent-outline-width);
+            margin-left: calc(-1 * (var(--outdent-outline-width) + var(--space-d1))); /*include the right margin for the outdent calc*/
+            text-align: right; 
+            white-space: nowrap;
+        }
+    }
 }
 
 ul.indent,

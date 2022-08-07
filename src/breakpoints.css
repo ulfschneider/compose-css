@@ -22,6 +22,15 @@
 
  /* To activate the outdent breakpoint choose a width suitable to 
 your site design. E.g. for a centered layout with a regular center content width
-(--rg-width) an --outdent-breakpoint could set to the value of --rg-breakpoint.
-The initial setting of 9999px for --outdent-breakpoint deactivates outdenting of list elements.*/
+(--rg-width) an --outdent-breakpoint could be set to a value of --rg-breakpoint.
+The initial setting of 9999px for --outdent-breakpoint deactivates outdenting of 
+list elements (ul, ol), timelines (dl.timeline), and summaries (detail>summary)*/
 @custom-media --outdent-breakpoint (min-width: 9999px);
+
+/*The --outdent-outline-breakpoint works similar to the --outdent-breakpoint
+except it is only for outlining numbered heading elements like h2, h3, …. Heading elements
+that are enclosed in an .outline class will be outdented when this breakpoint
+is fulfilled. Because the outline numbers of headings might take more space the 
+--outdent-outline-breakpoint will typically be wider than the --outdent-breakpoint! 
+It is also possible to activate only one of the two --outdent… breakpoints*/ 
+@custom-media --outdent-outline-breakpoint (min-width: 9999px);

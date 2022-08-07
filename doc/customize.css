@@ -53,5 +53,8 @@ hr {
 }
 
 @custom-media --outdent-breakpoint (min-width: 1350px);
+@custom-media --outdent-outline-breakpoint (min-width: 1500px);
+
+
 
 

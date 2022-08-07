@@ -680,7 +680,7 @@ Configure the displayed symbols with:
 
 ## Lists
 
-Lists (`ol`, `ul`), timelines (`dl.timeline`) and the `summary` of a `details` section can have an *outdent* property that will left-align the first level text of those elements with the text above and below of the list and summary. The left-aligning requires to outdent the order numbers, the bullets, and the summary indication which is only desired if the text has enough left margin. By default the outdent of those elements is deactivated. Activate it by assigning a value to the `--outdent-breakpoint`.
+Lists (`ol`, `ul`), timelines (`dl.timeline`), the `summary` of a `details` section (`details>summary`), and outline numbers of heading elements (`.outline h2`, `.outline h3`, …) can have an *outdent* property that will left-align the first level text of those elements with the text above and below of the list and summary. The left-aligning requires to outdent the order numbers, the bullets, and the summary indication which is only desired if the text has enough left margin. By default the outdent of those elements is deactivated. Activate it by assigning a value to the `--outdent-breakpoint`.
 
 To activate the outdent breakpoint choose a width suitable to your site design. E.g. for a centered layout with a regular center content width (`--rg-width`) an `--outdent-breakpoint` could set to the value equal to `--rg-breakpoint`. The initial setting of `9999px` for `--outdent-breakpoint` deactivates outdenting of list elements.
 
@@ -690,7 +690,10 @@ The below example sets the `--outdent-breakpoint` to a value equal to `--rg-brea
 @custom-media --outdent-breakpoint (min-width: 769px);
 ```
 
-To avoid outdenting only for certain elements assign the CSS class `.no-outdent` to the element itself (`ol`, `ul`, `dl.timeline`, `details`) or to a parent of the element. 
+To avoid outdenting only for certain elements assign the CSS class `.no-outdent` to the element itself (`ol`, `ul`, `dl.timeline`, `details`, `.outline`) or to a parent of the element. 
+
+There is another breakpoint `--outdent-outline-breakpoint` which initially is also deactivated. `--outdent-outline-breakpoint` works similar to the `--outdent-breakpoint` except it is only for outlining numbered heading elements like `h2`, `h3`, …. Heading elements that are enclosed in an `.outline` class will be outdented when this breakpoint is fulfilled. Because the outline numbers of headings might take more space the 
+`--outdent-outline-breakpoint` will typically be wider than the `--outdent-breakpoint` . It is of course possible to activate only either one of the two `--outdent…` breakpoints*/ 
 
 
 ### Unordered list
@@ -1655,6 +1658,10 @@ Each breakpoint *can* trigger a change in base font size. The wider the screen, 
 <span>Hello World</span>
 </label>
 </div>
+
+### Hello world
+
+#### And another world
 
 <div class="mry-vrplus">
 <label for="text">A text input</label>

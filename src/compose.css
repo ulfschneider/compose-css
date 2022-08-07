@@ -29,7 +29,7 @@
 @import "typography";
 @import "flex-box";
 @import "flex-box-breakpoints";
-@import "list";
+@import "list.scss";
 @import "pointer";
 @import "img";
 @import "media";
