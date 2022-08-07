@@ -448,9 +448,12 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
 
 @custom-media --touch-device screen and (hover: none) and (pointer: coarse);
 
-/* This is --mi-rg-breakpoint + some space*/
+/* To activate the outdent breakpoint choose a width suitable to 
+your site design. E.g. for a centered layout with a regular center content width
+(--rg-width) an --outdent-breakpoint could set to the value of --rg-breakpoint.
+The initial setting of 9999px for --outdent-breakpoint deactivates outdenting of list elements.*/
 
-@custom-media --outdent-breakpoint (min-width: 800px);
+@custom-media --outdent-breakpoint (min-width: 9999px);
 
 :root {
     --space: 1rem;
@@ -29593,15 +29596,15 @@ details[open]>summary::before {
     content: var(--summary-expanded-prefix);
 }
 
-@media (min-width: 800px) {
-    details>summary:not(table details>summary):not(pre details>summary)::before {
+@media (min-width: 9999px) {
+    details>summary:not(details>summary.no-outdent):not(.no-outdent summary):not(table details>summary):not(pre details>summary)::before {
         margin-left: calc(-1 * calc(1.66 * 1rem));
         margin-left: calc(-1 * var(--horizontal-rhythm));
     }
 }
 
 @media (--outdent-breakpoint) {
-    details>summary:not(table details>summary):not(pre details>summary)::before {
+    details>summary:not(details>summary.no-outdent):not(.no-outdent summary):not(table details>summary):not(pre details>summary)::before {
         margin-left: calc(-1 * calc(1.66 * 1rem));
         margin-left: calc(-1 * var(--horizontal-rhythm));
     }
@@ -31900,15 +31903,15 @@ dl.timeline>dd>*.framed::before {
     }
 }
 
-@media (min-width: 800px) {
-    dl.timeline:not(dl.timeline.row):not(table dl.timeline):not(pre dl.timeline) {
+@media (min-width: 9999px) {
+    dl.timeline:not(dl.timeline.no-outdent):not(.no-outdent dl.timeline):not(dl.timeline.row):not(table dl.timeline):not(pre dl.timeline) {
         margin-left: calc(-1 * (calc(calc(1.66 * 1rem) - calc(.9rem / 2) - 1px) - 1px));
         margin-left: calc(-1 * (var(--timeline-right-gap) - var(--timeline-width)));
     }
 }
 
 @media (--outdent-breakpoint) {
-    dl.timeline:not(dl.timeline.row):not(table dl.timeline):not(pre dl.timeline) {
+    dl.timeline:not(dl.timeline.no-outdent):not(.no-outdent dl.timeline):not(dl.timeline.row):not(table dl.timeline):not(pre dl.timeline) {
         margin-left: calc(-1 * (calc(calc(1.66 * 1rem) - calc(.9rem / 2) - 1px) - 1px));
         margin-left: calc(-1 * (var(--timeline-right-gap) - var(--timeline-width)));
     }
@@ -32059,16 +32062,16 @@ ul>li::before {
     counter-increment: h6-counter;
 }
 
-@media (min-width: 800px) {
-    ol:not(ol ol):not(ul ol):not(table ol):not(pre ol), 
-    ul:not(ul ul):not(ol ul):not(table ul):not(pre ul) {
+@media (min-width: 9999px) {
+    ol:not(.no-outdent ol):not(ol.no-outdent):not(ol ol):not(ul ol):not(table ol):not(pre ol), 
+    ul:not(.no-outdent ol):not(ol.no-outdent):not(ul ul):not(ol ul):not(table ul):not(pre ul) {
         padding-left: 0;
     }  
 }
 
 @media (--outdent-breakpoint) {
-    ol:not(ol ol):not(ul ol):not(table ol):not(pre ol), 
-    ul:not(ul ul):not(ol ul):not(table ul):not(pre ul) {
+    ol:not(.no-outdent ol):not(ol.no-outdent):not(ol ol):not(ul ol):not(table ol):not(pre ol), 
+    ul:not(.no-outdent ol):not(ol.no-outdent):not(ul ul):not(ol ul):not(table ul):not(pre ul) {
         padding-left: 0;
     }  
 }

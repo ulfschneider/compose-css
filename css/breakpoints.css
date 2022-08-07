@@ -30,6 +30,9 @@
 
 @custom-media --touch-device screen and (hover: none) and (pointer: coarse);
 
-/* This is --mi-rg-breakpoint + some space*/
+/* To activate the outdent breakpoint choose a width suitable to 
+your site design. E.g. for a centered layout with a regular center content width
+(--rg-width) an --outdent-breakpoint could set to the value of --rg-breakpoint.
+The initial setting of 9999px for --outdent-breakpoint deactivates outdenting of list elements.*/
 
-@custom-media --outdent-breakpoint (min-width: 800px);
+@custom-media --outdent-breakpoint (min-width: 9999px);
