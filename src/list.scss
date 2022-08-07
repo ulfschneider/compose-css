@@ -354,8 +354,9 @@ ul>li::before {
 
 @media (--outdent-breakpoint) {
 
-    ol:not(.no-outdent ol):not(ol.no-outdent):not(.indent ol):not(ol.indent):not(ol ol):not(ul ol):not(table ol):not(pre ol),
-    ul:not(.no-outdent ol):not(ol.no-outdent):not(.indent ul):not(ul.indent):not(ul ul):not(ol ul):not(table ul):not(pre ul) {
+    ol:not(.no-outdent ol):not(ol.no-outdent):not(ol.indent):not(ol ol):not(ul ol):not(table ol):not(pre ol),
+    ul:not(.no-outdent ol):not(ol.no-outdent):not(ul.indent):not(ul ul):not(ol ul):not(table ul):not(pre ul) {
+        
         padding-left: 0;
 
         & > li::before {

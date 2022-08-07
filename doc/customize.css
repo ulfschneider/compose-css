@@ -42,7 +42,6 @@ hr {
 .table-of-contents li::before {
     content: var(--h-counter);
     padding-right: var(--space-d2) !important;
-    justify-content: flex-end;
 }
 
 .table-of-contents li li::before {
