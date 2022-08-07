@@ -270,6 +270,7 @@ ol>li::before {
     font-variant-numeric: lining-nums;
     font-size: smaller;
     font-weight: var(--font-weight-bold);
+    white-space: nowrap;
 }
 
 ul>li::before {
@@ -282,6 +283,7 @@ ul>li::before {
     align-items: center;
     color: var(--li-prefix-color);
     font-size: smaller;
+    white-space: nowrap;
 }
 
 *.outline {
@@ -295,10 +297,12 @@ ul>li::before {
     h4::before,
     h5::before,
     h6::before {
-        display: inline-block;
+        display: inline-flex;
         color: var(--heading-outline-color);
-        margin-right: var(--space-d1);
+        padding-right: var(--space-d1);
         font-variant-numeric: lining-nums;
+        align-items: baseline;
+        justify-content: flex-start;
     }
 
     h2::before {
@@ -351,6 +355,10 @@ ul>li::before {
     ol:not(.no-outdent ol):not(ol.no-outdent):not(ol ol):not(ul ol):not(table ol):not(pre ol),
     ul:not(.no-outdent ol):not(ol.no-outdent):not(ul ul):not(ol ul):not(table ul):not(pre ul) {
         padding-left: 0;
+
+        & > li::before {
+            justify-content: flex-end;
+        }
     }
 }
 
@@ -362,11 +370,11 @@ ul>li::before {
         h4::before,
         h5::before,
         h6::before {
-            width: var(--outdent-outline-width);
-            margin-left: calc(-1 * (var(--outdent-outline-width) + var(--space-d1)));
-            /*include the right margin for the outdent calc*/
-            text-align: right;
+            margin-left: calc(-1 * var(--outdent-outline-width));
             white-space: nowrap;
+            min-width: var(--outdent-outline-width);
+            padding-right: var(--space-d1);
+            justify-content: flex-end;
         }
     }
 }

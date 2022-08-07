@@ -930,12 +930,13 @@ details>summary::before {
     min-width: var(--space-1);
     min-width: var(--horizontal-rhythm);
     display: inline-flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     color: var(--li-prefix-color);
     font-weight: 700;
     font-weight: var(--font-weight-bold);
     font-size: smaller;
+    white-space: nowrap;
 }
 
 
@@ -949,6 +950,7 @@ details[open]>summary::before {
     details>summary:not(details>summary.no-outdent):not(.no-outdent summary):not(table details>summary):not(pre details>summary)::before {
         margin-left: calc(-1 * var(--space-1));
         margin-left: calc(-1 * var(--horizontal-rhythm));
+        justify-content: flex-end;
     }
 }
 
@@ -957,5 +959,6 @@ details[open]>summary::before {
     details>summary:not(details>summary.no-outdent):not(.no-outdent summary):not(table details>summary):not(pre details>summary)::before {
         margin-left: calc(-1 * var(--space-1));
         margin-left: calc(-1 * var(--horizontal-rhythm));
+        justify-content: flex-end;
     }
 }

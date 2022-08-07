@@ -647,6 +647,8 @@ Configure the displayed symbols with:
 
 ### Details and Summary
 
+Details and summary
+
 <details>
 <summary>One morning</summary>
     <p>when Gregor Samsa woke from troubled dreams, he found himself
@@ -693,7 +695,13 @@ The below example sets the `--outdent-breakpoint` to a value equal to `--rg-brea
 To avoid outdenting only for certain elements assign the CSS class `.no-outdent` to the element itself (`ol`, `ul`, `dl.timeline`, `details`, `.outline`) or to a parent of the element. 
 
 There is another breakpoint `--outdent-outline-breakpoint` which initially is also deactivated. `--outdent-outline-breakpoint` works similar to the `--outdent-breakpoint` except it is only for outlining numbered heading elements like `h2`, `h3`, …. Heading elements that are enclosed in an `.outline` class will be outdented when this breakpoint is fulfilled. Because the outline numbers of headings might take more space the 
-`--outdent-outline-breakpoint` will typically be wider than the `--outdent-breakpoint` . It is of course possible to activate only either one of the two `--outdent…` breakpoints*/ 
+`--outdent-outline-breakpoint` will typically be wider than the `--outdent-breakpoint` . It is of course possible to activate only either one of the two `--outdent…` breakpoints.
+
+The below example sets the `--outdent-outline-breakpoint`.
+
+```css
+@custom-media --outdent-outline-breakpoint (min-width: 900px);
+```
 
 
 ### Unordered list

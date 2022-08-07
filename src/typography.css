@@ -734,11 +734,12 @@ details>summary::before {
     padding-right: var(--space-d1);
     min-width: var(--horizontal-rhythm);
     display: inline-flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     color: var(--li-prefix-color);
     font-weight: var(--font-weight-bold);
     font-size: smaller;
+    white-space: nowrap;
 }
 
 details[open]>summary::before {
@@ -748,5 +749,6 @@ details[open]>summary::before {
 @media (--outdent-breakpoint) {
     details>summary:not(details>summary.no-outdent):not(.no-outdent summary):not(table details>summary):not(pre details>summary)::before {
         margin-left: calc(-1 * var(--horizontal-rhythm));
+        justify-content: flex-end;
     }
 }
