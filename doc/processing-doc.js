@@ -20,7 +20,8 @@ function getMarkdownLib() {
             html: true,
             breaks: true,
             linkify: true,
-            typographer: true
+            typographer: true,
+            quotes: "„“‚‘"
         })
         .use(markdownItAnchor, {
             permalink: true,

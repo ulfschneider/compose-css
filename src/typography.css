@@ -56,8 +56,8 @@
     --mrt-hr: var(--vertical-rhythm-plus);
     --mrb-hr: var(--vertical-rhythm-plus);
     --hr-content: "*\0000a0\0000a0\0000a0\0000a0*\0000a0\0000a0\0000a0\0000a0*";
-    --quotes: """ """"'""'";
-    --quotes-de: """ """"'""'";
+    --quotes: "„" "“" "‚" "‘";
+    --quotes-de: "„" "“" "‚" "‘";
     --scroll-margin-top: var(--vertical-rhythm);
     --outline-width: var(--space-d3);
     --outline: var(--outline-width) solid var(--outline-color);

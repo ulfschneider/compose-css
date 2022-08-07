@@ -56,8 +56,8 @@
     --mrt-hr: var(--vertical-rhythm-plus);
     --mrb-hr: var(--vertical-rhythm-plus);
     --hr-content: "*\0000a0\0000a0\0000a0\0000a0*\0000a0\0000a0\0000a0\0000a0*";
-    --quotes: """ """"'""'";
-    --quotes-de: """ """"'""'";
+    --quotes: "„" "“" "‚" "‘";
+    --quotes-de: "„" "“" "‚" "‘";
     --scroll-margin-top: var(--vertical-rhythm);
     --outline-width: var(--space-d3);
     --outline: var(--outline-width) solid var(--outline-color);
@@ -767,7 +767,7 @@ blockquote p+p {
 q,
 .q,
 .quote {
-    quotes: """ """"'""'";
+    quotes: "„" "“" "‚" "‘";
     quotes: var(--quotes);
     font-style: italic;
     font-style: var(--quote-font-style);
@@ -778,7 +778,7 @@ html[lang="de-DE"] q,
 html[lang="de-DE"] .q,
 html[lang="de-DE"] .quote,
 html[lang="de-DE"] blockquote {
-    quotes: """ """"'""'";
+    quotes: "„" "“" "‚" "‘";
     quotes: var(--quotes-de);
 }
 
