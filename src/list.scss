@@ -16,7 +16,7 @@
     --h6-counter: counter(h2-counter) var(--h-counter-delimiter) counter(h3-counter) var(--h-counter-delimiter) counter(h4-counter) var(--h-counter-delimiter) counter(h5-counter) var(--h-counter-delimiter) counter(h6-counter);
 
     /* timeline */
-    --timeline-blub-size: var(--fs-d1); 
+    --timeline-blub-size: var(--fs-d1);
     --timeline-width: 1px;
     --timeline-blub-border-width: 1px;
     /* column timeline */
@@ -54,7 +54,7 @@ table dd {
     margin-left: 0;
 }
 
-dd+dt, 
+dd+dt,
 dt+dt {
     margin-top: var(--mrt-list);
 }
@@ -100,7 +100,7 @@ dl.timeline>dt::before {
     margin-top: var(--timeline-top-blub-pos);
     background-color: var(--timeline-blub-background);
     border: var(--timeline-blub-border-width) solid var(--timeline-blub-color);
-    z-index: 1000;    
+    z-index: 1000;
 }
 
 dl.timeline.framed>dt::before {
@@ -139,7 +139,8 @@ dl.timeline>dd>*.framed::before {
         max-width: unset;
         font-size: smaller;
         max-width: unset;
-    }    
+    }
+
     dl.timeline.row>dt,
     dl.timeline.row>dd {
         flex-shrink: 1;
@@ -147,12 +148,15 @@ dl.timeline>dd>*.framed::before {
         border-bottom: var(--timeline-width) solid var(--timeline-color);
         padding: calc(3 * var(--timeline-row-y-gap)) var(--timeline-row-x-gap) var(--timeline-row-y-gap) var(--timeline-row-x-gap);
     }
+
     dl.timeline.row>:first-child {
         padding-left: 0;
     }
+
     dl.timeline.row>dt::before {
         display: none;
     }
+
     dl.timeline.row>dt::after {
         border-radius: 50%;
         content: "";
@@ -166,18 +170,21 @@ dl.timeline>dd>*.framed::before {
         background-color: var(--timeline-blub-background);
         border: var(--timeline-blub-border-width) solid var(--timeline-blub-color);
         z-index: 1000;
-    }  
+    }
+
     dl.timeline.row>dt>*,
     dl.timeline.row>dd>* {
         margin: 0;
         padding: 0;
         background: var(--base-background);
     }
+
     dl.timeline.row>dt>*+*,
     dl.timeline.row>dd>*+* {
         margin-top: 1em;
         text-indent: 0;
     }
+
     dl.timeline.row>dt>.framed,
     dl.timeline.row>dd>.framed {
         margin: 0;
@@ -185,14 +192,17 @@ dl.timeline>dd>*.framed::before {
         background: var(--base-background);
         padding: calc(var(--timeline-row-framed-padding));
     }
+
     dl.timeline.row>dt>.framed+*,
     dl.timeline.row>dd>.framed+* {
         margin-top: calc(2 * var(--timeline-row-framed-indent));
     }
+
     dl.timeline.row>dt>.framed::before,
     dl.timeline.row>dd>.framed::before {
         display: none;
     }
+
     dl.timeline.row>dt>.framed::after,
     dl.timeline.row>dd>.framed::after {
         content: "";
@@ -278,78 +288,84 @@ ul>li::before {
     counter-reset: h2-counter;
 }
 
-.outline h2::before,
-.outline h3::before,
-.outline h4::before,
-.outline h5::before,
-.outline h6::before {
-    display: inline-block;
-    color: var(--heading-outline-color);
-    margin-right: var(--space-d1);
-    font-variant-numeric: lining-nums;
-}
+.outline {
 
-.outline h2::before {
-    content: var(--h2-counter);
-}
+    h2::before,
+    h3::before,
+    h4::before,
+    h5::before,
+    h6::before {
+        display: inline-block;
+        color: var(--heading-outline-color);
+        margin-right: var(--space-d1);
+        font-variant-numeric: lining-nums;
+    }
 
-.outline h2 {
-    counter-increment: h2-counter;
-    counter-reset: h3-counter;
-}
+    h2::before {
+        content: var(--h2-counter);
+    }
 
-.outline h3::before {
-    content: var(--h3-counter);
-}
+    h2 {
+        counter-increment: h2-counter;
+        counter-reset: h3-counter;
+    }
 
-.outline h3 {
-    counter-increment: h3-counter;
-    counter-reset: h4-counter;
-}
+    h3::before {
+        content: var(--h3-counter);
+    }
 
-.outline h4::before {
-    content: var(--h4-counter);
-}
+    h3 {
+        counter-increment: h3-counter;
+        counter-reset: h4-counter;
+    }
 
-.outline h4 {
-    counter-increment: h4-counter;
-    counter-reset: h5-counter;
-}
+    h4::before {
+        content: var(--h4-counter);
+    }
 
-.outline h5::before {
-    content: var(--h5-counter);
-}
+    h4 {
+        counter-increment: h4-counter;
+        counter-reset: h5-counter;
+    }
 
-.outline h5 {
-    counter-increment: h5-counter;
-    counter-reset: h6-counter;
-}
+    h5::before {
+        content: var(--h5-counter);
+    }
 
-.outline h6::before {
-    content: var(--h6-counter);
-}
+    h5 {
+        counter-increment: h5-counter;
+        counter-reset: h6-counter;
+    }
 
-.outline h6 {
-    counter-increment: h6-counter;
-}
+    h6::before {
+        content: var(--h6-counter);
+    }
 
+    h6 {
+        counter-increment: h6-counter;
+    }
+}
 
 @media (--outdent-breakpoint) {
-    ol:not(.no-outdent ol):not(ol.no-outdent):not(ol ol):not(ul ol):not(table ol):not(pre ol), 
+
+    ol:not(.no-outdent ol):not(ol.no-outdent):not(ol ol):not(ul ol):not(table ol):not(pre ol),
     ul:not(.no-outdent ol):not(ol.no-outdent):not(ul ul):not(ol ul):not(table ul):not(pre ul) {
         padding-left: 0;
-    } 
+    }
 }
+
 @media (--outdent-outline-breakpoint) {
     .outline:not(.outline.no-outdent):not(.no-outdent .outline) {
+
         h2::before,
         h3::before,
         h4::before,
         h5::before,
         h6::before {
             width: var(--outdent-outline-width);
-            margin-left: calc(-1 * (var(--outdent-outline-width) + var(--space-d1))); /*include the right margin for the outdent calc*/
-            text-align: right; 
+            margin-left: calc(-1 * (var(--outdent-outline-width) + var(--space-d1)));
+            /*include the right margin for the outdent calc*/
+            text-align: right;
             white-space: nowrap;
         }
     }
@@ -378,19 +394,23 @@ ol.indent li::before {
 }
 
 @media (--mx-sm-breakpoint) {
+
     ul,
     ol {
         padding-left: 0;
     }
+
     li>ul,
     li>ol {
         padding-left: var(--horizontal-rhythm);
     }
+
     ul li::before,
     ol li::before,
     dl:not(dl.timeline) dd {
         margin-left: 0;
     }
+
     ol li::before {
         font-weight: bold;
     }
