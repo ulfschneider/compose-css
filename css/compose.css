@@ -212,9 +212,12 @@ form .error {
     font-weight: normal;
 }
 
-form .error {
+form .error:not(.group.error) {
     color: crimson;
     color: var(--error-color);
+}
+
+form .error {
     border-left: 3px solid crimson;
     border-left: var(--outline-width) solid var(--error-color);
     padding-left: calc(calc(1rem / 1.66) / 1.66);

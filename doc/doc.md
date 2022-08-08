@@ -1671,7 +1671,7 @@ Each breakpoint *can* trigger a change in base font size. The wider the screen, 
 
 #### And another world
 
-<div class="mry-vrplus">
+<div class="mry-vrplus group error">
 <label for="text">A text input</label>
 <div class="desc">Please provide simple text</div>
 <div class="error">Here would be the error message – in case of</div>

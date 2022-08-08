@@ -130,8 +130,11 @@ form .error {
     font-weight: normal;
 }
 
-form .error {
+form .error:not(.group.error) {
     color: var(--error-color);
+}
+
+form .error {
     border-left: var(--outline-width) solid var(--error-color);
     padding-left: var(--space-d2);
     margin-left: calc(-1 * (var(--space-d2) + var(--outline-width)));
