@@ -201,7 +201,7 @@ label.custom-control,
 }
 
 form .desc,
-form .error {
+form .error:not(form .group.error) {
     color: hsl(0, 0%, calc(53% - calc(53% / 7)));
     color: var(--description-color);
     line-height: calc((calc(1.66 * 1) - 1) / 3 + 1);
@@ -212,14 +212,14 @@ form .error {
     margin-bottom: var(--space-d2);
 }
 
-form .error:not(.group.error) {
+form .error:not(form .group.error) {
     color: crimson;
     color: var(--error-color);
     font-weight: 700;
     font-weight: var(--font-weight-bold);
 }
 
-form .error:not(form .group .error) {
+form .error:not(form .group .error) { /* mind the space between .group and .error*/
     border-left: 3px solid crimson;
     border-left: var(--outline-width) solid var(--error-color);
     padding-left: calc(calc(1rem / 1.66) / 1.66);

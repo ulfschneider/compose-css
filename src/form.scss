@@ -123,19 +123,19 @@ label.custom-control,
 
 
 form .desc,
-form .error {
+form .error:not(form .group.error) {
     color: var(--description-color);
     line-height: var(--lh-1);
     margin-top: var(--space-d2);
     margin-bottom: var(--space-d2);
 }
 
-form .error:not(.group.error) {
+form .error:not(form .group.error) {
     color: var(--error-color);
     font-weight: var(--font-weight-bold);
 }
 
-form .error:not(form .group .error) {
+form .error:not(form .group .error) { /* mind the space between .group and .error*/
     border-left: var(--outline-width) solid var(--error-color);
     padding-left: var(--space-d2);
     margin-left: calc(-1 * (var(--space-d2) + var(--outline-width)));
