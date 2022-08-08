@@ -1,5 +1,5 @@
 @import "reset";
-@import "form";
+@import "form.scss";
 @import "breakpoints";
 @import "space";
 @import "type-scale";

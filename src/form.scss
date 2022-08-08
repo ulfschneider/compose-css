@@ -2,11 +2,11 @@
     --form-font-family: var(--font-family);
     --form-font-size: var(--fs);
     --form-radius: 0px;
-    --form-button-pdx: var(--space-d2);
-    --form-button-pdy: var(--space-d2);
+    --form-component-pdx: var(--space-d2);
+    --form-component-pdy: var(--space-d2);    
     --label-line-height: var(--lh-2);
     --button-line-height: var(--lh-2);
-    --custom-check-line-height: var(--label-line-height);    
+    --custom-check-line-height: var(--label-line-height);
     --custom-check-space: .1em;
     --custom-check-size: 1em;
     --custom-check-pos: calc((var(--custom-check-line-height) * 1em - var(--custom-check-size)) / 2);
@@ -62,9 +62,9 @@ select {
     vertical-align: baseline;
     background: var(--form-button-background);
     color: var(--form-button-color);
-    padding: var(--form-button-pdx) var(--form-button-pdy);
+    padding: var(--form-component-pdy) var(--form-component-pdx);
     cursor: pointer;
-    transition: filter var(--transition-duration) ease-out;    
+    transition: filter var(--transition-duration) ease-out;
     line-height: var(--button-line-height);
 }
 
@@ -78,6 +78,7 @@ select:disabled {
 }
 
 @media(hover: hover) {
+
     input[type=submit]:hover:not(:disabled),
     input[type=reset]:hover:not(:disabled),
     button:hover:not(:disabled),
@@ -106,7 +107,7 @@ select:active:not(:disabled) {
 label:not(.custom-control),
 .label:not(.custom-control),
 legend {
-    vertical-align: baseline;    
+    vertical-align: baseline;
     font-weight: var(--font-weight-bold);
     color: var(--form-label-color);
     line-height: var(--label-line-height);
@@ -127,17 +128,32 @@ form .error {
     line-height: var(--lh-1);
     margin-top: var(--space-d2);
     margin-bottom: var(--space-d2);
-    font-weight: normal;
 }
 
 form .error:not(.group.error) {
     color: var(--error-color);
+    font-weight: var(--font-weight-bold);
 }
 
-form .error {
+form .error:not(form .group .error) {
     border-left: var(--outline-width) solid var(--error-color);
     padding-left: var(--space-d2);
     margin-left: calc(-1 * (var(--space-d2) + var(--outline-width)));
+}
+
+form .error {
+    input[type=text],
+    input[type=email],
+    input[type=number],
+    input[type=password],
+    input[type=search],
+    input[type=tel],
+    input[type=url],
+    input[list],
+    textarea {
+        border: 2px solid var(--error-color);
+        padding: calc(var(--form-component-pdy) - 1px) calc(var(--form-component-pdx) - 1px);
+    }
 }
 
 
@@ -151,19 +167,19 @@ input[type=url],
 input[list] {
     border: 1px solid var(--form-field-border-color);
     vertical-align: middle;
-    padding: var(--form-button-pdy);
+    padding: var(--form-component-pdy) var(--form-component-pdx);
     line-height: var(--lh);
     border-radius: 0;
     -webkit-border-radius: 0;
     background: var(--form-field-background);
-    color: var(--form-field-color);    
+    color: var(--form-field-color);
 }
 
 textarea {
-    line-height: var(--lh-2);    
+    line-height: var(--lh-2);
     border: 1px solid var(--form-field-border-color);
     border-radius: 0;
-    padding: var(--form-button-pdy);
+    padding: var(--form-component-pdy) var(--form-component-pdx);
     -webkit-border-radius: 0;
     resize: none;
     background: var(--form-field-background);
@@ -274,7 +290,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     border-top-color: transparent;
     opacity: 0;
     background: transparent;
-} 
+}
 
 /* select */
 .custom-control input[type=radio]+*::after {
@@ -303,7 +319,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
 .custom-control input[type=checkbox]:checked+*::before {
     background: currentColor;
 }
- 
+
 .custom-control input[type=checkbox]:checked+*::after,
 .custom-control input[type=radio]:checked+*::after {
     opacity: 1;

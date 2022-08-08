@@ -59,11 +59,11 @@ h6 {
     --form-font-family: var(--font-family);
     --form-font-size: var(--fs);
     --form-radius: 0px;
-    --form-button-pdx: var(--space-d2);
-    --form-button-pdy: var(--space-d2);
+    --form-component-pdx: var(--space-d2);
+    --form-component-pdy: var(--space-d2);    
     --label-line-height: var(--lh-2);
     --button-line-height: var(--lh-2);
-    --custom-check-line-height: var(--label-line-height);    
+    --custom-check-line-height: var(--label-line-height);
     --custom-check-space: .1em;
     --custom-check-size: 1em;
     --custom-check-pos: calc((var(--custom-check-line-height) * 1em - var(--custom-check-size)) / 2);
@@ -130,11 +130,11 @@ select {
     color: white;
     color: var(--form-button-color);
     padding: calc(calc(1rem / 1.66) / 1.66) calc(calc(1rem / 1.66) / 1.66);
-    padding: var(--form-button-pdx) var(--form-button-pdy);
+    padding: var(--form-component-pdy) var(--form-component-pdx);
     cursor: pointer;
     transition: filter .14s ease-out;
-    transition: filter var(--transition-duration) ease-out;    
-    line-height: calc((calc(1.66 * 1) - 1) / 3 * 2 + 1);    
+    transition: filter var(--transition-duration) ease-out;
+    line-height: calc((calc(1.66 * 1) - 1) / 3 * 2 + 1);
     line-height: var(--button-line-height);
 }
 
@@ -149,6 +149,7 @@ select:disabled {
 }
 
 @media(hover: hover) {
+
     input[type=submit]:hover:not(:disabled),
     input[type=reset]:hover:not(:disabled),
     button:hover:not(:disabled),
@@ -180,8 +181,8 @@ select:active:not(:disabled) {
 label:not(.custom-control),
 .label:not(.custom-control),
 legend {
-    vertical-align: baseline;    
-    font-weight: 700;    
+    vertical-align: baseline;
+    font-weight: 700;
     font-weight: var(--font-weight-bold);
     color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
     color: var(--form-label-color);
@@ -209,15 +210,16 @@ form .error {
     margin-top: var(--space-d2);
     margin-bottom: calc(calc(1rem / 1.66) / 1.66);
     margin-bottom: var(--space-d2);
-    font-weight: normal;
 }
 
 form .error:not(.group.error) {
     color: crimson;
     color: var(--error-color);
+    font-weight: 700;
+    font-weight: var(--font-weight-bold);
 }
 
-form .error {
+form .error:not(form .group .error) {
     border-left: 3px solid crimson;
     border-left: var(--outline-width) solid var(--error-color);
     padding-left: calc(calc(1rem / 1.66) / 1.66);
@@ -225,6 +227,21 @@ form .error {
     margin-left: calc(-1 * (calc(calc(1rem / 1.66) / 1.66) + 3px));
     margin-left: calc(-1 * (var(--space-d2) + var(--outline-width)));
 }
+
+form .error input[type=text],
+    form .error input[type=email],
+    form .error input[type=number],
+    form .error input[type=password],
+    form .error input[type=search],
+    form .error input[type=tel],
+    form .error input[type=url],
+    form .error input[list],
+    form .error textarea {
+        border: 2px solid crimson;
+        border: 2px solid var(--error-color);
+        padding: calc(calc(calc(1rem / 1.66) / 1.66) - 1px) calc(calc(calc(1rem / 1.66) / 1.66) - 1px);
+        padding: calc(var(--form-component-pdy) - 1px) calc(var(--form-component-pdx) - 1px);
+    }
 
 input[type=text],
 input[type=email],
@@ -237,8 +254,8 @@ input[list] {
     border: 1px solid hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
     border: 1px solid var(--form-field-border-color);
     vertical-align: middle;
-    padding: calc(calc(1rem / 1.66) / 1.66);
-    padding: var(--form-button-pdy);
+    padding: calc(calc(1rem / 1.66) / 1.66) calc(calc(1rem / 1.66) / 1.66);
+    padding: var(--form-component-pdy) var(--form-component-pdx);
     line-height: 1;
     line-height: var(--lh);
     border-radius: 0;
@@ -246,17 +263,17 @@ input[list] {
     background: hsl(0, 0%, calc(53% + 5 * calc((100% - 53%) / 6)));
     background: var(--form-field-background);
     color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
-    color: var(--form-field-color);    
+    color: var(--form-field-color);
 }
 
 textarea {
     line-height: calc((calc(1.66 * 1) - 1) / 3 * 2 + 1);
-    line-height: var(--lh-2);    
-    border: 1px solid hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));    
+    line-height: var(--lh-2);
+    border: 1px solid hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
     border: 1px solid var(--form-field-border-color);
     border-radius: 0;
-    padding: calc(calc(1rem / 1.66) / 1.66);
-    padding: var(--form-button-pdy);
+    padding: calc(calc(1rem / 1.66) / 1.66) calc(calc(1rem / 1.66) / 1.66);
+    padding: var(--form-component-pdy) var(--form-component-pdx);
     -webkit-border-radius: 0;
     resize: none;
     background: hsl(0, 0%, calc(53% + 5 * calc((100% - 53%) / 6)));

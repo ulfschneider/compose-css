@@ -2,8 +2,8 @@
     --form-font-family: var(--font-family);
     --form-font-size: var(--fs);
     --form-radius: 0px;
-    --form-button-pdx: var(--space-d2);
-    --form-button-pdy: var(--space-d2);
+    --form-component-pdx: var(--space-d2);
+    --form-component-pdy: var(--space-d2);
     --label-line-height: var(--lh-2);
     --button-line-height: var(--lh-2);
     --custom-check-line-height: var(--label-line-height);    
@@ -66,7 +66,7 @@ select {
     background: var(--form-button-background);
     color: var(--form-button-color);
     padding: var(--space-d2) var(--space-d2);
-    padding: var(--form-button-pdx) var(--form-button-pdy);
+    padding: var(--form-component-pdx) var(--form-component-pdy);
     cursor: pointer;
     transition: filter var(--transition-duration) ease-out;    
     line-height: var(--lh-2);    
@@ -156,7 +156,7 @@ input[list] {
     border: 1px solid var(--form-field-border-color);
     vertical-align: middle;
     padding: var(--space-d2);
-    padding: var(--form-button-pdy);
+    padding: var(--form-component-pdy);
     line-height: var(--lh);
     border-radius: 0;
     -webkit-border-radius: 0;
@@ -169,7 +169,7 @@ textarea {
     border: 1px solid var(--form-field-border-color);
     border-radius: 0;
     padding: var(--space-d2);
-    padding: var(--form-button-pdy);
+    padding: var(--form-component-pdy);
     -webkit-border-radius: 0;
     resize: none;
     background: var(--form-field-background);
