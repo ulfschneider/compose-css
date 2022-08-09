@@ -457,7 +457,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
 :root {
     --xs-breakpoint: 400px;
     --sm-breakpoint: 600px;
-    --rg-breakpoint: 768px;
+    --rg-breakpoint: 800px;
     --md-breakpoint: 1024px;
     --lg-breakpoint: 1280px;
 }
@@ -466,7 +466,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
 
 @custom-media --mx-sm-breakpoint (max-width: 600px);
 
-@custom-media --mx-rg-breakpoint (max-width: 768px);
+@custom-media --mx-rg-breakpoint (max-width: 800px);
 
 @custom-media --mx-md-breakpoint (max-width: 1024px);
 
@@ -476,7 +476,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
 
 @custom-media --mi-sm-breakpoint (min-width: 601px);
 
-@custom-media --mi-rg-breakpoint (min-width: 769px);
+@custom-media --mi-rg-breakpoint (min-width: 801px);
 
 @custom-media --mi-md-breakpoint (min-width: 1025px);
 
@@ -768,7 +768,7 @@ small,
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 801px) {
      :root {
         font-size: min(calc(18px + 2px), calc(18px + 3px));
         font-size: min(var(--font-size-rg-breakpoint), var(--font-size-md-breakpoint));
@@ -1338,7 +1338,7 @@ small,
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 801px) {
     .rg\:h1 {
         font-size: calc(1rem * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25 * 1.25);
         font-size: var(--fs-h1);
@@ -10953,7 +10953,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 801px) {
 
     .rg\:mr-0,
     .rg\:no-mr {
@@ -18557,7 +18557,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 801px) {
 
     .rg\:pd-0,
     .rg\:no-pd {
@@ -22156,7 +22156,7 @@ Naming conventions
 }
 
 .w-rg-breakpoint {
-    width: 768px;
+    width: 800px;
     width: var(--rg-breakpoint);
 }
 
@@ -22303,7 +22303,7 @@ Naming conventions
         width: var(--rg-width);
     }
     .xs\:w-rg-breakpoint {
-        width: 768px;
+        width: 800px;
         width: var(--rg-breakpoint);
     }
     .xs\:w-md {
@@ -22434,7 +22434,7 @@ Naming conventions
         width: var(--rg-width);
     }
     .xs\:w-rg-breakpoint {
-        width: 768px;
+        width: 800px;
         width: var(--rg-breakpoint);
     }
     .xs\:w-md {
@@ -22565,7 +22565,7 @@ Naming conventions
         width: var(--rg-width);
     }
     .sm\:w-rg-breakpoint {
-        width: 768px;
+        width: 800px;
         width: var(--rg-breakpoint);
     }
     .sm\:w-md {
@@ -22696,7 +22696,7 @@ Naming conventions
         width: var(--rg-width);
     }
     .sm\:w-rg-breakpoint {
-        width: 768px;
+        width: 800px;
         width: var(--rg-breakpoint);
     }
     .sm\:w-md {
@@ -22769,7 +22769,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 801px) {
     .rg\:w-unset {
         width: unset;
     }
@@ -22827,7 +22827,7 @@ Naming conventions
         width: var(--rg-width);
     }
     .rg\:w-rg-breakpoint {
-        width: 768px;
+        width: 800px;
         width: var(--rg-breakpoint);
     }
     .rg\:w-md {
@@ -22958,7 +22958,7 @@ Naming conventions
         width: var(--rg-width);
     }
     .rg\:w-rg-breakpoint {
-        width: 768px;
+        width: 800px;
         width: var(--rg-breakpoint);
     }
     .rg\:w-md {
@@ -23089,7 +23089,7 @@ Naming conventions
         width: var(--rg-width);
     }
     .md\:w-rg-breakpoint {
-        width: 768px;
+        width: 800px;
         width: var(--rg-breakpoint);
     }
     .md\:w-md {
@@ -23220,7 +23220,7 @@ Naming conventions
         width: var(--rg-width);
     }
     .md\:w-rg-breakpoint {
-        width: 768px;
+        width: 800px;
         width: var(--rg-breakpoint);
     }
     .md\:w-md {
@@ -23351,7 +23351,7 @@ Naming conventions
         width: var(--rg-width);
     }
     .lg\:w-rg-breakpoint {
-        width: 768px;
+        width: 800px;
         width: var(--rg-breakpoint);
     }
     .lg\:w-md {
@@ -23482,7 +23482,7 @@ Naming conventions
         width: var(--rg-width);
     }
     .lg\:w-rg-breakpoint {
-        width: 768px;
+        width: 800px;
         width: var(--rg-breakpoint);
     }
     .lg\:w-md {
@@ -23590,7 +23590,7 @@ Naming conventions
 }
 
 .mxw-rg-breakpoint {
-    max-width: 768px;
+    max-width: 800px;
     max-width: var(--rg-breakpoint);
 }
 
@@ -23719,7 +23719,7 @@ Naming conventions
         max-width: var(--rg-width);
     }
     .xs\:mxw-rg-breakpoint {
-        max-width: 768px;
+        max-width: 800px;
         max-width: var(--rg-breakpoint);
     }
     .xs\:mxw-md {
@@ -23824,7 +23824,7 @@ Naming conventions
         max-width: var(--rg-width);
     }
     .xs\:mxw-rg-breakpoint {
-        max-width: 768px;
+        max-width: 800px;
         max-width: var(--rg-breakpoint);
     }
     .xs\:mxw-md {
@@ -23929,7 +23929,7 @@ Naming conventions
         max-width: var(--rg-width);
     }
     .sm\:mxw-rg-breakpoint {
-        max-width: 768px;
+        max-width: 800px;
         max-width: var(--rg-breakpoint);
     }
     .sm\:mxw-md {
@@ -24034,7 +24034,7 @@ Naming conventions
         max-width: var(--rg-width);
     }
     .sm\:mxw-rg-breakpoint {
-        max-width: 768px;
+        max-width: 800px;
         max-width: var(--rg-breakpoint);
     }
     .sm\:mxw-md {
@@ -24107,7 +24107,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 801px) {
     .rg\:mxw-unset,
     .rg\:mxw-u {
         max-width: unset;
@@ -24139,7 +24139,7 @@ Naming conventions
         max-width: var(--rg-width);
     }
     .rg\:mxw-rg-breakpoint {
-        max-width: 768px;
+        max-width: 800px;
         max-width: var(--rg-breakpoint);
     }
     .rg\:mxw-md {
@@ -24244,7 +24244,7 @@ Naming conventions
         max-width: var(--rg-width);
     }
     .rg\:mxw-rg-breakpoint {
-        max-width: 768px;
+        max-width: 800px;
         max-width: var(--rg-breakpoint);
     }
     .rg\:mxw-md {
@@ -24349,7 +24349,7 @@ Naming conventions
         max-width: var(--rg-width);
     }
     .md\:mxw-rg-breakpoint {
-        max-width: 768px;
+        max-width: 800px;
         max-width: var(--rg-breakpoint);
     }
     .md\:mxw-md {
@@ -24454,7 +24454,7 @@ Naming conventions
         max-width: var(--rg-width);
     }
     .md\:mxw-rg-breakpoint {
-        max-width: 768px;
+        max-width: 800px;
         max-width: var(--rg-breakpoint);
     }
     .md\:mxw-md {
@@ -24559,7 +24559,7 @@ Naming conventions
         max-width: var(--rg-width);
     }
     .lg\:mxw-rg-breakpoint {
-        max-width: 768px;
+        max-width: 800px;
         max-width: var(--rg-breakpoint);
     }
     .lg\:mxw-md {
@@ -24664,7 +24664,7 @@ Naming conventions
         max-width: var(--rg-width);
     }
     .lg\:mxw-rg-breakpoint {
-        max-width: 768px;
+        max-width: 800px;
         max-width: var(--rg-breakpoint);
     }
     .lg\:mxw-md {
@@ -24768,7 +24768,7 @@ Naming conventions
 }
 
 .miw-rg-breakpoint {
-    min-width: 768px;
+    min-width: 800px;
     min-width: var(--rg-breakpoint);
 }
 
@@ -24891,7 +24891,7 @@ Naming conventions
         min-width: var(--rg-width);
     }
     .xs\:miw-rg-breakpoint {
-        min-width: 768px;
+        min-width: 800px;
         min-width: var(--rg-breakpoint);
     }
     .xs\:miw-md {
@@ -24997,7 +24997,7 @@ Naming conventions
         min-width: var(--rg-width);
     }
     .xs\:miw-rg-breakpoint {
-        min-width: 768px;
+        min-width: 800px;
         min-width: var(--rg-breakpoint);
     }
     .xs\:miw-md {
@@ -25103,7 +25103,7 @@ Naming conventions
         min-width: var(--rg-width);
     }
     .sm\:miw-rg-breakpoint {
-        min-width: 768px;
+        min-width: 800px;
         min-width: var(--rg-breakpoint);
     }
     .sm\:miw-md {
@@ -25209,7 +25209,7 @@ Naming conventions
         min-width: var(--rg-width);
     }
     .sm\:miw-rg-breakpoint {
-        min-width: 768px;
+        min-width: 800px;
         min-width: var(--rg-breakpoint);
     }
     .sm\:miw-md {
@@ -25289,7 +25289,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 801px) {
     .rg\:miw-unset,
     .rg\:miw-u {
         min-width: unset;
@@ -25315,7 +25315,7 @@ Naming conventions
         min-width: var(--rg-width);
     }
     .rg\:miw-rg-breakpoint {
-        min-width: 768px;
+        min-width: 800px;
         min-width: var(--rg-breakpoint);
     }
     .rg\:miw-md {
@@ -25420,7 +25420,7 @@ Naming conventions
         min-width: var(--rg-width);
     }
     .rg\:miw-rg-breakpoint {
-        min-width: 768px;
+        min-width: 800px;
         min-width: var(--rg-breakpoint);
     }
     .rg\:miw-md {
@@ -25525,7 +25525,7 @@ Naming conventions
         min-width: var(--rg-width);
     }
     .md\:miw-rg-breakpoint {
-        min-width: 768px;
+        min-width: 800px;
         min-width: var(--rg-breakpoint);
     }
     .md\:miw-md {
@@ -25630,7 +25630,7 @@ Naming conventions
         min-width: var(--rg-width);
     }
     .md\:miw-rg-breakpoint {
-        min-width: 768px;
+        min-width: 800px;
         min-width: var(--rg-breakpoint);
     }
     .md\:miw-md {
@@ -25735,7 +25735,7 @@ Naming conventions
         min-width: var(--rg-width);
     }
     .lg\:miw-rg-breakpoint {
-        min-width: 768px;
+        min-width: 800px;
         min-width: var(--rg-breakpoint);
     }
     .lg\:miw-md {
@@ -25840,7 +25840,7 @@ Naming conventions
         min-width: var(--rg-width);
     }
     .lg\:miw-rg-breakpoint {
-        min-width: 768px;
+        min-width: 800px;
         min-width: var(--rg-breakpoint);
     }
     .lg\:miw-md {
@@ -26412,7 +26412,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 801px) {
     .rg\:h-unset {
         height: unset;
     }
@@ -27345,7 +27345,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 801px) {
     .rg\:mxh-unset,
     .rg\:mxh-u {
         max-height: unset;
@@ -28195,7 +28195,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 801px) {
     .rg\:mih-unset,
     .rg\:mih-u {
         min-height: unset;
@@ -28667,7 +28667,7 @@ Naming conventions
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 801px) {
     .rg\:hide {
         display: none !important;
     }
@@ -28727,7 +28727,7 @@ Naming conventions
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .below-rg\:hide {
         display: none !important;
     }
@@ -30579,7 +30579,7 @@ details[open]>summary::before {
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 801px) {
     .rg\:flex,
     .rg\:flex-row {
         display: flex;
@@ -32574,7 +32574,7 @@ img {
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 801px) {
     .rg\:fluid-columns-1 {
         column-width: calc(1.66 * 1rem);
         column-width: var(--space-1);
@@ -34302,7 +34302,7 @@ th.sotable-column .indicator {
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 801px) {
     .rg\:inline {
         display: inline;
     }

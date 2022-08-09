@@ -430,7 +430,7 @@
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 801px) {
     .rg\:w-unset {
         width: unset;
     }

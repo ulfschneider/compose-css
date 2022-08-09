@@ -3,7 +3,7 @@
 :root {
     --xs-breakpoint: 400px;
     --sm-breakpoint: 600px;
-    --rg-breakpoint: 768px;
+    --rg-breakpoint: 800px;
     --md-breakpoint: 1024px;
     --lg-breakpoint: 1280px;
 }
@@ -12,7 +12,7 @@
 
 @custom-media --mx-sm-breakpoint (max-width: 600px);
 
-@custom-media --mx-rg-breakpoint (max-width: 768px);
+@custom-media --mx-rg-breakpoint (max-width: 800px);
 
 @custom-media --mx-md-breakpoint (max-width: 1024px);
 
@@ -22,7 +22,7 @@
 
 @custom-media --mi-sm-breakpoint (min-width: 601px);
 
-@custom-media --mi-rg-breakpoint (min-width: 769px);
+@custom-media --mi-rg-breakpoint (min-width: 801px);
 
 @custom-media --mi-md-breakpoint (min-width: 1025px);
 

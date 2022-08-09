@@ -34,7 +34,7 @@
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 801px) {
      :root {
         font-size: min(calc(var(--base-font-size) + 2px), calc(var(--base-font-size) + 3px));
         font-size: min(var(--font-size-rg-breakpoint), var(--font-size-md-breakpoint));
@@ -472,7 +472,7 @@
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 801px) {
     .rg\:h1 {
         font-size: var(--fs-h1);
         line-height: var(--lh-h1);

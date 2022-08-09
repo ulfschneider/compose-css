@@ -334,7 +334,7 @@
 }
 
 
-@media (min-width: 769px) {
+@media (min-width: 801px) {
     .rg\:miw-unset,
     .rg\:miw-u {
         min-width: unset;

@@ -326,7 +326,7 @@
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 801px) {
     .rg\:mxw-unset,
     .rg\:mxw-u {
         max-width: unset;

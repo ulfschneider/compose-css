@@ -250,7 +250,7 @@
 }
 
 
-@media (min-width: 769px) {
+@media (min-width: 801px) {
     .rg\:mxh-unset,
     .rg\:mxh-u {
         max-height: unset;

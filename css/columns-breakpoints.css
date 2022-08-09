@@ -82,7 +82,7 @@
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 801px) {
     .rg\:fluid-columns-1 {
         column-width: var(--space-1);
     }

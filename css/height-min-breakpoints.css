@@ -250,7 +250,7 @@
 }
 
 
-@media (min-width: 769px) {
+@media (min-width: 801px) {
     .rg\:mih-unset,
     .rg\:mih-u {
         min-height: unset;

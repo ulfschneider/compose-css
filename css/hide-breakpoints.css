@@ -31,7 +31,7 @@
 }
 
 
-@media (min-width: 769px) {
+@media (min-width: 801px) {
     .rg\:hide {
         display: none !important;
     }
@@ -101,7 +101,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .below-rg\:hide {
         display: none !important;
     }
