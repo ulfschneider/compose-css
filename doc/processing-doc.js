@@ -17,12 +17,12 @@ const markdownItPrism = require('markdown-it-prism');
 
 function getMarkdownLib() {
     const mdlib = markdownIt({
-            html: true,
-            breaks: true,
-            linkify: true,
-            typographer: true,
-            quotes: "„“‚‘"
-        })
+        html: true,
+        breaks: true,
+        linkify: true,
+        typographer: true,
+        quotes: "„“‚‘"
+    })
         .use(markdownItAnchor, {
             permalink: true,
             permalinkClass: 'anchor',
@@ -59,8 +59,9 @@ function processingDoc(callback) {
 
     $('<link rel="stylesheet" href="/doc.css"/>').appendTo('head');
     $(`<script defer src="/resources/sotable-min.js"></script>
+    <script defer src="/resources/active-toc-min.js"></script>
     <script>
-    addEventListener('load', () => sotable({whiteList: '.soso'})); //activate sotable functionalty on load
+    addEventListener('load', () => { ActiveToc.init('.table-of-contents'); sotable({whiteList: '.soso'})}); //activate sotable functionalty on load
     `).appendTo('head');
     $('html').addClass('auto-dark-mode');
     $('body').addClass('pd');

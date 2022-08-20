@@ -38,7 +38,7 @@
 @import "table";
 @import "layout";
 @import "layout-breakpoints";
-@import "snap";
+@import "scroll";
 @import "transition";
 @import "debug";
 @import "prism";

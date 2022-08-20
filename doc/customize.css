@@ -53,6 +53,10 @@ hr {
     display: inline-block;
 }
 
+.table-of-contents .is-visible {
+    font-weight: bold;
+}
+
 @custom-media --outdent-breakpoint (min-width: 1350px);
 @custom-media --outdent-outline-breakpoint (min-width: 1500px);
 

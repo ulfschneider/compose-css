@@ -18,10 +18,11 @@
     --mono-font-family: ui-monospace, monospace;
     --mono-font-feature-settings: var(--font-feature-settings);
     --code-font-family: var(--mono-font-family);
-    --blockquote-font-style: normal;
+    --code-font-weight: normal;
+    --blockquote-font-style: italic;
     --blockquote-font-weight: normal;
-    --blockquote-font-size: var(--fs-1);
-    --blockquote-line-height: var(--lh-2);
+    --blockquote-font-size: inherit;
+    --blockquote-line-height: inherit;
     --quote-font-style: italic;
     --text-decoration: underline;
     --text-decoration-thickness: .1em;
@@ -63,7 +64,7 @@
     --outline: var(--outline-width) solid var(--outline-color);
     --outline-offset: var(--space-d4);
     --kbd-shadow: .07em .07em var(--border-color);
-    --blockquote-border-width: 3px;
+    --blockquote-border-width: 2px;
     --summary-expanded-prefix: "ᐯ";
     --summary-collapsed-prefix: "ᐳ";
     font-family: var(--font-family);
@@ -522,16 +523,15 @@ pre,
 
 .code:not(pre .code),
 code:not(pre code) {
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--code-font-weight);
     background: var(--code-background);
     color: var(--code-color);
 }
 
-pre>code,
-pre>samp {
+pre>code {
     background: var(--pre-code-background);
     color: var(--pre-code-color);
-    padding: var(--space-d3);
+    padding: var(--space-d1);
     display: inline-block;
     text-align: left;
     line-height: 1.5;
@@ -547,15 +547,19 @@ pre>samp {
 
 /* purgecss start ignore */
 
-pre>code[class^=language-]::before {
+/*pre>code[class^=language-]::before {
     content: attr(class);
-    font-size: var(--fs);
     background: var(--base-background);
     color: var(--base-color);
     font-family: var(--figcaption-font-family);
     display: block;
-    margin: calc(-1 * var(--space-d3)) calc(-1 * var(--space-d3)) 0 calc(-1 * var(--space-d3));
-}
+    position: absolute;
+    margin-top: calc(-1 * var(--lh-default) * var(--fs-default));
+    margin-right: calc(-1 * var(--horizontal-rhythm));
+    margin-left: calc(-1 * var(--space-d1));
+    font-size: var(--fs-default);
+    padding-right: var(--space-d1);
+}*/
 
 /* purgecss end ignore */
 

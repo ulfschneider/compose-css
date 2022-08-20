@@ -1,4 +1,4 @@
-<header class="title">
+<header class="title mry-2">
 <h1>Compose CSS</h1>
 <span class="bg-primary neutral-5 pd-d3">Version {{compose-version}}</span>
 <p>A low-level CSS Toolkit to build fast, maintainable, and responsive websites.</p>
@@ -1653,10 +1653,12 @@ Each breakpoint *can* trigger a change in base font size. The wider the screen, 
 <button class="mry" disabled>A disabled button</button>
 </div>
 
+<fieldset>
+<legend>A checkbox and a radio button within a fieldset</legend>
 <div>
 <label for="ccheck" class="custom-control">
 <input id="ccheck" type="checkbox"/>
-<span class="label">Hello World</span>
+<span>Hello World</span>
 </label>
 </div>
 
@@ -1666,10 +1668,7 @@ Each breakpoint *can* trigger a change in base font size. The wider the screen, 
 <span>Hello World</span>
 </label>
 </div>
-
-### Hello world
-
-#### And another world
+</fieldset>
 
 <div class="mry-vrplus group error">
 <label for="text">A text input</label>

@@ -168,7 +168,7 @@
     --timeline-color: var(--li-prefix-color);
     --timeline-blub-color: var(--timeline-color);
     --timeline-blub-background: var(--base-background);
-    --code-background: transparent;
+    --code-background: var(--neutral-5);
     --code-color: var(--base-color);
     --pre-background: transparent;
     --pre-color: var(--base-color);

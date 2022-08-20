@@ -8,35 +8,11 @@
     --lg-breakpoint: 1280px;
 }
 
-@custom-media --mx-xs-breakpoint (max-width: 400px);
-
-@custom-media --mx-sm-breakpoint (max-width: 600px);
-
-@custom-media --mx-rg-breakpoint (max-width: 800px);
-
-@custom-media --mx-md-breakpoint (max-width: 1024px);
-
-@custom-media --mx-lg-breakpoint (max-width: 1280px);
-
-@custom-media --mi-xs-breakpoint (min-width: 401px);
-
-@custom-media --mi-sm-breakpoint (min-width: 601px);
-
-@custom-media --mi-rg-breakpoint (min-width: 801px);
-
-@custom-media --mi-md-breakpoint (min-width: 1025px);
-
-@custom-media --mi-lg-breakpoint (min-width: 1281px);
-
-@custom-media --touch-device screen and (hover: none) and (pointer: coarse);
-
 /* To activate the outdent breakpoint choose a width suitable to 
 your site design. E.g. for a centered layout with a regular center content width
 (--rg-width) an --outdent-breakpoint could be set to a value of --rg-breakpoint.
 The initial setting of 9999px for --outdent-breakpoint deactivates outdenting of 
 list elements (ul, ol), timelines (dl.timeline), and summaries (detail>summary)*/
-
-@custom-media --outdent-breakpoint (min-width: 9999px);
 
 /*The --outdent-outline-breakpoint works similar to the --outdent-breakpoint
 except it is only for outlining numbered heading elements like h2, h3, …. Heading elements
@@ -44,5 +20,3 @@ that are enclosed in an .outline class will be outdented when this breakpoint
 is fulfilled. Because the outline numbers of headings might take more space the 
 --outdent-outline-breakpoint will typically be wider than the --outdent-breakpoint! 
 It is also possible to activate only one of the two --outdent… breakpoints*/
-
-@custom-media --outdent-outline-breakpoint (min-width: 9999px);

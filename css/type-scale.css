@@ -2,7 +2,8 @@
     --size-factor: 1.25;
     --base-font-size: 18px;
     --fs: 1rem;
-    --fs-mono: .9rem;
+    --fs-default: var(--fs);
+    --fs-mono: inherit;
     --fs-d1: .9rem;
     --fs-1: calc(var(--fs) * var(--size-factor));
     --fs-2: calc(var(--fs) * var(--size-factor) * var(--size-factor));
