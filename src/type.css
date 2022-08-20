@@ -590,11 +590,10 @@ blockquote {
     line-height: var(--blockquote-line-height);
 }
 
-blockquote>footer,
-blockquote>header {
+blockquote>footer {
     font-weight: var(--font-weight-bold);
-    font-size: var(--fs);
-    display: block;
+    font-size: var(--fs);    
+    text-indent: -1em;
 }
 
 blockquote>footer::before {
