@@ -4,7 +4,7 @@
     addEventListener('load', () => { ActiveToc.init('.table-of-contents'); sotable({whiteList: '.soso'})}); //activate sotable functionalty on load
     </script></head><body class="pd"><main class="outline mxw-lg mrx-auto"><header class="title mry-2">
 <h1>Compose CSS</h1>
-<span class="bg-primary neutral-5 pd-d3">Version 28.10.10</span>
+<span class="bg-primary neutral-5 pd-d3">Version 28.10.11</span>
 <p>A low-level CSS Toolkit to build fast, maintainable, and responsive websites.</p>
 </header>
 <nav class="table-of-contents fluid-columns-5 bleed-right"><ol><li><a href="#preparatory">Preparatory </a><ol><li><a href="#install-compose-css">Install Compose CSS </a></li><li><a href="#notation-used-in-this-document">Notation used in this document </a></li><li><a href="#stepping-through-options">Stepping through options </a></li></ol></li><li><a href="#typography">Typography </a><ol><li><a href="#basic-elements">Basic elements </a></li><li><a href="#font-size">Font size </a></li><li><a href="#headings">Headings </a></li><li><a href="#heading-size">Heading size </a></li><li><a href="#line-height">Line height </a></li><li><a href="#rhythm">Rhythm </a></li><li><a href="#word-wrapping">Word wrapping </a></li><li><a href="#writing-mode">Writing mode </a></li><li><a href="#paragraph">Paragraph </a></li><li><a href="#indented-paragraph">Indented Paragraph </a></li><li><a href="#horizontal-ruler">Horizontal ruler </a></li><li><a href="#blockquote">Blockquote </a></li><li><a href="#details-and-summary">Details and Summary </a></li></ol></li><li><a href="#lists">Lists </a><ol><li><a href="#unordered-list">Unordered list </a></li><li><a href="#ordered-list">Ordered List </a></li><li><a href="#indented-ordered-list">Indented Ordered List </a></li><li><a href="#definition-list">Definition List </a></li><li><a href="#timeline">Timeline </a></li><li><a href="#framed-timeline">Framed Timeline </a></li><li><a href="#horizontal-timeline">Horizontal Timeline </a></li></ol></li><li><a href="#tables">Tables </a></li><li><a href="#figures">Figures </a></li><li><a href="#images">Images </a></li><li><a href="#colors">Colors </a></li><li><a href="#breakpoints">Breakpoints </a></li><li><a href="#layout">Layout </a></li><li><a href="#forms">Forms </a></li></ol></nav><h2 id="preparatory" tabindex="-1">Preparatory <a class="anchor" href="#preparatory">#</a></h2>
@@ -35,16 +35,16 @@
 <h3 id="notation-used-in-this-document" tabindex="-1">Notation used in this document <a class="anchor" href="#notation-used-in-this-document">#</a></h3>
 <ul>
 <li>In flowing text, a CSS class will be denoted with a starting period, for example: <code>.css</code>.</li>
-<li>HTML tags in flowing text are denoted lowercase and with pointing brackets, for example: <code>&lt;strong&gt;</code>.</li>
-<li>In formatted code, CSS classes and HTML tags are presented syntactically correct. For example:<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>no-wrap<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>No word wrap in small spaces<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-</code></pre>
-</li>
+<li>HTML tags in flowing text are denoted lowercase and with pointing brackets, for example: <code>&lt; strong&gt;</code>.</li>
+<li>In formatted code, CSS classes and HTML tags are presented syntactically correct. For example:</li>
 </ul>
+<pre class="language-html"><code class="language-html">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>no-wrap<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>No word wrap in small spaces<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
 <h3 id="stepping-through-options" tabindex="-1">Stepping through options <a class="anchor" href="#stepping-through-options">#</a></h3>
 <ul>
-<li>Many CSS classes of Compose CSS allow to step up and down through multiple options of <em>the same thing.</em> For example, <code>line-height</code> can be set with <code>.lh-d1</code>, <code>.lh</code>, <code>.lh-1</code>, <code>.lh-2</code>, … , <code>.lh-5</code>.<br>
-<code>.lh</code> stands for <em>1, the neutral value.</em> <code>.lh-d1</code> stands for <em>decrease one step down from the neutral value,</em> while <code>.lh-1</code> stands for <em>increase one step up from the neutral value,</em> <code>.lh-2</code> is <em>increase two steps up,</em> and so on. Please refer to <a href="#line-height">line-height</a> for more details.<br>
-Another example is how dark or how light a color is set, like <code>.primary-d5</code>, <code>.primary-d4</code>, <code>.primary-d3</code>, … , <code>.primary</code>, <code>.primary-1</code>, <code>.primary-2</code>, … <code>.primary-5</code>, where <code>.primary</code> is the neutral primary color tone and <code>-d1</code>, <code>-d2</code>, … is making it darker, while <code>-1</code>, <code>-2</code>, … is making it lighter. Please refer to <a href="#colors">colors</a> for more details.</li>
+<li>Many CSS classes of Compose CSS allow to step up and down through multiple options of <em>the same thing.</em> For example,  <code>line-height</code> can be set with <code>.lh-d1</code>,   <code>.lh</code>,   <code>.lh-1</code>,   <code>.lh-2</code>, … ,   <code>.lh-5</code>.<br>
+<code>.lh</code> stands for <em>1, the neutral value.</em> <code>.lh-d1</code> stands for *decrease one step down from the neutral value, * while <code>.lh-1</code> stands for *increase one step up from the neutral value, * <code>.lh-2</code> is *increase two steps up, * and so on. Please refer to <a href="#line-height">line-height</a> for more details.<br>
+Another example is how dark or how light a color is set, like <code>.primary-d5</code> , <code>.primary-d4</code> , <code>.primary-d3</code> , … , <code>.primary</code> , <code>.primary-1</code> , <code>.primary-2</code> , … <code>.primary-5</code> , where <code>.primary</code> is the neutral primary color tone and <code>-d1</code> , <code>-d2</code> , … is making it darker, while <code>-1</code> , <code>-2</code> , … is making it lighter. Please refer to <a href="#colors">colors</a> for more details.</li>
 <li>A default value is often represented by a <code>-default</code> postfix added to the corresponding CSS class. For example, the default <code>line-height</code> that is used by Compose CSS is defined by <code>.lh-3</code>, which can also be set by <code>.lh-default</code>.</li>
 </ul>
 <h2 id="typography" tabindex="-1">Typography <a class="anchor" href="#typography">#</a></h2>
@@ -294,7 +294,7 @@ Another example is how dark or how light a color is set, like <code>.primary-d5<
 <p>For absolute sizing of fonts use the below listed CSS classes.</p>
 <div class="scroll-table" style="overflow-x:auto;"><table>
 <tbody><tr><th class="right">Font size</th><th>CSS class</th></tr><tr>
-                </tr><tr>
+</tr><tr>
                     <td class="fs-d1 baseline pdy-0 right lh pdy-0">Aa</td>
                     <td class="baseline pdy-0 pdy-0">
                         <code>&lt;small&gt;</code>, <code>.small</code>, <code>.fs-d1</code>
@@ -350,15 +350,15 @@ Another example is how dark or how light a color is set, like <code>.primary-d5<
             </tbody></table></div>
 <p>Configure the font sizing steps with:</p>
 <pre class="language-css"><code class="language-css"><span class="token selector">:root</span> <span class="token punctuation">{</span>
-  <span class="token property">--base-font-size</span><span class="token punctuation">:</span> 18px<span class="token punctuation">;</span>
-  <span class="token property">--fs</span><span class="token punctuation">:</span> 1rem<span class="token punctuation">;</span>
-  <span class="token property">--fs-default</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--fs<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token property">--fs-mono</span><span class="token punctuation">:</span> .95em<span class="token punctuation">;</span>
-  <span class="token property">--large</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--fs-1<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token property">--larger</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--size-factor<span class="token punctuation">)</span> * 1em<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token property">--small</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--fs-d1<span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token property">--smaller</span><span class="token punctuation">:</span> 0.9em<span class="token punctuation">;</span>
-  <span class="token property">--fs-d1</span><span class="token punctuation">:</span> .9rem<span class="token punctuation">;</span>
+    <span class="token property">--base-font-size</span><span class="token punctuation">:</span> 18px<span class="token punctuation">;</span>
+    <span class="token property">--fs</span><span class="token punctuation">:</span> 1rem<span class="token punctuation">;</span>
+    <span class="token property">--fs-default</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--fs<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">--fs-mono</span><span class="token punctuation">:</span> .95em<span class="token punctuation">;</span>
+    <span class="token property">--large</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--fs-1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">--larger</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--size-factor<span class="token punctuation">)</span> * 1em<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">--small</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--fs-d1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">--smaller</span><span class="token punctuation">:</span> 0.9em<span class="token punctuation">;</span>
+    <span class="token property">--fs-d1</span><span class="token punctuation">:</span> .9rem<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
 <h3 id="headings" tabindex="-1">Headings <a class="anchor" href="#headings">#</a></h3>
@@ -393,6 +393,22 @@ Another example is how dark or how light a color is set, like <code>.primary-d5<
                     </td>
                 </tr>
             </tbody></table></div>
+<p>Adjust heading font size and line height with:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">:root</span> <span class="token punctuation">{</span>
+    <span class="token property">--fs-h6</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--fs<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">--fs-h5</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--fs<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">--fs-h4</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--fs-1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">--fs-h3</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--fs-2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">--fs-h2</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--fs-3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">--fs-h1</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--fs-7<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">--lh-h6</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--lh-3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">--lh-h5</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--lh-3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">--lh-h4</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--lh-2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">--lh-h3</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--lh-2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">--lh-h2</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--lh-2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">--lh-h1</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--lh-1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
 <h3 id="line-height" tabindex="-1">Line height <a class="anchor" href="#line-height">#</a></h3>
 <div class="scroll-table" style="overflow-x:auto;"><table class="mxw-rg">
 <tbody><tr><th>Line height</th><th>CSS class</th></tr><tr>
@@ -447,6 +463,19 @@ Another example is how dark or how light a color is set, like <code>.primary-d5<
                     <td class="lh-5 baseline"><code>.lh-5</code></td>
                 </tr>
             </tbody></table></div>
+<p>Adjust line height with:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">:root</span> <span class="token punctuation">{</span>
+    <span class="token property">--space-factor</span><span class="token punctuation">:</span> 1.66<span class="token punctuation">;</span>
+    <span class="token property">--lh</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
+    <span class="token property">--lh-d1</span><span class="token punctuation">:</span> 0.9<span class="token punctuation">;</span>
+    <span class="token property">--lh-3</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--space-factor<span class="token punctuation">)</span> * <span class="token function">var</span><span class="token punctuation">(</span>--lh<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">--lh-2</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--lh-3<span class="token punctuation">)</span> - <span class="token function">var</span><span class="token punctuation">(</span>--lh<span class="token punctuation">)</span><span class="token punctuation">)</span> / 3 * 2 + <span class="token function">var</span><span class="token punctuation">(</span>--lh<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">--lh-1</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--lh-3<span class="token punctuation">)</span> - <span class="token function">var</span><span class="token punctuation">(</span>--lh<span class="token punctuation">)</span><span class="token punctuation">)</span> / 3 + <span class="token function">var</span><span class="token punctuation">(</span>--lh<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">--lh-default</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--lh-3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">--lh-4</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--lh-3<span class="token punctuation">)</span> - <span class="token function">var</span><span class="token punctuation">(</span>--lh<span class="token punctuation">)</span><span class="token punctuation">)</span> / 3 * 4 + <span class="token function">var</span><span class="token punctuation">(</span>--lh<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">--lh-5</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--lh-3<span class="token punctuation">)</span> - <span class="token function">var</span><span class="token punctuation">(</span>--lh<span class="token punctuation">)</span><span class="token punctuation">)</span> / 3 * 5 + <span class="token function">var</span><span class="token punctuation">(</span>--lh<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
 <h3 id="rhythm" tabindex="-1">Rhythm <a class="anchor" href="#rhythm">#</a></h3>
 <h3 id="word-wrapping" tabindex="-1">Word wrapping <a class="anchor" href="#word-wrapping">#</a></h3>
 <div class="block br bg-neutral-5 d:bg-neutral-d4  w-3 no-wrap mrr mrt-3">No word wrap in small spaces</div>
@@ -567,28 +596,31 @@ He lay on his armour-like back
 <p>Text above …</p>
 <details>
 <summary>One morning</summary>
-    <p>when Gregor Samsa woke from troubled dreams, he found himself
-        transformed in his bed into a horrible vermin.
-    </p>
-    <p>
-        He lay on his armour-like back, and if he lifted his head a little he could
-        see his brown belly, slightly domed and divided by arches into stiff
-        sections.
-        </p>
-        <details>
-        <summary>The bedding was hardly able to cover it and seemed ready to slide
-        off any moment.
-        </summary>
-        <p>
-        His many legs, pitifully thin compared with the size of the rest of him,
-        waved about helplessly as he looked. <q>What's happened to me?</q> he
-        thought. It wasn't a dream.
-        </p>
-        </details>
+<pre><code>&lt;p&gt;when Gregor Samsa woke from troubled dreams, he found himself
+    transformed in his bed into a horrible vermin.
+
+&lt;/p&gt;
+
+&lt;p&gt;
+    He lay on his armour-like back, and if he lifted his head a little he could
+    see his brown belly, slightly domed and divided by arches into stiff
+    sections.
+    &lt;/p&gt;
+    &lt;details&gt;
+    &lt;summary&gt;The bedding was hardly able to cover it and seemed ready to slide
+    off any moment.
+    &lt;/summary&gt;
+    &lt;p&gt;
+    His many legs, pitifully thin compared with the size of the rest of him,
+    waved about helplessly as he looked. &lt;q&gt;What's happened to me?&lt;/q&gt; he
+    thought. It wasn't a dream.
+    &lt;/p&gt;
+    &lt;/details&gt;
+</code></pre>
 </details>
 <p>… text below.</p>
 <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>details</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>summary</span><span class="token punctuation">&gt;</span></span>One morning<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>summary</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>summary</span><span class="token punctuation">&gt;</span></span>One morning<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>summary</span><span class="token punctuation">&gt;</span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>when Gregor Samsa woke from troubled dreams, he found himself
         transformed in his bed into a horrible vermin.
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
@@ -596,36 +628,35 @@ He lay on his armour-like back
         He lay on his armour-like back, and if he lifted his head a little he could
         see his brown belly, slightly domed and divided by arches into stiff
         sections.
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>details</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>details</span><span class="token punctuation">&gt;</span></span>
         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>summary</span><span class="token punctuation">&gt;</span></span>The bedding was hardly able to cover it and seemed ready to slide
-        off any moment.
+            off any moment.
         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>summary</span><span class="token punctuation">&gt;</span></span>
         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
-        His many legs, pitifully thin compared with the size of the rest of him,
-        waved about helplessly as he looked. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q</span><span class="token punctuation">&gt;</span></span>What's happened to me?<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q</span><span class="token punctuation">&gt;</span></span> he
-        thought. It wasn't a dream.
+            His many legs, pitifully thin compared with the size of the rest of him,
+            waved about helplessly as he looked. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q</span><span class="token punctuation">&gt;</span></span>What's happened to me?<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q</span><span class="token punctuation">&gt;</span></span> he
+            thought. It wasn't a dream.
         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>details</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>details</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>details</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 <h2 id="lists" tabindex="-1">Lists <a class="anchor" href="#lists">#</a></h2>
-<p>Lists (<code>ol</code>, <code>ul</code>), timelines (<code>dl.timeline</code>), the <code>summary</code> of a <code>details</code> section (<code>details&gt;summary</code>), and outline numbers of heading elements (<code>.outline h2</code>, <code>.outline h3</code>, …) can have an <em>outdent</em> property that will left-align the first level text of those elements with the text above and below of the list and summary. The left-aligning requires to outdent the order numbers, the bullets, and the summary indication which is only desired if the text has enough left margin. By default the outdent of those elements is deactivated. Activate it by assigning a value to the <code>--outdent-breakpoint</code>.</p>
-<p>To activate the outdent breakpoint choose a width suitable to your site design. E.g. for a centered layout with a regular center content width (<code>--rg-width</code>) an <code>--outdent-breakpoint</code> could set to the value equal to <code>--rg-breakpoint</code>. The initial setting of <code>9999px</code> for <code>--outdent-breakpoint</code> deactivates outdenting of list elements.</p>
-<p>The below example sets the <code>--outdent-breakpoint</code> to a value equal to <code>--rg-breakpoint</code>.</p>
+<p>Lists ( <code>ol</code> , <code>ul</code> ), timelines ( <code>dl.timeline</code> ), the <code>summary</code> of a <code>details</code> section ( <code>details&gt;summary</code> ), and outline numbers of heading elements ( <code>.outline h2</code> , <code>.outline h3</code> , …) can have an <em>outdent</em> property that will left-align the first level text of those elements with the text above and below of the list and summary. The left-aligning requires to outdent the order numbers, the bullets, and the summary indication which is only desired if the text has enough left margin. By default the outdent of those elements is deactivated. Activate it by assigning a value to the <code>--outdent-breakpoint</code> .</p>
+<p>To activate the outdent breakpoint choose a width suitable to your site design. E.g. for a centered layout with a regular center content width ( <code>--rg-width</code> ) an <code>--outdent-breakpoint</code> could set to the value equal to <code>--rg-breakpoint</code> . The initial setting of <code>9999px</code> for <code>--outdent-breakpoint</code> deactivates outdenting of list elements.</p>
+<p>The below example sets the <code>--outdent-breakpoint</code> to a value equal to <code>--rg-breakpoint</code> .</p>
 <pre class="language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@custom-media</span> --outdent-breakpoint <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 769px<span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 </code></pre>
-<p>To avoid outdenting only for certain elements assign the CSS class <code>.no-outdent</code> to the element itself (<code>ol</code>, <code>ul</code>, <code>dl.timeline</code>, <code>details</code>, <code>.outline</code>) or to a parent of the element.</p>
-<p>There is another breakpoint <code>--outdent-outline-breakpoint</code> which initially is also deactivated. <code>--outdent-outline-breakpoint</code> works similar to the <code>--outdent-breakpoint</code> except it is only for outlining numbered heading elements like <code>h2</code>, <code>h3</code>, …. Heading elements that are enclosed in an <code>.outline</code> class will be outdented when this breakpoint is fulfilled. Because the outline numbers of headings might take more space the<br>
+<p>To avoid outdenting only for certain elements assign the CSS class <code>.no-outdent</code> to the element itself ( <code>ol</code> , <code>ul</code> , <code>dl.timeline</code> , <code>details</code> , <code>.outline</code> ) or to a parent of the element.</p>
+<p>There is another breakpoint <code>--outdent-outline-breakpoint</code> which initially is also deactivated. <code>--outdent-outline-breakpoint</code> works similar to the <code>--outdent-breakpoint</code> except it is only for outlining numbered heading elements like <code>h2</code> , <code>h3</code> , …. Heading elements that are enclosed in an <code>.outline</code> class will be outdented when this breakpoint is fulfilled. Because the outline numbers of headings might take more space the<br>
 <code>--outdent-outline-breakpoint</code> will typically be wider than the <code>--outdent-breakpoint</code> . It is of course possible to activate only either one of the two <code>--outdent…</code> breakpoints.</p>
-<p>The below example sets the <code>--outdent-outline-breakpoint</code>.</p>
+<p>The below example sets the <code>--outdent-outline-breakpoint</code> .</p>
 <pre class="language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@custom-media</span> --outdent-outline-breakpoint <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 900px<span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 </code></pre>
 <h3 id="unordered-list" tabindex="-1">Unordered list <a class="anchor" href="#unordered-list">#</a></h3>
 <ul>
 <li><p>One morning, when Gregor Samsa woke from troubled dreams, he found himself
-transformed in his bed into a horrible vermin.
-    </p>
+transformed in his bed into a horrible vermin.</p>
 </li>
 <li>He lay on his armour-like back
     <ul>
@@ -640,8 +671,7 @@ transformed in his bed into a horrible vermin.
 <h3 id="ordered-list" tabindex="-1">Ordered List <a class="anchor" href="#ordered-list">#</a></h3>
 <ol>
 <li><p>One morning, when Gregor Samsa woke from troubled dreams, he found himself
-transformed in his bed into a horrible vermin.
-    </p>
+transformed in his bed into a horrible vermin.</p>
 </li>
 <li>He lay on his armour-like back
     <ol>
@@ -656,8 +686,7 @@ transformed in his bed into a horrible vermin.
 <h3 id="indented-ordered-list" tabindex="-1">Indented Ordered List <a class="anchor" href="#indented-ordered-list">#</a></h3>
 <ol class="indent">
 <li><p>One morning, when Gregor Samsa woke from troubled dreams, he found himself
-transformed in his bed into a horrible vermin.
-    </p>
+transformed in his bed into a horrible vermin.</p>
 </li>
 <li>He lay on his armour-like back
     <ol>
@@ -675,7 +704,7 @@ transformed in his bed into a horrible vermin.
 <dd>when Gregor Samsa woke from troubled dreams, he found himself 
 transformed in his bed into a horrible vermin.</dd>
 <dt>He lay on his armour-like back</dt>
-<dd>and if he lifted his head a little he could see his brown belly,
+<dd>and if he lifted his head a little he could see his brown belly, 
 slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover
 it and seemed ready to slide off any moment.</dd>
 <dt>His many legs</dt>
@@ -692,7 +721,7 @@ familiar walls.</dd>
 <dd>when Gregor Samsa woke from troubled dreams, he found himself 
 transformed in his bed into a horrible vermin.</dd>
 <dt>He lay on his armour-like back</dt>
-<dd>and if he lifted his head a little he could see his brown belly,
+<dd>and if he lifted his head a little he could see his brown belly, 
 slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover
 it and seemed ready to slide off any moment.</dd>
 <dt><figure class="framed">
@@ -715,7 +744,7 @@ familiar walls.</dd>
 <dd>when Gregor Samsa woke from troubled dreams, he found himself 
 transformed in his bed into a horrible vermin.</dd>
 <dt>He lay on his armour-like back</dt>
-<dd>and if he lifted his head a little he could see his brown belly,
+<dd>and if he lifted his head a little he could see his brown belly, 
 slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover
 it and seemed ready to slide off any moment.</dd>
 <dt blub=":"><figure class="framed">
@@ -738,7 +767,7 @@ familiar walls.</dd>
 <dd>when Gregor Samsa woke from troubled dreams, he found himself 
 transformed in his bed into a horrible vermin.</dd>
 <dt>He lay on his armour-like back</dt>
-<dd><p>and if he lifted his head a little he could see his brown belly,</p>
+<dd><p>and if he lifted his head a little he could see his brown belly, </p>
 <p>slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover
 it and seemed ready to slide off any moment.</p></dd>
 <dt><figure class="framed">
@@ -1453,6 +1482,7 @@ familiar walls.</dd>
     </tbody>
 </table></div>
 <script>
+
     /* https://stackoverflow.com/a/61479601 */
     function rgbToHex(rgb) {
         return '#' + rgb

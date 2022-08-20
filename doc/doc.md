@@ -42,17 +42,19 @@ module.exports = {
 ### Notation used in this document
 
 * In flowing text, a CSS class will be denoted with a starting period, for example: <code>.css</code>.
-* HTML tags in flowing text are denoted lowercase and with pointing brackets, for example: <code>&lt;strong></code>.
+* HTML tags in flowing text are denoted lowercase and with pointing brackets, for example: <code>&lt; strong></code>.
 * In formatted code, CSS classes and HTML tags are presented syntactically correct. For example:
-    ```html
+    
+
+```html
     <div class="no-wrap">No word wrap in small spaces</div>
-    ```
+```
 
 ### Stepping through options
 
-* Many CSS classes of Compose CSS allow to step up and down through multiple options of *the same thing.* For example, `line-height` can be set with `.lh-d1`, `.lh`, `.lh-1`, `.lh-2`, … , `.lh-5`. 
-`.lh` stands for *1, the neutral value.* `.lh-d1` stands for *decrease one step down from the neutral value,* while `.lh-1` stands for *increase one step up from the neutral value,* `.lh-2` is *increase two steps up,* and so on. Please refer to [line-height](#line-height) for more details.
-Another example is how dark or how light a color is set, like `.primary-d5`, `.primary-d4`, `.primary-d3`, … , `.primary`, `.primary-1`, `.primary-2`, … `.primary-5`, where `.primary` is the neutral primary color tone and `-d1`, `-d2`, … is making it darker, while `-1`, `-2`, … is making it lighter. Please refer to [colors](#colors) for more details. 
+* Many CSS classes of Compose CSS allow to step up and down through multiple options of *the same thing.* For example,  `line-height` can be set with `.lh-d1`,   `.lh`,   `.lh-1`,   `.lh-2`, … ,   `.lh-5`. 
+`.lh` stands for *1, the neutral value.* `.lh-d1` stands for *decrease one step down from the neutral value, * while `.lh-1` stands for *increase one step up from the neutral value, * `.lh-2` is *increase two steps up, * and so on. Please refer to [line-height](#line-height) for more details.
+Another example is how dark or how light a color is set, like `.primary-d5` , `.primary-d4` , `.primary-d3` , … , `.primary` , `.primary-1` , `.primary-2` , … `.primary-5` , where `.primary` is the neutral primary color tone and `-d1` , `-d2` , … is making it darker, while `-1` , `-2` , … is making it lighter. Please refer to [colors](#colors) for more details. 
 * A default value is often represented by a `-default` postfix added to the corresponding CSS class. For example, the default `line-height` that is used by Compose CSS is defined by `.lh-3`, which can also be set by `.lh-default`.
 
 ## Typography
@@ -316,7 +318,7 @@ For absolute sizing of fonts use the below listed CSS classes.
 
 <table>
 <tr><th class="right">Font size</th><th>CSS class</th><tr>
-                <tr>
+<tr>
                     <td class="fs-d1 baseline pdy-0 right lh pdy-0">Aa</td>
                     <td class="baseline pdy-0 pdy-0">
                         <code>&lt;small&gt;</code>, <code>.small</code>, <code>.fs-d1</code>
@@ -375,15 +377,15 @@ Configure the font sizing steps with:
 
 ```css
 :root {
-  --base-font-size: 18px;
-  --fs: 1rem;
-  --fs-default: var(--fs);
-  --fs-mono: .95em;
-  --large: var(--fs-1);
-  --larger: calc(var(--size-factor) * 1em);
-  --small: var(--fs-d1);
-  --smaller: 0.9em;
-  --fs-d1: .9rem;
+    --base-font-size: 18px;
+    --fs: 1rem;
+    --fs-default: var(--fs);
+    --fs-mono: .95em;
+    --large: var(--fs-1);
+    --larger: calc(var(--size-factor) * 1em);
+    --small: var(--fs-d1);
+    --smaller: 0.9em;
+    --fs-d1: .9rem;
 }
 ```
 
@@ -427,20 +429,21 @@ Adjust heading font size and line height with:
 
 ```css
 :root {
-  --fs-h6: var(--fs);
-  --fs-h5: var(--fs);
-  --fs-h4: var(--fs-1);
-  --fs-h3: var(--fs-2);
-  --fs-h2: var(--fs-3);
-  --fs-h1: var(--fs-7);
-  --lh-h6: var(--lh-3);
-  --lh-h5: var(--lh-3);
-  --lh-h4: var(--lh-2);
-  --lh-h3: var(--lh-2);
-  --lh-h2: var(--lh-2);
-  --lh-h1: var(--lh-1);
+    --fs-h6: var(--fs);
+    --fs-h5: var(--fs);
+    --fs-h4: var(--fs-1);
+    --fs-h3: var(--fs-2);
+    --fs-h2: var(--fs-3);
+    --fs-h1: var(--fs-7);
+    --lh-h6: var(--lh-3);
+    --lh-h5: var(--lh-3);
+    --lh-h4: var(--lh-2);
+    --lh-h3: var(--lh-2);
+    --lh-h2: var(--lh-2);
+    --lh-h1: var(--lh-1);
 }
 ```
+
         
 
 ### Line height
@@ -503,15 +506,15 @@ Adjust line height with:
 
 ```css
 :root {
-  --space-factor: 1.66;
-  --lh: 1;
-  --lh-d1: 0.9;
-  --lh-3: calc(var(--space-factor) * var(--lh));
-  --lh-2: calc((var(--lh-3) - var(--lh)) / 3 * 2 + var(--lh));
-  --lh-1: calc((var(--lh-3) - var(--lh)) / 3 + var(--lh));
-  --lh-default: var(--lh-3);
-  --lh-4: calc((var(--lh-3) - var(--lh)) / 3 * 4 + var(--lh));
-  --lh-5: calc((var(--lh-3) - var(--lh)) / 3 * 5 + var(--lh));
+    --space-factor: 1.66;
+    --lh: 1;
+    --lh-d1: 0.9;
+    --lh-3: calc(var(--space-factor) * var(--lh));
+    --lh-2: calc((var(--lh-3) - var(--lh)) / 3 * 2 + var(--lh));
+    --lh-1: calc((var(--lh-3) - var(--lh)) / 3 + var(--lh));
+    --lh-default: var(--lh-3);
+    --lh-4: calc((var(--lh-3) - var(--lh)) / 3 * 4 + var(--lh));
+    --lh-5: calc((var(--lh-3) - var(--lh)) / 3 * 5 + var(--lh));
 }
 ```
 
@@ -684,9 +687,12 @@ Text above …
 
 <details>
 <summary>One morning</summary>
+
     <p>when Gregor Samsa woke from troubled dreams, he found himself
         transformed in his bed into a horrible vermin.
+
     </p>
+
     <p>
         He lay on his armour-like back, and if he lifted his head a little he could
         see his brown belly, slightly domed and divided by arches into stiff
@@ -702,13 +708,14 @@ Text above …
         thought. It wasn't a dream.
         </p>
         </details>
+
 </details>
 
 … text below.
 
 ```html
 <details>
-<summary>One morning</summary>
+    <summary>One morning</summary>
     <p>when Gregor Samsa woke from troubled dreams, he found himself
         transformed in his bed into a horrible vermin.
     </p>
@@ -716,50 +723,48 @@ Text above …
         He lay on his armour-like back, and if he lifted his head a little he could
         see his brown belly, slightly domed and divided by arches into stiff
         sections.
-        </p>
-        <details>
+    </p>
+    <details>
         <summary>The bedding was hardly able to cover it and seemed ready to slide
-        off any moment.
+            off any moment.
         </summary>
         <p>
-        His many legs, pitifully thin compared with the size of the rest of him,
-        waved about helplessly as he looked. <q>What's happened to me?</q> he
-        thought. It wasn't a dream.
+            His many legs, pitifully thin compared with the size of the rest of him,
+            waved about helplessly as he looked. <q>What's happened to me?</q> he
+            thought. It wasn't a dream.
         </p>
-        </details>
+    </details>
 </details>
 ```
 
 ## Lists
 
-Lists (`ol`, `ul`), timelines (`dl.timeline`), the `summary` of a `details` section (`details>summary`), and outline numbers of heading elements (`.outline h2`, `.outline h3`, …) can have an *outdent* property that will left-align the first level text of those elements with the text above and below of the list and summary. The left-aligning requires to outdent the order numbers, the bullets, and the summary indication which is only desired if the text has enough left margin. By default the outdent of those elements is deactivated. Activate it by assigning a value to the `--outdent-breakpoint`.
+Lists ( `ol` , `ul` ), timelines ( `dl.timeline` ), the `summary` of a `details` section ( `details>summary` ), and outline numbers of heading elements ( `.outline h2` , `.outline h3` , …) can have an *outdent* property that will left-align the first level text of those elements with the text above and below of the list and summary. The left-aligning requires to outdent the order numbers, the bullets, and the summary indication which is only desired if the text has enough left margin. By default the outdent of those elements is deactivated. Activate it by assigning a value to the `--outdent-breakpoint` .
 
-To activate the outdent breakpoint choose a width suitable to your site design. E.g. for a centered layout with a regular center content width (`--rg-width`) an `--outdent-breakpoint` could set to the value equal to `--rg-breakpoint`. The initial setting of `9999px` for `--outdent-breakpoint` deactivates outdenting of list elements.
+To activate the outdent breakpoint choose a width suitable to your site design. E.g. for a centered layout with a regular center content width ( `--rg-width` ) an `--outdent-breakpoint` could set to the value equal to `--rg-breakpoint` . The initial setting of `9999px` for `--outdent-breakpoint` deactivates outdenting of list elements.
 
-The below example sets the `--outdent-breakpoint` to a value equal to `--rg-breakpoint`.
+The below example sets the `--outdent-breakpoint` to a value equal to `--rg-breakpoint` .
 
 ```css
 @custom-media --outdent-breakpoint (min-width: 769px);
 ```
 
-To avoid outdenting only for certain elements assign the CSS class `.no-outdent` to the element itself (`ol`, `ul`, `dl.timeline`, `details`, `.outline`) or to a parent of the element. 
+To avoid outdenting only for certain elements assign the CSS class `.no-outdent` to the element itself ( `ol` , `ul` , `dl.timeline` , `details` , `.outline` ) or to a parent of the element. 
 
-There is another breakpoint `--outdent-outline-breakpoint` which initially is also deactivated. `--outdent-outline-breakpoint` works similar to the `--outdent-breakpoint` except it is only for outlining numbered heading elements like `h2`, `h3`, …. Heading elements that are enclosed in an `.outline` class will be outdented when this breakpoint is fulfilled. Because the outline numbers of headings might take more space the 
+There is another breakpoint `--outdent-outline-breakpoint` which initially is also deactivated. `--outdent-outline-breakpoint` works similar to the `--outdent-breakpoint` except it is only for outlining numbered heading elements like `h2` , `h3` , …. Heading elements that are enclosed in an `.outline` class will be outdented when this breakpoint is fulfilled. Because the outline numbers of headings might take more space the 
 `--outdent-outline-breakpoint` will typically be wider than the `--outdent-breakpoint` . It is of course possible to activate only either one of the two `--outdent…` breakpoints.
 
-The below example sets the `--outdent-outline-breakpoint`.
+The below example sets the `--outdent-outline-breakpoint` .
 
 ```css
 @custom-media --outdent-outline-breakpoint (min-width: 900px);
 ```
 
-
 ### Unordered list
 
 <ul>
 <li><p>One morning, when Gregor Samsa woke from troubled dreams, he found himself
-transformed in his bed into a horrible vermin.
-    </p>
+transformed in his bed into a horrible vermin.</p>
 </li>
 <li>He lay on his armour-like back
     <ul>
@@ -776,8 +781,7 @@ transformed in his bed into a horrible vermin.
 
 <ol>
 <li><p>One morning, when Gregor Samsa woke from troubled dreams, he found himself
-transformed in his bed into a horrible vermin.
-    </p>
+transformed in his bed into a horrible vermin.</p>
 </li>
 <li>He lay on his armour-like back
     <ol>
@@ -794,8 +798,7 @@ transformed in his bed into a horrible vermin.
 
 <ol class="indent">
 <li><p>One morning, when Gregor Samsa woke from troubled dreams, he found himself
-transformed in his bed into a horrible vermin.
-    </p>
+transformed in his bed into a horrible vermin.</p>
 </li>
 <li>He lay on his armour-like back
     <ol>
@@ -815,7 +818,7 @@ transformed in his bed into a horrible vermin.
 <dd>when Gregor Samsa woke from troubled dreams, he found himself 
 transformed in his bed into a horrible vermin.</dd>
 <dt>He lay on his armour-like back</dt>
-<dd>and if he lifted his head a little he could see his brown belly,
+<dd>and if he lifted his head a little he could see his brown belly, 
 slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover
 it and seemed ready to slide off any moment.</dd>
 <dt>His many legs</dt>
@@ -827,7 +830,6 @@ as he looked. <span class="quote">What's happened to me?</span> he thought. It w
 familiar walls.</dd>
 </dl>
 
-
 ### Timeline
 
 <dl class="timeline">
@@ -835,7 +837,7 @@ familiar walls.</dd>
 <dd>when Gregor Samsa woke from troubled dreams, he found himself 
 transformed in his bed into a horrible vermin.</dd>
 <dt>He lay on his armour-like back</dt>
-<dd>and if he lifted his head a little he could see his brown belly,
+<dd>and if he lifted his head a little he could see his brown belly, 
 slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover
 it and seemed ready to slide off any moment.</dd>
 <dt><figure class="framed">
@@ -860,7 +862,7 @@ familiar walls.</dd>
 <dd>when Gregor Samsa woke from troubled dreams, he found himself 
 transformed in his bed into a horrible vermin.</dd>
 <dt>He lay on his armour-like back</dt>
-<dd>and if he lifted his head a little he could see his brown belly,
+<dd>and if he lifted his head a little he could see his brown belly, 
 slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover
 it and seemed ready to slide off any moment.</dd>
 <dt blub=":"><figure class="framed">
@@ -885,7 +887,7 @@ familiar walls.</dd>
 <dd>when Gregor Samsa woke from troubled dreams, he found himself 
 transformed in his bed into a horrible vermin.</dd>
 <dt>He lay on his armour-like back</dt>
-<dd><p>and if he lifted his head a little he could see his brown belly,</p>
+<dd><p>and if he lifted his head a little he could see his brown belly, </p>
 <p>slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover
 it and seemed ready to slide off any moment.</p></dd>
 <dt><figure class="framed">
@@ -1218,6 +1220,7 @@ familiar walls.</dd>
             <td id="primary-d5" class="hex-color"></td>
         </tr>
     </tbody>
+
 </table>
 
 <table class="noso">
@@ -1534,6 +1537,7 @@ familiar walls.</dd>
             <td id="accent-four-d5" class="hex-color"></td>
         </tr>
     </tbody>
+
 </table>
 
 <table class="noso">
@@ -1616,6 +1620,7 @@ familiar walls.</dd>
 </table>
 
 <script>
+
     /* https://stackoverflow.com/a/61479601 */
     function rgbToHex(rgb) {
         return '#' + rgb
@@ -1658,7 +1663,6 @@ Each breakpoint *can* trigger a change in base font size. The wider the screen, 
 </tbody>
 </table>
 
-
 <div class="full-bleed pdx overflow-hidden"> 
     <div class="w-lg-breakpoint mry-2 mrx-auto br bg-neutral-5 d:bg-neutral-d4">
     <span class="pd">.w-lg-breakpoint</span>        
@@ -1690,8 +1694,8 @@ Each breakpoint *can* trigger a change in base font size. The wider the screen, 
             <span>.w-xs</span>
         </div>
     </div>
-</div>
 
+</div>
 
 ## Layout
 
@@ -1738,4 +1742,3 @@ Each breakpoint *can* trigger a change in base font size. The wider the screen, 
 <textarea></textarea>
 </div>
 </form>
-

@@ -2829,6 +2829,7 @@ blockquote>header {
     font-weight: var(--font-weight-bold);
     font-size: 1rem;
     font-size: var(--fs);
+    display: block;
 }
 
 blockquote>footer::before {
@@ -31622,7 +31623,7 @@ Naming conventions
     --mrt-list: var(--vertical-rhythm);
     --mrb-list: var(--vertical-rhythm);
     --list-item-type: "●";
-    /*▁⁕●■ →* */
+    /*▁⁕●■ →*—*/
     --ol-counter-delimiter: ".";
     --ol-counter-type: decimal;
     --h-counter-type: decimal;
