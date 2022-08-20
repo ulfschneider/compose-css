@@ -863,6 +863,16 @@ blockquote>header::after {
 }
 
 
+@media(--mx-sm-breakpoint) {
+
+    figcaption,
+    blockquote>footer,
+    blockquote>header {
+        max-width: unset;
+    }
+}
+
+
 hr {
     border: 0;
     text-align: center;
@@ -945,6 +955,16 @@ details[open]>summary::before {
 
 
 @media (min-width: 9999px) {
+    details>summary:not(details>summary.no-outdent):not(.no-outdent summary):not(table details>summary):not(pre details>summary)::before {
+        margin-left: calc(-1 * calc(2 * var(--space)));
+        margin-left: calc(-1 * var(--horizontal-rhythm));
+        justify-content: flex-end;
+        padding-right: var(--space);
+    }
+}
+
+
+@media (--outdent-breakpoint) {
     details>summary:not(details>summary.no-outdent):not(.no-outdent summary):not(table details>summary):not(pre details>summary)::before {
         margin-left: calc(-1 * calc(2 * var(--space)));
         margin-left: calc(-1 * var(--horizontal-rhythm));

@@ -14,8 +14,8 @@ const processingCSS = () => {
         .pipe(postcss([
             postcssImport(),
             postcssNested(),
-            postcssCustomProperties(),
-            postcssCustomMedia()            
+            postcssCustomProperties({preserve: true}),
+            postcssCustomMedia({preserve: true})            
         ]))
         .pipe(dest(CSS_DEST));
 };
