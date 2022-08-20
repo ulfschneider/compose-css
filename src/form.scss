@@ -11,6 +11,8 @@
     --custom-check-size: 1em;
     --custom-check-pos: calc((var(--custom-check-line-height) * 1em - var(--custom-check-size)) / 2);
     --custom-check-border-width: 2px;
+    --form-error-border-width: 2px;
+    --form-input-border-width: 1px;
     --custom-radio-gap: var(--custom-check-border-width);
     caret-color: var(--caret-color);
 }
@@ -143,6 +145,7 @@ form .error:not(form .group .error) {
 }
 
 form .error {
+
     input[type=text]:not(:focus),
     input[type=email]:not(:focus),
     input[type=number]:not(:focus),
@@ -152,8 +155,8 @@ form .error {
     input[type=url]:not(:focus),
     input[list]:not(:focus),
     textarea:not(:focus) {
-        border: 2px solid var(--error-color);
-        padding: calc(var(--form-component-pdy) - 1px) calc(var(--form-component-pdx) - 1px);
+        border: var(--form-error-border-width) solid var(--error-color);
+        padding: calc(var(--form-component-pdy) + var(--form-input-border-width) - var(--form-error-border-width)) calc(var(--form-component-pdx) + var(--form-input-border-width) - var(--form-error-border-width));
     }
 }
 
@@ -167,7 +170,7 @@ input[type=url].error:not(:focus),
 input[list].error:not(:focus),
 textarea.error:not(:focus) {
     border: 2px solid var(--error-color);
-    padding: calc(var(--form-component-pdy) - 1px) calc(var(--form-component-pdx) - 1px);
+    padding: calc(var(--form-component-pdy) + var(--form-input-border-width) - var(--form-error-border-width)) calc(var(--form-component-pdx) + var(--form-input-border-width) - var(--form-error-border-width));
 }
 
 
@@ -179,7 +182,7 @@ input[type=search],
 input[type=tel],
 input[type=url],
 input[list] {
-    border: 1px solid var(--form-field-border-color);
+    border: var(--form-input-border-width) solid var(--form-field-border-color);
     vertical-align: middle;
     padding: var(--form-component-pdy) var(--form-component-pdx);
     line-height: var(--lh);

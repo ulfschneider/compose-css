@@ -4,6 +4,7 @@
 @import "space";
 @import "type-scale";
 @import "type-scale-breakpoints";
+@import "type";
 @import "border";
 @import "color-light-mode";
 @import "color-dark-mode";
@@ -26,7 +27,6 @@
 @import "height-min";
 @import "height-min-breakpoints";
 @import "hide-breakpoints";
-@import "typography";
 @import "flex-box";
 @import "flex-box-breakpoints";
 @import "list.scss";

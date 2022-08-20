@@ -25,6 +25,7 @@
     --blockquote-font-weight: normal;
     --blockquote-font-size: inherit;
     --blockquote-line-height: inherit;
+    --blockquote-border-width: 2px;
     --quote-font-style: italic;
     --text-decoration: underline;
     --text-decoration-thickness: .1em;
@@ -65,8 +66,7 @@
     --outline-width: var(--space-d3);
     --outline: var(--outline-width) solid var(--outline-color);
     --outline-offset: var(--space-d4);
-    --kbd-shadow: .07em .07em var(--border-color);
-    --blockquote-border-width: 2px;
+    --kbd-shadow: .07em .07em var(--border-color);    
     --summary-expanded-prefix: "ᐯ";
     --summary-collapsed-prefix: "ᐳ";
     font-family: var(--font-family);
@@ -90,6 +90,17 @@
     a:hover {
         color: var(--link-hover-color);
     }
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: var(--link-text-decoration);
+    text-decoration-thickness: var(--link-text-decoration-thickness);
+    transition: color var(--transition-duration) ease-out;
+}
+
+a:not(table a) {
+    overflow-wrap: break-word;
 }
 
 a:focus {
@@ -578,6 +589,21 @@ blockquote {
     line-height: var(--blockquote-line-height);
 }
 
+blockquote>footer,
+blockquote>header {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--fs);
+}
+
+blockquote>footer::before {
+    content: "";
+    display: inline-flex;
+    align-self: baseline;
+    width: 1em;    
+    border-top: var(--blockquote-border-width) solid currentColor;
+    font-weight: normal;
+}
+
 
 blockquote::before {
     content: "";
@@ -585,29 +611,6 @@ blockquote::before {
     display: block;
     margin-right: auto;
     border-top: var(--blockquote-border-width) solid var(--li-prefix-color);
-}
-
-
-/*
-//FIXME
-.tag {
-    white-space: nowrap;
-    padding: var(--space-d4);
-    border-radius: var(--space-d4);
-    display: inline-block;
-    line-height: var(--lh);
-}
-*/
-
-a {
-    color: var(--link-color);
-    text-decoration: var(--link-text-decoration);
-    text-decoration-thickness: var(--link-text-decoration-thickness);
-    transition: color var(--transition-duration) ease-out;
-}
-
-a:not(table a) {
-    overflow-wrap: break-word;
 }
 
 blockquote p {
@@ -664,22 +667,6 @@ blockquote>header {
 
 figcaption {
     font-size: var(--figcaption-font-size);
-}
-
-blockquote>footer,
-blockquote>header {
-    font-weight: var(--font-weight-bold);
-    font-size: var(--fs);
-}
-
-blockquote>footer::before {
-    content: "—";
-    font-weight: normal;
-}
-
-blockquote>header::after {
-    content: "—";
-    font-weight: normal;
 }
 
 @media(--mx-sm-breakpoint) {
