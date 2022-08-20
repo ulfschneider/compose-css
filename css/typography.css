@@ -19,6 +19,8 @@
     --mono-font-feature-settings: var(--font-feature-settings);
     --code-font-family: var(--mono-font-family);
     --code-font-weight: normal;
+    --pre-code-horizontal-padding: var(--space-d1);
+    --pre-code-vertical-padding: var(--space-d2);
     --blockquote-font-style: italic;
     --blockquote-font-weight: normal;
     --blockquote-font-size: inherit;
@@ -664,6 +666,7 @@ pre>code {
     background: var(--pre-code-background);
     color: var(--pre-code-color);
     padding: var(--space-d2) var(--space-d1);
+    padding: var(--pre-code-vertical-padding) var(--pre-code-horizontal-padding);
     display: inline-block;
     text-align: left;
     line-height: 1.5;
