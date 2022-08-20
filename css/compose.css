@@ -67,8 +67,8 @@ h6 {
     --custom-check-space: .1em;
     --custom-check-size: 1em;
     --custom-check-pos: calc((var(--custom-check-line-height) * 1em - var(--custom-check-size)) / 2);
-    --custom-check-border-width: 2px;
-    --form-error-border-width: 2px;
+    --custom-check-border-width: var(--typographic-line-width);
+    --form-error-border-width: var(--typographic-line-width);
     --form-input-border-width: 1px;
     --custom-radio-gap: var(--custom-check-border-width);
     caret-color: hsl(198, 100%, calc(33.3% - calc(33.3% / 7)));
@@ -282,6 +282,8 @@ input[list] {
     background: var(--form-field-background);
     color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
     color: var(--form-field-color);
+    width: calc(calc(calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66) * 1.66) * 1.66);
+    width: var(--space-5);
 }
 
 textarea {
@@ -299,6 +301,8 @@ textarea {
     color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
     color: var(--form-field-color);
     font-weight: normal;
+    width: calc(calc(calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66) * 1.66) * 1.66);
+    width: var(--space-5);
 }
 
 fieldset {
@@ -524,7 +528,11 @@ It is also possible to activate only one of the two --outdent… breakpoints*/
     --base-font-size: 18px;
     --fs: 1rem;
     --fs-default: var(--fs);
-    --fs-mono: inherit;
+    --fs-mono: .95em;
+    --large: var(--fs-1);
+    --larger: calc(var(--size-factor) * 1em);
+    --small: var(--fs-d1);
+    --smaller: .9em;
     --fs-d1: .9rem;
     --fs-1: calc(var(--fs) * var(--size-factor));
     --fs-2: calc(var(--fs) * var(--size-factor) * var(--size-factor));
@@ -536,10 +544,6 @@ It is also possible to activate only one of the two --outdent… breakpoints*/
     --fs-8: calc(var(--fs) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor));
     --fs-9: calc(var(--fs) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor));
     --fs-10: calc(var(--fs) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor));
-    --large: var(--fs-1);
-    --larger: calc(var(--size-factor) * 1em);
-    --small: var(--fs-d1);
-    --smaller: 0.9em;
     --lh: 1;
     --lh-d1: 0.9;
     --lh-3: calc(var(--space-factor) * var(--lh));
@@ -563,7 +567,7 @@ It is also possible to activate only one of the two --outdent… breakpoints*/
     font-size: 18px;
     font-size: var(--base-font-size);
     line-height: calc(1.66 * 1);
-    line-height: var(--lh-3);
+    line-height: var(--lh-default);
 }
 
 small,
@@ -573,7 +577,7 @@ small,
 }
 
 .smaller {
-    font-size: 0.9em;
+    font-size: .9em;
     font-size: var(--smaller);
 }
 
@@ -859,7 +863,7 @@ small,
         font-size: var(--small);
     }
     .xs\:smaller {
-        font-size: 0.9em;
+        font-size: .9em;
         font-size: var(--smaller);
     }
     .xs\:fs,
@@ -991,7 +995,7 @@ small,
         font-size: var(--small);
     }
     .xs\:smaller {
-        font-size: 0.9em;
+        font-size: .9em;
         font-size: var(--smaller);
     }
     .xs\:fs,
@@ -1123,7 +1127,7 @@ small,
         font-size: var(--small);
     }
     .sm\:smaller {
-        font-size: 0.9em;
+        font-size: .9em;
         font-size: var(--smaller);
     }
     .sm\:fs,
@@ -1255,7 +1259,7 @@ small,
         font-size: var(--small);
     }
     .sm\:smaller {
-        font-size: 0.9em;
+        font-size: .9em;
         font-size: var(--smaller);
     }
     .sm\:fs,
@@ -1387,7 +1391,7 @@ small,
         font-size: var(--small);
     }
     .rg\:smaller {
-        font-size: 0.9em;
+        font-size: .9em;
         font-size: var(--smaller);
     }
     .rg\:fs,
@@ -1519,7 +1523,7 @@ small,
         font-size: var(--small);
     }
     .rg\:smaller {
-        font-size: 0.9em;
+        font-size: .9em;
         font-size: var(--smaller);
     }
     .rg\:fs,
@@ -1651,7 +1655,7 @@ small,
         font-size: var(--small);
     }
     .md\:smaller {
-        font-size: 0.9em;
+        font-size: .9em;
         font-size: var(--smaller);
     }
     .md\:fs,
@@ -1783,7 +1787,7 @@ small,
         font-size: var(--small);
     }
     .md\:smaller {
-        font-size: 0.9em;
+        font-size: .9em;
         font-size: var(--smaller);
     }
     .md\:fs,
@@ -1915,7 +1919,7 @@ small,
         font-size: var(--small);
     }
     .lg\:smaller {
-        font-size: 0.9em;
+        font-size: .9em;
         font-size: var(--smaller);
     }
     .lg\:fs,
@@ -2047,7 +2051,7 @@ small,
         font-size: var(--small);
     }
     .lg\:smaller {
-        font-size: 0.9em;
+        font-size: .9em;
         font-size: var(--smaller);
     }
     .lg\:fs,
@@ -2160,10 +2164,11 @@ small,
     --blockquote-font-weight: normal;
     --blockquote-font-size: inherit;
     --blockquote-line-height: inherit;
-    --blockquote-border-width: 2px;
+    --typographic-line-width: 2px;
+    --blockquote-border-width: var(--typographic-line-width);
     --quote-font-style: italic;
     --text-decoration: underline;
-    --text-decoration-thickness: .1em;
+    --text-decoration-thickness: var(--typographic-line-width);
     --link-text-decoration: var(--text-decoration);
     --link-text-decoration-thickness: var(--text-decoration-thickness);
     --font-variant-numeric: normal;
@@ -2239,7 +2244,7 @@ a {
     color: var(--link-color);
     text-decoration: underline;
     text-decoration: var(--link-text-decoration);
-    text-decoration-thickness: .1em;
+    text-decoration-thickness: 2px;
     text-decoration-thickness: var(--link-text-decoration-thickness);
     transition: color .14s ease-out;
     transition: color var(--transition-duration) ease-out;
@@ -2441,7 +2446,7 @@ abbr,
 u {
     text-decoration: underline;
     text-decoration: var(--text-decoration);
-    text-decoration-thickness: .1em;
+    text-decoration-thickness: 2px;
     text-decoration-thickness: var(--text-decoration-thickness);
 }
 
@@ -2729,7 +2734,7 @@ pre,
 .pre {
     font-family: ui-monospace, monospace;
     font-family: var(--code-font-family);
-    font-size: inherit;
+    font-size: .95em;
     font-size: var(--fs-mono);
 }
 
@@ -2830,8 +2835,9 @@ blockquote>footer::before {
     content: "";
     display: inline-flex;
     align-self: baseline;
-    width: 1em;    
-    border-top: 2px solid currentColor;    
+    width: 1em;  
+    height: 1em;  
+    border-top: 2px solid currentColor;  
     border-top: var(--blockquote-border-width) solid currentColor;
     font-weight: normal;
 }
@@ -37312,7 +37318,7 @@ Naming conventions
     --transition-duration: .14s;
     --transition-function: ease;
     --blink-duration: 1.5s;
-    --blink-function: ease;
+    --blink-function: step-end;
 }
 
 @keyframes blink {
@@ -37320,13 +37326,13 @@ Naming conventions
     to {
         opacity: 0.0;
     }
-    50% {
+    20% {
         opacity: 1.0;
     }
 }
 
 .blink {
-    animation: 1.5s blink ease infinite;
+    animation: 1.5s blink step-end infinite;
     animation: var(--blink-duration) blink var(--blink-function) infinite;
 }
 

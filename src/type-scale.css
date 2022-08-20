@@ -3,7 +3,11 @@
     --base-font-size: 18px;
     --fs: 1rem;
     --fs-default: var(--fs);
-    --fs-mono: inherit;
+    --fs-mono: .95em;
+    --large: var(--fs-1);
+    --larger: calc(var(--size-factor) * 1em);
+    --small: var(--fs-d1);
+    --smaller: .9em;
     --fs-d1: .9rem;
     --fs-1: calc(var(--fs) * var(--size-factor));
     --fs-2: calc(var(--fs) * var(--size-factor) * var(--size-factor));
@@ -15,10 +19,6 @@
     --fs-8: calc(var(--fs) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor));
     --fs-9: calc(var(--fs) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor));
     --fs-10: calc(var(--fs) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor) * var(--size-factor));
-    --large: var(--fs-1);
-    --larger: calc(var(--size-factor) * 1em);
-    --small: var(--fs-d1);
-    --smaller: 0.9em;
     --lh: 1;
     --lh-d1: 0.9;
     --lh-3: calc(var(--space-factor) * var(--lh));
@@ -40,7 +40,7 @@
     --lh-h2: var(--lh-2);
     --lh-h1: var(--lh-1);
     font-size: var(--base-font-size);
-    line-height: var(--lh-3);
+    line-height: var(--lh-default);
 }
 
 small,

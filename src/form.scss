@@ -10,8 +10,8 @@
     --custom-check-space: .1em;
     --custom-check-size: 1em;
     --custom-check-pos: calc((var(--custom-check-line-height) * 1em - var(--custom-check-size)) / 2);
-    --custom-check-border-width: 2px;
-    --form-error-border-width: 2px;
+    --custom-check-border-width: var(--typographic-line-width);
+    --form-error-border-width: var(--typographic-line-width);
     --form-input-border-width: 1px;
     --custom-radio-gap: var(--custom-check-border-width);
     caret-color: var(--caret-color);
@@ -190,6 +190,7 @@ input[list] {
     -webkit-border-radius: 0;
     background: var(--form-field-background);
     color: var(--form-field-color);
+    width: var(--space-5);
 }
 
 textarea {
@@ -202,6 +203,7 @@ textarea {
     background: var(--form-field-background);
     color: var(--form-field-color);
     font-weight: normal;
+    width: var(--space-5);
 }
 
 fieldset {

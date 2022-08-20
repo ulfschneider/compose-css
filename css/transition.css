@@ -2,7 +2,7 @@
     --transition-duration: .14s;
     --transition-function: ease;
     --blink-duration: 1.5s;
-    --blink-function: ease;
+    --blink-function: step-end;
 }
 
 @keyframes blink {
@@ -10,13 +10,13 @@
     to {
         opacity: 0.0;
     }
-    50% {
+    20% {
         opacity: 1.0;
     }
 }
 
 .blink {
-    animation: 1.5s blink ease infinite;
+    animation: 1.5s blink step-end infinite;
     animation: var(--blink-duration) blink var(--blink-function) infinite;
 }
 

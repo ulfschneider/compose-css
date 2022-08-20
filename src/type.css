@@ -25,10 +25,11 @@
     --blockquote-font-weight: normal;
     --blockquote-font-size: inherit;
     --blockquote-line-height: inherit;
-    --blockquote-border-width: 2px;
+    --typographic-line-width: 2px;
+    --blockquote-border-width: var(--typographic-line-width);
     --quote-font-style: italic;
     --text-decoration: underline;
-    --text-decoration-thickness: .1em;
+    --text-decoration-thickness: var(--typographic-line-width);
     --link-text-decoration: var(--text-decoration);
     --link-text-decoration-thickness: var(--text-decoration-thickness);
     --font-variant-numeric: normal;
@@ -599,7 +600,8 @@ blockquote>footer::before {
     content: "";
     display: inline-flex;
     align-self: baseline;
-    width: 1em;    
+    width: 1em;  
+    height: 1em;  
     border-top: var(--blockquote-border-width) solid currentColor;
     font-weight: normal;
 }

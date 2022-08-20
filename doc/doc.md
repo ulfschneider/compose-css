@@ -306,6 +306,7 @@ Configure the amount of relative decrease and increase with:
 
 ```css
 :root {
+    --size-factor: 1.25;
     --smaller: .9em;
     --larger: calc(var(--size-factor) * 1em);
 }
@@ -374,15 +375,15 @@ Configure the font sizing steps with:
 
 ```css
 :root {
-    --size-factor: 1.25;
-    /*for increasing steps starting from --fs*/
-    --base-font-size: 19px;
-    /*this is the normal font size represented by 1rem*/
-    --fs: 1rem;
-    --fs-mono: .9rem;
-    --fs-d1: .9rem;
-    --small: var(--fs-d1);
-    --large: var(--fs-1);
+  --base-font-size: 18px;
+  --fs: 1rem;
+  --fs-default: var(--fs);
+  --fs-mono: .95em;
+  --large: var(--fs-1);
+  --larger: calc(var(--size-factor) * 1em);
+  --small: var(--fs-d1);
+  --smaller: 0.9em;
+  --fs-d1: .9rem;
 }
 ```
 
@@ -647,7 +648,7 @@ Configure the displayed symbols with:
 
 ### Details and Summary
 
-Details and summary
+Text above …
 
 <details>
 <summary>One morning</summary>
@@ -671,14 +672,31 @@ Details and summary
         </details>
 </details>
 
+… text below.
 
+```html
 <details>
-<p>
+<summary>One morning</summary>
+    <p>when Gregor Samsa woke from troubled dreams, he found himself
+        transformed in his bed into a horrible vermin.
+    </p>
+    <p>
+        He lay on his armour-like back, and if he lifted his head a little he could
+        see his brown belly, slightly domed and divided by arches into stiff
+        sections.
+        </p>
+        <details>
+        <summary>The bedding was hardly able to cover it and seemed ready to slide
+        off any moment.
+        </summary>
+        <p>
         His many legs, pitifully thin compared with the size of the rest of him,
         waved about helplessly as he looked. <q>What's happened to me?</q> he
         thought. It wasn't a dream.
         </p>
+        </details>
 </details>
+```
 
 ## Lists
 

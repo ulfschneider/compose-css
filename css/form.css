@@ -10,7 +10,7 @@
     --custom-check-space: .1em;
     --custom-check-size: 1em;
     --custom-check-pos: calc((var(--custom-check-line-height) * 1em - var(--custom-check-size)) / 2);
-    --custom-check-border-width: 2px;
+    --custom-check-border-width: var(--typographic-line-width);
     --custom-radio-gap: var(--custom-check-border-width);
     caret-color: var(--caret-color);
 }
@@ -161,7 +161,8 @@ input[list] {
     border-radius: 0;
     -webkit-border-radius: 0;
     background: var(--form-field-background);
-    color: var(--form-field-color);    
+    color: var(--form-field-color);   
+    width: var(--space-5); 
 }
 
 textarea {
@@ -175,6 +176,7 @@ textarea {
     background: var(--form-field-background);
     color: var(--form-field-color);
     font-weight: normal;
+    width: var(--space-5);
 }
 
 fieldset {
@@ -282,7 +284,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     height: calc(var(--custom-check-size) * .3);
     transform: rotate(-45deg);
     border: solid var(--base-background);
-    border-width: 0 0 2px 2px;
+    border-width: 0 0 var(--typographic-line-width) var((--typographic-line-width));
     border-width: 0 0 var(--custom-check-border-width) var(--custom-check-border-width);
     border-top-color: transparent;
     opacity: 0;

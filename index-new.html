@@ -4,7 +4,7 @@
     addEventListener('load', () => { ActiveToc.init('.table-of-contents'); sotable({whiteList: '.soso'})}); //activate sotable functionalty on load
     </script></head><body class="pd"><main class="outline mxw-lg mrx-auto"><header class="title mry-2">
 <h1>Compose CSS</h1>
-<span class="bg-primary neutral-5 pd-d3">Version 28.10.9</span>
+<span class="bg-primary neutral-5 pd-d3">Version 28.10.10</span>
 <p>A low-level CSS Toolkit to build fast, maintainable, and responsive websites.</p>
 </header>
 <nav class="table-of-contents fluid-columns-5 bleed-right"><ol><li><a href="#preparatory">Preparatory </a><ol><li><a href="#install-compose-css">Install Compose CSS </a></li><li><a href="#notation-used-in-this-document">Notation used in this document </a></li><li><a href="#stepping-through-options">Stepping through options </a></li></ol></li><li><a href="#typography">Typography </a><ol><li><a href="#basic-elements">Basic elements </a></li><li><a href="#font-size">Font size </a></li><li><a href="#headings">Headings </a></li><li><a href="#heading-size">Heading size </a></li><li><a href="#line-height">Line height </a></li><li><a href="#rhythm">Rhythm </a></li><li><a href="#word-wrapping">Word wrapping </a></li><li><a href="#writing-mode">Writing mode </a></li><li><a href="#paragraph">Paragraph </a></li><li><a href="#indented-paragraph">Indented Paragraph </a></li><li><a href="#horizontal-ruler">Horizontal ruler </a></li><li><a href="#blockquote">Blockquote </a></li><li><a href="#details-and-summary">Details and Summary </a></li></ol></li><li><a href="#lists">Lists </a><ol><li><a href="#unordered-list">Unordered list </a></li><li><a href="#ordered-list">Ordered List </a></li><li><a href="#indented-ordered-list">Indented Ordered List </a></li><li><a href="#definition-list">Definition List </a></li><li><a href="#timeline">Timeline </a></li><li><a href="#framed-timeline">Framed Timeline </a></li><li><a href="#horizontal-timeline">Horizontal Timeline </a></li></ol></li><li><a href="#tables">Tables </a></li><li><a href="#figures">Figures </a></li><li><a href="#images">Images </a></li><li><a href="#colors">Colors </a></li><li><a href="#breakpoints">Breakpoints </a></li><li><a href="#layout">Layout </a></li><li><a href="#forms">Forms </a></li></ol></nav><h2 id="preparatory" tabindex="-1">Preparatory <a class="anchor" href="#preparatory">#</a></h2>
@@ -286,6 +286,7 @@ Another example is how dark or how light a color is set, like <code>.primary-d5<
 </code></pre>
 <p>Configure the amount of relative decrease and increase with:</p>
 <pre class="language-css"><code class="language-css"><span class="token selector">:root</span> <span class="token punctuation">{</span>
+    <span class="token property">--size-factor</span><span class="token punctuation">:</span> 1.25<span class="token punctuation">;</span>
     <span class="token property">--smaller</span><span class="token punctuation">:</span> .9em<span class="token punctuation">;</span>
     <span class="token property">--larger</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--size-factor<span class="token punctuation">)</span> * 1em<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
@@ -349,15 +350,15 @@ Another example is how dark or how light a color is set, like <code>.primary-d5<
             </tbody></table></div>
 <p>Configure the font sizing steps with:</p>
 <pre class="language-css"><code class="language-css"><span class="token selector">:root</span> <span class="token punctuation">{</span>
-    <span class="token property">--size-factor</span><span class="token punctuation">:</span> 1.25<span class="token punctuation">;</span>
-    <span class="token comment">/*for increasing steps starting from --fs*/</span>
-    <span class="token property">--base-font-size</span><span class="token punctuation">:</span> 19px<span class="token punctuation">;</span>
-    <span class="token comment">/*this is the normal font size represented by 1rem*/</span>
-    <span class="token property">--fs</span><span class="token punctuation">:</span> 1rem<span class="token punctuation">;</span>
-    <span class="token property">--fs-mono</span><span class="token punctuation">:</span> .9rem<span class="token punctuation">;</span>
-    <span class="token property">--fs-d1</span><span class="token punctuation">:</span> .9rem<span class="token punctuation">;</span>
-    <span class="token property">--small</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--fs-d1<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token property">--large</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--fs-1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--base-font-size</span><span class="token punctuation">:</span> 18px<span class="token punctuation">;</span>
+  <span class="token property">--fs</span><span class="token punctuation">:</span> 1rem<span class="token punctuation">;</span>
+  <span class="token property">--fs-default</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--fs<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--fs-mono</span><span class="token punctuation">:</span> .95em<span class="token punctuation">;</span>
+  <span class="token property">--large</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--fs-1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--larger</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--size-factor<span class="token punctuation">)</span> * 1em<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--small</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--fs-d1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--smaller</span><span class="token punctuation">:</span> 0.9em<span class="token punctuation">;</span>
+  <span class="token property">--fs-d1</span><span class="token punctuation">:</span> .9rem<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
 <h3 id="headings" tabindex="-1">Headings <a class="anchor" href="#headings">#</a></h3>
@@ -563,7 +564,7 @@ He lay on his armour-like back
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>blockquote</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 <h3 id="details-and-summary" tabindex="-1">Details and Summary <a class="anchor" href="#details-and-summary">#</a></h3>
-<p>Details and summary</p>
+<p>Text above …</p>
 <details>
 <summary>One morning</summary>
     <p>when Gregor Samsa woke from troubled dreams, he found himself
@@ -585,13 +586,29 @@ He lay on his armour-like back
         </p>
         </details>
 </details>
-<details>
-<p>
+<p>… text below.</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>details</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>summary</span><span class="token punctuation">&gt;</span></span>One morning<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>summary</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>when Gregor Samsa woke from troubled dreams, he found himself
+        transformed in his bed into a horrible vermin.
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
+        He lay on his armour-like back, and if he lifted his head a little he could
+        see his brown belly, slightly domed and divided by arches into stiff
+        sections.
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>details</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>summary</span><span class="token punctuation">&gt;</span></span>The bedding was hardly able to cover it and seemed ready to slide
+        off any moment.
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>summary</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
         His many legs, pitifully thin compared with the size of the rest of him,
-        waved about helplessly as he looked. <q>What's happened to me?</q> he
+        waved about helplessly as he looked. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q</span><span class="token punctuation">&gt;</span></span>What's happened to me?<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q</span><span class="token punctuation">&gt;</span></span> he
         thought. It wasn't a dream.
-        </p>
-</details>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>details</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>details</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
 <h2 id="lists" tabindex="-1">Lists <a class="anchor" href="#lists">#</a></h2>
 <p>Lists (<code>ol</code>, <code>ul</code>), timelines (<code>dl.timeline</code>), the <code>summary</code> of a <code>details</code> section (<code>details&gt;summary</code>), and outline numbers of heading elements (<code>.outline h2</code>, <code>.outline h3</code>, …) can have an <em>outdent</em> property that will left-align the first level text of those elements with the text above and below of the list and summary. The left-aligning requires to outdent the order numbers, the bullets, and the summary indication which is only desired if the text has enough left margin. By default the outdent of those elements is deactivated. Activate it by assigning a value to the <code>--outdent-breakpoint</code>.</p>
 <p>To activate the outdent breakpoint choose a width suitable to your site design. E.g. for a centered layout with a regular center content width (<code>--rg-width</code>) an <code>--outdent-breakpoint</code> could set to the value equal to <code>--rg-breakpoint</code>. The initial setting of <code>9999px</code> for <code>--outdent-breakpoint</code> deactivates outdenting of list elements.</p>
