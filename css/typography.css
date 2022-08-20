@@ -663,7 +663,7 @@ code:not(pre code) {
 pre>code {
     background: var(--pre-code-background);
     color: var(--pre-code-color);
-    padding: var(--space-d1);
+    padding: var(--space-d2) var(--space-d1);
     display: inline-block;
     text-align: left;
     line-height: 1.5;
@@ -840,11 +840,13 @@ blockquote>header {
 
 blockquote>footer::before {
     content: "—";
+    font-weight: normal;
 }
 
 
 blockquote>header::after {
     content: "—";
+    font-weight: normal;
 }
 
 
