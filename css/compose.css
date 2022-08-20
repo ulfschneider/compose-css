@@ -2828,7 +2828,6 @@ blockquote>footer {
     font-weight: var(--font-weight-bold);
     font-size: 1rem;
     font-size: var(--fs);    
-    text-indent: -1em;
 }
 
 blockquote>footer::before {

@@ -741,7 +741,6 @@ blockquote>footer {
     font-weight: 700;
     font-weight: var(--font-weight-bold);
     font-size: var(--fs);    
-    text-indent: -1em;
 }
 
 
