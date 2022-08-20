@@ -423,6 +423,24 @@ Take the size and line height of headings and apply it to any element *without* 
                 </tr>
             </table>
 
+Adjust heading font size and line height with:
+
+```css
+:root {
+  --fs-h6: var(--fs);
+  --fs-h5: var(--fs);
+  --fs-h4: var(--fs-1);
+  --fs-h3: var(--fs-2);
+  --fs-h2: var(--fs-3);
+  --fs-h1: var(--fs-7);
+  --lh-h6: var(--lh-3);
+  --lh-h5: var(--lh-3);
+  --lh-h4: var(--lh-2);
+  --lh-h3: var(--lh-2);
+  --lh-h2: var(--lh-2);
+  --lh-h1: var(--lh-1);
+}
+```
         
 
 ### Line height
@@ -481,7 +499,21 @@ Take the size and line height of headings and apply it to any element *without* 
                 </tr>
             </table>
 
-        
+Adjust line height with: 
+
+```css
+:root {
+  --space-factor: 1.66;
+  --lh: 1;
+  --lh-d1: 0.9;
+  --lh-3: calc(var(--space-factor) * var(--lh));
+  --lh-2: calc((var(--lh-3) - var(--lh)) / 3 * 2 + var(--lh));
+  --lh-1: calc((var(--lh-3) - var(--lh)) / 3 + var(--lh));
+  --lh-default: var(--lh-3);
+  --lh-4: calc((var(--lh-3) - var(--lh)) / 3 * 4 + var(--lh));
+  --lh-5: calc((var(--lh-3) - var(--lh)) / 3 * 5 + var(--lh));
+}
+```
 
 ### Rhythm
 
