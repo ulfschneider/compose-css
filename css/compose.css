@@ -2753,6 +2753,10 @@ pre,
     margin-top: var(--mrt-pre);
     margin-bottom: calc(1.66 * 1rem);
     margin-bottom: var(--mrb-pre);
+}
+
+pre>*,
+.pre>* {
     overflow-x: auto;
 }
 
@@ -2773,7 +2777,7 @@ pre>code {
     color: var(--pre-code-color);
     padding: calc(calc(1rem / 1.66) / 1.66) calc(1rem / 1.66);
     padding: var(--pre-code-vertical-padding) var(--pre-code-horizontal-padding);
-    display: inline-block;
+    display: block;
     text-align: left;
     line-height: 1.5;
     -moz-tab-size: 4;
@@ -2782,7 +2786,7 @@ pre>code {
     -webkit-hyphens: none;
     -moz-hyphens: none;
     -ms-hyphens: none;
-    hyphens: none;
+    hyphens: none;        
 }
 
 /* purgecss start ignore */
