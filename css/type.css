@@ -669,8 +669,6 @@ pre,
 
 
 pre[data-language]::before {
-    padding-left: var(--space-d1);
-    padding-left: var(--pre-code-horizontal-padding);
     content: attr(data-language);
     font-family: var(--base-font);
     font-size: var(--smaller);
