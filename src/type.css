@@ -61,13 +61,13 @@
     --mrt-hr: var(--vertical-rhythm-plus);
     --mrb-hr: var(--vertical-rhythm-plus);
     --hr-content: "*\0000a0\0000a0\0000a0\0000a0*\0000a0\0000a0\0000a0\0000a0*";
-    --quotes: "„" "“" "‚" "‘";
-    --quotes-de: "„" "“" "‚" "‘";
+    --quotes: "„""“""‚""‘";
+    --quotes-de: "„""“""‚""‘";
     --scroll-margin-top: var(--vertical-rhythm);
     --outline-width: var(--space-d3);
     --outline: var(--outline-width) solid var(--outline-color);
     --outline-offset: var(--space-d4);
-    --kbd-shadow: .07em .07em var(--border-color);    
+    --kbd-shadow: .07em .07em var(--border-color);
     --summary-expanded-prefix: "ᐯ";
     --summary-collapsed-prefix: "ᐳ";
     font-family: var(--font-family);
@@ -534,6 +534,13 @@ pre,
     margin-bottom: var(--mrb-pre);
 }
 
+pre[data-language]::before {
+    padding-left: var(--pre-code-horizontal-padding);
+    content: attr(data-language);
+    font-family: var(--base-font);
+    font-size: var(--smaller);
+}
+
 pre>*,
 .pre>* {
     overflow-x: auto;
@@ -559,7 +566,7 @@ pre>code {
     -webkit-hyphens: none;
     -moz-hyphens: none;
     -ms-hyphens: none;
-    hyphens: none;        
+    hyphens: none;
 }
 
 
@@ -596,15 +603,15 @@ blockquote {
 
 blockquote>footer {
     font-weight: var(--font-weight-bold);
-    font-size: var(--fs);    
+    font-size: var(--fs);
 }
 
 blockquote>footer::before {
     content: "";
     display: inline-flex;
     align-self: baseline;
-    width: 1em;  
-    height: 1em;  
+    width: 1em;
+    height: 1em;
     border-top: var(--blockquote-border-width) solid currentColor;
     font-weight: normal;
 }

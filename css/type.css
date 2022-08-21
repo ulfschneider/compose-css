@@ -61,13 +61,13 @@
     --mrt-hr: var(--vertical-rhythm-plus);
     --mrb-hr: var(--vertical-rhythm-plus);
     --hr-content: "*\0000a0\0000a0\0000a0\0000a0*\0000a0\0000a0\0000a0\0000a0*";
-    --quotes: "„" "“" "‚" "‘";
-    --quotes-de: "„" "“" "‚" "‘";
+    --quotes: "„""“""‚""‘";
+    --quotes-de: "„""“""‚""‘";
     --scroll-margin-top: var(--vertical-rhythm);
     --outline-width: var(--space-d3);
     --outline: var(--outline-width) solid var(--outline-color);
     --outline-offset: var(--space-d4);
-    --kbd-shadow: .07em .07em var(--border-color);    
+    --kbd-shadow: .07em .07em var(--border-color);
     --summary-expanded-prefix: "ᐯ";
     --summary-collapsed-prefix: "ᐳ";
     font-family: system-ui, ui-sans-serif, sans-serif;
@@ -668,6 +668,15 @@ pre,
 }
 
 
+pre[data-language]::before {
+    padding-left: var(--space-d1);
+    padding-left: var(--pre-code-horizontal-padding);
+    content: attr(data-language);
+    font-family: var(--base-font);
+    font-size: var(--smaller);
+}
+
+
 pre>*,
 .pre>* {
     overflow-x: auto;
@@ -697,7 +706,7 @@ pre>code {
     -webkit-hyphens: none;
     -moz-hyphens: none;
     -ms-hyphens: none;
-    hyphens: none;        
+    hyphens: none;
 }
 
 
@@ -745,7 +754,7 @@ blockquote {
 blockquote>footer {
     font-weight: 700;
     font-weight: var(--font-weight-bold);
-    font-size: var(--fs);    
+    font-size: var(--fs);
 }
 
 
@@ -753,9 +762,9 @@ blockquote>footer::before {
     content: "";
     display: inline-flex;
     align-self: baseline;
-    width: 1em;  
-    height: 1em;  
-    border-top: 2px solid currentColor;  
+    width: 1em;
+    height: 1em;
+    border-top: 2px solid currentColor;
     border-top: var(--blockquote-border-width) solid currentColor;
     font-weight: normal;
 }
@@ -786,7 +795,7 @@ blockquote p+p {
 q,
 .q,
 .quote {
-    quotes: "„" "“" "‚" "‘";
+    quotes: "„""“""‚""‘";
     quotes: var(--quotes);
     font-style: italic;
     font-style: var(--quote-font-style);
@@ -797,7 +806,7 @@ html[lang="de-DE"] q,
 html[lang="de-DE"] .q,
 html[lang="de-DE"] .quote,
 html[lang="de-DE"] blockquote {
-    quotes: "„" "“" "‚" "‘";
+    quotes: "„""“""‚""‘";
     quotes: var(--quotes-de);
 }
 
