@@ -17,8 +17,8 @@
 
     /* timeline */
     --timeline-blub-size: var(--fs-d1);
-    --timeline-width: 1px;
-    --timeline-blub-border-width: 1px;
+    --timeline-width: var(--typographic-line-width);
+    --timeline-blub-border-width: var(--typographic-line-width);
     /* column timeline */
     /*--timeline-left-gap: calc(var(--timeline-blub-size) / 2);*/
     /*--timeline-right-gap: calc(var(--horizontal-rhythm) - var(--timeline-left-gap) - var(--timeline-width));*/
