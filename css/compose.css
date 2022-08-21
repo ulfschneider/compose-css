@@ -3634,7 +3634,8 @@ details[open]>summary::before {
     color: var(--base-color);
     background: white;
     background: var(--base-background);
-    color-scheme: light dark; /* both supported */
+    color-scheme: light dark;
+    /* both supported */
 }
 
 ::selection {
@@ -5030,122 +5031,122 @@ details[open]>summary::before {
 }
 
 @media (prefers-color-scheme: light) {
-    .l\:neutral-d5 {
+    .lt\:neutral-d5 {
         color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
         color: var(--neutral-d5);
     }
 
-    .l\:neutral-d4 {
+    .lt\:neutral-d4 {
         color: hsl(0, 0%, calc(53% - 4 * calc(53% / 7)));
         color: var(--neutral-d4);
     }
 
-    .l\:neutral-d3 {
+    .lt\:neutral-d3 {
         color: hsl(0, 0%, calc(53% - 3 * calc(53% / 7)));
         color: var(--neutral-d3);
     }
 
-    .l\:neutral-d2 {
+    .lt\:neutral-d2 {
         color: hsl(0, 0%, calc(53% - 2 * calc(53% / 7)));
         color: var(--neutral-d2);
     }
 
-    .l\:neutral-d1 {
+    .lt\:neutral-d1 {
         color: hsl(0, 0%, calc(53% - calc(53% / 7)));
         color: var(--neutral-d1);
     }
 
-    .l\:neutral {
+    .lt\:neutral {
         color: hsl(0, 0%, 53%);
         color: var(--neutral);
     }
 
-    .l\:neutral-1 {
+    .lt\:neutral-1 {
         color: hsl(0, 0%, calc(53% + calc((100% - 53%) / 6)));
         color: var(--neutral-1);
     }
 
-    .l\:neutral-2 {
+    .lt\:neutral-2 {
         color: hsl(0, 0%, calc(53% + 2 * calc((100% - 53%) / 6)));
         color: var(--neutral-2);
     }
 
-    .l\:neutral-3 {
+    .lt\:neutral-3 {
         color: hsl(0, 0%, calc(53% + 3 * calc((100% - 53%) / 6)));
         color: var(--neutral-3);
     }
 
-    .l\:neutral-4 {
+    .lt\:neutral-4 {
         color: hsl(0, 0%, calc(53% + 4 * calc((100% - 53%) / 6)));
         color: var(--neutral-4);
     }
 
-    .l\:neutral-5 {
+    .lt\:neutral-5 {
         color: hsl(0, 0%, calc(53% + 5 * calc((100% - 53%) / 6)));
         color: var(--neutral-5);
     }
 
-    .l\:white {
+    .lt\:white {
         color: white;
     }
 
-    .l\:black {
+    .lt\:black {
         color: black;
     }
 
-    .l\:base-background {
+    .lt\:base-background {
         color: white;
         color: var(--base-background);
     }
 
-    .l\:base-color {
+    .lt\:base-color {
         color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
         color: var(--base-color);
     }
 
-    .l\:meta-color {
+    .lt\:meta-color {
         color: hsl(0, 0%, calc(53% - calc(53% / 7)));
         color: var(--meta-color);
     }
 
-    .l\:heading-color {
+    .lt\:heading-color {
         color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
         color: var(--heading-color);
     }
 
-    .l\:link-color {
+    .lt\:link-color {
         color: inherit;
         color: var(--link-color);
     }
 
-    .l\:link-hover-color {
+    .lt\:link-hover-color {
         color: hsl(198, 100%, 33.3%);
         color: var(--link-hover-color);
     }
 
-    .l\:link-active-color {
+    .lt\:link-active-color {
         color: hsl(198, 100%, 33.3%);
         color: var(--link-active-color);
     }
 
-    .l\:link-focus-color {
+    .lt\:link-focus-color {
         color: hsl(198, 100%, 33.3%);
         color: var(--link-focus-color);
     }
 
-    .l\:form-hover-color {
+    .lt\:form-hover-color {
         color: var(--form-hover-color);
     }
 
-    .l\:form-active-color {
+    .lt\:form-active-color {
         color: var(--form-active-color);
     }
 
-    .l\:form-focus-color {
+    .lt\:form-focus-color {
         color: var(--form-focus-color);
     }
 
-    .l\:li-prefix-color {
+    .lt\:li-prefix-color {
         color: currentColor;
         color: var(--li-prefix-color);
     }
@@ -5153,151 +5154,151 @@ details[open]>summary::before {
 
     /* Background */
 
-    .l\:bg-link-color {
+    .lt\:bg-link-color {
         background: inherit;
         background: var(--link-color);
     }
 
-    .l\:bg-link-hover-color {
+    .lt\:bg-link-hover-color {
         background: hsl(198, 100%, 33.3%);
         background: var(--link-hover-color);
     }
 
-    .l\:bg-link-active-color {
+    .lt\:bg-link-active-color {
         background: hsl(198, 100%, 33.3%);
         background: var(--link-active-color);
     }
 
-    .l\:bg-link-focus-color {
+    .lt\:bg-link-focus-color {
         background: hsl(198, 100%, 33.3%);
         background: var(--link-focus-color);
     }
 
-    .l\:bg-form-hover-color {
+    .lt\:bg-form-hover-color {
         background: var(--form-hover-color);
     }
 
-    .l\:bg-form-active-color {
+    .lt\:bg-form-active-color {
         background: var(--form-active-color);
     }
 
-    .l\:bg-form-focus-color {
+    .lt\:bg-form-focus-color {
         background: var(--form-focus-color);
     }
 
-    .l\:bg-li-prefix-color {
+    .lt\:bg-li-prefix-color {
         background: currentColor;
         background: var(--li-prefix-color);
     }
 
-    .l\:bg-neutral-d5 {
+    .lt\:bg-neutral-d5 {
         background-color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
         background-color: var(--neutral-d5);
     }
 
-    .l\:bg-neutral-d4 {
+    .lt\:bg-neutral-d4 {
         background-color: hsl(0, 0%, calc(53% - 4 * calc(53% / 7)));
         background-color: var(--neutral-d4);
     }
 
-    .l\:bg-neutral-d3 {
+    .lt\:bg-neutral-d3 {
         background-color: hsl(0, 0%, calc(53% - 3 * calc(53% / 7)));
         background-color: var(--neutral-d3);
     }
 
-    .l\:bg-neutral-d2 {
+    .lt\:bg-neutral-d2 {
         background-color: hsl(0, 0%, calc(53% - 2 * calc(53% / 7)));
         background-color: var(--neutral-d2);
     }
 
-    .l\:bg-neutral-d1 {
+    .lt\:bg-neutral-d1 {
         background-color: hsl(0, 0%, calc(53% - calc(53% / 7)));
         background-color: var(--neutral-d1);
     }
 
-    .l\:bg-neutral {
+    .lt\:bg-neutral {
         background-color: hsl(0, 0%, 53%);
         background-color: var(--neutral);
     }
 
-    .l\:bg-neutral-1 {
+    .lt\:bg-neutral-1 {
         background-color: hsl(0, 0%, calc(53% + calc((100% - 53%) / 6)));
         background-color: var(--neutral-1);
     }
 
-    .l\:bg-neutral-2 {
+    .lt\:bg-neutral-2 {
         background-color: hsl(0, 0%, calc(53% + 2 * calc((100% - 53%) / 6)));
         background-color: var(--neutral-2);
     }
 
-    .l\:bg-neutral-3 {
+    .lt\:bg-neutral-3 {
         background-color: hsl(0, 0%, calc(53% + 3 * calc((100% - 53%) / 6)));
         background-color: var(--neutral-3);
     }
 
-    .l\:bg-neutral-4 {
+    .lt\:bg-neutral-4 {
         background-color: hsl(0, 0%, calc(53% + 4 * calc((100% - 53%) / 6)));
         background-color: var(--neutral-4);
     }
 
-    .l\:bg-neutral-5 {
+    .lt\:bg-neutral-5 {
         background-color: hsl(0, 0%, calc(53% + 5 * calc((100% - 53%) / 6)));
         background-color: var(--neutral-5);
     }
 
-    .l\:bg-transparent {
+    .lt\:bg-transparent {
         background-color: transparent;
     }
 
-    .l\:bg-white {
+    .lt\:bg-white {
         background-color: white;
     }
 
-    .l\:bg-black {
+    .lt\:bg-black {
         background-color: black;
     }
 
-    .l\:bg-base-background {
+    .lt\:bg-base-background {
         background-color: white;
         background-color: var(--base-background);
     }
 
-    .l\:bg-base-color {
+    .lt\:bg-base-color {
         background-color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
         background-color: var(--base-color);
     }
 
-    .l\:bg-meta-color {
+    .lt\:bg-meta-color {
         background-color: hsl(0, 0%, calc(53% - calc(53% / 7)));
         background-color: var(--meta-color);
     }
 
-    .l\:bg-heading-color {
+    .lt\:bg-heading-color {
         background-color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
         background-color: var(--heading-color);
     }
 
-    .l\:bg-link-color {
+    .lt\:bg-link-color {
         background-color: inherit;
         background-color: var(--link-color);
     }
 
-    .l\:bg-link-hover-color {
+    .lt\:bg-link-hover-color {
         background-color: hsl(198, 100%, 33.3%);
         background-color: var(--link-hover-color);
     }
 
-    .l\:bg-link-active-color {
+    .lt\:bg-link-active-color {
         background-color: hsl(198, 100%, 33.3%);
         background-color: var(--link-active-color);
     }
 
-    .l\:bg-link-focus-color {
+    .lt\:bg-link-focus-color {
         background-color: hsl(198, 100%, 33.3%);
         background-color: var(--link-focus-color);
     }
 
-    .l\:bg-li-prefix-color {
+    .lt\:bg-li-prefix-color {
         background-color: currentColor;
         background-color: var(--li-prefix-color);
     }
@@ -5305,445 +5306,445 @@ details[open]>summary::before {
 
     /* Border Colors */
 
-    .l\:br-neutral-d5 {
+    .lt\:br-neutral-d5 {
         border-color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
         border-color: var(--neutral-d5);
     }
 
-    .l\:br-neutral-d4 {
+    .lt\:br-neutral-d4 {
         border-color: hsl(0, 0%, calc(53% - 4 * calc(53% / 7)));
         border-color: var(--neutral-d4);
     }
 
-    .l\:br-neutral-d3 {
+    .lt\:br-neutral-d3 {
         border-color: hsl(0, 0%, calc(53% - 3 * calc(53% / 7)));
         border-color: var(--neutral-d3);
     }
 
-    .l\:br-neutral-d2 {
+    .lt\:br-neutral-d2 {
         border-color: hsl(0, 0%, calc(53% - 2 * calc(53% / 7)));
         border-color: var(--neutral-d2);
     }
 
-    .l\:br-neutral-d1 {
+    .lt\:br-neutral-d1 {
         border-color: hsl(0, 0%, calc(53% - calc(53% / 7)));
         border-color: var(--neutral-d1);
     }
 
-    .l\:br-neutral {
+    .lt\:br-neutral {
         border-color: hsl(0, 0%, 53%);
         border-color: var(--neutral);
     }
 
-    .l\:br-neutral-1 {
+    .lt\:br-neutral-1 {
         border-color: hsl(0, 0%, calc(53% + calc((100% - 53%) / 6)));
         border-color: var(--neutral-1);
     }
 
-    .l\:br-neutral-2 {
+    .lt\:br-neutral-2 {
         border-color: hsl(0, 0%, calc(53% + 2 * calc((100% - 53%) / 6)));
         border-color: var(--neutral-2);
     }
 
-    .l\:br-neutral-3 {
+    .lt\:br-neutral-3 {
         border-color: hsl(0, 0%, calc(53% + 3 * calc((100% - 53%) / 6)));
         border-color: var(--neutral-3);
     }
 
-    .l\:br-neutral-4 {
+    .lt\:br-neutral-4 {
         border-color: hsl(0, 0%, calc(53% + 4 * calc((100% - 53%) / 6)));
         border-color: var(--neutral-4);
     }
 
-    .l\:br-neutral-5 {
+    .lt\:br-neutral-5 {
         border-color: hsl(0, 0%, calc(53% + 5 * calc((100% - 53%) / 6)));
         border-color: var(--neutral-5);
     }
 
-    .l\:br-white {
+    .lt\:br-white {
         border-color: white;
     }
 
-    .l\:br-black {
+    .lt\:br-black {
         border-color: black;
     }
 
-    .l\:br-base-background {
+    .lt\:br-base-background {
         border-color: white;
         border-color: var(--base-background);
     }
 
-    .l\:br-base-color {
+    .lt\:br-base-color {
         border-color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
         border-color: var(--base-color);
     }
 
-    .l\:br-meta-color {
+    .lt\:br-meta-color {
         border-color: hsl(0, 0%, calc(53% - calc(53% / 7)));
         border-color: var(--meta-color);
     }
 
-    .l\:br-heading-color {
+    .lt\:br-heading-color {
         border-color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
         border-color: var(--heading-color);
     }
 
-    .l\:br-link-color {
+    .lt\:br-link-color {
         border-color: inherit;
         border-color: var(--link-color);
     }
 
-    .l\:br-link-hover-color {
+    .lt\:br-link-hover-color {
         border-color: hsl(198, 100%, 33.3%);
         border-color: var(--link-hover-color);
     }
 
-    .l\:br-link-active-color {
+    .lt\:br-link-active-color {
         border-color: hsl(198, 100%, 33.3%);
         border-color: var(--link-active-color);
     }
 
-    .l\:br-link-focus-color {
+    .lt\:br-link-focus-color {
         border-color: hsl(198, 100%, 33.3%);
         border-color: var(--link-focus-color);
     }
 
-    .l\:br-li-prefix-color {
+    .lt\:br-li-prefix-color {
         border-color: currentColor;
         border-color: var(--li-prefix-color);
     }
 
-    .l\:primary-d5 {
+    .lt\:primary-d5 {
         color: hsl(198, 100%, calc(33.3% - 5 * calc(33.3% / 7)));
         color: var(--primary-d5);
     }
 
-    .l\:primary-d4 {
+    .lt\:primary-d4 {
         color: hsl(198, 100%, calc(33.3% - 4 * calc(33.3% / 7)));
         color: var(--primary-d4);
     }
 
-    .l\:primary-d3 {
+    .lt\:primary-d3 {
         color: hsl(198, 100%, calc(33.3% - 3 * calc(33.3% / 7)));
         color: var(--primary-d3);
     }
 
-    .l\:primary-d2 {
+    .lt\:primary-d2 {
         color: hsl(198, 100%, calc(33.3% - 2 * calc(33.3% / 7)));
         color: var(--primary-d2);
     }
 
-    .l\:primary-d1 {
+    .lt\:primary-d1 {
         color: hsl(198, 100%, calc(33.3% - calc(33.3% / 7)));
         color: var(--primary-d1);
     }
 
-    .l\:primary {
+    .lt\:primary {
         color: hsl(198, 100%, 33.3%);
         color: var(--primary);
     }
 
-    .l\:primary-1 {
+    .lt\:primary-1 {
         color: hsl(198, 100%, calc(33.3% + calc((100% - 33.3%) / 6)));
         color: var(--primary-1);
     }
 
-    .l\:primary-2 {
+    .lt\:primary-2 {
         color: hsl(198, 100%, calc(33.3% + 2 * calc((100% - 33.3%) / 6)));
         color: var(--primary-2);
     }
 
-    .l\:primary-3 {
+    .lt\:primary-3 {
         color: hsl(198, 100%, calc(33.3% + 3 * calc((100% - 33.3%) / 6)));
         color: var(--primary-3);
     }
 
-    .l\:primary-4 {
+    .lt\:primary-4 {
         color: hsl(198, 100%, calc(33.3% + 4 * calc((100% - 33.3%) / 6)));
         color: var(--primary-4);
     }
 
-    .l\:primary-5 {
+    .lt\:primary-5 {
         color: hsl(198, 100%, calc(33.3% + 5 * calc((100% - 33.3%) / 6)));
         color: var(--primary-5);
     }
 
-    .l\:accent-one-d5 {
+    .lt\:accent-one-d5 {
         color: hsl(80, 100%, calc(30% - 5 * calc(30% / 7)));
         color: var(--accent-one-d5);
     }
 
-    .l\:accent-one-d4 {
+    .lt\:accent-one-d4 {
         color: hsl(80, 100%, calc(30% - 4 * calc(30% / 7)));
         color: var(--accent-one-d4);
     }
 
-    .l\:accent-one-d3 {
+    .lt\:accent-one-d3 {
         color: hsl(80, 100%, calc(30% - 3 * calc(30% / 7)));
         color: var(--accent-one-d3);
     }
 
-    .l\:accent-one-d2 {
+    .lt\:accent-one-d2 {
         color: hsl(80, 100%, calc(30% - 2 * calc(30% / 7)));
         color: var(--accent-one-d2);
     }
 
-    .l\:accent-one-d1 {
+    .lt\:accent-one-d1 {
         color: hsl(80, 100%, calc(30% - calc(30% / 7)));
         color: var(--accent-one-d1);
     }
 
-    .l\:accent-one {
+    .lt\:accent-one {
         color: hsl(80, 100%, 30%);
         color: var(--accent-one);
     }
 
-    .l\:accent-one-1 {
+    .lt\:accent-one-1 {
         color: hsl(80, 100%, calc(30% + calc((100% - 30%) / 6)));
         color: var(--accent-one-1);
     }
 
-    .l\:accent-one-2 {
+    .lt\:accent-one-2 {
         color: hsl(80, 100%, calc(30% + 2 * calc((100% - 30%) / 6)));
         color: var(--accent-one-2);
     }
 
-    .l\:accent-one-3 {
+    .lt\:accent-one-3 {
         color: hsl(80, 100%, calc(30% + 3 * calc((100% - 30%) / 6)));
         color: var(--accent-one-3);
     }
 
-    .l\:accent-one-4 {
+    .lt\:accent-one-4 {
         color: hsl(80, 100%, calc(30% + 4 * calc((100% - 30%) / 6)));
         color: var(--accent-one-4);
     }
 
-    .l\:accent-one-5 {
+    .lt\:accent-one-5 {
         color: hsl(80, 100%, calc(30% + 5 * calc((100% - 30%) / 6)));
         color: var(--accent-one-5);
     }
 
-    .l\:accent-two-d5 {
+    .lt\:accent-two-d5 {
         color: hsl(326.7, 100%, calc(30% - 5 * calc(30% / 7)));
         color: var(--accent-two-d5);
     }
 
-    .l\:accent-two-d4 {
+    .lt\:accent-two-d4 {
         color: hsl(326.7, 100%, calc(30% - 4 * calc(30% / 7)));
         color: var(--accent-two-d4);
     }
 
-    .l\:accent-two-d3 {
+    .lt\:accent-two-d3 {
         color: hsl(326.7, 100%, calc(30% - 3 * calc(30% / 7)));
         color: var(--accent-two-d3);
     }
 
-    .l\:accent-two-d2 {
+    .lt\:accent-two-d2 {
         color: hsl(326.7, 100%, calc(30% - 2 * calc(30% / 7)));
         color: var(--accent-two-d2);
     }
 
-    .l\:accent-two-d1 {
+    .lt\:accent-two-d1 {
         color: hsl(326.7, 100%, calc(30% - calc(30% / 7)));
         color: var(--accent-two-d1);
     }
 
-    .l\:accent-two {
+    .lt\:accent-two {
         color: hsl(326.7, 100%, 30%);
         color: var(--accent-two);
     }
 
-    .l\:accent-two-1 {
+    .lt\:accent-two-1 {
         color: hsl(326.7, 100%, calc(30% + calc((100% - 30%) / 6)));
         color: var(--accent-two-1);
     }
 
-    .l\:accent-two-2 {
+    .lt\:accent-two-2 {
         color: hsl(326.7, 100%, calc(30% + 2 * calc((100% - 30%) / 6)));
         color: var(--accent-two-2);
     }
 
-    .l\:accent-two-3 {
+    .lt\:accent-two-3 {
         color: hsl(326.7, 100%, calc(30% + 3 * calc((100% - 30%) / 6)));
         color: var(--accent-two-3);
     }
 
-    .l\:accent-two-4 {
+    .lt\:accent-two-4 {
         color: hsl(326.7, 100%, calc(30% + 4 * calc((100% - 30%) / 6)));
         color: var(--accent-two-4);
     }
 
-    .l\:accent-two-5 {
+    .lt\:accent-two-5 {
         color: hsl(326.7, 100%, calc(30% + 5 * calc((100% - 30%) / 6)));
         color: var(--accent-two-5);
     }
 
-    .l\:accent-three-d5 {
+    .lt\:accent-three-d5 {
         color: hsl(356, 83%, calc(41% - 5 * calc(41% / 7)));
         color: var(--accent-three-d5);
     }
 
-    .l\:accent-three-d4 {
+    .lt\:accent-three-d4 {
         color: hsl(356, 83%, calc(41% - 4 * calc(41% / 7)));
         color: var(--accent-three-d4);
     }
 
-    .l\:accent-three-d3 {
+    .lt\:accent-three-d3 {
         color: hsl(356, 83%, calc(41% - 3 * calc(41% / 7)));
         color: var(--accent-three-d3);
     }
 
-    .l\:accent-three-d2 {
+    .lt\:accent-three-d2 {
         color: hsl(356, 83%, calc(41% - 2 * calc(41% / 7)));
         color: var(--accent-three-d2);
     }
 
-    .l\:accent-three-d1 {
+    .lt\:accent-three-d1 {
         color: hsl(356, 83%, calc(41% - calc(41% / 7)));
         color: var(--accent-three-d1);
     }
 
-    .l\:accent-three {
+    .lt\:accent-three {
         color: hsl(356, 83%, 41%);
         color: var(--accent-three);
     }
 
-    .l\:accent-three-1 {
+    .lt\:accent-three-1 {
         color: hsl(356, 83%, calc(41% + calc((100% - 41%) / 6)));
         color: var(--accent-three-1);
     }
 
-    .l\:accent-three-2 {
+    .lt\:accent-three-2 {
         color: hsl(356, 83%, calc(41% + 2 * calc((100% - 41%) / 6)));
         color: var(--accent-three-2);
     }
 
-    .l\:accent-three-3 {
+    .lt\:accent-three-3 {
         color: hsl(356, 83%, calc(41% + 3 * calc((100% - 41%) / 6)));
         color: var(--accent-three-3);
     }
 
-    .l\:accent-three-4 {
+    .lt\:accent-three-4 {
         color: hsl(356, 83%, calc(41% + 4 * calc((100% - 41%) / 6)));
         color: var(--accent-three-4);
     }
 
-    .l\:accent-three-5 {
+    .lt\:accent-three-5 {
         color: hsl(356, 83%, calc(41% + 5 * calc((100% - 41%) / 6)));
         color: var(--accent-three-5);
     }
 
-    .l\:accent-four-d5 {
+    .lt\:accent-four-d5 {
         color: hsl(32, 100%, calc(49% - 5 * calc(49% / 7)));
         color: var(--accent-four-d5);
     }
 
-    .l\:accent-four-d4 {
+    .lt\:accent-four-d4 {
         color: hsl(32, 100%, calc(49% - 4 * calc(49% / 7)));
         color: var(--accent-four-d4);
     }
 
-    .l\:accent-four-d3 {
+    .lt\:accent-four-d3 {
         color: hsl(32, 100%, calc(49% - 3 * calc(49% / 7)));
         color: var(--accent-four-d3);
     }
 
-    .l\:accent-four-d2 {
+    .lt\:accent-four-d2 {
         color: hsl(32, 100%, calc(49% - 2 * calc(49% / 7)));
         color: var(--accent-four-d2);
     }
 
-    .l\:accent-four-d1 {
+    .lt\:accent-four-d1 {
         color: hsl(32, 100%, calc(49% - calc(49% / 7)));
         color: var(--accent-four-d1);
     }
 
-    .l\:accent-four {
+    .lt\:accent-four {
         color: hsl(32, 100%, 49%);
         color: var(--accent-four);
     }
 
-    .l\:accent-four-1 {
+    .lt\:accent-four-1 {
         color: hsl(32, 100%, calc(49% + calc((100% - 49%) / 6)));
         color: var(--accent-four-1);
     }
 
-    .l\:accent-four-2 {
+    .lt\:accent-four-2 {
         color: hsl(32, 100%, calc(49% + 2 * calc((100% - 49%) / 6)));
         color: var(--accent-four-2);
     }
 
-    .l\:accent-four-3 {
+    .lt\:accent-four-3 {
         color: hsl(32, 100%, calc(49% + 3 * calc((100% - 49%) / 6)));
         color: var(--accent-four-3);
     }
 
-    .l\:accent-four-4 {
+    .lt\:accent-four-4 {
         color: hsl(32, 100%, calc(49% + 4 * calc((100% - 49%) / 6)));
         color: var(--accent-four-4);
     }
 
-    .l\:accent-four-5 {
+    .lt\:accent-four-5 {
         color: hsl(32, 100%, calc(41% + 5 * calc((100% - 41%) / 6)));
         color: var(--accent-four-5);
     }
 
-    .l\:accent-five-d5 {
+    .lt\:accent-five-d5 {
         color: hsl(43, 100%, calc(51% - 5 * calc(51% / 7)));
         color: var(--accent-five-d5);
     }
 
-    .l\:accent-five-d4 {
+    .lt\:accent-five-d4 {
         color: hsl(43, 100%, calc(51% - 4 * calc(51% / 7)));
         color: var(--accent-five-d4);
     }
 
-    .l\:accent-five-d3 {
+    .lt\:accent-five-d3 {
         color: hsl(43, 100%, calc(51% - 3 * calc(51% / 7)));
         color: var(--accent-five-d3);
     }
 
-    .l\:accent-five-d2 {
+    .lt\:accent-five-d2 {
         color: hsl(43, 100%, calc(51% - 2 * calc(51% / 7)));
         color: var(--accent-five-d2);
     }
 
-    .l\:accent-five-d1 {
+    .lt\:accent-five-d1 {
         color: hsl(43, 100%, calc(51% - calc(51% / 7)));
         color: var(--accent-five-d1);
     }
 
-    .l\:accent-five {
+    .lt\:accent-five {
         color: hsl(43, 100%, 51%);
         color: var(--accent-five);
     }
 
-    .l\:accent-five-1 {
+    .lt\:accent-five-1 {
         color: hsl(43, 100%, calc(51% + calc((100% - 51%) / 6)));
         color: var(--accent-five-1);
     }
 
-    .l\:accent-five-2 {
+    .lt\:accent-five-2 {
         color: hsl(43, 100%, calc(51% + 2 * calc((100% - 51%) / 6)));
         color: var(--accent-five-2);
     }
 
-    .l\:accent-five-3 {
+    .lt\:accent-five-3 {
         color: hsl(43, 100%, calc(51% + 3 * calc((100% - 51%) / 6)));
         color: var(--accent-five-3);
     }
 
-    .l\:accent-five-4 {
+    .lt\:accent-five-4 {
         color: hsl(43, 100%, calc(51% + 4 * calc((100% - 51%) / 6)));
         color: var(--accent-five-4);
     }
 
-    .l\:accent-five-5 {
+    .lt\:accent-five-5 {
         color: hsl(43, 100%, calc(41% + 5 * calc((100% - 41%) / 6)));
         color: var(--accent-five-5);
     }
 
-    .l\:error-color {
+    .lt\:error-color {
         color: crimson;
         color: var(--error-color);
     }
@@ -5751,337 +5752,337 @@ details[open]>summary::before {
 
     /* Background */
 
-    .l\:bg-primary-d5 {
+    .lt\:bg-primary-d5 {
         background-color: hsl(198, 100%, calc(33.3% - 5 * calc(33.3% / 7)));
         background-color: var(--primary-d5);
     }
 
-    .l\:bg-primary-d4 {
+    .lt\:bg-primary-d4 {
         background-color: hsl(198, 100%, calc(33.3% - 4 * calc(33.3% / 7)));
         background-color: var(--primary-d4);
     }
 
-    .l\:bg-primary-d3 {
+    .lt\:bg-primary-d3 {
         background-color: hsl(198, 100%, calc(33.3% - 3 * calc(33.3% / 7)));
         background-color: var(--primary-d3);
     }
 
-    .l\:bg-primary-d2 {
+    .lt\:bg-primary-d2 {
         background-color: hsl(198, 100%, calc(33.3% - 2 * calc(33.3% / 7)));
         background-color: var(--primary-d2);
     }
 
-    .l\:bg-primary-d1 {
+    .lt\:bg-primary-d1 {
         background-color: hsl(198, 100%, calc(33.3% - calc(33.3% / 7)));
         background-color: var(--primary-d1);
     }
 
-    .l\:bg-primary {
+    .lt\:bg-primary {
         background-color: hsl(198, 100%, 33.3%);
         background-color: var(--primary);
     }
 
-    .l\:bg-primary-1 {
+    .lt\:bg-primary-1 {
         background-color: hsl(198, 100%, calc(33.3% + calc((100% - 33.3%) / 6)));
         background-color: var(--primary-1);
     }
 
-    .l\:bg-primary-2 {
+    .lt\:bg-primary-2 {
         background-color: hsl(198, 100%, calc(33.3% + 2 * calc((100% - 33.3%) / 6)));
         background-color: var(--primary-2);
     }
 
-    .l\:bg-primary-3 {
+    .lt\:bg-primary-3 {
         background-color: hsl(198, 100%, calc(33.3% + 3 * calc((100% - 33.3%) / 6)));
         background-color: var(--primary-3);
     }
 
-    .l\:bg-primary-4 {
+    .lt\:bg-primary-4 {
         background-color: hsl(198, 100%, calc(33.3% + 4 * calc((100% - 33.3%) / 6)));
         background-color: var(--primary-4);
     }
 
-    .l\:bg-primary-5 {
+    .lt\:bg-primary-5 {
         background-color: hsl(198, 100%, calc(33.3% + 5 * calc((100% - 33.3%) / 6)));
         background-color: var(--primary-5);
     }
 
-    .l\:bg-accent-one-d5 {
+    .lt\:bg-accent-one-d5 {
         background-color: hsl(80, 100%, calc(30% - 5 * calc(30% / 7)));
         background-color: var(--accent-one-d5);
     }
 
-    .l\:bg-accent-one-d4 {
+    .lt\:bg-accent-one-d4 {
         background-color: hsl(80, 100%, calc(30% - 4 * calc(30% / 7)));
         background-color: var(--accent-one-d4);
     }
 
-    .l\:bg-accent-one-d3 {
+    .lt\:bg-accent-one-d3 {
         background-color: hsl(80, 100%, calc(30% - 3 * calc(30% / 7)));
         background-color: var(--accent-one-d3);
     }
 
-    .l\:bg-accent-one-d2 {
+    .lt\:bg-accent-one-d2 {
         background-color: hsl(80, 100%, calc(30% - 2 * calc(30% / 7)));
         background-color: var(--accent-one-d2);
     }
 
-    .l\:bg-accent-one-d1 {
+    .lt\:bg-accent-one-d1 {
         background-color: hsl(80, 100%, calc(30% - calc(30% / 7)));
         background-color: var(--accent-one-d1);
     }
 
-    .l\:bg-accent-one {
+    .lt\:bg-accent-one {
         background-color: hsl(80, 100%, 30%);
         background-color: var(--accent-one);
     }
 
-    .l\:bg-accent-one-1 {
+    .lt\:bg-accent-one-1 {
         background-color: hsl(80, 100%, calc(30% + calc((100% - 30%) / 6)));
         background-color: var(--accent-one-1);
     }
 
-    .l\:bg-accent-one-2 {
+    .lt\:bg-accent-one-2 {
         background-color: hsl(80, 100%, calc(30% + 2 * calc((100% - 30%) / 6)));
         background-color: var(--accent-one-2);
     }
 
-    .l\:bg-accent-one-3 {
+    .lt\:bg-accent-one-3 {
         background-color: hsl(80, 100%, calc(30% + 3 * calc((100% - 30%) / 6)));
         background-color: var(--accent-one-3);
     }
 
-    .l\:bg-accent-one-4 {
+    .lt\:bg-accent-one-4 {
         background-color: hsl(80, 100%, calc(30% + 4 * calc((100% - 30%) / 6)));
         background-color: var(--accent-one-4);
     }
 
-    .l\:bg-accent-one-5 {
+    .lt\:bg-accent-one-5 {
         background-color: hsl(80, 100%, calc(30% + 5 * calc((100% - 30%) / 6)));
         background-color: var(--accent-one-5);
     }
 
-    .l\:bg-accent-two-d5 {
+    .lt\:bg-accent-two-d5 {
         background-color: hsl(326.7, 100%, calc(30% - 5 * calc(30% / 7)));
         background-color: var(--accent-two-d5);
     }
 
-    .l\:bg-accent-two-d4 {
+    .lt\:bg-accent-two-d4 {
         background-color: hsl(326.7, 100%, calc(30% - 4 * calc(30% / 7)));
         background-color: var(--accent-two-d4);
     }
 
-    .l\:bg-accent-two-d3 {
+    .lt\:bg-accent-two-d3 {
         background-color: hsl(326.7, 100%, calc(30% - 3 * calc(30% / 7)));
         background-color: var(--accent-two-d3);
     }
 
-    .l\:bg-accent-two-d2 {
+    .lt\:bg-accent-two-d2 {
         background-color: hsl(326.7, 100%, calc(30% - 2 * calc(30% / 7)));
         background-color: var(--accent-two-d2);
     }
 
-    .l\:bg-accent-two-d1 {
+    .lt\:bg-accent-two-d1 {
         background-color: hsl(326.7, 100%, calc(30% - calc(30% / 7)));
         background-color: var(--accent-two-d1);
     }
 
-    .l\:bg-accent-two {
+    .lt\:bg-accent-two {
         background-color: hsl(326.7, 100%, 30%);
         background-color: var(--accent-two);
     }
 
-    .l\:bg-accent-two-1 {
+    .lt\:bg-accent-two-1 {
         background-color: hsl(326.7, 100%, calc(30% + calc((100% - 30%) / 6)));
         background-color: var(--accent-two-1);
     }
 
-    .l\:bg-accent-two-2 {
+    .lt\:bg-accent-two-2 {
         background-color: hsl(326.7, 100%, calc(30% + 2 * calc((100% - 30%) / 6)));
         background-color: var(--accent-two-2);
     }
 
-    .l\:bg-accent-two-3 {
+    .lt\:bg-accent-two-3 {
         background-color: hsl(326.7, 100%, calc(30% + 3 * calc((100% - 30%) / 6)));
         background-color: var(--accent-two-3);
     }
 
-    .l\:bg-accent-two-4 {
+    .lt\:bg-accent-two-4 {
         background-color: hsl(326.7, 100%, calc(30% + 4 * calc((100% - 30%) / 6)));
         background-color: var(--accent-two-4);
     }
 
-    .l\:bg-accent-two-5 {
+    .lt\:bg-accent-two-5 {
         background-color: hsl(326.7, 100%, calc(30% + 5 * calc((100% - 30%) / 6)));
         background-color: var(--accent-two-5);
     }
 
-    .l\:bg-accent-three-d5 {
+    .lt\:bg-accent-three-d5 {
         background-color: hsl(356, 83%, calc(41% - 5 * calc(41% / 7)));
         background-color: var(--accent-three-d5);
     }
 
-    .l\:bg-accent-three-d4 {
+    .lt\:bg-accent-three-d4 {
         background-color: hsl(356, 83%, calc(41% - 4 * calc(41% / 7)));
         background-color: var(--accent-three-d4);
     }
 
-    .l\:bg-accent-three-d3 {
+    .lt\:bg-accent-three-d3 {
         background-color: hsl(356, 83%, calc(41% - 3 * calc(41% / 7)));
         background-color: var(--accent-three-d3);
     }
 
-    .l\:bg-accent-three-d2 {
+    .lt\:bg-accent-three-d2 {
         background-color: hsl(356, 83%, calc(41% - 2 * calc(41% / 7)));
         background-color: var(--accent-three-d2);
     }
 
-    .l\:bg-accent-three-d1 {
+    .lt\:bg-accent-three-d1 {
         background-color: hsl(356, 83%, calc(41% - calc(41% / 7)));
         background-color: var(--accent-three-d1);
     }
 
-    .l\:bg-accent-three {
+    .lt\:bg-accent-three {
         background-color: hsl(356, 83%, 41%);
         background-color: var(--accent-three);
     }
 
-    .l\:bg-accent-three-1 {
+    .lt\:bg-accent-three-1 {
         background-color: hsl(356, 83%, calc(41% + calc((100% - 41%) / 6)));
         background-color: var(--accent-three-1);
     }
 
-    .l\:bg-accent-three-2 {
+    .lt\:bg-accent-three-2 {
         background-color: hsl(356, 83%, calc(41% + 2 * calc((100% - 41%) / 6)));
         background-color: var(--accent-three-2);
     }
 
-    .l\:bg-accent-three-3 {
+    .lt\:bg-accent-three-3 {
         background-color: hsl(356, 83%, calc(41% + 3 * calc((100% - 41%) / 6)));
         background-color: var(--accent-three-3);
     }
 
-    .l\:bg-accent-three-4 {
+    .lt\:bg-accent-three-4 {
         background-color: hsl(356, 83%, calc(41% + 4 * calc((100% - 41%) / 6)));
         background-color: var(--accent-three-4);
     }
 
-    .l\:bg-accent-three-5 {
+    .lt\:bg-accent-three-5 {
         background-color: hsl(356, 83%, calc(41% + 5 * calc((100% - 41%) / 6)));
         background-color: var(--accent-three-5);
     }
 
-    .l\:bg-accent-four-d5 {
+    .lt\:bg-accent-four-d5 {
         background-color: hsl(32, 100%, calc(49% - 5 * calc(49% / 7)));
         background-color: var(--accent-four-d5);
     }
 
-    .l\:bg-accent-four-d4 {
+    .lt\:bg-accent-four-d4 {
         background-color: hsl(32, 100%, calc(49% - 4 * calc(49% / 7)));
         background-color: var(--accent-four-d4);
     }
 
-    .l\:bg-accent-four-d3 {
+    .lt\:bg-accent-four-d3 {
         background-color: hsl(32, 100%, calc(49% - 3 * calc(49% / 7)));
         background-color: var(--accent-four-d3);
     }
 
-    .l\:bg-accent-four-d2 {
+    .lt\:bg-accent-four-d2 {
         background-color: hsl(32, 100%, calc(49% - 2 * calc(49% / 7)));
         background-color: var(--accent-four-d2);
     }
 
-    .l\:bg-accent-four-d1 {
+    .lt\:bg-accent-four-d1 {
         background-color: hsl(32, 100%, calc(49% - calc(49% / 7)));
         background-color: var(--accent-four-d1);
     }
 
-    .l\:bg-accent-four {
+    .lt\:bg-accent-four {
         background-color: hsl(32, 100%, 49%);
         background-color: var(--accent-four);
     }
 
-    .l\:bg-accent-four-1 {
+    .lt\:bg-accent-four-1 {
         background-color: hsl(32, 100%, calc(49% + calc((100% - 49%) / 6)));
         background-color: var(--accent-four-1);
     }
 
-    .l\:bg-accent-four-2 {
+    .lt\:bg-accent-four-2 {
         background-color: hsl(32, 100%, calc(49% + 2 * calc((100% - 49%) / 6)));
         background-color: var(--accent-four-2);
     }
 
-    .l\:bg-accent-four-3 {
+    .lt\:bg-accent-four-3 {
         background-color: hsl(32, 100%, calc(49% + 3 * calc((100% - 49%) / 6)));
         background-color: var(--accent-four-3);
     }
 
-    .l\:bg-accent-four-4 {
+    .lt\:bg-accent-four-4 {
         background-color: hsl(32, 100%, calc(49% + 4 * calc((100% - 49%) / 6)));
         background-color: var(--accent-four-4);
     }
 
-    .l\:bg-accent-four-5 {
+    .lt\:bg-accent-four-5 {
         background-color: hsl(32, 100%, calc(41% + 5 * calc((100% - 41%) / 6)));
         background-color: var(--accent-four-5);
     }
 
-    .l\:bg-accent-five-d5 {
+    .lt\:bg-accent-five-d5 {
         background-color: hsl(43, 100%, calc(51% - 5 * calc(51% / 7)));
         background-color: var(--accent-five-d5);
     }
 
-    .l\:bg-accent-five-d4 {
+    .lt\:bg-accent-five-d4 {
         background-color: hsl(43, 100%, calc(51% - 4 * calc(51% / 7)));
         background-color: var(--accent-five-d4);
     }
 
-    .l\:bg-accent-five-d3 {
+    .lt\:bg-accent-five-d3 {
         background-color: hsl(43, 100%, calc(51% - 3 * calc(51% / 7)));
         background-color: var(--accent-five-d3);
     }
 
-    .l\:bg-accent-five-d2 {
+    .lt\:bg-accent-five-d2 {
         background-color: hsl(43, 100%, calc(51% - 2 * calc(51% / 7)));
         background-color: var(--accent-five-d2);
     }
 
-    .l\:bg-accent-five-d1 {
+    .lt\:bg-accent-five-d1 {
         background-color: hsl(43, 100%, calc(51% - calc(51% / 7)));
         background-color: var(--accent-five-d1);
     }
 
-    .l\:bg-accent-five {
+    .lt\:bg-accent-five {
         background-color: hsl(43, 100%, 51%);
         background-color: var(--accent-five);
     }
 
-    .l\:bg-accent-five-1 {
+    .lt\:bg-accent-five-1 {
         background-color: hsl(43, 100%, calc(51% + calc((100% - 51%) / 6)));
         background-color: var(--accent-five-1);
     }
 
-    .l\:bg-accent-five-2 {
+    .lt\:bg-accent-five-2 {
         background-color: hsl(43, 100%, calc(51% + 2 * calc((100% - 51%) / 6)));
         background-color: var(--accent-five-2);
     }
 
-    .l\:bg-accent-five-3 {
+    .lt\:bg-accent-five-3 {
         background-color: hsl(43, 100%, calc(51% + 3 * calc((100% - 51%) / 6)));
         background-color: var(--accent-five-3);
     }
 
-    .l\:bg-accent-five-4 {
+    .lt\:bg-accent-five-4 {
         background-color: hsl(43, 100%, calc(51% + 4 * calc((100% - 51%) / 6)));
         background-color: var(--accent-five-4);
     }
 
-    .l\:bg-accent-five-5 {
+    .lt\:bg-accent-five-5 {
         background-color: hsl(43, 100%, calc(41% + 5 * calc((100% - 41%) / 6)));
         background-color: var(--accent-five-5);
     }
 
-    .l\:bg-error-color {
+    .lt\:bg-error-color {
         background-color: crimson;
         background-color: var(--error-color);
     }
@@ -6089,337 +6090,337 @@ details[open]>summary::before {
 
     /* Border Colors */
 
-    .l\:br-primary-d5 {
+    .lt\:br-primary-d5 {
         border-color: hsl(198, 100%, calc(33.3% - 5 * calc(33.3% / 7)));
         border-color: var(--primary-d5);
     }
 
-    .l\:br-primary-d4 {
+    .lt\:br-primary-d4 {
         border-color: hsl(198, 100%, calc(33.3% - 4 * calc(33.3% / 7)));
         border-color: var(--primary-d4);
     }
 
-    .l\:br-primary-d3 {
+    .lt\:br-primary-d3 {
         border-color: hsl(198, 100%, calc(33.3% - 3 * calc(33.3% / 7)));
         border-color: var(--primary-d3);
     }
 
-    .l\:br-primary-d2 {
+    .lt\:br-primary-d2 {
         border-color: hsl(198, 100%, calc(33.3% - 2 * calc(33.3% / 7)));
         border-color: var(--primary-d2);
     }
 
-    .l\:br-primary-d1 {
+    .lt\:br-primary-d1 {
         border-color: hsl(198, 100%, calc(33.3% - calc(33.3% / 7)));
         border-color: var(--primary-d1);
     }
 
-    .l\:br-primary {
+    .lt\:br-primary {
         border-color: hsl(198, 100%, 33.3%);
         border-color: var(--primary);
     }
 
-    .l\:br-primary-1 {
+    .lt\:br-primary-1 {
         border-color: hsl(198, 100%, calc(33.3% + calc((100% - 33.3%) / 6)));
         border-color: var(--primary-1);
     }
 
-    .l\:br-primary-2 {
+    .lt\:br-primary-2 {
         border-color: hsl(198, 100%, calc(33.3% + 2 * calc((100% - 33.3%) / 6)));
         border-color: var(--primary-2);
     }
 
-    .l\:br-primary-3 {
+    .lt\:br-primary-3 {
         border-color: hsl(198, 100%, calc(33.3% + 3 * calc((100% - 33.3%) / 6)));
         border-color: var(--primary-3);
     }
 
-    .l\:br-primary-4 {
+    .lt\:br-primary-4 {
         border-color: hsl(198, 100%, calc(33.3% + 4 * calc((100% - 33.3%) / 6)));
         border-color: var(--primary-4);
     }
 
-    .l\:br-primary-5 {
+    .lt\:br-primary-5 {
         border-color: hsl(198, 100%, calc(33.3% + 5 * calc((100% - 33.3%) / 6)));
         border-color: var(--primary-5);
     }
 
-    .l\:br-accent-one-d5 {
+    .lt\:br-accent-one-d5 {
         border-color: hsl(80, 100%, calc(30% - 5 * calc(30% / 7)));
         border-color: var(--accent-one-d5);
     }
 
-    .l\:br-accent-one-d4 {
+    .lt\:br-accent-one-d4 {
         border-color: hsl(80, 100%, calc(30% - 4 * calc(30% / 7)));
         border-color: var(--accent-one-d4);
     }
 
-    .l\:br-accent-one-d3 {
+    .lt\:br-accent-one-d3 {
         border-color: hsl(80, 100%, calc(30% - 3 * calc(30% / 7)));
         border-color: var(--accent-one-d3);
     }
 
-    .l\:br-accent-one-d2 {
+    .lt\:br-accent-one-d2 {
         border-color: hsl(80, 100%, calc(30% - 2 * calc(30% / 7)));
         border-color: var(--accent-one-d2);
     }
 
-    .l\:br-accent-one-d1 {
+    .lt\:br-accent-one-d1 {
         border-color: hsl(80, 100%, calc(30% - calc(30% / 7)));
         border-color: var(--accent-one-d1);
     }
 
-    .l\:br-accent-one {
+    .lt\:br-accent-one {
         border-color: hsl(80, 100%, 30%);
         border-color: var(--accent-one);
     }
 
-    .l\:br-accent-one-1 {
+    .lt\:br-accent-one-1 {
         border-color: hsl(80, 100%, calc(30% + calc((100% - 30%) / 6)));
         border-color: var(--accent-one-1);
     }
 
-    .l\:br-accent-one-2 {
+    .lt\:br-accent-one-2 {
         border-color: hsl(80, 100%, calc(30% + 2 * calc((100% - 30%) / 6)));
         border-color: var(--accent-one-2);
     }
 
-    .l\:br-accent-one-3 {
+    .lt\:br-accent-one-3 {
         border-color: hsl(80, 100%, calc(30% + 3 * calc((100% - 30%) / 6)));
         border-color: var(--accent-one-3);
     }
 
-    .l\:br-accent-one-4 {
+    .lt\:br-accent-one-4 {
         border-color: hsl(80, 100%, calc(30% + 4 * calc((100% - 30%) / 6)));
         border-color: var(--accent-one-4);
     }
 
-    .l\:br-accent-one-5 {
+    .lt\:br-accent-one-5 {
         border-color: hsl(80, 100%, calc(30% + 5 * calc((100% - 30%) / 6)));
         border-color: var(--accent-one-5);
     }
 
-    .l\:br-accent-two-d5 {
+    .lt\:br-accent-two-d5 {
         border-color: hsl(326.7, 100%, calc(30% - 4 * calc(30% / 7)));
         border-color: var(--accent-two-d4);
     }
 
-    .l\:br-accent-two-d4 {
+    .lt\:br-accent-two-d4 {
         border-color: hsl(326.7, 100%, calc(30% - 4 * calc(30% / 7)));
         border-color: var(--accent-two-d4);
     }
 
-    .l\:br-accent-two-d3 {
+    .lt\:br-accent-two-d3 {
         border-color: hsl(326.7, 100%, calc(30% - 3 * calc(30% / 7)));
         border-color: var(--accent-two-d3);
     }
 
-    .l\:br-accent-two-d2 {
+    .lt\:br-accent-two-d2 {
         border-color: hsl(326.7, 100%, calc(30% - 2 * calc(30% / 7)));
         border-color: var(--accent-two-d2);
     }
 
-    .l\:br-accent-two-d1 {
+    .lt\:br-accent-two-d1 {
         border-color: hsl(326.7, 100%, calc(30% - calc(30% / 7)));
         border-color: var(--accent-two-d1);
     }
 
-    .l\:br-accent-two {
+    .lt\:br-accent-two {
         border-color: hsl(326.7, 100%, 30%);
         border-color: var(--accent-two);
     }
 
-    .l\:br-accent-two-1 {
+    .lt\:br-accent-two-1 {
         border-color: hsl(326.7, 100%, calc(30% + calc((100% - 30%) / 6)));
         border-color: var(--accent-two-1);
     }
 
-    .l\:br-accent-two-2 {
+    .lt\:br-accent-two-2 {
         border-color: hsl(326.7, 100%, calc(30% + 2 * calc((100% - 30%) / 6)));
         border-color: var(--accent-two-2);
     }
 
-    .l\:br-accent-two-3 {
+    .lt\:br-accent-two-3 {
         border-color: hsl(326.7, 100%, calc(30% + 3 * calc((100% - 30%) / 6)));
         border-color: var(--accent-two-3);
     }
 
-    .l\:br-accent-two-4 {
+    .lt\:br-accent-two-4 {
         border-color: hsl(326.7, 100%, calc(30% + 4 * calc((100% - 30%) / 6)));
         border-color: var(--accent-two-4);
     }
 
-    .l\:br-accent-two-5 {
+    .lt\:br-accent-two-5 {
         border-color: hsl(326.7, 100%, calc(30% + 5 * calc((100% - 30%) / 6)));
         border-color: var(--accent-two-5);
     }
 
-    .l\:br-accent-three-d5 {
+    .lt\:br-accent-three-d5 {
         border-color: hsl(356, 83%, calc(41% - 5 * calc(41% / 7)));
         border-color: var(--accent-three-d5);
     }
 
-    .l\:br-accent-three-d4 {
+    .lt\:br-accent-three-d4 {
         border-color: hsl(356, 83%, calc(41% - 4 * calc(41% / 7)));
         border-color: var(--accent-three-d4);
     }
 
-    .l\:br-accent-three-d3 {
+    .lt\:br-accent-three-d3 {
         border-color: hsl(356, 83%, calc(41% - 3 * calc(41% / 7)));
         border-color: var(--accent-three-d3);
     }
 
-    .l\:br-accent-three-d2 {
+    .lt\:br-accent-three-d2 {
         border-color: hsl(356, 83%, calc(41% - 2 * calc(41% / 7)));
         border-color: var(--accent-three-d2);
     }
 
-    .l\:br-accent-three-d1 {
+    .lt\:br-accent-three-d1 {
         border-color: hsl(356, 83%, calc(41% - calc(41% / 7)));
         border-color: var(--accent-three-d1);
     }
 
-    .l\:br-accent-three {
+    .lt\:br-accent-three {
         border-color: hsl(356, 83%, 41%);
         border-color: var(--accent-three);
     }
 
-    .l\:br-accent-three-1 {
+    .lt\:br-accent-three-1 {
         border-color: hsl(356, 83%, calc(41% + calc((100% - 41%) / 6)));
         border-color: var(--accent-three-1);
     }
 
-    .l\:br-accent-three-2 {
+    .lt\:br-accent-three-2 {
         border-color: hsl(356, 83%, calc(41% + 2 * calc((100% - 41%) / 6)));
         border-color: var(--accent-three-2);
     }
 
-    .l\:br-accent-three-3 {
+    .lt\:br-accent-three-3 {
         border-color: hsl(356, 83%, calc(41% + 3 * calc((100% - 41%) / 6)));
         border-color: var(--accent-three-3);
     }
 
-    .l\:br-accent-three-4 {
+    .lt\:br-accent-three-4 {
         border-color: hsl(356, 83%, calc(41% + 4 * calc((100% - 41%) / 6)));
         border-color: var(--accent-three-4);
     }
 
-    .l\:br-accent-three-5 {
+    .lt\:br-accent-three-5 {
         border-color: hsl(356, 83%, calc(41% + 5 * calc((100% - 41%) / 6)));
         border-color: var(--accent-three-5);
     }
 
-    .l\:br-accent-four-d5 {
+    .lt\:br-accent-four-d5 {
         border-color: hsl(32, 100%, calc(49% - 5 * calc(49% / 7)));
         border-color: var(--accent-four-d5);
     }
 
-    .l\:br-accent-four-d4 {
+    .lt\:br-accent-four-d4 {
         border-color: hsl(32, 100%, calc(49% - 4 * calc(49% / 7)));
         border-color: var(--accent-four-d4);
     }
 
-    .l\:br-accent-four-d3 {
+    .lt\:br-accent-four-d3 {
         border-color: hsl(32, 100%, calc(49% - 3 * calc(49% / 7)));
         border-color: var(--accent-four-d3);
     }
 
-    .l\:br-accent-four-d2 {
+    .lt\:br-accent-four-d2 {
         border-color: hsl(32, 100%, calc(49% - 2 * calc(49% / 7)));
         border-color: var(--accent-four-d2);
     }
 
-    .l\:br-accent-four-d1 {
+    .lt\:br-accent-four-d1 {
         border-color: hsl(32, 100%, calc(49% - calc(49% / 7)));
         border-color: var(--accent-four-d1);
     }
 
-    .l\:br-accent-four {
+    .lt\:br-accent-four {
         border-color: hsl(32, 100%, 49%);
         border-color: var(--accent-four);
     }
 
-    .l\:br-accent-four-1 {
+    .lt\:br-accent-four-1 {
         border-color: hsl(32, 100%, calc(49% + calc((100% - 49%) / 6)));
         border-color: var(--accent-four-1);
     }
 
-    .l\:br-accent-four-2 {
+    .lt\:br-accent-four-2 {
         border-color: hsl(32, 100%, calc(49% + 2 * calc((100% - 49%) / 6)));
         border-color: var(--accent-four-2);
     }
 
-    .l\:br-accent-four-3 {
+    .lt\:br-accent-four-3 {
         border-color: hsl(32, 100%, calc(49% + 3 * calc((100% - 49%) / 6)));
         border-color: var(--accent-four-3);
     }
 
-    .l\:br-accent-four-4 {
+    .lt\:br-accent-four-4 {
         border-color: hsl(32, 100%, calc(49% + 4 * calc((100% - 49%) / 6)));
         border-color: var(--accent-four-4);
     }
 
-    .l\:br-accent-four-5 {
+    .lt\:br-accent-four-5 {
         border-color: hsl(32, 100%, calc(41% + 5 * calc((100% - 41%) / 6)));
         border-color: var(--accent-four-5);
     }
 
-    .l\:br-accent-five-d5 {
+    .lt\:br-accent-five-d5 {
         border-color: hsl(43, 100%, calc(51% - 5 * calc(51% / 7)));
         border-color: var(--accent-five-d5);
     }
 
-    .l\:br-accent-five-d4 {
+    .lt\:br-accent-five-d4 {
         border-color: hsl(43, 100%, calc(51% - 4 * calc(51% / 7)));
         border-color: var(--accent-five-d4);
     }
 
-    .l\:br-accent-five-d3 {
+    .lt\:br-accent-five-d3 {
         border-color: hsl(43, 100%, calc(51% - 3 * calc(51% / 7)));
         border-color: var(--accent-five-d3);
     }
 
-    .l\:br-accent-five-d2 {
+    .lt\:br-accent-five-d2 {
         border-color: hsl(43, 100%, calc(51% - 2 * calc(51% / 7)));
         border-color: var(--accent-five-d2);
     }
 
-    .l\:br-accent-five-d1 {
+    .lt\:br-accent-five-d1 {
         border-color: hsl(43, 100%, calc(51% - calc(51% / 7)));
         border-color: var(--accent-five-d1);
     }
 
-    .l\:br-accent-five {
+    .lt\:br-accent-five {
         border-color: hsl(43, 100%, 51%);
         border-color: var(--accent-five);
     }
 
-    .l\:br-accent-five-1 {
+    .lt\:br-accent-five-1 {
         border-color: hsl(43, 100%, calc(51% + calc((100% - 51%) / 6)));
         border-color: var(--accent-five-1);
     }
 
-    .l\:br-accent-five-2 {
+    .lt\:br-accent-five-2 {
         border-color: hsl(43, 100%, calc(51% + 2 * calc((100% - 51%) / 6)));
         border-color: var(--accent-five-2);
     }
 
-    .l\:br-accent-five-3 {
+    .lt\:br-accent-five-3 {
         border-color: hsl(43, 100%, calc(51% + 3 * calc((100% - 51%) / 6)));
         border-color: var(--accent-five-3);
     }
 
-    .l\:br-accent-five-4 {
+    .lt\:br-accent-five-4 {
         border-color: hsl(43, 100%, calc(51% + 4 * calc((100% - 51%) / 6)));
         border-color: var(--accent-five-4);
     }
 
-    .l\:br-accent-five-5 {
+    .lt\:br-accent-five-5 {
         border-color: hsl(43, 100%, calc(41% + 5 * calc((100% - 41%) / 6)));
         border-color: var(--accent-five-5);
     }
 
-    .l\:br-error-color {
+    .lt\:br-error-color {
         border-color: crimson;
         border-color: var(--error-color);
     }
@@ -6427,1395 +6428,1671 @@ details[open]>summary::before {
 }
 
 @media (prefers-color-scheme: dark) {
-    .auto-dark-mode .d\:neutral-d5 {
+
+    .auto-dark-mode .dk\:neutral-d5,
+    .auto-dark-mode.dk\:neutral-d5 {
         color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
         color: var(--neutral-d5);
     }
 
-    .auto-dark-mode .d\:neutral-d4 {
+    .auto-dark-mode .dk\:neutral-d4,
+    .auto-dark-mode.dk\:neutral-d4 {
         color: hsl(0, 0%, calc(53% - 4 * calc(53% / 7)));
         color: var(--neutral-d4);
     }
 
-    .auto-dark-mode .d\:neutral-d3 {
+    .auto-dark-mode .dk\:neutral-d3,
+    .auto-dark-mode.dk\:neutral-d3 {
         color: hsl(0, 0%, calc(53% - 3 * calc(53% / 7)));
         color: var(--neutral-d3);
     }
 
-    .auto-dark-mode .d\:neutral-d2 {
+    .auto-dark-mode .dk\:neutral-d2,
+    .auto-dark-mode.dk\:neutral-d2 {
         color: hsl(0, 0%, calc(53% - 2 * calc(53% / 7)));
         color: var(--neutral-d2);
     }
 
-    .auto-dark-mode .d\:neutral-d1 {
+    .auto-dark-mode .dk\:neutral-d1,
+    .auto-dark-mode.dk\:neutral-d1 {
         color: hsl(0, 0%, calc(53% - calc(53% / 7)));
         color: var(--neutral-d1);
     }
 
-    .auto-dark-mode .d\:neutral {
+    .auto-dark-mode .dk\:neutral,
+    .auto-dark-mode.dk\:neutral {
         color: hsl(0, 0%, 53%);
         color: var(--neutral);
     }
 
-    .auto-dark-mode .d\:neutral-1 {
+    .auto-dark-mode .dk\:neutral-1,
+    .auto-dark-mode.dk\:neutral-1 {
         color: hsl(0, 0%, calc(53% + calc((100% - 53%) / 6)));
         color: var(--neutral-1);
     }
 
-    .auto-dark-mode .d\:neutral-2 {
+    .auto-dark-mode .dk\:neutral-2,
+    .auto-dark-mode.dk\:neutral-2 {
         color: hsl(0, 0%, calc(53% + 2 * calc((100% - 53%) / 6)));
         color: var(--neutral-2);
     }
 
-    .auto-dark-mode .d\:neutral-3 {
+    .auto-dark-mode .dk\:neutral-3,
+    .auto-dark-mode.dk\:neutral-3 {
         color: hsl(0, 0%, calc(53% + 3 * calc((100% - 53%) / 6)));
         color: var(--neutral-3);
     }
 
-    .auto-dark-mode .d\:neutral-4 {
+    .auto-dark-mode .dk\:neutral-4,
+    .auto-dark-mode.dk\:neutral-4 {
         color: hsl(0, 0%, calc(53% + 4 * calc((100% - 53%) / 6)));
         color: var(--neutral-4);
     }
 
-    .auto-dark-mode .d\:neutral-5 {
+    .auto-dark-mode .dk\:neutral-5,
+    .auto-dark-mode.dk\:neutral-5 {
         color: hsl(0, 0%, calc(53% + 5 * calc((100% - 53%) / 6)));
         color: var(--neutral-5);
     }
 
-    .auto-dark-mode .d\:white {
+    .auto-dark-mode .dk\:white,
+    .auto-dark-mode.dk\:white {
         color: white;
     }
 
-    .auto-dark-mode .d\:black {
+    .auto-dark-mode .dk\:black,
+    .auto-dark-mode.dk\:black {
         color: black;
     }
 
-    .auto-dark-mode .d\:base-background {
+    .auto-dark-mode .dk\:base-background,
+    .auto-dark-mode.dk\:base-background {
         color: white;
         color: var(--base-background);
     }
 
-    .auto-dark-mode .d\:base-color {
+    .auto-dark-mode .dk\:base-color,
+    .auto-dark-mode.dk\:base-color {
         color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
         color: var(--base-color);
     }
 
-    .auto-dark-mode .d\:meta-color {
+    .auto-dark-mode .dk\:meta-color,
+    .auto-dark-mode.dk\:meta-color {
         color: hsl(0, 0%, calc(53% - calc(53% / 7)));
         color: var(--meta-color);
     }
 
-    .auto-dark-mode .d\:heading-color {
+    .auto-dark-mode .dk\:heading-color,
+    .auto-dark-mode.dk\:heading-color {
         color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
         color: var(--heading-color);
     }
 
-    .auto-dark-mode .d\:link-color {
+    .auto-dark-mode .dk\:link-color,
+    .auto-dark-mode.dk\:link-color {
         color: inherit;
         color: var(--link-color);
     }
 
-    .auto-dark-mode .d\:link-hover-color {
+    .auto-dark-mode .dk\:link-hover-color,
+    .auto-dark-mode.dk\:link-hover-color {
         color: hsl(198, 100%, 33.3%);
         color: var(--link-hover-color);
     }
 
-    .auto-dark-mode .d\:link-active-color {
+    .auto-dark-mode .dk\:link-active-color,
+    .auto-dark-mode.dk\:link-active-color {
         color: hsl(198, 100%, 33.3%);
         color: var(--link-active-color);
     }
 
-    .auto-dark-mode .d\:link-focus-color {
+    .auto-dark-mode .dk\:link-focus-color,
+    .auto-dark-mode.dk\:link-focus-color {
         color: hsl(198, 100%, 33.3%);
         color: var(--link-focus-color);
     }
 
-    .auto-dark-mode .d\:form-hover-color {
+    .auto-dark-mode .dk\:form-hover-color,
+    .auto-dark-mode.dk\:form-hover-color {
         color: var(--form-hover-color);
     }
 
-    .auto-dark-mode .d\:form-active-color {
+    .auto-dark-mode .dk\:form-active-color,
+    .auto-dark-mode.dk\:form-active-color {
         color: var(--form-active-color);
     }
 
-    .auto-dark-mode .d\:form-focus-color {
+    .auto-dark-mode .dk\:form-focus-color,
+    .auto-dark-mode.dk\:form-focus-color {
         color: var(--form-focus-color);
     }
 
-    .auto-dark-mode .d\:li-prefix-color {
+    .auto-dark-mode .dk\:li-prefix-color,
+    .auto-dark-mode.dk\:li-prefix-color {
         color: currentColor;
         color: var(--li-prefix-color);
     }
 
-
     /* Background */
 
-    .auto-dark-mode .d\:bg-link-color {
+    .auto-dark-mode .dk\:bg-link-color,
+    .auto-dark-mode.dk\:bg-link-color {
         background: inherit;
         background: var(--link-color);
     }
 
-    .auto-dark-mode .d\:bg-link-hover-color {
+    .auto-dark-mode .dk\:bg-link-hover-color,
+    .auto-dark-mode.dk\:bg-link-hover-color {
         background: hsl(198, 100%, 33.3%);
         background: var(--link-hover-color);
     }
 
-    .auto-dark-mode .d\:bg-link-active-color {
+    .auto-dark-mode .dk\:bg-link-active-color,
+    .auto-dark-mode.dk\:bg-link-active-color {
         background: hsl(198, 100%, 33.3%);
         background: var(--link-active-color);
     }
 
-    .auto-dark-mode .d\:bg-link-focus-color {
+    .auto-dark-mode .dk\:bg-link-focus-color,
+    .auto-dark-mode.dk\:bg-link-focus-color {
         background: hsl(198, 100%, 33.3%);
         background: var(--link-focus-color);
     }
 
-    .auto-dark-mode .d\:bg-form-hover-color {
+    .auto-dark-mode .dk\:bg-form-hover-color,
+    .auto-dark-mode.dk\:bg-form-hover-color {
         background: var(--form-hover-color);
     }
 
-    .auto-dark-mode .d\:bg-form-active-color {
+    .auto-dark-mode .dk\:bg-form-active-color,
+    .auto-dark-mode.dk\:bg-form-active-color {
         background: var(--form-active-color);
     }
 
-    .auto-dark-mode .d\:bg-form-focus-color {
+    .auto-dark-mode .dk\:bg-form-focus-color,
+    .auto-dark-mode.dk\:bg-form-focus-color {
         background: var(--form-focus-color);
     }
 
-    .auto-dark-mode .d\:bg-li-prefix-color {
+    .auto-dark-mode .dk\:bg-li-prefix-color,
+    .auto-dark-mode.dk\:bg-li-prefix-color {
         background: currentColor;
         background: var(--li-prefix-color);
     }
 
-    .auto-dark-mode .d\:bg-neutral-d5 {
+    .auto-dark-mode .dk\:bg-neutral-d5,
+    .auto-dark-mode.dk\:bg-neutral-d5 {
         background-color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
         background-color: var(--neutral-d5);
     }
 
-    .auto-dark-mode .d\:bg-neutral-d4 {
+    .auto-dark-mode .dk\:bg-neutral-d4,
+    .auto-dark-mode.dk\:bg-neutral-d4 {
         background-color: hsl(0, 0%, calc(53% - 4 * calc(53% / 7)));
         background-color: var(--neutral-d4);
     }
 
-    .auto-dark-mode .d\:bg-neutral-d3 {
+    .auto-dark-mode .dk\:bg-neutral-d3,
+    .auto-dark-mode.dk\:bg-neutral-d3 {
         background-color: hsl(0, 0%, calc(53% - 3 * calc(53% / 7)));
         background-color: var(--neutral-d3);
     }
 
-    .auto-dark-mode .d\:bg-neutral-d2 {
+    .auto-dark-mode .dk\:bg-neutral-d2,
+    .auto-dark-mode.dk\:bg-neutral-d2 {
         background-color: hsl(0, 0%, calc(53% - 2 * calc(53% / 7)));
         background-color: var(--neutral-d2);
     }
 
-    .auto-dark-mode .d\:bg-neutral-d1 {
+    .auto-dark-mode .dk\:bg-neutral-d1,
+    .auto-dark-mode.dk\:bg-neutral-d1 {
         background-color: hsl(0, 0%, calc(53% - calc(53% / 7)));
         background-color: var(--neutral-d1);
     }
 
-    .auto-dark-mode .d\:bg-neutral {
+    .auto-dark-mode .dk\:bg-neutral,
+    .auto-dark-mode.dk\:bg-neutral {
         background-color: hsl(0, 0%, 53%);
         background-color: var(--neutral);
     }
 
-    .auto-dark-mode .d\:bg-neutral-1 {
+    .auto-dark-mode .dk\:bg-neutral-1,
+    .auto-dark-mode.dk\:bg-neutral-1 {
         background-color: hsl(0, 0%, calc(53% + calc((100% - 53%) / 6)));
         background-color: var(--neutral-1);
     }
 
-    .auto-dark-mode .d\:bg-neutral-2 {
+    .auto-dark-mode .dk\:bg-neutral-2,
+    .auto-dark-mode.dk\:bg-neutral-2 {
         background-color: hsl(0, 0%, calc(53% + 2 * calc((100% - 53%) / 6)));
         background-color: var(--neutral-2);
     }
 
-    .auto-dark-mode .d\:bg-neutral-3 {
+    .auto-dark-mode .dk\:bg-neutral-3,
+    .auto-dark-mode.dk\:bg-neutral-3 {
         background-color: hsl(0, 0%, calc(53% + 3 * calc((100% - 53%) / 6)));
         background-color: var(--neutral-3);
     }
 
-    .auto-dark-mode .d\:bg-neutral-4 {
+    .auto-dark-mode .dk\:bg-neutral-4,
+    .auto-dark-mode.dk\:bg-neutral-4 {
         background-color: hsl(0, 0%, calc(53% + 4 * calc((100% - 53%) / 6)));
         background-color: var(--neutral-4);
     }
 
-    .auto-dark-mode .d\:bg-neutral-5 {
+    .auto-dark-mode .dk\:bg-neutral-5,
+    .auto-dark-mode.dk\:bg-neutral-5 {
         background-color: hsl(0, 0%, calc(53% + 5 * calc((100% - 53%) / 6)));
         background-color: var(--neutral-5);
     }
 
-    .auto-dark-mode .d\:bg-transparent {
+    .auto-dark-mode .dk\:bg-transparent,
+    .auto-dark-mode.dk\:bg-transparent {
         background-color: transparent;
     }
 
-    .auto-dark-mode .d\:bg-white {
+    .auto-dark-mode .dk\:bg-white,
+    .auto-dark-mode.dk\:bg-white {
         background-color: white;
     }
 
-    .auto-dark-mode .d\:bg-black {
+    .auto-dark-mode .dk\:bg-black,
+    .auto-dark-mode.dk\:bg-black {
         background-color: black;
     }
 
-    .auto-dark-mode .d\:bg-base-background {
+    .auto-dark-mode .dk\:bg-base-background,
+    .auto-dark-mode.dk\:bg-base-background {
         background-color: white;
         background-color: var(--base-background);
     }
 
-    .auto-dark-mode .d\:bg-base-color {
+    .auto-dark-mode .dk\:bg-base-color,
+    .auto-dark-mode.dk\:bg-base-color {
         background-color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
         background-color: var(--base-color);
     }
 
-    .auto-dark-mode .d\:bg-meta-color {
+    .auto-dark-mode .dk\:bg-meta-color,
+    .auto-dark-mode.dk\:bg-meta-color {
         background-color: hsl(0, 0%, calc(53% - calc(53% / 7)));
         background-color: var(--meta-color);
     }
 
-    .auto-dark-mode .d\:bg-heading-color {
+    .auto-dark-mode .dk\:bg-heading-color,
+    .auto-dark-mode.dk\:bg-heading-color {
         background-color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
         background-color: var(--heading-color);
     }
 
-    .auto-dark-mode .d\:bg-link-color {
+    .auto-dark-mode .dk\:bg-link-color,
+    .auto-dark-mode.dk\:bg-link-color {
         background-color: inherit;
         background-color: var(--link-color);
     }
 
-    .auto-dark-mode .d\:bg-link-hover-color {
+    .auto-dark-mode .dk\:bg-link-hover-color,
+    .auto-dark-mode.dk\:bg-link-hover-color {
         background-color: hsl(198, 100%, 33.3%);
         background-color: var(--link-hover-color);
     }
 
-    .auto-dark-mode .d\:bg-link-active-color {
+    .auto-dark-mode .dk\:bg-link-active-color,
+    .auto-dark-mode.dk\:bg-link-active-color {
         background-color: hsl(198, 100%, 33.3%);
         background-color: var(--link-active-color);
     }
 
-    .auto-dark-mode .d\:bg-link-focus-color {
+    .auto-dark-mode .dk\:bg-link-focus-color,
+    .auto-dark-mode.dk\:bg-link-focus-color {
         background-color: hsl(198, 100%, 33.3%);
         background-color: var(--link-focus-color);
     }
 
-    .auto-dark-mode .d\:bg-li-prefix-color {
+    .auto-dark-mode .dk\:bg-li-prefix-color,
+    .auto-dark-mode.dk\:bg-li-prefix-color {
         background-color: currentColor;
         background-color: var(--li-prefix-color);
     }
 
-
     /* Border Colors */
 
-    .auto-dark-mode .d\:br-neutral-d5 {
+    .auto-dark-mode .dk\:br-neutral-d5,
+    .auto-dark-mode.dk\:br-neutral-d5 {
         border-color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
         border-color: var(--neutral-d5);
     }
 
-    .auto-dark-mode .d\:br-neutral-d4 {
+    .auto-dark-mode .dk\:br-neutral-d4,
+    .auto-dark-mode.dk\:br-neutral-d4 {
         border-color: hsl(0, 0%, calc(53% - 4 * calc(53% / 7)));
         border-color: var(--neutral-d4);
     }
 
-    .auto-dark-mode .d\:br-neutral-d3 {
+    .auto-dark-mode .dk\:br-neutral-d3,
+    .auto-dark-mode.dk\:br-neutral-d3 {
         border-color: hsl(0, 0%, calc(53% - 3 * calc(53% / 7)));
         border-color: var(--neutral-d3);
     }
 
-    .auto-dark-mode .d\:br-neutral-d2 {
+    .auto-dark-mode .dk\:br-neutral-d2,
+    .auto-dark-mode.dk\:br-neutral-d2 {
         border-color: hsl(0, 0%, calc(53% - 2 * calc(53% / 7)));
         border-color: var(--neutral-d2);
     }
 
-    .auto-dark-mode .d\:br-neutral-d1 {
+    .auto-dark-mode .dk\:br-neutral-d1,
+    .auto-dark-mode.dk\:br-neutral-d1 {
         border-color: hsl(0, 0%, calc(53% - calc(53% / 7)));
         border-color: var(--neutral-d1);
     }
 
-    .auto-dark-mode .d\:br-neutral {
+    .auto-dark-mode .dk\:br-neutral,
+    .auto-dark-mode.dk\:br-neutral {
         border-color: hsl(0, 0%, 53%);
         border-color: var(--neutral);
     }
 
-    .auto-dark-mode .d\:br-neutral-1 {
+    .auto-dark-mode .dk\:br-neutral-1,
+    .auto-dark-mode.dk\:br-neutral-1 {
         border-color: hsl(0, 0%, calc(53% + calc((100% - 53%) / 6)));
         border-color: var(--neutral-1);
     }
 
-    .auto-dark-mode .d\:br-neutral-2 {
+    .auto-dark-mode .dk\:br-neutral-2,
+    .auto-dark-mode.dk\:br-neutral-2 {
         border-color: hsl(0, 0%, calc(53% + 2 * calc((100% - 53%) / 6)));
         border-color: var(--neutral-2);
     }
 
-    .auto-dark-mode .d\:br-neutral-3 {
+    .auto-dark-mode .dk\:br-neutral-3,
+    .auto-dark-mode.dk\:br-neutral-3 {
         border-color: hsl(0, 0%, calc(53% + 3 * calc((100% - 53%) / 6)));
         border-color: var(--neutral-3);
     }
 
-    .auto-dark-mode .d\:br-neutral-4 {
+    .auto-dark-mode .dk\:br-neutral-4,
+    .auto-dark-mode.dk\:br-neutral-4 {
         border-color: hsl(0, 0%, calc(53% + 4 * calc((100% - 53%) / 6)));
         border-color: var(--neutral-4);
     }
 
-    .auto-dark-mode .d\:br-neutral-5 {
+    .auto-dark-mode .dk\:br-neutral-5,
+    .auto-dark-mode.dk\:br-neutral-5 {
         border-color: hsl(0, 0%, calc(53% + 5 * calc((100% - 53%) / 6)));
         border-color: var(--neutral-5);
     }
 
-    .auto-dark-mode .d\:br-white {
+    .auto-dark-mode .dk\:br-white,
+    .auto-dark-mode.dk\:br-white {
         border-color: white;
     }
 
-    .auto-dark-mode .d\:br-black {
+    .auto-dark-mode .dk\:br-black,
+    .auto-dark-mode.dk\:br-black {
         border-color: black;
     }
 
-    .auto-dark-mode .d\:br-base-background {
+    .auto-dark-mode .dk\:br-base-background,
+    .auto-dark-mode.dk\:br-base-background {
         border-color: white;
         border-color: var(--base-background);
     }
 
-    .auto-dark-mode .d\:br-base-color {
+    .auto-dark-mode .dk\:br-base-color,
+    .auto-dark-mode.dk\:br-base-color {
         border-color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
         border-color: var(--base-color);
     }
 
-    .auto-dark-mode .d\:br-meta-color {
+    .auto-dark-mode .dk\:br-meta-color,
+    .auto-dark-mode.dk\:br-meta-color {
         border-color: hsl(0, 0%, calc(53% - calc(53% / 7)));
         border-color: var(--meta-color);
     }
 
-    .auto-dark-mode .d\:br-heading-color {
+    .auto-dark-mode .dk\:br-heading-color,
+    .auto-dark-mode.dk\:br-heading-color {
         border-color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
         border-color: var(--heading-color);
     }
 
-    .auto-dark-mode .d\:br-link-color {
+    .auto-dark-mode .dk\:br-link-color,
+    .auto-dark-mode.dk\:br-link-color {
         border-color: inherit;
         border-color: var(--link-color);
     }
 
-    .auto-dark-mode .d\:br-link-hover-color {
+    .auto-dark-mode .dk\:br-link-hover-color,
+    .auto-dark-mode.dk\:br-link-hover-color {
         border-color: hsl(198, 100%, 33.3%);
         border-color: var(--link-hover-color);
     }
 
-    .auto-dark-mode .d\:br-link-active-color {
+    .auto-dark-mode .dk\:br-link-active-color,
+    .auto-dark-mode.dk\:br-link-active-color {
         border-color: hsl(198, 100%, 33.3%);
         border-color: var(--link-active-color);
     }
 
-    .auto-dark-mode .d\:br-link-focus-color {
+    .auto-dark-mode .dk\:br-link-focus-color,
+    .auto-dark-mode.dk\:br-link-focus-color {
         border-color: hsl(198, 100%, 33.3%);
         border-color: var(--link-focus-color);
     }
 
-    .auto-dark-mode .d\:br-li-prefix-color {
+    .auto-dark-mode .dk\:br-li-prefix-color,
+    .auto-dark-mode.dk\:br-li-prefix-color {
         border-color: currentColor;
         border-color: var(--li-prefix-color);
     }
 
-    .auto-dark-mode .d\:primary-d5 {
+    .auto-dark-mode .dk\:primary-d5,
+    .auto-dark-mode.dk\:primary-d5 {
         color: hsl(198, 100%, calc(33.3% - 5 * calc(33.3% / 7)));
         color: var(--primary-d5);
     }
 
-    .auto-dark-mode .d\:primary-d4 {
+    .auto-dark-mode .dk\:primary-d4,
+    .auto-dark-mode.dk\:primary-d4 {
         color: hsl(198, 100%, calc(33.3% - 4 * calc(33.3% / 7)));
         color: var(--primary-d4);
     }
 
-    .auto-dark-mode .d\:primary-d3 {
+    .auto-dark-mode .dk\:primary-d3,
+    .auto-dark-mode.dk\:primary-d3 {
         color: hsl(198, 100%, calc(33.3% - 3 * calc(33.3% / 7)));
         color: var(--primary-d3);
     }
 
-    .auto-dark-mode .d\:primary-d2 {
+    .auto-dark-mode .dk\:primary-d2,
+    .auto-dark-mode.dk\:primary-d2 {
         color: hsl(198, 100%, calc(33.3% - 2 * calc(33.3% / 7)));
         color: var(--primary-d2);
     }
 
-    .auto-dark-mode .d\:primary-d1 {
+    .auto-dark-mode .dk\:primary-d1,
+    .auto-dark-mode.dk\:primary-d1 {
         color: hsl(198, 100%, calc(33.3% - calc(33.3% / 7)));
         color: var(--primary-d1);
     }
 
-    .auto-dark-mode .d\:primary {
+    .auto-dark-mode .dk\:primary,
+    .auto-dark-mode.dk\:primary {
         color: hsl(198, 100%, 33.3%);
         color: var(--primary);
     }
 
-    .auto-dark-mode .d\:primary-1 {
+    .auto-dark-mode .dk\:primary-1,
+    .auto-dark-mode.dk\:primary-1 {
         color: hsl(198, 100%, calc(33.3% + calc((100% - 33.3%) / 6)));
         color: var(--primary-1);
     }
 
-    .auto-dark-mode .d\:primary-2 {
+    .auto-dark-mode .dk\:primary-2,
+    .auto-dark-mode.dk\:primary-2 {
         color: hsl(198, 100%, calc(33.3% + 2 * calc((100% - 33.3%) / 6)));
         color: var(--primary-2);
     }
 
-    .auto-dark-mode .d\:primary-3 {
+    .auto-dark-mode .dk\:primary-3,
+    .auto-dark-mode.dk\:primary-3 {
         color: hsl(198, 100%, calc(33.3% + 3 * calc((100% - 33.3%) / 6)));
         color: var(--primary-3);
     }
 
-    .auto-dark-mode .d\:primary-4 {
+    .auto-dark-mode .dk\:primary-4,
+    .auto-dark-mode.dk\:primary-4 {
         color: hsl(198, 100%, calc(33.3% + 4 * calc((100% - 33.3%) / 6)));
         color: var(--primary-4);
     }
 
-    .auto-dark-mode .d\:primary-5 {
+    .auto-dark-mode .dk\:primary-5,
+    .auto-dark-mode.dk\:primary-5 {
         color: hsl(198, 100%, calc(33.3% + 5 * calc((100% - 33.3%) / 6)));
         color: var(--primary-5);
     }
 
-    .auto-dark-mode .d\:accent-one-d5 {
+    .auto-dark-mode .dk\:accent-one-d5,
+    .auto-dark-mode.dk\:accent-one-d5 {
         color: hsl(80, 100%, calc(30% - 5 * calc(30% / 7)));
         color: var(--accent-one-d5);
     }
 
-    .auto-dark-mode .d\:accent-one-d4 {
+    .auto-dark-mode .dk\:accent-one-d4,
+    .auto-dark-mode.dk\:accent-one-d4 {
         color: hsl(80, 100%, calc(30% - 4 * calc(30% / 7)));
         color: var(--accent-one-d4);
     }
 
-    .auto-dark-mode .d\:accent-one-d3 {
+    .auto-dark-mode .dk\:accent-one-d3,
+    .auto-dark-mode.dk\:accent-one-d3 {
         color: hsl(80, 100%, calc(30% - 3 * calc(30% / 7)));
         color: var(--accent-one-d3);
     }
 
-    .auto-dark-mode .d\:accent-one-d2 {
+    .auto-dark-mode .dk\:accent-one-d2,
+    .auto-dark-mode.dk\:accent-one-d2 {
         color: hsl(80, 100%, calc(30% - 2 * calc(30% / 7)));
         color: var(--accent-one-d2);
     }
 
-    .auto-dark-mode .d\:accent-one-d1 {
+    .auto-dark-mode .dk\:accent-one-d1,
+    .auto-dark-mode.dk\:accent-one-d1 {
         color: hsl(80, 100%, calc(30% - calc(30% / 7)));
         color: var(--accent-one-d1);
     }
 
-    .auto-dark-mode .d\:accent-one {
+    .auto-dark-mode .dk\:accent-one,
+    .auto-dark-mode.dk\:accent-one {
         color: hsl(80, 100%, 30%);
         color: var(--accent-one);
     }
 
-    .auto-dark-mode .d\:accent-one-1 {
+    .auto-dark-mode .dk\:accent-one-1,
+    .auto-dark-mode.dk\:accent-one-1 {
         color: hsl(80, 100%, calc(30% + calc((100% - 30%) / 6)));
         color: var(--accent-one-1);
     }
 
-    .auto-dark-mode .d\:accent-one-2 {
+    .auto-dark-mode .dk\:accent-one-2,
+    .auto-dark-mode.dk\:accent-one-2 {
         color: hsl(80, 100%, calc(30% + 2 * calc((100% - 30%) / 6)));
         color: var(--accent-one-2);
     }
 
-    .auto-dark-mode .d\:accent-one-3 {
+    .auto-dark-mode .dk\:accent-one-3,
+    .auto-dark-mode.dk\:accent-one-3 {
         color: hsl(80, 100%, calc(30% + 3 * calc((100% - 30%) / 6)));
         color: var(--accent-one-3);
     }
 
-    .auto-dark-mode .d\:accent-one-4 {
+    .auto-dark-mode .dk\:accent-one-4,
+    .auto-dark-mode.dk\:accent-one-4 {
         color: hsl(80, 100%, calc(30% + 4 * calc((100% - 30%) / 6)));
         color: var(--accent-one-4);
     }
 
-    .auto-dark-mode .d\:accent-one-5 {
+    .auto-dark-mode .dk\:accent-one-5,
+    .auto-dark-mode.dk\:accent-one-5 {
         color: hsl(80, 100%, calc(30% + 5 * calc((100% - 30%) / 6)));
         color: var(--accent-one-5);
     }
 
-    .auto-dark-mode .d\:accent-two-d5 {
+    .auto-dark-mode .dk\:accent-two-d5,
+    .auto-dark-mode.dk\:accent-two-d5 {
         color: hsl(326.7, 100%, calc(30% - 5 * calc(30% / 7)));
         color: var(--accent-two-d5);
     }
 
-    .auto-dark-mode .d\:accent-two-d4 {
+    .auto-dark-mode .dk\:accent-two-d4,
+    .auto-dark-mode.dk\:accent-two-d4 {
         color: hsl(326.7, 100%, calc(30% - 4 * calc(30% / 7)));
         color: var(--accent-two-d4);
     }
 
-    .auto-dark-mode .d\:accent-two-d3 {
+    .auto-dark-mode .dk\:accent-two-d3,
+    .auto-dark-mode.dk\:accent-two-d3 {
         color: hsl(326.7, 100%, calc(30% - 3 * calc(30% / 7)));
         color: var(--accent-two-d3);
     }
 
-    .auto-dark-mode .d\:accent-two-d2 {
+    .auto-dark-mode .dk\:accent-two-d2,
+    .auto-dark-mode.dk\:accent-two-d2 {
         color: hsl(326.7, 100%, calc(30% - 2 * calc(30% / 7)));
         color: var(--accent-two-d2);
     }
 
-    .auto-dark-mode .d\:accent-two-d1 {
+    .auto-dark-mode .dk\:accent-two-d1,
+    .auto-dark-mode.dk\:accent-two-d1 {
         color: hsl(326.7, 100%, calc(30% - calc(30% / 7)));
         color: var(--accent-two-d1);
     }
 
-    .auto-dark-mode .d\:accent-two {
+    .auto-dark-mode .dk\:accent-two,
+    .auto-dark-mode.dk\:accent-two {
         color: hsl(326.7, 100%, 30%);
         color: var(--accent-two);
     }
 
-    .auto-dark-mode .d\:accent-two-1 {
+    .auto-dark-mode .dk\:accent-two-1,
+    .auto-dark-mode.dk\:accent-two-1 {
         color: hsl(326.7, 100%, calc(30% + calc((100% - 30%) / 6)));
         color: var(--accent-two-1);
     }
 
-    .auto-dark-mode .d\:accent-two-2 {
+    .auto-dark-mode .dk\:accent-two-2,
+    .auto-dark-mode.dk\:accent-two-2 {
         color: hsl(326.7, 100%, calc(30% + 2 * calc((100% - 30%) / 6)));
         color: var(--accent-two-2);
     }
 
-    .auto-dark-mode .d\:accent-two-3 {
+    .auto-dark-mode .dk\:accent-two-3,
+    .auto-dark-mode.dk\:accent-two-3 {
         color: hsl(326.7, 100%, calc(30% + 3 * calc((100% - 30%) / 6)));
         color: var(--accent-two-3);
     }
 
-    .auto-dark-mode .d\:accent-two-4 {
+    .auto-dark-mode .dk\:accent-two-4,
+    .auto-dark-mode.dk\:accent-two-4 {
         color: hsl(326.7, 100%, calc(30% + 4 * calc((100% - 30%) / 6)));
         color: var(--accent-two-4);
     }
 
-    .auto-dark-mode .d\:accent-two-5 {
+    .auto-dark-mode .dk\:accent-two-5,
+    .auto-dark-mode.dk\:accent-two-5 {
         color: hsl(326.7, 100%, calc(30% + 5 * calc((100% - 30%) / 6)));
         color: var(--accent-two-5);
     }
 
-    .auto-dark-mode .d\:accent-three-d5 {
+    .auto-dark-mode .dk\:accent-three-d5,
+    .auto-dark-mode.dk\:accent-three-d5 {
         color: hsl(356, 83%, calc(41% - 5 * calc(41% / 7)));
         color: var(--accent-three-d5);
     }
 
-    .auto-dark-mode .d\:accent-three-d4 {
+    .auto-dark-mode .dk\:accent-three-d4,
+    .auto-dark-mode.dk\:accent-three-d4 {
         color: hsl(356, 83%, calc(41% - 4 * calc(41% / 7)));
         color: var(--accent-three-d4);
     }
 
-    .auto-dark-mode .d\:accent-three-d3 {
+    .auto-dark-mode .dk\:accent-three-d3,
+    .auto-dark-mode.dk\:accent-three-d3 {
         color: hsl(356, 83%, calc(41% - 3 * calc(41% / 7)));
         color: var(--accent-three-d3);
     }
 
-    .auto-dark-mode .d\:accent-three-d2 {
+    .auto-dark-mode .dk\:accent-three-d2,
+    .auto-dark-mode.dk\:accent-three-d2 {
         color: hsl(356, 83%, calc(41% - 2 * calc(41% / 7)));
         color: var(--accent-three-d2);
     }
 
-    .auto-dark-mode .d\:accent-three-d1 {
+    .auto-dark-mode .dk\:accent-three-d1,
+    .auto-dark-mode.dk\:accent-three-d1 {
         color: hsl(356, 83%, calc(41% - calc(41% / 7)));
         color: var(--accent-three-d1);
     }
 
-    .auto-dark-mode .d\:accent-three {
+    .auto-dark-mode .dk\:accent-three,
+    .auto-dark-mode.dk\:accent-three {
         color: hsl(356, 83%, 41%);
         color: var(--accent-three);
     }
 
-    .auto-dark-mode .d\:accent-three-1 {
+    .auto-dark-mode .dk\:accent-three-1,
+    .auto-dark-mode.dk\:accent-three-1 {
         color: hsl(356, 83%, calc(41% + calc((100% - 41%) / 6)));
         color: var(--accent-three-1);
     }
 
-    .auto-dark-mode .d\:accent-three-2 {
+    .auto-dark-mode .dk\:accent-three-2,
+    .auto-dark-mode.dk\:accent-three-2 {
         color: hsl(356, 83%, calc(41% + 2 * calc((100% - 41%) / 6)));
         color: var(--accent-three-2);
     }
 
-    .auto-dark-mode .d\:accent-three-3 {
+    .auto-dark-mode .dk\:accent-three-3,
+    .auto-dark-mode.dk\:accent-three-3 {
         color: hsl(356, 83%, calc(41% + 3 * calc((100% - 41%) / 6)));
         color: var(--accent-three-3);
     }
 
-    .auto-dark-mode .d\:accent-three-4 {
+    .auto-dark-mode .dk\:accent-three-4,
+    .auto-dark-mode.dk\:accent-three-4 {
         color: hsl(356, 83%, calc(41% + 4 * calc((100% - 41%) / 6)));
         color: var(--accent-three-4);
     }
 
-    .auto-dark-mode .d\:accent-three-5 {
+    .auto-dark-mode .dk\:accent-three-5,
+    .auto-dark-mode.dk\:accent-three-5 {
         color: hsl(356, 83%, calc(41% + 5 * calc((100% - 41%) / 6)));
         color: var(--accent-three-5);
     }
 
-    .auto-dark-mode .d\:accent-four-d5 {
+    .auto-dark-mode .dk\:accent-four-d5,
+    .auto-dark-mode.dk\:accent-four-d5 {
         color: hsl(32, 100%, calc(49% - 5 * calc(49% / 7)));
         color: var(--accent-four-d5);
     }
 
-    .auto-dark-mode .d\:accent-four-d4 {
+    .auto-dark-mode .dk\:accent-four-d4,
+    .auto-dark-mode.dk\:accent-four-d4 {
         color: hsl(32, 100%, calc(49% - 4 * calc(49% / 7)));
         color: var(--accent-four-d4);
     }
 
-    .auto-dark-mode .d\:accent-four-d3 {
+    .auto-dark-mode .dk\:accent-four-d3,
+    .auto-dark-mode.dk\:accent-four-d3 {
         color: hsl(32, 100%, calc(49% - 3 * calc(49% / 7)));
         color: var(--accent-four-d3);
     }
 
-    .auto-dark-mode .d\:accent-four-d2 {
+    .auto-dark-mode .dk\:accent-four-d2,
+    .auto-dark-mode.dk\:accent-four-d2 {
         color: hsl(32, 100%, calc(49% - 2 * calc(49% / 7)));
         color: var(--accent-four-d2);
     }
 
-    .auto-dark-mode .d\:accent-four-d1 {
+    .auto-dark-mode .dk\:accent-four-d1,
+    .auto-dark-mode.dk\:accent-four-d1 {
         color: hsl(32, 100%, calc(49% - calc(49% / 7)));
         color: var(--accent-four-d1);
     }
 
-    .auto-dark-mode .d\:accent-four {
+    .auto-dark-mode .dk\:accent-four,
+    .auto-dark-mode.dk\:accent-four {
         color: hsl(32, 100%, 49%);
         color: var(--accent-four);
     }
 
-    .auto-dark-mode .d\:accent-four-1 {
+    .auto-dark-mode .dk\:accent-four-1,
+    .auto-dark-mode.dk\:accent-four-1 {
         color: hsl(32, 100%, calc(49% + calc((100% - 49%) / 6)));
         color: var(--accent-four-1);
     }
 
-    .auto-dark-mode .d\:accent-four-2 {
+    .auto-dark-mode .dk\:accent-four-2,
+    .auto-dark-mode.dk\:accent-four-2 {
         color: hsl(32, 100%, calc(49% + 2 * calc((100% - 49%) / 6)));
         color: var(--accent-four-2);
     }
 
-    .auto-dark-mode .d\:accent-four-3 {
+    .auto-dark-mode .dk\:accent-four-3,
+    .auto-dark-mode.dk\:accent-four-3 {
         color: hsl(32, 100%, calc(49% + 3 * calc((100% - 49%) / 6)));
         color: var(--accent-four-3);
     }
 
-    .auto-dark-mode .d\:accent-four-4 {
+    .auto-dark-mode .dk\:accent-four-4,
+    .auto-dark-mode.dk\:accent-four-4 {
         color: hsl(32, 100%, calc(49% + 4 * calc((100% - 49%) / 6)));
         color: var(--accent-four-4);
     }
 
-    .auto-dark-mode .d\:accent-four-5 {
+    .auto-dark-mode .dk\:accent-four-5,
+    .auto-dark-mode.dk\:accent-four-5 {
         color: hsl(32, 100%, calc(41% + 5 * calc((100% - 41%) / 6)));
         color: var(--accent-four-5);
     }
 
-    .auto-dark-mode .d\:accent-five-d5 {
+    .auto-dark-mode .dk\:accent-five-d5,
+    .auto-dark-mode.dk\:accent-five-d5 {
         color: hsl(43, 100%, calc(51% - 5 * calc(51% / 7)));
         color: var(--accent-five-d5);
     }
 
-    .auto-dark-mode .d\:accent-five-d4 {
+    .auto-dark-mode .dk\:accent-five-d4,
+    .auto-dark-mode.dk\:accent-five-d4 {
         color: hsl(43, 100%, calc(51% - 4 * calc(51% / 7)));
         color: var(--accent-five-d4);
     }
 
-    .auto-dark-mode .d\:accent-five-d3 {
+    .auto-dark-mode .dk\:accent-five-d3,
+    .auto-dark-mode.dk\:accent-five-d3 {
         color: hsl(43, 100%, calc(51% - 3 * calc(51% / 7)));
         color: var(--accent-five-d3);
     }
 
-    .auto-dark-mode .d\:accent-five-d2 {
+    .auto-dark-mode .dk\:accent-five-d2,
+    .auto-dark-mode.dk\:accent-five-d2 {
         color: hsl(43, 100%, calc(51% - 2 * calc(51% / 7)));
         color: var(--accent-five-d2);
     }
 
-    .auto-dark-mode .d\:accent-five-d1 {
+    .auto-dark-mode .dk\:accent-five-d1,
+    .auto-dark-mode.dk\:accent-five-d1 {
         color: hsl(43, 100%, calc(51% - calc(51% / 7)));
         color: var(--accent-five-d1);
     }
 
-    .auto-dark-mode .d\:accent-five {
+    .auto-dark-mode .dk\:accent-five,
+    .auto-dark-mode.dk\:accent-five {
         color: hsl(43, 100%, 51%);
         color: var(--accent-five);
     }
 
-    .auto-dark-mode .d\:accent-five-1 {
+    .auto-dark-mode .dk\:accent-five-1,
+    .auto-dark-mode.dk\:accent-five-1 {
         color: hsl(43, 100%, calc(51% + calc((100% - 51%) / 6)));
         color: var(--accent-five-1);
     }
 
-    .auto-dark-mode .d\:accent-five-2 {
+    .auto-dark-mode .dk\:accent-five-2,
+    .auto-dark-mode.dk\:accent-five-2 {
         color: hsl(43, 100%, calc(51% + 2 * calc((100% - 51%) / 6)));
         color: var(--accent-five-2);
     }
 
-    .auto-dark-mode .d\:accent-five-3 {
+    .auto-dark-mode .dk\:accent-five-3,
+    .auto-dark-mode.dk\:accent-five-3 {
         color: hsl(43, 100%, calc(51% + 3 * calc((100% - 51%) / 6)));
         color: var(--accent-five-3);
     }
 
-    .auto-dark-mode .d\:accent-five-4 {
+    .auto-dark-mode .dk\:accent-five-4,
+    .auto-dark-mode.dk\:accent-five-4 {
         color: hsl(43, 100%, calc(51% + 4 * calc((100% - 51%) / 6)));
         color: var(--accent-five-4);
     }
 
-    .auto-dark-mode .d\:accent-five-5 {
+    .auto-dark-mode .dk\:accent-five-5,
+    .auto-dark-mode.dk\:accent-five-5 {
         color: hsl(43, 100%, calc(41% + 5 * calc((100% - 41%) / 6)));
         color: var(--accent-five-5);
     }
 
-    .auto-dark-mode .d\:error-color {
+    .auto-dark-mode .dk\:error-color,
+    .auto-dark-mode.dk\:error-color {
         color: var(--error);
     }
 
-
     /* Background */
 
-    .auto-dark-mode .d\:bg-primary-d5 {
+    .auto-dark-mode .dk\:bg-primary-d5,
+    .auto-dark-mode.dk\:bg-primary-d5 {
         background-color: hsl(198, 100%, calc(33.3% - 5 * calc(33.3% / 7)));
         background-color: var(--primary-d5);
     }
 
-    .auto-dark-mode .d\:bg-primary-d4 {
+    .auto-dark-mode .dk\:bg-primary-d4,
+    .auto-dark-mode.dk\:bg-primary-d4 {
         background-color: hsl(198, 100%, calc(33.3% - 4 * calc(33.3% / 7)));
         background-color: var(--primary-d4);
     }
 
-    .auto-dark-mode .d\:bg-primary-d3 {
+    .auto-dark-mode .dk\:bg-primary-d3,
+    .auto-dark-mode.dk\:bg-primary-d3 {
         background-color: hsl(198, 100%, calc(33.3% - 3 * calc(33.3% / 7)));
         background-color: var(--primary-d3);
     }
 
-    .auto-dark-mode .d\:bg-primary-d2 {
+    .auto-dark-mode .dk\:bg-primary-d2,
+    .auto-dark-mode.dk\:bg-primary-d2 {
         background-color: hsl(198, 100%, calc(33.3% - 2 * calc(33.3% / 7)));
         background-color: var(--primary-d2);
     }
 
-    .auto-dark-mode .d\:bg-primary-d1 {
+    .auto-dark-mode .dk\:bg-primary-d1,
+    .auto-dark-mode.dk\:bg-primary-d1 {
         background-color: hsl(198, 100%, calc(33.3% - calc(33.3% / 7)));
         background-color: var(--primary-d1);
     }
 
-    .auto-dark-mode .d\:bg-primary {
+    .auto-dark-mode .dk\:bg-primary,
+    .auto-dark-mode.dk\:bg-primary {
         background-color: hsl(198, 100%, 33.3%);
         background-color: var(--primary);
     }
 
-    .auto-dark-mode .d\:bg-primary-1 {
+    .auto-dark-mode .dk\:bg-primary-1,
+    .auto-dark-mode.dk\:bg-primary-1 {
         background-color: hsl(198, 100%, calc(33.3% + calc((100% - 33.3%) / 6)));
         background-color: var(--primary-1);
     }
 
-    .auto-dark-mode .d\:bg-primary-2 {
+    .auto-dark-mode .dk\:bg-primary-2,
+    .auto-dark-mode.dk\:bg-primary-2 {
         background-color: hsl(198, 100%, calc(33.3% + 2 * calc((100% - 33.3%) / 6)));
         background-color: var(--primary-2);
     }
 
-    .auto-dark-mode .d\:bg-primary-3 {
+    .auto-dark-mode .dk\:bg-primary-3,
+    .auto-dark-mode.dk\:bg-primary-3 {
         background-color: hsl(198, 100%, calc(33.3% + 3 * calc((100% - 33.3%) / 6)));
         background-color: var(--primary-3);
     }
 
-    .auto-dark-mode .d\:bg-primary-4 {
+    .auto-dark-mode .dk\:bg-primary-4,
+    .auto-dark-mode.dk\:bg-primary-4 {
         background-color: hsl(198, 100%, calc(33.3% + 4 * calc((100% - 33.3%) / 6)));
         background-color: var(--primary-4);
     }
 
-    .auto-dark-mode .d\:bg-primary-5 {
+    .auto-dark-mode .dk\:bg-primary-5,
+    .auto-dark-mode.dk\:bg-primary-5 {
         background-color: hsl(198, 100%, calc(33.3% + 5 * calc((100% - 33.3%) / 6)));
         background-color: var(--primary-5);
     }
 
-    .auto-dark-mode .d\:bg-accent-one-d5 {
+    .auto-dark-mode .dk\:bg-accent-one-d5,
+    .auto-dark-mode.dk\:bg-accent-one-d5 {
         background-color: hsl(80, 100%, calc(30% - 5 * calc(30% / 7)));
         background-color: var(--accent-one-d5);
     }
 
-    .auto-dark-mode .d\:bg-accent-one-d4 {
+    .auto-dark-mode .dk\:bg-accent-one-d4,
+    .auto-dark-mode.dk\:bg-accent-one-d4 {
         background-color: hsl(80, 100%, calc(30% - 4 * calc(30% / 7)));
         background-color: var(--accent-one-d4);
     }
 
-    .auto-dark-mode .d\:bg-accent-one-d3 {
+    .auto-dark-mode .dk\:bg-accent-one-d3,
+    .auto-dark-mode.dk\:bg-accent-one-d3 {
         background-color: hsl(80, 100%, calc(30% - 3 * calc(30% / 7)));
         background-color: var(--accent-one-d3);
     }
 
-    .auto-dark-mode .d\:bg-accent-one-d2 {
+    .auto-dark-mode .dk\:bg-accent-one-d2,
+    .auto-dark-mode.dk\:bg-accent-one-d2 {
         background-color: hsl(80, 100%, calc(30% - 2 * calc(30% / 7)));
         background-color: var(--accent-one-d2);
     }
 
-    .auto-dark-mode .d\:bg-accent-one-d1 {
+    .auto-dark-mode .dk\:bg-accent-one-d1,
+    .auto-dark-mode.dk\:bg-accent-one-d1 {
         background-color: hsl(80, 100%, calc(30% - calc(30% / 7)));
         background-color: var(--accent-one-d1);
     }
 
-    .auto-dark-mode .d\:bg-accent-one {
+    .auto-dark-mode .dk\:bg-accent-one,
+    .auto-dark-mode.dk\:bg-accent-one {
         background-color: hsl(80, 100%, 30%);
         background-color: var(--accent-one);
     }
 
-    .auto-dark-mode .d\:bg-accent-one-1 {
+    .auto-dark-mode .dk\:bg-accent-one-1,
+    .auto-dark-mode.dk\:bg-accent-one-1 {
         background-color: hsl(80, 100%, calc(30% + calc((100% - 30%) / 6)));
         background-color: var(--accent-one-1);
     }
 
-    .auto-dark-mode .d\:bg-accent-one-2 {
+    .auto-dark-mode .dk\:bg-accent-one-2,
+    .auto-dark-mode.dk\:bg-accent-one-2 {
         background-color: hsl(80, 100%, calc(30% + 2 * calc((100% - 30%) / 6)));
         background-color: var(--accent-one-2);
     }
 
-    .auto-dark-mode .d\:bg-accent-one-3 {
+    .auto-dark-mode .dk\:bg-accent-one-3,
+    .auto-dark-mode.dk\:bg-accent-one-3 {
         background-color: hsl(80, 100%, calc(30% + 3 * calc((100% - 30%) / 6)));
         background-color: var(--accent-one-3);
     }
 
-    .auto-dark-mode .d\:bg-accent-one-4 {
+    .auto-dark-mode .dk\:bg-accent-one-4,
+    .auto-dark-mode.dk\:bg-accent-one-4 {
         background-color: hsl(80, 100%, calc(30% + 4 * calc((100% - 30%) / 6)));
         background-color: var(--accent-one-4);
     }
 
-    .auto-dark-mode .d\:bg-accent-one-5 {
+    .auto-dark-mode .dk\:bg-accent-one-5,
+    .auto-dark-mode.dk\:bg-accent-one-5 {
         background-color: hsl(80, 100%, calc(30% + 5 * calc((100% - 30%) / 6)));
         background-color: var(--accent-one-5);
     }
 
-    .auto-dark-mode .d\:bg-accent-two-d5 {
+    .auto-dark-mode .dk\:bg-accent-two-d5,
+    .auto-dark-mode.dk\:bg-accent-two-d5 {
         background-color: hsl(326.7, 100%, calc(30% - 5 * calc(30% / 7)));
         background-color: var(--accent-two-d5);
     }
 
-    .auto-dark-mode .d\:bg-accent-two-d4 {
+    .auto-dark-mode .dk\:bg-accent-two-d4,
+    .auto-dark-mode.dk\:bg-accent-two-d4 {
         background-color: hsl(326.7, 100%, calc(30% - 4 * calc(30% / 7)));
         background-color: var(--accent-two-d4);
     }
 
-    .auto-dark-mode .d\:bg-accent-two-d3 {
+    .auto-dark-mode .dk\:bg-accent-two-d3,
+    .auto-dark-mode.dk\:bg-accent-two-d3 {
         background-color: hsl(326.7, 100%, calc(30% - 3 * calc(30% / 7)));
         background-color: var(--accent-two-d3);
     }
 
-    .auto-dark-mode .d\:bg-accent-two-d2 {
+    .auto-dark-mode .dk\:bg-accent-two-d2,
+    .auto-dark-mode.dk\:bg-accent-two-d2 {
         background-color: hsl(326.7, 100%, calc(30% - 2 * calc(30% / 7)));
         background-color: var(--accent-two-d2);
     }
 
-    .auto-dark-mode .d\:bg-accent-two-d1 {
+    .auto-dark-mode .dk\:bg-accent-two-d1,
+    .auto-dark-mode.dk\:bg-accent-two-d1 {
         background-color: hsl(326.7, 100%, calc(30% - calc(30% / 7)));
         background-color: var(--accent-two-d1);
     }
 
-    .auto-dark-mode .d\:bg-accent-two {
+    .auto-dark-mode .dk\:bg-accent-two,
+    .auto-dark-mode.dk\:bg-accent-two {
         background-color: hsl(326.7, 100%, 30%);
         background-color: var(--accent-two);
     }
 
-    .auto-dark-mode .d\:bg-accent-two-1 {
+    .auto-dark-mode .dk\:bg-accent-two-1,
+    .auto-dark-mode.dk\:bg-accent-two-1 {
         background-color: hsl(326.7, 100%, calc(30% + calc((100% - 30%) / 6)));
         background-color: var(--accent-two-1);
     }
 
-    .auto-dark-mode .d\:bg-accent-two-2 {
+    .auto-dark-mode .dk\:bg-accent-two-2,
+    .auto-dark-mode.dk\:bg-accent-two-2 {
         background-color: hsl(326.7, 100%, calc(30% + 2 * calc((100% - 30%) / 6)));
         background-color: var(--accent-two-2);
     }
 
-    .auto-dark-mode .d\:bg-accent-two-3 {
+    .auto-dark-mode .dk\:bg-accent-two-3,
+    .auto-dark-mode.dk\:bg-accent-two-3 {
         background-color: hsl(326.7, 100%, calc(30% + 3 * calc((100% - 30%) / 6)));
         background-color: var(--accent-two-3);
     }
 
-    .auto-dark-mode .d\:bg-accent-two-4 {
+    .auto-dark-mode .dk\:bg-accent-two-4,
+    .auto-dark-mode.dk\:bg-accent-two-4 {
         background-color: hsl(326.7, 100%, calc(30% + 4 * calc((100% - 30%) / 6)));
         background-color: var(--accent-two-4);
     }
 
-    .auto-dark-mode .d\:bg-accent-two-5 {
+    .auto-dark-mode .dk\:bg-accent-two-5,
+    .auto-dark-mode.dk\:bg-accent-two-5 {
         background-color: hsl(326.7, 100%, calc(30% + 5 * calc((100% - 30%) / 6)));
         background-color: var(--accent-two-5);
     }
 
-    .auto-dark-mode .d\:bg-accent-three-d5 {
+    .auto-dark-mode .dk\:bg-accent-three-d5,
+    .auto-dark-mode.dk\:bg-accent-three-d5 {
         background-color: hsl(356, 83%, calc(41% - 5 * calc(41% / 7)));
         background-color: var(--accent-three-d5);
     }
 
-    .auto-dark-mode .d\:bg-accent-three-d4 {
+    .auto-dark-mode .dk\:bg-accent-three-d4,
+    .auto-dark-mode.dk\:bg-accent-three-d4 {
         background-color: hsl(356, 83%, calc(41% - 4 * calc(41% / 7)));
         background-color: var(--accent-three-d4);
     }
 
-    .auto-dark-mode .d\:bg-accent-three-d3 {
+    .auto-dark-mode .dk\:bg-accent-three-d3,
+    .auto-dark-mode.dk\:bg-accent-three-d3 {
         background-color: hsl(356, 83%, calc(41% - 3 * calc(41% / 7)));
         background-color: var(--accent-three-d3);
     }
 
-    .auto-dark-mode .d\:bg-accent-three-d2 {
+    .auto-dark-mode .dk\:bg-accent-three-d2,
+    .auto-dark-mode.dk\:bg-accent-three-d2 {
         background-color: hsl(356, 83%, calc(41% - 2 * calc(41% / 7)));
         background-color: var(--accent-three-d2);
     }
 
-    .auto-dark-mode .d\:bg-accent-three-d1 {
+    .auto-dark-mode .dk\:bg-accent-three-d1,
+    .auto-dark-mode.dk\:bg-accent-three-d1 {
         background-color: hsl(356, 83%, calc(41% - calc(41% / 7)));
         background-color: var(--accent-three-d1);
     }
 
-    .auto-dark-mode .d\:bg-accent-three {
+    .auto-dark-mode .dk\:bg-accent-three,
+    .auto-dark-mode.dk\:bg-accent-three {
         background-color: hsl(356, 83%, 41%);
         background-color: var(--accent-three);
     }
 
-    .auto-dark-mode .d\:bg-accent-three-1 {
+    .auto-dark-mode .dk\:bg-accent-three-1,
+    .auto-dark-mode.dk\:bg-accent-three-1 {
         background-color: hsl(356, 83%, calc(41% + calc((100% - 41%) / 6)));
         background-color: var(--accent-three-1);
     }
 
-    .auto-dark-mode .d\:bg-accent-three-2 {
+    .auto-dark-mode .dk\:bg-accent-three-2,
+    .auto-dark-mode.dk\:bg-accent-three-2 {
         background-color: hsl(356, 83%, calc(41% + 2 * calc((100% - 41%) / 6)));
         background-color: var(--accent-three-2);
     }
 
-    .auto-dark-mode .d\:bg-accent-three-3 {
+    .auto-dark-mode .dk\:bg-accent-three-3,
+    .auto-dark-mode.dk\:bg-accent-three-3 {
         background-color: hsl(356, 83%, calc(41% + 3 * calc((100% - 41%) / 6)));
         background-color: var(--accent-three-3);
     }
 
-    .auto-dark-mode .d\:bg-accent-three-4 {
+    .auto-dark-mode .dk\:bg-accent-three-4,
+    .auto-dark-mode.dk\:bg-accent-three-4 {
         background-color: hsl(356, 83%, calc(41% + 4 * calc((100% - 41%) / 6)));
         background-color: var(--accent-three-4);
     }
 
-    .auto-dark-mode .d\:bg-accent-three-5 {
+    .auto-dark-mode .dk\:bg-accent-three-5,
+    .auto-dark-mode.dk\:bg-accent-three-5 {
         background-color: hsl(356, 83%, calc(41% + 5 * calc((100% - 41%) / 6)));
         background-color: var(--accent-three-5);
     }
 
-    .auto-dark-mode .d\:bg-accent-four-d5 {
+    .auto-dark-mode .dk\:bg-accent-four-d5,
+    .auto-dark-mode.dk\:bg-accent-four-d5 {
         background-color: hsl(32, 100%, calc(49% - 5 * calc(49% / 7)));
         background-color: var(--accent-four-d5);
     }
 
-    .auto-dark-mode .d\:bg-accent-four-d4 {
+    .auto-dark-mode .dk\:bg-accent-four-d4,
+    .auto-dark-mode.dk\:bg-accent-four-d4 {
         background-color: hsl(32, 100%, calc(49% - 4 * calc(49% / 7)));
         background-color: var(--accent-four-d4);
     }
 
-    .auto-dark-mode .d\:bg-accent-four-d3 {
+    .auto-dark-mode .dk\:bg-accent-four-d3,
+    .auto-dark-mode.dk\:bg-accent-four-d3 {
         background-color: hsl(32, 100%, calc(49% - 3 * calc(49% / 7)));
         background-color: var(--accent-four-d3);
     }
 
-    .auto-dark-mode .d\:bg-accent-four-d2 {
+    .auto-dark-mode .dk\:bg-accent-four-d2,
+    .auto-dark-mode.dk\:bg-accent-four-d2 {
         background-color: hsl(32, 100%, calc(49% - 2 * calc(49% / 7)));
         background-color: var(--accent-four-d2);
     }
 
-    .auto-dark-mode .d\:bg-accent-four-d1 {
+    .auto-dark-mode .dk\:bg-accent-four-d1,
+    .auto-dark-mode.dk\:bg-accent-four-d1 {
         background-color: hsl(32, 100%, calc(49% - calc(49% / 7)));
         background-color: var(--accent-four-d1);
     }
 
-    .auto-dark-mode .d\:bg-accent-four {
+    .auto-dark-mode .dk\:bg-accent-four,
+    .auto-dark-mode.dk\:bg-accent-four {
         background-color: hsl(32, 100%, 49%);
         background-color: var(--accent-four);
     }
 
-    .auto-dark-mode .d\:bg-accent-four-1 {
+    .auto-dark-mode .dk\:bg-accent-four-1,
+    .auto-dark-mode.dk\:bg-accent-four-1 {
         background-color: hsl(32, 100%, calc(49% + calc((100% - 49%) / 6)));
         background-color: var(--accent-four-1);
     }
 
-    .auto-dark-mode .d\:bg-accent-four-2 {
+    .auto-dark-mode .dk\:bg-accent-four-2,
+    .auto-dark-mode.dk\:bg-accent-four-2 {
         background-color: hsl(32, 100%, calc(49% + 2 * calc((100% - 49%) / 6)));
         background-color: var(--accent-four-2);
     }
 
-    .auto-dark-mode .d\:bg-accent-four-3 {
+    .auto-dark-mode .dk\:bg-accent-four-3,
+    .auto-dark-mode.dk\:bg-accent-four-3 {
         background-color: hsl(32, 100%, calc(49% + 3 * calc((100% - 49%) / 6)));
         background-color: var(--accent-four-3);
     }
 
-    .auto-dark-mode .d\:bg-accent-four-4 {
+    .auto-dark-mode .dk\:bg-accent-four-4,
+    .auto-dark-mode.dk\:bg-accent-four-4 {
         background-color: hsl(32, 100%, calc(49% + 4 * calc((100% - 49%) / 6)));
         background-color: var(--accent-four-4);
     }
 
-    .auto-dark-mode .d\:bg-accent-four-5 {
+    .auto-dark-mode .dk\:bg-accent-four-5,
+    .auto-dark-mode.dk\:bg-accent-four-5 {
         background-color: hsl(32, 100%, calc(41% + 5 * calc((100% - 41%) / 6)));
         background-color: var(--accent-four-5);
     }
 
-    .auto-dark-mode .d\:bg-accent-five-d5 {
+    .auto-dark-mode .dk\:bg-accent-five-d5,
+    .auto-dark-mode.dk\:bg-accent-five-d5 {
         background-color: hsl(43, 100%, calc(51% - 5 * calc(51% / 7)));
         background-color: var(--accent-five-d5);
     }
 
-    .auto-dark-mode .d\:bg-accent-five-d4 {
+    .auto-dark-mode .dk\:bg-accent-five-d4,
+    .auto-dark-mode.dk\:bg-accent-five-d4 {
         background-color: hsl(43, 100%, calc(51% - 4 * calc(51% / 7)));
         background-color: var(--accent-five-d4);
     }
 
-    .auto-dark-mode .d\:bg-accent-five-d3 {
+    .auto-dark-mode .dk\:bg-accent-five-d3,
+    .auto-dark-mode.dk\:bg-accent-five-d3 {
         background-color: hsl(43, 100%, calc(51% - 3 * calc(51% / 7)));
         background-color: var(--accent-five-d3);
     }
 
-    .auto-dark-mode .d\:bg-accent-five-d2 {
+    .auto-dark-mode .dk\:bg-accent-five-d2,
+    .auto-dark-mode.dk\:bg-accent-five-d2 {
         background-color: hsl(43, 100%, calc(51% - 2 * calc(51% / 7)));
         background-color: var(--accent-five-d2);
     }
 
-    .auto-dark-mode .d\:bg-accent-five-d1 {
+    .auto-dark-mode .dk\:bg-accent-five-d1,
+    .auto-dark-mode.dk\:bg-accent-five-d1 {
         background-color: hsl(43, 100%, calc(51% - calc(51% / 7)));
         background-color: var(--accent-five-d1);
     }
 
-    .auto-dark-mode .d\:bg-accent-five {
+    .auto-dark-mode .dk\:bg-accent-five,
+    .auto-dark-mode.dk\:bg-accent-five {
         background-color: hsl(43, 100%, 51%);
         background-color: var(--accent-five);
     }
 
-    .auto-dark-mode .d\:bg-accent-five-1 {
+    .auto-dark-mode .dk\:bg-accent-five-1,
+    .auto-dark-mode.dk\:bg-accent-five-1 {
         background-color: hsl(43, 100%, calc(51% + calc((100% - 51%) / 6)));
         background-color: var(--accent-five-1);
     }
 
-    .auto-dark-mode .d\:bg-accent-five-2 {
+    .auto-dark-mode .dk\:bg-accent-five-2,
+    .auto-dark-mode.dk\:bg-accent-five-2 {
         background-color: hsl(43, 100%, calc(51% + 2 * calc((100% - 51%) / 6)));
         background-color: var(--accent-five-2);
     }
 
-    .auto-dark-mode .d\:bg-accent-five-3 {
+    .auto-dark-mode .dk\:bg-accent-five-3,
+    .auto-dark-mode.dk\:bg-accent-five-3 {
         background-color: hsl(43, 100%, calc(51% + 3 * calc((100% - 51%) / 6)));
         background-color: var(--accent-five-3);
     }
 
-    .auto-dark-mode .d\:bg-accent-five-4 {
+    .auto-dark-mode .dk\:bg-accent-five-4,
+    .auto-dark-mode.dk\:bg-accent-five-4 {
         background-color: hsl(43, 100%, calc(51% + 4 * calc((100% - 51%) / 6)));
         background-color: var(--accent-five-4);
     }
 
-    .auto-dark-mode .d\:bg-accent-five-5 {
+    .auto-dark-mode .dk\:bg-accent-five-5,
+    .auto-dark-mode.dk\:bg-accent-five-5 {
         background-color: hsl(43, 100%, calc(41% + 5 * calc((100% - 41%) / 6)));
         background-color: var(--accent-five-5);
     }
 
-    .auto-dark-mode .d\:bg-error-color {
+    .auto-dark-mode .dk\:bg-error-color,
+    .auto-dark-mode.dk\:bg-error-color {
         background-color: crimson;
         background-color: var(--error-color);
     }
 
-
     /* Border Colors */
 
-    .auto-dark-mode .d\:br-primary-d5 {
+    .auto-dark-mode .dk\:br-primary-d5,
+    .auto-dark-mode.dk\:br-primary-d5 {
         border-color: hsl(198, 100%, calc(33.3% - 5 * calc(33.3% / 7)));
         border-color: var(--primary-d5);
     }
 
-    .auto-dark-mode .d\:br-primary-d4 {
+    .auto-dark-mode .dk\:br-primary-d4,
+    .auto-dark-mode.dk\:br-primary-d4 {
         border-color: hsl(198, 100%, calc(33.3% - 4 * calc(33.3% / 7)));
         border-color: var(--primary-d4);
     }
 
-    .auto-dark-mode .d\:br-primary-d3 {
+    .auto-dark-mode .dk\:br-primary-d3,
+    .auto-dark-mode.dk\:br-primary-d3 {
         border-color: hsl(198, 100%, calc(33.3% - 3 * calc(33.3% / 7)));
         border-color: var(--primary-d3);
     }
 
-    .auto-dark-mode .d\:br-primary-d2 {
+    .auto-dark-mode .dk\:br-primary-d2,
+    .auto-dark-mode.dk\:br-primary-d2 {
         border-color: hsl(198, 100%, calc(33.3% - 2 * calc(33.3% / 7)));
         border-color: var(--primary-d2);
     }
 
-    .auto-dark-mode .d\:br-primary-d1 {
+    .auto-dark-mode .dk\:br-primary-d1,
+    .auto-dark-mode.dk\:br-primary-d1 {
         border-color: hsl(198, 100%, calc(33.3% - calc(33.3% / 7)));
         border-color: var(--primary-d1);
     }
 
-    .auto-dark-mode .d\:br-primary {
+    .auto-dark-mode .dk\:br-primary,
+    .auto-dark-mode.dk\:br-primary {
         border-color: hsl(198, 100%, 33.3%);
         border-color: var(--primary);
     }
 
-    .auto-dark-mode .d\:br-primary-1 {
+    .auto-dark-mode .dk\:br-primary-1,
+    .auto-dark-mode.dk\:br-primary-1 {
         border-color: hsl(198, 100%, calc(33.3% + calc((100% - 33.3%) / 6)));
         border-color: var(--primary-1);
     }
 
-    .auto-dark-mode .d\:br-primary-2 {
+    .auto-dark-mode .dk\:br-primary-2,
+    .auto-dark-mode.dk\:br-primary-2 {
         border-color: hsl(198, 100%, calc(33.3% + 2 * calc((100% - 33.3%) / 6)));
         border-color: var(--primary-2);
     }
 
-    .auto-dark-mode .d\:br-primary-3 {
+    .auto-dark-mode .dk\:br-primary-3,
+    .auto-dark-mode.dk\:br-primary-3 {
         border-color: hsl(198, 100%, calc(33.3% + 3 * calc((100% - 33.3%) / 6)));
         border-color: var(--primary-3);
     }
 
-    .auto-dark-mode .d\:br-primary-4 {
+    .auto-dark-mode .dk\:br-primary-4,
+    .auto-dark-mode.dk\:br-primary-4 {
         border-color: hsl(198, 100%, calc(33.3% + 4 * calc((100% - 33.3%) / 6)));
         border-color: var(--primary-4);
     }
 
-    .auto-dark-mode .d\:br-primary-5 {
+    .auto-dark-mode .dk\:br-primary-5,
+    .auto-dark-mode.dk\:br-primary-5 {
         border-color: hsl(198, 100%, calc(33.3% + 5 * calc((100% - 33.3%) / 6)));
         border-color: var(--primary-5);
     }
 
-    .auto-dark-mode .d\:br-accent-one-d5 {
+    .auto-dark-mode .dk\:br-accent-one-d5,
+    .auto-dark-mode.dk\:br-accent-one-d5 {
         border-color: hsl(80, 100%, calc(30% - 5 * calc(30% / 7)));
         border-color: var(--accent-one-d5);
     }
 
-    .auto-dark-mode .d\:br-accent-one-d4 {
+    .auto-dark-mode .dk\:br-accent-one-d4,
+    .auto-dark-mode.dk\:br-accent-one-d4 {
         border-color: hsl(80, 100%, calc(30% - 4 * calc(30% / 7)));
         border-color: var(--accent-one-d4);
     }
 
-    .auto-dark-mode .d\:br-accent-one-d3 {
+    .auto-dark-mode .dk\:br-accent-one-d3,
+    .auto-dark-mode.dk\:br-accent-one-d3 {
         border-color: hsl(80, 100%, calc(30% - 3 * calc(30% / 7)));
         border-color: var(--accent-one-d3);
     }
 
-    .auto-dark-mode .d\:br-accent-one-d2 {
+    .auto-dark-mode .dk\:br-accent-one-d2,
+    .auto-dark-mode.dk\:br-accent-one-d2 {
         border-color: hsl(80, 100%, calc(30% - 2 * calc(30% / 7)));
         border-color: var(--accent-one-d2);
     }
 
-    .auto-dark-mode .d\:br-accent-one-d1 {
+    .auto-dark-mode .dk\:br-accent-one-d1,
+    .auto-dark-mode.dk\:br-accent-one-d1 {
         border-color: hsl(80, 100%, calc(30% - calc(30% / 7)));
         border-color: var(--accent-one-d1);
     }
 
-    .auto-dark-mode .d\:br-accent-one {
+    .auto-dark-mode .dk\:br-accent-one,
+    .auto-dark-mode.dk\:br-accent-one {
         border-color: hsl(80, 100%, 30%);
         border-color: var(--accent-one);
     }
 
-    .auto-dark-mode .d\:br-accent-one-1 {
+    .auto-dark-mode .dk\:br-accent-one-1,
+    .auto-dark-mode.dk\:br-accent-one-1 {
         border-color: hsl(80, 100%, calc(30% + calc((100% - 30%) / 6)));
         border-color: var(--accent-one-1);
     }
 
-    .auto-dark-mode .d\:br-accent-one-2 {
+    .auto-dark-mode .dk\:br-accent-one-2,
+    .auto-dark-mode.dk\:br-accent-one-2 {
         border-color: hsl(80, 100%, calc(30% + 2 * calc((100% - 30%) / 6)));
         border-color: var(--accent-one-2);
     }
 
-    .auto-dark-mode .d\:br-accent-one-3 {
+    .auto-dark-mode .dk\:br-accent-one-3,
+    .auto-dark-mode.dk\:br-accent-one-3 {
         border-color: hsl(80, 100%, calc(30% + 3 * calc((100% - 30%) / 6)));
         border-color: var(--accent-one-3);
     }
 
-    .auto-dark-mode .d\:br-accent-one-4 {
+    .auto-dark-mode .dk\:br-accent-one-4,
+    .auto-dark-mode.dk\:br-accent-one-4 {
         border-color: hsl(80, 100%, calc(30% + 4 * calc((100% - 30%) / 6)));
         border-color: var(--accent-one-4);
     }
 
-    .auto-dark-mode .d\:br-accent-one-5 {
+    .auto-dark-mode .dk\:br-accent-one-5,
+    .auto-dark-mode.dk\:br-accent-one-5 {
         border-color: hsl(80, 100%, calc(30% + 5 * calc((100% - 30%) / 6)));
         border-color: var(--accent-one-5);
     }
 
-    .auto-dark-mode .d\:br-accent-two-d5 {
+    .auto-dark-mode .dk\:br-accent-two-d5,
+    .auto-dark-mode.dk\:br-accent-two-d5 {
         border-color: hsl(326.7, 100%, calc(30% - 4 * calc(30% / 7)));
         border-color: var(--accent-two-d4);
     }
 
-    .auto-dark-mode .d\:br-accent-two-d4 {
+    .auto-dark-mode .dk\:br-accent-two-d4,
+    .auto-dark-mode.dk\:br-accent-two-d4 {
         border-color: hsl(326.7, 100%, calc(30% - 4 * calc(30% / 7)));
         border-color: var(--accent-two-d4);
     }
 
-    .auto-dark-mode .d\:br-accent-two-d3 {
+    .auto-dark-mode .dk\:br-accent-two-d3,
+    .auto-dark-mode.dk\:br-accent-two-d3 {
         border-color: hsl(326.7, 100%, calc(30% - 3 * calc(30% / 7)));
         border-color: var(--accent-two-d3);
     }
 
-    .auto-dark-mode .d\:br-accent-two-d2 {
+    .auto-dark-mode .dk\:br-accent-two-d2,
+    .auto-dark-mode.dk\:br-accent-two-d2 {
         border-color: hsl(326.7, 100%, calc(30% - 2 * calc(30% / 7)));
         border-color: var(--accent-two-d2);
     }
 
-    .auto-dark-mode .d\:br-accent-two-d1 {
+    .auto-dark-mode .dk\:br-accent-two-d1,
+    .auto-dark-mode.dk\:br-accent-two-d1 {
         border-color: hsl(326.7, 100%, calc(30% - calc(30% / 7)));
         border-color: var(--accent-two-d1);
     }
 
-    .auto-dark-mode .d\:br-accent-two {
+    .auto-dark-mode .dk\:br-accent-two,
+    .auto-dark-mode.dk\:br-accent-two {
         border-color: hsl(326.7, 100%, 30%);
         border-color: var(--accent-two);
     }
 
-    .auto-dark-mode .d\:br-accent-two-1 {
+    .auto-dark-mode .dk\:br-accent-two-1,
+    .auto-dark-mode.dk\:br-accent-two-1 {
         border-color: hsl(326.7, 100%, calc(30% + calc((100% - 30%) / 6)));
         border-color: var(--accent-two-1);
     }
 
-    .auto-dark-mode .d\:br-accent-two-2 {
+    .auto-dark-mode .dk\:br-accent-two-2,
+    .auto-dark-mode.dk\:br-accent-two-2 {
         border-color: hsl(326.7, 100%, calc(30% + 2 * calc((100% - 30%) / 6)));
         border-color: var(--accent-two-2);
     }
 
-    .auto-dark-mode .d\:br-accent-two-3 {
+    .auto-dark-mode .dk\:br-accent-two-3,
+    .auto-dark-mode.dk\:br-accent-two-3 {
         border-color: hsl(326.7, 100%, calc(30% + 3 * calc((100% - 30%) / 6)));
         border-color: var(--accent-two-3);
     }
 
-    .auto-dark-mode .d\:br-accent-two-4 {
+    .auto-dark-mode .dk\:br-accent-two-4,
+    .auto-dark-mode.dk\:br-accent-two-4 {
         border-color: hsl(326.7, 100%, calc(30% + 4 * calc((100% - 30%) / 6)));
         border-color: var(--accent-two-4);
     }
 
-    .auto-dark-mode .d\:br-accent-two-5 {
+    .auto-dark-mode .dk\:br-accent-two-5,
+    .auto-dark-mode.dk\:br-accent-two-5 {
         border-color: hsl(326.7, 100%, calc(30% + 5 * calc((100% - 30%) / 6)));
         border-color: var(--accent-two-5);
     }
 
-    .auto-dark-mode .d\:br-accent-three-d5 {
+    .auto-dark-mode .dk\:br-accent-three-d5,
+    .auto-dark-mode.dk\:br-accent-three-d5 {
         border-color: hsl(356, 83%, calc(41% - 5 * calc(41% / 7)));
         border-color: var(--accent-three-d5);
     }
 
-    .auto-dark-mode .d\:br-accent-three-d4 {
+    .auto-dark-mode .dk\:br-accent-three-d4,
+    .auto-dark-mode.dk\:br-accent-three-d4 {
         border-color: hsl(356, 83%, calc(41% - 4 * calc(41% / 7)));
         border-color: var(--accent-three-d4);
     }
 
-    .auto-dark-mode .d\:br-accent-three-d3 {
+    .auto-dark-mode .dk\:br-accent-three-d3,
+    .auto-dark-mode.dk\:br-accent-three-d3 {
         border-color: hsl(356, 83%, calc(41% - 3 * calc(41% / 7)));
         border-color: var(--accent-three-d3);
     }
 
-    .auto-dark-mode .d\:br-accent-three-d2 {
+    .auto-dark-mode .dk\:br-accent-three-d2,
+    .auto-dark-mode.dk\:br-accent-three-d2 {
         border-color: hsl(356, 83%, calc(41% - 2 * calc(41% / 7)));
         border-color: var(--accent-three-d2);
     }
 
-    .auto-dark-mode .d\:br-accent-three-d1 {
+    .auto-dark-mode .dk\:br-accent-three-d1,
+    .auto-dark-mode.dk\:br-accent-three-d1 {
         border-color: hsl(356, 83%, calc(41% - calc(41% / 7)));
         border-color: var(--accent-three-d1);
     }
 
-    .auto-dark-mode .d\:br-accent-three {
+    .auto-dark-mode .dk\:br-accent-three,
+    .auto-dark-mode.dk\:br-accent-three {
         border-color: hsl(356, 83%, 41%);
         border-color: var(--accent-three);
     }
 
-    .auto-dark-mode .d\:br-accent-three-1 {
+    .auto-dark-mode .dk\:br-accent-three-1,
+    .auto-dark-mode.dk\:br-accent-three-1 {
         border-color: hsl(356, 83%, calc(41% + calc((100% - 41%) / 6)));
         border-color: var(--accent-three-1);
     }
 
-    .auto-dark-mode .d\:br-accent-three-2 {
+    .auto-dark-mode .dk\:br-accent-three-2,
+    .auto-dark-mode.dk\:br-accent-three-2 {
         border-color: hsl(356, 83%, calc(41% + 2 * calc((100% - 41%) / 6)));
         border-color: var(--accent-three-2);
     }
 
-    .auto-dark-mode .d\:br-accent-three-3 {
+    .auto-dark-mode .dk\:br-accent-three-3,
+    .auto-dark-mode.dk\:br-accent-three-3 {
         border-color: hsl(356, 83%, calc(41% + 3 * calc((100% - 41%) / 6)));
         border-color: var(--accent-three-3);
     }
 
-    .auto-dark-mode .d\:br-accent-three-4 {
+    .auto-dark-mode .dk\:br-accent-three-4,
+    .auto-dark-mode.dk\:br-accent-three-4 {
         border-color: hsl(356, 83%, calc(41% + 4 * calc((100% - 41%) / 6)));
         border-color: var(--accent-three-4);
     }
 
-    .auto-dark-mode .d\:br-accent-three-5 {
+    .auto-dark-mode .dk\:br-accent-three-5,
+    .auto-dark-mode.dk\:br-accent-three-5 {
         border-color: hsl(356, 83%, calc(41% + 5 * calc((100% - 41%) / 6)));
         border-color: var(--accent-three-5);
     }
 
-    .auto-dark-mode .d\:br-accent-four-d5 {
+    .auto-dark-mode .dk\:br-accent-four-d5,
+    .auto-dark-mode.dk\:br-accent-four-d5 {
         border-color: hsl(32, 100%, calc(49% - 5 * calc(49% / 7)));
         border-color: var(--accent-four-d5);
     }
 
-    .auto-dark-mode .d\:br-accent-four-d4 {
+    .auto-dark-mode .dk\:br-accent-four-d4,
+    .auto-dark-mode.dk\:br-accent-four-d4 {
         border-color: hsl(32, 100%, calc(49% - 4 * calc(49% / 7)));
         border-color: var(--accent-four-d4);
     }
 
-    .auto-dark-mode .d\:br-accent-four-d3 {
+    .auto-dark-mode .dk\:br-accent-four-d3,
+    .auto-dark-mode.dk\:br-accent-four-d3 {
         border-color: hsl(32, 100%, calc(49% - 3 * calc(49% / 7)));
         border-color: var(--accent-four-d3);
     }
 
-    .auto-dark-mode .d\:br-accent-four-d2 {
+    .auto-dark-mode .dk\:br-accent-four-d2,
+    .auto-dark-mode.dk\:br-accent-four-d2 {
         border-color: hsl(32, 100%, calc(49% - 2 * calc(49% / 7)));
         border-color: var(--accent-four-d2);
     }
 
-    .auto-dark-mode .d\:br-accent-four-d1 {
+    .auto-dark-mode .dk\:br-accent-four-d1,
+    .auto-dark-mode.dk\:br-accent-four-d1 {
         border-color: hsl(32, 100%, calc(49% - calc(49% / 7)));
         border-color: var(--accent-four-d1);
     }
 
-    .auto-dark-mode .d\:br-accent-four {
+    .auto-dark-mode .dk\:br-accent-four,
+    .auto-dark-mode.dk\:br-accent-four {
         border-color: hsl(32, 100%, 49%);
         border-color: var(--accent-four);
     }
 
-    .auto-dark-mode .d\:br-accent-four-1 {
+    .auto-dark-mode .dk\:br-accent-four-1,
+    .auto-dark-mode.dk\:br-accent-four-1 {
         border-color: hsl(32, 100%, calc(49% + calc((100% - 49%) / 6)));
         border-color: var(--accent-four-1);
     }
 
-    .auto-dark-mode .d\:br-accent-four-2 {
+    .auto-dark-mode .dk\:br-accent-four-2,
+    .auto-dark-mode.dk\:br-accent-four-2 {
         border-color: hsl(32, 100%, calc(49% + 2 * calc((100% - 49%) / 6)));
         border-color: var(--accent-four-2);
     }
 
-    .auto-dark-mode .d\:br-accent-four-3 {
+    .auto-dark-mode .dk\:br-accent-four-3,
+    .auto-dark-mode.dk\:br-accent-four-3 {
         border-color: hsl(32, 100%, calc(49% + 3 * calc((100% - 49%) / 6)));
         border-color: var(--accent-four-3);
     }
 
-    .auto-dark-mode .d\:br-accent-four-4 {
+    .auto-dark-mode .dk\:br-accent-four-4,
+    .auto-dark-mode.dk\:br-accent-four-4 {
         border-color: hsl(32, 100%, calc(49% + 4 * calc((100% - 49%) / 6)));
         border-color: var(--accent-four-4);
     }
 
-    .auto-dark-mode .d\:br-accent-four-5 {
+    .auto-dark-mode .dk\:br-accent-four-5,
+    .auto-dark-mode.dk\:br-accent-four-5 {
         border-color: hsl(32, 100%, calc(41% + 5 * calc((100% - 41%) / 6)));
         border-color: var(--accent-four-5);
     }
 
-    .auto-dark-mode .d\:br-accent-five-d5 {
+    .auto-dark-mode .dk\:br-accent-five-d5,
+    .auto-dark-mode.dk\:br-accent-five-d5 {
         border-color: hsl(43, 100%, calc(51% - 5 * calc(51% / 7)));
         border-color: var(--accent-five-d5);
     }
 
-    .auto-dark-mode .d\:br-accent-five-d4 {
+    .auto-dark-mode .dk\:br-accent-five-d4,
+    .auto-dark-mode.dk\:br-accent-five-d4 {
         border-color: hsl(43, 100%, calc(51% - 4 * calc(51% / 7)));
         border-color: var(--accent-five-d4);
     }
 
-    .auto-dark-mode .d\:br-accent-five-d3 {
+    .auto-dark-mode .dk\:br-accent-five-d3,
+    .auto-dark-mode.dk\:br-accent-five-d3 {
         border-color: hsl(43, 100%, calc(51% - 3 * calc(51% / 7)));
         border-color: var(--accent-five-d3);
     }
 
-    .auto-dark-mode .d\:br-accent-five-d2 {
+    .auto-dark-mode .dk\:br-accent-five-d2,
+    .auto-dark-mode.dk\:br-accent-five-d2 {
         border-color: hsl(43, 100%, calc(51% - 2 * calc(51% / 7)));
         border-color: var(--accent-five-d2);
     }
 
-    .auto-dark-mode .d\:br-accent-five-d1 {
+    .auto-dark-mode .dk\:br-accent-five-d1,
+    .auto-dark-mode.dk\:br-accent-five-d1 {
         border-color: hsl(43, 100%, calc(51% - calc(51% / 7)));
         border-color: var(--accent-five-d1);
     }
 
-    .auto-dark-mode .d\:br-accent-five {
+    .auto-dark-mode .dk\:br-accent-five,
+    .auto-dark-mode.dk\:br-accent-five {
         border-color: hsl(43, 100%, 51%);
         border-color: var(--accent-five);
     }
 
-    .auto-dark-mode .d\:br-accent-five-1 {
+    .auto-dark-mode .dk\:br-accent-five-1,
+    .auto-dark-mode.dk\:br-accent-five-1 {
         border-color: hsl(43, 100%, calc(51% + calc((100% - 51%) / 6)));
         border-color: var(--accent-five-1);
     }
 
-    .auto-dark-mode .d\:br-accent-five-2 {
+    .auto-dark-mode .dk\:br-accent-five-2,
+    .auto-dark-mode.dk\:br-accent-five-2 {
         border-color: hsl(43, 100%, calc(51% + 2 * calc((100% - 51%) / 6)));
         border-color: var(--accent-five-2);
     }
 
-    .auto-dark-mode .d\:br-accent-five-3 {
+    .auto-dark-mode .dk\:br-accent-five-3,
+    .auto-dark-mode.dk\:br-accent-five-3 {
         border-color: hsl(43, 100%, calc(51% + 3 * calc((100% - 51%) / 6)));
         border-color: var(--accent-five-3);
     }
 
-    .auto-dark-mode .d\:br-accent-five-4 {
+    .auto-dark-mode .dk\:br-accent-five-4,
+    .auto-dark-mode.dk\:br-accent-five-4 {
         border-color: hsl(43, 100%, calc(51% + 4 * calc((100% - 51%) / 6)));
         border-color: var(--accent-five-4);
     }
 
-    .auto-dark-mode .d\:br-accent-five-5 {
+    .auto-dark-mode .dk\:br-accent-five-5,
+    .auto-dark-mode.dk\:br-accent-five-5 {
         border-color: hsl(43, 100%, calc(41% + 5 * calc((100% - 41%) / 6)));
         border-color: var(--accent-five-5);
     }
 
-    .auto-dark-mode .d\:br-error-color {
+    .auto-dark-mode .dk\:br-error-color,
+    .auto-dark-mode.dk\:br-error-color {
         border-color: crimson;
         border-color: var(--error-color);
     }
