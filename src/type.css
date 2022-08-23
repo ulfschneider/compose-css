@@ -9,7 +9,7 @@
     --heading-letter-spacing: 0em;
     --heading-text-transform: none;
     --figcaption-font-family: var(--heading-font-family);
-    --figcaption-font-size: inherit;
+    --figcaption-font-size: smaller;
     --meta-font-family: var(--font-family);
     --meta-font-feature-settings: var(--font-feature-settings);
     --meta-font-weight: var(--font-weight-normal);
@@ -671,8 +671,7 @@ figcaption {
 }
 
 blockquote>header::before,
-blockquote>footer::before,
-figcaption::before {
+blockquote>footer::before {
     content: "";
     display: inline-flex;
     align-self: baseline;
