@@ -9,7 +9,7 @@
     --heading-letter-spacing: 0em;
     --heading-text-transform: none;
     --figcaption-font-family: var(--heading-font-family);
-    --figcaption-font-size: var(--fs-d1);
+    --figcaption-font-size: inherit;
     --meta-font-family: var(--font-family);
     --meta-font-feature-settings: var(--font-feature-settings);
     --meta-font-weight: var(--font-weight-normal);
@@ -749,22 +749,11 @@ blockquote {
 }
 
 
+blockquote>header,
 blockquote>footer {
     font-weight: 700;
     font-weight: var(--font-weight-bold);
     font-size: var(--fs);
-}
-
-
-blockquote>footer::before {
-    content: "";
-    display: inline-flex;
-    align-self: baseline;
-    width: 1em;
-    height: 1em;
-    border-top: 2px solid currentColor;
-    border-top: var(--blockquote-border-width) solid currentColor;
-    font-weight: normal;
 }
 
 
@@ -848,8 +837,23 @@ blockquote>header {
 
 
 figcaption {
-    font-size: var(--fs-d1);
+    font-size: inherit;
     font-size: var(--figcaption-font-size);
+}
+
+
+blockquote>header::before,
+blockquote>footer::before,
+figcaption::before {
+    content: "";
+    display: inline-flex;
+    align-self: baseline;
+    width: calc(2 * var(--space));
+    width: var(--horizontal-rhythm);
+    height: 1em;
+    border-top: 2px solid currentColor;
+    border-top: var(--blockquote-border-width) solid currentColor;
+    font-weight: normal;
 }
 
 

@@ -1,6 +1,6 @@
 {
     "name": "compose-css",
-    "version": "29.0.3",
+    "version": "29.0.4",
     "description": "Composable CSS Toolkit",
     "main": "css/compose.css",
     "style": "css/compose.css",
@@ -37,7 +37,7 @@
     },
     "scripts": {
         "start": "run-p \"*watch:*\"",
-        "serve": "run-p \"*watch:*\"",
+        "dev": "run-p \"*watch:*\"",
         "watch:build": "gulp && gulp watch",
         "watch:serve": "browser-sync start --server --files 'doc.css' 'index-new.html' --index 'index-new.html'",
         "build": "gulp",
