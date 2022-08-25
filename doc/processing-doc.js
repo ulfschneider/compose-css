@@ -1,5 +1,5 @@
 const SOURCE = 'doc/doc.md';
-const DEST = 'index-new.html';
+const DEST = 'index.html';
 
 const package = require(`${process.cwd()}/package.json`);
 

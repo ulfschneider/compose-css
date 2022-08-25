@@ -378,10 +378,9 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
 .custom-control input[type=radio]+*::before {
     content: '';
     box-sizing: border-box;
-    position: absolute;
+   position: absolute;
     left: 0;
-    top: calc((calc((calc(1.66 * 1) - 1) / 3 * 2 + 1) * 1em - 1em) / 2);
-    top: var(--custom-check-pos);
+   /* top: var(--custom-check-pos);*/
     height: 1em;
     height: var(--custom-check-size);
     width: 1em;
@@ -390,6 +389,8 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     border: var(--custom-check-border-width) solid currentColor;
     border-radius: 0px;
     border-radius: var(--form-radius);
+    display: inline-flex;
+    align-self: baseline;
 }
 
 /* circle */

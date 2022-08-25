@@ -277,13 +277,15 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
 .custom-control input[type=radio]+*::before {
     content: '';
     box-sizing: border-box;
-    position: absolute;
+   position: absolute;
     left: 0;
-    top: var(--custom-check-pos);
+   /* top: var(--custom-check-pos);*/
     height: var(--custom-check-size);
     width: var(--custom-check-size);
     border: var(--custom-check-border-width) solid currentColor;
     border-radius: var(--form-radius);
+    display: inline-flex;
+    align-self: baseline;
 }
 
 

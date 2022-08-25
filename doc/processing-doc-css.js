@@ -23,7 +23,7 @@ const processingDocCSS = () => {
             postcssPurgeCSS({
                 content: [
                     'resources/sotable-min.js',
-                    'index-new.html',
+                    'index.html',
                     'doc/customize.css'
                 ],
                 defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [] //check https://flaviocopes.com/tailwind-setup/

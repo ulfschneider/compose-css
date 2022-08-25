@@ -14,6 +14,7 @@
         "gulp": "^4.0.2",
         "gulp-cli": "^2.3.0",
         "gulp-postcss": "^9.0.1",
+        "http-server": "^14.1.1",
         "markdown-it": "^13.0.1",
         "markdown-it-anchor": "^8.6.4",
         "markdown-it-attrs": "^4.1.4",
@@ -36,10 +37,11 @@
         "postcss-reporter": "^6.0.1"
     },
     "scripts": {
-        "start": "run-p \"*watch:*\"",
-        "dev": "run-p \"*watch:*\"",
+        "dev": "run-p watch:build watch:dev",
         "watch:build": "gulp && gulp watch",
-        "watch:serve": "browser-sync start --server --files 'doc.css' 'index-new.html' --index 'index-new.html'",
+        "watch:dev": "browser-sync start --server --files 'doc.css' 'index.html' --index 'index.html'",
+        "serve": "run-p watch:build watch:serve",
+        "watch:serve": "node ./node_modules/http-server/bin/http-server -p 3000 -c-1 --proxy http://localhost:3000?",
         "build": "gulp",
         "update": "npm update && npm audit fix",
         "test": "echo \"Error: no test specified\" && exit 1"
@@ -53,6 +55,5 @@
     "bugs": {
         "url": "https://github.com/ulfschneider/compose-css/issues"
     },
-    "homepage": "https://ulf.codes",
-    "dependencies": {}
+    "homepage": "https://ulf.codes"
 }
