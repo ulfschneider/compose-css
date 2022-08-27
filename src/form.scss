@@ -9,7 +9,7 @@
     --custom-check-line-height: var(--label-line-height);
     --custom-check-space: .1em;
     --custom-check-size: 1em;
-    --custom-check-pos: calc((var(--custom-check-line-height) * 1em - var(--custom-check-size)) / 2);
+    --custom-check-pos: calc((var(--custom-check-line-height) * 1em - var(--custom-check-size)) / 3 * 2);
     --custom-check-border-width: var(--typographic-line-width);
     --form-error-border-width: var(--typographic-line-width);
     --form-input-border-width: 1px;
@@ -275,17 +275,15 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
 
 .custom-control input[type=checkbox]+*::before,
 .custom-control input[type=radio]+*::before {
-    content: '';
+    content: "";
     box-sizing: border-box;
-   position: absolute;
+    position: absolute;
     left: 0;
-   /* top: var(--custom-check-pos);*/
+    top: var(--custom-check-pos);
     height: var(--custom-check-size);
     width: var(--custom-check-size);
     border: var(--custom-check-border-width) solid currentColor;
     border-radius: var(--form-radius);
-    display: inline-flex;
-    align-self: baseline;
 }
 
 
