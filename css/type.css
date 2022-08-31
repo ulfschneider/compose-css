@@ -25,7 +25,7 @@
     --blockquote-font-weight: normal;
     --blockquote-font-size: inherit;
     --blockquote-line-height: inherit;
-    --typographic-line-width: 2px;
+    --typographic-line-width: 1px;
     --blockquote-border-width: var(--typographic-line-width);
     --quote-font-style: italic;
     --text-decoration: underline;
@@ -107,7 +107,7 @@ a {
     color: var(--link-color);
     text-decoration: underline;
     text-decoration: var(--link-text-decoration);
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 1px;
     text-decoration-thickness: var(--link-text-decoration-thickness);
     transition: color var(--transition-duration) ease-out;
 }
@@ -345,7 +345,7 @@ abbr,
 u {
     text-decoration: underline;
     text-decoration: var(--text-decoration);
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 1px;
     text-decoration-thickness: var(--text-decoration-thickness);
 }
 
@@ -762,7 +762,7 @@ blockquote::before {
     width: var(--space-3);
     display: block;
     margin-right: auto;
-    border-top: 2px solid var(--li-prefix-color);
+    border-top: 1px solid var(--li-prefix-color);
     border-top: var(--blockquote-border-width) solid var(--li-prefix-color);
 }
 
@@ -850,7 +850,7 @@ blockquote>footer::before {
     width: calc(2 * var(--space));
     width: var(--horizontal-rhythm);
     height: 1em;
-    border-top: 2px solid currentColor;
+    border-top: 1px solid currentColor;
     border-top: var(--blockquote-border-width) solid currentColor;
     font-weight: normal;
 }

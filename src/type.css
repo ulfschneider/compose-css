@@ -25,7 +25,7 @@
     --blockquote-font-weight: normal;
     --blockquote-font-size: inherit;
     --blockquote-line-height: inherit;
-    --typographic-line-width: 2px;
+    --typographic-line-width: 1px;
     --blockquote-border-width: var(--typographic-line-width);
     --quote-font-style: italic;
     --text-decoration: underline;

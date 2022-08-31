@@ -240,9 +240,9 @@ form .error input[type=text]:not(:focus),
     form .error input[type=url]:not(:focus),
     form .error input[list]:not(:focus),
     form .error textarea:not(:focus) {
-        border: 2px solid crimson;
+        border: 1px solid crimson;
         border: var(--form-error-border-width) solid var(--error-color);
-        padding: calc(calc(calc(1rem / 1.66) / 1.66) + 1px - 2px) calc(calc(calc(1rem / 1.66) / 1.66) + 1px - 2px);
+        padding: calc(calc(calc(1rem / 1.66) / 1.66) + 1px - 1px) calc(calc(calc(1rem / 1.66) / 1.66) + 1px - 1px);
         padding: calc(var(--form-component-pdy) + var(--form-input-border-width) - var(--form-error-border-width)) calc(var(--form-component-pdx) + var(--form-input-border-width) - var(--form-error-border-width));
     }
 
@@ -257,7 +257,7 @@ input[list].error:not(:focus),
 textarea.error:not(:focus) {
     border: 2px solid crimson;
     border: 2px solid var(--error-color);
-    padding: calc(calc(calc(1rem / 1.66) / 1.66) + 1px - 2px) calc(calc(calc(1rem / 1.66) / 1.66) + 1px - 2px);
+    padding: calc(calc(calc(1rem / 1.66) / 1.66) + 1px - 1px) calc(calc(calc(1rem / 1.66) / 1.66) + 1px - 1px);
     padding: calc(var(--form-component-pdy) + var(--form-input-border-width) - var(--form-error-border-width)) calc(var(--form-component-pdx) + var(--form-input-border-width) - var(--form-error-border-width));
 }
 
@@ -282,8 +282,6 @@ input[list] {
     background: var(--form-field-background);
     color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
     color: var(--form-field-color);
-    width: calc(calc(calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66) * 1.66) * 1.66);
-    width: var(--space-5);
 }
 
 textarea {
@@ -301,8 +299,6 @@ textarea {
     color: hsl(0, 0%, calc(53% - 5 * calc(53% / 7)));
     color: var(--form-field-color);
     font-weight: normal;
-    width: calc(calc(calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66) * 1.66) * 1.66);
-    width: var(--space-5);
 }
 
 fieldset {
@@ -386,7 +382,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     height: var(--custom-check-size);
     width: 1em;
     width: var(--custom-check-size);
-    border: 2px solid currentColor;
+    border: 1px solid currentColor;
     border: var(--custom-check-border-width) solid currentColor;
     border-radius: 0px;
     border-radius: var(--form-radius);
@@ -415,7 +411,7 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     transform: rotate(-45deg);
     border: solid white;
     border: solid var(--base-background);
-    border-width: 0 0 2px 2px;
+    border-width: 0 0 1px 1px;
     border-width: 0 0 var(--custom-check-border-width) var(--custom-check-border-width);
     border-top-color: transparent;
     opacity: 0;
@@ -428,13 +424,13 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     content: "";
     box-sizing: border-box;
     position: absolute;
-    left: calc(2px * 2);
+    left: calc(1px * 2);
     left: calc(var(--custom-radio-gap) * 2);
-    top: calc(calc((calc((calc(1.66 * 1) - 1) / 3 * 2 + 1) * 1em - 1em) / 3 * 2) + 2px * 2);
+    top: calc(calc((calc((calc(1.66 * 1) - 1) / 3 * 2 + 1) * 1em - 1em) / 3 * 2) + 1px * 2);
     top: calc(var(--custom-check-pos) + var(--custom-radio-gap) * 2);
-    height: calc(1em - 2px * 4);
+    height: calc(1em - 1px * 4);
     height: calc(var(--custom-check-size) - var(--custom-radio-gap) * 4);
-    width: calc(1em - 2px * 4);
+    width: calc(1em - 1px * 4);
     width: calc(var(--custom-check-size) - var(--custom-radio-gap) * 4);
     background: currentColor;
     border-radius: 50%;
@@ -2164,7 +2160,7 @@ small,
     --blockquote-font-weight: normal;
     --blockquote-font-size: inherit;
     --blockquote-line-height: inherit;
-    --typographic-line-width: 2px;
+    --typographic-line-width: 1px;
     --blockquote-border-width: var(--typographic-line-width);
     --quote-font-style: italic;
     --text-decoration: underline;
@@ -2244,7 +2240,7 @@ a {
     color: var(--link-color);
     text-decoration: underline;
     text-decoration: var(--link-text-decoration);
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 1px;
     text-decoration-thickness: var(--link-text-decoration-thickness);
     transition: color .14s ease-out;
     transition: color var(--transition-duration) ease-out;
@@ -2446,7 +2442,7 @@ abbr,
 u {
     text-decoration: underline;
     text-decoration: var(--text-decoration);
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 1px;
     text-decoration-thickness: var(--text-decoration-thickness);
 }
 
@@ -2848,7 +2844,7 @@ blockquote::before {
     width: var(--space-3);
     display: block;
     margin-right: auto;
-    border-top: 2px solid currentColor;
+    border-top: 1px solid currentColor;
     border-top: var(--blockquote-border-width) solid var(--li-prefix-color);
 }
 
@@ -2928,7 +2924,7 @@ blockquote>footer::before {
     width: calc(2 * 1rem);
     width: var(--horizontal-rhythm);
     height: 1em;
-    border-top: 2px solid currentColor;
+    border-top: 1px solid currentColor;
     border-top: var(--blockquote-border-width) solid currentColor;
     font-weight: normal;
 }
