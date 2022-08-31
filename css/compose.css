@@ -32267,14 +32267,14 @@ dl.timeline>dd>*.framed::before {
 }
 
 @media (min-width: 9999px) {
-    dl.timeline:not(dl.timeline.no-outdent):not(.no-outdent dl.timeline):not(dl.timeline.row):not(table dl.timeline):not(pre dl.timeline) {
+    .outdent dl.timeline:not(dl.timeline.no-outdent):not(.no-outdent dl.timeline):not(dl.timeline.row):not(table dl.timeline):not(pre dl.timeline) {
         margin-left: calc(-1 * (calc(1rem + .9rem / 2) - 1px));
         margin-left: calc(-1 * (var(--timeline-right-gap) - var(--timeline-width)));
     }
 }
 
 @media (--outdent-breakpoint) {
-    dl.timeline:not(dl.timeline.no-outdent):not(.no-outdent dl.timeline):not(dl.timeline.row):not(table dl.timeline):not(pre dl.timeline) {
+    .outdent dl.timeline:not(dl.timeline.no-outdent):not(.no-outdent dl.timeline):not(dl.timeline.row):not(table dl.timeline):not(pre dl.timeline) {
         margin-left: calc(-1 * (calc(1rem + .9rem / 2) - 1px));
         margin-left: calc(-1 * (var(--timeline-right-gap) - var(--timeline-width)));
     }
@@ -32432,12 +32432,12 @@ ul>li::before {
 @media (min-width: 9999px) {
 
     .outdent ol:not(.no-outdent ol):not(ol.no-outdent):not(ol.indent):not(ol ol):not(ul ol):not(table ol):not(pre ol),
-    .outdent ul:not(.no-outdent ol):not(ol.no-outdent):not(ul.indent):not(ul ul):not(ol ul):not(table ul):not(pre ul) {
+    .outdent ul:not(.no-outdent ul):not(ul.no-outdent):not(ul.indent):not(ul ul):not(ol ul):not(table ul):not(pre ul) {
         
         padding-left: 0;
     }
 
-        .outdent ol:not(.no-outdent ol):not(ol.no-outdent):not(ol.indent):not(ol ol):not(ul ol):not(table ol):not(pre ol) > li::before, .outdent ul:not(.no-outdent ol):not(ol.no-outdent):not(ul.indent):not(ul ul):not(ol ul):not(table ul):not(pre ul) > li::before {
+        .outdent ol:not(.no-outdent ol):not(ol.no-outdent):not(ol.indent):not(ol ol):not(ul ol):not(table ol):not(pre ol) > li::before, .outdent ul:not(.no-outdent ul):not(ul.no-outdent):not(ul.indent):not(ul ul):not(ol ul):not(table ul):not(pre ul) > li::before {
             justify-content: flex-end;
             padding-right: 1rem;
             padding-right: var(--space);
@@ -32447,12 +32447,12 @@ ul>li::before {
 @media (--outdent-breakpoint) {
 
     .outdent ol:not(.no-outdent ol):not(ol.no-outdent):not(ol.indent):not(ol ol):not(ul ol):not(table ol):not(pre ol),
-    .outdent ul:not(.no-outdent ol):not(ol.no-outdent):not(ul.indent):not(ul ul):not(ol ul):not(table ul):not(pre ul) {
+    .outdent ul:not(.no-outdent ul):not(ul.no-outdent):not(ul.indent):not(ul ul):not(ol ul):not(table ul):not(pre ul) {
         
         padding-left: 0;
     }
 
-        .outdent ol:not(.no-outdent ol):not(ol.no-outdent):not(ol.indent):not(ol ol):not(ul ol):not(table ol):not(pre ol) > li::before, .outdent ul:not(.no-outdent ol):not(ol.no-outdent):not(ul.indent):not(ul ul):not(ol ul):not(table ul):not(pre ul) > li::before {
+        .outdent ol:not(.no-outdent ol):not(ol.no-outdent):not(ol.indent):not(ol ol):not(ul ol):not(table ol):not(pre ol) > li::before, .outdent ul:not(.no-outdent ul):not(ul.no-outdent):not(ul.indent):not(ul ul):not(ol ul):not(table ul):not(pre ul) > li::before {
             justify-content: flex-end;
             padding-right: 1rem;
             padding-right: var(--space);
