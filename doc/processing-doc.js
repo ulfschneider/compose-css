@@ -64,7 +64,7 @@ function processingDoc(callback) {
     addEventListener('load', () => { ActiveToc.init('.table-of-contents'); sotable({whiteList: '.soso'})}); //activate sotable functionalty on load
     `).appendTo('head');
     $('html').addClass('auto-dark-mode');
-    $('body').addClass('pd');
+    $('body').addClass('pd outdent');
 
     fs.writeFileSync(DEST, $.html(), 'utf8');
     callback();

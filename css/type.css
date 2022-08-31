@@ -958,7 +958,7 @@ details[open]>summary::before {
 
 
 @media (min-width: 9999px) {
-    details>summary:not(details>summary.no-outdent):not(.no-outdent summary):not(table details>summary):not(pre details>summary)::before {
+    .outdent details>summary:not(details>summary.no-outdent):not(.no-outdent summary):not(table details>summary):not(pre details>summary)::before {
         margin-left: calc(-1 * calc(2 * var(--space)));
         margin-left: calc(-1 * var(--horizontal-rhythm));
         justify-content: flex-end;
@@ -968,7 +968,7 @@ details[open]>summary::before {
 
 
 @media (--outdent-breakpoint) {
-    details>summary:not(details>summary.no-outdent):not(.no-outdent summary):not(table details>summary):not(pre details>summary)::before {
+    .outdent details>summary:not(details>summary.no-outdent):not(.no-outdent summary):not(table details>summary):not(pre details>summary)::before {
         margin-left: calc(-1 * calc(2 * var(--space)));
         margin-left: calc(-1 * var(--horizontal-rhythm));
         justify-content: flex-end;

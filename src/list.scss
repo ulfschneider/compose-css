@@ -352,8 +352,8 @@ ul>li::before {
 
 @media (--outdent-breakpoint) {
 
-    ol:not(.no-outdent ol):not(ol.no-outdent):not(ol.indent):not(ol ol):not(ul ol):not(table ol):not(pre ol),
-    ul:not(.no-outdent ol):not(ol.no-outdent):not(ul.indent):not(ul ul):not(ol ul):not(table ul):not(pre ul) {
+    .outdent ol:not(.no-outdent ol):not(ol.no-outdent):not(ol.indent):not(ol ol):not(ul ol):not(table ol):not(pre ol),
+    .outdent ul:not(.no-outdent ol):not(ol.no-outdent):not(ul.indent):not(ul ul):not(ol ul):not(table ul):not(pre ul) {
         
         padding-left: 0;
 
@@ -365,7 +365,7 @@ ul>li::before {
 }
 
 @media (--outdent-outline-breakpoint) {
-    .outline:not(.outline.no-outdent):not(.no-outdent .outline) {
+    .outdent .outline:not(.outline.no-outdent):not(.no-outdent .outline) {
 
         h2::before,
         h3::before,

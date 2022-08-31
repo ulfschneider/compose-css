@@ -739,7 +739,9 @@ Text above …
 
 ## Lists
 
-Lists ( `ol` , `ul` ), timelines ( `dl.timeline` ), the `summary` of a `details` section ( `details>summary` ), and outline numbers of heading elements ( `.outline h2` , `.outline h3` , …) can have an *outdent* property that will left-align the first level text of those elements with the text above and below of the list and summary. The left-aligning requires to outdent the order numbers, the bullets, and the summary indication which is only desired if the text has enough left margin. By default the outdent of those elements is deactivated. Activate it by assigning a value to the `--outdent-breakpoint` .
+Lists ( `ol` , `ul` ), timelines ( `dl.timeline` ), the `summary` of a `details` section ( `details>summary` ), and outline numbers of heading elements ( `.outline h2` , `.outline h3` , …) can have an *outdent* property that will left-align the first level text of those elements with the text above and below of the list and summary. The left-aligning requires to outdent the order numbers, the bullets, and the summary indication which is only desired if the text has enough left margin. By default the outdent of those elements is deactivated. 
+
+> Activate outdenting by assigning a value to the `--outdent-breakpoint` *and* enclosing the portion of the document that should outdent by assigning the `.outdent` class.
 
 To activate the outdent breakpoint choose a width suitable to your site design. E.g. for a centered layout with a regular center content width ( `--rg-width` ) an `--outdent-breakpoint` could set to the value equal to `--rg-breakpoint` . The initial setting of `9999px` for `--outdent-breakpoint` deactivates outdenting of list elements.
 
@@ -762,6 +764,7 @@ The below example sets the `--outdent-outline-breakpoint` .
 
 ### Unordered list
 
+<div class="outdent">
 <ul>
 <li><p>One morning, when Gregor Samsa woke from troubled dreams, he found himself
 transformed in his bed into a horrible vermin.</p>
@@ -776,9 +779,11 @@ transformed in his bed into a horrible vermin.</p>
 <li>His many legs</li>
 <li>His room</li>
 </ul>
+</div>
 
 ### Ordered List
 
+<div class="outdent">
 <ol>
 <li><p>One morning, when Gregor Samsa woke from troubled dreams, he found himself
 transformed in his bed into a horrible vermin.</p>
@@ -793,6 +798,7 @@ transformed in his bed into a horrible vermin.</p>
 <li>His many legs</li>
 <li>His room</li>
 </ol>
+</div>
 
 ### Indented Ordered List
 
