@@ -354,10 +354,10 @@ ul>li::before {
 
     .outdent ol:not(ol.clear):not(ol.reset):not(.no-outdent ol):not(ol.no-outdent):not(ol.indent):not(ol ol):not(ul ol):not(table ol):not(pre ol),
     .outdent ul:not(ul.clear):not(ul.reset):not(.no-outdent ul):not(ul.no-outdent):not(ul.indent):not(ul ul):not(ol ul):not(table ul):not(pre ul) {
-        
+
         padding-left: 0;
 
-        & > li::before {
+        &>li::before {
             justify-content: flex-end;
             padding-right: var(--space);
         }
@@ -365,7 +365,10 @@ ul>li::before {
 }
 
 @media (--outdent-outline-breakpoint) {
-    .outdent .outline:not(.outline.no-outdent):not(.no-outdent .outline) {
+
+    .outdent .outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent),
+    .outdent.outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent),
+    .outline .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) {
 
         h2::before,
         h3::before,
