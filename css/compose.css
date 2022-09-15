@@ -385,9 +385,9 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     border: 1px solid currentColor;
     border: var(--custom-check-border-width) solid currentColor;
     border-radius: 0px;
-    border-radius: var(--form-radius);   
-    background: hsl(0, 0%, calc(53% + 5 * calc((100% - 53%) / 6)));   
-    background: var(--form-field-background); 
+    border-radius: var(--form-radius);
+    background: hsl(0, 0%, calc(53% + 5 * calc((100% - 53%) / 6)));
+    background: var(--form-field-background);
 }
 
 /* circle */

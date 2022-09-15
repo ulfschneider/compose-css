@@ -1743,6 +1743,11 @@ Each breakpoint *can* trigger a change in base font size. The wider the screen, 
 <input id="text" type="text" />
 </div>
 
+<div class="mry-vrplus group">
+<label for="file">A file upload</label>
+<input id="file" type="file" class="block" />
+</div>
+
 <div class="mry-vrplus">
 <label class="block">A textarea</label>
 <textarea></textarea>
