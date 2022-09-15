@@ -125,26 +125,30 @@ label.custom-control,
 
 
 form .desc,
-form .error:not(form .group.error) {
+form .error:not(form .group.error),
+form .afv-error:not(form .afv-group.afv-error) {
     color: var(--description-color);
     line-height: var(--lh-1);
     margin-top: var(--space-d2);
     margin-bottom: var(--space-d2);
 }
 
-form .error:not(form .group.error) {
+form .error:not(form .group.error),
+form .afv-error:not(form .afv-group.afv-error) {
     color: var(--error-color);
     font-weight: var(--font-weight-bold);
 }
 
-form .error:not(form .group .error) {
+form .error:not(form .group .error),
+form .afv-error:not(form .afv-group .afv-error) {
     /* mind the space between .group and .error*/
     border-left: var(--outline-width) solid var(--error-color);
     padding-left: var(--space-d2);
     margin-left: calc(-1 * (var(--space-d2) + var(--outline-width)));
 }
 
-form .error {
+form .error,
+form .afv-error {
 
     input[type=text]:not(:focus),
     input[type=email]:not(:focus),
@@ -161,14 +165,23 @@ form .error {
 }
 
 input[type=text].error:not(:focus),
+input[type=text].afv-error:not(:focus),
 input[type=email].error:not(:focus),
+input[type=email].afv-error:not(:focus),
 input[type=number].error:not(:focus),
+input[type=number].afv-error:not(:focus),
 input[type=password].error:not(:focus),
+input[type=password].afv-error:not(:focus),
 input[type=search].error:not(:focus),
+input[type=search].afv-error:not(:focus),
 input[type=tel].error:not(:focus),
+input[type=tel].afv-error:not(:focus),
 input[type=url].error:not(:focus),
+input[type=url].afv-error:not(:focus),
 input[list].error:not(:focus),
-textarea.error:not(:focus) {
+input[list].afv-error:not(:focus),
+textarea.error:not(:focus),
+textarea.afv-error:not(:focus) {
     border: 2px solid var(--error-color);
     padding: calc(var(--form-component-pdy) + var(--form-input-border-width) - var(--form-error-border-width)) calc(var(--form-component-pdx) + var(--form-input-border-width) - var(--form-error-border-width));
 }
@@ -281,8 +294,8 @@ https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-butto
     height: var(--custom-check-size);
     width: var(--custom-check-size);
     border: var(--custom-check-border-width) solid currentColor;
-    border-radius: var(--form-radius);   
-    background: var(--form-field-background); 
+    border-radius: var(--form-radius);
+    background: var(--form-field-background);
 }
 
 
