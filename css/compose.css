@@ -203,7 +203,8 @@ label.custom-control,
 }
 
 form .desc,
-form .error:not(form .group.error) {
+form .error:not(form .group.error),
+form .afv-error:not(form .afv-group.afv-error) {
     color: hsl(0, 0%, calc(53% - calc(53% / 7)));
     color: var(--description-color);
     line-height: calc((calc(1.66 * 1) - 1) / 3 + 1);
@@ -214,14 +215,16 @@ form .error:not(form .group.error) {
     margin-bottom: var(--space-d2);
 }
 
-form .error:not(form .group.error) {
+form .error:not(form .group.error),
+form .afv-error:not(form .afv-group.afv-error) {
     color: crimson;
     color: var(--error-color);
     font-weight: 700;
     font-weight: var(--font-weight-bold);
 }
 
-form .error:not(form .group .error) {
+form .error:not(form .group .error),
+form .afv-error:not(form .afv-group .afv-error) {
     /* mind the space between .group and .error*/
     border-left: 3px solid crimson;
     border-left: var(--outline-width) solid var(--error-color);
@@ -239,7 +242,16 @@ form .error input[type=text]:not(:focus),
     form .error input[type=tel]:not(:focus),
     form .error input[type=url]:not(:focus),
     form .error input[list]:not(:focus),
-    form .error textarea:not(:focus) {
+    form .error textarea:not(:focus),
+    form .afv-error input[type=text]:not(:focus),
+    form .afv-error input[type=email]:not(:focus),
+    form .afv-error input[type=number]:not(:focus),
+    form .afv-error input[type=password]:not(:focus),
+    form .afv-error input[type=search]:not(:focus),
+    form .afv-error input[type=tel]:not(:focus),
+    form .afv-error input[type=url]:not(:focus),
+    form .afv-error input[list]:not(:focus),
+    form .afv-error textarea:not(:focus) {
         border: 2px solid crimson;
         border: var(--form-error-border-width) solid var(--error-color);
         padding: calc(calc(calc(1rem / 1.66) / 1.66) + 1px - 2px) calc(calc(calc(1rem / 1.66) / 1.66) + 1px - 2px);
@@ -247,14 +259,23 @@ form .error input[type=text]:not(:focus),
     }
 
 input[type=text].error:not(:focus),
+input[type=text].afv-error:not(:focus),
 input[type=email].error:not(:focus),
+input[type=email].afv-error:not(:focus),
 input[type=number].error:not(:focus),
+input[type=number].afv-error:not(:focus),
 input[type=password].error:not(:focus),
+input[type=password].afv-error:not(:focus),
 input[type=search].error:not(:focus),
+input[type=search].afv-error:not(:focus),
 input[type=tel].error:not(:focus),
+input[type=tel].afv-error:not(:focus),
 input[type=url].error:not(:focus),
+input[type=url].afv-error:not(:focus),
 input[list].error:not(:focus),
-textarea.error:not(:focus) {
+input[list].afv-error:not(:focus),
+textarea.error:not(:focus),
+textarea.afv-error:not(:focus) {
     border: 2px solid crimson;
     border: 2px solid var(--error-color);
     padding: calc(calc(calc(1rem / 1.66) / 1.66) + 1px - 2px) calc(calc(calc(1rem / 1.66) / 1.66) + 1px - 2px);
@@ -3409,9 +3430,9 @@ details[open]>summary::before {
     --description-color: var(--meta-color);
     --error-color: crimson;
     --li-prefix-color: currentColor;
-    --li-high-prefix-color: var(--base-background);
-    --li-high-prefix-background: var(--base-color);
-    --heading-outline-color: var(--li-prefix-color);
+    --ul-li-prefix-color: var(--li-prefix-color);
+    --ol-li-prefix-color: var(--li-prefix-color);
+    --heading-outline-color: var(--ol-li-prefix-color);
     --form-label-color: var(--base-color);
     --form-field-color: var(--base-color);
     --form-field-border-color: var(--border-color);
@@ -3598,9 +3619,9 @@ details[open]>summary::before {
         --description-color: var(--meta-color);
         --error-color: crimson;
         --li-prefix-color: currentColor;
-        --li-high-prefix-color: var(--base-background);
-        --li-high-prefix-background: var(--base-color);
-        --heading-outline-color: var(--li-prefix-color);
+        --ul-li-prefix-color: var(--li-prefix-color);
+        --ol-li-prefix-color: var(--li-prefix-color);
+        --heading-outline-color: var(--ol-li-prefix-color);
         --form-label-color: var(--base-color);
         --form-field-color: var(--base-color);
         --form-field-border-color: var(--border-color);
@@ -31909,7 +31930,9 @@ Naming conventions
     --mrt-list: var(--vertical-rhythm);
     --mrb-list: var(--vertical-rhythm);
     --list-item-type: "●";
-    /*▁⁕●■ →*—*/
+    --ol-list-item-size: smaller;
+    --ul-list-item-size: smaller;
+    /*▁⁕●■▪→*—*/
     --ol-counter-delimiter: ".";
     --ol-counter-type: decimal;
     --h-counter-type: decimal;
@@ -32335,9 +32358,10 @@ ol>li::before {
     font-family: system-ui, ui-sans-serif, sans-serif;
     font-family: var(--meta-font-family);
     color: currentColor;
-    color: var(--li-prefix-color);
+    color: var(--ol-li-prefix-color);
     font-variant-numeric: lining-nums;
     font-size: smaller;
+    font-size: var(--ol-list-item-size);
     font-weight: 700;
     font-weight: var(--font-weight-bold);
     white-space: nowrap;
@@ -32355,9 +32379,9 @@ ul>li::before {
     display: inline-flex;
     justify-content: flex-start;
     align-items: center;
-    color: currentColor;
-    color: var(--li-prefix-color);
+    color: var(--ul_li-prefix-color);
     font-size: smaller;
+    font-size: var(--ul-list-item-size);
     white-space: nowrap;
 }
 

@@ -2,7 +2,9 @@
     --mrt-list: var(--vertical-rhythm);
     --mrb-list: var(--vertical-rhythm);
     --list-item-type: "●";
-    /*▁⁕●■ →*—*/
+    --ol-list-item-size: smaller;
+    --ul-list-item-size: smaller;
+    /*▁⁕●■▪→*—*/
     --ol-counter-delimiter: ".";
     --ol-counter-type: decimal;
     --h-counter-type: decimal;
@@ -266,9 +268,9 @@ ol>li::before {
     justify-content: flex-start;
     align-items: baseline;
     font-family: var(--meta-font-family);
-    color: var(--li-prefix-color);
+    color: var(--ol-li-prefix-color);
     font-variant-numeric: lining-nums;
-    font-size: smaller;
+    font-size: var(--ol-list-item-size);
     font-weight: var(--font-weight-bold);
     white-space: nowrap;
 }
@@ -281,8 +283,8 @@ ul>li::before {
     display: inline-flex;
     justify-content: flex-start;
     align-items: center;
-    color: var(--li-prefix-color);
-    font-size: smaller;
+    color: var(--ul_li-prefix-color);
+    font-size: var(--ul-list-item-size);
     white-space: nowrap;
 }
 

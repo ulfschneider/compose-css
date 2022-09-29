@@ -147,9 +147,9 @@
     --description-color: var(--meta-color);
     --error-color: crimson;
     --li-prefix-color: currentColor;
-    --li-high-prefix-color: var(--base-background);
-    --li-high-prefix-background: var(--base-color);
-    --heading-outline-color: var(--li-prefix-color);
+    --ul-li-prefix-color: var(--li-prefix-color);
+    --ol-li-prefix-color: var(--li-prefix-color);
+    --heading-outline-color: var(--ol-li-prefix-color);
     --form-label-color: var(--base-color);
     --form-field-color: var(--base-color);
     --form-field-border-color: var(--border-color);
