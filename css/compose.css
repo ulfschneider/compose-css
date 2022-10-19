@@ -33226,6 +33226,10 @@ th.sotable-column .indicator {
     --z-2: 2000;
     --z-3: 3000;
     --z-4: 4000;
+    --zn-1: -1000;
+    --zn-2: -2000;
+    --zn-3: -3000;
+    --zn-4: -4000;
     --bleed-width: var(--lg-breakpoint);
     --bleed-padding: var(--space);
     --justify-split-items: inherit;
@@ -33578,6 +33582,26 @@ th.sotable-column .indicator {
 .z-4 {
     z-index: 4000;
     z-index: var(--z-4)
+}
+
+.zn-1 {
+    z-index: -1000;
+    z-index: var(--zn-1)
+}
+
+.zn-2 {
+    z-index: -2000;
+    z-index: var(--zn-2)
+}
+
+.zn-3 {
+    z-index: -3000;
+    z-index: var(--zn-3)
+}
+
+.zn-4 {
+    z-index: -4000;
+    z-index: var(--zn-4)
 }
 
 .box-break-clone {
