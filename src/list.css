@@ -1,7 +1,7 @@
 :root {
     --mrt-list: var(--vertical-rhythm);
     --mrb-list: var(--vertical-rhythm);
-    --list-item-type: "●";
+    --list-item-type: "→";
     --ol-list-item-size: inherit;
     --ul-list-item-size: inherit;
     /*▁⁕●■▪→*—*/
@@ -272,7 +272,6 @@ ol>li::before {
     font-variant-numeric: lining-nums;
     font-size: var(--ol-list-item-size);
     font-variant-numeric: oldstyle-nums;
-    font-weight: var(--font-weight-bold);
     white-space: nowrap;
 }
 

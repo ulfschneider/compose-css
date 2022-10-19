@@ -31929,9 +31929,9 @@ Naming conventions
 :root {
     --mrt-list: var(--vertical-rhythm);
     --mrb-list: var(--vertical-rhythm);
-    --list-item-type: "●";
-    --ol-list-item-size: smaller;
-    --ul-list-item-size: smaller;
+    --list-item-type: "→";
+    --ol-list-item-size: inherit;
+    --ul-list-item-size: inherit;
     /*▁⁕●■▪→*—*/
     --ol-counter-delimiter: ".";
     --ol-counter-type: decimal;
@@ -32360,15 +32360,14 @@ ol>li::before {
     color: currentColor;
     color: var(--ol-li-prefix-color);
     font-variant-numeric: lining-nums;
-    font-size: smaller;
+    font-size: inherit;
     font-size: var(--ol-list-item-size);
-    font-weight: 700;
-    font-weight: var(--font-weight-bold);
+    font-variant-numeric: oldstyle-nums;
     white-space: nowrap;
 }
 
 ul>li::before {
-    content: "●";
+    content: "→";
     content: var(--list-item-type);
     margin-left: calc(calc(2 * 1rem) * -1);
     margin-left: calc(var(--horizontal-rhythm) * -1);
@@ -32380,7 +32379,7 @@ ul>li::before {
     justify-content: flex-start;
     align-items: center;
     color: var(--ul_li-prefix-color);
-    font-size: smaller;
+    font-size: inherit;
     font-size: var(--ul-list-item-size);
     white-space: nowrap;
 }
