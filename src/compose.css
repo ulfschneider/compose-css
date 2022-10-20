@@ -1,5 +1,5 @@
 @import "reset";
-@import "form.scss";
+@import "form";
 @import "breakpoints";
 @import "space";
 @import "type-scale";
@@ -29,7 +29,7 @@
 @import "hide-breakpoints";
 @import "flex-box";
 @import "flex-box-breakpoints";
-@import "list.scss";
+@import "list";
 @import "pointer";
 @import "img";
 @import "media";

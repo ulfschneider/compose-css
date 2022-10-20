@@ -2,7 +2,9 @@
     --mrt-list: var(--vertical-rhythm);
     --mrb-list: var(--vertical-rhythm);
     --list-item-type: "●";
-    /*▁⁕●■ →* */
+    --ol-list-item-size: smaller;
+    --ul-list-item-size: smaller;
+    /*▁⁕●■▪→*—*/
     --ol-counter-delimiter: ".";
     --ol-counter-type: decimal;
     --h-counter-type: decimal;
@@ -16,12 +18,12 @@
     --h6-counter: counter(h2-counter) var(--h-counter-delimiter) counter(h3-counter) var(--h-counter-delimiter) counter(h4-counter) var(--h-counter-delimiter) counter(h5-counter) var(--h-counter-delimiter) counter(h6-counter);
 
     /* timeline */
-    --timeline-blub-size: var(--fs-d1); 
+    --timeline-blub-size: var(--fs-d1);
     --timeline-width: 1px;
     --timeline-blub-border-width: 1px;
     /* column timeline */
-    --timeline-left-gap: calc(var(--timeline-blub-size) / 2);
-    --timeline-right-gap: calc(var(--horizontal-rhythm) - var(--timeline-left-gap) - var(--timeline-width));
+    --timeline-right-gap: calc(var(--space) + var(--timeline-blub-size) / 2);
+    --timeline-left-gap: calc(var(--horizontal-rhythm) - var(--timeline-right-gap) - var(--timeline-width));
     --timeline-left-blub-pos: calc(-1 * (var(--timeline-right-gap) + var(--timeline-blub-size) / 2 + var(--timeline-width) / 2));
     --timeline-top-blub-pos: calc(1em * var(--lh-default) / 2 - var(--timeline-blub-size) / 2);
     --timeline-framed-indent: var(--horizontal-rhythm);
@@ -34,6 +36,8 @@
     --timeline-row-framed-padding: calc(var(--timeline-framed-padding) / 2);
     --timeline-row-framed-indent: var(--timeline-row-y-gap);
     --timeline-row-item-width: var(--space-5);
+
+    --outdent-outline-width: var(--space-4);
 }
 
 dl {
@@ -54,7 +58,7 @@ table dd {
     margin-left: 0;
 }
 
-dd+dt, 
+dd+dt,
 dt+dt {
     margin-top: var(--vertical-rhythm);
     margin-top: var(--mrt-list);
@@ -67,14 +71,14 @@ dl.timeline.framed dd+dt {
 dl.timeline {
     border-left: 1px solid var(--timeline-color);
     border-left: var(--timeline-width) solid var(--timeline-color);
-    margin-left: calc(var(--fs-d1) / 2);
+    margin-left: calc(var(--horizontal-rhythm) - calc(var(--space) + var(--fs-d1) / 2) - 1px);
     margin-left: var(--timeline-left-gap);
 }
 
 dl.timeline>dt,
 dl.timeline>dd {
     margin-left: 0;
-    padding-left: calc(var(--horizontal-rhythm) - calc(var(--fs-d1) / 2) - 1px);
+    padding-left: calc(var(--space) + var(--fs-d1) / 2);
     padding-left: var(--timeline-right-gap);
 }
 
@@ -88,7 +92,7 @@ dl.timeline>dt {
 
 dl.timeline.framed>dt,
 dl.timeline.framed>dd {
-    padding-left: calc(var(--horizontal-rhythm) + var(--horizontal-rhythm) - calc(var(--fs-d1) / 2) - 1px);
+    padding-left: calc(var(--horizontal-rhythm) + var(--horizontal-rhythm) - calc(var(--horizontal-rhythm) - calc(var(--space) + var(--fs-d1) / 2) - 1px) - 1px);
     padding-left: var(--timeline-framed-right-gap);
 }
 
@@ -103,18 +107,18 @@ dl.timeline>dt::before {
     height: var(--fs-d1);
     height: var(--timeline-blub-size);
     position: absolute;
-    margin-left: calc(-1 * (calc(var(--horizontal-rhythm) - calc(var(--fs-d1) / 2) - 1px) + var(--fs-d1) / 2 + 1px / 2));
+    margin-left: calc(-1 * (calc(var(--space) + var(--fs-d1) / 2) + var(--fs-d1) / 2 + 1px / 2));
     margin-left: var(--timeline-left-blub-pos);
     margin-top: calc(1em * var(--lh-default) / 2 - var(--fs-d1) / 2);
     margin-top: var(--timeline-top-blub-pos);
     background-color: var(--timeline-blub-background);
     border: 1px solid var(--timeline-blub-color);
     border: var(--timeline-blub-border-width) solid var(--timeline-blub-color);
-    z-index: 1000;    
+    z-index: 1000;
 }
 
 dl.timeline.framed>dt::before {
-    margin-left: calc(-1 * (var(--horizontal-rhythm) + calc(var(--horizontal-rhythm) - calc(var(--fs-d1) / 2) - 1px) + var(--fs-d1) / 2 + 1px / 2));
+    margin-left: calc(-1 * (var(--horizontal-rhythm) + calc(var(--space) + var(--fs-d1) / 2) + var(--fs-d1) / 2 + 1px / 2));
     margin-left: var(--timeline-framed-left-blub-pos);
 }
 
@@ -135,14 +139,14 @@ dl.timeline:not(dl.timeline.framed)>dd>.framed {
 dl.timeline>dt>*.framed::before,
 dl.timeline>dd>*.framed::before {
     content: "";
-    width: calc(var(--horizontal-rhythm) + calc(var(--horizontal-rhythm) - calc(var(--fs-d1) / 2) - 1px) + 1px);
+    width: calc(var(--horizontal-rhythm) + calc(var(--space) + var(--fs-d1) / 2) + 1px);
     width: calc(var(--timeline-framed-indent) + var(--timeline-right-gap) + var(--timeline-width));
     border-top: 1px solid var(--timeline-color);
     border-top: var(--timeline-width) solid var(--timeline-color);
     position: absolute;
     margin-top: calc(calc(1em * var(--lh-default) / 2 - var(--fs-d1) / 2) + var(--fs-d1) / 2 - var(--space) - 1px);
     margin-top: calc(var(--timeline-top-blub-pos) + var(--timeline-blub-size) / 2 - var(--timeline-framed-padding) - var(--timeline-width));
-    margin-left: calc(-1 * (calc(var(--horizontal-rhythm) - calc(var(--fs-d1) / 2) - 1px) + var(--horizontal-rhythm) + 1px * 2 + var(--space)));
+    margin-left: calc(-1 * (calc(var(--space) + var(--fs-d1) / 2) + var(--horizontal-rhythm) + 1px * 2 + var(--space)));
     margin-left: calc(-1 * (var(--timeline-right-gap) + var(--timeline-framed-indent) + var(--timeline-width) * 2 + var(--timeline-framed-padding)));
 }
 
@@ -157,7 +161,8 @@ dl.timeline>dd>*.framed::before {
         max-width: unset;
         font-size: smaller;
         max-width: unset;
-    }    
+    }
+
     dl.timeline.row>dt,
     dl.timeline.row>dd {
         flex-shrink: 1;
@@ -168,12 +173,15 @@ dl.timeline>dd>*.framed::before {
         padding: calc(3 * var(--vertical-rhythm)) calc(var(--horizontal-rhythm) / 2) var(--vertical-rhythm) calc(var(--horizontal-rhythm) / 2);
         padding: calc(3 * var(--timeline-row-y-gap)) var(--timeline-row-x-gap) var(--timeline-row-y-gap) var(--timeline-row-x-gap);
     }
+
     dl.timeline.row>:first-child {
         padding-left: 0;
     }
+
     dl.timeline.row>dt::before {
         display: none;
     }
+
     dl.timeline.row>dt::after {
         border-radius: 50%;
         content: "";
@@ -191,18 +199,21 @@ dl.timeline>dd>*.framed::before {
         border: 1px solid var(--timeline-blub-color);
         border: var(--timeline-blub-border-width) solid var(--timeline-blub-color);
         z-index: 1000;
-    }  
+    }
+
     dl.timeline.row>dt>*,
     dl.timeline.row>dd>* {
         margin: 0;
         padding: 0;
         background: var(--base-background);
     }
+
     dl.timeline.row>dt>*+*,
     dl.timeline.row>dd>*+* {
         margin-top: 1em;
         text-indent: 0;
     }
+
     dl.timeline.row>dt>.framed,
     dl.timeline.row>dd>.framed {
         margin: 0;
@@ -212,15 +223,18 @@ dl.timeline>dd>*.framed::before {
         padding: calc(calc(var(--space) / 2));
         padding: calc(var(--timeline-row-framed-padding));
     }
+
     dl.timeline.row>dt>.framed+*,
     dl.timeline.row>dd>.framed+* {
         margin-top: calc(2 * var(--vertical-rhythm));
         margin-top: calc(2 * var(--timeline-row-framed-indent));
     }
+
     dl.timeline.row>dt>.framed::before,
     dl.timeline.row>dd>.framed::before {
         display: none;
     }
+
     dl.timeline.row>dt>.framed::after,
     dl.timeline.row>dd>.framed::after {
         content: "";
@@ -248,7 +262,8 @@ dl.timeline>dd>*.framed::before {
         max-width: unset;
         font-size: smaller;
         max-width: unset;
-    }    
+    }
+
     dl.timeline.row>dt,
     dl.timeline.row>dd {
         flex-shrink: 1;
@@ -259,12 +274,15 @@ dl.timeline>dd>*.framed::before {
         padding: calc(3 * var(--vertical-rhythm)) calc(var(--horizontal-rhythm) / 2) var(--vertical-rhythm) calc(var(--horizontal-rhythm) / 2);
         padding: calc(3 * var(--timeline-row-y-gap)) var(--timeline-row-x-gap) var(--timeline-row-y-gap) var(--timeline-row-x-gap);
     }
+
     dl.timeline.row>:first-child {
         padding-left: 0;
     }
+
     dl.timeline.row>dt::before {
         display: none;
     }
+
     dl.timeline.row>dt::after {
         border-radius: 50%;
         content: "";
@@ -282,18 +300,21 @@ dl.timeline>dd>*.framed::before {
         border: 1px solid var(--timeline-blub-color);
         border: var(--timeline-blub-border-width) solid var(--timeline-blub-color);
         z-index: 1000;
-    }  
+    }
+
     dl.timeline.row>dt>*,
     dl.timeline.row>dd>* {
         margin: 0;
         padding: 0;
         background: var(--base-background);
     }
+
     dl.timeline.row>dt>*+*,
     dl.timeline.row>dd>*+* {
         margin-top: 1em;
         text-indent: 0;
     }
+
     dl.timeline.row>dt>.framed,
     dl.timeline.row>dd>.framed {
         margin: 0;
@@ -303,15 +324,18 @@ dl.timeline>dd>*.framed::before {
         padding: calc(calc(var(--space) / 2));
         padding: calc(var(--timeline-row-framed-padding));
     }
+
     dl.timeline.row>dt>.framed+*,
     dl.timeline.row>dd>.framed+* {
         margin-top: calc(2 * var(--vertical-rhythm));
         margin-top: calc(2 * var(--timeline-row-framed-indent));
     }
+
     dl.timeline.row>dt>.framed::before,
     dl.timeline.row>dd>.framed::before {
         display: none;
     }
+
     dl.timeline.row>dt>.framed::after,
     dl.timeline.row>dd>.framed::after {
         content: "";
@@ -329,15 +353,15 @@ dl.timeline>dd>*.framed::before {
 }
 
 @media (min-width: 9999px) {
-    dl.timeline:not(dl.timeline.no-outdent):not(.no-outdent dl.timeline):not(dl.timeline.row):not(table dl.timeline):not(pre dl.timeline) {
-        margin-left: calc(-1 * (calc(var(--horizontal-rhythm) - calc(var(--fs-d1) / 2) - 1px) - 1px));
+    .outdent dl.timeline:not(dl.timeline.no-outdent):not(.no-outdent dl.timeline):not(dl.timeline.row):not(table dl.timeline):not(pre dl.timeline) {
+        margin-left: calc(-1 * (calc(var(--space) + var(--fs-d1) / 2) - 1px));
         margin-left: calc(-1 * (var(--timeline-right-gap) - var(--timeline-width)));
     }
 }
 
 @media (--outdent-breakpoint) {
-    dl.timeline:not(dl.timeline.no-outdent):not(.no-outdent dl.timeline):not(dl.timeline.row):not(table dl.timeline):not(pre dl.timeline) {
-        margin-left: calc(-1 * (calc(var(--horizontal-rhythm) - calc(var(--fs-d1) / 2) - 1px) - 1px));
+    .outdent dl.timeline:not(dl.timeline.no-outdent):not(.no-outdent dl.timeline):not(dl.timeline.row):not(table dl.timeline):not(pre dl.timeline) {
+        margin-left: calc(-1 * (calc(var(--space) + var(--fs-d1) / 2) - 1px));
         margin-left: calc(-1 * (var(--timeline-right-gap) - var(--timeline-width)));
     }
 }
@@ -390,10 +414,12 @@ ol>li::before {
     justify-content: flex-start;
     align-items: baseline;
     font-family: var(--meta-font-family);
-    color: var(--li-prefix-color);
+    color: var(--ol-li-prefix-color);
     font-variant-numeric: lining-nums;
     font-size: smaller;
+    font-size: var(--ol-list-item-size);
     font-weight: var(--font-weight-bold);
+    white-space: nowrap;
 }
 
 ul>li::before {
@@ -405,8 +431,10 @@ ul>li::before {
     display: inline-flex;
     justify-content: flex-start;
     align-items: center;
-    color: var(--li-prefix-color);
+    color: var(--ul_li-prefix-color);
     font-size: smaller;
+    font-size: var(--ul-list-item-size);
+    white-space: nowrap;
 }
 
 *.outline {
@@ -414,77 +442,147 @@ ul>li::before {
 }
 
 .outline h2::before,
-.outline h3::before,
-.outline h4::before,
-.outline h5::before,
-.outline h6::before {
-    display: inline-block;
-    color: var(--heading-outline-color);
-    padding-right: var(--space-d1);
-    font-variant-numeric: lining-nums;
-}
+    .outline h3::before,
+    .outline h4::before,
+    .outline h5::before,
+    .outline h6::before {
+        display: inline-flex;
+        color: var(--heading-outline-color);
+        padding-right: var(--space-d1);
+        font-variant-numeric: lining-nums;
+        align-items: baseline;
+        justify-content: flex-start;
+    }
 
 .outline h2::before {
-    content: counter(h2-counter);
-    content: var(--h2-counter);
-}
+        content: counter(h2-counter);
+        content: var(--h2-counter);
+    }
 
 .outline h2 {
-    counter-increment: h2-counter;
-    counter-reset: h3-counter;
-}
+        counter-increment: h2-counter;
+        counter-reset: h3-counter;
+    }
 
 .outline h3::before {
-    content: counter(h2-counter) "." counter(h3-counter);
-    content: var(--h3-counter);
-}
+        content: counter(h2-counter) "." counter(h3-counter);
+        content: var(--h3-counter);
+    }
 
 .outline h3 {
-    counter-increment: h3-counter;
-    counter-reset: h4-counter;
-}
+        counter-increment: h3-counter;
+        counter-reset: h4-counter;
+    }
 
 .outline h4::before {
-    content: counter(h2-counter) "." counter(h3-counter) "." counter(h4-counter);
-    content: var(--h4-counter);
-}
+        content: counter(h2-counter) "." counter(h3-counter) "." counter(h4-counter);
+        content: var(--h4-counter);
+    }
 
 .outline h4 {
-    counter-increment: h4-counter;
-    counter-reset: h5-counter;
-}
+        counter-increment: h4-counter;
+        counter-reset: h5-counter;
+    }
 
 .outline h5::before {
-    content: counter(h2-counter) "." counter(h3-counter) "." counter(h4-counter) "." counter(h5-counter);
-    content: var(--h5-counter);
-}
+        content: counter(h2-counter) "." counter(h3-counter) "." counter(h4-counter) "." counter(h5-counter);
+        content: var(--h5-counter);
+    }
 
 .outline h5 {
-    counter-increment: h5-counter;
-    counter-reset: h6-counter;
-}
+        counter-increment: h5-counter;
+        counter-reset: h6-counter;
+    }
 
 .outline h6::before {
-    content: counter(h2-counter) "." counter(h3-counter) "." counter(h4-counter) "." counter(h5-counter) "." counter(h6-counter);
-    content: var(--h6-counter);
-}
+        content: counter(h2-counter) "." counter(h3-counter) "." counter(h4-counter) "." counter(h5-counter) "." counter(h6-counter);
+        content: var(--h6-counter);
+    }
 
 .outline h6 {
-    counter-increment: h6-counter;
-}
+        counter-increment: h6-counter;
+    }
 
 @media (min-width: 9999px) {
-    ol:not(.no-outdent ol):not(ol.no-outdent):not(ol ol):not(ul ol):not(table ol):not(pre ol), 
-    ul:not(.no-outdent ol):not(ol.no-outdent):not(ul ul):not(ol ul):not(table ul):not(pre ul) {
+
+    .outdent ol:not(ol.clear):not(ol.reset):not(.no-outdent ol):not(ol.no-outdent):not(ol.indent):not(ol ol):not(ul ol):not(table ol):not(pre ol),
+    .outdent ul:not(ul.clear):not(ul.reset):not(.no-outdent ul):not(ul.no-outdent):not(ul.indent):not(ul ul):not(ol ul):not(table ul):not(pre ul) {
+
         padding-left: 0;
-    }  
+    }
+
+        .outdent ol:not(ol.clear):not(ol.reset):not(.no-outdent ol):not(ol.no-outdent):not(ol.indent):not(ol ol):not(ul ol):not(table ol):not(pre ol)>li::before, .outdent ul:not(ul.clear):not(ul.reset):not(.no-outdent ul):not(ul.no-outdent):not(ul.indent):not(ul ul):not(ol ul):not(table ul):not(pre ul)>li::before {
+            justify-content: flex-end;
+            padding-right: var(--space);
+        }
 }
 
 @media (--outdent-breakpoint) {
-    ol:not(.no-outdent ol):not(ol.no-outdent):not(ol ol):not(ul ol):not(table ol):not(pre ol), 
-    ul:not(.no-outdent ol):not(ol.no-outdent):not(ul ul):not(ol ul):not(table ul):not(pre ul) {
+
+    .outdent ol:not(ol.clear):not(ol.reset):not(.no-outdent ol):not(ol.no-outdent):not(ol.indent):not(ol ol):not(ul ol):not(table ol):not(pre ol),
+    .outdent ul:not(ul.clear):not(ul.reset):not(.no-outdent ul):not(ul.no-outdent):not(ul.indent):not(ul ul):not(ol ul):not(table ul):not(pre ul) {
+
         padding-left: 0;
-    }  
+    }
+
+        .outdent ol:not(ol.clear):not(ol.reset):not(.no-outdent ol):not(ol.no-outdent):not(ol.indent):not(ol ol):not(ul ol):not(table ol):not(pre ol)>li::before, .outdent ul:not(ul.clear):not(ul.reset):not(.no-outdent ul):not(ul.no-outdent):not(ul.indent):not(ul ul):not(ol ul):not(table ul):not(pre ul)>li::before {
+            justify-content: flex-end;
+            padding-right: var(--space);
+        }
+}
+
+@media (min-width: 9999px) {
+
+        .outdent .outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h2::before,
+        .outdent .outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h3::before,
+        .outdent .outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h4::before,
+        .outdent .outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h5::before,
+        .outdent .outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h6::before,
+        .outdent.outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h2::before,
+        .outdent.outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h3::before,
+        .outdent.outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h4::before,
+        .outdent.outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h5::before,
+        .outdent.outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h6::before,
+        .outline .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h2::before,
+        .outline .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h3::before,
+        .outline .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h4::before,
+        .outline .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h5::before,
+        .outline .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h6::before {
+            margin-left: calc(-1 * var(--space-4));
+            margin-left: calc(-1 * var(--outdent-outline-width));
+            padding-right: var(--space);
+            white-space: nowrap;
+            min-width: var(--space-4);
+            min-width: var(--outdent-outline-width);
+            justify-content: flex-end;
+        }
+}
+
+@media (--outdent-outline-breakpoint) {
+
+        .outdent .outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h2::before,
+        .outdent .outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h3::before,
+        .outdent .outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h4::before,
+        .outdent .outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h5::before,
+        .outdent .outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h6::before,
+        .outdent.outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h2::before,
+        .outdent.outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h3::before,
+        .outdent.outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h4::before,
+        .outdent.outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h5::before,
+        .outdent.outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h6::before,
+        .outline .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h2::before,
+        .outline .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h3::before,
+        .outline .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h4::before,
+        .outline .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h5::before,
+        .outline .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h6::before {
+            margin-left: calc(-1 * var(--space-4));
+            margin-left: calc(-1 * var(--outdent-outline-width));
+            padding-right: var(--space);
+            white-space: nowrap;
+            min-width: var(--space-4);
+            min-width: var(--outdent-outline-width);
+            justify-content: flex-end;
+        }
 }
 
 ul.indent,
@@ -510,38 +608,46 @@ ol.indent li::before {
 }
 
 @media (max-width: 600px) {
+
     ul,
     ol {
         padding-left: 0;
     }
+
     li>ul,
     li>ol {
         padding-left: var(--horizontal-rhythm);
     }
+
     ul li::before,
     ol li::before,
     dl:not(dl.timeline) dd {
         margin-left: 0;
     }
+
     ol li::before {
         font-weight: bold;
     }
 }
 
 @media (--mx-sm-breakpoint) {
+
     ul,
     ol {
         padding-left: 0;
     }
+
     li>ul,
     li>ol {
         padding-left: var(--horizontal-rhythm);
     }
+
     ul li::before,
     ol li::before,
     dl:not(dl.timeline) dd {
         margin-left: 0;
     }
+
     ol li::before {
         font-weight: bold;
     }
