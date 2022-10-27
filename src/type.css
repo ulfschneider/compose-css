@@ -745,8 +745,6 @@ details>summary::before {
     justify-content: flex-start;
     align-items: center;
     color: var(--li-prefix-color);
-    font-weight: var(--font-weight-bold);
-    font-size: smaller;
     white-space: nowrap;
 }
 
