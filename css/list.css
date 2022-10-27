@@ -1,9 +1,9 @@
 :root {
     --mrt-list: var(--vertical-rhythm);
     --mrb-list: var(--vertical-rhythm);
-    --list-item-type: "●";
-    --ol-list-item-size: smaller;
-    --ul-list-item-size: smaller;
+    --list-item-type: "→";
+    --ol-list-item-size: inherit;
+    --ul-list-item-size: inherit;
     /*▁⁕●■▪→*—*/
     --ol-counter-delimiter: ".";
     --ol-counter-type: decimal;
@@ -416,14 +416,14 @@ ol>li::before {
     font-family: var(--meta-font-family);
     color: var(--ol-li-prefix-color);
     font-variant-numeric: lining-nums;
-    font-size: smaller;
+    font-size: inherit;
     font-size: var(--ol-list-item-size);
-    font-weight: var(--font-weight-bold);
+    font-variant-numeric: oldstyle-nums;
     white-space: nowrap;
 }
 
 ul>li::before {
-    content: "●";
+    content: "→";
     content: var(--list-item-type);
     margin-left: calc(var(--horizontal-rhythm) * -1);
     padding-right: var(--space-d1);
@@ -432,7 +432,7 @@ ul>li::before {
     justify-content: flex-start;
     align-items: center;
     color: var(--ul_li-prefix-color);
-    font-size: smaller;
+    font-size: inherit;
     font-size: var(--ul-list-item-size);
     white-space: nowrap;
 }
@@ -513,7 +513,7 @@ ul>li::before {
 
         .outdent ol:not(ol.clear):not(ol.reset):not(.no-outdent ol):not(ol.no-outdent):not(ol.indent):not(ol ol):not(ul ol):not(table ol):not(pre ol)>li::before, .outdent ul:not(ul.clear):not(ul.reset):not(.no-outdent ul):not(ul.no-outdent):not(ul.indent):not(ul ul):not(ol ul):not(table ul):not(pre ul)>li::before {
             justify-content: flex-end;
-            padding-right: var(--space);
+            padding-right: var(--space-d1);
         }
 }
 
@@ -527,7 +527,7 @@ ul>li::before {
 
         .outdent ol:not(ol.clear):not(ol.reset):not(.no-outdent ol):not(ol.no-outdent):not(ol.indent):not(ol ol):not(ul ol):not(table ol):not(pre ol)>li::before, .outdent ul:not(ul.clear):not(ul.reset):not(.no-outdent ul):not(ul.no-outdent):not(ul.indent):not(ul ul):not(ol ul):not(table ul):not(pre ul)>li::before {
             justify-content: flex-end;
-            padding-right: var(--space);
+            padding-right: var(--space-d1);
         }
 }
 
@@ -550,7 +550,7 @@ ul>li::before {
         .outline .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h6::before {
             margin-left: calc(-1 * var(--space-4));
             margin-left: calc(-1 * var(--outdent-outline-width));
-            padding-right: var(--space);
+            padding-right: var(--space-d1);
             white-space: nowrap;
             min-width: var(--space-4);
             min-width: var(--outdent-outline-width);
@@ -577,7 +577,7 @@ ul>li::before {
         .outline .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h6::before {
             margin-left: calc(-1 * var(--space-4));
             margin-left: calc(-1 * var(--outdent-outline-width));
-            padding-right: var(--space);
+            padding-right: var(--space-d1);
             white-space: nowrap;
             min-width: var(--space-4);
             min-width: var(--outdent-outline-width);

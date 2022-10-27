@@ -31929,9 +31929,9 @@ Naming conventions
 :root {
     --mrt-list: var(--vertical-rhythm);
     --mrb-list: var(--vertical-rhythm);
-    --list-item-type: "●";
-    --ol-list-item-size: smaller;
-    --ul-list-item-size: smaller;
+    --list-item-type: "→";
+    --ol-list-item-size: inherit;
+    --ul-list-item-size: inherit;
     /*▁⁕●■▪→*—*/
     --ol-counter-delimiter: ".";
     --ol-counter-type: decimal;
@@ -32360,15 +32360,14 @@ ol>li::before {
     color: currentColor;
     color: var(--ol-li-prefix-color);
     font-variant-numeric: lining-nums;
-    font-size: smaller;
+    font-size: inherit;
     font-size: var(--ol-list-item-size);
-    font-weight: 700;
-    font-weight: var(--font-weight-bold);
+    font-variant-numeric: oldstyle-nums;
     white-space: nowrap;
 }
 
 ul>li::before {
-    content: "●";
+    content: "→";
     content: var(--list-item-type);
     margin-left: calc(calc(2 * 1rem) * -1);
     margin-left: calc(var(--horizontal-rhythm) * -1);
@@ -32380,7 +32379,7 @@ ul>li::before {
     justify-content: flex-start;
     align-items: center;
     color: var(--ul_li-prefix-color);
-    font-size: smaller;
+    font-size: inherit;
     font-size: var(--ul-list-item-size);
     white-space: nowrap;
 }
@@ -32463,8 +32462,8 @@ ul>li::before {
 
         .outdent ol:not(ol.clear):not(ol.reset):not(.no-outdent ol):not(ol.no-outdent):not(ol.indent):not(ol ol):not(ul ol):not(table ol):not(pre ol)>li::before, .outdent ul:not(ul.clear):not(ul.reset):not(.no-outdent ul):not(ul.no-outdent):not(ul.indent):not(ul ul):not(ol ul):not(table ul):not(pre ul)>li::before {
             justify-content: flex-end;
-            padding-right: 1rem;
-            padding-right: var(--space);
+            padding-right: calc(1rem / 1.66);
+            padding-right: var(--space-d1);
         }
 }
 
@@ -32478,8 +32477,8 @@ ul>li::before {
 
         .outdent ol:not(ol.clear):not(ol.reset):not(.no-outdent ol):not(ol.no-outdent):not(ol.indent):not(ol ol):not(ul ol):not(table ol):not(pre ol)>li::before, .outdent ul:not(ul.clear):not(ul.reset):not(.no-outdent ul):not(ul.no-outdent):not(ul.indent):not(ul ul):not(ol ul):not(table ul):not(pre ul)>li::before {
             justify-content: flex-end;
-            padding-right: 1rem;
-            padding-right: var(--space);
+            padding-right: calc(1rem / 1.66);
+            padding-right: var(--space-d1);
         }
 }
 
@@ -32502,8 +32501,8 @@ ul>li::before {
         .outline .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h6::before {
             margin-left: calc(-1 * calc(calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66) * 1.66));
             margin-left: calc(-1 * var(--outdent-outline-width));
-            padding-right: 1rem;
-            padding-right: var(--space);
+            padding-right: calc(1rem / 1.66);
+            padding-right: var(--space-d1);
             white-space: nowrap;
             min-width: calc(calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66) * 1.66);
             min-width: var(--outdent-outline-width);
@@ -32530,8 +32529,8 @@ ul>li::before {
         .outline .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h6::before {
             margin-left: calc(-1 * calc(calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66) * 1.66));
             margin-left: calc(-1 * var(--outdent-outline-width));
-            padding-right: 1rem;
-            padding-right: var(--space);
+            padding-right: calc(1rem / 1.66);
+            padding-right: var(--space-d1);
             white-space: nowrap;
             min-width: calc(calc(calc(calc(1.66 * 1rem) * 1.66) * 1.66) * 1.66);
             min-width: var(--outdent-outline-width);
@@ -33226,6 +33225,10 @@ th.sotable-column .indicator {
     --z-2: 2000;
     --z-3: 3000;
     --z-4: 4000;
+    --zn-1: -1000;
+    --zn-2: -2000;
+    --zn-3: -3000;
+    --zn-4: -4000;
     --bleed-width: var(--lg-breakpoint);
     --bleed-padding: var(--space);
     --justify-split-items: inherit;
@@ -33578,6 +33581,26 @@ th.sotable-column .indicator {
 .z-4 {
     z-index: 4000;
     z-index: var(--z-4)
+}
+
+.zn-1 {
+    z-index: -1000;
+    z-index: var(--zn-1)
+}
+
+.zn-2 {
+    z-index: -2000;
+    z-index: var(--zn-2)
+}
+
+.zn-3 {
+    z-index: -3000;
+    z-index: var(--zn-3)
+}
+
+.zn-4 {
+    z-index: -4000;
+    z-index: var(--zn-4)
 }
 
 .box-break-clone {
