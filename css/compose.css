@@ -3047,8 +3047,8 @@ details[open]>summary::before {
         margin-left: calc(-1 * calc(2 * 1rem));
         margin-left: calc(-1 * var(--horizontal-rhythm));
         justify-content: flex-end;
-        padding-right: 1rem;
-        padding-right: var(--space);
+        padding-right: calc(1rem / 1.66);
+        padding-right: var(--space-d1);
     }
 }
 
@@ -3057,8 +3057,8 @@ details[open]>summary::before {
         margin-left: calc(-1 * calc(2 * 1rem));
         margin-left: calc(-1 * var(--horizontal-rhythm));
         justify-content: flex-end;
-        padding-right: 1rem;
-        padding-right: var(--space);
+        padding-right: calc(1rem / 1.66);
+        padding-right: var(--space-d1);
     }
 }
 

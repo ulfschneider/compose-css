@@ -962,7 +962,7 @@ details[open]>summary::before {
         margin-left: calc(-1 * calc(2 * var(--space)));
         margin-left: calc(-1 * var(--horizontal-rhythm));
         justify-content: flex-end;
-        padding-right: var(--space);
+        padding-right: var(--space-d1);
     }
 }
 
@@ -972,6 +972,6 @@ details[open]>summary::before {
         margin-left: calc(-1 * calc(2 * var(--space)));
         margin-left: calc(-1 * var(--horizontal-rhythm));
         justify-content: flex-end;
-        padding-right: var(--space);
+        padding-right: var(--space-d1);
     }
 }
