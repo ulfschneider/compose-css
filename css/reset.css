@@ -26,6 +26,7 @@ html {
 
 body {
     min-height: 100%;
+    text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
 
