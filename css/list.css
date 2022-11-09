@@ -1,102 +1,248 @@
 :root {
-    --mrt-list: var(--vertical-rhythm);
-    --mrb-list: var(--vertical-rhythm);
-    --list-item-type: "→";
-    --ol-list-item-size: inherit;
-    --ul-list-item-size: inherit;
-    /*▁⁕●■▪→*—*/
-    --ol-counter-delimiter: ".";
-    --ol-counter-type: decimal;
-    --h-counter-type: decimal;
-    --h-counter-delimiter: ".";
-    --ol-counter: counters(ol-counter, var(--ol-counter-delimiter), var(--ol-counter-type));
-    --h-counter: counters(ol-counter, var(--h-counter-delimiter), var(--h-counter-type));
-    --h2-counter: counter(h2-counter);
-    --h3-counter: counter(h2-counter) var(--h-counter-delimiter) counter(h3-counter);
-    --h4-counter: counter(h2-counter) var(--h-counter-delimiter) counter(h3-counter) var(--h-counter-delimiter) counter(h4-counter);
-    --h5-counter: counter(h2-counter) var(--h-counter-delimiter) counter(h3-counter) var(--h-counter-delimiter) counter(h4-counter) var(--h-counter-delimiter) counter(h5-counter);
-    --h6-counter: counter(h2-counter) var(--h-counter-delimiter) counter(h3-counter) var(--h-counter-delimiter) counter(h4-counter) var(--h-counter-delimiter) counter(h5-counter) var(--h-counter-delimiter) counter(h6-counter);
+  --mrt-list: var(--vertical-rhythm);
+  --mrb-list: var(--vertical-rhythm);
+  --list-item-type: "→";
+  --ol-list-item-size: inherit;
+  --ul-list-item-size: inherit;
+  /*▁⁕●■▪→*—*/
+  --ol-counter-delimiter: ".";
+  --ol-counter-type: decimal;
+  --h-counter-type: decimal;
+  --h-counter-delimiter: ".";
+  --ol-counter: counters(
+    ol-counter,
+    var(--ol-counter-delimiter),
+    var(--ol-counter-type)
+  );
+  --h-counter: counters(
+    ol-counter,
+    var(--h-counter-delimiter),
+    var(--h-counter-type)
+  );
+  --h2-counter: counter(h2-counter);
+  --h3-counter: counter(h2-counter) var(--h-counter-delimiter)
+    counter(h3-counter);
+  --h4-counter: counter(h2-counter) var(--h-counter-delimiter)
+    counter(h3-counter) var(--h-counter-delimiter) counter(h4-counter);
+  --h5-counter: counter(h2-counter) var(--h-counter-delimiter)
+    counter(h3-counter) var(--h-counter-delimiter) counter(h4-counter)
+    var(--h-counter-delimiter) counter(h5-counter);
+  --h6-counter: counter(h2-counter) var(--h-counter-delimiter)
+    counter(h3-counter) var(--h-counter-delimiter) counter(h4-counter)
+    var(--h-counter-delimiter) counter(h5-counter) var(--h-counter-delimiter)
+    counter(h6-counter);
 
-    /* timeline */
-    --timeline-blub-size: var(--fs-d1);
-    --timeline-width: 1px;
-    --timeline-blub-border-width: 1px;
-    /* column timeline */
-    --timeline-right-gap: calc(var(--space) + var(--timeline-blub-size) / 2);
-    --timeline-left-gap: calc(var(--horizontal-rhythm) - var(--timeline-right-gap) - var(--timeline-width));
-    --timeline-left-blub-pos: calc(-1 * (var(--timeline-right-gap) + var(--timeline-blub-size) / 2 + var(--timeline-width) / 2));
-    --timeline-top-blub-pos: calc(1em * var(--lh-default) / 2 - var(--timeline-blub-size) / 2);
-    --timeline-framed-indent: var(--horizontal-rhythm);
-    --timeline-framed-padding: var(--space);
-    --timeline-framed-right-gap: calc(var(--timeline-framed-indent) + var(--horizontal-rhythm) - var(--timeline-left-gap) - var(--timeline-width));
-    --timeline-framed-left-blub-pos: calc(-1 * (var(--timeline-framed-indent) + var(--timeline-right-gap) + var(--timeline-blub-size) / 2 + var(--timeline-width) / 2));
-    /* row timeline */
-    --timeline-row-y-gap: var(--vertical-rhythm);
-    --timeline-row-x-gap: calc(var(--horizontal-rhythm) / 2);
-    --timeline-row-framed-padding: calc(var(--timeline-framed-padding) / 2);
-    --timeline-row-framed-indent: var(--timeline-row-y-gap);
-    --timeline-row-item-width: var(--space-5);
+  /* timeline */
+  --timeline-blub-size: var(--fs-d1);
+  --timeline-width: 1px;
+  --timeline-blub-border-width: 1px;
+  /* column timeline */
+  --timeline-right-gap: calc(var(--space) + var(--timeline-blub-size) / 2);
+  --timeline-left-gap: calc(
+    var(--horizontal-rhythm) - var(--timeline-right-gap) - var(--timeline-width)
+  );
+  --timeline-left-blub-pos: calc(
+    -1 * (var(--timeline-right-gap) + var(--timeline-blub-size) / 2 +
+          var(--timeline-width) / 2)
+  );
+  --timeline-top-blub-pos: calc(
+    1em * var(--lh-default) / 2 - var(--timeline-blub-size) / 2
+  );
+  --timeline-framed-indent: var(--horizontal-rhythm);
+  --timeline-framed-padding: var(--space);
+  --timeline-framed-right-gap: calc(
+    var(--timeline-framed-indent) + var(--horizontal-rhythm) -
+      var(--timeline-left-gap) - var(--timeline-width)
+  );
+  --timeline-framed-left-blub-pos: calc(
+    -1 * (var(--timeline-framed-indent) + var(--timeline-right-gap) +
+          var(--timeline-blub-size) / 2 + var(--timeline-width) / 2)
+  );
+  /* row timeline */
+  --timeline-row-y-gap: var(--vertical-rhythm);
+  --timeline-row-x-gap: calc(var(--horizontal-rhythm) / 2);
+  --timeline-row-framed-padding: calc(var(--timeline-framed-padding) / 2);
+  --timeline-row-framed-indent: var(--timeline-row-y-gap);
+  --timeline-row-item-width: var(--space-5);
 
-    --outdent-outline-width: var(--space-4);
+  --outdent-outline-width: var(--space-4);
 }
 
 dl {
-    margin-top: var(--vertical-rhythm);
-    margin-top: var(--mrt-list);
-    margin-bottom: var(--vertical-rhythm);
-    margin-bottom: var(--mrb-list);
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0;
+  margin-top: var(--vertical-rhythm);
+  margin-top: var(--mrt-list);
+  margin-bottom: var(--vertical-rhythm);
+  margin-bottom: var(--mrb-list);
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
 }
 
 dd {
-    margin-left: var(--horizontal-rhythm);
+  margin-left: var(--horizontal-rhythm);
 }
 
 table dd {
-    margin-left: 0;
+  margin-left: 0;
 }
 
-dd+dt,
-dt+dt {
-    margin-top: var(--vertical-rhythm);
-    margin-top: var(--mrt-list);
+dd + dt,
+dt + dt {
+  margin-top: var(--vertical-rhythm);
+  margin-top: var(--mrt-list);
 }
 
-dl.timeline.framed dd+dt {
-    margin-top: var(--mrt-figure);
-}
-
-dl.timeline {
-    border-left: 1px solid var(--timeline-color);
-    border-left: var(--timeline-width) solid var(--timeline-color);
-    margin-left: calc(var(--horizontal-rhythm) - calc(var(--space) + var(--fs-d1) / 2) - 1px);
-    margin-left: var(--timeline-left-gap);
-}
-
-dl.timeline>dt,
-dl.timeline>dd {
-    margin-left: 0;
-    padding-left: calc(var(--space) + var(--fs-d1) / 2);
-    padding-left: var(--timeline-right-gap);
+dl.timeline.framed dd + dt {
+  margin-top: var(--mrt-figure);
 }
 
 dl.timeline {
-    counter-reset: ol-counter;
+  border-left: 1px solid var(--timeline-color);
+  border-left: var(--timeline-width) solid var(--timeline-color);
+  margin-left: calc(
+    var(--horizontal-rhythm) - calc(var(--space) + var(--fs-d1) / 2) - 1px);
+  margin-left: var(--timeline-left-gap);
 }
 
-dl.timeline>dt {
-    counter-increment: ol-counter;
+dl.timeline > dt,
+dl.timeline > dd {
+  margin-left: 0;
+  padding-left: calc(var(--space) + var(--fs-d1) / 2);
+  padding-left: var(--timeline-right-gap);
 }
 
-dl.timeline.framed>dt,
-dl.timeline.framed>dd {
-    padding-left: calc(var(--horizontal-rhythm) + var(--horizontal-rhythm) - calc(var(--horizontal-rhythm) - calc(var(--space) + var(--fs-d1) / 2) - 1px) - 1px);
-    padding-left: var(--timeline-framed-right-gap);
+dl.timeline {
+  counter-reset: ol-counter;
 }
 
-dl.timeline>dt::before {
+dl.timeline > dt {
+  counter-increment: ol-counter;
+}
+
+dl.timeline.framed > dt,
+dl.timeline.framed > dd {
+  padding-left: calc(
+    var(--horizontal-rhythm) + var(--horizontal-rhythm) -
+      calc(
+    var(--horizontal-rhythm) - calc(var(--space) + var(--fs-d1) / 2) - 1px) - 1px);
+  padding-left: var(--timeline-framed-right-gap);
+}
+
+dl.timeline > dt::before {
+  border-radius: 50%;
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--fs-d1);
+  width: var(--timeline-blub-size);
+  height: var(--fs-d1);
+  height: var(--timeline-blub-size);
+  position: absolute;
+  margin-left: calc(
+    -1 * (calc(var(--space) + var(--fs-d1) / 2) + var(--fs-d1) / 2 +
+          1px / 2)
+  );
+  margin-left: var(--timeline-left-blub-pos);
+  margin-top: calc(
+    1em * var(--lh-default) / 2 - var(--fs-d1) / 2
+  );
+  margin-top: var(--timeline-top-blub-pos);
+  background-color: var(--timeline-blub-background);
+  border: 1px solid var(--timeline-blub-color);
+  border: var(--timeline-blub-border-width) solid var(--timeline-blub-color);
+  z-index: 1000;
+}
+
+dl.timeline.framed > dt::before {
+  margin-left: calc(
+    -1 * (var(--horizontal-rhythm) + calc(var(--space) + var(--fs-d1) / 2) +
+          var(--fs-d1) / 2 + 1px / 2)
+  );
+  margin-left: var(--timeline-framed-left-blub-pos);
+}
+
+dl.timeline > dt > .framed,
+dl.timeline > dd > .framed {
+  border: 1px solid var(--timeline-color);
+  border: var(--timeline-width) solid var(--timeline-color);
+  padding: var(--space);
+  padding: var(--timeline-framed-padding);
+}
+
+dl.timeline:not(dl.timeline.framed) > dt > .framed,
+dl.timeline:not(dl.timeline.framed) > dd > .framed {
+  margin-left: var(--horizontal-rhythm);
+  margin-left: var(--timeline-framed-indent);
+}
+
+dl.timeline > dt > *.framed::before,
+dl.timeline > dd > *.framed::before {
+  content: "";
+  width: calc(
+    var(--horizontal-rhythm) + calc(var(--space) + var(--fs-d1) / 2) +
+      1px);
+  width: calc(
+    var(--timeline-framed-indent) + var(--timeline-right-gap) +
+      var(--timeline-width)
+  );
+  border-top: 1px solid var(--timeline-color);
+  border-top: var(--timeline-width) solid var(--timeline-color);
+  position: absolute;
+  margin-top: calc(
+    calc(
+    1em * var(--lh-default) / 2 - var(--fs-d1) / 2
+  ) + var(--fs-d1) / 2 -
+      var(--space) - 1px);
+  margin-top: calc(
+    var(--timeline-top-blub-pos) + var(--timeline-blub-size) / 2 -
+      var(--timeline-framed-padding) - var(--timeline-width)
+  );
+  margin-left: calc(
+    -1 * (calc(var(--space) + var(--fs-d1) / 2) + var(--horizontal-rhythm) +
+          1px * 2 + var(--space))
+  );
+  margin-left: calc(
+    -1 * (var(--timeline-right-gap) + var(--timeline-framed-indent) +
+          var(--timeline-width) * 2 + var(--timeline-framed-padding))
+  );
+}
+
+@media (min-width: 601px) {
+  dl.timeline.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 0;
+    border: 0;
+    align-items: flex-end;
+    max-width: unset;
+    font-size: smaller;
+    max-width: unset;
+  }
+
+  dl.timeline.row > dt,
+  dl.timeline.row > dd {
+    flex-shrink: 1;
+    max-width: var(--space-5);
+    max-width: var(--timeline-row-item-width);
+    border-bottom: 1px solid var(--timeline-color);
+    border-bottom: var(--timeline-width) solid var(--timeline-color);
+    padding: calc(3 * var(--vertical-rhythm)) calc(var(--horizontal-rhythm) / 2)
+      var(--vertical-rhythm) calc(var(--horizontal-rhythm) / 2);
+    padding: calc(3 * var(--timeline-row-y-gap)) var(--timeline-row-x-gap)
+      var(--timeline-row-y-gap) var(--timeline-row-x-gap);
+  }
+
+  dl.timeline.row > :first-child {
+    padding-left: 0;
+  }
+
+  dl.timeline.row > dt::before {
+    display: none;
+  }
+
+  dl.timeline.row > dt::after {
     border-radius: 50%;
     content: "";
     display: flex;
@@ -107,569 +253,547 @@ dl.timeline>dt::before {
     height: var(--fs-d1);
     height: var(--timeline-blub-size);
     position: absolute;
-    margin-left: calc(-1 * (calc(var(--space) + var(--fs-d1) / 2) + var(--fs-d1) / 2 + 1px / 2));
-    margin-left: var(--timeline-left-blub-pos);
-    margin-top: calc(1em * var(--lh-default) / 2 - var(--fs-d1) / 2);
-    margin-top: var(--timeline-top-blub-pos);
+    margin-top: calc(var(--vertical-rhythm) - var(--fs-d1) / 2);
+    margin-top: calc(var(--timeline-row-y-gap) - var(--timeline-blub-size) / 2);
     background-color: var(--timeline-blub-background);
     border: 1px solid var(--timeline-blub-color);
     border: var(--timeline-blub-border-width) solid var(--timeline-blub-color);
     z-index: 1000;
-}
+  }
 
-dl.timeline.framed>dt::before {
-    margin-left: calc(-1 * (var(--horizontal-rhythm) + calc(var(--space) + var(--fs-d1) / 2) + var(--fs-d1) / 2 + 1px / 2));
-    margin-left: var(--timeline-framed-left-blub-pos);
-}
+  dl.timeline.row > dt > *,
+  dl.timeline.row > dd > * {
+    margin: 0;
+    padding: 0;
+    background: var(--base-background);
+  }
 
-dl.timeline>dt>.framed,
-dl.timeline>dd>.framed {
-    border: 1px solid var(--timeline-color);
-    border: var(--timeline-width) solid var(--timeline-color);
-    padding: var(--space);
-    padding: var(--timeline-framed-padding);
-}
+  dl.timeline.row > dt > * + *,
+  dl.timeline.row > dd > * + * {
+    margin-top: 1em;
+    text-indent: 0;
+  }
 
-dl.timeline:not(dl.timeline.framed)>dt>.framed,
-dl.timeline:not(dl.timeline.framed)>dd>.framed {
-    margin-left: var(--horizontal-rhythm);
-    margin-left: var(--timeline-framed-indent);
-}
+  dl.timeline.row > dt > .framed,
+  dl.timeline.row > dd > .framed {
+    margin: 0;
+    margin-bottom: var(--vertical-rhythm);
+    margin-bottom: var(--timeline-row-framed-indent);
+    background: var(--base-background);
+    padding: calc(calc(var(--space) / 2));
+    padding: calc(var(--timeline-row-framed-padding));
+  }
 
-dl.timeline>dt>*.framed::before,
-dl.timeline>dd>*.framed::before {
+  dl.timeline.row > dt > .framed + *,
+  dl.timeline.row > dd > .framed + * {
+    margin-top: calc(2 * var(--vertical-rhythm));
+    margin-top: calc(2 * var(--timeline-row-framed-indent));
+  }
+
+  dl.timeline.row > dt > .framed::before,
+  dl.timeline.row > dd > .framed::before {
+    display: none;
+  }
+
+  dl.timeline.row > dt > .framed::after,
+  dl.timeline.row > dd > .framed::after {
     content: "";
-    width: calc(var(--horizontal-rhythm) + calc(var(--space) + var(--fs-d1) / 2) + 1px);
-    width: calc(var(--timeline-framed-indent) + var(--timeline-right-gap) + var(--timeline-width));
-    border-top: 1px solid var(--timeline-color);
-    border-top: var(--timeline-width) solid var(--timeline-color);
+    border-left: 1px solid var(--timeline-color);
+    border-left: var(--timeline-width) solid var(--timeline-color);
+    height: calc(var(--vertical-rhythm) + var(--vertical-rhythm));
+    height: calc(var(--timeline-row-y-gap) + var(--timeline-row-framed-indent));
     position: absolute;
-    margin-top: calc(calc(1em * var(--lh-default) / 2 - var(--fs-d1) / 2) + var(--fs-d1) / 2 - var(--space) - 1px);
-    margin-top: calc(var(--timeline-top-blub-pos) + var(--timeline-blub-size) / 2 - var(--timeline-framed-padding) - var(--timeline-width));
-    margin-left: calc(-1 * (calc(var(--space) + var(--fs-d1) / 2) + var(--horizontal-rhythm) + 1px * 2 + var(--space)));
-    margin-left: calc(-1 * (var(--timeline-right-gap) + var(--timeline-framed-indent) + var(--timeline-width) * 2 + var(--timeline-framed-padding)));
-}
-
-@media (min-width: 601px) {
-    dl.timeline.row {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-left: 0;
-        border: 0;
-        align-items: flex-end;
-        max-width: unset;
-        font-size: smaller;
-        max-width: unset;
-    }
-
-    dl.timeline.row>dt,
-    dl.timeline.row>dd {
-        flex-shrink: 1;
-        max-width: var(--space-5);
-        max-width: var(--timeline-row-item-width);
-        border-bottom: 1px solid var(--timeline-color);
-        border-bottom: var(--timeline-width) solid var(--timeline-color);
-        padding: calc(3 * var(--vertical-rhythm)) calc(var(--horizontal-rhythm) / 2) var(--vertical-rhythm) calc(var(--horizontal-rhythm) / 2);
-        padding: calc(3 * var(--timeline-row-y-gap)) var(--timeline-row-x-gap) var(--timeline-row-y-gap) var(--timeline-row-x-gap);
-    }
-
-    dl.timeline.row>:first-child {
-        padding-left: 0;
-    }
-
-    dl.timeline.row>dt::before {
-        display: none;
-    }
-
-    dl.timeline.row>dt::after {
-        border-radius: 50%;
-        content: "";
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: var(--fs-d1);
-        width: var(--timeline-blub-size);
-        height: var(--fs-d1);
-        height: var(--timeline-blub-size);
-        position: absolute;
-        margin-top: calc(var(--vertical-rhythm) - var(--fs-d1) / 2);
-        margin-top: calc(var(--timeline-row-y-gap) - var(--timeline-blub-size) / 2);
-        background-color: var(--timeline-blub-background);
-        border: 1px solid var(--timeline-blub-color);
-        border: var(--timeline-blub-border-width) solid var(--timeline-blub-color);
-        z-index: 1000;
-    }
-
-    dl.timeline.row>dt>*,
-    dl.timeline.row>dd>* {
-        margin: 0;
-        padding: 0;
-        background: var(--base-background);
-    }
-
-    dl.timeline.row>dt>*+*,
-    dl.timeline.row>dd>*+* {
-        margin-top: 1em;
-        text-indent: 0;
-    }
-
-    dl.timeline.row>dt>.framed,
-    dl.timeline.row>dd>.framed {
-        margin: 0;
-        margin-bottom: var(--vertical-rhythm);
-        margin-bottom: var(--timeline-row-framed-indent);
-        background: var(--base-background);
-        padding: calc(calc(var(--space) / 2));
-        padding: calc(var(--timeline-row-framed-padding));
-    }
-
-    dl.timeline.row>dt>.framed+*,
-    dl.timeline.row>dd>.framed+* {
-        margin-top: calc(2 * var(--vertical-rhythm));
-        margin-top: calc(2 * var(--timeline-row-framed-indent));
-    }
-
-    dl.timeline.row>dt>.framed::before,
-    dl.timeline.row>dd>.framed::before {
-        display: none;
-    }
-
-    dl.timeline.row>dt>.framed::after,
-    dl.timeline.row>dd>.framed::after {
-        content: "";
-        border-left: 1px solid var(--timeline-color);
-        border-left: var(--timeline-width) solid var(--timeline-color);
-        height: calc(var(--vertical-rhythm) + var(--vertical-rhythm));
-        height: calc(var(--timeline-row-y-gap) + var(--timeline-row-framed-indent));
-        position: absolute;
-        display: block;
-        margin-top: calc(calc(var(--space) / 2) + 1px);
-        margin-top: calc(var(--timeline-row-framed-padding) + var(--timeline-width));
-        margin-left: calc(-1 * calc(var(--space) / 2) + var(--fs-d1) / 2 - 1px);
-        margin-left: calc(-1 * var(--timeline-row-framed-padding) + var(--timeline-blub-size) / 2 - var(--timeline-width));
-    }
+    display: block;
+    margin-top: calc(
+      calc(var(--space) / 2) + 1px);
+    margin-top: calc(
+      var(--timeline-row-framed-padding) + var(--timeline-width)
+    );
+    margin-left: calc(
+      -1 * calc(var(--space) / 2) + var(--fs-d1) / 2 - 1px);
+    margin-left: calc(
+      -1 * var(--timeline-row-framed-padding) + var(--timeline-blub-size) / 2 - var(--timeline-width)
+    );
+  }
 }
 
 @media (--mi-sm-breakpoint) {
-    dl.timeline.row {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-left: 0;
-        border: 0;
-        align-items: flex-end;
-        max-width: unset;
-        font-size: smaller;
-        max-width: unset;
-    }
+  dl.timeline.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 0;
+    border: 0;
+    align-items: flex-end;
+    max-width: unset;
+    font-size: smaller;
+    max-width: unset;
+  }
 
-    dl.timeline.row>dt,
-    dl.timeline.row>dd {
-        flex-shrink: 1;
-        max-width: var(--space-5);
-        max-width: var(--timeline-row-item-width);
-        border-bottom: 1px solid var(--timeline-color);
-        border-bottom: var(--timeline-width) solid var(--timeline-color);
-        padding: calc(3 * var(--vertical-rhythm)) calc(var(--horizontal-rhythm) / 2) var(--vertical-rhythm) calc(var(--horizontal-rhythm) / 2);
-        padding: calc(3 * var(--timeline-row-y-gap)) var(--timeline-row-x-gap) var(--timeline-row-y-gap) var(--timeline-row-x-gap);
-    }
+  dl.timeline.row > dt,
+  dl.timeline.row > dd {
+    flex-shrink: 1;
+    max-width: var(--space-5);
+    max-width: var(--timeline-row-item-width);
+    border-bottom: 1px solid var(--timeline-color);
+    border-bottom: var(--timeline-width) solid var(--timeline-color);
+    padding: calc(3 * var(--vertical-rhythm)) calc(var(--horizontal-rhythm) / 2)
+      var(--vertical-rhythm) calc(var(--horizontal-rhythm) / 2);
+    padding: calc(3 * var(--timeline-row-y-gap)) var(--timeline-row-x-gap)
+      var(--timeline-row-y-gap) var(--timeline-row-x-gap);
+  }
 
-    dl.timeline.row>:first-child {
-        padding-left: 0;
-    }
+  dl.timeline.row > :first-child {
+    padding-left: 0;
+  }
 
-    dl.timeline.row>dt::before {
-        display: none;
-    }
+  dl.timeline.row > dt::before {
+    display: none;
+  }
 
-    dl.timeline.row>dt::after {
-        border-radius: 50%;
-        content: "";
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: var(--fs-d1);
-        width: var(--timeline-blub-size);
-        height: var(--fs-d1);
-        height: var(--timeline-blub-size);
-        position: absolute;
-        margin-top: calc(var(--vertical-rhythm) - var(--fs-d1) / 2);
-        margin-top: calc(var(--timeline-row-y-gap) - var(--timeline-blub-size) / 2);
-        background-color: var(--timeline-blub-background);
-        border: 1px solid var(--timeline-blub-color);
-        border: var(--timeline-blub-border-width) solid var(--timeline-blub-color);
-        z-index: 1000;
-    }
+  dl.timeline.row > dt::after {
+    border-radius: 50%;
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--fs-d1);
+    width: var(--timeline-blub-size);
+    height: var(--fs-d1);
+    height: var(--timeline-blub-size);
+    position: absolute;
+    margin-top: calc(var(--vertical-rhythm) - var(--fs-d1) / 2);
+    margin-top: calc(var(--timeline-row-y-gap) - var(--timeline-blub-size) / 2);
+    background-color: var(--timeline-blub-background);
+    border: 1px solid var(--timeline-blub-color);
+    border: var(--timeline-blub-border-width) solid var(--timeline-blub-color);
+    z-index: 1000;
+  }
 
-    dl.timeline.row>dt>*,
-    dl.timeline.row>dd>* {
-        margin: 0;
-        padding: 0;
-        background: var(--base-background);
-    }
+  dl.timeline.row > dt > *,
+  dl.timeline.row > dd > * {
+    margin: 0;
+    padding: 0;
+    background: var(--base-background);
+  }
 
-    dl.timeline.row>dt>*+*,
-    dl.timeline.row>dd>*+* {
-        margin-top: 1em;
-        text-indent: 0;
-    }
+  dl.timeline.row > dt > * + *,
+  dl.timeline.row > dd > * + * {
+    margin-top: 1em;
+    text-indent: 0;
+  }
 
-    dl.timeline.row>dt>.framed,
-    dl.timeline.row>dd>.framed {
-        margin: 0;
-        margin-bottom: var(--vertical-rhythm);
-        margin-bottom: var(--timeline-row-framed-indent);
-        background: var(--base-background);
-        padding: calc(calc(var(--space) / 2));
-        padding: calc(var(--timeline-row-framed-padding));
-    }
+  dl.timeline.row > dt > .framed,
+  dl.timeline.row > dd > .framed {
+    margin: 0;
+    margin-bottom: var(--vertical-rhythm);
+    margin-bottom: var(--timeline-row-framed-indent);
+    background: var(--base-background);
+    padding: calc(calc(var(--space) / 2));
+    padding: calc(var(--timeline-row-framed-padding));
+  }
 
-    dl.timeline.row>dt>.framed+*,
-    dl.timeline.row>dd>.framed+* {
-        margin-top: calc(2 * var(--vertical-rhythm));
-        margin-top: calc(2 * var(--timeline-row-framed-indent));
-    }
+  dl.timeline.row > dt > .framed + *,
+  dl.timeline.row > dd > .framed + * {
+    margin-top: calc(2 * var(--vertical-rhythm));
+    margin-top: calc(2 * var(--timeline-row-framed-indent));
+  }
 
-    dl.timeline.row>dt>.framed::before,
-    dl.timeline.row>dd>.framed::before {
-        display: none;
-    }
+  dl.timeline.row > dt > .framed::before,
+  dl.timeline.row > dd > .framed::before {
+    display: none;
+  }
 
-    dl.timeline.row>dt>.framed::after,
-    dl.timeline.row>dd>.framed::after {
-        content: "";
-        border-left: 1px solid var(--timeline-color);
-        border-left: var(--timeline-width) solid var(--timeline-color);
-        height: calc(var(--vertical-rhythm) + var(--vertical-rhythm));
-        height: calc(var(--timeline-row-y-gap) + var(--timeline-row-framed-indent));
-        position: absolute;
-        display: block;
-        margin-top: calc(calc(var(--space) / 2) + 1px);
-        margin-top: calc(var(--timeline-row-framed-padding) + var(--timeline-width));
-        margin-left: calc(-1 * calc(var(--space) / 2) + var(--fs-d1) / 2 - 1px);
-        margin-left: calc(-1 * var(--timeline-row-framed-padding) + var(--timeline-blub-size) / 2 - var(--timeline-width));
-    }
+  dl.timeline.row > dt > .framed::after,
+  dl.timeline.row > dd > .framed::after {
+    content: "";
+    border-left: 1px solid var(--timeline-color);
+    border-left: var(--timeline-width) solid var(--timeline-color);
+    height: calc(var(--vertical-rhythm) + var(--vertical-rhythm));
+    height: calc(var(--timeline-row-y-gap) + var(--timeline-row-framed-indent));
+    position: absolute;
+    display: block;
+    margin-top: calc(
+      calc(var(--space) / 2) + 1px);
+    margin-top: calc(
+      var(--timeline-row-framed-padding) + var(--timeline-width)
+    );
+    margin-left: calc(
+      -1 * calc(var(--space) / 2) + var(--fs-d1) / 2 - 1px);
+    margin-left: calc(
+      -1 * var(--timeline-row-framed-padding) + var(--timeline-blub-size) / 2 - var(--timeline-width)
+    );
+  }
 }
 
 @media (min-width: 9999px) {
-    .outdent dl.timeline:not(dl.timeline.no-outdent):not(.no-outdent dl.timeline):not(dl.timeline.row):not(table dl.timeline):not(pre dl.timeline) {
-        margin-left: calc(-1 * (calc(var(--space) + var(--fs-d1) / 2) - 1px));
-        margin-left: calc(-1 * (var(--timeline-right-gap) - var(--timeline-width)));
-    }
+  .outdent
+    dl.timeline:not(dl.timeline.no-outdent):not(.no-outdent
+      dl.timeline):not(dl.timeline.row):not(table dl.timeline):not(pre
+      dl.timeline) {
+    margin-left: calc(-1 * (calc(var(--space) + var(--fs-d1) / 2) - 1px));
+    margin-left: calc(-1 * (var(--timeline-right-gap) - var(--timeline-width)));
+  }
 }
 
 @media (--outdent-breakpoint) {
-    .outdent dl.timeline:not(dl.timeline.no-outdent):not(.no-outdent dl.timeline):not(dl.timeline.row):not(table dl.timeline):not(pre dl.timeline) {
-        margin-left: calc(-1 * (calc(var(--space) + var(--fs-d1) / 2) - 1px));
-        margin-left: calc(-1 * (var(--timeline-right-gap) - var(--timeline-width)));
-    }
+  .outdent
+    dl.timeline:not(dl.timeline.no-outdent):not(.no-outdent
+      dl.timeline):not(dl.timeline.row):not(table dl.timeline):not(pre
+      dl.timeline) {
+    margin-left: calc(-1 * (calc(var(--space) + var(--fs-d1) / 2) - 1px));
+    margin-left: calc(-1 * (var(--timeline-right-gap) - var(--timeline-width)));
+  }
 }
 
 ol,
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    padding-left: var(--horizontal-rhythm);
-    margin-top: var(--vertical-rhythm);
-    margin-top: var(--mrt-list);
-    margin-bottom: var(--vertical-rhythm);
-    margin-bottom: var(--mrb-list);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: var(--horizontal-rhythm);
+  margin-top: var(--vertical-rhythm);
+  margin-top: var(--mrt-list);
+  margin-bottom: var(--vertical-rhythm);
+  margin-bottom: var(--mrb-list);
 }
 
 ol ol,
 ol ul,
 ul ul,
 ul ol {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: var(--horizontal-rhythm);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: var(--horizontal-rhythm);
 }
 
 li {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-li>p:first-child {
-    display: inline;
+li > p:first-child {
+  display: inline;
 }
 
-li>ol {
-    counter-reset: ol-counter;
+li > ol {
+  counter-reset: ol-counter;
 }
 
-ol>li {
-    counter-increment: ol-counter;
+ol > li {
+  counter-increment: ol-counter;
 }
 
-ol>li::before {
-    content: counters(ol-counter, ".", decimal);
-    content: var(--ol-counter);
-    min-width: var(--horizontal-rhythm);
-    padding-right: var(--space-d1);
-    margin-left: calc(var(--horizontal-rhythm) * -1);
-    display: inline-flex;
-    justify-content: flex-start;
-    align-items: baseline;
-    font-family: var(--meta-font-family);
-    color: var(--ol-li-prefix-color);
-    font-variant-numeric: lining-nums;
-    font-size: inherit;
-    font-size: var(--ol-list-item-size);
-    font-variant-numeric: oldstyle-nums;
-    white-space: nowrap;
+ol > li::before {
+  content: counters(
+    ol-counter,
+    ".",
+    decimal);
+  content: var(--ol-counter);
+  min-width: var(--horizontal-rhythm);
+  padding-right: var(--space-d1);
+  margin-left: calc(var(--horizontal-rhythm) * -1);
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  font-family: var(--meta-font-family);
+  color: var(--ol-li-prefix-color);
+  font-variant-numeric: lining-nums;
+  font-size: inherit;
+  font-size: var(--ol-list-item-size);
+  font-variant-numeric: oldstyle-nums;
+  white-space: nowrap;
 }
 
-ul>li::before {
-    content: "→";
-    content: var(--list-item-type);
-    margin-left: calc(var(--horizontal-rhythm) * -1);
-    padding-right: var(--space-d1);
-    min-width: var(--horizontal-rhythm);
-    display: inline-flex;
-    justify-content: flex-start;
-    align-items: center;
-    color: var(--ul_li-prefix-color);
-    font-size: inherit;
-    font-size: var(--ul-list-item-size);
-    white-space: nowrap;
+ul > li::before {
+  content: "→";
+  content: var(--list-item-type);
+  margin-left: calc(var(--horizontal-rhythm) * -1);
+  padding-right: var(--space-d1);
+  min-width: var(--horizontal-rhythm);
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--ul_li-prefix-color);
+  font-size: inherit;
+  font-size: var(--ul-list-item-size);
+  white-space: nowrap;
 }
 
 *.outline {
-    counter-reset: h2-counter;
+  counter-reset: h2-counter;
 }
 
 .outline h2::before,
-    .outline h3::before,
-    .outline h4::before,
-    .outline h5::before,
-    .outline h6::before {
-        display: inline-flex;
-        color: var(--heading-outline-color);
-        padding-right: var(--space-d1);
-        font-variant-numeric: lining-nums;
-        align-items: baseline;
-        justify-content: flex-start;
-    }
+  .outline h3::before,
+  .outline h4::before,
+  .outline h5::before,
+  .outline h6::before {
+    display: inline-flex;
+    color: var(--heading-outline-color);
+    padding-right: var(--space-d1);
+    font-variant-numeric: lining-nums;
+    align-items: baseline;
+    justify-content: flex-start;
+  }
 
 .outline h2::before {
-        content: counter(h2-counter);
-        content: var(--h2-counter);
-    }
+    content: counter(h2-counter);
+    content: var(--h2-counter);
+  }
 
 .outline h2 {
-        counter-increment: h2-counter;
-        counter-reset: h3-counter;
-    }
+    counter-increment: h2-counter;
+    counter-reset: h3-counter;
+  }
 
 .outline h3::before {
-        content: counter(h2-counter) "." counter(h3-counter);
-        content: var(--h3-counter);
-    }
+    content: counter(h2-counter) "."
+    counter(h3-counter);
+    content: var(--h3-counter);
+  }
 
 .outline h3 {
-        counter-increment: h3-counter;
-        counter-reset: h4-counter;
-    }
+    counter-increment: h3-counter;
+    counter-reset: h4-counter;
+  }
 
 .outline h4::before {
-        content: counter(h2-counter) "." counter(h3-counter) "." counter(h4-counter);
-        content: var(--h4-counter);
-    }
+    content: counter(h2-counter) "."
+    counter(h3-counter) "." counter(h4-counter);
+    content: var(--h4-counter);
+  }
 
 .outline h4 {
-        counter-increment: h4-counter;
-        counter-reset: h5-counter;
-    }
+    counter-increment: h4-counter;
+    counter-reset: h5-counter;
+  }
 
 .outline h5::before {
-        content: counter(h2-counter) "." counter(h3-counter) "." counter(h4-counter) "." counter(h5-counter);
-        content: var(--h5-counter);
-    }
+    content: counter(h2-counter) "."
+    counter(h3-counter) "." counter(h4-counter)
+    "." counter(h5-counter);
+    content: var(--h5-counter);
+  }
 
 .outline h5 {
-        counter-increment: h5-counter;
-        counter-reset: h6-counter;
-    }
+    counter-increment: h5-counter;
+    counter-reset: h6-counter;
+  }
 
 .outline h6::before {
-        content: counter(h2-counter) "." counter(h3-counter) "." counter(h4-counter) "." counter(h5-counter) "." counter(h6-counter);
-        content: var(--h6-counter);
-    }
+    content: counter(h2-counter) "."
+    counter(h3-counter) "." counter(h4-counter)
+    "." counter(h5-counter) "."
+    counter(h6-counter);
+    content: var(--h6-counter);
+  }
 
 .outline h6 {
-        counter-increment: h6-counter;
-    }
+    counter-increment: h6-counter;
+  }
 
 @media (min-width: 9999px) {
+  .outdent
+    ol:not(ol.clear):not(ol.reset):not(.no-outdent
+      ol):not(ol.no-outdent):not(ol.indent):not(ol ol):not(ul ol):not(table
+      ol):not(pre ol),
+  .outdent
+    ul:not(ul.clear):not(ul.reset):not(.no-outdent
+      ul):not(ul.no-outdent):not(ul.indent):not(ul ul):not(ol ul):not(table
+      ul):not(pre ul) {
+    padding-left: 0;
+  }
 
-    .outdent ol:not(ol.clear):not(ol.reset):not(.no-outdent ol):not(ol.no-outdent):not(ol.indent):not(ol ol):not(ul ol):not(table ol):not(pre ol),
-    .outdent ul:not(ul.clear):not(ul.reset):not(.no-outdent ul):not(ul.no-outdent):not(ul.indent):not(ul ul):not(ol ul):not(table ul):not(pre ul) {
-
-        padding-left: 0;
+    .outdent
+    ol:not(ol.clear):not(ol.reset):not(.no-outdent
+      ol):not(ol.no-outdent):not(ol.indent):not(ol ol):not(ul ol):not(table
+      ol):not(pre ol) > li::before, .outdent
+    ul:not(ul.clear):not(ul.reset):not(.no-outdent
+      ul):not(ul.no-outdent):not(ul.indent):not(ul ul):not(ol ul):not(table
+      ul):not(pre ul) > li::before {
+      justify-content: flex-end;
+      padding-right: var(--space-d1);
     }
-
-        .outdent ol:not(ol.clear):not(ol.reset):not(.no-outdent ol):not(ol.no-outdent):not(ol.indent):not(ol ol):not(ul ol):not(table ol):not(pre ol)>li::before, .outdent ul:not(ul.clear):not(ul.reset):not(.no-outdent ul):not(ul.no-outdent):not(ul.indent):not(ul ul):not(ol ul):not(table ul):not(pre ul)>li::before {
-            justify-content: flex-end;
-            padding-right: var(--space-d1);
-        }
 }
 
 @media (--outdent-breakpoint) {
+  .outdent
+    ol:not(ol.clear):not(ol.reset):not(.no-outdent
+      ol):not(ol.no-outdent):not(ol.indent):not(ol ol):not(ul ol):not(table
+      ol):not(pre ol),
+  .outdent
+    ul:not(ul.clear):not(ul.reset):not(.no-outdent
+      ul):not(ul.no-outdent):not(ul.indent):not(ul ul):not(ol ul):not(table
+      ul):not(pre ul) {
+    padding-left: 0;
+  }
 
-    .outdent ol:not(ol.clear):not(ol.reset):not(.no-outdent ol):not(ol.no-outdent):not(ol.indent):not(ol ol):not(ul ol):not(table ol):not(pre ol),
-    .outdent ul:not(ul.clear):not(ul.reset):not(.no-outdent ul):not(ul.no-outdent):not(ul.indent):not(ul ul):not(ol ul):not(table ul):not(pre ul) {
-
-        padding-left: 0;
+    .outdent
+    ol:not(ol.clear):not(ol.reset):not(.no-outdent
+      ol):not(ol.no-outdent):not(ol.indent):not(ol ol):not(ul ol):not(table
+      ol):not(pre ol) > li::before, .outdent
+    ul:not(ul.clear):not(ul.reset):not(.no-outdent
+      ul):not(ul.no-outdent):not(ul.indent):not(ul ul):not(ol ul):not(table
+      ul):not(pre ul) > li::before {
+      justify-content: flex-end;
+      padding-right: var(--space-d1);
     }
-
-        .outdent ol:not(ol.clear):not(ol.reset):not(.no-outdent ol):not(ol.no-outdent):not(ol.indent):not(ol ol):not(ul ol):not(table ol):not(pre ol)>li::before, .outdent ul:not(ul.clear):not(ul.reset):not(.no-outdent ul):not(ul.no-outdent):not(ul.indent):not(ul ul):not(ol ul):not(table ul):not(pre ul)>li::before {
-            justify-content: flex-end;
-            padding-right: var(--space-d1);
-        }
 }
 
 @media (min-width: 9999px) {
-
-        .outdent .outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h2::before,
-        .outdent .outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h3::before,
-        .outdent .outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h4::before,
-        .outdent .outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h5::before,
-        .outdent .outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h6::before,
-        .outdent.outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h2::before,
-        .outdent.outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h3::before,
-        .outdent.outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h4::before,
-        .outdent.outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h5::before,
-        .outdent.outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h6::before,
-        .outline .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h2::before,
-        .outline .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h3::before,
-        .outline .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h4::before,
-        .outline .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h5::before,
-        .outline .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h6::before {
-            margin-left: calc(-1 * var(--space-4));
-            margin-left: calc(-1 * var(--outdent-outline-width));
-            padding-right: var(--space-d1);
-            white-space: nowrap;
-            min-width: var(--space-4);
-            min-width: var(--outdent-outline-width);
-            justify-content: flex-end;
-        }
+    .outdent
+    .outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline
+      .no-outdent) h2::before,
+    .outdent
+    .outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline
+      .no-outdent) h3::before,
+    .outdent
+    .outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline
+      .no-outdent) h4::before,
+    .outdent
+    .outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline
+      .no-outdent) h5::before,
+    .outdent
+    .outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline
+      .no-outdent) h6::before,
+    .outdent.outline:not(.outline.no-outdent):not(.no-outdent
+      .outline):not(.outline .no-outdent) h2::before,
+    .outdent.outline:not(.outline.no-outdent):not(.no-outdent
+      .outline):not(.outline .no-outdent) h3::before,
+    .outdent.outline:not(.outline.no-outdent):not(.no-outdent
+      .outline):not(.outline .no-outdent) h4::before,
+    .outdent.outline:not(.outline.no-outdent):not(.no-outdent
+      .outline):not(.outline .no-outdent) h5::before,
+    .outdent.outline:not(.outline.no-outdent):not(.no-outdent
+      .outline):not(.outline .no-outdent) h6::before,
+    .outline
+    .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline
+      .no-outdent) h2::before,
+    .outline
+    .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline
+      .no-outdent) h3::before,
+    .outline
+    .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline
+      .no-outdent) h4::before,
+    .outline
+    .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline
+      .no-outdent) h5::before,
+    .outline
+    .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline
+      .no-outdent) h6::before {
+      margin-left: calc(-1 * var(--space-4));
+      margin-left: calc(-1 * var(--outdent-outline-width));
+      padding-right: var(--space-d1);
+      white-space: nowrap;
+      min-width: var(--space-4);
+      min-width: var(--outdent-outline-width);
+      justify-content: flex-end;
+    }
 }
 
 @media (--outdent-outline-breakpoint) {
-
-        .outdent .outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h2::before,
-        .outdent .outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h3::before,
-        .outdent .outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h4::before,
-        .outdent .outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h5::before,
-        .outdent .outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h6::before,
-        .outdent.outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h2::before,
-        .outdent.outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h3::before,
-        .outdent.outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h4::before,
-        .outdent.outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h5::before,
-        .outdent.outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h6::before,
-        .outline .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h2::before,
-        .outline .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h3::before,
-        .outline .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h4::before,
-        .outline .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h5::before,
-        .outline .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline .no-outdent) h6::before {
-            margin-left: calc(-1 * var(--space-4));
-            margin-left: calc(-1 * var(--outdent-outline-width));
-            padding-right: var(--space-d1);
-            white-space: nowrap;
-            min-width: var(--space-4);
-            min-width: var(--outdent-outline-width);
-            justify-content: flex-end;
-        }
+    .outdent
+    .outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline
+      .no-outdent) h2::before,
+    .outdent
+    .outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline
+      .no-outdent) h3::before,
+    .outdent
+    .outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline
+      .no-outdent) h4::before,
+    .outdent
+    .outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline
+      .no-outdent) h5::before,
+    .outdent
+    .outline:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline
+      .no-outdent) h6::before,
+    .outdent.outline:not(.outline.no-outdent):not(.no-outdent
+      .outline):not(.outline .no-outdent) h2::before,
+    .outdent.outline:not(.outline.no-outdent):not(.no-outdent
+      .outline):not(.outline .no-outdent) h3::before,
+    .outdent.outline:not(.outline.no-outdent):not(.no-outdent
+      .outline):not(.outline .no-outdent) h4::before,
+    .outdent.outline:not(.outline.no-outdent):not(.no-outdent
+      .outline):not(.outline .no-outdent) h5::before,
+    .outdent.outline:not(.outline.no-outdent):not(.no-outdent
+      .outline):not(.outline .no-outdent) h6::before,
+    .outline
+    .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline
+      .no-outdent) h2::before,
+    .outline
+    .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline
+      .no-outdent) h3::before,
+    .outline
+    .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline
+      .no-outdent) h4::before,
+    .outline
+    .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline
+      .no-outdent) h5::before,
+    .outline
+    .outdent:not(.outline.no-outdent):not(.no-outdent .outline):not(.outline
+      .no-outdent) h6::before {
+      margin-left: calc(-1 * var(--space-4));
+      margin-left: calc(-1 * var(--outdent-outline-width));
+      padding-right: var(--space-d1);
+      white-space: nowrap;
+      min-width: var(--space-4);
+      min-width: var(--outdent-outline-width);
+      justify-content: flex-end;
+    }
 }
 
 ul.indent,
 ol.indent {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 ul.indent ul,
 ul.indent ol,
 ol.indent ol,
 ol.indent ul {
-    padding-left: var(--horizontal-rhythm);
+  padding-left: var(--horizontal-rhythm);
 }
 
 ol.indent li::before,
 ul.indent li::before {
-    margin-left: 0;
-    justify-content: flex-start;
+  margin-left: 0;
+  justify-content: flex-start;
 }
 
 ol.indent li::before {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 @media (max-width: 600px) {
-
-    ul,
-    ol {
-        padding-left: 0;
-    }
-
-    li>ul,
-    li>ol {
-        padding-left: var(--horizontal-rhythm);
-    }
-
-    ul li::before,
-    ol li::before,
-    dl:not(dl.timeline) dd {
-        margin-left: 0;
-    }
-
-    ol li::before {
-        font-weight: bold;
-    }
+  dl:not(dl.timeline) dd {
+    margin-left: 0;
+  }
 }
 
 @media (--mx-sm-breakpoint) {
-
-    ul,
-    ol {
-        padding-left: 0;
-    }
-
-    li>ul,
-    li>ol {
-        padding-left: var(--horizontal-rhythm);
-    }
-
-    ul li::before,
-    ol li::before,
-    dl:not(dl.timeline) dd {
-        margin-left: 0;
-    }
-
-    ol li::before {
-        font-weight: bold;
-    }
+  dl:not(dl.timeline) dd {
+    margin-left: 0;
+  }
 }
 
-ul.no-list-type>li::before {
-    content: unset;
+ul.no-list-type > li::before {
+  content: unset;
 }
 
 ul.reset,
 ul.clear,
 ol.reset,
 ol.clear {
-    padding-left: 0;
+  padding-left: 0;
 }
 
-ul.reset>li::before,
-ul.clear>li::before,
-ol.reset>li::before,
-ol.clear>li::before {
-    content: unset;
-    min-width: 0;
-    padding: 0;
-    margin: 0;
+ul.reset > li::before,
+ul.clear > li::before,
+ol.reset > li::before,
+ol.clear > li::before {
+  content: unset;
+  min-width: 0;
+  padding: 0;
+  margin: 0;
 }
