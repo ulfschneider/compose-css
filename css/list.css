@@ -1,7 +1,7 @@
 :root {
   --mrt-list: var(--vertical-rhythm);
   --mrb-list: var(--vertical-rhythm);
-  --list-item-type: "→";
+  --list-item-type: "—";
   --ol-list-item-size: inherit;
   --ul-list-item-size: inherit;
   /*▁⁕●■▪→*—*/
@@ -506,7 +506,7 @@ ol > li::before {
 }
 
 ul > li::before {
-  content: "→";
+  content: "—";
   content: var(--list-item-type);
   margin-left: calc(var(--horizontal-rhythm) * -1);
   padding-right: var(--space-d1);
