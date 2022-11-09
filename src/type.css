@@ -739,10 +739,9 @@ details > summary::-webkit-details-marker {
 details > summary::before {
   content: var(--summary-collapsed-prefix);
   padding-right: var(--space-d1);
-  min-width: var(--horizontal-rhythm);
   display: inline-flex;
   justify-content: flex-start;
-  align-items: center;
+  align-content: baseline;
   color: var(--li-prefix-color);
   white-space: nowrap;
 }
@@ -757,7 +756,7 @@ details[open] > summary::before {
     > summary:not(details > summary.no-outdent):not(.no-outdent
       summary):not(table details > summary):not(pre details > summary)::before {
     margin-left: calc(-1 * var(--horizontal-rhythm));
+    min-width: var(--horizontal-rhythm);
     justify-content: flex-end;
-    padding-right: var(--space-d1);
   }
 }

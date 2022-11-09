@@ -458,10 +458,8 @@ ul {
   margin-bottom: var(--mrb-list);
 }
 
-ol ol,
-ol ul,
-ul ul,
-ul ol {
+li > ol,
+li > ul {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: var(--horizontal-rhythm);
@@ -491,18 +489,22 @@ ol > li::before {
     decimal);
   content: var(--ol-counter);
   min-width: var(--horizontal-rhythm);
-  padding-right: var(--space-d1);
   margin-left: calc(var(--horizontal-rhythm) * -1);
   display: inline-flex;
-  justify-content: flex-start;
-  align-items: baseline;
+  justify-content: flex-end;
+  align-content: baseline;
+  padding-right: var(--space-d1);
   font-family: var(--meta-font-family);
   color: var(--ol-li-prefix-color);
-  font-variant-numeric: lining-nums;
   font-size: inherit;
   font-size: var(--ol-list-item-size);
   font-variant-numeric: oldstyle-nums;
   white-space: nowrap;
+}
+
+li > ol > li {
+  justify-content: flex-start;
+  margin-left: 0;
 }
 
 ul > li::before {
@@ -512,8 +514,9 @@ ul > li::before {
   padding-right: var(--space-d1);
   min-width: var(--horizontal-rhythm);
   display: inline-flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: flex-end;
+  padding-right: var(--space-d1);
+  align-items: baseline;
   color: var(--ul_li-prefix-color);
   font-size: inherit;
   font-size: var(--ul-list-item-size);
@@ -593,52 +596,63 @@ ul > li::before {
     counter-increment: h6-counter;
   }
 
+ol.indent,
+ul.indent {
+  padding-left: 0;
+}
+
+ol.indent li::before,
+ul.indent li::before {
+  margin-left: 0;
+  justify-content: flex-start;
+  padding-right: var(--space-d1);
+}
+
+ol.indent li::before {
+  font-weight: bold;
+}
+
+ul.no-list-type > li::before {
+  content: unset;
+}
+
+ul.reset,
+ul.clear,
+ol.reset,
+ol.clear {
+  padding-left: 0;
+}
+
+ul.reset > li::before,
+ul.clear > li::before,
+ol.reset > li::before,
+ol.clear > li::before {
+  content: unset;
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+}
+
 @media (min-width: 9999px) {
   .outdent
-    ol:not(ol.clear):not(ol.reset):not(.no-outdent
-      ol):not(ol.no-outdent):not(ol.indent):not(ol ol):not(ul ol):not(table
-      ol):not(pre ol),
+    ol:not(ol.clear):not(ol.reset):not(.no-outdent ol):not(ol.no-outdent):not(li
+      ol):not(li ul):not(table ol):not(pre ol),
   .outdent
-    ul:not(ul.clear):not(ul.reset):not(.no-outdent
-      ul):not(ul.no-outdent):not(ul.indent):not(ul ul):not(ol ul):not(table
-      ul):not(pre ul) {
+    ul:not(ul.clear):not(ul.reset):not(.no-outdent ul):not(ul.no-outdent):not(li
+      ul):not(li ol):not(table ul):not(pre ul) {
     padding-left: 0;
   }
-
-    .outdent
-    ol:not(ol.clear):not(ol.reset):not(.no-outdent
-      ol):not(ol.no-outdent):not(ol.indent):not(ol ol):not(ul ol):not(table
-      ol):not(pre ol) > li::before, .outdent
-    ul:not(ul.clear):not(ul.reset):not(.no-outdent
-      ul):not(ul.no-outdent):not(ul.indent):not(ul ul):not(ol ul):not(table
-      ul):not(pre ul) > li::before {
-      justify-content: flex-end;
-      padding-right: var(--space-d1);
-    }
 }
 
 @media (--outdent-breakpoint) {
   .outdent
-    ol:not(ol.clear):not(ol.reset):not(.no-outdent
-      ol):not(ol.no-outdent):not(ol.indent):not(ol ol):not(ul ol):not(table
-      ol):not(pre ol),
+    ol:not(ol.clear):not(ol.reset):not(.no-outdent ol):not(ol.no-outdent):not(li
+      ol):not(li ul):not(table ol):not(pre ol),
   .outdent
-    ul:not(ul.clear):not(ul.reset):not(.no-outdent
-      ul):not(ul.no-outdent):not(ul.indent):not(ul ul):not(ol ul):not(table
-      ul):not(pre ul) {
+    ul:not(ul.clear):not(ul.reset):not(.no-outdent ul):not(ul.no-outdent):not(li
+      ul):not(li ol):not(table ul):not(pre ul) {
     padding-left: 0;
   }
-
-    .outdent
-    ol:not(ol.clear):not(ol.reset):not(.no-outdent
-      ol):not(ol.no-outdent):not(ol.indent):not(ol ol):not(ul ol):not(table
-      ol):not(pre ol) > li::before, .outdent
-    ul:not(ul.clear):not(ul.reset):not(.no-outdent
-      ul):not(ul.no-outdent):not(ul.indent):not(ul ul):not(ol ul):not(table
-      ul):not(pre ul) > li::before {
-      justify-content: flex-end;
-      padding-right: var(--space-d1);
-    }
 }
 
 @media (min-width: 9999px) {
@@ -743,28 +757,6 @@ ul > li::before {
     }
 }
 
-ul.indent,
-ol.indent {
-  padding-left: 0;
-}
-
-ul.indent ul,
-ul.indent ol,
-ol.indent ol,
-ol.indent ul {
-  padding-left: var(--horizontal-rhythm);
-}
-
-ol.indent li::before,
-ul.indent li::before {
-  margin-left: 0;
-  justify-content: flex-start;
-}
-
-ol.indent li::before {
-  font-weight: bold;
-}
-
 @media (max-width: 600px) {
   dl:not(dl.timeline) dd {
     margin-left: 0;
@@ -775,25 +767,4 @@ ol.indent li::before {
   dl:not(dl.timeline) dd {
     margin-left: 0;
   }
-}
-
-ul.no-list-type > li::before {
-  content: unset;
-}
-
-ul.reset,
-ul.clear,
-ol.reset,
-ol.clear {
-  padding-left: 0;
-}
-
-ul.reset > li::before,
-ul.clear > li::before,
-ol.reset > li::before,
-ol.clear > li::before {
-  content: unset;
-  min-width: 0;
-  padding: 0;
-  margin: 0;
 }

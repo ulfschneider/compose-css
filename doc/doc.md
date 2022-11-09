@@ -687,12 +687,9 @@ Text above …
 
 <details>
 <summary>One morning</summary>
-
     <p>when Gregor Samsa woke from troubled dreams, he found himself
         transformed in his bed into a horrible vermin.
-
     </p>
-
     <p>
         He lay on his armour-like back, and if he lifted his head a little he could
         see his brown belly, slightly domed and divided by arches into stiff
@@ -708,7 +705,6 @@ Text above …
         thought. It wasn't a dream.
         </p>
         </details>
-
 </details>
 
 … text below.
@@ -783,8 +779,6 @@ transformed in his bed into a horrible vermin.</p>
 
 ### Indented Unordered List
 
-### Indented Ordered List
-
 <ul class="indent">
 <li><p>One morning, when Gregor Samsa woke from troubled dreams, he found himself
 transformed in his bed into a horrible vermin.</p>
@@ -810,6 +804,33 @@ transformed in his bed into a horrible vermin.</p>
 </li>
 <li>He lay on his armour-like back
     <ol>
+        <li>and if he lifted his head a little he could
+        see his brown belly, slightly domed and divided by arches into stiff
+        sections.</li>
+        <li>and if he lifted his head a little he could
+        see his brown belly, slightly domed and divided by arches into stiff
+        sections.</li>
+        <li>and if he lifted his head a little he could
+        see his brown belly, slightly domed and divided by arches into stiff
+        sections.</li>
+        <li>and if he lifted his head a little he could
+        see his brown belly, slightly domed and divided by arches into stiff
+        sections.</li>
+        <li>and if he lifted his head a little he could
+        see his brown belly, slightly domed and divided by arches into stiff
+        sections.</li>
+        <li>and if he lifted his head a little he could
+        see his brown belly, slightly domed and divided by arches into stiff
+        sections.</li>
+        <li>and if he lifted his head a little he could
+        see his brown belly, slightly domed and divided by arches into stiff
+        sections.</li>
+        <li>and if he lifted his head a little he could
+        see his brown belly, slightly domed and divided by arches into stiff
+        sections.</li>
+        <li>and if he lifted his head a little he could
+        see his brown belly, slightly domed and divided by arches into stiff
+        sections.</li>
         <li>and if he lifted his head a little he could
         see his brown belly, slightly domed and divided by arches into stiff
         sections.</li>
