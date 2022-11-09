@@ -738,13 +738,14 @@ blockquote > header {
 figcaption {
   font-size: smaller;
   font-size: var(--figcaption-font-size);
+  padding-left: unset;
 }
 
 blockquote > header::before,
 blockquote > footer::before {
   content: "";
-  /*display: inline-flex;*/
-  /*align-self: baseline;*/
+  display: inline-flex;
+  align-self: baseline;
   position: absolute;
   left: 0;
   width: calc(2 * var(--space));

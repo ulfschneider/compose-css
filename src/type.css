@@ -666,13 +666,14 @@ blockquote > header {
 
 figcaption {
   font-size: var(--figcaption-font-size);
+  padding-left: unset;
 }
 
 blockquote > header::before,
 blockquote > footer::before {
   content: "";
-  /*display: inline-flex;*/
-  /*align-self: baseline;*/
+  display: inline-flex;
+  align-self: baseline;
   position: absolute;
   left: 0;
   width: var(--horizontal-rhythm);
