@@ -54,8 +54,8 @@
   --mrb-figure: var(--space-2);
   --mrt-blockquote: var(--space-2);
   --mrb-blockquote: var(--space-2);
-  --mrt-figcaption: 0;
-  --mrb-figcaption: 0;
+  --mrt-figcaption: var(--space-d1);
+  --mrb-figcaption: var(--space-d1);
   --mrt-pre: var(--vertical-rhythm-plus);
   --mrb-pre: var(--vertical-rhythm-plus);
   --mrt-hr: var(--vertical-rhythm-plus);
@@ -657,14 +657,14 @@ blockquote > header {
   font-family: var(--figcaption-font-family);
   font-style: normal;
   max-width: var(--rg-width);
-  margin-top: var(--mrt-figcaption);
-  margin-bottom: var(--mrb-figcaption);
   line-height: var(--lh-default);
   padding-left: var(--horizontal-rhythm);
   position: relative;
 }
 
 figcaption {
+  margin-top: var(--mrt-figcaption);
+  margin-bottom: var(--mrb-figcaption);
   font-size: var(--figcaption-font-size);
   padding-left: unset;
 }
