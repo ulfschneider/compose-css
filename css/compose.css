@@ -2726,20 +2726,12 @@ p.indent {
   text-indent: var(--horizontal-rhythm) !important;
 }
 
-.no-indent p {
-  text-indent: 0;
-}
-
-.no-indent p + p {
-  margin-top: 1rem;
-  margin-top: var(--mrt-paragraph);
-}
-
+.no-indent p,
 p.no-indent {
   text-indent: 0 !important;
 }
 
-p + p.no-indent {
+.no-indent p + p {
   margin-top: 1rem;
   margin-top: var(--mrt-paragraph);
 }
