@@ -2712,26 +2712,28 @@ p + p {
   margin-top: var(--mrt-paragraph);
 }
 
-.indent p {
-  margin: 0;
+.indent p + p,
+p + p.indent,
+.no-indent .indent p + p {
+  margin-top: 0;
 }
 
-.indent p + p {
+p.indent,
+.indent p + p,
+.no-indent .indent p + p {
   text-indent: calc(2 * 1rem);
   text-indent: var(--horizontal-rhythm);
 }
 
-p.indent {
-  text-indent: calc(2 * 1rem) !important;
-  text-indent: var(--horizontal-rhythm) !important;
+p.no-indent,
+.no-indent p + p,
+.indent .no-indent p + p {
+  text-indent: 0;
 }
 
-.no-indent p,
-p.no-indent {
-  text-indent: 0 !important;
-}
-
-.no-indent p + p {
+.no-indent p + p,
+p + p.no-indent,
+.indent .no-indent p + p {
   margin-top: 1rem;
   margin-top: var(--mrt-paragraph);
 }
