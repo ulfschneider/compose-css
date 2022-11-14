@@ -313,7 +313,7 @@ ol > li::before {
   font-family: var(--meta-font-family);
   color: var(--ol-li-prefix-color);
   font-size: var(--ol-list-item-size);
-  font-variant-numeric: oldstyle-nums;
+  font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
 
@@ -349,7 +349,7 @@ ul > li::before {
     display: inline-flex;
     color: var(--heading-outline-color);
     padding-right: var(--space-d1);
-    font-variant-numeric: lining-nums;
+    font-variant-numeric: tabular-nums;
     align-items: baseline;
     justify-content: flex-start;
   }
@@ -399,6 +399,10 @@ ul > li::before {
   }
 }
 
+table li::before {
+  justify-content: flex-start;
+}
+
 ol.indent,
 ul.indent {
   padding-left: 0;
@@ -408,7 +412,6 @@ ol.indent li::before,
 ul.indent li::before {
   margin-left: 0;
   justify-content: flex-start;
-  padding-right: var(--space-d1);
 }
 
 ol.indent li::before {
