@@ -5,29 +5,29 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 html {
-    height: 100%;
-    scroll-behavior: smooth;
-    /*https://kilianvalkhof.com/2022/css-html/your-css-reset-needs-text-size-adjust-probably/*/
-    -moz-text-size-adjust: none;
-    -webkit-text-size-adjust: none;
-    text-size-adjust: none;
+  height: 100%;
+  scroll-behavior: smooth;
+  /*https://kilianvalkhof.com/2022/css-html/your-css-reset-needs-text-size-adjust-probably/*/
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 @media (prefers-reduced-motion) {
-    html {
-        scroll-behavior: auto;
-    }
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 body {
-    min-height: 100%;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
+  min-height: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 iframe,
@@ -35,15 +35,14 @@ img,
 picture,
 canvas,
 svg {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
 }
 
 input,
 button,
 textarea,
 select {
-    font: inherit;
+  font: inherit;
 }
 
 p,
@@ -53,5 +52,5 @@ h3,
 h4,
 h5,
 h6 {
-    overflow-wrap: break-word;
+  overflow-wrap: break-word;
 }
