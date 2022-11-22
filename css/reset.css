@@ -30,11 +30,15 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-iframe,
 img,
 picture,
-canvas,
 svg {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe,
+canvas {
   max-width: 100%;
 }
 
